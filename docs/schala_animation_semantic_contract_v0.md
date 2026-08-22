@@ -148,8 +148,8 @@ The automatic field entrypoint minimum is:
 
 Event operations `$AA`, `$AB`, `$AE`, `$B3`, `$B4`, and `$B7` consume the
 animation-entrypoint namespace. Operation `$AC` instead selects a static
-assembly-frame ID. A complete playable-PC location-event operand census is
-still open.
+assembly-frame ID. The companion encoded location-event operand census is now
+complete, while runtime playable-PC attribution remains open.
 
 ### Menu
 
@@ -275,6 +275,17 @@ source-frame/timing token sequences for each actually used role. Normal
 attack, cast, item, hurt, KO, revive, victory, and all eight Schala tech action
 packages still require consumer-to-entrypoint mapping. Visual names must not
 be inferred from a fixed numeric anchor alone.
+
+The companion read-only location-event census now closes the encoded
+`$AA/$AB/$AC/$AE/$B3/$B4/$B7` inventory for the canonical field-event
+corpus. It records 10,637 physical sites and the complete 116,064-entry
+direct-function topology, then uses an incoming direct-entry marker closure to
+avoid treating physical object adjacency as runtime identity. That result is
+still only a possible-context overapproximation: calls, jumps, fallthrough,
+loader lifetime, startup replay, and runtime reachability remain unresolved.
+See `docs/location_event_animation_operand_census_v0.md`. A separate
+data-driven battle action-package census remains required before native
+Schala frame assignment.
 
 ## Fail-closed gates
 

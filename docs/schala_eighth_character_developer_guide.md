@@ -791,6 +791,52 @@ vanilla seven-PC checkpoint. It does not prove free movement, another facing,
 another PC, a location-event operand, battle action packages, a relocated
 bank, Schala rendering, logical PC `$07`, save/load, or production timing.
 
+#### Location-event animation operand census
+
+`verified-static` for the encoded corpus and direct-function-entry topology;
+runtime identity and loader lifetime unresolved
+
+The fail-closed, read-only location-event census now inventories every
+structurally valid encoded `$AA/$AB/$AC/$AE/$B3/$B4/$B7` site in the
+hash-gated canonical ROM. It finds 10,637 unique physical animation/static
+sites in 391 packets and keeps `$AC` static assembly frames separate from
+animation entrypoints. `$AE/$B3/$B4` are implicit selectors; `$AB/$B7` use
+the secondary selector path; and `$B7`'s second operand is repetition/progress
+control rather than an entrypoint.
+
+The corpus contains 116,064 function-pointer occurrences. Of those, 1,864
+point backward into another physical source owner, 321 point forward, and 84
+point to the exact packet-end sentinel. Physical object adjacency is therefore
+not a safe identity classifier. The auditor computes an incoming
+direct-function-entry closure for each animation source owner and unions each
+distinct directly targeted source owner's PC, NPC/enemy, graphics, and lifecycle
+markers. This syntax-only overapproximation is complete for the sixteen direct
+entries per logical owner, not for calls, jumps, fallthrough, startup replay,
+loader lifetime, party state, or runtime reachability.
+
+The conservative closure classifies 927 of 2,744 animation source owners with
+PC markers and no NPC/enemy marker, 23 with both PC and NPC/enemy markers, and
+1,794 with no PC marker. The 950 possible-PC-marker owners contain 5,624
+encoded sites; none is promoted to a definite runtime PC site. Generic
+`$80/$81` operands are canonically limited to `$00-$06`, while synthetic
+`$07+` values are kept outside the vanilla-PC result and never named Epoch or
+Schala. Opcode `$87` remains an orthogonal graphics-assignment marker.
+
+The checked-in metadata report is 31,731 bytes, SHA-256
+`d170c0d5771b84e0fbcb394dcd4151ccef3e8c96f4bd6a80a6cc9c498f78f2c4`.
+Its closed schema and semantic identities, exact machine-code preimages,
+complete pointer topology, placeholder allowlist, parser dependency, stdout-
+only behavior, absence of write APIs, and ROM preservation are pinned by 19
+focused tests. No raw ROM or decoded event data is serialized. Exact counts,
+reproduction, proof boundaries, and the incoming-versus-outgoing
+counterexample are in
+`docs/location_event_animation_operand_census_v0.md`.
+
+This closes the encoded location-event operand-inventory gate only. Before
+using the result as runtime PC attribution, implement or explicitly defer a
+closed inter-object control-flow and loader-lifetime model. The separate next
+planning audit is the data-driven battle action-package census.
+
 #### Compressed sprite corpus and bounded Schala NPC comparison
 
 `verified-static` for the canonical byte chain and tile comparison;
@@ -1607,12 +1653,17 @@ states where useful, and a written result.
 5. Implement the selected raw `$80-$90` command overlay, beginning with the
    sparse action table and the mandatory signed/direct-index branches; trace
    the `$C1:D70D` runtime flag before action execution.
-6. Complete the playable-PC location-event animation-operand census and the
+6. Keep the completed encoded location-event animation-operand census within
+   its static evidence ceiling, then implement or explicitly defer its closed
+   inter-object control-flow and loader-lifetime model. Complete the separate
    data-driven battle action-package census before assigning any native Schala
-   frame. The entrypoint stride, auxiliary timing family, fixed-bank
-   setup/reader sites, menu roles, battle fixed minimum, and battle-state
-   selector table are now proved, and a private checkpoint reproduces the
-   field walk timing relation.
+   frame. The location-event audit now inventories all 10,637 encoded sites
+   and proves the complete 116,064-entry direct-function topology; its
+   incoming marker closure intentionally remains a possible-context
+   overapproximation rather than runtime identity. The entrypoint stride,
+   auxiliary timing family, fixed-bank setup/reader sites, menu roles, battle
+   fixed minimum, and battle-state selector table are also proved, and a
+   private checkpoint reproduces the field walk timing relation.
    The ten gameplay frames plus six Glass Focus body poses already fit one
    91-tile, 16-record native-shaped partial packet and reconstruct exactly,
    but their ordinals are not engine frame IDs. Next author complete
@@ -1635,6 +1686,23 @@ states where useful, and a written result.
 ## 12. Change log
 
 ### 2026-08-22
+
+- Added the fail-closed, read-only location-event animation operand census.
+  It inventories all 10,637 encoded `$AA/$AB/$AC/$AE/$B3/$B4/$B7` sites in
+  391 packets and preserves the entrypoint/static-frame/repetition namespace
+  split. The complete 116,064-entry function topology includes 1,864 backward
+  cross-owner targets, 321 forward targets, and 84 exact packet-end sentinels,
+  so the tool uses an incoming direct-entry marker closure rather than
+  physical adjacency. That conservative closure yields 927 PC-only-marker,
+  23 mixed, and 1,794 no-PC-marker animation source owners, covering 5,624
+  possible-PC-marker sites without claiming runtime reachability. The
+  31,731-byte metadata report has SHA-256 `d170c0d5...`; all 19 focused tests
+  pass. No ROM, decoded packet, ordered script, patch, runtime PC `$07`,
+  Schala binding, allocation, or hook is emitted or approved.
+- The complete ROM-backed regression now discovers 841 tests: 837 pass and
+  four skip explicitly under their existing privilege/toolchain gates. All 88
+  source-controlled Python tools parse under the bundled Python 3.12.13
+  runtime, and the canonical ROM remains byte-identical before and after.
 
 - Confirmed RetroArch 1.22.2 remains the newest official stable frontend,
   restored the exact July Project Epoch frontend/core bytes on `C:`, and

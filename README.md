@@ -80,7 +80,7 @@ remain exact.
   `20fcbd08b954311cb948bbcfc0a90eb3bbb6cc46ad00524c0add8ac0e9ecc0d7`
 - Quarantined provisional-runtime IPS SHA-256:
   `484bad4051f39d92015f57a927471d8287ca4e3652a1eef5a9475fabbf4b3cae`
-- 822 automated checks are discovered: 818 pass and four skip explicitly.
+- 841 automated checks are discovered: 837 pass and four skip explicitly.
   Two skips are privilege-dependent real-symlink cases with deterministic
   mocked reparse coverage passing; two are historical live-artifact rebuild
   checks whose original pinned `D:` toolchain is unavailable. Coverage
@@ -92,9 +92,9 @@ remain exact.
   candidates, native-Mesen event `$11C`, WRAM-ownership trace contracts,
   Focus adapter boundaries, the Glass Focus and current 16-frame body-packet
   audits, the animation semantic contract, the hardened field-animation
-  probe, the compressed NPC/enemy sprite corpus, and the bounded Schala NPC
-  comparison.
-- All 87 source-controlled Python tools parse successfully.
+  probe, the complete encoded location-event animation operand census, the
+  compressed NPC/enemy sprite corpus, and the bounded Schala NPC comparison.
+- All 88 source-controlled Python tools parse successfully.
 - Independent repeated builds produce identical IPS, report, and manifest
   bytes.
 
@@ -330,6 +330,15 @@ not free space, while `$E4:B600` and `$E4:B614` are occupied successor
 entries. This is metadata-only static evidence, not a Schala frame binding,
 animation blob, allocation, hook, or PC `$07` runtime claim; see
 `docs/schala_animation_semantic_contract_v0.md`.
+A companion fail-closed, read-only census now inventories all 10,637 encoded
+location-event `$AA/$AB/$AC/$AE/$B3/$B4/$B7` animation/static sites. Its
+complete 116,064-entry function topology includes 2,269 entries outside their
+nominal physical owner, so the auditor uses an incoming direct-entry marker
+closure instead of physical adjacency. The 927 PC-only-marker, 23 mixed, and
+1,794 no-PC-marker source-owner buckets are a syntax-only possible-context
+overapproximation, not runtime identity. Calls, jumps, fallthrough, loader
+lifetime, and reachability remain open; see
+`docs/location_event_animation_operand_census_v0.md`.
 A separate hardened, isolated native-Mesen probe has now reproduced the field
 timing relationship twice per route at the prepared Spekkio checkpoint. Idle
 selector `$00` repeatedly terminates and reloads through the timing stream;

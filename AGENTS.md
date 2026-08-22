@@ -178,6 +178,16 @@ These are separate namespaces. Never conflate them.
   proof. The tracked code contains no raw trace or game artifact. Raw traces,
   ROM/SRAM/state files, screenshots, and emulator binaries remain ignored and
   must never enter source control.
+- The canonical location-event animation census now inventories all 10,637
+  encoded `$AA/$AB/$AC/$AE/$B3/$B4/$B7` sites and the complete 116,064-entry
+  direct-function topology. Because 2,269 function entries leave their nominal
+  physical owner, identity context uses an incoming direct-entry marker
+  closure. Its 927 PC-only-marker, 23 mixed, and 1,794 no-PC-marker source
+  owners are a syntax-only possible-context overapproximation. Calls, jumps,
+  fallthrough, startup replay, loader lifetime, party state, and runtime
+  reachability remain unresolved. `$87` is orthogonal, and generic `$80/$81`
+  operands outside `$00-$06` are never promoted to a vanilla PC, Epoch, or
+  Schala by the auditor.
 - Recruitment party operation 1 is not a capacity-safe append: with three
   active PCs it replaces slot 3 and moves the displaced PC to reserve. Require
   an explicit open-slot helper; use reserve registration on the full branch.
@@ -226,10 +236,12 @@ foundation: finish the remaining adapter/runtime matrix while compiling only
 original, provenance-backed authoring data outside the ROM. The current 16
 body frames are packable but remain natively unbound. The stream shape,
 fixed-bank setup/reader sites, and minimum automatic/menu/battle anchors are
-now mapped; the next animation gates are the complete playable-PC
-location-event operand census, data-driven battle action-package census,
-complete source-role/facing inventory, and an explicit expanded-bank reader
-design.
+now mapped. The complete encoded location-event operand census and its direct-
+entry topology are also mapped, but its inter-object control-flow and loader-
+lifetime model remains unresolved. The next animation gates are to implement
+or explicitly defer that stronger contextual model, complete the data-driven
+battle action-package census and source-role/facing inventory, and design an
+explicit expanded-bank reader.
 
 The clone diagnostic must separately account for:
 
