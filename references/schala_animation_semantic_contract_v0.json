@@ -1,0 +1,1946 @@
+{
+  "auditor_version": "1.0.0",
+  "authoring_coverage": [
+    {
+      "binding_state": "source-role-only-unbound",
+      "context": "field",
+      "coverage": "complete-source-role-only",
+      "current_frame_ids": [
+        "schala_field_idle_down_f00_v0",
+        "schala_field_idle_up_f00_v0",
+        "schala_field_idle_left_f00_v0",
+        "schala_field_idle_right_f00_v0"
+      ],
+      "evidence": "hypothesis",
+      "native_binding": null,
+      "related_engine_role_ids": [
+        "field_00"
+      ],
+      "role_id": "field_idle_cardinal",
+      "timing_binding": null
+    },
+    {
+      "binding_state": "source-role-only-unbound",
+      "context": "field",
+      "coverage": "partial-down-only",
+      "current_frame_ids": [
+        "schala_field_walk_down_f00_v0",
+        "schala_field_walk_down_f01_v0",
+        "schala_field_walk_down_f02_v0"
+      ],
+      "evidence": "hypothesis",
+      "native_binding": null,
+      "related_engine_role_ids": [
+        "field_01"
+      ],
+      "role_id": "field_walk",
+      "timing_binding": null
+    },
+    {
+      "binding_state": "source-role-only-unbound",
+      "context": "battle",
+      "coverage": "partial-one-pose",
+      "current_frame_ids": [
+        "schala_battle_ready_f00_v0"
+      ],
+      "evidence": "hypothesis",
+      "native_binding": null,
+      "related_engine_role_ids": [],
+      "role_id": "battle_ready",
+      "timing_binding": null
+    },
+    {
+      "binding_state": "source-role-only-unbound",
+      "context": "battle",
+      "coverage": "partial-two-poses",
+      "current_frame_ids": [
+        "schala_battle_cast_gather_f00_v0",
+        "schala_battle_cast_release_f00_v0"
+      ],
+      "evidence": "hypothesis",
+      "native_binding": null,
+      "related_engine_role_ids": [],
+      "role_id": "battle_cast",
+      "timing_binding": null
+    },
+    {
+      "binding_state": "source-role-only-unbound",
+      "context": "battle",
+      "coverage": "source-sequence-only-six-poses",
+      "current_frame_ids": [
+        "schala_battle_basic_attack_draw_f00_v0",
+        "schala_battle_basic_attack_open_f01_v0",
+        "schala_battle_basic_attack_pulse_f02_v0",
+        "schala_battle_basic_attack_followthrough_f03_v0",
+        "schala_battle_basic_attack_recoil_f04_v0",
+        "schala_battle_basic_attack_recover_f05_v0"
+      ],
+      "evidence": "hypothesis",
+      "native_binding": null,
+      "related_engine_role_ids": [],
+      "role_id": "battle_basic_attack",
+      "timing_binding": null
+    }
+  ],
+  "canonical_profiles": [
+    {
+      "auxiliary_contract_end_exclusive": "$E4:A928",
+      "auxiliary_end_basis": "next playable-character auxiliary pointer",
+      "auxiliary_high_bit_values_present": false,
+      "auxiliary_sha256": "721eab0b7857ceb614276ad28ec5ad7c0c79e7578666e9afea7ec8833ed31666",
+      "auxiliary_size": 296,
+      "auxiliary_start": "$E4:A800",
+      "declared_anchor_sequences": [
+        {
+          "byte_offset": 0,
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 4,
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 12,
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 24,
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 32,
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 40,
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 44,
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 48,
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 72,
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 92,
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 100,
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 104,
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 108,
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 132,
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "live_step_count": 3,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 140,
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        }
+      ],
+      "entrypoint_count": 74,
+      "evidence": "verified-static",
+      "facing_span": 296,
+      "full_block_aux_zero_mask_equals_primary_ff_mask": false,
+      "name": "Crono",
+      "next_pointer_is_contract_end": true,
+      "next_table_pointer": "$E4:A928",
+      "occupied_next_pointer_successor": null,
+      "pc_id": 0,
+      "primary_end_exclusive": "$E4:34A0",
+      "primary_ff_mask_equal_across_four_facings": true,
+      "primary_sha256": "43c629e4e3ab32a5bce56189cb4ef7821d920b6c12318aa45edd742eded95dff",
+      "primary_size": 1184,
+      "primary_start": "$E4:3000"
+    },
+    {
+      "auxiliary_contract_end_exclusive": "$E4:AA20",
+      "auxiliary_end_basis": "next playable-character auxiliary pointer",
+      "auxiliary_high_bit_values_present": false,
+      "auxiliary_sha256": "dfe632c8ae53d36d679d54e161d42314e022d0185549b95be0610d85807ac1ad",
+      "auxiliary_size": 248,
+      "auxiliary_start": "$E4:A928",
+      "declared_anchor_sequences": [
+        {
+          "byte_offset": 0,
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 4,
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 12,
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 24,
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 32,
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 40,
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "live_step_count": 7,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 44,
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "live_step_count": 3,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 48,
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 72,
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 92,
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 100,
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 104,
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 108,
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 132,
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "live_step_count": 3,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 140,
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        }
+      ],
+      "entrypoint_count": 62,
+      "evidence": "verified-static",
+      "facing_span": 248,
+      "full_block_aux_zero_mask_equals_primary_ff_mask": false,
+      "name": "Marle",
+      "next_pointer_is_contract_end": true,
+      "next_table_pointer": "$E4:AA20",
+      "occupied_next_pointer_successor": null,
+      "pc_id": 1,
+      "primary_end_exclusive": "$E4:3880",
+      "primary_ff_mask_equal_across_four_facings": true,
+      "primary_sha256": "7fc62fe6ed719de9e3448c68d03f90f171ba4b31a420db58a0c9fe20bac751bf",
+      "primary_size": 992,
+      "primary_start": "$E4:34A0"
+    },
+    {
+      "auxiliary_contract_end_exclusive": "$E4:AB3C",
+      "auxiliary_end_basis": "next playable-character auxiliary pointer",
+      "auxiliary_high_bit_values_present": false,
+      "auxiliary_sha256": "ab76d471427face95fd53534352f59dbf4e2f301bf41e27d480b82e62e16645c",
+      "auxiliary_size": 284,
+      "auxiliary_start": "$E4:AA20",
+      "declared_anchor_sequences": [
+        {
+          "byte_offset": 0,
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 4,
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 12,
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 24,
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 32,
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 40,
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "live_step_count": 7,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 44,
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "live_step_count": 3,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 48,
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 72,
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 92,
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 100,
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 104,
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 108,
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 132,
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 140,
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        }
+      ],
+      "entrypoint_count": 71,
+      "evidence": "verified-static",
+      "facing_span": 284,
+      "full_block_aux_zero_mask_equals_primary_ff_mask": false,
+      "name": "Lucca",
+      "next_pointer_is_contract_end": true,
+      "next_table_pointer": "$E4:AB3C",
+      "occupied_next_pointer_successor": null,
+      "pc_id": 2,
+      "primary_end_exclusive": "$E4:3CF0",
+      "primary_ff_mask_equal_across_four_facings": true,
+      "primary_sha256": "850c331267d16be7b11611d4f69d2120fac8e0f314102794b47b09fa7c200607",
+      "primary_size": 1136,
+      "primary_start": "$E4:3880"
+    },
+    {
+      "auxiliary_contract_end_exclusive": "$E4:AC58",
+      "auxiliary_end_basis": "next playable-character auxiliary pointer",
+      "auxiliary_high_bit_values_present": false,
+      "auxiliary_sha256": "862ab3327146c980562b6572bb7c12f1b0122a75f4651615cdb7379959bf0ea4",
+      "auxiliary_size": 284,
+      "auxiliary_start": "$E4:AB3C",
+      "declared_anchor_sequences": [
+        {
+          "byte_offset": 0,
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 4,
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 12,
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 24,
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 32,
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 40,
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "live_step_count": 7,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 44,
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "live_step_count": 3,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 48,
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 72,
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 92,
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 100,
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 104,
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 108,
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 132,
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 140,
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        }
+      ],
+      "entrypoint_count": 71,
+      "evidence": "verified-static",
+      "facing_span": 284,
+      "full_block_aux_zero_mask_equals_primary_ff_mask": false,
+      "name": "Robo",
+      "next_pointer_is_contract_end": true,
+      "next_table_pointer": "$E4:AC58",
+      "occupied_next_pointer_successor": null,
+      "pc_id": 3,
+      "primary_end_exclusive": "$E4:4160",
+      "primary_ff_mask_equal_across_four_facings": true,
+      "primary_sha256": "3fd15908dd98720e53c3601b3750ec587717997d1b7f1ab65be6ce69ccf57fe6",
+      "primary_size": 1136,
+      "primary_start": "$E4:3CF0"
+    },
+    {
+      "auxiliary_contract_end_exclusive": "$E4:AD70",
+      "auxiliary_end_basis": "next playable-character auxiliary pointer",
+      "auxiliary_high_bit_values_present": false,
+      "auxiliary_sha256": "aad2cdba240e6e3b74c066851924601156026bef8a2abc5543a9bbb1cd20c224",
+      "auxiliary_size": 280,
+      "auxiliary_start": "$E4:AC58",
+      "declared_anchor_sequences": [
+        {
+          "byte_offset": 0,
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 4,
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 12,
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 24,
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 32,
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 40,
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 44,
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 48,
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 72,
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 92,
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 100,
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 104,
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 108,
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 132,
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 140,
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        }
+      ],
+      "entrypoint_count": 70,
+      "evidence": "verified-static",
+      "facing_span": 280,
+      "full_block_aux_zero_mask_equals_primary_ff_mask": false,
+      "name": "Frog",
+      "next_pointer_is_contract_end": true,
+      "next_table_pointer": "$E4:AD70",
+      "occupied_next_pointer_successor": null,
+      "pc_id": 4,
+      "primary_end_exclusive": "$E4:45C0",
+      "primary_ff_mask_equal_across_four_facings": true,
+      "primary_sha256": "48ec0306a22490165efb296fad3dc4f8353c49db10f01c28713bb80776fd3ceb",
+      "primary_size": 1120,
+      "primary_start": "$E4:4160"
+    },
+    {
+      "auxiliary_contract_end_exclusive": "$E4:AEC0",
+      "auxiliary_end_basis": "next playable-character auxiliary pointer",
+      "auxiliary_high_bit_values_present": false,
+      "auxiliary_sha256": "92b4d35a23dadb946495b958ffcd0ce413e3b9bd86c0f97b8fdc178a814de4b7",
+      "auxiliary_size": 336,
+      "auxiliary_start": "$E4:AD70",
+      "declared_anchor_sequences": [
+        {
+          "byte_offset": 0,
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 4,
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 12,
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 24,
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 32,
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 40,
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "live_step_count": 7,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 44,
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "live_step_count": 3,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 48,
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "live_step_count": 5,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 72,
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 92,
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 100,
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 104,
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 108,
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 132,
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 140,
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        }
+      ],
+      "entrypoint_count": 84,
+      "evidence": "verified-static",
+      "facing_span": 336,
+      "full_block_aux_zero_mask_equals_primary_ff_mask": false,
+      "name": "Ayla",
+      "next_pointer_is_contract_end": true,
+      "next_table_pointer": "$E4:AEC0",
+      "occupied_next_pointer_successor": null,
+      "pc_id": 5,
+      "primary_end_exclusive": "$E4:4B00",
+      "primary_ff_mask_equal_across_four_facings": true,
+      "primary_sha256": "ece49a6d2c7dc2af775489f49b917c55672991c766758c3444ba0b2545b87717",
+      "primary_size": 1344,
+      "primary_start": "$E4:45C0"
+    },
+    {
+      "auxiliary_contract_end_exclusive": "$E4:AFB4",
+      "auxiliary_end_basis": "derived from primary facing span; tail remains unclassified; entries 7 and 8 prove B600 is an occupied successor start",
+      "auxiliary_high_bit_values_present": false,
+      "auxiliary_sha256": "c696370f63352d53654b7b7abf2fb605462c8440330d9ac6b2cd2941db9d76c8",
+      "auxiliary_size": 244,
+      "auxiliary_start": "$E4:AEC0",
+      "declared_anchor_sequences": [
+        {
+          "byte_offset": 0,
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 4,
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "live_step_count": 6,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 12,
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "live_step_count": 5,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 24,
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 32,
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 40,
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "live_step_count": 7,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 44,
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "live_step_count": 3,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 48,
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 72,
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 92,
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 100,
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 104,
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 108,
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "live_step_count": 4,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 132,
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "live_step_count": 2,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        },
+        {
+          "byte_offset": 140,
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "live_step_count": 1,
+          "primary_auxiliary_terminators_aligned": true,
+          "primary_four_facing_terminators_aligned": true
+        }
+      ],
+      "entrypoint_count": 61,
+      "evidence": "verified-static",
+      "facing_span": 244,
+      "full_block_aux_zero_mask_equals_primary_ff_mask": false,
+      "name": "Magus",
+      "next_pointer_is_contract_end": false,
+      "next_table_pointer": "$E4:B600",
+      "occupied_next_pointer_successor": "$E4:B614",
+      "pc_id": 6,
+      "primary_end_exclusive": "$E4:4ED0",
+      "primary_ff_mask_equal_across_four_facings": true,
+      "primary_sha256": "2875f534a1baa2e7064a62f05d5efaaf9e130dea9de195e66f256571c2464896",
+      "primary_size": 976,
+      "primary_start": "$E4:4B00"
+    }
+  ],
+  "consumer_roles": {
+    "battle": {
+      "action_package_semantic_census": "open",
+      "critical_hp_override": {
+        "condition": "state-table scan exhausted, PC1HPCriticalStatus bit 0 set, and per-slot $A09B clear",
+        "entrypoint": 18,
+        "evidence": "verified-static"
+      },
+      "fixed_entrypoints": [
+        {
+          "conditions": "no visual-semantic name proved",
+          "consumers": [
+            "state-selector default when per-slot $A09B is nonzero",
+            "battle-start and service-8 per-slot disabled branch"
+          ],
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "role_id": "battle_00"
+        },
+        {
+          "conditions": "no stronger visual-semantic name proved",
+          "consumers": [
+            "state-selector default when per-slot $A09B is clear",
+            "multiple decoded state-table records",
+            "matched selector $FF substitution when $A0A7 is zero"
+          ],
+          "entrypoint": 3,
+          "evidence": "verified-static",
+          "role_id": "battle_03"
+        },
+        {
+          "conditions": "service 9 writes all three PC offset words; later $96F5 presence gate selects processed slots",
+          "consumers": [
+            "decoded state-table records 0 and 3",
+            "service-dispatch ID 9 raw $20 write"
+          ],
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "role_id": "battle_08"
+        },
+        {
+          "conditions": "early return when EventCommandD8Settings bit 0 is set; otherwise selected per slot only when $A09B is clear, with 00 selected when set",
+          "consumers": [
+            "service-dispatch ID 8 raw $28 write"
+          ],
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "role_id": "battle_0A"
+        },
+        {
+          "conditions": "selected per slot only when $A09B is clear, with 00 selected when set",
+          "consumers": [
+            "battle-start raw $30 write"
+          ],
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "role_id": "battle_0C"
+        },
+        {
+          "conditions": "state-table scan exhausted, PC1HPCriticalStatus bit 0 set, and per-slot $A09B clear",
+          "consumers": [
+            "post-state-table critical-status override"
+          ],
+          "entrypoint": 18,
+          "evidence": "verified-static",
+          "role_id": "battle_12"
+        },
+        {
+          "conditions": "no visual-semantic name proved",
+          "consumers": [
+            "decoded state-table record 2"
+          ],
+          "entrypoint": 26,
+          "evidence": "verified-static",
+          "role_id": "battle_1A"
+        },
+        {
+          "conditions": "no visual-semantic name proved",
+          "consumers": [
+            "decoded state-table records 12 and 13"
+          ],
+          "entrypoint": 35,
+          "evidence": "verified-static",
+          "role_id": "battle_23"
+        }
+      ],
+      "play_command": 2,
+      "state_selector_table": {
+        "decoded_records": [
+          {
+            "record0_forced_match_when_slot_$A119_nonzero": true,
+            "record_index": 0,
+            "requested_state_value": 129,
+            "requested_state_write_enabled": false,
+            "required_mask": 128,
+            "selector": 8,
+            "status_base_relative_offset": 0
+          },
+          {
+            "record_index": 1,
+            "requested_state_value": 2,
+            "requested_state_write_enabled": true,
+            "required_mask": 128,
+            "selector": 0,
+            "status_base_relative_offset": 1
+          },
+          {
+            "record_index": 2,
+            "requested_state_value": 4,
+            "requested_state_write_enabled": true,
+            "required_mask": 4,
+            "selector": 26,
+            "status_base_relative_offset": 1
+          },
+          {
+            "record_index": 3,
+            "requested_state_value": 5,
+            "requested_state_write_enabled": true,
+            "required_mask": 2,
+            "selector": 8,
+            "status_base_relative_offset": 1
+          },
+          {
+            "record_index": 4,
+            "requested_state_value": 8,
+            "requested_state_write_enabled": true,
+            "required_mask": 8,
+            "selector": 255,
+            "status_base_relative_offset": 1
+          },
+          {
+            "record_index": 5,
+            "requested_state_value": 13,
+            "requested_state_write_enabled": true,
+            "required_mask": 32,
+            "selector": 3,
+            "status_base_relative_offset": 1
+          },
+          {
+            "record_index": 6,
+            "requested_state_value": 9,
+            "requested_state_write_enabled": true,
+            "required_mask": 1,
+            "selector": 3,
+            "status_base_relative_offset": 1
+          },
+          {
+            "record_index": 7,
+            "requested_state_value": 14,
+            "requested_state_write_enabled": true,
+            "required_mask": 64,
+            "selector": 3,
+            "status_base_relative_offset": 1
+          },
+          {
+            "record_index": 8,
+            "requested_state_value": 3,
+            "requested_state_write_enabled": true,
+            "required_mask": 128,
+            "selector": 3,
+            "status_base_relative_offset": 4
+          },
+          {
+            "record_index": 9,
+            "requested_state_value": 3,
+            "requested_state_write_enabled": true,
+            "required_mask": 128,
+            "selector": 3,
+            "status_base_relative_offset": 9
+          },
+          {
+            "record_index": 10,
+            "requested_state_value": 6,
+            "requested_state_write_enabled": true,
+            "required_mask": 64,
+            "selector": 3,
+            "status_base_relative_offset": 4
+          },
+          {
+            "record_index": 11,
+            "requested_state_value": 6,
+            "requested_state_write_enabled": true,
+            "required_mask": 64,
+            "selector": 3,
+            "status_base_relative_offset": 9
+          },
+          {
+            "record_index": 12,
+            "requested_state_value": 7,
+            "requested_state_write_enabled": true,
+            "required_mask": 4,
+            "selector": 35,
+            "status_base_relative_offset": 4
+          },
+          {
+            "record_index": 13,
+            "requested_state_value": 7,
+            "requested_state_write_enabled": true,
+            "required_mask": 4,
+            "selector": 35,
+            "status_base_relative_offset": 9
+          },
+          {
+            "record_index": 14,
+            "requested_state_value": 12,
+            "requested_state_write_enabled": true,
+            "required_mask": 128,
+            "selector": 3,
+            "status_base_relative_offset": 3
+          },
+          {
+            "record_index": 15,
+            "requested_state_value": 12,
+            "requested_state_write_enabled": true,
+            "required_mask": 128,
+            "selector": 3,
+            "status_base_relative_offset": 8
+          }
+        ],
+        "evidence": "verified-static",
+        "no_record_match_default": {
+          "critical_override_evaluated_after_table_exhaustion": true,
+          "evidence": "verified-static",
+          "when_per_slot_$A09B_nonzero": 0,
+          "when_per_slot_$A09B_zero": 3
+        },
+        "record0_special_case": {
+          "evidence": "verified-static",
+          "forced_match": "only record 0 is also selected when per-slot $A119 is nonzero, even if its status mask does not match",
+          "normal_match": "selected status-base byte + $00 AND $80 is nonzero",
+          "requested_state_write_suppressed": true,
+          "selector": 8
+        },
+        "record_count": 16,
+        "record_size": 4,
+        "scan_rule": "first record whose selected status byte AND required mask is nonzero; otherwise continue in record order",
+        "selector_ff_dispatches_literally": false,
+        "selector_ff_resolution": {
+          "$A0A7_semantic_meaning": "unresolved",
+          "when_$A0A7_nonzero": "skip matched record",
+          "when_$A0A7_zero": "resolve selector to entrypoint $03"
+        },
+        "selector_values": [
+          0,
+          3,
+          8,
+          26,
+          35,
+          255
+        ],
+        "sha256": "1cfdd78e4dbe9c9c759d7b267053078b62ecd48fd1cf44d1df02346098cf07d7",
+        "size": 65,
+        "source_end_exclusive": "$CC:F7C0",
+        "source_start": "$CC:F77F",
+        "table_terminator": 255
+      },
+      "transition_calls": [
+        {
+          "condition": "writes all three PC offset words; later $96F5 presence gate selects processed slots",
+          "consumer": "service-dispatch ID 9",
+          "entrypoint": 8,
+          "evidence": "verified-static",
+          "raw_byte_offset": 32,
+          "visual_semantics": "unresolved"
+        },
+        {
+          "condition": "returns if EventCommandD8Settings bit 0 is set; otherwise per-slot $A09B clear selects 0A and set selects 00",
+          "consumer": "service-dispatch ID 8",
+          "entrypoint": 10,
+          "evidence": "verified-static",
+          "raw_byte_offset": 40,
+          "visual_semantics": "unresolved"
+        },
+        {
+          "condition": "per-slot $A09B clear selects 0C and set selects 00",
+          "consumer": "battle start",
+          "entrypoint": 12,
+          "evidence": "verified-static",
+          "raw_byte_offset": 48,
+          "visual_semantics": "unresolved"
+        }
+      ]
+    },
+    "field": {
+      "automatic_entrypoints": [
+        {
+          "conditions": "no stronger visual claim",
+          "consumer": "default and reset path",
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "role_id": "field_00"
+        },
+        {
+          "conditions": "movement below run threshold",
+          "consumer": "walking path",
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "role_id": "field_01"
+        },
+        {
+          "conditions": "run path outside the alternate player branch",
+          "consumer": "normal run path",
+          "entrypoint": 6,
+          "evidence": "verified-static",
+          "role_id": "field_06"
+        },
+        {
+          "conditions": "$1D32 == 0 and $1D33 == 0 and object is player and $E5 == 0",
+          "consumer": "player-specific alternate run branch",
+          "entrypoint": 23,
+          "evidence": "verified-static",
+          "role_id": "field_17"
+        },
+        {
+          "conditions": "$62 == 2 and object is player",
+          "consumer": "player-specific no-movement branch",
+          "entrypoint": 25,
+          "evidence": "verified-static",
+          "role_id": "field_19"
+        },
+        {
+          "conditions": "move-mode bit 2 set and vertical facing component nonzero",
+          "consumer": "special movement branch",
+          "entrypoint": 27,
+          "evidence": "verified-static",
+          "role_id": "field_1B"
+        },
+        {
+          "conditions": "idle counter and random gate pass",
+          "consumer": "rare no-movement RNG branch",
+          "entrypoint": 33,
+          "evidence": "verified-static",
+          "role_id": "field_21"
+        }
+      ],
+      "complete_location_event_operand_census": "open",
+      "event_commands": [
+        {
+          "namespace": "animation entrypoint",
+          "opcode": 170,
+          "role": "play operand animation looped"
+        },
+        {
+          "namespace": "animation entrypoint",
+          "opcode": 171,
+          "role": "play operand animation with count mode"
+        },
+        {
+          "namespace": "assembly-frame ID, not animation entrypoint",
+          "opcode": 172,
+          "role": "set static frame directly"
+        },
+        {
+          "namespace": "animation entrypoint",
+          "opcode": 174,
+          "role": "reset animation to entrypoint 00"
+        },
+        {
+          "namespace": "animation entrypoint",
+          "opcode": 179,
+          "role": "play entrypoint 00 looped"
+        },
+        {
+          "namespace": "animation entrypoint",
+          "opcode": 180,
+          "role": "play entrypoint 01 looped"
+        },
+        {
+          "namespace": "animation entrypoint",
+          "opcode": 183,
+          "role": "play operand animation with count mode"
+        }
+      ]
+    },
+    "menu": {
+      "engine_binding_state": "verified-static",
+      "entrypoints": [
+        {
+          "conditions": "loop passes party indices $08 down through $00",
+          "consumer": "reset sweep before party-exchange highlighting",
+          "entrypoint": 0,
+          "evidence": "verified-static",
+          "role_id": "menu_00"
+        },
+        {
+          "conditions": "slot index read from $0F0D",
+          "consumer": "hovered party-exchange slot",
+          "entrypoint": 1,
+          "evidence": "verified-static",
+          "role_id": "menu_01"
+        },
+        {
+          "conditions": "picked index at $0F00 has bit 7 clear",
+          "consumer": "picked party-exchange slot",
+          "entrypoint": 11,
+          "evidence": "verified-static",
+          "role_id": "menu_0B"
+        }
+      ],
+      "write_target": "$1811 plus character sprite-slot offset"
+    }
+  },
+  "engine_contract": {
+    "auxiliary": {
+      "battle_nonzero_transform": "raw delay",
+      "facing_blocks": 1,
+      "field_nonzero_transform": "raw delay",
+      "prebattle_transform": "raw value shifted right once",
+      "prebattle_window": 8,
+      "span_equals_one_primary_facing_block": true,
+      "unit": "delay/control value",
+      "zero_behavior": "consumer stop, reset, or repeat branch"
+    },
+    "bank_e4_roots": {
+      "auxiliary_root_address": "$E4:FFE6",
+      "auxiliary_root_value": "$E4:2800",
+      "entries": [
+        {
+          "evidence": "verified-static",
+          "role": "graphics_pointer_root",
+          "value": "$E4:2000"
+        },
+        {
+          "evidence": "verified-static",
+          "role": "assembly_pointer_root",
+          "value": "$E4:2300"
+        },
+        {
+          "evidence": "verified-static",
+          "role": "primary_animation_pointer_root",
+          "value": "$E4:2600"
+        },
+        {
+          "evidence": "verified-static",
+          "role": "auxiliary_animation_pointer_root",
+          "value": "$E4:2800"
+        },
+        {
+          "evidence": "verified-static",
+          "role": "palette_pointer_root",
+          "value": "$E4:2A00"
+        },
+        {
+          "evidence": "verified-static",
+          "role": "primary_animation_blob_root",
+          "value": "$E4:3000"
+        }
+      ],
+      "evidence": "verified-static",
+      "primary_root_address": "$E4:FFE4",
+      "primary_root_value": "$E4:2600",
+      "table_end_exclusive": "$E4:FFEC",
+      "table_start": "$E4:FFE0"
+    },
+    "canonical_preimage_spans": [
+      {
+        "claim": "eight canonical primary animation boundaries",
+        "evidence": "verified-static",
+        "label": "primary_pointer_table",
+        "sha256": "714256243fcc785111f753cee8ad7570ad92851b29c89aec2e791065c0374112",
+        "size": 16,
+        "source_end_exclusive": "$E4:2610",
+        "source_start": "$E4:2600"
+      },
+      {
+        "claim": "seven PC auxiliary starts plus occupied entries 7 and 8",
+        "evidence": "verified-static",
+        "label": "auxiliary_pointer_table",
+        "sha256": "6dd785de70ae03d1b9d88ed595629b7a9144d46542a837ce349430793c8b41d7",
+        "size": 18,
+        "source_end_exclusive": "$E4:2812",
+        "source_start": "$E4:2800"
+      },
+      {
+        "claim": "six roots including primary at E4:FFE4 and auxiliary at E4:FFE6",
+        "evidence": "verified-static",
+        "label": "bank_e4_animation_root_table",
+        "sha256": "69b14de5b606d41c88186ce6d8b4658465185472d0423f9d5400ee2074673f81",
+        "size": 12,
+        "source_end_exclusive": "$E4:FFEC",
+        "source_start": "$E4:FFE0"
+      },
+      {
+        "claim": "primary and auxiliary pointers are loaded independently",
+        "evidence": "verified-static",
+        "label": "field_pc_animation_pointer_load",
+        "sha256": "cb0d8f108a3028627706f191bfd145acabd727d0c12ee5768ea641a4649943d1",
+        "size": 37,
+        "source_end_exclusive": "$C0:4509",
+        "source_start": "$C0:44E4"
+      },
+      {
+        "claim": "AA AB AC AE B3 B4 B7 animation command namespace split",
+        "evidence": "verified-static",
+        "label": "field_event_animation_commands",
+        "sha256": "2cf746461f3607687fc0038f29663074523a641b112cf4c5256f4f8f4695f7a1",
+        "size": 303,
+        "source_end_exclusive": "$C0:2F96",
+        "source_start": "$C0:2E67"
+      },
+      {
+        "claim": "facing values 00 01 02 03 are assigned in documented up down left right handler order",
+        "evidence": "verified-static",
+        "label": "field_facing_value_order",
+        "sha256": "f9c34280deac40e216f5d0dd20bf5b4936937b2c453d1e2a9bb0fbdc384fd4d4",
+        "size": 16,
+        "source_end_exclusive": "$C0:5545",
+        "source_start": "$C0:5535"
+      },
+      {
+        "claim": "automatic field entrypoints 00 01 06 17 19 1B 21",
+        "evidence": "verified-static",
+        "label": "field_automatic_animation_selectors",
+        "sha256": "b605ee4acc2186c7c1026516527feec9d7daeb262289be7bdbb7275c4e6b7d83",
+        "size": 250,
+        "source_end_exclusive": "$C0:A26B",
+        "source_start": "$C0:A171"
+      },
+      {
+        "claim": "entrypoint times four, auxiliary delay read, zero termination",
+        "evidence": "verified-static",
+        "label": "field_auxiliary_tick",
+        "sha256": "f456b80280496233d7ff4d15347fcdba1293fe623d82f288d2109dcc79bc2a58",
+        "size": 94,
+        "source_end_exclusive": "$C0:CA76",
+        "source_start": "$C0:CA18"
+      },
+      {
+        "claim": "four-facing primary read and FF loop/end behavior",
+        "evidence": "verified-static",
+        "label": "field_primary_reader",
+        "sha256": "0a07d56c0d022796fdfaa3b660be8431df4c3b3e6263a9d29205c23c9a308861",
+        "size": 43,
+        "source_end_exclusive": "$C0:CBDC",
+        "source_start": "$C0:CBB1"
+      },
+      {
+        "claim": "field tile path assigns bank E4 at C0:CBEE",
+        "evidence": "verified-static",
+        "label": "field_primary_fixed_bank_assignment",
+        "sha256": "32055ebda8e9ae96b5b2f20b8ef5d2a51147329dd036d69a33204b5026c66d09",
+        "size": 40,
+        "source_end_exclusive": "$C0:CC04",
+        "source_start": "$C0:CBDC"
+      },
+      {
+        "claim": "battle readers at C1:2EBA and C1:2EEB are fixed to bank E4",
+        "evidence": "verified-static",
+        "label": "battle_prestate_fixed_bank_readers",
+        "sha256": "b0ca1d52a4027c8dc127dbaae6877ec131ddc1a6fa0f7b39adf303141021dd88",
+        "size": 85,
+        "source_end_exclusive": "$C1:2EF2",
+        "source_start": "$C1:2E9D"
+      },
+      {
+        "claim": "battle-start raw 30 selects 0C only when per-slot A09B is clear",
+        "evidence": "verified-static",
+        "label": "battle_start_entrypoint_0C",
+        "sha256": "ed5093460c81b9b0cdeb01071a00fa598b76236519a86ebb3e9fb7eb7bc2896f",
+        "size": 52,
+        "source_end_exclusive": "$C1:350F",
+        "source_start": "$C1:34DB"
+      },
+      {
+        "claim": "service 9 writes raw 20 to all three PC animation offsets",
+        "evidence": "verified-static",
+        "label": "battle_service_9_entrypoint_08",
+        "sha256": "0d98aa2f76252f1ada4ae2efe96bc06748c8a3c514ac2e31c12480b07401a07a",
+        "size": 32,
+        "source_end_exclusive": "$C1:356D",
+        "source_start": "$C1:354D"
+      },
+      {
+        "claim": "service 8 has EventCommandD8Settings and per-slot A09B gates",
+        "evidence": "verified-static",
+        "label": "battle_service_8_entrypoint_0A",
+        "sha256": "5edcf60064c073c38cdcfc0b973f6e1265c1d6529d1bc6f06f5cd27d88d0cc55",
+        "size": 112,
+        "source_end_exclusive": "$C1:35DD",
+        "source_start": "$C1:356D"
+      },
+      {
+        "claim": "eight auxiliary bytes shifted right once and eight primary bytes copied",
+        "evidence": "verified-static",
+        "label": "battle_preload_eight_step_copy",
+        "sha256": "6d33e5b5ea97b927aba8a84dea9122aeb778c8625bd002a2bbd8328a6a963fe1",
+        "size": 71,
+        "source_end_exclusive": "$C1:365D",
+        "source_start": "$C1:3616"
+      },
+      {
+        "claim": "auxiliary zero stop and raw delay with parallel primary read",
+        "evidence": "verified-static",
+        "label": "battle_animation_tick",
+        "sha256": "b4a519762310d5826d14779f0b9630441f11dc36a266e7e76a797cae9559efcf",
+        "size": 96,
+        "source_end_exclusive": "$C1:4310",
+        "source_start": "$C1:42B0"
+      },
+      {
+        "claim": "command 02 adds entrypoint times four to both stream bases",
+        "evidence": "verified-static",
+        "label": "battle_play_animation_setup",
+        "sha256": "99655d5542c731178a6b491ef8628cf43d973c7ac514e16a1d896caf9070190d",
+        "size": 117,
+        "source_end_exclusive": "$C1:4D79",
+        "source_start": "$C1:4D04"
+      },
+      {
+        "claim": "PC primary and auxiliary tables are read directly from fixed bank E4",
+        "evidence": "verified-static",
+        "label": "battle_pc_animation_pointer_setup",
+        "sha256": "a0ebb3b53721b6f60fc35487ca0925504fc1f94864d640a722070791959fe879",
+        "size": 182,
+        "source_end_exclusive": "$CC:EA34",
+        "source_start": "$CC:E97E"
+      },
+      {
+        "claim": "state table selector, FF branch rule, and critical-HP entrypoint 12",
+        "evidence": "verified-static",
+        "label": "battle_state_animation_selector",
+        "sha256": "ff121e39f6b11466ede6146f3d825a9e60386524c49ac4da229a7b439dbaa202",
+        "size": 197,
+        "source_end_exclusive": "$C1:305C",
+        "source_start": "$C1:2F97"
+      },
+      {
+        "claim": "sixteen four-byte records followed by FF terminator",
+        "evidence": "verified-static",
+        "label": "battle_state_animation_table",
+        "sha256": "1cfdd78e4dbe9c9c759d7b267053078b62ecd48fd1cf44d1df02346098cf07d7",
+        "size": 65,
+        "source_end_exclusive": "$CC:F7C0",
+        "source_start": "$CC:F77F"
+      },
+      {
+        "claim": "menu reset 00, hovered 01, and picked 0B selectors",
+        "evidence": "verified-static",
+        "label": "menu_party_animation_roles",
+        "sha256": "29c9932688948f812d7023609fb17a86a0860b4aadbe0674f12ca8841975a6c0",
+        "size": 59,
+        "source_end_exclusive": "$C2:C9AE",
+        "source_start": "$C2:C973"
+      },
+      {
+        "claim": "menu assigns bank E4, resolves E4:FFE4 and E4:FFE6, and reads bank E4",
+        "evidence": "verified-static",
+        "label": "menu_animation_pointer_roots",
+        "sha256": "6c9db20dbe5903d27cdac67860cfea8c37305c94d2bd302a44d9218dd71ebc8d",
+        "size": 202,
+        "source_end_exclusive": "$C2:F4EC",
+        "source_start": "$C2:F422"
+      },
+      {
+        "claim": "menu adds animation ID times four to primary and auxiliary bases",
+        "evidence": "verified-static",
+        "label": "menu_animation_tick",
+        "sha256": "7a64d2ab69eee75e3b1ae87742aff99cb53b87b397dd27459a1b5c768aa8e123",
+        "size": 106,
+        "source_end_exclusive": "$C2:F707",
+        "source_start": "$C2:F69D"
+      }
+    ],
+    "current_body_cardinal_source_role_order": [
+      "down",
+      "up",
+      "left",
+      "right"
+    ],
+    "declared_anchor_terminators_are_aligned": true,
+    "entrypoint_rule": "entrypoint N begins at byte offset N * 4; it is not a fixed four-byte record",
+    "entrypoint_stride": 4,
+    "facing_count": 4,
+    "facing_numeric_values": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "facing_order": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "facing_order_evidence": {
+      "canonical_preimage_span": "field_facing_value_order",
+      "direction_names": "documented",
+      "numeric_immediate_order": "verified-static"
+    },
+    "fixed_bank_setup_and_reader_contract": {
+      "claim": "the listed canonical field, battle, and menu consumers resolve or read PC animation data in fixed bank E4",
+      "evidence": "verified-static",
+      "nonclaim": "no expanded-bank reader adapter, production placement, or installed redirection is proved",
+      "sites": [
+        {
+          "bank": "$E4",
+          "context": "field auxiliary timing",
+          "evidence": "verified-static",
+          "pinned_span": "field_auxiliary_tick",
+          "sites": [
+            "$C0:CA35",
+            "$C0:CA3D"
+          ]
+        },
+        {
+          "bank": "$E4",
+          "context": "field primary frame tile path",
+          "evidence": "verified-static",
+          "pinned_span": "field_primary_fixed_bank_assignment",
+          "sites": [
+            "$C0:CBEE"
+          ]
+        },
+        {
+          "bank": "$E4",
+          "context": "battle state-transition reads",
+          "evidence": "verified-static",
+          "pinned_span": "battle_prestate_fixed_bank_readers",
+          "sites": [
+            "$C1:2EBA",
+            "$C1:2EEB"
+          ]
+        },
+        {
+          "bank": "$E4",
+          "context": "battle pre-animation eight-step copies",
+          "evidence": "verified-static",
+          "pinned_span": "battle_preload_eight_step_copy",
+          "sites": [
+            "$C1:3639",
+            "$C1:3650"
+          ]
+        },
+        {
+          "bank": "$E4",
+          "context": "battle auxiliary and primary animation tick",
+          "evidence": "verified-static",
+          "pinned_span": "battle_animation_tick",
+          "sites": [
+            "$C1:42D0",
+            "$C1:4300"
+          ]
+        },
+        {
+          "bank": "$E4",
+          "context": "battle PC pointer setup",
+          "evidence": "verified-static",
+          "pinned_span": "battle_pc_animation_pointer_setup",
+          "sites": [
+            "$CC:E9BC",
+            "$CC:E9C5",
+            "$CC:E9CE",
+            "$CC:E9D3",
+            "$CC:E9DC",
+            "$CC:E9E5",
+            "$CC:E9EF",
+            "$CC:E9F5",
+            "$CC:E9FB",
+            "$CC:EA01"
+          ]
+        },
+        {
+          "bank": "$E4",
+          "context": "menu PC pointer setup",
+          "evidence": "verified-static",
+          "pinned_span": "menu_animation_pointer_roots",
+          "sites": [
+            "$C2:F42D",
+            "$C2:F431",
+            "$C2:F4C3",
+            "$C2:F4C8",
+            "$C2:F4E1",
+            "$C2:F4E6"
+          ]
+        }
+      ]
+    },
+    "full_block_terminator_masks_are_globally_equivalent": false,
+    "overlap_policy": "overlapping or suffix sequences are valid only when every shared source token agrees",
+    "primary": {
+      "facing_blocks": 4,
+      "field_loop_end_marker": 255,
+      "unit": "assembly-frame ID"
+    },
+    "source_role_order_is_engine_facing_order": false
+  },
+  "evidence": {
+    "canonical_declared_anchor_sequences": "verified-static",
+    "canonical_engine_byte_contract": "verified-static",
+    "current_body_packet_identity": "verified-static",
+    "current_frame_to_authoring_role_association": "hypothesis",
+    "facing_direction_names": "documented",
+    "new_runtime_evidence": "not performed",
+    "static_evidence_sufficient_for_animation_blob_or_install": false,
+    "static_evidence_sufficient_for_metadata_contract_v0": true,
+    "static_evidence_sufficient_for_source_role_authoring": true
+  },
+  "inputs": {
+    "canonical_rom": {
+      "identity": "Chrono Trigger US Rev0 headerless",
+      "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+      "size": 4194304
+    },
+    "current_body_report": {
+      "fresh_source_audit_equal": true,
+      "path": "references/schala_current_body_packet_v0.json",
+      "sha256": "c5a04304739e5fac3125cb840e9745bafae0f45b0b2869b4743b5d25c1c1313b",
+      "size": 11953
+    }
+  },
+  "interpretive_reference": {
+    "auditor_reads_checkout": false,
+    "authority": "documented labels and commentary only; canonical ROM preimages are the byte authority",
+    "evidence": "documented",
+    "expected_commit": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+    "path": "references/ct_disassembly",
+    "project_epoch_clone_contains_checkout": false,
+    "upstream": "https://github.com/dscotton/ct_disassembly"
+  },
+  "nonclaims": [
+    "This report does not assign a Schala ROM address, expanded allocation, pointer, hook, or production payload.",
+    "The 16 source ordinals remain provisional authoring order and are not native animation IDs.",
+    "The battle fixed entrypoints are engine anchors, not Schala pose or action bindings.",
+    "The state-selector value FF is a proved control case, not a literal animation entrypoint dispatch.",
+    "The meaning of $A0A7 remains unresolved even though its two selector-FF branches are statically proved.",
+    "The fixed-bank E4 setup/reader sites do not establish an expanded-bank adapter, production placement, or installed redirect.",
+    "No complete animation inventory, auxiliary timing stream, battle sprite, logical PC $07 runtime, Focus insert composition, or audio binding is claimed.",
+    "The Magus auxiliary contract ends at $E4:AFB4 by facing-span derivation; $E4:AFB4-$E4:B5FF remains unclassified and is not free space, while entry 7 occupies $E4:B600-$E4:B613 before successor entry 8 at $E4:B614."
+  ],
+  "open_gates": [
+    "Complete the location-event animation operand census with playable-PC object identity, including the AC static-frame namespace.",
+    "Map normal attack, cast, item, hurt, KO, revive, victory, and all eight Schala-tech battle action packages to entrypoints without guessing visual semantics.",
+    "Give each used Schala role complete facing coverage, an explicit source-frame sequence, a timing policy, and a conflict-free overlap ledger.",
+    "Resolve every source frame to a packet record and pass paired primary/auxiliary bounds and terminator validation before emitting an animation blob.",
+    "Keep production allocation and fixed-bank adapters closed until named expanded allocations, exact hook preimages, vanilla PC 00-06 equivalence, and the runtime matrix pass."
+  ],
+  "schema_version": 1,
+  "scope": {
+    "animation_blob_emitted": false,
+    "audio_bound": false,
+    "focus_inserts_composited": false,
+    "logical_pc07_runtime_proved": false,
+    "production_allocation_assigned": false,
+    "production_hook_assigned": false,
+    "rom_installable": false,
+    "source_only": true,
+    "source_ordinals_are_native_animation_ids": false
+  },
+  "status": "pass-metadata-only-with-open-gates"
+}

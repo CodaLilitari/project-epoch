@@ -80,18 +80,21 @@ remain exact.
   `20fcbd08b954311cb948bbcfc0a90eb3bbb6cc46ad00524c0add8ac0e9ecc0d7`
 - Quarantined provisional-runtime IPS SHA-256:
   `484bad4051f39d92015f57a927471d8287ca4e3652a1eef5a9475fabbf4b3cae`
-- 765 automated checks are discovered: 763 pass and two historical
-  live-artifact rebuild checks skip explicitly because their original pinned
-  `D:` toolchain is unavailable. Coverage includes the recovered clone,
+- 822 automated checks are discovered: 818 pass and four skip explicitly.
+  Two skips are privilege-dependent real-symlink cases with deterministic
+  mocked reparse coverage passing; two are historical live-artifact rebuild
+  checks whose original pinned `D:` toolchain is unavailable. Coverage
+  includes the recovered clone,
   deterministic BSV inputs, SRAM/WRAM canaries, save layouts, ExHiROM
   controls, canonical event and record audits, original content, portraits,
   sprite packing, field palette routing, source-only recruitment, the v2
   sidecar/load/lifecycle contracts, three standalone 65C816 binding
   candidates, native-Mesen event `$11C`, WRAM-ownership trace contracts,
   Focus adapter boundaries, the Glass Focus and current 16-frame body-packet
-  audits, the compressed NPC/enemy sprite corpus, and the bounded Schala NPC
+  audits, the animation semantic contract, the hardened field-animation
+  probe, the compressed NPC/enemy sprite corpus, and the bounded Schala NPC
   comparison.
-- All 85 source-controlled Python tools parse successfully.
+- All 87 source-controlled Python tools parse successfully.
 - Independent repeated builds produce identical IPS, report, and manifest
   bytes.
 
@@ -313,8 +316,33 @@ remain exact prefixes; the six poses add only ten unique tiles. These are
 provisional source ordinals, not animation IDs. No Focus insert, sound,
 pointer, allocation, action/item binding, PC `$07`, save path, or Epoch data
 is assigned. The metadata-only report and stop gates are in
-`docs/schala_current_body_packet_v0.md`; semantic animation-slot and
-auxiliary-animation mapping is the next source-only engine gate.
+`docs/schala_current_body_packet_v0.md`.
+The follow-on fail-closed semantic audit now proves that native animation
+`N` starts at byte offset `N * 4` but is not a fixed four-byte record, that
+facing values `$00-$03` use the statically verified order documented as
+up/down/left/right, and that `$E4:2800` is the
+separate one-facing timing/control family rather than graphics data. It pins
+the fixed-bank field, menu, and battle readers; menu roles `$00/$01/$0B`;
+the minimum battle anchors `$00/$03/$08/$0A/$0C/$12/$1A/$23`; and all
+sixteen records in the `$CC:F77F` battle-state selector table. Magus's timing
+contract ends at `$E4:AFB4`; the following tail remains unclassified and is
+not free space, while `$E4:B600` and `$E4:B614` are occupied successor
+entries. This is metadata-only static evidence, not a Schala frame binding,
+animation blob, allocation, hook, or PC `$07` runtime claim; see
+`docs/schala_animation_semantic_contract_v0.md`.
+A separate hardened, isolated native-Mesen probe has now reproduced the field
+timing relationship twice per route at the prepared Spekkio checkpoint. Idle
+selector `$00` repeatedly terminates and reloads through the timing stream;
+holding Right switches the Magus leader to selector `$01` and executes the
+six right-facing frame bytes `$10-$15`, each paired with delay `$07`, before
+timing zero resets the cursor. The following primary `$FF` is statically
+present but is not fetched on that path. These are checkpoint-bounded,
+exploratory runtime findings; no PC `$07`, Schala render, movement success,
+save behavior, allocation, or installed adapter is inferred.
+Only the bounded launcher, collector, synthetic tests, and public-safe receipt
+are tracked; all raw runs and game/emulator artifacts remain ignored. Exact
+source identities, fresh-run receipts, containment gates, and nonclaims are in
+`docs/schala_field_animation_runtime_probe_v0.md`.
 A separate fail-closed corpus audit now decodes all 241 structurally valid
 compressed graphics packets in `$07-$F7`; the 237 selectors reached by the
 audited NPC and normal-enemy descriptor tables remain a distinct subset, and

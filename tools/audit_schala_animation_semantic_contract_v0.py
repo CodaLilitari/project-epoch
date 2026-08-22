@@ -24,6 +24,18 @@ ROOT: Final = pathlib.Path(__file__).resolve().parents[1]
 TOOL_VERSION: Final = "1.0.0"
 SCHEMA_VERSION: Final = 1
 
+# These values pin the complete public metadata contract independently of the
+# checked-in report file.  ``build_report`` never reads that report.  Any
+# nested key, container shape, scalar value, or encoded length drift must be a
+# deliberate source change followed by an explicit re-pin.
+EXPECTED_REPORT_SIZE: Final = 68305
+EXPECTED_REPORT_SHA256: Final = (
+    "50374adab6ad07522184b8b0ffc26300f3dd15abe7e817bd48263b20c3a2b015"
+)
+EXPECTED_REPORT_SCHEMA_SHA256: Final = (
+    "9de5476ee2e14da9ed315f9c9737e2e77b9ea790ca64207f1a003336463fa50f"
+)
+
 CANONICAL_ROM_SIZE: Final = 0x400000
 CANONICAL_ROM_SHA1: Final = "de5822f4f2f7a55acb8926d4c0eaa63d5d989312"
 CANONICAL_ROM_SHA256: Final = (
@@ -41,11 +53,13 @@ CURRENT_BODY_REPORT_SHA256: Final = (
 
 PRIMARY_POINTER_TABLE_FILE: Final = 0x242600
 AUX_POINTER_TABLE_FILE: Final = 0x242800
+ANIMATION_ROOT_TABLE_FILE: Final = 0x24FFE0
 ANIMATION_BANK_FILE_BASE: Final = 0x240000
 FACING_COUNT: Final = 4
 ENTRYPOINT_STRIDE: Final = 4
 PRIMARY_TERMINATOR: Final = 0xFF
 AUX_TERMINATOR: Final = 0x00
+ENGINE_FACING_ORDER: Final = ("up", "down", "left", "right")
 
 EXPECTED_PRIMARY_BOUNDARIES: Final = (
     0x3000,
@@ -66,12 +80,32 @@ EXPECTED_AUX_POINTERS: Final = (
     0xAD70,
     0xAEC0,
     0xB600,
+    0xB614,
+)
+
+EXPECTED_ANIMATION_ROOTS: Final = (
+    ("graphics_pointer_root", 0x2000),
+    ("assembly_pointer_root", 0x2300),
+    ("primary_animation_pointer_root", 0x2600),
+    ("auxiliary_animation_pointer_root", 0x2800),
+    ("palette_pointer_root", 0x2A00),
+    ("primary_animation_blob_root", 0x3000),
 )
 
 FIELD_ENTRYPOINTS: Final = (0x00, 0x01, 0x06, 0x17, 0x19, 0x1B, 0x21)
-BATTLE_FIXED_ENTRYPOINTS: Final = (0x03, 0x08, 0x0A, 0x0C, 0x12, 0x1A, 0x23)
+MENU_ENTRYPOINTS: Final = (0x00, 0x01, 0x0B)
+BATTLE_FIXED_ENTRYPOINTS: Final = (
+    0x00,
+    0x03,
+    0x08,
+    0x0A,
+    0x0C,
+    0x12,
+    0x1A,
+    0x23,
+)
 DECLARED_ANCHORS: Final = tuple(
-    sorted(set(FIELD_ENTRYPOINTS + BATTLE_FIXED_ENTRYPOINTS))
+    sorted(set(FIELD_ENTRYPOINTS + MENU_ENTRYPOINTS + BATTLE_FIXED_ENTRYPOINTS))
 )
 
 BATTLE_STATE_SELECTOR_VALUES: Final = (0x00, 0x03, 0x08, 0x1A, 0x23, 0xFF)
@@ -79,6 +113,138 @@ BATTLE_STATE_TABLE_FILE_START: Final = 0x0CF77F
 BATTLE_STATE_TABLE_FILE_END: Final = 0x0CF7C0
 BATTLE_STATE_TABLE_SHA256: Final = (
     "1cfdd78e4dbe9c9c759d7b267053078b62ecd48fd1cf44d1df02346098cf07d7"
+)
+
+EXPECTED_BATTLE_STATE_RECORDS: Final = (
+    {
+        "record_index": 0,
+        "status_base_relative_offset": 0x00,
+        "required_mask": 0x80,
+        "requested_state_value": 0x81,
+        "requested_state_write_enabled": False,
+        "selector": 0x08,
+        "record0_forced_match_when_slot_$A119_nonzero": True,
+    },
+    {
+        "record_index": 1,
+        "status_base_relative_offset": 0x01,
+        "required_mask": 0x80,
+        "requested_state_value": 0x02,
+        "requested_state_write_enabled": True,
+        "selector": 0x00,
+    },
+    {
+        "record_index": 2,
+        "status_base_relative_offset": 0x01,
+        "required_mask": 0x04,
+        "requested_state_value": 0x04,
+        "requested_state_write_enabled": True,
+        "selector": 0x1A,
+    },
+    {
+        "record_index": 3,
+        "status_base_relative_offset": 0x01,
+        "required_mask": 0x02,
+        "requested_state_value": 0x05,
+        "requested_state_write_enabled": True,
+        "selector": 0x08,
+    },
+    {
+        "record_index": 4,
+        "status_base_relative_offset": 0x01,
+        "required_mask": 0x08,
+        "requested_state_value": 0x08,
+        "requested_state_write_enabled": True,
+        "selector": 0xFF,
+    },
+    {
+        "record_index": 5,
+        "status_base_relative_offset": 0x01,
+        "required_mask": 0x20,
+        "requested_state_value": 0x0D,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 6,
+        "status_base_relative_offset": 0x01,
+        "required_mask": 0x01,
+        "requested_state_value": 0x09,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 7,
+        "status_base_relative_offset": 0x01,
+        "required_mask": 0x40,
+        "requested_state_value": 0x0E,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 8,
+        "status_base_relative_offset": 0x04,
+        "required_mask": 0x80,
+        "requested_state_value": 0x03,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 9,
+        "status_base_relative_offset": 0x09,
+        "required_mask": 0x80,
+        "requested_state_value": 0x03,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 10,
+        "status_base_relative_offset": 0x04,
+        "required_mask": 0x40,
+        "requested_state_value": 0x06,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 11,
+        "status_base_relative_offset": 0x09,
+        "required_mask": 0x40,
+        "requested_state_value": 0x06,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 12,
+        "status_base_relative_offset": 0x04,
+        "required_mask": 0x04,
+        "requested_state_value": 0x07,
+        "requested_state_write_enabled": True,
+        "selector": 0x23,
+    },
+    {
+        "record_index": 13,
+        "status_base_relative_offset": 0x09,
+        "required_mask": 0x04,
+        "requested_state_value": 0x07,
+        "requested_state_write_enabled": True,
+        "selector": 0x23,
+    },
+    {
+        "record_index": 14,
+        "status_base_relative_offset": 0x03,
+        "required_mask": 0x80,
+        "requested_state_value": 0x0C,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
+    {
+        "record_index": 15,
+        "status_base_relative_offset": 0x08,
+        "required_mask": 0x80,
+        "requested_state_value": 0x0C,
+        "requested_state_write_enabled": True,
+        "selector": 0x03,
+    },
 )
 
 
@@ -196,9 +362,16 @@ ENGINE_SPANS: Final = (
     EngineSpan(
         "auxiliary_pointer_table",
         0x242800,
-        0x242810,
-        "76ffb90a88c1313ba4fcac38ef7631649f6e9b9022c8665ea4466d0448e704c6",
-        "seven PC auxiliary starts plus occupied entry 7",
+        0x242812,
+        "6dd785de70ae03d1b9d88ed595629b7a9144d46542a837ce349430793c8b41d7",
+        "seven PC auxiliary starts plus occupied entries 7 and 8",
+    ),
+    EngineSpan(
+        "bank_e4_animation_root_table",
+        0x24FFE0,
+        0x24FFEC,
+        "69b14de5b606d41c88186ce6d8b4658465185472d0423f9d5400ee2074673f81",
+        "six roots including primary at E4:FFE4 and auxiliary at E4:FFE6",
     ),
     EngineSpan(
         "field_pc_animation_pointer_load",
@@ -213,6 +386,13 @@ ENGINE_SPANS: Final = (
         0x002F96,
         "2cf746461f3607687fc0038f29663074523a641b112cf4c5256f4f8f4695f7a1",
         "AA AB AC AE B3 B4 B7 animation command namespace split",
+    ),
+    EngineSpan(
+        "field_facing_value_order",
+        0x005535,
+        0x005545,
+        "f9c34280deac40e216f5d0dd20bf5b4936937b2c453d1e2a9bb0fbdc384fd4d4",
+        "facing values 00 01 02 03 are assigned in documented up down left right handler order",
     ),
     EngineSpan(
         "field_automatic_animation_selectors",
@@ -236,24 +416,45 @@ ENGINE_SPANS: Final = (
         "four-facing primary read and FF loop/end behavior",
     ),
     EngineSpan(
-        "battle_preload_entrypoint_0C",
-        0x0134E4,
-        0x013502,
-        "807712b62546d9c98d35910371f582e0a7b0b30c4850785901615d2c50d41ee3",
-        "fixed byte offset 30 selects entrypoint 0C",
+        "field_primary_fixed_bank_assignment",
+        0x00CBDC,
+        0x00CC04,
+        "32055ebda8e9ae96b5b2f20b8ef5d2a51147329dd036d69a33204b5026c66d09",
+        "field tile path assigns bank E4 at C0:CBEE",
     ),
     EngineSpan(
-        "battle_preload_entrypoint_0A",
-        0x0135B7,
-        0x0135D6,
-        "7b156e8c31b34b24bfb8d992714c87e6b7158001d40b8e58097edd0413e49f0d",
-        "fixed byte offset 28 selects entrypoint 0A",
+        "battle_prestate_fixed_bank_readers",
+        0x012E9D,
+        0x012EF2,
+        "b0ca1d52a4027c8dc127dbaae6877ec131ddc1a6fa0f7b39adf303141021dd88",
+        "battle readers at C1:2EBA and C1:2EEB are fixed to bank E4",
+    ),
+    EngineSpan(
+        "battle_start_entrypoint_0C",
+        0x0134DB,
+        0x01350F,
+        "ed5093460c81b9b0cdeb01071a00fa598b76236519a86ebb3e9fb7eb7bc2896f",
+        "battle-start raw 30 selects 0C only when per-slot A09B is clear",
+    ),
+    EngineSpan(
+        "battle_service_9_entrypoint_08",
+        0x01354D,
+        0x01356D,
+        "0d98aa2f76252f1ada4ae2efe96bc06748c8a3c514ac2e31c12480b07401a07a",
+        "service 9 writes raw 20 to all three PC animation offsets",
+    ),
+    EngineSpan(
+        "battle_service_8_entrypoint_0A",
+        0x01356D,
+        0x0135DD,
+        "5edcf60064c073c38cdcfc0b973f6e1265c1d6529d1bc6f06f5cd27d88d0cc55",
+        "service 8 has EventCommandD8Settings and per-slot A09B gates",
     ),
     EngineSpan(
         "battle_preload_eight_step_copy",
         0x013616,
-        0x01365C,
-        "a96a085cb099e0f2c813d08f150466755034914706f9270953674de35f82b3e1",
+        0x01365D,
+        "6d33e5b5ea97b927aba8a84dea9122aeb778c8625bd002a2bbd8328a6a963fe1",
         "eight auxiliary bytes shifted right once and eight primary bytes copied",
     ),
     EngineSpan(
@@ -271,6 +472,13 @@ ENGINE_SPANS: Final = (
         "command 02 adds entrypoint times four to both stream bases",
     ),
     EngineSpan(
+        "battle_pc_animation_pointer_setup",
+        0x0CE97E,
+        0x0CEA34,
+        "a0ebb3b53721b6f60fc35487ca0925504fc1f94864d640a722070791959fe879",
+        "PC primary and auxiliary tables are read directly from fixed bank E4",
+    ),
+    EngineSpan(
         "battle_state_animation_selector",
         0x012F97,
         0x01305C,
@@ -283,6 +491,27 @@ ENGINE_SPANS: Final = (
         BATTLE_STATE_TABLE_FILE_END,
         BATTLE_STATE_TABLE_SHA256,
         "sixteen four-byte records followed by FF terminator",
+    ),
+    EngineSpan(
+        "menu_party_animation_roles",
+        0x02C973,
+        0x02C9AE,
+        "29c9932688948f812d7023609fb17a86a0860b4aadbe0674f12ca8841975a6c0",
+        "menu reset 00, hovered 01, and picked 0B selectors",
+    ),
+    EngineSpan(
+        "menu_animation_pointer_roots",
+        0x02F422,
+        0x02F4EC,
+        "6c9db20dbe5903d27cdac67860cfea8c37305c94d2bd302a44d9218dd71ebc8d",
+        "menu assigns bank E4, resolves E4:FFE4 and E4:FFE6, and reads bank E4",
+    ),
+    EngineSpan(
+        "menu_animation_tick",
+        0x02F69D,
+        0x02F707,
+        "7a64d2ab69eee75e3b1ae87742aff99cb53b87b397dd27459a1b5c768aa8e123",
+        "menu adds animation ID times four to primary and auxiliary bases",
     ),
 )
 
@@ -336,6 +565,176 @@ FIELD_CONSUMER_ROLES: Final = (
         "consumer": "rare no-movement RNG branch",
         "conditions": "idle counter and random gate pass",
         "evidence": "verified-static",
+    },
+)
+
+
+BATTLE_CONSUMER_ROLES: Final = (
+    {
+        "role_id": "battle_00",
+        "entrypoint": 0x00,
+        "consumers": (
+            "state-selector default when per-slot $A09B is nonzero",
+            "battle-start and service-8 per-slot disabled branch",
+        ),
+        "conditions": "no visual-semantic name proved",
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "battle_03",
+        "entrypoint": 0x03,
+        "consumers": (
+            "state-selector default when per-slot $A09B is clear",
+            "multiple decoded state-table records",
+            "matched selector $FF substitution when $A0A7 is zero",
+        ),
+        "conditions": "no stronger visual-semantic name proved",
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "battle_08",
+        "entrypoint": 0x08,
+        "consumers": (
+            "decoded state-table records 0 and 3",
+            "service-dispatch ID 9 raw $20 write",
+        ),
+        "conditions": (
+            "service 9 writes all three PC offset words; later $96F5 "
+            "presence gate selects processed slots"
+        ),
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "battle_0A",
+        "entrypoint": 0x0A,
+        "consumers": ("service-dispatch ID 8 raw $28 write",),
+        "conditions": (
+            "early return when EventCommandD8Settings bit 0 is set; otherwise "
+            "selected per slot only when $A09B is clear, with 00 selected when set"
+        ),
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "battle_0C",
+        "entrypoint": 0x0C,
+        "consumers": ("battle-start raw $30 write",),
+        "conditions": (
+            "selected per slot only when $A09B is clear, with 00 selected when set"
+        ),
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "battle_12",
+        "entrypoint": 0x12,
+        "consumers": ("post-state-table critical-status override",),
+        "conditions": (
+            "state-table scan exhausted, PC1HPCriticalStatus bit 0 set, and "
+            "per-slot $A09B clear"
+        ),
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "battle_1A",
+        "entrypoint": 0x1A,
+        "consumers": ("decoded state-table record 2",),
+        "conditions": "no visual-semantic name proved",
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "battle_23",
+        "entrypoint": 0x23,
+        "consumers": ("decoded state-table records 12 and 13",),
+        "conditions": "no visual-semantic name proved",
+        "evidence": "verified-static",
+    },
+)
+
+
+MENU_CONSUMER_ROLES: Final = (
+    {
+        "role_id": "menu_00",
+        "entrypoint": 0x00,
+        "consumer": "reset sweep before party-exchange highlighting",
+        "conditions": "loop passes party indices $08 down through $00",
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "menu_01",
+        "entrypoint": 0x01,
+        "consumer": "hovered party-exchange slot",
+        "conditions": "slot index read from $0F0D",
+        "evidence": "verified-static",
+    },
+    {
+        "role_id": "menu_0B",
+        "entrypoint": 0x0B,
+        "consumer": "picked party-exchange slot",
+        "conditions": "picked index at $0F00 has bit 7 clear",
+        "evidence": "verified-static",
+    },
+)
+
+
+FIXED_BANK_SETUP_AND_READ_SITES: Final = (
+    {
+        "context": "field auxiliary timing",
+        "sites": ("$C0:CA35", "$C0:CA3D"),
+        "pinned_span": "field_auxiliary_tick",
+        "bank": "$E4",
+    },
+    {
+        "context": "field primary frame tile path",
+        "sites": ("$C0:CBEE",),
+        "pinned_span": "field_primary_fixed_bank_assignment",
+        "bank": "$E4",
+    },
+    {
+        "context": "battle state-transition reads",
+        "sites": ("$C1:2EBA", "$C1:2EEB"),
+        "pinned_span": "battle_prestate_fixed_bank_readers",
+        "bank": "$E4",
+    },
+    {
+        "context": "battle pre-animation eight-step copies",
+        "sites": ("$C1:3639", "$C1:3650"),
+        "pinned_span": "battle_preload_eight_step_copy",
+        "bank": "$E4",
+    },
+    {
+        "context": "battle auxiliary and primary animation tick",
+        "sites": ("$C1:42D0", "$C1:4300"),
+        "pinned_span": "battle_animation_tick",
+        "bank": "$E4",
+    },
+    {
+        "context": "battle PC pointer setup",
+        "sites": (
+            "$CC:E9BC",
+            "$CC:E9C5",
+            "$CC:E9CE",
+            "$CC:E9D3",
+            "$CC:E9DC",
+            "$CC:E9E5",
+            "$CC:E9EF",
+            "$CC:E9F5",
+            "$CC:E9FB",
+            "$CC:EA01",
+        ),
+        "pinned_span": "battle_pc_animation_pointer_setup",
+        "bank": "$E4",
+    },
+    {
+        "context": "menu PC pointer setup",
+        "sites": (
+            "$C2:F42D",
+            "$C2:F431",
+            "$C2:F4C3",
+            "$C2:F4C8",
+            "$C2:F4E1",
+            "$C2:F4E6",
+        ),
+        "pinned_span": "menu_animation_pointer_roots",
+        "bank": "$E4",
     },
 )
 
@@ -431,6 +830,7 @@ EXPECTED_TOP_LEVEL_KEYS: Final = frozenset(
         "status",
         "scope",
         "inputs",
+        "interpretive_reference",
         "engine_contract",
         "canonical_profiles",
         "consumer_roles",
@@ -454,6 +854,46 @@ def canonical_report_bytes(report: Mapping[str, Any]) -> bytes:
     return (
         json.dumps(report, indent=2, sort_keys=True, ensure_ascii=True) + "\n"
     ).encode("utf-8")
+
+
+def _metadata_shape(value: Any) -> Any:
+    """Return the exact JSON-container/type/length shape of public metadata.
+
+    The shape deliberately includes every mapping key, every list element,
+    and every string length.  Tuples and all non-JSON-native values fail
+    closed instead of being silently normalized by ``json.dumps``.
+    """
+
+    if isinstance(value, Mapping):
+        entries: list[list[Any]] = []
+        for key in sorted(value):
+            if type(key) is not str:
+                raise AnimationContractError("report mapping key is not a string")
+            entries.append([key, _metadata_shape(value[key])])
+        return ["mapping", entries]
+    if type(value) is list:
+        return ["list", [_metadata_shape(child) for child in value]]
+    if value is None:
+        return ["null"]
+    if type(value) is bool:
+        return ["boolean"]
+    if type(value) is int:
+        return ["integer"]
+    if type(value) is str:
+        return ["string", len(value)]
+    raise AnimationContractError(
+        f"report contains unsupported value type: {type(value).__name__}"
+    )
+
+
+def metadata_schema_sha256(report: Mapping[str, Any]) -> str:
+    shape_bytes = json.dumps(
+        _metadata_shape(report),
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=True,
+    ).encode("utf-8")
+    return sha256(shape_bytes)
 
 
 def _snes_label(file_offset: int) -> str:
@@ -550,12 +990,18 @@ def verify_pointer_tables(rom: bytes) -> None:
     )
     auxiliary = tuple(
         _read_u16_le(rom, AUX_POINTER_TABLE_FILE + index * 2)
-        for index in range(8)
+        for index in range(9)
+    )
+    roots = tuple(
+        _read_u16_le(rom, ANIMATION_ROOT_TABLE_FILE + index * 2)
+        for index in range(6)
     )
     if primary != EXPECTED_PRIMARY_BOUNDARIES:
         raise AnimationContractError("primary animation boundary table drifted")
     if auxiliary != EXPECTED_AUX_POINTERS:
         raise AnimationContractError("auxiliary animation pointer table drifted")
+    if roots != tuple(value for _, value in EXPECTED_ANIMATION_ROOTS):
+        raise AnimationContractError("bank E4 animation root table drifted")
 
 
 def _first_value(stream: bytes, value: int, start: int) -> int:
@@ -719,6 +1165,7 @@ def analyze_profile(rom: bytes, profile: PcAnimationProfile) -> dict[str, Any]:
             )
         next_pointer_is_end = True
         end_basis = "next playable-character auxiliary pointer"
+        occupied_next_pointer_successor = None
     else:
         expected_derived_end = profile.aux_start + facing_span
         if profile.aux_contract_end != expected_derived_end:
@@ -727,8 +1174,16 @@ def analyze_profile(rom: bytes, profile: PcAnimationProfile) -> dict[str, Any]:
             raise AnimationContractError("occupied pointer 7 treated as Magus end")
         if next_table_pointer != 0xB600:
             raise AnimationContractError("occupied auxiliary pointer 7 drifted")
+        if EXPECTED_AUX_POINTERS[8] != 0xB614:
+            raise AnimationContractError("occupied auxiliary pointer 8 drifted")
         next_pointer_is_end = False
-        end_basis = "derived from primary facing span; tail remains unclassified"
+        end_basis = (
+            "derived from primary facing span; tail remains unclassified; "
+            "entries 7 and 8 prove B600 is an occupied successor start"
+        )
+        occupied_next_pointer_successor = _animation_label(
+            EXPECTED_AUX_POINTERS[8]
+        )
 
     anchor_sequences = [
         analyze_declared_anchor(blocks, auxiliary, entrypoint)
@@ -752,6 +1207,7 @@ def analyze_profile(rom: bytes, profile: PcAnimationProfile) -> dict[str, Any]:
         "auxiliary_sha256": profile.aux_sha256,
         "auxiliary_high_bit_values_present": False,
         "next_table_pointer": _animation_label(next_table_pointer),
+        "occupied_next_pointer_successor": occupied_next_pointer_successor,
         "next_pointer_is_contract_end": next_pointer_is_end,
         "auxiliary_end_basis": end_basis,
         "full_block_aux_zero_mask_equals_primary_ff_mask": False,
@@ -774,6 +1230,23 @@ def analyze_battle_state_table(rom: bytes) -> dict[str, Any]:
     selector_values = tuple(sorted({record[3] for record in records}))
     if selector_values != BATTLE_STATE_SELECTOR_VALUES:
         raise AnimationContractError("battle state selector set drifted")
+    decoded_records: list[dict[str, Any]] = []
+    for record_index, record in enumerate(records):
+        decoded: dict[str, Any] = {
+            "record_index": record_index,
+            "status_base_relative_offset": record[0],
+            "required_mask": record[1],
+            "requested_state_value": record[2],
+            "requested_state_write_enabled": not bool(record[2] & 0x80),
+            "selector": record[3],
+        }
+        if record_index == 0:
+            decoded["record0_forced_match_when_slot_$A119_nonzero"] = True
+        if decoded != EXPECTED_BATTLE_STATE_RECORDS[record_index]:
+            raise AnimationContractError(
+                f"battle state decoded record {record_index} drifted"
+            )
+        decoded_records.append(decoded)
     return {
         "source_start": _snes_label(BATTLE_STATE_TABLE_FILE_START),
         "source_end_exclusive": _snes_label(BATTLE_STATE_TABLE_FILE_END),
@@ -783,6 +1256,29 @@ def analyze_battle_state_table(rom: bytes) -> dict[str, Any]:
         "record_size": 4,
         "table_terminator": 0xFF,
         "selector_values": list(selector_values),
+        "scan_rule": (
+            "first record whose selected status byte AND required mask is "
+            "nonzero; otherwise continue in record order"
+        ),
+        "decoded_records": decoded_records,
+        "record0_special_case": {
+            "normal_match": (
+                "selected status-base byte + $00 AND $80 is nonzero"
+            ),
+            "forced_match": (
+                "only record 0 is also selected when per-slot $A119 is nonzero, "
+                "even if its status mask does not match"
+            ),
+            "requested_state_write_suppressed": True,
+            "selector": 0x08,
+            "evidence": "verified-static",
+        },
+        "no_record_match_default": {
+            "when_per_slot_$A09B_nonzero": 0x00,
+            "when_per_slot_$A09B_zero": 0x03,
+            "critical_override_evaluated_after_table_exhaustion": True,
+            "evidence": "verified-static",
+        },
         "selector_ff_dispatches_literally": False,
         "selector_ff_resolution": {
             "when_$A0A7_nonzero": "skip matched record",
@@ -837,6 +1333,7 @@ def validate_metadata_only_report(report: Mapping[str, Any]) -> None:
         "production_hook_assigned",
         "production_allocation_assigned",
         "logical_pc07_runtime_proved",
+        "source_ordinals_are_native_animation_ids",
         "focus_inserts_composited",
         "audio_bound",
     )
@@ -844,26 +1341,100 @@ def validate_metadata_only_report(report: Mapping[str, Any]) -> None:
         raise AnimationContractError("report contains a production-facing claim")
     if scope.get("source_only") is not True:
         raise AnimationContractError("report is not source-only")
+    inputs = report.get("inputs")
+    if not isinstance(inputs, Mapping) or frozenset(inputs) != {
+        "canonical_rom",
+        "current_body_report",
+    }:
+        raise AnimationContractError("machine-input schema drifted")
+    interpretive = report.get("interpretive_reference")
+    expected_interpretive = {
+        "path": "references/ct_disassembly",
+        "upstream": "https://github.com/dscotton/ct_disassembly",
+        "expected_commit": DISASSEMBLY_COMMIT,
+        "auditor_reads_checkout": False,
+        "project_epoch_clone_contains_checkout": False,
+        "authority": (
+            "documented labels and commentary only; canonical ROM preimages "
+            "are the byte authority"
+        ),
+        "evidence": "documented",
+    }
+    if interpretive != expected_interpretive:
+        raise AnimationContractError("interpretive-reference contract drifted")
+    engine = report.get("engine_contract")
+    if not isinstance(engine, Mapping):
+        raise AnimationContractError("engine contract is missing")
+    if engine.get("facing_order") != list(ENGINE_FACING_ORDER):
+        raise AnimationContractError("engine facing order drifted")
+    if engine.get("source_role_order_is_engine_facing_order") is not False:
+        raise AnimationContractError("source role order conflated with engine order")
+    fixed_bank = engine.get("fixed_bank_setup_and_reader_contract")
+    if not isinstance(fixed_bank, Mapping):
+        raise AnimationContractError("fixed-bank setup/reader contract is missing")
+    if len(fixed_bank.get("sites", ())) != len(FIXED_BANK_SETUP_AND_READ_SITES):
+        raise AnimationContractError("fixed-bank setup/reader census drifted")
+    if "no expanded-bank reader adapter" not in str(
+        fixed_bank.get("nonclaim", "")
+    ):
+        raise AnimationContractError("expanded-bank reader gate is missing")
+
+    consumers = report.get("consumer_roles")
+    if not isinstance(consumers, Mapping):
+        raise AnimationContractError("consumer roles are missing")
+    battle = consumers.get("battle")
+    menu = consumers.get("menu")
+    if not isinstance(battle, Mapping) or not isinstance(menu, Mapping):
+        raise AnimationContractError("battle or menu consumer roles are missing")
+    if tuple(
+        row.get("entrypoint") for row in battle.get("fixed_entrypoints", ())
+    ) != BATTLE_FIXED_ENTRYPOINTS:
+        raise AnimationContractError("battle fixed entrypoint minimum drifted")
+    if tuple(
+        row.get("entrypoint") for row in menu.get("entrypoints", ())
+    ) != MENU_ENTRYPOINTS:
+        raise AnimationContractError("menu entrypoint roles drifted")
+    evidence = report.get("evidence")
+    if not isinstance(evidence, Mapping):
+        raise AnimationContractError("evidence summary is missing")
+    if evidence.get("static_evidence_sufficient_for_metadata_contract_v0") is not True:
+        raise AnimationContractError("metadata-contract evidence gate drifted")
+    if evidence.get("static_evidence_sufficient_for_source_role_authoring") is not True:
+        raise AnimationContractError("source-authoring evidence gate drifted")
+    if evidence.get("static_evidence_sufficient_for_animation_blob_or_install") is not False:
+        raise AnimationContractError("production evidence gate drifted")
 
     def visit(value: Any) -> None:
         if isinstance(value, Mapping):
             for key, child in value.items():
-                if key in FORBIDDEN_REPORT_KEYS:
+                if type(key) is not str:
+                    raise AnimationContractError("report mapping key is not a string")
+                if key.lower() in FORBIDDEN_REPORT_KEYS:
                     raise AnimationContractError(
                         f"forbidden metadata key present: {key}"
                     )
                 visit(child)
-        elif isinstance(value, list):
+        elif type(value) is list:
             for child in value:
                 visit(child)
-        elif isinstance(value, bytes):
-            raise AnimationContractError("raw bytes present in report")
+        elif value is None or type(value) in (bool, int, str):
+            return
+        else:
+            raise AnimationContractError(
+                f"unsupported report value type: {type(value).__name__}"
+            )
 
     visit(report)
     encoded = canonical_report_bytes(report).lower()
     for forbidden in (b".sfc", b".smc", b"private/", b"private\\"):
         if forbidden in encoded:
             raise AnimationContractError("private ROM path leaked into report")
+    schema_sha256 = metadata_schema_sha256(report)
+    if schema_sha256 != EXPECTED_REPORT_SCHEMA_SHA256:
+        raise AnimationContractError("closed nested report schema drifted")
+    exact = canonical_report_bytes(report)
+    if len(exact) != EXPECTED_REPORT_SIZE or sha256(exact) != EXPECTED_REPORT_SHA256:
+        raise AnimationContractError("exact public metadata report identity drifted")
 
 
 def build_report(rom: bytes) -> dict[str, Any]:
@@ -898,15 +1469,35 @@ def build_report(rom: bytes) -> dict[str, Any]:
                 "sha256": CURRENT_BODY_REPORT_SHA256,
                 "fresh_source_audit_equal": True,
             },
-            "disassembly": {
-                "path": "references/ct_disassembly",
-                "commit": DISASSEMBLY_COMMIT,
-                "authority": "labels and commentary only; canonical preimages are authoritative",
-            },
+        },
+        "interpretive_reference": {
+            "path": "references/ct_disassembly",
+            "upstream": "https://github.com/dscotton/ct_disassembly",
+            "expected_commit": DISASSEMBLY_COMMIT,
+            "auditor_reads_checkout": False,
+            "project_epoch_clone_contains_checkout": False,
+            "authority": (
+                "documented labels and commentary only; canonical ROM "
+                "preimages are the byte authority"
+            ),
+            "evidence": "documented",
         },
         "engine_contract": {
-            "facing_order": ["down", "up", "left", "right"],
+            "facing_order": list(ENGINE_FACING_ORDER),
+            "facing_numeric_values": [0, 1, 2, 3],
+            "facing_order_evidence": {
+                "numeric_immediate_order": "verified-static",
+                "direction_names": "documented",
+                "canonical_preimage_span": "field_facing_value_order",
+            },
             "facing_count": FACING_COUNT,
+            "current_body_cardinal_source_role_order": [
+                "down",
+                "up",
+                "left",
+                "right",
+            ],
+            "source_role_order_is_engine_facing_order": False,
             "entrypoint_stride": ENTRYPOINT_STRIDE,
             "entrypoint_rule": "entrypoint N begins at byte offset N * 4; it is not a fixed four-byte record",
             "overlap_policy": "overlapping or suffix sequences are valid only when every shared source token agrees",
@@ -927,6 +1518,42 @@ def build_report(rom: bytes) -> dict[str, Any]:
             },
             "full_block_terminator_masks_are_globally_equivalent": False,
             "declared_anchor_terminators_are_aligned": True,
+            "bank_e4_roots": {
+                "table_start": "$E4:FFE0",
+                "table_end_exclusive": "$E4:FFEC",
+                "entries": [
+                    {
+                        "role": role,
+                        "value": _animation_label(value),
+                        "evidence": "verified-static",
+                    }
+                    for role, value in EXPECTED_ANIMATION_ROOTS
+                ],
+                "primary_root_address": "$E4:FFE4",
+                "primary_root_value": "$E4:2600",
+                "auxiliary_root_address": "$E4:FFE6",
+                "auxiliary_root_value": "$E4:2800",
+                "evidence": "verified-static",
+            },
+            "fixed_bank_setup_and_reader_contract": {
+                "sites": [
+                    {
+                        **reader,
+                        "sites": list(reader["sites"]),
+                        "evidence": "verified-static",
+                    }
+                    for reader in FIXED_BANK_SETUP_AND_READ_SITES
+                ],
+                "claim": (
+                    "the listed canonical field, battle, and menu consumers "
+                    "resolve or read PC animation data in fixed bank E4"
+                ),
+                "nonclaim": (
+                    "no expanded-bank reader adapter, production placement, "
+                    "or installed redirection is proved"
+                ),
+                "evidence": "verified-static",
+            },
             "canonical_preimage_spans": engine_spans,
         },
         "canonical_profiles": profiles,
@@ -972,34 +1599,58 @@ def build_report(rom: bytes) -> dict[str, Any]:
                 ],
                 "complete_location_event_operand_census": "open",
             },
+            "menu": {
+                "entrypoints": [dict(role) for role in MENU_CONSUMER_ROLES],
+                "write_target": "$1811 plus character sprite-slot offset",
+                "engine_binding_state": "verified-static",
+            },
             "battle": {
                 "play_command": 0x02,
                 "fixed_entrypoints": [
-                    {
-                        "entrypoint": entrypoint,
-                        "semantic_role": "unresolved",
-                        "evidence": "verified-static",
-                    }
-                    for entrypoint in BATTLE_FIXED_ENTRYPOINTS
+                    {**role, "consumers": list(role["consumers"])}
+                    for role in BATTLE_CONSUMER_ROLES
                 ],
-                "prebattle_fixed_offsets": [
+                "transition_calls": [
                     {
-                        "byte_offset": 0x28,
-                        "entrypoint": 0x0A,
-                        "semantic_role": "unresolved prebattle branch",
+                        "consumer": "service-dispatch ID 9",
+                        "raw_byte_offset": 0x20,
+                        "entrypoint": 0x08,
+                        "condition": (
+                            "writes all three PC offset words; later $96F5 "
+                            "presence gate selects processed slots"
+                        ),
+                        "visual_semantics": "unresolved",
                         "evidence": "verified-static",
                     },
                     {
-                        "byte_offset": 0x30,
+                        "consumer": "service-dispatch ID 8",
+                        "raw_byte_offset": 0x28,
+                        "entrypoint": 0x0A,
+                        "condition": (
+                            "returns if EventCommandD8Settings bit 0 is set; "
+                            "otherwise per-slot $A09B clear selects 0A and set selects 00"
+                        ),
+                        "visual_semantics": "unresolved",
+                        "evidence": "verified-static",
+                    },
+                    {
+                        "consumer": "battle start",
+                        "raw_byte_offset": 0x30,
                         "entrypoint": 0x0C,
-                        "semantic_role": "unresolved prebattle branch",
+                        "condition": (
+                            "per-slot $A09B clear selects 0C and set selects 00"
+                        ),
+                        "visual_semantics": "unresolved",
                         "evidence": "verified-static",
                     },
                 ],
                 "state_selector_table": state_table,
                 "critical_hp_override": {
                     "entrypoint": 0x12,
-                    "condition": "PC1HPCriticalStatus bit 0 after state-table scan",
+                    "condition": (
+                        "state-table scan exhausted, PC1HPCriticalStatus bit 0 "
+                        "set, and per-slot $A09B clear"
+                    ),
                     "evidence": "verified-static",
                 },
                 "action_package_semantic_census": "open",
@@ -1014,10 +1665,14 @@ def build_report(rom: bytes) -> dict[str, Any]:
             "Keep production allocation and fixed-bank adapters closed until named expanded allocations, exact hook preimages, vanilla PC 00-06 equivalence, and the runtime matrix pass.",
         ],
         "evidence": {
-            "canonical_engine_contract": "verified-static",
+            "canonical_engine_byte_contract": "verified-static",
+            "facing_direction_names": "documented",
             "canonical_declared_anchor_sequences": "verified-static",
             "current_body_packet_identity": "verified-static",
             "current_frame_to_authoring_role_association": "hypothesis",
+            "static_evidence_sufficient_for_metadata_contract_v0": True,
+            "static_evidence_sufficient_for_source_role_authoring": True,
+            "static_evidence_sufficient_for_animation_blob_or_install": False,
             "new_runtime_evidence": "not performed",
         },
         "nonclaims": [
@@ -1026,8 +1681,9 @@ def build_report(rom: bytes) -> dict[str, Any]:
             "The battle fixed entrypoints are engine anchors, not Schala pose or action bindings.",
             "The state-selector value FF is a proved control case, not a literal animation entrypoint dispatch.",
             "The meaning of $A0A7 remains unresolved even though its two selector-FF branches are statically proved.",
+            "The fixed-bank E4 setup/reader sites do not establish an expanded-bank adapter, production placement, or installed redirect.",
             "No complete animation inventory, auxiliary timing stream, battle sprite, logical PC $07 runtime, Focus insert composition, or audio binding is claimed.",
-            "The Magus auxiliary contract ends at $E4:AFB4 by facing-span derivation; $E4:AFB4-$E4:B5FF remains unclassified and is not free space.",
+            "The Magus auxiliary contract ends at $E4:AFB4 by facing-span derivation; $E4:AFB4-$E4:B5FF remains unclassified and is not free space, while entry 7 occupies $E4:B600-$E4:B613 before successor entry 8 at $E4:B614.",
         ],
     }
     validate_metadata_only_report(report)

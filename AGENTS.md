@@ -154,10 +154,30 @@ These are separate namespaces. Never conflate them.
   partial packet with exact reconstruction, while preserving the complete
   ten-frame graphics and assembly streams as prefixes. The ordinals are
   provisional source order, not engine animation IDs. It adds no Focus
-  inserts, audio, animation slots, pointers, allocation, action/item binding,
-  runtime sprite, or PC `$07` claim. Map the semantic animation-slot and
-  `$E4:2800` auxiliary-animation contract before authoring the remaining
-  inventory or installing any packet.
+  inserts, audio, animation pointers, allocation, action/item binding,
+  runtime sprite, or PC `$07` claim.
+- The canonical animation semantic contract is now mapped far enough for
+  source-role authoring, not installation. Engine facing values `$00-$03`
+  have verified-static dispatch order; their documented names are
+  up/down/left/right. The existing source-art order down/up/left/right is a
+  separate namespace and must not be silently reordered. Entrypoint `N`
+  begins at `N*4`, but four bytes is an entrypoint stride, not a fixed record
+  length; overlapping/suffix sequences are valid only when shared primary and
+  auxiliary tokens agree.
+- `$E4:2800` is the auxiliary timing/control pointer table, not graphics. Each
+  vanilla PC auxiliary contract is one primary-facing span. Magus is bounded
+  only through `$E4:AFB4`; `$E4:AFB4-$E4:B5FF` remains unclassified and is not
+  free space, while table entries at `$E4:B600` and `$E4:B614` prove occupied
+  successor timing data. Do not infer visual semantics from a fixed numeric
+  field/menu/battle anchor.
+- A hardened tracked native-Mesen launcher/collector reproduces only the field
+  relation between main-frame and timing streams: Magus/right-facing selector `$01`
+  reads `$10-$15` with six `$07` delays and resets on timing zero before the
+  following primary `$FF` is fetched. This is exploratory, checkpoint-bounded
+  evidence, not a Schala, PC `$07`, expanded-bank, allocation, or save-safety
+  proof. The tracked code contains no raw trace or game artifact. Raw traces,
+  ROM/SRAM/state files, screenshots, and emulator binaries remain ignored and
+  must never enter source control.
 - Recruitment party operation 1 is not a capacity-safe append: with three
   active PCs it replaces slot 3 and moves the displaced PC to reserve. Require
   an explicit open-slot helper; use reserve registration on the full branch.
@@ -204,8 +224,12 @@ private Schala-over-Lucca smoke now verifies the partial cardinal packet
 without claiming PC `$07`. Current work is the evidence-gated Schala PC `$07`
 foundation: finish the remaining adapter/runtime matrix while compiling only
 original, provenance-backed authoring data outside the ROM. The current 16
-body frames are packable but semantically unbound; map the native animation
-slots and auxiliary-animation family before expanding the art inventory.
+body frames are packable but remain natively unbound. The stream shape,
+fixed-bank setup/reader sites, and minimum automatic/menu/battle anchors are
+now mapped; the next animation gates are the complete playable-PC
+location-event operand census, data-driven battle action-package census,
+complete source-role/facing inventory, and an explicit expanded-bank reader
+design.
 
 The clone diagnostic must separately account for:
 

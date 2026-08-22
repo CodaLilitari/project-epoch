@@ -706,8 +706,90 @@ battle staging, DMA, expanded-bank reads, action `$90`, item `$E8`, sound,
 allocation, hook, PC `$07`, save/load, New Game+, or Epoch behavior. It also
 does not close the full 241-packet, near-match, silhouette, or finished-sheet
 originality gates. The next safe source-only engine step is to map semantic
-animation slots and the auxiliary-animation contract before authoring the
-remaining field and battle inventory.
+animation entrypoints and the auxiliary-animation contract before authoring
+the remaining field and battle inventory. The following subsection records
+the completed result of that follow-on gate and its still-open consumer
+censuses.
+
+#### Animation semantic contract and field timing probe
+
+`verified-static` for canonical stream geometry, roots, consumers, and
+selector control flow; `exploratory-runtime` for one exact native-Mesen field
+checkpoint; no Schala or PC `$07` binding
+
+The read-only semantic-contract audit closes the first engine gate left by the
+16-frame packet without promoting its source ordinals. It proves:
+
+- engine primary-facing numeric order is `$00-$03`; the direction names are
+  documented as up, down, left, right, while the existing cardinal source
+  roles remain down, up, left, right;
+- animation entrypoint `N` begins at byte offset `N * 4`, but sequences are
+  variable-length and may overlap or share suffixes beyond that stride;
+- `$E4:FFE4` resolves the primary boundary table at `$E4:2600`, while
+  `$E4:FFE6` resolves the distinct auxiliary timing/control table at
+  `$E4:2800`;
+- each playable PC has one auxiliary contract equal to one primary-facing
+  span;
+- Magus's bounded auxiliary contract is `$E4:AEC0-$E4:AFB4`;
+  `$E4:AFB4-$E4:B5FF` remains unclassified and is not free space, and occupied
+  successor entries begin at `$E4:B600` and `$E4:B614`;
+- fixed-bank `$E4` setup/reader sites are present in the field, menu, and
+  battle paths and therefore require an explicit relocated-bank adapter;
+- menu roles are `$00` reset, `$01` hovered, and `$0B` picked;
+- the minimum automatic battle anchors are
+  `$00/$03/$08/$0A/$0C/$12/$1A/$23`; and
+- `$CC:F77F-$CC:F7BF` is sixteen four-byte state-selection records followed by
+  its `$FF` table terminator. Record 0's `$A119` forced match, the
+  `$A09B`-dependent `$00/$03` default, the later critical `$12` override, and
+  the nonliteral selector-`$FF` branches are all pinned. `$A0A7` itself remains
+  unresolved.
+
+The canonical metadata report is
+`references/schala_animation_semantic_contract_v0.json`, 68,305 bytes,
+SHA-256
+`50374adab6ad07522184b8b0ffc26300f3dd15abe7e817bd48263b20c3a2b015`.
+It is reproduced only to stdout by
+`tools/audit_schala_animation_semantic_contract_v0.py`; 21 focused tests pin
+all source hashes, instruction-aligned code/table preimages, decoded records,
+overlap rules, closed metadata shape, explicit missing-ROM failure, CLI
+behavior, absence of explicit artifact-write calls, and byte equality with the
+checked-in report.
+No primary stream, timing stream, pixel, save/state/trace content, ROM path,
+patch, payload, allocation, or hook is serialized.
+
+A hardened tracked native-Mesen launcher and collector then tested the field
+reader relationship at the exact `event11c-checkpoint-v5-spekkio-talkable`
+checkpoint. Two final idle runs and two final Right-input runs used unique
+disposable same-stem ROM/SRAM/state/config staging trees and preserved every
+pinned source. The
+Right route was collision-blocked, but it still switched the Magus leader from
+selector `$00` to selector `$01`, fixing right-facing as engine facing 3 at
+that checkpoint. One complete reset-to-reset loop read primary frame bytes
+`$10-$15` from `$E4:4DE0-$E4:4DE5`, each paired with delay `$07` from
+`$E4:AEC4-$E4:AEC9`, then observed timing zero at `$E4:AECA` and reloaded the
+entrypoint. Canonical `$E4:4DE6=$FF` was statically cross-checked but was not
+fetched by the primary reader because the timing zero reset the cursor first.
+
+The frozen tracked collector is 19,345 bytes, SHA-256 `9abca7ba...`; the
+launcher is 55,200 bytes, SHA-256 `d5cde9c3...`; and its synthetic test module
+is 30,429 bytes, SHA-256 `3ed78c6d...`. The focused suite discovers 35 tests:
+33 pass, while two real-symlink cases skip only because the Windows token
+lacks symlink privilege. Deterministic mocked dangling-link/reparse tests
+pass. The final idle
+normalized trace and semantic-manifest identities are `ff984961...` and
+`4cde0ddd...`; the final Right identities are `d671b787...` and `c24cc516...`.
+Both repetitions agree under the documented normalization. The earlier private
+aggregate remains unchanged at 11,615 bytes, SHA-256 `829a0fe4...`, as
+historical exploratory provenance. Endpoint PNGs remain supporting
+presentation only. Raw traces, manifests, screenshots, ROMs, SRAM, savestates,
+emulator binaries, and extracted streams must never be published. Exact
+receipts and reproduction boundaries are in
+`docs/schala_field_animation_runtime_probe_v0.md`.
+
+This runtime result proves only the paired field-reader behavior at one
+vanilla seven-PC checkpoint. It does not prove free movement, another facing,
+another PC, a location-event operand, battle action packages, a relocated
+bank, Schala rendering, logical PC `$07`, save/load, or production timing.
 
 #### Compressed sprite corpus and bounded Schala NPC comparison
 
@@ -858,6 +940,10 @@ principal eighth-ID collisions before installing any production hook:
   per-character packet hashes, tile-index envelope, and field transfer limit.
 - `docs/schala_sprite_packet_foundation_v0.md` records the deterministic
   ten-frame native-shaped graphics/assembly packet and exact reconstruction.
+- `docs/schala_animation_semantic_contract_v0.md` records the entrypoint
+  stride, auxiliary timing family, fixed-bank setup/reader sites,
+  field/menu/battle minimum, and decoded battle-state selector table without
+  binding Schala.
 - `docs/schala_supported_slot_sprite_smoke_v0.md` records the accepted
   pre-Continue full-load field replay, clean control, and supported-slot
   Schala render without promoting it to PC `$07`.
@@ -1410,6 +1496,12 @@ states where useful, and a written result.
 - [x] Partial clean-room field/battle foundation compiles deterministically.
 - [x] All ten current frames compile into the measured four-object packet
       shape and reconstruct exactly from serialized graphics/assembly bytes.
+- [x] Native entrypoint/timing stream geometry, facing order, fixed-bank
+      readers, menu roles, and the minimum battle/state selectors are pinned
+      without assigning Schala-native IDs.
+- [x] Two fresh native-Mesen repetitions per route reproduce one complete
+      Magus/right-facing walk-selector timing loop at the prepared field
+      checkpoint; the result remains exploratory and checkpoint-bounded.
 - [x] The four current cardinal records load and render after a recorded
       Continue/slot-load and field movement in Lucca's supported slot.
 - [ ] Complete original field/battle sprite inventory and compilation.
@@ -1515,19 +1607,23 @@ states where useful, and a written result.
 5. Implement the selected raw `$80-$90` command overlay, beginning with the
    sparse action table and the mandatory signed/direct-index branches; trace
    the `$C1:D70D` runtime flag before action execution.
-6. Map the exact semantic animation slots and `$E4:2800` auxiliary-animation
-   contract before authoring the remaining field/battle inventory. The ten
-   gameplay frames plus six Glass Focus body poses already fit one 91-tile,
-   16-record native-shaped partial packet and reconstruct exactly, but their
-   ordinals are not engine frame IDs. After the semantic contract is proved,
-   complete the inventory, rerun the exact sources against the conservative
-   241-packet compressed corpus plus the bounded near-match/silhouette review,
-   allocate the packet and `$20`-byte palette explicitly, then implement and
-   runtime-test the `$FFFF` full-palette resolver across all ten field
-   shadow-copy sites. The current partial sources have zero exact and
-   palette-pattern matches against the 78 nontrivial tiles in the documented
-   Schala-family packet; that one packet does not close the broader corpus or
-   completed-sheet gates.
+6. Complete the playable-PC location-event animation-operand census and the
+   data-driven battle action-package census before assigning any native Schala
+   frame. The entrypoint stride, auxiliary timing family, fixed-bank
+   setup/reader sites, menu roles, battle fixed minimum, and battle-state
+   selector table are now proved, and a private checkpoint reproduces the
+   field walk timing relation.
+   The ten gameplay frames plus six Glass Focus body poses already fit one
+   91-tile, 16-record native-shaped partial packet and reconstruct exactly,
+   but their ordinals are not engine frame IDs. Next author complete
+   facing/source/timing token sequences with conflict-free overlap, rerun the
+   exact sources against the conservative 241-packet compressed corpus plus
+   the bounded near-match/silhouette review, allocate the packet and `$20`-byte
+   palette explicitly, then implement and runtime-test the `$FFFF`
+   full-palette resolver and expanded-bank readers. The current partial
+   sources have zero exact and palette-pattern matches against the 78
+   nontrivial tiles in the documented Schala-family packet; that one packet
+   does not close the broader corpus or completed-sheet gates.
 7. Implement the named recruitment adapters in dependency order, beginning
    with independent naming, capacity-safe party insertion, and loader-level
    New Game+ normalization. Reproduce the source contract's reversible
@@ -1577,8 +1673,30 @@ states where useful, and a written result.
   the six Focus inserts and audio recipes are excluded from the body packet,
   and no animation slot, auxiliary family, ROM address, action/item/sound
   binding, PC `$07`, save/load path, hook, allocation, or Epoch data is
-  assigned. The next art/engine step is the semantic animation-slot and
-  auxiliary-animation contract.
+  assigned.
+- Added the fail-closed animation semantic-contract v0. It pins the
+  `$00-$03` engine-facing order documented as up/down/left/right, the
+  variable-length `N*4` entrypoint
+  rule, nine auxiliary pointers through `$E4:B614`, the bounded Magus
+  `$AEC0-$AFB4` timing contract, fixed-bank setup/reader sites,
+  field/menu/battle minimum, and the complete 16-record battle-state selector
+  table. The 68,305-byte
+  metadata report has SHA-256 `50374ada...`; all 21 focused canonical-ROM
+  tests pass. No Schala-native ID, stream, pointer, allocation, hook, or
+  expanded-bank adapter is assigned.
+- Promoted a hardened tracked native-Mesen launcher/collector with strict
+  workspace-private path, reparse, schema, mapping, object-binding, count,
+  source-hash, timeout, and teardown gates. The focused suite discovers 35
+  tests: 33 pass, and two privilege-dependent real-symlink cases skip with
+  deterministic mocked reparse coverage passing.
+- Ran two final idle and two final Right-input native-Mesen field probes from
+  one pinned checkpoint. The Right route reproduces one complete selector
+  `$01`, facing-3 Magus loop: frames `$10-$15`, six `$07` delays, timing-zero
+  reset, then `$10` again. Both repetitions share exact normalized trace and
+  semantic-manifest identities for their route; all named source
+  ROM/SRAM/state/emulator inputs were preserved and staging was removed. The
+  result remains exploratory and checkpoint-bounded, and every raw trace,
+  screenshot, ROM, SRAM, state, and emulator artifact stays ignored.
 
 ### 2026-07-28
 

@@ -183,8 +183,12 @@ binding; palette difference; frame identity change; fifth-object need;
 coordinate, tile-index, or record overflow; unsupported flag; prefix change;
 or reconstruction mismatch.
 
-The next safe source-only engine step is to map the exact semantic animation
-slots and auxiliary-animation contract before authoring the remaining field
-and battle inventory. The complete future sheet must then be checked against
-the conservative 241-packet corpus and pass the bounded near-match/silhouette
+The follow-on `docs/schala_animation_semantic_contract_v0.md` audit now maps
+the native entrypoint stride, separate auxiliary timing/control family,
+fixed-bank readers, and minimum automatic/menu/battle anchors without binding
+any Schala frame. The next safe source-only steps are the complete
+playable-PC location-event operand census, the data-driven battle
+action-package census, and conflict-free complete-facing source/timing
+authoring. The complete future sheet must then be checked against the
+conservative 241-packet corpus and pass the bounded near-match/silhouette
 review before any explicit expanded allocation or PC `$07` integration.

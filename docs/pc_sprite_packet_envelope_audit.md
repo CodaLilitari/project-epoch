@@ -174,10 +174,12 @@ records. The hard unchanged-format constraint proved here is that `$FF`
 cannot be a normal frame ID.
 
 This envelope audit intentionally does not assign meanings or timing to those
-entrypoints. A separate, prospective
-`docs/schala_animation_semantic_contract_v0.md` audit must map the paired
-`$E4:2800` timing/control stream, sentinels, callers, and fixed versus
-data-driven selectors before Schala's animation IDs are bound.
+entrypoints. The separate
+`docs/schala_animation_semantic_contract_v0.md` audit now maps the paired
+`$E4:2800` timing/control stream, sentinels, fixed-bank readers, and fixed
+field/menu/battle selector minimum. It deliberately leaves location-event
+operands, data-driven battle action packages, and every Schala-native binding
+open.
 
 ## Decoded and field-transfer limits
 
@@ -221,8 +223,9 @@ must be checked during the logical-ID adapter implementation.
 
 - Robo's `$DC:DF70-$DC:FFFF` tail is unclassified.
 - The observed Frog `$8000` assembly-word bit is not assigned a meaning.
-- The paired timing/control family rooted at `$E4:2800` still needs the
-  prospective semantic-contract audit and a relocated-bank adapter.
+- The paired timing/control family rooted at `$E4:2800` now has a bounded
+  semantic contract, but still needs complete event/action consumer censuses
+  and a relocated-bank adapter.
 - The exact semantic name of every animation entrypoint and every special
   field/event pose remains to be mapped before the full sheet is authored.
 - Battle-specific staging, transfer timing, and expanded-bank reads need
