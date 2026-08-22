@@ -1,0 +1,173 @@
+{
+  "schema": "project-epoch-pc7-attack-adapter-boundaries-v1",
+  "version": 1,
+  "evidence_level": "verified-static",
+  "scope": {
+    "logical_pc_id": "07",
+    "operation": "normal-attack namespace boundary audit",
+    "rom_access": "read-only",
+    "output_policy": "table hashes and the five bounded PC07 lookup-byte observations only",
+    "rom_save_state_mutation": false,
+    "patch_or_rom_emission": false
+  },
+  "canonical_rom": {
+    "identity": "Chrono Trigger US Rev0 headerless",
+    "size": 4194304,
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "mapping": "C0-FF HiROM address masked to file offset 000000-3FFFFF"
+  },
+  "tables": [
+    {
+      "name": "basic_attack_action_ids",
+      "label": "DATA8_CC2583",
+      "snes_start": "CC2583",
+      "snes_end_exclusive": "CC258A",
+      "entry_count": 7,
+      "entry_width": 1,
+      "index_source": "logical PC ID loaded from 7EAEFF plus actor slot",
+      "consumer_instruction_pc": "C1BFFF",
+      "expected_bytes_sha256": "21f85d8e7eb2f1352e04d472e34d8cb8b73a51cbc3b8a92d9eaeedc0ddcbc5a0",
+      "pc07_lookup": {
+        "snes_address": "CC258A",
+        "in_declared_extent": false,
+        "expected_byte_hex": "0a",
+        "classification": "fallthrough-collision",
+        "collision": {
+          "name": "hp_growth_table",
+          "snes_address": "CC258A",
+          "alias_index": 0
+        }
+      }
+    },
+    {
+      "name": "attack_approach_policy",
+      "label": "DATA8_CCF63C",
+      "snes_start": "CCF63C",
+      "snes_end_exclusive": "CCF644",
+      "entry_count": 8,
+      "entry_width": 1,
+      "index_source": "logical PC ID loaded from 7E2980 plus actor slot",
+      "consumer_instruction_pc": "C14A44",
+      "expected_bytes_sha256": "03527ae0d299998cfda2084054b7d1762d8cb45d599ffdc244e70486196a892b",
+      "pc07_lookup": {
+        "snes_address": "CCF643",
+        "in_declared_extent": true,
+        "expected_byte_hex": "ff",
+        "classification": "occupied-in-bounds-vanilla-entry",
+        "collision": null,
+        "branch_behavior": "nonzero-forces-pathfind"
+      }
+    },
+    {
+      "name": "pc_attack_anim_ids_a",
+      "label": "PcAttackAnimIdsA",
+      "snes_start": "CD4000",
+      "snes_end_exclusive": "CD4007",
+      "entry_count": 7,
+      "entry_width": 1,
+      "index_source": "logical PC ID loaded from 7E2980 plus actor slot",
+      "consumer_instruction_pc": "C143C4",
+      "expected_bytes_sha256": "91b65410a211378f328320a4e25b378d1285be8cb5e4d762df0eca1a9bb526ef",
+      "pc07_lookup": {
+        "snes_address": "CD4007",
+        "in_declared_extent": false,
+        "expected_byte_hex": "00",
+        "classification": "fallthrough-collision",
+        "collision": {
+          "name": "pc_attack_anim_ids_pathfind_success",
+          "snes_address": "CD4007",
+          "alias_index": 0
+        }
+      }
+    },
+    {
+      "name": "pc_attack_anim_ids_pathfind_success",
+      "label": "DATA8_CD4007",
+      "snes_start": "CD4007",
+      "snes_end_exclusive": "CD400E",
+      "entry_count": 7,
+      "entry_width": 1,
+      "index_source": "logical PC ID loaded from 7E2980 plus actor slot",
+      "consumer_instruction_pc": "C143F8",
+      "expected_bytes_sha256": "cca11a1733c12e166dbc10de09df254ac29cda96813075d28b05cf4fc9a77884",
+      "pc07_lookup": {
+        "snes_address": "CD400E",
+        "in_declared_extent": false,
+        "expected_byte_hex": "01",
+        "classification": "fallthrough-collision",
+        "collision": {
+          "name": "pc_attack_anim_ids_b_critical",
+          "snes_address": "CD400E",
+          "alias_index": 0,
+          "active_vanilla_semantics": "Crono critical normal-attack selector"
+        }
+      }
+    },
+    {
+      "name": "pc_attack_anim_ids_b_critical",
+      "label": "PcAttackAnimIdsB",
+      "snes_start": "CD400E",
+      "snes_end_exclusive": "CD4015",
+      "entry_count": 7,
+      "entry_width": 1,
+      "index_source": "logical PC ID loaded from 7E2980 plus actor slot",
+      "consumer_instruction_pc": "C1438B",
+      "expected_bytes_sha256": "844b41e5f124c432dc252f0a02fc0f9473f7c5d66fb5bf47974de3e4b5eaa8ba",
+      "pc07_lookup": {
+        "snes_address": "CD4015",
+        "in_declared_extent": false,
+        "expected_byte_hex": "13",
+        "classification": "fallthrough-collision",
+        "collision": {
+          "name": "normal_attack_config_record",
+          "snes_address": "CD4015",
+          "alias_index": 0
+        }
+      }
+    }
+  ],
+  "static_sources": [
+    {
+      "path": "references/ct_disassembly/bank_C1.asm",
+      "lines": [
+        "8727-8751",
+        "8769-8824",
+        "9571-9622",
+        "24124-24160",
+        "30254-30275",
+        "30831-30849"
+      ],
+      "claim": "normal-attack dispatch, PC-ID consumers, critical flag and damage branches"
+    },
+    {
+      "path": "references/ct_disassembly/bank_CC.asm",
+      "lines": [
+        "46-48",
+        "3931-3932"
+      ],
+      "claim": "CC2583 and CCF63C table boundaries"
+    },
+    {
+      "path": "references/ct_disassembly/bank_CD.asm",
+      "lines": [
+        "5425-5428"
+      ],
+      "claim": "three adjacent seven-byte PC attack-animation tables"
+    }
+  ],
+  "verified_static_conclusions": [
+    "CC2583 logical PC 07 falls into the first byte of HpGrowthTable.",
+    "CCF63C contains an occupied eighth byte FF; logical PC 07 is in bounds and takes the nonzero approach branch.",
+    "CD4000 logical PC 07 aliases CD4007 entry 00.",
+    "CD4007 logical PC 07 aliases CD400E entry 01, which is Crono's critical selector.",
+    "CD400E logical PC 07 aliases the following record at CD4015 entry 13.",
+    "No observed byte is free space and no in-place eighth-entry write is approved."
+  ],
+  "limitations": [
+    "This audit does not execute logical PC 07.",
+    "It does not approve a hook, expanded allocation, WRAM relocation, or production patch.",
+    "It does not inspect Tech, Item, equipment, save, load, New Game+, erase, reset, victory, or battle teardown paths.",
+    "The CCF63C melee-versus-ranged interpretation remains a hypothesis; only its index and zero-versus-nonzero branch behavior are verified-static."
+  ]
+}

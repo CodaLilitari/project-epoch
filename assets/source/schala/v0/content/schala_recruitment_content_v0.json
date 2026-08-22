@@ -1,0 +1,836 @@
+{
+  "schema_version": 1,
+  "content_id": "project-epoch-schala-recruitment-v0",
+  "logical_pc_id": 7,
+  "content_origin": "project-epoch-original",
+  "authoring_status": "authoring-only-unmapped",
+  "evidence_level": "hypothesis",
+  "provenance": {
+    "dialogue_source": "written-for-project-epoch",
+    "rom_or_event_bytes_imported": false,
+    "copied_vanilla_dialogue": false,
+    "copied_npc_sprite_data": false,
+    "notes": "This is an original narrative and state-machine specification. It contains no encoded game text, event bytecode, map data, graphics, or traced engine addresses."
+  },
+  "quest": {
+    "title": "The Silent Palace",
+    "placement": "Optional late-game branch after the Ocean Palace collapse and Crono's return.",
+    "premise": "Three temporal anchors open a sealed fragment where Schala is sustaining survivors. She releases the refuge by her own choice and may join as logical PC 7.",
+    "recruitment_agency": "Schala chooses her path after the survivors are released; Magus may respond but never authorizes or blocks her decision."
+  },
+  "state_variables": [
+    {
+      "name": "quest_unlocked",
+      "type": "bool",
+      "purpose": "Whether the temporal-pocket quest may be entered.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "name": "anchor_count",
+      "type": "int_0_3",
+      "purpose": "Number of stabilized anchors.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "name": "ward_resolved",
+      "type": "bool",
+      "purpose": "Whether the guardian encounter and ward release are complete.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "name": "schala_recruited",
+      "type": "bool",
+      "purpose": "Persistent joined-state guard for logical PC 7.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "name": "schala_join_grant_applied",
+      "type": "bool",
+      "purpose": "Idempotence guard for starting techs and original starting equipment.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "name": "magus_present",
+      "type": "bool",
+      "purpose": "Dialogue-only active-party condition; never a recruitment requirement.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "name": "party_has_open_slot",
+      "type": "bool",
+      "purpose": "Whether logical PC 7 can enter the active three-person formation immediately.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "name": "is_new_game_plus",
+      "type": "bool",
+      "purpose": "Selects the explicit idempotence audit path without changing recruitment eligibility.",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    }
+  ],
+  "runtime_bindings": [
+    {
+      "binding_id": "quest_entry_dispatch",
+      "purpose": "Event entry point and location trigger.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "quest_unlock_flag",
+      "purpose": "Persistent quest-unlock storage.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "anchor_counter",
+      "purpose": "Persistent three-anchor progress storage.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "ward_resolved_flag",
+      "purpose": "Persistent ward-resolution storage.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "recruited_flag",
+      "purpose": "Persistent logical-PC-7 joined state.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "join_grant_guard_flag",
+      "purpose": "One-time starting-tech and starting-loadout guard.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "new_game_plus_context_query",
+      "purpose": "New Game+ entry-state query and transfer policy.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "magus_presence_query",
+      "purpose": "Active-party Magus query used only for dialogue.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "party_capacity_query",
+      "purpose": "Active-party capacity query.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "logical_pc_07_runtime_record",
+      "purpose": "Live character record initialization for logical PC 7.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "logical_pc_07_roster_insert",
+      "purpose": "Joined-roster insertion without aliasing a vanilla PC.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "logical_pc_07_active_party_insert",
+      "purpose": "Immediate active-party insertion when space exists.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "logical_pc_07_reserve_insert",
+      "purpose": "Reserve registration when the active party is full.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "party_exchange_ui",
+      "purpose": "Party-exchange prompt after a full-party recruitment.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "starting_tech_unlocks",
+      "purpose": "One-time unlock of Astral Pin, Veil, and Crescent Wake.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "starting_loadout_inventory",
+      "purpose": "One-time original Glass Focus and Regent Mantle loadout grant.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "pendant_shard_inventory",
+      "purpose": "Pendant Shard quest-item grant, test, and consumption policy.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "dialogue_text_storage",
+      "purpose": "Encoded dialogue strings and pointer storage.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "dialogue_choice_dispatch",
+      "purpose": "Accept and decline choice presentation and branch dispatch.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "silent_palace_map",
+      "purpose": "Original compact location and exit routing.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "schala_event_object",
+      "purpose": "Recruitment-scene event object.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "schala_original_field_sprite",
+      "purpose": "Original field-art source for the recruitment object and playable PC.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "schala_original_battle_sprite",
+      "purpose": "Original battle-art source after recruitment.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "schala_original_portraits",
+      "purpose": "Original menu and save-preview portraits after recruitment.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "guest_veil_demonstration",
+      "purpose": "Scripted guest-caster Veil demonstration before recruitment.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "save_sidecar_persistence",
+      "purpose": "Save and load persistence for recruitment and one-time grants.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "new_game_plus_transfer",
+      "purpose": "New Game+ transfer or reset of Project Epoch quest state.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "scene_music",
+      "purpose": "Recruitment-scene music selection and restoration.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    },
+    {
+      "binding_id": "scene_sound_effects",
+      "purpose": "Ward-release and party-join sound effects.",
+      "mapping_status": "unmapped",
+      "engine_address": null,
+      "event_opcode": null,
+      "data_table": null,
+      "encoded_value": null
+    }
+  ],
+  "entry_node": "entry_already_recruited",
+  "nodes": [
+    {
+      "node_id": "entry_already_recruited",
+      "type": "branch",
+      "condition": {
+        "variable": "schala_recruited",
+        "equals": true
+      },
+      "then": "already_recruited_line",
+      "else": "entry_new_game_plus",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "entry_new_game_plus",
+      "type": "branch",
+      "condition": {
+        "variable": "is_new_game_plus",
+        "equals": true
+      },
+      "then": "new_game_plus_guard",
+      "else": "quest_unlocked_check",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "new_game_plus_guard",
+      "type": "action",
+      "operations": [
+        {
+          "op": "emit",
+          "effect": "evaluate_project_epoch_state_without_duplicate_join_grants"
+        }
+      ],
+      "next": "quest_unlocked_check",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "quest_unlocked_check",
+      "type": "branch",
+      "condition": {
+        "variable": "quest_unlocked",
+        "equals": true
+      },
+      "then": "anchor_check",
+      "else": "quest_locked_line",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "anchor_check",
+      "type": "branch",
+      "condition": {
+        "variable": "anchor_count",
+        "equals": 3
+      },
+      "then": "ward_check",
+      "else": "anchors_incomplete_line",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "ward_check",
+      "type": "branch",
+      "condition": {
+        "variable": "ward_resolved",
+        "equals": true
+      },
+      "then": "magus_presence_check",
+      "else": "ward_unresolved_line",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "magus_presence_check",
+      "type": "branch",
+      "condition": {
+        "variable": "magus_present",
+        "equals": true
+      },
+      "then": "magus_observation",
+      "else": "schala_without_magus",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "quest_locked_line",
+      "type": "dialogue",
+      "speaker": "Gaspar",
+      "text": "A sealed hour is brushing against this place, but the path has not taken shape. We should listen before we force it open.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "end_not_ready",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "anchors_incomplete_line",
+      "type": "dialogue",
+      "speaker": "Gaspar",
+      "text": "The pocket answers, but its pattern is incomplete. Set all three anchors before we risk the crossing.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "end_not_ready",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "ward_unresolved_line",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "The refuge still leans upon my ward. Break the guardian's hold, and I can open a road for everyone sheltered here.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "end_not_ready",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "magus_observation",
+      "type": "dialogue",
+      "speaker": "Magus",
+      "text": "That ward bears your hand. It endured by feeding upon the instant around it.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "schala_answers_magus",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "schala_answers_magus",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "You still hear the shape of my magic. Then hear this as well: what follows will be my decision.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "recruitment_offer",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "schala_without_magus",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "The ward has spent its last reserve. I can release those sheltered here, but I cannot close the breach alone.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "recruitment_offer",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "recruitment_offer",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "The survivors have a road beyond this fragment. I have chosen mine. If you will have me, I will stand with you against the darkness my kingdom fed.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "recruitment_choice",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "recruitment_choice",
+      "type": "choice",
+      "prompt": "Invite Schala to join?",
+      "options": [
+        {
+          "choice_id": "accept",
+          "label": "Stand with us.",
+          "next": "commit_recruitment"
+        },
+        {
+          "choice_id": "decline",
+          "label": "Not yet.",
+          "next": "decline_line"
+        }
+      ],
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "decline_line",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "Then I will keep the crossing quiet until you return. Choice loses its meaning when it is hurried.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "end_declined",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "commit_recruitment",
+      "type": "action",
+      "operations": [
+        {
+          "op": "set_if_false",
+          "variable": "schala_recruited",
+          "value": true
+        },
+        {
+          "op": "emit_once",
+          "guard": "schala_join_grant_applied",
+          "effects": [
+            "unlock_astral_pin_veil_and_crescent_wake",
+            "grant_original_glass_focus_and_regent_mantle"
+          ]
+        },
+        {
+          "op": "emit",
+          "effect": "register_logical_pc_07_once"
+        }
+      ],
+      "next": "party_capacity_check",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "party_capacity_check",
+      "type": "branch",
+      "condition": {
+        "variable": "party_has_open_slot",
+        "equals": true
+      },
+      "then": "insert_active_party",
+      "else": "full_party_line",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "insert_active_party",
+      "type": "action",
+      "operations": [
+        {
+          "op": "emit",
+          "effect": "add_logical_pc_07_to_active_party"
+        }
+      ],
+      "next": "joined_line",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "full_party_line",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "Your formation is complete. Place me in reserve; I will answer when you call at the gate.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "insert_reserve_party",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "insert_reserve_party",
+      "type": "action",
+      "operations": [
+        {
+          "op": "emit",
+          "effect": "register_logical_pc_07_in_reserve"
+        },
+        {
+          "op": "emit",
+          "effect": "open_party_exchange_for_optional_swap"
+        }
+      ],
+      "next": "end_recruited_reserve",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "joined_line",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "I leave ceremony here. From this step onward, we meet the future as companions.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "end_recruited_active",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "already_recruited_line",
+      "type": "dialogue",
+      "speaker": "Schala",
+      "text": "The seal remains steady. I am ready when you are.",
+      "dialogue_source": "written-for-project-epoch",
+      "next": "end_already_recruited",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "end_not_ready",
+      "type": "end",
+      "outcome": "not_ready",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "end_declined",
+      "type": "end",
+      "outcome": "declined_without_state_change",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "end_recruited_active",
+      "type": "end",
+      "outcome": "recruited_into_active_party",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "end_recruited_reserve",
+      "type": "end",
+      "outcome": "recruited_into_reserve_with_exchange_offer",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    },
+    {
+      "node_id": "end_already_recruited",
+      "type": "end",
+      "outcome": "already_recruited_no_duplicate_grants",
+      "mapping_status": "unmapped",
+      "runtime_binding": null
+    }
+  ],
+  "acceptance_scenarios": [
+    {
+      "scenario_id": "magus_present_accept_open_slot",
+      "initial_state": {
+        "quest_unlocked": true,
+        "anchor_count": 3,
+        "ward_resolved": true,
+        "schala_recruited": false,
+        "schala_join_grant_applied": false,
+        "magus_present": true,
+        "party_has_open_slot": true,
+        "is_new_game_plus": false
+      },
+      "choices": {
+        "recruitment_choice": "accept"
+      },
+      "expected_outcome": "recruited_into_active_party",
+      "expected_effects": [
+        "unlock_astral_pin_veil_and_crescent_wake",
+        "grant_original_glass_focus_and_regent_mantle",
+        "register_logical_pc_07_once",
+        "add_logical_pc_07_to_active_party"
+      ],
+      "expected_final_state": {
+        "schala_recruited": true,
+        "schala_join_grant_applied": true
+      }
+    },
+    {
+      "scenario_id": "magus_absent_accept_open_slot",
+      "initial_state": {
+        "quest_unlocked": true,
+        "anchor_count": 3,
+        "ward_resolved": true,
+        "schala_recruited": false,
+        "schala_join_grant_applied": false,
+        "magus_present": false,
+        "party_has_open_slot": true,
+        "is_new_game_plus": false
+      },
+      "choices": {
+        "recruitment_choice": "accept"
+      },
+      "expected_outcome": "recruited_into_active_party",
+      "expected_effects": [
+        "unlock_astral_pin_veil_and_crescent_wake",
+        "grant_original_glass_focus_and_regent_mantle",
+        "register_logical_pc_07_once",
+        "add_logical_pc_07_to_active_party"
+      ],
+      "expected_final_state": {
+        "schala_recruited": true,
+        "schala_join_grant_applied": true
+      }
+    },
+    {
+      "scenario_id": "decline_without_mutation",
+      "initial_state": {
+        "quest_unlocked": true,
+        "anchor_count": 3,
+        "ward_resolved": true,
+        "schala_recruited": false,
+        "schala_join_grant_applied": false,
+        "magus_present": false,
+        "party_has_open_slot": true,
+        "is_new_game_plus": false
+      },
+      "choices": {
+        "recruitment_choice": "decline"
+      },
+      "expected_outcome": "declined_without_state_change",
+      "expected_effects": [],
+      "expected_final_state": {
+        "schala_recruited": false,
+        "schala_join_grant_applied": false
+      }
+    },
+    {
+      "scenario_id": "party_full_accept_to_reserve",
+      "initial_state": {
+        "quest_unlocked": true,
+        "anchor_count": 3,
+        "ward_resolved": true,
+        "schala_recruited": false,
+        "schala_join_grant_applied": false,
+        "magus_present": false,
+        "party_has_open_slot": false,
+        "is_new_game_plus": false
+      },
+      "choices": {
+        "recruitment_choice": "accept"
+      },
+      "expected_outcome": "recruited_into_reserve_with_exchange_offer",
+      "expected_effects": [
+        "unlock_astral_pin_veil_and_crescent_wake",
+        "grant_original_glass_focus_and_regent_mantle",
+        "register_logical_pc_07_once",
+        "register_logical_pc_07_in_reserve",
+        "open_party_exchange_for_optional_swap"
+      ],
+      "expected_final_state": {
+        "schala_recruited": true,
+        "schala_join_grant_applied": true
+      }
+    },
+    {
+      "scenario_id": "already_recruited_is_idempotent",
+      "initial_state": {
+        "quest_unlocked": true,
+        "anchor_count": 3,
+        "ward_resolved": true,
+        "schala_recruited": true,
+        "schala_join_grant_applied": true,
+        "magus_present": true,
+        "party_has_open_slot": false,
+        "is_new_game_plus": false
+      },
+      "choices": {},
+      "expected_outcome": "already_recruited_no_duplicate_grants",
+      "expected_effects": [],
+      "expected_final_state": {
+        "schala_recruited": true,
+        "schala_join_grant_applied": true
+      }
+    },
+    {
+      "scenario_id": "new_game_plus_preserved_join_is_idempotent",
+      "initial_state": {
+        "quest_unlocked": true,
+        "anchor_count": 3,
+        "ward_resolved": true,
+        "schala_recruited": true,
+        "schala_join_grant_applied": true,
+        "magus_present": false,
+        "party_has_open_slot": true,
+        "is_new_game_plus": true
+      },
+      "choices": {},
+      "expected_outcome": "already_recruited_no_duplicate_grants",
+      "expected_effects": [],
+      "expected_final_state": {
+        "schala_recruited": true,
+        "schala_join_grant_applied": true
+      }
+    },
+    {
+      "scenario_id": "new_game_plus_reset_branch_can_recruit_once",
+      "initial_state": {
+        "quest_unlocked": true,
+        "anchor_count": 3,
+        "ward_resolved": true,
+        "schala_recruited": false,
+        "schala_join_grant_applied": false,
+        "magus_present": false,
+        "party_has_open_slot": true,
+        "is_new_game_plus": true
+      },
+      "choices": {
+        "recruitment_choice": "accept"
+      },
+      "expected_outcome": "recruited_into_active_party",
+      "expected_effects": [
+        "evaluate_project_epoch_state_without_duplicate_join_grants",
+        "unlock_astral_pin_veil_and_crescent_wake",
+        "grant_original_glass_focus_and_regent_mantle",
+        "register_logical_pc_07_once",
+        "add_logical_pc_07_to_active_party"
+      ],
+      "expected_final_state": {
+        "schala_recruited": true,
+        "schala_join_grant_applied": true
+      }
+    }
+  ]
+}

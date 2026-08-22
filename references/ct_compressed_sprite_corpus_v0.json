@@ -1,0 +1,5111 @@
+{
+  "canonical_rom": {
+    "identity": "Chrono Trigger US Rev0 headerless",
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "size": 4194304
+  },
+  "corpus": {
+    "conservative_compressed_catalog": {
+      "backref_11_bit_packet_count": 0,
+      "backref_12_bit_packet_count": 241,
+      "compressed_byte_count": 540847,
+      "decompressed_byte_count": 699872,
+      "framed_decoded_corpus_sha256": "01fe041352872a2efd8ba554722c71e71b9b20f70a32ee2ef33921286df2e418",
+      "maximum_compressed_size": 18466,
+      "maximum_decompressed_size": 23776,
+      "minimum_compressed_size": 39,
+      "minimum_decompressed_size": 128,
+      "one_addendum_packet_count": 211,
+      "other_addendum_packet_count": 0,
+      "packet_count": 241,
+      "source_bank_crossing_count": 0,
+      "tile_4bpp_count": 21871,
+      "zero_addendum_packet_count": 30
+    },
+    "descriptor_selected_subset": {
+      "backref_11_bit_packet_count": 0,
+      "backref_12_bit_packet_count": 237,
+      "compressed_byte_count": 540276,
+      "decompressed_byte_count": 699200,
+      "framed_decoded_corpus_sha256": "87732136b365151b9d71d955c9bf196cf655df69ba05c1bb12b5c94378a0ac65",
+      "maximum_compressed_size": 18466,
+      "maximum_decompressed_size": 23776,
+      "minimum_compressed_size": 39,
+      "minimum_decompressed_size": 128,
+      "one_addendum_packet_count": 207,
+      "other_addendum_packet_count": 0,
+      "packet_count": 237,
+      "source_bank_crossing_count": 0,
+      "tile_4bpp_count": 21850,
+      "zero_addendum_packet_count": 30
+    },
+    "packets": [
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1831,
+        "decoded_sha256": "d4ae02bfdd34af452b2a5edcffdb889ced30664240e11ebc1572c5b7a20a8616",
+        "decompressed_size": 2464,
+        "descriptor_selected": true,
+        "file_offset": 1638400,
+        "gfx_index": 7,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            41
+          ]
+        },
+        "snes_pointer": "$D90000",
+        "tile_4bpp_count": 77
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1727,
+        "decoded_sha256": "2d363cb7e03f83662cfc296b9b64db341d424ad833ef763d6eaf64d170e64ce5",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1640231,
+        "gfx_index": 8,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            42
+          ]
+        },
+        "snes_pointer": "$D90727",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1355,
+        "decoded_sha256": "e7223b4d15e87cc8ba86a3a53eaa742139af59e0d094015ae314b7f95c2fa3d3",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1641958,
+        "gfx_index": 9,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            17,
+            44,
+            57,
+            82
+          ]
+        },
+        "snes_pointer": "$D90DE6",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1261,
+        "decoded_sha256": "36b2313ee4da6a3d35894a37b54e103929537feafa4e599670057dbdc566b668",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1643313,
+        "gfx_index": 10,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            18,
+            45,
+            83
+          ]
+        },
+        "snes_pointer": "$D91331",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1476,
+        "decoded_sha256": "bef974f92ff01ca9dd4b0dffd18c91d6b1266d5a2099494028408bc02de6a5c2",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1644574,
+        "gfx_index": 11,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            22,
+            49,
+            89
+          ]
+        },
+        "snes_pointer": "$D9181E",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1456,
+        "decoded_sha256": "34b10c014d311290a7dd8546441d95faaf8d1ecab772970c48922cbab809208b",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1646050,
+        "gfx_index": 12,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            21,
+            48
+          ]
+        },
+        "snes_pointer": "$D91DE2",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 1512,
+        "decoded_sha256": "7b288da3d0fa7a2fc4b37c7376e784ef3d7c5a6854cbb67b40b57b44746a4359",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1647506,
+        "gfx_index": 13,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            23,
+            50
+          ]
+        },
+        "snes_pointer": "$D92392",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1901,
+        "decoded_sha256": "1eb4b8514574ec8e94a4873f55a5cadcaf257e0be2fe30a7fb1317cd61fe274e",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1649018,
+        "gfx_index": 14,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            34,
+            179
+          ]
+        },
+        "snes_pointer": "$D9297A",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1482,
+        "decoded_sha256": "5f457dc587370a5f3f87241fb8fea69f8ace68ee7ec3e8fafc24e2d868344fcd",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1650919,
+        "gfx_index": 15,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            33
+          ]
+        },
+        "snes_pointer": "$D930E7",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1635,
+        "decoded_sha256": "e9db13cedd653d527b45bbb14d7913d1eda9af42a1683e05a1937105d80b3af7",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1652401,
+        "gfx_index": 16,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            36,
+            58
+          ]
+        },
+        "snes_pointer": "$D936B1",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1649,
+        "decoded_sha256": "609f7e2720cab8473d092acc95c651ab9dedddf24d0f92f773374d4b23ebfaee",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1654036,
+        "gfx_index": 17,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            65
+          ]
+        },
+        "snes_pointer": "$D93D14",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1747,
+        "decoded_sha256": "aa5e5963ef460967b4bbcf816f742ddb04136ea1a12b5645c4a02e6f1e891e9b",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1655685,
+        "gfx_index": 18,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            66
+          ]
+        },
+        "snes_pointer": "$D94385",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1960,
+        "decoded_sha256": "4ded2c99dfec05940ccdb957fd6a4b41e9a8b3aecbbd9b2de4782f09d21bf296",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1657432,
+        "gfx_index": 19,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            28,
+            67
+          ]
+        },
+        "snes_pointer": "$D94A58",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1089,
+        "decoded_sha256": "5575d182ceef5833bcd5e196e803557ebb53b2ac66456c1b7392d3d5ceb56179",
+        "decompressed_size": 1312,
+        "descriptor_selected": true,
+        "file_offset": 1665314,
+        "gfx_index": 20,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            32,
+            64
+          ]
+        },
+        "snes_pointer": "$D96922",
+        "tile_4bpp_count": 41
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 1023,
+        "decoded_sha256": "eb87c343a108515cb98a4ea3f7bf1d7f08776008e82308cb85dafab8ae63fa28",
+        "decompressed_size": 1312,
+        "descriptor_selected": true,
+        "file_offset": 1666403,
+        "gfx_index": 21,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            19,
+            46,
+            182
+          ]
+        },
+        "snes_pointer": "$D96D63",
+        "tile_4bpp_count": 41
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 945,
+        "decoded_sha256": "90ee086644e123d2a2675f803dbbadee7ea9c15d766049a62f0d44fdac75439c",
+        "decompressed_size": 1312,
+        "descriptor_selected": true,
+        "file_offset": 1667426,
+        "gfx_index": 22,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            20,
+            38,
+            47,
+            198
+          ]
+        },
+        "snes_pointer": "$D97162",
+        "tile_4bpp_count": 41
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1076,
+        "decoded_sha256": "6f388bd0b46928d57fb8c663a2535eb39829d466eead4e6719df4594d503962f",
+        "decompressed_size": 1312,
+        "descriptor_selected": true,
+        "file_offset": 1668371,
+        "gfx_index": 23,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            68
+          ]
+        },
+        "snes_pointer": "$D97513",
+        "tile_4bpp_count": 41
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2241,
+        "decoded_sha256": "71de44dc3eef0ac7ad6b7873ae10faaa466b1b9061dbce492b0bd146270db834",
+        "decompressed_size": 2752,
+        "descriptor_selected": true,
+        "file_offset": 1669447,
+        "gfx_index": 24,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            30,
+            62
+          ]
+        },
+        "snes_pointer": "$D97947",
+        "tile_4bpp_count": 86
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2395,
+        "decoded_sha256": "3fb7772b0d199a6fa5717dcceae84de7e60b6349d050b2d1cfc5f63ee4407df5",
+        "decompressed_size": 2560,
+        "descriptor_selected": true,
+        "file_offset": 1671688,
+        "gfx_index": 25,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            31,
+            63
+          ]
+        },
+        "snes_pointer": "$D98208",
+        "tile_4bpp_count": 80
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1896,
+        "decoded_sha256": "0faf4843b6e28668be5bd7c7959d1da750a87d03e80080bccaa332b96d6596d8",
+        "decompressed_size": 2400,
+        "descriptor_selected": true,
+        "file_offset": 1694566,
+        "gfx_index": 26,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            12
+          ]
+        },
+        "snes_pointer": "$D9DB66",
+        "tile_4bpp_count": 75
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3068,
+        "decoded_sha256": "032fbc59d33b4e1e0f48f90281c072a0765dea5f06a2320dce89faf7a27f7d77",
+        "decompressed_size": 3904,
+        "descriptor_selected": true,
+        "file_offset": 1674723,
+        "gfx_index": 27,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            7,
+            11
+          ]
+        },
+        "snes_pointer": "$D98DE3",
+        "tile_4bpp_count": 122
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2241,
+        "decoded_sha256": "5f375c8deef2eca395bf0aee3eeb2f7365e406061bd798cad5bac02be4d1b27c",
+        "decompressed_size": 2592,
+        "descriptor_selected": true,
+        "file_offset": 1677791,
+        "gfx_index": 28,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            0,
+            61,
+            102,
+            109,
+            145,
+            157,
+            189,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255
+          ]
+        },
+        "snes_pointer": "$D999DF",
+        "tile_4bpp_count": 81
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3432,
+        "decoded_sha256": "fba7fa1b922150de973550e9d4e85bfd90dc0d11159f52277b8a48790e1c0f43",
+        "decompressed_size": 6656,
+        "descriptor_selected": true,
+        "file_offset": 1680032,
+        "gfx_index": 29,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            1,
+            55
+          ]
+        },
+        "snes_pointer": "$D9A2A0",
+        "tile_4bpp_count": 208
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2182,
+        "decoded_sha256": "093c5169952b39288d60ced865166673b0bb1ca874e7a1841715f9d84f31920b",
+        "decompressed_size": 3072,
+        "descriptor_selected": true,
+        "file_offset": 1683464,
+        "gfx_index": 30,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            43,
+            81
+          ]
+        },
+        "snes_pointer": "$D9B008",
+        "tile_4bpp_count": 96
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1506,
+        "decoded_sha256": "5de9e8e6d01df3f90e26a20910052be85f2e2c95b010682a44e6f8d0c43b4de7",
+        "decompressed_size": 1600,
+        "descriptor_selected": true,
+        "file_offset": 1723118,
+        "gfx_index": 31,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            10
+          ]
+        },
+        "snes_pointer": "$DA4AEE",
+        "tile_4bpp_count": 50
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 2516,
+        "decoded_sha256": "f26e130cfed5417266488bbae45eaeb06fbfa956ddeb9f7cbf47c39cde4b31f2",
+        "decompressed_size": 3232,
+        "descriptor_selected": true,
+        "file_offset": 1706937,
+        "gfx_index": 32,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            6
+          ]
+        },
+        "snes_pointer": "$DA0BB9",
+        "tile_4bpp_count": 101
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3001,
+        "decoded_sha256": "b96d0ca18b00b99cde952325b3b362683e7af9040fb760dc23017a4b8778f514",
+        "decompressed_size": 3968,
+        "descriptor_selected": true,
+        "file_offset": 1703936,
+        "gfx_index": 33,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            24,
+            51,
+            53
+          ]
+        },
+        "snes_pointer": "$DA0000",
+        "tile_4bpp_count": 124
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7703,
+        "decoded_sha256": "d6f07271e329502b8a9bdb1fafe716bc81896cc8ed90a523aaa39648b32ba903",
+        "decompressed_size": 10080,
+        "descriptor_selected": true,
+        "file_offset": 2202005,
+        "gfx_index": 34,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            188,
+            189
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E19995",
+        "tile_4bpp_count": 315
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2802,
+        "decoded_sha256": "91fb13cbe16c72c30d6e1ac91ee3a957aa226597253879a18ab61cd230f4141d",
+        "decompressed_size": 3936,
+        "descriptor_selected": true,
+        "file_offset": 1689546,
+        "gfx_index": 35,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            25,
+            39,
+            52
+          ]
+        },
+        "snes_pointer": "$D9C7CA",
+        "tile_4bpp_count": 123
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2218,
+        "decoded_sha256": "6989e14d12f525145cdc178bcfb6de578351f8fee73a4aecbaf95a7a283ce241",
+        "decompressed_size": 2848,
+        "descriptor_selected": true,
+        "file_offset": 1692348,
+        "gfx_index": 36,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            13,
+            37,
+            40,
+            213,
+            215
+          ]
+        },
+        "snes_pointer": "$D9D2BC",
+        "tile_4bpp_count": 89
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3762,
+        "decoded_sha256": "1d8c060641eb963e0176fbd235f5d5be00640a88f35eeb679b321a86bc5c824b",
+        "decompressed_size": 4480,
+        "descriptor_selected": true,
+        "file_offset": 1741398,
+        "gfx_index": 37,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            244
+          ],
+          "npc_ids": [
+            2
+          ]
+        },
+        "snes_pointer": "$DA9256",
+        "tile_4bpp_count": 140
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 2447,
+        "decoded_sha256": "69322758b77fff5701cb0d5edb4ca34ab4109c2313ececd37bc018106fe84b73",
+        "decompressed_size": 2528,
+        "descriptor_selected": true,
+        "file_offset": 1696462,
+        "gfx_index": 38,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            9,
+            205
+          ]
+        },
+        "snes_pointer": "$D9E2CE",
+        "tile_4bpp_count": 79
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2183,
+        "decoded_sha256": "9e7b49f222f8a4e1578d654fe42d67397de60828e1fb30de154f0444fc57ea72",
+        "decompressed_size": 2560,
+        "descriptor_selected": true,
+        "file_offset": 1685646,
+        "gfx_index": 39,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            3,
+            69
+          ]
+        },
+        "snes_pointer": "$D9B88E",
+        "tile_4bpp_count": 80
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2268,
+        "decoded_sha256": "5f1446e96f99c41b82e3a3195adc01c9af0d897e79d882b862fd5a0468451eb6",
+        "decompressed_size": 2432,
+        "descriptor_selected": true,
+        "file_offset": 1726628,
+        "gfx_index": 40,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            5
+          ]
+        },
+        "snes_pointer": "$DA58A4",
+        "tile_4bpp_count": 76
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1348,
+        "decoded_sha256": "e14cfb38fc3cd76b6a532c0f6b33c7e63c2053b35b7cec63ad13c8086f79f0c4",
+        "decompressed_size": 1504,
+        "descriptor_selected": true,
+        "file_offset": 1728896,
+        "gfx_index": 41,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            4
+          ]
+        },
+        "snes_pointer": "$DA6180",
+        "tile_4bpp_count": 47
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1188,
+        "decoded_sha256": "c38375535da22f4d0ba0855162c641f610639ae662c08a3043f1065604cd8e9b",
+        "decompressed_size": 1376,
+        "descriptor_selected": true,
+        "file_offset": 1730867,
+        "gfx_index": 42,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            8
+          ]
+        },
+        "snes_pointer": "$DA6933",
+        "tile_4bpp_count": 43
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 683,
+        "decoded_sha256": "e95d41f8260662db22d5cfc087c0996f481fb991a9d6f0d281750b819e6e7f39",
+        "decompressed_size": 960,
+        "descriptor_selected": true,
+        "file_offset": 1709453,
+        "gfx_index": 43,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            59,
+            175,
+            176,
+            177,
+            190
+          ]
+        },
+        "snes_pointer": "$DA158D",
+        "tile_4bpp_count": 30
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 935,
+        "decoded_sha256": "19baa999ef0b2541f51a58024f06b47bdf4f20657140d62b203698f9124bc3c5",
+        "decompressed_size": 1184,
+        "descriptor_selected": true,
+        "file_offset": 1721427,
+        "gfx_index": 44,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            117
+          ]
+        },
+        "snes_pointer": "$DA4453",
+        "tile_4bpp_count": 37
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 756,
+        "decoded_sha256": "11fcc32d165de1ac47be428edbb59b263bf5bb16f61027b81a4f75fd756b6660",
+        "decompressed_size": 800,
+        "descriptor_selected": true,
+        "file_offset": 1722362,
+        "gfx_index": 45,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            247
+          ],
+          "npc_ids": [
+            115
+          ]
+        },
+        "snes_pointer": "$DA47FA",
+        "tile_4bpp_count": 25
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 146,
+        "decoded_sha256": "b5b7b8b31890ca11f15393aafa541a43fd6bcd87d04e54f1d8540d49cac43151",
+        "decompressed_size": 256,
+        "descriptor_selected": true,
+        "file_offset": 1730721,
+        "gfx_index": 46,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            113,
+            228,
+            229,
+            230,
+            231
+          ]
+        },
+        "snes_pointer": "$DA68A1",
+        "tile_4bpp_count": 8
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 357,
+        "decoded_sha256": "31c2ef0e81ffb20ff243fcc466b2ff60f94c464e0e2e3fbac9e2a323c1c73de5",
+        "decompressed_size": 416,
+        "descriptor_selected": true,
+        "file_offset": 1309782,
+        "gfx_index": 47,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            116
+          ]
+        },
+        "snes_pointer": "$D3FC56",
+        "tile_4bpp_count": 13
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 184,
+        "decoded_sha256": "07e27661d5d61bf79b7fe3cc93f2df431ce470dd80557894388f7b1b99df9cb8",
+        "decompressed_size": 224,
+        "descriptor_selected": true,
+        "file_offset": 1713133,
+        "gfx_index": 48,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            114
+          ]
+        },
+        "snes_pointer": "$DA23ED",
+        "tile_4bpp_count": 7
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 68,
+        "decoded_sha256": "a8761e21f9aaf95ded52ca2d60995e27737b5c1efd81a0cc7d2b986466033cb6",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1713317,
+        "gfx_index": 49,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            112,
+            171
+          ]
+        },
+        "snes_pointer": "$DA24A5",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 283,
+        "decoded_sha256": "200e112630c3ce03b2f2769ad983e359c4a106f7fafa7c3c01909578f91fd28c",
+        "decompressed_size": 416,
+        "descriptor_selected": true,
+        "file_offset": 1713385,
+        "gfx_index": 50,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            118
+          ]
+        },
+        "snes_pointer": "$DA24E9",
+        "tile_4bpp_count": 13
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 109,
+        "decoded_sha256": "3595111a8c24f64acc641667289a5b94f2233420301e6c39f9ce410f1310012a",
+        "decompressed_size": 128,
+        "descriptor_selected": true,
+        "file_offset": 1713668,
+        "gfx_index": 51,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            56,
+            119
+          ]
+        },
+        "snes_pointer": "$DA2604",
+        "tile_4bpp_count": 4
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 393,
+        "decoded_sha256": "eb985779e0b93703318ab23253348c33945f874801f41afa947c9af992625a0c",
+        "decompressed_size": 480,
+        "descriptor_selected": true,
+        "file_offset": 1713777,
+        "gfx_index": 52,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            122
+          ]
+        },
+        "snes_pointer": "$DA2671",
+        "tile_4bpp_count": 15
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 728,
+        "decoded_sha256": "8914edd58b1152c2b03468ba5bbb242b7721e810564430d89313308c59bf96da",
+        "decompressed_size": 800,
+        "descriptor_selected": true,
+        "file_offset": 1714170,
+        "gfx_index": 53,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            123
+          ]
+        },
+        "snes_pointer": "$DA27FA",
+        "tile_4bpp_count": 25
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 121,
+        "decoded_sha256": "10a519ebae97536d640f7caefaf72d20879a4ab5bf6dab820b1425711e806436",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1714898,
+        "gfx_index": 54,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            124
+          ]
+        },
+        "snes_pointer": "$DA2AD2",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 327,
+        "decoded_sha256": "4c014eb1390001a5a8e4bf08a2a57e2fc3d59dc853e1dcc11a6b25c9715fc147",
+        "decompressed_size": 480,
+        "descriptor_selected": true,
+        "file_offset": 1715019,
+        "gfx_index": 55,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            142
+          ]
+        },
+        "snes_pointer": "$DA2B4B",
+        "tile_4bpp_count": 15
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 210,
+        "decoded_sha256": "3dc8ef0fea8341e6f32c8e886c6dd006c1ab371525c0e807064805c2b6fdce07",
+        "decompressed_size": 352,
+        "descriptor_selected": true,
+        "file_offset": 1715346,
+        "gfx_index": 56,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            143
+          ]
+        },
+        "snes_pointer": "$DA2C92",
+        "tile_4bpp_count": 11
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 527,
+        "decoded_sha256": "6282371bd5c077c4cb5bbe41130e7356b581e06fbe0d7d818c1bfacc2bf8b05e",
+        "decompressed_size": 992,
+        "descriptor_selected": true,
+        "file_offset": 1715556,
+        "gfx_index": 57,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            128
+          ]
+        },
+        "snes_pointer": "$DA2D64",
+        "tile_4bpp_count": 31
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 771,
+        "decoded_sha256": "127751fc2d3b2481b174bed2f1d164580631a864f2e48b6d331d485af0cfb7ca",
+        "decompressed_size": 1024,
+        "descriptor_selected": true,
+        "file_offset": 1716744,
+        "gfx_index": 58,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            129,
+            214
+          ]
+        },
+        "snes_pointer": "$DA3208",
+        "tile_4bpp_count": 32
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 199,
+        "decoded_sha256": "beb3c8b0140bb9d5ffb1114ef2bbf0ca1fe96336bab96f1eae39cc200f212a3f",
+        "decompressed_size": 416,
+        "descriptor_selected": true,
+        "file_offset": 1717515,
+        "gfx_index": 59,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            130
+          ]
+        },
+        "snes_pointer": "$DA350B",
+        "tile_4bpp_count": 13
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1010,
+        "decoded_sha256": "4db400d8159d125338862f282b4f4979e4b1413dd143ec0766891bec2f0262cc",
+        "decompressed_size": 1280,
+        "descriptor_selected": true,
+        "file_offset": 1717714,
+        "gfx_index": 60,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            136
+          ]
+        },
+        "snes_pointer": "$DA35D2",
+        "tile_4bpp_count": 40
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 702,
+        "decoded_sha256": "1980fc1a4465ac67589b80feb2cd571e43757e573482e3d6e554ac12738c259e",
+        "decompressed_size": 1376,
+        "descriptor_selected": true,
+        "file_offset": 1718724,
+        "gfx_index": 61,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            131
+          ]
+        },
+        "snes_pointer": "$DA39C4",
+        "tile_4bpp_count": 43
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 207,
+        "decoded_sha256": "a8fcf9c99683c1c65baacdd9cbd22ff712415b1d1df11b29dda6fb28d239ef8a",
+        "decompressed_size": 416,
+        "descriptor_selected": true,
+        "file_offset": 1719426,
+        "gfx_index": 62,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            132
+          ]
+        },
+        "snes_pointer": "$DA3C82",
+        "tile_4bpp_count": 13
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 167,
+        "decoded_sha256": "ad92926796e4f3e446a2132aba2314e54f234ec1eb1441c2e0c1928579203bff",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1719633,
+        "gfx_index": 63,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            134,
+            135
+          ]
+        },
+        "snes_pointer": "$DA3D51",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 51,
+        "decoded_sha256": "52b942562023fe926a5fd30adf68c6df9dbd1aa26b2a1926a1f32570d1eba486",
+        "decompressed_size": 224,
+        "descriptor_selected": true,
+        "file_offset": 1719800,
+        "gfx_index": 64,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            120
+          ]
+        },
+        "snes_pointer": "$DA3DF8",
+        "tile_4bpp_count": 7
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 135,
+        "decoded_sha256": "0923c13d5a7b365d12abe4d93d108527f741ba28cb6c0551dc662c9249897214",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1719851,
+        "gfx_index": 65,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            96,
+            155
+          ]
+        },
+        "snes_pointer": "$DA3E2B",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 130,
+        "decoded_sha256": "8e7a7a80ba15bf56e668ec70fc75fa73abca91beeb6846462bbe56fafef9a7bd",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1719986,
+        "gfx_index": 66,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            97
+          ]
+        },
+        "snes_pointer": "$DA3EB2",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 70,
+        "decoded_sha256": "995720c03fad251eea4375fe61852e9fb6faf5ce45f18d640062626cea693e48",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1720116,
+        "gfx_index": 67,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            98
+          ]
+        },
+        "snes_pointer": "$DA3F34",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 89,
+        "decoded_sha256": "a2c39c90f2fdaa5e6fe4fcbf4bfb5eef20557952b09f211488c2a708c6ad715b",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1720186,
+        "gfx_index": 68,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            99
+          ]
+        },
+        "snes_pointer": "$DA3F7A",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 141,
+        "decoded_sha256": "0191c03817543044f85da4dd806e49f16dcb23b56ab4edf39dad77e47e4f92d8",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1720275,
+        "gfx_index": 69,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            100,
+            185
+          ]
+        },
+        "snes_pointer": "$DA3FD3",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 142,
+        "decoded_sha256": "0ca6fe87dcaeacbd6b3734958abb05e6cf47e187aaef4f57a682de0d9bfb04be",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1720416,
+        "gfx_index": 70,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            101
+          ]
+        },
+        "snes_pointer": "$DA4060",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 135,
+        "decoded_sha256": "93140ab254fc82e4cd9d87671bdcf96281edc11232fe7d2684c11e5cc807f039",
+        "decompressed_size": 160,
+        "descriptor_selected": false,
+        "file_offset": 1720558,
+        "gfx_index": 71,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DA40EE",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 100,
+        "decoded_sha256": "4974b291621896f0b0b54585d58ba0a81349eb3d20802c2759a153f10916467e",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1720693,
+        "gfx_index": 72,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            103
+          ]
+        },
+        "snes_pointer": "$DA4175",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 233,
+        "decoded_sha256": "d57d0ec775281361783b47ca33a5264893973d40e09bb544d5cd711d6c617197",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1720793,
+        "gfx_index": 73,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            104
+          ]
+        },
+        "snes_pointer": "$DA41D9",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 142,
+        "decoded_sha256": "a3d478468f51abed6769535b4a567ab6f9d3088665438894d9f3ada34a6c8919",
+        "decompressed_size": 160,
+        "descriptor_selected": false,
+        "file_offset": 1721026,
+        "gfx_index": 74,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DA42C2",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 129,
+        "decoded_sha256": "ca7b6a36173df729922e89ee7157859a22ba05054b07a0a7e158132f8bdef502",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1721168,
+        "gfx_index": 75,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            105
+          ]
+        },
+        "snes_pointer": "$DA4350",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 130,
+        "decoded_sha256": "828ed3bc241ad019689f9ba47d9f1e2ec238c6284312c9d68b81441c06edf182",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1721297,
+        "gfx_index": 76,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            106
+          ]
+        },
+        "snes_pointer": "$DA43D1",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 234,
+        "decoded_sha256": "3a64804b288e05c5cca6855553342d4bba2b5b987a3ec5b61d7024f160dd0366",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1710136,
+        "gfx_index": 77,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            108
+          ]
+        },
+        "snes_pointer": "$DA1838",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5719,
+        "decoded_sha256": "7c8457f72c8b4685e0520fc35b73fa25942adbef0858274d06eb2488e195652c",
+        "decompressed_size": 7104,
+        "descriptor_selected": true,
+        "file_offset": 1566871,
+        "gfx_index": 78,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            49,
+            50
+          ],
+          "npc_ids": [
+            75
+          ]
+        },
+        "snes_pointer": "$D7E897",
+        "tile_4bpp_count": 222
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3266,
+        "decoded_sha256": "6cac8d6b76c3b70b2f3ad1cfd1026473d8108cf29be1cd5c1d033129b2f687b6",
+        "decompressed_size": 3808,
+        "descriptor_selected": true,
+        "file_offset": 1586310,
+        "gfx_index": 79,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            1,
+            61
+          ],
+          "npc_ids": [
+            76
+          ]
+        },
+        "snes_pointer": "$D83486",
+        "tile_4bpp_count": 119
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 11579,
+        "decoded_sha256": "79d6c0f8a8f219feaeb6ad0c053b769474644de228dc0c1c8f00a65bd7699c56",
+        "decompressed_size": 13888,
+        "descriptor_selected": true,
+        "file_offset": 1589576,
+        "gfx_index": 80,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            2,
+            123,
+            170
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D84148",
+        "tile_4bpp_count": 434
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1735,
+        "decoded_sha256": "976aa682f1aed5acfd7e7c8d596fe9ba79b0c34a818f9ba5ecefd799f1124bfd",
+        "decompressed_size": 3104,
+        "descriptor_selected": true,
+        "file_offset": 1459699,
+        "gfx_index": 81,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            3,
+            225
+          ],
+          "npc_ids": [
+            77
+          ]
+        },
+        "snes_pointer": "$D645F3",
+        "tile_4bpp_count": 97
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7504,
+        "decoded_sha256": "4102e93f699b01a5610bf57e110e2c8c510a582113d4063af57caf913de0d09b",
+        "decompressed_size": 9472,
+        "descriptor_selected": true,
+        "file_offset": 1601155,
+        "gfx_index": 82,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            4,
+            238
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D86E83",
+        "tile_4bpp_count": 296
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7491,
+        "decoded_sha256": "38ce6c8e49dff3b722f2eff0157d18206af7d927d0712fe9a17e74069eab20ac",
+        "decompressed_size": 8928,
+        "descriptor_selected": true,
+        "file_offset": 1547891,
+        "gfx_index": 83,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            5,
+            75
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D79E73",
+        "tile_4bpp_count": 279
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7551,
+        "decoded_sha256": "d5757ddd23c67ce84fde5f529922df02dfe78a0df48ec860bbba8bc8011b6a08",
+        "decompressed_size": 9248,
+        "descriptor_selected": true,
+        "file_offset": 1608659,
+        "gfx_index": 84,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            6,
+            124,
+            227
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D88BD3",
+        "tile_4bpp_count": 289
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3773,
+        "decoded_sha256": "cc5cca5614f4c8a91297a879c4753378ab326c8ee94f8d0892d4b8d566d037ea",
+        "decompressed_size": 8192,
+        "descriptor_selected": true,
+        "file_offset": 1616210,
+        "gfx_index": 85,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            8,
+            21,
+            22,
+            23,
+            25,
+            26,
+            27
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D8A952",
+        "tile_4bpp_count": 256
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 6152,
+        "decoded_sha256": "e2b09698f6c1d55a9c1e1b4ff0cc68330c256f43e75b63b7672c8a791e012ce9",
+        "decompressed_size": 8704,
+        "descriptor_selected": true,
+        "file_offset": 1572864,
+        "gfx_index": 86,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            242
+          ],
+          "npc_ids": [
+            78
+          ]
+        },
+        "snes_pointer": "$D80000",
+        "tile_4bpp_count": 272
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 9868,
+        "decoded_sha256": "52edf2054f30d27e0e1aca363f4f82de0a9456b978528467456c1ff5380a340c",
+        "decompressed_size": 12288,
+        "descriptor_selected": true,
+        "file_offset": 1492862,
+        "gfx_index": 87,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            28,
+            29,
+            30,
+            32
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6C77E",
+        "tile_4bpp_count": 384
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7294,
+        "decoded_sha256": "d0d4fb53575b1ad384b2359021015e33c66833ad441eea22fa38a12de0c445c8",
+        "decompressed_size": 8160,
+        "descriptor_selected": true,
+        "file_offset": 1579016,
+        "gfx_index": 88,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            121,
+            122,
+            172
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D81808",
+        "tile_4bpp_count": 255
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5954,
+        "decoded_sha256": "6a95d31f1fcbf6b7bdbfec1a03f10d98c34839278bb4848d60374fd6454fda83",
+        "decompressed_size": 8192,
+        "descriptor_selected": true,
+        "file_offset": 1434037,
+        "gfx_index": 89,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            34,
+            35,
+            36,
+            38,
+            39,
+            40,
+            175
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D5E1B5",
+        "tile_4bpp_count": 256
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5359,
+        "decoded_sha256": "3e38cfea61056db06e1ba115e651d8b2852e72848a5a633670eedb2e40ede9d1",
+        "decompressed_size": 5824,
+        "descriptor_selected": true,
+        "file_offset": 1441792,
+        "gfx_index": 90,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            59
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D60000",
+        "tile_4bpp_count": 182
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 2324,
+        "decoded_sha256": "26c2e4404af5665b4ac842e90e64be72af37004e12748dadee739dae39601209",
+        "decompressed_size": 2432,
+        "descriptor_selected": true,
+        "file_offset": 1539840,
+        "gfx_index": 91,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            57,
+            240
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D77F00",
+        "tile_4bpp_count": 76
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2875,
+        "decoded_sha256": "653bf92307d403305e1405b84d37d2c5414e6f37eb2e4b26b28fb602d4e1a8b3",
+        "decompressed_size": 3648,
+        "descriptor_selected": true,
+        "file_offset": 1542164,
+        "gfx_index": 92,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            140,
+            141
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D78814",
+        "tile_4bpp_count": 114
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1562,
+        "decoded_sha256": "75cb6483163b3ea1974212c2c7873d99ed949fa547443c6f0d129af09dab1f11",
+        "decompressed_size": 2176,
+        "descriptor_selected": true,
+        "file_offset": 1504222,
+        "gfx_index": 93,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            99,
+            101
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6F3DE",
+        "tile_4bpp_count": 68
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5235,
+        "decoded_sha256": "97b9f4274605ced7e080689c8666eb0680c2a4cac2153c4ef15b28cc38c36ce8",
+        "decompressed_size": 7328,
+        "descriptor_selected": true,
+        "file_offset": 1447151,
+        "gfx_index": 94,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            51,
+            52
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D614EF",
+        "tile_4bpp_count": 229
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1451,
+        "decoded_sha256": "f7524f355cc488d778bc63949806ecabb000eaaf287e6b37e13550f4fbd11457",
+        "decompressed_size": 1728,
+        "descriptor_selected": true,
+        "file_offset": 1528849,
+        "gfx_index": 95,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            69
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D75411",
+        "tile_4bpp_count": 54
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1314,
+        "decoded_sha256": "eff265b0198596601227e88423be73a3faf206a42d1ea055916b37b3a582c6c1",
+        "decompressed_size": 1856,
+        "descriptor_selected": true,
+        "file_offset": 1527535,
+        "gfx_index": 96,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            84,
+            85,
+            86
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D74EEF",
+        "tile_4bpp_count": 58
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 4964,
+        "decoded_sha256": "0d9eb3daebdde7097d58cbf240f8caba11671e68c3d871f72decf72e9809ce04",
+        "decompressed_size": 6144,
+        "descriptor_selected": true,
+        "file_offset": 1461434,
+        "gfx_index": 97,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            137,
+            138,
+            139
+          ],
+          "npc_ids": [
+            170
+          ]
+        },
+        "snes_pointer": "$D64CBA",
+        "tile_4bpp_count": 192
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 2548,
+        "decoded_sha256": "dfff76ce96f1608f636257f9b07f74e5d18c7fd91179ab72cffa6c35ec9c634c",
+        "decompressed_size": 3488,
+        "descriptor_selected": true,
+        "file_offset": 1466398,
+        "gfx_index": 98,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            76,
+            77,
+            78,
+            79,
+            145,
+            224
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6601E",
+        "tile_4bpp_count": 109
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5540,
+        "decoded_sha256": "f950f88b193c99088afa040d5efe7210fe4afe852644058d2e4de4debb6f3f35",
+        "decompressed_size": 6720,
+        "descriptor_selected": true,
+        "file_offset": 1468946,
+        "gfx_index": 99,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            0,
+            130,
+            229
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D66A12",
+        "tile_4bpp_count": 210
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3053,
+        "decoded_sha256": "1c47da48ae34bd83066701017bdb741093e41d37d55e3590172654953f300c16",
+        "decompressed_size": 3680,
+        "descriptor_selected": true,
+        "file_offset": 1474486,
+        "gfx_index": 100,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            87,
+            88,
+            89
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D67FB6",
+        "tile_4bpp_count": 115
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3047,
+        "decoded_sha256": "19178c0daa18dbca9e9cfcf8f183bb4463811fcdfd3eb72f12b7dad93eb3b347",
+        "decompressed_size": 4064,
+        "descriptor_selected": true,
+        "file_offset": 1477539,
+        "gfx_index": 101,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            136,
+            171
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D68BA3",
+        "tile_4bpp_count": 127
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2819,
+        "decoded_sha256": "ad95ec9bd6ed1e42f86482c0f40e58e904e616735872e471b003e2e86b11b920",
+        "decompressed_size": 3616,
+        "descriptor_selected": true,
+        "file_offset": 1480586,
+        "gfx_index": 102,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            102,
+            104,
+            105,
+            106,
+            107,
+            108
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6978A",
+        "tile_4bpp_count": 113
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1281,
+        "decoded_sha256": "2e952df92c62fb56a24cef87ff85c14fa72c36e56e6cc17898ade6c02102e05f",
+        "decompressed_size": 1760,
+        "descriptor_selected": true,
+        "file_offset": 1507328,
+        "gfx_index": 103,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            80,
+            81,
+            115
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D70000",
+        "tile_4bpp_count": 55
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1492,
+        "decoded_sha256": "bc292b7bb89c829c4cab1f86caa05697ef98acea45fac699b27f9177b1bec96f",
+        "decompressed_size": 1952,
+        "descriptor_selected": true,
+        "file_offset": 1502730,
+        "gfx_index": 104,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            82,
+            83,
+            213,
+            214
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6EE0A",
+        "tile_4bpp_count": 61
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1795,
+        "decoded_sha256": "f0e0b282e8869055029abcddff456d9eb1a0821594f869bad0aa15be0a9697be",
+        "decompressed_size": 2368,
+        "descriptor_selected": true,
+        "file_offset": 1439991,
+        "gfx_index": 105,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            134,
+            135
+          ],
+          "npc_ids": [
+            164
+          ]
+        },
+        "snes_pointer": "$D5F8F7",
+        "tile_4bpp_count": 74
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1709,
+        "decoded_sha256": "131546b23457409d0e0092ea191fc20da0a690ad1091e2bd717f662d77b27610",
+        "decompressed_size": 3168,
+        "descriptor_selected": true,
+        "file_offset": 1483405,
+        "gfx_index": 106,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            62,
+            63,
+            64,
+            65
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6A28D",
+        "tile_4bpp_count": 99
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2852,
+        "decoded_sha256": "66a80ecff87f5a01bcaafaf285ccc368566cd84af2ebeb23fbb1d1054cda6371",
+        "decompressed_size": 3744,
+        "descriptor_selected": true,
+        "file_offset": 1545039,
+        "gfx_index": 107,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            129,
+            131
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D7934F",
+        "tile_4bpp_count": 117
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3743,
+        "decoded_sha256": "aa499baf09b3bc0e550c4aa305591318d2143b271d5bea87503de8914ea52629",
+        "decompressed_size": 5504,
+        "descriptor_selected": true,
+        "file_offset": 1485114,
+        "gfx_index": 108,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            43,
+            44,
+            45,
+            46
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6A93A",
+        "tile_4bpp_count": 172
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 4970,
+        "decoded_sha256": "bf4ff13bc680684c924edcb120da2b2fbd11e48f31ed5b543e9df9a124934acc",
+        "decompressed_size": 8192,
+        "descriptor_selected": true,
+        "file_offset": 1561901,
+        "gfx_index": 109,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            109,
+            112,
+            245
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D7D52D",
+        "tile_4bpp_count": 256
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 2071,
+        "decoded_sha256": "6f64aca3e3a7f46b402c16bf76df5c92947e81073ed3f546fceea56d64fbe382",
+        "decompressed_size": 2720,
+        "descriptor_selected": true,
+        "file_offset": 1508609,
+        "gfx_index": 110,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            41,
+            42
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D70501",
+        "tile_4bpp_count": 85
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7616,
+        "decoded_sha256": "8a778da303b35cc875c99e4015d328fcb932b790818d0f06f99b271f6c86f215",
+        "decompressed_size": 10112,
+        "descriptor_selected": true,
+        "file_offset": 1510680,
+        "gfx_index": 111,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            72,
+            73,
+            74
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D70D18",
+        "tile_4bpp_count": 316
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2590,
+        "decoded_sha256": "16c8dd18869a7e25d3064b49b0d81be69e7ef95e1249e7a3aff106fc07efdf79",
+        "decompressed_size": 4096,
+        "descriptor_selected": true,
+        "file_offset": 1518296,
+        "gfx_index": 112,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            91,
+            92,
+            93,
+            94,
+            95,
+            97,
+            98
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D72AD8",
+        "tile_4bpp_count": 128
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 6649,
+        "decoded_sha256": "bc1f98b948769e77e95f219df3e1f82d276ac5229695bd095b86c6b666a0f50f",
+        "decompressed_size": 8672,
+        "descriptor_selected": true,
+        "file_offset": 1520886,
+        "gfx_index": 113,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            125,
+            126,
+            127
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D734F6",
+        "tile_4bpp_count": 271
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7313,
+        "decoded_sha256": "caeac04cb7f4f4977ea47d7acbd43024d672be4ed880e3d7a53bdabdde97b470",
+        "decompressed_size": 9312,
+        "descriptor_selected": true,
+        "file_offset": 1452386,
+        "gfx_index": 114,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            70,
+            71
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D62962",
+        "tile_4bpp_count": 291
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 9540,
+        "decoded_sha256": "af26d33c6887bcea776e5e628c21c78d21d1c27660164c28cb5eac71392baa69",
+        "decompressed_size": 12800,
+        "descriptor_selected": true,
+        "file_offset": 1530300,
+        "gfx_index": 115,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            113,
+            116,
+            226
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D759BC",
+        "tile_4bpp_count": 400
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 103,
+        "decoded_sha256": "23a19e668d91fd4b5b525c01c370106f594b5ac8c2de3a25e55e19e46d9eb687",
+        "decompressed_size": 320,
+        "descriptor_selected": true,
+        "file_offset": 1710370,
+        "gfx_index": 116,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            141
+          ]
+        },
+        "snes_pointer": "$DA1922",
+        "tile_4bpp_count": 10
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 653,
+        "decoded_sha256": "e9d98eeabeee7af976c1d80c31456386b56d4c14b784b5489515ca8e3257ae1b",
+        "decompressed_size": 768,
+        "descriptor_selected": true,
+        "file_offset": 1710473,
+        "gfx_index": 117,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            133
+          ]
+        },
+        "snes_pointer": "$DA1989",
+        "tile_4bpp_count": 24
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 143,
+        "decoded_sha256": "4827c1855238bc60ddf8429c72321cd9e77aee2a3d787aded141127727a0776e",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1711126,
+        "gfx_index": 118,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            137
+          ]
+        },
+        "snes_pointer": "$DA1C16",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 184,
+        "decoded_sha256": "3f3ca5ae600038b3088edee527c92a75467315094c029f1750ec8c6d5869cbf7",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1711269,
+        "gfx_index": 119,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            107
+          ]
+        },
+        "snes_pointer": "$DA1CA5",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 1111,
+        "decoded_sha256": "e4fe8d34f1c2e93867d37ae9f642c77bb76f9dc3446b5a76aac08a471b6a3cc2",
+        "decompressed_size": 1344,
+        "descriptor_selected": true,
+        "file_offset": 1711453,
+        "gfx_index": 120,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            138,
+            186
+          ]
+        },
+        "snes_pointer": "$DA1D5D",
+        "tile_4bpp_count": 42
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 388,
+        "decoded_sha256": "21bae2ba5d6314d7d0f84effd727dd5b5e675b9b81da161d0a306da0a96386cd",
+        "decompressed_size": 704,
+        "descriptor_selected": true,
+        "file_offset": 1712564,
+        "gfx_index": 121,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            139
+          ]
+        },
+        "snes_pointer": "$DA21B4",
+        "tile_4bpp_count": 22
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 181,
+        "decoded_sha256": "8012a5ed64899a7eb51b6a6389b9165127929243c3fe6ae80a9f32ea7f966f82",
+        "decompressed_size": 448,
+        "descriptor_selected": true,
+        "file_offset": 1712952,
+        "gfx_index": 122,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            140
+          ]
+        },
+        "snes_pointer": "$DA2338",
+        "tile_4bpp_count": 14
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 8243,
+        "decoded_sha256": "78ef10ab552c4c245fe36eb719e6c9c9f20bca9d11747dfda3099383496e948a",
+        "decompressed_size": 11392,
+        "descriptor_selected": true,
+        "file_offset": 2031616,
+        "gfx_index": 123,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            146,
+            193
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DF0000",
+        "tile_4bpp_count": 356
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2288,
+        "decoded_sha256": "7b91165decc9c9326fa60ff7bdf0b4973b4111c8e14784a12afe77c90247d72b",
+        "decompressed_size": 2944,
+        "descriptor_selected": true,
+        "file_offset": 2039859,
+        "gfx_index": 124,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            147
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DF2033",
+        "tile_4bpp_count": 92
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2204,
+        "decoded_sha256": "aa9c3e2cd125a364b0460adcf05df3dbe9f602d5e0a6e02f36d3e87fa10f1c33",
+        "decompressed_size": 2656,
+        "descriptor_selected": true,
+        "file_offset": 1659392,
+        "gfx_index": 125,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            14,
+            54,
+            79
+          ]
+        },
+        "snes_pointer": "$D95200",
+        "tile_4bpp_count": 83
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1847,
+        "decoded_sha256": "ad4f917cba8ba0960dac532b1e08bef616e539c59e7c2e49975ecba940f90786",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1661596,
+        "gfx_index": 126,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            15,
+            80
+          ]
+        },
+        "snes_pointer": "$D95A9C",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1717,
+        "decoded_sha256": "915303a52c31345e2677dacb07199901aa1486c84117722c1e3dadce913bada5",
+        "decompressed_size": 1728,
+        "descriptor_selected": true,
+        "file_offset": 1687829,
+        "gfx_index": 127,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            26
+          ]
+        },
+        "snes_pointer": "$D9C115",
+        "tile_4bpp_count": 54
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2004,
+        "decoded_sha256": "85be60b3b983bac86f2cad30663045adeedefd30830581c50b21f4aa31b2353f",
+        "decompressed_size": 2304,
+        "descriptor_selected": true,
+        "file_offset": 1724624,
+        "gfx_index": 128,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            27
+          ]
+        },
+        "snes_pointer": "$DA50D0",
+        "tile_4bpp_count": 72
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 477,
+        "decoded_sha256": "3d0ff4546fb3e10640cf2c9c1232323f8f8708d5728b726744c947e656061256",
+        "decompressed_size": 576,
+        "descriptor_selected": true,
+        "file_offset": 1730244,
+        "gfx_index": 129,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            71
+          ]
+        },
+        "snes_pointer": "$DA66C4",
+        "tile_4bpp_count": 18
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2174,
+        "decoded_sha256": "8b715d2a0d995b66151c211a21e5d40c3e4b09c1dcdb767c10995fc20a58d9f9",
+        "decompressed_size": 2496,
+        "descriptor_selected": true,
+        "file_offset": 1732055,
+        "gfx_index": 130,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            73
+          ]
+        },
+        "snes_pointer": "$DA6DD7",
+        "tile_4bpp_count": 78
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1754,
+        "decoded_sha256": "377936146a2962c8cb8891be855fc96dd1552d9b1c77d8624f2178a3a42fa990",
+        "decompressed_size": 2016,
+        "descriptor_selected": true,
+        "file_offset": 1734229,
+        "gfx_index": 131,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            70
+          ]
+        },
+        "snes_pointer": "$DA7655",
+        "tile_4bpp_count": 63
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 821,
+        "decoded_sha256": "f04c87108ca0caede016af8168feca0debf317aec063a8a80ae1bc381fd954f1",
+        "decompressed_size": 1088,
+        "descriptor_selected": true,
+        "file_offset": 1735983,
+        "gfx_index": 132,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            72
+          ]
+        },
+        "snes_pointer": "$DA7D2F",
+        "tile_4bpp_count": 34
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 6977,
+        "decoded_sha256": "91d082942de88224acfeeff85bc42e8b971e655cc636d162d43a3e243391054d",
+        "decompressed_size": 8512,
+        "descriptor_selected": true,
+        "file_offset": 2042147,
+        "gfx_index": 133,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            144,
+            199
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DF2923",
+        "tile_4bpp_count": 266
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1010,
+        "decoded_sha256": "d474bdd96f9a41dcaf8ee2b3fb2ce10e8f852a49201892671b608f44eddaa9b6",
+        "decompressed_size": 1760,
+        "descriptor_selected": true,
+        "file_offset": 1736804,
+        "gfx_index": 134,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            86,
+            212
+          ]
+        },
+        "snes_pointer": "$DA8064",
+        "tile_4bpp_count": 55
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1974,
+        "decoded_sha256": "946fe73810c6078a2b6c5f03374779f1c70f53d2c07d2dc7ae7573d75589b10f",
+        "decompressed_size": 2336,
+        "descriptor_selected": true,
+        "file_offset": 1739424,
+        "gfx_index": 135,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            60
+          ]
+        },
+        "snes_pointer": "$DA8AA0",
+        "tile_4bpp_count": 73
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1610,
+        "decoded_sha256": "9e8b0d85d37126e2404b2886b160aa0920e545a22ab63281e8606f0a07bed0e9",
+        "decompressed_size": 1952,
+        "descriptor_selected": true,
+        "file_offset": 1737814,
+        "gfx_index": 136,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            87,
+            88
+          ]
+        },
+        "snes_pointer": "$DA8456",
+        "tile_4bpp_count": 61
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1227,
+        "decoded_sha256": "385acfc3e3369b689b9a2e4fcb423be35b54a05bb309e47a17a63e36aa964a8f",
+        "decompressed_size": 1312,
+        "descriptor_selected": true,
+        "file_offset": 1745160,
+        "gfx_index": 137,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            29
+          ]
+        },
+        "snes_pointer": "$DAA108",
+        "tile_4bpp_count": 41
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1871,
+        "decoded_sha256": "0c033886482eeaba4fcfce746c7fa04a3b53023cb7d706b62c587ca7eb4c4a36",
+        "decompressed_size": 2464,
+        "descriptor_selected": true,
+        "file_offset": 1663443,
+        "gfx_index": 138,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            35,
+            180
+          ]
+        },
+        "snes_pointer": "$D961D3",
+        "tile_4bpp_count": 77
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 8623,
+        "decoded_sha256": "ba831215d0e5fbca58916e55f46e9c4519fe6e04069c056f043273f972eaa6a4",
+        "decompressed_size": 10528,
+        "descriptor_selected": true,
+        "file_offset": 2049124,
+        "gfx_index": 139,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            155,
+            156
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DF4464",
+        "tile_4bpp_count": 329
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7976,
+        "decoded_sha256": "22f8b5dbe7c4d8272531a96449055f00b25775b489d338ec63db440a9c008e62",
+        "decompressed_size": 8832,
+        "descriptor_selected": true,
+        "file_offset": 2057747,
+        "gfx_index": 140,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            169,
+            200
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DF6613",
+        "tile_4bpp_count": 276
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 4406,
+        "decoded_sha256": "c5e9a364e4ce0b9b93179f48665e9af4516c18341e5dcc633cdc0a45c4eaf856",
+        "decompressed_size": 4768,
+        "descriptor_selected": true,
+        "file_offset": 2065723,
+        "gfx_index": 141,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            154
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DF853B",
+        "tile_4bpp_count": 149
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 4495,
+        "decoded_sha256": "abab1809dab130d9add85ad8cd37f9acc8e377925ea3b951391648b8c2d8b41e",
+        "decompressed_size": 5664,
+        "descriptor_selected": true,
+        "file_offset": 2070129,
+        "gfx_index": 142,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            142
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DF9671",
+        "tile_4bpp_count": 177
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5721,
+        "decoded_sha256": "b17749505306e0b18a87e4808f17a45950c51f44cf7827d2a1203a6bdf225be9",
+        "decompressed_size": 6656,
+        "descriptor_selected": true,
+        "file_offset": 2074624,
+        "gfx_index": 143,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            161,
+            162
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFA800",
+        "tile_4bpp_count": 208
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 413,
+        "decoded_sha256": "8ff57d7107f8637eaa3051cbe38e28a3a53f4686aa1363f5bea5a3d3f551273e",
+        "decompressed_size": 512,
+        "descriptor_selected": true,
+        "file_offset": 2080345,
+        "gfx_index": 144,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            148
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFBE59",
+        "tile_4bpp_count": 16
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 724,
+        "decoded_sha256": "fffa886519b2da3b2c81a41fc9802fe2d7720e3dbeed05424495938271b8da42",
+        "decompressed_size": 1056,
+        "descriptor_selected": true,
+        "file_offset": 2080758,
+        "gfx_index": 145,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            173
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFBFF6",
+        "tile_4bpp_count": 33
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 2953,
+        "decoded_sha256": "0d9eaaa3cca231d1e2801d4566280071ddba06013b1d4e021a15366b24ebfc3c",
+        "decompressed_size": 4096,
+        "descriptor_selected": true,
+        "file_offset": 2081482,
+        "gfx_index": 146,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            150
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFC2CA",
+        "tile_4bpp_count": 128
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 940,
+        "decoded_sha256": "dbee39cda177889cb6d7d0ebefce55a61d7bdef460f9150de17d9996a1fd75be",
+        "decompressed_size": 928,
+        "descriptor_selected": true,
+        "file_offset": 1746387,
+        "gfx_index": 147,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            153,
+            161
+          ]
+        },
+        "snes_pointer": "$DAA5D3",
+        "tile_4bpp_count": 29
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 4246,
+        "decoded_sha256": "47a30788ec83b620bf3ec9851d1204a967d974962ae0538a1486be7b46262eb6",
+        "decompressed_size": 4992,
+        "descriptor_selected": true,
+        "file_offset": 1747327,
+        "gfx_index": 148,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            37
+          ],
+          "npc_ids": [
+            74,
+            204
+          ]
+        },
+        "snes_pointer": "$DAA97F",
+        "tile_4bpp_count": 156
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 152,
+        "decoded_sha256": "d94068c13de42c2a882db2936d18ea41da312acbef20b75bb979c59d821927a4",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1751573,
+        "gfx_index": 149,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            110
+          ]
+        },
+        "snes_pointer": "$DABA15",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 934,
+        "decoded_sha256": "edadfba6eea52d7b293f917eb1af87aa1ab9b9e452db22f6aaef8d51daadf489",
+        "decompressed_size": 1152,
+        "descriptor_selected": true,
+        "file_offset": 1751725,
+        "gfx_index": 150,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            125,
+            199
+          ]
+        },
+        "snes_pointer": "$DABAAD",
+        "tile_4bpp_count": 36
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 253,
+        "decoded_sha256": "018089c305df8467b503c8a352dfdf9ece7d3e39f5be8a07ec76cef52d4023e8",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1752659,
+        "gfx_index": 151,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            144
+          ]
+        },
+        "snes_pointer": "$DABE53",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 161,
+        "decoded_sha256": "a2344f04c0922cd2462f1ca96944e6a2f2568cc9e2a830be4c19c5fea4a41666",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1752912,
+        "gfx_index": 152,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            146,
+            147,
+            148
+          ]
+        },
+        "snes_pointer": "$DABF50",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 169,
+        "decoded_sha256": "060e90d7b33792d8a478e2e0a85e8fe6db55ff6c7bcd6a98cb88a6014602a0c2",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1753534,
+        "gfx_index": 153,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            152,
+            224,
+            225,
+            226,
+            227
+          ]
+        },
+        "snes_pointer": "$DAC1BE",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 7130,
+        "decoded_sha256": "14b2e961474415b6c68fc1dfcc0736b81f43c2d6269c63dec3085a41f8f9ef95",
+        "decompressed_size": 9280,
+        "descriptor_selected": true,
+        "file_offset": 2084435,
+        "gfx_index": 154,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            163,
+            164
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFCE53",
+        "tile_4bpp_count": 290
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5184,
+        "decoded_sha256": "ba5f80d57981dc7082a3921be0f0f5b784c7d661ff11cc7811dac86d9e386fa1",
+        "decompressed_size": 8192,
+        "descriptor_selected": true,
+        "file_offset": 1412096,
+        "gfx_index": 155,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            166,
+            167,
+            168
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D58C00",
+        "tile_4bpp_count": 256
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 188,
+        "decoded_sha256": "6a31ecb469114c08c1a16cef5b6032c85a77ace02208353c00ba9f38a3e43467",
+        "decompressed_size": 608,
+        "descriptor_selected": true,
+        "file_offset": 1753703,
+        "gfx_index": 156,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            154
+          ]
+        },
+        "snes_pointer": "$DAC267",
+        "tile_4bpp_count": 19
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 461,
+        "decoded_sha256": "cceb6927445da75060314c02d9ee684dc1437a0b22c253badd87ee3e63876c9a",
+        "decompressed_size": 512,
+        "descriptor_selected": true,
+        "file_offset": 1753073,
+        "gfx_index": 157,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            149
+          ]
+        },
+        "snes_pointer": "$DABFF1",
+        "tile_4bpp_count": 16
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3078,
+        "decoded_sha256": "28e2d457db803de85c52e81c606b42e841e3ea969a771fc80f93892929da203c",
+        "decompressed_size": 4096,
+        "descriptor_selected": true,
+        "file_offset": 1753891,
+        "gfx_index": 158,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            16
+          ]
+        },
+        "snes_pointer": "$DAC323",
+        "tile_4bpp_count": 128
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 271,
+        "decoded_sha256": "e992e5a138aa705ae8d7cf5890ad7f7df9f8645dffcf56437193a527c96c712e",
+        "decompressed_size": 576,
+        "descriptor_selected": true,
+        "file_offset": 1756969,
+        "gfx_index": 159,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            126
+          ]
+        },
+        "snes_pointer": "$DACF29",
+        "tile_4bpp_count": 18
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 139,
+        "decoded_sha256": "2ea675efd382d285baa5cf5f9ee2b6a3dc1a167a0d39d99ffc70f782582bf2d5",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1757240,
+        "gfx_index": 160,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            111
+          ]
+        },
+        "snes_pointer": "$DAD038",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 989,
+        "decoded_sha256": "efa9e162a1c8bb3c7c868812b88fa0bd1d27d0a1cb7c3d34aac4a5b20618f27e",
+        "decompressed_size": 1248,
+        "descriptor_selected": true,
+        "file_offset": 2105736,
+        "gfx_index": 161,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            176
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E02188",
+        "tile_4bpp_count": 39
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3527,
+        "decoded_sha256": "50c152738e222b11fdf71cdfc597ae722f72298bc9eaa347480d4f4d6d649061",
+        "decompressed_size": 4992,
+        "descriptor_selected": true,
+        "file_offset": 2106725,
+        "gfx_index": 162,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            177,
+            178
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E02565",
+        "tile_4bpp_count": 156
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 1253,
+        "decoded_sha256": "bfc08459c4abde935183a317c3fd8e399ad8b4ca5807dd0a0daa9ec15a09b5c0",
+        "decompressed_size": 1664,
+        "descriptor_selected": true,
+        "file_offset": 1761358,
+        "gfx_index": 163,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            201,
+            202,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236
+          ],
+          "npc_ids": [
+            206
+          ]
+        },
+        "snes_pointer": "$DAE04E",
+        "tile_4bpp_count": 52
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 4697,
+        "decoded_sha256": "ad302996fab542cf3e9cbb56b930b7e97cac879d5a7569728035847733d8e508",
+        "decompressed_size": 6368,
+        "descriptor_selected": true,
+        "file_offset": 1417280,
+        "gfx_index": 164,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            151,
+            152
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D5A040",
+        "tile_4bpp_count": 199
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 11999,
+        "decoded_sha256": "3d1cec25fc025adfed2d3b3151f26879275f6b2b9367d312b5e85ea1a533b35a",
+        "decompressed_size": 15712,
+        "descriptor_selected": true,
+        "file_offset": 1421977,
+        "gfx_index": 165,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            153,
+            228
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D5B299",
+        "tile_4bpp_count": 491
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 9105,
+        "decoded_sha256": "c706b6c3cec2ef1041fb98d0884121f9fb62c85ee6bb39c2e66c3ef367827e8b",
+        "decompressed_size": 12384,
+        "descriptor_selected": true,
+        "file_offset": 2121965,
+        "gfx_index": 166,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            157,
+            158,
+            165,
+            186
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E060ED",
+        "tile_4bpp_count": 387
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 61,
+        "decoded_sha256": "5c55c8f4db4010ba9203d83536d0609856af8c847ac039e37e7dde8fbd574b61",
+        "decompressed_size": 448,
+        "descriptor_selected": true,
+        "file_offset": 1433976,
+        "gfx_index": 167,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            9,
+            10,
+            203,
+            241
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D5E178",
+        "tile_4bpp_count": 14
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 457,
+        "decoded_sha256": "55931be7c43fd5171a93138cb0690caf7d9d38873b494c463043208dd7f0c1c2",
+        "decompressed_size": 960,
+        "descriptor_selected": true,
+        "file_offset": 1757379,
+        "gfx_index": 168,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            183
+          ],
+          "npc_ids": [
+            127
+          ]
+        },
+        "snes_pointer": "$DAD0C3",
+        "tile_4bpp_count": 30
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 189,
+        "decoded_sha256": "ed35d14d800932cd526af65e5eb383209cc08b579e1d7273a3d083af9c98459b",
+        "decompressed_size": 224,
+        "descriptor_selected": true,
+        "file_offset": 1757875,
+        "gfx_index": 169,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            151
+          ]
+        },
+        "snes_pointer": "$DAD2B3",
+        "tile_4bpp_count": 7
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3773,
+        "decoded_sha256": "91ae7654de9a6df457a2b3ee4365a5000f58c6403ed4f2abd4398f58e7b70169",
+        "decompressed_size": 5024,
+        "descriptor_selected": true,
+        "file_offset": 2097152,
+        "gfx_index": 170,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            179,
+            181
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E00000",
+        "tile_4bpp_count": 157
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3953,
+        "decoded_sha256": "b4e044d170f7fffd1e3e0c994474caef4c9c6c910255ead4511e36cdb5b53c9e",
+        "decompressed_size": 4384,
+        "descriptor_selected": true,
+        "file_offset": 2100925,
+        "gfx_index": 171,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            180,
+            182
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E00EBD",
+        "tile_4bpp_count": 137
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 858,
+        "decoded_sha256": "2e85655a4c9a66b040bc6d51e521e2c2ccd333706207f91eb79190d3bf8c7a0b",
+        "decompressed_size": 1216,
+        "descriptor_selected": true,
+        "file_offset": 2104878,
+        "gfx_index": 172,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            212
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E01E2E",
+        "tile_4bpp_count": 38
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 4005,
+        "decoded_sha256": "29b3c54c9ffb829720d44f4d616832e7af9b5705bac79bec386d25fe1cca66c5",
+        "decompressed_size": 5984,
+        "descriptor_selected": true,
+        "file_offset": 1488857,
+        "gfx_index": 173,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            47,
+            48
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D6B7D9",
+        "tile_4bpp_count": 187
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 39,
+        "decoded_sha256": "c7d7140885cc40f03619f1b670011c8ab0d1d3abd879e192c0ae56604c32c07b",
+        "decompressed_size": 128,
+        "descriptor_selected": true,
+        "file_offset": 1757836,
+        "gfx_index": 174,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            150
+          ]
+        },
+        "snes_pointer": "$DAD28C",
+        "tile_4bpp_count": 4
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 878,
+        "decoded_sha256": "30fdfef8b3252b247cacbd6b668203649e0507f079af08c2f5679d338e21acec",
+        "decompressed_size": 1216,
+        "descriptor_selected": true,
+        "file_offset": 1758064,
+        "gfx_index": 175,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            156
+          ]
+        },
+        "snes_pointer": "$DAD370",
+        "tile_4bpp_count": 38
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 438,
+        "decoded_sha256": "d685edb39d08dd5aeedded2622f7dde46abc9a88c8b9d2a4507c176ca0b2ac98",
+        "decompressed_size": 544,
+        "descriptor_selected": true,
+        "file_offset": 2094941,
+        "gfx_index": 176,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            110,
+            216
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFF75D",
+        "tile_4bpp_count": 17
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2445,
+        "decoded_sha256": "452f221c8d69311065380e23726f9a10e8b7a76855abf5328971991ed804bfe4",
+        "decompressed_size": 2624,
+        "descriptor_selected": true,
+        "file_offset": 2110690,
+        "gfx_index": 177,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            111,
+            215
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E034E2",
+        "tile_4bpp_count": 82
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 297,
+        "decoded_sha256": "eda7a2422ecfb19232831c8beabd724a53fe34ddf07a7fa5d2fe27121cf894a8",
+        "decompressed_size": 448,
+        "descriptor_selected": true,
+        "file_offset": 1758942,
+        "gfx_index": 178,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            159
+          ]
+        },
+        "snes_pointer": "$DAD6DE",
+        "tile_4bpp_count": 14
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 507,
+        "decoded_sha256": "ec8dfcb12dc9c1dd5e50046d4ed488a6c83ccfd1c1f70698ccf7893d8405b8db",
+        "decompressed_size": 672,
+        "descriptor_selected": true,
+        "file_offset": 1374976,
+        "gfx_index": 179,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            160
+          ]
+        },
+        "snes_pointer": "$D4FB00",
+        "tile_4bpp_count": 21
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 181,
+        "decoded_sha256": "39a0b75ed74b3eb77ed00ea82585d2cad165cf77e65a24ad6e01c727403dbfa7",
+        "decompressed_size": 384,
+        "descriptor_selected": true,
+        "file_offset": 1375483,
+        "gfx_index": 180,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            158
+          ]
+        },
+        "snes_pointer": "$D4FCFB",
+        "tile_4bpp_count": 12
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 8830,
+        "decoded_sha256": "ae07cdc310d992f77fd708e7ee4f3deeead2370605db4b256001048b9d76b9ea",
+        "decompressed_size": 10976,
+        "descriptor_selected": true,
+        "file_offset": 2113135,
+        "gfx_index": 181,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            143
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E03E6F",
+        "tile_4bpp_count": 343
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 3376,
+        "decoded_sha256": "efdcb5199d80ae86989a38fe6c3969cfab4fab6bcf584452c9629853b38447e9",
+        "decompressed_size": 4320,
+        "descriptor_selected": true,
+        "file_offset": 2091565,
+        "gfx_index": 182,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            159,
+            160,
+            187
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFEA2D",
+        "tile_4bpp_count": 135
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1092,
+        "decoded_sha256": "40d84c5f23aefd2d29c7184b34b4b3d79e73875a95f59726fdf0b076ddeeff5e",
+        "decompressed_size": 1728,
+        "descriptor_selected": true,
+        "file_offset": 2095921,
+        "gfx_index": 183,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            7,
+            128
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DFFB31",
+        "tile_4bpp_count": 54
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2294,
+        "decoded_sha256": "d5185d832285f1b5e464d91f1f752ef363b4ac19ece0133cb5b527ba851139e3",
+        "decompressed_size": 3200,
+        "descriptor_selected": true,
+        "file_offset": 2131070,
+        "gfx_index": 184,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            54,
+            56,
+            185
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E0847E",
+        "tile_4bpp_count": 100
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 5769,
+        "decoded_sha256": "582b40de49ec85a29589e39115769b5ba6a3e71f9af0908b08f5536d30ad7f8e",
+        "decompressed_size": 7296,
+        "descriptor_selected": true,
+        "file_offset": 2133364,
+        "gfx_index": 185,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            53,
+            55,
+            184
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E08D74",
+        "tile_4bpp_count": 228
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 83,
+        "decoded_sha256": "d5fc359b98c11320b5df7cfc7a49b18ce815009d6fe976898931bff4042807c5",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1759239,
+        "gfx_index": 186,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            100
+          ],
+          "npc_ids": [
+            121
+          ]
+        },
+        "snes_pointer": "$DAD807",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 451,
+        "decoded_sha256": "773fca77cf2a10e62d501acd6b00437893c10dbc925ad6f886bd2ca11f512004",
+        "decompressed_size": 480,
+        "descriptor_selected": true,
+        "file_offset": 1375664,
+        "gfx_index": 187,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            90
+          ]
+        },
+        "snes_pointer": "$D4FDB0",
+        "tile_4bpp_count": 15
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 77,
+        "decoded_sha256": "413e3289d5fb37f796e327c63761aa81240cd4249c2c7c5f6085f2a098d6d538",
+        "decompressed_size": 192,
+        "descriptor_selected": true,
+        "file_offset": 1759322,
+        "gfx_index": 188,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            91
+          ]
+        },
+        "snes_pointer": "$DAD85A",
+        "tile_4bpp_count": 6
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1222,
+        "decoded_sha256": "a9e4c0cda61196fff8675ddfa18d501e08548700f51c9e916b78b5edbf408eba",
+        "decompressed_size": 1600,
+        "descriptor_selected": true,
+        "file_offset": 1303168,
+        "gfx_index": 189,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            92
+          ]
+        },
+        "snes_pointer": "$D3E280",
+        "tile_4bpp_count": 50
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 355,
+        "decoded_sha256": "d79d0b080244e7594b2bf282bb07044eeef24b5f3bba93672add58ff039ca982",
+        "decompressed_size": 384,
+        "descriptor_selected": true,
+        "file_offset": 1304390,
+        "gfx_index": 190,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            93
+          ]
+        },
+        "snes_pointer": "$D3E746",
+        "tile_4bpp_count": 12
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 434,
+        "decoded_sha256": "22282ee718124d0c2c3bfe20dce2d38a7e961ad16bc779418024609ae87d3f85",
+        "decompressed_size": 608,
+        "descriptor_selected": true,
+        "file_offset": 1304745,
+        "gfx_index": 191,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            94
+          ]
+        },
+        "snes_pointer": "$D3E8A9",
+        "tile_4bpp_count": 19
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 10959,
+        "decoded_sha256": "48072c075b22dc330d1434e6daa51895f08c923a01a736c88aa11fe4bfe31ee2",
+        "decompressed_size": 11968,
+        "descriptor_selected": true,
+        "file_offset": 2139133,
+        "gfx_index": 192,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            192
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E0A3FD",
+        "tile_4bpp_count": 374
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 1660,
+        "decoded_sha256": "ed69b7048f45ea0d33acff3e54b314a335be755623da4222467f0adcd420a0a0",
+        "decompressed_size": 2176,
+        "descriptor_selected": true,
+        "file_offset": 2200345,
+        "gfx_index": 193,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            174
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E19319",
+        "tile_4bpp_count": 68
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 953,
+        "decoded_sha256": "e6eefbed5421c1dc589ae99e493a8d8b773632ea349f8a8462b0f01c77b0b2f5",
+        "decompressed_size": 960,
+        "descriptor_selected": true,
+        "file_offset": 1305179,
+        "gfx_index": 194,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            95
+          ]
+        },
+        "snes_pointer": "$D3EA5B",
+        "tile_4bpp_count": 30
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 156,
+        "decoded_sha256": "1ff9eb02ec3468995ad3c655cd3c02c561a2e7299aef02d045150f50eca7c7a8",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1306132,
+        "gfx_index": 195,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            162
+          ]
+        },
+        "snes_pointer": "$D3EE14",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 410,
+        "decoded_sha256": "eff8295850e3ad6db42975b8b2c90f4cc2cb76971ba6f2dae58a563f627d8bc0",
+        "decompressed_size": 448,
+        "descriptor_selected": true,
+        "file_offset": 1306288,
+        "gfx_index": 196,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            163
+          ]
+        },
+        "snes_pointer": "$D3EEB0",
+        "tile_4bpp_count": 14
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 441,
+        "decoded_sha256": "633598e7d2a0ee5bbe3ef807c4ca4ae1e5432768036ba7cee3cc2541ec551987",
+        "decompressed_size": 640,
+        "descriptor_selected": true,
+        "file_offset": 2150092,
+        "gfx_index": 197,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            207,
+            208
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E0CECC",
+        "tile_4bpp_count": 20
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 98,
+        "decoded_sha256": "55ebef7bf183091d137e5e33db6ebc3e95347930776b2c97e86538798f4e9a73",
+        "decompressed_size": 192,
+        "descriptor_selected": true,
+        "file_offset": 1306698,
+        "gfx_index": 198,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            165
+          ]
+        },
+        "snes_pointer": "$D3F04A",
+        "tile_4bpp_count": 6
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 241,
+        "decoded_sha256": "5daf3cc450f6752b14114d544359f7785cfb9f8467bc50b0d3085c3890cd7cb1",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1306796,
+        "gfx_index": 199,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            166
+          ]
+        },
+        "snes_pointer": "$D3F0AC",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 266,
+        "decoded_sha256": "461c1766ed257cd3351fc35d71f1260c2ced2cc84807b97db61b6dded14d5081",
+        "decompressed_size": 320,
+        "descriptor_selected": true,
+        "file_offset": 1307037,
+        "gfx_index": 200,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            167
+          ]
+        },
+        "snes_pointer": "$D3F19D",
+        "tile_4bpp_count": 10
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 293,
+        "decoded_sha256": "fb0be733b25214cfcc296103c4d7920863d0b0aece6604f73f685490e06c7c4a",
+        "decompressed_size": 352,
+        "descriptor_selected": true,
+        "file_offset": 1307303,
+        "gfx_index": 201,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            168
+          ]
+        },
+        "snes_pointer": "$D3F2A7",
+        "tile_4bpp_count": 11
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 497,
+        "decoded_sha256": "2cd835c6d9868f149b24aa0f0275009798c34e04957d2737f319a2082e6f6108",
+        "decompressed_size": 544,
+        "descriptor_selected": true,
+        "file_offset": 1307596,
+        "gfx_index": 202,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            169
+          ]
+        },
+        "snes_pointer": "$D3F3CC",
+        "tile_4bpp_count": 17
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 8917,
+        "decoded_sha256": "22af0aabb440e6bd053e094c587bb1013b251b0f408bd36df598e8e37d520c41",
+        "decompressed_size": 12288,
+        "descriptor_selected": true,
+        "file_offset": 2150533,
+        "gfx_index": 203,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            114,
+            117,
+            118
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E0D085",
+        "tile_4bpp_count": 384
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 124,
+        "decoded_sha256": "9426513ac867eb0fb019e6777e7b462175b4be70dbc0bb9ed622f19b5923ddc7",
+        "decompressed_size": 160,
+        "descriptor_selected": false,
+        "file_offset": 1308093,
+        "gfx_index": 204,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D3F5BD",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 381,
+        "decoded_sha256": "81286c4ca60c5cd8c0c409a089d4ae4a7e0b9c647e2291715ed90d4452875670",
+        "decompressed_size": 416,
+        "descriptor_selected": true,
+        "file_offset": 1555382,
+        "gfx_index": 205,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            209
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D7BBB6",
+        "tile_4bpp_count": 13
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3069,
+        "decoded_sha256": "f982a4c5818d3d4e74941e20f1c956a181a733d6db362f99e2224cef0676741d",
+        "decompressed_size": 3488,
+        "descriptor_selected": true,
+        "file_offset": 1555763,
+        "gfx_index": 206,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            210
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D7BD33",
+        "tile_4bpp_count": 109
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3069,
+        "decoded_sha256": "f982a4c5818d3d4e74941e20f1c956a181a733d6db362f99e2224cef0676741d",
+        "decompressed_size": 3488,
+        "descriptor_selected": true,
+        "file_offset": 1558832,
+        "gfx_index": 207,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            211
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D7C930",
+        "tile_4bpp_count": 109
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 9518,
+        "decoded_sha256": "100ad94d322f8ecb88b536df67a1d7221fcaf9962ecc7b75c9ba869a50738e43",
+        "decompressed_size": 11296,
+        "descriptor_selected": true,
+        "file_offset": 2162858,
+        "gfx_index": 208,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            204
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E100AA",
+        "tile_4bpp_count": 353
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 9503,
+        "decoded_sha256": "bc2f6e1ef6f96c50f6599fe12c3349324f47cf9da51fed9d5cdbda07c8108f69",
+        "decompressed_size": 11296,
+        "descriptor_selected": true,
+        "file_offset": 2172376,
+        "gfx_index": 209,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            205
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E125D8",
+        "tile_4bpp_count": 353
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 520,
+        "decoded_sha256": "875fac4d261fd51937eefac7f9001502fbfa1eedae6d94a1da7ef74944493354",
+        "decompressed_size": 608,
+        "descriptor_selected": true,
+        "file_offset": 1309078,
+        "gfx_index": 210,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            172
+          ]
+        },
+        "snes_pointer": "$D3F996",
+        "tile_4bpp_count": 19
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 897,
+        "decoded_sha256": "0f81971e9aeb27068f19be0c20b86c0884979205a401c9aebccbe1f2cf99e9a4",
+        "decompressed_size": 1312,
+        "descriptor_selected": true,
+        "file_offset": 1759399,
+        "gfx_index": 211,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            173
+          ]
+        },
+        "snes_pointer": "$DAD8A7",
+        "tile_4bpp_count": 41
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 184,
+        "decoded_sha256": "5c0dc7b2e3f55a29b97a26f6793cd728cef32009505ff39e038b911d27ff7f36",
+        "decompressed_size": 320,
+        "descriptor_selected": true,
+        "file_offset": 1309598,
+        "gfx_index": 212,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            174
+          ]
+        },
+        "snes_pointer": "$D3FB9E",
+        "tile_4bpp_count": 10
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1938,
+        "decoded_sha256": "ee881e9c209f4508aed3a2a6c26bff988d5bd32719008d4791e3691bf8a7ec21",
+        "decompressed_size": 2048,
+        "descriptor_selected": true,
+        "file_offset": 2209708,
+        "gfx_index": 213,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            190,
+            191
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E1B7AC",
+        "tile_4bpp_count": 64
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 18466,
+        "decoded_sha256": "2d0fc4c2858554c2fae9d47fe30edd2b3573da07975294219e4582eaacca8520",
+        "decompressed_size": 23776,
+        "descriptor_selected": true,
+        "file_offset": 2181879,
+        "gfx_index": 214,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            206
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E14AF7",
+        "tile_4bpp_count": 743
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 56,
+        "decoded_sha256": "bf126b77db46a8cbea3736b1cd2f9f6b56428bca1ed04b2584cd2eb9f0ef4817",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1308217,
+        "gfx_index": 215,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            178
+          ]
+        },
+        "snes_pointer": "$D3F639",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2617,
+        "decoded_sha256": "49c37b1d0d1206f96f953f75725a5e023023d66e0f122844d2f57b1a9dca9f81",
+        "decompressed_size": 3264,
+        "descriptor_selected": true,
+        "file_offset": 2159450,
+        "gfx_index": 216,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            149,
+            243
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E0F35A",
+        "tile_4bpp_count": 102
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 497,
+        "decoded_sha256": "875fe55604391610589367a1c045f9fabb79fcc8a113ba02f9dbac0db31ac91f",
+        "decompressed_size": 608,
+        "descriptor_selected": true,
+        "file_offset": 2211646,
+        "gfx_index": 217,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            217
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E1BF3E",
+        "tile_4bpp_count": 19
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 154,
+        "decoded_sha256": "d130bd4032ac65f1cd839bb2c57a22b142b0dc7e5c80d89616b7a0f4b680a7e4",
+        "decompressed_size": 288,
+        "descriptor_selected": true,
+        "file_offset": 1308273,
+        "gfx_index": 218,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            181
+          ]
+        },
+        "snes_pointer": "$D3F671",
+        "tile_4bpp_count": 9
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 938,
+        "decoded_sha256": "6fc8983bb11acb23990d5abcada4a04b7e9f5358b4156b520bf52414a86f6fca",
+        "decompressed_size": 1184,
+        "descriptor_selected": true,
+        "file_offset": 2212143,
+        "gfx_index": 219,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            66,
+            246
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E1C12F",
+        "tile_4bpp_count": 37
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 569,
+        "decoded_sha256": "5f98ded69510c11c86a0ccb6ebcc782c51995374fd77ef9119f351d0a04aae1d",
+        "decompressed_size": 832,
+        "descriptor_selected": true,
+        "file_offset": 2213081,
+        "gfx_index": 220,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            58,
+            67
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E1C4D9",
+        "tile_4bpp_count": 26
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 156,
+        "decoded_sha256": "a9085a6b82cfa94c56770717bf1960e4811bda449f7395931166ae2cf5d85b11",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1308427,
+        "gfx_index": 221,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            183
+          ]
+        },
+        "snes_pointer": "$D3F70B",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 495,
+        "decoded_sha256": "bf04bbe6746e049f1637d467ec06ef268e0806e9903cbefe975171d7addc42b2",
+        "decompressed_size": 640,
+        "descriptor_selected": true,
+        "file_offset": 1308583,
+        "gfx_index": 222,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            184
+          ]
+        },
+        "snes_pointer": "$D3F7A7",
+        "tile_4bpp_count": 20
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 542,
+        "decoded_sha256": "86038ac9dea92c26428e2adaa7f1f6faa80777b24767266cd4256e69f0deeca8",
+        "decompressed_size": 768,
+        "descriptor_selected": true,
+        "file_offset": 2095379,
+        "gfx_index": 223,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            187
+          ]
+        },
+        "snes_pointer": "$DFF913",
+        "tile_4bpp_count": 24
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 837,
+        "decoded_sha256": "956b18a34b79a6ed6f048115752ca28a5547cbda45fbb7888c61343777921052",
+        "decompressed_size": 1216,
+        "descriptor_selected": true,
+        "file_offset": 1762611,
+        "gfx_index": 224,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            60,
+            68,
+            90,
+            96,
+            220,
+            221,
+            223
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DAE533",
+        "tile_4bpp_count": 38
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3811,
+        "decoded_sha256": "032265cccf7599edaa8cea371bac599b79e8201d8f54c9dc9e9f0c0ca83927a6",
+        "decompressed_size": 5440,
+        "descriptor_selected": true,
+        "file_offset": 1763448,
+        "gfx_index": 225,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            20,
+            24,
+            31,
+            33,
+            103,
+            119,
+            120,
+            218,
+            219,
+            222
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DAE878",
+        "tile_4bpp_count": 170
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 1062,
+        "decoded_sha256": "2e77e3b1c36151de0434cf53a04da2f4444407a90a9abffd12e13e4ff0da06ea",
+        "decompressed_size": 1312,
+        "descriptor_selected": true,
+        "file_offset": 1760296,
+        "gfx_index": 226,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            84,
+            191
+          ]
+        },
+        "snes_pointer": "$DADC28",
+        "tile_4bpp_count": 41
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 1846,
+        "decoded_sha256": "3a8cde74db87b381babb05baa7d5879a261a5e49114a4ddeb1225c08f9c36dff",
+        "decompressed_size": 2176,
+        "descriptor_selected": true,
+        "file_offset": 1243230,
+        "gfx_index": 227,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            85,
+            192
+          ]
+        },
+        "snes_pointer": "$D2F85E",
+        "tile_4bpp_count": 68
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 661,
+        "decoded_sha256": "ec096637cf74f0cbec1b2f5749455947504fdd95a62d536404af33fb0eb5886e",
+        "decompressed_size": 896,
+        "descriptor_selected": true,
+        "file_offset": 1716083,
+        "gfx_index": 228,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            193
+          ]
+        },
+        "snes_pointer": "$DA2F73",
+        "tile_4bpp_count": 28
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 170,
+        "decoded_sha256": "f1b1dad8325bfab1199940a3864a9565a46c1112cb6d028a51d8a07edb8a1d2e",
+        "decompressed_size": 192,
+        "descriptor_selected": false,
+        "file_offset": 2162688,
+        "gfx_index": 229,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E10000",
+        "tile_4bpp_count": 6
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 640,
+        "decoded_sha256": "f066fb1a3f6a8cef8b12f92cac8eb74ed6e259fea5eef6732e9af9fce9895ed8",
+        "decompressed_size": 768,
+        "descriptor_selected": true,
+        "file_offset": 1674083,
+        "gfx_index": 230,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            188
+          ]
+        },
+        "snes_pointer": "$D98B63",
+        "tile_4bpp_count": 24
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 80,
+        "decoded_sha256": "cc92cc1393e091cf6344def06fe2e1b8b3633f45efb80374494f7e0ae2f12485",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1767259,
+        "gfx_index": 231,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            194
+          ]
+        },
+        "snes_pointer": "$DAF75B",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 157,
+        "decoded_sha256": "998bb71995ea8a2522487dcbc2fef4689d204f02f8694eba7bcea38c75bfaab5",
+        "decompressed_size": 256,
+        "descriptor_selected": true,
+        "file_offset": 1767339,
+        "gfx_index": 232,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            195
+          ]
+        },
+        "snes_pointer": "$DAF7AB",
+        "tile_4bpp_count": 8
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 3087,
+        "decoded_sha256": "9c83f05782ffe8d166ee1d9d25c194481ca879a1b0896e132442e00c3564d268",
+        "decompressed_size": 3552,
+        "descriptor_selected": true,
+        "file_offset": 2213650,
+        "gfx_index": 233,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            132
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E1C712",
+        "tile_4bpp_count": 111
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 545,
+        "decoded_sha256": "c775bf954e76b9db92604c43c25ee3787f2090a4ecffd639aac841b74caa281b",
+        "decompressed_size": 736,
+        "descriptor_selected": true,
+        "file_offset": 1767496,
+        "gfx_index": 234,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            196
+          ]
+        },
+        "snes_pointer": "$DAF848",
+        "tile_4bpp_count": 23
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2705,
+        "decoded_sha256": "b6f370141dfb206034453cc288cd76fca441668bef68b114aa449c35a1308dff",
+        "decompressed_size": 3104,
+        "descriptor_selected": true,
+        "file_offset": 2216737,
+        "gfx_index": 235,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            133
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$E1D321",
+        "tile_4bpp_count": 97
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 2526,
+        "decoded_sha256": "352791f32f384f341c9db4e840e04917df9a66c8ae982841e0d02ff139a46540",
+        "decompressed_size": 2816,
+        "descriptor_selected": true,
+        "file_offset": 1240704,
+        "gfx_index": 236,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            197
+          ]
+        },
+        "snes_pointer": "$D2EE80",
+        "tile_4bpp_count": 88
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 448,
+        "decoded_sha256": "abb15602d0c3676d27b0d213ac075b98f872ffc988609cfe4d1636d0704bca59",
+        "decompressed_size": 544,
+        "descriptor_selected": true,
+        "file_offset": 1768041,
+        "gfx_index": 237,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            237,
+            239
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$DAFA69",
+        "tile_4bpp_count": 17
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 4094,
+        "decoded_sha256": "9f477f03c90cffa706355f09f0199a531896df50fd9960347eaa2b660d9d581e",
+        "decompressed_size": 5024,
+        "descriptor_selected": true,
+        "file_offset": 1698909,
+        "gfx_index": 238,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [
+            11
+          ],
+          "npc_ids": []
+        },
+        "snes_pointer": "$D9EC5D",
+        "tile_4bpp_count": 157
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 146,
+        "decoded_sha256": "e31023ca09e1ab2c8dfd4188dcc545899a11d2397c4e0dcc12d5e1784a65bb53",
+        "decompressed_size": 320,
+        "descriptor_selected": true,
+        "file_offset": 1310263,
+        "gfx_index": 239,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            200
+          ]
+        },
+        "snes_pointer": "$D3FE37",
+        "tile_4bpp_count": 10
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 124,
+        "decoded_sha256": "0bd733ae1603c8061237a90266c87cc32eae210b98dfa2025f2f00b1b3101da3",
+        "decompressed_size": 160,
+        "descriptor_selected": true,
+        "file_offset": 1310139,
+        "gfx_index": 240,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            201
+          ]
+        },
+        "snes_pointer": "$D3FDBB",
+        "tile_4bpp_count": 5
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 271,
+        "decoded_sha256": "0efb9f55c63bdb751cbb016f6a8ae0076f807918363ede4f6ca547a67c99b540",
+        "decompressed_size": 416,
+        "descriptor_selected": true,
+        "file_offset": 1310409,
+        "gfx_index": 241,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            202
+          ]
+        },
+        "snes_pointer": "$D3FEC9",
+        "tile_4bpp_count": 13
+      },
+      {
+        "addendum_count": 0,
+        "backref_width_bits": 12,
+        "compressed_size": 2779,
+        "decoded_sha256": "b7cad281ac281351387458120aaa1b36de9ba5d6374f2592883d8005ed930e9e",
+        "decompressed_size": 3296,
+        "descriptor_selected": true,
+        "file_offset": 1619983,
+        "gfx_index": 242,
+        "segment_count": 1,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            203
+          ]
+        },
+        "snes_pointer": "$D8B80F",
+        "tile_4bpp_count": 103
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 831,
+        "decoded_sha256": "eb9b8c56499f1affa18f1dfa06df95e3e6ca4e8c49a156951f201fbfe74c4d95",
+        "decompressed_size": 960,
+        "descriptor_selected": true,
+        "file_offset": 1622762,
+        "gfx_index": 243,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            207
+          ]
+        },
+        "snes_pointer": "$D8C2EA",
+        "tile_4bpp_count": 30
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 621,
+        "decoded_sha256": "0a4bae6c95456b605d7067520cabb5968f8bbce4f1686b61ebe8531f3f542063",
+        "decompressed_size": 864,
+        "descriptor_selected": true,
+        "file_offset": 1623593,
+        "gfx_index": 244,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            208
+          ]
+        },
+        "snes_pointer": "$D8C629",
+        "tile_4bpp_count": 27
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 647,
+        "decoded_sha256": "8e7828d05d6adda729fb5439346be609b65b849c6d48459ab6614479ef120804",
+        "decompressed_size": 864,
+        "descriptor_selected": true,
+        "file_offset": 1624214,
+        "gfx_index": 245,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            209
+          ]
+        },
+        "snes_pointer": "$D8C896",
+        "tile_4bpp_count": 27
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 703,
+        "decoded_sha256": "24a24a1a5c2dca07c0f64ce9360819742f53dbe3f1ccd9fb823a32b6f713a00e",
+        "decompressed_size": 864,
+        "descriptor_selected": true,
+        "file_offset": 1624861,
+        "gfx_index": 246,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            210
+          ]
+        },
+        "snes_pointer": "$D8CB1D",
+        "tile_4bpp_count": 27
+      },
+      {
+        "addendum_count": 1,
+        "backref_width_bits": 12,
+        "compressed_size": 396,
+        "decoded_sha256": "500e8f4e20103779a03c26e8a3e5c09907a78bb6896213a26ac3afe63a594c56",
+        "decompressed_size": 416,
+        "descriptor_selected": true,
+        "file_offset": 1625564,
+        "gfx_index": 247,
+        "segment_count": 2,
+        "selector_aliases": {
+          "normal_enemy_ids": [],
+          "npc_ids": [
+            211
+          ]
+        },
+        "snes_pointer": "$D8CDDC",
+        "tile_4bpp_count": 13
+      }
+    ]
+  },
+  "decoder_contract": {
+    "addendum_end_rule": "little-endian boundary offset relative to packet start",
+    "aggregate_hash_domain_ascii_with_nul": "ProjectEpoch/ct-compressed-sprite-corpus/v0\\0",
+    "aggregate_hash_framing": "SHA-256(domain || repeated(index_u8 || decoded_length_u32le || decoded_bytes)), ascending index",
+    "backref_distance_widths": [
+      12,
+      11
+    ],
+    "backref_length_rule": "encoded high bits + 3",
+    "control_bit_order": "least-significant bit first",
+    "extent_inferred_from_next_pointer": false,
+    "initial_boundary_selects_backref_width": true,
+    "maximum_decompressed_size": 65536,
+    "required_output_alignment": 32,
+    "source_bank_crossing_allowed": false
+  },
+  "disassembly": {
+    "commit": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+    "references": [
+      {
+        "path": "references/ct_disassembly/bank_C0.asm",
+        "scope": [
+          "$C0:4590-$C0:46DE NPC descriptor load and compressed path",
+          "$C0:46DF-$C0:485F enemy descriptor load, normal compressed path, and $F8-$FF direct/raw branch"
+        ],
+        "sha256": "b5b209cd03ae430f095482a429798ee3600d97af3774841c069d8f9a071140b8"
+      },
+      {
+        "path": "references/ct_disassembly/bank_C3.asm",
+        "scope": [
+          "$C3:0557-$C3:08B2 graphics decompressor entry, variants, and return"
+        ],
+        "sha256": "11aa3492823ef8096961e1c129e4a5ee83418f6d1e19584455ff894d919ba134"
+      },
+      {
+        "path": "references/ct_disassembly/bank_E4.asm",
+        "scope": [
+          "$E4:F023 NPCSpriteData5Bytes label",
+          "$E4:F600 EnemySpriteData10Bytes label",
+          "$E4:FFE0 PC/NPC/enemy graphics-table base indirection"
+        ],
+        "sha256": "160bdd0ef4791f81a468ca0088f65a79fa6fbd638584fece50d6735950b29fda"
+      }
+    ],
+    "repository": "https://github.com/dscotton/ct_disassembly"
+  },
+  "evidence": {
+    "catalog_basis": "Every index $07-$F7 independently passed the pinned HiROM pointer and fail-closed C3 packet decoder; membership is not inferred solely from table position.",
+    "claim": "Canonical table and decoder evidence for the structurally valid compressed graphics catalog $07-$F7, plus its descriptor-selected field-NPC and normal-enemy subset.",
+    "level": "verified-static",
+    "selection_basis": "NPC descriptor byte +0 for all $100 NPC records and enemy descriptor byte +0 for IDs $00-$F7. Enemy IDs $F8-$FF are the separately proved direct/raw branch."
+  },
+  "limitations": [
+    "This report does not identify Schala, a playable PC $07 sprite, or any other new character identity.",
+    "This report makes no sprite-originality or similarity finding. The 241-packet catalog is the conservative future comparison corpus.",
+    "The descriptor-selected subset is bounded to field NPC records and normal enemy IDs $00-$F7; it is not a special, menu, battle-global, or engine-global sprite inventory.",
+    "Static decoding is not runtime proof and approves no hook, allocation, ROM write, patch, or production binding.",
+    "Catalog-only indexes $47, $4A, $CC, and $E5 are not selected by the audited descriptors, but that does not prove they are unused elsewhere."
+  ],
+  "reproduction": {
+    "command": "python tools/audit_ct_compressed_sprite_corpus.py --rom <canonical-headerless-us-rev0.sfc>",
+    "comparison": "byte-for-byte UTF-8/LF stdout comparison",
+    "expected_stdout_reference": "references/ct_compressed_sprite_corpus_v0.json"
+  },
+  "schema_version": 1,
+  "selection": {
+    "all_descriptor_unselected_gfx_indexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      71,
+      74,
+      204,
+      229,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255
+    ],
+    "catalog_only_status": "not selected by the audited NPC and enemy-$00-$F7 descriptors; not proof of global non-use",
+    "catalog_only_unselected_gfx_indexes": [
+      71,
+      74,
+      204,
+      229
+    ],
+    "catalog_pointer_alias_count": 0,
+    "catalog_unique_pointer_count": 241,
+    "compressed_catalog_index_range": "$07-$F7",
+    "descriptor_selected_selector_vector_byte_count": 504,
+    "descriptor_selected_selector_vector_sha256": "97dc46cf43944d991b421162d2d7937a1c6fbb2a48061ff4d487b989586a6c53",
+    "direct_raw_branch_operand": "enemy/script ID at $C0:477A, not graphics-table index",
+    "direct_raw_enemy_descriptors": [
+      {
+        "enemy_id": 248,
+        "gfx_selector": 3,
+        "path": "direct/raw; excluded from compressed corpus"
+      },
+      {
+        "enemy_id": 249,
+        "gfx_selector": 6,
+        "path": "direct/raw; excluded from compressed corpus"
+      },
+      {
+        "enemy_id": 250,
+        "gfx_selector": 6,
+        "path": "direct/raw; excluded from compressed corpus"
+      },
+      {
+        "enemy_id": 251,
+        "gfx_selector": 6,
+        "path": "direct/raw; excluded from compressed corpus"
+      },
+      {
+        "enemy_id": 252,
+        "gfx_selector": 0,
+        "path": "direct/raw; excluded from compressed corpus"
+      },
+      {
+        "enemy_id": 253,
+        "gfx_selector": 0,
+        "path": "direct/raw; excluded from compressed corpus"
+      },
+      {
+        "enemy_id": 254,
+        "gfx_selector": 0,
+        "path": "direct/raw; excluded from compressed corpus"
+      },
+      {
+        "enemy_id": 255,
+        "gfx_selector": 0,
+        "path": "direct/raw; excluded from compressed corpus"
+      }
+    ],
+    "direct_raw_enemy_selector_byte_count": 8,
+    "direct_raw_enemy_selector_sha256": "174cc6b1e3e2761d4a89171aec4272f8bcd69e7cd5bf5720902373954c0c7aac",
+    "normal_enemy_alias_count": 248,
+    "npc_alias_count": 256,
+    "pointer_slots_f8_ff_status": "separately null and unreferenced by this descriptor audit",
+    "raw_pc_gfx_indexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_gfx_index_count": 237,
+    "selected_pointer_alias_count": 0,
+    "selected_unique_pointer_count": 237
+  },
+  "tables": {
+    "enemy_descriptors": {
+      "byte_count": 2560,
+      "direct_raw_id_range": "$F8-$FF",
+      "direct_raw_record_count": 8,
+      "direct_raw_sha256": "273b7449cca59c3bce3e42af2c9a112ba3dcf5cc921870eb156c1af20b38e503",
+      "direct_raw_snes_range": "$E4:FFB0-$E4:FFFF",
+      "entry_count": 256,
+      "entry_width": 10,
+      "file_offset": 2422272,
+      "normal_compressed_id_range": "$00-$F7",
+      "normal_compressed_record_count": 248,
+      "normal_compressed_sha256": "6f029d2969267d7a94367f68144a6ccc02af03e4005bfc0f9a4030fbd989a35a",
+      "normal_compressed_snes_range": "$E4:F600-$E4:FFAF",
+      "selector_offset": 0,
+      "sha256": "347a3f7202e02581deca02d1fbabdb34e1fa5ed4548ab0731fa4af9a852fb287",
+      "snes_range": "$E4:F600-$E4:FFFF"
+    },
+    "graphics_pointers": {
+      "byte_count": 768,
+      "entry_count": 256,
+      "entry_width": 3,
+      "file_offset": 2367488,
+      "non_pc_tail_entry_count": 249,
+      "non_pc_tail_first_index": 7,
+      "null_pointer_indexes": [
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "sha256": "a4929e157e37543fee84c0ad87a8dd3cd7e23e864648401fdbd58652b16afaa4",
+      "snes_range": "$E4:2000-$E4:22FF",
+      "valid_hirom_pointer_count": 248
+    },
+    "npc_descriptors": {
+      "byte_count": 1280,
+      "entry_count": 256,
+      "entry_width": 5,
+      "file_offset": 2420771,
+      "selector_offset": 0,
+      "sha256": "17ae540728c200cf02d60943b8ccdae87edc8cb425e603a24343c078732e3b8a",
+      "snes_range": "$E4:F023-$E4:F522"
+    }
+  },
+  "tool": {
+    "cli_contract": "required --rom only; metadata JSON to stdout",
+    "path": "tools/audit_ct_compressed_sprite_corpus.py",
+    "version": "0.1.0",
+    "writes_files": false
+  }
+}

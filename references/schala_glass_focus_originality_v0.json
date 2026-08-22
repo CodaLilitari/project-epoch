@@ -1,0 +1,67 @@
+{
+  "candidate_scope": {
+    "asset_count": 12,
+    "asset_ids": [
+      "schala_battle_basic_attack_draw_f00_v0",
+      "schala_battle_basic_attack_open_f01_v0",
+      "schala_battle_basic_attack_pulse_f02_v0",
+      "schala_battle_basic_attack_followthrough_f03_v0",
+      "schala_battle_basic_attack_recoil_f04_v0",
+      "schala_battle_basic_attack_recover_f05_v0",
+      "glass_focus_closed_crescent_v0",
+      "glass_focus_open_ring_v0",
+      "glass_focus_quarter_turn_ring_v0",
+      "glass_focus_edge_on_ring_v0",
+      "glass_focus_collapse_point_v0",
+      "glass_focus_impact_arc_v0"
+    ],
+    "compared_tile_occurrence_count": 94,
+    "excluded_tile_occurrence_count": 80,
+    "tile_occurrence_count": 174,
+    "trivial_visible_pixel_limit": 2
+  },
+  "canonical_rom": {
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "size": 4194304
+  },
+  "canonical_source": {
+    "path": "assets/source/schala/v0/focus/glass_focus_pulse_v0.json",
+    "sha256": "fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0",
+    "size": 32967
+  },
+  "comparison_policy": {
+    "exact_index_comparison": true,
+    "transforms": [
+      "identity",
+      "horizontal",
+      "vertical",
+      "combined"
+    ],
+    "trivial_exclusion": "Candidate and reference tiles with at most two visible pixels are excluded from comparison.",
+    "visible_pattern_comparison": "Non-zero palette labels are canonicalized by first use; transparent index zero remains fixed."
+  },
+  "copyright_boundary": "No canonical-ROM bytes, decoded reference pixels, palettes, images, or candidate image data are included in this report or written by this tool.",
+  "evidence": "verified-static",
+  "files_emitted": false,
+  "npc_originality_claimed": false,
+  "reference_scope": {
+    "compared_tile_count": 7205,
+    "coverage_limit": "This audit does not cover NPC or enemy packets, portraits, assembly data, animation data, or VFX.",
+    "description": "All seven raw playable-character graphics windows selected by the canonical $E4:2000 pointer table.",
+    "excluded_trivial_tile_count": 59,
+    "tile_count": 7264
+  },
+  "reproduction": "python tools/audit_schala_glass_focus_originality.py --rom \"private/input/rom_archive/Chrono Trigger (USA).sfc\"",
+  "results": {
+    "exact_index_match_count": 0,
+    "visible_pattern_match_count": 0
+  },
+  "schema_version": 1,
+  "tool": {
+    "path": "tools/audit_schala_glass_focus_originality.py",
+    "sha256": "addbb63ce0d5c92972fc467bc7d0e92f6cab3015f792a9c8da90101c492d8ce7",
+    "size": 8258,
+    "version": "1.0.0"
+  }
+}

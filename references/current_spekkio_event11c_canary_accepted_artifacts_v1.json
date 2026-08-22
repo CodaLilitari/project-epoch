@@ -1,0 +1,110 @@
+{
+  "schema": "project-epoch-emulator-acceptance-v1",
+  "artifacts": [
+    {
+      "path": "spekkio_talkable_checkpoint_v2_zero.bsv",
+      "evidence_level": "diagnostic",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_frog_prepared_v2_zero.bsv",
+      "evidence_level": "diagnostic",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_frog_prepared_v2_canary.bsv",
+      "evidence_level": "diagnostic",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_cml_prepared_v2_zero.bsv",
+      "evidence_level": "diagnostic",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_cml_prepared_v2_canary.bsv",
+      "evidence_level": "diagnostic",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_frog_zero_v2_1800.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_frog_canary_v2_1800.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_cml_zero_v3_2100.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_cml_canary_v3_2100.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "spekkio_event11c_frog_zero_v2_1800.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "spekkio_event11c_frog_canary_v2_1800.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "spekkio_event11c_cml_zero_v3_2100.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "spekkio_event11c_cml_canary_v3_2100.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_spekkio_event11c_frog_zero_v2.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_spekkio_event11c_frog_canary_v2.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_spekkio_event11c_cml_zero_v3.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_spekkio_event11c_cml_canary_v3.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "screenshots/spekkio_event11c_frog_zero_v2_1800.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "screenshots/spekkio_event11c_frog_canary_v2_1800.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "screenshots/spekkio_event11c_cml_zero_v3_2100.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "screenshots/spekkio_event11c_cml_canary_v3_2100.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    }
+  ]
+}

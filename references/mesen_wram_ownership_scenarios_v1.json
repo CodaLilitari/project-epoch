@@ -1,0 +1,477 @@
+{
+  "schema": "project-epoch-mesen-wram-ownership-scenarios-v1",
+  "version": 1,
+  "evidence_level": "source-contract",
+  "acceptance_status": "accepted-exact-artifact-hashes",
+  "emulator": {
+    "name": "Mesen",
+    "version": "2.1.1",
+    "release_url": "https://github.com/SourMesen/Mesen2/releases/tag/2.1.1",
+    "archive": {
+      "path": "private/tools/mesen2/Mesen_2.1.1_Windows.zip",
+      "size": 34058170,
+      "sha256": "23ccc2bc060b663c68dad3a8c5d6da7d23a50f872d04f135bafa2b04ff7d5cbe"
+    }
+  },
+  "runtime": {
+    "app_root": "private/tools/mesen2/app",
+    "files": [
+      {
+        "label": "mesen",
+        "path": "Mesen.exe",
+        "size": 70470144,
+        "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+      },
+      {
+        "label": "mesen_core",
+        "path": "MesenCore.dll",
+        "size": 7143424,
+        "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+      },
+      {
+        "label": "harfbuzz",
+        "path": "libHarfBuzzSharp.dll",
+        "size": 1804872,
+        "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+      },
+      {
+        "label": "skia",
+        "path": "libSkiaSharp.dll",
+        "size": 9414216,
+        "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+      },
+      {
+        "label": "nesdb",
+        "path": "MesenNesDB.txt",
+        "size": 559118,
+        "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+      },
+      {
+        "label": "settings",
+        "path": "settings.json",
+        "size": 3,
+        "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+      }
+    ],
+    "launch_mode": "testRunner",
+    "expected_exit_code": 41,
+    "fully_staged_app_required": true,
+    "shared_saves_must_remain_byte_exact": true
+  },
+  "private_inputs": {
+    "rom": {
+      "path": "private/test_runs/mesen2/event11c_checkpoint_v5/project_epoch_mesen_event11c_clean.sfc",
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "sram": {
+      "path": "private/tools/mesen2/app/Saves/project_epoch_mesen_event11c_clean.srm",
+      "size": 8192,
+      "sha256": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9"
+    },
+    "checkpoint": {
+      "path": "private/test_runs/mesen2/event11c_checkpoint_v5/spekkio_talkable.mss",
+      "size": 133993,
+      "sha256": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e",
+      "location": "01D1",
+      "active_party_hex": "060403",
+      "epoch_name_hex": "a4c9c8bcc100"
+    }
+  },
+  "sources": {
+    "collector": {
+      "path": "tools/mesen_wram_ownership_trace.lua",
+      "size": 40088,
+      "sha256": "d5dd2b2d7085237844d95ab04f7007b6b2d17b2e1160f23857018319380b7569",
+      "status": "frozen-exact-source"
+    },
+    "validator": {
+      "path": "tools/validate_mesen_wram_ownership_trace.py",
+      "size": 29388,
+      "sha256": "89a7dc86c6b5b10dc984b778451152e4734b5c553a669b7ee033e465ca87f2ba",
+      "status": "frozen-exact-source"
+    },
+    "launcher": {
+      "path": "tools/run_mesen_wram_ownership_trace.py",
+      "sha256": null,
+      "status": "self-hash-intentionally-pinned-by-later-acceptance-spec"
+    }
+  },
+  "trace_contract": {
+    "schema": "project-epoch-mesen-wram-ownership-trace-v1",
+    "collector_version": 1,
+    "trace_count": 8,
+    "event11c_screenshot_capture_phase": "endFrame-canonical-png-after-route-endpoint-freeze",
+    "event11c_screenshot_size": 9503,
+    "event11c_screenshot_sha256": "0882eb8e58d053a0e5b2222c9615ab5a1e4530d8849ddd7388e491803417b7fb",
+    "variants": [
+      "zero",
+      "canary"
+    ],
+    "collector_explicit_write_scope": "snes-work-ram-preparation-before-counters-arm-only",
+    "preparation_callbacks_excluded": true,
+    "callback_limit": 4096
+  },
+  "watched_ranges": [
+    {
+      "name": "old-compatibility",
+      "start": "7E2830",
+      "end": "7E287F",
+      "length": 80,
+      "role": "vanilla-compatibility-positive-control"
+    },
+    {
+      "name": "roster",
+      "start": "7E2980",
+      "end": "7E2988",
+      "length": 9,
+      "role": "serialized-party-consumer-sentinel"
+    },
+    {
+      "name": "joined",
+      "start": "7E29AF",
+      "end": "7E29AF",
+      "length": 1,
+      "role": "joined-mask-consumer-sentinel"
+    },
+    {
+      "name": "epoch-name",
+      "start": "7E2C4D",
+      "end": "7E2C52",
+      "length": 6,
+      "role": "protected-vanilla-epoch-name"
+    },
+    {
+      "name": "front-guard",
+      "start": "7E2C9C",
+      "end": "7E2C9F",
+      "length": 4,
+      "role": "candidate-structural-front-guard"
+    },
+    {
+      "name": "candidate",
+      "start": "7E2CA0",
+      "end": "7E2CEF",
+      "length": 80,
+      "role": "unapproved-relocated-compatibility-candidate"
+    },
+    {
+      "name": "rear-guard",
+      "start": "7E2CF0",
+      "end": "7E2CFF",
+      "length": 16,
+      "role": "candidate-structural-rear-guard"
+    }
+  ],
+  "variant_preparation": {
+    "scope": [
+      {
+        "range": "candidate",
+        "start": "7E2CA0",
+        "end": "7E2CEF",
+        "length": 80
+      }
+    ],
+    "zero": {
+      "operation": "assert-existing-zero-with-no-write",
+      "value": 0,
+      "sha256": "5b6fb58e61fa475939767d68a446f97f1bff02c0e5935a3ea8bb51e6515783d8"
+    },
+    "canary": {
+      "operation": "exact-bytes",
+      "derivation": "SHAKE-256('Project Epoch WRAM 2CA0 compatibility canary v1', 80)",
+      "hex": "471eea9705fecea2040cc7e0d72b4a50a9a996d83f9cc34b46c753b1968f659baaa47f0daf10c8d9074953390d34d25c5f631b7bbf6d1f08e1ff2387281084f7844c9cda36c941873207b6269ea72566",
+      "sha256": "4e3df1af239b20cefae9d9a2219f384a4934b1916da11b001b9e501b84e06290"
+    },
+    "guards": {
+      "front-guard": "must-begin-and-end-zero",
+      "rear-guard": "must-begin-and-end-zero"
+    }
+  },
+  "preparation_contract": {
+    "completed_before_counters_armed": true,
+    "counters_zero_after_preparation": true,
+    "zero_variant_candidate_write_count": 0,
+    "canary_variant_candidate_writes": {
+      "count": 80,
+      "width": 1,
+      "first_raw_wram_offset": 11424,
+      "last_raw_wram_offset": 11503,
+      "label": "candidate-variant",
+      "values": "variant_preparation.canary.hex"
+    },
+    "event11c_frog_writes_before_candidate_variant": [
+      {
+        "seq": 0,
+        "width": 1,
+        "raw_wram_offset": 65536,
+        "value": 76,
+        "label": "storyline"
+      },
+      {
+        "seq": 1,
+        "width": 1,
+        "raw_wram_offset": 66076,
+        "value": 3,
+        "label": "lap-scratch"
+      },
+      {
+        "seq": 2,
+        "width": 1,
+        "raw_wram_offset": 66016,
+        "value": 71,
+        "label": "magic-flags"
+      },
+      {
+        "seq": 3,
+        "width": 1,
+        "raw_wram_offset": 66018,
+        "value": 0,
+        "label": "robo-flags"
+      },
+      {
+        "seq": 4,
+        "width": 1,
+        "raw_wram_offset": 10292,
+        "value": 0,
+        "label": "frog-tech-count"
+      },
+      {
+        "seq": 5,
+        "width": 1,
+        "raw_wram_offset": 10299,
+        "value": 31,
+        "label": "frog-learned-mask"
+      },
+      {
+        "seq": 6,
+        "width": 2,
+        "raw_wram_offset": 10093,
+        "value": 0,
+        "label": "frog-remaining-tp"
+      }
+    ],
+    "active_party_writes": [],
+    "old_block_variant_writes": []
+  },
+  "scenarios": [
+    {
+      "name": "calibration",
+      "timeline": [],
+      "terminal": {
+        "kind": "exact-relative-frame",
+        "frame": 0
+      },
+      "preparation_scope": [
+        "variant:candidate-only"
+      ],
+      "expected_access_class": "none",
+      "access_policy": {
+        "zero_access_ranges": [
+          "old-compatibility",
+          "roster",
+          "joined",
+          "epoch-name",
+          "front-guard",
+          "candidate",
+          "rear-guard"
+        ],
+        "write_forbidden_ranges": []
+      }
+    },
+    {
+      "name": "field-idle",
+      "timeline": [
+        {
+          "frames": "1-600",
+          "player": 1,
+          "input": "none"
+        }
+      ],
+      "terminal": {
+        "kind": "exact-relative-frame",
+        "frame": 600
+      },
+      "preparation_scope": [
+        "variant:candidate-only"
+      ],
+      "expected_access_class": "ownership-negative-control",
+      "access_policy": {
+        "zero_access_ranges": [
+          "front-guard",
+          "candidate",
+          "rear-guard"
+        ],
+        "write_forbidden_ranges": [
+          "old-compatibility",
+          "roster",
+          "joined",
+          "epoch-name"
+        ],
+        "measured_pair_identical_reads": [
+          "old-compatibility",
+          "roster",
+          "joined",
+          "epoch-name"
+        ]
+      }
+    },
+    {
+      "name": "main-menu",
+      "timeline": [
+        {
+          "frames": "1-59",
+          "player": 1,
+          "input": "none"
+        },
+        {
+          "frames": "60-61",
+          "player": 1,
+          "input": "x"
+        },
+        {
+          "frames": "62-600",
+          "player": 1,
+          "input": "none"
+        }
+      ],
+      "terminal": {
+        "kind": "exact-relative-frame",
+        "frame": 600
+      },
+      "preparation_scope": [
+        "variant:candidate-only"
+      ],
+      "expected_access_class": "ownership-negative-control",
+      "access_policy": {
+        "zero_access_ranges": [
+          "front-guard",
+          "candidate",
+          "rear-guard"
+        ],
+        "write_forbidden_ranges": [
+          "old-compatibility",
+          "roster",
+          "joined",
+          "epoch-name"
+        ],
+        "measured_pair_identical_reads": [
+          "old-compatibility",
+          "roster",
+          "joined",
+          "epoch-name"
+        ]
+      }
+    },
+    {
+      "name": "event11c-frog",
+      "timeline": [
+        {
+          "frames": "60-61,180-181,300-301,420-421,540-541,660-661,780-781,900-901,1020-1021,1140-1141",
+          "player": 1,
+          "input": "a"
+        },
+        {
+          "frames": "all-other-frames",
+          "player": 1,
+          "input": "none"
+        }
+      ],
+      "terminal": {
+        "kind": "first-stable-frame-in-window",
+        "minimum_frame": 1500,
+        "maximum_frame": 2400,
+        "field_frame_mod16": 0,
+        "spekkio_sprite_frame": 22
+      },
+      "preparation_scope": [
+        "variant:candidate-only",
+        "write8:7F0000=4C:storyline",
+        "write8:7F021C=03:lap-scratch",
+        "write8:7F01E0=47:magic-flags",
+        "write8:7F01E2=00:robo-flags",
+        "write8:7E2834=00:frog-tech-count",
+        "write8:7E283B=1F:frog-learned-mask",
+        "write16:7E276D=0000:frog-remaining-tp"
+      ],
+      "expected_access_class": "old-compatibility-positive-control",
+      "access_policy": {
+        "zero_access_ranges": [
+          "front-guard",
+          "candidate",
+          "rear-guard"
+        ],
+        "write_forbidden_ranges": [
+          "roster",
+          "joined",
+          "epoch-name"
+        ],
+        "measured_pair_identical_reads": [
+          "roster",
+          "joined",
+          "epoch-name"
+        ],
+        "required_old_block_filtered_subsequence": [
+          {
+            "access": "write",
+            "address": "7E2834",
+            "pc24": "C06824",
+            "frame": 985,
+            "value": 3
+          },
+          {
+            "access": "read",
+            "address": "7E283B",
+            "pc24": "C06799",
+            "frame": 989,
+            "value": 31
+          },
+          {
+            "access": "write",
+            "address": "7E283B",
+            "pc24": "C06824",
+            "frame": 989,
+            "value": 255
+          }
+        ],
+        "other_old_compatibility_reads": "measured-and-pair-identical",
+        "allowed_old_compatibility_writes": [
+          "the two required event-control writes",
+          "other observed unmodified-game writes only when they are same-value and the complete zero/canary callback streams are identical"
+        ],
+        "other_old_compatibility_writes": "same-value-no-net-change-and-pair-identical",
+        "other_event_handler_pc_accesses": "measured-and-pair-identical"
+      }
+    }
+  ],
+  "pair_invariants": [
+    "Each scenario has exactly one zero trace and one canary trace.",
+    "Callback order, addresses, access kinds, PCs, relative frames, and counters are identical across each zero/canary pair except values sourced from the prepared candidate or event target sentinel.",
+    "Candidate and both structural guards receive zero post-preparation accesses in every scenario.",
+    "Epoch bytes are never written and remain a4c9c8bcc100.",
+    "Roster and joined bytes are never written by the measured timelines.",
+    "After candidate normalization, zero/canary endpoints are identical; the event-$11C old-block control result is the same in both variants."
+  ],
+  "launcher_controls": {
+    "canonical_private_paths": true,
+    "new_output_directory_required": true,
+    "shared_mesen_saves_overlap_rejected": true,
+    "fully_staged_emulator_app": true,
+    "unique_disposable_rom_sram_staging": true,
+    "collector_and_checkpoint_staged_from_verified_bytes": true,
+    "collector_outputs_staged_before-validation": true,
+    "strict-single-trace-validation": true,
+    "exclusive-output-pair-publication": true,
+    "publication-rollback-identity-limited": true,
+    "immutable-source-input-postcheck": true,
+    "shared-mesen-saves-postcheck": true,
+    "disposable-staging-deletion-required": true,
+    "raw-packet-inputs": false
+  },
+  "limitations": [
+    "This contract does not approve $7E2CA0-$7E2CEF as globally free or production-owned.",
+    "It does not install PC $07, a ROM hook, an event translation, an SRAM sidecar, or any save/load/New Game+/erase adapter.",
+    "Preparation writes are bounded diagnostic setup and are excluded from measured callbacks; they are not production initialization.",
+    "Exact trace and PNG hashes must be frozen in a later acceptance specification before any run can be labeled accepted."
+  ]
+}

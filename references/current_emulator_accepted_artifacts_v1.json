@@ -1,0 +1,480 @@
+{
+  "schema": "project-epoch-emulator-acceptance-v1",
+  "artifacts": [
+    {
+      "path": "field_party_swap_canary_corrected.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "field_party_swap_canary_corrected_2000.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_canary_party_swap_corrected.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_canary_party_swap_corrected.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_boot_zero_fresh.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "record-replay"
+    },
+    {
+      "path": "north_cape_boot_zero_fresh.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_decision_checkpoint_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_predecision_exposition12.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_predecision_exposition12.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_fight_prelude3_advance.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_fight_prelude3_advance_2000.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_fight_yes_stage4.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_fight_yes_stage4.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_checkpoint_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_idle_600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_idle.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_idle.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_y_f60_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_y_f60_d4_600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_y.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_y.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_start_f60_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_start_f60_d4_600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_start.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_start.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_up_f60_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_up_f60_d4_600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_up.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_up.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_down_f60_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_down_f60_d4_600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_down.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_down.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_a_f60_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_btn_a_f60_d4_600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_a.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_btn_a.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_tech_open_down60_d4_a64_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_tech_open_down60_d4_a64_d4_600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_tech_open.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_tech_open.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_tech_heal_cast_a620_d4_a628_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_tech_heal_cast_a628_1500.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_tech_heal_cast.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_tech_heal_cast.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_tech_open_1500_nocast.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_tech_open_1500_nocast.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_tech_open_1500_nocast.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_attack_confirm_a60_d4_a68_d4_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_attack_confirm_a68_1500.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_attack_confirm_a68.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_attack_confirm_a68.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_battle_idle_1500.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_idle_1500.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_battle_idle_1500.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "save_point_write_slot1_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "save_point_write_slot1_canary_1800.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_save_write_slot1.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_save_write_slot1.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "save_reload_boot_zero.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "record-replay"
+    },
+    {
+      "path": "save_reload_boot_zero_3600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "save_reload_slot1_candidate.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "save_reload_slot1_candidate_2300.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_save_reload_fresh.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_save_reload_fresh.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_decision_recruit_no.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_recruit_info_stage3.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_recruit_info_stage3.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_magus_naming_accept_start.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_magus_naming_accept_start_1500.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_recruit_named.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_recruit_named.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "north_cape_recruited_magus_swap.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "north_cape_recruited_magus_swap_2000.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_recruited_magus_swap.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_north_cape_recruited_magus_swap.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "lavos_core_route_candidate2.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "lavos_core_route_candidate2_1400.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_lavos_route2.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_lavos_route2.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "lavos_core_dialogue_candidate.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "lavos_core_dialogue_candidate_1600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_lavos_dialogue.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_lavos_dialogue.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "lavos_core_dialogue2_candidate.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "lavos_core_dialogue2_candidate_1600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_lavos_dialogue2.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_lavos_dialogue2.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "vanilla_valid_sidecar_boot_zero_fresh2.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "record-replay"
+    },
+    {
+      "path": "vanilla_valid_sidecar_boot_zero_fresh2_3600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "record-replay"
+    },
+    {
+      "path": "vanilla_valid_sidecar_exit_probe_3600.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_vanilla_valid_sidecar_exit_probe.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "vanilla_valid_sidecar_slot1_load_fresh2.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "vanilla_valid_sidecar_slot1_load_fresh2_2300.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_vanilla_valid_sidecar_slot1_load_fresh2.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    }
+  ]
+}

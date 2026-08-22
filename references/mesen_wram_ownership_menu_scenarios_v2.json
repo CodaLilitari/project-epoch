@@ -1,0 +1,395 @@
+{
+  "schema": "project-epoch-mesen-wram-ownership-menu-scenarios-v2",
+  "version": 2,
+  "evidence_level": "source-contract",
+  "acceptance_status": "accepted-exact-artifact-hashes",
+  "ancestry": {
+    "accepted_v1_scenario_contract": {
+      "path": "references/mesen_wram_ownership_scenarios_v1.json",
+      "size": 14145,
+      "sha256": "e9ea3ec765d3c14511f11815f1155c66c63f4cda1b23d445a2274ade0d8831d9"
+    },
+    "accepted_v1_acceptance_spec": {
+      "path": "references/mesen_wram_ownership_accepted_artifacts_v1.json",
+      "size": 10813,
+      "sha256": "b8f863ab2db7ed5f17222c59044a026305a05db86a7a0303fc3db84bfa197142"
+    },
+    "accepted_v1_collector": {
+      "path": "tools/mesen_wram_ownership_trace.lua",
+      "size": 40088,
+      "sha256": "d5dd2b2d7085237844d95ab04f7007b6b2d17b2e1160f23857018319380b7569"
+    },
+    "accepted_v1_validator": {
+      "path": "tools/validate_mesen_wram_ownership_trace.py",
+      "size": 29388,
+      "sha256": "89a7dc86c6b5b10dc984b778451152e4734b5c553a669b7ee033e465ca87f2ba"
+    },
+    "accepted_v1_launcher": {
+      "path": "tools/run_mesen_wram_ownership_trace.py",
+      "size": 40447,
+      "sha256": "80f25f577da219d383829dfc977564d8295d1e0691ae4a2823da3e41079fa203"
+    }
+  },
+  "sources": {
+    "collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_menu_collector_v2.py",
+      "size": 8526,
+      "sha256": "bb68dbe03d2a92dac265dd5c0b378a56e942229f0d5cf1c209a11ac86b82823a"
+    },
+    "generated_collector": {
+      "source_controlled": false,
+      "staged_private_only": true,
+      "size": 41089,
+      "sha256": "7ec953af6e4899b4a91f8a5edf9f5e20236b9a32dbdff4ad1fbb3813efc71f05"
+    },
+    "validator": {
+      "path": "tools/validate_mesen_wram_ownership_menu_trace_v2.py",
+      "size": 9878,
+      "sha256": "2dc71df20769644f6065f36311095ea7882142d066dbd717f36994521a94922b"
+    },
+    "launcher": {
+      "path": "tools/run_mesen_wram_ownership_menu_trace_v2.py",
+      "sha256": null,
+      "status": "self-hash-intentionally-pinned-by-later-acceptance-spec"
+    }
+  },
+  "trace_contract": {
+    "schema": "project-epoch-mesen-wram-ownership-menu-trace-v2",
+    "collector_version": 2,
+    "trace_count": 8,
+    "variants": [
+      "zero",
+      "canary"
+    ],
+    "terminal_frame": 600,
+    "collector_explicit_write_scope": "snes-work-ram-preparation-before-counters-arm-only",
+    "preparation_callbacks_excluded": true,
+    "callback_limit": 4096
+  },
+  "accepted_outputs": [
+    {
+      "scenario": "equipment-owner-switch",
+      "variant": "zero",
+      "endpoint": "Frog Equipment page",
+      "trace_size": 23127,
+      "trace_sha256": "f15a149dcc34a1a7e0362993b0fbf0f34dcef19eaa16da8fc744917dd0069d7b",
+      "screenshot_size": 15661,
+      "screenshot_sha256": "b4660241d539692f9618cb710ead3d16316a8eba4cde8cb5fc2e2759f8b98ba4"
+    },
+    {
+      "scenario": "equipment-owner-switch",
+      "variant": "canary",
+      "endpoint": "Frog Equipment page",
+      "trace_size": 29877,
+      "trace_sha256": "00213f5c1fe77ac1d2f5b6aa61b2e5894d9f85d70c97cdcf1b6629aac4ead54c",
+      "screenshot_size": 15661,
+      "screenshot_sha256": "b4660241d539692f9618cb710ead3d16316a8eba4cde8cb5fc2e2759f8b98ba4"
+    },
+    {
+      "scenario": "tech-owner-switch",
+      "variant": "zero",
+      "endpoint": "Frog Tech page",
+      "trace_size": 24343,
+      "trace_sha256": "d0bcfc8c9fbd52a6e5ec266bc585bce6450cb724cf202802d798ef5a64572d25",
+      "screenshot_size": 12064,
+      "screenshot_sha256": "018ad6afe24e5d5075e13a338d610cf4cd8eded9b286deb09eb29fbc366ccad5"
+    },
+    {
+      "scenario": "tech-owner-switch",
+      "variant": "canary",
+      "endpoint": "Frog Tech page",
+      "trace_size": 31093,
+      "trace_sha256": "4c79ead1194c86f709899aadc4abe37d6738656446de187eb71991c8e2addf47",
+      "screenshot_size": 12064,
+      "screenshot_sha256": "018ad6afe24e5d5075e13a338d610cf4cd8eded9b286deb09eb29fbc366ccad5"
+    },
+    {
+      "scenario": "item-list-cancel",
+      "variant": "zero",
+      "endpoint": "Item Use/Move page",
+      "trace_size": 23122,
+      "trace_sha256": "8e2cedd68f0e56821e9c4d494ba47618f6a9a6b1768c3618984f54b92b33c7ab",
+      "screenshot_size": 10689,
+      "screenshot_sha256": "e93a7d8bf3dbe50c911d840adec72fd26075e79d881977e067328f3e4f9c4c14"
+    },
+    {
+      "scenario": "item-list-cancel",
+      "variant": "canary",
+      "endpoint": "Item Use/Move page",
+      "trace_size": 29872,
+      "trace_sha256": "16f33fa3347830792ebf4178a838050bf12f1d8affc15ba6c9de9ddf0c51f28a",
+      "screenshot_size": 10689,
+      "screenshot_sha256": "e93a7d8bf3dbe50c911d840adec72fd26075e79d881977e067328f3e4f9c4c14"
+    },
+    {
+      "scenario": "party-page-cancel",
+      "variant": "zero",
+      "endpoint": "Party Exchange page",
+      "trace_size": 192711,
+      "trace_sha256": "a034cebf816d2faede9079727a085b00826dbbd77ff83e36bec75b6fc6a4d3c8",
+      "screenshot_size": 9392,
+      "screenshot_sha256": "43925f2efef2175fee4219226cb98a1d30210b314b099b6ea2b4ca6b466c2ffd"
+    },
+    {
+      "scenario": "party-page-cancel",
+      "variant": "canary",
+      "endpoint": "Party Exchange page",
+      "trace_size": 199461,
+      "trace_sha256": "1f075ef894a995a3ed59cfac7d33665b5b7d991ac4e89c893427bddf1172e276",
+      "screenshot_size": 9392,
+      "screenshot_sha256": "43925f2efef2175fee4219226cb98a1d30210b314b099b6ea2b4ca6b466c2ffd"
+    }
+  ],
+  "private_inputs": {
+    "runtime_and_input_hashes": "references/mesen_wram_ownership_scenarios_v1.json",
+    "checkpoint_path": "private/test_runs/mesen2/event11c_checkpoint_v5/spekkio_talkable.mss",
+    "checkpoint_size": 133993,
+    "checkpoint_sha256": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e",
+    "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "disposable_sram_sha256": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9"
+  },
+  "watched_ranges": [
+    {
+      "name": "old-compatibility",
+      "start": "7E2830",
+      "end": "7E287F",
+      "length": 80
+    },
+    {
+      "name": "roster",
+      "start": "7E2980",
+      "end": "7E2988",
+      "length": 9
+    },
+    {
+      "name": "joined",
+      "start": "7E29AF",
+      "end": "7E29AF",
+      "length": 1
+    },
+    {
+      "name": "epoch-name",
+      "start": "7E2C4D",
+      "end": "7E2C52",
+      "length": 6
+    },
+    {
+      "name": "front-guard",
+      "start": "7E2C9C",
+      "end": "7E2C9F",
+      "length": 4
+    },
+    {
+      "name": "candidate",
+      "start": "7E2CA0",
+      "end": "7E2CEF",
+      "length": 80
+    },
+    {
+      "name": "rear-guard",
+      "start": "7E2CF0",
+      "end": "7E2CFF",
+      "length": 16
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "equipment-owner-switch",
+      "purpose": "enter Equipment, switch from Magus to Frog, and exercise B without changing equipment; endpoint remains the Frog Equipment page",
+      "inputs": [
+        {
+          "button": "X",
+          "start_frame": 60,
+          "end_frame": 61
+        },
+        {
+          "button": "A",
+          "start_frame": 180,
+          "end_frame": 181
+        },
+        {
+          "button": "DOWN",
+          "start_frame": 300,
+          "end_frame": 303
+        },
+        {
+          "button": "B",
+          "start_frame": 420,
+          "end_frame": 421
+        }
+      ]
+    },
+    {
+      "name": "tech-owner-switch",
+      "purpose": "select Tech, enter, switch from Magus to Frog, and exercise B; endpoint remains the Frog Tech page",
+      "inputs": [
+        {
+          "button": "X",
+          "start_frame": 60,
+          "end_frame": 61
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 120,
+          "end_frame": 123
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 160,
+          "end_frame": 163
+        },
+        {
+          "button": "A",
+          "start_frame": 220,
+          "end_frame": 221
+        },
+        {
+          "button": "DOWN",
+          "start_frame": 300,
+          "end_frame": 303
+        },
+        {
+          "button": "B",
+          "start_frame": 420,
+          "end_frame": 421
+        }
+      ]
+    },
+    {
+      "name": "item-list-cancel",
+      "purpose": "select Item, enter the list, and exercise B without consuming; endpoint remains the Use/Move page",
+      "inputs": [
+        {
+          "button": "X",
+          "start_frame": 60,
+          "end_frame": 61
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 120,
+          "end_frame": 123
+        },
+        {
+          "button": "A",
+          "start_frame": 180,
+          "end_frame": 181
+        },
+        {
+          "button": "B",
+          "start_frame": 420,
+          "end_frame": 421
+        }
+      ]
+    },
+    {
+      "name": "party-page-cancel",
+      "purpose": "select Party, enter Exchange, move the cursor, and cancel the selection without a swap; endpoint remains the Exchange page",
+      "inputs": [
+        {
+          "button": "X",
+          "start_frame": 60,
+          "end_frame": 61
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 120,
+          "end_frame": 123
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 160,
+          "end_frame": 163
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 200,
+          "end_frame": 203
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 240,
+          "end_frame": 243
+        },
+        {
+          "button": "A",
+          "start_frame": 300,
+          "end_frame": 301
+        },
+        {
+          "button": "RIGHT",
+          "start_frame": 380,
+          "end_frame": 383
+        },
+        {
+          "button": "B",
+          "start_frame": 500,
+          "end_frame": 501
+        }
+      ]
+    }
+  ],
+  "controls": {
+    "v1_sources_and_acceptance_are_read_only_ancestry": true,
+    "generated_collector_requires_exact_v1_preimage": true,
+    "generated_collector_never_published": true,
+    "zero_variant_candidate_write_count": 0,
+    "canary_variant_candidate_write_count": 80,
+    "candidate_and_guards_zero_access_required": true,
+    "old_compatibility_writes_otherwise_forbidden": true,
+    "tech_owner_switch_exact_same_value_writes": [
+      {
+        "seq": 124,
+        "frame": 221,
+        "access": "write",
+        "address": "7E2857",
+        "value": "00",
+        "pc24": "C282E7"
+      },
+      {
+        "seq": 125,
+        "frame": 221,
+        "access": "write",
+        "address": "7E2858",
+        "value": "00",
+        "pc24": "C282E7"
+      },
+      {
+        "seq": 127,
+        "frame": 221,
+        "access": "write",
+        "address": "7E2859",
+        "value": "00",
+        "pc24": "C282F3"
+      },
+      {
+        "seq": 129,
+        "frame": 221,
+        "access": "write",
+        "address": "7E285A",
+        "value": "00",
+        "pc24": "C282F3"
+      },
+      {
+        "seq": 131,
+        "frame": 221,
+        "access": "write",
+        "address": "7E285B",
+        "value": "00",
+        "pc24": "C282F3"
+      }
+    ],
+    "tech_owner_switch_old_block_pre_post_bytes_2857_285b": "0000000000",
+    "tech_owner_switch_old_block_net_change_forbidden": true,
+    "roster_joined_epoch_writes_forbidden": true,
+    "counter_callback_reconciliation_required": true,
+    "zero_canary_pair_identity_required": true,
+    "input_schedule_has_no_final_item_use_equipment_change_party_swap_or_save_confirmation": true
+  },
+  "limitations": [
+    "The current-core input timings are calibration hints only; native Mesen screenshots and traces must independently prove each route before acceptance.",
+    "The exact input schedules stop or cancel before any final item-use, equipment-change, party-swap, or save confirmation.",
+    "Inventory and equipment data are not watched. The exact input schedule contains no final use/change confirmation, and the endpoint screenshots remain on the menu pages, but this tranche does not provide byte-level inventory or equipment mutation proof.",
+    "No battle, reset, load, save, erase, New Game+, attract, shop, naming, natural PC 07, or Project Epoch adapter is exercised.",
+    "The accepted v1 collector, validator, launcher, scenario contract, acceptance spec, and private artifacts remain unchanged."
+  ]
+}

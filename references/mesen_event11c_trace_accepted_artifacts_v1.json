@@ -1,0 +1,159 @@
+{
+  "schema": "project-epoch-mesen-event11c-acceptance-v1",
+  "evidence_level": "verified-runtime",
+  "emulator": {
+    "name": "Mesen",
+    "version": "2.1.1",
+    "release_url": "https://github.com/SourMesen/Mesen2/releases/tag/2.1.1",
+    "archive_size": 34058170,
+    "archive_sha256": "23ccc2bc060b663c68dad3a8c5d6da7d23a50f872d04f135bafa2b04ff7d5cbe",
+    "exe_size": 70470144,
+    "exe_sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+    "core_size": 7143424,
+    "core_sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+    "harfbuzz_size": 1804872,
+    "harfbuzz_sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+    "skia_size": 9414216,
+    "skia_sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+    "nesdb_size": 559118,
+    "nesdb_sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+    "settings_size": 3,
+    "settings_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "collector": {
+    "path": "tools/mesen_event11c_trace.lua",
+    "size": 16840,
+    "sha256": "c6f8480b4dcfd0ff917529c96629bf8dce3da228bc0be07217639b4bec906931",
+    "schema": "project-epoch-mesen-event11c-access-trace-v1",
+    "version": 2
+  },
+  "validator": {
+    "path": "tools/validate_mesen_event11c_trace.py",
+    "size": 16746,
+    "sha256": "9dab9e43eae63d0200c2502753b62ffd7c9e368d9a0bca85ba5295a8b9978def"
+  },
+  "launcher": {
+    "path": "tools/run_mesen_event11c_trace.py",
+    "size": 20459,
+    "sha256": "61915fa772761667c7d286a9a0bce3cefbfb6c730cd311c521168d409acf5f0e",
+    "canonical_private_paths": true,
+    "new_output_directory_required": true,
+    "shared_mesen_saves_overlap_rejected": true,
+    "fully_staged_emulator_app": true,
+    "unique_disposable_rom_sram_staging": true,
+    "refuses_existing_outputs": true,
+    "strict_single_trace_validation": true,
+    "exact_accepted_output_hash_gate": true,
+    "immutable_input_postcheck": true,
+    "shared_mesen_saves_postcheck": true
+  },
+  "private_inputs": {
+    "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "disposable_sram_sha256": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+    "checkpoint": {
+      "path": "event11c_checkpoint_v5/spekkio_talkable.mss",
+      "size": 133993,
+      "sha256": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e"
+    },
+    "checkpoint_route_log": {
+      "path": "event11c_checkpoint_v5/checkpoint.tsv",
+      "size": 621,
+      "sha256": "fa3b549802d54510bb1362b79feb6fb16e4e6c1d8eacfc446f76fd5b321515d2"
+    },
+    "checkpoint_screenshot": {
+      "path": "event11c_checkpoint_v5/spekkio_talkable.png",
+      "size": 12562,
+      "sha256": "caddea605078f430b0186384b125fc5a9c081d529eebcc9b0f98db360230e67a"
+    },
+    "checkpoint_state_keys": {
+      "path": "event11c_checkpoint_v5/snes_state_keys.txt",
+      "size": 19929,
+      "sha256": "9cd1c6949629ac4d9f28aacc9f1046c19af2a516ba4079cfe9f8f8e045811fb2"
+    }
+  },
+  "artifact_root": "private/test_runs/mesen2/event11c_trace_accepted_v1",
+  "artifacts": [
+    {
+      "path": "crono-marle-lucca/canary/endpoint.png",
+      "size": 10421,
+      "sha256": "312a56671d05c8f4a47ca0cbb65aa6dbefda0eb81068736d1dde5eb2aeea8e96",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    },
+    {
+      "path": "crono-marle-lucca/canary/trace.json",
+      "size": 2511,
+      "sha256": "d7f8e285d8dc09d7eea68c4907f38da487e8110ce8177cd879b62de5b3884111",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    },
+    {
+      "path": "crono-marle-lucca/zero/endpoint.png",
+      "size": 10421,
+      "sha256": "312a56671d05c8f4a47ca0cbb65aa6dbefda0eb81068736d1dde5eb2aeea8e96",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    },
+    {
+      "path": "crono-marle-lucca/zero/trace.json",
+      "size": 2509,
+      "sha256": "943f9f0f7817c9b38221f04b7dd82448a3ada409ff7624141be4a6cbc077ec5d",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    },
+    {
+      "path": "frog-robo/canary/endpoint.png",
+      "size": 9503,
+      "sha256": "0882eb8e58d053a0e5b2222c9615ab5a1e4530d8849ddd7388e491803417b7fb",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    },
+    {
+      "path": "frog-robo/canary/trace.json",
+      "size": 1719,
+      "sha256": "021acbda6a32513974ea378566279cbe918543222def941e2d79338faddb00cb",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    },
+    {
+      "path": "frog-robo/zero/endpoint.png",
+      "size": 9503,
+      "sha256": "0882eb8e58d053a0e5b2222c9615ab5a1e4530d8849ddd7388e491803417b7fb",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    },
+    {
+      "path": "frog-robo/zero/trace.json",
+      "size": 1717,
+      "sha256": "b8072a76df2ddbfc68f246f063cf325b079fba515b373e511f0e7feaa2d11bf6",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "mesen-trace"
+    }
+  ],
+  "controls": {
+    "expected_test_runner_exit_code": 41,
+    "profiles": [
+      "crono-marle-lucca",
+      "frog-robo"
+    ],
+    "variants": [
+      "canary",
+      "zero"
+    ],
+    "zero_canary_callback_sequences_match": true,
+    "zero_canary_endpoint_images_match": true,
+    "candidate_and_guards_preserved": true,
+    "epoch_name_preserved": true,
+    "disposable_sram_preserved": true,
+    "safe_launcher_replay_matches_all_accepted_artifact_hashes": true
+  },
+  "reproduction": {
+    "guide": "docs/current_emulator_replay_harness_2026-07-26.md",
+    "command": "Run tools/run_mesen_event11c_trace.py once for each profile/variant into fresh private output directories, then run tools/validate_mesen_event11c_trace.py over all four private trace JSON files."
+  },
+  "limitations": [
+    "No ROM, SRAM, or emulator state is included in this source-controlled reference.",
+    "The collector observes the unmodified vanilla event and does not install the translated packet.",
+    "This evidence closes the twelve event-$11C compatibility accesses only; it does not approve the candidate WRAM range or a production hook."
+  ]
+}

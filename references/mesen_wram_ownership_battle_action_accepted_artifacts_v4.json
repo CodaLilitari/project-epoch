@@ -1,0 +1,269 @@
+{
+  "schema": "project-epoch-mesen-wram-ownership-battle-action-acceptance-v4",
+  "version": 4,
+  "evidence_level": "verified-runtime",
+  "acceptance_scope": "six-exact-json-traces-plus-independent-replay",
+  "emulator": {
+    "name": "Mesen",
+    "version": "2.1.1",
+    "release_url": "https://github.com/SourMesen/Mesen2/releases/tag/2.1.1",
+    "archive_size": 34058170,
+    "archive_sha256": "23ccc2bc060b663c68dad3a8c5d6da7d23a50f872d04f135bafa2b04ff7d5cbe",
+    "exe_size": 70470144,
+    "exe_sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+    "core_size": 7143424,
+    "core_sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+  },
+  "checkpoint": {
+    "id": "lavos-core-command-ready-canonical-v1",
+    "private_root": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v1",
+    "state_size": 261614,
+    "state_sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b",
+    "decoded_state_size": 324388,
+    "decoded_state_sha256": "8369e220290e1afc27138df5a1f999dee83cb4fdb462bc13c152ef1c313ecf4c",
+    "source_frame": 5651,
+    "direct_page": "0000",
+    "location": "01DB",
+    "storyline": "D6",
+    "pending_request": "01",
+    "acceptance_contract": {
+      "path": "references/mesen_lavos_battle_checkpoint_accepted_artifacts_v1.json",
+      "size": 4983,
+      "sha256": "67cc7c9f7460a3de30a23c90aca53a079b8334c5e80c1975651fcdc60ba08564"
+    }
+  },
+  "ancestry": {
+    "v3_collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_battle_collector_v3.py",
+      "size": 21160,
+      "sha256": "443d521ffa435ffddaa2b9ebdd68bc66c22b144e125fe91e9bebef38817cdf91"
+    },
+    "v3_generated_collector": {
+      "source_controlled": false,
+      "compiled_in_memory_only": true,
+      "size": 41269,
+      "sha256": "7491d1c6a8a3962884baeaf9997df4659c4a53d3f67b3c6ac69999d08f6ee68b"
+    },
+    "probe_collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_battle_action_probe_v4.py",
+      "size": 16877,
+      "sha256": "d50ebfe12ec81c318b61aa189a30ca04eeadba181c1d43a3300e58b26f50ca6e"
+    },
+    "probe_generated_collector": {
+      "source_controlled": false,
+      "compiled_in_memory_only": true,
+      "size": 46650,
+      "sha256": "8957872bb9a32931be6a8e1f56d0a953a605659e30b6d77d2d1ec14de52a1e65"
+    },
+    "probe_validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_action_probe_v4.py",
+      "size": 18791,
+      "sha256": "5da3bbdc8817085a302eba7426f1b6b5454096dd5e0e6caa9de7cfa2564c6921"
+    },
+    "probe_launcher": {
+      "path": "tools/run_mesen_wram_ownership_battle_action_probe_v4.py",
+      "size": 17296,
+      "sha256": "98d67dfab86323958491b20c048455664d0253f0de1f8eab551e39885b0527b7"
+    },
+    "probe_scenario_contract": {
+      "path": "references/mesen_wram_ownership_battle_action_probe_scenarios_v4.json",
+      "size": 8027,
+      "sha256": "9596c869550a279feb57d8f69746dc5b2aa067ff2c8953f79243fbd6c2b09d3e"
+    }
+  },
+  "sources": {
+    "collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_battle_action_collector_v4.py",
+      "size": 14769,
+      "sha256": "6be1f408ceb04c8c211aa5365b92f3d9b0c5aa00354434bd431ac8c028057af8"
+    },
+    "generated_collector": {
+      "source_controlled": false,
+      "staged_private_only": true,
+      "deleted_after_each_run": true,
+      "size": 51620,
+      "sha256": "dc9a2cb3dc91fd9b4182511cec632773c8ed80725577fd4c1d15e3d719cde408"
+    },
+    "validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_action_trace_v4.py",
+      "size": 20306,
+      "sha256": "f7f23cdb9c196d4d0642cf2bb9aa2040834bd89fb0a5bb6044f65218e6974b3c"
+    },
+    "replay_validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_action_replay_v4.py",
+      "size": 6077,
+      "sha256": "dbe2a1a0e2e2217f7379ed7d6e127674532a9aff5f6900de5a69ac62f89fb099"
+    },
+    "launcher": {
+      "path": "tools/run_mesen_wram_ownership_battle_action_trace_v4.py",
+      "size": 21561,
+      "sha256": "ab952a313dd47eb26214ccb18c6425195bf60d5d624a63e5e6bd1c810a1cf51a"
+    },
+    "scenario_contract": {
+      "path": "references/mesen_wram_ownership_battle_action_scenarios_v4.json",
+      "size": 12552,
+      "sha256": "ad6d686bdc01f93ce9abed3c21beb4a2bac5d5142883f94fc29c6e3f06c6f727"
+    },
+    "tests": {
+      "path": "tests/test_mesen_wram_ownership_battle_action_v4.py",
+      "size": 27644,
+      "sha256": "e8e4e84b0f5ea4249fec5572892a2333454748f0f0625c49038e1a87408b791b"
+    },
+    "derived_base_launcher": {
+      "source_controlled": false,
+      "compiled_in_memory_only": true,
+      "size": 40460,
+      "sha256": "a2ce3b712edaa8e270c2cbcf08229dd8ad5b7b03654f2d805549c3ebd9ae10cf"
+    }
+  },
+  "private_inputs": {
+    "canonical_rom_size": 4194304,
+    "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "recovered_lavos_sram_size": 8192,
+    "recovered_lavos_sram_sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+  },
+  "artifact_root": "private/test_runs/mesen2/wram_ownership_battle_action_v4_accepted_critical_v2",
+  "replay_artifact_root": "private/test_runs/mesen2/wram_ownership_battle_action_v4_replay_critical_v2",
+  "artifacts": [
+    {
+      "path": "battle-action-control/zero/trace.json",
+      "size": 192051,
+      "sha256": "2d0b222b0f7e0151108e9c8471b8953656e2e1a064e3b4c8b69e33e274150569",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "exact-trace-gate"
+    },
+    {
+      "path": "battle-action-control/canary/trace.json",
+      "size": 198801,
+      "sha256": "885299cd5066c4f7bd3b46a4411bab3a42e4e3e07234e1b6057b5606b90ddb35",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "exact-trace-gate"
+    },
+    {
+      "path": "battle-attack-target-hold/zero/trace.json",
+      "size": 24788,
+      "sha256": "fc4264a8fe5df5dff4e34b0ab4bf80cf8787c04395f80658aff421c9e220dd03",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "exact-trace-gate"
+    },
+    {
+      "path": "battle-attack-target-hold/canary/trace.json",
+      "size": 31538,
+      "sha256": "ca3fd8d70f8555362554cefbd66a69b74bcc379e7f83c834b49b455da0bb2398",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "exact-trace-gate"
+    },
+    {
+      "path": "battle-attack-recovery/zero/trace.json",
+      "size": 150494,
+      "sha256": "cc0e37b6f1c14377d8b5c1e5870a63687e2136a11fc2a7b90211c2efa11e14e0",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "exact-trace-gate"
+    },
+    {
+      "path": "battle-attack-recovery/canary/trace.json",
+      "size": 157244,
+      "sha256": "655e5fab21c48983968aa3616de10837f85cee31234767354e35fba4549713fa",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "exact-trace-gate"
+    },
+    {
+      "path": "battle-action-control/zero/endpoint.png",
+      "size": 23943,
+      "sha256": "81b448c88c7a91da09caa7c442c6a8c80273dff84c8dcfbc0a45261779d1da76",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "supporting-presentation-only"
+    },
+    {
+      "path": "battle-action-control/canary/endpoint.png",
+      "size": 23949,
+      "sha256": "f02095c0d9a56193288af627017f73a31984db99479a16e8e3d2f0419dedb9a5",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "supporting-presentation-only"
+    },
+    {
+      "path": "battle-attack-target-hold/zero/endpoint.png",
+      "size": 24342,
+      "sha256": "f26dc9c2099c62db1b2ad4b060d395b02815b277e83e18e2c021fa4a4d40eb05",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "supporting-presentation-only"
+    },
+    {
+      "path": "battle-attack-target-hold/canary/endpoint.png",
+      "size": 24371,
+      "sha256": "1f6550496cf2b7970f3330b67d587960a3ac1de1421ed2c91dc0a8f677ac4bc9",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "supporting-presentation-only"
+    },
+    {
+      "path": "battle-attack-recovery/zero/endpoint.png",
+      "size": 24051,
+      "sha256": "78a6a6a26ca299063fed70209b0961a6ad2f6121ac20c6efbd08bd91ec1b01d7",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "supporting-presentation-only"
+    },
+    {
+      "path": "battle-attack-recovery/canary/endpoint.png",
+      "size": 24059,
+      "sha256": "56b8b704de91562ec6d11fea991f860dc62e3581edf5ef066319765eeab2fe2c",
+      "evidence_level": "verified-runtime",
+      "acceptance_role": "supporting-presentation-only"
+    }
+  ],
+  "observations": {
+    "watched_byte_count": 196,
+    "trace_count_per_root": 6,
+    "accepted_and_replay_trace_bytes_exact": true,
+    "candidate_and_guards_total_callbacks": 0,
+    "old_compatibility_total_callbacks": 0,
+    "roster_joined_epoch_writes": 0,
+    "all_scenarios_share_one_normalized_checkpoint_preimage": true,
+    "control_terminal_frame": 606,
+    "control_final_signature_frame": 603,
+    "control_party_hp": [
+      739,
+      821,
+      712
+    ],
+    "target_hold_terminal_frame": 60,
+    "target_hold_full_hp": true,
+    "attack_recovery_terminal_frame": 606,
+    "attack_recovery_critical_marker_frame": 375,
+    "attack_recovery_critical_marker": "AE9B-bit-80",
+    "attack_recovery_party_hp": [
+      739,
+      821,
+      712
+    ],
+    "attack_recovery_enemy_slot_3_hp": 7038,
+    "attack_recovery_roster_reads_per_trace": 2,
+    "attack_recovery_roster_read_address": "7E2980",
+    "attack_recovery_roster_read_pcs": [
+      "C14A43",
+      "C1438A"
+    ]
+  },
+  "controls": {
+    "fixed_rom_name": "project_epoch_mesen_lavos_clean.sfc",
+    "ram_power_on_state": "AllZeros",
+    "candidate_canary_written_before_observers_arm": true,
+    "all_watched_counters_zero_before_observation": true,
+    "counter_callback_reconciliation_required": true,
+    "old_compatibility_writes_forbidden": true,
+    "candidate_and_guard_accesses_forbidden": true,
+    "roster_joined_epoch_writes_forbidden": true,
+    "zero_canary_observations_identical": true,
+    "independent_replay_trace_identity_required": true,
+    "screenshots_hash_gated_for_acceptance": false,
+    "immutable_inputs_preserved": true,
+    "shared_mesen_saves_preserved": true,
+    "generated_source_and_disposable_staging_deleted": true
+  },
+  "limitations": [
+    "This proves only one already-queued enemy action, one Attack target-hold, and one Crono critical-Attack resolution/recovery route at the accepted Lavos checkpoint.",
+    "The two roster reads identify Attack consumers of the active roster ID; they do not prove that either consumer supports logical PC $07.",
+    "Noncritical Attack, attacks by the other playable PCs, Tech, Item, status, death, victory, teardown, persistence, reset, attract, shops, equipment, naming, and actual PC $07 remain outside this tranche.",
+    "Zero access in these bounded routes does not approve $7E2CA0-$2CEF or the $7E2830-$287F relocation.",
+    "Screenshots are supporting presentation artifacts because Mesen can render adjacent battle frames while the accepted JSON trace remains exact."
+  ]
+}

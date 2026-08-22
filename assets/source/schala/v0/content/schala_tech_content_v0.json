@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "content_id": "project_epoch_schala_techs_v0",
+  "logical_pc_id": 7,
+  "content_origin": "project-epoch-original",
+  "rom_encoding_status": "authoring-only-unmapped",
+  "provenance": {
+    "authoring_basis": [
+      "docs/schala_character_design_v0.md",
+      "docs/schala_command_namespace_architecture.md"
+    ],
+    "rom_or_npc_data_imported": false,
+    "copied_vanilla_records": false
+  },
+  "commands": [
+    {
+      "action_id": 128,
+      "design_name": "Astral Pin",
+      "ui_name": "Astral Pin",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 2},
+      "target": "one_enemy",
+      "element": "shadow",
+      "description": "Pierces one foe with low Shadow damage.",
+      "effects": [
+        {"type": "magic_damage", "scale": "low"}
+      ],
+      "learning": {"type": "recruitment", "value": 0},
+      "animation_family": "pin_sigil",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 129,
+      "design_name": "Veil",
+      "ui_name": "Veil",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 4},
+      "target": "one_ally",
+      "element": "none",
+      "description": "Raises one ally's magic barrier.",
+      "effects": [
+        {"type": "magic_barrier", "scale": "short"}
+      ],
+      "learning": {"type": "recruitment", "value": 0},
+      "animation_family": "ward_ring",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 130,
+      "design_name": "Crescent Wake",
+      "ui_name": "Cres. Wake",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 6},
+      "target": "enemy_line",
+      "element": "shadow",
+      "description": "Sweeps a line with Shadow damage.",
+      "effects": [
+        {"type": "magic_damage", "scale": "moderate"}
+      ],
+      "learning": {"type": "recruitment", "value": 0},
+      "animation_family": "crescent_line",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 131,
+      "design_name": "Stillpoint",
+      "ui_name": "Stillpoint",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 7},
+      "target": "one_enemy",
+      "element": "shadow",
+      "description": "Slows one foe and deals slight damage.",
+      "effects": [
+        {"type": "magic_damage", "scale": "very_low"},
+        {"type": "status_slow", "scale": "normal"}
+      ],
+      "learning": {"type": "cumulative_tp_after_recruitment", "value": 100},
+      "animation_family": "still_ring",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 132,
+      "design_name": "Recall",
+      "ui_name": "Recall",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 10},
+      "target": "one_fallen_ally",
+      "element": "none",
+      "description": "Revives one ally with low HP.",
+      "effects": [
+        {"type": "revive", "scale": "low_hp"}
+      ],
+      "learning": {"type": "cumulative_tp_after_recruitment", "value": 250},
+      "animation_family": "recall_star",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 133,
+      "design_name": "Sanctuary",
+      "ui_name": "Sanctuary",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 12},
+      "target": "all_allies",
+      "element": "none",
+      "description": "Cleanses allies and raises a magic ward.",
+      "effects": [
+        {"type": "status_cleanse", "scale": "removable"},
+        {"type": "magic_barrier", "scale": "short"}
+      ],
+      "learning": {"type": "cumulative_tp_after_recruitment", "value": 500},
+      "animation_family": "sanctuary_ring",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 134,
+      "design_name": "Rift Bloom",
+      "ui_name": "Rift Bloom",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 14},
+      "target": "enemy_circle",
+      "element": "shadow",
+      "description": "Blooms high Shadow damage around one foe.",
+      "effects": [
+        {"type": "magic_damage", "scale": "high"}
+      ],
+      "learning": {"type": "cumulative_tp_after_recruitment", "value": 900},
+      "animation_family": "rift_bloom",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 135,
+      "design_name": "Astral Gate",
+      "ui_name": "AstralGate",
+      "kind": "single",
+      "participants": [7],
+      "mp_budget": {"7": 20},
+      "target": "all_enemies",
+      "element": "shadow",
+      "description": "Strikes all foes; lowers Schala's MDef.",
+      "effects": [
+        {"type": "magic_damage", "scale": "very_high"},
+        {"type": "self_magic_defense_down", "scale": "one_turn"}
+      ],
+      "learning": {"type": "capstone_and_tp", "value": 1400},
+      "animation_family": "astral_gate",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 136,
+      "design_name": "Horizon Arc",
+      "ui_name": "HorizonArc",
+      "kind": "dual",
+      "participants": [0, 7],
+      "mp_budget": {"0": 8, "7": 6},
+      "target": "enemy_circle",
+      "element": "lightning_shadow",
+      "description": "Lightning and Shadow burst in a circle.",
+      "effects": [
+        {"type": "mixed_magic_damage", "scale": "high"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "horizon_arc",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 137,
+      "design_name": "Quiet Heaven",
+      "ui_name": "Q. Heaven",
+      "kind": "dual",
+      "participants": [1, 7],
+      "mp_budget": {"1": 8, "7": 12},
+      "target": "all_allies",
+      "element": "none",
+      "description": "Heals and cleanses the whole party.",
+      "effects": [
+        {"type": "heal", "scale": "moderate"},
+        {"type": "status_cleanse", "scale": "removable"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "quiet_heaven",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 138,
+      "design_name": "Eventide",
+      "ui_name": "Eventide",
+      "kind": "dual",
+      "participants": [2, 7],
+      "mp_budget": {"2": 12, "7": 14},
+      "target": "enemy_circle",
+      "element": "fire_shadow",
+      "description": "Compresses Fire and Shadow on one area.",
+      "effects": [
+        {"type": "mixed_magic_damage", "scale": "very_high"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "eventide",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 139,
+      "design_name": "Oathguard",
+      "ui_name": "Oathguard",
+      "kind": "dual",
+      "participants": [4, 7],
+      "mp_budget": {"4": 4, "7": 12},
+      "target": "all_allies",
+      "element": "none",
+      "description": "Heals allies and raises a magic barrier.",
+      "effects": [
+        {"type": "heal", "scale": "modest"},
+        {"type": "magic_barrier", "scale": "short"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "oathguard",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 140,
+      "design_name": "Phase Engine",
+      "ui_name": "PhaseGear",
+      "kind": "dual",
+      "participants": [3, 7],
+      "mp_budget": {"3": 3, "7": 7},
+      "target": "all_enemies_and_allies",
+      "element": "shadow",
+      "description": "Damages foes and briefly speeds allies.",
+      "effects": [
+        {"type": "magic_damage", "scale": "moderate"},
+        {"type": "party_speed_up", "scale": "brief"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "phase_engine",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 141,
+      "design_name": "Star Pounce",
+      "ui_name": "StarPounce",
+      "kind": "dual",
+      "participants": [5, 7],
+      "mp_budget": {"5": 4, "7": 6},
+      "target": "one_enemy",
+      "element": "physical",
+      "description": "Launches Ayla through a ring at one foe.",
+      "effects": [
+        {"type": "physical_damage", "scale": "very_high"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "star_pounce",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 142,
+      "design_name": "New Dawn",
+      "ui_name": "New Dawn",
+      "kind": "triple",
+      "participants": [0, 1, 7],
+      "mp_budget": {"0": 20, "1": 15, "7": 20},
+      "target": "all_enemies_and_allies",
+      "element": "lightning_shadow",
+      "description": "Heals allies, revives one, and strikes foes.",
+      "effects": [
+        {"type": "heal", "scale": "strong"},
+        {"type": "revive_one", "scale": "low_hp"},
+        {"type": "mixed_magic_damage", "scale": "moderate"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "new_dawn",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 143,
+      "design_name": "Little Star",
+      "ui_name": "LittleStar",
+      "kind": "triple",
+      "participants": [2, 3, 7],
+      "mp_budget": {"2": 20, "3": 17, "7": 20},
+      "target": "enemy_circle",
+      "element": "fire_shadow",
+      "description": "Forms a tiny star for immense area damage.",
+      "effects": [
+        {"type": "mixed_magic_damage", "scale": "extreme"}
+      ],
+      "learning": {"type": "combination_eligibility", "value": 1},
+      "animation_family": "little_star",
+      "primitive_binding": null
+    },
+    {
+      "action_id": 144,
+      "design_name": "Focus Pulse",
+      "ui_name": "FocusPulse",
+      "kind": "basic",
+      "participants": [7],
+      "mp_budget": {"7": 0},
+      "target": "one_enemy",
+      "element": "physical_magic",
+      "description": "Releases a short pulse from the equipped Focus.",
+      "effects": [
+        {"type": "focus_weapon_damage", "scale": "low"}
+      ],
+      "learning": {"type": "always_available_with_focus", "value": 1},
+      "animation_family": "focus_pulse",
+      "primitive_binding": null
+    }
+  ]
+}

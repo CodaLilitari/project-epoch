@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "content_id": "project_epoch_schala_progression_v0",
+  "logical_pc_id": 7,
+  "content_origin": "project-epoch-original",
+  "rom_encoding_status": "authoring-only-unmapped",
+  "provenance": {
+    "authoring_basis": [
+      "docs/schala_character_design_v0.md",
+      "docs/pc7_character_tech_equipment_audit.md"
+    ],
+    "rom_or_npc_data_imported": false,
+    "copied_vanilla_record": false,
+    "copied_vanilla_growth_row": false,
+    "design_note": "The values were authored for Schala's low-HP, low-physical, high-Magic controller role. They are not a modified row from another character."
+  },
+  "recruitment_level_policy": {
+    "mode": "median_active_party_level",
+    "minimum": 30,
+    "maximum": 45,
+    "fallback": 35
+  },
+  "level_one": {
+    "hp": 65,
+    "mp": 14,
+    "stats": {
+      "power": 2,
+      "stamina": 5,
+      "speed": 10,
+      "hit": 7,
+      "evade": 9,
+      "magic": 10,
+      "magic_defense": 10
+    }
+  },
+  "growth": {
+    "hp_brackets": [
+      {"maximum_level": 10, "gain_per_level": 10},
+      {"maximum_level": 30, "gain_per_level": 14},
+      {"maximum_level": 60, "gain_per_level": 15},
+      {"maximum_level": 99, "gain_per_level": 16}
+    ],
+    "mp_brackets": [
+      {"maximum_level": 10, "gain_per_level": 2},
+      {"maximum_level": 30, "gain_per_level": 2},
+      {"maximum_level": 60, "gain_per_level": 1},
+      {"maximum_level": 99, "gain_per_level": 1}
+    ],
+    "stats_per_100_levels": {
+      "power": 25,
+      "stamina": 65,
+      "speed": 0,
+      "hit": 30,
+      "evade": 45,
+      "magic": 105,
+      "magic_defense": 150
+    }
+  },
+  "single_tech_progression": {
+    "starting_learned_count": 3,
+    "starting_learned_mask": 224,
+    "cumulative_tp_after_recruitment": [0, 0, 0, 100, 250, 500, 900, 1400],
+    "engine_step_costs": [0, 0, 0, 100, 150, 250, 400, 500]
+  },
+  "starting_loadout": {
+    "helmet_item_id": null,
+    "armor_item_id": 236,
+    "weapon_item_id": 232,
+    "accessory_item_id": null
+  },
+  "runtime_identity": {
+    "basic_action_id": 144,
+    "element": "shadow",
+    "equipment_permission_mask": 1
+  },
+  "runtime_gates": [
+    "record_byte_01_semantics",
+    "record_byte_02_semantics",
+    "shared_experience_curve_binding",
+    "current_stat_recompute",
+    "current_attack_and_defense_recompute",
+    "expanded_growth_table_readers",
+    "expanded_tp_table_reader",
+    "recruitment_level_initializer",
+    "equipment_record_adapters",
+    "save_and_load_round_trip",
+    "equal_level_balance_replay"
+  ]
+}

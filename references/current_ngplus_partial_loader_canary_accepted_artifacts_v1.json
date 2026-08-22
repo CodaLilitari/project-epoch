@@ -1,0 +1,175 @@
+{
+  "schema": "project-epoch-emulator-acceptance-v1",
+  "artifacts": [
+    {
+      "path": "ngplus_title_zero_2400.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "record-replay"
+    },
+    {
+      "path": "ngplus_title_zero_2400_record.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "record-replay"
+    },
+    {
+      "path": "ngplus_select_probe.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "chrono_trigger_current_ngplus_select_probe_2000.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_select_probe.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_select_probe.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_slotselect_checkpoint_zero.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "ngplus_slotselect_checkpoint_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "ngplus_slot1_confirm_zero.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "ngplus_slot1_confirm_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "ngplus_zero_f61.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f61.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f61.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_canary_f61.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f61.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f61.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_zero_f62.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f62.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f62.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_canary_f62.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f62.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f62.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_zero_f90.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f90.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f90.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_canary_f90.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f90.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f90.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_zero_f300.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f300.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_zero_f300.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "ngplus_canary_f300.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f300.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_ngplus_canary_f300.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "schema": "project-epoch-schala-focus-pulse-adapter-boundaries-v1",
+  "version": 1,
+  "evidence_level": "verified-static",
+  "scope": {
+    "logical_pc_id": "07",
+    "basic_action_id": "90",
+    "focus_weapon_ids": [
+      "E8",
+      "E9",
+      "EA",
+      "EB"
+    ],
+    "operation": "Focus Pulse action and normal-Attack presentation boundary audit",
+    "rom_access": "read-only",
+    "output_policy": "region hashes, addresses, geometry, and bounded lookup facts only; never table bytes",
+    "rom_save_state_trace_mutation": false,
+    "patch_rom_or_output_file_emission": false
+  },
+  "canonical_rom": {
+    "identity": "Chrono Trigger US Rev0 headerless",
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "mapping": "C0-FF HiROM address masked to file offset 000000-3FFFFF"
+  },
+  "regions": [
+    {
+      "name": "character_action_records",
+      "label": "CharTechIdTables",
+      "snes_start": "CC1BEB",
+      "snes_end_exclusive": "CC213F",
+      "entry_count": 124,
+      "entry_width": 11,
+      "expected_bytes_sha256": "8ad6d247d379a78c5a1711a8bd1c11f122aecfe7a4bb43f983a3c2a35ea3d383"
+    },
+    {
+      "name": "tech_property_records",
+      "label": "TechProperty_Rec0",
+      "snes_start": "CC213F",
+      "snes_end_exclusive": "CC249F",
+      "entry_count": 72,
+      "entry_width": 12,
+      "expected_bytes_sha256": "ea34414fb3cf715612b8ed8519c190bf9cd522b46af1aaf5737901c1aeec8815"
+    },
+    {
+      "name": "pc_attack_selector_families",
+      "label": "PcAttackAnimIdsA_DATA8_CD4007_PcAttackAnimIdsB",
+      "snes_start": "CD4000",
+      "snes_end_exclusive": "CD4015",
+      "entry_count": 21,
+      "entry_width": 1,
+      "expected_bytes_sha256": "89372c122381484720d5abfc94e040a27089e31578a1a0bbb29cd85566167ff9"
+    },
+    {
+      "name": "weapon_attack_config_records",
+      "label": "normal_Attack_weapon_config",
+      "snes_start": "CD4015",
+      "snes_end_exclusive": "CD45A6",
+      "entry_count": 95,
+      "entry_width": 15,
+      "expected_bytes_sha256": "7e02fa2b4c77937e8f4655d840852bce0f4f0eead78f735ca4411b1a4331dd5d"
+    },
+    {
+      "name": "enemy_attack_animation_records",
+      "label": "EnemyAttackAnimRecords",
+      "snes_start": "CD4926",
+      "snes_end_exclusive": "CD4F26",
+      "entry_count": 256,
+      "entry_width": 6,
+      "expected_bytes_sha256": "2358920a949949341abba4cdafb46055af6d5ca7e383a78d3643555a40642e5f"
+    },
+    {
+      "name": "normal_attack_animation_offsets",
+      "label": "DATA8_CD5EC6",
+      "snes_start": "CD5EC6",
+      "snes_end_exclusive": "CD5EF0",
+      "entry_count": 21,
+      "entry_width": 2,
+      "expected_bytes_sha256": "f603c4f7413d2cfe48d7459687f511133ebcfc8f5f0d1a31d5b11d89f3e63256"
+    },
+    {
+      "name": "tech_animation_pointer_table",
+      "label": "TechAnimPtrTable",
+      "snes_start": "CD5EF0",
+      "snes_end_exclusive": "CD5FF0",
+      "entry_count": 128,
+      "entry_width": 2,
+      "expected_bytes_sha256": "074a9bca7aaa630085654200634002e8f3c0f251a5c3874a5b1c1237d713a4d1"
+    },
+    {
+      "name": "normal_attack_graphics_pointers",
+      "label": "PointersUnknownCompressedDataL",
+      "snes_start": "D10000",
+      "snes_end_exclusive": "D10060",
+      "entry_count": 48,
+      "entry_width": 2,
+      "expected_bytes_sha256": "034bd29b6397df535cc62d650a3a124c62b0ac91203c5b6bf213b1e9d0d18865"
+    },
+    {
+      "name": "normal_attack_ce_animation_offsets",
+      "label": "UNREACH_CD64B0",
+      "snes_start": "CD64B0",
+      "snes_end_exclusive": "CD656E",
+      "entry_count": 95,
+      "entry_width": 2,
+      "expected_bytes_sha256": "5faeac58df3154c7ca2ee0ab8fadd88ca3ace0b342ada39ef4e631493202d462"
+    },
+    {
+      "name": "normal_attack_aux_frame_offsets",
+      "label": "DATA8_CD686E",
+      "snes_start": "CD686E",
+      "snes_end_exclusive": "CD692C",
+      "entry_count": 95,
+      "entry_width": 2,
+      "expected_bytes_sha256": "c117c513f3b6f45d60c7a023fc198fe2c429e1939ab7b1d8d427b6ffb2f26c25"
+    }
+  ],
+  "focus_action_collision": {
+    "raw_action_id": "90",
+    "index_formula": "CC1BEB + action_id * 11",
+    "lookup_snes_address": "CC221B",
+    "declared_action_extent_contains_lookup": false,
+    "collision": {
+      "owner_region": "tech_property_records",
+      "owner_record_index": 18,
+      "owner_record_byte_offset": 4
+    },
+    "first_direct_consumer_pc": "C1D546",
+    "all_character_action_direct_consumer_pcs": [
+      "C1CB55",
+      "C1CB6E",
+      "C1CB87",
+      "C1CBA0",
+      "C1D546",
+      "C1D593",
+      "C1D5A3",
+      "C1D5CD",
+      "C1D61F",
+      "C1D694",
+      "C1D6A4",
+      "C1D732",
+      "C1F482",
+      "C1F5B7"
+    ]
+  },
+  "weapon_attack_config": {
+    "index_formula": "CD4015 + equipped_weapon_id * 15",
+    "equipped_weapon_source": "7E1C48 + actor_slot * 5",
+    "index_setup_pc_span": "C14341-C14357",
+    "record_geometry": {
+      "record_width": 15,
+      "branch_count": 3,
+      "branch_width": 5,
+      "branches": [
+        {
+          "name": "noncritical_9930_zero",
+          "record_offset": 0,
+          "direct_consumer_pcs": [
+            "C14399",
+            "C143A0",
+            "C143A7",
+            "C143AE",
+            "C143B5"
+          ]
+        },
+        {
+          "name": "noncritical_9930_nonzero",
+          "record_offset": 5,
+          "direct_consumer_pcs": [
+            "C143CD",
+            "C143D4",
+            "C143DB",
+            "C143E2",
+            "C143E9"
+          ]
+        },
+        {
+          "name": "critical_ae9b_bit80",
+          "record_offset": 10,
+          "direct_consumer_pcs": [
+            "C14360",
+            "C14367",
+            "C1436E",
+            "C14375",
+            "C1437C"
+          ]
+        }
+      ],
+      "branch_destinations": [
+        "7E987A",
+        "7E987B",
+        "7E987E",
+        "7E9881",
+        "7E9884"
+      ]
+    },
+    "focus_weapon_collisions": [
+      {
+        "weapon_id": "E8",
+        "lookup_snes_start": "CD4DAD",
+        "lookup_snes_end_exclusive": "CD4DBC",
+        "owner_region": "enemy_attack_animation_records",
+        "owner_first_record_index": 193,
+        "owner_first_record_byte_offset": 1
+      },
+      {
+        "weapon_id": "E9",
+        "lookup_snes_start": "CD4DBC",
+        "lookup_snes_end_exclusive": "CD4DCB",
+        "owner_region": "enemy_attack_animation_records",
+        "owner_first_record_index": 195,
+        "owner_first_record_byte_offset": 4
+      },
+      {
+        "weapon_id": "EA",
+        "lookup_snes_start": "CD4DCB",
+        "lookup_snes_end_exclusive": "CD4DDA",
+        "owner_region": "enemy_attack_animation_records",
+        "owner_first_record_index": 198,
+        "owner_first_record_byte_offset": 1
+      },
+      {
+        "weapon_id": "EB",
+        "lookup_snes_start": "CD4DDA",
+        "lookup_snes_end_exclusive": "CD4DE9",
+        "owner_region": "enemy_attack_animation_records",
+        "owner_first_record_index": 200,
+        "owner_first_record_byte_offset": 4
+      }
+    ]
+  },
+  "normal_attack_selector_boundary": {
+    "selector_source_region": "pc_attack_selector_families",
+    "selector_source_direct_consumer_pcs": [
+      "C143C4",
+      "C143F8",
+      "C1438B"
+    ],
+    "vanilla_selector_min": "00",
+    "vanilla_selector_max": "12",
+    "vanilla_unique_selector_count": 19,
+    "resolver_region": "normal_attack_animation_offsets",
+    "resolver_direct_consumer_pc": "C1442C",
+    "required_pc07_branch_selector_count": 3,
+    "first_three_id_extension": [
+      {
+        "selector_id": "13",
+        "lookup_snes_address": "CD5EEC",
+        "in_declared_resolver_extent": true,
+        "classification": "unproven-not-free"
+      },
+      {
+        "selector_id": "14",
+        "lookup_snes_address": "CD5EEE",
+        "in_declared_resolver_extent": true,
+        "classification": "unproven-not-free"
+      },
+      {
+        "selector_id": "15",
+        "lookup_snes_address": "CD5EF0",
+        "in_declared_resolver_extent": false,
+        "classification": "fallthrough-collision",
+        "collision": {
+          "owner_region": "tech_animation_pointer_table",
+          "owner_record_index": 0
+        }
+      }
+    ]
+  },
+  "normal_attack_downstream_fanout": [
+    {
+      "source_config_destination": "7E987E",
+      "region": "normal_attack_graphics_pointers",
+      "direct_consumer_pc": "C14408",
+      "resolved_destination": "7E987F"
+    },
+    {
+      "source_config_destination": "7E9884",
+      "region": "normal_attack_ce_animation_offsets",
+      "direct_consumer_pc": "C14420",
+      "resolved_destination": "7E9885"
+    },
+    {
+      "source_config_destination": "7E9881",
+      "region": "normal_attack_aux_frame_offsets",
+      "direct_consumer_pc": "C14414",
+      "resolved_destination": "7E9882"
+    }
+  ],
+  "verified_static_conclusions": [
+    "Raw Focus Pulse action ID 90 cannot index the vanilla 124-record character-action table.",
+    "Focus weapon IDs E8-EB cannot index the vanilla 95-record equipped-weapon Attack-config table.",
+    "The three logical-PC-07 Attack branches cannot receive three new contiguous normal-Attack selectors in place.",
+    "The action record, weapon Attack config, selector resolver, and any new downstream assets require named expanded descriptors and adapters."
+  ],
+  "limitations": [
+    "This audit does not execute logical PC 07 or Focus Pulse.",
+    "Selector IDs 13 and 14 are inside the canonical resolver extent but are not declared free by this audit.",
+    "The five branch fields are identified only by their WRAM destinations and direct fanout; their complete semantic formats remain unproved.",
+    "This audit does not approve hooks, expanded allocations, ROM mutation, patches, or production installation."
+  ]
+}

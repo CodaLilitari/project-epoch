@@ -1,0 +1,239 @@
+{
+  "schema": "project-epoch-mesen-wram-ownership-battle-scenarios-v3",
+  "version": 3,
+  "acceptance_status": "accepted-exact-trace-hashes",
+  "evidence_level": "verified-runtime",
+  "trace_contract": {
+    "schema": "project-epoch-mesen-wram-ownership-battle-trace-v3",
+    "collector_version": 3,
+    "trace_count": 8,
+    "variants": [
+      "zero",
+      "canary"
+    ],
+    "nonzero_scenario_capture_phase": "endFrame-after-terminal-input-poll",
+    "calibration_capture_phase": "inputPolled-immediately-after-observer-arm",
+    "screenshot_policy": "supporting-presentation-only-not-an-acceptance-gate"
+  },
+  "checkpoint": {
+    "id": "lavos-core-command-ready-canonical-v1",
+    "private_path": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v1/battle_ready.mss",
+    "size": 261614,
+    "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b",
+    "source_frame": 5651,
+    "direct_page": "0000",
+    "location": "01DB",
+    "decoded_state_size": 324388,
+    "decoded_state_sha256": "8369e220290e1afc27138df5a1f999dee83cb4fdb462bc13c152ef1c313ecf4c"
+  },
+  "sources": {
+    "base_collector": {
+      "path": "tools/mesen_wram_ownership_trace.lua",
+      "size": 40088,
+      "sha256": "d5dd2b2d7085237844d95ab04f7007b6b2d17b2e1160f23857018319380b7569"
+    },
+    "collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_battle_collector_v3.py",
+      "size": 21160,
+      "sha256": "443d521ffa435ffddaa2b9ebdd68bc66c22b144e125fe91e9bebef38817cdf91"
+    },
+    "generated_collector": {
+      "source_controlled": false,
+      "staged_private_only": true,
+      "size": 41269,
+      "sha256": "7491d1c6a8a3962884baeaf9997df4659c4a53d3f67b3c6ac69999d08f6ee68b"
+    },
+    "base_validator": {
+      "path": "tools/validate_mesen_wram_ownership_trace.py",
+      "size": 29388,
+      "sha256": "89a7dc86c6b5b10dc984b778451152e4734b5c553a669b7ee033e465ca87f2ba"
+    },
+    "validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_trace_v3.py",
+      "size": 20095,
+      "sha256": "b5ecc2c3cd81d34e5cc94428fcd45bbd39496c4ba1080a97db3c47380a6f5155"
+    },
+    "base_launcher": {
+      "path": "tools/run_mesen_wram_ownership_trace.py",
+      "size": 40447,
+      "sha256": "80f25f577da219d383829dfc977564d8295d1e0691ae4a2823da3e41079fa203"
+    }
+  },
+  "private_inputs": {
+    "canonical_rom_size": 4194304,
+    "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "recovered_lavos_sram_size": 8192,
+    "recovered_lavos_sram_sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+  },
+  "scenarios": [
+    {
+      "name": "calibration",
+      "terminal_frame": 0,
+      "expected_access_class": "none",
+      "inputs": []
+    },
+    {
+      "name": "battle-idle",
+      "terminal_frame": 60,
+      "expected_access_class": "battle-ownership-census",
+      "inputs": []
+    },
+    {
+      "name": "battle-command-roundtrip",
+      "terminal_frame": 60,
+      "expected_access_class": "battle-ownership-census",
+      "inputs": [
+        {
+          "button": "DOWN",
+          "start_frame": 20,
+          "end_frame": 23
+        },
+        {
+          "button": "UP",
+          "start_frame": 32,
+          "end_frame": 35
+        }
+      ]
+    },
+    {
+      "name": "battle-command-down",
+      "terminal_frame": 60,
+      "expected_access_class": "battle-ownership-census",
+      "inputs": [
+        {
+          "button": "DOWN",
+          "start_frame": 20,
+          "end_frame": 23
+        }
+      ]
+    }
+  ],
+  "accepted_outputs": [
+    {
+      "scenario": "calibration",
+      "variant": "zero",
+      "trace_size": 13396,
+      "trace_sha256": "b4eb138e3403bef904dcd300178402635fc87f13f794c1f3fdfce8f0a6d0e78d"
+    },
+    {
+      "scenario": "calibration",
+      "variant": "canary",
+      "trace_size": 20146,
+      "trace_sha256": "0d024d4470ea38d18520b9b2bc177f67efc9d259ba4cc580bd8cc796ce38d1dc"
+    },
+    {
+      "scenario": "battle-idle",
+      "variant": "zero",
+      "trace_size": 13418,
+      "trace_sha256": "b58ac92a65796b771075eb9547e55114cf6bbee276972a82aca861c065d17498"
+    },
+    {
+      "scenario": "battle-idle",
+      "variant": "canary",
+      "trace_size": 20168,
+      "trace_sha256": "febe03672487cd2e53e1ea9271e5a421cf0149fec8207e5e84f8bdb9272a76cf"
+    },
+    {
+      "scenario": "battle-command-roundtrip",
+      "variant": "zero",
+      "trace_size": 13546,
+      "trace_sha256": "4e46c7cc583f61fffe8d1b056d989c8afb87f5c162a2dc047840a4e2d1a38387"
+    },
+    {
+      "scenario": "battle-command-roundtrip",
+      "variant": "canary",
+      "trace_size": 20296,
+      "trace_sha256": "dd9c0d336b4d5094f2f4c915ff96d204f55572965811606fe86fa8b4dac94988"
+    },
+    {
+      "scenario": "battle-command-down",
+      "variant": "zero",
+      "trace_size": 13484,
+      "trace_sha256": "400d34011e92910a5cec0053db79fbcfbbb94d534480fe50c79f6509573b86ed"
+    },
+    {
+      "scenario": "battle-command-down",
+      "variant": "canary",
+      "trace_size": 20234,
+      "trace_sha256": "0630f040c03f2d4a205628a42b024ff93e5bdd266a7f8a32f521153bba32f4bb"
+    }
+  ],
+  "battle_anchors": {
+    "location": "01DB",
+    "storyline": "D6",
+    "pending_request": "01",
+    "explore_mode": "00",
+    "dialog_state": "00",
+    "active_party_hex": "000102",
+    "roster_hex": "000102828004030605",
+    "joined_hex": "FE",
+    "battle_ids_hex": "000102cdffffccffffffcb00",
+    "battle_current_and_max_hp": [
+      969,
+      898,
+      909,
+      8000,
+      12000,
+      20000
+    ],
+    "attack_command_state_hex": "0000000000ffff000100000000",
+    "tech_command_state_hex": "0001000000ffff000100000000"
+  },
+  "watched_ranges": [
+    {
+      "name": "old-compatibility",
+      "start": "7E2830",
+      "end": "7E287F",
+      "length": 80
+    },
+    {
+      "name": "roster",
+      "start": "7E2980",
+      "end": "7E2988",
+      "length": 9
+    },
+    {
+      "name": "joined",
+      "start": "7E29AF",
+      "end": "7E29AF",
+      "length": 1
+    },
+    {
+      "name": "epoch-name",
+      "start": "7E2C4D",
+      "end": "7E2C52",
+      "length": 6
+    },
+    {
+      "name": "front-guard",
+      "start": "7E2C9C",
+      "end": "7E2C9F",
+      "length": 4
+    },
+    {
+      "name": "candidate",
+      "start": "7E2CA0",
+      "end": "7E2CEF",
+      "length": 80
+    },
+    {
+      "name": "rear-guard",
+      "start": "7E2CF0",
+      "end": "7E2CFF",
+      "length": 16
+    }
+  ],
+  "controls": {
+    "candidate_and_guards_zero_access_required": true,
+    "roster_joined_epoch_writes_forbidden": true,
+    "old_compatibility_accesses_are_census_subject": true,
+    "old_compatibility_writes_forbidden": true,
+    "counter_callback_reconciliation_required": true,
+    "zero_canary_pair_identity_required": true,
+    "all_pre_snapshots_share_one_checkpoint_required": true,
+    "independent_replay_trace_identity_required": true,
+    "no_attack_item_tech_execution_or_save_input": true,
+    "ram_power_on_state": "AllZeros",
+    "fixed_rom_name": "project_epoch_mesen_lavos_clean.sfc"
+  }
+}

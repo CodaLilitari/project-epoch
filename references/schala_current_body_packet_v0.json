@@ -1,0 +1,351 @@
+{
+  "additive_result": {
+    "existing_foundation": {
+      "assembly_sha256": "11c7d77ec789853aca496b1bd38fdef35c437c31407000af74c7aa498bebb540",
+      "assembly_size": 400,
+      "frame_count": 10,
+      "graphics_sha256": "61bdecf43ad967ff5bd3c7604d7ce0708305a516e1e17d7cbbcabe949f3c791f",
+      "graphics_size": 2592
+    },
+    "existing_ten_frame_assembly_prefix_preserved": true,
+    "existing_ten_frame_graphics_prefix_preserved": true,
+    "new_assembly_record_count": 6,
+    "new_unique_tile_count": 10
+  },
+  "audit": "project-epoch-schala-current-body-packet-v0",
+  "auditor_version": "1.0.0",
+  "behavior_dependencies": [
+    {
+      "path": "tools/build_schala_gameplay_foundation_v0.py",
+      "role": "indexed-source validation and SNES 4bpp/palette codecs",
+      "sha256": "e43f5d5b6fe30c5746ef04822f98f120165ecbea8393143e5b93941fdeb6cf8f",
+      "size": 25402
+    },
+    {
+      "path": "tools/build_schala_sprite_packet_foundation_v0.py",
+      "role": "four-object cover, native record serialization, and reconstruction",
+      "sha256": "dc264823fdb479fef3c0a0d94e68da40b6bb0e51040c94392e678f970c3c60fb",
+      "size": 21211
+    },
+    {
+      "path": "tools/validate_schala_glass_focus_pulse_v0.py",
+      "role": "Glass Focus source, provenance, palette, and binding validation",
+      "sha256": "061a7169f1bbd6c57409fba52b36a4cbf76ff3d9fcd32665b946558feafa9b4e",
+      "size": 59563
+    }
+  ],
+  "evidence": {
+    "native_shaped_packet_fit": "verified-static",
+    "rom_integration": "not performed",
+    "runtime_rendering": "not performed",
+    "serialized_reconstruction": "verified-static",
+    "source_identity": "verified-static",
+    "source_order": "proposal-only-not-native-animation-semantics",
+    "visual_design": "proposal"
+  },
+  "excluded_source_components": {
+    "audio_recipe_ids": [
+      "focus_swing_v0",
+      "focus_hit_v0"
+    ],
+    "audio_recipe_policy": "validated-by-source-but-not-packet-data",
+    "focus_insert_ids": [
+      "glass_focus_closed_crescent_v0",
+      "glass_focus_open_ring_v0",
+      "glass_focus_quarter_turn_ring_v0",
+      "glass_focus_edge_on_ring_v0",
+      "glass_focus_collapse_point_v0",
+      "glass_focus_impact_arc_v0"
+    ],
+    "focus_insert_policy": "semantic-vocabulary-reference-not-composited"
+  },
+  "frame_inventory": [
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "fad00f9df9039ad709f717b2cbbf849baf1499a2592678603e8fdee1a16e09fb",
+      "canvas": [
+        24,
+        32
+      ],
+      "context": "field_locomotion",
+      "frame_id": "schala_field_idle_down_f00_v0",
+      "occupied_source_cell_count": 10,
+      "source_ordinal": 0,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "5b01eb8f28690e4435175e27ebb237474d9ef4cab24756f878fd047835a9404b",
+      "canvas": [
+        24,
+        32
+      ],
+      "context": "field_locomotion",
+      "frame_id": "schala_field_idle_up_f00_v0",
+      "occupied_source_cell_count": 10,
+      "source_ordinal": 1,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "fcdc6fcc52f7fdf712fc69a9e8a79100c46345bf4d53a46e313dbcc0bd6c0d63",
+      "canvas": [
+        24,
+        32
+      ],
+      "context": "field_locomotion",
+      "frame_id": "schala_field_idle_left_f00_v0",
+      "occupied_source_cell_count": 11,
+      "source_ordinal": 2,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "5e45a8836493261e8de47a1103b0121a3fca6479ca2c21f59a01a09ccace8eb1",
+      "canvas": [
+        24,
+        32
+      ],
+      "context": "field_locomotion",
+      "frame_id": "schala_field_idle_right_f00_v0",
+      "occupied_source_cell_count": 12,
+      "source_ordinal": 3,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "80f5807765c098a64669211bcd6e1b131dede74071a2f616446fb09ab14f2576",
+      "canvas": [
+        24,
+        32
+      ],
+      "context": "field_locomotion",
+      "frame_id": "schala_field_walk_down_f00_v0",
+      "occupied_source_cell_count": 10,
+      "source_ordinal": 4,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 3,
+      "assembly_record_sha256": "335bb1cb266bbcc4fe96414c234b68f1bc3315885b7ac63081ce9b95fd8c4660",
+      "canvas": [
+        24,
+        32
+      ],
+      "context": "field_locomotion",
+      "frame_id": "schala_field_walk_down_f01_v0",
+      "occupied_source_cell_count": 9,
+      "source_ordinal": 5,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "bb1870f7c626824aa9c7b200a9a6ddbb63b257575d058d612ac1c3364ead781c",
+      "canvas": [
+        24,
+        32
+      ],
+      "context": "field_locomotion",
+      "frame_id": "schala_field_walk_down_f02_v0",
+      "occupied_source_cell_count": 10,
+      "source_ordinal": 6,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "7c1ad388ce5e2a0cbd06d4282aff809c6184d5337df653212ba869711679f817",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_ready_f00_v0",
+      "occupied_source_cell_count": 12,
+      "source_ordinal": 7,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "4cf5ced77f69978fda457bbb3df04aeddf6c0b26dc52e2429a0ecd0a99554c22",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_cast_gather_f00_v0",
+      "occupied_source_cell_count": 12,
+      "source_ordinal": 8,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "ac5dfff95ab3bca758deecf022249c3dc0b853286e4d48df98e13d82be04b6f3",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_cast_release_f00_v0",
+      "occupied_source_cell_count": 14,
+      "source_ordinal": 9,
+      "source_set": "gameplay_foundation"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "25a3bf685e0af9f3541a305ad7525f97da7910d769f3d715923688c433f7664c",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_basic_attack_draw_f00_v0",
+      "occupied_source_cell_count": 12,
+      "source_ordinal": 10,
+      "source_set": "glass_focus_body"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "c7579f15bdbdbc9d983f309049b5a18446b4a91e2322e9f8c23fe68694a3dee0",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_basic_attack_open_f01_v0",
+      "occupied_source_cell_count": 12,
+      "source_ordinal": 11,
+      "source_set": "glass_focus_body"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "87852baa560541af11d50d7ca0f90e8298db1f62a71ce46d3b3a5f65d8978c47",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_basic_attack_pulse_f02_v0",
+      "occupied_source_cell_count": 14,
+      "source_ordinal": 12,
+      "source_set": "glass_focus_body"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "a3dba5b91ebcdfb1086e43e600207e2ed150e9ec7947c06dad2664eee0e59319",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_basic_attack_followthrough_f03_v0",
+      "occupied_source_cell_count": 14,
+      "source_ordinal": 13,
+      "source_set": "glass_focus_body"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "d3be8382b4b30f76ed5d74b2bb1ac130a4f8e08a0b6c4df96198e8fea635b55d",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_basic_attack_recoil_f04_v0",
+      "occupied_source_cell_count": 14,
+      "source_ordinal": 14,
+      "source_set": "glass_focus_body"
+    },
+    {
+      "active_object_count": 4,
+      "assembly_record_sha256": "f267d66400e068188e8f328ebb98490cea3a37dac814743daeebabf9d1361650",
+      "canvas": [
+        40,
+        40
+      ],
+      "context": "battle_action",
+      "frame_id": "schala_battle_basic_attack_recover_f05_v0",
+      "occupied_source_cell_count": 12,
+      "source_ordinal": 15,
+      "source_set": "glass_focus_body"
+    }
+  ],
+  "nonclaims": [
+    "No animation-slot semantics or four-facing animation blob.",
+    "No auxiliary-animation-family compiler or binding.",
+    "No battle staging, DMA, timing, or expanded-bank read proof.",
+    "No graphics, assembly, animation, palette, effect, or sound pointer.",
+    "No action $90, item $E8, sound, or runtime descriptor binding.",
+    "No ROM allocation, ROM write, patch, save, state, or trace.",
+    "No logical PC $07 runtime identity, save/load, or New Game+ proof.",
+    "No full 241-packet compressed-corpus or near-match originality claim.",
+    "No change to Epoch or to any existing Project Epoch artifact."
+  ],
+  "packet": {
+    "all_frames_reconstruct_exactly": true,
+    "assembly": {
+      "record_count": 16,
+      "sha256": "b14735361a2546337d32ad3f8318a4138980c16515a7cbcc48a1b92de89d69d1",
+      "size": 640
+    },
+    "graphics": {
+      "maximum_tile_index": 90,
+      "nontransparent_unique_tile_count": 90,
+      "sha256": "361ea69917d97a8c68e4450df0b944e43c9dad73b3aca2ecf52304ed70484a66",
+      "size": 2912,
+      "tile_count_including_reserved_blank": 91
+    },
+    "palette": {
+      "second_palette_embedded": false,
+      "sha256": "782a063ffc99087cca1b64876cd024a5c5c7e6c6193c8f9ff224e9ed88ead5ea",
+      "shared_existing_gameplay_palette": true,
+      "size": 32
+    },
+    "record_shape": {
+      "coordinate_pair_count": 4,
+      "maximum_active_object_count": 4,
+      "record_size": 40,
+      "tile_index_mask": "$07FF",
+      "tile_word_count": 16,
+      "unsupported_flag_word_count": 0
+    }
+  },
+  "schema_version": 1,
+  "scope": {
+    "animation_blob_emitted": false,
+    "body_frame_count": 16,
+    "files_written": false,
+    "focus_inserts_composited": false,
+    "gameplay_foundation_frame_count": 10,
+    "glass_focus_body_frame_count": 6,
+    "rom_accessed": false,
+    "source_ordinals_are_native_animation_ids": false
+  },
+  "serialization_boundary": "Only paths, IDs, counts, dimensions, hashes, evidence labels, and explicit nonclaims are serialized. No source rows, pixels, tile bytes, tile words, assembly bytes, palette bytes, images, ROM bytes, or decoded copyrighted data are included.",
+  "source_artifacts": [
+    {
+      "path": "assets/source/schala/v0/gameplay/schala_gameplay_foundation_v0.json",
+      "role": "ten original gameplay-foundation body frames and palette",
+      "sha256": "9c0d4dd9a83b6c77822286fb89deb04a7f1ae49261dedb1013e108f598af6db2",
+      "size": 25193
+    },
+    {
+      "path": "assets/source/schala/v0/gameplay/manifest_v0.json",
+      "role": "gameplay provenance and deterministic-output contract",
+      "sha256": "6f1475c2945a2f4df922d6f8b4969e346e5846152284742ceb9f04b9bc3e3f65",
+      "size": 5473
+    },
+    {
+      "path": "assets/source/schala/v0/focus/glass_focus_pulse_v0.json",
+      "role": "six Glass Focus basic-Attack body poses and unbound media source",
+      "sha256": "fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0",
+      "size": 32967
+    },
+    {
+      "path": "assets/source/schala/v0/focus/glass_focus_pulse_manifest_v0.json",
+      "role": "Glass Focus provenance, null bindings, and source-only boundary",
+      "sha256": "e14efe2dac41758fca34aeb64019caa7d104be8ac5f6f939c23374b65d597a87",
+      "size": 6284
+    }
+  ],
+  "status": "partial-current-source-packability-verified"
+}

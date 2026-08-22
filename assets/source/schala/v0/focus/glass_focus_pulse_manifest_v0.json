@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "asset_set": "project_epoch_schala_glass_focus_pulse_v0",
+  "status": "source-only-vertical-slice-unbound",
+  "created": "2026-07-28",
+  "modified": "2026-07-28",
+  "author": "OpenAI Codex",
+  "review_status": "deterministic source validation and bounded canonical playable-PC metadata audit complete; human visual and audio-design review pending",
+  "provenance_statement": "The six body frames truthfully reuse or adapt existing original Project Epoch Schala body pixels; the six Focus inserts and two integer-only audio recipes are new Project Epoch source. A metadata-only playable-PC audit correction changed only Project Epoch-owned impact-arc cells and now has zero exact or palette-pattern matches without displaying or exporting reference pixels. No external, ROM, NPC, vanilla-PC, extracted-tile, sampled-audio, SPC, BRR, or existing-game-SFX data was imported; NPC originality remains unproved.",
+  "canonical_source": {
+    "path": "assets/source/schala/v0/focus/glass_focus_pulse_v0.json",
+    "sha256": "fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0",
+    "size": 32967,
+    "source_classification": "project-epoch-original-same-project-derived-multimedia-source"
+  },
+  "validator": {
+    "path": "tools/validate_schala_glass_focus_pulse_v0.py",
+    "sha256": "061a7169f1bbd6c57409fba52b36a4cbf76ff3d9fcd32665b946558feafa9b4e",
+    "size": 59563,
+    "version": "1.0.0",
+    "command": "python tools/validate_schala_glass_focus_pulse_v0.py"
+  },
+  "dependencies": [
+    {
+      "path": "assets/source/schala/v0/gameplay/schala_gameplay_foundation_v0.json",
+      "sha256": "9c0d4dd9a83b6c77822286fb89deb04a7f1ae49261dedb1013e108f598af6db2"
+    },
+    {
+      "path": "assets/source/schala/v0/content/schala_item_content_v0.json",
+      "sha256": "f0125b36b225e11b149b35019b7ae19756a8c9ec82cd43067a1637b8702ad205"
+    },
+    {
+      "path": "assets/source/schala/v0/content/schala_tech_content_v0.json",
+      "sha256": "efb2468da3eaa9e8f1ae0cf059a1ee45deac80694b0cc6c1f2ad475ba40ff4a5"
+    },
+    {
+      "path": "docs/schala_sprite_asset_spec_v0.md",
+      "sha256": "5157f5ab3eb219e9e2a767ee884a173d386bc6937f62255cbae0681d415b0cb9"
+    },
+    {
+      "path": "docs/schala_focus_pulse_adapter_architecture.md",
+      "sha256": "44db92791351a61eb14ad4cfb2c81ba6a9319ae3fa5300d3dc534100d75eeab9"
+    },
+    {
+      "path": "tools/audit_schala_gameplay_originality.py",
+      "sha256": "77f6724c5a0bfc73e26239337325f0a094920954023978aae97c641a0804f0be"
+    },
+    {
+      "path": "tools/audit_schala_glass_focus_originality.py",
+      "sha256": "addbb63ce0d5c92972fc467bc7d0e92f6cab3015f792a9c8da90101c492d8ce7"
+    }
+  ],
+  "originality_audit": {
+    "path": "references/schala_glass_focus_originality_v0.json",
+    "sha256": "a8727872ecc8831818b71e0fab149580e035fd695e23baa3b4721f5db556d282",
+    "size": 2649,
+    "dependency_scope": "validation-only",
+    "reproduction": "python tools/audit_schala_glass_focus_originality.py --rom \"private/input/rom_archive/Chrono Trigger (USA).sfc\"",
+    "npc_originality_claimed": false
+  },
+  "expected_validation": {
+    "identity": {
+      "logical_pc_id": 7,
+      "action_id": 144,
+      "item_id": 232,
+      "focus_visual_id": 0,
+      "binding_state": "unbound"
+    },
+    "palette": {
+      "id": "schala_gameplay_palette_v0",
+      "dependency_path": "assets/source/schala/v0/gameplay/schala_gameplay_foundation_v0.json",
+      "packed_bgr555_sha256": "782a063ffc99087cca1b64876cd024a5c5c7e6c6193c8f9ff224e9ed88ead5ea",
+      "packed_bgr555_size": 32,
+      "embedded_copy": false
+    },
+    "frames": {
+      "ids": [
+        "schala_battle_basic_attack_draw_f00_v0",
+        "schala_battle_basic_attack_open_f01_v0",
+        "schala_battle_basic_attack_pulse_f02_v0",
+        "schala_battle_basic_attack_followthrough_f03_v0",
+        "schala_battle_basic_attack_recoil_f04_v0",
+        "schala_battle_basic_attack_recover_f05_v0"
+      ],
+      "count": 6,
+      "dimensions": [40, 40],
+      "validation_4bpp_sha256": "bd51511b2166ba4db20dae7622009e457904a8031e4e22e86ceddfeb157649ab",
+      "validation_4bpp_size": 4800,
+      "occupied_tiles": {
+        "schala_battle_basic_attack_draw_f00_v0": 12,
+        "schala_battle_basic_attack_open_f01_v0": 12,
+        "schala_battle_basic_attack_pulse_f02_v0": 14,
+        "schala_battle_basic_attack_followthrough_f03_v0": 14,
+        "schala_battle_basic_attack_recoil_f04_v0": 14,
+        "schala_battle_basic_attack_recover_f05_v0": 12
+      },
+      "assembly_packability_claimed": false
+    },
+    "focus_inserts": {
+      "ids": [
+        "glass_focus_closed_crescent_v0",
+        "glass_focus_open_ring_v0",
+        "glass_focus_quarter_turn_ring_v0",
+        "glass_focus_edge_on_ring_v0",
+        "glass_focus_collapse_point_v0",
+        "glass_focus_impact_arc_v0"
+      ],
+      "count": 6,
+      "dimensions": [16, 16],
+      "validation_4bpp_sha256": "72b18b84f876383bb3cf161e4c37dbb96a7fe7e20b473f6e7a97ac9d419f705e",
+      "validation_4bpp_size": 768,
+      "occupied_tiles": {
+        "glass_focus_closed_crescent_v0": 4,
+        "glass_focus_open_ring_v0": 4,
+        "glass_focus_quarter_turn_ring_v0": 4,
+        "glass_focus_edge_on_ring_v0": 4,
+        "glass_focus_collapse_point_v0": 4,
+        "glass_focus_impact_arc_v0": 4
+      }
+    },
+    "audio_recipes": {
+      "ids": [
+        "focus_swing_v0",
+        "focus_hit_v0"
+      ],
+      "count": 2,
+      "canonical_sha256": "57c0d23533aecea1e12ce10c73d531c451627c4f1854ea67ac492686b04c9a6e",
+      "canonical_size": 1751,
+      "rendered_audio_emitted": false,
+      "native_sfx_ids_bound": false
+    },
+    "allocation_status": "unbound",
+    "rom_installable": false,
+    "binary_files_emitted": false,
+    "runtime_use_policy": "reject-before-any-native-or-wram-write"
+  },
+  "generated_artifact_policy": {
+    "output_directory": null,
+    "binary_files_emitted": false,
+    "rendered_visuals_emitted": false,
+    "rendered_audio_emitted": false,
+    "rom_or_patch_emitted": false
+  },
+  "evidence": {
+    "source_validation": "verified-static",
+    "visual_design": "proposal",
+    "audio_design": "proposal",
+    "rom_integration": "not performed",
+    "runtime_rendering": "not performed",
+    "runtime_audio": "not performed"
+  }
+}

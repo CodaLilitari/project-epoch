@@ -1,0 +1,280 @@
+{
+  "schema": "project-epoch-mesen-wram-ownership-acceptance-v1",
+  "evidence_level": "verified-runtime",
+  "emulator": {
+    "name": "Mesen",
+    "version": "2.1.1",
+    "release_url": "https://github.com/SourMesen/Mesen2/releases/tag/2.1.1",
+    "archive_size": 34058170,
+    "archive_sha256": "23ccc2bc060b663c68dad3a8c5d6da7d23a50f872d04f135bafa2b04ff7d5cbe",
+    "exe_size": 70470144,
+    "exe_sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+    "core_size": 7143424,
+    "core_sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+    "harfbuzz_size": 1804872,
+    "harfbuzz_sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+    "skia_size": 9414216,
+    "skia_sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+    "nesdb_size": 559118,
+    "nesdb_sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+    "settings_size": 3,
+    "settings_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "sources": {
+    "scenario_contract": {
+      "path": "references/mesen_wram_ownership_scenarios_v1.json",
+      "size": 14145,
+      "sha256": "e9ea3ec765d3c14511f11815f1155c66c63f4cda1b23d445a2274ade0d8831d9",
+      "schema": "project-epoch-mesen-wram-ownership-scenarios-v1"
+    },
+    "collector": {
+      "path": "tools/mesen_wram_ownership_trace.lua",
+      "size": 40088,
+      "sha256": "d5dd2b2d7085237844d95ab04f7007b6b2d17b2e1160f23857018319380b7569",
+      "schema": "project-epoch-mesen-wram-ownership-trace-v1",
+      "version": 1
+    },
+    "validator": {
+      "path": "tools/validate_mesen_wram_ownership_trace.py",
+      "size": 29388,
+      "sha256": "89a7dc86c6b5b10dc984b778451152e4734b5c553a669b7ee033e465ca87f2ba"
+    },
+    "launcher": {
+      "path": "tools/run_mesen_wram_ownership_trace.py",
+      "size": 40447,
+      "sha256": "80f25f577da219d383829dfc977564d8295d1e0691ae4a2823da3e41079fa203"
+    },
+    "tests": [
+      {
+        "path": "tests/test_mesen_wram_ownership_trace.py",
+        "size": 18729,
+        "sha256": "93fcd0096efa363b04b90956a79413371b63a30d390be7ebe8fd8d3cd348a65e"
+      },
+      {
+        "path": "tests/test_run_mesen_wram_ownership_trace.py",
+        "size": 27168,
+        "sha256": "3f67822abe673cb1448dfd5170d552542d0eefd68a569e647aefc6fee80149f4"
+      }
+    ]
+  },
+  "private_inputs": {
+    "canonical_rom_size": 4194304,
+    "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "disposable_sram_size": 8192,
+    "disposable_sram_sha256": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+    "checkpoint": {
+      "path": "event11c_checkpoint_v5/spekkio_talkable.mss",
+      "size": 133993,
+      "sha256": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e",
+      "location": "01D1",
+      "active_party_hex": "060403",
+      "epoch_name_hex": "a4c9c8bcc100"
+    }
+  },
+  "artifact_root": "private/test_runs/mesen2/wram_ownership_accepted_v2",
+  "replay_artifact_root": "private/test_runs/mesen2/wram_ownership_replay_v2",
+  "artifacts": [
+    {
+      "path": "calibration/canary/endpoint.png",
+      "size": 12563,
+      "sha256": "74fad510dd4efcc5c30807b8bd82c3ae39f564b6cea60ad972f8fac12284c91c",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "calibration/canary/trace.json",
+      "size": 19317,
+      "sha256": "e364fda5e2b47394a970b68f99e78ad410aef7cc225ba17368e5a1ba895d6200",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "calibration/zero/endpoint.png",
+      "size": 12563,
+      "sha256": "74fad510dd4efcc5c30807b8bd82c3ae39f564b6cea60ad972f8fac12284c91c",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "calibration/zero/trace.json",
+      "size": 12567,
+      "sha256": "688afc735e1c3f4d462ae9c9d618e9e24ef079b3d6ee3e35613865264fcbf973",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "event11c-frog/canary/endpoint.png",
+      "size": 9503,
+      "sha256": "0882eb8e58d053a0e5b2222c9615ab5a1e4530d8849ddd7388e491803417b7fb",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "event11c-frog/canary/trace.json",
+      "size": 123922,
+      "sha256": "5915bae9499c00e99ef2852c985a04346918afaa3448433f477ccd89e367d0fa",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "event11c-frog/zero/endpoint.png",
+      "size": 9503,
+      "sha256": "0882eb8e58d053a0e5b2222c9615ab5a1e4530d8849ddd7388e491803417b7fb",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "event11c-frog/zero/trace.json",
+      "size": 117164,
+      "sha256": "7a9e179ecd783a5636bb7bb31b8801371c329116d9b94186859d1509e96dd7b4",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "field-idle/canary/endpoint.png",
+      "size": 12563,
+      "sha256": "74fad510dd4efcc5c30807b8bd82c3ae39f564b6cea60ad972f8fac12284c91c",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "field-idle/canary/trace.json",
+      "size": 56958,
+      "sha256": "47a350123dbc79d6f54087914980ff1d1fd45d5a64f04550397f8243ec6ca315",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "field-idle/zero/endpoint.png",
+      "size": 12563,
+      "sha256": "74fad510dd4efcc5c30807b8bd82c3ae39f564b6cea60ad972f8fac12284c91c",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "field-idle/zero/trace.json",
+      "size": 50208,
+      "sha256": "d6a5d0cbbd39708a7970108d1027a99b42e8b6ded2d7558d55998fa958dc1168",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "main-menu/canary/endpoint.png",
+      "size": 15428,
+      "sha256": "765689bbc5df5fd3e9e0f058817d3838d828e5b029fe25c4290e9dcce03f7b61",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "main-menu/canary/trace.json",
+      "size": 29682,
+      "sha256": "471c9b9879f4285d9c6e7f4543c1d99d511231636d97de194a247759c9a415eb",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "main-menu/zero/endpoint.png",
+      "size": 15428,
+      "sha256": "765689bbc5df5fd3e9e0f058817d3838d828e5b029fe25c4290e9dcce03f7b61",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "main-menu/zero/trace.json",
+      "size": 22932,
+      "sha256": "de4eaf7b9753af0ee50fd862ec7239d9d0bf27d6c265bb06306c664adb381ec0",
+      "evidence_level": "verified-runtime"
+    }
+  ],
+  "observations": {
+    "watched_byte_count": 196,
+    "candidate_range": "7E2CA0-7E2CEF",
+    "front_guard_range": "7E2C9C-7E2C9F",
+    "rear_guard_range": "7E2CF0-7E2CFF",
+    "candidate_and_guards_total_callbacks": 0,
+    "epoch_name_range": "7E2C4D-7E2C52",
+    "epoch_name_writes": 0,
+    "roster_range": "7E2980-7E2988",
+    "roster_writes": 0,
+    "joined_address": "7E29AF",
+    "joined_writes": 0,
+    "scenario_counts": {
+      "calibration": {
+        "terminal_frame": 0,
+        "callbacks": 0,
+        "reads": 0,
+        "writes": 0
+      },
+      "field-idle": {
+        "terminal_frame": 600,
+        "callbacks": 450,
+        "reads": 450,
+        "writes": 0,
+        "roster_reads": 450
+      },
+      "main-menu": {
+        "terminal_frame": 600,
+        "callbacks": 124,
+        "reads": 124,
+        "writes": 0,
+        "old_compatibility_reads": 52,
+        "roster_reads": 72
+      },
+      "event11c-frog": {
+        "terminal_frame": 1500,
+        "callbacks": 1224,
+        "reads": 1197,
+        "writes": 27,
+        "old_compatibility_callbacks": 118,
+        "roster_reads": 1106,
+        "required_positive_control": [
+          "frame 985 write 7E2834=03 PC C06824",
+          "frame 989 read 7E283B=1F PC C06799",
+          "frame 989 write 7E283B=FF PC C06824"
+        ],
+        "other_old_compatibility_writes": "25 same-value writes at 7E2857-7E285B"
+      }
+    }
+  },
+  "controls": {
+    "expected_test_runner_exit_code": 41,
+    "profiles": [
+      "calibration",
+      "field-idle",
+      "main-menu",
+      "event11c-frog"
+    ],
+    "variants": [
+      "zero",
+      "canary"
+    ],
+    "zero_variant_candidate_write_count": 0,
+    "canary_variant_candidate_write_count": 80,
+    "preparation_completed_before_observers_arm": true,
+    "preparation_callbacks_excluded": true,
+    "access_counters_reset_after_preparation": true,
+    "memory_callbacks_and_access_counters_reconcile_exactly": true,
+    "zero_canary_callback_sequences_match": true,
+    "zero_canary_counters_match": true,
+    "zero_canary_terminations_match": true,
+    "zero_canary_endpoints_match_after_candidate_normalization": true,
+    "candidate_and_guards_zero_access": true,
+    "epoch_roster_joined_never_written": true,
+    "event_non_target_old_block_writes_same_value": true,
+    "event_screenshot_trace_frozen_before_canonical_render_wait": true,
+    "event_screenshot_exact_size_and_sha256_gate": true,
+    "canonical_private_paths": true,
+    "new_output_directory_required": true,
+    "shared_mesen_saves_overlap_rejected": true,
+    "fully_staged_emulator_app": true,
+    "unique_disposable_rom_sram_staging": true,
+    "collector_and_state_staged_from_verified_bytes": true,
+    "collector_outputs_staged_before_publish": true,
+    "exclusive_output_publication": true,
+    "strict_single_trace_validation": true,
+    "strict_eight_trace_set_validation": true,
+    "exact_accepted_output_hash_gate": true,
+    "immutable_input_postcheck": true,
+    "shared_mesen_saves_postcheck": true,
+    "disposable_staging_deletion_required": true,
+    "safe_launcher_replay_matches_all_accepted_artifact_hashes": true,
+    "accepted_replay_files_byte_identical": 16
+  },
+  "reproduction": {
+    "guide": "docs/current_emulator_replay_harness_2026-07-26.md",
+    "command": "Run tools/run_mesen_wram_ownership_trace.py once for each scenario and variant into fresh private output directories, then pass the eight trace.json paths to tools/validate_mesen_wram_ownership_trace.py."
+  },
+  "limitations": [
+    "No ROM, patched ROM, SRAM, emulator state, raw trace, screenshot, or extracted copyrighted game data is included in this source-controlled reference.",
+    "The collector performs only bounded diagnostic WRAM preparation before observers arm. It does not modify ROM or SRAM.",
+    "This is a four-scenario ownership census, not global proof that 7E2CA0-7E2CEF is free.",
+    "Battle, save, load, New Game+, erase, reset, attract, shop, equipment, naming, and additional menu and field routes remain outside this accepted tranche.",
+    "The zero-access result does not approve 7E2CA0-7E2CEF as a production allocation, a compatibility-block relocation, a hook, or natural PC 07 runtime storage.",
+    "The evidence does not install Schala, add a recruitable character, alter Epoch, or approve any ROM payload."
+  ]
+}

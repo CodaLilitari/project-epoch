@@ -1,0 +1,130 @@
+{
+  "schema": "project-epoch-emulator-acceptance-v1",
+  "artifacts": [
+    {
+      "path": "agent_guardia_roly_f1000_battle_checkpoint_canary.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "agent_roly_tech_command_endpoint.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "agent_roly_tech_command_endpoint_100.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_tech_command_endpoint.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_tech_command_endpoint.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "agent_roly_tech_list_probe.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "agent_roly_tech_list_probe_400.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_tech_list_probe.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_tech_list_probe.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_target_down.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_target_down_400.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_target_down.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_target_down.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_cast_down.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_cast_down_1200.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_cast_down.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_cast_down.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_nocast_control.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_nocast_control_1800.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_nocast_control.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_nocast_control.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_cast_down_resolution.bsv",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "agent_roly_cyclone_cast_down_resolution_1800.log",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_cast_down_resolution.state.auto",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/chrono_trigger_current_agent_roly_cyclone_cast_down_resolution.state.auto.png",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+# Private, recovered, or copyrighted workspace material
+/private/
+/recovered/
+/.codex-remote-attachments/
+/references/ct_disassembly/
+/references/*.pdf
+/references/*.zip
+
+# Game images and cartridge dumps (clean or patched)
+*.sfc
+*.smc
+*.fig
+*.swc
+*.rom
+
+# Save data and emulator states
+*.srm
+*.sav
+*.rtc
+*.state
+*.state.*
+*.state[0-9]*
+*.mss
+*.bst
+*.zst
+*.zs[0-9]
+*.s96
+*.frz
+*.bsz
+
+# Emulator movies and raw diagnostic traces
+*.bsv
+*.smv
+*.bk2
+*.fm2
+*.mmo
+*.movie
+*.tasproj
+*.cdl
+*.trace
+*.trace.*
+*.observer-error
+*.log
+
+# Generated or local-only work
+/build/
+/tmp/
+/output/
+/traces/raw/
+/Mesen2/
+/test-output/
+/test-results/
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+coverage/
+htmlcov/

@@ -1,0 +1,299 @@
+{
+  "schema": "project-epoch-mesen-wram-ownership-menu-acceptance-v2",
+  "evidence_level": "verified-runtime",
+  "emulator": {
+    "name": "Mesen",
+    "version": "2.1.1",
+    "release_url": "https://github.com/SourMesen/Mesen2/releases/tag/2.1.1",
+    "archive_size": 34058170,
+    "archive_sha256": "23ccc2bc060b663c68dad3a8c5d6da7d23a50f872d04f135bafa2b04ff7d5cbe",
+    "exe_size": 70470144,
+    "exe_sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+    "core_size": 7143424,
+    "core_sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+  },
+  "ancestry": {
+    "scenario_contract_v1": {
+      "path": "references/mesen_wram_ownership_scenarios_v1.json",
+      "size": 14145,
+      "sha256": "e9ea3ec765d3c14511f11815f1155c66c63f4cda1b23d445a2274ade0d8831d9"
+    },
+    "acceptance_spec_v1": {
+      "path": "references/mesen_wram_ownership_accepted_artifacts_v1.json",
+      "size": 10813,
+      "sha256": "b8f863ab2db7ed5f17222c59044a026305a05db86a7a0303fc3db84bfa197142"
+    },
+    "collector_v1": {
+      "path": "tools/mesen_wram_ownership_trace.lua",
+      "size": 40088,
+      "sha256": "d5dd2b2d7085237844d95ab04f7007b6b2d17b2e1160f23857018319380b7569"
+    },
+    "validator_v1": {
+      "path": "tools/validate_mesen_wram_ownership_trace.py",
+      "size": 29388,
+      "sha256": "89a7dc86c6b5b10dc984b778451152e4734b5c553a669b7ee033e465ca87f2ba"
+    },
+    "launcher_v1": {
+      "path": "tools/run_mesen_wram_ownership_trace.py",
+      "size": 40447,
+      "sha256": "80f25f577da219d383829dfc977564d8295d1e0691ae4a2823da3e41079fa203"
+    }
+  },
+  "sources": {
+    "scenario_contract": {
+      "path": "references/mesen_wram_ownership_menu_scenarios_v2.json",
+      "size": 12298,
+      "sha256": "e0dbb86a513de2a45bf9c1a83af0b50b0bef08d5b20b5e21398de6da29222c99",
+      "schema": "project-epoch-mesen-wram-ownership-menu-scenarios-v2"
+    },
+    "collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_menu_collector_v2.py",
+      "size": 8526,
+      "sha256": "bb68dbe03d2a92dac265dd5c0b378a56e942229f0d5cf1c209a11ac86b82823a"
+    },
+    "generated_collector": {
+      "source_controlled": false,
+      "staged_private_only": true,
+      "size": 41089,
+      "sha256": "7ec953af6e4899b4a91f8a5edf9f5e20236b9a32dbdff4ad1fbb3813efc71f05",
+      "schema": "project-epoch-mesen-wram-ownership-menu-trace-v2",
+      "version": 2
+    },
+    "validator": {
+      "path": "tools/validate_mesen_wram_ownership_menu_trace_v2.py",
+      "size": 9878,
+      "sha256": "2dc71df20769644f6065f36311095ea7882142d066dbd717f36994521a94922b"
+    },
+    "launcher": {
+      "path": "tools/run_mesen_wram_ownership_menu_trace_v2.py",
+      "size": 17517,
+      "sha256": "6041d89b869215316292440e3bd53a68645b46594fbe08d111fd2704cfc23efe"
+    },
+    "tests": [
+      {
+        "path": "tests/test_build_mesen_wram_ownership_menu_collector_v2.py",
+        "size": 5600,
+        "sha256": "dc9163bbfc65b43ab674e58ec49d85e8c6e89f419ccbf895165e7ebbb8fcf192"
+      },
+      {
+        "path": "tests/test_mesen_wram_ownership_menu_trace_v2.py",
+        "size": 9548,
+        "sha256": "0e6593879540c36086c7f96b1e65b2084dae4d829de4d0c3016b3f53cefe2bf3"
+      },
+      {
+        "path": "tests/test_run_mesen_wram_ownership_menu_trace_v2.py",
+        "size": 12368,
+        "sha256": "0a56781ec34c7e2d36314bb6444d9be47a6290bedbc760fb9e2f84aa1037bfff"
+      }
+    ]
+  },
+  "private_inputs": {
+    "canonical_rom_size": 4194304,
+    "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "disposable_sram_size": 8192,
+    "disposable_sram_sha256": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+    "checkpoint": {
+      "path": "event11c_checkpoint_v5/spekkio_talkable.mss",
+      "size": 133993,
+      "sha256": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e",
+      "location": "01D1",
+      "active_party_hex": "060403",
+      "epoch_name_hex": "a4c9c8bcc100"
+    }
+  },
+  "artifact_root": "private/test_runs/mesen2/wram_ownership_menu_v2_accepted_v2",
+  "replay_artifact_root": "private/test_runs/mesen2/wram_ownership_menu_v2_replay_v2",
+  "artifacts": [
+    {
+      "path": "equipment-owner-switch/canary/endpoint.png",
+      "size": 15661,
+      "sha256": "b4660241d539692f9618cb710ead3d16316a8eba4cde8cb5fc2e2759f8b98ba4",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "equipment-owner-switch/canary/trace.json",
+      "size": 29877,
+      "sha256": "00213f5c1fe77ac1d2f5b6aa61b2e5894d9f85d70c97cdcf1b6629aac4ead54c",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "equipment-owner-switch/zero/endpoint.png",
+      "size": 15661,
+      "sha256": "b4660241d539692f9618cb710ead3d16316a8eba4cde8cb5fc2e2759f8b98ba4",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "equipment-owner-switch/zero/trace.json",
+      "size": 23127,
+      "sha256": "f15a149dcc34a1a7e0362993b0fbf0f34dcef19eaa16da8fc744917dd0069d7b",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "item-list-cancel/canary/endpoint.png",
+      "size": 10689,
+      "sha256": "e93a7d8bf3dbe50c911d840adec72fd26075e79d881977e067328f3e4f9c4c14",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "item-list-cancel/canary/trace.json",
+      "size": 29872,
+      "sha256": "16f33fa3347830792ebf4178a838050bf12f1d8affc15ba6c9de9ddf0c51f28a",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "item-list-cancel/zero/endpoint.png",
+      "size": 10689,
+      "sha256": "e93a7d8bf3dbe50c911d840adec72fd26075e79d881977e067328f3e4f9c4c14",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "item-list-cancel/zero/trace.json",
+      "size": 23122,
+      "sha256": "8e2cedd68f0e56821e9c4d494ba47618f6a9a6b1768c3618984f54b92b33c7ab",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "party-page-cancel/canary/endpoint.png",
+      "size": 9392,
+      "sha256": "43925f2efef2175fee4219226cb98a1d30210b314b099b6ea2b4ca6b466c2ffd",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "party-page-cancel/canary/trace.json",
+      "size": 199461,
+      "sha256": "1f075ef894a995a3ed59cfac7d33665b5b7d991ac4e89c893427bddf1172e276",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "party-page-cancel/zero/endpoint.png",
+      "size": 9392,
+      "sha256": "43925f2efef2175fee4219226cb98a1d30210b314b099b6ea2b4ca6b466c2ffd",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "party-page-cancel/zero/trace.json",
+      "size": 192711,
+      "sha256": "a034cebf816d2faede9079727a085b00826dbbd77ff83e36bec75b6fc6a4d3c8",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "tech-owner-switch/canary/endpoint.png",
+      "size": 12064,
+      "sha256": "018ad6afe24e5d5075e13a338d610cf4cd8eded9b286deb09eb29fbc366ccad5",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "tech-owner-switch/canary/trace.json",
+      "size": 31093,
+      "sha256": "4c79ead1194c86f709899aadc4abe37d6738656446de187eb71991c8e2addf47",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "tech-owner-switch/zero/endpoint.png",
+      "size": 12064,
+      "sha256": "018ad6afe24e5d5075e13a338d610cf4cd8eded9b286deb09eb29fbc366ccad5",
+      "evidence_level": "verified-runtime"
+    },
+    {
+      "path": "tech-owner-switch/zero/trace.json",
+      "size": 24343,
+      "sha256": "d0bcfc8c9fbd52a6e5ec266bc585bce6450cb724cf202802d798ef5a64572d25",
+      "evidence_level": "verified-runtime"
+    }
+  ],
+  "observations": {
+    "watched_byte_count": 196,
+    "candidate_range": "7E2CA0-7E2CEF",
+    "front_guard_range": "7E2C9C-7E2C9F",
+    "rear_guard_range": "7E2CF0-7E2CFF",
+    "candidate_and_guards_total_callbacks": 0,
+    "epoch_name_range": "7E2C4D-7E2C52",
+    "epoch_name_writes": 0,
+    "roster_range": "7E2980-7E2988",
+    "roster_writes": 0,
+    "joined_address": "7E29AF",
+    "joined_writes": 0,
+    "scenario_counts": {
+      "equipment-owner-switch": {
+        "terminal_frame": 600,
+        "callbacks": 124,
+        "reads": 124,
+        "writes": 0,
+        "old_compatibility_reads": 52,
+        "roster_reads": 72,
+        "endpoint": "Frog Equipment page"
+      },
+      "tech-owner-switch": {
+        "terminal_frame": 600,
+        "callbacks": 137,
+        "reads": 132,
+        "writes": 5,
+        "old_compatibility_callbacks": 65,
+        "roster_reads": 72,
+        "old_compatibility_writes": "one exact same-value sequence at frame 221 to 7E2857-7E285B",
+        "endpoint": "Frog Tech page"
+      },
+      "item-list-cancel": {
+        "terminal_frame": 600,
+        "callbacks": 124,
+        "reads": 124,
+        "writes": 0,
+        "old_compatibility_reads": 52,
+        "roster_reads": 72,
+        "endpoint": "Item Use/Move page"
+      },
+      "party-page-cancel": {
+        "terminal_frame": 600,
+        "callbacks": 2117,
+        "reads": 2117,
+        "writes": 0,
+        "old_compatibility_reads": 52,
+        "roster_reads": 2065,
+        "endpoint": "Party Exchange page"
+      }
+    }
+  },
+  "controls": {
+    "expected_test_runner_exit_code": 41,
+    "profiles": [
+      "equipment-owner-switch",
+      "tech-owner-switch",
+      "item-list-cancel",
+      "party-page-cancel"
+    ],
+    "variants": [
+      "zero",
+      "canary"
+    ],
+    "preparation_completed_before_observers_arm": true,
+    "memory_callbacks_and_access_counters_reconcile_exactly": true,
+    "zero_canary_callback_sequences_match": true,
+    "zero_canary_counters_match": true,
+    "zero_canary_terminations_match": true,
+    "zero_canary_endpoints_match_after_candidate_normalization": true,
+    "candidate_and_guards_zero_access": true,
+    "epoch_roster_joined_never_written": true,
+    "tech_owner_switch_five_old_block_writes_exact_and_same_value": true,
+    "all_other_old_block_writes_forbidden": true,
+    "input_schedule_has_no_final_item_use_equipment_change_party_swap_or_save_confirmation": true,
+    "exact_accepted_output_hash_gate": true,
+    "immutable_input_postcheck": true,
+    "shared_mesen_saves_postcheck": true,
+    "generated_collector_private_and_deleted": true,
+    "disposable_emulator_staging_deleted": true,
+    "accepted_replay_files_byte_identical": 16
+  },
+  "reproduction": {
+    "guide": "docs/current_emulator_replay_harness_2026-07-26.md",
+    "command": "Run tools/run_mesen_wram_ownership_menu_trace_v2.py once for each scenario and variant into fresh private output directories, then pass the eight trace.json paths to tools/validate_mesen_wram_ownership_menu_trace_v2.py."
+  },
+  "limitations": [
+    "No ROM, patched ROM, SRAM, emulator state, raw trace, screenshot, or extracted copyrighted game data is included in this source-controlled reference.",
+    "The generated collector performs only bounded diagnostic WRAM preparation before observers arm. It does not modify ROM or SRAM and is deleted after each private run.",
+    "This is a four-scenario menu ownership census, not global proof that 7E2CA0-7E2CEF is free.",
+    "Inventory and equipment data are not watched. The input schedule omits final use/change confirmation and the screenshots show the menu endpoints, but this tranche is not byte-level inventory or equipment mutation proof.",
+    "Battle, save, load, New Game+, erase, reset, attract, shop, naming, natural PC 07, and Project Epoch adapters remain outside this accepted tranche.",
+    "The zero-access result does not approve 7E2CA0-7E2CEF as a production allocation, compatibility-block relocation, hook, or natural PC 07 runtime storage.",
+    "The evidence does not install Schala, add a recruitable character, alter Epoch, or approve any ROM payload."
+  ]
+}

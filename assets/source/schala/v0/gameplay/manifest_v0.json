@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "asset_set": "project_epoch_schala_gameplay_foundation_v0",
+  "status": "partial-animation-foundation",
+  "created": "2026-07-25",
+  "modified": "2026-07-25",
+  "author": "OpenAI Codex",
+  "review_status": "deterministic build and agent visual QA complete; human art review pending",
+  "provenance_statement": "Canonical gameplay pixels were authored from scratch as target-grid hexadecimal palette-index rows. The initial authoring did not open or inspect ROM, save, emulator-state, NPC/PC, portrait, official-art, or concept pixels. A later metadata-only audit identified incidental sparse edge-tile matches; five Schala-only edge fragments were removed without displaying, rendering, exporting, tracing, sampling, or otherwise viewing the canonical reference tiles.",
+  "rom_integration": false,
+  "canonical_source": {
+    "path": "assets/source/schala/v0/gameplay/schala_gameplay_foundation_v0.json",
+    "sha256": "9c0d4dd9a83b6c77822286fb89deb04a7f1ae49261dedb1013e108f598af6db2",
+    "source_classification": "original-hand-pixelled-target-grid",
+    "frame_count": 10
+  },
+  "builder": {
+    "path": "tools/build_schala_gameplay_foundation_v0.py",
+    "sha256": "e43f5d5b6fe30c5746ef04822f98f120165ecbea8393143e5b93941fdeb6cf8f",
+    "version": "1.0.0",
+    "tool": "Python 3 with Pillow",
+    "command": "python tools/build_schala_gameplay_foundation_v0.py --output-dir private/build/schala_gameplay_foundation_v0"
+  },
+  "expected_outputs": {
+    "schala_battle_cast_gather_f00_v0.4bpp": {
+      "sha256": "9832258fc79011dde8ac05c0322da015b9ab795487eb92c0becf99ea2d2dca2e",
+      "size": 800
+    },
+    "schala_battle_cast_gather_f00_v0.png": {
+      "sha256": "2fc7bbd759e61b4fdce7570ffa79bd2629eed7de5f44fdf650e98f0dcb8b0805",
+      "size": 1043
+    },
+    "schala_battle_cast_release_f00_v0.4bpp": {
+      "sha256": "56046bf38329b7c4759ac2f8a5bec840d0612f049f60119e01de57c8852c119a",
+      "size": 800
+    },
+    "schala_battle_cast_release_f00_v0.png": {
+      "sha256": "54bba4fda846a765b8b3b90a952e7abba64d3f78f4a4b289a65fa15563e82a26",
+      "size": 1050
+    },
+    "schala_battle_ready_f00_v0.4bpp": {
+      "sha256": "ce08d793a9d57d6f8d99a03e8f6853d4dd28b6fd86508a71e3ec448844fec561",
+      "size": 800
+    },
+    "schala_battle_ready_f00_v0.png": {
+      "sha256": "ce094986498fb4376262ef21df989e724ed4346880c3077c4a78e82e5985bc98",
+      "size": 1028
+    },
+    "schala_field_idle_down_f00_v0.4bpp": {
+      "sha256": "b41d0f52beabf3fd63016b8306a633a025c3b44730751fbd328a4fd91a6a7147",
+      "size": 384
+    },
+    "schala_field_idle_down_f00_v0.png": {
+      "sha256": "356d8bea754be9510522221d5e118de630b9f6814b196e75a07ffb07e103df45",
+      "size": 993
+    },
+    "schala_field_idle_left_f00_v0.4bpp": {
+      "sha256": "8e291d9e8e24b3ff4567bc0958397a1424bff69359edd75bbb42b2870dadbfc6",
+      "size": 384
+    },
+    "schala_field_idle_left_f00_v0.png": {
+      "sha256": "1184980e0b25c0afa77070f77cf3820c911d335fe9345414075e3ce549294c05",
+      "size": 991
+    },
+    "schala_field_idle_right_f00_v0.4bpp": {
+      "sha256": "882db6e6b321d976807db4879c706103937eb6e861c91d1a42f09fde00f9cb81",
+      "size": 384
+    },
+    "schala_field_idle_right_f00_v0.png": {
+      "sha256": "8f9eb5690ceb68fa1bd15e985e0aaa617eac42399a0a893045cb57ff5649a9b0",
+      "size": 995
+    },
+    "schala_field_idle_up_f00_v0.4bpp": {
+      "sha256": "0c09ca962d90d8d73e4b21d5a3a740c9cf067c982b53c8a1e61f8bc486da6b75",
+      "size": 384
+    },
+    "schala_field_idle_up_f00_v0.png": {
+      "sha256": "bd8fc5918f0b77215e0d21fc9515a143bd633fc6b2638d93305f7108bf3c1f6f",
+      "size": 980
+    },
+    "schala_field_walk_down_f00_v0.4bpp": {
+      "sha256": "6e18c0223ca2f7a59cffe2978fca3aea43e783343733d0149a8055aa6f81a55c",
+      "size": 384
+    },
+    "schala_field_walk_down_f00_v0.png": {
+      "sha256": "3637b68b4662cc64fe686f850e0e106c67ec4b0c32ba93a20cecc80ada208156",
+      "size": 1001
+    },
+    "schala_field_walk_down_f01_v0.4bpp": {
+      "sha256": "7121edd303a079b0b7774815cdd73f9a816c5815b710c57d3d67a076d45e7a74",
+      "size": 384
+    },
+    "schala_field_walk_down_f01_v0.png": {
+      "sha256": "b9f4e2d7f0e1598d8b9522172c1db426f45ac81b4e27d26fea58fed789c15622",
+      "size": 995
+    },
+    "schala_field_walk_down_f02_v0.4bpp": {
+      "sha256": "eb605d90609f6cc53c11079851ab190bc54fc72f2c51659ff87c6ba3eca4f80d",
+      "size": 384
+    },
+    "schala_field_walk_down_f02_v0.png": {
+      "sha256": "1a30b5d7b1737b71f79b2ca5eb7db9a31d8bcde11ce98f2019498ab428cd430d",
+      "size": 996
+    },
+    "schala_gameplay_build_manifest_v0.json": {
+      "sha256": "352c88a8a6ef3b396ad2ace4f0300fbd9a6a1ea0b715b94392bfaf197102b2ec",
+      "size": 16431
+    },
+    "schala_gameplay_foundation_sheet_4x_v0.png": {
+      "sha256": "de89381fc1c3a81a6ee116d60700e8f0ab50ea259d15766f1de9965a046aacf2",
+      "size": 3219
+    },
+    "schala_gameplay_palette_v0.bin": {
+      "sha256": "782a063ffc99087cca1b64876cd024a5c5c7e6c6193c8f9ff224e9ed88ead5ea",
+      "size": 32
+    }
+  },
+  "generated_artifact_policy": {
+    "directory": "private/build/schala_gameplay_foundation_v0",
+    "committed": false,
+    "source_classification": "deterministic-packed-output",
+    "evidence": "verified-static",
+    "hashes": "Every generated artifact is pinned above."
+  },
+  "evidence": {
+    "source_and_packer": "verified-static",
+    "visual_design": "proposal",
+    "rom_integration": "not performed",
+    "runtime_rendering": "not performed"
+  }
+}

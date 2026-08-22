@@ -1,0 +1,422 @@
+{
+  "schema": "project-epoch-mesen-wram-ownership-battle-action-scenarios-v4",
+  "version": 4,
+  "acceptance_status": "accepted-exact-trace-hashes",
+  "evidence_level": "verified-runtime",
+  "trace_contract": {
+    "schema": "project-epoch-mesen-wram-ownership-battle-action-trace-v4",
+    "collector_version": 4,
+    "trace_count": 6,
+    "variants": [
+      "zero",
+      "canary"
+    ],
+    "capture_phase": "endFrame-after-terminal-input-poll",
+    "timeline_policy": "frame-zero-plus-signature-changes-only",
+    "screenshot_policy": "supporting-presentation-only-not-an-acceptance-gate"
+  },
+  "checkpoint": {
+    "id": "lavos-core-command-ready-canonical-v1",
+    "private_path": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v1/battle_ready.mss",
+    "size": 261614,
+    "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b",
+    "source_frame": 5651,
+    "direct_page": "0000",
+    "location": "01DB",
+    "decoded_state_size": 324388,
+    "decoded_state_sha256": "8369e220290e1afc27138df5a1f999dee83cb4fdb462bc13c152ef1c313ecf4c"
+  },
+  "sources": {
+    "v3_collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_battle_collector_v3.py",
+      "size": 21160,
+      "sha256": "443d521ffa435ffddaa2b9ebdd68bc66c22b144e125fe91e9bebef38817cdf91"
+    },
+    "v3_generated_collector": {
+      "source_controlled": false,
+      "compiled_in_memory_only": true,
+      "size": 41269,
+      "sha256": "7491d1c6a8a3962884baeaf9997df4659c4a53d3f67b3c6ac69999d08f6ee68b"
+    },
+    "probe_collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_battle_action_probe_v4.py",
+      "size": 16877,
+      "sha256": "d50ebfe12ec81c318b61aa189a30ca04eeadba181c1d43a3300e58b26f50ca6e"
+    },
+    "probe_generated_collector": {
+      "source_controlled": false,
+      "compiled_in_memory_only": true,
+      "size": 46650,
+      "sha256": "8957872bb9a32931be6a8e1f56d0a953a605659e30b6d77d2d1ec14de52a1e65"
+    },
+    "collector_builder": {
+      "path": "tools/build_mesen_wram_ownership_battle_action_collector_v4.py",
+      "size": 14769,
+      "sha256": "6be1f408ceb04c8c211aa5365b92f3d9b0c5aa00354434bd431ac8c028057af8"
+    },
+    "generated_collector": {
+      "source_controlled": false,
+      "staged_private_only": true,
+      "deleted_after_each_run": true,
+      "size": 51620,
+      "sha256": "dc9a2cb3dc91fd9b4182511cec632773c8ed80725577fd4c1d15e3d719cde408"
+    },
+    "v3_validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_trace_v3.py",
+      "size": 20095,
+      "sha256": "b5ecc2c3cd81d34e5cc94428fcd45bbd39496c4ba1080a97db3c47380a6f5155"
+    },
+    "probe_validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_action_probe_v4.py",
+      "size": 18791,
+      "sha256": "5da3bbdc8817085a302eba7426f1b6b5454096dd5e0e6caa9de7cfa2564c6921"
+    },
+    "validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_action_trace_v4.py",
+      "size": 20306,
+      "sha256": "f7f23cdb9c196d4d0642cf2bb9aa2040834bd89fb0a5bb6044f65218e6974b3c"
+    },
+    "replay_validator": {
+      "path": "tools/validate_mesen_wram_ownership_battle_action_replay_v4.py",
+      "size": 6077,
+      "sha256": "dbe2a1a0e2e2217f7379ed7d6e127674532a9aff5f6900de5a69ac62f89fb099"
+    },
+    "v3_launcher": {
+      "path": "tools/run_mesen_wram_ownership_battle_trace_v3.py",
+      "size": 23798,
+      "sha256": "ed3bc349bc97705a434c2cef14e7f80c517a2a5ca143f40a4c77ccb84eb49095"
+    },
+    "probe_launcher": {
+      "path": "tools/run_mesen_wram_ownership_battle_action_probe_v4.py",
+      "size": 17296,
+      "sha256": "98d67dfab86323958491b20c048455664d0253f0de1f8eab551e39885b0527b7"
+    }
+  },
+  "private_inputs": {
+    "canonical_rom_size": 4194304,
+    "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "recovered_lavos_sram_size": 8192,
+    "recovered_lavos_sram_sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+  },
+  "scenarios": [
+    {
+      "name": "battle-action-control",
+      "terminal_frame": 606,
+      "expected_access_class": "battle-action-ownership-census",
+      "inputs": []
+    },
+    {
+      "name": "battle-attack-target-hold",
+      "terminal_frame": 60,
+      "expected_access_class": "battle-action-ownership-census",
+      "inputs": [
+        {
+          "button": "A",
+          "start_frame": 20,
+          "end_frame": 23
+        }
+      ]
+    },
+    {
+      "name": "battle-attack-recovery",
+      "terminal_frame": 606,
+      "expected_access_class": "battle-action-ownership-census",
+      "inputs": [
+        {
+          "button": "A",
+          "start_frame": 20,
+          "end_frame": 23
+        },
+        {
+          "button": "A",
+          "start_frame": 32,
+          "end_frame": 35
+        }
+      ]
+    }
+  ],
+  "battle_preimage": {
+    "active_party_hex": "000102",
+    "roster_hex": "000102828004030605",
+    "joined_hex": "FE",
+    "battle_ids_hex": "000102cdffffccffffffcb00",
+    "battle_current_and_max_hp": [
+      969,
+      898,
+      909,
+      8000,
+      12000,
+      20000
+    ],
+    "battle_ui_hex": "0059ac",
+    "command_state_hex": "0000000000ffff000100000000",
+    "inflight_action_request_hex": "0003024300008006ff006000",
+    "inflight_action_targets_hex": "03000102ffffffffffffffff",
+    "logic_busy_hex": "01000000000000010b0001"
+  },
+  "endpoint_contracts": {
+    "battle-action-control": {
+      "timeline_rows": 269,
+      "last_signature_frame": 603,
+      "terminal_frame": 606,
+      "battle_current_hp": [
+        739,
+        821,
+        712,
+        8000,
+        12000,
+        20000
+      ],
+      "battle_ui_hex": "03bf59",
+      "command_state_hex": "00000000000102000300000000",
+      "causal_milestones": [
+        "frame-336-enemy-action-damages-only-party",
+        "frame-363-follow-on-action-request-transition"
+      ]
+    },
+    "battle-attack-target-hold": {
+      "timeline_rows": 17,
+      "last_signature_frame": 60,
+      "terminal_frame": 60,
+      "battle_current_hp": [
+        969,
+        898,
+        909,
+        8000,
+        12000,
+        20000
+      ],
+      "battle_ui_hex": "0059ac",
+      "command_state_hex": "0000000000ffff000100000000",
+      "causal_milestones": [
+        "frame-20-attack-target-selection-state"
+      ]
+    },
+    "battle-attack-recovery": {
+      "timeline_rows": 206,
+      "last_signature_frame": 606,
+      "terminal_frame": 606,
+      "battle_current_hp": [
+        739,
+        821,
+        712,
+        7038,
+        12000,
+        20000
+      ],
+      "battle_ui_hex": "003a00",
+      "command_state_hex": "01000000ff01ff010100000000",
+      "causal_milestones": [
+        "frame-32-player-command-enqueue",
+        "frame-337-enemy-action-damages-only-party",
+        "frame-373-player-command-dequeue",
+        "frame-375-crono-critical-marker-ae9b-bit-80",
+        "frame-557-player-attack-damages-enemy-slot-3",
+        "frame-606-command-ready-recovery"
+      ]
+    }
+  },
+  "accepted_outputs": [
+    {
+      "scenario": "battle-action-control",
+      "variant": "zero",
+      "trace_size": 192051,
+      "trace_sha256": "2d0b222b0f7e0151108e9c8471b8953656e2e1a064e3b4c8b69e33e274150569"
+    },
+    {
+      "scenario": "battle-action-control",
+      "variant": "canary",
+      "trace_size": 198801,
+      "trace_sha256": "885299cd5066c4f7bd3b46a4411bab3a42e4e3e07234e1b6057b5606b90ddb35"
+    },
+    {
+      "scenario": "battle-attack-target-hold",
+      "variant": "zero",
+      "trace_size": 24788,
+      "trace_sha256": "fc4264a8fe5df5dff4e34b0ab4bf80cf8787c04395f80658aff421c9e220dd03"
+    },
+    {
+      "scenario": "battle-attack-target-hold",
+      "variant": "canary",
+      "trace_size": 31538,
+      "trace_sha256": "ca3fd8d70f8555362554cefbd66a69b74bcc379e7f83c834b49b455da0bb2398"
+    },
+    {
+      "scenario": "battle-attack-recovery",
+      "variant": "zero",
+      "trace_size": 150494,
+      "trace_sha256": "cc0e37b6f1c14377d8b5c1e5870a63687e2136a11fc2a7b90211c2efa11e14e0"
+    },
+    {
+      "scenario": "battle-attack-recovery",
+      "variant": "canary",
+      "trace_size": 157244,
+      "trace_sha256": "655e5fab21c48983968aa3616de10837f85cee31234767354e35fba4549713fa"
+    }
+  ],
+  "replay_contract": {
+    "schema": "project-epoch-mesen-wram-ownership-battle-action-replay-v4",
+    "trace_count_per_root": 6,
+    "semantic_validation_required_for_each_root": true,
+    "exact_trace_byte_identity_required": true,
+    "screenshots_in_acceptance_gate": false
+  },
+  "action_timeline": {
+    "selected_battle_slots": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      10
+    ],
+    "fields": [
+      {
+        "name": "current_hp",
+        "source": "battle-record-plus-03-u16-selected-slots"
+      },
+      {
+        "name": "status_hex",
+        "source": "battle-record-plus-1D-through-20-selected-slots"
+      },
+      {
+        "name": "target_state_hex",
+        "start": "7E9609",
+        "end": "7E9615"
+      },
+      {
+        "name": "target_list_hex",
+        "start": "7EA62D",
+        "end": "7EA638"
+      },
+      {
+        "name": "pc_fifo_hex",
+        "start": "7E99D4",
+        "end": "7E99D9"
+      },
+      {
+        "name": "menu_ready_hex",
+        "start": "7EA6D9",
+        "end": "7EA6E0"
+      },
+      {
+        "name": "pc_command_records_hex",
+        "start": "7E93EE",
+        "end": "7E9402"
+      },
+      {
+        "name": "action_request_hex",
+        "start": "7EAE90",
+        "end": "7EAE9B"
+      },
+      {
+        "name": "action_targets_hex",
+        "start": "7EAECB",
+        "end": "7EAED6"
+      },
+      {
+        "name": "logic_busy_hex",
+        "start": "7EB2B6",
+        "end": "7EB2C0"
+      },
+      {
+        "name": "action_slots_hex",
+        "start": "7EB3AC",
+        "end": "7EB3B7"
+      },
+      {
+        "name": "ai_state_hex",
+        "start": "7EAF22",
+        "end": "7EAF24"
+      },
+      {
+        "name": "resolution_flags_hex",
+        "bytes": [
+          "7EAEC8",
+          "7EB252",
+          "7EB315"
+        ]
+      },
+      {
+        "name": "battle_ui_hex",
+        "bytes": [
+          "7E06E2",
+          "7E06E6",
+          "7E06E7"
+        ]
+      },
+      {
+        "name": "command_state_hex",
+        "source": "v3-command-state-concatenation"
+      }
+    ]
+  },
+  "watched_ranges": [
+    {
+      "name": "old-compatibility",
+      "start": "7E2830",
+      "end": "7E287F",
+      "length": 80
+    },
+    {
+      "name": "roster",
+      "start": "7E2980",
+      "end": "7E2988",
+      "length": 9
+    },
+    {
+      "name": "joined",
+      "start": "7E29AF",
+      "end": "7E29AF",
+      "length": 1
+    },
+    {
+      "name": "epoch-name",
+      "start": "7E2C4D",
+      "end": "7E2C52",
+      "length": 6
+    },
+    {
+      "name": "front-guard",
+      "start": "7E2C9C",
+      "end": "7E2C9F",
+      "length": 4
+    },
+    {
+      "name": "candidate",
+      "start": "7E2CA0",
+      "end": "7E2CEF",
+      "length": 80
+    },
+    {
+      "name": "rear-guard",
+      "start": "7E2CF0",
+      "end": "7E2CFF",
+      "length": 16
+    }
+  ],
+  "controls": {
+    "zero_canary_pair_identity_required": true,
+    "candidate_canary_written_before_observers_arm": true,
+    "candidate_and_guards_zero_access_required": true,
+    "roster_joined_epoch_writes_forbidden": true,
+    "old_compatibility_writes_forbidden": true,
+    "counter_callback_reconciliation_required": true,
+    "all_pre_snapshots_share_one_checkpoint_required": true,
+    "independent_replay_trace_identity_required": true,
+    "generated_collector_private_and_deleted": true,
+    "immutable_inputs_and_shared_saves_required": true,
+    "ram_power_on_state": "AllZeros",
+    "fixed_rom_name": "project_epoch_mesen_lavos_clean.sfc",
+    "no_rom_sram_or_state_write_api_added": true,
+    "no_lavos_victory_or_teardown_claim": true
+  },
+  "limitations": [
+    "Acceptance covers only the six exact bounded JSON traces and their independent byte-identical replay.",
+    "Passing these bounded routes cannot approve $7E2CA0-$7E2CEF or the compatibility-block relocation.",
+    "The observed Attack roster reads identify adapter consumers but do not prove PC $07 support.",
+    "The accepted player action is one Crono critical Attack outcome; noncritical attacks and other PCs are not covered.",
+    "Tech, Item, status, death, victory, teardown, save, load, New Game+, erase, reset, attract, shop, equipment, and naming paths remain outside this tranche.",
+    "Screenshots are presentation-only because otherwise byte-identical traces can render different frames."
+  ]
+}

@@ -1,0 +1,6 @@
+# Project Epoch pins exact source/report byte identities. Keep text artifacts
+# LF-normalized in both the repository and working tree on every platform.
+* text=auto eol=lf
+
+# Original Project Epoch concept art is binary source material.
+*.png binary

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "asset_set": "project_epoch_schala_portraits_v0",
+  "status": "original portrait foundation; ROM integration gated",
+  "created": "2026-07-25",
+  "modified": "2026-07-25",
+  "author": "OpenAI Codex",
+  "review_status": "deterministic build and agent visual QA complete; human art review pending",
+  "reviewer": "OpenAI Codex",
+  "provenance_statement": "The canonical pixel source was authored from scratch as palette-index rows on two independent target-size canvases. No ROM, save, emulator state, extracted NPC tile, extracted playable-character tile, official artwork, or imported bitmap layer was used.",
+  "canonical_source": {
+    "path": "assets/source/schala/v0/portrait/schala_portraits_v0.json",
+    "sha256": "55f5ba865ef60e0e663268f9dc7e3cbccc556b5fc42b0a72f8e4732c769ea3d9",
+    "source_classification": "original-hand-pixelled",
+    "indexed_color_mode": "4bpp-index-rows",
+    "palette_version": "schala_portrait_palette_v0",
+    "assets": [
+      {
+        "id": "schala_portrait_full_48x48_v0",
+        "dimensions": [48, 48],
+        "canvas_id": "schala_full_native_canvas_20260725_a",
+        "derivation": "original-independent-target-size"
+      },
+      {
+        "id": "schala_portrait_preview_32x32_v0",
+        "dimensions": [32, 32],
+        "canvas_id": "schala_preview_native_canvas_20260725_b",
+        "derivation": "original-independent-target-size"
+      }
+    ]
+  },
+  "builder": {
+    "path": "tools/build_schala_portraits_v0.py",
+    "sha256": "9960def61ea76a41ef0ecd7c9f38294f6d87f7c599bdbac7139a9b0081f51663",
+    "version": "1.0.0",
+    "tool": "Python 3 with Pillow",
+    "command": "python tools/build_schala_portraits_v0.py --output-dir private/build/schala_portraits_v0"
+  },
+  "references": [
+    {
+      "path": "docs/schala_character_design_v0.md",
+      "sha256_at_authoring": "a12bfc34b4af87647fc32b0b6747b5e50b202b1816291b248af28c12d3bc4742",
+      "source_classification": "project-design-document"
+    },
+    {
+      "path": "docs/schala_sprite_asset_spec_v0.md",
+      "sha256_at_authoring": "06785474adaf3b8de5b66b3d4750e91484bd86be56e7b8677b4fd86c49d487ae",
+      "source_classification": "project-asset-specification"
+    },
+    {
+      "path": "assets/concepts/schala_playable_concept_v0.png",
+      "sha256": "4799352c9e4a273bc88be56e1f9d472b1a1723411956857160ab89919d7bfd45",
+      "source_classification": "generated-concept-reference",
+      "rom_eligible": false,
+      "pixels_or_palette_sampled": false,
+      "generator": "unknown",
+      "prompt": "unknown"
+    },
+    {
+      "path": "assets/concepts/schala_playable_sprite_reference_v1.png",
+      "sha256": "8b9d38332eb4b1b7f66ad5ce4bff995772fa890cb3561bcb62ba6f42f9fcc456",
+      "source_classification": "generated-concept-reference",
+      "rom_eligible": false,
+      "pixels_or_palette_sampled": false,
+      "generator": "OpenAI built-in image generation tool",
+      "prompt": "assets/concepts/schala_playable_sprite_reference_v1.prompt.txt",
+      "prompt_sha256": "fe153468cd3363f92482546e4cda930ec13b989064751216adb8a583c237b611"
+    }
+  ],
+  "expected_outputs": {
+    "schala_portrait_build_manifest_v0.json": {
+      "path": "private/build/schala_portraits_v0/schala_portrait_build_manifest_v0.json",
+      "sha256": "c452076c89cefd22eaf1d160d04d8108a771a07ca9901bf79cd0e082191511ee",
+      "size": 1481,
+      "source_classification": "deterministic-packed-output",
+      "evidence": "verified-static",
+      "committed": false
+    },
+    "schala_portrait_full_48x48_v0.4bpp": {
+      "path": "private/build/schala_portraits_v0/schala_portrait_full_48x48_v0.4bpp",
+      "sha256": "dce1df4d6ec2b8322ce684ba017008d19580d23ffb39b7e687414d7451e47ac4",
+      "size": 1152,
+      "source_classification": "deterministic-packed-output",
+      "evidence": "verified-static",
+      "committed": false
+    },
+    "schala_portrait_full_48x48_v0.png": {
+      "path": "private/build/schala_portraits_v0/schala_portrait_full_48x48_v0.png",
+      "sha256": "ab9ac28009c74ed5961b80a9f65c54f75aa9b038093f8dff1610e1a88a8f5364",
+      "size": 1358,
+      "source_classification": "deterministic-packed-output",
+      "evidence": "verified-static",
+      "committed": false
+    },
+    "schala_portrait_palette_v0.bin": {
+      "path": "private/build/schala_portraits_v0/schala_portrait_palette_v0.bin",
+      "sha256": "29c74205a1d5266ab93504e45f7bd40e400f65dd7f72d69e08e4aab601768a20",
+      "size": 32,
+      "source_classification": "deterministic-packed-output",
+      "evidence": "verified-static",
+      "committed": false
+    },
+    "schala_portrait_preview_32x32_v0.4bpp": {
+      "path": "private/build/schala_portraits_v0/schala_portrait_preview_32x32_v0.4bpp",
+      "sha256": "904e2c54654e23f1db48977a7befd599af4c63e6ee8fbd0752d9bc59bbf20b54",
+      "size": 512,
+      "source_classification": "deterministic-packed-output",
+      "evidence": "verified-static",
+      "committed": false
+    },
+    "schala_portrait_preview_32x32_v0.png": {
+      "path": "private/build/schala_portraits_v0/schala_portrait_preview_32x32_v0.png",
+      "sha256": "3ddcd312b45f67bf95629b16404e74bc0ae4fdb1108dbe48dde7cb006d3b9df2",
+      "size": 1137,
+      "source_classification": "deterministic-packed-output",
+      "evidence": "verified-static",
+      "committed": false
+    }
+  },
+  "evidence": {
+    "source_and_packer": "verified-static",
+    "visual_design": "proposal",
+    "rom_integration": "not performed",
+    "runtime_rendering": "not performed"
+  }
+}

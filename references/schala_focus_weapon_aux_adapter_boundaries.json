@@ -1,0 +1,385 @@
+{
+  "schema": "project-epoch-schala-focus-weapon-aux-adapter-boundaries-v1",
+  "version": 1,
+  "evidence_level": "verified-static",
+  "scope": {
+    "logical_pc_id": "07",
+    "focus_weapon_ids": [
+      "E8",
+      "E9",
+      "EA",
+      "EB"
+    ],
+    "operation": "Focus weapon palette, swing-SFX, hit-SFX, and enemy Attack-animation package boundary audit",
+    "rom_access": "read-only",
+    "source_only": true,
+    "production_installable": false,
+    "output_policy": "region hashes, addresses, geometry, owners, and bounded lookup facts only; never table or payload bytes",
+    "rom_save_state_trace_mutation": false,
+    "patch_rom_or_output_file_emission": false,
+    "allocation_or_hook_approval": false
+  },
+  "canonical_rom": {
+    "identity": "Chrono Trigger US Rev0 headerless",
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "mapping": "C0-FF HiROM address masked to file offset 000000-3FFFFF"
+  },
+  "regions": [
+    {
+      "name": "enemy_attack_animation_records",
+      "label": "EnemyAttackAnimRecords",
+      "snes_start": "CD4926",
+      "snes_end_exclusive": "CD4F26",
+      "entry_count": 256,
+      "entry_width": 6,
+      "expected_bytes_sha256": "2358920a949949341abba4cdafb46055af6d5ca7e383a78d3643555a40642e5f"
+    },
+    {
+      "name": "attack_animation_package_offsets",
+      "label": "AnimPkgOffsetsAtk",
+      "snes_start": "CD5FF0",
+      "snes_end_exclusive": "CD61F0",
+      "entry_count": 256,
+      "entry_width": 2,
+      "expected_bytes_sha256": "31010e7d9b8401a0a2c0309c050d245f432172f85ef2db91efbacf68822a4bd0"
+    },
+    {
+      "name": "weapon_palette_index_values",
+      "label": "WeaponPaletteIndexValues1",
+      "snes_start": "CD6CEC",
+      "snes_end_exclusive": "CD6D4C",
+      "entry_count": 96,
+      "entry_width": 1,
+      "expected_bytes_sha256": "577d4ab37d0590ef48603e12da0f8e7380a14f9b91c410ff3fd937cda049fa3a"
+    },
+    {
+      "name": "weapon_swing_sfx",
+      "label": "WeaponSwingSfxTable",
+      "snes_start": "CD6D4C",
+      "snes_end_exclusive": "CD6DAC",
+      "entry_count": 96,
+      "entry_width": 1,
+      "expected_bytes_sha256": "a631515921e253c7d8d57cc6ef92e1a1b69a003f58106b73a7f9378417862b2c"
+    },
+    {
+      "name": "weapon_hit_sfx",
+      "label": "WeaponHitSfxTable",
+      "snes_start": "CD6DAC",
+      "snes_end_exclusive": "CD6E0C",
+      "entry_count": 96,
+      "entry_width": 1,
+      "expected_bytes_sha256": "1c7dcc41d800438c3b901b16def90bb3254dbcf3b95dc2cb4cafd54c44f5baa1"
+    },
+    {
+      "name": "weapon_palette_rows",
+      "label": "WeaponPalettes6BytesEa",
+      "snes_start": "D14B00",
+      "snes_end_exclusive": "D14C80",
+      "entry_count": 64,
+      "entry_width": 6,
+      "expected_bytes_sha256": "67ac2fe29150696822de8ebdd8ba95ccc0b26c3a1670c270ebc903d088c2f24c"
+    }
+  ],
+  "bounded_preimages": [
+    {
+      "name": "focus_palette_lookup_span",
+      "snes_start": "CD6DD4",
+      "snes_end_exclusive": "CD6DD8",
+      "expected_bytes_sha256": "3989c4e0b53b03fa44fba6af89eeaa5f4347e8496e934ce81364e132cfca25ed"
+    },
+    {
+      "name": "focus_swing_sfx_lookup_span",
+      "snes_start": "CD6E34",
+      "snes_end_exclusive": "CD6E38",
+      "expected_bytes_sha256": "f296cd9026a29bc1e026bb22b762d5dec9c722d683ddd1ba9d94c3936527b0d1"
+    },
+    {
+      "name": "focus_hit_sfx_lookup_span",
+      "snes_start": "CD6E94",
+      "snes_end_exclusive": "CD6E98",
+      "expected_bytes_sha256": "c5fb00dbbb20935b26bd6452896ecc731efadfa083ac928e3ffe7180cb74df56"
+    },
+    {
+      "name": "reachable_enemy_attack_package_00",
+      "snes_start": "CD6E0C",
+      "snes_end_exclusive": "CD6E4A",
+      "expected_bytes_sha256": "56ed45b2793d798c4738a9ec741b16f402d9947ca031cc2a8d51c1c2e7c39167"
+    },
+    {
+      "name": "reachable_enemy_attack_package_02",
+      "snes_start": "CD6E83",
+      "snes_end_exclusive": "CD6E97",
+      "expected_bytes_sha256": "b357cf074b9d2e7a427a0fbbdc92169a180c48d8b7cdddbe76be6025e851bb92"
+    },
+    {
+      "name": "reachable_enemy_attack_package_03",
+      "snes_start": "CD6E97",
+      "snes_end_exclusive": "CD6EAF",
+      "expected_bytes_sha256": "0c1f1e3e519982d04b9441859693deff12578d1df08277e755345899d20771d8"
+    }
+  ],
+  "palette_consumers": [
+    {
+      "name": "battle_weapon_palette_copy",
+      "weapon_id_source": "7E1C48 + actor_record_offset",
+      "weapon_id_load_pc": "CCE718",
+      "palette_index_lookup_pc": "CCE71C",
+      "palette_index_region": "weapon_palette_index_values",
+      "palette_row_formula": "D14B00 + palette_index * 6",
+      "palette_payload_consumer_pc": "CCE739",
+      "palette_payload_region": "weapon_palette_rows",
+      "palette_copy_width": 6
+    },
+    {
+      "name": "menu_weapon_palette_record_helper",
+      "input_source": "logical_pc_id",
+      "character_record_stride": 80,
+      "weapon_id_source": "7E2629 + logical_pc_id * $50",
+      "weapon_id_load_pc": "C2F606",
+      "palette_index_lookup_pc": "C2F610",
+      "palette_index_region": "weapon_palette_index_values",
+      "palette_row_formula": "D14B00 + palette_index * 6",
+      "palette_payload_region": "weapon_palette_rows",
+      "palette_copy_width": 6,
+      "fixed_source_bank_callers": [
+        {
+          "helper_call_pc": "C28366",
+          "mvn_pc": "C28369",
+          "source_bank": "D1"
+        },
+        {
+          "helper_call_pc": "C2F5D6",
+          "mvn_pc": "C2F5D9",
+          "source_bank": "D1"
+        }
+      ]
+    }
+  ],
+  "weapon_audio_consumers": {
+    "weapon_id_cache": {
+      "weapon_id_source": "7E1C48 + actor_record_offset",
+      "weapon_id_load_pc": "C14346",
+      "cache_destination": "7EA4E7",
+      "cache_store_pc": "C14349"
+    },
+    "commands": [
+      {
+        "animation_command_id": "7C",
+        "kind": "weapon-swing",
+        "weapon_id_source": "7EA4E7",
+        "weapon_id_load_pc": "C161EB",
+        "lookup_region": "weapon_swing_sfx",
+        "lookup_pc": "C161EF"
+      },
+      {
+        "animation_command_id": "7D",
+        "kind": "weapon-hit",
+        "weapon_id_source": "7EA4E7",
+        "weapon_id_load_pc": "C161F5",
+        "lookup_region": "weapon_hit_sfx",
+        "lookup_pc": "C161F9"
+      }
+    ],
+    "common_audio_output": {
+      "sfx_id_destination": "7E1E01",
+      "sfx_id_store_pc": "C161FD",
+      "audio_command_id": "18",
+      "audio_command_destination": "7E1E00",
+      "audio_command_load_pc": "C16200",
+      "audio_command_store_pc": "C16202"
+    }
+  },
+  "attack_package_resolution": {
+    "path": "AE91 >= 3 and AE93 == 0 enemy Attack-animation record path",
+    "selector_record_source_region": "enemy_attack_animation_records",
+    "selector_record_byte_offset": 0,
+    "selector_record_lookup_pc": "C144B4",
+    "selector_source": "7E9877",
+    "selector_store_pc": "C144B8",
+    "selector_load_pc": "C14530",
+    "index_formula": "CD5FF0 + selector_id * 2",
+    "offset_lookup_pc": "C14535",
+    "offset_destination": "7E9878",
+    "offset_store_pc": "C14539",
+    "package_bank": "CD",
+    "first_package_dereference_pc": "C14541",
+    "boundary_offsets": [
+      {
+        "selector_id": "00",
+        "stored_offset": "6E0C",
+        "package_snes_start": "CD6E0C"
+      },
+      {
+        "selector_id": "01",
+        "stored_offset": "6E4A",
+        "package_snes_start": "CD6E4A"
+      },
+      {
+        "selector_id": "02",
+        "stored_offset": "6E83",
+        "package_snes_start": "CD6E83"
+      },
+      {
+        "selector_id": "03",
+        "stored_offset": "6E97",
+        "package_snes_start": "CD6E97"
+      },
+      {
+        "selector_id": "04",
+        "stored_offset": "6EAF",
+        "package_snes_start": "CD6EAF"
+      }
+    ],
+    "enemy_attack_selector_reference_counts": [
+      {
+        "selector_id": "00",
+        "record_count": 3
+      },
+      {
+        "selector_id": "01",
+        "record_count": 2
+      },
+      {
+        "selector_id": "02",
+        "record_count": 1
+      },
+      {
+        "selector_id": "03",
+        "record_count": 90
+      },
+      {
+        "selector_id": "04",
+        "record_count": 4
+      }
+    ]
+  },
+  "focus_lookup_collisions": {
+    "palette_index": {
+      "index_formula": "CD6CEC + equipped_weapon_id",
+      "declared_entry_count": 96,
+      "bounded_lookup_preimage": "focus_palette_lookup_span",
+      "collisions": [
+        {
+          "weapon_id": "E8",
+          "lookup_snes_address": "CD6DD4",
+          "declared_table_contains_lookup": false,
+          "owner_region": "weapon_hit_sfx",
+          "owner_entry_index": 40
+        },
+        {
+          "weapon_id": "E9",
+          "lookup_snes_address": "CD6DD5",
+          "declared_table_contains_lookup": false,
+          "owner_region": "weapon_hit_sfx",
+          "owner_entry_index": 41
+        },
+        {
+          "weapon_id": "EA",
+          "lookup_snes_address": "CD6DD6",
+          "declared_table_contains_lookup": false,
+          "owner_region": "weapon_hit_sfx",
+          "owner_entry_index": 42
+        },
+        {
+          "weapon_id": "EB",
+          "lookup_snes_address": "CD6DD7",
+          "declared_table_contains_lookup": false,
+          "owner_region": "weapon_hit_sfx",
+          "owner_entry_index": 43
+        }
+      ]
+    },
+    "swing_sfx": {
+      "index_formula": "CD6D4C + equipped_weapon_id",
+      "declared_entry_count": 96,
+      "bounded_lookup_preimage": "focus_swing_sfx_lookup_span",
+      "collisions": [
+        {
+          "weapon_id": "E8",
+          "lookup_snes_address": "CD6E34",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_00",
+          "owner_selector_id": "00",
+          "owner_byte_offset": 40
+        },
+        {
+          "weapon_id": "E9",
+          "lookup_snes_address": "CD6E35",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_00",
+          "owner_selector_id": "00",
+          "owner_byte_offset": 41
+        },
+        {
+          "weapon_id": "EA",
+          "lookup_snes_address": "CD6E36",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_00",
+          "owner_selector_id": "00",
+          "owner_byte_offset": 42
+        },
+        {
+          "weapon_id": "EB",
+          "lookup_snes_address": "CD6E37",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_00",
+          "owner_selector_id": "00",
+          "owner_byte_offset": 43
+        }
+      ]
+    },
+    "hit_sfx": {
+      "index_formula": "CD6DAC + equipped_weapon_id",
+      "declared_entry_count": 96,
+      "bounded_lookup_preimage": "focus_hit_sfx_lookup_span",
+      "collisions": [
+        {
+          "weapon_id": "E8",
+          "lookup_snes_address": "CD6E94",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_02",
+          "owner_selector_id": "02",
+          "owner_byte_offset": 17
+        },
+        {
+          "weapon_id": "E9",
+          "lookup_snes_address": "CD6E95",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_02",
+          "owner_selector_id": "02",
+          "owner_byte_offset": 18
+        },
+        {
+          "weapon_id": "EA",
+          "lookup_snes_address": "CD6E96",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_02",
+          "owner_selector_id": "02",
+          "owner_byte_offset": 19
+        },
+        {
+          "weapon_id": "EB",
+          "lookup_snes_address": "CD6E97",
+          "declared_table_contains_lookup": false,
+          "owner_region": "reachable_enemy_attack_package_03",
+          "owner_selector_id": "03",
+          "owner_byte_offset": 0
+        }
+      ]
+    }
+  },
+  "verified_static_conclusions": [
+    "Focus weapon IDs E8-EB cannot index any of the three 96-entry vanilla weapon auxiliary tables in place.",
+    "The palette-index overrun aliases occupied weapon-hit SFX entries 28-2B.",
+    "The swing- and hit-SFX overruns alias reachable enemy Attack-animation packages.",
+    "Palette rows are six-byte bank-D1 payloads, and both menu callers hard-code bank D1 for their copies.",
+    "Named expanded palette, swing-SFX, and hit-SFX descriptors require explicit adapters before any Focus weapon can bind them."
+  ],
+  "limitations": [
+    "This audit does not execute logical PC 07, Focus Pulse, or a Focus weapon.",
+    "The enemy Attack-animation selector reference counts are bounded static ownership facts, not a complete semantic decode of the attack packages.",
+    "This audit does not assign native palette or SFX IDs and does not bind any source-only Focus descriptor.",
+    "This audit does not approve hooks, expanded allocations, ROM mutation, patches, or production installation."
+  ]
+}
