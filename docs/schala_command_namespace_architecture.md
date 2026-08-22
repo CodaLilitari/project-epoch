@@ -169,8 +169,16 @@ These must be patched before any `$80` command is emitted:
    High IDs must use an explicit extended runtime flag or branch to the normal
    next-participant path after runtime tracing establishes the intended flag.
 
-Custom animation packages also require a relocated `TechAnimPtrTable`; its
-vanilla extent ends immediately before another table at `$CD:5FF0`.
+Custom animation packages require a bank-qualified resolver, but a Schala
+command ID does not automatically become the same-numbered package selector.
+The selected source-only v0 design preserves the canonical `$00-$7F` package
+path and keeps candidate Project Epoch package selectors `$80-$8F` explicitly
+unbound behind separately authored action-config records. It does not copy or
+relocate the canonical `TechAnimPtrTable`; that table ends immediately before
+another owner at `$CD:5FF0`. Expanded packages also remain blocked by command
+`$1E`'s fixed-`$CE` subscript lookup and the independent fixed-bank auxiliary
+readers selected by action-config bytes `+3` through `+5`. See
+`docs/schala_player_tech_package_bank_adapter_v0.md`.
 
 ## Test gate
 

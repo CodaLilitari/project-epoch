@@ -115,6 +115,17 @@ These are separate namespaces. Never conflate them.
 - High action IDs are safe only through the proved descriptor/queue transport.
   Every signed check and direct table index listed in
   `docs/schala_command_namespace_architecture.md` must be adapted.
+- Candidate Project Epoch player-Tech package selectors `$80-$8F` are a
+  separate, explicitly unbound policy namespace. Numeric equality with
+  Schala action IDs creates no mapping; an extended action-config record must
+  bind config byte 0 deliberately.
+- The source-only package-bank adapter v0 preserves the canonical `$00-$7F`
+  resolver path and host-models both `$A0B3` branches, all 16 owner bits,
+  exact word-write footprints, and bank-qualified direct entries. It approves
+  no hook or allocation. Command `$1E` still forces nested scripts into bank
+  `$CE`, and config bytes `+3/+4/+5` retain independent fixed-bank auxiliary
+  readers. Complete the command-stream decision and auxiliary adapters before
+  claiming original expanded Tech packages.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.
@@ -238,10 +249,14 @@ body frames are packable but remain natively unbound. The stream shape,
 fixed-bank setup/reader sites, and minimum automatic/menu/battle anchors are
 now mapped. The complete encoded location-event operand census and its direct-
 entry topology are also mapped, but its inter-object control-flow and loader-
-lifetime model remains unresolved. The next animation gates are to implement
-or explicitly defer that stronger contextual model, complete the data-driven
-battle action-package census and source-role/facing inventory, and design an
-explicit expanded-bank reader.
+lifetime model remains unresolved. The battle action-package census and
+source-only bank-qualified direct-entry adapter are now complete at the host
+model level while every high package binding remains absent. The next
+animation gates are to implement or explicitly defer the stronger location-
+event contextual model, complete source-role/facing inventory, build a
+lossless battle command-stream census and command-`$1E` decision, and define
+one symbolic high-package source using only proved auxiliary selectors before
+any original 65C816 helper is authored.
 
 The clone diagnostic must separately account for:
 

@@ -1,0 +1,197 @@
+{
+  "schema": "project-epoch-schala-player-tech-package-bank-adapter-contract-v0",
+  "version": 0,
+  "evidence_level": "verified-static-geometry-with-source-only-proposal",
+  "scope": {
+    "operation": "model a bank-qualified player-Tech animation package source without installing it",
+    "rom_access": "read-only-optional-canonical-verification",
+    "metadata_only": true,
+    "source_only": true,
+    "runtime_performed": false,
+    "production_installable": false,
+    "rom_save_state_trace_mutation": false,
+    "patch_rom_or_output_file_emission": false,
+    "allocation_or_hook_approval": false,
+    "canonical_payload_copied_or_emitted": false,
+    "upstream_machine_code_imported": false
+  },
+  "canonical_rom": {
+    "identity": "Chrono Trigger US Rev0 headerless",
+    "size": 4194304,
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "canonical_spans": [
+    {
+      "name": "pc_action_config_reader",
+      "cpu_start": "C145AA",
+      "cpu_end_exclusive": "C145EC",
+      "length": 66,
+      "sha256": "d60ecb18fbb0e3f09194997b89e230d4876c5b3b3104e3192f97b44798686cf1",
+      "role": "AE93 times seven reads one fixed-bank CD player action-config row"
+    },
+    {
+      "name": "pc_tech_package_reader",
+      "cpu_start": "C14612",
+      "cpu_end_exclusive": "C14682",
+      "length": 112,
+      "sha256": "a68be4a9dfa59349976827ca080eec58a5057e8144c5ba18a4609bceae291968",
+      "role": "selector resolves through CD5EF0 and descriptor plus direct scripts resolve in fixed bank CE"
+    },
+    {
+      "name": "candidate_tail_transfer_site",
+      "cpu_start": "C14612",
+      "cpu_end_exclusive": "C14616",
+      "length": 4,
+      "sha256": "de49003154a89c179eab719b3741a288e7f53742ff31e29bc446923aa2cbd2ac",
+      "role": "instruction-aligned LDA 9877 plus ASL A span that could hold a four-byte JML; candidate only, not approved"
+    },
+    {
+      "name": "pc_tech_package_resolver_parser_core",
+      "cpu_start": "C14612",
+      "cpu_end_exclusive": "C1467F",
+      "length": 109,
+      "sha256": "32a8f05f0f64f8a3e84032cad0a6f3850e6d98730e4f26925695c9defe5e189a",
+      "role": "fixed CD root resolver, fixed CE descriptor reads, and fixed CE direct-script bank installation before the tail JMP"
+    },
+    {
+      "name": "command_1e_1f_handlers",
+      "cpu_start": "C156CC",
+      "cpu_end_exclusive": "C15714",
+      "length": 72,
+      "sha256": "a22f0cfecd41b57e14a4b2e796d581e683520734f92a8b55a66e36a6062f9575",
+      "role": "command 1E enters a pointer selected from fixed bank CE and command 1F restores the parent pointer"
+    },
+    {
+      "name": "pc_action_config_table",
+      "cpu_start": "CD45A6",
+      "cpu_end_exclusive": "CD4926",
+      "length": 896,
+      "sha256": "2cbcd73e9b5ef64d99da2f7fe97208fb8cad245a9c8b148b52088ad5625e74d6",
+      "role": "128 seven-byte physical player action-config rows"
+    },
+    {
+      "name": "tech_animation_pointer_table",
+      "cpu_start": "CD5EF0",
+      "cpu_end_exclusive": "CD5FF0",
+      "length": 256,
+      "sha256": "074a9bca7aaa630085654200634002e8f3c0f251a5c3874a5b1c1237d713a4d1",
+      "role": "128 little-endian bank-local descriptor roots; the next byte belongs to another table"
+    }
+  ],
+  "namespace_contract": {
+    "canonical_physical_package_selectors": "00-7F",
+    "candidate_epoch_package_selectors": "80-8F",
+    "schala_named_tech_action_ids": "80-8F",
+    "schala_basic_attack_action_id": "90",
+    "typed_identity": "player command ID, PC action-config row, package selector, descriptor root, and script pointer remain separate",
+    "numeric_equality_creates_mapping": false,
+    "required_mapping": "a Schala action ID must resolve through a separately authored extended action-config record whose byte 0 explicitly selects a declared Epoch package selector",
+    "selector_80_8f_binding_state": "candidate-policy-explicitly-unbound",
+    "selector_90_policy": "undeclared-and-refused; numeric equality to Focus Pulse action ID 90 creates no package mapping",
+    "selector_ff_policy": "undeclared-and-refused; the separate action-ID FF menu reservation is not imported as package-selector evidence",
+    "selector_91_fe_policy": "unassigned-and-refused"
+  },
+  "package_source_contract": {
+    "identity": "selector plus explicit package bank plus 16-bit descriptor root",
+    "unbound_representation": "absence of a PackageSource object; zero is never interpreted as free or unbound",
+    "canonical_selector_policy": "00-7F resolve to bank CE and the hash-pinned canonical CD5EF0 roots in memory only",
+    "extended_selector_policy": "candidate Epoch package selectors 80-8F require an explicit PackageSource and a nonempty allocation name; no action ID maps there automatically",
+    "current_extended_source_kind": "synthetic-test-only; project-epoch-source is refused until a versioned contract names an approved allocation catalog entry",
+    "descriptor_header": "two big-endian 16-bit masks",
+    "descriptor_size": "4 plus two bytes for every set bit across both masks",
+    "direct_script_pointer": "little-endian 16-bit offset that inherits the PackageSource bank",
+    "runtime_pointer_publication": "16-bit script offset at 5DBD plus owner*4 and 16-bit bank word at 5DBF plus owner*4",
+    "bank_boundary_policy": "the complete descriptor must remain inside one 64 KiB bank",
+    "ffff_policy": "descriptor roots and selected direct script offsets equal to FFFF are refused by the host model",
+    "same_low_offset_different_bank_policy": "distinct identities"
+  },
+  "nested_script_contract": {
+    "command_1e_status": "unresolved-and-refused-for-expanded-packages",
+    "canonical_behavior": "C156E7 reads the indexed subscript pointer from fixed bank CE and C156ED installs bank CE",
+    "reason": "a bank-qualified initial package reader alone does not make command 1E cross-bank safe",
+    "required_before_use": "complete command-stream decode or an independently proved bank-aware subscript table and handler, exact preimages, vanilla equivalence, and runtime replay",
+    "command_1f_status": "restores the previously saved 24-bit parent script pointer but does not repair command 1E selection"
+  },
+  "auxiliary_config_contract": {
+    "status": "independent-adapters-unresolved",
+    "config_byte_3": "C145F3 reads fixed D1:0060 and C14870 later forces decompression source bank D1",
+    "config_byte_4": "C145FF reads fixed CD:692C; command 60 and the tile-animation tick retain fixed CD/D1 consumers",
+    "config_byte_5": "C1460B reads fixed CD:656E; C148EC-C14943 and later frame readers retain fixed CE consumers",
+    "policy": "an expanded primary script does not make original graphics or auxiliary-frame data bank-safe; each extended config must temporarily use proved canonical auxiliary selectors or wait for separately proved adapters",
+    "runtime_support_claimed": false
+  },
+  "architecture_recommendation": {
+    "status": "source-only-proposal",
+    "canonical_00_7f": "preserve the canonical resolver and loader path; use the host model only to prove its bank/root identities and future equivalence",
+    "epoch_80_8f": "intercept only explicitly declared Epoch package selectors and resolve a compact named bank-qualified source table",
+    "canonical_root_duplication": "forbidden; do not copy the 128-word canonical resolver into Project Epoch expanded data",
+    "high_selector_failure": "refuse before any indirect read or runtime pointer publication when no explicit PackageSource exists",
+    "hook_selection": "unresolved; the four-byte candidate span is evidence for design, not approval"
+  },
+  "candidate_helper_abi": {
+    "status": "source-only-candidate-not-approved",
+    "entry_pc": "C14612",
+    "possible_tail_transfer_span": "C14612-C14616",
+    "canonical_branch": "for selector 00-7F, re-execute LDA 9877 and ASL A then JML to untouched C14616",
+    "canonical_rejoin_pc": "C14616",
+    "expanded_branch_rejoin_pc": "C14833",
+    "machine_mode": "native",
+    "entry_widths": "M=0 and X=0; 16-bit accumulator and 16-bit X/Y",
+    "direct_page": "0000",
+    "data_bank": "7E",
+    "stack_policy": "preserve the original indirect-JSR return frame and return with a balanced stack",
+    "required_inputs": "WRAM 9877 selector word with high byte zero, A0B3 alternate-list flag byte with adjacent high byte zero, and the already populated action-config block",
+    "a0b3_input_contract": "strict 00-FF with adjacent high byte zero; 00 selects mask0 and nonzero selects mask1",
+    "required_outputs": "16-bit 9878/9879 descriptor root, big-endian masks in DP 80-83, 16-bit owner activation at 5DAC plus owner, and 16-bit bank-qualified direct pointers at 5DBD/5DBF plus owner*4",
+    "exit_widths": "M=1 and X=0 with D=0000 and DBR=7E",
+    "expanded_exit_state": "X equals consumed-list cursor, Y=0010, DP 80-81 consumed to zero, DP 82-83 preserve mask1, A and B are zero, stack balanced, and A0B3 is cleared after an alternate-list pass",
+    "flags_policy": "preserve I, D, and V; characterize remaining exit flags before runtime promotion",
+    "scratch_policy": "no WRAM or direct-page scratch is approved"
+  },
+  "expected_results": {
+    "canonical_selector_count": 128,
+    "canonical_package_bank": "CE",
+    "canonical_bank_vector_sha256": "8800a8e4e0109253ab8e82ea8119fd88ebcc17b40b1eaeb0e22c34593961ecde",
+    "canonical_root_vector_sha256": "074a9bca7aaa630085654200634002e8f3c0f251a5c3874a5b1c1237d713a4d1",
+    "canonical_selector_bank_root_ledger_sha256": "a88c3dd658b1d2a07b55417d9aa0eafb8c9b50efeee9d9b2f12971ced8f28343",
+    "canonical_distinct_descriptor_count": 125,
+    "canonical_selector_to_descriptor_alias_count": 3,
+    "canonical_selector_mapping_mask0_set_bit_count": 900,
+    "canonical_selector_mapping_mask1_set_bit_count": 251,
+    "canonical_selector_mapping_script_pointer_occurrence_count": 1151,
+    "canonical_distinct_direct_script_entrypoint_count": 841,
+    "canonical_maximum_descriptor_script_pointer_count": 26,
+    "candidate_epoch_package_selector_count": 16,
+    "candidate_epoch_package_bound_count": 0,
+    "action_config_to_epoch_package_mapping_bound": false,
+    "host_descriptor_install_state_model_complete": true,
+    "focus_pulse_in_player_tech_domain": false,
+    "command_1e_cross_bank_subscripts_resolved": false
+  },
+  "upstream_reconnaissance": {
+    "repository": "Pseudoarc/ctrando",
+    "commit": "20609d50932a84be58f6281d23b3f4e4d4c4e167",
+    "source_url": "https://github.com/Pseudoarc/ctrando/blob/20609d50932a84be58f6281d23b3f4e4d4c4e167/src/ctrando/base/basepatch.py#L266-L348",
+    "repository_license": "MIT",
+    "licensed_wrapper_observation": "the Python wrapper allocates separate 256-entry bank and local-root tables",
+    "embedded_routine_provenance": "the wrapper calls its opaque machine-code payload Mauron's patch; no separate Mauron license or source provenance was found",
+    "adoption_policy": "architectural lead only; independently reconstruct semantics and import no embedded machine bytes, copied canonical table payload, allocator choice, or hook"
+  },
+  "limitations": [
+    "The model proves only bank-qualified package roots and direct descriptor entries.",
+    "It does not decode animation command streams or certify that an expanded script avoids command 1E.",
+    "It does not adapt the fixed D1, CD, and CE auxiliary graphics, tile-animation, or frame-data readers selected by PC action-config bytes 3 through 5.",
+    "It selects no expanded ROM bank, allocation, WRAM scratch, hook, interrupt policy, or assembler implementation.",
+    "Canonical selector equivalence is a host-side read-only result, not an emulator replay.",
+    "No menu, battle, save, load, New Game+, teardown, or logical PC 07 runtime path is proved."
+  ],
+  "nonclaims": [
+    "No eighth playable character is installed.",
+    "No Schala Tech animation package is authored or bound.",
+    "No Schala action ID is mapped to a same-numbered package selector.",
+    "No canonical pointer table bytes are source-controlled or emitted.",
+    "No upstream patch bytes are licensed, copied, disassembled, or installed.",
+    "No ROM location is declared free and the trusted production hook and allocation catalogs remain empty."
+  ]
+}

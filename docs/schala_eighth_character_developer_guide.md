@@ -1100,6 +1100,7 @@ It is not proof that every engine consumer has been found.
 | Portraits | Full menu path has seven `$480` 36-tile faces plus seven palettes; ID7 aliases Crono/Epoch depending on context. The supported clone's `$200` preview path is separate. | static layout `verified-static`; supported small preview `verified-runtime` | Preserve Epoch naming context and dynamically resolve both an original full portrait and a distinct save preview. |
 | Tech bases/ranges | `CharTechBaseTable` at `$CC:276A` has seven two-byte entries; `$C2:BD40` supplies 37 boundaries for 36 learned groups | `verified-static` | Relocate/expand owner and group metadata before adding Schala techs. |
 | Action namespace | Named player commands use `$01-$74`, basic attacks `$75-$7B`; `$7C-$7F` stay reserved as player-command IDs, although the separate PC type-2 animation-config namespace has fixed internal producers for rows `$7C/$7D/$7F`; raw `$80-$90` survives the battle descriptor/queue unchanged, while `$F0-$FF` is a marker family | transport and internal-config distinction `verified-static`; layout `proposal` | Use the pinned `$80-$90` overlay, patch every signed/direct-index edge, leave `$7C-$7F` untouched as player commands, and preserve the same-valued vanilla animation-config rows independently. |
+| Player Tech animation packages | half-open `$C1:4612-$C1:4682` resolves config byte 0 through `$CD:5EF0` and fixed bank `$CE`; command `$1E` independently reads and installs a fixed-`$CE` subscript; config bytes `+3/+4/+5` retain separate fixed `$D1/$CD/$CE` auxiliary readers | primary reader, seven exact preimages, 128 canonical `(bank,root)` identities, nested-script and auxiliary boundaries `verified-static`; high adapter and complete vanilla-shaped host state model `proposal` | Preserve the canonical `$00-$7F` path. Candidate Epoch package selectors `$80-$8F` remain explicitly unbound and do not inherit same-numbered command IDs. Complete a lossless command-stream/`$1E` decision and one symbolic high-package source contract before authoring an original helper. See `docs/schala_player_tech_package_bank_adapter_v0.md`. |
 | Tech names | `$CC:15CF`, 116 records of 11 bytes, IDs `$01-$74` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Tech targets | `$CC:1ACB`, two bytes for IDs `$00-$74`; following data begins at `$1BB5` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Tech properties | `$CC:214B`, 72 records of 12 bytes, IDs `$00-$47`; participant lists follow at `$249F` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
@@ -1700,11 +1701,27 @@ states where useful, and a written result.
 - Refreshed the public eighth-character survey against first-person Mauron
   status posts and current source repositories. No complete, source-licensed
   natural SNES PC `$07` implementation was found in the bounded search. The
-  useful adoption lead is the MIT-licensed arbitrary-bank player-Tech
-  animation design in `Pseudoarc/ctrando`; Project Epoch will reconstruct and
-  prove the technique independently before any hook or named expanded
+  useful adoption lead is the bank-qualified player-Tech package design
+  exposed by `Pseudoarc/ctrando`. Its Python host plumbing is MIT-licensed,
+  but the opaque embedded routine is attributed to Mauron without separate
+  license/source provenance; no machine bytes, copied canonical roots,
+  allocator choice, or hook were imported. Project Epoch will reconstruct and
+  prove the behavior independently before any hook or named expanded
   allocation is proposed. See
   `docs/eighth_playable_character_external_research_2026-08-22.md`.
+- Added the source-only Schala player-Tech package-bank adapter v0. It pins
+  seven canonical spans, proves all 128 canonical `(CE,root)` identities by
+  hashes without emitting their payload, preserves the original `$00-$7F`
+  resolver as the selected architecture, and host-tests exact masks,
+  bank-qualified direct entries, bank-boundary refusal, unbound candidate
+  `$80-$8F` package selectors, same-low/different-bank identity, both `$A0B3`
+  branches, all 16 owner bits, exact word-write footprints, cursor/mask/flag
+  exit state, and repeated-pointer aliases. Equal
+  command/package numbers create no mapping. Command `$1E` remains a hard
+  fixed-`$CE` nested-script blocker, while config bytes `+3/+4/+5` expose
+  independent fixed-bank auxiliary readers. No hook, allocation, package,
+  Schala action binding, ROM write, or runtime proof is claimed. See
+  `docs/schala_player_tech_package_bank_adapter_v0.md`.
 - Added the fail-closed, read-only location-event animation operand census.
   It inventories all 10,637 encoded `$AA/$AB/$AC/$AE/$B3/$B4/$B7` sites in
   391 packets and preserves the entrypoint/static-frame/repetition namespace
@@ -1717,8 +1734,8 @@ states where useful, and a written result.
   31,731-byte metadata report has SHA-256 `d170c0d5...`; all 19 focused tests
   pass. No ROM, decoded packet, ordered script, patch, runtime PC `$07`,
   Schala binding, allocation, or hook is emitted or approved.
-- The complete ROM-backed regression now discovers 858 tests: 854 pass and
-  four skip explicitly under their existing privilege/toolchain gates. All 89
+- The complete ROM-backed regression now discovers 883 tests: 879 pass and
+  four skip explicitly under their existing privilege/toolchain gates. All 90
   source-controlled Python tools parse under the bundled Python 3.12.13
   runtime, and the canonical ROM remains byte-identical before and after.
 

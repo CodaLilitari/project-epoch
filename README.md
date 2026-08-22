@@ -80,7 +80,7 @@ remain exact.
   `20fcbd08b954311cb948bbcfc0a90eb3bbb6cc46ad00524c0add8ac0e9ecc0d7`
 - Quarantined provisional-runtime IPS SHA-256:
   `484bad4051f39d92015f57a927471d8287ca4e3652a1eef5a9475fabbf4b3cae`
-- 858 automated checks are discovered: 854 pass and four skip explicitly.
+- 883 automated checks are discovered: 879 pass and four skip explicitly.
   Two skips are privilege-dependent real-symlink cases with deterministic
   mocked reparse coverage passing; two are historical live-artifact rebuild
   checks whose original pinned `D:` toolchain is unavailable. Coverage
@@ -93,9 +93,10 @@ remain exact.
   Focus adapter boundaries, the Glass Focus and current 16-frame body-packet
   audits, the animation semantic contract, the hardened field-animation
   probe, the complete encoded location-event animation operand census, the
-  compressed NPC/enemy sprite corpus, the bounded Schala NPC comparison, and
-  the metadata-only battle action-package topology census.
-- All 89 source-controlled Python tools parse successfully.
+  compressed NPC/enemy sprite corpus, the bounded Schala NPC comparison, the
+  metadata-only battle action-package topology census, and the source-only
+  player-Tech package-bank adapter contract.
+- All 90 source-controlled Python tools parse successfully.
 - Independent repeated builds produce identical IPS, report, and manifest
   bytes.
 
@@ -123,8 +124,14 @@ community guidance are graded in
 breakpoints and regression cases but do not prove PC `$07`, free space, or
 production ownership. The 2026-08-22 primary-source refresh is in
 `docs/eighth_playable_character_external_research_2026-08-22.md`; it records
-the current public implementation ceiling and the pinned, MIT-licensed
-arbitrary-bank player-Tech technique selected for independent study.
+the current public implementation ceiling and the pinned arbitrary-bank
+player-Tech lead selected for independent study. Its Python host plumbing is
+MIT-licensed, but the embedded Mauron-attributed routine has unresolved reuse
+provenance and is not imported. Project Epoch's independently reconstructed,
+source-only bank-qualified package contract is in
+`docs/schala_player_tech_package_bank_adapter_v0.md`; its candidate high
+package selectors remain unbound, command `$1E` remains blocked, and it
+installs no hook or allocation.
 The candidate per-slot SRAM sidecar and its deterministic canary evidence are
 tracked in `docs/sram_gap_sidecar_audit.md`; its host-side corruption,
 single-slot erase, and retained/reset New Game+ semantics are now explicit,

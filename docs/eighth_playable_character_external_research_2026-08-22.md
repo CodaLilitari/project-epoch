@@ -38,7 +38,7 @@ vanilla table row belongs to PC `$07`.
 | [The historical `8thy` project thread](https://www.chronocompendium.com/Forums/index.php?topic=4100.0) | Mauron posted an architecture split in [2018](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg227860#msg227860). A test IPS was linked in [May 2021](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg233559#msg233559) and relinked in [August 2021](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg233867#msg233867), followed by a [November 2021 report](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg234057#msg234057) that it did not boot correctly. Mauron reported in [February 2023](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg235738#msg235738) that progress continued slowly. No public source or reuse license was found. | `documented/reconnaissance`, binary/prototype history only | Preserve as provenance and test-case history. Do not download, redistribute, decompile, or import the unlicensed IPS as implementation source. |
 | [Hi-Tech editor thread](https://www.chronocompendium.com/Forums/index.php?topic=10245.0) | Beta 12 began conditional support work in 2015; the first-party thread reaches [Beta 34 in 2025](https://www.chronocompendium.com/Forums/index.php?topic=10245.msg237285#msg237285), but its current changelog does not claim a natural PC `$07` implementation. No public source license was found. | `documented/reconnaissance`, editor capability only | Editor detection or compatibility for a hypothetical patch is not the patch, runtime architecture, or ownership proof. |
 | [`Pseudoarc/ctrando` at inspected default-branch commit `20609d5`](https://github.com/Pseudoarc/ctrando/commit/20609d50932a84be58f6281d23b3f4e4d4c4e167) | Active public source inspected at an exact commit. Its [`CharID`](https://github.com/Pseudoarc/ctrando/blob/20609d50932a84be58f6281d23b3f4e4d4c4e167/src/ctrando/common/ctenums.py#L25-L34) enumerates Crono through Magus only. | `documented/reconnaissance`; seven-PC ceiling independently inspected | Cross-check seven-PC assumptions and locate adapters. It is evidence against calling the current project an eighth-slot solution. |
-| [`apply_mauron_player_tech_patch`](https://github.com/Pseudoarc/ctrando/blob/20609d50932a84be58f6281d23b3f4e4d4c4e167/src/ctrando/base/basepatch.py#L266-L348) in the same repository | The source describes moving player-Tech animation scripts to arbitrary banks and expanding the pointer domain through `$FF`; the repository is [MIT licensed](https://github.com/Pseudoarc/ctrando/blob/20609d50932a84be58f6281d23b3f4e4d4c4e167/LICENSE). | `documented/reconnaissance`, reusable licensed technique | Study the bank-table/pointer-table design. Reconstruct it independently against Project Epoch's pinned canonical preimages, named expanded allocations, complete-diff audit, and fail-closed write-intent guard before any installation. |
+| [`apply_mauron_player_tech_patch`](https://github.com/Pseudoarc/ctrando/blob/20609d50932a84be58f6281d23b3f4e4d4c4e167/src/ctrando/base/basepatch.py#L266-L326) in the same repository | Pseudoarc's MIT-licensed Python host plumbing allocates separate local-root and bank tables for player-Tech animation packages. The embedded 65C816 routine is explicitly called Mauron's patch, but no separate Mauron license or source provenance was found; the first 128 root words are copied from the user's canonical ROM at runtime. | `documented/reconnaissance`, semantic design reference only | Independently reconstruct the bank-qualified package behavior. Do not copy the opaque routine, canonical resolver payload, allocator choice, or hook. Pin Project Epoch's own canonical preimages, named expanded allocations, complete-diff audit, and fail-closed write-intent guard before any installation. |
 | [`OnemusCT/temporal-redux` at commit `d0becaf`](https://github.com/OnemusCT/temporal-redux/commit/d0becafe4ae58a5e159d5f84024df63698d1e5e2) | Active GPL-3.0 editor/remake inspected at its 2026-08-09 default-branch head. Its inherited [`CharID`](https://github.com/OnemusCT/temporal-redux/blob/d0becafe4ae58a5e159d5f84024df63698d1e5e2/sourcefiles/jetsoftime/ctenums.py#L24-L31) still enumerates exactly seven PCs. | `documented/reconnaissance`; seven-PC tooling | Continue using bounded parser comparisons only. It is not a natural eighth-slot implementation. |
 | [`GitExl/CTViewer` at commit `2e5a206`](https://github.com/GitExl/CTViewer/commit/2e5a206e09f0028fd5a1ca6cb9a9ed18bfc64fea) | Current MIT-licensed viewer parses SNES/PC scene maps, actor sprites, and animation from script data. It is a viewer, not a PC `$07` implementation. | `documented/reconnaissance` | Use as an independent parser/visualization cross-check for event, actor, and animation boundaries; never as ownership proof. |
 | [`dscotton/ct_disassembly` at commit `eeae27a`](https://github.com/dscotton/ct_disassembly/commit/eeae27acdb6565e96d1d796a3d60792c250c0aa1) | Current CC0-1.0 disassembly contains a hazardous [`CHAR_EIGHTH = $07` / "free slot" annotation](https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/enums.asm#L638-L646), while its naming code separately records that slot 7 is Epoch and an eighth PC needs new storage. | `documented/reconnaissance`, internally qualified annotation | Use labels to find readers, never to infer a globally free ID, record, graphics row, name, or attack byte. Project Epoch's canonical evidence remains authoritative. |
@@ -51,7 +51,8 @@ vanilla table row belongs to PC `$07`.
 ## Technique accepted for further study
 
 The immediately useful external lead is the arbitrary-bank player-Tech
-animation design in `ctrando`. Project Epoch's current static census already
+animation design exposed by `ctrando`'s host plumbing. Project Epoch's current
+static census already
 proves this native route shape:
 
 ```text
@@ -66,7 +67,9 @@ An explicit bank table is therefore architecturally compatible with the need
 to move Schala-owned scripts into named expanded allocations. The adoption
 boundary is deliberately narrow:
 
-- inspect the upstream algorithm and attribution under its MIT license;
+- inspect the MIT-licensed host plumbing and the documented behavior while
+  treating the attributed Mauron machine routine as unlicensed/unknown for
+  reuse;
 - derive Project Epoch source from independently reconstructed semantics, not
   from an opaque machine-code blob;
 - pin every vanilla hook preimage and document every preserved instruction;
@@ -81,6 +84,20 @@ boundary is deliberately narrow:
 
 No upstream machine patch, free-space choice, or payload was imported by this
 survey.
+
+The follow-up source comparison found two additional reasons not to use the
+upstream serializer as a preservation oracle:
+
+- its companion config relocation rewrites fixed producers for rows `$79`,
+  `$7A`, and `$7F`, but no corresponding source rewrite was found for the
+  newly censused `$7B-$7D` producers; and
+- its high-level reader reduces the two exact descriptor masks to role counts
+  and writes fresh consecutive pointers, so sparse mask placement and shared
+  pointer aliases are not necessarily preserved.
+
+Those are coverage/search leads, not claims that the upstream project is
+incorrect. Project Epoch retains its exact mask, alias, bank-qualified
+identity, and fixed-producer ledgers as the stronger preservation boundary.
 
 ## What was not adopted
 
