@@ -57,9 +57,13 @@ class SchalaCommandLayoutTests(unittest.TestCase):
             },
         )
 
-    def test_does_not_consume_vanilla_gap_or_marker_ids(self) -> None:
+    def test_does_not_consume_reserved_player_command_or_marker_ids(
+        self,
+    ) -> None:
         ids = {command.action_id for command in TOOL.COMMANDS}
-        self.assertTrue(ids.isdisjoint(TOOL.PRESERVED_GAP_IDS))
+        self.assertTrue(
+            ids.isdisjoint(TOOL.PRESERVED_PLAYER_COMMAND_GAP_IDS)
+        )
         self.assertTrue(ids.isdisjoint(TOOL.MARKER_FAMILY))
         self.assertTrue(all(value > TOOL.VANILLA_LAST_ACTION_ID for value in ids))
 
@@ -74,6 +78,10 @@ class SchalaCommandLayoutTests(unittest.TestCase):
     def test_manifest_is_json_ready(self) -> None:
         result = TOOL.manifest()
         self.assertEqual(result["extended_action_range"], [0x80, 0x90])
+        self.assertEqual(
+            result["preserved_player_command_gap_ids"],
+            [0x7C, 0x7D, 0x7E, 0x7F],
+        )
         self.assertEqual(len(result["commands"]), 17)
 
     def test_rejects_duplicate_or_noncontiguous_id(self) -> None:

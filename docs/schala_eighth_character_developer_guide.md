@@ -1099,7 +1099,7 @@ It is not proof that every engine consumer has been found.
 | Menu walking sprite | Seven `$40`-byte records at `$7E1800-$19BF`; ID7 reaches active scratch at `$19C0` | `verified-static` | Virtualize Schala into a deliberate display slot; do not increase the record bound. |
 | Portraits | Full menu path has seven `$480` 36-tile faces plus seven palettes; ID7 aliases Crono/Epoch depending on context. The supported clone's `$200` preview path is separate. | static layout `verified-static`; supported small preview `verified-runtime` | Preserve Epoch naming context and dynamically resolve both an original full portrait and a distinct save preview. |
 | Tech bases/ranges | `CharTechBaseTable` at `$CC:276A` has seven two-byte entries; `$C2:BD40` supplies 37 boundaries for 36 learned groups | `verified-static` | Relocate/expand owner and group metadata before adding Schala techs. |
-| Action namespace | Named actions use `$01-$74`, basic attacks `$75-$7B`; raw `$80-$90` survives the battle descriptor/queue unchanged, while `$F0-$FF` is a marker family | transport `verified-static`; layout `proposal` | Use the pinned `$80-$90` overlay, patch every signed/direct-index edge, and leave `$7C-$7F` plus all vanilla actions untouched. |
+| Action namespace | Named player commands use `$01-$74`, basic attacks `$75-$7B`; `$7C-$7F` stay reserved as player-command IDs, although the separate PC type-2 animation-config namespace has fixed internal producers for rows `$7C/$7D/$7F`; raw `$80-$90` survives the battle descriptor/queue unchanged, while `$F0-$FF` is a marker family | transport and internal-config distinction `verified-static`; layout `proposal` | Use the pinned `$80-$90` overlay, patch every signed/direct-index edge, leave `$7C-$7F` untouched as player commands, and preserve the same-valued vanilla animation-config rows independently. |
 | Tech names | `$CC:15CF`, 116 records of 11 bytes, IDs `$01-$74` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Tech targets | `$CC:1ACB`, two bytes for IDs `$00-$74`; following data begins at `$1BB5` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Tech properties | `$CC:214B`, 72 records of 12 bytes, IDs `$00-$47`; participant lists follow at `$249F` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
@@ -1687,6 +1687,24 @@ states where useful, and a written result.
 
 ### 2026-08-22
 
+- Added the fail-closed, metadata-only battle action-package topology census.
+  It preserves the distinction between player-command IDs, internal PC
+  type-2 animation-config rows, package selectors, bank-qualified descriptor
+  roots, owner bits, and direct script entrypoints. Six fixed internal config
+  rows resolve through seven bounded producers, while row `$7E` remains
+  unclaimed rather than free. The direct encoded-operand census separately
+  records adjacent `$AE92` candidates because an unresolved 16-bit write could
+  affect `$AE93`. No command stream, runtime reachability, hook, allocation,
+  PC `$07`, or Schala binding is claimed. See
+  `docs/battle_action_package_topology_census_v0.md`.
+- Refreshed the public eighth-character survey against first-person Mauron
+  status posts and current source repositories. No complete, source-licensed
+  natural SNES PC `$07` implementation was found in the bounded search. The
+  useful adoption lead is the MIT-licensed arbitrary-bank player-Tech
+  animation design in `Pseudoarc/ctrando`; Project Epoch will reconstruct and
+  prove the technique independently before any hook or named expanded
+  allocation is proposed. See
+  `docs/eighth_playable_character_external_research_2026-08-22.md`.
 - Added the fail-closed, read-only location-event animation operand census.
   It inventories all 10,637 encoded `$AA/$AB/$AC/$AE/$B3/$B4/$B7` sites in
   391 packets and preserves the entrypoint/static-frame/repetition namespace
@@ -1699,8 +1717,8 @@ states where useful, and a written result.
   31,731-byte metadata report has SHA-256 `d170c0d5...`; all 19 focused tests
   pass. No ROM, decoded packet, ordered script, patch, runtime PC `$07`,
   Schala binding, allocation, or hook is emitted or approved.
-- The complete ROM-backed regression now discovers 841 tests: 837 pass and
-  four skip explicitly under their existing privilege/toolchain gates. All 88
+- The complete ROM-backed regression now discovers 858 tests: 854 pass and
+  four skip explicitly under their existing privilege/toolchain gates. All 89
   source-controlled Python tools parse under the bundled Python 3.12.13
   runtime, and the canonical ROM remains byte-identical before and after.
 

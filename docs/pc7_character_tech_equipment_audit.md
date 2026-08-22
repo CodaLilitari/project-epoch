@@ -119,7 +119,9 @@ launch version is the design document's Magic-bonus fallback.
 
 - Named player actions occupy IDs `$01-$74`.
 - The seven basic attacks occupy `$75-$7B`.
-- Only `$7C-$7F` remain before bit-7/sentinel semantics.
+- Only four player-command IDs, `$7C-$7F`, remain before bit-7/sentinel
+  semantics. They are not globally unused numeric values: fixed internal PC
+  type-2 animation-config producers occupy rows `$7C`, `$7D`, and `$7F`.
 - Schala's launch set requires:
   - 8 singles;
   - 6 duals;
@@ -139,8 +141,10 @@ The selected proposal uses globally unique raw IDs:
 
 `verified-static`: these IDs pass unchanged through the seven-byte battle-menu
 descriptor, queue byte `+6`, `$7EB18C`, and `$7EAE93`. No queue sidecar or
-owner alias is required. `$7C-$7F` remain untouched, and `$F0-$FF` remain
-reserved for the battle marker family.
+owner alias is required. `$7C-$7F` remain untouched as player-command IDs,
+and `$F0-$FF` remain reserved for the battle marker family. The separate
+animation-config rows with the same low values retain their vanilla internal
+uses.
 
 The high-bit overlay is not yet runtime-approved. Signed list tests, names,
 descriptions, target modes, main-menu state, ATB refund, player animation,

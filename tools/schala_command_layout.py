@@ -16,7 +16,7 @@ SCHALA_ID = 0x07
 FIRST_EXTENDED_ID = 0x80
 LAST_EXTENDED_ID = 0x90
 VANILLA_LAST_ACTION_ID = 0x7B
-PRESERVED_GAP_IDS = frozenset(range(0x7C, 0x80))
+PRESERVED_PLAYER_COMMAND_GAP_IDS = frozenset(range(0x7C, 0x80))
 MARKER_FAMILY = frozenset(range(0xF0, 0x100))
 MAX_UI_NAME_CHARS = 10
 
@@ -59,7 +59,7 @@ def validate_layout(commands: tuple[CommandSpec, ...] = COMMANDS) -> None:
         raise RuntimeError("duplicate Schala action ID")
     if any(
         action_id <= VANILLA_LAST_ACTION_ID
-        or action_id in PRESERVED_GAP_IDS
+        or action_id in PRESERVED_PLAYER_COMMAND_GAP_IDS
         or action_id in MARKER_FAMILY
         for action_id in ids
     ):
@@ -105,7 +105,9 @@ def manifest() -> dict[str, object]:
             FIRST_EXTENDED_ID,
             LAST_EXTENDED_ID,
         ],
-        "preserved_gap_ids": sorted(PRESERVED_GAP_IDS),
+        "preserved_player_command_gap_ids": sorted(
+            PRESERVED_PLAYER_COMMAND_GAP_IDS
+        ),
         "marker_family": [min(MARKER_FAMILY), max(MARKER_FAMILY)],
         "commands": [
             {

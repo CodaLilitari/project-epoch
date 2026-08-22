@@ -18,9 +18,14 @@ Use globally unique raw high-bit action IDs for Schala:
 The machine-readable assignment and constrained UI labels live in
 `tools/schala_command_layout.py`.
 
-Do not consume `$7C-$7F`; they remain explicit gaps after vanilla's seven
-basic actions. Do not use `$F0-$FF`; battle-menu code treats that range as a
-marker family, with `$FB-$FF` having established special meanings.
+Do not assign `$7C-$7F` as player commands; they remain reserved
+player-command IDs after vanilla's seven basic actions. This is not a global
+free-space claim: the separate PC type-2 animation-config namespace has fixed
+engine producers for rows `$7C`, `$7D`, and `$7F` (as well as `$79-$7B`).
+Row `$7E` has no fixed producer in the current direct-address opcode census,
+but remains unclaimed rather than free. Do not use `$F0-$FF`; battle-menu code
+treats that range as a marker family, with `$FB-$FF` having established
+special meanings.
 
 ## Why this is the smallest complete identity
 
@@ -100,8 +105,13 @@ Relocate `CharTechIdTables` to a sparse 145-record table indexed directly by
 raw IDs `$00-$90`:
 
 - copy `$00-$7B` byte-for-byte;
-- emit explicit invalid records for `$7C-$7F`;
+- emit explicit invalid **player-command** records for `$7C-$7F`;
 - append the 17 authored Project Epoch records at `$80-$90`.
+
+Those sparse command records are not the PC type-2 animation-config rows at
+the same numeric indices. The latter are a distinct table/selector namespace
+and must preserve the fixed internal `$7C/$7D/$7F` consumers proved in
+`docs/battle_action_package_topology_census_v0.md`.
 
 Each record remains 11 bytes, so the existing unsigned `id*11` machinery can
 stay intact after its absolute base operands are retargeted. Set PC7's
@@ -165,7 +175,8 @@ vanilla extent ends immediately before another table at `$CD:5FF0`.
 ## Test gate
 
 - [ ] `$00-$7B` sparse-table records produce byte-identical vanilla results.
-- [ ] `$7C-$7F` remain invalid and unused.
+- [ ] `$7C-$7F` remain invalid and are never emitted as player commands;
+      no global-unused claim is made for the same numeric values.
 - [ ] `$80-$90` survive list build, selection, target choice, queue commit,
       execution, refund/cancel, animation, and result-state copy.
 - [ ] Every name, description, MP cost, target, and property resolves from
