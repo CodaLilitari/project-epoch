@@ -135,6 +135,13 @@ source-only bank-qualified package contract is in
 `docs/schala_player_tech_package_bank_adapter_v0.md`; its candidate high
 package selectors remain unbound, command `$1E` remains blocked, and it
 installs no hook or allocation.
+The dated prototype/recompilation/DS audit is in
+`docs/chrono_prototype_recomp_cleanroom_research_2026-08-23.md`. It records
+which prerelease, fan-build, partial-backport, disassembly, and reconstruction
+artifacts actually exist; cites new first-person 2026 developer memos; and
+keeps the unlicensed, extracted-data-bearing `maci0/ct-recomp` repository in
+private quarantine rather than treating it as official source, a code donor,
+or an allocation authority.
 The candidate per-slot SRAM sidecar and its deterministic canary evidence are
 tracked in `docs/sram_gap_sidecar_audit.md`; its host-side corruption,
 single-slot erase, and retained/reset New Game+ semantics are now explicit,

@@ -1744,6 +1744,25 @@ states where useful, and a written result.
 
 ### 2026-08-23
 
+- Completed a DuckDuckGo/GitHub/catalog/forum audit of Chrono Trigger
+  prototypes, alleged developer leaks, modern recompilation/disassembly work,
+  and DS/PS1-to-SNES backports. The November 1994 SNES sample, May 2001 PS1
+  review build, leaked Crimson Echoes builds, and private December 2008 Project
+  Schala diagnostic are real; no verified official Square source/tool archive,
+  public DS prototype dump, complete DS-gameplay backport, or complete additive
+  pre-Epoch eighth-PC build was found. Intentionally public 2026 notes by
+  Oki_Takana and Keizo Kokubo add authentic PC-98, IS-Character/IS-Sound/
+  IS-Debugger, hexadecimal animation/event authoring, 24-to-32-Mbit growth,
+  and internal 65816-assembler provenance without publishing game source.
+  The new `maci0/ct-recomp` claim was pinned privately at
+  `0b293606f562552c847e1170125b28dcf1c99963`; its object graph passed, but its
+  lack of a project license and thousands of tracked extracted game-data paths
+  keep it quarantined and forbidden as an implementation input. No payload or
+  local path entered Git. The audit also adds `$3FB310-$3FB4F3` as an
+  unverified item-classification trace lead and records a concrete MSU-1
+  fan-patch collision showing why another working patch cannot establish free
+  space. See
+  `docs/chrono_prototype_recomp_cleanroom_research_2026-08-23.md`.
 - Completed an address-by-address audit of the historical `8thy` and Project
   Schala forum mapping. The forum did preserve valuable roots and collision
   leads for the natural `$7E2830` record formula, graphics/assembly/descriptor
