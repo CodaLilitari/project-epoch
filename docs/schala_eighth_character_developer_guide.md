@@ -1742,6 +1742,30 @@ states where useful, and a written result.
 
 ## 12. Change log
 
+### 2026-08-23
+
+- Reconciled the Crimson Echoes / Project Schala art-provenance boundary.
+  Public sources conflict over whether the abandoned playable-Schala idea was
+  once scheduled inside Crimson Echoes, while a contemporaneous project post
+  treats Schala Project as a separate effort. Justin3009's surviving video
+  identifies only common field poses plus a derivative official-art portrait,
+  and the current Project-Fonts repository contains fonts rather than a
+  licensed gameplay sheet. No exact additional frame, pixel author, or reuse
+  license was proved; no creator was contacted and no community pixels were
+  imported. See the dated supplement in
+  `docs/eighth_playable_character_external_research_2026-08-22.md`.
+- Kept the permission gate asset-specific. Canonical vanilla Schala bytes remain
+  a private clean-ROM-derived compatibility input, while any genuinely new
+  community frame would require exact source/revision/transformation
+  provenance and permission from its actual author. Refusal or silence means
+  no permission, and community approval cannot confer rights over vanilla
+  Chrono Trigger art.
+- Restored recruitment audit rows 22 and 23 to the frozen authoring-schema IDs
+  `schala_original_field_sprite` and `schala_original_battle_sprite`. The
+  private vanilla provider changes the current evidence and diagnostic input,
+  not those binding identities. This repairs the documentation-only drift from
+  the provider commit without changing the pinned authoring JSON.
+
 ### 2026-08-22
 
 - Selected a staged Schala visual policy. Phase A derives the canonical

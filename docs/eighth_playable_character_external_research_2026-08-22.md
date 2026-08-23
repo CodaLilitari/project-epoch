@@ -151,3 +151,56 @@ Continue the evidence-gated natural-PC `$07` architecture. Add the pinned
 reference, and use current CTViewer only as an independent parsing/visual QA
 cross-check. Neither source enters the trusted production hook or allocation
 catalog until its relevant behavior is independently reconstructed and proved.
+
+## 2026-08-23 Schala-art provenance supplement
+
+The follow-up provenance review did **not** establish a Crimson Echoes-owned
+playable-Schala sprite packet or any exact Crimson Echoes frame suitable for
+Project Epoch. No creator was contacted, and no community pixels were imported.
+
+The public record is internally inconsistent about the historical project
+relationship, so the more conservative attribution boundary applies:
+
+- The Chrono Wiki retrospective says Schala had been scheduled to replace Ayla
+  in Crimson Echoes, but that the playable plan was abandoned because adding a
+  character was too difficult:
+  <https://www.chronowiki.org/wiki/Crimson_Echoes%3ASchala>.
+- A contemporaneous Chrono Compendium post by ZeaLitY lists Crimson Echoes and
+  "the Schala project" as separate efforts:
+  <https://www.chronocompendium.com/Forums/index.php?topic=6867.0>.
+- Justin3009's 2008 video, "Chrono Trigger - Schala Project," describes only
+  walking in four directions, idle faces, a sad pose, and a portrait. It says
+  the portrait was modified from official anime art and then edited and
+  colored again. The video does not identify a source file, pixel author,
+  license, or non-vanilla frame:
+  <https://www.youtube.com/watch?v=sFqtflPixrY>.
+- Justin3009's current `Project-Fonts` repository describes Schala Project as a
+  community ROM hack in which Schala would replace Magus. It attributes the
+  original font to Vivify93 and later font variants to several contributors;
+  the repository contains fonts, not a licensed Schala gameplay sprite source:
+  <https://github.com/justin3009/Project-Fonts>.
+
+These sources prove historical interest and a prototype presentation, not a
+reusable art grant. They also do not prove that a displayed gameplay pose was
+new rather than assembled from the vanilla NPC family. The derivative portrait
+is excluded independently because Project Epoch does not need it and cannot
+establish clean contributor ownership over the official-art base.
+
+The resulting policy is asset-specific rather than project-wide:
+
+1. Vanilla Schala data may continue to be reconstructed transiently from the
+   user's pinned clean ROM for private compatibility testing. It is Square
+   Enix material and is not represented as Crimson Echoes or Schala Project
+   property.
+2. No Crimson Echoes, Flames of Eternity, or Schala Project pixels enter the
+   build merely because they resemble or lightly edit vanilla art.
+3. If a future audit isolates a genuinely additional frame, its exact bytes or
+   lossless source, revision, transformation history, pixel author, and current
+   authorizing contact must be pinned before outreach.
+4. Any request must cover only that contributor's identified original addition,
+   must disclose Project Epoch's AI-assisted workflow, and must treat refusal
+   or silence as no permission. A general project-team approval cannot grant
+   rights over vanilla Chrono Trigger material or another contributor's work.
+5. Until all of those conditions are met, the vanilla-only compatibility
+   provider and independently authored replacement-art path remain sufficient;
+   community art is neither a dependency nor a production input.
