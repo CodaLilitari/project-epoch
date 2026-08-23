@@ -34,9 +34,9 @@ remain unchanged. This independent audit supplies the new bounded evidence.
 
 | Artifact | Bytes | SHA-256 |
 |---|---:|---|
-| `tools/audit_schala_current_body_packet.py` | 29,448 | `00db7f71e9c85b5a3efc4b3bccdbc7d7d7407b731f9780ab02a13cfd9fa90789` |
+| `tools/audit_schala_current_body_packet.py` | 29,448 | `e8276f349459ed44ba2adc404e34c5212856d18369a94049ca9ead2a1960377b` |
 | `tests/test_schala_current_body_packet.py` | 15,462 | `608bff2ee7d7dfb9f5cc2009662afe3f04673ca8377496691ca18e118ddd0fb1` |
-| `references/schala_current_body_packet_v0.json` | 11,953 | `c5a04304739e5fac3125cb840e9745bafae0f45b0b2869b4743b5d25c1c1313b` |
+| `references/schala_current_body_packet_v0.json` | 11,953 | `aa6fd2a259841107ca71c5b4a257eb0cef5bf6011f6bbcfcf85a2e8ae8a75be6` |
 
 The reference report contains paths, IDs, dimensions, counts, hashes, evidence
 labels, and explicit nonclaims only. It contains no source rows, pixels, tile
@@ -51,8 +51,8 @@ All four existing Project Epoch artifacts are consumed unchanged:
 |---|---:|---|
 | `assets/source/schala/v0/gameplay/schala_gameplay_foundation_v0.json` | 25,193 | `9c0d4dd9a83b6c77822286fb89deb04a7f1ae49261dedb1013e108f598af6db2` |
 | `assets/source/schala/v0/gameplay/manifest_v0.json` | 5,473 | `6f1475c2945a2f4df922d6f8b4969e346e5846152284742ceb9f04b9bc3e3f65` |
-| `assets/source/schala/v0/focus/glass_focus_pulse_v0.json` | 32,967 | `fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0` |
-| `assets/source/schala/v0/focus/glass_focus_pulse_manifest_v0.json` | 6,284 | `e14efe2dac41758fca34aeb64019caa7d104be8ac5f6f939c23374b65d597a87` |
+| `assets/source/schala/v0/focus/glass_focus_pulse_v0.json` | 32,967 | `cb705f5faa5b01fd365c57d69428a64c3df5cb40170b68130043d4c4d3dd0869` |
+| `assets/source/schala/v0/focus/glass_focus_pulse_manifest_v0.json` | 6,284 | `dabbaa5b6a85d295f7726aa44683d96d6a8e0fbbf2d052e47c9b5d1b711c73f0` |
 
 The auditor hash-gates these behavior-bearing helpers before importing them:
 
@@ -60,7 +60,7 @@ The auditor hash-gates these behavior-bearing helpers before importing them:
 |---|---:|---|
 | `tools/build_schala_gameplay_foundation_v0.py` | 25,402 | `e43f5d5b6fe30c5746ef04822f98f120165ecbea8393143e5b93941fdeb6cf8f` |
 | `tools/build_schala_sprite_packet_foundation_v0.py` | 21,211 | `dc264823fdb479fef3c0a0d94e68da40b6bb0e51040c94392e678f970c3c60fb` |
-| `tools/validate_schala_glass_focus_pulse_v0.py` | 59,563 | `061a7169f1bbd6c57409fba52b36a4cbf76ff3d9fcd32665b946558feafa9b4e` |
+| `tools/validate_schala_glass_focus_pulse_v0.py` | 59,563 | `0a51bd8b6ccb30893e5adc8da78f00b61f98242a5ba0daf3403f33e2f4e3f93f` |
 
 Dependency drift stops the audit before helper execution. The gameplay
 manifest is cross-checked against the ten-frame source. The complete Glass

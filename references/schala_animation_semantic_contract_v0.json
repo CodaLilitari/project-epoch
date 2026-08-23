@@ -1900,7 +1900,7 @@
     "current_body_report": {
       "fresh_source_audit_equal": true,
       "path": "references/schala_current_body_packet_v0.json",
-      "sha256": "c5a04304739e5fac3125cb840e9745bafae0f45b0b2869b4743b5d25c1c1313b",
+      "sha256": "aa6fd2a259841107ca71c5b4a257eb0cef5bf6011f6bbcfcf85a2e8ae8a75be6",
       "size": 11953
     }
   },

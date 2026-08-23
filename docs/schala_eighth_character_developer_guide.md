@@ -618,15 +618,15 @@ Focus (`$E8`, visual 0) and action `$90`:
 - source:
   `assets/source/schala/v0/focus/glass_focus_pulse_v0.json`
   (`32967` bytes, SHA-256
-  `fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0`);
+  `cb705f5faa5b01fd365c57d69428a64c3df5cb40170b68130043d4c4d3dd0869`);
 - source manifest:
   `assets/source/schala/v0/focus/glass_focus_pulse_manifest_v0.json`
   (`6284` bytes, SHA-256
-  `e14efe2dac41758fca34aeb64019caa7d104be8ac5f6f939c23374b65d597a87`);
+  `dabbaa5b6a85d295f7726aa44683d96d6a8e0fbbf2d052e47c9b5d1b711c73f0`);
 - read-only validator:
   `tools/validate_schala_glass_focus_pulse_v0.py`
   (`59563` bytes, SHA-256
-  `061a7169f1bbd6c57409fba52b36a4cbf76ff3d9fcd32665b946558feafa9b4e`);
+  `0a51bd8b6ccb30893e5adc8da78f00b61f98242a5ba0daf3403f33e2f4e3f93f`);
 - focused test:
   `tests/test_schala_glass_focus_pulse_v0.py`
   (`21540` bytes, SHA-256
@@ -638,7 +638,7 @@ Focus (`$E8`, visual 0) and action `$90`:
 - pinned metadata report:
   `references/schala_glass_focus_originality_v0.json`
   (`2649` bytes, SHA-256
-  `a8727872ecc8831818b71e0fab149580e035fd695e23baa3b4721f5db556d282`);
+  `90f63ef914e40065ff3f2e3c09a5d255833f7efbd4f0168833779e9156d019ec`);
 - originality-auditor test:
   `tests/test_schala_glass_focus_originality.py`
   (`6815` bytes, SHA-256
@@ -724,11 +724,11 @@ audit adds an external bounded claim without rewriting that earlier contract.
 The artifacts are:
 
 - `tools/audit_schala_current_body_packet.py`: 29,448 bytes, SHA-256
-  `00db7f71e9c85b5a3efc4b3bccdbc7d7d7407b731f9780ab02a13cfd9fa90789`;
+  `e8276f349459ed44ba2adc404e34c5212856d18369a94049ca9ead2a1960377b`;
 - `tests/test_schala_current_body_packet.py`: 15,462 bytes, SHA-256
   `608bff2ee7d7dfb9f5cc2009662afe3f04673ca8377496691ca18e118ddd0fb1`;
 - `references/schala_current_body_packet_v0.json`: 11,953 bytes, SHA-256
-  `c5a04304739e5fac3125cb840e9745bafae0f45b0b2869b4743b5d25c1c1313b`;
+  `aa6fd2a259841107ca71c5b4a257eb0cef5bf6011f6bbcfcf85a2e8ae8a75be6`;
 - `docs/schala_current_body_packet_v0.md`: reproduction, stop gates, and the
   complete evidence boundary.
 
@@ -787,7 +787,7 @@ The read-only semantic-contract audit closes the first engine gate left by the
 The canonical metadata report is
 `references/schala_animation_semantic_contract_v0.json`, 68,305 bytes,
 SHA-256
-`50374adab6ad07522184b8b0ffc26300f3dd15abe7e817bd48263b20c3a2b015`.
+`58c6774799522da9c649dbc9dc0e7e91ac32ddba4d900848bb558430e46ec045`.
 It is reproduced only to stdout by
 `tools/audit_schala_animation_semantic_contract_v0.py`; 21 focused tests pin
 all source hashes, instruction-aligned code/table preimages, decoded records,
@@ -940,13 +940,13 @@ exact-index and zero palette-renaming-invariant H/V/HV matches against those
 The Schala-specific artifacts are:
 
 - `tools/audit_schala_npc_originality.py`: 38,224 bytes, SHA-256
-  `b8fc56d4e5b782576718290a26caddd86741a3da79390a2717089f9716adb9fa`;
+  `1e81065d4fbb9041a7c671f19b8a52b5971d1beb8a908e74d38c8a7a2a99b348`;
 - `tests/test_schala_npc_originality_audit.py`: 19,794 bytes, SHA-256
   `af6b7b5e7880c70588aceb7f5b816d3ae4f47e3e5832732721c200f4986115c7`;
 - `references/schala_npc_originality_audit_v0.json`: 10,708 bytes, SHA-256
-  `752f29a5f058c5323d689c64a08073ac6ba97f13b8370211d87a6699f955c647`;
-- `docs/schala_npc_originality_audit_v0.md`: 8,948 bytes, SHA-256
-  `5b674583f377a9dbdbb3a97ccd40082ed453e14a1c553bbb9dfa82a4edbb495d`.
+  `2ae3250385c2c93f0ff159380c834e0e28a6cc0ab99254d8e4f7b9b4ba2b2848`;
+- `docs/schala_npc_originality_audit_v0.md`: 8,852 bytes, SHA-256
+  `4d86ab30634b753635453367cf3a1090775625bd41e56df8429ddfbf20120428`.
 
 The Schala audit pre-use hash-gates all five behavior-bearing helper modules,
 pins both candidate sources and the Glass manifest, rejects any count or
@@ -1915,7 +1915,7 @@ states where useful, and a written result.
   31,731-byte metadata report has SHA-256 `d170c0d5...`; all 19 focused tests
   pass. No ROM, decoded packet, ordered script, patch, runtime PC `$07`,
   Schala binding, allocation, or hook is emitted or approved.
-- The complete ROM-backed regression now discovers 883 tests: 879 pass and
+- The complete ROM-backed regression now discovers 906 tests: 902 pass and
   four skip explicitly under their existing privilege/toolchain gates. All 90
   source-controlled Python tools parse under the bundled Python 3.12.13
   runtime, and the canonical ROM remains byte-identical before and after.

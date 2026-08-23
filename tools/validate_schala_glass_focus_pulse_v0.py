@@ -109,7 +109,7 @@ MANIFEST_PROVENANCE_STATEMENT = (
     "imported; NPC originality remains unproved."
 )
 ORIGINALITY_REPORT_SHA256 = (
-    "a8727872ecc8831818b71e0fab149580e035fd695e23baa3b4721f5db556d282"
+    "90f63ef914e40065ff3f2e3c09a5d255833f7efbd4f0168833779e9156d019ec"
 )
 ORIGINALITY_REPORT_SIZE = 2649
 
@@ -127,7 +127,7 @@ EXPECTED_DEPENDENCY_HASHES = {
         "5157f5ab3eb219e9e2a767ee884a173d386bc6937f62255cbae0681d415b0cb9"
     ),
     "docs/schala_focus_pulse_adapter_architecture.md": (
-        "44db92791351a61eb14ad4cfb2c81ba6a9319ae3fa5300d3dc534100d75eeab9"
+        "f070017a327629f153d0d0570a33c3d52d744b57e44cfe202e1c98012d1cbe35"
     ),
     "tools/audit_schala_gameplay_originality.py": (
         "77f6724c5a0bfc73e26239337325f0a094920954023978aae97c641a0804f0be"

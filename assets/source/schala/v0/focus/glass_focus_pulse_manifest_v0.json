@@ -9,13 +9,13 @@
   "provenance_statement": "The six body frames truthfully reuse or adapt existing original Project Epoch Schala body pixels; the six Focus inserts and two integer-only audio recipes are new Project Epoch source. A metadata-only playable-PC audit correction changed only Project Epoch-owned impact-arc cells and now has zero exact or palette-pattern matches without displaying or exporting reference pixels. No external, ROM, NPC, vanilla-PC, extracted-tile, sampled-audio, SPC, BRR, or existing-game-SFX data was imported; NPC originality remains unproved.",
   "canonical_source": {
     "path": "assets/source/schala/v0/focus/glass_focus_pulse_v0.json",
-    "sha256": "fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0",
+    "sha256": "cb705f5faa5b01fd365c57d69428a64c3df5cb40170b68130043d4c4d3dd0869",
     "size": 32967,
     "source_classification": "project-epoch-original-same-project-derived-multimedia-source"
   },
   "validator": {
     "path": "tools/validate_schala_glass_focus_pulse_v0.py",
-    "sha256": "061a7169f1bbd6c57409fba52b36a4cbf76ff3d9fcd32665b946558feafa9b4e",
+    "sha256": "0a51bd8b6ccb30893e5adc8da78f00b61f98242a5ba0daf3403f33e2f4e3f93f",
     "size": 59563,
     "version": "1.0.0",
     "command": "python tools/validate_schala_glass_focus_pulse_v0.py"
@@ -39,7 +39,7 @@
     },
     {
       "path": "docs/schala_focus_pulse_adapter_architecture.md",
-      "sha256": "44db92791351a61eb14ad4cfb2c81ba6a9319ae3fa5300d3dc534100d75eeab9"
+      "sha256": "f070017a327629f153d0d0570a33c3d52d744b57e44cfe202e1c98012d1cbe35"
     },
     {
       "path": "tools/audit_schala_gameplay_originality.py",
@@ -52,7 +52,7 @@
   ],
   "originality_audit": {
     "path": "references/schala_glass_focus_originality_v0.json",
-    "sha256": "a8727872ecc8831818b71e0fab149580e035fd695e23baa3b4721f5db556d282",
+    "sha256": "90f63ef914e40065ff3f2e3c09a5d255833f7efbd4f0168833779e9156d019ec",
     "size": 2649,
     "dependency_scope": "validation-only",
     "reproduction": "python tools/audit_schala_glass_focus_originality.py --rom \"private/input/rom_archive/Chrono Trigger (USA).sfc\"",

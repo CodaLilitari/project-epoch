@@ -34,7 +34,7 @@ The machine-readable authority is
 `references/schala_animation_semantic_contract_v0.json`, reproduced by
 `tools/audit_schala_animation_semantic_contract_v0.py`. The current report is
 68,305 bytes with SHA-256
-`50374adab6ad07522184b8b0ffc26300f3dd15abe7e817bd48263b20c3a2b015`.
+`58c6774799522da9c649dbc9dc0e7e91ac32ddba4d900848bb558430e46ec045`.
 It contains decoded metadata and hashes, never extracted stream bytes.
 
 ## Exact inputs and output
@@ -50,7 +50,7 @@ The complete machine inputs are:
    `06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9`.
 2. `references/schala_current_body_packet_v0.json`, exactly 11,953 bytes,
    SHA-256
-   `c5a04304739e5fac3125cb840e9745bafae0f45b0b2869b4743b5d25c1c1313b`.
+   `aa6fd2a259841107ca71c5b4a257eb0cef5bf6011f6bbcfcf85a2e8ae8a75be6`.
    The audit also rebuilds this report from its source authoring inputs and
    requires byte equality; a matching stale report is not enough.
 

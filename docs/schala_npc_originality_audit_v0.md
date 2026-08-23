@@ -97,7 +97,7 @@ behavior-bearing dependency by exact byte size and SHA-256:
 | `tools/audit_location_event_items.py` | 39,560 | `cb39dd4485e6330c4f9d5b8817fe8e6a161cb2e965020cb1cd10a3fd30f7812a` |
 | `tools/audit_schala_gameplay_originality.py` | 14,624 | `77f6724c5a0bfc73e26239337325f0a094920954023978aae97c641a0804f0be` |
 | `tools/build_schala_gameplay_foundation_v0.py` | 25,402 | `e43f5d5b6fe30c5746ef04822f98f120165ecbea8393143e5b93941fdeb6cf8f` |
-| `tools/validate_schala_glass_focus_pulse_v0.py` | 59,563 | `061a7169f1bbd6c57409fba52b36a4cbf76ff3d9fcd32665b946558feafa9b4e` |
+| `tools/validate_schala_glass_focus_pulse_v0.py` | 59,563 | `0a51bd8b6ccb30893e5adc8da78f00b61f98242a5ba0daf3403f33e2f4e3f93f` |
 
 These identities and their roles are serialized in the metadata report.
 Missing or drifted dependency bytes abort before the canonical-ROM helper,
@@ -123,13 +123,13 @@ The Glass Focus set is read only from:
 
 - size: `32967`
 - SHA-256:
-  `fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0`
+  `cb705f5faa5b01fd365c57d69428a64c3df5cb40170b68130043d4c4d3dd0869`
 - 12 visual assets: six body frames and six Focus inserts
 - framed decoded-candidate SHA-256:
   `3b7504fb82ceecb1afa39b5e0019e5b552a6f6575d3a7792f3200402acf2dd9d`
 
 Its source-only manifest is also pinned at 6,284 bytes with SHA-256
-`e14efe2dac41758fca34aeb64019caa7d104be8ac5f6f939c23374b65d597a87`.
+`dabbaa5b6a85d295f7726aa44683d96d6a8e0fbbf2d052e47c9b5d1b711c73f0`.
 The audit invokes the established source validation and manifest-core checks
 before accepting those candidates.
 
@@ -186,9 +186,9 @@ byte-identical stdout; and no filesystem writes.
 
 | File | Size | SHA-256 |
 |---|---:|---|
-| `tools/audit_schala_npc_originality.py` | 38,224 | `b8fc56d4e5b782576718290a26caddd86741a3da79390a2717089f9716adb9fa` |
+| `tools/audit_schala_npc_originality.py` | 38,224 | `1e81065d4fbb9041a7c671f19b8a52b5971d1beb8a908e74d38c8a7a2a99b348` |
 | `tests/test_schala_npc_originality_audit.py` | 19,794 | `af6b7b5e7880c70588aceb7f5b816d3ae4f47e3e5832732721c200f4986115c7` |
-| `references/schala_npc_originality_audit_v0.json` | 10,708 | `752f29a5f058c5323d689c64a08073ac6ba97f13b8370211d87a6699f955c647` |
+| `references/schala_npc_originality_audit_v0.json` | 10,708 | `2ae3250385c2c93f0ff159380c834e0e28a6cc0ab99254d8e4f7b9b4ba2b2848` |
 
 The report contains only bounded addresses, descriptor field values, hashes,
 sizes, and counts. It contains no packet bytes, decoded pixels, palettes, or

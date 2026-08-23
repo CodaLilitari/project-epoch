@@ -116,7 +116,7 @@
     },
     {
       "path": "docs/schala_focus_pulse_adapter_architecture.md",
-      "sha256": "44db92791351a61eb14ad4cfb2c81ba6a9319ae3fa5300d3dc534100d75eeab9",
+      "sha256": "f070017a327629f153d0d0570a33c3d52d744b57e44cfe202e1c98012d1cbe35",
       "source_classification": "project-adapter-boundary",
       "use": "Identity-only source boundary; no runtime values, table bytes, selectors, or pointers imported."
     },

@@ -80,7 +80,7 @@ remain exact.
   `20fcbd08b954311cb948bbcfc0a90eb3bbb6cc46ad00524c0add8ac0e9ecc0d7`
 - Quarantined provisional-runtime IPS SHA-256:
   `484bad4051f39d92015f57a927471d8287ca4e3652a1eef5a9475fabbf4b3cae`
-- 883 automated checks are discovered: 879 pass and four skip explicitly.
+- 906 automated checks are discovered: 902 pass and four skip explicitly.
   Two skips are privilege-dependent real-symlink cases with deterministic
   mocked reparse coverage passing; two are historical live-artifact rebuild
   checks whose original pinned `D:` toolchain is unavailable. Coverage

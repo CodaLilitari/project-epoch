@@ -67,7 +67,7 @@ SOURCE_ARTIFACTS: tuple[dict[str, Any], ...] = (
         "path": FOCUS_SOURCE_REL.as_posix(),
         "size": 32967,
         "sha256": (
-            "fe7ccfc67c523e2a7edfeba9b14b855b3d14c92d1ef2d46076a6c57ce1765aa0"
+            "cb705f5faa5b01fd365c57d69428a64c3df5cb40170b68130043d4c4d3dd0869"
         ),
         "role": "six Glass Focus basic-Attack body poses and unbound media source",
     },
@@ -75,7 +75,7 @@ SOURCE_ARTIFACTS: tuple[dict[str, Any], ...] = (
         "path": FOCUS_MANIFEST_REL.as_posix(),
         "size": 6284,
         "sha256": (
-            "e14efe2dac41758fca34aeb64019caa7d104be8ac5f6f939c23374b65d597a87"
+            "dabbaa5b6a85d295f7726aa44683d96d6a8e0fbbf2d052e47c9b5d1b711c73f0"
         ),
         "role": "Glass Focus provenance, null bindings, and source-only boundary",
     },
@@ -102,7 +102,7 @@ BEHAVIOR_DEPENDENCIES: tuple[dict[str, Any], ...] = (
         "path": "tools/validate_schala_glass_focus_pulse_v0.py",
         "size": 59563,
         "sha256": (
-            "061a7169f1bbd6c57409fba52b36a4cbf76ff3d9fcd32665b946558feafa9b4e"
+            "0a51bd8b6ccb30893e5adc8da78f00b61f98242a5ba0daf3403f33e2f4e3f93f"
         ),
         "role": "Glass Focus source, provenance, palette, and binding validation",
     },

@@ -102,8 +102,8 @@ BEHAVIOR_DEPENDENCIES = (
         "path": "tools/validate_schala_glass_focus_pulse_v0.py",
         "size": 59_563,
         "sha256": (
-            "061a7169f1bbd6c57409fba52b36a4cb"
-            "f76ff3d9fcd32665b946558feafa9b4e"
+            "0a51bd8b6ccb30893e5adc8da78f00b6"
+            "1f98242a5ba0daf3403f33e2f4e3f93f"
         ),
         "role": "Glass Focus source and manifest validation",
     },
@@ -116,13 +116,13 @@ GAMEPLAY_SOURCE_SHA256 = (
 )
 GLASS_SOURCE_SIZE = 32_967
 GLASS_SOURCE_SHA256 = (
-    "fe7ccfc67c523e2a7edfeba9b14b855"
-    "b3d14c92d1ef2d46076a6c57ce1765aa0"
+    "cb705f5faa5b01fd365c57d69428a64"
+    "c3df5cb40170b68130043d4c4d3dd0869"
 )
 GLASS_MANIFEST_SIZE = 6_284
 GLASS_MANIFEST_SHA256 = (
-    "e14efe2dac41758fca34aeb64019caa7"
-    "d104be8ac5f6f939c23374b65d597a87"
+    "dabbaa5b6a85d295f7726aa44683d96d"
+    "6a8e0fbbf2d052e47c9b5d1b711c73f0"
 )
 
 LOCATION_ID = 0x14E
