@@ -160,6 +160,16 @@ These are separate namespaces. Never conflate them.
   Vanilla field loading copies only twelve character-specific colors;
   Schala's indices 13-15 require the audited but still uninstalled `$FFFF`
   full-palette adapter.
+- The first-pass private visual provider now derives the canonical Schala NPC
+  family from the user's pinned clean ROM at build time. It has 23 exact
+  `$28`-byte records, 79 fully referenced tiles, four aligned 36-byte primary
+  animation blocks, and the native twelve-color palette. Extracted bytes stay
+  ignored under `private/`; only metadata and hashes may be source-controlled.
+  This is a supported-slot compatibility source, not reusable art, a complete
+  PC packet, a production allocation, or logical PC `$07` evidence. It must
+  leave NPC `$09`, entries `$07/$08`, `$E4:F023`, and all Epoch data unchanged.
+  The original Project Epoch art remains preserved as deferred replacement-art
+  research pending a deliberate Chrono Trigger-style redraw.
 - An independent additive audit now proves that those ten frames plus the six
   existing Glass Focus body poses fit one 16-record, 91-tile native-shaped
   partial packet with exact reconstruction, while preserving the complete
@@ -241,11 +251,14 @@ These are separate namespaces. Never conflate them.
 
 The supported seven-PC Magus-over-Lucca diagnostic has exposed the principal
 character-data assumptions and its unsafe runtime shim is retired. A separate
-private Schala-over-Lucca smoke now verifies the partial cardinal packet
-without claiming PC `$07`. Current work is the evidence-gated Schala PC `$07`
-foundation: finish the remaining adapter/runtime matrix while compiling only
-original, provenance-backed authoring data outside the ROM. The current 16
-body frames are packable but remain natively unbound. The stream shape,
+private Schala-over-Lucca smoke verifies the partial original cardinal packet
+without claiming PC `$07`. The immediate visual step is a second private
+supported-slot diagnostic derived locally from the pinned vanilla Schala NPC
+family, with explicit animation-entrypoint fallback and no source-controlled
+extracted bytes. Current work remains the evidence-gated Schala PC `$07`
+foundation: finish the remaining adapter/runtime matrix while keeping final
+replacement art original and provenance-backed. The current 16 original body
+frames are packable but remain natively unbound. The stream shape,
 fixed-bank setup/reader sites, and minimum automatic/menu/battle anchors are
 now mapped. The complete encoded location-event operand census and its direct-
 entry topology are also mapped, but its inter-object control-flow and loader-

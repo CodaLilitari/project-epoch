@@ -176,10 +176,13 @@ overworld, portrait, palette, and animation indices are occupied or
 seven-bound. Community sprite-insertion and palette notes should guide visual
 test cases, never table ownership.
 
-Schala's playable art must remain original and provenance-backed. An NPC
-sprite can provide anatomical or stylistic reference, but its compressed
-bytes, packet layout, frames, or occupied graphics-table entry cannot be
-copied as the playable implementation.
+Schala's final distributable playable art must remain original and
+provenance-backed. A private compatibility provider may reconstruct the
+canonical vanilla NPC family locally from the user's pinned clean ROM, but its
+bytes must stay ignored and it cannot establish table ownership, a complete
+playable packet, or a final-art claim. No occupied graphics-table entry may be
+overwritten. Community or Crimson Echoes additions remain reference-only until
+their exact provenance and reuse permission are proved.
 
 ### Character records, growth, and techs
 
@@ -238,8 +241,11 @@ Before adopting any community-derived tip:
 - [ ] For recruitment, branch on capacity first; use active insertion only on
       the open-slot branch and reserve registration plus party exchange on the
       full branch.
-- [ ] Require original, provenance-backed Schala graphics, portraits, items,
-      techs, descriptions, and progression data.
+- [ ] Require pinned provenance for every Schala graphics source: canonical-ROM
+      provenance and private-only handling for the Phase A donor, Project Epoch
+      provenance for Phase B originals, and explicit author/license provenance
+      for any community addition. Portraits, items, techs, descriptions, and
+      progression data remain original and provenance-backed.
 - [ ] Place all new production data only in a source-controlled named 8 MiB
       expanded allocation.
 - [ ] Require exact pinned preimages for any vanilla instruction hook.

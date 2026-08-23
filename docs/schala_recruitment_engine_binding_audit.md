@@ -129,8 +129,8 @@ an encoded value or an installation.
 | 19 | `dialogue_choice_dispatch` | Decision textboxes `$C0/$C3` route through `$C0:3643/$C0:36AA`; the result is stored at `$7F:0A80 + object`, and `$1A` branches on it. | Compile the original accept/decline text and verify both paths, cancellation behavior, and re-entry without mutation. |
 | 20 | `silent_palace_map` | Event `$E0` reaches the location-change handler at `$C0:3AB7`. | Author an original compact map, event packet, exits, location metadata, and expanded allocations; prove entry/exit and reload. |
 | 21 | `schala_event_object` | Event `$81` reaches the direct-PC-object loader at `$C0:4476`. | Complete PC `$07` field descriptor/graphics resolution or create a separately proved event-object adapter; trace spawn, animation, reload, and removal. |
-| 22 | `schala_original_field_sprite` | Original source work is partial; the vanilla PC sprite tables do not provide a free PC `$07` entry. | Finish original frames, packetize them, allocate expanded data, install bounded PC `$07` source resolvers, and visually/runtime test every field direction and required animation. |
-| 23 | `schala_original_battle_sprite` | Original source work is partial; vanilla low source indices beyond `$06` are occupied actors or vehicles. | Finish original battle frames and install bounded PC `$07` battle resolvers without overwriting existing sources. |
+| 22 | `schala_field_sprite_provider` | Original source work is partial; a private canonical-ROM-derived vanilla Schala provider now supplies 23 records and 79 tiles, but the vanilla PC sprite tables still provide no free PC `$07` entry. | First prove the private provider through a supported-slot field replay with explicit entrypoint fallback. Then install bounded PC `$07` source resolvers without overwriting entries `$07/$08` or NPC `$09`; final distributable art remains a separate original-art gate. |
+| 23 | `schala_battle_sprite_provider` | Original source work is partial; the private vanilla NPC-family provider has no proved battle semantics, and vanilla low source indices beyond `$06` are occupied actors or vehicles. | Inventory and prove the required battle roles before choosing compatible or original frames, then install bounded PC `$07` battle resolvers without overwriting existing sources. |
 | 24 | `schala_original_portraits` | Original portrait source is complete, but its menu/save-preview installation is unmapped. | Allocate/install portrait tiles and palette and adapt every PC-count/index consumer in menus and save preview. |
 | 25 | `guest_veil_demonstration` | Event `$D8` reaches battle launch at `$C0:3A83`; this proves only encounter launch. | Implement and trace a safe guest-caster/component/effect route for original Veil, or replace the scene with a non-battle original effect. |
 | 26 | `save_sidecar_persistence` | The three-record `$30:7E00-$30:7FDF` v1 sidecar format and validation policy are host-defined and tested. | Hook normal save, full load, save preview, and exact-slot erase; reproduce all validation classes at runtime and power-cycle test all slots. |
@@ -363,9 +363,10 @@ The static routes imply the following dependency order:
 4. Complete PC `$07` roster, menu, field, battle, portrait, equipment, item,
    and tech-index adapters before any recruitment event can make `$07` joined
    or active.
-5. Finish original Schala field/battle art and original Silent Palace map,
-   dialogue, and event source. Allocate every installed packet in named
-   expanded space through a deterministic builder.
+5. Use the private vanilla-derived provider for supported-slot field adapter
+   diagnostics, then finish original distributable Schala field/battle art and
+   the original Silent Palace map, dialogue, and event source. Allocate every
+   installed packet in named expanded space through a deterministic builder.
 6. Add explicit helpers for validated quest-state access, active-party
    capacity, one-time item/tech grants, and atomic recruitment commit.
 7. Compile the authored graph only after each dependency has a proved binding.

@@ -113,10 +113,13 @@ identity, and fixed-producer ledgers as the stronger preservation boundary.
 - Crimson Echoes material is useful for event and regression ideas, not as
   proof of an eighth saved/runtime record. No new public source tree found in
   this survey changed that assessment.
-- NPC Schala/Gaspar sprites and fan sprite sheets are reference material only.
-  They are not copied data, a complete playable packet, or automatically
-  reusable art. Project Epoch continues to require original, provenance-backed
-  playable frames based on style/anatomy study rather than copied pixels.
+- NPC Schala/Gaspar sprites and fan sprite sheets are not automatically
+  reusable art or complete playable packets. Project Epoch now permits one
+  narrower exception: the user's canonical vanilla Schala NPC family may be
+  reconstructed locally as an ignored, non-redistributable first-pass adapter
+  diagnostic. Final distributable replacement art still requires original,
+  provenance-backed frames. Crimson Echoes additions remain disabled unless
+  their exact source and reuse permission can be proved.
 
 ## Search method and limitations
 

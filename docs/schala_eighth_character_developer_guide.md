@@ -455,7 +455,41 @@ migration-required safe-empty. The witness is not runtime observation, and
 the planner chooses no address or hook. See
 `docs/schala_sidecar_load_plan_contract.md`.
 
-### 4.5 Original visual concept
+### 4.5 Staged visual-source policy
+
+#### Phase A: private vanilla-NPC compatibility provider
+
+`verified-static` for local source reconstruction; no runtime claim
+
+The first visual integration pass now uses the unmodified canonical Schala NPC
+family reached through NPC `$09`, graphics selector `$26`, assembly selector
+`$1B`, animation selector `$3B`, and palette selector `$80`. The fail-closed
+builder derives it transiently from the user's pinned clean ROM and permits raw
+outputs only beneath the ignored `private/` tree. The checked reference contains
+metadata and hashes only.
+
+The provider contains 79 graphics tiles, 23 exact `$28`-byte assembly records,
+four aligned 36-byte primary animation blocks with nine entrypoint starts per
+facing, one 36-byte auxiliary block, and twelve character-specific palette
+colors. Its assembly uses every tile index 0-78, and the primary animation
+references every record 0-22 without exceeding that range. This is enough to
+justify a private supported-slot field diagnostic before the original sheet is
+redrawn.
+
+PC `$07` must reach this provider through independent bounded adapters. The
+diagnostic may not relabel or overwrite NPC `$09`, its descriptor, selector
+`$26`, graphics entries `$07/$08`, any existing actor or vehicle data, or any
+Epoch name/vehicle path. Unsupported animation roles remain explicitly
+unbound or use a documented safe fallback. No extracted packet, tile, palette,
+animation stream, screenshot, ROM, or patch enters source control. Full details
+are in `docs/schala_vanilla_npc_source_compatibility_v0.md`.
+
+Crimson Echoes and Flames of Eternity additions are disabled unless an exact
+source asset, author, revision, and explicit reuse license or permission are
+pinned. ROM-, patch-, screenshot-, or reconstruction-only pixels are not an
+acceptable source.
+
+#### Phase B: original Chrono Trigger-style replacement art
 
 `proposal`
 
@@ -488,6 +522,12 @@ concept is ROM-ready artwork. Do not rescale, quantize, or paste either into
 the ROM. Final field sprites, battle sprites, and portraits must be redrawn on
 the actual SNES tile grid and checked for copied tile clusters against every
 vanilla PC and Schala NPC source.
+
+The existing concepts and original target-grid assets remain preserved
+unchanged as a provenance-backed experimental foundation. They are no longer
+the default Phase A graphics because their current style is not yet a close
+enough match for Chrono Trigger. Their source manifests, hashes, and
+originality findings remain valid for this deferred branch.
 
 #### Original target-size portraits
 
@@ -1093,8 +1133,8 @@ It is not proof that every engine consumer has been found.
 | Post-battle combo learning | `$C1:F29C` builds `$283E +` a five-byte requirement-record index; `$C1:F5C1/$F5C7` update the selected byte | canonical table/code hashes and exact `$283E-$2856` maximum `verified-static`; no vanilla participant mask uses bit `$01` | Relocate this 25-byte learned-group span and create an expanded Schala namespace; a naive 26th row would collide with rock flag `$2857`, and other hidden/computed consumers still require review. |
 | Location-event tech grant | Event `$11C`, object `$09`, location `$1D1` has 12 absolute commands touching counts `$2830/$31/$32/$34` and masks `$2837/$38/$39/$3B` | all 513 pointers and 1,511 absolute commands scanned; exact 12-site/24-byte volatile translation and both prepared party profiles `verified-runtime` | Recompress and install the pinned `$2CA0-$2CAB` operands in a named allocation, then repeat the natural-PC07 and lifecycle guards; the current proof patches only the already-decompressed `$7F2000` buffer. |
 | Names | `$7E2C23` holds eight six-byte fields, but `PcNameAddrTable` entry 7 is `$0000`; `$7E2C4D` is the separately handled Epoch name | `verified-static` | Add Schala-owned name storage and a resolver; do not repurpose Epoch. |
-| Sprite sources | Core `$E4:2000/$2300/$2600/$2800/$2A00` tables and five-byte descriptors at `$E4:F000`; ID7 reaches occupied NPC data or an end sentinel. All vanilla PCs use `$28`-byte, four-object, sixteen-tile-word size-class-0 records; exact graphics and animation envelopes are pinned. | packet metadata `verified-static`; supported field clone and Schala partial packet `verified-runtime` | Complete Schala's frame inventory, add full-palette and context-specific relocated-data resolvers, leave entries 7/8 and `$E4:F023` unchanged, and make `$C0:E687` accept a generic graphics bank. |
-| Field sprite palettes | Five logical reload paths contain ten `$18`-byte bank-`$E4` moves into colors 1-12 of both CGRAM shadows; colors 13-15 are not supplied | loader matrix `verified-static`; twelve-color supported-slot render `verified-runtime` | Route non-colliding source key `$FFFF` through a common `$1E`-byte expanded-palette resolver at all ten sites, preserving color 0 and vanilla `$18` behavior. |
+| Sprite sources | Core `$E4:2000/$2300/$2600/$2800/$2A00` tables and five-byte descriptors at `$E4:F000`; ID7 reaches occupied NPC data or an end sentinel. All vanilla PCs use `$28`-byte, four-object, sixteen-tile-word size-class-0 records; the private vanilla Schala provider has 23 such records and 79 fully referenced tiles. | packet metadata and vanilla provider `verified-static`; supported original partial packet `verified-runtime` | First replay the vanilla provider in a supported slot with explicit entrypoint fallback. Then add context-specific PC `$07` resolvers while leaving entries 7/8, NPC `$09`, and `$E4:F023` unchanged; final distributable art remains a separate original-art gate. |
+| Field sprite palettes | Five logical reload paths contain ten `$18`-byte bank-`$E4` moves into colors 1-12 of both CGRAM shadows; the private vanilla provider uses exactly twelve character-specific colors, while the deferred original source uses fifteen | loader matrix and provider shape `verified-static`; twelve-color supported-slot render `verified-runtime` | Use the native twelve-color path for the Phase A diagnostic. Retain the `$FFFF` full-palette resolver as a Phase B gate, preserving color 0 and vanilla `$18` behavior at all ten sites. |
 | Overworld graphics | `$C2:2BBC/$2BCF/$28ED` derive tile and palette addresses from ID; ID7 lands in palette/staging data | `verified-static` | Stage a dedicated Schala overworld page and palette rows. |
 | Menu walking sprite | Seven `$40`-byte records at `$7E1800-$19BF`; ID7 reaches active scratch at `$19C0` | `verified-static` | Virtualize Schala into a deliberate display slot; do not increase the record bound. |
 | Portraits | Full menu path has seven `$480` 36-tile faces plus seven palettes; ID7 aliases Crono/Epoch depending on context. The supported clone's `$200` preview path is separate. | static layout `verified-static`; supported small preview `verified-runtime` | Preserve Epoch naming context and dynamically resolve both an original full portrait and a distinct save preview. |
@@ -1426,10 +1466,17 @@ hook, cooperative wrapper, or binding-profile change follows from this
 experiment. Its fail-closed private runtime manifest hashes to
 `ad20b04e0be5345184db3246bb6be02bd669ad0cb50d5b4799e3b9e874be7a45`.
 
-## 8. Original asset pipeline
+## 8. Staged graphics pipeline
 
-The playable graphics must be based on Schala's narrative identity, not on
-copied NPC tile data.
+Phase A is a private vanilla-Schala donor diagnostic. It references the pinned
+canonical NPC `$09/$26` family through independent adapters or consumes it
+transiently from the clean ROM; it does not copy game data into source control,
+relabel the NPC family, overwrite its tables, or claim a complete playable
+packet. Map every supported animation role and leave missing roles explicitly
+unbound before attempting logical PC `$07`.
+
+Phase B is the final distributable replacement-art track. Those graphics must
+be based on Schala's narrative identity, not copied NPC tile data:
 
 1. Lock the new silhouette and palette hierarchy from the concept sheet.
 2. Build an inventory of required vanilla field and battle animation
@@ -1450,7 +1497,9 @@ The concept PNGs are reference material only and must never be fed directly
 to the ROM builder. Exact palette, tile, frame, provenance, and originality
 requirements are maintained in `docs/schala_sprite_asset_spec_v0.md`.
 The current partial target-grid implementation and its deterministic outputs
-are recorded in `docs/schala_gameplay_sprite_foundation_v0.md`.
+are recorded in `docs/schala_gameplay_sprite_foundation_v0.md`. Phase A's
+private source contract is recorded in
+`docs/schala_vanilla_npc_source_compatibility_v0.md`.
 
 ## 9. Content implementation order
 
@@ -1527,7 +1576,8 @@ states where useful, and a written result.
 - [ ] `$07` resolves an independent runtime record.
 - [ ] `$07` survives save, power cycle, load, and all three slots.
 - [ ] `$07` has independent roster and lock state.
-- [ ] Placeholder graphics use relocated Project Epoch data, not indices 7/8.
+- [ ] Placeholder graphics use a bounded provider in a named expanded
+      diagnostic allocation, not indices 7/8 or a relabeled NPC descriptor.
 - [ ] Vanilla compatibility state relocated from `$7E2830-$287F` survives
       menus, field transitions, battles, save/load, and New Game+ unchanged.
 - [ ] Slot offsets `$0430-$047F` retain their vanilla meanings; Schala record
@@ -1551,7 +1601,13 @@ states where useful, and a written result.
       checkpoint; the result remains exploratory and checkpoint-bounded.
 - [x] The four current cardinal records load and render after a recorded
       Continue/slot-load and field movement in Lucca's supported slot.
-- [ ] Complete original field/battle sprite inventory and compilation.
+- [x] The canonical vanilla Schala NPC family reconstructs locally into 23
+      records, 79 fully referenced tiles, four primary facing blocks, one
+      auxiliary block, and twelve colors without source-controlled raw bytes.
+- [ ] Replay the vanilla-derived provider in a supported slot; map every
+      exercised role and keep missing or ambiguous entrypoints safely unbound.
+- [ ] Complete the original Chrono Trigger-style field/battle replacement
+      inventory and compilation for the final distributable art track.
 - [x] Original full and preview portrait compilation.
 - [x] Original stats/growth/TP authoring data and overlay compile.
 - [ ] Stats and growth runtime integration and equal-level balance.
@@ -1688,6 +1744,21 @@ states where useful, and a written result.
 
 ### 2026-08-22
 
+- Selected a staged Schala visual policy. Phase A derives the canonical
+  vanilla NPC `$09/$26` family transiently from the user's pinned clean ROM for
+  private adapter diagnostics; Phase B preserves the existing original v0
+  assets for a later Chrono Trigger-style replacement pass. Crimson Echoes and
+  Flames of Eternity additions remain disabled pending exact attributable
+  source and explicit reuse permission.
+- Added the fail-closed vanilla-NPC compatibility builder and metadata-only
+  reference. The source reconstructs 79 tiles, 23 exact `$28`-byte records,
+  four aligned 36-byte primary facing blocks, a 36-byte auxiliary block, and
+  a twelve-color palette. Thirteen focused tests pass, including canonical
+  rebuild, full descriptor-family census, corrupted-ROM refusal, private-path
+  and reparse enforcement, transactional-stage failure cleanup, idempotence,
+  conflict refusal, and byte-exact no-write metadata mode. No ROM or patch is
+  emitted, and extracted packet bytes remain ignored under `private/`. See
+  `docs/schala_vanilla_npc_source_compatibility_v0.md`.
 - Added the fail-closed, metadata-only battle action-package topology census.
   It preserves the distinction between player-command IDs, internal PC
   type-2 animation-config rows, package selectors, bank-qualified descriptor

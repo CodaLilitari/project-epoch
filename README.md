@@ -118,6 +118,9 @@ implementation guide is `docs/schala_eighth_character_developer_guide.md`;
 the creative/technical content proposal is
 `docs/schala_character_design_v0.md`, and the original native-grid art
 requirements are in `docs/schala_sprite_asset_spec_v0.md`.
+The selected first-pass graphics route is a private, non-destructive vanilla-
+Schala compatibility diagnostic built from the user's pinned clean ROM; the
+current original native-grid assets remain the later replacement-art track.
 Crimson Echoes, Temporal Flux/Redux, Jets of Time, Data Crystal, and related
 community guidance are graded in
 `docs/community_modding_reconnaissance_2026-07-27.md`; those sources guide
@@ -433,6 +436,14 @@ exactly; see `docs/schala_sprite_packet_foundation_v0.md`.
 The first four cardinal records now have a private, save-isolated supported-
 slot runtime proof after Continue/load and field movement; the accepted replay
 and clean control are in `docs/schala_supported_slot_sprite_smoke_v0.md`.
+For the next private compatibility pass, the canonical vanilla Schala NPC
+family can now be reconstructed at local build time from the user's exact
+clean ROM. Its 23 records, 79 tiles, four aligned facing blocks, twelve-color
+palette, strict hashes, private-only output boundary, and explicit nonclaims
+are documented in `docs/schala_vanilla_npc_source_compatibility_v0.md`.
+No extracted bytes are checked in, no ROM or patch is emitted, Crimson Echoes
+content is absent, and the original Project Epoch art remains preserved as
+deferred replacement-art research.
 The five field palette reload paths and all ten shadow-copy sites are mapped in
 `docs/field_sprite_palette_loader_audit.md`; its `$FFFF` source-key resolver is
 an uninstalled adapter proposal for Schala's fifteen visible colors.

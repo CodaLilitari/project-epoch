@@ -452,10 +452,12 @@ A production eighth-character record remains blocked on all of the following:
    emulator reproduction.
 
 Graphics and animation are separate namespaces. This record audit does not
-permit overwriting graphics source index `$07`, copying Schala's NPC packet,
-or treating any adjacent actor data as a playable sprite. Her playable field
-and battle data must remain original, provenance-backed authoring based on the
-character's design rather than a copy of the NPC bytes.
+permit overwriting graphics source index `$07`, relabeling the Schala NPC
+descriptor as a PC, or treating adjacent actor data as free. The Phase A
+provider may reconstruct the pinned canonical Schala family transiently from
+the user's clean ROM only through independent PC `$07` adapters; no extracted
+bytes enter source control. Phase B replacement art remains separately
+original and provenance-backed.
 
 ## Evidence boundary
 

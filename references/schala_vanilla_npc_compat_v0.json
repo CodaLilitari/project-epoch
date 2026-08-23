@@ -1,0 +1,185 @@
+{
+  "assembly": {
+    "distinct_tile_indexes": 79,
+    "end_snes_address_exclusive": "$DE:2EE0",
+    "file_offset": "0x1E2B48",
+    "flag_families": [
+      "$0000",
+      "$4000-horizontal-flip"
+    ],
+    "horizontal_flip_word_count": 82,
+    "maximum_tile_index": 78,
+    "minimum_tile_index": 0,
+    "pointer_entry_snes_address": "$E4:2351",
+    "record_count": 23,
+    "record_size": 40,
+    "selector": 27,
+    "sha256": "ed6ad15d16d60b2135d1af3bc6fb10de283dcda744d06da33ea37699373d2314",
+    "size": 920,
+    "start_snes_address": "$DE:2B48",
+    "tile_word_count_per_record": 16
+  },
+  "auxiliary_animation": {
+    "end_snes_address_exclusive": "$E4:BC5C",
+    "file_offset": "0x24BC38",
+    "pointer_entry_snes_address": "$E4:2876",
+    "selector": 59,
+    "sha256": "58d697a461a3674556a92d05e2b26df3c37badcd0068edc54f95e2b394e2052d",
+    "size": 36,
+    "start_snes_address": "$E4:BC38"
+  },
+  "bundle_id": "schala-vanilla-npc-compat-v0",
+  "canonical_rom": {
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "size": 4194304,
+    "variant": "Chrono Trigger US Rev0, headerless"
+  },
+  "decoder_dependency": {
+    "path": "tools/audit_ct_compressed_sprite_corpus.py",
+    "sha256": "5dcba015098dcf5a9ec754a5537f35ab67144f0ac09d166e7644741a74ae990d",
+    "size": 34780
+  },
+  "descriptor_family": {
+    "palette_only_variant": {
+      "file_offset": "0x24F424",
+      "npc_id": 205,
+      "palette_selector": 159,
+      "semantic_identity": "not-claimed",
+      "sha256": "41e0318fa8379ff61f108f09ea78356903f09f780d2d52af2a70610dc8243186",
+      "snes_address": "$E4:F424"
+    },
+    "same_geometry_npc_ids": [
+      9,
+      205
+    ],
+    "table_file_offset": "0x24F023",
+    "table_sha256": "17ae540728c200cf02d60943b8ccdae87edc8cb425e603a24343c078732e3b8a",
+    "table_size": 1280
+  },
+  "eligibility": {
+    "battle_packet": false,
+    "crimson_echoes_provider": false,
+    "logical_pc_07_runtime": false,
+    "menu_packet": false,
+    "private_local_build": true,
+    "production_rom_install": false,
+    "public_patch": false,
+    "source_control_raw_bytes": false
+  },
+  "evidence": {
+    "logical_pc_07_compatibility": "not-tested",
+    "npc_09_semantic_identity": "documented-cross-reference",
+    "packet_reconstruction": "verified-static",
+    "patch_emitted": false,
+    "rom_mutated": false,
+    "runtime_logical_pc_07_exercised": false,
+    "runtime_performed": false,
+    "supported_slot_compatibility": "not-tested"
+  },
+  "graphics": {
+    "compressed_file_offset": "0x19E2CE",
+    "compressed_sha256": "db9b1e5967ad25ba7af2692e077fa7da73e3d9659280d81fbe8f00c64109e1a3",
+    "compressed_size": 2447,
+    "compression": {
+      "addendum_count": 0,
+      "back_reference_width_bits": 12
+    },
+    "decoded_sha256": "69322758b77fff5701cb0d5edb4ca34ab4109c2313ececd37bc018106fe84b73",
+    "decoded_size": 2528,
+    "pointer_entry_snes_address": "$E4:2072",
+    "pointer_snes_address": "$D9:E2CE",
+    "selector": 38,
+    "tile_4bpp_count": 79
+  },
+  "intent": {
+    "crimson_echoes_material_included": false,
+    "first_pass_visual_source": "vanilla-schala-npc-family",
+    "intended_logical_pc_id": 7,
+    "original_project_epoch_art_status": "preserved-unchanged-deferred-replacement-art",
+    "source_classification": "canonical-rom-derived-private-compatibility",
+    "source_npc_id": 9,
+    "source_palette_variant_npc_id": 205
+  },
+  "next_gate": "build a private supported-slot field diagnostic with an explicit animation-entrypoint fallback policy before connecting this visual provider to logical PC $07",
+  "nonclaims": [
+    "The private bundle is not a complete playable-character packet.",
+    "The 23 field records do not prove battle, menu, overworld, portrait, save-preview, or PC $07 behavior.",
+    "No hook, expanded allocation, descriptor relocation, ROM mutation, or patch is approved.",
+    "No Crimson Echoes or Flames of Eternity bytes, art, source, or permission are included.",
+    "The metadata report contains no graphics, assembly words, animation sequences, palette values, images, or extracted packet bytes."
+  ],
+  "palette": {
+    "custom_color_count": 12,
+    "end_snes_address_exclusive": "$E4:0C18",
+    "file_offset": "0x240C00",
+    "selector": 128,
+    "sha256": "8d5953b31b0ca6624d94c0c29935d34519418bc04f9e780fc466dca0c0c9ef3d",
+    "size": 24,
+    "start_snes_address": "$E4:0C00"
+  },
+  "preservation": {
+    "epoch_name_data_changed": false,
+    "epoch_vehicle_data_changed": false,
+    "graphics_source_entries_07_and_08_changed": false,
+    "npc_descriptor_e4_f023_changed": false,
+    "roster_data_changed": false,
+    "save_data_changed": false,
+    "source_npc_09_changed": false
+  },
+  "primary_animation": {
+    "auxiliary_bytes": 36,
+    "boundary_entry_snes_address": "$E4:2676",
+    "bytes_per_facing": 36,
+    "end_snes_address_exclusive": "$E4:6830",
+    "entrypoint_stride": 4,
+    "entrypoints_per_facing": 9,
+    "facing_count": 4,
+    "file_offset": "0x2467A0",
+    "initial_terminator_alignment": "all-four-facings",
+    "referenced_frame_count": 23,
+    "referenced_frame_maximum": 22,
+    "referenced_frame_minimum": 0,
+    "selector": 59,
+    "sha256": "9331925cce8129be325dfe52107bbdf9721fc642db1d9f7216f9017f810cd4ff",
+    "size": 144,
+    "start_snes_address": "$E4:67A0"
+  },
+  "private_outputs": {
+    "schala_vanilla_npc_assembly.bin": {
+      "sha256": "ed6ad15d16d60b2135d1af3bc6fb10de283dcda744d06da33ea37699373d2314",
+      "size": 920
+    },
+    "schala_vanilla_npc_aux_animation.bin": {
+      "sha256": "58d697a461a3674556a92d05e2b26df3c37badcd0068edc54f95e2b394e2052d",
+      "size": 36
+    },
+    "schala_vanilla_npc_gfx_raw.4bpp": {
+      "sha256": "69322758b77fff5701cb0d5edb4ca34ab4109c2313ececd37bc018106fe84b73",
+      "size": 2528
+    },
+    "schala_vanilla_npc_palette_12colors.bgr555": {
+      "sha256": "8d5953b31b0ca6624d94c0c29935d34519418bc04f9e780fc466dca0c0c9ef3d",
+      "size": 24
+    },
+    "schala_vanilla_npc_primary_animation.bin": {
+      "sha256": "9331925cce8129be325dfe52107bbdf9721fc642db1d9f7216f9017f810cd4ff",
+      "size": 144
+    }
+  },
+  "schema_version": 1,
+  "source_descriptor": {
+    "fields": {
+      "animation_selector": 59,
+      "assembly_selector": 27,
+      "graphics_selector": 38,
+      "palette_selector": 128,
+      "size_class": 0
+    },
+    "file_offset": "0x24F050",
+    "npc_id": 9,
+    "sha256": "dcfb1fcb9573e7cbf2cba1290b2bd187889a84efdbb67a4ca7d654288158eae8",
+    "snes_address": "$E4:F050"
+  },
+  "status": "pass-private-canonical-npc-compatibility-source"
+}
