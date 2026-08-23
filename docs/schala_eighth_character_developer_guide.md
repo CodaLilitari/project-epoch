@@ -1748,11 +1748,16 @@ states where useful, and a written result.
   Public sources conflict over whether the abandoned playable-Schala idea was
   once scheduled inside Crimson Echoes, while a contemporaneous project post
   treats Schala Project as a separate effort. Justin3009's surviving video
-  identifies only common field poses plus a derivative official-art portrait,
-  and the current Project-Fonts repository contains fonts rather than a
-  licensed gameplay sheet. No exact additional frame, pixel author, or reuse
-  license was proved; no creator was contacted and no community pixels were
-  imported. See the dated supplement in
+  and all 92 of its one-second storyboard frames show only field/menu material,
+  not a battle, attack, Tech, or other additional playable-role animation. Its
+  preserved screenshot is byte-exact with the live video thumbnail and shows a
+  vanilla field pose; its portrait is derivative from official art. The
+  current Project-Fonts repository contains fonts rather than a licensed
+  gameplay sheet, and Flames of Eternity's documented Schala/Magus hug proves
+  event presentation rather than a new graphics record. No exact additional
+  frame, pixel author, reuse license, or authorizing email was proved; no
+  creator was contacted and no community pixels were imported. See the dated
+  supplement in
   `docs/eighth_playable_character_external_research_2026-08-22.md`.
 - Kept the permission gate asset-specific. Canonical vanilla Schala bytes remain
   a private clean-ROM-derived compatibility input, while any genuinely new

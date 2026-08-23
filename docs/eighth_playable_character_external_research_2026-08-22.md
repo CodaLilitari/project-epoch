@@ -174,17 +174,42 @@ relationship, so the more conservative attribution boundary applies:
   colored again. The video does not identify a source file, pixel author,
   license, or non-vanilla frame:
   <https://www.youtube.com/watch?v=sFqtflPixrY>.
+- The live video's 92 one-second storyboard frames show field and menu
+  demonstrations, but no battle, attack, Tech, or other additional playable-
+  role animation. The preserved Chrono Wiki Project Schala JPEG is byte-exact
+  with the video's current `hqdefault` thumbnail (13,946 bytes; SHA-256
+  `5A0B9E580CB8270D027C6CD74692FE78DFF84009469AB03D2F6E69B8DDDAF834`).
+  Its visible Schala pose agrees with the vanilla front/down idle pose. This is
+  corroborative visual evidence, not a source-level proof for every video
+  frame:
+  <https://cdn.wikimg.net/en/chronowiki/images/e/ee/Schala_Project.jpg>.
 - Justin3009's current `Project-Fonts` repository describes Schala Project as a
   community ROM hack in which Schala would replace Magus. It attributes the
   original font to Vivify93 and later font variants to several contributors;
   the repository contains fonts, not a licensed Schala gameplay sprite source:
   <https://github.com/justin3009/Project-Fonts>.
+- The current third-party Crimson Echoes sprite inventory lists Glenn as its
+  only playable-character sheet and no Schala sheet among its eleven entries.
+  This is bounded negative corroboration, not proof that no private or omitted
+  asset ever existed:
+  <https://www.spriters-resource.com/snes/chronotriggercrimsonechoeshack/>.
+- The Flames of Eternity RC-7D changelog says Schala and Magus were changed to
+  hug in 65 million B.C. That proves changed event presentation, not a new
+  Schala pixel or assembly record. The same public page still discusses
+  playable Schala as unimplemented:
+  <https://metronomeproject.blogspot.com/2014/11/rc-7d-unleashed.html>.
 
 These sources prove historical interest and a prototype presentation, not a
 reusable art grant. They also do not prove that a displayed gameplay pose was
 new rather than assembled from the vanilla NPC family. The derivative portrait
 is excluded independently because Project Epoch does not need it and cannot
 establish clean contributor ownership over the official-art base.
+
+The contact search found only general Compendium/FoE support or development
+mailboxes and Justin3009's public GitHub/Twitter route. None was proved to be a
+current email for the author of an identified additional Schala frame or to
+carry authority to license that frame. Guessing a recipient would therefore
+weaken rather than repair provenance. No outreach was sent.
 
 The resulting policy is asset-specific rather than project-wide:
 
