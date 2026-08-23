@@ -174,9 +174,10 @@ relationship, so the more conservative attribution boundary applies:
   colored again. The video does not identify a source file, pixel author,
   license, or non-vanilla frame:
   <https://www.youtube.com/watch?v=sFqtflPixrY>.
-- The live video's 92 one-second storyboard frames show field and menu
-  demonstrations, but no battle, attack, Tech, or other additional playable-
-  role animation. The preserved Chrono Wiki Project Schala JPEG is byte-exact
+- Direct review of the live 92-second video shows field and menu
+  demonstrations, but no battle, executed attack, executed Tech, or other
+  additional playable-role animation. The preserved Chrono Wiki Project
+  Schala JPEG is byte-exact
   with the video's current `hqdefault` thumbnail (13,946 bytes; SHA-256
   `5A0B9E580CB8270D027C6CD74692FE78DFF84009469AB03D2F6E69B8DDDAF834`).
   Its visible Schala pose agrees with the vanilla front/down idle pose. This is
@@ -198,6 +199,75 @@ relationship, so the more conservative attribution boundary applies:
   Schala pixel or assembly record. The same public page still discusses
   playable Schala as unimplemented:
   <https://metronomeproject.blogspot.com/2014/11/rc-7d-unleashed.html>.
+
+### Direct Project Schala prototype audit
+
+The 2008 Project Schala video establishes a successful **partial presentation
+replacement over Magus's supported logical PC `$06` slot**. It does not
+establish a complete Schala character, a released patch, coexistence with
+Magus, or natural PC `$07` support.
+
+The primary-source video and its currently available author comments were
+reviewed directly on 2026-08-23. The public video was decoded only in a
+temporary local audit directory; neither it nor derived frames, comments, game
+data, a ROM, a save, or an emulator state entered the repository. The audited
+video-only stream was 92.084 seconds and had SHA-256
+`3DD73036D46B848B8C142564BA5FA164B2B17C19F7D7FF54CB11401EC48E6DCA`.
+The review produced this evidence matrix:
+
+| Consumer or behavior | What the video establishes | Boundary exposed |
+|---|---|---|
+| Save select and Continue | The preview names Schala, displays her small purple field icon and HP/MP, and loads successfully. | This is Magus-slot presentation through the vanilla save path, not evidence for an eighth save record. |
+| Party exchange and main menu | Schala occupies Magus's seventh roster position, can be selected and reordered, and supplies the menu walking sprite in several roles. | Magus cannot coexist as an independently selectable eighth PC. At about 0:11 and again near 1:12, Frog's separate sprite/stat row is also visibly labeled Schala; the exact cause is unproved, but name isolation is demonstrably incomplete. |
+| Field graphics | Four-direction walking and several idle/emotive roles render as Schala. | An unconverted role near 1:13 visibly falls back to Magus, proving the role set is incomplete. |
+| Name and dialogue | The speaker label is Schala. | The accompanying lines are Magus's existing party-exchange dialogue, consistent with dynamic PC-name substitution rather than authored Schala events. |
+| Portrait and status | A custom blue-haired portrait and the Schala name render. | Element remains Shadow; level, EXP and stats are inherited; equipment remains DoomSickle, Aeon Helm, Gloom Cape and PrismSpecs. |
+| Single-Tech menu | The menu opens and lists Lightning 2, Ice 2, Fire 2, Dark Bomb, Magic Wall, Dark Mist, Black Hole and Dark Matter. | These are Magus's eight single Techs. No cast, target, effect, MP deduction, damage, learning or battle animation is demonstrated. |
+| Battle and recruitment | Nothing in the video proves these paths. | No normal/critical attack, damage/death/victory role, original weapon, original Tech, recruitment event, save/NG+ matrix or separate Magus is shown. |
+
+Justin3009's own surviving comments agree with the visual boundary. The author
+describes the contemporary build as a skin for the time being, says Schala was
+temporarily replacing Magus, acknowledges that incomplete insertion allowed
+Magus sprites to appear, and identifies graphics/assembly/animation editing as
+the feasible part while Tech work remained difficult and unfinished. Other
+comments describe planned weapons, element, Tech names, dialogue and event
+coding in future tense, later identify the project as on hiatus, and discuss a
+possible redo rather than a completed release. These comments are historical
+project-status evidence, not a license grant.
+
+The duplicate Schala label beside Frog is a useful warning rather than an
+offset lead: a six-letter label can appear correct in one consumer while a
+second PC is mislabeled in another. Without the historical patch or source,
+the video cannot distinguish a serialized-name mutation, a menu buffer or
+stride error, a dialogue-name adapter, or a recording-build-specific edit.
+Project Epoch must continue to prove its independent live-name, menu,
+dialogue, save and load adapters instead of reproducing the visible symptom.
+
+No completed Project Schala IPS, deterministic builder, gameplay source or
+licensed sprite packet was found in the bounded public search. Exact searches
+for the video ID, title and proposed patch names, plus inspection of the live
+`Project-Fonts` repository, returned the video and font work but no completed
+gameplay artifact. This is bounded negative evidence: a private, deleted or
+unindexed artifact could still have existed.
+
+For Project Epoch, the prototype is therefore a useful supported-slot
+comparison target. Its positive cases identify consumers that can inherit an
+existing-PC path: player name, portrait, field/menu graphics, save preview,
+Continue/load and party exchange. Its negative cases identify independent
+families that a real character must replace: complete animation roles,
+element, equipment, stats, Tech names/properties/costs/effects/learning,
+attacks, dialogue/events and battle behavior. If an exact historical patch or
+source is later recovered, analyze it only in ignored private space: hash it,
+produce a metadata-only complete write-span census, classify each write
+against Project Epoch's table map, and run the ROM write-intent guard before
+any same-size image or derived patch is emitted. Do not import or redistribute
+its bytes without source and permission provenance.
+
+Even a complete Magus-slot replacement would not resolve the natural-PC `$07`
+problems: the eighth live record, save and Tech-progress storage, Epoch naming
+collision, graphics-source collisions, high action/Tech namespaces,
+eight-character roster/recruitment logic, or preservation of Magus as a
+separate playable character.
 
 These sources prove historical interest and a prototype presentation, not a
 reusable art grant. They also do not prove that a displayed gameplay pose was

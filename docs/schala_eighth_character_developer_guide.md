@@ -1744,12 +1744,28 @@ states where useful, and a written result.
 
 ### 2026-08-23
 
+- Completed a direct forensic review of Justin3009's 92-second Project Schala
+  video and surviving author comments. The prototype successfully presents
+  Schala through Magus's supported PC `$06` path in save select/Continue, party
+  exchange, menus, portrait and several four-direction field roles. Schala's
+  label renders, but the party-exchange screen also visibly mislabels Frog as
+  Schala, so independent name transport was not solved cleanly.
+  It is not a complete replacement: Shadow, Magus's equipment, all eight Magus
+  single Techs, existing Magus dialogue and at least one unconverted Magus
+  sprite role remain, while battle, attacks, Tech execution/learning,
+  recruitment, New Game+ and Magus coexistence are unproved. Classified it as
+  a partial presentation prototype and a useful adapter-family comparison, not
+  PC `$07` evidence. No completed public IPS, builder or gameplay source was
+  found in the bounded search; no video, derived frame, comment corpus or game
+  data was committed. See the direct prototype audit in
+  `docs/eighth_playable_character_external_research_2026-08-22.md`.
 - Reconciled the Crimson Echoes / Project Schala art-provenance boundary.
   Public sources conflict over whether the abandoned playable-Schala idea was
   once scheduled inside Crimson Echoes, while a contemporaneous project post
   treats Schala Project as a separate effort. Justin3009's surviving video
-  and all 92 of its one-second storyboard frames show only field/menu material,
-  not a battle, attack, Tech, or other additional playable-role animation. Its
+  and a direct review of its 92-second stream show only field/menu material,
+  not a battle, executed attack, executed Tech, or other additional playable-
+  role animation. Its
   preserved screenshot is byte-exact with the live video thumbnail and shows a
   vanilla field pose; its portrait is derivative from official art. The
   current Project-Fonts repository contains fonts rather than a licensed
