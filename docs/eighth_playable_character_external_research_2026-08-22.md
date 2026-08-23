@@ -243,21 +243,44 @@ stride error, a dialogue-name adapter, or a recording-build-specific edit.
 Project Epoch must continue to prove its independent live-name, menu,
 dialogue, save and load adapters instead of reproducing the visible symptom.
 
-No completed Project Schala IPS, deterministic builder, gameplay source or
-licensed sprite packet was found in the bounded public search. Exact searches
-for the video ID, title and proposed patch names, plus inspection of the live
-`Project-Fonts` repository, returned the video and font work but no completed
-gameplay artifact. This is bounded negative evidence: a private, deleted or
-unindexed artifact could still have existed.
+No public Project Schala IPS, deterministic builder, gameplay source or
+licensed sprite packet was found in the bounded search. The follow-up archive
+and primary-thread hunt did prove two related facts without proving that the
+artifacts were byte-identical. First, Justin3009
+[privately sent Vehek a Project-Schala-era patch for debugging](https://www.chronocompendium.com/Forums/index.php?topic=6288.msg129838#msg129838)
+on 2008-12-30, and Vehek immediately
+[reported debugger observations](https://www.chronocompendium.com/Forums/index.php?topic=6288.msg129864#msg129864)
+from it. Second, surviving videos demonstrate that the unreleased Project
+Schala line later reached a substantially developed gameplay state, including
+a rescue sequence, Dream Devourer work, and a dungeon preview. In direct
+Project Schala context, forum participant Schala Zeal
+[asked about posting her retained sprite sheet](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg221097#msg221097),
+and Justin
+[stated in March 2016 that he still held an incomplete copy and IPS](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg221099#msg221099).
+The evidence does not establish that Vehek's 2008 patch or Justin's retained
+IPS contained the later rescue/Dream Devourer state. No surviving public file
+or source license was located. See
+`docs/recovered_2008_eighth_character_prototype_audit_2026-08-23.md` for the
+full chronology, source links, archive audit, and bounded-negative search.
 
-For Project Epoch, the prototype is therefore a useful supported-slot
-comparison target. Its positive cases identify consumers that can inherit an
-existing-PC path: player name, portrait, field/menu graphics, save preview,
-Continue/load and party exchange. Its negative cases identify independent
-families that a real character must replace: complete animation roles,
-element, equipment, stats, Tech names/properties/costs/effects/learning,
+A separate
+[March 2009 `8thy` post](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg150985#msg150985)
+also documents Schala as the natural-eighth graphics test identity with
+palette and sprite-assembly separation working. Animation cloning remained
+open, and a
+[same-day post says the eighth PC used Gaspar's party-exchange area](https://www.chronocompendium.com/Forums/index.php?topic=4100.msg151078#msg151078).
+This upgrades the historical record to a visible Schala-as-PC8 proof of
+concept, not a complete eighth character or a safe Gaspar-preserving menu
+architecture.
+
+For Project Epoch, the unrecovered Schala prototype is therefore a useful
+supported-slot comparison target. Its positive cases identify consumers that
+can inherit an existing-PC path: player name, portrait, field/menu graphics,
+save preview, Continue/load and party exchange. Its negative cases identify
+independent families that a real character must replace: complete animation
+roles, element, equipment, stats, Tech names/properties/costs/effects/learning,
 attacks, dialogue/events and battle behavior. If an exact historical patch or
-source is later recovered, analyze it only in ignored private space: hash it,
+source is recovered, analyze it only in ignored private space: hash it,
 produce a metadata-only complete write-span census, classify each write
 against Project Epoch's table map, and run the ROM write-intent guard before
 any same-size image or derived patch is emitted. Do not import or redistribute
@@ -280,6 +303,15 @@ mailboxes and Justin3009's public GitHub/Twitter route. None was proved to be a
 current email for the author of an identified additional Schala frame or to
 carry authority to license that frame. Guessing a recipient would therefore
 weaken rather than repair provenance. No outreach was sent.
+
+Artifact recovery is a separate question from art licensing. When inspected
+on 2026-08-23, Justin3009's
+[Chrono Compendium profile](https://www.chronocompendium.com/Forums/index.php?action=profile;u=806)
+reported last activity on 2026-08-20, and
+[Vehek's profile](https://www.chronocompendium.com/Forums/index.php?action=profile;u=1235)
+reported activity on 2026-08-22. These time-sensitive observations identify
+plausible contact routes, but do not establish consent, current possession, or
+authority to license any asset. No recovery request was sent.
 
 The resulting policy is asset-specific rather than project-wide:
 

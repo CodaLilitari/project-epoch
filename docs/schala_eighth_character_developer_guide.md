@@ -1744,6 +1744,51 @@ states where useful, and a written result.
 
 ### 2026-08-23
 
+- Proved that at least one private Project-Schala-era development patch was
+  transferred to Vehek and that the unreleased Project Schala line was later
+  demonstrated in a substantially developed gameplay state. The original
+  thread records Justin privately sending Vehek a development patch on
+  2008-12-30; Vehek posted debugger
+  observations 47 minutes later and diagnosed its lost expanded-ROM marker.
+  That discussion interleaves the generic `8thy`, variable-width-font, and
+  Schala graphics work, so it is not promoted to proof that Vehek received the
+  later rescue/Dream Devourer build. Nor does the evidence establish that
+  Justin's retained incomplete copy and IPS, reported in March 2016, was
+  byte-identical to that later demonstrated state. The project line did include
+  a Schala rescue route and Dream Devourer/event work, while still replacing
+  Magus rather than implementing a natural PC `$07`.
+  No public copy was found in the attachment archive, forum/Wayback surfaces,
+  creator repositories, inspected patch mirrors, or video comments. Recovery
+  outreach remains a separate user-authorized action. See
+  `docs/recovered_2008_eighth_character_prototype_audit_2026-08-23.md`.
+- Located a separate 2009 Schala-as-PC8 proof in the `8thy` thread. Justin
+  reported Schala's graphics working without palette or sprite-assembly
+  conflicts and selected her as the test identity, while explicitly leaving
+  animation repair open. The same-day follow-up says PC8 occupied Gaspar's
+  party-exchange area. Classified this as a graphics/assembly diagnostic and a
+  Gaspar party-exchange display-slot collision negative control, not
+  natural-PC `$07` completion; Project Epoch will not consume that occupied
+  display route as its architecture.
+- Recovered the public 40,344,158-byte Kajar attachment archive under ignored
+  local storage (SHA-256
+  `DC06EBD5CF5527B444F10B5E52C33D4499BDED6AEA1911402236E809A706A5B9`).
+  Its Schala Project folder contains only a screenshot, but its historical
+  eighth-character folders preserve Mauron's 533-byte component IPS, Vehek's
+  173-byte NPC-sprite adapter and 1,384-byte Temporal Flux event export, four
+  Justin3009 6-MiB composite IPS variants, and two nested 2008 emulator states.
+  None of those binary/media artifacts entered Git.
+- Added a payload-free, read-only historical IPS metadata auditor and nine
+  focused tests. It proves Mauron's complete 548-effective-byte patch and
+  Vehek's complete 80-effective-byte adapter are byte-identical subsets of
+  Justin's `almost Playable` composite. The later variants retain every
+  component address with small value revisions. It also turns the recovered
+  family into a negative-control ledger: two variants mutate the now-proved
+  shared `$0D400E` PC `$07` normal-Attack/Crono-critical byte, all four touch
+  protected low graphics/assembly/descriptor neighborhoods and bank `$40`, and
+  the six-letter/fresh variants touch the null PC-name entry `$07`. No ROM,
+  patched image, patch payload, hook, or allocation was emitted or approved.
+  Verification passed all nine focused tests and the complete 906-test
+  repository suite, with 22 environment-dependent tests skipped.
 - Completed a direct forensic review of Justin3009's 92-second Project Schala
   video and surviving author comments. The prototype successfully presents
   Schala through Magus's supported PC `$06` path in save select/Continue, party
