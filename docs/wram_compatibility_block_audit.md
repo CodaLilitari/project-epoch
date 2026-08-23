@@ -1133,6 +1133,14 @@ watchpoint matrix stay mandatory.
       command recovery, each with matched zero/canary preparation and exact
       replay.
 - [ ] Watchpoints for computed/block-move access across the full matrix.
+- [ ] Keep `$7E2CA3` explicitly visible in installed Project Epoch name-entry,
+      normal-menu, battle-name, save, and reload access reports. A historical
+      `8thy` debugger post observed an ID7 name read there only after that
+      prototype had relocated its names, so this is an adversarial watchpoint,
+      not vanilla ownership evidence. The existing full `$2CA0-$2CEF` canary
+      already covers the byte; the remaining gate is the installed-adapter
+      matrix. See
+      `historical_eighth_character_forum_mapping_audit_2026-08-23.md`.
 
 Until these pass, `$7E2CA0-$7E2CEF` remains a preferred candidate rather than
 an approved allocation.

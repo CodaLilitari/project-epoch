@@ -28,6 +28,11 @@ Project Epoch can use those findings as design and cross-check inputs. They do
 not relax any production gate, assign a ROM/WRAM/SRAM range, or prove that a
 vanilla table row belongs to PC `$07`.
 
+A 2026-08-23 follow-up now audits the historical forum's concrete address and
+behavior claims against the pinned canonical ROM and current Project Epoch
+maps. See
+[`historical_eighth_character_forum_mapping_audit_2026-08-23.md`](historical_eighth_character_forum_mapping_audit_2026-08-23.md).
+
 ## Evidence table
 
 | Source | Pinned observation | Evidence grade | Safe use here |

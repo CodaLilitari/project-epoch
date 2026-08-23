@@ -1744,6 +1744,25 @@ states where useful, and a written result.
 
 ### 2026-08-23
 
+- Completed an address-by-address audit of the historical `8thy` and Project
+  Schala forum mapping. The forum did preserve valuable roots and collision
+  leads for the natural `$7E2830` record formula, graphics/assembly/descriptor
+  tables, portraits, element icons, attacks, Techs, names, party transport, and
+  ExHiROM detection. Canonical re-verification also rejects the old
+  `$CC:0230` eighth-record label, `$CD:400E` standalone attack-byte label,
+  occupied low graphics rows, Epoch-name reuse, Gaspar/menu-scratch reuse, and
+  historical 6 MiB relocation addresses. Project Schala's own posts explicitly
+  bound its demonstrated line to Magus-slot replacement pending a complete
+  redo for coexistence. The reusable 2018 lesson is the separation of generic
+  PC `$07`, Tech, Schala-specific, and naming components, not the unpublished
+  payload. Confirmed historical leads include the eight-by-five save-region
+  descriptor table, the all-zero eighth stat-growth row (but no eighth HP/MP
+  rows), seven-character healing/menu bounds, corrected Magus assembly extent,
+  and animation-entrypoint-times-four rule. A modified-prototype ID7 name read
+  at `$7E2CA3` is retained only as an adversarial watchpoint inside the still
+  unapproved `$2CA0-$2CEF` relocation candidate. Four current metadata-only
+  canonical-ROM audits were rerun without mutation. See
+  `docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md`.
 - Proved that at least one private Project-Schala-era development patch was
   transferred to Vehek and that the unreleased Project Schala line was later
   demonstrated in a substantially developed gameplay state. The original
