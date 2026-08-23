@@ -1753,11 +1753,12 @@ states where useful, and a written result.
 - Added the fail-closed vanilla-NPC compatibility builder and metadata-only
   reference. The source reconstructs 79 tiles, 23 exact `$28`-byte records,
   four aligned 36-byte primary facing blocks, a 36-byte auxiliary block, and
-  a twelve-color palette. Thirteen focused tests pass, including canonical
+  a twelve-color palette. Fourteen focused tests pass, including canonical
   rebuild, full descriptor-family census, corrupted-ROM refusal, private-path
-  and reparse enforcement, transactional-stage failure cleanup, idempotence,
-  conflict refusal, and byte-exact no-write metadata mode. No ROM or patch is
-  emitted, and extracted packet bytes remain ignored under `private/`. See
+  and reparse enforcement, exact artifact-name allowlisting, transactional-
+  stage failure cleanup, idempotence, conflict refusal, and byte-exact no-write
+  metadata mode. No ROM or patch is emitted, and extracted packet bytes remain
+  ignored under `private/`. See
   `docs/schala_vanilla_npc_source_compatibility_v0.md`.
 - Added the fail-closed, metadata-only battle action-package topology census.
   It preserves the distinction between player-command IDs, internal PC

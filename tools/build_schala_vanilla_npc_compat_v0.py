@@ -174,6 +174,16 @@ PRIMARY_FILENAME = "schala_vanilla_npc_primary_animation.bin"
 AUX_FILENAME = "schala_vanilla_npc_aux_animation.bin"
 PALETTE_FILENAME = "schala_vanilla_npc_palette_12colors.bgr555"
 MANIFEST_FILENAME = "schala_vanilla_npc_compat_manifest_v0.json"
+EXPECTED_ARTIFACT_NAMES = frozenset(
+    {
+        GRAPHICS_FILENAME,
+        ASSEMBLY_FILENAME,
+        PRIMARY_FILENAME,
+        AUX_FILENAME,
+        PALETTE_FILENAME,
+        MANIFEST_FILENAME,
+    }
+)
 
 
 class CompatibilityBuildError(RuntimeError):
@@ -907,7 +917,27 @@ def _cleanup_staging_directory(staging_dir: pathlib.Path) -> None:
     staging_dir.rmdir()
 
 
+def _validate_bundle_artifact_names(bundle: Bundle) -> None:
+    actual = set(bundle.artifacts)
+    if actual != EXPECTED_ARTIFACT_NAMES:
+        raise CompatibilityBuildError(
+            "bundle artifact name set drifted from the exact allowlist"
+        )
+    for name in actual:
+        candidate = pathlib.Path(name)
+        if (
+            candidate.is_absolute()
+            or len(candidate.parts) != 1
+            or candidate.name != name
+            or name in {"", ".", ".."}
+        ):
+            raise CompatibilityBuildError(
+                f"bundle artifact name is not a single basename: {name!r}"
+            )
+
+
 def write_bundle(bundle: Bundle, output_dir: pathlib.Path) -> pathlib.Path:
+    _validate_bundle_artifact_names(bundle)
     output_dir = validate_private_output_dir(output_dir)
     if os.path.lexists(output_dir):
         _validate_complete_existing_bundle(bundle, output_dir)

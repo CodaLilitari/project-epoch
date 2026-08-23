@@ -43,6 +43,15 @@ class SchalaVanillaNpcCompatibilityTests(unittest.TestCase):
         if cls.rom_available:
             cls.rom = TOOL.DEFAULT_ROM.read_bytes()
             cls.bundle = TOOL.build_bundle(cls.rom)
+        synthetic_artifacts = {
+            name: f"synthetic:{name}".encode("ascii")
+            for name in TOOL.EXPECTED_ARTIFACT_NAMES
+        }
+        cls.synthetic_bundle = TOOL.Bundle(
+            artifacts=synthetic_artifacts,
+            report={},
+            report_bytes=synthetic_artifacts[TOOL.MANIFEST_FILENAME],
+        )
 
     def require_rom(self) -> None:
         if not self.rom_available:
@@ -242,16 +251,15 @@ class SchalaVanillaNpcCompatibilityTests(unittest.TestCase):
             TOOL.validate_private_output_dir(ROOT / "output" / "compat")
 
     def test_private_write_is_idempotent_and_refuses_conflicts(self) -> None:
-        self.require_rom()
         TOOL.PRIVATE_ROOT.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(
             dir=TOOL.PRIVATE_ROOT, prefix="compat-test-"
         ) as temporary:
             output_dir = pathlib.Path(temporary) / "bundle"
-            resolved = TOOL.write_bundle(self.bundle, output_dir)
+            resolved = TOOL.write_bundle(self.synthetic_bundle, output_dir)
             self.assertTrue(resolved.is_relative_to(TOOL.PRIVATE_ROOT))
-            TOOL.write_bundle(self.bundle, output_dir)
-            for filename, expected in self.bundle.artifacts.items():
+            TOOL.write_bundle(self.synthetic_bundle, output_dir)
+            for filename, expected in self.synthetic_bundle.artifacts.items():
                 self.assertEqual((output_dir / filename).read_bytes(), expected)
 
             conflict = output_dir / TOOL.GRAPHICS_FILENAME
@@ -260,7 +268,7 @@ class SchalaVanillaNpcCompatibilityTests(unittest.TestCase):
                 TOOL.CompatibilityBuildError,
                 "refusing to overwrite a different existing artifact",
             ):
-                TOOL.write_bundle(self.bundle, output_dir)
+                TOOL.write_bundle(self.synthetic_bundle, output_dir)
             self.assertEqual(conflict.read_bytes(), b"different")
 
     def test_descriptor_family_is_independently_pinned(self) -> None:
@@ -276,12 +284,11 @@ class SchalaVanillaNpcCompatibilityTests(unittest.TestCase):
             TOOL._read_descriptor_family(bytes(mutated))
 
     def test_existing_artifact_reparse_is_rejected_before_read(self) -> None:
-        self.require_rom()
         with tempfile.TemporaryDirectory(
             dir=TOOL.PRIVATE_ROOT, prefix="compat-reparse-test-"
         ) as temporary:
             output_dir = pathlib.Path(temporary) / "bundle"
-            TOOL.write_bundle(self.bundle, output_dir)
+            TOOL.write_bundle(self.synthetic_bundle, output_dir)
             guarded = output_dir / TOOL.GRAPHICS_FILENAME
             real_is_reparse = TOOL._is_reparse
 
@@ -294,10 +301,9 @@ class SchalaVanillaNpcCompatibilityTests(unittest.TestCase):
                 with self.assertRaisesRegex(
                     TOOL.CompatibilityBuildError, "reparse point"
                 ):
-                    TOOL.write_bundle(self.bundle, output_dir)
+                    TOOL.write_bundle(self.synthetic_bundle, output_dir)
 
     def test_staging_failure_leaves_no_partial_promoted_bundle(self) -> None:
-        self.require_rom()
         with tempfile.TemporaryDirectory(
             dir=TOOL.PRIVATE_ROOT, prefix="compat-stage-test-"
         ) as temporary:
@@ -317,12 +323,31 @@ class SchalaVanillaNpcCompatibilityTests(unittest.TestCase):
                 TOOL, "_write_exclusive_file", side_effect=failing_writer
             ):
                 with self.assertRaisesRegex(OSError, "injected staging failure"):
-                    TOOL.write_bundle(self.bundle, output_dir)
+                    TOOL.write_bundle(self.synthetic_bundle, output_dir)
             self.assertFalse(os.path.lexists(output_dir))
             self.assertEqual(
                 [path for path in parent.iterdir() if ".staging-" in path.name],
                 [],
             )
+
+    def test_artifact_name_traversal_is_rejected_before_any_write(self) -> None:
+        malicious = TOOL.Bundle(
+            artifacts={"../outside.bin": b"not-written"},
+            report={},
+            report_bytes=b"",
+        )
+        with tempfile.TemporaryDirectory(
+            dir=TOOL.PRIVATE_ROOT, prefix="compat-name-test-"
+        ) as temporary:
+            parent = pathlib.Path(temporary)
+            output_dir = parent / "bundle"
+            outside = parent / "outside.bin"
+            with self.assertRaisesRegex(
+                TOOL.CompatibilityBuildError, "exact allowlist"
+            ):
+                TOOL.write_bundle(malicious, output_dir)
+            self.assertFalse(os.path.lexists(output_dir))
+            self.assertFalse(os.path.lexists(outside))
 
     def test_metadata_only_cli_is_byte_exact_and_does_not_use_output(self) -> None:
         self.require_rom()

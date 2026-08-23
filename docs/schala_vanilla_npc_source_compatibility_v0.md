@@ -86,8 +86,10 @@ entrypoint is not yet established.
 7. writes a manifest-first sibling staging directory, verifies every staged
    byte, and promotes the complete directory atomically rather than exposing a
    partial final bundle;
-8. refuses incomplete, unexpected, or differing existing output; and
-9. supports a `--metadata-only` mode whose standard output is byte-identical
+8. accepts only the exact six artifact basenames before creating the staging
+   directory, rejecting absolute or traversing names from synthetic callers;
+9. refuses incomplete, unexpected, or differing existing output; and
+10. supports a `--metadata-only` mode whose standard output is byte-identical
    to the checked metadata report and writes nothing.
 
 The builder neither mutates a ROM nor emits a same-size ROM image, so it does
@@ -112,8 +114,8 @@ Checked source-control artifacts:
 
 | File | Bytes | SHA-256 |
 | --- | ---: | --- |
-| `tools/build_schala_vanilla_npc_compat_v0.py` | 35,134 | `ab7e2346ffb2a3e9f117a4b814a07d3e8847fc5615e5dddd118f21fa4f3aa69e` |
-| `tests/test_schala_vanilla_npc_compat_v0.py` | 13,982 | `4d61b692acfed15440a707364a8f1c867bbf4a2cc2a4ff65ee6baaeb1dd53065` |
+| `tools/build_schala_vanilla_npc_compat_v0.py` | 36,018 | `0ad950e0e069b1171a306da52479014ac896f1d3d4c7e773896f63db34b6c1a9` |
+| `tests/test_schala_vanilla_npc_compat_v0.py` | 15,097 | `612fffd23f848122dee4b5b0b18c74cbf0bdec4a4f0235a4b6beb7f9f03503cc` |
 | `references/schala_vanilla_npc_compat_v0.json` | 6,610 | `b5e7348b8bd4b186586d9397b24a3f50ae3a7e83d1605a079276db444ae484b9` |
 
 The reference JSON contains no graphics, assembly words, animation sequences,
