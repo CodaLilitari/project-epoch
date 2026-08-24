@@ -1128,6 +1128,8 @@ It is not proof that every engine consumer has been found.
 | New-game seed | `$C2:956E` copies `$280` bytes from `$CC:0000` to `$7E2600`; seven `$50` records occupy the first `$230` | `verified-static` | Replace the monolithic assumption with explicit vanilla plus Schala initialization. |
 | Attract/demo seed | `$FD:B2DE` loops over eight `$50` destinations, but each of the three HP/MP source blocks has only seven `$08`-byte rows | `verified-static` | Add a bounded PC `$07` branch; the eighth vanilla iteration reads beyond the selected block. |
 | Battle record commit | `$C1:B442` writes each slot's first `$50` bytes back to `$2600 + id*$50`; battle work records are slot-based at `$7E5E2D + slot*$80` | `verified-static` | Use the natural formula only after the compatibility block has moved; otherwise add an ID-aware commit adapter. |
+| Battle ID-to-slot map | Battle setup at `$FD:B284-$FD:B2A1` clears exactly seven bytes at `$7E:B1BE-$7E:B1C4`, then publishes three active logical IDs; direct ID `$07` reaches adjacent `$7E:B1C5` | exact code-span and instruction-site hashes `verified-static` | Add an explicit PC `$07` active-membership resolver; never widen the table into adjacent WRAM by inference. |
+| Reserve battle XP | `$C1:F9EB-$C1:FA60` scans joined/not-active IDs, targets `$7E2600 + id*$50`, awards `15/20` XP, and loops only while ID is below `$07` | canonical span/site hashes and `$00-$06` exclusive bound `verified-static` | Preserve vanilla results, then include `$07` only after valid v2 publication, joined bit `$01`, exactly one roster occurrence, non-active status, natural-record relocation, and growth/level-up adapters. See `docs/pc7_battle_progression_boundary_audit.md`. |
 | Tech progress | Save `$0430-$0436`; WRAM `$7E2830-$7E2836` | `verified-static` | Relocate/expand seven-byte array and trace save/load/learning. |
 | Learned masks | Save `$0437-$043D`; WRAM `$7E2837-$7E283D`; combo state follows at `$7E283E` | `verified-static` | Relocate/expand; an in-place eighth byte would collide with combo state. |
 | Post-battle combo learning | `$C1:F29C` builds `$283E +` a five-byte requirement-record index; `$C1:F5C1/$F5C7` update the selected byte | canonical table/code hashes and exact `$283E-$2856` maximum `verified-static`; no vanilla participant mask uses bit `$01` | Relocate this 25-byte learned-group span and create an expanded Schala namespace; a naive 26th row would collide with rock flag `$2857`, and other hidden/computed consumers still require review. |
@@ -1744,6 +1746,31 @@ states where useful, and a written result.
 
 ### 2026-08-23
 
+- Preserved and statically audited `maci0/ct-recomp` at exact commit
+  `76f9714747b35ff6835d2f7fbd877b1042482215`, plus a complete all-refs bundle
+  verified by `git fsck --full` and `git bundle verify`. The project is a real,
+  substantial hybrid: byte-exact SNES transliteration/reassembly, extensive
+  asset rebuilding, generated instruction-level C views, and a separate
+  2,626-function matching-C corpus. It is not a host-native port; the genuine
+  matching-C corpus is not integrated into the full build; the advertised
+  full-image C gate seeds output from the retail ROM and skips main-lane
+  mismatches; all 48 public Actions runs failed before creating a job; and the
+  unlicensed tracked tree includes the exact 4 MiB retail ROM prefix plus
+  extracted payload. No snapshot code or binary was executed and no payload,
+  correspondence, private path, or external label was imported. See
+  `docs/ct_recomp_legitimacy_audit_2026-08-23.md`.
+- Independently reconstructed the snapshot's one useful neutral address lead
+  and rejected its incorrect semantic label. Vanilla
+  `$C1:F9EB-$C1:FA60` awards reserve IDs `$00-$06` 75 percent XP but stops
+  before logical PC `$07`; battle setup also initializes only seven
+  character-to-slot entries at `$7E:B1BE-$7E:B1C4`, so a one-byte loop-bound
+  edit is unsafe. Added a metadata-only canonical-ROM auditor, pinned reference
+  contract, eight focused tests, fail-closed drift checks, safe adapter
+  requirements, and a runtime matrix while approving no hook, allocation, or
+  patch. All eight focused checks pass; the complete checkpoint runs 914 tests
+  with 892 passes and 22 explicit optional/private/runtime skips, and all 93
+  Python tools syntax-compile. See
+  `docs/pc7_battle_progression_boundary_audit.md`.
 - Completed a DuckDuckGo/GitHub/catalog/forum audit of Chrono Trigger
   prototypes, alleged developer leaks, modern recompilation/disassembly work,
   and DS/PS1-to-SNES backports. The November 1994 SNES sample, May 2001 PS1
@@ -1754,7 +1781,7 @@ states where useful, and a written result.
   Oki_Takana and Keizo Kokubo add authentic PC-98, IS-Character/IS-Sound/
   IS-Debugger, hexadecimal animation/event authoring, 24-to-32-Mbit growth,
   and internal 65816-assembler provenance without publishing game source.
-  The new `maci0/ct-recomp` claim was pinned privately at
+  The new `maci0/ct-recomp` claim was first acquired privately at
   `0b293606f562552c847e1170125b28dcf1c99963`; its object graph passed, but its
   lack of a project license, thousands of tracked extracted game-data paths,
   and a tracked `.sfc` whose first exact 4 MiB are canonical US Rev0 keep it

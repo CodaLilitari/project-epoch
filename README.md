@@ -2,6 +2,29 @@
 
 This workspace resumes the Chrono Trigger playable eighth-character investigation recovered from the ChatGPT conversation **Chrono Trigger 8th Character**.
 
+## Latest developer update — 2026-08-23
+
+The new `maci0/ct-recomp` repository is preserved locally and audited at exact
+commit `76f9714`. It contains substantial matching-C and asset-tool work, but
+its whole-game build is principally a SNES transliteration/reassembly, its
+“C-native” full-image gate is circular and fail-open for skipped main-lane
+functions, public CI has executed zero jobs, and the tracked tree includes the
+complete retail ROM plus extracted game data without a detected project
+license. It remains private quarantine, not an Epoch code donor.
+
+One neutral address lead survived independent reconstruction: vanilla awards
+75-percent post-battle XP to reserve logical IDs `$00-$06` and stops before
+Schala's `$07`; the associated active-membership map is also exactly seven
+bytes, so changing only the loop bound would be unsafe. A new canonical-ROM-
+pinned, read-only auditor and eight focused tests cover the seam. No snapshot
+code was executed or copied, and no runtime hook, ROM allocation, patch, save,
+or state was produced. The checkpoint passes all 914 discovered tests: 892
+pass and 22 skip under explicit optional/private/runtime dependency gates; all
+93 tools syntax-compile. See
+[`docs/ct_recomp_legitimacy_audit_2026-08-23.md`](docs/ct_recomp_legitimacy_audit_2026-08-23.md)
+and
+[`docs/pc7_battle_progression_boundary_audit.md`](docs/pc7_battle_progression_boundary_audit.md).
+
 ## Current direction
 
 The supported-slot Magus-over-Lucca diagnostic is complete enough to expose
@@ -80,10 +103,9 @@ remain exact.
   `20fcbd08b954311cb948bbcfc0a90eb3bbb6cc46ad00524c0add8ac0e9ecc0d7`
 - Quarantined provisional-runtime IPS SHA-256:
   `484bad4051f39d92015f57a927471d8287ca4e3652a1eef5a9475fabbf4b3cae`
-- 906 automated checks are discovered: 902 pass and four skip explicitly.
-  Two skips are privilege-dependent real-symlink cases with deterministic
-  mocked reparse coverage passing; two are historical live-artifact rebuild
-  checks whose original pinned `D:` toolchain is unavailable. Coverage
+- 914 automated checks are discovered: 892 pass and 22 skip explicitly under
+  this machine's optional/private/runtime dependency gates. The new
+  battle-progression boundary suite passes all eight focused tests. Coverage
   includes the recovered clone,
   deterministic BSV inputs, SRAM/WRAM canaries, save layouts, ExHiROM
   controls, canonical event and record audits, original content, portraits,
@@ -96,7 +118,7 @@ remain exact.
   compressed NPC/enemy sprite corpus, the bounded Schala NPC comparison, the
   metadata-only battle action-package topology census, and the source-only
   player-Tech package-bank adapter contract.
-- All 90 source-controlled Python tools parse successfully.
+- All 93 source-controlled Python tools parse successfully.
 - Independent repeated builds produce identical IPS, report, and manifest
   bytes.
 
@@ -141,7 +163,11 @@ which prerelease, fan-build, partial-backport, disassembly, and reconstruction
 artifacts actually exist; cites new first-person 2026 developer memos; and
 keeps the unlicensed, retail-ROM-and-extracted-data-bearing `maci0/ct-recomp`
 repository in private quarantine rather than treating it as official source,
-a code donor, or an allocation authority.
+a code donor, or an allocation authority. The pinned architecture and
+legitimacy review is in
+`docs/ct_recomp_legitimacy_audit_2026-08-23.md`; the independently recovered
+reserve-XP blocker is in
+`docs/pc7_battle_progression_boundary_audit.md`.
 The candidate per-slot SRAM sidecar and its deterministic canary evidence are
 tracked in `docs/sram_gap_sidecar_audit.md`; its host-side corruption,
 single-slot erase, and retained/reset New Game+ semantics are now explicit,

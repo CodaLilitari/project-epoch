@@ -137,11 +137,13 @@ Public identity checked on 2026-08-23:
 
 - repository: [`maci0/ct-recomp`](https://github.com/maci0/ct-recomp);
 - created: 2026-08-16;
-- pinned acquisition:
+- first local acquisition:
   [`0b293606f562552c847e1170125b28dcf1c99963`](https://github.com/maci0/ct-recomp/tree/0b293606f562552c847e1170125b28dcf1c99963);
+- pinned audited head:
+  [`76f9714747b35ff6835d2f7fbd877b1042482215`](https://github.com/maci0/ct-recomp/tree/76f9714747b35ff6835d2f7fbd877b1042482215);
 - upstream description: a byte-identical decompilation and asset rebuild;
 - project-level license: none detected;
-- tracked paths: 7,981 at the pinned commit;
+- tracked paths: 7,988 at the audited head;
 - Git integrity: `git fsck --full` passed locally;
 - tracked ROM image: `build/ct_lz_alloc_proof.sfc`, 4,201,851 bytes, full-file
   SHA-256 `1C36815DE1437840C49C1915E8C30A1F7AC3425BDC3FBE2875DABE01F1ED4485`;
@@ -150,9 +152,11 @@ Public identity checked on 2026-08-23:
 
 Classification: `quarantined`.
 
-The repository's existence and its own claims are verified. Its provenance,
-semantic correctness, independent authorship, and byte-identical build claim
-have not been independently reproduced. The tracked `.sfc` is not merely a
+The repository's existence and its own claims are verified. The detailed
+architecture, build-gate, matching-C, CI, public-corroboration, preservation,
+and safe-lead analysis is in
+[`docs/ct_recomp_legitimacy_audit_2026-08-23.md`](ct_recomp_legitimacy_audit_2026-08-23.md).
+No snapshot code, binary, test, emulator, or build was executed. The tracked `.sfc` is not merely a
 misleading extension: a bounded prefix hash proves that bytes `0-$3FFFFF`
 match canonical US Rev0 SHA-256
 `06D1C2B06B716052C5596AAA0C2E5632A027FEE1A9A28439E509F813C30829A9`
@@ -171,6 +175,12 @@ Rules:
    ignored quarantine and report neutral pass/fail metadata and hashes.
 5. Re-derive every potentially useful interface fact independently from the
    pinned clean US Rev0 ROM before it can affect implementation.
+
+That process produced one new independently verified blocker without importing
+the snapshot's incorrect semantic label: vanilla reserve XP scans logical IDs
+`$00-$06` only and stops before `$07`; its active-membership map is also exactly
+seven bytes. The canonical-ROM-pinned, read-only proof and adapter gates are in
+[`docs/pc7_battle_progression_boundary_audit.md`](pc7_battle_progression_boundary_audit.md).
 
 ### `ThisIsAkill/ChronoRET`
 

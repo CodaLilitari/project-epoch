@@ -1,0 +1,155 @@
+{
+  "schema": "project-epoch-pc7-battle-progression-boundaries-v1",
+  "version": 1,
+  "evidence_level": "verified-static",
+  "scope": {
+    "logical_pc_id": "07",
+    "operation": "post-battle XP and battle character-to-slot boundary audit",
+    "rom_access": "read-only",
+    "output_policy": "bounded code-span and instruction-site hashes only",
+    "rom_save_state_mutation": false,
+    "patch_or_rom_emission": false
+  },
+  "canonical_rom": {
+    "identity": "Chrono Trigger US Rev0 headerless",
+    "size": 4194304,
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "mapping": "C0-FF HiROM address masked to file offset 000000-3FFFFF"
+  },
+  "spans": [
+    {
+      "name": "active_party_xp_path",
+      "snes_start": "C1F93E",
+      "snes_end_exclusive": "C1F9EB",
+      "size": 173,
+      "expected_bytes_sha256": "8fffca20160a25e4313ea3f8ceab3cf2331b67782bae53ff04bbd6b31c52e8c4",
+      "classification": "three-slot active-party XP distribution before reserve scan"
+    },
+    {
+      "name": "reserve_xp_path",
+      "snes_start": "C1F9EB",
+      "snes_end_exclusive": "C1FA61",
+      "size": 118,
+      "expected_bytes_sha256": "c8a7be320e925d59a7b33e0da6992ce6ca9cd0f8568e7943292f2e564f8656a2",
+      "classification": "joined-and-not-active logical-ID scan with exclusive upper bound 07"
+    },
+    {
+      "name": "battle_id_to_slot_rebuild",
+      "snes_start": "FDB284",
+      "snes_end_exclusive": "FDB2A2",
+      "size": 30,
+      "expected_bytes_sha256": "12e4b050874981b04ca2c745a35eefafc5cc38c7baafa00d9cc343b42ced4e71",
+      "classification": "seven-byte logical-character-ID-to-active-battle-slot map rebuild"
+    }
+  ],
+  "instruction_sites": [
+    {
+      "name": "reserve_scan_call",
+      "snes_start": "C1F9E6",
+      "size": 3,
+      "expected_bytes_sha256": "d1e65188e74e41fe3a4bd58c3a7ae79fcb234dba0bc59fe02f47d48f271872ba",
+      "claim": "active-party XP path calls the reserve XP routine"
+    },
+    {
+      "name": "joined_mask_read",
+      "snes_start": "C1F9F8",
+      "size": 3,
+      "expected_bytes_sha256": "097e134e3592c50d8577d489023a2af7bdb64faea7e46bd2f68967b0cc3dab6f",
+      "claim": "reserve scan reads joined mask 7E29AF"
+    },
+    {
+      "name": "active_map_read",
+      "snes_start": "C1FA05",
+      "size": 3,
+      "expected_bytes_sha256": "d5a09d5d68bfb7eb4a878fe4b598a0fae12e3a2ec64588f64739044934596181",
+      "claim": "reserve scan excludes IDs present in map 7EB1BE plus logical ID"
+    },
+    {
+      "name": "record_stride_and_base",
+      "snes_start": "C1FA0C",
+      "size": 19,
+      "expected_bytes_sha256": "f579410b72d18e55d0be5cb757be5e7f96678853a57243344f2a4ae503bc684b",
+      "claim": "record pointer is formed as 7E2600 plus logical ID times 0050"
+    },
+    {
+      "name": "reserve_fraction_numerator",
+      "snes_start": "C1FA28",
+      "size": 2,
+      "expected_bytes_sha256": "6ff6edcb5caeba8ce468c7ac65979f1f387663d8aaaa81beea1de4f436346403",
+      "claim": "reserve XP numerator is 0F"
+    },
+    {
+      "name": "reserve_fraction_denominator",
+      "snes_start": "C1FA34",
+      "size": 3,
+      "expected_bytes_sha256": "235f008d88ceaed1f3b3a4e0d96f808b7802924c24c762bd623f3698ebeacdab",
+      "claim": "reserve XP denominator is 0014, yielding 15 divided by 20 or 75 percent"
+    },
+    {
+      "name": "reserve_logical_id_bound",
+      "snes_start": "C1FA5A",
+      "size": 6,
+      "expected_bytes_sha256": "b84756b3a1d6d48256020942cc184c2b7e1c1c8adbde4e6f2a964cf3f792bdec",
+      "claim": "loop continues only while logical ID is below 07"
+    },
+    {
+      "name": "battle_map_clear_bound",
+      "snes_start": "FDB284",
+      "size": 11,
+      "expected_bytes_sha256": "8688df737dcdd166f32104ac0322d4ec2a51154f5b1925555b3e0b750a667d47",
+      "claim": "battle character-to-slot map clears exactly seven bytes at 7EB1BE-7EB1C4"
+    },
+    {
+      "name": "battle_map_active_publish",
+      "snes_start": "FDB291",
+      "size": 17,
+      "expected_bytes_sha256": "4324a2d2efada70d430e1b81208e657cb99ff7f6f89fc3a6dcdb67068337c293",
+      "claim": "three active battle slots publish their logical IDs into the seven-byte map"
+    }
+  ],
+  "static_sources": [
+    {
+      "repository": "https://github.com/dscotton/ct_disassembly",
+      "commit": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+      "path": "references/ct_disassembly/bank_C1.asm",
+      "size": 2768817,
+      "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa",
+      "lines": [
+        "31776-31904"
+      ],
+      "claim": "active and reserve XP distribution, 75-percent calculation, record selection, and exclusive logical-ID bound"
+    },
+    {
+      "repository": "https://github.com/dscotton/ct_disassembly",
+      "commit": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+      "path": "references/ct_disassembly/bank_FD.asm",
+      "size": 691286,
+      "sha256": "0f8a0d59e97de7d60945fdfef1b614217e3d673cca1e14f543234d789a87779e",
+      "lines": [
+        "1388-1452"
+      ],
+      "claim": "battle character-to-slot map size, clear loop, and active-slot publication"
+    }
+  ],
+  "verified_static_conclusions": [
+    "Vanilla active-party XP is a three-battle-slot path and is followed by a separate reserve scan.",
+    "The reserve scan reads the joined mask, excludes active logical IDs, targets 7E2600 plus logical ID times 0050, awards 15/20 or 75 percent XP, and invokes normal XP and level-up processing.",
+    "The reserve loop has exclusive upper bound 07 and therefore processes logical IDs 00-06 only.",
+    "The battle character-to-slot map at 7EB1BE contains and initializes exactly seven bytes; direct logical ID 07 reads adjacent 7EB1C5 rather than an initialized map entry.",
+    "A reserve logical PC 07 receives no vanilla post-battle XP even if its joined bit is set and its runtime record is otherwise valid."
+  ],
+  "adapter_requirements": [
+    "Preserve exact vanilla results for logical IDs 00-06.",
+    "Consider logical ID 07 only after a valid v2 load publication agrees with joined bit 01 and exactly one serialized roster occurrence.",
+    "Do not award reserve XP when logical ID 07 is active, safe-empty, malformed, duplicated, unbound, or absent from the roster.",
+    "Do not widen the seven-byte 7EB1BE map into adjacent WRAM; provide an explicit PC07 active-membership adapter.",
+    "Use the natural 7E2830 record only after the complete vanilla compatibility block has been relocated and all PC07 growth and level-up readers have adapters."
+  ],
+  "limitations": [
+    "This audit is static and does not execute a battle or victory sequence.",
+    "It does not approve a hook, expanded allocation, WRAM ownership claim, runtime record relocation, or production patch.",
+    "It does not prove PC07 battle loading, growth rows, HP or MP recomputation, stat growth, Tech Points, post-battle commit, save, load, New Game+, or sidecar publication.",
+    "The instruction-site claims are independently derived from the pinned disassembly and canonical ROM; no unlicensed snapshot label is accepted as semantic evidence."
+  ]
+}
