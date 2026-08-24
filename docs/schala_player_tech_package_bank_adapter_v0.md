@@ -294,8 +294,10 @@ This is host evidence, not 65C816 implementation or emulator evidence.
 ## Next safe step
 
 Do not assemble or hook the adapter yet. First complete a lossless command
-decoder/census for Project Epoch animation streams and freeze the `$1E`
-decision. The host model now reproduces the complete vanilla-shaped
+grammar/canonical census for Project Epoch animation streams, reusing rather
+than repeating the already decoded native `$1E/$1F` handler semantics. Then
+freeze and prove the expanded-package `$1E` exclusion-or-adaptation policy.
+The host model now reproduces the complete vanilla-shaped
 descriptor-installer state under both `$A0B3` branches and all 16 owner bits;
 the next source-only extension is one symbolic synthetic high package that
 uses only canonical, already-valid auxiliary selectors and proves its command

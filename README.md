@@ -90,9 +90,13 @@ high-ID `$80-$90` commands that preserve every vanilla action.
 Both Schala supported-slot field diagnostics are now complete at their stated
 ceilings: the earlier partial original packet and the newer canonical-NPC
 provider with explicit high-entrypoint fallback. The next animation/Tech
-architecture gate is the lossless battle command-stream grammar/census and an
-explicit decoded command-`$1E` policy, followed by one symbolic high-package
-source—not another supported-slot sprite replacement.
+architecture gate is the general lossless battle command-stream
+grammar/canonical census, reusing the already completed native `$1E/$1F`
+handler analysis. That is followed by a proved expanded-package `$1E`
+exclusion-or-adaptation policy and one symbolic high-package source—not
+another handler disassembly or supported-slot sprite replacement. The stable
+done/open boundary is tracked in the developer guide's
+`Current battle command/package no-rework ledger`.
 
 The recovered v0 diagnostic is preserved under:
 

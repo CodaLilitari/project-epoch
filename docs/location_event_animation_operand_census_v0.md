@@ -321,7 +321,8 @@ explicitly defer a closed inter-object control-flow and loader-lifetime model.
 The separate metadata-only battle action-package topology census and
 source-only package-bank adapter have since been completed. Their next gate is
 a lossless battle command grammar and canonical stream census with an explicit
-decoded-command `$1E` decision; the current fixed-`$CE` subscript reader must
-not be generalized from a raw byte search. No native Schala frame should be
-assigned from a fixed numeric operand until its consumer path and runtime
-context are independently proved.
+expanded-package `$1E` exclusion-or-adaptation decision. The native `$1E/$1F`
+handler semantics are already decoded; the current fixed-`$CE` subscript
+reader must not be generalized from a raw byte search. No native Schala frame
+should be assigned from a fixed numeric operand until its consumer path and
+runtime context are independently proved.

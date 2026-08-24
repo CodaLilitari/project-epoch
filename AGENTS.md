@@ -124,8 +124,11 @@ These are separate namespaces. Never conflate them.
   exact word-write footprints, and bank-qualified direct entries. It approves
   no hook or allocation. Command `$1E` still forces nested scripts into bank
   `$CE`, and config bytes `+3/+4/+5` retain independent fixed-bank auxiliary
-  readers. Complete the command-stream decision and auxiliary adapters before
-  claiming original expanded Tech packages.
+  readers. The native `$1E/$1F` handler semantics are already decoded; do not
+  repeat that work. Complete the general lossless command grammar/canonical
+  stream census, then prove the expanded-package `$1E`
+  exclusion-or-adaptation policy and auxiliary adapters before claiming
+  original expanded Tech packages.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.
@@ -270,9 +273,11 @@ entry topology are also mapped, but its inter-object control-flow and loader-
 lifetime model remains unresolved. The battle action-package census and
 source-only bank-qualified direct-entry adapter are now complete at the host
 model level while every high package binding remains absent. The next
-architecture gate is a lossless battle command grammar/stream census and an
-explicit decoded command-`$1E` decision. Only then may one symbolic
-high-package source be defined using proved auxiliary selectors. The stronger
+architecture gate is a lossless battle command grammar/canonical stream
+census that reuses the already decoded native `$1E/$1F` handler semantics,
+followed by a proved expanded-package `$1E` exclusion-or-adaptation policy.
+Only then may one symbolic high-package source be defined using proved
+auxiliary selectors. The stronger
 location-event contextual model and complete source-role/facing inventory
 remain explicit later gates; no original 65C816 helper is yet authorized.
 
