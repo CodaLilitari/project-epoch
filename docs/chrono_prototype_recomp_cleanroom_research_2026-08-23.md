@@ -35,12 +35,15 @@ The new full-reconstruction claim is
 [`maci0/ct-recomp`](https://github.com/maci0/ct-recomp), created August 16,
 2026. A private ignored checkout was pinned at
 `0b293606f562552c847e1170125b28dcf1c99963`. Its Git object graph passed
-`git fsck --full`; the checkout was clean; it contained 7,981 tracked paths
-and no tracked `rom/` path or SNES ROM-image extension. It nevertheless tracks
-extensive extracted dialogue, graphics-related, palette, table, binary, and
-audio material. No project-level license was detected. It is therefore a
-quarantined community reconstruction, **not** recovered Square source, a
-licensed code donor, or a production mapping authority.
+`git fsck --full`; the checkout was clean; and it contained 7,981 tracked
+paths. A corrected complete extension audit proves that it tracks
+`build/ct_lz_alloc_proof.sfc`, a 4,201,851-byte file whose first exact
+4,194,304 bytes are byte-identical with canonical US Rev0, followed by 7,547
+additional bytes. It also tracks extensive extracted dialogue,
+graphics-related, palette, table, binary, and audio material. No project-level
+license was detected. It is therefore a quarantined community reconstruction,
+**not** recovered Square source, a licensed code donor, or a production
+mapping authority.
 
 The highest-value new low-contamination evidence is instead first-person
 material deliberately published in 2026 by original Chrono Trigger staff.
@@ -140,16 +143,22 @@ Public identity checked on 2026-08-23:
 - project-level license: none detected;
 - tracked paths: 7,981 at the pinned commit;
 - Git integrity: `git fsck --full` passed locally;
-- tracked ROM image: none observed; and
+- tracked ROM image: `build/ct_lz_alloc_proof.sfc`, 4,201,851 bytes, full-file
+  SHA-256 `1C36815DE1437840C49C1915E8C30A1F7AC3425BDC3FBE2875DABE01F1ED4485`;
+  and
 - tracked extracted game content: extensive.
 
 Classification: `quarantined`.
 
 The repository's existence and its own claims are verified. Its provenance,
 semantic correctness, independent authorship, and byte-identical build claim
-have not been independently reproduced. The absence of a ROM image does not
-make tracked extracted dialogue, audio, graphics, palettes, and binary tables
-clean or licensed.
+have not been independently reproduced. The tracked `.sfc` is not merely a
+misleading extension: a bounded prefix hash proves that bytes `0-$3FFFFF`
+match canonical US Rev0 SHA-256
+`06D1C2B06B716052C5596AAA0C2E5632A027FEE1A9A28439E509F813C30829A9`
+exactly, with 7,547 trailing bytes. The tree therefore directly distributes
+the complete retail ROM in addition to extracted dialogue, audio, graphics,
+palettes, and binary tables.
 
 Rules:
 
@@ -348,9 +357,10 @@ empty.
    compression/event parsers using the user's private clean ROM.
 4. Add DocDamage's MIT disassembly as a second search index and record every
    disagreement with the pinned CC0 disassembly.
-5. Keep `ct-recomp` quarantined. A later integrity/build audit may verify only
-   its own public claim and return neutral hashes/pass-fail metadata; it cannot
-   authorize source or data reuse.
+5. Keep `ct-recomp` quarantined. The tracked canonical-ROM prefix is an
+   independently proved hard exclusion from all public Epoch inputs. A bounded
+   integrity/build audit may verify only the repository's own claim and return
+   neutral hashes/pass-fail metadata; it cannot authorize source or data reuse.
 6. Continue the existing runtime matrix for natural `$7E2830-$7E287F` PC `$07`
    and candidate compatibility relocation `$7E2CA0-$7E2CEF`; no prototype or
    reconstruction changes that evidence gate.

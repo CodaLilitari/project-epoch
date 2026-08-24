@@ -1756,9 +1756,10 @@ states where useful, and a written result.
   and internal 65816-assembler provenance without publishing game source.
   The new `maci0/ct-recomp` claim was pinned privately at
   `0b293606f562552c847e1170125b28dcf1c99963`; its object graph passed, but its
-  lack of a project license and thousands of tracked extracted game-data paths
-  keep it quarantined and forbidden as an implementation input. No payload or
-  local path entered Git. The audit also adds `$3FB310-$3FB4F3` as an
+  lack of a project license, thousands of tracked extracted game-data paths,
+  and a tracked `.sfc` whose first exact 4 MiB are canonical US Rev0 keep it
+  quarantined and forbidden as an implementation input. No payload or local
+  path entered Git. The audit also adds `$3FB310-$3FB4F3` as an
   unverified item-classification trace lead and records a concrete MSU-1
   fan-patch collision showing why another working patch cannot establish free
   space. See
