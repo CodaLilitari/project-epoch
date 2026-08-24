@@ -36,6 +36,12 @@ of base, Tech, character-specific, and name work. It must not reuse the old
 addresses as allocations, install the historical patches, or inherit their
 collision-based substitutions.
 
+The publication-facing consolidation of the corrected ownership, collision,
+evidence, and adapter status is
+[`project_epoch_corrected_character_data_map_v1.md`](project_epoch_corrected_character_data_map_v1.md).
+This historical ledger remains the claim-level source for the forum links and
+verdicts; the corrected map is the canonical current implementation view.
+
 ## Verification method
 
 Forum posts were treated as first-person historical claims, not byte

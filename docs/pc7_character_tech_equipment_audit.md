@@ -162,9 +162,9 @@ assignment is in `tools/schala_command_layout.py`.
 | names `$CC:15CF` | 116 × 11, IDs 1-`$74` | other fixed data | `$C1:0B69`, `$C2:5AA8`, `$C2:BDD9` |
 | target modes `$CC:1ACB` | IDs 0-`$74`, 2 bytes | item/enemy targets at `$1BB5` | `$C1:C253/$C259`, `$C1:C9BC/$C9C9`, `$C1:CA9E/$CAAB`, `$C1:CD49/$CD56`, `$C2:B457` |
 | per-character command records `$CC:1BEB` | 124 × 11, IDs 0-`$7B` | tech properties at `$213F` | learning, MP helpers, action dispatch, combo learning |
-| properties `$CC:214B` | 72 × 12, IDs 0-`$47` | participant lists at `$249F` | `Battle_LoadTechProps` `$C1:D5EF` |
+| properties `$CC:213F` | 72 × 12, IDs 0-`$47`; named player-Tech ID 1 begins `$CC:214B` | participant lists at `$249F` | `Battle_LoadTechProps` `$C1:D5EF` |
 | participant lists `$CC:249F` | variable three-byte records | record 7 is first dual | add explicit `[07,FF,FF]`; do not infer record 7 |
-| MP costs `$CC:253B` | IDs 1-`$47` | basic-action map at `$2583` | menu and battle MP readers |
+| MP costs `$CC:253B` | 72 bytes for IDs 0-`$47`; `$253B` is the ID-0 alignment/null entry and named IDs 1-`$47` occupy `$253C-$2582` | basic-action map at `$2583` | menu and battle MP readers |
 
 ## Multi-tech builder constraints
 

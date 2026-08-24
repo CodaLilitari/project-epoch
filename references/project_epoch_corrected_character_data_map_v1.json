@@ -1,0 +1,952 @@
+{
+  "schema": "project-epoch-corrected-character-data-map-v1",
+  "version": 1,
+  "status": "canonical-current",
+  "as_of": "2026-08-24",
+  "scope": {
+    "target": "Chrono Trigger US Rev0 headerless, logical playable PC 07",
+    "coverage": "Current character, party, save, runtime-record, progression, naming, graphics, menu, battle, Tech, item, equipment, and recruitment boundaries relevant to Project Epoch",
+    "completeness_claim": "Bounded current consolidation of the Project Epoch corrections represented by this versioned ledger, not a complete ROM, RAM, event, or engine map",
+    "research_change": "Documentation consolidation only; no new ROM, emulator, trace, forum, or Internet research",
+    "payload_policy": "Metadata, addresses, hashes, conclusions, and relative evidence references only; no ROM, save, state, trace, or extracted game bytes"
+  },
+  "canonical_rom": {
+    "identity": "Chrono Trigger US Rev0 headerless",
+    "size": 4194304,
+    "sha1": "de5822f4f2f7a55acb8926d4c0eaa63d5d989312",
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "mapping": "C0-FF HiROM address masked to file offset 000000-3FFFFF"
+  },
+  "expanded_scaffold": {
+    "identity": "Project Epoch inert 8 MiB ExHiROM structural scaffold",
+    "size": 8388608,
+    "status": "structural exception only; no production allocation or payload"
+  },
+  "evidence_levels": [
+    "verified-static",
+    "verified-runtime",
+    "documented",
+    "hypothesis"
+  ],
+  "historical_accuracy_values": [
+    "confirmed",
+    "partial",
+    "contradicted",
+    "unresolved"
+  ],
+  "project_epoch_applicability_values": [
+    "reusable-boundary",
+    "architectural-lead",
+    "patch-specific",
+    "replacement-only",
+    "negative-control",
+    "rejected",
+    "unresolved"
+  ],
+  "map_status_values": [
+    "verified-boundary",
+    "adapter-required",
+    "proposal-unbound",
+    "rejected-allocation",
+    "negative-control",
+    "unresolved"
+  ],
+  "address_spaces": [
+    "rom-file-headerless",
+    "snes-rom-bus",
+    "expanded-exhirom-file",
+    "wram",
+    "sram-bus",
+    "sram-slot-relative"
+  ],
+  "sources": [
+    {
+      "id": "developer-guide",
+      "kind": "project-document",
+      "path": "docs/schala_eighth_character_developer_guide.md"
+    },
+    {
+      "id": "forum-ledger",
+      "kind": "project-document",
+      "path": "docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md"
+    },
+    {
+      "id": "community-recon",
+      "kind": "project-document",
+      "path": "docs/community_modding_reconnaissance_2026-07-27.md"
+    },
+    {
+      "id": "pc-record-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/pc_init_record_schema_audit.md"
+    },
+    {
+      "id": "sram-audit",
+      "kind": "canonical-rom-and-runtime-audit",
+      "path": "docs/sram_gap_sidecar_audit.md"
+    },
+    {
+      "id": "wram-audit",
+      "kind": "canonical-rom-and-runtime-audit",
+      "path": "docs/wram_compatibility_block_audit.md"
+    },
+    {
+      "id": "graphics-menu-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/pc7_graphics_menu_hook_audit.md"
+    },
+    {
+      "id": "character-tech-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/pc7_character_tech_equipment_audit.md"
+    },
+    {
+      "id": "attack-audit",
+      "kind": "canonical-rom-and-runtime-audit",
+      "path": "docs/pc7_attack_adapter_audit.md"
+    },
+    {
+      "id": "battle-progression-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/pc7_battle_progression_boundary_audit.md"
+    },
+    {
+      "id": "recruitment-audit",
+      "kind": "canonical-rom-and-runtime-audit",
+      "path": "docs/schala_recruitment_engine_binding_audit.md"
+    },
+    {
+      "id": "animation-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/schala_animation_semantic_contract_v0.md"
+    },
+    {
+      "id": "item-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/location_event_item_reference_audit.md"
+    },
+    {
+      "id": "sidecar-v2",
+      "kind": "deterministic-source-contract",
+      "path": "docs/schala_sidecar_v2_contract.md"
+    },
+    {
+      "id": "pc-sprite-envelope",
+      "kind": "canonical-rom-audit",
+      "path": "docs/pc_sprite_packet_envelope_audit.md"
+    },
+    {
+      "id": "field-palette-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/field_sprite_palette_loader_audit.md"
+    },
+    {
+      "id": "tech-package-adapter",
+      "kind": "canonical-rom-audit-and-source-contract",
+      "path": "docs/schala_player_tech_package_bank_adapter_v0.md"
+    },
+    {
+      "id": "focus-boundary-audit",
+      "kind": "canonical-rom-audit",
+      "path": "docs/schala_focus_pulse_adapter_architecture.md"
+    }
+  ],
+  "detail_table_sources": {
+    "pc_record_schema": "pc-record-audit",
+    "pc_graphics_windows": "pc-sprite-envelope",
+    "pc_assembly_windows": "pc-sprite-envelope",
+    "pc_animation_windows": "pc-sprite-envelope"
+  },
+  "pc_record_schema": [
+    {"start": "00", "end_exclusive": "01", "size": 1, "meaning": "logical and portrait identity", "evidence": "verified-static"},
+    {"start": "01", "end_exclusive": "02", "size": 1, "meaning": "innate-element selector plus unmapped low flags", "evidence": "verified-static", "qualification": "high nibble mapped; low nibble unresolved"},
+    {"start": "02", "end_exclusive": "03", "size": 1, "meaning": "PC progress flags; bits 0 and 4 mapped", "evidence": "verified-static", "qualification": "remaining bits unresolved"},
+    {"start": "03", "end_exclusive": "05", "size": 2, "meaning": "current HP, little-endian u16", "evidence": "verified-static"},
+    {"start": "05", "end_exclusive": "07", "size": 2, "meaning": "base max HP, little-endian u16", "evidence": "verified-static"},
+    {"start": "07", "end_exclusive": "09", "size": 2, "meaning": "current MP, little-endian u16", "evidence": "verified-static"},
+    {"start": "09", "end_exclusive": "0B", "size": 2, "meaning": "base max MP, little-endian u16", "evidence": "verified-static"},
+    {"start": "0B", "end_exclusive": "0C", "size": 1, "meaning": "base Power", "evidence": "verified-static"},
+    {"start": "0C", "end_exclusive": "0D", "size": 1, "meaning": "base Stamina", "evidence": "verified-static"},
+    {"start": "0D", "end_exclusive": "0E", "size": 1, "meaning": "base Speed", "evidence": "verified-static"},
+    {"start": "0E", "end_exclusive": "0F", "size": 1, "meaning": "base Magic", "evidence": "verified-static"},
+    {"start": "0F", "end_exclusive": "10", "size": 1, "meaning": "base Hit", "evidence": "verified-static"},
+    {"start": "10", "end_exclusive": "11", "size": 1, "meaning": "base Evade", "evidence": "verified-static"},
+    {"start": "11", "end_exclusive": "12", "size": 1, "meaning": "base Magic Defense", "evidence": "verified-static"},
+    {"start": "12", "end_exclusive": "13", "size": 1, "meaning": "level, capped at 99", "evidence": "verified-static"},
+    {"start": "13", "end_exclusive": "16", "size": 3, "meaning": "cumulative EXP, little-endian u24", "evidence": "verified-static"},
+    {"start": "16", "end_exclusive": "19", "size": 3, "meaning": "cumulative TP, little-endian u24", "evidence": "verified-static"},
+    {"start": "19", "end_exclusive": "1A", "size": 1, "meaning": "combatant category mask", "evidence": "verified-static", "qualification": "partially mapped"},
+    {"start": "1A", "end_exclusive": "1B", "size": 1, "meaning": "secondary combatant effect or category flags", "evidence": "verified-static", "qualification": "partially mapped"},
+    {"start": "1B", "end_exclusive": "1C", "size": 1, "meaning": "enemy-side attack variant or context", "evidence": "verified-static", "qualification": "partially mapped; PC templates seed zero"},
+    {"start": "1C", "end_exclusive": "1D", "size": 1, "meaning": "unmapped", "evidence": "hypothesis", "qualification": "owner preserved; no semantic assignment"},
+    {"start": "1D", "end_exclusive": "22", "size": 5, "meaning": "current status groups 0-4", "evidence": "verified-static", "qualification": "partially mapped"},
+    {"start": "22", "end_exclusive": "27", "size": 5, "meaning": "permanent or equipment status and immunity groups 0-4", "evidence": "verified-static", "qualification": "partially mapped"},
+    {"start": "27", "end_exclusive": "28", "size": 1, "meaning": "helmet item ID", "evidence": "verified-static"},
+    {"start": "28", "end_exclusive": "29", "size": 1, "meaning": "armor item ID", "evidence": "verified-static"},
+    {"start": "29", "end_exclusive": "2A", "size": 1, "meaning": "weapon item ID", "evidence": "verified-static"},
+    {"start": "2A", "end_exclusive": "2B", "size": 1, "meaning": "accessory item ID", "evidence": "verified-static"},
+    {"start": "2B", "end_exclusive": "2D", "size": 2, "meaning": "remaining EXP to next level, little-endian u16", "evidence": "verified-static"},
+    {"start": "2D", "end_exclusive": "2F", "size": 2, "meaning": "remaining TP to next single Tech, little-endian u16", "evidence": "verified-static"},
+    {"start": "2F", "end_exclusive": "36", "size": 7, "meaning": "level-1 stat baselines in growth order: Power, Stamina, unused Speed, Hit, Evade, Magic, Magic Defense", "evidence": "verified-static"},
+    {"start": "36", "end_exclusive": "3D", "size": 7, "meaning": "equipment-adjusted live stats in record order: Power, Stamina, Speed, Magic, Hit, Evade, Magic Defense", "evidence": "verified-static"},
+    {"start": "3D", "end_exclusive": "3E", "size": 1, "meaning": "derived Attack", "evidence": "verified-static"},
+    {"start": "3E", "end_exclusive": "3F", "size": 1, "meaning": "derived Defense", "evidence": "verified-static"},
+    {"start": "3F", "end_exclusive": "43", "size": 4, "meaning": "context-derived tail; menu adjusted max HP view and battle element modifiers", "evidence": "verified-static", "qualification": "meaning depends on consumer context"},
+    {"start": "43", "end_exclusive": "48", "size": 5, "meaning": "battle weapon descriptor remainder", "evidence": "verified-static"},
+    {"start": "48", "end_exclusive": "4B", "size": 3, "meaning": "battle armor descriptor", "evidence": "verified-static"},
+    {"start": "4B", "end_exclusive": "4F", "size": 4, "meaning": "battle accessory descriptor", "evidence": "verified-static"},
+    {"start": "4F", "end_exclusive": "50", "size": 1, "meaning": "unmapped tail byte; initial FF sentinel is not proof of free space", "evidence": "hypothesis", "qualification": "owner preserved; no durable source meaning proved"}
+  ],
+  "pc_graphics_windows": [
+    {"pc": "Crono", "space": "snes-rom-bus", "start": "D272C0", "end_exclusive": "D30000", "size": 36160, "tiles": 1130, "sha256": "76042f388cf45e7cf55574b9fa92fa97d32c7fe8ff4028c01d70019ed51cd56b"},
+    {"pc": "Marle", "space": "snes-rom-bus", "start": "D40000", "end_exclusive": "D47C40", "size": 31808, "tiles": 994, "sha256": "a9c78414e6cf797dba1aecef3657a9dd046aaacecd72c92ddccc210394928251"},
+    {"pc": "Lucca", "space": "snes-rom-bus", "start": "D36B40", "end_exclusive": "D40000", "size": 38080, "tiles": 1190, "sha256": "057719bb3ecfdd79b7bca4f3e6e3f49ba5d1fb86f3ca83aa4a5f4832fbd77d92"},
+    {"pc": "Robo", "space": "snes-rom-bus", "start": "D47C40", "end_exclusive": "D50000", "size": 33728, "tiles": 1054, "sha256": "83423301a98103b3370b4d665564c898291a933ca7a509168c2d54268124cb0b"},
+    {"pc": "Frog", "space": "snes-rom-bus", "start": "D30000", "end_exclusive": "D36B40", "size": 27456, "tiles": 858, "sha256": "afcdc471602d3add1f44ad87fd3290ecff9fd3f364ab60cbbb06be032818cfb1"},
+    {"pc": "Ayla", "space": "snes-rom-bus", "start": "D50000", "end_exclusive": "D58C00", "size": 35840, "tiles": 1120, "sha256": "9df8eab8777f02acab1709c771bda63dba1a81abc8d1a2840ff464c5fe675c3e"},
+    {"pc": "Magus", "space": "snes-rom-bus", "start": "D20000", "end_exclusive": "D272C0", "size": 29376, "tiles": 918, "sha256": "fb506e919f31a5b6b1c50fa06a7d497629105283d39c5316063596237935914a"}
+  ],
+  "pc_assembly_windows": [
+    {"pc": "Crono", "space": "snes-rom-bus", "start": "DC27B0", "end_exclusive": "DC4E70", "size": 9920, "records": 248, "sha256": "263492d1dd49e0c9a6747bf64734841e5db787e29ca613ef4e4399017690a03e"},
+    {"pc": "Marle", "space": "snes-rom-bus", "start": "DC9AD8", "end_exclusive": "DCC080", "size": 9640, "records": 241, "sha256": "2824a7be4da3ff40a51910a75d12af21dbac6ccedacb6326fcd44b0256bd5d3b"},
+    {"pc": "Lucca", "space": "snes-rom-bus", "start": "DC4E70", "end_exclusive": "DC7490", "size": 9760, "records": 244, "sha256": "d7fde66a7c71a33fb23c3bd5531e8f89241751b08d120f2bcebad09a8b3634ce"},
+    {"pc": "Robo", "space": "snes-rom-bus", "start": "DCC080", "end_exclusive": "DCDF70", "size": 7920, "records": 198, "sha256": "8e8d67ab57dd9ed648ab06781c7066721c610c0a8957d0e72fccd39f153ef5ea", "qualification": "derived minimum, not bank-end ownership"},
+    {"pc": "Frog", "space": "snes-rom-bus", "start": "DC7490", "end_exclusive": "DC9AD8", "size": 9800, "records": 245, "sha256": "ae11b0b72e41cea97b4e216e8a3dc959aa4f699bf7c77dbee012595e3087d559"},
+    {"pc": "Ayla", "space": "snes-rom-bus", "start": "DE0000", "end_exclusive": "DE27D8", "size": 10200, "records": 255, "sha256": "5003d41b09d5f557a809388a7036cf1a9dabe897c20961c1b9f9f5c0cc572eea"},
+    {"pc": "Magus", "space": "snes-rom-bus", "start": "DC0000", "end_exclusive": "DC27B0", "size": 10160, "records": 254, "sha256": "05a78400c3268d0017244c43b80103bf10f9158340f96a610f6bc388717ceee6"}
+  ],
+  "pc_animation_windows": [
+    {"pc": "Crono", "space": "snes-rom-bus", "start": "E43000", "end_exclusive": "E434A0", "size": 1184, "bytes_per_facing": 296, "entrypoints_per_facing": 74, "sha256": "43c629e4e3ab32a5bce56189cb4ef7821d920b6c12318aa45edd742eded95dff"},
+    {"pc": "Marle", "space": "snes-rom-bus", "start": "E434A0", "end_exclusive": "E43880", "size": 992, "bytes_per_facing": 248, "entrypoints_per_facing": 62, "sha256": "7fc62fe6ed719de9e3448c68d03f90f171ba4b31a420db58a0c9fe20bac751bf"},
+    {"pc": "Lucca", "space": "snes-rom-bus", "start": "E43880", "end_exclusive": "E43CF0", "size": 1136, "bytes_per_facing": 284, "entrypoints_per_facing": 71, "sha256": "850c331267d16be7b11611d4f69d2120fac8e0f314102794b47b09fa7c200607"},
+    {"pc": "Robo", "space": "snes-rom-bus", "start": "E43CF0", "end_exclusive": "E44160", "size": 1136, "bytes_per_facing": 284, "entrypoints_per_facing": 71, "sha256": "3fd15908dd98720e53c3601b3750ec587717997d1b7f1ab65be6ce69ccf57fe6"},
+    {"pc": "Frog", "space": "snes-rom-bus", "start": "E44160", "end_exclusive": "E445C0", "size": 1120, "bytes_per_facing": 280, "entrypoints_per_facing": 70, "sha256": "48ec0306a22490165efb296fad3dc4f8353c49db10f01c28713bb80776fd3ceb"},
+    {"pc": "Ayla", "space": "snes-rom-bus", "start": "E445C0", "end_exclusive": "E44B00", "size": 1344, "bytes_per_facing": 336, "entrypoints_per_facing": 84, "sha256": "ece49a6d2c7dc2af775489f49b917c55672991c766758c3444ba0b2545b87717"},
+    {"pc": "Magus", "space": "snes-rom-bus", "start": "E44B00", "end_exclusive": "E44ED0", "size": 976, "bytes_per_facing": 244, "entrypoints_per_facing": 61, "sha256": "2875f534a1baa2e7064a62f05d5efaaf9e130dea9de195e66f256571c2464896"}
+  ],
+  "entries": [
+    {
+      "id": "identity.logical-pc-and-editor-namespaces",
+      "subsystem": "identity",
+      "title": "Logical PC, save/editor, graphics-source, and empty-slot values are separate namespaces",
+      "historical_comparison": "Historical work sometimes treated numeric 07 as one shared eighth-character or Epoch identity.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "rejected",
+      "locations": [],
+      "identifiers": [
+        "logical-pc-id:00-06=vanilla-PCs",
+        "logical-pc-id:07=Project-Epoch-candidate",
+        "empty-party-sentinel:80",
+        "graphics-source-index:07=occupied-by-context"
+      ],
+      "vanilla_ownership": "Numeric equality creates no cross-namespace ownership or mapping.",
+      "evidence": [
+        {
+          "level": "verified-static",
+          "statement": "Canonical party, record, name, and graphics consumers assign different meanings to the same numeric values."
+        },
+        {
+          "level": "documented",
+          "statement": "Save-editor tooling uses 80 as its empty-party sentinel; this is a tooling convention, not a canonical playable identity."
+        }
+      ],
+      "pc07_consequence": "Every consumer must resolve logical PC 07 in its own namespace.",
+      "required_action": "Keep explicit, context-specific adapters; never implement a global 07-to-06 or 07-to-Epoch substitution.",
+      "map_status": "verified-boundary",
+      "sources": ["developer-guide", "forum-ledger"]
+    },
+    {
+      "id": "party.active-and-joined-state",
+      "subsystem": "party",
+      "title": "Active-party bytes and joined-state bit",
+      "historical_comparison": "Raw party operation and event-opcode transport of 07 was sometimes treated as proof of a complete eighth PC.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [
+        {"space": "sram-slot-relative", "start": "0580", "end_exclusive": "0583", "size": 3, "role": "three serialized active-party IDs"},
+        {"space": "wram", "start": "7E2980", "end_exclusive": "7E2983", "size": 3, "role": "three live active-party IDs"},
+        {"space": "wram", "start": "7E29AF", "end_exclusive": "7E29B0", "size": 1, "role": "joined-character mask"},
+        {"space": "wram", "start": "7E018D", "end_exclusive": "7E0194", "size": 7, "role": "seven field PC object-registry bytes"},
+        {"space": "wram", "start": "7E0194", "end_exclusive": "7E0197", "size": 3, "role": "cached active-party IDs following the field registry"}
+      ],
+      "identifiers": ["logical-pc-id:07", "joined-bit:01"],
+      "vanilla_ownership": "Three active slots plus a joined mask whose bit 0 is structurally available.",
+      "evidence": [
+        {"level": "verified-runtime", "statement": "The three active-party bytes are transported through current vanilla save and field paths."},
+        {"level": "verified-static", "statement": "CharPartyFlagTable maps logical ID 07 to joined bit 01, while the field object registry has entries only for IDs 00-06 and is immediately followed by cached active IDs."}
+      ],
+      "pc07_consequence": "Transport and a joined bit exist, but downstream record, menu, graphics, battle, Tech, name, and persistence validity does not follow.",
+      "required_action": "Publish 07 only after all dependent adapters and duplicate-free roster validation pass.",
+      "map_status": "adapter-required",
+      "sources": ["developer-guide", "forum-ledger", "recruitment-audit"]
+    },
+    {
+      "id": "save.pc-records-and-compatibility-block",
+      "subsystem": "save",
+      "title": "Seven PC records end before the Tech and compatibility block",
+      "historical_comparison": "Community maps and save editors labeled slot-relative 0430 as an eighth or Epoch character record.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "negative-control",
+      "locations": [
+        {"space": "sram-slot-relative", "start": "0200", "end_exclusive": "0430", "size": 560, "role": "seven 0050-byte PC records"},
+        {"space": "sram-slot-relative", "start": "0430", "end_exclusive": "0480", "size": 80, "role": "seven-PC Tech and compatibility state"},
+        {"space": "sram-slot-relative", "start": "0430", "end_exclusive": "0437", "size": 7, "role": "single-Tech progress counters"},
+        {"space": "sram-slot-relative", "start": "0437", "end_exclusive": "043E", "size": 7, "role": "learned-single masks"}
+      ],
+      "identifiers": ["save-editor-record-index:07=invalid-as-PC-record"],
+      "vanilla_ownership": "0430-047F belongs to the seven-PC Tech and compatibility domain, not Epoch and not an eighth PC.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Exactly seven 0050-byte PC records occupy 0200-042F."},
+        {"level": "verified-runtime", "statement": "Current save/load controls restore the protected 0430-047F block byte-exactly to its live compatibility destination."}
+      ],
+      "pc07_consequence": "Naive record 07 reads and writes Tech state as HP, MP, EXP, equipment, and stats.",
+      "required_action": "Preserve 0430-047F and store Project Epoch data in a separately versioned sidecar.",
+      "map_status": "verified-boundary",
+      "sources": ["developer-guide", "forum-ledger", "pc-record-audit", "wram-audit"]
+    },
+    {
+      "id": "save.serializer-and-0480",
+      "subsystem": "save",
+      "title": "0480 is serialized vanilla state, not free eighth-record storage",
+      "historical_comparison": "Zero bytes at 0480 in one save were proposed as a candidate backing record.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "rejected",
+      "locations": [
+        {"space": "sram-slot-relative", "start": "0000", "end_exclusive": "05B0", "size": 1456, "role": "first vanilla serialized source region"},
+        {"space": "sram-slot-relative", "start": "0000", "end_exclusive": "0A00", "size": 2560, "role": "complete checksummed save slot"},
+        {"space": "sram-bus", "start": "306000", "end_exclusive": "306A00", "size": 2560, "role": "physical save slot 1"},
+        {"space": "sram-bus", "start": "306A00", "end_exclusive": "307400", "size": 2560, "role": "physical save slot 2"},
+        {"space": "sram-bus", "start": "307400", "end_exclusive": "307E00", "size": 2560, "role": "physical save slot 3"},
+        {"space": "sram-bus", "start": "307FE0", "end_exclusive": "308000", "size": 32, "role": "vanilla global SRAM metadata following the bounded sidecar candidate"},
+        {"space": "snes-rom-bus", "start": "FFFA7B", "end_exclusive": "FFFAA3", "size": 40, "role": "eight five-byte save-copy descriptors; loader begins at the end"}
+      ],
+      "identifiers": ["candidate-record-offset:0480=rejected", "save-loader-start:FFFAA3"],
+      "vanilla_ownership": "0480 lies inside the serializer's first 05B0-byte region and the checksum covers the whole 0A00-byte slot.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The native serializer includes 0480; zero-filled sample bytes do not prove free space."}
+      ],
+      "pc07_consequence": "Using 0480 as an appended record could overwrite conditionally meaningful vanilla state.",
+      "required_action": "Do not read or write a Project Epoch character record at 0480.",
+      "map_status": "rejected-allocation",
+      "sources": ["developer-guide", "sram-audit", "forum-ledger"]
+    },
+    {
+      "id": "save.global-sidecar-candidate",
+      "subsystem": "save",
+      "title": "Bounded three-record global SRAM sidecar candidate",
+      "historical_comparison": "This replaces the old plan to append a record inside each vanilla slot.",
+      "historical_accuracy": "unresolved",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [
+        {"space": "sram-bus", "start": "307E00", "end_exclusive": "307FE0", "size": 480, "role": "three candidate 00A0-byte sidecars"}
+      ],
+      "identifiers": ["sidecar-version:02", "sidecar-profile:01"],
+      "vanilla_ownership": "Bounded global SRAM gap candidate; not yet approved as a production allocation.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The 01E0-byte geometry fits three 00A0-byte records and is outside the three vanilla 0A00-byte slots."},
+        {"level": "verified-runtime", "statement": "Existing vanilla boot/load controls preserve the candidate region without installing a Project Epoch writer."}
+      ],
+      "pc07_consequence": "A sidecar can preserve vanilla slot ownership while carrying Schala state, subject to lifecycle proof.",
+      "required_action": "Finish normal-save, load, erase, New Game+, power-cycle, timing, and atomicity proof before allocation approval.",
+      "map_status": "proposal-unbound",
+      "sources": ["sram-audit", "sidecar-v2", "developer-guide"]
+    },
+    {
+      "id": "runtime.natural-record-and-compatibility-relocation",
+      "subsystem": "runtime-record",
+      "title": "Natural record formula collides with the live compatibility block",
+      "historical_comparison": "Historical maps correctly observed the id-times-0050 formula but mislabeled its vanilla ID 07 destination as a valid record.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [
+        {"space": "wram", "start": "7E2600", "end_exclusive": "7E2830", "size": 560, "role": "seven live PC records"},
+        {"space": "wram", "start": "7E2830", "end_exclusive": "7E2880", "size": 80, "role": "live seven-PC Tech and compatibility block"},
+        {"space": "wram", "start": "7E2CA0", "end_exclusive": "7E2CF0", "size": 80, "role": "candidate relocated compatibility destination"}
+      ],
+      "identifiers": ["logical-pc-id:07", "record-stride:0050"],
+      "vanilla_ownership": "The formula 7E2600 plus id times 0050 is real; direct ID 07 aliases compatibility state at 7E2830.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Menu, battle-load, battle-commit, and reload paths use the natural record formula."},
+        {"level": "verified-runtime", "statement": "Existing canaries bound the candidate relocation in selected field, menu, battle, save, New Game+, and attract controls without approving it."}
+      ],
+      "pc07_consequence": "Natural PC 07 becomes viable only after the entire 0050-byte compatibility owner moves and every lifecycle path follows it.",
+      "required_action": "Complete the remaining runtime matrix before publishing 7E2830 as Schala's live record.",
+      "map_status": "proposal-unbound",
+      "sources": ["developer-guide", "forum-ledger", "wram-audit", "pc-record-audit"]
+    },
+    {
+      "id": "initialization.seven-record-seed-and-attract-hazard",
+      "subsystem": "initialization",
+      "title": "Vanilla seeds seven records and the attract path overruns seven-row growth sources",
+      "historical_comparison": "Bytes following the seven initialization records were treated as an incomplete eighth character.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "negative-control",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "CC0000", "end_exclusive": "CC0230", "size": 560, "role": "seven 0050-byte initialization records"},
+        {"space": "snes-rom-bus", "start": "CC0000", "end_exclusive": "CC0280", "size": 640, "role": "monolithic new-game seed including compatibility state"}
+      ],
+      "identifiers": ["new-game-copy-site:C2956E", "attract-initializer:FDB2DE"],
+      "vanilla_ownership": "CC0230-CC027F is starting Tech and compatibility state; the attract initializer loops eight destinations while reading seven HP and MP rows.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Vanilla has exactly seven initialization records and a 0280-byte monolithic seed."},
+        {"level": "verified-static", "statement": "The attract path's eighth destination reads beyond each seven-row HP and MP source block."}
+      ],
+      "pc07_consequence": "Extending only a copy bound initializes Schala from unrelated adjacent data.",
+      "required_action": "Provide explicit Schala initialization and preserve the relocated compatibility owner in normal, reset, New Game+, and attract paths.",
+      "map_status": "adapter-required",
+      "sources": ["pc-record-audit", "developer-guide", "forum-ledger"]
+    },
+    {
+      "id": "stats.record-versus-growth-order",
+      "subsystem": "stats",
+      "title": "Record stat order and growth-array stat order are different",
+      "historical_comparison": "Community documentation propagated one Magic-before-Hit ordering as though it governed every stat array.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "negative-control",
+      "locations": [],
+      "identifiers": ["record-offsets:0B-11", "growth-row-width:07"],
+      "vanilla_ownership": "Base/live record order is Power, Stamina, Speed, Magic, Hit, Evade, Magic Defense; growth/progression row order is Power, Stamina, Speed, Hit, Evade, Magic, Magic Defense.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The complete 0050-byte record schema distinguishes the base/live order from the runtime-confirmed growth-array order."}
+      ],
+      "pc07_consequence": "Reusing one ordering for both structures silently swaps Magic, Hit, and Evade semantics.",
+      "required_action": "Encode each structure with its own named field order and test it independently.",
+      "map_status": "verified-boundary",
+      "sources": ["pc-record-audit", "developer-guide", "forum-ledger"]
+    },
+    {
+      "id": "growth.hp-mp-stat-tp-families",
+      "subsystem": "growth",
+      "title": "HP, MP, stat, and TP families have different row counts and collide under raw ID 07",
+      "historical_comparison": "CC25C2 was called an eighth HP row and the zero stat row was sometimes treated as a complete eighth-character definition.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "CC258A", "end_exclusive": "CC25C2", "size": 56, "role": "seven HP-growth rows of eight bytes"},
+        {"space": "snes-rom-bus", "start": "CC25C2", "end_exclusive": "CC25FA", "size": 56, "role": "seven MP-growth rows of eight bytes"},
+        {"space": "snes-rom-bus", "start": "CC25FA", "end_exclusive": "CC2632", "size": 56, "role": "eight stat-growth rows of seven bytes; row 7 is zero"},
+        {"space": "snes-rom-bus", "start": "CC26FA", "end_exclusive": "CC276A", "size": 112, "role": "seven TP-threshold rows of sixteen bytes"}
+      ],
+      "identifiers": ["logical-pc-id:07"],
+      "vanilla_ownership": "HP and MP have seven rows; stat growth has an eighth zero row; TP has seven rows. Adjacent tables own every raw fallthrough.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Exact table boundaries and row counts are reconstructed from the canonical ROM."}
+      ],
+      "pc07_consequence": "Raw row 07 aliases the next family for HP, MP, and TP; the zero stat row supplies no complete progression model.",
+      "required_action": "Relocate or adapt all four families and author Schala's data deliberately.",
+      "map_status": "adapter-required",
+      "sources": ["character-tech-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "battle.record-commit",
+      "subsystem": "battle",
+      "title": "Battle commits slot work records through the natural character-record formula",
+      "historical_comparison": "No isolated eighth-record write is available merely because battle transports logical ID 07.",
+      "historical_accuracy": "unresolved",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [],
+      "identifiers": ["commit-site:C1B442", "work-record-base:7E5E2D", "work-record-stride:0080"],
+      "vanilla_ownership": "Battle work is active-slot based, then commits 0050 bytes to 7E2600 plus logical ID times 0050.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The commit formula sends direct ID 07 into the live compatibility block."}
+      ],
+      "pc07_consequence": "A successful battle could corrupt Tech state even if Schala rendered and acted correctly.",
+      "required_action": "Use the natural commit only after relocation; otherwise install an ID-aware commit adapter.",
+      "map_status": "adapter-required",
+      "sources": ["developer-guide", "character-tech-audit"]
+    },
+    {
+      "id": "battle.id-to-slot-and-reserve-xp",
+      "subsystem": "battle-progression",
+      "title": "Seven-byte active-membership map and seven-ID reserve-XP bound",
+      "historical_comparison": "An external reconstruction mislabeled the reserve-XP routine; changing only its seven-character loop bound would still read adjacent WRAM.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "negative-control",
+      "locations": [
+        {"space": "wram", "start": "7EB1BE", "end_exclusive": "7EB1C5", "size": 7, "role": "logical-character-ID to active-battle-slot map"},
+        {"space": "snes-rom-bus", "start": "C1F9EB", "end_exclusive": "C1FA61", "size": 118, "role": "joined and inactive reserve-XP scan"}
+      ],
+      "identifiers": ["logical-pc-id:07", "reserve-xp-fraction:15/20"],
+      "vanilla_ownership": "The map initializes IDs 00-06 only; the reserve scan awards 75 percent XP to IDs 00-06 and stops before 07.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Canonical span and instruction-site hashes pin both independent seven-character boundaries."}
+      ],
+      "pc07_consequence": "Reserve Schala receives no XP, while direct active-map lookup reads unowned adjacent 7EB1C5.",
+      "required_action": "Add an explicit PC 07 active-membership resolver and a fail-closed reserve-XP adapter after sidecar and roster validation.",
+      "map_status": "adapter-required",
+      "sources": ["battle-progression-audit", "developer-guide"]
+    },
+    {
+      "id": "tech.progress-learned-and-combo-state",
+      "subsystem": "tech-learning",
+      "title": "Single-Tech and combo-learning state occupies the natural PC 07 record window",
+      "historical_comparison": "The first bytes of this block were initially edited as incomplete eighth-character record fields before the forum corrected them to Tech state.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [
+        {"space": "wram", "start": "7E2830", "end_exclusive": "7E2837", "size": 7, "role": "seven single-Tech progress counters"},
+        {"space": "wram", "start": "7E2837", "end_exclusive": "7E283E", "size": 7, "role": "seven learned-single masks"},
+        {"space": "wram", "start": "7E283E", "end_exclusive": "7E284D", "size": 15, "role": "fifteen learned dual-Tech group bytes"},
+        {"space": "wram", "start": "7E284D", "end_exclusive": "7E2857", "size": 10, "role": "ten ordinary learned triple-Tech group bytes"},
+        {"space": "wram", "start": "7E2857", "end_exclusive": "7E285C", "size": 5, "role": "five equipped-rock or rock-Tech flag bytes"}
+      ],
+      "identifiers": ["logical-pc-id:07", "joined-participant-bit:01"],
+      "vanilla_ownership": "Every byte through 285B is mapped live seven-PC Tech or equipped-rock state; later compatibility bytes remain partly mapped and protected.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Counts, learned masks, fifteen dual groups, ten ordinary triple groups, five equipped-rock flags, and their computed consumers are reconstructed from canonical code."}
+      ],
+      "pc07_consequence": "Appending an eighth counter, mask, or combo row overwrites the next live state family.",
+      "required_action": "Relocate the complete compatibility domain and create an expanded Schala learning namespace.",
+      "map_status": "adapter-required",
+      "sources": ["character-tech-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "events.location-11c-tech-grants",
+      "subsystem": "location-events",
+      "title": "Spekkio event 11C directly addresses seven-PC Tech arrays",
+      "historical_comparison": "Generic event transport of PC ID 07 does not remove hardcoded absolute Tech-state operands elsewhere in event scripts.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [],
+      "identifiers": ["location:1D1", "event:11C", "object:09", "absolute-command-count:12"],
+      "vanilla_ownership": "Twelve commands touch selected 2830-series counters and 2837-series masks.",
+      "evidence": [
+        {"level": "verified-static", "statement": "All 513 event pointers and 1511 absolute commands were scanned, isolating the exact 12-site set."},
+        {"level": "verified-runtime", "statement": "Existing volatile-WRAM translations reproduce the twelve operations in prepared vanilla profiles without installing a ROM event."}
+      ],
+      "pc07_consequence": "Relocating compatibility state requires event-operand translation before Schala's natural record can occupy 7E2830.",
+      "required_action": "Recompress and install the pinned translation only with the complete relocation adapter set, then rerun lifecycle guards.",
+      "map_status": "proposal-unbound",
+      "sources": ["developer-guide", "wram-audit"]
+    },
+    {
+      "id": "names.pc-fields-dialogue-and-epoch",
+      "subsystem": "naming",
+      "title": "The eighth six-byte field is Epoch-facing and dialogue entry 7 is null",
+      "historical_comparison": "Historical proposals reused or relocated the Epoch/name ranges for PC 07.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "rejected",
+      "locations": [
+        {"space": "wram", "start": "7E2C23", "end_exclusive": "7E2C53", "size": 48, "role": "eight six-byte live name fields"},
+        {"space": "wram", "start": "7E2C4D", "end_exclusive": "7E2C53", "size": 6, "role": "independently handled Epoch name field"}
+      ],
+      "identifiers": ["naming-entry:07=Epoch-context", "dialogue-pc-name-entry:07=null"],
+      "vanilla_ownership": "Name-entry arithmetic reaches Epoch at ID 07, while the dialogue PC-name pointer table has no valid PC 07 target.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Both the live-field formula and null dialogue entry are reconstructed from canonical code."}
+      ],
+      "pc07_consequence": "Routing Schala through vanilla ID 07 naming corrupts or aliases Epoch and still fails dialogue substitution.",
+      "required_action": "Give Schala independent live, dialogue, save, load, menu, and recruitment name adapters.",
+      "map_status": "adapter-required",
+      "sources": ["developer-guide", "forum-ledger", "recruitment-audit"]
+    },
+    {
+      "id": "graphics.pc-pointer-families",
+      "subsystem": "graphics",
+      "title": "Playable graphics families contain seven PC entries and occupied successors",
+      "historical_comparison": "The first successor entries and zero-looking tails were treated as expandable eighth-PC storage.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "negative-control",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "E42000", "end_exclusive": "E42015", "size": 21, "role": "seven PC graphics pointers"},
+        {"space": "snes-rom-bus", "start": "E42300", "end_exclusive": "E42315", "size": 21, "role": "seven PC assembly pointers"},
+        {"space": "snes-rom-bus", "start": "E42800", "end_exclusive": "E4280E", "size": 14, "role": "seven PC auxiliary timing/control pointers"},
+        {"space": "snes-rom-bus", "start": "E42A00", "end_exclusive": "E42A0E", "size": 14, "role": "seven PC palette pointers"},
+        {"space": "snes-rom-bus", "start": "E4F000", "end_exclusive": "E4F023", "size": 35, "role": "seven five-byte PC sprite descriptors"}
+      ],
+      "identifiers": ["graphics-source-index:00-06=PC", "graphics-source-index:07=occupied-successor"],
+      "vanilla_ownership": "Direct index 07 reaches NPC, vehicle, palette, assembly, auxiliary, or sentinel data depending on the table.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The graphics, assembly, animation, auxiliary, palette, and descriptor consumers each expose a seven-PC boundary and occupied successor."}
+      ],
+      "pc07_consequence": "A raw logical ID is not a safe graphics-source index.",
+      "required_action": "Resolve PC 07 to named expanded assets separately in field, battle, menu, overworld, palette, and animation contexts.",
+      "map_status": "adapter-required",
+      "sources": ["graphics-menu-audit", "pc-sprite-envelope", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "graphics.melchior-npc-descriptor-collision",
+      "subsystem": "field-graphics",
+      "title": "Historical PC 07 display reused an occupied NPC descriptor associated with Melchior",
+      "historical_comparison": "The old prototype changed the first NPC descriptor and redirected its NPC users, making PC 07 appear coherent by moving Melchior's graphics-source use elsewhere.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "negative-control",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "E4F023", "end_exclusive": "E4F028", "size": 5, "role": "first occupied NPC sprite descriptor"}
+      ],
+      "identifiers": ["graphics-source-index:07", "historical-npc-association:Melchior"],
+      "vanilla_ownership": "The descriptor is statically occupied NPC data; the Melchior identity and historical relocation are documented participant history, not proof that Melchior was a PC.",
+      "evidence": [
+        {"level": "verified-static", "statement": "E4F023-E4F027 is the first occupied five-byte NPC sprite descriptor."},
+        {"level": "documented", "statement": "The historical developers identified the displaced normal occupant as Melchior and redirected NPC users elsewhere."}
+      ],
+      "pc07_consequence": "Reassigning graphics index 07 evicts an NPC resource even though the NPC is not a playable character.",
+      "required_action": "Leave E4F023 and every Melchior/NPC user unchanged; dispatch Schala to a separate expanded descriptor.",
+      "map_status": "negative-control",
+      "sources": ["forum-ledger", "graphics-menu-audit"]
+    },
+    {
+      "id": "graphics.animation-boundary-and-entrypoints",
+      "subsystem": "animation",
+      "title": "The eighth animation word is a required end sentinel, not a new PC start",
+      "historical_comparison": "The apparent eighth boundary and four-byte selector stride were sometimes generalized into a fixed-record/free-entry interpretation.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "E42600", "end_exclusive": "E42610", "size": 16, "role": "eight boundaries delimiting seven PC animation spans"}
+      ],
+      "identifiers": ["entrypoint-stride:04"],
+      "vanilla_ownership": "Boundary 7 is the Magus-end/NPC-start sentinel; auxiliary index 07 is occupied. Entrypoint N begins at N times 4, but sequences can overlap and have variable length.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Eight boundary words delimit exactly seven PC animation packages."},
+        {"level": "verified-static", "statement": "Primary and auxiliary entrypoints use a four-byte selection stride without implying fixed four-byte records."}
+      ],
+      "pc07_consequence": "Appending over the sentinel corrupts Magus/NPC animation extent, and copied selector semantics may conflict.",
+      "required_action": "Relocate and resolve a complete Schala animation package with explicit primary/auxiliary compatibility.",
+      "map_status": "adapter-required",
+      "sources": ["animation-audit", "graphics-menu-audit", "forum-ledger"]
+    },
+    {
+      "id": "graphics.palette-and-overworld-paths",
+      "subsystem": "graphics",
+      "title": "Palette loaders and overworld staging are separate fixed-capacity paths",
+      "historical_comparison": "A successful field sprite or copied palette was sometimes treated as covering all playable presentation contexts.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [],
+      "identifiers": [
+        "field-palette-copy-size:0018",
+        "field-palette-copy-sites:C0373D,C0374A,C048F5,C04902,C071D3,C071E0,C07262,C0726F,C072FA,C07307",
+        "overworld-tile-formula:7F9000+id*0400",
+        "overworld-palette-formula:7FAC00+id*0040"
+      ],
+      "vanilla_ownership": "Field loading copies twelve character-specific colors; several readers force bank E4. Raw overworld ID 07 lands in palette or staging data.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Five logical field reload paths contain ten 0018-byte shadow copies, and overworld consumers have independent ID formulas."},
+        {"level": "verified-runtime", "statement": "A supported-slot twelve-color Schala-NPC compatibility replay renders without establishing PC 07 or a full replacement palette."}
+      ],
+      "pc07_consequence": "Field success cannot authorize battle, menu, portrait, or overworld palette/index reuse.",
+      "required_action": "Provide context-specific expanded-bank readers and dedicated overworld/palette data while preserving all vanilla owners.",
+      "map_status": "adapter-required",
+      "sources": ["developer-guide", "graphics-menu-audit", "field-palette-audit"]
+    },
+    {
+      "id": "menu.walking-sprites-and-gaspar-scratch",
+      "subsystem": "menu",
+      "title": "Seven walking-sprite records are followed by active party-exchange scratch",
+      "historical_comparison": "A historical PC 07 experiment reused the Gaspar/party-exchange display area as though it were an eighth persistent record.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "negative-control",
+      "locations": [
+        {"space": "wram", "start": "7E1800", "end_exclusive": "7E19C0", "size": 448, "role": "seven 0040-byte menu walking-sprite records"},
+        {"space": "wram", "start": "7E19C0", "end_exclusive": "7E1A00", "size": 64, "role": "active caster and party-exchange scratch"}
+      ],
+      "identifiers": ["logical-pc-id:07", "historical-display-association:Gaspar"],
+      "vanilla_ownership": "19C0 is an active scratch/display owner, not unused eighth-PC storage.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The menu record geometry ends after seven persistent PC records and direct ID 07 reaches 19C0."},
+        {"level": "documented", "statement": "Historical developers described the visible collision as the Gaspar party-exchange area."}
+      ],
+      "pc07_consequence": "Widening the seven-record loop overwrites a live presenter/caster record.",
+      "required_action": "Virtualize Schala into a deliberate display slot and preserve the party-exchange presenter.",
+      "map_status": "adapter-required",
+      "sources": ["graphics-menu-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "menu.full-portraits-and-save-preview",
+      "subsystem": "portraits",
+      "title": "Seven full portraits, a special Epoch route, and a separate save-preview path",
+      "historical_comparison": "Eight selector bytes were interpreted as eight complete playable portraits, and supported-slot preview success was treated as broader portrait proof.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "FF0000", "end_exclusive": "FF1F80", "size": 8064, "role": "seven 0480-byte full menu portraits"},
+        {"space": "snes-rom-bus", "start": "FFCE78", "end_exclusive": "FFCE86", "size": 14, "role": "seven playable portrait palette pointers"}
+      ],
+      "identifiers": ["full-portrait-size:0480", "save-preview-size:0200", "name-entry-pseudo-id:07=Epoch"],
+      "vanilla_ownership": "Only seven complete full faces and seven palette pointers exist; the following context is the special Epoch/name-entry route. Save preview is independent.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The full portrait blob divides exactly into seven 36-tile faces and the normal palette table has seven words."},
+        {"level": "verified-runtime", "statement": "The supported clone proves only its separate small preview path."}
+      ],
+      "pc07_consequence": "Raw ID 07 aliases existing face/Epoch contexts and does not identify an eighth full portrait.",
+      "required_action": "Resolve an original full face dynamically and implement a distinct sidecar-backed save preview while preserving Epoch naming.",
+      "map_status": "proposal-unbound",
+      "sources": ["graphics-menu-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "menu.element-icon-table",
+      "subsystem": "menu",
+      "title": "The element/type map ends at code, not an eighth row",
+      "historical_comparison": "The seven-byte boundary was correctly found after an attempted eighth-byte edit crashed the menu.",
+      "historical_accuracy": "confirmed",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "C2A2C6", "end_exclusive": "C2A2CD", "size": 7, "role": "seven element/type selectors"}
+      ],
+      "identifiers": ["first-successor:C2A2CD=code"],
+      "vanilla_ownership": "C2A2CD begins Menu_RebuildCharListScreen; it is not table storage.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Canonical reconstruction confirms the seven-byte table and exact code boundary."}
+      ],
+      "pc07_consequence": "Direct ID 07 reads an instruction byte as an element selector.",
+      "required_action": "Resolve Schala's deliberate icon at the consumer without extending the table in place.",
+      "map_status": "adapter-required",
+      "sources": ["graphics-menu-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "tech.owner-ranges-and-combo-groups",
+      "subsystem": "tech",
+      "title": "Seven Tech owners and fixed contiguous single/dual/triple groups",
+      "historical_comparison": "Raw PC 07 inherited the first dual-Tech rows after Magus, leading to the correct conclusion that whole Tech families must move.",
+      "historical_accuracy": "confirmed",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "CC276A", "end_exclusive": "CC2778", "size": 14, "role": "seven two-byte character Tech base/count entries"}
+      ],
+      "identifiers": ["single-action-range:01-38", "dual-action-range:39-65", "triple-action-range:66-74", "vanilla-group-count:36"],
+      "vanilla_ownership": "Seven owner rows are followed by dual requirements; combo builders assume fixed action ranges and group widths.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The seven owner rows, 37 range boundaries, and fixed dual/triple builder assumptions are independently mapped."}
+      ],
+      "pc07_consequence": "Inserting one owner or command row shifts live combo data and still leaves signed/direct consumers unchanged.",
+      "required_action": "Relocate owner/group metadata and bind Schala's singles, six dual groups, and two triple groups explicitly.",
+      "map_status": "adapter-required",
+      "sources": ["character-tech-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "actions.player-command-namespace",
+      "subsystem": "battle-actions",
+      "title": "Low player commands are full; high Project Epoch actions require adapters",
+      "historical_comparison": "Unused-looking numeric command IDs were treated as globally available without separating marker and animation-config namespaces.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [],
+      "identifiers": ["named-player-actions:01-74", "basic-attacks:75-7B", "reserved-player-commands:7C-7F", "candidate-schala-actions:80-90", "battle-markers:F0-FF"],
+      "vanilla_ownership": "The byte-wide queue transports high values, but signed checks and direct table indexes do not uniformly accept them; same-numbered animation-config rows are separate owners.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The command census and transport path establish the occupied low range and every known high-ID edge."}
+      ],
+      "pc07_consequence": "Seventeen Schala actions cannot fit the four low values 7C-7F and cannot safely inherit same-numbered table rows.",
+      "required_action": "Use the proposed 80-90 overlay only after every signed/direct consumer and package binding is explicit.",
+      "map_status": "proposal-unbound",
+      "sources": ["character-tech-audit", "developer-guide"]
+    },
+    {
+      "id": "tech.animation-package-selector-namespace",
+      "subsystem": "tech-animation-packages",
+      "title": "Player-Tech package selectors are separate from action-command IDs",
+      "historical_comparison": "A high action ID and a same-numbered package selector can look interchangeable even though they are consumed by different tables and fixed-bank readers.",
+      "historical_accuracy": "unresolved",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "C14612", "end_exclusive": "C14682", "size": 112, "role": "complete canonical player package resolver and installer"}
+      ],
+      "identifiers": [
+        "canonical-package-selectors:00-7F",
+        "candidate-project-epoch-package-selectors:80-8F",
+        "package-root:CD5EF0",
+        "nested-command:1E=fixed-bank-CE",
+        "auxiliary-config-readers:+3=D1,+4=CD,+5=CE"
+      ],
+      "vanilla_ownership": "Config byte 0 resolves package selectors through CD5EF0 and fixed bank CE; command 1E and auxiliary config bytes retain independent fixed-bank readers.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The complete resolver span, all 128 canonical bank/root identities, nested-script edge, and auxiliary fixed-bank readers are pinned."},
+        {"level": "hypothesis", "statement": "Selectors 80-8F remain an unbound Project Epoch policy namespace with no installed symbolic package source."}
+      ],
+      "pc07_consequence": "Numeric equality between Schala action 80-90 and package selector 80-8F creates no mapping or payload ownership.",
+      "required_action": "Preserve the canonical 00-7F path, decide command-1E stream handling, and bind one proved high package deliberately before authoring a helper.",
+      "map_status": "proposal-unbound",
+      "sources": ["tech-package-adapter", "developer-guide"]
+    },
+    {
+      "id": "tech.names-targets-properties-mp-costs",
+      "subsystem": "tech",
+      "title": "Tech presentation and behavior tables have independent bounds",
+      "historical_comparison": "A visible eighth Tech list was treated as progress despite incomplete targeting, cost, property, effect, animation, learning, and persistence coverage.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "patch-specific",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "CC15CF", "end_exclusive": "CC1ACB", "size": 1276, "role": "116 eleven-byte Tech names for IDs 01-74"},
+        {"space": "snes-rom-bus", "start": "CC1ACB", "end_exclusive": "CC1BB5", "size": 234, "role": "two-byte target data for IDs 00-74"},
+        {"space": "snes-rom-bus", "start": "CC1BEB", "end_exclusive": "CC213F", "size": 1364, "role": "124 eleven-byte per-character command records for IDs 00-7B"},
+        {"space": "snes-rom-bus", "start": "CC213F", "end_exclusive": "CC249F", "size": 864, "role": "72 twelve-byte property records for IDs 00-47; ID 01 begins at CC214B"},
+        {"space": "snes-rom-bus", "start": "CC253B", "end_exclusive": "CC253C", "size": 1, "role": "MP-cost alignment or null entry for ID 00"},
+        {"space": "snes-rom-bus", "start": "CC253C", "end_exclusive": "CC2583", "size": 71, "role": "one-byte named player-Tech MP costs for IDs 01-47"}
+      ],
+      "identifiers": ["named-properties-root:CC214B", "properties-table-root:CC213F", "effects-root-file:0D45AD"],
+      "vanilla_ownership": "Names, targets, properties, costs, effects, animations, and learning use distinct ranges and consumer assumptions.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Current audits pin the names, target, per-character command, property, and MP-cost boundaries, including their ID-zero alignment rows; the effects root remains documented pending complete tracing."}
+      ],
+      "pc07_consequence": "Making one list render does not make a Tech battle-valid, learnable, persistent, or uniquely owned.",
+      "required_action": "Resolve each table independently from named expanded descriptors and preserve each canonical table's exact existing range and owners.",
+      "map_status": "adapter-required",
+      "sources": ["character-tech-audit", "focus-boundary-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "attack.basic-action-selector",
+      "subsystem": "normal-attack",
+      "title": "The seven basic-action IDs end at HP-growth data",
+      "historical_comparison": "CC258A was initially treated as PC 07's basic attack before the forum corrected it to HP-growth data.",
+      "historical_accuracy": "confirmed",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "CC2583", "end_exclusive": "CC258A", "size": 7, "role": "seven basic-action selectors"}
+      ],
+      "identifiers": ["consumer:C1BFFF", "logical-pc-id:07"],
+      "vanilla_ownership": "The next byte at CC258A is the first HP-growth byte.",
+      "evidence": [
+        {"level": "verified-static", "statement": "Canonical reconstruction confirms both the seven-entry selector and adjacent HP table."}
+      ],
+      "pc07_consequence": "Direct ID 07 selects HP-growth data as an action ID.",
+      "required_action": "Return Schala's action from named expanded data at the consumer; do not append a byte.",
+      "map_status": "adapter-required",
+      "sources": ["attack-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "attack.approach-policy",
+      "subsystem": "normal-attack",
+      "title": "The eight-byte approach-policy table already owns entry 07",
+      "historical_comparison": "A table containing eight bytes is not necessarily an unused eighth-PC row.",
+      "historical_accuracy": "unresolved",
+      "project_epoch_applicability": "negative-control",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "CCF63C", "end_exclusive": "CCF644", "size": 8, "role": "occupied direct-PC-ID approach-policy values"}
+      ],
+      "identifiers": ["logical-pc-id:07=value-FF", "consumer:C14A44"],
+      "vanilla_ownership": "Entry 07 is an occupied FF value that takes the nonzero pathfind branch.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The complete eight-byte table and consumer branch are pinned."},
+        {"level": "verified-runtime", "statement": "The Crono consumer route is observed in the current battle-action tranche."}
+      ],
+      "pc07_consequence": "Raw ID 07 obtains an existing policy by accident, not a designed Schala attack approach.",
+      "required_action": "Preserve the eight occupied bytes and add an independent PC 07 resolver.",
+      "map_status": "adapter-required",
+      "sources": ["attack-audit", "developer-guide"]
+    },
+    {
+      "id": "attack.animation-selector-families",
+      "subsystem": "normal-attack",
+      "title": "Three adjacent seven-entry selector families alias one another",
+      "historical_comparison": "File 0D400E was labeled an eighth-character attack byte.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "rejected",
+      "locations": [
+        {"space": "snes-rom-bus", "start": "CD4000", "end_exclusive": "CD4007", "size": 7, "role": "normal selector family"},
+        {"space": "snes-rom-bus", "start": "CD4007", "end_exclusive": "CD400E", "size": 7, "role": "pathfind selector family"},
+        {"space": "snes-rom-bus", "start": "CD400E", "end_exclusive": "CD4015", "size": 7, "role": "critical selector family"}
+      ],
+      "identifiers": ["rom-file-headerless:0D400E", "critical-selector-owner:Crono"],
+      "vanilla_ownership": "CD400E is both where raw PC 07 falls through from the second family and Crono's actual critical selector in the third family.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The complete three-family boundary chain and all three consumers are pinned."},
+        {"level": "verified-runtime", "statement": "Crono's critical route reads the CD400E owner in the accepted battle-action trace."}
+      ],
+      "pc07_consequence": "Patching 0D400E for Schala changes Crono's critical animation.",
+      "required_action": "Adapt all three consumers independently and leave every vanilla selector unchanged.",
+      "map_status": "negative-control",
+      "sources": ["attack-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "equipment.permission-bit-and-menu-bound",
+      "subsystem": "equipment",
+      "title": "Logical PC 07 has a structural equipment bit but not complete menu capacity",
+      "historical_comparison": "An available bit was sometimes treated as a complete eighth-character equipment implementation.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [],
+      "identifiers": ["logical-pc-id:07=equip-bit-01", "general-mask:FE=excludes-PC07", "consumer:C293A8"],
+      "vanilla_ownership": "Item permission uses bit 01 for ID 07, while roster scans and menu buffers remain seven-PC bounded.",
+      "evidence": [
+        {"level": "verified-static", "statement": "The permission table and AND consumer expose a unique PC 07 bit."}
+      ],
+      "pc07_consequence": "Schala-only masks are expressible, but general items, menu presentation, stats, weapon animation, and save behavior still need adapters.",
+      "required_action": "Assign item masks deliberately and runtime-test every equipment and stat-recalculation path.",
+      "map_status": "adapter-required",
+      "sources": ["character-tech-audit", "developer-guide"]
+    },
+    {
+      "id": "items.candidate-e8-ee-scope",
+      "subsystem": "items",
+      "title": "Candidate item IDs E8-EE are only unclaimed in audited location events",
+      "historical_comparison": "Unknown or apparently unused item IDs cannot be promoted to globally free storage from one table or event scan.",
+      "historical_accuracy": "unresolved",
+      "project_epoch_applicability": "architectural-lead",
+      "locations": [],
+      "identifiers": ["candidate-item-ids:E8-EE", "reserved-item-ids:EF-F1", "sanitizer-rejected:F2-FF"],
+      "vanilla_ownership": "E8-EE are unclaimed by every canonical location-event script path audited, but global item ownership is not yet proved.",
+      "evidence": [
+        {"level": "verified-static", "statement": "All 513 location-event pointer entries and every valid referenced script contain no E8-EE item operand."}
+      ],
+      "pc07_consequence": "Installing item records prematurely could collide with shops, inventory, battle, graphics, descriptions, or other classifiers.",
+      "required_action": "Finish the remaining global item adapters and allocate expanded descriptors before binding the IDs.",
+      "map_status": "proposal-unbound",
+      "sources": ["item-audit", "developer-guide"]
+    },
+    {
+      "id": "recruitment.operation-one-and-roster-capacity",
+      "subsystem": "recruitment",
+      "title": "Party operation 1 replaces slot 3 when the active party is full",
+      "historical_comparison": "Writing or adding ID 07 through the vanilla party operation was treated as a capacity-safe append.",
+      "historical_accuracy": "partial",
+      "project_epoch_applicability": "negative-control",
+      "locations": [],
+      "identifiers": ["roster-capacity:09", "active-capacity:03", "reserve-capacity-for-eight-PCs:05"],
+      "vanilla_ownership": "The roster can represent eight recruited PCs, but operation 1 displaces active slot 3 into reserve when no active slot is open.",
+      "evidence": [
+        {"level": "verified-runtime", "statement": "The full-party Magus recruitment path proves reserve registration before naming and later active insertion."},
+        {"level": "verified-static", "statement": "Party operation 1's replacement behavior and roster geometry are mapped."}
+      ],
+      "pc07_consequence": "A naïve Schala recruitment can silently replace an active character even though reserve capacity exists.",
+      "required_action": "Use an explicit open-slot helper and register Schala directly in reserve on the full-party branch.",
+      "map_status": "adapter-required",
+      "sources": ["recruitment-audit", "forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "project-schala.magus-replacement-scope",
+      "subsystem": "historical-project-schala",
+      "title": "Historical Project Schala replaced Magus rather than adding a coexisting PC 07",
+      "historical_comparison": "Project Schala's visible Schala was sometimes discussed as though it proved a genuine eighth playable character.",
+      "historical_accuracy": "contradicted",
+      "project_epoch_applicability": "replacement-only",
+      "locations": [
+        {"space": "rom-file-headerless", "start": "120000", "end_exclusive": "1272C0", "size": 29376, "role": "supported Magus graphics span used as a replacement reference"},
+        {"space": "rom-file-headerless", "start": "240090", "end_exclusive": "2400A8", "size": 24, "role": "supported Magus playable palette"},
+        {"space": "rom-file-headerless", "start": "1C0000", "end_exclusive": "1C27B0", "size": 10160, "role": "corrected supported Magus assembly extent"},
+        {"space": "rom-file-headerless", "start": "244B00", "end_exclusive": "244ED0", "size": 976, "role": "supported Magus playable animation span"}
+      ],
+      "identifiers": ["supported-logical-pc-id:06=Magus-slot"],
+      "vanilla_ownership": "The prototype used Magus's supported record, equipment, element, Tech, save-preview, menu, and dialogue routes.",
+      "evidence": [
+        {"level": "documented", "statement": "The project author explicitly described Magus replacement and future rework for coexistence."},
+        {"level": "verified-static", "statement": "The graphics, palette, corrected assembly, and playable-animation boundaries are independently confirmed for supported-slot comparison."}
+      ],
+      "pc07_consequence": "The project is a valuable PC 06 consumer checklist but supplies no natural-ID storage, capacity, save, or coexistence proof.",
+      "required_action": "Use it only as replacement-path comparison and independently implement every PC 07 namespace.",
+      "map_status": "negative-control",
+      "sources": ["forum-ledger", "developer-guide"]
+    },
+    {
+      "id": "expansion.exhirom-map-mode-boundary",
+      "subsystem": "rom-expansion",
+      "title": "Mirrored ExHiROM header map mode is structural metadata, not allocatable space",
+      "historical_comparison": "A one-byte historical change at file 40FFD5 made expanded pointers alias bank 01 instead of bank 41.",
+      "historical_accuracy": "confirmed",
+      "project_epoch_applicability": "reusable-boundary",
+      "locations": [
+        {"space": "expanded-exhirom-file", "start": "40FFD5", "end_exclusive": "40FFD6", "size": 1, "role": "mirrored ExHiROM map-mode byte in the inert 8 MiB scaffold"}
+      ],
+      "identifiers": ["required-fast-exhirom-map-mode:35", "historical-bad-value:15"],
+      "vanilla_ownership": "The byte belongs to the mirrored expanded header and controls mapping recognition.",
+      "evidence": [
+        {"level": "documented", "statement": "Historical debugger evidence observed the bank 41 to bank 01 alias after the bad value."},
+        {"level": "verified-static", "statement": "The current inert scaffold validates both headers, map mode, size, checksum, mirror, and fill invariants."}
+      ],
+      "pc07_consequence": "Correct expanded pointers fail globally if the ROM is no longer recognized as ExHiROM.",
+      "required_action": "Treat both header copies as pinned structure and allocate only named expanded regions outside them.",
+      "map_status": "verified-boundary",
+      "sources": ["forum-ledger", "developer-guide"]
+    }
+  ]
+}

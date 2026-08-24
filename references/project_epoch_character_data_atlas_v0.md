@@ -1,5 +1,23 @@
 # Project Epoch — PE-000 Character Data Atlas v0
 
+> [!WARNING]
+> **Superseded historical planning artifact (2026-08-24).** This v0 document is
+> retained for provenance only; it is not the current Project Epoch data map,
+> and its poison-save trace plan must not be executed. Project Epoch now
+> verifies exactly seven `$50` PC records at slot-relative `$0200-$042F`.
+> `$0430-$047F` is the vanilla seven-PC Tech/compatibility block—not an
+> Epoch/vehicle or eighth-PC record—and must be preserved. `$0430-$0436` and
+> `$0437-$043D` are the confirmed seven-PC Tech-progress and learned-mask
+> arrays; later compatibility bytes are partially, not completely, mapped.
+> `$0480` lies inside vanilla's first `$05B0` serialized bytes and is not
+> approved storage. Base-record stat order and the separate growth-array order
+> are distinct. Use the
+> [current corrected map](../docs/project_epoch_corrected_character_data_map_v1.md),
+> [playable-record schema audit](../docs/pc_init_record_schema_audit.md),
+> [SRAM sidecar audit](../docs/sram_gap_sidecar_audit.md), and
+> [developer guide](../docs/schala_eighth_character_developer_guide.md) for implementation
+> decisions.
+
 Prepared by Lily. Scope: establish the known save/runtime character-data namespaces before PE-001 menu trace or any new patch.
 
 ## Verdict

@@ -1042,6 +1042,17 @@ principal eighth-ID collisions before installing any production hook:
 - `docs/schala_rom_expansion_architecture.md` covers the inert 8 MiB ExHiROM
   scaffold, reserved mirrors, allocation contract, and BPS build plan.
 
+The canonical publication-facing consolidation is now the
+[corrected character data map](project_epoch_corrected_character_data_map_v1.md),
+backed by its
+[machine-readable JSON](../references/project_epoch_corrected_character_data_map_v1.json). It preserves
+the historical Compendium claim comparison while separating canonical
+ownership, PC `$07` collision, evidence level, and uninstalled Project Epoch
+proposal. The older
+[PE-000 atlas v0](../references/project_epoch_character_data_atlas_v0.md) is
+superseded provenance only; its record-7/Epoch interpretation and poison-save
+plan are retired.
+
 The audits prove that PC `$07` cannot be enabled by extending loop bounds.
 Depending on context it currently aliases tech state, NPC graphics, the Epoch
 portrait, overworld palette storage, or live menu scratch records.
@@ -1117,6 +1128,9 @@ identity substitution.
 This table records the evidence currently established from the pinned ROM,
 the deterministic emulator runs, and the byte-matched static reconstruction.
 It is not proof that every engine consumer has been found.
+The [corrected data map](project_epoch_corrected_character_data_map_v1.md) is
+the public claim ledger; this table remains the concise implementation and
+test-gate view maintained with it.
 
 | Subsystem | Known source or collision | Current evidence | Gate for PC `$07` |
 | --- | --- | --- | --- |
@@ -1145,8 +1159,9 @@ It is not proof that every engine consumer has been found.
 | Player Tech animation packages | half-open `$C1:4612-$C1:4682` resolves config byte 0 through `$CD:5EF0` and fixed bank `$CE`; command `$1E` independently reads and installs a fixed-`$CE` subscript; config bytes `+3/+4/+5` retain separate fixed `$D1/$CD/$CE` auxiliary readers | primary reader, seven exact preimages, 128 canonical `(bank,root)` identities, nested-script and auxiliary boundaries `verified-static`; high adapter and complete vanilla-shaped host state model `proposal` | Preserve the canonical `$00-$7F` path. Candidate Epoch package selectors `$80-$8F` remain explicitly unbound and do not inherit same-numbered command IDs. Complete a lossless command-stream/`$1E` decision and one symbolic high-package source contract before authoring an original helper. See `docs/schala_player_tech_package_bank_adapter_v0.md`. |
 | Tech names | `$CC:15CF`, 116 records of 11 bytes, IDs `$01-$74` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Tech targets | `$CC:1ACB`, two bytes for IDs `$00-$74`; following data begins at `$1BB5` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
-| Tech properties | `$CC:214B`, 72 records of 12 bytes, IDs `$00-$47`; participant lists follow at `$249F` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
-| Tech MP costs | `$CC:253B`, one byte for IDs `$01-$47`; basic-action map follows at `$2583` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
+| Per-character command records | `$CC:1BEB-$CC:213E`, 124 records of 11 bytes for IDs `$00-$7B` | `verified-static` | Resolve Project Epoch command data separately and preserve every existing record. |
+| Tech properties | `$CC:213F-$CC:249E`, 72 records of 12 bytes for IDs `$00-$47`; named player-Tech ID `$01` begins at `$CC:214B`, and participant lists follow at `$249F` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
+| Tech MP costs | `$CC:253B-$CC:2582`, 72 bytes for IDs `$00-$47`; `$253B` is the ID-0 alignment/null entry, and named costs `$01-$47` occupy `$253C-$2582` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Tech effects | Base `0x0D45AD`, stride 7, seven × eight | `documented` | Relocate/expand table and trace callers. |
 | Basic Attack action IDs | `$CC:2583-$CC:2589`; direct logical PC `$07` falls into HP-growth data at `$CC:258A` | `verified-static` | Preserve `$00-$06` and resolve `$07` from named expanded data at the `$C1:BFFF` consumer. |
 | Attack approach policy | `$CC:F63C-$CC:F643`; direct logical PC `$07` reaches the occupied `$FF` byte and takes the nonzero pathfind branch | `verified-static`; Crono consumer route partly `verified-runtime` | Preserve all eight occupied bytes and add an independent `$07` policy adapter near `$C1:4A44`; do not call `$CC:F643` free. |
@@ -1743,6 +1758,32 @@ states where useful, and a written result.
    their runtime gates pass.
 
 ## 12. Change log
+
+### 2026-08-24
+
+- Consolidated the already established Project Epoch corrections into
+  `docs/project_epoch_corrected_character_data_map_v1.md` and the canonical
+  machine-readable
+  `references/project_epoch_corrected_character_data_map_v1.json`. The v1 map
+  separates historical claims, canonical ownership, PC `$07` consequences,
+  evidence levels, and uninstalled adapter/allocation status. It includes the
+  complete current `$50` playable-record byte schema, exact seven-PC raw
+  graphics windows, exact assembly and animation envelopes, and 33 stable
+  subsystem ledger entries.
+- Marked `references/project_epoch_character_data_atlas_v0.md` as superseded
+  provenance. Its `$0430` eighth/Epoch-record interpretation, `$0480` backing-
+  record candidate, and poison-save trace plan are explicitly retired. The
+  current map preserves `$0430-$047F` as seven-PC Tech/compatibility state and
+  keeps the base/live record stat order separate from growth-array order.
+- Added metadata-only validation for JSON syntax and duplicate keys, source and
+  stable-ID closure, address geometry, contiguous `$50` schema coverage,
+  seven-PC graphics/assembly hashes, high-risk historical corrections,
+  Markdown parity, supersession, and public privacy boundaries. This was
+  documentation consolidation only: no new ROM, emulator, trace, forum, or
+  Internet research; no hook, allocation, patch, save, state, or payload was
+  produced. All seven focused map checks pass; the complete suite runs 921
+  tests with 899 passes and 22 explicit optional/private/runtime skips. All 93
+  tracked tools and the complete test tree syntax-compile.
 
 ### 2026-08-23
 

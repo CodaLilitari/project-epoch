@@ -2,7 +2,31 @@
 
 This workspace resumes the Chrono Trigger playable eighth-character investigation recovered from the ChatGPT conversation **Chrono Trigger 8th Character**.
 
-## Latest developer update — 2026-08-23
+## Latest developer update — 2026-08-24
+
+Project Epoch now has one publication-facing corrected character data map:
+[`docs/project_epoch_corrected_character_data_map_v1.md`](docs/project_epoch_corrected_character_data_map_v1.md),
+with canonical machine-readable source at
+[`references/project_epoch_corrected_character_data_map_v1.json`](references/project_epoch_corrected_character_data_map_v1.json).
+It consolidates 33 stable ownership/collision entries, the complete current
+`$50` playable-record schema, and the exact seven-PC raw graphics, assembly,
+and animation envelopes. Every entry distinguishes historical/community claims, verified
+vanilla ownership, the PC `$07` consequence, evidence level, and uninstalled
+Project Epoch action. It is the bounded current consolidation represented by
+this versioned character/PC `$07` ledger, not a complete map of the entire
+game.
+
+The recovered `references/project_epoch_character_data_atlas_v0.md` is now
+explicitly superseded provenance. Its false `$0430` eighth/Epoch-record model,
+unsafe `$0480` backing-record candidate, and poison-save plan must not be used.
+No new ROM, emulator, trace, forum, or Internet research was performed for
+this consolidation, and no hook, allocation, patch, ROM, save, state, trace,
+or extracted payload was produced. The seven focused map checks pass, and the
+complete checkpoint now runs 921 tests: 899 pass and 22 skip under the existing
+explicit optional/private/runtime dependency gates. All 93 tracked Python
+tools and the complete test tree syntax-compile.
+
+## Previous developer update — 2026-08-23
 
 The new `maci0/ct-recomp` repository is preserved locally and audited at exact
 commit `76f9714`. It contains substantial matching-C and asset-tool work, but
@@ -103,9 +127,10 @@ remain exact.
   `20fcbd08b954311cb948bbcfc0a90eb3bbb6cc46ad00524c0add8ac0e9ecc0d7`
 - Quarantined provisional-runtime IPS SHA-256:
   `484bad4051f39d92015f57a927471d8287ca4e3652a1eef5a9475fabbf4b3cae`
-- 914 automated checks are discovered: 892 pass and 22 skip explicitly under
+- 921 automated checks are discovered: 899 pass and 22 skip explicitly under
   this machine's optional/private/runtime dependency gates. The new
-  battle-progression boundary suite passes all eight focused tests. Coverage
+  corrected-map suite passes all seven focused tests, and the battle-
+  progression boundary suite passes all eight focused tests. Coverage
   includes the recovered clone,
   deterministic BSV inputs, SRAM/WRAM canaries, save layouts, ExHiROM
   controls, canonical event and record audits, original content, portraits,
@@ -488,8 +513,16 @@ new-game and attract/demo hazards, is in
 
 - `references/PHASE1_FINDINGS_FOR_LILY.pdf`
 - `references/PHASE1_FINDINGS_v2_FOR_LILY.pdf`
-- `references/project_epoch_character_data_atlas_v0.md`
+- [`references/project_epoch_character_data_atlas_v0.md`](references/project_epoch_character_data_atlas_v0.md) — superseded
+  historical planning artifact; provenance only
 - `recovered/ct_lucca_to_magus_clone_v0_bundle.zip`
+
+The current corrected publication map is
+[`docs/project_epoch_corrected_character_data_map_v1.md`](docs/project_epoch_corrected_character_data_map_v1.md),
+backed by
+[`references/project_epoch_corrected_character_data_map_v1.json`](references/project_epoch_corrected_character_data_map_v1.json)
+and guarded by
+[`tests/test_project_epoch_corrected_data_map.py`](tests/test_project_epoch_corrected_data_map.py).
 
 The clean ROM is local-only under `private/` and is ignored. Its expected SHA-1 is:
 
@@ -499,7 +532,8 @@ The clean ROM is local-only under `private/` and is ignored. Its expected SHA-1 
 
 Read `AGENTS.md` before changing patch code. In particular:
 
-- preserve the non-PC save region beginning at `$0430`;
+- preserve the seven-PC Tech/compatibility block `$0430-$047F`; it is not an
+  Epoch/vehicle or eighth-PC record;
 - do not write graphics entries `$07` or `$08`;
 - do not infer free space from zero bytes;
 - do not commit ROMs, saves, emulator states, or raw traces.
