@@ -7,7 +7,7 @@
     "target": "Chrono Trigger US Rev0 headerless, logical playable PC 07",
     "coverage": "Current character, party, save, runtime-record, progression, naming, graphics, menu, battle, Tech, item, equipment, and recruitment boundaries relevant to Project Epoch",
     "completeness_claim": "Bounded current consolidation of the Project Epoch corrections represented by this versioned ledger, not a complete ROM, RAM, event, or engine map",
-    "research_change": "Documentation consolidation only; no new ROM, emulator, trace, forum, or Internet research",
+    "research_change": "The map remains a bounded consolidation; its palette entry now incorporates one separately documented private supported-slot emulator replay without changing any PC 07 ownership conclusion",
     "payload_policy": "Metadata, addresses, hashes, conclusions, and relative evidence references only; no ROM, save, state, trace, or extracted game bytes"
   },
   "canonical_rom": {
@@ -139,6 +139,11 @@
       "id": "field-palette-audit",
       "kind": "canonical-rom-audit",
       "path": "docs/field_sprite_palette_loader_audit.md"
+    },
+    {
+      "id": "schala-npc-supported-slot-runtime",
+      "kind": "canonical-rom-and-runtime-audit",
+      "path": "docs/schala_vanilla_npc_supported_slot_smoke_v0.md"
     },
     {
       "id": "tech-package-adapter",
@@ -623,12 +628,12 @@
       "vanilla_ownership": "Field loading copies twelve character-specific colors; several readers force bank E4. Raw overworld ID 07 lands in palette or staging data.",
       "evidence": [
         {"level": "verified-static", "statement": "Five logical field reload paths contain ten 0018-byte shadow copies, and overworld consumers have independent ID formulas."},
-        {"level": "verified-runtime", "statement": "A supported-slot twelve-color Schala-NPC compatibility replay renders without establishing PC 07 or a full replacement palette."}
+        {"level": "verified-runtime", "statement": "Two fresh pre-Continue/load runs and matched clean controls completed bounded four-direction and run movement; at the six accepted motion checkpoints the twelve-color canonical-ROM-derived Schala NPC-family provider renders through Lucca's supported field path, without establishing PC 07 or a full replacement palette."}
       ],
       "pc07_consequence": "Field success cannot authorize battle, menu, portrait, or overworld palette/index reuse.",
       "required_action": "Provide context-specific expanded-bank readers and dedicated overworld/palette data while preserving all vanilla owners.",
       "map_status": "adapter-required",
-      "sources": ["developer-guide", "graphics-menu-audit", "field-palette-audit"]
+      "sources": ["developer-guide", "graphics-menu-audit", "field-palette-audit", "schala-npc-supported-slot-runtime"]
     },
     {
       "id": "menu.walking-sprites-and-gaspar-scratch",

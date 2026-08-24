@@ -3,12 +3,12 @@
 Status: `verified-static` validator; current diagnostic builders integrated  
 Tool: `tools/validate_rom_write_intents.py`  
 Tests: `tests/test_rom_write_intent_guard.py`  
-Last updated: 2026-07-26
+Last updated: 2026-08-24
 
 Tool SHA-256:
-`66448eee38a68e3fda2f4fde7c47e4c3988c8bab9fabd208ae5363b5df6fd6cd`  
+`418d958b32206945a91f15fcbcf13c932970b23d60e07cfde1dd2d027ecd3978`
 Focused-test SHA-256:
-`eae9a18c317f7fb096d22f33ed090d37a64e9e763b81e6519126698ed881ed94`
+`b6ea53ba26cccba2797d634f15c7a40c2b86b03fe0dbcd87583a8ba83d039536`
 
 ## Result
 
@@ -100,6 +100,13 @@ diagnostic must name one and stay wholly inside it. A trusted instruction hook
 may not overlap a known data table. Production table payloads therefore have
 one legal home: a named expanded allocation with adapted readers.
 
+The current private supported-Lucca diagnostics include two exact half-open
+animation envelopes: `lucca_animation` at file `$243880-$243CF0` and
+`lucca_aux_animation` at file `$24AA20-$24AB3C`. These names authorize only
+bounded, canonical-preimage diagnostic replacement within the existing Lucca
+tables. One-byte underflow, overflow, or cross-table writes are rejected, and
+neither envelope is a production allocation.
+
 This rejects the recurring unsafe pattern of appending a record after a table:
 
 - an eighth `$50` record after `CharInitData` would overwrite starting tech
@@ -184,13 +191,19 @@ python tools/validate_rom_write_intents.py manifest.json `
 
 It prints a deterministic JSON report and writes nothing.
 
-The focused tests also audit the existing private Schala-over-Lucca smoke
-against its real source/target images when those ignored files exist. The
-smoke builder now invokes `audit_images` before it may write its private ROM
-and embeds both the strict intent manifest and audit report in its diagnostic
-manifest. This integration does not make the diagnostic production-safe: it
-still replaces explicitly named Lucca-owned data and is rejected as a
-production build.
+The focused tests also audit the existing private original-packet
+Schala-over-Lucca smoke against its real source/target images when those
+ignored files exist. That smoke builder invokes `audit_images` before it may
+write its private ROM and embeds both the strict intent manifest and audit
+report in its diagnostic manifest.
+
+The separate canonical-NPC-provider diagnostic applies the same rule to six
+declared writes: the bounded Lucca graphics and assembly prefixes, the full
+Lucca primary and auxiliary animation tables, the twelve-color Lucca field
+palette, and the checksum pair. Its accepted build accounts for every changed
+byte with exact preimages and complete-diff coverage. This integration does
+not make either diagnostic production-safe: both replace explicitly named
+Lucca-owned data and are rejected as production builds.
 
 The Lucca-to-Magus clone builder also runs the guard. Its static mode passes
 only as a nonproduction, exact-preimage replacement of named Lucca-owned
@@ -212,8 +225,8 @@ Every future ROM-writing builder should:
 7. emit the guard report, tool hash, manifest hash, source/target hashes,
    reproduction command, and evidence level.
 
-The private Schala supported-slot smoke and the Lucca-to-Magus diagnostic are
-integrated. Production builders remain unimplemented, and both trusted
+Both private Schala supported-slot smokes and the Lucca-to-Magus diagnostic
+are integrated. Production builders remain unimplemented, and both trusted
 production catalogs remain empty.
 
 ## Evidence boundary

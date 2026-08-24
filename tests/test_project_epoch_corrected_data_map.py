@@ -46,10 +46,26 @@ class ProjectEpochCorrectedDataMapTests(unittest.TestCase):
             "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
         )
         self.assertIn("not a complete ROM", data["scope"]["completeness_claim"])
-        self.assertIn("no new ROM", data["scope"]["research_change"])
+        self.assertIn(
+            "supported-slot emulator replay",
+            data["scope"]["research_change"],
+        )
 
         source_ids = [source["id"] for source in data["sources"]]
         self.assertEqual(len(source_ids), len(set(source_ids)))
+        runtime_source = next(
+            source
+            for source in data["sources"]
+            if source["id"] == "schala-npc-supported-slot-runtime"
+        )
+        self.assertEqual(
+            runtime_source,
+            {
+                "id": "schala-npc-supported-slot-runtime",
+                "kind": "canonical-rom-and-runtime-audit",
+                "path": "docs/schala_vanilla_npc_supported_slot_smoke_v0.md",
+            },
+        )
         allowed_source_kinds = {
             "project-document",
             "canonical-rom-audit",
@@ -250,6 +266,17 @@ class ProjectEpochCorrectedDataMapTests(unittest.TestCase):
 
         expansion = entries["expansion.exhirom-map-mode-boundary"]
         self.assertEqual(expansion["locations"][0]["space"], "expanded-exhirom-file")
+
+        palette = entries["graphics.palette-and-overworld-paths"]
+        self.assertIn("schala-npc-supported-slot-runtime", palette["sources"])
+        runtime_statement = next(
+            assertion["statement"]
+            for assertion in palette["evidence"]
+            if assertion["level"] == "verified-runtime"
+        )
+        self.assertIn("matched clean controls", runtime_statement)
+        self.assertIn("Lucca's supported field path", runtime_statement)
+        self.assertIn("without establishing PC 07", runtime_statement)
 
     def test_markdown_parity_supersession_and_privacy_boundaries(self) -> None:
         data = load_map()

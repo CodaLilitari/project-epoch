@@ -318,7 +318,10 @@ It does not prove:
 
 Before this census may be used as runtime PC attribution, implement or
 explicitly defer a closed inter-object control-flow and loader-lifetime model.
-The next separate animation-planning audit is the data-driven battle
-action-package census. No native Schala frame should be assigned from a fixed
-numeric operand until its consumer path and runtime context are independently
-proved.
+The separate metadata-only battle action-package topology census and
+source-only package-bank adapter have since been completed. Their next gate is
+a lossless battle command grammar and canonical stream census with an explicit
+decoded-command `$1E` decision; the current fixed-`$CE` subscript reader must
+not be generalized from a raw byte search. No native Schala frame should be
+assigned from a fixed numeric operand until its consumer path and runtime
+context are independently proved.

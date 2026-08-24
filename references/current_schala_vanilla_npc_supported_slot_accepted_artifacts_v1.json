@@ -1,0 +1,395 @@
+{
+  "schema": "project-epoch-emulator-acceptance-v1",
+  "description": "Curated metadata-only acceptance record for the current-bsnes canonical Schala NPC provider replay over Lucca's supported field slot.",
+  "evidence_level": "verified-runtime",
+  "artifact_root": "private/test_runs/schala_vanilla_npc_supported_slot_smoke_v0/current_core_full_provider",
+  "runtime": {
+    "frontend": {
+      "name": "RetroArch",
+      "version": "1.22.2",
+      "path": "private/tools/RetroArch-1.22.2-ProjectEpoch-current-20260822/retroarch.exe",
+      "size": 18641482,
+      "sha256": "81c11b6f24932bf7918f05eee8928035bff3887335fd2a081507c75e9d94d06a"
+    },
+    "core": {
+      "name": "bsnes",
+      "path": "private/tools/RetroArch-1.22.2-ProjectEpoch-current-20260822/cores/bsnes_libretro.dll",
+      "size": 5661090,
+      "sha256": "bb00b395dcac6db960ecacaaf40ea9906fea9b7e23cedf55f8d117c44fcdde78"
+    },
+    "reported_geometry": "256x224",
+    "reported_fps": "60.10",
+    "reported_sample_rate_hz": 48000
+  },
+  "build_binding": {
+    "canonical_rom": {
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "runtime_diagnostic_rom": {
+      "size": 4194304,
+      "sha256": "75dc966ce377accf19ce1a7eb2ac200d5f68fbb94b9436eee7f09e613cc4ad42"
+    },
+    "runtime_build_receipt": {
+      "builder_version": "0.2.0",
+      "builder_sha256": "81b82df62198b63c05d42e71626c88c8757513193967d44ebf50843798e90a68",
+      "private_manifest_path": "private/test_runs/schala_vanilla_npc_supported_slot_smoke_v0/schala_vanilla_npc_lucca_slot_smoke_v0_full_provider.manifest.json",
+      "private_manifest_size": 12111,
+      "private_manifest_sha256": "86c5b73dd8770981807d706affd5dea75d49be604821fbac8a1bdedae175cb06"
+    },
+    "hardened_reproduction": {
+      "builder_path": "tools/build_schala_vanilla_npc_supported_slot_smoke_v0.py",
+      "builder_version": "0.2.2",
+      "builder_size": 26389,
+      "builder_sha256": "d5b43ee02d7a5064cd2cd673f743aa92826d94213e7f1cdb1b811ea2ed3f301b",
+      "private_manifest_path": "private/test_runs/schala_vanilla_npc_supported_slot_smoke_v0/hardened_reproduction_20260824_v022/schala_vanilla_npc_lucca_slot_smoke_v0_full_provider.manifest.json",
+      "private_manifest_size": 12626,
+      "private_manifest_sha256": "cfd9c5384d6b856ae4980b9b7d422b9f8adfe8a7f525e0a1429941d94d8fd167",
+      "reproduced_rom_sha256": "75dc966ce377accf19ce1a7eb2ac200d5f68fbb94b9436eee7f09e613cc4ad42",
+      "guard_status": "images-valid",
+      "complete_diff_coverage": true,
+      "preimages_verified": true,
+      "changed_byte_count": 3759,
+      "declared_byte_count": 4896,
+      "write_count": 6,
+      "production_allocations": 0,
+      "production_hooks": 0
+    },
+    "provider_builder": {
+      "path": "tools/build_schala_vanilla_npc_compat_v0.py",
+      "size": 36018,
+      "sha256": "0ad950e0e069b1171a306da52479014ac896f1d3d4c7e773896f63db34b6c1a9"
+    },
+    "write_guard": {
+      "path": "tools/validate_rom_write_intents.py",
+      "version": "1.0.0",
+      "size": 38103,
+      "sha256": "418d958b32206945a91f15fcbcf13c932970b23d60e07cfde1dd2d027ecd3978"
+    }
+  },
+  "movie_bindings": [
+    {
+      "path": "clean_motion.bsv",
+      "content_crc32": "2D206BF7",
+      "bound_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+      "identifier": 1785104185,
+      "recorded_frame_count": 3599,
+      "executed_frame_count": 1600
+    },
+    {
+      "path": "provider_motion.bsv",
+      "content_crc32": "1B7ABABC",
+      "bound_rom_sha256": "75dc966ce377accf19ce1a7eb2ac200d5f68fbb94b9436eee7f09e613cc4ad42",
+      "identifier": 1785104185,
+      "recorded_frame_count": 3599,
+      "executed_frame_count": 1600
+    }
+  ],
+  "state_witness_contract": {
+    "save_slot": 1,
+    "sram_reference": {
+      "path": "private/test_runs/retroarch/current/saves/schala_vanilla_npc_lucca_slot_smoke_v0_full_provider.srm",
+      "size": 8192,
+      "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+    },
+    "expected": {
+      "wram_anchor_method": "loaded-record-pair",
+      "core_state_length": 290423,
+      "target_state_offset": 20260,
+      "target_length": 80,
+      "canary_sha256": "4e3df1af239b20cefae9d9a2219f384a4934b1916da11b001b9e501b84e06290",
+      "canary_occurrences": [20260],
+      "front_guard_hex": "00000000",
+      "rear_guard_hex": "00000000000000000000000000000000",
+      "compatibility_block_sha256": "b70a2e5d291811c9f58689d7d0dbbfe89b913a3c0b1ef846de4607f0af6d9c73",
+      "compatibility_matches_saved_slot": true,
+      "active_party_hex": "000102",
+      "roster_hex": "000102828004030605",
+      "joined_flags": 254,
+      "epoch_name_hex": "a4c9c8bcc100",
+      "location_id": 474,
+      "explore_mode": 1
+    },
+    "states": [
+      {
+        "path": "states/clean_control_run.state.auto",
+        "variant": "clean",
+        "core_state_sha256": "0f1ffe1ad166cc81a875e248b0200291b33e6cc8cdc3c28a3c5f667b77efb084"
+      },
+      {
+        "path": "states/clean_repeat2.state.auto",
+        "variant": "clean",
+        "core_state_sha256": "0f1ffe1ad166cc81a875e248b0200291b33e6cc8cdc3c28a3c5f667b77efb084"
+      },
+      {
+        "path": "states/provider_repeat2.state.auto",
+        "variant": "provider",
+        "core_state_sha256": "ef69214e24bc6323182c1368b974f135322f400b9e6f0b6a7b59cfe6b2a0a902"
+      },
+      {
+        "path": "states/schala_vanilla_npc_lucca_slot_smoke_v0_full_provider.state.auto",
+        "variant": "provider",
+        "core_state_sha256": "ef69214e24bc6323182c1368b974f135322f400b9e6f0b6a7b59cfe6b2a0a902"
+      }
+    ]
+  },
+  "acceptance_scope": {
+    "artifact_class": "private-supported-slot-provider-diagnostic",
+    "supported_logical_id": 2,
+    "source_npc_id": 9,
+    "provider_variant": "canonical-Schala-NPC-over-Lucca",
+    "control_variant": "canonical-clean-Lucca",
+    "successful_runs_per_variant": 2,
+    "motion_checkpoint_frames": [
+      710,
+      830,
+      950,
+      1070,
+      1190,
+      1590
+    ],
+    "repeat_endpoint_frame": 1590,
+    "logical_pc_07": false,
+    "production_input": false
+  },
+  "artifacts": [
+    {
+      "path": "clean_motion.bsv",
+      "size": 974373,
+      "sha256": "0b5556e02d471a079f5d55957a9d2a13bd159794fa1189a193a07efc409f2b09",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "clean_motion_r2.log",
+      "size": 3946,
+      "sha256": "544a8c450ffc6815cbc6ea986a9925cd839e839f447d9d5dd5445f2c3d23a99d",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "clean_motion_r2.mkv",
+      "size": 810040,
+      "sha256": "e02fe3e2c14433e9d02c1ed540509a219b1f93435cd1450e3ffdd1641a2f3b7a",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "clean_repeat2.log",
+      "size": 3928,
+      "sha256": "b2f8b2aa62f212958c724d8b7466622e2d36c78c45cd38f310132f81409d7436",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "clean_repeat2.mkv",
+      "size": 810040,
+      "sha256": "f8843d9210e1dc52ac6a4eee22d02b75c32abffe66ac70d83be0e5387d49804d",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_100.png",
+      "size": 694,
+      "sha256": "9fa593b0f76924bc13a299a078cf53922283161622ae1f4d19020b0fb14d466a",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_1070.png",
+      "size": 59407,
+      "sha256": "47cf6765aa47a02fa70c21611496a6a08872c8f0d2cda56928441f8ceada0e4f",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_1190.png",
+      "size": 58855,
+      "sha256": "26aa7c967be2cd8ab72219be64dfad96db296802d92873943f5bc5c32cdebaa8",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_1590.png",
+      "size": 60399,
+      "sha256": "f7ab63c2e6dcd591c65cbba264dfbbd9514550236cb19984c668c0219647963b",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_710.png",
+      "size": 61123,
+      "sha256": "914bd774d78a9aba589e39efa8645bd082ef96f7ba7f716e9fe528bffdf5db43",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_830.png",
+      "size": 60007,
+      "sha256": "08a3c5e6bdf41415ebb4915832d20cf45b2f21166e564466aa8f17c871d0c745",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_950.png",
+      "size": 62689,
+      "sha256": "8c31e1a293decdff937d33e6fa6383c647800a30d59ba63cb557d9c7549e4b4d",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/clean_repeat2_1590.png",
+      "size": 60399,
+      "sha256": "f7ab63c2e6dcd591c65cbba264dfbbd9514550236cb19984c668c0219647963b",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_100.png",
+      "size": 694,
+      "sha256": "9fa593b0f76924bc13a299a078cf53922283161622ae1f4d19020b0fb14d466a",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_1070.png",
+      "size": 59223,
+      "sha256": "3e2d197b60dd7cac3b4a473f2f96bebfb0bcd77d73c0bbbbda95b8b0afb2c7f7",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_1190.png",
+      "size": 59396,
+      "sha256": "bccc321713ffe4f4f7b567ad8aebf9c74a9f11d9070a21fbc4e9d30595f03b41",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_1590.png",
+      "size": 60293,
+      "sha256": "e8a03834c1a7a202dbdb63e50134a10a18e51043d1ffa6cd80462138fc792751",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_710.png",
+      "size": 61261,
+      "sha256": "2bc61746272e495e1380fd62773a8386c7675aefe8b789a26cad978e8d6d8188",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_830.png",
+      "size": 60310,
+      "sha256": "fbcda5a26fa86fa34ec6d399281f3491d89d80c726472ea207484f3027a15d1e",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_950.png",
+      "size": 61702,
+      "sha256": "d521a55b92f6e53fa5244b73758f141110263b797b76b1f645608db8ade7361e",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "frames/provider_repeat2_1590.png",
+      "size": 60293,
+      "sha256": "e8a03834c1a7a202dbdb63e50134a10a18e51043d1ffa6cd80462138fc792751",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "provider_motion.bsv",
+      "size": 974373,
+      "sha256": "1bf62c5ec245b036fff8ce54239a960a79ad8d6711c93a19ac2bb4066c2a3eba",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "edit-replay"
+    },
+    {
+      "path": "provider_motion.log",
+      "size": 4086,
+      "sha256": "beddcb3351e0e0a4f7fb215b0af637eb12b8d86c414ce82f598cff5669b128e2",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "provider_motion.mkv",
+      "size": 812592,
+      "sha256": "40ec168875b245daca44dd7bcfd97d2b69a10bf0e1daa4614a7d5802b0de3b69",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "provider_repeat2.log",
+      "size": 3943,
+      "sha256": "d9cfb386b5d6077ccaef05869526a6b1f247845acd8220fedc71f5db49456c2a",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "provider_repeat2.mkv",
+      "size": 812592,
+      "sha256": "8d371f8a9442437617680f56744bdd834f1799f66be71509d50271d108d2ad17",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/clean_control_run.state.auto",
+      "size": 893840,
+      "sha256": "459c0bcfdfecc350846f5434e849f7e6a3d8f44d331362cedb8fe67683141ba9",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/clean_repeat2.state.auto",
+      "size": 893840,
+      "sha256": "459c0bcfdfecc350846f5434e849f7e6a3d8f44d331362cedb8fe67683141ba9",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/provider_repeat2.state.auto",
+      "size": 893840,
+      "sha256": "7a8f91acc43f831e5719a5859659dc62cfde3432b320cc5193a081ef2ea52f12",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    },
+    {
+      "path": "states/schala_vanilla_npc_lucca_slot_smoke_v0_full_provider.state.auto",
+      "size": 893840,
+      "sha256": "7a8f91acc43f831e5719a5859659dc62cfde3432b320cc5193a081ef2ea52f12",
+      "evidence_level": "verified-runtime",
+      "reproduction_group": "play-replay"
+    }
+  ],
+  "observations": {
+    "accepted_run_logs": [
+      "clean_motion_r2.log",
+      "clean_repeat2.log",
+      "provider_motion.log",
+      "provider_repeat2.log"
+    ],
+    "all_accepted_logs_report_replay_started_and_ended": true,
+    "all_accepted_logs_have_no_replay_or_checkpoint_error_lines": true,
+    "headless_audio_output_initialization_errors_observed": true,
+    "recorded_video_continued_without_audio_output": true,
+    "preload_frame_100_provider_and_clean_byte_identical": true,
+    "provider_first_and_repeat_endpoint_frame_byte_identical": true,
+    "clean_first_and_repeat_endpoint_frame_byte_identical": true,
+    "provider_first_and_repeat_final_state_byte_identical": true,
+    "clean_first_and_repeat_final_state_byte_identical": true
+  },
+  "exclusions": [
+    "All ROM and SRAM images, including provider and clean replay copies.",
+    "Title/setup intermediates and exploratory raw-canary movies.",
+    "The rejected clean_motion.log and its 1601-byte clean_motion.mkv, whose log reports a checkpoint-deserialization failure."
+  ],
+  "limitations": [
+    "This source-controlled file contains metadata only; none of the accepted private artifact bytes are included.",
+    "This replay verifies only the canonical Schala NPC provider in Lucca's already-supported field slot. It is not logical PC 07, a production allocation, a battle sprite, save safety, recruitment, or a complete animation-semantic proof.",
+    "The accepted BSV files are content-identity-bound replay inputs; their numeric animation selections do not prove human direction names for the provider stream.",
+    "The canonical Schala NPC data is a private compatibility source, not reusable replacement art."
+  ]
+}

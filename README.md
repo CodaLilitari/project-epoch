@@ -4,6 +4,33 @@ This workspace resumes the Chrono Trigger playable eighth-character investigatio
 
 ## Latest developer update — 2026-08-24
 
+The previously open canonical-Schala-NPC provider replay is now complete; it
+is distinct from the earlier partial-original-packet Schala-over-Lucca smoke.
+The new fail-closed builder derives 79 tiles, 23 native assembly records, four
+primary facing streams, one auxiliary stream, and the native twelve-color
+palette from the pinned clean ROM in memory. It replaces only exact
+Lucca-owned private-diagnostic envelopes, and its mandatory complete-diff audit
+accounts for all 3,759 changed bytes across six declared writes with no hook or
+allocation.
+
+Two fresh provider runs and two matched clean controls reproduce
+Continue/load, bounded up/down/left/right movement, and B+right run movement
+under RetroArch 1.22.2 with the current bsnes core. Repeated endpoint frames
+and states are byte-identical within each variant; the relocation canary,
+guards, saved compatibility block, roster, joined mask, and Epoch name match
+the controls. This proves only the canonical NPC-family provider through
+Lucca's supported field path—not logical PC `$07`, battle/menu/portrait/save
+coverage, production placement, complete animation semantics, or reusable
+art. See the
+[`runtime evidence record`](docs/schala_vanilla_npc_supported_slot_smoke_v0.md)
+and
+[`metadata-only accepted-artifact allowlist`](references/current_schala_vanilla_npc_supported_slot_accepted_artifacts_v1.json).
+The final checkpoint discovers 941 tests: 919 pass and 22 skip only under the
+existing explicit optional/private/runtime dependency gates. All 94
+source-controlled Python tools plus all 88 test modules syntax-parse.
+
+## Previous developer update — 2026-08-24
+
 Project Epoch now has one publication-facing corrected character data map:
 [`docs/project_epoch_corrected_character_data_map_v1.md`](docs/project_epoch_corrected_character_data_map_v1.md),
 with canonical machine-readable source at
@@ -16,8 +43,10 @@ Project Epoch action. It is the bounded current consolidation represented by
 this versioned character/PC `$07` ledger, not a complete map of the entire
 game.
 
-The recovered `references/project_epoch_character_data_atlas_v0.md` is now
-explicitly superseded provenance. Its false `$0430` eighth/Epoch-record model,
+The recovered
+[`references/project_epoch_character_data_atlas_v0.md`](references/project_epoch_character_data_atlas_v0.md)
+is now explicitly superseded provenance. Its false `$0430`
+eighth/Epoch-record model,
 unsafe `$0480` backing-record candidate, and poison-save plan must not be used.
 No new ROM, emulator, trace, forum, or Internet research was performed for
 this consolidation, and no hook, allocation, patch, ROM, save, state, trace,
@@ -26,7 +55,7 @@ complete checkpoint now runs 921 tests: 899 pass and 22 skip under the existing
 explicit optional/private/runtime dependency gates. All 93 tracked Python
 tools and the complete test tree syntax-compile.
 
-## Previous developer update — 2026-08-23
+## Earlier developer update — 2026-08-23
 
 The new `maci0/ct-recomp` repository is preserved locally and audited at exact
 commit `76f9714`. It contains substantial matching-C and asset-tool work, but
@@ -57,6 +86,13 @@ been retired. Production work now targets Schala as logical PC `$07`, using a
 natural eighth live record after relocating the vanilla compatibility block,
 versioned per-slot sidecars, context-specific graphics/menu adapters, and raw
 high-ID `$80-$90` commands that preserve every vanilla action.
+
+Both Schala supported-slot field diagnostics are now complete at their stated
+ceilings: the earlier partial original packet and the newer canonical-NPC
+provider with explicit high-entrypoint fallback. The next animation/Tech
+architecture gate is the lossless battle command-stream grammar/census and an
+explicit decoded command-`$1E` policy, followed by one symbolic high-package
+source—not another supported-slot sprite replacement.
 
 The recovered v0 diagnostic is preserved under:
 
@@ -127,11 +163,12 @@ remain exact.
   `20fcbd08b954311cb948bbcfc0a90eb3bbb6cc46ad00524c0add8ac0e9ecc0d7`
 - Quarantined provisional-runtime IPS SHA-256:
   `484bad4051f39d92015f57a927471d8287ca4e3652a1eef5a9475fabbf4b3cae`
-- 921 automated checks are discovered: 899 pass and 22 skip explicitly under
+- 941 automated checks are discovered: 919 pass and 22 skip explicitly under
   this machine's optional/private/runtime dependency gates. The new
-  corrected-map suite passes all seven focused tests, and the battle-
-  progression boundary suite passes all eight focused tests. Coverage
-  includes the recovered clone,
+  corrected-map suite passes all seven focused tests; the canonical-NPC
+  supported-slot builder passes eleven; its metadata-only accepted-artifact
+  contract passes eight; and the battle-progression boundary suite passes all
+  eight focused tests. Coverage includes the recovered clone,
   deterministic BSV inputs, SRAM/WRAM canaries, save layouts, ExHiROM
   controls, canonical event and record audits, original content, portraits,
   sprite packing, field palette routing, source-only recruitment, the v2
@@ -141,9 +178,11 @@ remain exact.
   audits, the animation semantic contract, the hardened field-animation
   probe, the complete encoded location-event animation operand census, the
   compressed NPC/enemy sprite corpus, the bounded Schala NPC comparison, the
+  repeated canonical-NPC supported-Lucca replay and exact artifact allowlist,
   metadata-only battle action-package topology census, and the source-only
   player-Tech package-bank adapter contract.
-- All 93 source-controlled Python tools parse successfully.
+- All 94 source-controlled Python tools and all 88 test modules parse
+  successfully.
 - Independent repeated builds produce identical IPS, report, and manifest
   bytes.
 
@@ -494,14 +533,20 @@ exactly; see `docs/schala_sprite_packet_foundation_v0.md`.
 The first four cardinal records now have a private, save-isolated supported-
 slot runtime proof after Continue/load and field movement; the accepted replay
 and clean control are in `docs/schala_supported_slot_sprite_smoke_v0.md`.
-For the next private compatibility pass, the canonical vanilla Schala NPC
-family can now be reconstructed at local build time from the user's exact
-clean ROM. Its 23 records, 79 tiles, four aligned facing blocks, twelve-color
-palette, strict hashes, private-only output boundary, and explicit nonclaims
-are documented in `docs/schala_vanilla_npc_source_compatibility_v0.md`.
-No extracted bytes are checked in, no ROM or patch is emitted, Crimson Echoes
-content is absent, and the original Project Epoch art remains preserved as
-deferred replacement-art research.
+Distinct from the original four-cardinal packet above, the second private
+supported-slot compatibility pass is now complete. It reconstructs the
+canonical vanilla Schala NPC family at local build time from the user's exact
+clean ROM: 23 records, 79 tiles, four aligned facing blocks, the twelve-color
+field palette, and an explicit high-entrypoint fallback. Two fresh
+current-bsnes provider executions and two matched clean controls completed the
+bounded field replay; see
+`docs/schala_vanilla_npc_supported_slot_smoke_v0.md`. Static source provenance
+and nonclaims remain in
+`docs/schala_vanilla_npc_source_compatibility_v0.md`. No extracted bytes, ROM,
+or patch are checked in or redistributed. The builder does emit a same-size
+diagnostic ROM only below ignored `private/` paths. Crimson Echoes content is
+absent, and the original Project Epoch art remains preserved as deferred
+replacement-art research.
 The five field palette reload paths and all ten shadow-copy sites are mapped in
 `docs/field_sprite_palette_loader_audit.md`; its `$FFFF` source-key resolver is
 an uninstalled adapter proposal for Schala's fifteen visible colors.

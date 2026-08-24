@@ -374,6 +374,11 @@ KNOWN_TABLES = (
         Span(0x243880, 0x470),
         "private supported-slot diagnostic replacement envelope",
     ),
+    KnownTable(
+        "lucca_aux_animation",
+        Span(0x24AA20, 0x11C),
+        "private supported-slot auxiliary timing replacement envelope",
+    ),
 )
 
 

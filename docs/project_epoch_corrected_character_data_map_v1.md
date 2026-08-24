@@ -13,8 +13,9 @@ Canonical machine-readable source:
 This document consolidates the corrections already established by Project
 Epoch's canonical-ROM audits, pinned static reconstruction, accepted runtime
 traces, and bounded audit of the surviving Chrono Compendium eighth-character
-and Project Schala threads. It adds no new ROM research, trace, forum claim,
-allocation, hook, or runtime result.
+and Project Schala threads. This revision incorporates one separately
+documented private supported-slot emulator replay into the palette entry. It
+adds no new PC `$07` ownership conclusion, forum claim, allocation, or hook.
 
 It is the current corrected map for the character, party, save, runtime-record,
 progression, naming, graphics, menu, battle, Tech, item, equipment, recruitment,
@@ -106,7 +107,7 @@ file.
 | `graphics.pc-pointer-families` | Graphics `$E4:2000`, assembly `$2300`, auxiliary `$2800`, palette `$2A00`, animation, and descriptor `$F000` families expose seven PC entries followed by occupied owners or sentinels. | Resolve PC `$07` independently in field, battle, menu, overworld, palette, and animation contexts. | `adapter-required` |
 | `graphics.melchior-npc-descriptor-collision` | `$E4:F023-$F027` is the first occupied NPC descriptor; historical testimony associates the redirected occupant with Melchior. | Keep the NPC descriptor and users unchanged; Melchior's NPC slot is not eighth-PC capacity. | `negative-control` |
 | `graphics.animation-boundary-and-entrypoints` | Eight words at `$E4:2600` delimit seven PC spans; entrypoint stride four does not mean fixed four-byte records. | Relocate and resolve a complete compatible animation package without overwriting the sentinel. | `adapter-required` |
-| `graphics.palette-and-overworld-paths` | Five field reload paths contain ten exact `$18`-byte primary/mirror copies; fixed-bank readers and independent overworld formulas have their own bounds. | A supported field render does not validate battle/menu/overworld presentation. | `adapter-required` |
+| `graphics.palette-and-overworld-paths` | Five field reload paths contain ten exact `$18`-byte primary/mirror copies; fixed-bank readers and independent overworld formulas have their own bounds. At six inspected motion checkpoints, a repeated clean-controlled replay verifies the canonical Schala NPC provider only through Lucca's twelve-color field path. | A supported field render does not validate logical PC `$07`, battle, menu, portrait, save-preview, or overworld presentation. | `adapter-required` |
 | `menu.walking-sprites-and-gaspar-scratch` | Seven `$40` records occupy `$7E1800-$19BF`; `$19C0` is active scratch, historically the Gaspar-area collision. | Virtualize a deliberate display record; do not expand the persistent record loop in place. | `adapter-required` |
 | `menu.full-portraits-and-save-preview` | `$FF0000-$FF1F7F` is seven `$480` full faces; seven palette pointers follow elsewhere; Epoch naming and `$200` save preview are distinct routes. | Resolve an original full portrait and separate preview without aliasing Epoch. | `proposal-unbound` |
 | `menu.element-icon-table` | `$C2:A2C6-$A2CC` is seven selector bytes; `$C2:A2CD` begins code. | Return Schala's icon at the consumer; never append at `$A2CD`. | `adapter-required` |

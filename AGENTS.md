@@ -165,11 +165,16 @@ These are separate namespaces. Never conflate them.
   `$28`-byte records, 79 fully referenced tiles, four aligned 36-byte primary
   animation blocks, and the native twelve-color palette. Extracted bytes stay
   ignored under `private/`; only metadata and hashes may be source-controlled.
-  This is a supported-slot compatibility source, not reusable art, a complete
-  PC packet, a production allocation, or logical PC `$07` evidence. It must
-  leave NPC `$09`, entries `$07/$08`, `$E4:F023`, and all Epoch data unchanged.
-  The original Project Epoch art remains preserved as deferred replacement-art
-  research pending a deliberate Chrono Trigger-style redraw.
+  Two fresh current-bsnes diagnostic runs and two matched clean controls now
+  verify this provider through Lucca's supported field path across bounded
+  four-direction and run movement, with deterministic endpoint frames/states
+  and intact compatibility canary, guards, roster, joined mask, and Epoch
+  name. This is still supported-slot compatibility evidence, not reusable art,
+  a complete PC packet, a production allocation, or logical PC `$07`
+  evidence. It must leave NPC `$09`, entries `$07/$08`, `$E4:F023`, and all
+  Epoch data unchanged. The original Project Epoch art remains preserved as
+  deferred replacement-art research pending a deliberate Chrono Trigger-style
+  redraw.
 - An independent additive audit now proves that those ten frames plus the six
   existing Glass Focus body poses fit one 16-record, 91-tile native-shaped
   partial packet with exact reconstruction, while preserving the complete
@@ -252,24 +257,24 @@ These are separate namespaces. Never conflate them.
 The supported seven-PC Magus-over-Lucca diagnostic has exposed the principal
 character-data assumptions and its unsafe runtime shim is retired. A separate
 private Schala-over-Lucca smoke verifies the partial original cardinal packet
-without claiming PC `$07`. The immediate visual step is a second private
-supported-slot diagnostic derived locally from the pinned vanilla Schala NPC
-family, with explicit animation-entrypoint fallback and no source-controlled
-extracted bytes. Current work remains the evidence-gated Schala PC `$07`
-foundation: finish the remaining adapter/runtime matrix while keeping final
-replacement art original and provenance-backed. The current 16 original body
-frames are packable but remain natively unbound. The stream shape,
+without claiming PC `$07`. A second private supported-Lucca diagnostic now
+verifies the canonical-ROM-derived Schala NPC-family provider with explicit
+animation-entrypoint fallback and no source-controlled extracted bytes.
+Current work remains the evidence-gated Schala PC `$07` foundation: finish the
+remaining adapter/runtime matrix while keeping final replacement art original
+and provenance-backed. The current 16 original body frames are packable but
+remain natively unbound. The stream shape,
 fixed-bank setup/reader sites, and minimum automatic/menu/battle anchors are
 now mapped. The complete encoded location-event operand census and its direct-
 entry topology are also mapped, but its inter-object control-flow and loader-
 lifetime model remains unresolved. The battle action-package census and
 source-only bank-qualified direct-entry adapter are now complete at the host
 model level while every high package binding remains absent. The next
-animation gates are to implement or explicitly defer the stronger location-
-event contextual model, complete source-role/facing inventory, build a
-lossless battle command-stream census and command-`$1E` decision, and define
-one symbolic high-package source using only proved auxiliary selectors before
-any original 65C816 helper is authored.
+architecture gate is a lossless battle command grammar/stream census and an
+explicit decoded command-`$1E` decision. Only then may one symbolic
+high-package source be defined using proved auxiliary selectors. The stronger
+location-event contextual model and complete source-role/facing inventory
+remain explicit later gates; no original 65C816 helper is yet authorized.
 
 The clone diagnostic must separately account for:
 

@@ -2,16 +2,17 @@
 
 Status: private compatibility prototype; `verified-static` source reconstruction
 
-Runtime status: not yet exercised
+Runtime status: bounded supported-Lucca field replay accepted; the provider
+builder itself remains read-only and `verified-static`
 
 Production status: ineligible
 
 ## Decision
 
-Project Epoch's first visual compatibility pass will derive Schala's existing
+Project Epoch's first visual compatibility pass derives Schala's existing
 vanilla NPC family from the user's pinned clean ROM at local build time. This
-is the shortest path to testing the real playable-character adapters with art
-that already follows Chrono Trigger's native visual language.
+provided the native-style first-pass source for the supported-slot adapter test
+recorded below.
 
 This decision does not replace the original Project Epoch art. The current
 ten-frame gameplay source, portraits, concepts, and Focus poses remain
@@ -93,9 +94,11 @@ entrypoint is not yet established.
    to the checked metadata report and writes nothing.
 
 The builder neither mutates a ROM nor emits a same-size ROM image, so it does
-not invoke the ROM-write-intent guard. Any later builder that installs these
-bytes into a ROM must use named expanded allocations, pinned hook preimages,
-and the complete fail-closed intent/diff audit required by `AGENTS.md`.
+not invoke the ROM-write-intent guard. A private supported-slot diagnostic may
+replace an exact named vanilla-owner envelope only through pinned canonical
+preimages and the complete fail-closed intent/diff audit. Any production
+installer must instead use named expanded allocations, adapted readers, pinned
+hook preimages, and the complete guard required by `AGENTS.md`.
 
 ### Reproduction
 
@@ -118,31 +121,80 @@ Checked source-control artifacts:
 | `tests/test_schala_vanilla_npc_compat_v0.py` | 15,097 | `612fffd23f848122dee4b5b0b18c74cbf0bdec4a4f0235a4b6beb7f9f03503cc` |
 | `references/schala_vanilla_npc_compat_v0.json` | 6,610 | `b5e7348b8bd4b186586d9397b24a3f50ae3a7e83d1605a079276db444ae484b9` |
 
+The reference JSON's `next_gate` is the static provider's prerequisite
+contract, not the current project milestone. The separate supported-slot
+installer and runtime record below now satisfy that prerequisite at their
+bounded Lucca-field ceiling; the pinned static artifact remains unchanged for
+provenance.
+
 The reference JSON contains no graphics, assembly words, animation sequences,
 palette values, screenshots, or other extracted packet bytes. The private
 binary outputs and their manifest must stay ignored and must never enter a
 commit, archive, release, or public repository.
 
-## Runtime contract for the next diagnostic
+### Private supported-slot installer
 
-The next step is a private supported-slot field replay, not PC `$07`
-integration. It must:
+`tools/build_schala_vanilla_npc_supported_slot_smoke_v0.py` rebuilds the
+provider in memory and creates only an ignored, disposable Lucca-slot
+diagnostic. It requires the exact canonical preimages and declares precisely
+these six writes before invoking the project guard:
 
-1. use the derived packet as an explicit visual provider without changing NPC
-   `$09`, NPC descriptor `$E4:F050`, graphics entries `$07/$08`, the Epoch
-   vehicle/name paths, roster data, save data, or the canonical ROM in place;
-2. bind only entrypoints whose role has been proved, with a documented safe
-   fallback for any missing or ambiguous playable-PC animation request;
-3. compare against a clean control through Continue/load, field
-   initialization, idle, all four directions, and calibrated movement;
-4. preserve disposable save isolation and the existing WRAM/sidecar/Epoch
-   canaries; and
-5. record ROM, fixture, movie, emulator, screenshot, state, and output hashes.
+| Diagnostic write | File span, half-open | Bytes |
+| --- | --- | ---: |
+| Provider graphics over Lucca prefix | `$136B40-$137520` | 2,528 |
+| Provider assembly over Lucca prefix | `$1C4E70-$1C5208` | 920 |
+| Lucca primary animation | `$243880-$243CF0` | 1,136 |
+| Lucca auxiliary timing | `$24AA20-$24AB3C` | 284 |
+| Lucca twelve-color field palette | `$240030-$240048` | 24 |
+| SNES checksum pair | `$00FFDC-$00FFE0` | 4 |
 
-Only after that supported-slot replay succeeds should this provider be
-connected to a natural logical PC `$07` diagnostic. Battle, menu walking,
-overworld, portrait, save preview, damage, casting, victory, death, and every
-other context remain separate adapter gates.
+The complete-diff audit covers every changed byte and rejects any mutation
+outside those declarations. The provider source spans, NPC descriptor table,
+PC/NPC routing tables, graphics entries `$07/$08`, Epoch data, Lucca tails,
+record, roster, Tech, item, and save regions remain exact negative controls.
+
+Each source facing exposes nine four-byte entrypoint starts. The installer
+copies entrypoint cells `$00-$08` by numeric position only and makes no claim
+that a source number has the same semantic role in the PC consumer. Lucca
+selectors `$09-$46` receive the corresponding facing's exact source
+entrypoint-zero cell, while the shared auxiliary table receives its exact
+entrypoint-zero timing cell. This is a documented safe fallback shape, not a
+complete animation-role map.
+
+## Accepted supported-slot diagnostic
+
+The private supported-slot field replay is now accepted as bounded
+`verified-runtime` evidence. A separate fail-closed builder derives the five
+provider assets in memory from the pinned clean ROM, installs them only over
+Lucca's existing graphics, assembly, primary-animation, auxiliary-animation,
+and twelve-color field-palette windows, and runs the complete ROM-write intent
+and diff audit before writing an ignored diagnostic image. It leaves NPC
+`$09`, descriptor `$E4:F050`, graphics entries `$07/$08`, the Epoch paths,
+roster, record, Tech, item, and save data unchanged.
+
+Two fresh diagnostic runs and two matched clean-ROM controls began before
+Continue/load on RetroArch 1.22.2 with the pinned current bsnes core. The
+recorded schedule exercised bounded up, down, left, right, and B+right run
+movement. At the inspected checkpoints where the control renders Lucca, the
+diagnostic coherently renders the canonical-ROM-derived Schala NPC-family
+sprite; both repeated endpoint states and endpoint frames are deterministic.
+The relocation-candidate canary,
+front and rear guards, saved `$0430-$047F` bytes, roster, joined mask, Epoch
+name, and isolated no-load/no-save boundary match the control.
+
+The provider's nine source entrypoint cells are preserved by numeric position
+only. Selectors `$09-$46` use the corresponding facing's entrypoint-zero cell
+and the shared entrypoint-zero timing cell as an explicit fallback. This does
+not assign semantic names to those source entrypoints or prove which high
+selectors the accepted route requested.
+
+Exact artifacts, hashes, frame schedule, reproduction steps, negative
+controls, and nonclaims are in
+[`schala_vanilla_npc_supported_slot_smoke_v0.md`](schala_vanilla_npc_supported_slot_smoke_v0.md).
+Only after a separate natural logical-PC-`$07` diagnostic may this provider be
+connected to the eighth identity. Battle, menu walking, overworld, portrait,
+save preview, damage, casting, victory, death, and every other context remain
+separate adapter gates.
 
 ## Explicit nonclaims
 

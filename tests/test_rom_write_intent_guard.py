@@ -211,6 +211,35 @@ class MetadataGuardTests(unittest.TestCase):
         ):
             TOOL.validate_manifest(bad)
 
+    def test_lucca_aux_diagnostic_is_exactly_bounded(self) -> None:
+        table = next(
+            table
+            for table in TOOL.KNOWN_TABLES
+            if table.table_id == "lucca_aux_animation"
+        )
+        valid = self.diagnostic_manifest(
+            start=table.span.start,
+            payload_kind="table",
+        )
+        valid["writes"][0]["table_id"] = table.table_id
+        self.assertEqual(
+            TOOL.validate_manifest(valid)["status"],
+            "metadata-valid",
+        )
+
+        for start in (table.span.start - 1, table.span.end - 3):
+            with self.subTest(start=start):
+                bad = self.diagnostic_manifest(
+                    start=start,
+                    payload_kind="table",
+                )
+                bad["writes"][0]["table_id"] = table.table_id
+                with self.assertRaisesRegex(
+                    TOOL.WriteIntentError,
+                    "in-place table extension",
+                ):
+                    TOOL.validate_manifest(bad)
+
     def test_exact_hook_requires_trusted_site_span_owner_and_bytes(self) -> None:
         preimage = bytes.fromhex("a90100")
         replacement = bytes.fromhex("220000")

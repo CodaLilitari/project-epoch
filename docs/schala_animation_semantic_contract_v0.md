@@ -283,9 +283,15 @@ direct-function topology, then uses an incoming direct-entry marker closure to
 avoid treating physical object adjacency as runtime identity. That result is
 still only a possible-context overapproximation: calls, jumps, fallthrough,
 loader lifetime, startup replay, and runtime reachability remain unresolved.
-See `docs/location_event_animation_operand_census_v0.md`. A separate
-data-driven battle action-package census remains required before native
-Schala frame assignment.
+See `docs/location_event_animation_operand_census_v0.md`. The separate
+metadata-only battle action-package topology census and source-only
+bank-qualified package adapter are now complete at the host-model level. They
+do not decode the command streams or adapt command `$1E`'s fixed-`$CE`
+subscript path. The next battle-animation gate is therefore a lossless
+command grammar and canonical stream census plus an explicit decoded-`$1E`
+policy before any native Schala frame or high package is assigned. See
+`docs/battle_action_package_topology_census_v0.md` and
+`docs/schala_player_tech_package_bank_adapter_v0.md`.
 
 ## Fail-closed gates
 
