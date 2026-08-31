@@ -1,0 +1,131 @@
+{
+  "decision": {
+    "command_1e": "forbidden at every decoded token start",
+    "command_1e_handler_adaptation": false,
+    "command_1f": "forbidden in flat direct streams",
+    "command_21": "forbidden in flat direct streams",
+    "command_25": "allowed with forced-fallthrough validation",
+    "command_80_zero_nibble": "forbidden",
+    "command_da_lookahead": "must remain inside its named stream span",
+    "descriptor_stream_overlap": "forbidden for authored Epoch data",
+    "final_for_profile_v0": true,
+    "opcode_profile": "canonical-census-observed opcodes minus 01,1E,1F,21",
+    "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+    "raw_byte_scan_is_authority": false,
+    "stream_span_coverage": "every byte must be token-owned",
+    "suffix_entrypoints": "every distinct descriptor-selected pointer is decoded independently",
+    "terminal": "command 00 only"
+  },
+  "dependencies": {
+    "battle_command_grammar_reference": {
+      "schema": "project-epoch-battle-command-grammar-census-contract-v0",
+      "sha256": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c",
+      "size": 12433
+    },
+    "package_bank_adapter_reference": {
+      "schema": "project-epoch-schala-player-tech-package-bank-adapter-contract-v0",
+      "sha256": "dab2834afb28ea2b89e814747d4a079fef7a403ec67eba592a7f866c88faa69e",
+      "size": 12280
+    },
+    "interpreter_identities": {
+      "grammar_auditor_source": {
+        "path": "tools/audit_battle_command_grammar_census_v0.py",
+        "sha256": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228",
+        "size": 53608
+      },
+      "grammar_token_shape_profile": {
+        "row_count": 511,
+        "sha256": "25502f827efd57ecaf920896a6216db2ad4278e66a2410ada1b7695a25a95f3d"
+      },
+      "package_bank_adapter_source": {
+        "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+        "sha256": "9a080e38839d2a0908acb09d8fdce9feb5ca90264fe79f120aeab9d74441c0e2",
+        "size": 35427
+      }
+    }
+  },
+  "evidence_level": "verified-static",
+  "expected_results": {
+    "banned_observed_opcodes": [
+      "01",
+      "1E",
+      "1F",
+      "21"
+    ],
+    "conformance_vector": {
+      "both_descriptor_masks_validated": true,
+      "command_00_terminal_count": 1,
+      "command_1e_cross_bank_subscripts_resolved": false,
+      "command_25_site_count": 0,
+      "command_80_site_count": 0,
+      "command_da_site_count": 0,
+      "command_exclusion_proof_sha256": "b3bbd8b43304381fc7e9a141546286b26101e36bb0d2a75f29ed2877a39f9aa0",
+      "decoded_command_1e_site_count": 0,
+      "descriptor_entry_ledger_sha256": "fbcf22eb0b57c7c365f1e265ee925da42b23229a4b758e6e310995fd406206bf",
+      "descriptor_relation_count": 2,
+      "descriptor_span_size": 8,
+      "descriptor_stream_overlap_count": 0,
+      "distinct_direct_entrypoint_count": 2,
+      "expanded_source_1e_absence_proved": true,
+      "mask0_relation_count": 2,
+      "mask1_relation_count": 0,
+      "owned_byte_ledger_sha256": "53878dda340332fd8173820d8b7bb46266febc986146418b41b04421d093216d",
+      "package_selector": "80",
+      "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+      "raw_byte_equal_1e_inside_stream_span_count": 1,
+      "raw_stream_or_descriptor_bytes_emitted": false,
+      "shared_token_start_count": 1,
+      "source_content_ledger_sha256": "64768d73f95976de6fcc11bad4c3cc1d7976062b35f12dc5102f2246d22028a1",
+      "source_content_size": 11,
+      "status": "pass-all-selected-flat-direct-streams-exclude-command-1e",
+      "stream_span_count": 1,
+      "stream_span_total_size": 3,
+      "termination_ledger_sha256": "bcc22aecf08f62123daad265b0d18ab05ec09f46f4b38c884d196c84d9d7a0f1",
+      "token_extent_conflict_count": 0,
+      "token_ledger_sha256": "71414196d6b8a730cf212d73053455fd982a12b6032a07af6427f7a65adf8063",
+      "top_level_command_1f_site_count": 0,
+      "top_level_command_21_site_count": 0,
+      "total_entrypoint_traversal_token_count": 3,
+      "trace_ledger_sha256": "d56622b0c3639a2427f4b77f97294be73386908cb4748cc3a8562561e5a64c8d",
+      "unique_owned_byte_count": 3,
+      "unique_token_start_count": 2,
+      "unowned_stream_byte_count": 0
+    },
+    "observed_canonical_opcode_count": 127,
+    "strict_allowed_opcode_count": 123,
+    "strict_allowed_opcode_vector_sha256": "2e3ae36cc7cb7a562c2e8ec3f5d67038ce09225953264c2ed5e3cb87a7fb39aa"
+  },
+  "limitations": [
+    "This is a source-only authoring policy and validator, not a package, selector binding, allocation, hook, or runtime proof.",
+    "The allowed opcode profile is limited to commands observed in the closed canonical primary-package census; observation is possible-context static evidence, not runtime frequency.",
+    "Command 25 is validated along its forced-fallthrough tokenization; its conditional early-stop runtime branch is not replayed here.",
+    "Command 80 with low nibble zero is deliberately forbidden even though the completed grammar models its one-byte ownership and 256-byte read lookahead.",
+    "The policy validates primary command streams only; auxiliary graphics, palette, effect, sound, and fixed-bank config-byte readers remain separate gates.",
+    "A future symbolic high package must pass this validator with exact named source spans before any production implementation is considered."
+  ],
+  "nonclaims": [
+    "No candidate package selector 80-8F is bound.",
+    "No Schala action ID, Tech, item, animation, sprite, or logical PC 07 runtime is defined.",
+    "No canonical command or package payload is copied or emitted.",
+    "No command-1E handler adaptation or cross-bank subscript registry is implemented or approved.",
+    "No expanded ROM bank, address, allocation, WRAM scratch, hook, helper, patch, ROM, save, state, trace, or emulator result is approved.",
+    "Synthetic conformance bank values and offsets are test identities only, not free-space or placement claims."
+  ],
+  "schema": "project-epoch-schala-expanded-package-command-policy-contract-v0",
+  "scope": {
+    "allocation_or_hook_approval": false,
+    "canonical_or_upstream_payload_copied": false,
+    "canonical_rom_access": false,
+    "input_kind": "immutable synthetic 64 KiB bank image plus exact named descriptor and stream spans",
+    "metadata_only": true,
+    "operation": "freeze and prove the source-only Project Epoch expanded primary-package command policy",
+    "patch_rom_or_output_file_emission": false,
+    "policy_profile": "decoded-command-1e-exclusion-flat-direct-v0",
+    "production_installable": false,
+    "rom_save_state_trace_mutation": false,
+    "runtime_performed": false,
+    "selector_or_action_binding": false,
+    "source_only": true
+  },
+  "version": 0
+}

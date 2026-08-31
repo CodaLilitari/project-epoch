@@ -21,16 +21,46 @@ Focus body poses have independent `verified-static` proof that they fit one
 animation/package topology is now mapped through its current static ceiling;
 the package-bank host model, native command-`$1E`/`$1F` handler semantics, and
 the full lossless battle-command grammar/canonical stream census are also now
-mapped. The immediate new Tech-animation work is the final expanded-package
-policy that either excludes `$1E` or adapts its known fixed-`$CE` subscript
-route. It is not another supported-slot sprite swap, command-width census, or
-disassembly of the same handler. The remaining production gate is
+mapped. The strict `decoded-command-1e-exclusion-flat-direct-v0` source policy
+is now complete as well. The immediate new Tech-animation work is one
+source-only symbolic high package under that policy, together with an explicit
+contract for its still-fixed-bank auxiliary selectors. It is not another
+supported-slot sprite swap, command-width census, or disassembly of the same
+handler. The remaining production gate is
 still to install and prove the complete relocated compatibility lifecycle and
 sidecar behavior, complete Schala's field palette/frame adapters, and
 implement the selected record, command, item, and recruitment boundaries. A
 booting ROM or a visually plausible sprite is not sufficient evidence.
 
-## Latest developer update: battle-command grammar census complete
+## Latest developer update: expanded-package command policy complete
+
+On 2026-08-31, `BA-CMD-1E-FINAL-EXPANDED-POLICY` reached
+`complete-static`. Project Epoch selected strict decoded-command exclusion for
+profile `decoded-command-1e-exclusion-flat-direct-v0`: every independently
+selected descriptor entrypoint must decode as a flat direct stream and reach
+terminal `$00` without decoded `$1E`, `$1F`, or `$21`. A raw operand byte equal
+to `$1E` remains legal; the conformance vector deliberately proves that token
+boundaries, not byte searches, are authoritative.
+
+The validator checks both descriptor masks, shared suffix entrypoints,
+mid-token conflicts, exact named descriptor/stream spans, complete token-owned
+coverage, `$25` forced fallthrough, `$80`'s forbidden zero-nibble case, and
+`$DA`'s bounded lookahead. Its certificate is content-bound and
+interpreter-bound: both dependency sources and a complete 511-row token-shape
+profile are pinned. The 23 focused tests include valid structural and source-
+identity mutations plus the intentional out-of-span boundary.
+
+The complete checkpoint runs 985 tests: 963 pass and the same 22 explicit
+optional/private/runtime cases skip. All 189 tracked Python sources
+syntax-compile in memory.
+
+This is a source-only authoring decision, not an actual package or handler
+adaptation. All `$80-$8F` selectors remain unbound, the cross-bank `$1E`
+resolver still refuses, and auxiliary graphics/palette/effect/sound readers
+remain separate gates. Resume at `BA-SYMBOLIC-HIGH-PACKAGE`. See the
+[complete v0 policy record](schala_expanded_package_command_policy_v0.md).
+
+## Previous developer update: battle-command grammar census complete
 
 On 2026-08-31, `BA-CMD-GRAMMAR-CANONICAL-CENSUS` reached
 `complete-static`. The read-only auditor classifies all opcode bytes
@@ -49,7 +79,8 @@ dual-use relation is hash-pinned and must not be mistaken for free space.
 
 This is `verified-static`, metadata-only evidence. It approves no hook,
 allocation, high package, command-`$1E` adaptation, Schala Tech, or battle
-runtime. Resume at `BA-CMD-1E-FINAL-EXPANDED-POLICY`. See the
+runtime. Its then-next policy gate is now complete; current work resumes at
+`BA-SYMBOLIC-HIGH-PACKAGE`. See the
 [complete grammar and canonical-census record](battle_command_grammar_census_v0.md).
 
 ## Previous developer update: hardened Mesen MCP feasibility
@@ -85,15 +116,16 @@ sound deceptively similar.
 | `BA-CMD-HANDLER-1E-SEMANTICS` | `complete-static` | The pinned `$C1:56CC-$C1:5714` handler is already decoded: `$1E` doubles its operand, reads a target from fixed bank `$CE`, and forces the live script bank to `$CE`; `$1F` restores the saved 24-bit parent pointer. Do not repeat this disassembly unless its pinned preimage drifts or a test falsifies it. |
 | `BA-CMD-HANDLER-1E-V0-SAFETY` | `complete-fail-closed` | The v0 host model deliberately refuses expanded nested-script resolution instead of guessing from raw `$1E` bytes. |
 | `BA-CMD-GRAMMAR-CANONICAL-CENSUS` | `complete-static` | The v0 read-only auditor classifies `$00-$FF`, pins the reviewer-encoded canonical-handler width interpretation, tokenizes all 2,173 config-selected direct roots, follows 59 fixed-`$CE` `$1E` targets, and rejects extent conflicts. It records the single exact four-byte descriptor/stream dual use and qualifies nested `$1F` as forced-fallthrough rather than runtime certainty. |
-| `BA-CMD-1E-FINAL-EXPANDED-POLICY` | `next-gate` | Prove either that every Project Epoch expanded stream excludes `$1E`, including suffix/shared entrypoints, or implement and prove a bank-qualified subscript registry/handler that preserves `$1F`, `$21`, `$25`, widths, DBR, DP, stack, operands, timing, and vanilla equivalence. The native handler semantics and canonical grammar are not open work. |
-| `BA-SYMBOLIC-HIGH-PACKAGE` | `unbound` | All candidate package selectors `$80-$8F` remain empty. Define one symbolic source using only proved auxiliary selectors after the two preceding open gates. |
+| `BA-CMD-1E-FINAL-EXPANDED-POLICY` | `complete-static` | Profile `decoded-command-1e-exclusion-flat-direct-v0` forbids decoded `$1E/$1F/$21`, permits raw operand byte `$1E`, independently decodes both masks and every suffix/shared entrypoint through `$00`, and requires disjoint exact named spans with complete token ownership. The certificate pins content and interpreter identities. It adapts no handler and binds no package. |
+| `BA-SYMBOLIC-HIGH-PACKAGE` | `next-gate` | All candidate package selectors `$80-$8F` remain empty. Define exactly one source-only symbolic package using the completed exclusion validator and only deliberately selected, already-proved canonical auxiliary values. Do not bind it to an action or production allocation. |
 
-Resume at `BA-CMD-1E-FINAL-EXPANDED-POLICY`. Reopen a completed gate only
+Resume at `BA-SYMBOLIC-HIGH-PACKAGE`. Reopen a completed gate only
 when pinned evidence changes or a failing regression invalidates it. The
 detailed evidence remains in
 `docs/battle_action_package_topology_census_v0.md` and
 `docs/schala_player_tech_package_bank_adapter_v0.md`, with the completed
-grammar in `docs/battle_command_grammar_census_v0.md`.
+grammar in `docs/battle_command_grammar_census_v0.md` and the final v0 policy
+in `docs/schala_expanded_package_command_policy_v0.md`.
 
 ## 1. Evidence vocabulary
 
@@ -955,8 +987,9 @@ closed inter-object control-flow and loader-lifetime model. The separate
 battle action-package census and package-bank adapter are now complete at
 their host-model ceiling, and the native `$1E/$1F` handler semantics are
 already decoded. The general lossless battle-command grammar/canonical census
-is now complete-static as well. Resume at the expanded-package `$1E`
-exclusion-or-adaptation policy; do not repeat either completed audit.
+is now complete-static as well. The strict flat-direct decoded-`$1E`
+exclusion policy is complete too. Resume at one source-only symbolic high
+package; do not repeat any of those completed audits.
 
 #### Compressed sprite corpus and bounded Schala NPC comparison
 
@@ -1241,7 +1274,7 @@ test-gate view maintained with it.
 | Portraits | Full menu path has seven `$480` 36-tile faces plus seven palettes; ID7 aliases Crono/Epoch depending on context. The supported clone's `$200` preview path is separate. | static layout `verified-static`; supported small preview `verified-runtime` | Preserve Epoch naming context and dynamically resolve both an original full portrait and a distinct save preview. |
 | Tech bases/ranges | `CharTechBaseTable` at `$CC:276A` has seven two-byte entries; `$C2:BD40` supplies 37 boundaries for 36 learned groups | `verified-static` | Relocate/expand owner and group metadata before adding Schala techs. |
 | Action namespace | Named player commands use `$01-$74`, basic attacks `$75-$7B`; `$7C-$7F` stay reserved as player-command IDs, although the separate PC type-2 animation-config namespace has fixed internal producers for rows `$7C/$7D/$7F`; raw `$80-$90` survives the battle descriptor/queue unchanged, while `$F0-$FF` is a marker family | transport and internal-config distinction `verified-static`; layout `proposal` | Use the pinned `$80-$90` overlay, patch every signed/direct-index edge, leave `$7C-$7F` untouched as player commands, and preserve the same-valued vanilla animation-config rows independently. |
-| Player Tech animation packages | half-open `$C1:4612-$C1:4682` resolves config byte 0 through `$CD:5EF0` and fixed bank `$CE`; command `$1E` independently reads and installs a fixed-`$CE` subscript; config bytes `+3/+4/+5` retain separate fixed `$D1/$CD/$CE` auxiliary readers | primary reader, seven exact preimages, 128 canonical `(bank,root)` identities, nested-script and auxiliary boundaries, and full canonical command grammar/closure `verified-static`; high adapter and complete vanilla-shaped host state model `proposal` | Preserve the canonical `$00-$7F` path. Candidate Epoch package selectors `$80-$8F` remain explicitly unbound and do not inherit same-numbered command IDs. Reuse the completed `$1E/$1F` handler analysis and grammar census; now choose and prove the expanded-package `$1E` exclusion-or-adaptation policy and one symbolic high-package source contract before authoring an original helper. See `docs/schala_player_tech_package_bank_adapter_v0.md` and `docs/battle_command_grammar_census_v0.md`. |
+| Player Tech animation packages | half-open `$C1:4612-$C1:4682` resolves config byte 0 through `$CD:5EF0` and fixed bank `$CE`; command `$1E` independently reads and installs a fixed-`$CE` subscript; config bytes `+3/+4/+5` retain separate fixed `$D1/$CD/$CE` auxiliary readers | primary reader, seven exact preimages, 128 canonical `(bank,root)` identities, nested-script and auxiliary boundaries, full canonical command grammar/closure, and the flat-direct decoded-`$1E` exclusion policy `verified-static`; high adapter and complete vanilla-shaped host state model `proposal` | Preserve the canonical `$00-$7F` path. Candidate Epoch package selectors `$80-$8F` remain explicitly unbound and do not inherit same-numbered command IDs. Apply the completed exclusion validator to exactly one symbolic source, with exact named spans and deliberately retained canonical auxiliary selectors, before authoring an original helper. Config bytes `+3/+4/+5` remain separate fixed-bank gates. See `docs/schala_player_tech_package_bank_adapter_v0.md`, `docs/battle_command_grammar_census_v0.md`, and `docs/schala_expanded_package_command_policy_v0.md`. |
 | Tech names | `$CC:15CF`, 116 records of 11 bytes, IDs `$01-$74` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Tech targets | `$CC:1ACB`, two bytes for IDs `$00-$74`; following data begins at `$1BB5` | `verified-static` | Resolve Project Epoch command data separately and trace all callers. |
 | Per-character command records | `$CC:1BEB-$CC:213E`, 124 records of 11 bytes for IDs `$00-$7B` | `verified-static` | Resolve Project Epoch command data separately and preserve every existing record. |
@@ -1819,13 +1852,14 @@ states where useful, and a written result.
    its static evidence ceiling, then implement or explicitly defer its closed
    inter-object control-flow and loader-lifetime model. The separate battle
    action-package topology census and source-only bank-qualified package
-   adapter are complete at the host-model level. Next build a lossless battle
-   command grammar and canonical stream census, reusing rather than repeating
-   the completed native `$1E/$1F` handler analysis. Then make and prove the
-   expanded-package `$1E` exclusion/adaptation decision, complete the
-   fixed-bank auxiliary-reader contracts, and define one symbolic high-package
-   source before authoring any original 65C816 helper or assigning native
-   Schala frames. The location-
+   adapter are complete at the host-model level. The lossless battle-command
+   grammar/canonical census and the strict flat-direct decoded-`$1E` exclusion
+   policy are complete too, reusing rather than repeating the native
+   `$1E/$1F` handler analysis. Next define exactly one symbolic high-package
+   source with exact named descriptor/stream spans, validate it under the
+   completed policy, and retain only deliberately selected canonical
+   auxiliary values. Do that before authoring any original 65C816 helper or
+   assigning native Schala frames. The location-
    event audit inventories all 10,637 encoded sites and proves the complete
    116,064-entry direct-function topology; its incoming marker closure
    intentionally remains a possible-context overapproximation rather than
@@ -1856,6 +1890,19 @@ states where useful, and a written result.
 
 ### 2026-08-31
 
+- Closed `BA-CMD-1E-FINAL-EXPANDED-POLICY` at `complete-static` by selecting
+  strict decoded-command exclusion for profile
+  `decoded-command-1e-exclusion-flat-direct-v0`. The source-only validator
+  independently decodes both masks and every suffix/shared entrypoint through
+  `$00`, accepts raw operand byte `$1E`, forbids decoded `$1E/$1F/$21`, and
+  requires exact disjoint named spans with complete token ownership. The
+  certificate pins exact source content, both dependency source identities,
+  and a complete 511-row token-shape interpreter profile. It emits metadata
+  only, binds no selector/action, adapts no handler, and approves no hook,
+  allocation, payload, runtime, or PC `$07`. The 23 focused tests pass; the
+  complete checkpoint runs 985 tests with 963 pass and the same 22 explicit
+  optional/private/runtime skips, and all 189 Python sources syntax-compile.
+  Resume at `BA-SYMBOLIC-HIGH-PACKAGE`.
 - Added a zero-dependency, project-scoped Mesen MCP controller and fixed-grammar
   Lua bridge. The exact six-tool allowlist is session start/status, bounded
   WRAM read, CPU-state read, bounded WRAM access capture, and session stop.

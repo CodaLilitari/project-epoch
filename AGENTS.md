@@ -131,9 +131,15 @@ These are separate namespaces. Never conflate them.
   canonical handler corpus; its hashes do not auto-derive semantics. All
   nested forced-fallthrough traces reach `$1F`, but 24 contain conditional
   return `$21`, and one exact four-byte descriptor/stream dual use is occupied,
-  not free space. Next prove the expanded-package `$1E`
-  exclusion-or-adaptation policy and auxiliary adapters before claiming
-  original expanded Tech packages.
+  not free space. The final v0 expanded-package decision is strict decoded
+  `$1E` exclusion for flat direct streams. Raw byte scans are never authority:
+  an operand may equal `$1E`. Every future authored package must pass both
+  descriptor masks, all suffix/shared entrypoints, exact disjoint named spans,
+  complete token ownership, and terminal `$00` under the interpreter-pinned
+  validator. The adapter's cross-bank `$1E` refusal remains intact, and
+  auxiliary fixed-bank readers remain separate gates. The canonical four-byte
+  descriptor/stream dual use remains occupied canonical data; newly authored
+  Epoch descriptor/stream overlap is forbidden. No selector is bound.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.
@@ -278,12 +284,13 @@ entry topology are also mapped, but its inter-object control-flow and loader-
 lifetime model remains unresolved. The battle action-package census and
 source-only bank-qualified direct-entry adapter are now complete at the host
 model level while every high package binding remains absent. The next
-architecture gate is the final expanded-package `$1E`
-exclusion-or-adaptation policy. The lossless battle-command grammar and
-canonical stream census are complete at `verified-static`, reusing rather
-than repeating the decoded native `$1E/$1F` handler semantics. Only after the
-policy passes may one symbolic high-package source be defined using proved
-auxiliary selectors. The stronger
+architecture gate is `BA-SYMBOLIC-HIGH-PACKAGE`. The lossless battle-command
+grammar/canonical stream census and strict flat-direct decoded-`$1E` exclusion
+policy are complete at `verified-static`, reusing rather than repeating the
+decoded native `$1E/$1F` handler semantics. Every `$80-$8F` selector remains
+unbound. Define one source-only symbolic high package using exact named spans
+and only deliberately selected, already-proved canonical auxiliary values.
+The stronger
 location-event contextual model and complete source-role/facing inventory
 remain explicit later gates; no original 65C816 helper is yet authorized.
 

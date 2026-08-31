@@ -4,13 +4,40 @@ This workspace resumes the Chrono Trigger playable eighth-character investigatio
 
 ## Latest developer update — 2026-08-31
 
-`BA-CMD-GRAMMAR-CANONICAL-CENSUS` is now `complete-static`. A new
-canonical-ROM-pinned, read-only auditor classifies the complete `$00-$FF`
-command-byte domain, records the reviewer-encoded handler-derived owned-width
-grammar, and losslessly closes every config-selected primary package stream
-plus all fixed-`$CE` command-`$1E` targets. The exact result covers 2,173
-direct and 59 nested entrypoints, 31,655 distinct token starts, 58,960 owned
-bytes, and 742 `$1E` sites with no conflicting token extents.
+`BA-CMD-1E-FINAL-EXPANDED-POLICY` is now `complete-static`. Project Epoch's
+first expanded package profile uses strict decoded-command exclusion: every
+descriptor-selected direct or suffix entrypoint must decode through terminal
+`$00` without decoded `$1E`, `$1F`, or `$21`. A raw operand byte equal to
+`$1E` is legal and is exercised by the conformance vector; token boundaries,
+not byte searches, are authoritative.
+
+The 123-opcode authoring profile is the 127 opcodes observed by the closed
+canonical primary-package census minus `$01/$1E/$1F/$21`. The validator checks
+both masks, shared suffixes, mid-token roots, exact named and disjoint spans,
+complete token ownership, `$25` forced fallthrough, `$80`'s forbidden
+zero-nibble form, and `$DA`'s bounded lookahead. Its certificate binds the
+exact source content, both dependency source identities, and a complete
+511-row token-shape interpreter profile.
+
+The 6,717-byte contract has SHA-256
+`808f286c37fd9163a776a5b545513aa1a9fb89f4c78281a204af5540f272c1ea`;
+23 focused tests pass, including interpreter drift and valid structural proof
+mutations. The result binds no selector or action, adapts no `$1E` handler,
+chooses no allocation or hook, emits no payload, and proves no runtime or PC
+`$07`. The complete checkpoint runs 985 tests: 963 pass and the same 22
+explicit optional/private/runtime cases skip; all 189 Python sources
+syntax-compile in memory. The next gate is `BA-SYMBOLIC-HIGH-PACKAGE`. See
+[`docs/schala_expanded_package_command_policy_v0.md`](docs/schala_expanded_package_command_policy_v0.md).
+
+## Previous developer update — 2026-08-31
+
+`BA-CMD-GRAMMAR-CANONICAL-CENSUS` is `complete-static`. Its canonical-ROM-
+pinned, read-only auditor classifies the complete `$00-$FF` command-byte
+domain, records the reviewer-encoded handler-derived owned-width grammar, and
+losslessly closes every config-selected primary package stream plus all
+fixed-`$CE` command-`$1E` targets. The exact result covers 2,173 direct and 59
+nested entrypoints, 31,655 distinct token starts, 58,960 owned bytes, and 742
+`$1E` sites with no conflicting token extents.
 
 The audit preserves `$80`'s zero-nibble wrap/lookahead case, `$DA`'s one-byte
 ownership with `+1` lookahead, 24 conditional `$21` sites in nested
@@ -18,14 +45,7 @@ forced-fallthrough traces, and one exact four-byte package-descriptor/stream
 dual use. That occupied relation is hash-pinned rather than misclassified as
 padding. Community parser code was comparison input only; the canonical ROM
 handlers remain the authority, and the documentation explicitly distinguishes
-reviewer interpretation from what hashes and stream closure can prove.
-
-The gate emits metadata only and approves no high package, `$1E` adaptation,
-hook, allocation, Schala Tech, PC `$07`, ROM mutation, or runtime claim. The
-next gate is `BA-CMD-1E-FINAL-EXPANDED-POLICY`. The focused 14-test module and
-complete checkpoint pass: 962 tests run, 940 pass, and the same 22 explicit
-optional/private/runtime cases skip; all 187 Python sources syntax-compile in
-memory. See
+reviewer interpretation from what hashes and stream closure can prove. See
 [`docs/battle_command_grammar_census_v0.md`](docs/battle_command_grammar_census_v0.md).
 
 ## Previous developer update — 2026-08-24
@@ -113,18 +133,17 @@ natural eighth live record after relocating the vanilla compatibility block,
 versioned per-slot sidecars, context-specific graphics/menu adapters, and raw
 high-ID `$80-$90` commands that preserve every vanilla action.
 
-Both Schala supported-slot field diagnostics are now complete at their stated
+Both Schala supported-slot field diagnostics are complete at their stated
 ceilings: the earlier partial original packet and the newer canonical-NPC
-provider with explicit high-entrypoint fallback. The next animation/Tech
-architecture gate is now the final expanded-package command-`$1E`
-exclusion-or-adaptation policy. The general lossless battle-command grammar
-and canonical census are complete: all `$00-$FF` byte values are classified,
-2,173 direct package roots and 59 fixed-`$CE` nested entrypoints close without
-token-extent conflicts, and the single four-byte descriptor/stream dual use
-is explicitly pinned. One symbolic high-package source follows the `$1E`
-policy—not another handler disassembly, width census, or supported-slot sprite
-replacement. The stable done/open boundary is tracked in the developer guide's
-`Current battle command/package no-rework ledger`.
+provider with explicit high-entrypoint fallback. The general lossless battle-
+command grammar/canonical census and the strict flat-direct decoded-`$1E`
+exclusion policy are complete. The next animation/Tech gate is exactly one
+source-only symbolic high package with exact named spans and deliberately
+retained, already-proved canonical auxiliary values. It remains unbound to an
+action or production allocation and must pass the completed policy—not repeat
+a handler disassembly, width census, or supported-slot sprite replacement.
+The stable done/open boundary is tracked in the developer guide's `Current
+battle command/package no-rework ledger`.
 
 The recovered v0 diagnostic is preserved under:
 

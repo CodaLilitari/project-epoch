@@ -2,7 +2,7 @@
 
 Status: `verified-static` canonical geometry plus source-only proposal
 
-Last updated: 2026-08-22
+Last updated: 2026-08-31
 
 Production installable: no
 
@@ -35,7 +35,9 @@ and repeated-pointer alias preservation.
 No high package selector, Schala action config, package, expanded allocation,
 hook, assembler routine, ROM byte, or runtime path is bound. Animation command
 `$1E` is explicitly refused for expanded packages because its separate native
-subscript lookup is still fixed to bank `$CE`.
+subscript lookup is still fixed to bank `$CE`. The separate completed v0
+authoring policy resolves the first-package gate by excluding decoded `$1E` in
+flat direct streams; it does not adapt this handler or weaken the refusal.
 
 The machine-readable contract is
 `references/schala_player_tech_package_bank_adapter_v0.json`. The read-only
@@ -180,7 +182,8 @@ it does not reimplement the 128 vanilla selectors.
 
 ## The command `$1E` blocker
 
-`verified-static` native behavior; expanded policy `proposal`
+`verified-static` native behavior and flat-direct v0 exclusion policy;
+handler adaptation absent
 
 The main battle-animation runner carries a 24-bit live script pointer and its
 advance helper handles bank carry, so a direct entrypoint in an expanded bank
@@ -199,14 +202,17 @@ not fix the entry into the nested script. An expanded direct script containing
 superficially valid.
 
 The v0 model does not pretend that searching raw bytes for `$1E` is enough;
-an operand byte can equal `$1E`. It refuses nested resolution. Before an
-expanded package can be installed, Project Epoch must choose and prove one of:
+an operand byte can equal `$1E`. It refuses nested resolution. Project Epoch
+has now selected option 1 for profile
+`decoded-command-1e-exclusion-flat-direct-v0`: the separate lossless validator
+decodes token starts, not raw byte values, and requires every selected direct
+or suffix entrypoint to reach `$00` without decoded `$1E`, `$1F`, or `$21`.
+Every future authored source must pass that validator independently.
 
-1. a lossless command decoder/census that proves every Project Epoch stream
-   excludes `$1E`; or
-2. a separate, bank-qualified subscript registry and `$1E` handler preserving
-   all canonical operands, `$1F` return behavior, widths, DBR, DP, stack, and
-   runtime timing.
+No actual expanded package has passed yet because no symbolic high package is
+defined. The bank-qualified subscript-registry alternative remains unresolved
+and deliberately unused; the adapter's fail-closed `$1E` resolver is
+unchanged. See `docs/schala_expanded_package_command_policy_v0.md`.
 
 ## Other fixed-bank readers are separate gates
 
@@ -296,13 +302,15 @@ This is host evidence, not 65C816 implementation or emulator evidence.
 Do not assemble or hook the adapter yet. The lossless command
 grammar/canonical census is now complete in
 `docs/battle_command_grammar_census_v0.md`, reusing rather than repeating the
-already decoded native `$1E/$1F` handler semantics. Now freeze and prove the
-expanded-package `$1E` exclusion-or-adaptation policy.
+already decoded native `$1E/$1F` handler semantics. The strict flat-direct
+decoded-`$1E` exclusion policy is also complete in
+`docs/schala_expanded_package_command_policy_v0.md`; it adapts no handler.
 The host model now reproduces the complete vanilla-shaped
 descriptor-installer state under both `$A0B3` branches and all 16 owner bits;
 the next source-only extension is one symbolic synthetic high package that
-uses only canonical, already-valid auxiliary selectors and proves its command
-stream against that decoder.
+uses exact named descriptor/stream spans, deliberately retained canonical
+auxiliary selectors, and proves its command stream against that validator. It
+remains non-production and unbound to any action.
 
 Only after that command/package source contract passes should an original
 65C816 helper be authored against the ABI above. Any later same-size ROM mutation or
@@ -317,6 +325,7 @@ writing an image or emitting a patch.
 - No upstream machine-code patch is copied or licensed here.
 - No high package selector is bound.
 - No Schala command is mapped to a package selector.
-- No animation command stream is decoded.
+- The package-bank adapter itself decodes no command stream; the separate
+  exclusion-policy validator decodes only synthetic authored source images.
 - No original Schala Tech package, battle sprite, menu path, save path, or
   logical PC `$07` runtime behavior is installed or proved.
