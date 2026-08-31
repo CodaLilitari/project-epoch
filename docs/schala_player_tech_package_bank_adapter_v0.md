@@ -293,10 +293,11 @@ This is host evidence, not 65C816 implementation or emulator evidence.
 
 ## Next safe step
 
-Do not assemble or hook the adapter yet. First complete a lossless command
-grammar/canonical census for Project Epoch animation streams, reusing rather
-than repeating the already decoded native `$1E/$1F` handler semantics. Then
-freeze and prove the expanded-package `$1E` exclusion-or-adaptation policy.
+Do not assemble or hook the adapter yet. The lossless command
+grammar/canonical census is now complete in
+`docs/battle_command_grammar_census_v0.md`, reusing rather than repeating the
+already decoded native `$1E/$1F` handler semantics. Now freeze and prove the
+expanded-package `$1E` exclusion-or-adaptation policy.
 The host model now reproduces the complete vanilla-shaped
 descriptor-installer state under both `$A0B3` branches and all 16 owner bits;
 the next source-only extension is one symbolic synthetic high package that

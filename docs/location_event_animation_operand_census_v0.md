@@ -319,10 +319,11 @@ It does not prove:
 Before this census may be used as runtime PC attribution, implement or
 explicitly defer a closed inter-object control-flow and loader-lifetime model.
 The separate metadata-only battle action-package topology census and
-source-only package-bank adapter have since been completed. Their next gate is
-a lossless battle command grammar and canonical stream census with an explicit
-expanded-package `$1E` exclusion-or-adaptation decision. The native `$1E/$1F`
-handler semantics are already decoded; the current fixed-`$CE` subscript
-reader must not be generalized from a raw byte search. No native Schala frame
-should be assigned from a fixed numeric operand until its consumer path and
-runtime context are independently proved.
+source-only package-bank adapter have since been completed. The lossless
+battle-command grammar and canonical stream census are also now
+`verified-static`; their next gate is the explicit expanded-package `$1E`
+exclusion-or-adaptation decision. The native `$1E/$1F` handler semantics are
+already decoded; the current fixed-`$CE` subscript reader must not be
+generalized from a raw byte search. No native Schala frame should be assigned
+from a fixed numeric operand until its consumer path and runtime context are
+independently proved.

@@ -2,7 +2,33 @@
 
 This workspace resumes the Chrono Trigger playable eighth-character investigation recovered from the ChatGPT conversation **Chrono Trigger 8th Character**.
 
-## Latest developer update — 2026-08-24
+## Latest developer update — 2026-08-31
+
+`BA-CMD-GRAMMAR-CANONICAL-CENSUS` is now `complete-static`. A new
+canonical-ROM-pinned, read-only auditor classifies the complete `$00-$FF`
+command-byte domain, records the reviewer-encoded handler-derived owned-width
+grammar, and losslessly closes every config-selected primary package stream
+plus all fixed-`$CE` command-`$1E` targets. The exact result covers 2,173
+direct and 59 nested entrypoints, 31,655 distinct token starts, 58,960 owned
+bytes, and 742 `$1E` sites with no conflicting token extents.
+
+The audit preserves `$80`'s zero-nibble wrap/lookahead case, `$DA`'s one-byte
+ownership with `+1` lookahead, 24 conditional `$21` sites in nested
+forced-fallthrough traces, and one exact four-byte package-descriptor/stream
+dual use. That occupied relation is hash-pinned rather than misclassified as
+padding. Community parser code was comparison input only; the canonical ROM
+handlers remain the authority, and the documentation explicitly distinguishes
+reviewer interpretation from what hashes and stream closure can prove.
+
+The gate emits metadata only and approves no high package, `$1E` adaptation,
+hook, allocation, Schala Tech, PC `$07`, ROM mutation, or runtime claim. The
+next gate is `BA-CMD-1E-FINAL-EXPANDED-POLICY`. The focused 14-test module and
+complete checkpoint pass: 962 tests run, 940 pass, and the same 22 explicit
+optional/private/runtime cases skip; all 187 Python sources syntax-compile in
+memory. See
+[`docs/battle_command_grammar_census_v0.md`](docs/battle_command_grammar_census_v0.md).
+
+## Previous developer update — 2026-08-24
 
 The previously open canonical-Schala-NPC provider replay is now complete; it
 is distinct from the earlier partial-original-packet Schala-over-Lucca smoke.
@@ -29,7 +55,7 @@ The final checkpoint discovers 941 tests: 919 pass and 22 skip only under the
 existing explicit optional/private/runtime dependency gates. All 94
 source-controlled Python tools plus all 88 test modules syntax-parse.
 
-## Previous developer update — 2026-08-24
+## Earlier developer update — 2026-08-24
 
 Project Epoch now has one publication-facing corrected character data map:
 [`docs/project_epoch_corrected_character_data_map_v1.md`](docs/project_epoch_corrected_character_data_map_v1.md),
@@ -90,12 +116,14 @@ high-ID `$80-$90` commands that preserve every vanilla action.
 Both Schala supported-slot field diagnostics are now complete at their stated
 ceilings: the earlier partial original packet and the newer canonical-NPC
 provider with explicit high-entrypoint fallback. The next animation/Tech
-architecture gate is the general lossless battle command-stream
-grammar/canonical census, reusing the already completed native `$1E/$1F`
-handler analysis. That is followed by a proved expanded-package `$1E`
-exclusion-or-adaptation policy and one symbolic high-package source—not
-another handler disassembly or supported-slot sprite replacement. The stable
-done/open boundary is tracked in the developer guide's
+architecture gate is now the final expanded-package command-`$1E`
+exclusion-or-adaptation policy. The general lossless battle-command grammar
+and canonical census are complete: all `$00-$FF` byte values are classified,
+2,173 direct package roots and 59 fixed-`$CE` nested entrypoints close without
+token-extent conflicts, and the single four-byte descriptor/stream dual use
+is explicitly pinned. One symbolic high-package source follows the `$1E`
+policy—not another handler disassembly, width census, or supported-slot sprite
+replacement. The stable done/open boundary is tracked in the developer guide's
 `Current battle command/package no-rework ledger`.
 
 The recovered v0 diagnostic is preserved under:
