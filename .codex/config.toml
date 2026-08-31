@@ -1,0 +1,17 @@
+[mcp_servers.project_epoch_mesen]
+command = "py"
+args = ["-3", "tools/project_epoch_mesen_mcp_server.py"]
+cwd = "."
+startup_timeout_sec = 10
+tool_timeout_sec = 60
+enabled = true
+required = false
+default_tools_approval_mode = "auto"
+enabled_tools = [
+  "start_disposable_session",
+  "session_status",
+  "read_wram",
+  "read_cpu_state",
+  "capture_wram_accesses",
+  "stop_disposable_session",
+]

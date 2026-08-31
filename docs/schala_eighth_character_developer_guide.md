@@ -3,7 +3,7 @@
 Status: active engineering guide  
 Selected eighth character: Schala  
 Target logical playable ID: `$07`  
-Last updated: 2026-08-24
+Last updated: 2026-08-31
 
 This is the living implementation and verification guide for adding Schala as
 a genuine eighth playable character. Update it whenever a ROM fact is proved,
@@ -29,6 +29,25 @@ still to install and prove the complete relocated compatibility lifecycle and
 sidecar behavior, complete Schala's field palette/frame adapters, and
 implement the selected record, command, item, and recruitment boundaries. A
 booting ROM or a visually plausible sprite is not sufficient evidence.
+
+## Latest developer update: hardened Mesen MCP feasibility
+
+On 2026-08-31, the project added a project-scoped stdio MCP adapter around the
+pinned Mesen 2.1.1 runtime. It exposes only six bounded diagnostic operations;
+accepts no Lua, code, filesystem path, memory-write request, or arbitrary
+input; stages every run under ignored `private/`; and deletes the disposable
+session only after exact source, staged-input, and shared-save integrity gates
+pass. Two fresh 600-frame runs reproduce the complete accepted
+`field-idle/zero` callback sequence after an explicit one-frame relative-origin
+translation. The two 2,720-byte private receipts are byte-identical at SHA-256
+`5d3f004f2ab4172dd940706b17ed15c062c42015993c916f80286083318c20d4`.
+
+The adapter feasibility result is `verified-runtime`; individual MCP findings
+remain `exploratory-only` until promoted into a tracked deterministic collector
+and independently replayed. This establishes no new Chrono Trigger fact and
+changes no PC `$07`, ROM, SRAM, save, hook, allocation, or battle architecture.
+The open implementation gate remains `BA-CMD-GRAMMAR-CANONICAL-CENSUS`. See
+the [complete feasibility and threat-model record](project_epoch_mesen_mcp_feasibility_2026-08-31.md).
 
 ## Current battle command/package no-rework ledger
 
@@ -1810,6 +1829,35 @@ states where useful, and a written result.
    their runtime gates pass.
 
 ## 12. Change log
+
+### 2026-08-31
+
+- Added a zero-dependency, project-scoped Mesen MCP controller and fixed-grammar
+  Lua bridge. The exact six-tool allowlist is session start/status, bounded
+  WRAM read, CPU-state read, bounded WRAM access capture, and session stop.
+  There is no arbitrary Lua, path, shell, network listener, emulator memory
+  write, save-state selection, or controller-sequence surface. Every process
+  uses a uniquely staged private copy of the pinned Mesen 2.1.1 runtime, clean
+  ROM, SRAM, and event-`$11C` checkpoint; input is forced empty; cleanup occurs
+  only after exact hashes, exit code 47, and shared-save preservation pass.
+- Audited the MIT-licensed `gareve/mesen-lua-bridge-mcp` at commit
+  `66e46463352d9dfa8e57fd1307ec32808e2c4fc5` as a design reference without
+  installing dependencies or executing it. Its intended arbitrary-Lua model
+  is too broad for Project Epoch, so only the file-transport concept was
+  independently reimplemented and the checkout remains ignored under
+  `private/quarantine/` with pushes disabled.
+- Reproduced the complete accepted `field-idle/zero` 600-frame sequence in two
+  real stdio-MCP-to-Mesen runs: 450 ordered `$7E2980-$7E2982` reads, 150 per
+  byte, all at `$C0:6799`, with exact values and cadence. The active MCP process
+  begins one relative frame earlier, so the runner records and bounds a `+1`
+  origin translation while explicitly refusing a byte-exact trace claim. The
+  two 2,720-byte receipts are byte-identical at SHA-256
+  `5d3f004f2ab4172dd940706b17ed15c062c42015993c916f80286083318c20d4`;
+  normalized callbacks hash to
+  `cd7aec30531533d38b2467cb76ab1320cc10a867e0dc754a92b1e5275b3b2ae8`.
+  This is a bounded `verified-runtime` adapter-feasibility result, not a new
+  game fact or acceptance authority. See the
+  [full record](project_epoch_mesen_mcp_feasibility_2026-08-31.md).
 
 ### 2026-08-24
 
