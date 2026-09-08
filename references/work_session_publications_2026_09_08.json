@@ -1097,6 +1097,153 @@
           "sha256": "ac44bd733e1b6f4dffd91887e5ac42738a57ace78a8583c5ff9c5bf2e602a43a"
         }
       ]
+    },
+    {
+      "commit": "17218fac2334cd376bc346ff7ad35dd104a08a2c",
+      "verified_at_utc": "2026-09-08T20:57:26.898302+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 38869,
+          "sha256": "6633ca36a1ab4dd16b230fd2eb00a6068c404d8df726c720e60dfe3f6df05737"
+        },
+        {
+          "path": "README.md",
+          "size": 51341,
+          "sha256": "1dc014ca2bbe9f74dc3e0898fb006595a0e14fc0ed909341ce8358f55c26016a"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 202625,
+          "sha256": "c0d47da322b5cab6d51261cafa4f799ed8bc4f4e673d455aec19d503743b5097"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 70823,
+          "sha256": "adea4a3ddf4d9f4d7793fc675c7135be3a9c67dc0724f9c689c7edcd8211adce"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 9652,
+          "sha256": "b30bb206a72f0e1dd7c774fdc88e9556d375753093e9432484336666019b0f53"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 42532,
+          "sha256": "74fd3203f9a8ef6466e85f04d59794d612fa7be9c5b3ac0e2efdd1eae7c5a7e2"
+        },
+        {
+          "path": "docs/schala_package_helper_v4_rom_nmi.md",
+          "size": 19523,
+          "sha256": "78ff9a2c076dd229fd489d0d7410e98b4b4927730763de7464066fef5c77d87d"
+        },
+        {
+          "path": "docs/schala_package_helper_v4_rom_nmi_design.md",
+          "size": 6416,
+          "sha256": "97046973eb5c7f2e26c178734dda0aceeaf103ff199b9235dda5ad63a35282e6"
+        },
+        {
+          "path": "docs/schala_package_helper_v4_rom_nmi_phase_extension.md",
+          "size": 10723,
+          "sha256": "8eeab277bad8da9a2fe8e599c7fbb1ea32841565599a4512099873cf70fd48fb"
+        },
+        {
+          "path": "docs/schala_package_helper_v4_rom_nmi_resume.md",
+          "size": 8491,
+          "sha256": "1a88a707283c3b8e1c1e3200bc80b8b5eaae979506fc41293857c343df7de324"
+        },
+        {
+          "path": "tools/run_schala_package_helper_v4_rom_nmi.py",
+          "size": 53838,
+          "sha256": "11de12477a82059dcd50d714dfd8b3ca20fdf7de3b7befe4d9e0cb5ea63289f9"
+        },
+        {
+          "path": "tools/mesen_schala_package_helper_v4_rom_nmi.lua",
+          "size": 10981,
+          "sha256": "0db3a1c287bc1118f326643c318e7bee899cc5b191aa55325fae202366d0d1ff"
+        },
+        {
+          "path": "tools/collect_schala_package_helper_v4_rom_nmi_evidence.py",
+          "size": 26944,
+          "sha256": "e37b3dbe66f8685e42194b9342b82a27f6e34e8d8030fdd370470f6c15852736"
+        },
+        {
+          "path": "tests/test_schala_package_helper_v4_rom_nmi.py",
+          "size": 31759,
+          "sha256": "48f4d95aae835c9e65fe580c4b16ee74d5ce9594cac4281698bbb1f91e85b8e1"
+        },
+        {
+          "path": "tests/test_schala_package_helper_v4_rom_nmi_evidence.py",
+          "size": 8217,
+          "sha256": "8f9336c0ab59e1d972ca4bdab991d5a1eac2f532f0c2245c82de4df2fbf93166"
+        },
+        {
+          "path": "references/schala_package_helper_v4_rom_nmi.json",
+          "size": 523168,
+          "sha256": "62eb9deae8cd960c05f8732d308cfc862b59e4daf3a233e64043ec4ce9ad6e01"
+        },
+        {
+          "path": "tools/audit_schala_package_irq_memory_contract_v2.py",
+          "size": 24156,
+          "sha256": "cd7ce6b278bcbce5b9293a813640b0cc3a90dc95fb0a655957e295363e00c1a6"
+        },
+        {
+          "path": "tests/test_schala_package_irq_memory_contract_v2.py",
+          "size": 9606,
+          "sha256": "d3e2a1252caf44b3622d78992addf363b03261f0d95f1bfd7fc8435e751f0e80"
+        },
+        {
+          "path": "docs/schala_package_irq_memory_contract_v2.md",
+          "size": 14528,
+          "sha256": "ff60e5e22aca60e22712b84141cad2ec3469c1313c055e2f722c1eb40fa1f50f"
+        },
+        {
+          "path": "references/schala_package_irq_memory_contract_v2.json",
+          "size": 84558,
+          "sha256": "6a6cc3ac65cc2e9ae5d5fe92a313a7a716f31cdbc1256fc18d38a4731eaadc31"
+        },
+        {
+          "path": "tools/audit_schala_scene_handler_values_v1.py",
+          "size": 21359,
+          "sha256": "b92e5ff6534cb6383754753fa484ac6c4e8d38fab68e6645d207db9e47796610"
+        },
+        {
+          "path": "tests/test_schala_scene_handler_values_v1.py",
+          "size": 8109,
+          "sha256": "6c3d7e6f1b1da9c2b9166452842a4dcb0bf93b2b942905b154b615a5017f7601"
+        },
+        {
+          "path": "docs/schala_scene_handler_values_v1.md",
+          "size": 10653,
+          "sha256": "a02232cd0d6b1fa408d308aac6e64c230cc4a7ea4a00963d102a86191bc9e610"
+        },
+        {
+          "path": "references/schala_scene_handler_values_v1.json",
+          "size": 376981,
+          "sha256": "cb99bfff13c319a7ec67742eeed1ab0fee0827799ec80b89cce2f3dd668af543"
+        },
+        {
+          "path": "tools/audit_schala_scene82_subdispatch_v1.py",
+          "size": 12823,
+          "sha256": "6339afbfe35be747e8da268c3dc8c415d761b74c05ad8de6167347572c4c2e5a"
+        },
+        {
+          "path": "tests/test_schala_scene82_subdispatch_v1.py",
+          "size": 6297,
+          "sha256": "de74157d3c8db13deb7813021a3c9cf5162815fd1bef9549c62c2d5f93af2e99"
+        },
+        {
+          "path": "docs/schala_scene82_subdispatch_v1.md",
+          "size": 6770,
+          "sha256": "6abffac8efbf22228b3e6622635031c689d15c447fd85a545ce820bf73b85866"
+        },
+        {
+          "path": "references/schala_scene82_subdispatch_v1.json",
+          "size": 49712,
+          "sha256": "b7e3144a800512e8e6391b72c9bc733b33240e0cc0a88e57092e2e13af0c0dfc"
+        }
+      ]
     }
   ]
 }

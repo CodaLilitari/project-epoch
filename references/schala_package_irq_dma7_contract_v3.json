@@ -1,0 +1,2744 @@
+{
+  "schema": "project-epoch-irq-requested-dma7-destination-contract-v3",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "sources": [
+    {
+      "path": "tools/audit_schala_package_irq_memory_contract_v2.py",
+      "size": 24156,
+      "sha256": "cd7ce6b278bcbce5b9293a813640b0cc3a90dc95fb0a655957e295363e00c1a6"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "size": 19939,
+      "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    },
+    {
+      "path": "private/research/mesen_irq_dma7_2_1_1/RegisterHandlerB.h",
+      "size": 874,
+      "sha256": "709fb56c99d894650c4a0c55fbcf1c6714cac59fa85fe8518e486302d2519e20"
+    },
+    {
+      "path": "private/research/mesen_irq_dma7_2_1_1/RegisterHandlerB.cpp",
+      "size": 2969,
+      "sha256": "a3ebaecac6e6fe2d2bdfc04f072e77a9ba47251cdc5ae9d4b6fcdd4618af7ea7"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/RegisterHandlerA.h",
+      "size": 1635,
+      "sha256": "782f34e6b68d6b247d37a5142f8071fad85b2dd13bd33a96d3f5bb085f176f3c"
+    },
+    {
+      "path": "references/schala_package_irq_memory_contract_v2.json",
+      "size": 84558,
+      "sha256": "6a6cc3ac65cc2e9ae5d5fe92a313a7a716f31cdbc1256fc18d38a4731eaadc31"
+    }
+  ],
+  "owned_sources": [
+    {
+      "path": "tools/audit_schala_package_irq_dma7_contract_v3.py",
+      "size": 19003,
+      "sha256": "874127a3b7799afb491915339558eb1a3f66b077e9358d1a0708c8f450c78152"
+    },
+    {
+      "path": "tests/test_schala_package_irq_dma7_contract_v3.py",
+      "size": 10176,
+      "sha256": "8b48000114470fc265653710e2c80551326742722cf56d6350c0411aafbe6e52"
+    }
+  ],
+  "reviewed_primary_semantic_spans": [
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 8,
+      "last_line_inclusive": 11,
+      "size": 257,
+      "sha256": "c0ef006cff8d17bcec97bbaa9a6bc705e4f400862e0635e76d5ab2303d5e0f2c",
+      "role": "manual mode transfer offsets",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 46,
+      "last_line_inclusive": 98,
+      "size": 1649,
+      "sha256": "f77f4a8c647f59cf345831f31c0f838f65dbbb1ec142ab6c2ad93a61e866a91a",
+      "role": "direction, source/destination bus and manual iteration",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 408,
+      "last_line_inclusive": 451,
+      "size": 1230,
+      "sha256": "f1095bcd6450fdbe9708a6c1ea4b9473c99ac4f20bf074cb7b0445c1d52d2a17",
+      "role": "manual enable and channel configuration decoding",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 474,
+      "last_line_inclusive": 489,
+      "size": 655,
+      "sha256": "dc21f651f061b8a4e9d470860175c51882db46535a7366a5fe971a94905187d7",
+      "role": "transfer-count low and high byte assignments",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "first_line": 55,
+      "last_line_inclusive": 69,
+      "size": 738,
+      "sha256": "9a65d812bbf0bdcac2b2085ba53a1a656745a7c0be1fb5e66dcb6b1cb51b25b6",
+      "role": "WRAM and hardware-register bank mirrors",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/RegisterHandlerA.h",
+      "first_line": 55,
+      "last_line_inclusive": 65,
+      "size": 245,
+      "sha256": "bd87eb84752bdbf400ca1e09de05e11a15931e9e96086b17c529516f5bff6a50",
+      "role": "CPU write routes to DMA after 16-bit register mask",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "first_line": 360,
+      "last_line_inclusive": 383,
+      "size": 982,
+      "sha256": "3c9f18bb177d66d43d677c52941bb610e27125d2eae96697e26b1eaf8942fa77",
+      "role": "DMA destination write routing",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_irq_dma7_2_1_1/RegisterHandlerB.cpp",
+      "first_line": 60,
+      "last_line_inclusive": 85,
+      "size": 985,
+      "sha256": "bd8999cb59ed5890046283982f14d96ef93ffc9735e8386030c9a3792c1a7760",
+      "role": "bus-B distinguishes WRAM port from PPU registers",
+      "interpretation": "reviewer-derived source semantics"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "first_line": 2046,
+      "last_line_inclusive": 2073,
+      "size": 1203,
+      "sha256": "3d747cba4b06b41003a38a8bd2f747027a91c65058586781faa0a842030dc440",
+      "role": "2118 and 2119 write VRAM when accessible",
+      "interpretation": "reviewer-derived source semantics"
+    }
+  ],
+  "reused_irq_contract_sources": [
+    {
+      "path": "tools/audit_schala_package_irq_memory_contract_v2.py",
+      "size": 24156,
+      "sha256": "cd7ce6b278bcbce5b9293a813640b0cc3a90dc95fb0a655957e295363e00c1a6"
+    },
+    {
+      "path": "tests/test_schala_package_irq_memory_contract_v2.py",
+      "size": 9606,
+      "sha256": "d3e2a1252caf44b3622d78992addf363b03261f0d95f1bfd7fc8435e751f0e80"
+    },
+    {
+      "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+      "size": 13647,
+      "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+    },
+    {
+      "path": "references/schala_package_interrupt_closure_v1.json",
+      "size": 6774,
+      "sha256": "8ae0108d9412b404e461e4a17d95713e6a5b950308693efec69eef0c90bd2b04"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    {
+      "path": "asm/schala_package_helper_v2_stack.asm",
+      "size": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+    },
+    {
+      "path": "references/schala_package_helper_v2_stack.json",
+      "size": 84742,
+      "sha256": "a095a1e18e97bd7f9746f3bc21affc90e30d76de10a34a2ffdff164e4b3c423f"
+    },
+    {
+      "path": "references/package_resolver_observation_v0.json",
+      "size": 25890,
+      "sha256": "a9685b37bb3cc13e61593730ff74fa5f0288b4dc00572c756559e388915ef1c1"
+    }
+  ],
+  "reproduced_irq_memory_contract_sha256": "6a6cc3ac65cc2e9ae5d5fe92a313a7a716f31cdbc1256fc18d38a4731eaadc31",
+  "field_service_source": {
+    "start": "$FDE022",
+    "end_exclusive": "$FDE275",
+    "sha256": "710683e30da8a2b55b5c7865cbc61161b200618537bb5ccdacffe33d4a07cf61"
+  },
+  "service": {
+    "abstract_states": 338,
+    "entry": "$FDE022",
+    "entry_width_contract": {
+      "native": true,
+      "m8": true,
+      "x8": false,
+      "irq_masked": true
+    },
+    "incoming_a_x_y_d_dbr_values_are_symbolic": true,
+    "contexts": [
+      {
+        "pc": "$FDE022",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE023",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE024",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE025",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE027",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE028",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE029",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE02B",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE02E",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE030",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE033",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE035",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE038",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE03B",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE03C",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE03D",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE03F",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE041",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE043",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE045",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE046",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE048",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE04B",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE04D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE04F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE051",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE054",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE056",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE059",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE05A",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE05B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE05D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE05E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE062",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE064",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE068",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE06B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE06D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE070",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE073",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE076",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE079",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE07B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE07D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE080",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE082",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE085",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE086",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE087",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE089",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE08A",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE08E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE090",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE094",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE097",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE099",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE09C",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE09F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0A2",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0A5",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0A7",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0A9",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0AC",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0AE",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0B1",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0B2",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0B3",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0B5",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0B6",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0BA",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0BC",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C0",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C3",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C5",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C8",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0CB",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0CE",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0D1",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0D3",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0D5",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0D8",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0DA",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0DD",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0DE",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0DF",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0E1",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0E2",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0E6",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0E8",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0EC",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0EF",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0F1",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0F4",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0F7",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0FA",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0FD",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0FF",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE101",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE104",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE106",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE109",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE10A",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE10B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE10D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE10E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE112",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE114",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE118",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE11B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE11D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE120",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE123",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE126",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE129",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE12B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE12D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE130",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE132",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE135",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE136",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE137",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE139",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE13A",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE13E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE140",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE144",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE147",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE149",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE14C",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE14F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE152",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE155",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE158",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE15A",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE15C",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE15D",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE15E",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE15F",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE160",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE162",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE164",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE166",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE169",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE16B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE16E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE16F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE170",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE172",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE173",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE177",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE179",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE17D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE180",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE182",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE185",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE188",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE18B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE18E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE190",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE192",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE195",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE197",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE19A",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE19B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE19C",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE19E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE19F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1A3",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1A5",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1A9",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1AC",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1AE",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1B1",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1B4",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1B7",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1BA",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1BC",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1BE",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1C1",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1C3",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1C6",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1C7",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1C8",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1CA",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1CB",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1CF",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1D1",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1D5",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1D8",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1DA",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1DD",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1E0",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1E3",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1E6",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1E8",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1EA",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1ED",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1EF",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1F2",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1F3",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1F4",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1F6",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1F7",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1FB",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1FD",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE201",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE204",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE206",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE209",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE20C",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE20F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE212",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE214",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE216",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE219",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE21B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE21E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE21F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE220",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE222",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE223",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE227",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE229",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE22D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE230",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE232",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE235",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE238",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE23B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE23E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE240",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE242",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE245",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE247",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE24A",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE24B",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE24C",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE24E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE24F",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE253",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE255",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE259",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE25C",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE25E",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE261",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE264",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE267",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE26A",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE26D",
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE26F",
+        "m8": true,
+        "x8": true
+      },
+      {
+        "pc": "$FDE271",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE272",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE273",
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE274",
+        "m8": true,
+        "x8": false
+      }
+    ],
+    "ordinary_cpu_write_contexts": [
+      {
+        "pc": "$FDE02B",
+        "bus_address": "$002115",
+        "instruction_width": 1,
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE030",
+        "bus_address": "$004370",
+        "instruction_width": 1,
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE035",
+        "bus_address": "$004371",
+        "instruction_width": 1,
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE03D",
+        "bus_address": "$00051D",
+        "instruction_width": 1,
+        "m8": true,
+        "x8": false
+      },
+      {
+        "pc": "$FDE051",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE051",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE062",
+        "bus_address": "$0005B0",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE062",
+        "bus_address": "$0005B1",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE068",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE068",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE06D",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE070",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE070",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE073",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE076",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE07D",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE07D",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE08E",
+        "bus_address": "$0005B5",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE08E",
+        "bus_address": "$0005B6",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE094",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE094",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE099",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE09C",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE09C",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE09F",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0A2",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0A9",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0A9",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0BA",
+        "bus_address": "$0005BA",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0BA",
+        "bus_address": "$0005BB",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C0",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C0",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C5",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C8",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0C8",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0CB",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0CE",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0D5",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0D5",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0E6",
+        "bus_address": "$0005BF",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0E6",
+        "bus_address": "$0005C0",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0EC",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0EC",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0F1",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0F4",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0F4",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0F7",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE0FA",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE101",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE101",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE112",
+        "bus_address": "$0005C4",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE112",
+        "bus_address": "$0005C5",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE118",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE118",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE11D",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE120",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE120",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE123",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE126",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE12D",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE12D",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE13E",
+        "bus_address": "$0005C9",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE13E",
+        "bus_address": "$0005CA",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE144",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE144",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE149",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE14C",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE14C",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE14F",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE152",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE166",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE166",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE177",
+        "bus_address": "$0005CE",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE177",
+        "bus_address": "$0005CF",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE17D",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE17D",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE182",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE185",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE185",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE188",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE18B",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE192",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE192",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1A3",
+        "bus_address": "$0005D3",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1A3",
+        "bus_address": "$0005D4",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1A9",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1A9",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1AE",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1B1",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1B1",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1B4",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1B7",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1BE",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1BE",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1CF",
+        "bus_address": "$0005D8",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1CF",
+        "bus_address": "$0005D9",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1D5",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1D5",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1DA",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1DD",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1DD",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1E0",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1E3",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1EA",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1EA",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1FB",
+        "bus_address": "$0005DD",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE1FB",
+        "bus_address": "$0005DE",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE201",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE201",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE206",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE209",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE209",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE20C",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE20F",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE216",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE216",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE227",
+        "bus_address": "$0005E2",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE227",
+        "bus_address": "$0005E3",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE22D",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE22D",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE232",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE235",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE235",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE238",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE23B",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE242",
+        "bus_address": "$002116",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE242",
+        "bus_address": "$002117",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE253",
+        "bus_address": "$0005E7",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE253",
+        "bus_address": "$0005E8",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE259",
+        "bus_address": "$004372",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE259",
+        "bus_address": "$004373",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE25E",
+        "bus_address": "$004374",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE261",
+        "bus_address": "$004375",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE261",
+        "bus_address": "$004376",
+        "instruction_width": 2,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE264",
+        "bus_address": "$004375",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      },
+      {
+        "pc": "$FDE267",
+        "bus_address": "$00420B",
+        "instruction_width": 1,
+        "m8": false,
+        "x8": true
+      }
+    ],
+    "request_contracts": [
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE076",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE073",
+          "$004376": "$FDE070"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE0A2",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE09F",
+          "$004376": "$FDE09C"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE0CE",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE0CB",
+          "$004376": "$FDE0C8"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE0FA",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE0F7",
+          "$004376": "$FDE0F4"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE126",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE123",
+          "$004376": "$FDE120"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE152",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE14F",
+          "$004376": "$FDE14C"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE18B",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE188",
+          "$004376": "$FDE185"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE1B7",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE1B4",
+          "$004376": "$FDE1B1"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE1E3",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE1E0",
+          "$004376": "$FDE1DD"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE20F",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE20C",
+          "$004376": "$FDE209"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE23B",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE238",
+          "$004376": "$FDE235"
+        }
+      },
+      {
+        "channel": 7,
+        "control": 65,
+        "bbad": 24,
+        "request_mask": 128,
+        "byte_count": 128,
+        "direction": "A-to-B",
+        "transfer_mode": 1,
+        "unique_bus_write_addresses": [
+          8472,
+          8473
+        ],
+        "ordered_bus_write_addresses_sha256": "081917f4bab918301ab537954c10a3101a62239ccd8a8ffe9d5d012e9e3e07a7",
+        "contains_wram_port_2180": false,
+        "actual_transfer_completed": false,
+        "request_site": "$FDE267",
+        "last_cpu_configuration_writers": {
+          "$004370": "$FDE030",
+          "$004371": "$FDE035",
+          "$004375": "$FDE264",
+          "$004376": "$FDE261"
+        }
+      }
+    ],
+    "return_sites": [
+      "$FDE15F",
+      "$FDE274"
+    ],
+    "all_branches_follow_both_edges": true,
+    "memory_read_values": "unknown",
+    "dma_source_bank_offset_data_validity_proved": false,
+    "post_request_size_and_completion_assumed": false
+  },
+  "source_interpretation": {
+    "requested_writes_are_only_2118_2119": true,
+    "register_handler_routes_these_to_ppu": true,
+    "ppu_destination_is_vram_or_no_write_when_inaccessible": true,
+    "requested_destination_is_wram": false
+  },
+  "premises": [
+    "Exact native M1/X0/I1 entry from the reproduced IRQ graph.",
+    "Ordinary writable typed stack; no nonstack alias changes saved cells.",
+    "No other actor changes the DMA channel configuration while the request executes.",
+    "No debugger or cheat callback changes modeled register writes or memory routing."
+  ],
+  "open": [
+    "DMA source-bank/offset bytes and read side effects",
+    "graphics and PPU correctness",
+    "other active or pending DMA/HDMA",
+    "NMI/IRQ interleaving and nesting",
+    "request completion, elapsed time and raster phase",
+    "whole-game stack ownership",
+    "production hook, allocation, selector binding or eighth playable PC"
+  ],
+  "native_execution": false,
+  "rom_or_patch_emitted": false
+}

@@ -70,6 +70,10 @@ proofs have separate scopes and should be reused:
 | [IRQ memory/register contract](schala_package_irq_memory_contract_v2.md) | Four symbolic native-width entries; 109 ordinary writes / 298 physical WRAM bytes, exact saved-register restoration; 49 tests | Conditional nonalias result for explicit helper envelopes; DMA, NMI nesting and actual ownership remain open |
 | [Scene-handler return values](schala_scene_handler_values_v1.md) | All 114 closed targets traversed; 111 return B0/D0/DBR7E and three keep B unresolved; 43 tests | Per-handler input/alias premises; seven control-flow frontiers and complete loop ABI remain open |
 | [Scene command $82 subdispatch](schala_scene82_subdispatch_v1.md) | Independent p/q reads prove eight B0 targets; exact A/B/D/DBR and width returns, inherited near frame only; 31 tests | No parameter-source lifetime, memory-alias, whole-NMI or package-selector claim |
+| [Scene return-values v2](schala_scene_handler_values_v2.md) | Exactly three M16 load/BEQ edges resolve the same 114 target returns; 18 tests | Preserves the v1 111/3 checkpoint; excludes all seven original indirect targets and global loop ABI |
+| [IRQ manual DMA7 destinations](schala_package_irq_dma7_contract_v3.md) | Twelve ordered 128-byte requests target VRAM ports $2118/$2119; 41 tests | Source reads, pending DMA/HDMA, interleaving, completion and timing remain open |
+| [Scene $8C/$8D selected leaves](schala_scene8c8d_subdispatch_v1.md) | Eight conditional leaves return A/B0/D0/DBR7E with no new frame; 34 tests | B0 and parameter&7F below4 are premises; Y, pointer lifetime and memory addresses remain open |
+| [Scene $88 selected calls](schala_scene88_subdispatch_v1.md) | Four conditional targets; five added call-frame bytes, seven including scene frame; 33 tests | Ordinal3 returns B=$FF through RTL/RTS; no legal parameter3 producer or vanilla runtime bug is proved |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
@@ -117,12 +121,18 @@ game trace's mode/scene register snapshots are separate completed gates.
 The scroll-input proof now follows the intervening callees before its bounded
 dispatch call. The scene-handler census separately narrows the remaining
 control-flow work to seven indirect frontiers. The additive value packet
-proves the required B0/D0/DBR7E return for 111 closed targets, preserving
-three unresolved B results. A separate conditional proof closes command
+preserves its 111-proved/three-unresolved checkpoint; the separate v2 now
+resolves all 114 through exactly three word-load/zero-branch edges.
+A separate conditional proof closes command
 `$82`'s eight-way frontier without changing the historical census. The IRQ
 memory packet resolves ordinary CPU writes and symbolic register restores;
-DMA and complete game-NMI/stack ownership are still required before global
-composition or installation.
+the new manual-DMA7 packet establishes requested VRAM destinations while
+keeping source reads, other pending DMA/HDMA, interleaving and completion open.
+The selected $8C/$8D and $88 branches now have exact conditional call/return
+contracts. One $88 ordinal returns B=$FF and must not inherit a blanket B0
+assumption from the direct-target set. Legal parameter producers, complete
+game-NMI/stack ownership and publication-reader isolation are still required
+before global composition or installation.
 
 No production hook, allocation, scratch ownership, high selector, Schala
 command or logical PC `$07` is approved. The

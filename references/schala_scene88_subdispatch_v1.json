@@ -1,0 +1,1696 @@
+{
+  "schema": "project-epoch-scene88-conditional-subdispatch-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "scope": "scene byte88, conditional native B0/D0/DBR7E/M1/X0/I1 and (parameter&7F)<4",
+  "namespace": "scene stream command only; no Schala action or package-selector association",
+  "preserved_parent_frontier": {
+    "entry": "$CD29DA",
+    "commands": [
+      136
+    ],
+    "frontier": {
+      "category": "indexed-call-dispatch",
+      "site": "$D1FBCE",
+      "reason": "indexed JSR requires bounded target and index provenance",
+      "incoming_width_state": {
+        "m8": true,
+        "x8": false,
+        "irq_masked": true
+      },
+      "counted_stack_bytes_at_frontier": 5,
+      "active_call_return_sites": [
+        {
+          "return": "abstract-caller",
+          "kind": "near"
+        },
+        {
+          "return": "$CD29E2",
+          "kind": "long"
+        }
+      ]
+    },
+    "exploratory_observed_local_peak_not_a_bound": 3,
+    "full_bound": null
+  },
+  "named_spans": [
+    {
+      "name": "scene-prefix-and-return",
+      "start": "$CD29DA",
+      "end_exclusive": "$CD29E3",
+      "size": 9,
+      "sha256": "46f485f960f266f3ab0674af0d6a9075a6cef7491e187fbef5b4ff7f4796b2a6"
+    },
+    {
+      "name": "indexed-near-wrapper",
+      "start": "$D1FBCE",
+      "end_exclusive": "$D1FBD2",
+      "size": 4,
+      "sha256": "f9f7c9ab15393fc9c209122951c96635e9f59cc989a9d8a6030f450b23c1ce79"
+    },
+    {
+      "name": "four-reviewed-physical-cells",
+      "start": "$D1FBD2",
+      "end_exclusive": "$D1FBDA",
+      "size": 8,
+      "sha256": "7a2ce6fdeb7921190edfaaa80997f47c2cef8716c9e075fcb398848c9e2eff76"
+    },
+    {
+      "name": "four-target-body-union",
+      "start": "$D1FBDA",
+      "end_exclusive": "$D1FD7E",
+      "size": 420,
+      "sha256": "104ee301bec1645213137d5163c2ed68581adf59a90cc3cf4bc989d62e9c30c6"
+    }
+  ],
+  "exact_instruction_recipes": [
+    {
+      "site": "$CD29DA",
+      "size": 2,
+      "sha256": "1c20b2513a1fa7e27ee0601d55306e09222e22bd323f228db9d112f6ebb35f88"
+    },
+    {
+      "site": "$CD29DC",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "site": "$CD29DD",
+      "size": 1,
+      "sha256": "bceef655b5a034911f1c3718ce056531b45ef03b4c7b1f15629e867294011a7d"
+    },
+    {
+      "site": "$CD29DE",
+      "size": 4,
+      "sha256": "5b79ede41deb029b75b9670ee8c0352b465cf96c3e7c846dbf71a6ea819279bb"
+    },
+    {
+      "site": "$CD29E2",
+      "size": 1,
+      "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+    },
+    {
+      "site": "$D1FBCE",
+      "size": 3,
+      "sha256": "d210babb4f18f56b12d8189233396c55fd5e62567ad44a28d20e3d2e47c87554"
+    },
+    {
+      "site": "$D1FBD1",
+      "size": 1,
+      "sha256": "8254c329a92850f6d539dd376f4816ee2764517da5e0235514af433164480d7a"
+    }
+  ],
+  "arithmetic_checks": 65536,
+  "arithmetic_projection_sha256": "fe45ea4876bc76df633304135d5420daa8c9e7855b64e24e70481f8a6acd2dcb",
+  "b0_physical_word_starts": 128,
+  "arbitrary_b_physical_word_starts": 32768,
+  "reviewed_parameter_aliases": [
+    0,
+    1,
+    2,
+    3,
+    128,
+    129,
+    130,
+    131
+  ],
+  "first_escaped_b0_example": {
+    "parameter": 4,
+    "hidden_b": 0,
+    "computed_x": 8,
+    "pointer_byte_addresses": [
+      13761498,
+      13761499
+    ],
+    "among_four_reviewed_cells": false,
+    "selected_ordinal": null,
+    "parameter_bit7_discarded": true,
+    "hidden_b_preserved": true,
+    "pointed_target": "$D17CA5",
+    "physical_cell_is_occupied_body_start": true,
+    "runtime_reachable": null
+  },
+  "selected_targets": [
+    {
+      "ordinal": 0,
+      "physical_cell": "$D1FBD2",
+      "target": "$D1FCF4",
+      "parameter_aliases": [
+        0,
+        128
+      ],
+      "body_returns": [
+        "$D1FD3B",
+        "$D1FD7D"
+      ],
+      "body_additional_stack_bytes": 0,
+      "return_a": 255,
+      "return_b": 0,
+      "return_d": 0,
+      "return_dbr": 126,
+      "return_m8": true,
+      "return_x8": false,
+      "return_irq_masked": true,
+      "control_contract_sha256": "2aff8df4e8f2910732d941d80596b7d0918d2cadc62e3678c59f27b16333b501",
+      "value_contract_sha256": "b54aa9fab884ae6cb176e4b04afb844199738d50626173c655ebce0fd05afa03"
+    },
+    {
+      "ordinal": 1,
+      "physical_cell": "$D1FBD4",
+      "target": "$D1FC38",
+      "parameter_aliases": [
+        1,
+        129
+      ],
+      "body_returns": [
+        "$D1FC69",
+        "$D1FC95"
+      ],
+      "body_additional_stack_bytes": 0,
+      "return_a": 255,
+      "return_b": 0,
+      "return_d": 0,
+      "return_dbr": 126,
+      "return_m8": true,
+      "return_x8": false,
+      "return_irq_masked": true,
+      "control_contract_sha256": "b4d32a79593c4110259ab737250be24eee004004cc86ceebc896f8e91eac03d0",
+      "value_contract_sha256": "976a9173f68d5dffbcc531bb2eaac32413e12b54ce00b28ccfdcff21dfea01a0"
+    },
+    {
+      "ordinal": 2,
+      "physical_cell": "$D1FBD6",
+      "target": "$D1FC96",
+      "parameter_aliases": [
+        2,
+        130
+      ],
+      "body_returns": [
+        "$D1FCC7",
+        "$D1FCF3"
+      ],
+      "body_additional_stack_bytes": 0,
+      "return_a": 255,
+      "return_b": 0,
+      "return_d": 0,
+      "return_dbr": 126,
+      "return_m8": true,
+      "return_x8": false,
+      "return_irq_masked": true,
+      "control_contract_sha256": "0683c6a2e09ddcb61654a835f7f14bfdd961546a51bfde89603dd26a9944f2b1",
+      "value_contract_sha256": "26672dfeb9683058f2a346f020c2fb90a7331d24aec9827aae347a24b546c8f6"
+    },
+    {
+      "ordinal": 3,
+      "physical_cell": "$D1FBD8",
+      "target": "$D1FBDA",
+      "parameter_aliases": [
+        3,
+        131
+      ],
+      "body_returns": [
+        "$D1FC0B",
+        "$D1FC37"
+      ],
+      "body_additional_stack_bytes": 0,
+      "return_a": 65280,
+      "return_b": 255,
+      "return_d": 0,
+      "return_dbr": 126,
+      "return_m8": true,
+      "return_x8": false,
+      "return_irq_masked": true,
+      "control_contract_sha256": "6568379204a329393ca63dc6dfbfa5efdc6000bb4135e8233050ed5e54b09a20",
+      "value_contract_sha256": "77ccb0d529a78f9292cfb24ea3e940b68cd397ed11b5ae7d8ac309cf468b71d6"
+    }
+  ],
+  "control_contracts": [
+    {
+      "entry": "$D1FCF4",
+      "kind": "near",
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "status": "closed-direct-stack-width-control-flow",
+      "frontier": null,
+      "abstract_states": 55,
+      "instruction_contexts": 55,
+      "instruction_starts": 55,
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FCF4",
+          "end_exclusive": "$D1FD7E",
+          "sha256": "f05dff78f2b5ee062169477ebeb6fb689c2469fb56e08a81e41de090fbfabac4"
+        }
+      ],
+      "decoded_context_identity_sha256": "d1fdfdc1afbb7b6cdb9e62852b6dd2f3accd7500a3d1dbea73a491710ff77b28",
+      "maximum_additional_bytes_below_callee_entry": 0,
+      "exploratory_observed_local_peak_not_a_bound": null,
+      "maximum_counted_bytes_including_root_call_frame": 2,
+      "peak_instruction_sites": [],
+      "return_width_states": [
+        {
+          "site": "$D1FD3B",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        },
+        {
+          "site": "$D1FD7D",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        }
+      ],
+      "matches_prior_return_width_premise": true,
+      "direct_calls": [],
+      "direct_far_jumps": [],
+      "syntactic_write_operands": [
+        {
+          "site": "$D1FD03",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C4DF",
+          "width_bytes": 2,
+          "instruction_sha256": "176d9d9f9a4f7d567253e7c5bbc4fa66223b86636e3669a24e2b6a01b5e075d6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD06",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C517",
+          "width_bytes": 2,
+          "instruction_sha256": "6b77fd2b83af7098541c30bb8abf19e80b74701a17dc160c44a5d65c5ebde5dc",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD09",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C54F",
+          "width_bytes": 2,
+          "instruction_sha256": "5d8de3278a4b5aad96f0ab352567b31c8c4b3a8755bc5880320b6e4e7baad5ed",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD0C",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C587",
+          "width_bytes": 2,
+          "instruction_sha256": "2fdf4cc3d63711e5a3cc56a5d3231f6f7b36bbfc5425842398156d416c2a7c22",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD0F",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C5BF",
+          "width_bytes": 2,
+          "instruction_sha256": "878ece2fffc89ee5f548641a9fa8872b5d81db2e6bc0b2f544a3a6292f36954d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD12",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C5F7",
+          "width_bytes": 2,
+          "instruction_sha256": "e968280380449b0330684eaf077621ac441d421f46dabc12a7ce795b6db3a2a5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD15",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C62F",
+          "width_bytes": 2,
+          "instruction_sha256": "179ca21952afbab5c0612988a718719e62114de7d275542ec65d8db63f6a74f3",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD18",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C667",
+          "width_bytes": 2,
+          "instruction_sha256": "11ea412b6e086adce0ea463e4bb9eb2ced0b6a7b680147330f983e6e10e0112a",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD1B",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C69F",
+          "width_bytes": 2,
+          "instruction_sha256": "afc5769251b77050fd1fe79d13ccff92211e0895dce53938a9506de677bb4b7c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD1E",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C6D7",
+          "width_bytes": 2,
+          "instruction_sha256": "d8207d804fb549a658472d5969680c849b3771f56cedd1f4e6e8a9502446e770",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD21",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C70F",
+          "width_bytes": 2,
+          "instruction_sha256": "e9f4d3e4f6b3570d80a3a49bf06a72c0efeee15ba6ea34943bc0ee39150237c4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD24",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C747",
+          "width_bytes": 2,
+          "instruction_sha256": "c8e38bbb22618fbd5e69029f6afb0aed27d0073e45faaf333ec02471f315dfed",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD27",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C77F",
+          "width_bytes": 2,
+          "instruction_sha256": "ff246fc0f39bc539f1f27360b3170954a5e1f8bf65a10a8ee17e39488cc71601",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD2A",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C7B7",
+          "width_bytes": 2,
+          "instruction_sha256": "a895724bf0d4b7fd0f607d07b29767957de9ebb4d27851e5c029cd872b0f989f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD2D",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C7EF",
+          "width_bytes": 2,
+          "instruction_sha256": "78ec177489e43b5240ee90f2cca2e564357c518ddab767e7c34272aa3fc0e727",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD30",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C827",
+          "width_bytes": 2,
+          "instruction_sha256": "90a2260f17115ef3edbd7cb6644976473e5c07a3608a196270f962c5045775d4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD45",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C15F",
+          "width_bytes": 2,
+          "instruction_sha256": "77aad196f22e138795f0357dd359c00432a43b27ae180abecc826aea8d58bbae",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD48",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C197",
+          "width_bytes": 2,
+          "instruction_sha256": "5245908d4e670b9bef02f911572fbf516b88a2fe6ac692c0ac2b32cb87ecdae0",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD4B",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C1CF",
+          "width_bytes": 2,
+          "instruction_sha256": "13a255d49f9ce9eb6873a03a331332ce5399e2162eeb26446b831485dbc96631",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD4E",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C207",
+          "width_bytes": 2,
+          "instruction_sha256": "b7f3df070d5e2464426e6c88b85f3967539a9e0b1698386ab3abe1df078369df",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD51",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C23F",
+          "width_bytes": 2,
+          "instruction_sha256": "6377cd26cc9670aa00636a098f496551f32f3b989b9e55a534d795a6873e32e7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD54",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C277",
+          "width_bytes": 2,
+          "instruction_sha256": "389e49285552e042d6301e7e597c991ec99988b8bd0cb1989efa5933f266ea8d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD57",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C2AF",
+          "width_bytes": 2,
+          "instruction_sha256": "62e58e1f11619064a0571fe8199f980ccfece5dc3dbcf0f6bc65443a2ae91b31",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD5A",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C2E7",
+          "width_bytes": 2,
+          "instruction_sha256": "b646555c11f4ab445d831bb3b113e8543f97011a8a4d5caece7269d323e34190",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD5D",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C31F",
+          "width_bytes": 2,
+          "instruction_sha256": "4ecdebaff19ce7b7319ef430e16a2e97402ed6191beb8d54a6b9b19f1bb51384",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD60",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C357",
+          "width_bytes": 2,
+          "instruction_sha256": "87ff9dbdb628c7932dae22fb6cbc8e7bda267fd373dde68dabcba144972cffaa",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD63",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C38F",
+          "width_bytes": 2,
+          "instruction_sha256": "54c908e03a2262fc684573758684bd18c4eca7ff56d83559f442c5bf7a89c8d4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD66",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C3C7",
+          "width_bytes": 2,
+          "instruction_sha256": "8330e773c185540009b9fdf5c02fdc0add3428146bc988eca3aebaa002f1c7e1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD69",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C3FF",
+          "width_bytes": 2,
+          "instruction_sha256": "d04cf66e299669017b0c207e96e2c40a52749ca822cce8d4417e9bc467ef20bb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD6C",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C437",
+          "width_bytes": 2,
+          "instruction_sha256": "b2f847abc19b28fac1a7c2cd778fc2b2f2feac6be9e4afd86dd4aa255c09084d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD6F",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C46F",
+          "width_bytes": 2,
+          "instruction_sha256": "3b1b295ba639d677d2373657004ad166f9d4104e0f806a3213aefa9d4fcc1dd7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FD72",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C4A7",
+          "width_bytes": 2,
+          "instruction_sha256": "bb7f41e8459db0407f9351e51b7cb1b6eb5800e44fde48f54c81a400e719dd6e",
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 4,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 32,
+        "branch": 3
+      },
+      "callee_register_value_preservation": false,
+      "nonstack_alias_closure": false,
+      "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+      "termination_proved": false,
+      "whole_nmi_bound": null
+    },
+    {
+      "entry": "$D1FC38",
+      "kind": "near",
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "status": "closed-direct-stack-width-control-flow",
+      "frontier": null,
+      "abstract_states": 43,
+      "instruction_contexts": 43,
+      "instruction_starts": 43,
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FC38",
+          "end_exclusive": "$D1FC96",
+          "sha256": "9173bf37d4b08370acf46e0ebb0972ea34b7095fc4bb50194099056026e1129f"
+        }
+      ],
+      "decoded_context_identity_sha256": "5a2aa213890b961ecd986df4b2e40a1003d0d7401d6455f62725b74530f11941",
+      "maximum_additional_bytes_below_callee_entry": 0,
+      "exploratory_observed_local_peak_not_a_bound": null,
+      "maximum_counted_bytes_including_root_call_frame": 2,
+      "peak_instruction_sites": [],
+      "return_width_states": [
+        {
+          "site": "$D1FC69",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        },
+        {
+          "site": "$D1FC95",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        }
+      ],
+      "matches_prior_return_width_premise": true,
+      "direct_calls": [],
+      "direct_far_jumps": [],
+      "syntactic_write_operands": [
+        {
+          "site": "$D1FC47",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C4DD",
+          "width_bytes": 2,
+          "instruction_sha256": "aefeca2b3269449feaccbc731532bee83cff04d3d17b7164414f2397aa91b2fd",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC4A",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C54D",
+          "width_bytes": 2,
+          "instruction_sha256": "c05cfc4e93afd4554c682b8e3b34da923f692ee4d54eac0f0d93ce9113059699",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC4D",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C5BD",
+          "width_bytes": 2,
+          "instruction_sha256": "69f298f279a932f17b26f40db1b506445cb4b06238b72d866463ab498038ebe4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC50",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C62D",
+          "width_bytes": 2,
+          "instruction_sha256": "5abd4ba39c2a4468b3a42bcb39db8a92501539b67a328566aa74d7359f59407d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC53",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C69D",
+          "width_bytes": 2,
+          "instruction_sha256": "f8d56025fdd6c2d9613375396abe86394d9d3fa411c1d6a64bf12d9da3df54ad",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC56",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C70D",
+          "width_bytes": 2,
+          "instruction_sha256": "71c835c100be26385fe7a6830d26a5a45eb7d0087eabab64ee5b4a1c2e05d67c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC59",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C77D",
+          "width_bytes": 2,
+          "instruction_sha256": "7cd44479028abad0f5ce8be454e1b5927d4ea334509d4982a628389d81983e71",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC5C",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C7ED",
+          "width_bytes": 2,
+          "instruction_sha256": "f2502de944e3460a699bd89a46632bed0cf11e84c7b456cdb6a026eaf41b3564",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC73",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C15D",
+          "width_bytes": 2,
+          "instruction_sha256": "31abd3c72a772bf4dcaed81b1a9a363e09bb5e9a824836adc793d47947c6272d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC76",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C1CD",
+          "width_bytes": 2,
+          "instruction_sha256": "fbfabc47b3466b5c899466aa5c8b5d25fd1a20eba487841a7695542bf0567edf",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC79",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C23D",
+          "width_bytes": 2,
+          "instruction_sha256": "9ff8ef24497100e6c523bb32f5b56e99dea9a5883a8b0fca7d04e03ad5d360cc",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC7C",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C2AD",
+          "width_bytes": 2,
+          "instruction_sha256": "86c0e8ac957e4b8649dd61dbe4ed681991559be15f2447875018734b0c33a702",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC7F",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C31D",
+          "width_bytes": 2,
+          "instruction_sha256": "b03e0e8685edba2bd06758f449114175420d6ecbb03631b4bdf4123438ed3795",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC82",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C38D",
+          "width_bytes": 2,
+          "instruction_sha256": "030364f3f7e2cb9d7686f18e98d611f391169d4a1319ab77ba7d18f4cb883fc0",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC85",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C3FD",
+          "width_bytes": 2,
+          "instruction_sha256": "b40f0ae8c025a96be023549e2a3df90fe1eaa0b9e17e9c74cb4a42e5f0a35ee4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC88",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C46D",
+          "width_bytes": 2,
+          "instruction_sha256": "3930ccef7ba679fb15cf97c23ff1bd897817b2fe1a8ba621cde2ee0adcc60aa5",
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 8,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 16,
+        "branch": 3
+      },
+      "callee_register_value_preservation": false,
+      "nonstack_alias_closure": false,
+      "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+      "termination_proved": false,
+      "whole_nmi_bound": null
+    },
+    {
+      "entry": "$D1FC96",
+      "kind": "near",
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "status": "closed-direct-stack-width-control-flow",
+      "frontier": null,
+      "abstract_states": 43,
+      "instruction_contexts": 43,
+      "instruction_starts": 43,
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FC96",
+          "end_exclusive": "$D1FCF4",
+          "sha256": "94ef0ba46e1bbf4d6bc62b74b74192f3e95af74ba74f2c4cf0f2361d98695584"
+        }
+      ],
+      "decoded_context_identity_sha256": "2943398475358c244e39f7fb919c1967e6ae5eaf94bbac9fce3ac793dc3867da",
+      "maximum_additional_bytes_below_callee_entry": 0,
+      "exploratory_observed_local_peak_not_a_bound": null,
+      "maximum_counted_bytes_including_root_call_frame": 2,
+      "peak_instruction_sites": [],
+      "return_width_states": [
+        {
+          "site": "$D1FCC7",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        },
+        {
+          "site": "$D1FCF3",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        }
+      ],
+      "matches_prior_return_width_premise": true,
+      "direct_calls": [],
+      "direct_far_jumps": [],
+      "syntactic_write_operands": [
+        {
+          "site": "$D1FCA5",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C4DF",
+          "width_bytes": 2,
+          "instruction_sha256": "176d9d9f9a4f7d567253e7c5bbc4fa66223b86636e3669a24e2b6a01b5e075d6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCA8",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C54F",
+          "width_bytes": 2,
+          "instruction_sha256": "5d8de3278a4b5aad96f0ab352567b31c8c4b3a8755bc5880320b6e4e7baad5ed",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCAB",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C5BF",
+          "width_bytes": 2,
+          "instruction_sha256": "878ece2fffc89ee5f548641a9fa8872b5d81db2e6bc0b2f544a3a6292f36954d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCAE",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C62F",
+          "width_bytes": 2,
+          "instruction_sha256": "179ca21952afbab5c0612988a718719e62114de7d275542ec65d8db63f6a74f3",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCB1",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C69F",
+          "width_bytes": 2,
+          "instruction_sha256": "afc5769251b77050fd1fe79d13ccff92211e0895dce53938a9506de677bb4b7c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCB4",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C70F",
+          "width_bytes": 2,
+          "instruction_sha256": "e9f4d3e4f6b3570d80a3a49bf06a72c0efeee15ba6ea34943bc0ee39150237c4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCB7",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C77F",
+          "width_bytes": 2,
+          "instruction_sha256": "ff246fc0f39bc539f1f27360b3170954a5e1f8bf65a10a8ee17e39488cc71601",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCBA",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C7EF",
+          "width_bytes": 2,
+          "instruction_sha256": "78ec177489e43b5240ee90f2cca2e564357c518ddab767e7c34272aa3fc0e727",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCD1",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C15F",
+          "width_bytes": 2,
+          "instruction_sha256": "77aad196f22e138795f0357dd359c00432a43b27ae180abecc826aea8d58bbae",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCD4",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C1CF",
+          "width_bytes": 2,
+          "instruction_sha256": "13a255d49f9ce9eb6873a03a331332ce5399e2162eeb26446b831485dbc96631",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCD7",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C23F",
+          "width_bytes": 2,
+          "instruction_sha256": "6377cd26cc9670aa00636a098f496551f32f3b989b9e55a534d795a6873e32e7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCDA",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C2AF",
+          "width_bytes": 2,
+          "instruction_sha256": "62e58e1f11619064a0571fe8199f980ccfece5dc3dbcf0f6bc65443a2ae91b31",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCDD",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C31F",
+          "width_bytes": 2,
+          "instruction_sha256": "4ecdebaff19ce7b7319ef430e16a2e97402ed6191beb8d54a6b9b19f1bb51384",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCE0",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C38F",
+          "width_bytes": 2,
+          "instruction_sha256": "54c908e03a2262fc684573758684bd18c4eca7ff56d83559f442c5bf7a89c8d4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCE3",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C3FF",
+          "width_bytes": 2,
+          "instruction_sha256": "d04cf66e299669017b0c207e96e2c40a52749ca822cce8d4417e9bc467ef20bb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FCE6",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C46F",
+          "width_bytes": 2,
+          "instruction_sha256": "3b1b295ba639d677d2373657004ad166f9d4104e0f806a3213aefa9d4fcc1dd7",
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 8,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 16,
+        "branch": 3
+      },
+      "callee_register_value_preservation": false,
+      "nonstack_alias_closure": false,
+      "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+      "termination_proved": false,
+      "whole_nmi_bound": null
+    },
+    {
+      "entry": "$D1FBDA",
+      "kind": "near",
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "status": "closed-direct-stack-width-control-flow",
+      "frontier": null,
+      "abstract_states": 43,
+      "instruction_contexts": 43,
+      "instruction_starts": 43,
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FBDA",
+          "end_exclusive": "$D1FC38",
+          "sha256": "50ce7c3f6cf7080f78bd618468715d6f361b94e94517344491c550994d2f6b83"
+        }
+      ],
+      "decoded_context_identity_sha256": "e4aa80f28ce1f4c39cb700af85eeb4d3b2498ce2ae96b1a7ef69b33e65c7e8ec",
+      "maximum_additional_bytes_below_callee_entry": 0,
+      "exploratory_observed_local_peak_not_a_bound": null,
+      "maximum_counted_bytes_including_root_call_frame": 2,
+      "peak_instruction_sites": [],
+      "return_width_states": [
+        {
+          "site": "$D1FC0B",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        },
+        {
+          "site": "$D1FC37",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        }
+      ],
+      "matches_prior_return_width_premise": true,
+      "direct_calls": [],
+      "direct_far_jumps": [],
+      "syntactic_write_operands": [
+        {
+          "site": "$D1FBE9",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C4DD",
+          "width_bytes": 2,
+          "instruction_sha256": "aefeca2b3269449feaccbc731532bee83cff04d3d17b7164414f2397aa91b2fd",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FBEC",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C54D",
+          "width_bytes": 2,
+          "instruction_sha256": "c05cfc4e93afd4554c682b8e3b34da923f692ee4d54eac0f0d93ce9113059699",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FBEF",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C5BD",
+          "width_bytes": 2,
+          "instruction_sha256": "69f298f279a932f17b26f40db1b506445cb4b06238b72d866463ab498038ebe4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FBF2",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C62D",
+          "width_bytes": 2,
+          "instruction_sha256": "5abd4ba39c2a4468b3a42bcb39db8a92501539b67a328566aa74d7359f59407d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FBF5",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C69D",
+          "width_bytes": 2,
+          "instruction_sha256": "f8d56025fdd6c2d9613375396abe86394d9d3fa411c1d6a64bf12d9da3df54ad",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FBF8",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C70D",
+          "width_bytes": 2,
+          "instruction_sha256": "71c835c100be26385fe7a6830d26a5a45eb7d0087eabab64ee5b4a1c2e05d67c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FBFB",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C77D",
+          "width_bytes": 2,
+          "instruction_sha256": "7cd44479028abad0f5ce8be454e1b5927d4ea334509d4982a628389d81983e71",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FBFE",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C7ED",
+          "width_bytes": 2,
+          "instruction_sha256": "f2502de944e3460a699bd89a46632bed0cf11e84c7b456cdb6a026eaf41b3564",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC15",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C15D",
+          "width_bytes": 2,
+          "instruction_sha256": "31abd3c72a772bf4dcaed81b1a9a363e09bb5e9a824836adc793d47947c6272d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC18",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C1CD",
+          "width_bytes": 2,
+          "instruction_sha256": "fbfabc47b3466b5c899466aa5c8b5d25fd1a20eba487841a7695542bf0567edf",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC1B",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C23D",
+          "width_bytes": 2,
+          "instruction_sha256": "9ff8ef24497100e6c523bb32f5b56e99dea9a5883a8b0fca7d04e03ad5d360cc",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC1E",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C2AD",
+          "width_bytes": 2,
+          "instruction_sha256": "86c0e8ac957e4b8649dd61dbe4ed681991559be15f2447875018734b0c33a702",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC21",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C31D",
+          "width_bytes": 2,
+          "instruction_sha256": "b03e0e8685edba2bd06758f449114175420d6ecbb03631b4bdf4123438ed3795",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC24",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C38D",
+          "width_bytes": 2,
+          "instruction_sha256": "030364f3f7e2cb9d7686f18e98d611f391169d4a1319ab77ba7d18f4cb883fc0",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC27",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C3FD",
+          "width_bytes": 2,
+          "instruction_sha256": "b40f0ae8c025a96be023549e2a3df90fe1eaa0b9e17e9c74cb4a42e5f0a35ee4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1FC2A",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C46D",
+          "width_bytes": 2,
+          "instruction_sha256": "3930ccef7ba679fb15cf97c23ff1bd897817b2fe1a8ba621cde2ee0adcc60aa5",
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 8,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 16,
+        "branch": 3
+      },
+      "callee_register_value_preservation": false,
+      "nonstack_alias_closure": false,
+      "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+      "termination_proved": false,
+      "whole_nmi_bound": null
+    }
+  ],
+  "value_contracts": [
+    {
+      "entry": "$D1FCF4",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 55,
+      "instruction_contexts": 55,
+      "direct_calls": [],
+      "decoded_context_identity_sha256": "d1fdfdc1afbb7b6cdb9e62852b6dd2f3accd7500a3d1dbea73a491710ff77b28",
+      "edge_identity_sha256": "3b28b16d71a672911b58f09665f736718c8f1b7530d7af26a6c05dac09b982ce",
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FCF4",
+          "end_exclusive": "$D1FD7E",
+          "sha256": "f05dff78f2b5ee062169477ebeb6fb689c2469fb56e08a81e41de090fbfabac4"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 4,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 32,
+        "branch": 3
+      },
+      "ends": [
+        {
+          "site": "$D1FD3B",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 255,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$D1FD7D",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 255,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 2,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false
+    },
+    {
+      "entry": "$D1FC38",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 43,
+      "instruction_contexts": 43,
+      "direct_calls": [],
+      "decoded_context_identity_sha256": "5a2aa213890b961ecd986df4b2e40a1003d0d7401d6455f62725b74530f11941",
+      "edge_identity_sha256": "227503886688fa4759ecfa4ba1a2a2159b23a1494b417b1c8ec383934cef6261",
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FC38",
+          "end_exclusive": "$D1FC96",
+          "sha256": "9173bf37d4b08370acf46e0ebb0972ea34b7095fc4bb50194099056026e1129f"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 8,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 16,
+        "branch": 3
+      },
+      "ends": [
+        {
+          "site": "$D1FC69",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 255,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$D1FC95",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 255,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 2,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false
+    },
+    {
+      "entry": "$D1FC96",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 43,
+      "instruction_contexts": 43,
+      "direct_calls": [],
+      "decoded_context_identity_sha256": "2943398475358c244e39f7fb919c1967e6ae5eaf94bbac9fce3ac793dc3867da",
+      "edge_identity_sha256": "7bf8677e33119497906be2af404af73158ef829447fd6dbd1d4beca45e8edfff",
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FC96",
+          "end_exclusive": "$D1FCF4",
+          "sha256": "94ef0ba46e1bbf4d6bc62b74b74192f3e95af74ba74f2c4cf0f2361d98695584"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 8,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 16,
+        "branch": 3
+      },
+      "ends": [
+        {
+          "site": "$D1FCC7",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 255,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$D1FCF3",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 255,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 2,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false
+    },
+    {
+      "entry": "$D1FBDA",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 43,
+      "instruction_contexts": 43,
+      "direct_calls": [],
+      "decoded_context_identity_sha256": "e4aa80f28ce1f4c39cb700af85eeb4d3b2498ce2ae96b1a7ef69b33e65c7e8ec",
+      "edge_identity_sha256": "69533907b70532252e98d80974735588a13a308461955692bdf939de3e95a8bc",
+      "decoded_byte_intervals": [
+        {
+          "start": "$D1FBDA",
+          "end_exclusive": "$D1FC38",
+          "sha256": "50ce7c3f6cf7080f78bd618468715d6f361b94e94517344491c550994d2f6b83"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "DEX": 8,
+        "LDA #": 2,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "REP": 4,
+        "RTS": 2,
+        "SEP": 4,
+        "STA abs,X": 16,
+        "branch": 3
+      },
+      "ends": [
+        {
+          "site": "$D1FC0B",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 0,
+          "b": 255,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$D1FC37",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 0,
+          "b": 255,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 2,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false
+    }
+  ],
+  "conditional_frame_composition": {
+    "existing_scene_near_frame_bytes": 2,
+    "scene_jsl": {
+      "site": "$CD29DE",
+      "target": "$D1FBCE",
+      "frame_bytes": 3,
+      "saved_pbr": 205,
+      "saved_return_word": 10721,
+      "resumed_pc": "$CD29E2"
+    },
+    "wrapper_indexed_jsr": {
+      "site": "$D1FBCE",
+      "frame_bytes": 2,
+      "saved_return_word": 64464,
+      "resumed_pc": "$D1FBD1",
+      "target_pbr": 209
+    },
+    "maximum_additional_bytes_below_scene_handler_entry": 5,
+    "maximum_bytes_including_existing_scene_near_frame": 7,
+    "continuation_instructions": [
+      "$D1FBD1 RTL",
+      "$CD29E2 RTS"
+    ],
+    "continuation_changes_a_b_d_dbr_or_widths": false,
+    "parameter3_retains_bff_through_scene_return": true,
+    "global_scene_return_b0_proved": false
+  },
+  "return_b_by_reviewed_ordinal": [
+    0,
+    0,
+    0,
+    255
+  ],
+  "premises": [
+    "Native near entry with B0/D0/DBR7E and M1/X0/I1; parameter&7F is below4.",
+    "Ordinary writable stack and no CPU/DMA/asynchronous alias changes saved frames or canonical code.",
+    "Parameter pointer, target write addresses, data lifetime and global legal producer domain remain unresolved.",
+    "The counterexample is a conditional return ABI, not evidence that parameter3 occurs in a live script."
+  ],
+  "legal_parameter_or_scene_stream_domain_proved": false,
+  "input_pointer_or_parameter_memory_proved": false,
+  "selected_body_memory_alias_closure": false,
+  "dma_or_asynchronous_interference_proved": false,
+  "global_scene_return_b0_proved": false,
+  "runtime_reachability_of_parameter3_proved": false,
+  "vanilla_runtime_bug_proved": false,
+  "termination_or_timing_proved": false,
+  "whole_nmi_stack_bound": null,
+  "new_native_execution": false,
+  "production_approval": false,
+  "prerequisites": {
+    "control_source": {
+      "path": "tools/audit_schala_scene_handler_closure_v1.py",
+      "size": 24705,
+      "sha256": "2c8de06dea25a35971143bf6a8c868aea1996a6ab6a8de26fa4b5a12c9ade71d"
+    },
+    "control_reference": {
+      "path": "references/schala_scene_handler_closure_v1.json",
+      "size": 1029264,
+      "sha256": "ac44bd733e1b6f4dffd91887e5ac42738a57ace78a8583c5ff9c5bf2e602a43a"
+    },
+    "value_source": {
+      "path": "tools/audit_schala_scene_handler_values_v1.py",
+      "size": 21359,
+      "sha256": "b92e5ff6534cb6383754753fa484ac6c4e8d38fab68e6645d207db9e47796610"
+    },
+    "value_reference": {
+      "path": "references/schala_scene_handler_values_v1.json",
+      "size": 376981,
+      "sha256": "cb99bfff13c319a7ec67742eeed1ab0fee0827799ec80b89cce2f3dd668af543"
+    },
+    "cpu_source": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    }
+  },
+  "source_identities": [
+    {
+      "path": "tools/audit_schala_scene88_subdispatch_v1.py",
+      "size": 14759,
+      "sha256": "867f299b95e7362b4af6137ca19223c836780718d3715769a8623976cd598478"
+    },
+    {
+      "path": "tests/test_schala_scene88_subdispatch_v1.py",
+      "size": 8209,
+      "sha256": "a4f536b2d48e04c7b7445108f3ca1b0340ce00f1a70147afc4505c38052ab78d"
+    }
+  ],
+  "transitive_source_identities": [
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CD.asm",
+      "size": 474851,
+      "sha256": "0d230620c6accf311c0588e2fefaf3bcc48b0d42575f3745fec3a402a6ca19fb"
+    },
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CE.asm",
+      "size": 67102,
+      "sha256": "23b885667ad4f454ed95f4d441253378cb40964c3e2d543120f5f9c1288a35ad"
+    },
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CF.asm",
+      "size": 300449,
+      "sha256": "f2783556f4963cbeb75b320c996a3fd8e5da6d435009aa8c1516086c65ed02a6"
+    },
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_D1.asm",
+      "size": 189600,
+      "sha256": "020f6df9efd22cc12a35608da6523b5d2e5d76d965d94567e0b74d50ab9eacea"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    {
+      "path": "references/schala_nmi_mode_bodies_v1.json",
+      "size": 160900,
+      "sha256": "f3057c1cf9d0b354a318e3e67b2c760fdf9d8bfc49784d4efed344ba997a8d85"
+    },
+    {
+      "path": "references/schala_nmi_mode_inputs_v1.json",
+      "size": 138037,
+      "sha256": "dc715f6726e482a00e649d15252b5ca42f933f82198d8520c78d7867f3932530"
+    },
+    {
+      "path": "references/schala_nmi_scroll_inputs_v1.json",
+      "size": 87273,
+      "sha256": "003bf6be7e686445a8aa0a7bddf36bd8ca35b2fb49aa4d184ec5f3bc15db8013"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_closure_v2.json",
+      "size": 321839,
+      "sha256": "413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_v1.json",
+      "size": 71372,
+      "sha256": "27dd6f602781b83107bd7ab9072f1704e26bb39433713a3188679114db3b4f2c"
+    },
+    {
+      "path": "references/schala_scene_dispatch_inputs_v1.json",
+      "size": 156163,
+      "sha256": "d5604c65934dff1dfa4796ea3d990e227065e9b28a5499695f590fff912a8c13"
+    },
+    {
+      "path": "references/schala_scene_handler_closure_v1.json",
+      "size": 1029264,
+      "sha256": "ac44bd733e1b6f4dffd91887e5ac42738a57ace78a8583c5ff9c5bf2e602a43a"
+    },
+    {
+      "path": "tests/test_schala_nmi_mode_bodies_v1.py",
+      "size": 8308,
+      "sha256": "3bccabc53eda3357079a2db236c37cbd81e1cf139c6e5c5ec913ee0facb38833"
+    },
+    {
+      "path": "tests/test_schala_nmi_mode_inputs_v1.py",
+      "size": 7189,
+      "sha256": "4a1be7a22359d6f9388a36b6c92af937574592525734dc3d092b7df843839e2c"
+    },
+    {
+      "path": "tests/test_schala_nmi_scroll_inputs_v1.py",
+      "size": 9965,
+      "sha256": "f4083eb152d606a39511a011e7454384c237f3ece149d786202bd718c328a3c9"
+    },
+    {
+      "path": "tests/test_schala_package_normal_nmi_closure_v2.py",
+      "size": 8449,
+      "sha256": "ed5c9cfc7960eeac0a0ca27c97cb462b67b0e518a9b9164d03a8ada3ae0b53fb"
+    },
+    {
+      "path": "tests/test_schala_scene_dispatch_inputs_v1.py",
+      "size": 6509,
+      "sha256": "d6c96fa9a8444f4e5e5bb403e36bf3035433f6e190f21dbc1454eccf6a2fe195"
+    },
+    {
+      "path": "tests/test_schala_scene_handler_closure_v1.py",
+      "size": 9821,
+      "sha256": "89b50ffd56f3fdc9aa528fd14c563281226421d10140c92a7d4483aa727357da"
+    },
+    {
+      "path": "tests/test_schala_scene_handler_values_v1.py",
+      "size": 8109,
+      "sha256": "6c3d7e6f1b1da9c2b9166452842a4dcb0bf93b2b942905b154b615a5017f7601"
+    },
+    {
+      "path": "tools/audit_schala_nmi_mode_bodies_v1.py",
+      "size": 13937,
+      "sha256": "9b685d63e68153d1c7d56213af5b1211237c3f36d067046a9e854ae5beb34187"
+    },
+    {
+      "path": "tools/audit_schala_nmi_mode_inputs_v1.py",
+      "size": 13792,
+      "sha256": "2372dd5c829f889ca0069227d1d4322726ce2c893c4e55cdf1471a3f0f28614f"
+    },
+    {
+      "path": "tools/audit_schala_nmi_scroll_inputs_v1.py",
+      "size": 19678,
+      "sha256": "4153a240d3a1fa750dd0ac67626776e061ceb049f03b9fce54fc08da8e31c686"
+    },
+    {
+      "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+      "size": 13647,
+      "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_v1.py",
+      "size": 16826,
+      "sha256": "81a145b4ec078d5cf22ec5680cdfb66d427f876f40eefd0a50af432f8b9f51a9"
+    },
+    {
+      "path": "tools/audit_schala_scene_dispatch_inputs_v1.py",
+      "size": 14561,
+      "sha256": "3aef357ad9c557d21015711e834d37a370737228665cca4c2ece4745a71f4d30"
+    },
+    {
+      "path": "tools/audit_schala_scene_handler_closure_v1.py",
+      "size": 24705,
+      "sha256": "2c8de06dea25a35971143bf6a8c868aea1996a6ab6a8de26fa4b5a12c9ade71d"
+    },
+    {
+      "path": "tools/audit_schala_scene_handler_values_v1.py",
+      "size": 21359,
+      "sha256": "b92e5ff6534cb6383754753fa484ac6c4e8d38fab68e6645d207db9e47796610"
+    }
+  ],
+  "primary_semantics": [
+    {
+      "source": {
+        "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+        "size": 27673,
+        "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+      },
+      "first_line": 409,
+      "last_line_inclusive": 425,
+      "size": 288,
+      "sha256": "977fe73a270d91cea43994a78b62c9222edb65fc339a38ec4c2c6b536ce315bd",
+      "interpretation": "JSL pushes caller PBR and final-operand return word",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h#L409"
+    },
+    {
+      "source": {
+        "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+        "size": 27673,
+        "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+      },
+      "first_line": 446,
+      "last_line_inclusive": 461,
+      "size": 398,
+      "sha256": "92c914032e3eeed997ea3dd96d73005b03bd6594c4dd7358d026dc664f5c5609",
+      "interpretation": "indexed JSR pushes its own word and reads the table in PBR",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h#L446"
+    },
+    {
+      "source": {
+        "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+        "size": 27673,
+        "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+      },
+      "first_line": 479,
+      "last_line_inclusive": 500,
+      "size": 267,
+      "sha256": "506320d4373ed60febddbed83a11a521c0f3323e9980f7056333d42fbd98c69f",
+      "interpretation": "RTL and RTS consume their exact frame and increment return PC",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h#L479"
+    },
+    {
+      "source": {
+        "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+        "size": 27673,
+        "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+      },
+      "first_line": 626,
+      "last_line_inclusive": 633,
+      "size": 202,
+      "sha256": "ebe59a074178544f5d283b64190b70b730660d45d38f66a5d2017a9ff524cc66",
+      "interpretation": "M8 accumulator ASL preserves hidden B",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h#L626"
+    },
+    {
+      "source": {
+        "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+        "size": 27673,
+        "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+      },
+      "first_line": 1058,
+      "last_line_inclusive": 1061,
+      "size": 92,
+      "sha256": "ee99d52b1edddda88bbabac2ebc4a622be5edd5ba52adfc6e20db35c5ccafd20",
+      "interpretation": "TAX width follows X flag, not accumulator width",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h#L1058"
+    }
+  ],
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_schala_scene88_subdispatch_v1.py"
+  ],
+  "serialization": "UTF-8 indented JSON, LF, one trailing newline"
+}

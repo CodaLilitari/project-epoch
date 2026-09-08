@@ -1097,3 +1097,84 @@ scene paths. Full normal-game NMI closure, physical stack ownership,
 publication-reader isolation and native preflight-rejection cleanup remain
 required. The overall gate stays BA-NATIVE-INTEGRATION-DESIGN, with empty
 production hook/allocation catalogs and unbound high production selectors.
+
+## 2026-09-08 - scene return refinement, conditional subdispatches and DMA destinations
+
+**Status:** four additional static packets accepted through independent
+source review, focused tests and exact CLI reproduction. These are narrower
+contracts for the remaining integration design; none changes a game image.
+
+The [scene return-values v2 packet](schala_scene_handler_values_v2.md)
+resolves the three previously uncertain B returns in the preserved 114-target
+set. At exactly three named sites, the immediate executed predecessor is an
+M16 LDA and the taken BEQ edge therefore has full A=0. Both successors remain
+in the abstract graph; no general flag inference or branch pruning is added.
+All 114 typed source/call/return contexts agree with the accepted census,
+and the v1 111-proved/three-unresolved reference is reproduced unchanged.
+Root and a separate reviewer passed 18 tests and reproduced the 357,484-byte
+reference, SHA-256
+`52543e1820669eac00b90baa39e307dcb9b35c9be14e7a0eff42e5aa762d8b87`.
+This improves conservative analysis precision; it is not a mapping correction.
+
+The [manual DMA7 destination contract](schala_package_irq_dma7_contract_v3.md)
+follows the actual field-DMA leaf service from symbolic entry registers.
+Its 338 states exactly cover the 254 instruction contexts and 136 ordinary
+CPU byte-write contexts in the accepted IRQ packet. All twelve request sites
+have dominating DMAP7=$41, BBAD7=$18, size=$0080 and exact byte STY MDMAEN=$80
+writers. Pinned CPU/DMA/register/PPU source derives requested writes only to
+$2118/$2119. The model invalidates size knowledge after each request; every
+later request must establish its own count. This proves requested VRAM-port
+destinations, not source validity, actual completion, timing or interference.
+
+Independent review found a false acceptance in the initial generic model:
+a reverse-direction overwrite through mirrored register $80:4370 could leave
+an old bank-zero control value in its ledger. That exact draft and candidate
+remain preserved. The corrected per-byte guard refuses unmodeled nonzero
+hardware-register mirrors, including word-high range crossings. Root then
+required byte-exact reproduction of the pinned accepted IRQ reference before
+any new projection. That second draft is preserved too. All 41 tests pass,
+including original mirror and prerequisite-drift specimens. Root's two actual
+CLI outputs exactly reproduce the 58,451-byte reference, SHA-256
+`10b35697c6eac860f79a3d062856f944540b96a200114b5da5fab0fb6b94d2d3`.
+The canonical game configuration was unchanged by either model correction.
+
+The [$8C/$8D proof](schala_scene8c8d_subdispatch_v1.md) resolves eight leaf
+bodies under B0/D0/DBR7E, M1/X0/I1 and (parameter&$7F)<4. Their eight-bit
+ASL discards parameter bit7, while the X16 TAX preserves hidden B. Each
+selected leaf returns A/B0 with no frame beyond the existing near call.
+B0 alone permits 128 physical word starts per command; arbitrary B covers
+the bank. The odd-base pointer wrap and parameter-$04 occupied-code overlap
+are explicit. DP43/Y and parameter-source lifetime remain unresolved.
+Author, root and independent reviewer passed 34 tests. Two actual root CLI
+outputs reproduce the 48,468-byte reference, SHA-256
+`8b25fb718642c968e18fffebbccae6fe8c33ee0d229e337400485320b0dd3e5d`.
+
+The [$88 proof](schala_scene88_subdispatch_v1.md) has the same conditional
+four-cell predicate, but a materially different return ABI. Ordinals 0/1/2
+return A=$00FF/B0; ordinal3 returns A=$FF00/B=$FF. The enclosing $D1FBD1 RTL
+and $CD29E2 RTS preserve that hidden byte. Their exact frames contribute
+JSL3+indexed-JSR2, five bytes below the scene-handler entry or seven including
+its existing near frame. This conditional nonzero-B result is a concrete
+reason not to generalize the 114 direct-target contract to the whole loop.
+No legal parameter3 producer or live vanilla bug is established.
+
+The root's first original metadata fixture omitted inherited scope fields;
+its test failure and candidate output remain private preserved history.
+After the fixture was completed, independent review found that the standalone
+frame composer checked B but not its reported full A. The canonical audit
+already supplied exact consistent rows. A strict A-word check and original
+negative specimen now reject inconsistent or floating-point values; the
+pre-hardening packet is preserved. All 33 tests pass. The final correction
+changes only source-identity entries in metadata, and two root CLI outputs
+reproduce the 57,422-byte reference, SHA-256
+`321483c1f061847c9c24fadf1a2d43ca58d46edc7734c11c59cc990edbe03d84`.
+No raw game bytes or native trace is a host-test fixture.
+
+**Publication and resume:** the preceding combined ROM/NMI checkpoint is
+[`17218fac2334cd376bc346ff7ad35dd104a08a2c`](https://github.com/andreipemberton/project-epoch/commit/17218fac2334cd376bc346ff7ad35dd104a08a2c).
+Authenticated commit/branch/remote-ref agreement and every one of its 28
+changed-file byte strings were verified. Continue the remaining scene-$80,
+$8B and $B5/$B6 pointer/control boundaries and the actual NMI publication
+readers. Keep parameter legality, memory aliases, nested interrupts, physical
+stack ownership and native rejection cleanup as explicit unfinished gates.
+The session continues through 23:58:41 UTC; production catalogs remain empty.

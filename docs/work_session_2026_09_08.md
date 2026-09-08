@@ -134,6 +134,15 @@ closed for this session.
   the canonical game path is unchanged. The three-hour extension remains
   active through 23:58:41 UTC.
 
+
+- 21:17 UTC: accepted the four next packets after root and peer review:
+  scene values v2 (18 tests), manual-DMA7 destinations (41), selected $8C/$8D
+  leaves (34), and selected $88 calls/returns (33). All four references
+  reproduce byte for byte through actual CLI processes. The $88 ordinal3
+  B=$FF return is preserved as a conditional ABI limit with no live bug claim.
+  Model-development mistakes and corrections remain explicitly logged.
+  Next work targets the remaining scene dispatches and publication readers.
+
 ## Gates and evidence boundaries
 
 The overall gate is `BA-NATIVE-INTEGRATION-DESIGN`. A source design, host

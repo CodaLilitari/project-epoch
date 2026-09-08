@@ -74,14 +74,24 @@ intervening callees before establishing B0/D0/DBR7E at its bounded call path.
 The [scene-handler census](docs/schala_scene_handler_closure_v1.md) closes
 114 of 121 distinct reviewed targets under typed-stack and register-width
 premises, leaving seven explicit indirect frontiers. The additive
-[return-value audit](docs/schala_scene_handler_values_v1.md) proves B0/D0/DBR7E
-for 111 of those targets and retains three unresolved B returns. The separate
+[return-value audit](docs/schala_scene_handler_values_v1.md) preserves its
+111-proved/three-unresolved checkpoint. The separate
+[zero-branch refinement](docs/schala_scene_handler_values_v2.md) now proves
+B0/D0/DBR7E returns for all 114 of that same direct-target set. The separate
 [scene command $82 proof](docs/schala_scene82_subdispatch_v1.md) closes its
 eight-way dispatch under explicit input and memory-alias premises.
 The [IRQ memory contract](docs/schala_package_irq_memory_contract_v2.md)
 also resolves all ordinary CPU writes in the reviewed IRQ and its saved
 registers across all four native width combinations. DMA and full-game NMI
-ownership remain separate work.
+ownership remain separate work. The
+[manual-DMA destination contract](docs/schala_package_irq_dma7_contract_v3.md)
+now proves the reviewed twelve requests target the VRAM ports, with source
+reads, interference and completion still unresolved.
+The conditional [$8C/$8D](docs/schala_scene8c8d_subdispatch_v1.md) and
+[$88](docs/schala_scene88_subdispatch_v1.md) proofs resolve their selected
+cells and call frames while preserving the input-domain limits. One `$88`
+ordinal returns hidden B=$FF, so the complete scene loop cannot inherit a
+blanket B0 assumption from the 114 direct targets.
 No game hook, production allocation, high production selector or logical PC
 `$07` is installed. Original cartridge tests and vanilla observations have
 separate evidence scopes.

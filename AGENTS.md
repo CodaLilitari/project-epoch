@@ -344,6 +344,12 @@ These are separate namespaces. Never conflate them.
   projections. It proves B0/D0/DBR7E returns for 111; `$CD1805`, `$CD19B1`
   and `$CD2460` retain unresolved B values while D0/DBR7E remain proved.
   This is conditional per-handler evidence, not a global scene-loop ABI.
+- The separate scene-values v2 refines exactly three M16 LDA/taken-BEQ
+  edges, tracking the actual immediate predecessor and retaining both
+  successors. All 114 previously closed targets now prove B0/D0/DBR7E;
+  v1's conservative 111/3 result remains a byte-reproduced prerequisite.
+  This does not include the seven original indirect targets or establish
+  a complete scene-loop ABI. No general stale-zero-flag assumption is allowed.
 - The separate scene-command `$82` proof closes its eight subdispatch
   targets from independent parameter reads. B0 gives X=2*(q>>5), while
   the earlier count store uses (p&31)+1. Nonzero hidden B is preserved,
@@ -351,6 +357,17 @@ These are separate namespaces. Never conflate them.
   DBR7E and M1/X0/I1 with no stack beyond the inherited two-byte near frame.
   This scene opcode is unrelated to a Schala action or package selector.
   Memory aliases, producer lifetime and whole-NMI closure remain open.
+- Scene `$8C/$8D` each has four conditionally reviewed subdispatch cells:
+  B0 and (parameter&$7F)<4 are required. Their 8-bit ASL discards parameter
+  bit7 while X16 TAX retains hidden B. All eight leaves return A/B0/D0/
+  DBR7E with the inherited near frame only; B0 alone still allows 128
+  physical cells. Parameter `$04` overlaps occupied body instructions.
+- Scene `$88` has the same conditional four-cell predicate, but ordinal3
+  (`$03/$83` aliases under B0) returns A=$FF00 and B=$FF. Its actual RTL/RTS
+  continuation preserves that result. Ordinals0/1/2 return A=$00FF/B0.
+  Exact JSL3+indexed-JSR2 adds five bytes below scene entry, seven including
+  its near frame. This proves no legal parameter3 producer or vanilla runtime
+  bug. Never generalize the 114 direct-target B0 result to this handler.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
   ten-region census retains 44 original callee frontiers and explicit conditional
@@ -377,6 +394,13 @@ These are separate namespaces. Never conflate them.
   declared `$06D8` helper-entry plan and alias assumptions. This proves no
   physical stack ownership, DMA destination safety, NMI nesting, publication
   reader isolation or global interrupt bound.
+- The separate IRQ manual-DMA7 destination proof checks all twelve request
+  sites and their ordered CPU configuration writes. Each establishes DMAP7
+  $41, BBAD7 $18, size128 and exact byte STY MDMAEN=$80, requesting only
+  $2118/$2119 VRAM-port writes. Other source reads, pending DMA/HDMA,
+  interleaving, completion and timing remain open. Nonzero hardware-register
+  mirrors refuse per byte; a word-high-byte crossing cannot bypass that
+  guard. This does not convert the destination certificate to stack ownership.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.
