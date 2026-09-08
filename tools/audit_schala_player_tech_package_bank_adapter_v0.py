@@ -144,7 +144,12 @@ class RuntimePublication:
 
 @dataclasses.dataclass(frozen=True)
 class DescriptorInstallState:
-    """Host-model state after one complete vanilla-shaped descriptor pass."""
+    """Host-model state after one complete vanilla-shaped descriptor pass.
+
+    pointer_cursor_final is the physical, half-open consumed extent and may
+    equal BANK_SIZE. x_final is the native 16-bit register and wraps to zero
+    at that exact endpoint; the two values have distinct namespaces.
+    """
 
     source: PackageSource
     a0b3_input: int
@@ -717,7 +722,10 @@ def simulate_descriptor_install(
         a0b3_final=0,
         publications=publications,
         accumulator_word_final=0,
-        x_final=pointer_cursor_final,
+        # C1463B-C1463F advances the header cursor with 16-bit INY/TYX;
+        # C14666-C14667 consumes pointers with two 16-bit INX operations.
+        # Keep the physical extent above, but represent the native register.
+        x_final=pointer_cursor_final & 0xFFFF,
         y_final=0x0010,
         accumulator_is_8_bit=True,
         indexes_are_16_bit=True,

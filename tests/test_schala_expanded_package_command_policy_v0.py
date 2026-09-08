@@ -529,6 +529,30 @@ class SchalaExpandedPackageCommandPolicyV0Tests(unittest.TestCase):
         self.assertEqual(result["distinct_direct_entrypoint_count"], 1)
         self.assertEqual(result["unique_token_start_count"], 1)
 
+    def test_exact_bank_end_preserves_extent_and_native_index_width(self) -> None:
+        image, layout = _fixture(
+            bytes((0x00,)),
+            pointer_relatives=(0, 0),
+            mask0_count=1,
+            mask1_count=1,
+            descriptor_root=0xFFF8,
+        )
+        result = TOOL.validate_expanded_package_command_policy(image, layout)
+        self.assertTrue(result["both_descriptor_masks_validated"])
+        self.assertEqual(result["descriptor_relation_count"], 2)
+        self.assertEqual(layout.descriptor_span.end_exclusive, 0x10000)
+        for flag, physical_end, native_x in ((0, 0xFFFE, 0xFFFE), (1, 0x10000, 0)):
+            with self.subTest(a0b3=flag):
+                state = TOOL.adapter.simulate_descriptor_install(
+                    image, layout.source, a0b3=flag
+                )
+                self.assertEqual(state.pointer_cursor_final, physical_end)
+                self.assertEqual(state.x_final, native_x)
+                self.assertTrue(state.indexes_are_16_bit)
+                self.assertEqual(state.flag_n_final, 0)
+                self.assertEqual(state.flag_z_final, 1)
+                self.assertEqual(state.flag_c_final, 1)
+
     def test_out_of_span_mutation_does_not_rebind_proof(self) -> None:
         image, layout = TOOL._build_conformance_vector()
         baseline = TOOL.validate_expanded_package_command_policy(image, layout)

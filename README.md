@@ -2,7 +2,73 @@
 
 This workspace resumes the Chrono Trigger playable eighth-character investigation recovered from the ChatGPT conversation **Chrono Trigger 8th Character**.
 
-## Latest developer update — 2026-08-31
+## Latest developer update — 2026-09-08
+
+`BA-NATIVE-HELPER-CONFORMANCE` now passes as `complete-native-synthetic`.
+The original 537-byte 65C816 package helper executes in an isolated Mesen
+SNES CPU harness. Three full runs pass 879 cases each: two independent runs
+at `$7F8000` have byte-identical traces, and a third at `$7F9000` proves the
+second placement. Each run checks the native register/flag/stack contract,
+exact ordered publications, and the complete 128 KiB WRAM diff. The matrix
+includes all high selectors, owner bits, branch bytes, legal entry status
+bits, malformed inputs, distinct pointers, and exact bank boundaries.
+
+This is synthetic native evidence. The code reads diagnostic WRAM fixtures;
+it proves no expanded-ROM access or live Chrono Trigger hook. The existing
+original standalone cartridge is copied unchanged, with isolated zero SRAM.
+No game image or patch is generated. Production selectors and allocations
+remain unbound. See the
+[native helper contract and reproduction](docs/schala_package_helper_conformance_v0.md).
+
+The full suite now runs 1,042 tests: 1,020 pass, zero fail, and the same 22
+optional cases skip. All 193 Python sources compile in memory. The next gate
+is `BA-NATIVE-INTEGRATION-DESIGN`: exact resolver hook/continuation evidence,
+named expanded placement and source-bank reads, and scratch/interrupt policy.
+The [development-tool assessment](docs/development_tools_strategy_2026_09_08.md)
+explains why targeted native work remains the recommended path and what
+original game source or modern emulator tooling could change.
+
+## Earlier developer update — 2026-09-08
+
+The August 31 Sol handoff was recovered from its original task and checked
+against `cd0c9bc`. The resumption audit found and corrected one package-adapter
+boundary bug: a physical descriptor extent ending at `$10000` remains valid,
+while the native 16-bit X register wraps to `$0000`. Both descriptor branches,
+the preceding cursor, an empty exact-end header, and one-byte overflow are
+covered by regression tests. The command-policy dependency and proof hashes
+were explicitly regenerated against the corrected adapter.
+
+All 21 canonical graphics, assembly, and primary-animation window hashes match
+the corrected character map. Its endpoint-notation prose is now precise, and
+the project rules explicitly distinguish growth/progression stat order from
+base/live record stat order. These are bounded static checks, not new PC `$07`
+runtime evidence. See the
+[independent mapping audit](docs/mapping_independent_audit_2026_09_08.md).
+
+The [September online refresh](docs/online_research_2026_09_08.md) found new
+Temporal Redux, ctrando, and general SNES recompilation work. It found no
+newly verified complete Chrono Trigger decompilation or released additive
+eight-PC patch within the public sources inspected. The recovered stopping
+point was `BA-SYMBOLIC-HIGH-PACKAGE`, still pending at the start of this pass.
+
+That gate now passes as a source-only host proof: one original terminal-only
+stream, exact named synthetic spans, repeated-pointer identity across both
+descriptor masks, and all 256 `$A0B3` flag-byte values. It reconstructs canonical
+config row `$01` privately, changes only byte `+0` to selector `$80`, and
+proves the other six bytes unchanged. All 128 vanilla selectors remain
+equivalent; all 16 default high selectors remain unbound. The 24 focused tests
+pass, including donor/source/interpreter drift and deterministic metadata-only
+CLI output with the input ROM unchanged. See the
+[symbolic package proof](docs/schala_symbolic_high_package_v0.md).
+The complete suite runs 1,012 tests: 990 pass, zero fail, and the same 22
+explicit optional/private/runtime cases skip.
+
+The then-next gate was `BA-NATIVE-HELPER-CONFORMANCE`: an original relocatable
+65C816 helper and isolated synthetic execution harness. No native helper,
+game hook, production allocation, Schala action binding, or PC `$07` runtime
+has been installed or proved by this milestone.
+
+## Previous developer update — 2026-08-31
 
 `BA-CMD-1E-FINAL-EXPANDED-POLICY` is now `complete-static`. Project Epoch's
 first expanded package profile uses strict decoded-command exclusion: every

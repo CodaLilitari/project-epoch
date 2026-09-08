@@ -411,13 +411,60 @@ class SchalaPlayerTechPackageBankAdapterV0Tests(unittest.TestCase):
             ):
                 TOOL.simulate_descriptor_install(image, source, a0b3=invalid)
 
-    def test_descriptor_exact_bank_end_is_allowed_without_wrap(self) -> None:
+    def test_descriptor_exact_bank_end_has_valid_physical_extent(self) -> None:
         image = bytearray(0x10000)
         image[0xFFFC:0x10000] = b"\0\0\0\0"
         source = _extended_source(root=0xFFFC)
         descriptor = TOOL.parse_package_descriptor(bytes(image), source)
         self.assertEqual(descriptor.end_offset_exclusive, 0x10000)
         self.assertEqual(descriptor.entries, ())
+
+    def test_install_model_separates_bank_end_extent_from_native_x(self) -> None:
+        # The endpoint is metadata; the native INY/INX/TYX cursor is 16-bit.
+        # Exercise either mask reaching the endpoint, primary-only partial
+        # consumption, an empty exact-end header, and the preceding value.
+        cases = (
+            (0xFFF9, 0x8000, 0x0000, (0x3000,), 0xFFFF, 0xFFFF),
+            (0xFFFA, 0x8000, 0x0000, (0x3000,), 0x10000, 0x10000),
+            (0xFFFA, 0x0000, 0x8000, (0x3000,), 0xFFFE, 0x10000),
+            (0xFFF8, 0x8000, 0x8000, (0x3000, 0x3010), 0xFFFE, 0x10000),
+            (0xFFFC, 0x0000, 0x0000, (), 0x10000, 0x10000),
+        )
+        for root, mask0, mask1, pointers, primary_end, alternate_end in cases:
+            image = bytearray(0x10000)
+            image[root : root + 4] = (
+                mask0.to_bytes(2, "big") + mask1.to_bytes(2, "big")
+            )
+            for index, pointer in enumerate(pointers):
+                cursor = root + 4 + index * 2
+                image[cursor : cursor + 2] = pointer.to_bytes(2, "little")
+            source = _extended_source(root=root)
+            for flag, physical_end in ((0, primary_end), (0xFF, alternate_end)):
+                with self.subTest(root=root, mask0=mask0, mask1=mask1, flag=flag):
+                    state = TOOL.simulate_descriptor_install(
+                        bytes(image), source, a0b3=flag,
+                    )
+                    self.assertEqual(state.pointer_cursor_final, physical_end)
+                    self.assertEqual(state.x_final, physical_end & 0xFFFF)
+                    self.assertLessEqual(state.x_final, 0xFFFF)
+                    self.assertTrue(state.indexes_are_16_bit)
+                    # Final LDA A0B3 sets N/Z; final CPY #0010 sets C.
+                    # Neither is inferred from the final native X value.
+                    self.assertEqual(
+                        (state.flag_n_final, state.flag_z_final, state.flag_c_final),
+                        (0, 1, 1),
+                    )
+
+    def test_install_model_refuses_one_byte_past_descriptor_bank_end(self) -> None:
+        image = bytearray(0x10000)
+        image[0xFFFB:0xFFFF] = bytes((0x80, 0, 0, 0))
+        for flag in (0, 0xFF):
+            with self.subTest(flag=flag), self.assertRaisesRegex(
+                TOOL.PackageBankAdapterError, "pointer list crosses its bank",
+            ):
+                TOOL.simulate_descriptor_install(
+                    bytes(image), _extended_source(root=0xFFFB), a0b3=flag,
+                )
 
     def test_descriptor_header_and_pointer_list_bank_crossing_fail_closed(self) -> None:
         image = bytes(0x10000)

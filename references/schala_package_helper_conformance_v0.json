@@ -1,0 +1,598 @@
+{
+  "case_categories": {
+    "all-flag-bytes": 256,
+    "all-native-status-bits": 256,
+    "bank-boundary": 16,
+    "canonical-selector": 128,
+    "distinct-pointer-transport": 2,
+    "each-bound-high-selector": 32,
+    "each-owner-both-masks": 32,
+    "exact-bank-boundary": 10,
+    "malformed-or-second-bank": 9,
+    "mask-shape": 6,
+    "unbound-or-outside-selector": 128,
+    "wide-selector-refusal": 4
+  },
+  "case_contract_sha256": "31bced8f3838f9c107fc3a662cb54c3717c46665d7983cc78a7361ce4228e905",
+  "date": "2026-09-08",
+  "determinism": {
+    "normalized_outputs_cpu_ordered_publications_and_complete_nontemporary_diffs_match_all_three": true,
+    "normalized_results_sha256": "a903c0de53d89eaae4fad5a24aa7a2a8088a1e01139f6ea8f1afb2fb699368bb",
+    "relocation_change_description": "Only high bytes of two local JSR CountBits operands differ.",
+    "relocation_changed_binary_offsets": [
+      181,
+      192
+    ],
+    "two_same_origin_raw_traces_byte_identical": true
+  },
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "original isolated synthetic WRAM helper; no Chrono Trigger input",
+  "gate": "BA-NATIVE-HELPER-CONFORMANCE",
+  "nonclaims": [
+    "No canonical ROM or extracted Chrono Trigger data was an input.",
+    "No production hook, scratch ownership, ROM allocation, SRAM ownership or PC 07 binding is approved.",
+    "Only package descriptor transport was executed; scripts, animations, auxiliary readers, interrupts and game lifecycle integration remain separate.",
+    "The existing strict decoded-1E exclusion and authored-stream validator remain prerequisites for future packages.",
+    "The original synthetic boot cartridge was copied unchanged, never rebuilt or modified by this harness.",
+    "The relocated run is reported separately; raw traces are not asserted equal across code origins."
+  ],
+  "observations": {
+    "all_passed": true,
+    "all_source_and_staged_pinned_inputs_unchanged": true,
+    "allowed_temporary_writes": {
+      "high_route_scratch": "7E4000-7E407F",
+      "stack": "7E1FE6-7E1FEF"
+    },
+    "broad_cpu_byte_write_callback_each_case": true,
+    "case_executions_each_run": 879,
+    "complete_cpu_a_x_y_p_d_dbr_sp_emulation_mode_checked_at_tail": true,
+    "cycle_or_frame_timing_measured": false,
+    "execution_callback_count_including_terminal_observation_range": {
+      "max": 1458,
+      "min": 16
+    },
+    "full_128KiB_wram_diff_each_case": true,
+    "no_rom_creation_mutation_or_patch_emission": true,
+    "return_frame_and_all_other_wram_preserved_except_exact_approved_fixture_publications": true,
+    "total_case_executions": 2637
+  },
+  "pinned_inputs_sha256": {
+    "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+    "collector": "06d6c84be4d08365538398dd0c2e2b7e394d4fbaf6a31b72bb4a09ead901e304",
+    "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+    "helper": "26987977881f24cbe234262f59c4a3f8de438e4bde3eb053375f0f29ae436f80",
+    "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+    "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+    "launcher": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+    "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+    "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+    "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+    "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+    "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+  },
+  "primary_api_sources": [
+    "https://raw.githubusercontent.com/SourMesen/Mesen2/2.1.1/UI/Debugger/Documentation/LuaDocumentation.json",
+    "https://raw.githubusercontent.com/SourMesen/Mesen2/2.1.1/Core/SNES/SnesCpu.Shared.h"
+  ],
+  "reproduction_notes": [
+    "Use a new ignored private/test_runs output path for every command.",
+    "Each recorded command assembles raw original code and runs an isolated pinned Mesen 2.1.1 process.",
+    "The private existing synthetic SHA benchmark and pinned Asar1.91/Mesen2.1.1 toolchain are required.",
+    "Run python -m unittest discover -s tests -p test_schala_package_helper_conformance_v0.py -q for 30 source evidence-validator checks."
+  ],
+  "runs": [
+    {
+      "all_generated_private_artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/asar.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/case_contract.json",
+          "sha256": "31bced8f3838f9c107fc3a662cb54c3717c46665d7983cc78a7361ce4228e905",
+          "size": 610332
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/helper.asm",
+          "sha256": "1e5354a1c4ff529a617670a7c0411b684fb21a98cbe2c33d4ae489c115a3617c",
+          "size": 6470
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/helper.bin",
+          "sha256": "bf9f2f9a1e3e7f680ebfbbab38d0e2a3de15a0e85ec3836066eaeb6170dc057f",
+          "size": 537
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/manifest.json",
+          "sha256": "cf99d691d5da6638f671face962e437dd792510eb7b024204cc1a5195329ea81",
+          "size": 3121
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/process.log",
+          "sha256": "bff6990683d7936dc69b4f344d1fb347323b55e638c30ac4fb2529dea75a6097",
+          "size": 10584
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Debugger/pe_package_2d12e152b865f5412d5a5ad1.cdl",
+          "sha256": "8e7b372ddfc24b0ec5c6d897f99d837254c8019164df2eebca2c49f23ad49533",
+          "size": 8388617
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/libHarfBuzzSharp.dll",
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "size": 1804872
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/libSkiaSharp.dll",
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "size": 9414216
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Mesen.exe",
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "size": 70470144
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/MesenCore.dll",
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "size": 7143424
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/MesenNesDB.txt",
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "size": 559118
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Satellaview/BSX0120-0.bin",
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Satellaview/BSX0121-0.bin",
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Satellaview/BSX0122-0.bin",
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7",
+          "size": 1031
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Satellaview/BSX0123-0.bin",
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590",
+          "size": 16
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Satellaview/BSX0124-0.bin",
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1",
+          "size": 97
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/Saves/pe_package_2d12e152b865f5412d5a5ad1.srm",
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+          "size": 8192
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/app/settings.json",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "size": 3
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/collector.lua",
+          "sha256": "06d6c84be4d08365538398dd0c2e2b7e394d4fbaf6a31b72bb4a09ead901e304",
+          "size": 5772
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/inputs.lua",
+          "sha256": "c1b3e9016f83b4222e02d4db7589048ff7f5f2a089b42de7a3bbd7b7f1676fac",
+          "size": 453451
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/pe_package_2d12e152b865f5412d5a5ad1.sfc",
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "size": 8388608
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/staged/profile/Documents/desktop.ini",
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274",
+          "size": 418
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run1/trace.json",
+          "sha256": "5726e9e8c92231e07a5833063375a6c717a9bc336394b02cb93df58e2d290833",
+          "size": 1613273
+        }
+      ],
+      "case_contract_sha256": "31bced8f3838f9c107fc3a662cb54c3717c46665d7983cc78a7361ce4228e905",
+      "case_count": 879,
+      "evidence_level": "verified-runtime",
+      "helper_code_base": "7F8000",
+      "helper_sha256": "bf9f2f9a1e3e7f680ebfbbab38d0e2a3de15a0e85ec3836066eaeb6170dc057f",
+      "helper_size": 537,
+      "manifest": {
+        "path": "private/test_runs/package_helper_conformance_20260908_run1/manifest.json",
+        "sha256": "cf99d691d5da6638f671face962e437dd792510eb7b024204cc1a5195329ea81",
+        "size": 3121
+      },
+      "reproduce": [
+        "python",
+        "tools/run_schala_package_helper_conformance_v0.py",
+        "--output-dir",
+        "private/test_runs/package_helper_NEW",
+        "--repetition",
+        "1",
+        "--timeout",
+        "120",
+        "--code-base",
+        "0x7F8000"
+      ],
+      "role": "repeat-1",
+      "route_counts": {
+        "canonical": 192,
+        "refusal": 216,
+        "success": 471
+      },
+      "scope": "synthetic-only",
+      "trace_sha256": "5726e9e8c92231e07a5833063375a6c717a9bc336394b02cb93df58e2d290833"
+    },
+    {
+      "all_generated_private_artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/asar.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/case_contract.json",
+          "sha256": "31bced8f3838f9c107fc3a662cb54c3717c46665d7983cc78a7361ce4228e905",
+          "size": 610332
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/helper.asm",
+          "sha256": "1e5354a1c4ff529a617670a7c0411b684fb21a98cbe2c33d4ae489c115a3617c",
+          "size": 6470
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/helper.bin",
+          "sha256": "bf9f2f9a1e3e7f680ebfbbab38d0e2a3de15a0e85ec3836066eaeb6170dc057f",
+          "size": 537
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/manifest.json",
+          "sha256": "9efe66031875acb6956b7d8f0ebb175a374866d337a339c891d3b25ae05efa9e",
+          "size": 3121
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/process.log",
+          "sha256": "bff6990683d7936dc69b4f344d1fb347323b55e638c30ac4fb2529dea75a6097",
+          "size": 10584
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Debugger/pe_package_fc2a9a14f79190e6399a4f00.cdl",
+          "sha256": "8e7b372ddfc24b0ec5c6d897f99d837254c8019164df2eebca2c49f23ad49533",
+          "size": 8388617
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/libHarfBuzzSharp.dll",
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "size": 1804872
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/libSkiaSharp.dll",
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "size": 9414216
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Mesen.exe",
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "size": 70470144
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/MesenCore.dll",
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "size": 7143424
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/MesenNesDB.txt",
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "size": 559118
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Satellaview/BSX0120-0.bin",
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Satellaview/BSX0121-0.bin",
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Satellaview/BSX0122-0.bin",
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7",
+          "size": 1031
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Satellaview/BSX0123-0.bin",
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590",
+          "size": 16
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Satellaview/BSX0124-0.bin",
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1",
+          "size": 97
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/Saves/pe_package_fc2a9a14f79190e6399a4f00.srm",
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+          "size": 8192
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/app/settings.json",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "size": 3
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/collector.lua",
+          "sha256": "06d6c84be4d08365538398dd0c2e2b7e394d4fbaf6a31b72bb4a09ead901e304",
+          "size": 5772
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/inputs.lua",
+          "sha256": "c1b3e9016f83b4222e02d4db7589048ff7f5f2a089b42de7a3bbd7b7f1676fac",
+          "size": 453451
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/pe_package_fc2a9a14f79190e6399a4f00.sfc",
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "size": 8388608
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/staged/profile/Documents/desktop.ini",
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274",
+          "size": 418
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_run2/trace.json",
+          "sha256": "5726e9e8c92231e07a5833063375a6c717a9bc336394b02cb93df58e2d290833",
+          "size": 1613273
+        }
+      ],
+      "case_contract_sha256": "31bced8f3838f9c107fc3a662cb54c3717c46665d7983cc78a7361ce4228e905",
+      "case_count": 879,
+      "evidence_level": "verified-runtime",
+      "helper_code_base": "7F8000",
+      "helper_sha256": "bf9f2f9a1e3e7f680ebfbbab38d0e2a3de15a0e85ec3836066eaeb6170dc057f",
+      "helper_size": 537,
+      "manifest": {
+        "path": "private/test_runs/package_helper_conformance_20260908_run2/manifest.json",
+        "sha256": "9efe66031875acb6956b7d8f0ebb175a374866d337a339c891d3b25ae05efa9e",
+        "size": 3121
+      },
+      "reproduce": [
+        "python",
+        "tools/run_schala_package_helper_conformance_v0.py",
+        "--output-dir",
+        "private/test_runs/package_helper_NEW",
+        "--repetition",
+        "2",
+        "--timeout",
+        "120",
+        "--code-base",
+        "0x7F8000"
+      ],
+      "role": "repeat-2",
+      "route_counts": {
+        "canonical": 192,
+        "refusal": 216,
+        "success": 471
+      },
+      "scope": "synthetic-only",
+      "trace_sha256": "5726e9e8c92231e07a5833063375a6c717a9bc336394b02cb93df58e2d290833"
+    },
+    {
+      "all_generated_private_artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/asar.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 0
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/case_contract.json",
+          "sha256": "31bced8f3838f9c107fc3a662cb54c3717c46665d7983cc78a7361ce4228e905",
+          "size": 610332
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/helper.asm",
+          "sha256": "7a81633bd7e98514f6470fc7e40b93eb2465f3a4bf956f0fe763b5e644ac49cf",
+          "size": 6470
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/helper.bin",
+          "sha256": "4ccf5cb8c9a67e42f44ac78a22f1b2367ce8713688bd391afd637e88e3bc3ce1",
+          "size": 537
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/manifest.json",
+          "sha256": "6671dc809d837661e0d604f2eb93045bb9ecaf0f40f3c6dcf9fda19ef2691fca",
+          "size": 3121
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/process.log",
+          "sha256": "bff6990683d7936dc69b4f344d1fb347323b55e638c30ac4fb2529dea75a6097",
+          "size": 10584
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Debugger/pe_package_0d6731ab7a39f8050ceed4dd.cdl",
+          "sha256": "8e7b372ddfc24b0ec5c6d897f99d837254c8019164df2eebca2c49f23ad49533",
+          "size": 8388617
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/libHarfBuzzSharp.dll",
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "size": 1804872
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/libSkiaSharp.dll",
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "size": 9414216
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Mesen.exe",
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "size": 70470144
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/MesenCore.dll",
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "size": 7143424
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/MesenNesDB.txt",
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "size": 559118
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Satellaview/BSX0120-0.bin",
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Satellaview/BSX0121-0.bin",
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Satellaview/BSX0122-0.bin",
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7",
+          "size": 1031
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Satellaview/BSX0123-0.bin",
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590",
+          "size": 16
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Satellaview/BSX0124-0.bin",
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1",
+          "size": 97
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/Saves/pe_package_0d6731ab7a39f8050ceed4dd.srm",
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+          "size": 8192
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/app/settings.json",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "size": 3
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/collector.lua",
+          "sha256": "06d6c84be4d08365538398dd0c2e2b7e394d4fbaf6a31b72bb4a09ead901e304",
+          "size": 5772
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/inputs.lua",
+          "sha256": "8247956805bec7985cb2b13a1bc91784dab6c40849ded1209f2cd87ed70df72a",
+          "size": 453451
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/pe_package_0d6731ab7a39f8050ceed4dd.sfc",
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "size": 8388608
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/staged/profile/Documents/desktop.ini",
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274",
+          "size": 418
+        },
+        {
+          "path": "private/test_runs/package_helper_conformance_20260908_relocated/trace.json",
+          "sha256": "b88353b86413f491114c5cda88fa474e09942696ddb2450379ca7920d78139a6",
+          "size": 1613273
+        }
+      ],
+      "case_contract_sha256": "31bced8f3838f9c107fc3a662cb54c3717c46665d7983cc78a7361ce4228e905",
+      "case_count": 879,
+      "evidence_level": "verified-runtime",
+      "helper_code_base": "7F9000",
+      "helper_sha256": "4ccf5cb8c9a67e42f44ac78a22f1b2367ce8713688bd391afd637e88e3bc3ce1",
+      "helper_size": 537,
+      "manifest": {
+        "path": "private/test_runs/package_helper_conformance_20260908_relocated/manifest.json",
+        "sha256": "6671dc809d837661e0d604f2eb93045bb9ecaf0f40f3c6dcf9fda19ef2691fca",
+        "size": 3121
+      },
+      "reproduce": [
+        "python",
+        "tools/run_schala_package_helper_conformance_v0.py",
+        "--output-dir",
+        "private/test_runs/package_helper_NEW",
+        "--repetition",
+        "1",
+        "--timeout",
+        "120",
+        "--code-base",
+        "0x7F9000"
+      ],
+      "role": "relocated",
+      "route_counts": {
+        "canonical": 192,
+        "refusal": 216,
+        "success": 471
+      },
+      "scope": "synthetic-only",
+      "trace_sha256": "b88353b86413f491114c5cda88fa474e09942696ddb2450379ca7920d78139a6"
+    }
+  ],
+  "schema": "project-epoch-package-helper-conformance-evidence-v0",
+  "source_files": [
+    {
+      "path": "asm/schala_package_helper_v0.asm",
+      "sha256": "26987977881f24cbe234262f59c4a3f8de438e4bde3eb053375f0f29ae436f80",
+      "size": 6012
+    },
+    {
+      "path": "tools/run_schala_package_helper_conformance_v0.py",
+      "sha256": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+      "size": 20922
+    },
+    {
+      "path": "tools/mesen_schala_package_helper_conformance_v0.lua",
+      "sha256": "06d6c84be4d08365538398dd0c2e2b7e394d4fbaf6a31b72bb4a09ead901e304",
+      "size": 5772
+    },
+    {
+      "path": "tests/test_schala_package_helper_conformance_v0.py",
+      "sha256": "28c7b45ff7c95b42e236fa14683fb94d5fa0cb47bce4db2ff6b1f08b28ce45a0",
+      "size": 8396
+    },
+    {
+      "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+      "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+      "size": 35887
+    },
+    {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+      "size": 55200
+    }
+  ],
+  "source_preconditions": {
+    "before_descriptor_read_refusal_order": "verified-static source property; runtime collector does not record reads",
+    "data_bank": "7E",
+    "direct_page": "0000",
+    "native_m_and_x_bits": 0,
+    "source_banks": [
+      "7E",
+      "7F"
+    ],
+    "source_fixture_spans_disjoint_from_all_write_and_code_regions": true,
+    "source_records_test_only": true,
+    "synthetic_irq_nmi_dma_sources_disabled": true
+  },
+  "status": "pass-native-synthetic-conformance"
+}

@@ -1,0 +1,174 @@
+{
+  "canonical_rom": {
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "size": 4194304
+  },
+  "dependencies": {
+    "command_policy_reference": {
+      "path": "references/schala_expanded_package_command_policy_v0.json",
+      "sha256": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9",
+      "size": 6717
+    },
+    "command_policy_source": {
+      "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+      "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f",
+      "size": 39897
+    },
+    "transitive_closed_dependencies": {
+      "battle_command_grammar_reference": {
+        "schema": "project-epoch-battle-command-grammar-census-contract-v0",
+        "sha256": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c",
+        "size": 12433
+      },
+      "interpreter_identities": {
+        "grammar_auditor_source": {
+          "path": "tools/audit_battle_command_grammar_census_v0.py",
+          "sha256": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228",
+          "size": 53608
+        },
+        "grammar_token_shape_profile": {
+          "row_count": 511,
+          "sha256": "25502f827efd57ecaf920896a6216db2ad4278e66a2410ada1b7695a25a95f3d"
+        },
+        "package_bank_adapter_source": {
+          "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+          "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+          "size": 35887
+        }
+      },
+      "package_bank_adapter_reference": {
+        "schema": "project-epoch-schala-player-tech-package-bank-adapter-contract-v0",
+        "sha256": "dab2834afb28ea2b89e814747d4a079fef7a403ec67eba592a7f866c88faa69e",
+        "size": 12280
+      }
+    }
+  },
+  "donor_contract": {
+    "adapted_sha256": "88430e3592fe6cd2781c39854771c87bfb458b0557951a6317c974faea316733",
+    "auxiliary_reader_contract": {
+      "config_byte_3": "C145F3 reads fixed D1:0060 and C14870 later forces decompression source bank D1",
+      "config_byte_4": "C145FF reads fixed CD:692C; command 60 and the tile-animation tick retain fixed CD/D1 consumers",
+      "config_byte_5": "C1460B reads fixed CD:656E; C148EC-C14943 and later frame readers retain fixed CE consumers",
+      "policy": "an expanded primary script does not make original graphics or auxiliary-frame data bank-safe; each extended config must temporarily use proved canonical auxiliary selectors or wait for separately proved adapters",
+      "runtime_support_claimed": false,
+      "status": "independent-adapters-unresolved"
+    },
+    "candidate_package_selector": "80",
+    "changed_byte_offsets": [
+      0
+    ],
+    "donor_selection": "explicit canonical row 01; retain every existing nonprimary config byte without interpreting it as a Schala binding",
+    "donor_sha256": "d64477971e5fa2a0d679810b37ad90412615d49786671b71ec6aea209bd61313",
+    "physical_action_config_row": "01",
+    "preserved_bytes_1_through_6_sha256": "cf2dfb5466e64043a0995b97e825a9633d3f68890e1df2a5ac229ed8506e21c7",
+    "row_file_offset": "0D45AD",
+    "row_size": 7,
+    "table_file_offset": "0D45A6"
+  },
+  "evidence_level": "verified-static",
+  "expected_branch_transport": {
+    "a0b3_flag_byte_inputs_checked": 256,
+    "complete_install_state_ledger_sha256": "6c66e852d31b4ce9e59472a94c2d3256ec8370b15d77d3cb0024eac2eb3b206d",
+    "evidence_level": "verified-static",
+    "mask0_input_count": 1,
+    "mask1_input_count": 255,
+    "publication_count_per_input": 1,
+    "runtime_write_performed": false,
+    "same_bank_qualified_direct_entry_for_both_branches": true
+  },
+  "expected_symbolic_source": {
+    "descriptor_pointer_occurrence_count": 2,
+    "descriptor_sha256": "618d615e6ee39b40aedce9a7764be19aebaa37e996211e68b58c09333a854313",
+    "distinct_direct_entrypoint_count": 1,
+    "layout": {
+      "descriptor_span": {
+        "bank": 66,
+        "end_exclusive": 8200,
+        "name": "EPOCH_PKG80_SYMBOLIC_DESCRIPTOR_V0",
+        "start": 8192
+      },
+      "source": {
+        "allocation_name": "EPOCH_PKG80_SYMBOLIC_DESCRIPTOR_V0",
+        "bank": 66,
+        "root_offset": 8192,
+        "selector": 128,
+        "source_kind": "synthetic-test"
+      },
+      "stream_spans": [
+        {
+          "bank": 66,
+          "end_exclusive": 12289,
+          "name": "EPOCH_PKG80_SYMBOLIC_STREAM_V0",
+          "start": 12288
+        }
+      ]
+    },
+    "policy_proof": {
+      "both_descriptor_masks_validated": true,
+      "command_00_terminal_count": 1,
+      "command_1e_cross_bank_subscripts_resolved": false,
+      "command_25_site_count": 0,
+      "command_80_site_count": 0,
+      "command_da_site_count": 0,
+      "command_exclusion_proof_sha256": "13cfc9f9175d61e173f133e171dd5199d1c65cfe73cbf5fdc7af826de4bbf209",
+      "decoded_command_1e_site_count": 0,
+      "descriptor_entry_ledger_sha256": "92be310afc2bc9dbecb2c47d0e7b53fefef798a2d7a5dffba56b37a2d994961f",
+      "descriptor_relation_count": 2,
+      "descriptor_span_size": 8,
+      "descriptor_stream_overlap_count": 0,
+      "distinct_direct_entrypoint_count": 1,
+      "expanded_source_1e_absence_proved": true,
+      "mask0_relation_count": 1,
+      "mask1_relation_count": 1,
+      "owned_byte_ledger_sha256": "3dcd80442e2bc12df6ff94c5abbf6d2e9cf2b00e8f3c5c3150507ba2f0ee5639",
+      "package_selector": "80",
+      "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+      "raw_byte_equal_1e_inside_stream_span_count": 0,
+      "raw_stream_or_descriptor_bytes_emitted": false,
+      "shared_token_start_count": 0,
+      "source_content_ledger_sha256": "6c0c1094a778c7152c96c63bf2133102bf80e9ca8f15c9e5600c55b06721e8f4",
+      "source_content_size": 9,
+      "status": "pass-all-selected-flat-direct-streams-exclude-command-1e",
+      "stream_span_count": 1,
+      "stream_span_total_size": 1,
+      "termination_ledger_sha256": "9abaea5c5f0e99e26c53cb38c47b455730f0882f3b897b64dc6fbe5e3b03e0ec",
+      "token_extent_conflict_count": 0,
+      "token_ledger_sha256": "52611ca1bd1afea1353260e341502c0d06abfe5ad9f97e7ef88eb5a891905610",
+      "top_level_command_1f_site_count": 0,
+      "top_level_command_21_site_count": 0,
+      "total_entrypoint_traversal_token_count": 1,
+      "trace_ledger_sha256": "26dd32e51ed2ff3e1e1045744becca5337fb2df20253dec72ac2ad54c0ba2a91",
+      "unique_owned_byte_count": 1,
+      "unique_token_start_count": 1,
+      "unowned_stream_byte_count": 0
+    },
+    "repeated_pointer_alias_count": 1,
+    "stream_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+    "synthetic_bank_sha256": "d1d085d52aade99d212e033f498f2626ca83994de7512fa6206bf3e478e1afd3",
+    "synthetic_bank_size": 65536
+  },
+  "gate": "BA-SYMBOLIC-HIGH-PACKAGE",
+  "nonclaims": [
+    "The synthetic selector-80 binding exists only in one explicit local proof mapping; all default high selectors remain unbound.",
+    "No Schala action, Tech, item, sprite, sound, animation, or logical PC 07 mapping is defined.",
+    "Bank 42 and its named spans are synthetic test identities, not approved expanded allocations or free-space claims.",
+    "The one-command terminal stream proves transport and closure only; it has no authored gameplay effect.",
+    "Preserved canonical config bytes prove donor equality, not runtime compatibility or independent auxiliary-bank adapters.",
+    "No ROM, save, state, trace, assembly, hook, patch, or runtime artifact is created or modified.",
+    "No reconstructed canonical config or extracted game payload is printed, stored, or source-controlled by this auditor.",
+    "Command 1E remains refused for expanded packages; no cross-bank subscript handler is adapted."
+  ],
+  "schema": "project-epoch-schala-symbolic-high-package-contract-v0",
+  "scope": {
+    "allocation_or_hook_approved": false,
+    "canonical_rom_access": "read-only-pinned-input",
+    "default_high_registry_empty": true,
+    "explicit_binding_lifetime": "local proof mapping only",
+    "metadata_only": true,
+    "output_file_option_available": false,
+    "production_installable": false,
+    "runtime_performed": false,
+    "source_only": true
+  },
+  "version": 0
+}

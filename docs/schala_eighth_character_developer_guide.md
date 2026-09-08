@@ -3,7 +3,7 @@
 Status: active engineering guide  
 Selected eighth character: Schala  
 Target logical playable ID: `$07`  
-Last updated: 2026-08-31
+Last updated: 2026-09-08
 
 This is the living implementation and verification guide for adding Schala as
 a genuine eighth playable character. Update it whenever a ROM fact is proved,
@@ -22,9 +22,13 @@ animation/package topology is now mapped through its current static ceiling;
 the package-bank host model, native command-`$1E`/`$1F` handler semantics, and
 the full lossless battle-command grammar/canonical stream census are also now
 mapped. The strict `decoded-command-1e-exclusion-flat-direct-v0` source policy
-is now complete as well. The immediate new Tech-animation work is one
-source-only symbolic high package under that policy, together with an explicit
-contract for its still-fixed-bank auxiliary selectors. It is not another
+is now complete as well. One source-only symbolic high package under that
+policy has now passed, with exact retained canonical config bytes and an
+explicit ceiling on its still-fixed-bank auxiliary readers. The original
+65C816 helper now passes its complete synthetic Mesen conformance matrix at
+two code origins. The next work is its live resolver integration design,
+including exact hook/continuation evidence, expanded-ROM access, and
+scratch/interrupt ownership. It is not another
 supported-slot sprite swap, command-width census, or disassembly of the same
 handler. The remaining production gate is
 still to install and prove the complete relocated compatibility lifecycle and
@@ -32,7 +36,87 @@ sidecar behavior, complete Schala's field palette/frame adapters, and
 implement the selected record, command, item, and recruitment boundaries. A
 booting ROM or a visually plausible sprite is not sufficient evidence.
 
-## Latest developer update: expanded-package command policy complete
+## Latest developer update: original native helper conformance complete
+
+On 2026-09-08, `BA-NATIVE-HELPER-CONFORMANCE` reached
+`complete-native-synthetic`. The original 537-byte helper passes 879 cases
+in each of three isolated Mesen executions. Two launches at `$7F8000` have
+identical traces; the same matrix also passes at `$7F9000`. Each run includes
+471 successful high-path cases, 216 refusals, and 192 canonical cases.
+The matrix covers every high selector and owner bit, both branches, every
+branch byte, all legal native entry status bits, exact bank boundaries,
+distinct and aliased pointers, and malformed inputs.
+
+Native registers, flags, stack and return bytes, ordered full-word owner
+publications, and the entire 128 KiB WRAM comparison satisfy the source
+contract. Source, emulator, original synthetic cartridge, and isolated SRAM
+hashes remain unchanged. The helper executes original code from diagnostic
+WRAM; no Chrono Trigger image, hook, allocation, save, or high production
+selector is changed. Source-bank words `$007E/$007F` in this v0 proof are
+diagnostic identities only. Read the
+[complete native contract](schala_package_helper_conformance_v0.md) and
+`references/schala_package_helper_conformance_v0.json` for source and evidence
+hashes and exact reproduction.
+
+All 30 focused harness tests pass. The full suite runs 1,042 tests: 1,020
+pass, zero fail, and the same 22 optional cases skip; all 193 Python sources
+compile in memory. Independent review found no remaining blocker. Stored
+instruction metrics are execution-callback counts including terminal
+observation, not game timing or cycle evidence.
+
+Resume at `BA-NATIVE-INTEGRATION-DESIGN`. Connect the proved contract to the
+actual fixed-bank resolver using exact hook preimages and continuation ABI;
+define named expanded code/data placement and prove ROM-bank access; resolve
+scratch and interrupt ownership. This design gate installs nothing by itself
+and cannot waive the production write-intent guard or static command policy.
+All production high selectors remain unbound. The separate
+[tooling strategy review](development_tools_strategy_2026_09_08.md) records
+the devkit/source search and the role of emulator automation.
+
+## Earlier developer update: resumption audit and symbolic package complete
+
+On 2026-09-08, the original August 31 task handoff was recovered and the
+`cd0c9bc` baseline audited before extension. The audit found a native-X
+boundary bug: physical descriptor extent `$10000` is valid metadata, while
+the 16-bit register wraps to `$0000`. The source model and primary/alternate
+boundary tests now preserve that distinction. Canonical flags remain pinned
+to their actual exit instructions. The policy's dependency source and proof
+hashes were explicitly regenerated. All 21 canonical PC graphics, assembly,
+and animation windows match the corrected data map; its endpoint prose and
+the separate growth/base-stat schemas are now explicit. See the
+[independent mapping audit](mapping_independent_audit_2026_09_08.md).
+
+`BA-SYMBOLIC-HIGH-PACKAGE` is `complete-source-host`. Its exact synthetic
+descriptor has two mask relations to one terminal-only stream, checked for
+all 256 `$A0B3` values. Canonical physical config row `$01` is read only from
+the pinned clean ROM; only byte `+0` changes to package selector `$80`, and
+bytes `+1..+6` are proven equal. All 128 canonical selector results remain
+unchanged; all 16 default high selectors remain unbound. The explicit `$80`
+association exists only inside a local synthetic proof mapping. It supplies
+no Schala action, effect, animation, production placement, or PC `$07` runtime.
+
+The 24 symbolic tests pass, including source/donor/dependency drift, both
+descriptor branches, deterministic stdout, and unchanged on-disk ROM
+size/mtime/hash. The complete suite runs 1,012 tests: 990 pass, zero fail, and
+the same 22 explicit optional/private/runtime cases skip. The source-only
+proof and full reproduction details are in
+[the symbolic-package contract](schala_symbolic_high_package_v0.md).
+
+The then-next gate was `BA-NATIVE-HELPER-CONFORMANCE`: define and implement an
+original relocatable helper against the corrected ABI and prove it in an
+isolated synthetic execution harness. It must cover both branches, sparse
+masks, aliases, bank endpoints, register/flag/stack state, and exact write
+footprints. Passing this source package does not approve a game hook,
+production allocation, WRAM scratch, auxiliary-reader adaptation, or game
+integration. Those remain separate evidence gates.
+
+The [September online refresh](online_research_2026_09_08.md) also records new
+editor/randomizer/framework activity and the absence of a newly verified
+additive eighth-PC release in the public sources inspected. In particular,
+the old ctrando sparse-mask criticism applies to the pinned historical
+revision; its August 26 representation now preserves sparse positions.
+
+## Previous developer update: expanded-package command policy complete
 
 On 2026-08-31, `BA-CMD-1E-FINAL-EXPANDED-POLICY` reached
 `complete-static`. Project Epoch selected strict decoded-command exclusion for
@@ -117,9 +201,11 @@ sound deceptively similar.
 | `BA-CMD-HANDLER-1E-V0-SAFETY` | `complete-fail-closed` | The v0 host model deliberately refuses expanded nested-script resolution instead of guessing from raw `$1E` bytes. |
 | `BA-CMD-GRAMMAR-CANONICAL-CENSUS` | `complete-static` | The v0 read-only auditor classifies `$00-$FF`, pins the reviewer-encoded canonical-handler width interpretation, tokenizes all 2,173 config-selected direct roots, follows 59 fixed-`$CE` `$1E` targets, and rejects extent conflicts. It records the single exact four-byte descriptor/stream dual use and qualifies nested `$1F` as forced-fallthrough rather than runtime certainty. |
 | `BA-CMD-1E-FINAL-EXPANDED-POLICY` | `complete-static` | Profile `decoded-command-1e-exclusion-flat-direct-v0` forbids decoded `$1E/$1F/$21`, permits raw operand byte `$1E`, independently decodes both masks and every suffix/shared entrypoint through `$00`, and requires disjoint exact named spans with complete token ownership. The certificate pins content and interpreter identities. It adapts no handler and binds no package. |
-| `BA-SYMBOLIC-HIGH-PACKAGE` | `next-gate` | All candidate package selectors `$80-$8F` remain empty. Define exactly one source-only symbolic package using the completed exclusion validator and only deliberately selected, already-proved canonical auxiliary values. Do not bind it to an action or production allocation. |
+| `BA-SYMBOLIC-HIGH-PACKAGE` | `complete-source-host` | One terminal-only symbolic package, exact named synthetic spans, two mask relations sharing one direct entry, all 256 `$A0B3` inputs, canonical row `$01` with only byte `+0` changed, 128 unchanged canonical selectors, and 16 unbound default high selectors. No action, effect, runtime, or production allocation follows. |
+| `BA-NATIVE-HELPER-CONFORMANCE` | `complete-native-synthetic` | Original 537-byte 65C816 helper passes 879 cases in three Mesen runs at two code origins. The identical-origin pair has matching traces; native CPU state and exact writes satisfy the host contract. Diagnostic WRAM source banks only; no game hook, expanded-ROM read, allocation, scratch ownership, interrupt compatibility, or PC `$07` proof. |
+| `BA-NATIVE-INTEGRATION-DESIGN` | `next-gate` | Connect the helper to exact live resolver hook/continuation evidence; define named expanded placement and prove source-bank reads; resolve scratch and interrupt ownership before guarded installation. |
 
-Resume at `BA-SYMBOLIC-HIGH-PACKAGE`. Reopen a completed gate only
+Resume at `BA-NATIVE-INTEGRATION-DESIGN`. Reopen a completed gate only
 when pinned evidence changes or a failing regression invalidates it. The
 detailed evidence remains in
 `docs/battle_action_package_topology_census_v0.md` and
@@ -1855,11 +1941,13 @@ states where useful, and a written result.
    adapter are complete at the host-model level. The lossless battle-command
    grammar/canonical census and the strict flat-direct decoded-`$1E` exclusion
    policy are complete too, reusing rather than repeating the native
-   `$1E/$1F` handler analysis. Next define exactly one symbolic high-package
-   source with exact named descriptor/stream spans, validate it under the
-   completed policy, and retain only deliberately selected canonical
-   auxiliary values. Do that before authoring any original 65C816 helper or
-   assigning native Schala frames. The location-
+   `$1E/$1F` handler analysis. The terminal-only symbolic high-package source
+   now also passes with exact named spans and preserved canonical donor
+   bytes. `BA-NATIVE-HELPER-CONFORMANCE` now also passes its three full
+   synthetic Mesen runs. Next complete `BA-NATIVE-INTEGRATION-DESIGN` for
+   the live resolver, named expanded placement, source-bank access, and
+   scratch/interrupt policy before assigning native Schala frames or
+   approving game installation. The location-
    event audit inventories all 10,637 encoded sites and proves the complete
    116,064-entry direct-function topology; its incoming marker closure
    intentionally remains a possible-context overapproximation rather than

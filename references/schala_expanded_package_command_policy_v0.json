@@ -39,8 +39,8 @@
       },
       "package_bank_adapter_source": {
         "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
-        "sha256": "9a080e38839d2a0908acb09d8fdce9feb5ca90264fe79f120aeab9d74441c0e2",
-        "size": 35427
+        "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "size": 35887
       }
     }
   },
@@ -59,7 +59,7 @@
       "command_25_site_count": 0,
       "command_80_site_count": 0,
       "command_da_site_count": 0,
-      "command_exclusion_proof_sha256": "b3bbd8b43304381fc7e9a141546286b26101e36bb0d2a75f29ed2877a39f9aa0",
+      "command_exclusion_proof_sha256": "c605626d528f586d63b03808f9566d745b0db9f9efea6e16507ba916675e6266",
       "decoded_command_1e_site_count": 0,
       "descriptor_entry_ledger_sha256": "fbcf22eb0b57c7c365f1e265ee925da42b23229a4b758e6e310995fd406206bf",
       "descriptor_relation_count": 2,

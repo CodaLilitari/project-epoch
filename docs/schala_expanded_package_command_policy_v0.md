@@ -8,6 +8,12 @@ Policy ID: `decoded-command-1e-exclusion-flat-direct-v0`
 
 Evidence ceiling: `verified-static` source-only policy and host validation
 
+Dependency correction: 2026-09-08. The package adapter now distinguishes a
+physical descriptor extent ending at `$10000` from the native 16-bit X
+register, which wraps to `$0000`. The allowed-command profile and canonical
+grammar are unchanged. The adapter source identity, policy reference, and
+content proof below have been explicitly repinned to that correction.
+
 ## BLUF
 
 Project Epoch's first expanded player-Tech animation packages will use a
@@ -143,11 +149,17 @@ sequence appears unchanged. No descriptor bytes or command-stream bytes are
 printed in the report.
 
 The pinned v0 contract is 6,717 bytes with SHA-256
-`808f286c37fd9163a776a5b545513aa1a9fb89f4c78281a204af5540f272c1ea`.
+`35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9`.
 Its synthetic conformance proof is
-`b3bbd8b43304381fc7e9a141546286b26101e36bb0d2a75f29ed2877a39f9aa0`.
+`c605626d528f586d63b03808f9566d745b0db9f9efea6e16507ba916675e6266`.
 These hashes pin the policy and its deliberately minimal conformance vector;
 they are not ROM allocation or runtime evidence.
+
+The August 31 reference hash was
+`808f286c37fd9163a776a5b545513aa1a9fb89f4c78281a204af5540f272c1ea`,
+with conformance proof
+`b3bbd8b43304381fc7e9a141546286b26101e36bb0d2a75f29ed2877a39f9aa0`.
+Those are historical identities; they do not certify the corrected adapter.
 
 ## Reproduction and regression coverage
 
@@ -163,7 +175,7 @@ Run the focused suite:
 py -B -m unittest tests.test_schala_expanded_package_command_policy_v0 -v
 ```
 
-The 23 focused tests cover dependency and reference pins, the strict opcode
+The 24 focused tests cover dependency and reference pins, the strict opcode
 profile, raw-operand acceptance, decoded `$1E` rejection across both masks,
 control/default/marker/unobserved refusal, `$25`, `$80`, and `$DA` bounds,
 shared suffixes, mid-token entry rejection, exact descriptor and stream
@@ -172,6 +184,9 @@ content and source-identity binding, valid structural mutations, duplicate
 cross-mask pointer accounting, the explicit out-of-span boundary, adapter
 fail-closed preservation, deterministic metadata-only output, and the absence
 of any output-file option.
+The added exact-bank-end case also checks both descriptor branches, the
+physical extent, native X wrap, and unchanged final N/Z/C flags through the
+policy's adapter dependency.
 
 ## Evidence ceiling and nonclaims
 
@@ -190,9 +205,10 @@ prove or approve any of the following:
 Synthetic banks and offsets used by the tests are identities for the test
 vector only. They are not candidate production placements.
 
-## Next gate
+## Source-only successor gate
 
-Resume at `BA-SYMBOLIC-HIGH-PACKAGE`. Define exactly one source-only symbolic
+`BA-SYMBOLIC-HIGH-PACKAGE` was completed on September 8; see
+`docs/schala_symbolic_high_package_v0.md`. Its contract defines one source-only symbolic
 package under selector `$80`, still unbound to any action. The safest first
 contract should reconstruct one selected canonical action-config row from the
 user's pinned clean ROM at build time, preserve its proven fixed-bank
@@ -201,7 +217,7 @@ config byte `+0` with the high package selector. The expanded primary
 descriptor and original flat command stream must live in exact named synthetic
 allocations and pass this policy.
 
-That next gate may publish only metadata, hashes, schemas, and source code. It
+That gate publishes only metadata, hashes, schemas, and source code. It
 must not source-control the reconstructed canonical row or any extracted
 payload, choose a production address, bind a Schala action, authorize a hook,
 or claim runtime behavior.

@@ -2,7 +2,7 @@
 
 Status: `verified-static` canonical geometry plus source-only proposal
 
-Last updated: 2026-08-31
+Last updated: 2026-09-08
 
 Production installable: no
 
@@ -171,7 +171,7 @@ For an extended package, an eventual helper must reproduce at least:
 - initial nonzero `$A0B3` skipping mask 0, clearing `$A0B3`, and then
   publishing mask 1;
 - exit with M 8-bit, X/Y 16-bit, D `$0000`, DBR `$7E`, balanced stack,
-  X at the consumed-list cursor, Y `$0010`, DP `$80/$81` consumed to zero,
+  X at the consumed-list cursor modulo `$10000`, Y `$0010`, DP `$80/$81` consumed to zero,
   DP `$82/$83` retaining mask 1, and A/B zero; and
 - preservation or explicit proof for the remaining status flags. The helper
   may not borrow DP `$40-$42` or any WRAM scratch without a separate ownership
@@ -179,6 +179,18 @@ For an extended package, an eventual helper must reproduce at least:
 
 The canonical branch obtains these effects by rejoining the original code;
 it does not reimplement the 128 vanilla selectors.
+
+The host model keeps the physical half-open consumed extent
+(`pointer_cursor_final`) separate from the native 16-bit X register
+(`x_final`). A descriptor ending exactly at `$10000` fits in the bank; its
+native cursor wraps to `$0000`. The pinned resolver advances the header with
+four 16-bit `INY` operations followed by `TYX` at `$C1:463B-$C1:463F`, and
+consumes each pointer with two `INX` operations at `$C1:4666-$C1:4667`.
+The final 8-bit load of zero from `$A0B3` sets `N=0/Z=1`, and the final
+`CPY #$0010` supplies `C=1`; those flags are independent of the final X value.
+Primary and alternate exact-end cases, an empty exact-end descriptor, and
+the preceding `$FFFF` cursor are covered separately. An extent past `$10000`
+still fails before any model publication.
 
 ## The command `$1E` blocker
 
@@ -209,8 +221,9 @@ decodes token starts, not raw byte values, and requires every selected direct
 or suffix entrypoint to reach `$00` without decoded `$1E`, `$1F`, or `$21`.
 Every future authored source must pass that validator independently.
 
-No actual expanded package has passed yet because no symbolic high package is
-defined. The bank-qualified subscript-registry alternative remains unresolved
+One terminal-only symbolic package now passes the source-only policy; see
+`docs/schala_symbolic_high_package_v0.md`. It has no gameplay effect or
+production binding. The bank-qualified subscript-registry alternative remains unresolved
 and deliberately unused; the adapter's fail-closed `$1E` resolver is
 unchanged. See `docs/schala_expanded_package_command_policy_v0.md`.
 
@@ -253,13 +266,18 @@ It imports none of the opaque machine bytes, copied canonical roots, dynamic
 free-space choices, or hook. This is a conservative provenance classification,
 not a legal conclusion.
 
-The upstream high-level serializer is also not used as an exact preservation
+At that pinned upstream revision, the high-level serializer was not an exact preservation
 oracle. It reconstructs contiguous role masks from counts and emits fresh
 sequential pointers, which can discard sparse mask placement and shared-pointer
 alias identity. Its companion config relocation names `$79`, `$7A`, and `$7F`
 producers but does not expose source rewrites for the newly censused
 `$7B-$7D` producers. Those are research leads only; Project Epoch retains its
-own exact mask, alias, and producer ledgers.
+own exact mask, alias, and producer ledgers. A September 8 source refresh found
+that upstream's August 26 change now preserves sparse object positions; the
+older role-count criticism is historical for that component. Complete shared
+pointer/suffix preservation remains unproved. See
+`docs/online_research_2026_09_08.md` for exact commit links and the comparison
+boundary.
 
 ## Host model and test gate
 
@@ -287,7 +305,8 @@ The current focused suite verifies:
   script-slot stride;
 - the vanilla-shaped final cursor, mask words, accumulator/index widths, DBR,
   DP, stack delta, and `N/Z/C` state;
-- an exact bank-end descriptor without wrap;
+- an exact bank-end physical descriptor extent with correctly wrapped native
+  X on both mask branches, plus the preceding cursor and one-byte overflow;
 - header/pointer-list crossing, selected `$FFFF`, and descriptor-overlap
   refusal;
 - unconditional command-`$1E` refusal;
@@ -307,10 +326,11 @@ decoded-`$1E` exclusion policy is also complete in
 `docs/schala_expanded_package_command_policy_v0.md`; it adapts no handler.
 The host model now reproduces the complete vanilla-shaped
 descriptor-installer state under both `$A0B3` branches and all 16 owner bits;
-the next source-only extension is one symbolic synthetic high package that
-uses exact named descriptor/stream spans, deliberately retained canonical
-auxiliary selectors, and proves its command stream against that validator. It
-remains non-production and unbound to any action.
+the source-only symbolic package now uses exact named descriptor/stream spans,
+deliberately retained canonical config bytes, and proves its terminal-only
+stream against that validator. It remains non-production and unbound to any
+action. Its explicit synthetic source association lives only in a local proof
+mapping; every default high selector remains unbound.
 
 Only after that command/package source contract passes should an original
 65C816 helper be authored against the ABI above. Any later same-size ROM mutation or

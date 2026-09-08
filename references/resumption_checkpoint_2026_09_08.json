@@ -1,0 +1,161 @@
+{
+  "artifact_identity": {
+    "canonical_json_sha256_excluding_artifact_identity": "82b3dafacdb906b06517203db2077ed771be14834da9d416221b811afc2b31e5"
+  },
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "8402148ccf5d29d61b0935c5e705b89b2263bee5f09f8afed2c89b05bc24e01f",
+      "size": 21401
+    },
+    {
+      "path": "README.md",
+      "sha256": "14145cf117211457904fe0fcf69c6ce4b4fb0820814fd895a0067b29e8353571",
+      "size": 43662
+    },
+    {
+      "path": "docs/mapping_independent_audit_2026_09_08.md",
+      "sha256": "5a3e0bad0897b91b83f36604b7efd0b065340c8108915dd3ed7c4c1c64f635e8",
+      "size": 9849
+    },
+    {
+      "path": "docs/online_research_2026_09_08.md",
+      "sha256": "853ea688def6c635548a6bb8e46c926c4051b60d792e2eac554baa5b10fa35d3",
+      "size": 11757
+    },
+    {
+      "path": "docs/project_epoch_corrected_character_data_map_v1.md",
+      "sha256": "5df51b2081198dd8871db88f594031b0c0979da31453b00c81b18505d47ee757",
+      "size": 22160
+    },
+    {
+      "path": "docs/schala_eighth_character_developer_guide.md",
+      "sha256": "3b4b872d2894334abeaf75d8a2b647760f9f426d6212edba889094740b8d8818",
+      "size": 184183
+    },
+    {
+      "path": "docs/schala_expanded_package_command_policy_v0.md",
+      "sha256": "fdb1b26901e712ea751fa057b237cbb9aa906aa360594bd766b71bbe9a14a5f2",
+      "size": 10713
+    },
+    {
+      "path": "docs/schala_player_tech_package_bank_adapter_v0.md",
+      "sha256": "1e692c73fce424becf4b6cdb4393599e30bf1a53577a143baa09e4feffff27ea",
+      "size": 17889
+    },
+    {
+      "path": "docs/schala_symbolic_high_package_v0.md",
+      "sha256": "2ba5ce86b6aa1088956f98e5a70cfa1f9ce57827106a13aff080ba24efef39d6",
+      "size": 9920
+    },
+    {
+      "path": "references/schala_expanded_package_command_policy_v0.json",
+      "sha256": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9",
+      "size": 6717
+    },
+    {
+      "path": "references/schala_symbolic_high_package_v0.json",
+      "sha256": "37c13271c3632bca6b27a2daa0e5e2820d502a6673b1863b64b29a647df470e2",
+      "size": 8164
+    },
+    {
+      "path": "tests/test_schala_expanded_package_command_policy_v0.py",
+      "sha256": "6e2883cb8b162d097f9470d6d3a759c5297bae8499fb99573777ca2e62cfe1c0",
+      "size": 26184
+    },
+    {
+      "path": "tests/test_schala_player_tech_package_bank_adapter_v0.py",
+      "sha256": "e2c5ef1d8d0e89c2dc8b82b8505b70b79c9fe2ba50c1016041e167a75bf62935",
+      "size": 25129
+    },
+    {
+      "path": "tests/test_schala_symbolic_high_package_v0.py",
+      "sha256": "a3a43dfbed7c2a174209326d8822440e8384c00788ed6514d7652fdd10f3747c",
+      "size": 18817
+    },
+    {
+      "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+      "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f",
+      "size": 39897
+    },
+    {
+      "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+      "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+      "size": 35887
+    },
+    {
+      "path": "tools/audit_schala_symbolic_high_package_v0.py",
+      "sha256": "e6911a979a60cb06ee78b4b58a410875a2b7acbeb2fce4733bf2795828ad2b5d",
+      "size": 20486
+    }
+  ],
+  "as_of": "2026-09-08T05:14:06.559404+00:00",
+  "baseline_commit": "cd0c9bc1204705e63685a22aecd168fd10021979",
+  "changes_committed": false,
+  "changes_pushed": false,
+  "completed_gate": "BA-SYMBOLIC-HIGH-PACKAGE",
+  "evidence": {
+    "local": "verified-static and deterministic host verification",
+    "online": "documented dated public-source reconnaissance",
+    "runtime_performed": false
+  },
+  "limitations": [
+    "Terminal-only symbolic package proves no gameplay animation or logical PC 07 runtime.",
+    "Production high-selector defaults, allocation and hook catalogs remain empty.",
+    "No exhaustive audit of every project address or runtime lifecycle was performed.",
+    "Online absence finding is limited to accessible public sources and queried history."
+  ],
+  "next_gate": "BA-NATIVE-HELPER-CONFORMANCE",
+  "recovered_task": {
+    "id": "019f9aae-0c29-7400-ba8c-d34d852448da",
+    "interrupted_turn": "01a05936-2f92-7460-93d5-6db4d26bc295",
+    "title": "Resume eighth character slot work"
+  },
+  "reproduction": {
+    "artifact_hashes": "SHA-256 of exact file bytes for every listed path; JSON self identity uses sorted keys, ASCII, and separators comma/colon, excluding artifact_identity",
+    "canonical_input": "existing pinned ignored US Rev0 ROM resolved by tests and auditor",
+    "symbolic_report_command": "python -B tools/audit_schala_symbolic_high_package_v0.py --compact"
+  },
+  "schema": "project-epoch-resumption-checkpoint-v1",
+  "validation": {
+    "canonical_rom": {
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+      "size": 4194304,
+      "symbolic_two_run_hash_size_mtime_unchanged": true
+    },
+    "canonical_windows": {
+      "assembly": 7,
+      "graphics": 7,
+      "matched": 21,
+      "primary_animation": 7
+    },
+    "full_suite": {
+      "command": "python -B -m unittest discover -s tests -q",
+      "elapsed_seconds": 45.283,
+      "errors": 0,
+      "failed": 0,
+      "passed": 990,
+      "run": 1012,
+      "skipped": 22
+    },
+    "private_or_game_artifact_paths_tracked": [],
+    "symbolic_focused": {
+      "command": "python -B -m unittest tests.test_schala_symbolic_high_package_v0 -v",
+      "passed": 24,
+      "run": 24,
+      "skipped": 0
+    },
+    "symbolic_report_canonical_identity": "dcae013742fea5d0b70acffe80a7d8a174e23d72504d7dba28899382e17a8965",
+    "symbolic_windows_compact_stdout": {
+      "sha256": "28693283ecc44bce8a60731fe9fc79a01ad1d8e2dcfbf67828995f7ce9382b6e",
+      "size": 9188,
+      "stderr_empty": true,
+      "two_runs_identical": true
+    },
+    "syntax_compile": {
+      "files": 191,
+      "method": "compile(read_bytes(), relative_path, exec) in memory; git-tracked Python plus the two new symbolic sources",
+      "passed": true
+    }
+  }
+}

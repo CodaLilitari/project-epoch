@@ -139,7 +139,27 @@ These are separate namespaces. Never conflate them.
   validator. The adapter's cross-bank `$1E` refusal remains intact, and
   auxiliary fixed-bank readers remain separate gates. The canonical four-byte
   descriptor/stream dual use remains occupied canonical data; newly authored
-  Epoch descriptor/stream overlap is forbidden. No selector is bound.
+  Epoch descriptor/stream overlap is forbidden. No production selector is bound.
+- `BA-SYMBOLIC-HIGH-PACKAGE` now has one source-only, terminal-only test
+  package under an explicit local selector-`$80` mapping. Its synthetic bank
+  `$42` descriptor/stream spans are test identities, not allocations. It
+  reconstructs canonical action-config row `$01`, replaces only byte `+0`,
+  and proves `+1..+6` equality; that donor does not assign Schala effect
+  semantics. Both masks preserve the repeated direct pointer across all 256
+  `$A0B3` values in the host model. All 128 canonical selectors remain
+  equivalent and all 16 default high selectors remain unbound. This proves
+  no native helper, animation, action binding, hook, or logical PC `$07`.
+- The original 537-byte package helper now passes `BA-NATIVE-HELPER-CONFORMANCE`
+  at `verified-runtime`, strictly synthetic scope. Three full Mesen runs pass
+  879 cases each: two at `$7F8000` have identical traces; one at `$7F9000`
+  proves that second placement. The v0 helper accepts only diagnostic WRAM
+  source banks `$7E/$7F`, and its registry, scratch, stack, and tails are
+  synthetic fixtures, not game ownership. Final CPU state, exact ordered
+  publications, complete WRAM diffs, and unchanged input hashes pass. This
+  does not prove expanded-ROM access, an actual resolver hook, game interrupts,
+  command execution, or PC `$07`. Keep production selectors unbound. Resume
+  at `BA-NATIVE-INTEGRATION-DESIGN`; do not repeat the completed synthetic
+  proof without source drift or a new failing boundary.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.
@@ -162,9 +182,12 @@ These are separate namespaces. Never conflate them.
   attract/demo path loops over eight destinations using only seven HP/MP
   source rows. Record `+$01` low flags and `+$02` bits other than `$01/$10`
   remain unmapped; do not copy Magus's `$42/$80` seeds into Schala.
-- Schala's stat arrays use the runtime-confirmed order Power, Stamina, Speed,
-  Hit, Evade, Magic, Magic Defense. Do not restore the misleading
-  Magic-before-Hit order from the older disassembly data label.
+- Schala's growth/progression arrays use the runtime-confirmed order Power,
+  Stamina, Speed, Hit, Evade, Magic, Magic Defense. Vanilla base/live record
+  stats instead use Power, Stamina, Speed, Magic, Hit, Evade, Magic Defense.
+  Keep these schemas separate; the older disassembly's Magic-before-Hit
+  growth-table label is misleading, but that order is correct for base/live
+  record fields. See the corrected character data map.
 - The ten current original gameplay frames compile into ten native-shaped
   `$28`-byte records and an 81-tile packet with exact host reconstruction.
   This is a partial packet foundation only: do not claim a complete animation
@@ -283,16 +306,21 @@ now mapped. The complete encoded location-event operand census and its direct-
 entry topology are also mapped, but its inter-object control-flow and loader-
 lifetime model remains unresolved. The battle action-package census and
 source-only bank-qualified direct-entry adapter are now complete at the host
-model level while every high package binding remains absent. The next
-architecture gate is `BA-SYMBOLIC-HIGH-PACKAGE`. The lossless battle-command
+model level while every production high package binding remains absent.
+`BA-SYMBOLIC-HIGH-PACKAGE` is complete as a source-only host proof, and
+`BA-NATIVE-HELPER-CONFORMANCE` is complete in the isolated synthetic Mesen
+matrix. The next gate is `BA-NATIVE-INTEGRATION-DESIGN`: exact live resolver
+hook/continuation evidence, named expanded placement and source-bank access,
+and scratch/interrupt ownership before installation. The lossless battle-command
 grammar/canonical stream census and strict flat-direct decoded-`$1E` exclusion
 policy are complete at `verified-static`, reusing rather than repeating the
-decoded native `$1E/$1F` handler semantics. Every `$80-$8F` selector remains
-unbound. Define one source-only symbolic high package using exact named spans
-and only deliberately selected, already-proved canonical auxiliary values.
-The stronger
+decoded native `$1E/$1F` handler semantics. Every default `$80-$8F` selector
+remains unbound; high associations exist only inside the symbolic and native
+synthetic proof fixtures. The stronger
 location-event contextual model and complete source-role/facing inventory
-remain explicit later gates; no original 65C816 helper is yet authorized.
+remain explicit later gates. The original helper is authored and executed
+only in synthetic WRAM; no production placement, hook, scratch ownership, or
+game integration is approved.
 
 The clone diagnostic must separately account for:
 

@@ -38,9 +38,12 @@ save plan are superseded and must not be used.
   promoted to runtime fact.
 - `hypothesis`: a bounded question or design awaiting proof.
 
-Every range is half-open: the start is included and the stated end is not.
-Zeroes, `$FF`, an eighth physical value, or a routine accepting byte `$07` do
-not establish free storage. `proposal-unbound` means the proposed architecture
+The machine-readable JSON uses half-open ranges: the start is included and
+`end_exclusive` is not. In this document, compact address and record-byte
+ranges include both endpoints unless the table explicitly says "end
+exclusive". For example, `$0200-$042F` covers `$230` bytes, while the same
+JSON span ends at `$0430`. Zeroes, `$FF`, an eighth physical value, or a routine
+accepting byte `$07` do not establish free storage. `proposal-unbound` means the proposed architecture
 has no approved production allocation or hook.
 
 ## High-impact corrections to community maps
