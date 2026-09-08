@@ -774,3 +774,87 @@ readbacks to document a bounded native completion witness. Its encoded
 command ID and pointer movement were not captured and must not be invented.
 The separate ROM/NMI design is ready for implementation. All production
 hooks, allocations and high selector bindings remain absent.
+
+## 2026-09-08 — native completion witness and scene-input boundaries
+
+**Status:** completed bounded evidence reuse and static input analysis; no
+new emulator launch in these two packets. The
+[completion-witness audit](schala_package_completion_witness_v1.md)
+revalidates the full accepted successful transaction pair before selecting
+its chronology. It connects 516 observed zero-counter waits to the actual
+`$7E9876: 0 -> 1` store at the default-family increment, the caller's next
+snapshot, the separate zero scene-latch check, both cleanup resets, result
+application and the same action's actual queue-caller return. All eight
+recorded latch writes reconcile with their subsequent snapshots.
+
+Two stop-handler entry observations calculate owner targets `$7E5DB0` and
+`$7E5DAF`, but the observer did not capture those owner writes or readbacks.
+It also did not capture an encoded `$01` command or a script-pointer delta.
+The report preserves these distinctions and cites MAP-011 as separate static
+evidence. No synthetic package is assigned this vanilla action's completion.
+
+The author, root and second reviewer each passed all 54 tests. Both reviewers
+regenerated the 16,543-byte reference exactly, SHA-256
+`3ac28c6f572ad5023c99ff8f373d0346598611300bba26597207a71d4585e015`.
+Two actual post-review CLI processes also matched it with UTF-8/LF output
+and empty stderr. Existing native source and trace identities are unchanged.
+
+The [scene-dispatch input audit](schala_scene_dispatch_inputs_v1.md) proves
+the hidden accumulator byte B=0 before the first indexed call reached from
+the tick prefix under native M1/X0/D0. It stops before that handler. The
+continuation after an unmodeled handler return and a standalone slot entry
+both retain unknown B. Eight-bit ASL followed by sixteen-bit TAX therefore
+cannot be described as a universally zero-extended index.
+
+The 122 reviewed cells for `$80-$F9` remain a physical prefix; the local
+classifier admits 127 indexed byte values. The five `$FA-$FE` cells overlap
+the decoded `$F9` handler's occupied body. Separately, the initializer skips
+`$FF`, producing 255 hypothetical byte-ID reads and 207 distinct roots under
+B=0, without certifying a legal script corpus. The exact PBR-wrapped indexed
+JSR and long-indexed script-pointer recipes remain distinct.
+
+All 27 tests pass for author/root/peer, including exhaustive mode-independent
+command/B algebra and fail-closed prefix effects. Both reviewers reproduced
+the 156,163-byte metadata, SHA-256
+`d5604c65934dff1dfa4796ea3d990e227065e9b28a5499695f590fff912a8c13`.
+This refines an open obligation in closure v2; it is not a new correction to
+an annotation that claimed a complete legal table.
+
+**Publication and resume:** the preceding NMI/preflight/completion-source
+increment is published as
+[`e14826a9e52dd4044565bc78c0ca6363cd68c14c`](https://github.com/andreipemberton/project-epoch/commit/e14826a9e52dd4044565bc78c0ca6363cd68c14c).
+The authenticated branch/commit and every one of its 27 changed-file byte
+strings were independently checked against the local commit. The current
+guide now carries a stable completed/open gate ledger to prevent repeated
+work after handoff. Active work is the separate immutable-ROM/NMI calibration,
+outer-mode input contract, producer-domain closure and native rejection design.
+The first combined pilot remains rejected history because its continuation
+outlasted the initially required VBlank window; no production gate is promoted.
+
+## 2026-09-08 — outer NMI mode caller and hidden-byte input contract
+
+**Status:** independently reviewed `verified-static` prefix proof. The
+[outer-mode audit](schala_nmi_mode_inputs_v1.md) tracks arbitrary symbolic
+register bytes through all four initial native M/X combinations. The 40
+decoded instructions on the busy-zero path establish A=`$0080`, X=`$002B`,
+Y=`$CC90`, D=0, DBR=0 and M1/X0 at `$CD0C95`. Its 43-byte MVN summary and
+the later full-accumulator TDC are explicit. Native entry, no intervening
+asynchronous corruption and ordinary writable stack RAM remain premises.
+The conditional 16 bytes below the interrupted SP do not establish a global
+NMI maximum or a safe live-game reserve.
+
+The local eight-bit shift aliases high-bit mode values onto the lower 128
+cells. The three reviewed cells select `$CD09F1/$CD088D`; the next cell
+overlaps the occupied field-service wrapper. All 65,536 mode/B combinations
+are checked, while legal mode-producer domains and selected-body effects
+remain open. The old annotation's named 0/1/2 targets are correct, so this
+is a refinement rather than a new mapping-error entry.
+
+Independent review found and corrected two generalized toy-model gaps before
+release: stale Z flags after selected supported instructions, and reuse of
+the one-time busy-byte mutation premise. Four new regression tests retain
+the counterexamples. The canonical register result did not change. All 23
+tests pass, and independent import/actual-CLI reproduction gives the exact
+138,037-byte reference, SHA-256
+`dc715f6726e482a00e649d15252b5ca42f933f82198d8520c78d7867f3932530`.
+No accepted native run or earlier closure source needed to be repeated.

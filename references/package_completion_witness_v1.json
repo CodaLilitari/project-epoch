@@ -1,0 +1,402 @@
+{
+  "schema": "project-epoch-package-completion-witness-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_origin": "reuse and revalidation of two previously accepted native traces; no new CPU execution",
+  "scope": "one canonical action08 invocation and exact stop/default-family/latch/caller observations",
+  "source_identities": {
+    "accepted_collector": {
+      "path": "tools/collect_package_transaction_evidence_v1.py",
+      "size": 9491,
+      "sha256": "610ced62a320c9a0ae53efd0174ed4e1a661a4db63b1d0a43d15ca2c48a377b4"
+    },
+    "static_auditor": {
+      "path": "tools/audit_schala_package_completion_contract_v1.py",
+      "size": 9676,
+      "sha256": "76840c5b0edfea07e117745ee0dd70da77dd489eeabb406684d48f2177121214"
+    },
+    "cancellation_auditor": {
+      "path": "tools/audit_package_cancellation_boundaries_v1.py",
+      "size": 8894,
+      "sha256": "c3693afadfb6b1d46252e40c5d2c9db645879c56c9227f48b3ed3d98acfd1114"
+    }
+  },
+  "auditor": {
+    "path": "tools/audit_package_completion_witness_v1.py",
+    "size": 18718,
+    "sha256": "43e1a33d152a0e8ce4d8844fd3a74225abefe8babf2babe3df1a7814dc240b94"
+  },
+  "tests": {
+    "path": "tests/test_package_completion_witness_v1.py",
+    "size": 10087,
+    "sha256": "a759373826333b2f83dfa56e46516641be70f268ccceb368966d3848f2a9206e"
+  },
+  "accepted_transaction_reference": {
+    "path": "references/package_transaction_observation_v1.json",
+    "size": 29391,
+    "sha256": "1cc3030e1bbfe5f167ae69262ec7d78487ec4184e3500915b9dfbda94bea2787"
+  },
+  "static_completion_reference": {
+    "path": "references/schala_package_completion_contract_v1.json",
+    "size": 9212,
+    "sha256": "76c5d5a157748717c42301a7cbfd9d00f9f656cdeba048415e77c123d7095766"
+  },
+  "reused_scene_reset_spans": [
+    {
+      "role": "animation-work-reset",
+      "cpu_start": "CCF06B",
+      "cpu_end_exclusive": "CCF102",
+      "size": 151,
+      "sha256": "80831e2419fc9425538ac36ddb83d979266a158a392ecba1e0bc6e009a1788ae"
+    },
+    {
+      "role": "scene-latch-owner",
+      "cpu_start": "CD1609",
+      "cpu_end_exclusive": "CD1654",
+      "size": 75,
+      "sha256": "dce62d3d48a939537e1f9976e6177b9fda6f39e9076b72c4f4fc0e2af798fca9"
+    }
+  ],
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "runs": [
+    {
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_final1/trace.json",
+        "size": 6113025,
+        "sha256": "fc9e89c139d00a23ab67a84ee77f497e6dfe63133c14509b23f50ce72d0523e7"
+      },
+      "witnesses": {
+        "projected_record_count": 1051,
+        "latch_write_readback_pairs": [
+          {
+            "write_index": 49,
+            "readback_index": 50,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CCF071",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 50,
+            "readback_index": 51,
+            "bus_address": "7E9876",
+            "callback_cpu_pc": "CCF0EC",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 73,
+            "readback_index": 74,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CD0D2B",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 181,
+            "readback_index": 182,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "C15938",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "write_index": 982,
+            "readback_index": 983,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CD1650",
+            "before": 1,
+            "after": 0
+          },
+          {
+            "write_index": 1114,
+            "readback_index": 1115,
+            "bus_address": "7E9876",
+            "callback_cpu_pc": "C14D03",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "write_index": 1117,
+            "readback_index": 1118,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CCF071",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 1118,
+            "readback_index": 1119,
+            "bus_address": "7E9876",
+            "callback_cpu_pc": "CCF0EC",
+            "before": 1,
+            "after": 0
+          }
+        ],
+        "zero_package_wait_iterations": 516,
+        "nonzero_package_wait_snapshots": 1,
+        "stop_handler_observations": [
+          {
+            "record_index": 993,
+            "poll": 932,
+            "observed_x": 4,
+            "calculated_stz_byte_target": "7E5DB0",
+            "evidence": "pre-execution CPU plus canonical STZ addressing only",
+            "actual_owner_write_observed": false,
+            "owner_readback_observed": false
+          },
+          {
+            "record_index": 1108,
+            "poll": 989,
+            "observed_x": 3,
+            "calculated_stz_byte_target": "7E5DAF",
+            "evidence": "pre-execution CPU plus canonical STZ addressing only",
+            "actual_owner_write_observed": false,
+            "owner_readback_observed": false
+          }
+        ],
+        "default_family_increment": {
+          "pre_index": 1113,
+          "write_index": 1114,
+          "readback_index": 1115,
+          "pre_memory": 0,
+          "written_byte": 1,
+          "callback_delta_master_clocks": 40,
+          "callback_delta_cpu_cycles": 6,
+          "encoded_command_byte_observed": false
+        },
+        "scene_clear_site_write_index": 982,
+        "scene_clear_first_later_snapshot_index": 983,
+        "separate_scene_wait_index": 1116,
+        "later_cleanup_reset_indices": [
+          1117,
+          1118
+        ],
+        "result_wrapper_index": 1119,
+        "result_application_index": 1120,
+        "animation_result_return_index": 1253,
+        "actual_transaction_caller_index": 1275,
+        "projection_sha256": "c7ac9f72db4ef9da60e7a78f9a35f9bcd89289c3fd7e585655594e6a2fad1667",
+        "encoded_default_opcode_identified": false,
+        "script_pointer_movement_observed": false,
+        "owner_clear_write_observed": false,
+        "owner_clear_readback_observed": false,
+        "scene_write_isr_ownership_proved": false,
+        "high_package_completion_proved": false,
+        "production_approval": false,
+        "new_native_execution": false,
+        "selected_full_record_hashes": {
+          "49": "d22dd5ab43cc5047d0c7d868af5d2577585ab63898a78f86734cdd1a86bade10",
+          "50": "83cc086f64473a7db5dcda427ced22c14c58a71fe6183ecbb58ed707fc8785a0",
+          "51": "e02d6f19465817b90c8e94bf990528e7558eb7abe139e7ffdd98a3597331bf95",
+          "73": "11ca2cc364e828f7ae245f46115890c9410931c1e169df3a0f88bf321fecad2d",
+          "74": "1a98d08bd26fec26497e010786714e77be786c35ed9fd8e6498d5fafc3a51d7e",
+          "181": "e840eec0fce9b4904d4b403e5e7e59d83a2c50d01e2cb742ee13d4e1b52c5c60",
+          "982": "ccb603efd6a6186c8c7b06fb9a67ce97b366df4122257906bc7fedd002a27622",
+          "983": "c5298912f2b3686b2189686b3df3cc44ee0cf1ee00beb32986621ff5b89339fa",
+          "993": "b70fb5e8e6be7e8fffc6951324a3c94c531c8571549b8a1d00826bc6c2c0addc",
+          "994": "8bbe2bbf0e8ea63f4c4a7f850141bc65a0fef8c8eabb41639e0515cc41554178",
+          "995": "a51cee52aca85c67ee8b3a5b92f0a652706bcdee5fbeab78a3f98e3410972869",
+          "1108": "b289bc45e4e794c1d0ff10f5f3c8edcfb90c08c7b97842a022c1f6a47cbbbfe5",
+          "1109": "e64e8e6681a04fd6420da06c3e2b113b7ff7ae9449b507339d7512e6ad8ac6b1",
+          "1110": "8f47b4ebef6d51efba32e060726a1647745e66a3b4205c97d10e55f95d6653f1",
+          "1111": "6bc6e3d614ed8920079e02ecd3d0f52b5c7907c7ea93bb0d7a279943f5fed19e",
+          "1112": "30353135d3654e60fc02b4dcaa7ee7e7483aaab4fe29033601c5431d7c6c46db",
+          "1113": "6ca39305ab206b8a0e1fe3dfc482e7ec3e690c556f45590e8b996234a2716c6c",
+          "1114": "4e4c369200e1e3208d481a148df7adce691057501e7a0e297ef4517957bd5997",
+          "1115": "8592be1b1a553143f326941f322cf49ec099dbc179889a5eec13a3436f45fdc0",
+          "1116": "6eea58de33aaf4d071093af94ce99d0b1d1168478c2057aae22195ac768ac3d4",
+          "1117": "93ea682df1fcce49288b7013723787dc85c27e513f68d7037e992e4c860625c0",
+          "1118": "afc4962e1840c85acd7c6b8b218a6d61e623d8497d9bf1c4a43ac7f5907646f5",
+          "1119": "dce076d077e351d6fcc241f104ae3a76cf577704ce874ae1a25cd82e4a934b2e",
+          "1120": "d6374f7fd740ee4b406adb69bcba6554543ec1986ee40505be26d769d7d639c8",
+          "1253": "9c59969f7b434b7f8ffd8b2c91d42bcd7bdb4039f4e5e56b6d28138adff91886",
+          "1275": "841ae40ada0f384984df1eab02ff5bd4e50a01fc13f55cffb0f1140d0e1cd68a"
+        }
+      }
+    },
+    {
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_final2/trace.json",
+        "size": 6113025,
+        "sha256": "fc9e89c139d00a23ab67a84ee77f497e6dfe63133c14509b23f50ce72d0523e7"
+      },
+      "witnesses": {
+        "projected_record_count": 1051,
+        "latch_write_readback_pairs": [
+          {
+            "write_index": 49,
+            "readback_index": 50,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CCF071",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 50,
+            "readback_index": 51,
+            "bus_address": "7E9876",
+            "callback_cpu_pc": "CCF0EC",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 73,
+            "readback_index": 74,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CD0D2B",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 181,
+            "readback_index": 182,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "C15938",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "write_index": 982,
+            "readback_index": 983,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CD1650",
+            "before": 1,
+            "after": 0
+          },
+          {
+            "write_index": 1114,
+            "readback_index": 1115,
+            "bus_address": "7E9876",
+            "callback_cpu_pc": "C14D03",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "write_index": 1117,
+            "readback_index": 1118,
+            "bus_address": "7E5D9B",
+            "callback_cpu_pc": "CCF071",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "write_index": 1118,
+            "readback_index": 1119,
+            "bus_address": "7E9876",
+            "callback_cpu_pc": "CCF0EC",
+            "before": 1,
+            "after": 0
+          }
+        ],
+        "zero_package_wait_iterations": 516,
+        "nonzero_package_wait_snapshots": 1,
+        "stop_handler_observations": [
+          {
+            "record_index": 993,
+            "poll": 932,
+            "observed_x": 4,
+            "calculated_stz_byte_target": "7E5DB0",
+            "evidence": "pre-execution CPU plus canonical STZ addressing only",
+            "actual_owner_write_observed": false,
+            "owner_readback_observed": false
+          },
+          {
+            "record_index": 1108,
+            "poll": 989,
+            "observed_x": 3,
+            "calculated_stz_byte_target": "7E5DAF",
+            "evidence": "pre-execution CPU plus canonical STZ addressing only",
+            "actual_owner_write_observed": false,
+            "owner_readback_observed": false
+          }
+        ],
+        "default_family_increment": {
+          "pre_index": 1113,
+          "write_index": 1114,
+          "readback_index": 1115,
+          "pre_memory": 0,
+          "written_byte": 1,
+          "callback_delta_master_clocks": 40,
+          "callback_delta_cpu_cycles": 6,
+          "encoded_command_byte_observed": false
+        },
+        "scene_clear_site_write_index": 982,
+        "scene_clear_first_later_snapshot_index": 983,
+        "separate_scene_wait_index": 1116,
+        "later_cleanup_reset_indices": [
+          1117,
+          1118
+        ],
+        "result_wrapper_index": 1119,
+        "result_application_index": 1120,
+        "animation_result_return_index": 1253,
+        "actual_transaction_caller_index": 1275,
+        "projection_sha256": "c7ac9f72db4ef9da60e7a78f9a35f9bcd89289c3fd7e585655594e6a2fad1667",
+        "encoded_default_opcode_identified": false,
+        "script_pointer_movement_observed": false,
+        "owner_clear_write_observed": false,
+        "owner_clear_readback_observed": false,
+        "scene_write_isr_ownership_proved": false,
+        "high_package_completion_proved": false,
+        "production_approval": false,
+        "new_native_execution": false,
+        "selected_full_record_hashes": {
+          "49": "d22dd5ab43cc5047d0c7d868af5d2577585ab63898a78f86734cdd1a86bade10",
+          "50": "83cc086f64473a7db5dcda427ced22c14c58a71fe6183ecbb58ed707fc8785a0",
+          "51": "e02d6f19465817b90c8e94bf990528e7558eb7abe139e7ffdd98a3597331bf95",
+          "73": "11ca2cc364e828f7ae245f46115890c9410931c1e169df3a0f88bf321fecad2d",
+          "74": "1a98d08bd26fec26497e010786714e77be786c35ed9fd8e6498d5fafc3a51d7e",
+          "181": "e840eec0fce9b4904d4b403e5e7e59d83a2c50d01e2cb742ee13d4e1b52c5c60",
+          "982": "ccb603efd6a6186c8c7b06fb9a67ce97b366df4122257906bc7fedd002a27622",
+          "983": "c5298912f2b3686b2189686b3df3cc44ee0cf1ee00beb32986621ff5b89339fa",
+          "993": "b70fb5e8e6be7e8fffc6951324a3c94c531c8571549b8a1d00826bc6c2c0addc",
+          "994": "8bbe2bbf0e8ea63f4c4a7f850141bc65a0fef8c8eabb41639e0515cc41554178",
+          "995": "a51cee52aca85c67ee8b3a5b92f0a652706bcdee5fbeab78a3f98e3410972869",
+          "1108": "b289bc45e4e794c1d0ff10f5f3c8edcfb90c08c7b97842a022c1f6a47cbbbfe5",
+          "1109": "e64e8e6681a04fd6420da06c3e2b113b7ff7ae9449b507339d7512e6ad8ac6b1",
+          "1110": "8f47b4ebef6d51efba32e060726a1647745e66a3b4205c97d10e55f95d6653f1",
+          "1111": "6bc6e3d614ed8920079e02ecd3d0f52b5c7907c7ea93bb0d7a279943f5fed19e",
+          "1112": "30353135d3654e60fc02b4dcaa7ee7e7483aaab4fe29033601c5431d7c6c46db",
+          "1113": "6ca39305ab206b8a0e1fe3dfc482e7ec3e690c556f45590e8b996234a2716c6c",
+          "1114": "4e4c369200e1e3208d481a148df7adce691057501e7a0e297ef4517957bd5997",
+          "1115": "8592be1b1a553143f326941f322cf49ec099dbc179889a5eec13a3436f45fdc0",
+          "1116": "6eea58de33aaf4d071093af94ce99d0b1d1168478c2057aae22195ac768ac3d4",
+          "1117": "93ea682df1fcce49288b7013723787dc85c27e513f68d7037e992e4c860625c0",
+          "1118": "afc4962e1840c85acd7c6b8b218a6d61e623d8497d9bf1c4a43ac7f5907646f5",
+          "1119": "dce076d077e351d6fcc241f104ae3a76cf577704ce874ae1a25cd82e4a934b2e",
+          "1120": "d6374f7fd740ee4b406adb69bcba6554543ec1986ee40505be26d769d7d639c8",
+          "1253": "9c59969f7b434b7f8ffd8b2c91d42bcd7bdb4039f4e5e56b6d28138adff91886",
+          "1275": "841ae40ada0f384984df1eab02ff5bd4e50a01fc13f55cffb0f1140d0e1cd68a"
+        }
+      }
+    }
+  ],
+  "paired_reuse_results_identical": true,
+  "interpretation_limits": [
+    "C14CF3 pre-execution STZ targets are calculated; post-resolver owner writes and owner readbacks were not captured.",
+    "C14D00 identifies the shared default-handler branch, not an independently observed encoded command01.",
+    "The caller latch sites are pre-execution debugger snapshots plus canonical reader/control flow, not CPU data-read callbacks.",
+    "Scene-clear callback PC does not independently establish NMI ownership in this observer.",
+    "No script-pointer values or movement are observed; the independent static contract supplies its own bounded interpretation.",
+    "The 516 zero-counter waits and later satisfied latch snapshots do not approve a new primary package completion protocol.",
+    "Native checkpoint/SRAM provenance and original full watched-transaction limits remain unchanged."
+  ],
+  "encoded_default_opcode_identified": false,
+  "script_pointer_movement_observed": false,
+  "owner_clear_write_observed": false,
+  "owner_clear_readback_observed": false,
+  "scene_write_isr_ownership_proved": false,
+  "high_package_completion_proved": false,
+  "production_approval": false,
+  "new_native_execution": false,
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_package_completion_witness_v1.py"
+  ],
+  "serialization": "UTF-8 indented JSON, LF, one trailing newline"
+}

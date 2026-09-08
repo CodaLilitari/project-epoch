@@ -47,6 +47,16 @@ MAP-011 separately corrects the default command handler's claimed pointer
 advance. The [completion contract](docs/schala_package_completion_contract_v1.md)
 shows why terminal `$00` and the caller's completion signals need distinct
 proofs; the existing authoring policy is unchanged.
+The [completion-witness audit](docs/schala_package_completion_witness_v1.md)
+now connects the accepted action's actual counter write, caller snapshots,
+scene check and return without another emulator run. The separate
+[scene-input audit](docs/schala_scene_dispatch_inputs_v1.md) proves B=0 for
+the first command after tick setup while keeping later handler-return B and
+the complete legal script/command domains open. Both packets have independent
+reproduction receipts and preserve the earlier evidence.
+The [outer-mode input contract](docs/schala_nmi_mode_inputs_v1.md) also
+establishes the exact busy-zero caller registers and records eight-bit index
+aliases, without turning its three reviewed cells into a proved legal domain.
 No game hook, production allocation, high production selector or logical PC
 `$07` is installed. Original cartridge tests and vanilla observations have
 separate evidence scopes.

@@ -276,6 +276,30 @@ These are separate namespaces. Never conflate them.
   All 70 direct default-handler opcodes are excluded by the existing v0
   authoring policy. This does not close every other command's indirect or
   aliased completion effects. No completion stream/policy is installed.
+- The separate completion-witness reuse audit revalidates the complete accepted
+  transaction pair and connects 516 zero-counter waits, the actual `$9876`
+  increment, caller snapshots, separate `$5D9B` check, cleanup and the same
+  queue caller. All eight actual latch writes have recorded snapshot readbacks.
+  Owner-stop entries only calculate `$7E5DB0/$7E5DAF`; their stores/readbacks,
+  the encoded default-family opcode and script-pointer changes were not
+  captured. This is existing vanilla evidence, not a high-package completion
+  protocol or new native run.
+- The scene-input prefix proves B=0 only before the first indexed command
+  reached after tick setup under M1/X0/D0. The continuation after an unmodeled
+  command return and a standalone slot entry retain unknown B. The 122
+  reviewed physical cells are not a complete legal domain: all 127 syntax
+  indices are recorded, and `$FA-$FE` overlap occupied `$F9` handler code.
+  Likewise 255 hypothetical non-`$FF` script IDs are not a legal rooted corpus.
+  Prove producer domains and each selected handler's return-B/width contract
+  before extending this to full scene or NMI closure.
+- The normal busy-zero NMI prefix now establishes A=`$0080`, X=`$002B`,
+  Y=`$CC90`, D=0, DBR=0 and M1/X0 at its first `$CD0C95` call, from arbitrary
+  symbolic entry bytes across all four native initial M/X combinations.
+  The 43-byte MVN and later TDC/PLB sequence are explicit. Its conditional
+  16-byte stack count is not a whole-NMI or physical ownership bound.
+  The mode dispatcher's 8-bit ASL makes `$80-$FF` alias `$00-$7F` under B=0;
+  256 hypothetical inputs select 128 physical cells. The first three cells
+  and occupied successor wrapper do not prove the complete legal mode domain.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
   ten-region census retains 44 original callee frontiers and explicit conditional

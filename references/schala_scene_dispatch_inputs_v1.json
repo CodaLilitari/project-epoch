@@ -1,0 +1,4830 @@
+{
+  "schema": "project-epoch-scene-dispatch-input-contract-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "spans": [
+    {
+      "name": "initializer",
+      "start": "CD0D33",
+      "end_exclusive": "CD0D62",
+      "size": 47,
+      "sha256": "f5085c158bc23c516f51bb1d701866e19bd18b865c4a959e96550ced924a58a7"
+    },
+    {
+      "name": "background-config-reader",
+      "start": "CD0F42",
+      "end_exclusive": "CD0F62",
+      "size": 32,
+      "sha256": "e771998b50334fd023ef2c90de2cf16b94d1fd026bc4d078c42ba555cae3d415"
+    },
+    {
+      "name": "script-start",
+      "start": "CD15D5",
+      "end_exclusive": "CD1609",
+      "size": 52,
+      "sha256": "fecf987a80dc0592e83272d9be251a0d9f9f2db979feb90bf7c064428b412efd"
+    },
+    {
+      "name": "tick",
+      "start": "CD1609",
+      "end_exclusive": "CD1654",
+      "size": 75,
+      "sha256": "dce62d3d48a939537e1f9976e6177b9fda6f39e9076b72c4f4fc0e2af798fca9"
+    },
+    {
+      "name": "slot",
+      "start": "CD1654",
+      "end_exclusive": "CD16A6",
+      "size": 82,
+      "sha256": "c3f95e5fe6d77458c2fcb7b274031a9bda66a20121a5c88e7284d60fdf34f1b7"
+    },
+    {
+      "name": "dispatch",
+      "start": "CD16A6",
+      "end_exclusive": "CD16B5",
+      "size": 15,
+      "sha256": "de006cb5ff3d9e1303b29063bd54b1ff51cc794b038b1da68a285a8aa9efd28f"
+    },
+    {
+      "name": "reviewed-cell-prefix",
+      "start": "CD16B5",
+      "end_exclusive": "CD17A9",
+      "size": 244,
+      "sha256": "e1fe07cd81ca47f6e02ba61b565b22bacf33967482bb4970e43147c9631cc4da"
+    },
+    {
+      "name": "f9-target-body",
+      "start": "CD17A9",
+      "end_exclusive": "CD17BE",
+      "size": 21,
+      "sha256": "0904f1f58ecb736c0e605f6c428d54cff806de5ec7d11923a87546b0857e30be"
+    },
+    {
+      "name": "all-b-zero-syntax-cells",
+      "start": "CD16B5",
+      "end_exclusive": "CD17B3",
+      "size": 254,
+      "sha256": "6c9db81caca8b682feb44a305785deafafdd29b651065def9028fff663834073"
+    },
+    {
+      "name": "non-ff-script-id-read-cells",
+      "start": "D1646C",
+      "end_exclusive": "D1666A",
+      "size": 510,
+      "sha256": "b43241f863c1e35ce6ccf83407ddbe86621951fff0191656078ee7eaaa27e2aa"
+    }
+  ],
+  "prefix_b_proofs": {
+    "first-indexed-call-from-tick": {
+      "entry": "CD161D",
+      "initial_hidden_b": null,
+      "initial_d": 0,
+      "frontier": "CD16AF",
+      "frontier_hidden_b_values": [
+        0
+      ],
+      "frontier_hidden_b_can_be_unknown": false,
+      "frontier_reached": true,
+      "all_frontier_hidden_b_zero": true,
+      "abstract_states": 78,
+      "decoded_instructions": [
+        {
+          "address": "CD161D",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD161E",
+          "length": 1,
+          "sha256": "bceef655b5a034911f1c3718ce056531b45ef03b4c7b1f15629e867294011a7d"
+        },
+        {
+          "address": "CD161F",
+          "length": 1,
+          "sha256": "74e1ade320c66075468e17cfab33f41e8e0eaca45edb6dd7b086c49a358d2a69"
+        },
+        {
+          "address": "CD1620",
+          "length": 3,
+          "sha256": "56ce0ef6edffed1dcbeb4dc81fd107cb097a2c1f4579917c2b10f841b400a329"
+        },
+        {
+          "address": "CD1623",
+          "length": 2,
+          "sha256": "9cc4cbe2c51cbb6bd56fad94a7f2cc7988c50ff4f9e22c0306d0f334fc75532d"
+        },
+        {
+          "address": "CD1625",
+          "length": 3,
+          "sha256": "a732b7fca1eb4b366f35fc8381f8423495cac1d03c88aaba0775f2e4d5bcfdc4"
+        },
+        {
+          "address": "CD1628",
+          "length": 2,
+          "sha256": "ac7f3ba686f1bce86ab93019abf002b53ba7df33555540f7edfddfddf3861bcd"
+        },
+        {
+          "address": "CD162A",
+          "length": 3,
+          "sha256": "94d58efd2c2069cd41b6ee59d0a6b9c15bba0a5ca0e41062253e5102159b89a4"
+        },
+        {
+          "address": "CD162D",
+          "length": 3,
+          "sha256": "0b1c77338f60f243aaccaae70a6c104bb1fd3ff749bc44631b5b6a356338f490"
+        },
+        {
+          "address": "CD1630",
+          "length": 1,
+          "sha256": "bbeebd879e1dff6918546dc0c179fdde505f2a21591c9a9c96e36b054ec5af83"
+        },
+        {
+          "address": "CD1631",
+          "length": 3,
+          "sha256": "7738cff75a080c5a3f94eccc11e6ecddbed33d8f3a611047f7e914cc16710c8a"
+        },
+        {
+          "address": "CD1634",
+          "length": 1,
+          "sha256": "594e519ae499312b29433b7dd8a97ff068defcba9755b6d5d00e84c524d67b06"
+        },
+        {
+          "address": "CD1635",
+          "length": 2,
+          "sha256": "4f2e968b543c835e6648ddcc49faeb6987b4c293d8cd50a2db5d109741007579"
+        },
+        {
+          "address": "CD1637",
+          "length": 1,
+          "sha256": "7c5bd2d144fdde498406edcb9fe60ce65b0dfa5f2dd7a7617f505e3d46d68bdb"
+        },
+        {
+          "address": "CD1638",
+          "length": 2,
+          "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+        },
+        {
+          "address": "CD163A",
+          "length": 1,
+          "sha256": "2d3193691934124461809fb9bc7e671215099fc7d961bfbe31943d40d477c890"
+        },
+        {
+          "address": "CD163B",
+          "length": 1,
+          "sha256": "452ba1ddef80246c48be7690193c76c1d61185906be9401014fe14f1be64b74f"
+        },
+        {
+          "address": "CD163C",
+          "length": 3,
+          "sha256": "c5dd502c3901a8db93cab18b65f234b49df5a9c20232ac70846d47b6b3279ca5"
+        },
+        {
+          "address": "CD163F",
+          "length": 1,
+          "sha256": "bceef655b5a034911f1c3718ce056531b45ef03b4c7b1f15629e867294011a7d"
+        },
+        {
+          "address": "CD1640",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD1641",
+          "length": 2,
+          "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+        },
+        {
+          "address": "CD1643",
+          "length": 3,
+          "sha256": "7a80aed5bc75d5275892c41bdcb111b714b938ebffd4d0613b4769ad2b5fe1aa"
+        },
+        {
+          "address": "CD1646",
+          "length": 2,
+          "sha256": "cfb3b25bf7eba812a912ec76673e58790c95785b8e377d4e1fd8e829995b1f89"
+        },
+        {
+          "address": "CD1648",
+          "length": 3,
+          "sha256": "608eaf7b08edbb1f4b113feabb4dbf08a0932afce16423a7555fb8ded61652ea"
+        },
+        {
+          "address": "CD164B",
+          "length": 2,
+          "sha256": "c1ed5df9519d7a17ef9cc97b9f1efc478d3e3333ad8820eee7156de821e658d7"
+        },
+        {
+          "address": "CD164D",
+          "length": 3,
+          "sha256": "9cbaf43f0b4a72d84e41787b9d4e60d4dd9e3af8ae84eb310d0817c4e3bcf893"
+        },
+        {
+          "address": "CD1650",
+          "length": 3,
+          "sha256": "82c7550e703f2ce17cbd780a0e7fb9b11c019359a7ce719a8ad81989bc6d8c56"
+        },
+        {
+          "address": "CD1653",
+          "length": 1,
+          "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+        },
+        {
+          "address": "CD1654",
+          "length": 1,
+          "sha256": "5d5c7d20a3aab9c158f23304df4bec3bd9d56c517db3caeaa519d4d05624d7a0"
+        },
+        {
+          "address": "CD1655",
+          "length": 3,
+          "sha256": "306cef884247ef589bf262b1961b8943a170c1ad27dadd411fc254c362a4f2c0"
+        },
+        {
+          "address": "CD1658",
+          "length": 2,
+          "sha256": "a2f33cc4f24f8299b867c0e9fdf09c3168cd8c702c33c595c0220db476a57ae4"
+        },
+        {
+          "address": "CD165A",
+          "length": 3,
+          "sha256": "2344ea7ada92549bf6be020ccc7ce483b74b9039e063673e58190628b639b395"
+        },
+        {
+          "address": "CD165D",
+          "length": 2,
+          "sha256": "19a8d11ecd4e5b1a4137997dc281acac9df2b2925e7aa2b9a6643542cf5bd4f9"
+        },
+        {
+          "address": "CD165F",
+          "length": 2,
+          "sha256": "1c20b2513a1fa7e27ee0601d55306e09222e22bd323f228db9d112f6ebb35f88"
+        },
+        {
+          "address": "CD1661",
+          "length": 2,
+          "sha256": "892f6e09c02c35b5381a165395599f21770c19b4f05d2ed71ccd2a45af414b1c"
+        },
+        {
+          "address": "CD1663",
+          "length": 2,
+          "sha256": "c2cd317acfd5548d5864367e0b9df0135aa0ebc0358b9c25ae74d531ebd270d8"
+        },
+        {
+          "address": "CD1665",
+          "length": 2,
+          "sha256": "ca47f3ab26eb95b212f913e360827194dba5d64ebea02dd85a58fbffeb101619"
+        },
+        {
+          "address": "CD1667",
+          "length": 2,
+          "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+        },
+        {
+          "address": "CD1669",
+          "length": 2,
+          "sha256": "01f8f39e9094ee641e6001465d1c9a90730daa4a1ae477ff6dd57d90d12980f6"
+        },
+        {
+          "address": "CD166B",
+          "length": 1,
+          "sha256": "58f7b0780592032e4d8602a3e8690fb2c701b2e1dd546e703445aabd6469734d"
+        },
+        {
+          "address": "CD166C",
+          "length": 3,
+          "sha256": "04782f3dd354cb05608b988eb65a737c5c5e747d6128d048bc2bab39a8799e14"
+        },
+        {
+          "address": "CD166F",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD1670",
+          "length": 2,
+          "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+        },
+        {
+          "address": "CD1672",
+          "length": 2,
+          "sha256": "34a2a36b068274d3a896f2910d96e17c74d10b90c54a0d01433de64add892389"
+        },
+        {
+          "address": "CD1674",
+          "length": 1,
+          "sha256": "452ba1ddef80246c48be7690193c76c1d61185906be9401014fe14f1be64b74f"
+        },
+        {
+          "address": "CD1675",
+          "length": 3,
+          "sha256": "b54520552059fc3b49278d6935b8aeae0b97c935434c96601633ca64dfbb15bc"
+        },
+        {
+          "address": "CD1678",
+          "length": 2,
+          "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+        },
+        {
+          "address": "CD167A",
+          "length": 1,
+          "sha256": "f8d20e598df20877e4d826246fc31ffb4615cbc059aec9ec8e5b28951d844a3f"
+        },
+        {
+          "address": "CD167B",
+          "length": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "address": "CD167C",
+          "length": 1,
+          "sha256": "452ba1ddef80246c48be7690193c76c1d61185906be9401014fe14f1be64b74f"
+        },
+        {
+          "address": "CD167D",
+          "length": 3,
+          "sha256": "04b57d7a7cd1e79318b36d7400caf0a254588a9e68f2691bf55a99a48c642b47"
+        },
+        {
+          "address": "CD1680",
+          "length": 3,
+          "sha256": "b9c19503482c709bcfdfaa4ce949f00bb8f0ff3a19b6194763c6aca4d9c704fd"
+        },
+        {
+          "address": "CD1683",
+          "length": 2,
+          "sha256": "01f8f39e9094ee641e6001465d1c9a90730daa4a1ae477ff6dd57d90d12980f6"
+        },
+        {
+          "address": "CD1685",
+          "length": 1,
+          "sha256": "58f7b0780592032e4d8602a3e8690fb2c701b2e1dd546e703445aabd6469734d"
+        },
+        {
+          "address": "CD1686",
+          "length": 3,
+          "sha256": "04782f3dd354cb05608b988eb65a737c5c5e747d6128d048bc2bab39a8799e14"
+        },
+        {
+          "address": "CD1689",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD168A",
+          "length": 2,
+          "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+        },
+        {
+          "address": "CD168C",
+          "length": 3,
+          "sha256": "3b2fdc3268b31e0e10a973cf348f04b7819f070c5b4b30040d1d8abb16f006d4"
+        },
+        {
+          "address": "CD168F",
+          "length": 2,
+          "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf"
+        },
+        {
+          "address": "CD1691",
+          "length": 2,
+          "sha256": "a8889bd389592a8cc5613dfe0353cbc910d6382aff576fe4438fc455b470649a"
+        },
+        {
+          "address": "CD1693",
+          "length": 2,
+          "sha256": "3629b242adba7b3ceb2b1671781bbf97ac4528828f06615302b3763f9c0d5694"
+        },
+        {
+          "address": "CD1695",
+          "length": 3,
+          "sha256": "6a08c843b01c7bc187ca3b2011eaeed554c312462116b902ab3d977b482115c9"
+        },
+        {
+          "address": "CD169F",
+          "length": 1,
+          "sha256": "aa7225e7d5b0a2552bbb58880b3ec00c286995b801a7aeb69281e76a8b4908de"
+        },
+        {
+          "address": "CD16A0",
+          "length": 1,
+          "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+        },
+        {
+          "address": "CD16A1",
+          "length": 3,
+          "sha256": "c01cd868ac64ef58fcfdc41fd10b03f98f74e4591cabdb8f5b29a458e38ea370"
+        },
+        {
+          "address": "CD16A4",
+          "length": 1,
+          "sha256": "aa7225e7d5b0a2552bbb58880b3ec00c286995b801a7aeb69281e76a8b4908de"
+        },
+        {
+          "address": "CD16A5",
+          "length": 1,
+          "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+        },
+        {
+          "address": "CD16A6",
+          "length": 2,
+          "sha256": "ad5abee6d54c3a6d59b52f912000f6db919b78a40c3c72e1f878abea4000747d"
+        },
+        {
+          "address": "CD16A8",
+          "length": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "address": "CD16A9",
+          "length": 1,
+          "sha256": "bceef655b5a034911f1c3718ce056531b45ef03b4c7b1f15629e867294011a7d"
+        },
+        {
+          "address": "CD16AA",
+          "length": 2,
+          "sha256": "d4df43b260cdc9847460c5026c92da9b30aced30ec1c01b305a2c97d676bb2f8"
+        },
+        {
+          "address": "CD16AC",
+          "length": 1,
+          "sha256": "7c5bd2d144fdde498406edcb9fe60ce65b0dfa5f2dd7a7617f505e3d46d68bdb"
+        },
+        {
+          "address": "CD16AD",
+          "length": 2,
+          "sha256": "a2f33cc4f24f8299b867c0e9fdf09c3168cd8c702c33c595c0220db476a57ae4"
+        },
+        {
+          "address": "CD16AF",
+          "length": 3,
+          "sha256": "ece5fceb57bbf0112d86c45ac0b82f13708a7c47312201afcf49a9f31d2713e2"
+        }
+      ],
+      "root_return_sites": [
+        "CD1653"
+      ],
+      "termination_proved": false,
+      "physical_stack_model": false,
+      "branch_value_feasibility_proved": false,
+      "command_handler_executed_or_summarized": false
+    },
+    "standalone-slot-with-unknown-b": {
+      "entry": "CD1654",
+      "initial_hidden_b": null,
+      "initial_d": 0,
+      "frontier": "CD16AF",
+      "frontier_hidden_b_values": [],
+      "frontier_hidden_b_can_be_unknown": true,
+      "frontier_reached": true,
+      "all_frontier_hidden_b_zero": false,
+      "abstract_states": 46,
+      "decoded_instructions": [
+        {
+          "address": "CD1654",
+          "length": 1,
+          "sha256": "5d5c7d20a3aab9c158f23304df4bec3bd9d56c517db3caeaa519d4d05624d7a0"
+        },
+        {
+          "address": "CD1655",
+          "length": 3,
+          "sha256": "306cef884247ef589bf262b1961b8943a170c1ad27dadd411fc254c362a4f2c0"
+        },
+        {
+          "address": "CD1658",
+          "length": 2,
+          "sha256": "a2f33cc4f24f8299b867c0e9fdf09c3168cd8c702c33c595c0220db476a57ae4"
+        },
+        {
+          "address": "CD165A",
+          "length": 3,
+          "sha256": "2344ea7ada92549bf6be020ccc7ce483b74b9039e063673e58190628b639b395"
+        },
+        {
+          "address": "CD165D",
+          "length": 2,
+          "sha256": "19a8d11ecd4e5b1a4137997dc281acac9df2b2925e7aa2b9a6643542cf5bd4f9"
+        },
+        {
+          "address": "CD165F",
+          "length": 2,
+          "sha256": "1c20b2513a1fa7e27ee0601d55306e09222e22bd323f228db9d112f6ebb35f88"
+        },
+        {
+          "address": "CD1661",
+          "length": 2,
+          "sha256": "892f6e09c02c35b5381a165395599f21770c19b4f05d2ed71ccd2a45af414b1c"
+        },
+        {
+          "address": "CD1663",
+          "length": 2,
+          "sha256": "c2cd317acfd5548d5864367e0b9df0135aa0ebc0358b9c25ae74d531ebd270d8"
+        },
+        {
+          "address": "CD1665",
+          "length": 2,
+          "sha256": "ca47f3ab26eb95b212f913e360827194dba5d64ebea02dd85a58fbffeb101619"
+        },
+        {
+          "address": "CD1667",
+          "length": 2,
+          "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+        },
+        {
+          "address": "CD1669",
+          "length": 2,
+          "sha256": "01f8f39e9094ee641e6001465d1c9a90730daa4a1ae477ff6dd57d90d12980f6"
+        },
+        {
+          "address": "CD166B",
+          "length": 1,
+          "sha256": "58f7b0780592032e4d8602a3e8690fb2c701b2e1dd546e703445aabd6469734d"
+        },
+        {
+          "address": "CD166C",
+          "length": 3,
+          "sha256": "04782f3dd354cb05608b988eb65a737c5c5e747d6128d048bc2bab39a8799e14"
+        },
+        {
+          "address": "CD166F",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD1670",
+          "length": 2,
+          "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+        },
+        {
+          "address": "CD1672",
+          "length": 2,
+          "sha256": "34a2a36b068274d3a896f2910d96e17c74d10b90c54a0d01433de64add892389"
+        },
+        {
+          "address": "CD1674",
+          "length": 1,
+          "sha256": "452ba1ddef80246c48be7690193c76c1d61185906be9401014fe14f1be64b74f"
+        },
+        {
+          "address": "CD1675",
+          "length": 3,
+          "sha256": "b54520552059fc3b49278d6935b8aeae0b97c935434c96601633ca64dfbb15bc"
+        },
+        {
+          "address": "CD1678",
+          "length": 2,
+          "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+        },
+        {
+          "address": "CD167A",
+          "length": 1,
+          "sha256": "f8d20e598df20877e4d826246fc31ffb4615cbc059aec9ec8e5b28951d844a3f"
+        },
+        {
+          "address": "CD167B",
+          "length": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "address": "CD167C",
+          "length": 1,
+          "sha256": "452ba1ddef80246c48be7690193c76c1d61185906be9401014fe14f1be64b74f"
+        },
+        {
+          "address": "CD167D",
+          "length": 3,
+          "sha256": "04b57d7a7cd1e79318b36d7400caf0a254588a9e68f2691bf55a99a48c642b47"
+        },
+        {
+          "address": "CD1680",
+          "length": 3,
+          "sha256": "b9c19503482c709bcfdfaa4ce949f00bb8f0ff3a19b6194763c6aca4d9c704fd"
+        },
+        {
+          "address": "CD1683",
+          "length": 2,
+          "sha256": "01f8f39e9094ee641e6001465d1c9a90730daa4a1ae477ff6dd57d90d12980f6"
+        },
+        {
+          "address": "CD1685",
+          "length": 1,
+          "sha256": "58f7b0780592032e4d8602a3e8690fb2c701b2e1dd546e703445aabd6469734d"
+        },
+        {
+          "address": "CD1686",
+          "length": 3,
+          "sha256": "04782f3dd354cb05608b988eb65a737c5c5e747d6128d048bc2bab39a8799e14"
+        },
+        {
+          "address": "CD1689",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD168A",
+          "length": 2,
+          "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+        },
+        {
+          "address": "CD168C",
+          "length": 3,
+          "sha256": "3b2fdc3268b31e0e10a973cf348f04b7819f070c5b4b30040d1d8abb16f006d4"
+        },
+        {
+          "address": "CD168F",
+          "length": 2,
+          "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf"
+        },
+        {
+          "address": "CD1691",
+          "length": 2,
+          "sha256": "a8889bd389592a8cc5613dfe0353cbc910d6382aff576fe4438fc455b470649a"
+        },
+        {
+          "address": "CD1693",
+          "length": 2,
+          "sha256": "3629b242adba7b3ceb2b1671781bbf97ac4528828f06615302b3763f9c0d5694"
+        },
+        {
+          "address": "CD1695",
+          "length": 3,
+          "sha256": "6a08c843b01c7bc187ca3b2011eaeed554c312462116b902ab3d977b482115c9"
+        },
+        {
+          "address": "CD169F",
+          "length": 1,
+          "sha256": "aa7225e7d5b0a2552bbb58880b3ec00c286995b801a7aeb69281e76a8b4908de"
+        },
+        {
+          "address": "CD16A0",
+          "length": 1,
+          "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+        },
+        {
+          "address": "CD16A1",
+          "length": 3,
+          "sha256": "c01cd868ac64ef58fcfdc41fd10b03f98f74e4591cabdb8f5b29a458e38ea370"
+        },
+        {
+          "address": "CD16A4",
+          "length": 1,
+          "sha256": "aa7225e7d5b0a2552bbb58880b3ec00c286995b801a7aeb69281e76a8b4908de"
+        },
+        {
+          "address": "CD16A5",
+          "length": 1,
+          "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+        },
+        {
+          "address": "CD16A6",
+          "length": 2,
+          "sha256": "ad5abee6d54c3a6d59b52f912000f6db919b78a40c3c72e1f878abea4000747d"
+        },
+        {
+          "address": "CD16A8",
+          "length": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "address": "CD16A9",
+          "length": 1,
+          "sha256": "bceef655b5a034911f1c3718ce056531b45ef03b4c7b1f15629e867294011a7d"
+        },
+        {
+          "address": "CD16AA",
+          "length": 2,
+          "sha256": "d4df43b260cdc9847460c5026c92da9b30aced30ec1c01b305a2c97d676bb2f8"
+        },
+        {
+          "address": "CD16AC",
+          "length": 1,
+          "sha256": "7c5bd2d144fdde498406edcb9fe60ce65b0dfa5f2dd7a7617f505e3d46d68bdb"
+        },
+        {
+          "address": "CD16AD",
+          "length": 2,
+          "sha256": "a2f33cc4f24f8299b867c0e9fdf09c3168cd8c702c33c595c0220db476a57ae4"
+        },
+        {
+          "address": "CD16AF",
+          "length": 3,
+          "sha256": "ece5fceb57bbf0112d86c45ac0b82f13708a7c47312201afcf49a9f31d2713e2"
+        }
+      ],
+      "root_return_sites": [
+        "CD16A0",
+        "CD16A5"
+      ],
+      "termination_proved": false,
+      "physical_stack_model": false,
+      "branch_value_feasibility_proved": false,
+      "command_handler_executed_or_summarized": false
+    },
+    "next-command-after-unmodeled-return": {
+      "entry": "CD1698",
+      "initial_hidden_b": null,
+      "initial_d": 0,
+      "frontier": "CD16AF",
+      "frontier_hidden_b_values": [],
+      "frontier_hidden_b_can_be_unknown": true,
+      "frontier_reached": true,
+      "all_frontier_hidden_b_zero": false,
+      "abstract_states": 45,
+      "decoded_instructions": [
+        {
+          "address": "CD165F",
+          "length": 2,
+          "sha256": "1c20b2513a1fa7e27ee0601d55306e09222e22bd323f228db9d112f6ebb35f88"
+        },
+        {
+          "address": "CD1661",
+          "length": 2,
+          "sha256": "892f6e09c02c35b5381a165395599f21770c19b4f05d2ed71ccd2a45af414b1c"
+        },
+        {
+          "address": "CD1663",
+          "length": 2,
+          "sha256": "c2cd317acfd5548d5864367e0b9df0135aa0ebc0358b9c25ae74d531ebd270d8"
+        },
+        {
+          "address": "CD1665",
+          "length": 2,
+          "sha256": "ca47f3ab26eb95b212f913e360827194dba5d64ebea02dd85a58fbffeb101619"
+        },
+        {
+          "address": "CD1667",
+          "length": 2,
+          "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+        },
+        {
+          "address": "CD1669",
+          "length": 2,
+          "sha256": "01f8f39e9094ee641e6001465d1c9a90730daa4a1ae477ff6dd57d90d12980f6"
+        },
+        {
+          "address": "CD166B",
+          "length": 1,
+          "sha256": "58f7b0780592032e4d8602a3e8690fb2c701b2e1dd546e703445aabd6469734d"
+        },
+        {
+          "address": "CD166C",
+          "length": 3,
+          "sha256": "04782f3dd354cb05608b988eb65a737c5c5e747d6128d048bc2bab39a8799e14"
+        },
+        {
+          "address": "CD166F",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD1670",
+          "length": 2,
+          "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+        },
+        {
+          "address": "CD1672",
+          "length": 2,
+          "sha256": "34a2a36b068274d3a896f2910d96e17c74d10b90c54a0d01433de64add892389"
+        },
+        {
+          "address": "CD1674",
+          "length": 1,
+          "sha256": "452ba1ddef80246c48be7690193c76c1d61185906be9401014fe14f1be64b74f"
+        },
+        {
+          "address": "CD1675",
+          "length": 3,
+          "sha256": "b54520552059fc3b49278d6935b8aeae0b97c935434c96601633ca64dfbb15bc"
+        },
+        {
+          "address": "CD1678",
+          "length": 2,
+          "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+        },
+        {
+          "address": "CD167A",
+          "length": 1,
+          "sha256": "f8d20e598df20877e4d826246fc31ffb4615cbc059aec9ec8e5b28951d844a3f"
+        },
+        {
+          "address": "CD167B",
+          "length": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "address": "CD167C",
+          "length": 1,
+          "sha256": "452ba1ddef80246c48be7690193c76c1d61185906be9401014fe14f1be64b74f"
+        },
+        {
+          "address": "CD167D",
+          "length": 3,
+          "sha256": "04b57d7a7cd1e79318b36d7400caf0a254588a9e68f2691bf55a99a48c642b47"
+        },
+        {
+          "address": "CD1680",
+          "length": 3,
+          "sha256": "b9c19503482c709bcfdfaa4ce949f00bb8f0ff3a19b6194763c6aca4d9c704fd"
+        },
+        {
+          "address": "CD1683",
+          "length": 2,
+          "sha256": "01f8f39e9094ee641e6001465d1c9a90730daa4a1ae477ff6dd57d90d12980f6"
+        },
+        {
+          "address": "CD1685",
+          "length": 1,
+          "sha256": "58f7b0780592032e4d8602a3e8690fb2c701b2e1dd546e703445aabd6469734d"
+        },
+        {
+          "address": "CD1686",
+          "length": 3,
+          "sha256": "04782f3dd354cb05608b988eb65a737c5c5e747d6128d048bc2bab39a8799e14"
+        },
+        {
+          "address": "CD1689",
+          "length": 1,
+          "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+        },
+        {
+          "address": "CD168A",
+          "length": 2,
+          "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+        },
+        {
+          "address": "CD168C",
+          "length": 3,
+          "sha256": "3b2fdc3268b31e0e10a973cf348f04b7819f070c5b4b30040d1d8abb16f006d4"
+        },
+        {
+          "address": "CD168F",
+          "length": 2,
+          "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf"
+        },
+        {
+          "address": "CD1691",
+          "length": 2,
+          "sha256": "a8889bd389592a8cc5613dfe0353cbc910d6382aff576fe4438fc455b470649a"
+        },
+        {
+          "address": "CD1693",
+          "length": 2,
+          "sha256": "3629b242adba7b3ceb2b1671781bbf97ac4528828f06615302b3763f9c0d5694"
+        },
+        {
+          "address": "CD1695",
+          "length": 3,
+          "sha256": "6a08c843b01c7bc187ca3b2011eaeed554c312462116b902ab3d977b482115c9"
+        },
+        {
+          "address": "CD1698",
+          "length": 2,
+          "sha256": "d4df43b260cdc9847460c5026c92da9b30aced30ec1c01b305a2c97d676bb2f8"
+        },
+        {
+          "address": "CD169A",
+          "length": 1,
+          "sha256": "7c5bd2d144fdde498406edcb9fe60ce65b0dfa5f2dd7a7617f505e3d46d68bdb"
+        },
+        {
+          "address": "CD169B",
+          "length": 2,
+          "sha256": "a2f33cc4f24f8299b867c0e9fdf09c3168cd8c702c33c595c0220db476a57ae4"
+        },
+        {
+          "address": "CD169D",
+          "length": 2,
+          "sha256": "0bd8a2bd1e76882f84e7a5cc113bea06f3540c97e9a48d6aefb4ecfd901b653b"
+        },
+        {
+          "address": "CD169F",
+          "length": 1,
+          "sha256": "aa7225e7d5b0a2552bbb58880b3ec00c286995b801a7aeb69281e76a8b4908de"
+        },
+        {
+          "address": "CD16A0",
+          "length": 1,
+          "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+        },
+        {
+          "address": "CD16A1",
+          "length": 3,
+          "sha256": "c01cd868ac64ef58fcfdc41fd10b03f98f74e4591cabdb8f5b29a458e38ea370"
+        },
+        {
+          "address": "CD16A4",
+          "length": 1,
+          "sha256": "aa7225e7d5b0a2552bbb58880b3ec00c286995b801a7aeb69281e76a8b4908de"
+        },
+        {
+          "address": "CD16A5",
+          "length": 1,
+          "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+        },
+        {
+          "address": "CD16A6",
+          "length": 2,
+          "sha256": "ad5abee6d54c3a6d59b52f912000f6db919b78a40c3c72e1f878abea4000747d"
+        },
+        {
+          "address": "CD16A8",
+          "length": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "address": "CD16A9",
+          "length": 1,
+          "sha256": "bceef655b5a034911f1c3718ce056531b45ef03b4c7b1f15629e867294011a7d"
+        },
+        {
+          "address": "CD16AA",
+          "length": 2,
+          "sha256": "d4df43b260cdc9847460c5026c92da9b30aced30ec1c01b305a2c97d676bb2f8"
+        },
+        {
+          "address": "CD16AC",
+          "length": 1,
+          "sha256": "7c5bd2d144fdde498406edcb9fe60ce65b0dfa5f2dd7a7617f505e3d46d68bdb"
+        },
+        {
+          "address": "CD16AD",
+          "length": 2,
+          "sha256": "a2f33cc4f24f8299b867c0e9fdf09c3168cd8c702c33c595c0220db476a57ae4"
+        },
+        {
+          "address": "CD16AF",
+          "length": 3,
+          "sha256": "ece5fceb57bbf0112d86c45ac0b82f13708a7c47312201afcf49a9f31d2713e2"
+        }
+      ],
+      "root_return_sites": [
+        "CD16A0",
+        "CD16A5"
+      ],
+      "termination_proved": false,
+      "physical_stack_model": false,
+      "branch_value_feasibility_proved": false,
+      "command_handler_executed_or_summarized": false
+    }
+  },
+  "syntax_command_counts": {
+    "tilemap": 127,
+    "yield": 1,
+    "indexed-command": 127,
+    "stop": 1
+  },
+  "exhaustive_hidden_b_command_pairs": 32512,
+  "pointer_word_bank_wrap_pairs": 1,
+  "b_zero_syntax_cells": [
+    {
+      "command": 128,
+      "hidden_b": 0,
+      "x": 0,
+      "pointer_byte_addresses": [
+        13440693,
+        13440694
+      ],
+      "target": "CD2A4A",
+      "pointer_bytes_sha256": "fb6a10fa5865949987a452996eaaf3642189f54463a6168b0a0c616aa77d7fb8",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 129,
+      "hidden_b": 0,
+      "x": 2,
+      "pointer_byte_addresses": [
+        13440695,
+        13440696
+      ],
+      "target": "CD2DCB",
+      "pointer_bytes_sha256": "dea7a834432c97d8579623fc8c409c265d079e0d427123a584d19227ad8b97ae",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 130,
+      "hidden_b": 0,
+      "x": 4,
+      "pointer_byte_addresses": [
+        13440697,
+        13440698
+      ],
+      "target": "CD2DD6",
+      "pointer_bytes_sha256": "cce37423d0a4e7634e240d00289bb1b20effbed150e5d84f8ab38efc7eebf18c",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 131,
+      "hidden_b": 0,
+      "x": 6,
+      "pointer_byte_addresses": [
+        13440699,
+        13440700
+      ],
+      "target": "CD2EA2",
+      "pointer_bytes_sha256": "e2b2837817f71f38196d6916ae720d5cd04c1a50b73b538c5826e56085cd3bf0",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 132,
+      "hidden_b": 0,
+      "x": 8,
+      "pointer_byte_addresses": [
+        13440701,
+        13440702
+      ],
+      "target": "CD2EB5",
+      "pointer_bytes_sha256": "1bd4302a3b508a30110d29ebf630c3e5ab71deba5d0192b5b9041177fd5db623",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 133,
+      "hidden_b": 0,
+      "x": 10,
+      "pointer_byte_addresses": [
+        13440703,
+        13440704
+      ],
+      "target": "CD2EC8",
+      "pointer_bytes_sha256": "3c7c4327f1c76b09f71c7b4721d57c0e94e44f78f29f8dac2138202881475ec6",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 134,
+      "hidden_b": 0,
+      "x": 12,
+      "pointer_byte_addresses": [
+        13440705,
+        13440706
+      ],
+      "target": "CD2EDE",
+      "pointer_bytes_sha256": "6c910eec2b0d4ade5884666f7bca68b8edcc6e24964abf3b90a169e2f4b35653",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 135,
+      "hidden_b": 0,
+      "x": 14,
+      "pointer_byte_addresses": [
+        13440707,
+        13440708
+      ],
+      "target": "CD2687",
+      "pointer_bytes_sha256": "b59d9eb598041e4ae41239cf515c70f853c1a757b3fe7364cbd8eb06df0bca62",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 136,
+      "hidden_b": 0,
+      "x": 16,
+      "pointer_byte_addresses": [
+        13440709,
+        13440710
+      ],
+      "target": "CD29DA",
+      "pointer_bytes_sha256": "e6ffe073a43c345c07fd80ba8ff74fe53f82eb1fd6a8731766d113476f108450",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 137,
+      "hidden_b": 0,
+      "x": 18,
+      "pointer_byte_addresses": [
+        13440711,
+        13440712
+      ],
+      "target": "CD2FBC",
+      "pointer_bytes_sha256": "68e3e6a2861cdc382ad794160a05db0e9c199c2e7c462169ad0cb0e52ce10bee",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 138,
+      "hidden_b": 0,
+      "x": 20,
+      "pointer_byte_addresses": [
+        13440713,
+        13440714
+      ],
+      "target": "CD2FED",
+      "pointer_bytes_sha256": "2b72771098cc05c4175d866226c4aa0abbc0816282932ea9190ffaff1e9c2531",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 139,
+      "hidden_b": 0,
+      "x": 22,
+      "pointer_byte_addresses": [
+        13440715,
+        13440716
+      ],
+      "target": "CD2FB7",
+      "pointer_bytes_sha256": "a8e20963d9af132c4c6780965362cdd241df0c3163548c825e4169746597a469",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 140,
+      "hidden_b": 0,
+      "x": 24,
+      "pointer_byte_addresses": [
+        13440717,
+        13440718
+      ],
+      "target": "CD2958",
+      "pointer_bytes_sha256": "7f2890863e013c9d50ae1505735da5f17be6174738ad7bb7a247ea82ca8d1391",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 141,
+      "hidden_b": 0,
+      "x": 26,
+      "pointer_byte_addresses": [
+        13440719,
+        13440720
+      ],
+      "target": "CD2999",
+      "pointer_bytes_sha256": "bfa34f85266f2acbbfe430ed43191a332dc10f85b27184d5d9eb972eddd4e448",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 142,
+      "hidden_b": 0,
+      "x": 28,
+      "pointer_byte_addresses": [
+        13440721,
+        13440722
+      ],
+      "target": "CD29E3",
+      "pointer_bytes_sha256": "d086f42b1391a6a600baa515538d588fff1bde5de2472bb9b083bd71a690ed93",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 143,
+      "hidden_b": 0,
+      "x": 30,
+      "pointer_byte_addresses": [
+        13440723,
+        13440724
+      ],
+      "target": "CD253B",
+      "pointer_bytes_sha256": "9945038d680daa08726b500d18976e2245ee91d9f97b714dfc64799d6bae7300",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 144,
+      "hidden_b": 0,
+      "x": 32,
+      "pointer_byte_addresses": [
+        13440725,
+        13440726
+      ],
+      "target": "CD2EF7",
+      "pointer_bytes_sha256": "f1048b9141cca8a53e26bfc15001a31104d438fb9f08a6c70b1d917d882f7b05",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 145,
+      "hidden_b": 0,
+      "x": 34,
+      "pointer_byte_addresses": [
+        13440727,
+        13440728
+      ],
+      "target": "CD2F4E",
+      "pointer_bytes_sha256": "a53f0dcf6821342ef632f0d8ab43a979e1cc7473b4f2b72aed8743f8db09769e",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 146,
+      "hidden_b": 0,
+      "x": 36,
+      "pointer_byte_addresses": [
+        13440729,
+        13440730
+      ],
+      "target": "CD2F61",
+      "pointer_bytes_sha256": "b3dda5b674f9ce730a37dee0a33bb31efeea2335f517774f6ea133d448df2178",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 147,
+      "hidden_b": 0,
+      "x": 38,
+      "pointer_byte_addresses": [
+        13440731,
+        13440732
+      ],
+      "target": "CD2F6E",
+      "pointer_bytes_sha256": "e246b8992ea2555828338ddf368f55f574c226451ca80a93ce500a59d51470c9",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 148,
+      "hidden_b": 0,
+      "x": 40,
+      "pointer_byte_addresses": [
+        13440733,
+        13440734
+      ],
+      "target": "CD2F8B",
+      "pointer_bytes_sha256": "f97d0962f5aad9559c6064f62d8460c3373966b0c2782209d2dbdaa44afe7ea7",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 149,
+      "hidden_b": 0,
+      "x": 42,
+      "pointer_byte_addresses": [
+        13440735,
+        13440736
+      ],
+      "target": "CD2FAB",
+      "pointer_bytes_sha256": "a320806fe9a04a8cd5ed2bd045cef765ead5655aacb565e3308b784919d3ff25",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 150,
+      "hidden_b": 0,
+      "x": 44,
+      "pointer_byte_addresses": [
+        13440737,
+        13440738
+      ],
+      "target": "CD2FB1",
+      "pointer_bytes_sha256": "dc1f4e30338b75850742878446b5eb4d10e8e3f5160af405b010c0395206986a",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 151,
+      "hidden_b": 0,
+      "x": 46,
+      "pointer_byte_addresses": [
+        13440739,
+        13440740
+      ],
+      "target": "CD30BE",
+      "pointer_bytes_sha256": "aeb82459fb745651140f2cd868d8ca045cd7ba8c34c14b6c559bd0e97a2531a5",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 152,
+      "hidden_b": 0,
+      "x": 48,
+      "pointer_byte_addresses": [
+        13440741,
+        13440742
+      ],
+      "target": "CD3092",
+      "pointer_bytes_sha256": "1a87eafc8f470de30f361ad8841baf1b40445735046208ba64edbfa6578628df",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 153,
+      "hidden_b": 0,
+      "x": 50,
+      "pointer_byte_addresses": [
+        13440743,
+        13440744
+      ],
+      "target": "CD30B8",
+      "pointer_bytes_sha256": "f41774143b76b64cbb3e0d2fa08f18c56a29bf58a7bf5683c1c845a7ae66e294",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 154,
+      "hidden_b": 0,
+      "x": 52,
+      "pointer_byte_addresses": [
+        13440745,
+        13440746
+      ],
+      "target": "CD308C",
+      "pointer_bytes_sha256": "ffe1fe78c60c6be2430573335a8ad8b85b8a02bb755b1232ced84f45c66dc6b5",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 155,
+      "hidden_b": 0,
+      "x": 54,
+      "pointer_byte_addresses": [
+        13440747,
+        13440748
+      ],
+      "target": "CD3083",
+      "pointer_bytes_sha256": "1b6f39c4cc7f138c7dde9b36ac6da0a1dd3bac19a27b38c65612ca419de99f07",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 156,
+      "hidden_b": 0,
+      "x": 56,
+      "pointer_byte_addresses": [
+        13440749,
+        13440750
+      ],
+      "target": "CD303B",
+      "pointer_bytes_sha256": "0c83f084ca6fac061e6e68b84e02670e7a5b328976b324bbdafac7a3963c2eac",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 157,
+      "hidden_b": 0,
+      "x": 58,
+      "pointer_byte_addresses": [
+        13440751,
+        13440752
+      ],
+      "target": "CD3032",
+      "pointer_bytes_sha256": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 158,
+      "hidden_b": 0,
+      "x": 60,
+      "pointer_byte_addresses": [
+        13440753,
+        13440754
+      ],
+      "target": "CD3029",
+      "pointer_bytes_sha256": "fa41ba99a628b4adfd8dc276f9fe895ca04dba88f62e62d1d3838969b956ebf7",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 159,
+      "hidden_b": 0,
+      "x": 62,
+      "pointer_byte_addresses": [
+        13440755,
+        13440756
+      ],
+      "target": "CD3020",
+      "pointer_bytes_sha256": "f00d9ca07f97df0310dc4cf04a2eb3a328a0e370b65a73ec10b58d91c2e870d4",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 160,
+      "hidden_b": 0,
+      "x": 64,
+      "pointer_byte_addresses": [
+        13440757,
+        13440758
+      ],
+      "target": "CD3017",
+      "pointer_bytes_sha256": "911d55102e0b9e9933c4e2d4db2ab7baf94185c69aeebad2181747a01305e21a",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 161,
+      "hidden_b": 0,
+      "x": 66,
+      "pointer_byte_addresses": [
+        13440759,
+        13440760
+      ],
+      "target": "CD2952",
+      "pointer_bytes_sha256": "522ceb9e0e461818ae7540169ff9a462d1121e59aa7c4bfa4796f8f468aa8941",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 162,
+      "hidden_b": 0,
+      "x": 68,
+      "pointer_byte_addresses": [
+        13440761,
+        13440762
+      ],
+      "target": "CD278E",
+      "pointer_bytes_sha256": "4a03a5753e5910ad257b56e66f81e91247580d1acdaaef8b28fccb409b5ff9f0",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 163,
+      "hidden_b": 0,
+      "x": 70,
+      "pointer_byte_addresses": [
+        13440763,
+        13440764
+      ],
+      "target": "CD2717",
+      "pointer_bytes_sha256": "56fb1f35b5e53eed0bca6c44144fe261204f8b7b019a21ab3c03aaa8e14f210c",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 164,
+      "hidden_b": 0,
+      "x": 72,
+      "pointer_byte_addresses": [
+        13440765,
+        13440766
+      ],
+      "target": "CD26E0",
+      "pointer_bytes_sha256": "51609d0d54dd366c9abfe8e116aae9e4ef3441a7f8c229b1ab1602b79d946997",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 165,
+      "hidden_b": 0,
+      "x": 74,
+      "pointer_byte_addresses": [
+        13440767,
+        13440768
+      ],
+      "target": "CD2690",
+      "pointer_bytes_sha256": "6b879a4e5bd8eb128366e700d6f9e8eda03bf0887bed849de063fe832bfe2a68",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 166,
+      "hidden_b": 0,
+      "x": 76,
+      "pointer_byte_addresses": [
+        13440769,
+        13440770
+      ],
+      "target": "CD26C0",
+      "pointer_bytes_sha256": "6fcec59847faf16c26fff98c6ef3c09c6adb10887ab17e67b278e403649db60a",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 167,
+      "hidden_b": 0,
+      "x": 78,
+      "pointer_byte_addresses": [
+        13440771,
+        13440772
+      ],
+      "target": "CD2660",
+      "pointer_bytes_sha256": "5fdc1c9bdb6febe7f5d72a17652e5a48fbe8323f0feeb8f7a32f1f1054c3290a",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 168,
+      "hidden_b": 0,
+      "x": 80,
+      "pointer_byte_addresses": [
+        13440773,
+        13440774
+      ],
+      "target": "CD27CA",
+      "pointer_bytes_sha256": "9a49095c9a865ae4fae0d2af69b395f1c318a184084849cdeac817efe05342d7",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 169,
+      "hidden_b": 0,
+      "x": 82,
+      "pointer_byte_addresses": [
+        13440775,
+        13440776
+      ],
+      "target": "CD2518",
+      "pointer_bytes_sha256": "cd9901ddf79f7c4c4cadbbd9f6ad926ecdaffba63f047701403b8191fa06098f",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 170,
+      "hidden_b": 0,
+      "x": 84,
+      "pointer_byte_addresses": [
+        13440777,
+        13440778
+      ],
+      "target": "CD1C32",
+      "pointer_bytes_sha256": "2748b0d1687439efe595d389857a1a63d157e90c1e748be46da88aab87b7e9bc",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 171,
+      "hidden_b": 0,
+      "x": 86,
+      "pointer_byte_addresses": [
+        13440779,
+        13440780
+      ],
+      "target": "CD24F3",
+      "pointer_bytes_sha256": "2fec46a90ac9ea7a084de840c3a4b6509577cfa9048255f1292061df80d94c90",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 172,
+      "hidden_b": 0,
+      "x": 88,
+      "pointer_byte_addresses": [
+        13440781,
+        13440782
+      ],
+      "target": "CD2460",
+      "pointer_bytes_sha256": "90b305f73093659246e30154961a9c7c6fc63580e329c73c747df67d46b460ca",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 173,
+      "hidden_b": 0,
+      "x": 90,
+      "pointer_byte_addresses": [
+        13440783,
+        13440784
+      ],
+      "target": "CD21C0",
+      "pointer_bytes_sha256": "f4690a902e0fc3b636d66a4578c4666338e539424e88c44adfdabc98b1cac8ad",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 174,
+      "hidden_b": 0,
+      "x": 92,
+      "pointer_byte_addresses": [
+        13440785,
+        13440786
+      ],
+      "target": "CD2173",
+      "pointer_bytes_sha256": "831cccfec3cac9ecd3318c6bf384ec357188b9f0eb3cd28167b49885903944ab",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 175,
+      "hidden_b": 0,
+      "x": 94,
+      "pointer_byte_addresses": [
+        13440787,
+        13440788
+      ],
+      "target": "CD20F3",
+      "pointer_bytes_sha256": "4ac161ef6206233cc2127acc0dd4ab8a3bd7721093b7e152b145027252d2d0ed",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 176,
+      "hidden_b": 0,
+      "x": 96,
+      "pointer_byte_addresses": [
+        13440789,
+        13440790
+      ],
+      "target": "CD20ED",
+      "pointer_bytes_sha256": "27b61437584eb7b2bcc5c170cd87fd283b71b0d00ca8a8f32f9b26886661b8f3",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 177,
+      "hidden_b": 0,
+      "x": 98,
+      "pointer_byte_addresses": [
+        13440791,
+        13440792
+      ],
+      "target": "CD20D8",
+      "pointer_bytes_sha256": "879e3c76070a22fb1f52409325bba66ed5b911b9551df80539c6242bae8d3494",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 178,
+      "hidden_b": 0,
+      "x": 100,
+      "pointer_byte_addresses": [
+        13440793,
+        13440794
+      ],
+      "target": "CD20D3",
+      "pointer_bytes_sha256": "e74e72be248b7c848249a098464eb945c5b5cdb926e7e754940e0a4f3116ddc3",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 179,
+      "hidden_b": 0,
+      "x": 102,
+      "pointer_byte_addresses": [
+        13440795,
+        13440796
+      ],
+      "target": "CD1FC8",
+      "pointer_bytes_sha256": "502500ac7c925b4c6aa49df7e9d85176dd10cd9d5831cdf7c4a4ad491c78fe00",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 180,
+      "hidden_b": 0,
+      "x": 104,
+      "pointer_byte_addresses": [
+        13440797,
+        13440798
+      ],
+      "target": "CD1FA0",
+      "pointer_bytes_sha256": "dd0d2200fcdb536df9778e4875cf9e2546b155dc35be5c45462ce7ef2504dc01",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 181,
+      "hidden_b": 0,
+      "x": 106,
+      "pointer_byte_addresses": [
+        13440799,
+        13440800
+      ],
+      "target": "CD1F53",
+      "pointer_bytes_sha256": "65003c71ebc1127ccd020ae4e2f5caf92d9d3fbeb442546d6d0d44fbf6ae0fe7",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 182,
+      "hidden_b": 0,
+      "x": 108,
+      "pointer_byte_addresses": [
+        13440801,
+        13440802
+      ],
+      "target": "CD1F53",
+      "pointer_bytes_sha256": "65003c71ebc1127ccd020ae4e2f5caf92d9d3fbeb442546d6d0d44fbf6ae0fe7",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 183,
+      "hidden_b": 0,
+      "x": 110,
+      "pointer_byte_addresses": [
+        13440803,
+        13440804
+      ],
+      "target": "CD1F4D",
+      "pointer_bytes_sha256": "4e6bb79005002b2b3a1683873ef9bb88f49088a8f5eb9ed495d3de845baa4038",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 184,
+      "hidden_b": 0,
+      "x": 112,
+      "pointer_byte_addresses": [
+        13440805,
+        13440806
+      ],
+      "target": "CD1F47",
+      "pointer_bytes_sha256": "752ccd951e9d1ed69be84c818270e0697e0b2a098f307920182f7d357e6ee825",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 185,
+      "hidden_b": 0,
+      "x": 114,
+      "pointer_byte_addresses": [
+        13440807,
+        13440808
+      ],
+      "target": "CD1F3C",
+      "pointer_bytes_sha256": "49486c43cf72c472bbf67cba6ab24e441cec622dfd84e56794c719c08ce6036a",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 186,
+      "hidden_b": 0,
+      "x": 116,
+      "pointer_byte_addresses": [
+        13440809,
+        13440810
+      ],
+      "target": "CD1E91",
+      "pointer_bytes_sha256": "47ffa3edd615c77f13b5778473c5b1de71c0c7b1c9169389366effa3e72f1d3f",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 187,
+      "hidden_b": 0,
+      "x": 118,
+      "pointer_byte_addresses": [
+        13440811,
+        13440812
+      ],
+      "target": "CD1E7C",
+      "pointer_bytes_sha256": "4e0e0d8ddf3f2b88af456b5011d0866f7f219dc012e5f183fdf0cd244adcd682",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 188,
+      "hidden_b": 0,
+      "x": 120,
+      "pointer_byte_addresses": [
+        13440813,
+        13440814
+      ],
+      "target": "CD1E45",
+      "pointer_bytes_sha256": "7fbe6694c3211ccaf0f4394ff4076e311f90c7f57bb2a0129c8b407dedb99be1",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 189,
+      "hidden_b": 0,
+      "x": 122,
+      "pointer_byte_addresses": [
+        13440815,
+        13440816
+      ],
+      "target": "CD1E36",
+      "pointer_bytes_sha256": "440798a32345df6e5c63d4abacb3de79e7ad0e847a90709864cc31de5aaa194f",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 190,
+      "hidden_b": 0,
+      "x": 124,
+      "pointer_byte_addresses": [
+        13440817,
+        13440818
+      ],
+      "target": "CD1E27",
+      "pointer_bytes_sha256": "1a22e4256c7ca23cbd00f85a73df21c5f30d6072d8ef265ebdbfaa60f4fd6d54",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 191,
+      "hidden_b": 0,
+      "x": 126,
+      "pointer_byte_addresses": [
+        13440819,
+        13440820
+      ],
+      "target": "CD1E07",
+      "pointer_bytes_sha256": "7bbf3d30ce40a6175e078d7e0c21494637bdf3660b8c5068761d1b54e4a15416",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 192,
+      "hidden_b": 0,
+      "x": 128,
+      "pointer_byte_addresses": [
+        13440821,
+        13440822
+      ],
+      "target": "CD1D98",
+      "pointer_bytes_sha256": "35afd9fdbfd7fd4ad99cde2b7616ddb477ba31d366b8dff0fab52ed386611939",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 193,
+      "hidden_b": 0,
+      "x": 130,
+      "pointer_byte_addresses": [
+        13440823,
+        13440824
+      ],
+      "target": "CD1D93",
+      "pointer_bytes_sha256": "b49ead2e7415f00c9959d12b90f88556c16bbc1756453a67232421f2d1b1935b",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 194,
+      "hidden_b": 0,
+      "x": 132,
+      "pointer_byte_addresses": [
+        13440825,
+        13440826
+      ],
+      "target": "CD1D56",
+      "pointer_bytes_sha256": "ce9c98efdcee3dad4857ca5dbbb7abf268936fb544e9bd09455b1420e08f3e79",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 195,
+      "hidden_b": 0,
+      "x": 134,
+      "pointer_byte_addresses": [
+        13440827,
+        13440828
+      ],
+      "target": "CD1D4D",
+      "pointer_bytes_sha256": "c5b71d7e735eae5a47b152bee7848817df1fcba55b83808eaf31aab04d64438e",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 196,
+      "hidden_b": 0,
+      "x": 136,
+      "pointer_byte_addresses": [
+        13440829,
+        13440830
+      ],
+      "target": "CD1C7B",
+      "pointer_bytes_sha256": "7b41d44eaf1160629faef1432308a82b745530b2f5afe2c8e0eda38f05323cdf",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 197,
+      "hidden_b": 0,
+      "x": 138,
+      "pointer_byte_addresses": [
+        13440831,
+        13440832
+      ],
+      "target": "CD1C63",
+      "pointer_bytes_sha256": "0b3d4ab6b7f51e8b4881d1de010c36cdf144b2e026c8cab4f08aa9a229b629c0",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 198,
+      "hidden_b": 0,
+      "x": 140,
+      "pointer_byte_addresses": [
+        13440833,
+        13440834
+      ],
+      "target": "CD1BCE",
+      "pointer_bytes_sha256": "f36fa3d5b7f95b2c692d03c79b1cc6fe17c6e283cad0253da48402534cad6e6c",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 199,
+      "hidden_b": 0,
+      "x": 142,
+      "pointer_byte_addresses": [
+        13440835,
+        13440836
+      ],
+      "target": "CD1BAB",
+      "pointer_bytes_sha256": "7eb9389bfd0371cec6918605fb14c8c161d53c6a5a219caae8754dc851b22054",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 200,
+      "hidden_b": 0,
+      "x": 144,
+      "pointer_byte_addresses": [
+        13440837,
+        13440838
+      ],
+      "target": "CD1B9F",
+      "pointer_bytes_sha256": "fe3481aebcf161f80368ea33afaa5af3d512a96d6ab6f5f09cd729b8e9a4fb1c",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 201,
+      "hidden_b": 0,
+      "x": 146,
+      "pointer_byte_addresses": [
+        13440839,
+        13440840
+      ],
+      "target": "CD1B78",
+      "pointer_bytes_sha256": "4f1ad551fff8dfe30a224b1c74aa7bba6bc78a4116724f6a791962a1d9ae0f9e",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 202,
+      "hidden_b": 0,
+      "x": 148,
+      "pointer_byte_addresses": [
+        13440841,
+        13440842
+      ],
+      "target": "CD1B6D",
+      "pointer_bytes_sha256": "649cfedad0fc1749313ec42ddd6f73d4330235b08bcb1c7c3404878d1b88d8a6",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 203,
+      "hidden_b": 0,
+      "x": 150,
+      "pointer_byte_addresses": [
+        13440843,
+        13440844
+      ],
+      "target": "CD1B5E",
+      "pointer_bytes_sha256": "80853af120b178f560783dbb5239fe752d073f40207a426dc85f16495afdebb7",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 204,
+      "hidden_b": 0,
+      "x": 152,
+      "pointer_byte_addresses": [
+        13440845,
+        13440846
+      ],
+      "target": "CD1B1F",
+      "pointer_bytes_sha256": "a7ff58bef3ee900a0c9254495c44fca5e5c26cff01de8feb9a116f325958b80c",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 205,
+      "hidden_b": 0,
+      "x": 154,
+      "pointer_byte_addresses": [
+        13440847,
+        13440848
+      ],
+      "target": "CD1AEB",
+      "pointer_bytes_sha256": "114ed48ba98f7f467abc2e7d2bc0055b67e23bba0d1b1cb84e3d5b8e07d183f5",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 206,
+      "hidden_b": 0,
+      "x": 156,
+      "pointer_byte_addresses": [
+        13440849,
+        13440850
+      ],
+      "target": "CD1AE6",
+      "pointer_bytes_sha256": "9f1b3e750a3fc2501996d4cb6c775948f00dcc29739c14093819c06a7ecd2265",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 207,
+      "hidden_b": 0,
+      "x": 158,
+      "pointer_byte_addresses": [
+        13440851,
+        13440852
+      ],
+      "target": "CD1AE1",
+      "pointer_bytes_sha256": "7cfae024efeb594126721d5441d4372fbb53dee9960607e33ad941a79bd3e019",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 208,
+      "hidden_b": 0,
+      "x": 160,
+      "pointer_byte_addresses": [
+        13440853,
+        13440854
+      ],
+      "target": "CD1ACB",
+      "pointer_bytes_sha256": "81686195d518338a3023175be2a231659de20e7a9454672dd69814ac139b1633",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 209,
+      "hidden_b": 0,
+      "x": 162,
+      "pointer_byte_addresses": [
+        13440855,
+        13440856
+      ],
+      "target": "CD1ABE",
+      "pointer_bytes_sha256": "a15e2a482a039406cf713c385be0aa5531651996955a1a4b203d737a3ae55cda",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 210,
+      "hidden_b": 0,
+      "x": 164,
+      "pointer_byte_addresses": [
+        13440857,
+        13440858
+      ],
+      "target": "CD1AB2",
+      "pointer_bytes_sha256": "8a49aecf154b4de6b1eb07c4e0bb7dd9b912f1d16906c3146c10fc2f9fb400c9",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 211,
+      "hidden_b": 0,
+      "x": 166,
+      "pointer_byte_addresses": [
+        13440859,
+        13440860
+      ],
+      "target": "CD1A9C",
+      "pointer_bytes_sha256": "25e4420492ce7d43118dd58b8df3992dc49f3bf79c2d7fe96c761a572ba7e219",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 212,
+      "hidden_b": 0,
+      "x": 168,
+      "pointer_byte_addresses": [
+        13440861,
+        13440862
+      ],
+      "target": "CD1A8B",
+      "pointer_bytes_sha256": "f7b79a5fb57309578519c34afe9a23a3d9801c96a1905127b6960fe95eba6689",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 213,
+      "hidden_b": 0,
+      "x": 170,
+      "pointer_byte_addresses": [
+        13440863,
+        13440864
+      ],
+      "target": "CD1A7A",
+      "pointer_bytes_sha256": "5f3aeeb9efca992ff0384ac9f1fe755fd869212ab00d09ac442b3b7ed0a1e3b9",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 214,
+      "hidden_b": 0,
+      "x": 172,
+      "pointer_byte_addresses": [
+        13440865,
+        13440866
+      ],
+      "target": "CD1A66",
+      "pointer_bytes_sha256": "1dd18114f996093a675de96e0d73308723647b9a516656d1c65d95e13d7a0c93",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 215,
+      "hidden_b": 0,
+      "x": 174,
+      "pointer_byte_addresses": [
+        13440867,
+        13440868
+      ],
+      "target": "CD19E5",
+      "pointer_bytes_sha256": "c66db9f54e2ef9a338c9e2bed1f36b3d1c4de8c5d7717dbcf6b372c319d3d144",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 216,
+      "hidden_b": 0,
+      "x": 176,
+      "pointer_byte_addresses": [
+        13440869,
+        13440870
+      ],
+      "target": "CD19C2",
+      "pointer_bytes_sha256": "1d829f66de75b8d722acf919ed301679c6cdd299d238f381066455b1fd416738",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 217,
+      "hidden_b": 0,
+      "x": 178,
+      "pointer_byte_addresses": [
+        13440871,
+        13440872
+      ],
+      "target": "CD19B1",
+      "pointer_bytes_sha256": "29ea89c646696eccabb57b32f11d2d23f9f376ea177f364b36d2d775bd71123f",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 218,
+      "hidden_b": 0,
+      "x": 180,
+      "pointer_byte_addresses": [
+        13440873,
+        13440874
+      ],
+      "target": "CD1937",
+      "pointer_bytes_sha256": "a1795e7bd6ae3cf1178a8106975394249f7f51d263ec529b268c65289dbdf915",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 219,
+      "hidden_b": 0,
+      "x": 182,
+      "pointer_byte_addresses": [
+        13440875,
+        13440876
+      ],
+      "target": "CD1932",
+      "pointer_bytes_sha256": "138f402448c7cd94a2ec299f940eb9f8b4bee9d1f2478c1c79e94eb1ed13cb27",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 220,
+      "hidden_b": 0,
+      "x": 184,
+      "pointer_byte_addresses": [
+        13440877,
+        13440878
+      ],
+      "target": "CD1923",
+      "pointer_bytes_sha256": "5f139bfadd6b743d38256843b54ab3cedc290e0ef0fbaf26be4c3fe38564d5d5",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 221,
+      "hidden_b": 0,
+      "x": 186,
+      "pointer_byte_addresses": [
+        13440879,
+        13440880
+      ],
+      "target": "CD191E",
+      "pointer_bytes_sha256": "7b9b5fc86e91ff1d045d93fe028b4b5c73d84f8ab131eb83ae83aaf48f8cb116",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 222,
+      "hidden_b": 0,
+      "x": 188,
+      "pointer_byte_addresses": [
+        13440881,
+        13440882
+      ],
+      "target": "CD1918",
+      "pointer_bytes_sha256": "eb55bbe158f7e0930600c8bc71f93e2fef7ac86c386a57269ded7c97ace9831e",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 223,
+      "hidden_b": 0,
+      "x": 190,
+      "pointer_byte_addresses": [
+        13440883,
+        13440884
+      ],
+      "target": "CD1913",
+      "pointer_bytes_sha256": "fd0ed955d4d10d2c1e892376c6c60b17013c615a1eef9a75572648e71c235b74",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 224,
+      "hidden_b": 0,
+      "x": 192,
+      "pointer_byte_addresses": [
+        13440885,
+        13440886
+      ],
+      "target": "CD190D",
+      "pointer_bytes_sha256": "b3aeb77def2454027eb0d2772f0a838303702a89b290d80f5bd1e5efc522e38c",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 225,
+      "hidden_b": 0,
+      "x": 194,
+      "pointer_byte_addresses": [
+        13440887,
+        13440888
+      ],
+      "target": "CD1B9A",
+      "pointer_bytes_sha256": "da2239883926e6c631714d42b65caf940e1d3260578116aa8182ef148f1fb5a5",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 226,
+      "hidden_b": 0,
+      "x": 196,
+      "pointer_byte_addresses": [
+        13440889,
+        13440890
+      ],
+      "target": "CD1907",
+      "pointer_bytes_sha256": "4ba2dda5de045ea17115565f1f0578de1370711e76a6df1337057029779f783d",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 227,
+      "hidden_b": 0,
+      "x": 198,
+      "pointer_byte_addresses": [
+        13440891,
+        13440892
+      ],
+      "target": "CD18DF",
+      "pointer_bytes_sha256": "5e891f0ebe47a777cce682190344e3f91823269e899ac39a8922723450ffbf71",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 228,
+      "hidden_b": 0,
+      "x": 200,
+      "pointer_byte_addresses": [
+        13440893,
+        13440894
+      ],
+      "target": "CD18CF",
+      "pointer_bytes_sha256": "b50e446d1e4757dc6655f9816d389b27fcb38a9745c9d82c289866a892f05f0a",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 229,
+      "hidden_b": 0,
+      "x": 202,
+      "pointer_byte_addresses": [
+        13440895,
+        13440896
+      ],
+      "target": "CD18C8",
+      "pointer_bytes_sha256": "67465293543c46e1e6404492b01e367fcd49d5ceed80593e4e737c44b05b31de",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 230,
+      "hidden_b": 0,
+      "x": 204,
+      "pointer_byte_addresses": [
+        13440897,
+        13440898
+      ],
+      "target": "CD18C2",
+      "pointer_bytes_sha256": "d782b56f0fee681d68de5dacfce4bbb44efee3c3c52a0bac39dd5deddab6d409",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 231,
+      "hidden_b": 0,
+      "x": 206,
+      "pointer_byte_addresses": [
+        13440899,
+        13440900
+      ],
+      "target": "CD187E",
+      "pointer_bytes_sha256": "e8b9f1c6928fa760a1fa2268c71cb7835d96ae29f594df0850a184e198f72a13",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 232,
+      "hidden_b": 0,
+      "x": 208,
+      "pointer_byte_addresses": [
+        13440901,
+        13440902
+      ],
+      "target": "CD1874",
+      "pointer_bytes_sha256": "c7bbb8cf59e8942210c27958adb2495bf8912455e5bc678cd5f445ab6b446bbd",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 233,
+      "hidden_b": 0,
+      "x": 210,
+      "pointer_byte_addresses": [
+        13440903,
+        13440904
+      ],
+      "target": "CD1879",
+      "pointer_bytes_sha256": "5e23a76c64ac282c720fe4d43745c5a5aa18c77d35c57d83fd2bc1cda80fcd64",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 234,
+      "hidden_b": 0,
+      "x": 212,
+      "pointer_byte_addresses": [
+        13440905,
+        13440906
+      ],
+      "target": "CD1864",
+      "pointer_bytes_sha256": "f71ae6d1460e8367017c0ba94aca9d01eb14cc108df4b41152747d352fafc299",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 235,
+      "hidden_b": 0,
+      "x": 214,
+      "pointer_byte_addresses": [
+        13440907,
+        13440908
+      ],
+      "target": "CD185F",
+      "pointer_bytes_sha256": "e11b44dc478ac2b2e9c4013462e1d625c7a44ce7b220457a399e2275182aba54",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 236,
+      "hidden_b": 0,
+      "x": 216,
+      "pointer_byte_addresses": [
+        13440909,
+        13440910
+      ],
+      "target": "CD185A",
+      "pointer_bytes_sha256": "8dd5d7b10686638fb6a6b226a518cd50e18bad9159b4d0c3dc63cfb8e29bfee4",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 237,
+      "hidden_b": 0,
+      "x": 218,
+      "pointer_byte_addresses": [
+        13440911,
+        13440912
+      ],
+      "target": "CD1855",
+      "pointer_bytes_sha256": "761d36dd386de9435d1594c9834492a8460449b3da973fa7d50ffd700cbb5fe6",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 238,
+      "hidden_b": 0,
+      "x": 220,
+      "pointer_byte_addresses": [
+        13440913,
+        13440914
+      ],
+      "target": "CD1850",
+      "pointer_bytes_sha256": "f937e6e9cce05d217edc9f9a2090a007b2c3f31121bf24c2d7ed1c8b5841d72c",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 239,
+      "hidden_b": 0,
+      "x": 222,
+      "pointer_byte_addresses": [
+        13440915,
+        13440916
+      ],
+      "target": "CD1834",
+      "pointer_bytes_sha256": "ed9a7423773959e381ac039fe2b6d4889d96f6976394f624f72457746b195fe3",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 240,
+      "hidden_b": 0,
+      "x": 224,
+      "pointer_byte_addresses": [
+        13440917,
+        13440918
+      ],
+      "target": "CD182A",
+      "pointer_bytes_sha256": "c77e3a2c336a06955db90127a63b90f42402f2c731e986cb72d33a31ac614911",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 241,
+      "hidden_b": 0,
+      "x": 226,
+      "pointer_byte_addresses": [
+        13440919,
+        13440920
+      ],
+      "target": "CD1813",
+      "pointer_bytes_sha256": "488dd18b3472bf98987028cf6900772aac6ab8d0f9839cdd4fd2abf2ef9a26ab",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 242,
+      "hidden_b": 0,
+      "x": 228,
+      "pointer_byte_addresses": [
+        13440921,
+        13440922
+      ],
+      "target": "CD180A",
+      "pointer_bytes_sha256": "e48ad1d01f749990364799118c66cc3cb5b7058854c3f71b5ae89ff55d92a74e",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 243,
+      "hidden_b": 0,
+      "x": 230,
+      "pointer_byte_addresses": [
+        13440923,
+        13440924
+      ],
+      "target": "CD184B",
+      "pointer_bytes_sha256": "fd592477ce6b66304cbafc4393cda3750fb8ef769c7385356577166834206801",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 244,
+      "hidden_b": 0,
+      "x": 232,
+      "pointer_byte_addresses": [
+        13440925,
+        13440926
+      ],
+      "target": "CD1805",
+      "pointer_bytes_sha256": "39ba007e4f3123afdea23f203287e782ce779bb5b34fdc148f33010acc37cfab",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 245,
+      "hidden_b": 0,
+      "x": 234,
+      "pointer_byte_addresses": [
+        13440927,
+        13440928
+      ],
+      "target": "CD17FF",
+      "pointer_bytes_sha256": "7bae83d91f222a87911649974c3b7af6eba3d5d8c7b4463fe37b31d70f5d3492",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 246,
+      "hidden_b": 0,
+      "x": 236,
+      "pointer_byte_addresses": [
+        13440929,
+        13440930
+      ],
+      "target": "CD17E5",
+      "pointer_bytes_sha256": "111e104b35b8accb35afda991b55c2c8edffa8cd70d8d58dd36e6f755a8ebc37",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 247,
+      "hidden_b": 0,
+      "x": 238,
+      "pointer_byte_addresses": [
+        13440931,
+        13440932
+      ],
+      "target": "CD17DF",
+      "pointer_bytes_sha256": "146bdc8508b2fd634c70611b623e2110a420bf124c4211bc51337cc00cdba0c6",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 248,
+      "hidden_b": 0,
+      "x": 240,
+      "pointer_byte_addresses": [
+        13440933,
+        13440934
+      ],
+      "target": "CD17BE",
+      "pointer_bytes_sha256": "7c3da41da009365a84e9a31473d2b9be694552ac5fa31281e3b8be274a2462d8",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 249,
+      "hidden_b": 0,
+      "x": 242,
+      "pointer_byte_addresses": [
+        13440935,
+        13440936
+      ],
+      "target": "CD17A9",
+      "pointer_bytes_sha256": "9f793529749bd280bfc88714dbc378a294601c902768f43cbef32579af7e0e53",
+      "in_reviewed_122_cell_prefix": true,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 250,
+      "hidden_b": 0,
+      "x": 244,
+      "pointer_byte_addresses": [
+        13440937,
+        13440938
+      ],
+      "target": "CD40A7",
+      "pointer_bytes_sha256": "1c20b2513a1fa7e27ee0601d55306e09222e22bd323f228db9d112f6ebb35f88",
+      "in_reviewed_122_cell_prefix": false,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 251,
+      "hidden_b": 0,
+      "x": 246,
+      "pointer_byte_addresses": [
+        13440939,
+        13440940
+      ],
+      "target": "CDA048",
+      "pointer_bytes_sha256": "4e82cb6049accc3ebb74f230f9833770d35491faa4e099fd7e61e75d61dd1697",
+      "in_reviewed_122_cell_prefix": false,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 252,
+      "hidden_b": 0,
+      "x": 248,
+      "pointer_byte_addresses": [
+        13440941,
+        13440942
+      ],
+      "target": "CD0001",
+      "pointer_bytes_sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+      "in_reviewed_122_cell_prefix": false,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 253,
+      "hidden_b": 0,
+      "x": 250,
+      "pointer_byte_addresses": [
+        13440943,
+        13440944
+      ],
+      "target": "CD20C2",
+      "pointer_bytes_sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f",
+      "in_reviewed_122_cell_prefix": false,
+      "command_reachability_proved": false
+    },
+    {
+      "command": 254,
+      "hidden_b": 0,
+      "x": 252,
+      "pointer_byte_addresses": [
+        13440945,
+        13440946
+      ],
+      "target": "CD40B7",
+      "pointer_bytes_sha256": "35aaf231116ccddc124a98aa20257371066733b60fc063cf5c4c806ca1d046cd",
+      "in_reviewed_122_cell_prefix": false,
+      "command_reachability_proved": false
+    }
+  ],
+  "reviewed_prefix_cells": 122,
+  "reviewed_prefix_distinct_targets": 121,
+  "following_f9_target_instructions": [
+    {
+      "address": "CD17A9",
+      "length": 2,
+      "sha256": "1c20b2513a1fa7e27ee0601d55306e09222e22bd323f228db9d112f6ebb35f88"
+    },
+    {
+      "address": "CD17AB",
+      "length": 1,
+      "sha256": "44bd7ae60f478fae1061e11a7739f4b94d1daf917982d33b6fc8a01a63f89c21"
+    },
+    {
+      "address": "CD17AC",
+      "length": 3,
+      "sha256": "00069f13f38de8eb04913bca4565e005610b697c28d028c436279c746e41bec5"
+    },
+    {
+      "address": "CD17AF",
+      "length": 2,
+      "sha256": "194b9789c2b0b4751f2901c95ad1a44b8e2b1fe7f40db791953b1c6f66c0dc2f"
+    },
+    {
+      "address": "CD17B1",
+      "length": 2,
+      "sha256": "35aaf231116ccddc124a98aa20257371066733b60fc063cf5c4c806ca1d046cd"
+    },
+    {
+      "address": "CD17B3",
+      "length": 1,
+      "sha256": "bceef655b5a034911f1c3718ce056531b45ef03b4c7b1f15629e867294011a7d"
+    },
+    {
+      "address": "CD17B4",
+      "length": 2,
+      "sha256": "f684b1428c21b32de33ef263ae62fb602c99322b9b73867a8ac2861e0fefcb7f"
+    },
+    {
+      "address": "CD17B6",
+      "length": 1,
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96"
+    },
+    {
+      "address": "CD17B7",
+      "length": 2,
+      "sha256": "54ed66b9da9b71c14276f6e50f9bb5f36e9a7c478ce841c8a7e5252a88623cd9"
+    },
+    {
+      "address": "CD17B9",
+      "length": 1,
+      "sha256": "aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123"
+    },
+    {
+      "address": "CD17BA",
+      "length": 3,
+      "sha256": "c8e12397f2c98dd04b67780f56be4590b4de355d32b730cbcb1e8a9669f1e695"
+    },
+    {
+      "address": "CD17BD",
+      "length": 1,
+      "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+    }
+  ],
+  "fa_through_fe_cells_overlap_f9_code": true,
+  "possible_non_ff_script_id_reads": [
+    {
+      "script_id": 0,
+      "table_cpu_address": "D1646C",
+      "root_cpu_address": "D17466",
+      "initial_cursor_cpu_address": "D17467",
+      "pointer_bytes_sha256": "9adf009b9ea42792e73e5dc86e9c9024489d74ad894c0a3acbc03095158eaabc",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 1,
+      "table_cpu_address": "D1646E",
+      "root_cpu_address": "D1A1AC",
+      "initial_cursor_cpu_address": "D1A1AD",
+      "pointer_bytes_sha256": "6b26180815960ad08e970e0a60b997b54fd3e57f321d049c290084fcabb99984",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 2,
+      "table_cpu_address": "D16470",
+      "root_cpu_address": "D1A1BD",
+      "initial_cursor_cpu_address": "D1A1BE",
+      "pointer_bytes_sha256": "9bef333082d8237ba4d9a00c17fb34a424c61b247e03c3697153497db69e8fee",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 3,
+      "table_cpu_address": "D16472",
+      "root_cpu_address": "D17AEA",
+      "initial_cursor_cpu_address": "D17AEB",
+      "pointer_bytes_sha256": "09137c004fc308a42483e00ca7977f088894aafdf7e5b0cb00f564488116fcd8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 4,
+      "table_cpu_address": "D16474",
+      "root_cpu_address": "D1A010",
+      "initial_cursor_cpu_address": "D1A011",
+      "pointer_bytes_sha256": "aa0aea7ab36340a4926cae60651be51e2fd6335cf7472cee207b776d217ad264",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 5,
+      "table_cpu_address": "D16476",
+      "root_cpu_address": "D19EE8",
+      "initial_cursor_cpu_address": "D19EE9",
+      "pointer_bytes_sha256": "40b8b677d468b8ebe29b9392cc2a4255cc1e1c1f28e9205a5325389f4c5fbe48",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 6,
+      "table_cpu_address": "D16478",
+      "root_cpu_address": "D17415",
+      "initial_cursor_cpu_address": "D17416",
+      "pointer_bytes_sha256": "a8a0725e60abf5400f55c0ed0811dbd5ee1554bf046c71ac94786eb90000302b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 7,
+      "table_cpu_address": "D1647A",
+      "root_cpu_address": "D19E7F",
+      "initial_cursor_cpu_address": "D19E80",
+      "pointer_bytes_sha256": "c9105ab1a116c2623716d168d2edc67767aa7b2bd09c6cf27b2ff8f0d03c69ed",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 8,
+      "table_cpu_address": "D1647C",
+      "root_cpu_address": "D19DFD",
+      "initial_cursor_cpu_address": "D19DFE",
+      "pointer_bytes_sha256": "0965e856aeee9dbd4927a9b878dcd2f018becb9c0a0a70d4b1b38cd5781863a1",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 9,
+      "table_cpu_address": "D1647E",
+      "root_cpu_address": "D19DC1",
+      "initial_cursor_cpu_address": "D19DC2",
+      "pointer_bytes_sha256": "79e7cf4654f771c51018cb4b0bfa3d1ac2945cc18363024b9a136c0e4a139ad6",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 10,
+      "table_cpu_address": "D16480",
+      "root_cpu_address": "D19D37",
+      "initial_cursor_cpu_address": "D19D38",
+      "pointer_bytes_sha256": "6cb972360ebe40d09522b2e9ba4c02b5ae4396efcf7fb3ba92525cb8c8a5c31f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 11,
+      "table_cpu_address": "D16482",
+      "root_cpu_address": "D19CCC",
+      "initial_cursor_cpu_address": "D19CCD",
+      "pointer_bytes_sha256": "8251d9d2516872b6657434d9d616898c976b58c31e251c5d67ca3eb9aebd38a8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 12,
+      "table_cpu_address": "D16484",
+      "root_cpu_address": "D19CE9",
+      "initial_cursor_cpu_address": "D19CEA",
+      "pointer_bytes_sha256": "7504cbbc5ad3cec6a3b57fefff71da1abaff3a20855525e0ac4d2735b894d24b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 13,
+      "table_cpu_address": "D16486",
+      "root_cpu_address": "D19C84",
+      "initial_cursor_cpu_address": "D19C85",
+      "pointer_bytes_sha256": "6c8072382f0a6f88d2b20924f05ed5817ca8b7e5499ab3eb28c368f36a4258e8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 14,
+      "table_cpu_address": "D16488",
+      "root_cpu_address": "D19BD4",
+      "initial_cursor_cpu_address": "D19BD5",
+      "pointer_bytes_sha256": "292486a0048d98e90100b335ca0369bbb70dc9b7ac6cf45a3afe29d72722ddee",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 15,
+      "table_cpu_address": "D1648A",
+      "root_cpu_address": "D19B19",
+      "initial_cursor_cpu_address": "D19B1A",
+      "pointer_bytes_sha256": "c37e5ef26d3bc3feb0d492a455be77d2f051423849766516e7b3760d40b9df51",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 16,
+      "table_cpu_address": "D1648C",
+      "root_cpu_address": "D19AB4",
+      "initial_cursor_cpu_address": "D19AB5",
+      "pointer_bytes_sha256": "fc673dbd4127147553693af00366b97f6a25278709007cb43833b29d113e1030",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 17,
+      "table_cpu_address": "D1648E",
+      "root_cpu_address": "D19A9B",
+      "initial_cursor_cpu_address": "D19A9C",
+      "pointer_bytes_sha256": "0ee2b58f2629b2ae7640442689787722091d0217c27de4f399ecdad3e4da772d",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 18,
+      "table_cpu_address": "D16490",
+      "root_cpu_address": "D19A22",
+      "initial_cursor_cpu_address": "D19A23",
+      "pointer_bytes_sha256": "8917de3e9e6f06a75e9fcf37a0327e22027b0e9471d2e7eba09908a9d27422fe",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 19,
+      "table_cpu_address": "D16492",
+      "root_cpu_address": "D199E4",
+      "initial_cursor_cpu_address": "D199E5",
+      "pointer_bytes_sha256": "ea79c21204fdd0cd743ba6239abb4708c007ac264f64effadf7f0d60188e2c6b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 20,
+      "table_cpu_address": "D16494",
+      "root_cpu_address": "D19995",
+      "initial_cursor_cpu_address": "D19996",
+      "pointer_bytes_sha256": "1e9443b6364fb744f4da1a9d281faff6617aad60362f51c9f1ba40ceb9a3ad75",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 21,
+      "table_cpu_address": "D16496",
+      "root_cpu_address": "D19879",
+      "initial_cursor_cpu_address": "D1987A",
+      "pointer_bytes_sha256": "db805a95590e487b753afe3c854edfdfb53bc5381b6e0c2f5b2bfe1540bac5a3",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 22,
+      "table_cpu_address": "D16498",
+      "root_cpu_address": "D19803",
+      "initial_cursor_cpu_address": "D19804",
+      "pointer_bytes_sha256": "307e345309d9b182a1fdc836c7273db9c4d3f94f56492728e3532fa6d407ce6a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 23,
+      "table_cpu_address": "D1649A",
+      "root_cpu_address": "D19799",
+      "initial_cursor_cpu_address": "D1979A",
+      "pointer_bytes_sha256": "80a8d04742421c1801cbac9e232d1a4d0011d126699d49db23c410b22c999635",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 24,
+      "table_cpu_address": "D1649C",
+      "root_cpu_address": "D196D2",
+      "initial_cursor_cpu_address": "D196D3",
+      "pointer_bytes_sha256": "0c4f3f0c9542dd77198f67dd1ab6433aa8080144b807b213232d96052d3952ea",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 25,
+      "table_cpu_address": "D1649E",
+      "root_cpu_address": "D1966E",
+      "initial_cursor_cpu_address": "D1966F",
+      "pointer_bytes_sha256": "d988963f74e1690ea7e50cab05c59f893773c5117090431db99f3b7ff75ceae2",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 26,
+      "table_cpu_address": "D164A0",
+      "root_cpu_address": "D19612",
+      "initial_cursor_cpu_address": "D19613",
+      "pointer_bytes_sha256": "e928f0d72914466829232611e196a743a439956411bf0279e7fdfad4a7b4c6d9",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 27,
+      "table_cpu_address": "D164A2",
+      "root_cpu_address": "D19544",
+      "initial_cursor_cpu_address": "D19545",
+      "pointer_bytes_sha256": "0217066016006aa05c41232079c061280fb67bf783d39f8b699a9b53fa791554",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 28,
+      "table_cpu_address": "D164A4",
+      "root_cpu_address": "D194BE",
+      "initial_cursor_cpu_address": "D194BF",
+      "pointer_bytes_sha256": "a0323e8cb2a3453abe4ca61b4689ebd65f33a23162b0352049649b51c8368bf3",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 29,
+      "table_cpu_address": "D164A6",
+      "root_cpu_address": "D180B8",
+      "initial_cursor_cpu_address": "D180B9",
+      "pointer_bytes_sha256": "5abe746521f044f802091c49b90ecf0e28629364d89c157a5a9626700488ab0d",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 30,
+      "table_cpu_address": "D164A8",
+      "root_cpu_address": "D19341",
+      "initial_cursor_cpu_address": "D19342",
+      "pointer_bytes_sha256": "4d84c589cfe9a54d98615decd581bf06cb2aa93ad5fe536c55493ef77567a280",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 31,
+      "table_cpu_address": "D164AA",
+      "root_cpu_address": "D192E9",
+      "initial_cursor_cpu_address": "D192EA",
+      "pointer_bytes_sha256": "a570cb4bbe1b023969d46096f008123eb01aebd05268a5b7f4d49c800b60c194",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 32,
+      "table_cpu_address": "D164AC",
+      "root_cpu_address": "D192AC",
+      "initial_cursor_cpu_address": "D192AD",
+      "pointer_bytes_sha256": "2784e1e2094233ccc5ca008df54a6b1661e3ead55767702780deb90379e36084",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 33,
+      "table_cpu_address": "D164AE",
+      "root_cpu_address": "D1920E",
+      "initial_cursor_cpu_address": "D1920F",
+      "pointer_bytes_sha256": "99b657c06ba0aec1d8cf55cac7f7d11ae88c21946036530bb6ae253be1440310",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 34,
+      "table_cpu_address": "D164B0",
+      "root_cpu_address": "D19175",
+      "initial_cursor_cpu_address": "D19176",
+      "pointer_bytes_sha256": "f80654b5c287c9496a67c4c5e8551fe240c215c0e2e8ce551d63ac072303aeb7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 35,
+      "table_cpu_address": "D164B2",
+      "root_cpu_address": "D1913E",
+      "initial_cursor_cpu_address": "D1913F",
+      "pointer_bytes_sha256": "4f066ad5a8d3cd6761fd20f1063ff4b5e04e8e5cb3caef31ed3551f74c760990",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 36,
+      "table_cpu_address": "D164B4",
+      "root_cpu_address": "D190E2",
+      "initial_cursor_cpu_address": "D190E3",
+      "pointer_bytes_sha256": "fe4783767a4eb07c309c07d466f1fa3ab0d8e52c91ec1b296d84dd5ffeaadad0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 37,
+      "table_cpu_address": "D164B6",
+      "root_cpu_address": "D17FB8",
+      "initial_cursor_cpu_address": "D17FB9",
+      "pointer_bytes_sha256": "8c2bc2ea1478ce2d7e05b9d845b99f102a000a03e9697631d6fde5d6cb2c082b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 38,
+      "table_cpu_address": "D164B8",
+      "root_cpu_address": "D17F2A",
+      "initial_cursor_cpu_address": "D17F2B",
+      "pointer_bytes_sha256": "79edd299a62f70f901d8371be83a373cf0f686674e85ae3a539e0787ce62bf02",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 39,
+      "table_cpu_address": "D164BA",
+      "root_cpu_address": "D19055",
+      "initial_cursor_cpu_address": "D19056",
+      "pointer_bytes_sha256": "c154305567a14a9ae60851e184f1f0911b19fad455b3af1782755076e455c5b0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 40,
+      "table_cpu_address": "D164BC",
+      "root_cpu_address": "D19042",
+      "initial_cursor_cpu_address": "D19043",
+      "pointer_bytes_sha256": "42812f615c406012ac248e91480cf064683c26af4614f2933f9d60ba93f6e332",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 41,
+      "table_cpu_address": "D164BE",
+      "root_cpu_address": "D18FD2",
+      "initial_cursor_cpu_address": "D18FD3",
+      "pointer_bytes_sha256": "25c29bff56c2c09731e0521ab9910201b9afedc6410d82457fbbc7f9d09050ce",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 42,
+      "table_cpu_address": "D164C0",
+      "root_cpu_address": "D18EB0",
+      "initial_cursor_cpu_address": "D18EB1",
+      "pointer_bytes_sha256": "93242f29c2359864aea693ef66b7a07a09d7079b7853648b485c767398993070",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 43,
+      "table_cpu_address": "D164C2",
+      "root_cpu_address": "D16A52",
+      "initial_cursor_cpu_address": "D16A53",
+      "pointer_bytes_sha256": "98e5a00dcb3ad98dab9054764a5fe44522041b9c2943830ccff61e7d95081fc3",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 44,
+      "table_cpu_address": "D164C4",
+      "root_cpu_address": "D16A21",
+      "initial_cursor_cpu_address": "D16A22",
+      "pointer_bytes_sha256": "655edb51506bdcea4fa9c230271500cd925b1e89390f562e7f089d70e4326399",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 45,
+      "table_cpu_address": "D164C6",
+      "root_cpu_address": "D18CB7",
+      "initial_cursor_cpu_address": "D18CB8",
+      "pointer_bytes_sha256": "7e72eb5c9e495ac57c6015a1194364103785c9096f5c01579f658cfec58d7c9a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 46,
+      "table_cpu_address": "D164C8",
+      "root_cpu_address": "D17A7F",
+      "initial_cursor_cpu_address": "D17A80",
+      "pointer_bytes_sha256": "dba8c7e468a0015cbe13336ed0db2eb85051416ca5a94fffadb802b31bbf10e0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 47,
+      "table_cpu_address": "D164CA",
+      "root_cpu_address": "D18C75",
+      "initial_cursor_cpu_address": "D18C76",
+      "pointer_bytes_sha256": "a4c6416ea59fd9923e94a1f6ab0045edf0e309e6532044848e07b6dbe181f074",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 48,
+      "table_cpu_address": "D164CC",
+      "root_cpu_address": "D18C2D",
+      "initial_cursor_cpu_address": "D18C2E",
+      "pointer_bytes_sha256": "589947f3c4b0d280303a07373997bef49f8f299526f1f9d7dc82654dfbc30740",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 49,
+      "table_cpu_address": "D164CE",
+      "root_cpu_address": "D18BDD",
+      "initial_cursor_cpu_address": "D18BDE",
+      "pointer_bytes_sha256": "6348c66648e54fd247c5fd340b7704f9e591747e20a2785a0a19cb171ef957ed",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 50,
+      "table_cpu_address": "D164D0",
+      "root_cpu_address": "D18B6A",
+      "initial_cursor_cpu_address": "D18B6B",
+      "pointer_bytes_sha256": "7a2eb65061d5ae4aeee3b3ccc03e15702c6e06fd2d757d42fac5aef5bf4a5bfc",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 51,
+      "table_cpu_address": "D164D2",
+      "root_cpu_address": "D18B21",
+      "initial_cursor_cpu_address": "D18B22",
+      "pointer_bytes_sha256": "967c99d3a9b1b15622b735d883b00e7e3ace652f23f44ebbf38ffb422f49269f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 52,
+      "table_cpu_address": "D164D4",
+      "root_cpu_address": "D18AD6",
+      "initial_cursor_cpu_address": "D18AD7",
+      "pointer_bytes_sha256": "0d3766096ad984ada1c5b303b0214b4547e540a8a36a95fe906f6f1231a75d74",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 53,
+      "table_cpu_address": "D164D6",
+      "root_cpu_address": "D18A51",
+      "initial_cursor_cpu_address": "D18A52",
+      "pointer_bytes_sha256": "f9fc5111b39519c587510189655c0a5b615f0caf26361df22c222451f41806cb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 54,
+      "table_cpu_address": "D164D8",
+      "root_cpu_address": "D179DB",
+      "initial_cursor_cpu_address": "D179DC",
+      "pointer_bytes_sha256": "efa001a78876ccaf76ea0c29e8564015caff969f281d3b06ef14832de2a377c2",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 55,
+      "table_cpu_address": "D164DA",
+      "root_cpu_address": "D18A07",
+      "initial_cursor_cpu_address": "D18A08",
+      "pointer_bytes_sha256": "4a80a67af76ac958d9b3b9af012f83a552196b0116e980d91a315c95e62f922f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 56,
+      "table_cpu_address": "D164DC",
+      "root_cpu_address": "D189E9",
+      "initial_cursor_cpu_address": "D189EA",
+      "pointer_bytes_sha256": "ec7630ce5ea530c367062d57b44b43ef497371271203ccebf14597da90e2e758",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 57,
+      "table_cpu_address": "D164DE",
+      "root_cpu_address": "D189AA",
+      "initial_cursor_cpu_address": "D189AB",
+      "pointer_bytes_sha256": "ec5dcd6f85bb388182566fdf7118257cdcd026704b7c8ec983b37999a5856cdb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 58,
+      "table_cpu_address": "D164E0",
+      "root_cpu_address": "D18933",
+      "initial_cursor_cpu_address": "D18934",
+      "pointer_bytes_sha256": "7c9318a84610bfaabb5db4a1f3de8e8826201c858ca4380197e3da4397ce1c96",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 59,
+      "table_cpu_address": "D164E2",
+      "root_cpu_address": "D188C5",
+      "initial_cursor_cpu_address": "D188C6",
+      "pointer_bytes_sha256": "6e3f806ae27754edaf81ffcb830cb2d94885571777ce2a4061a905002e28734c",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 60,
+      "table_cpu_address": "D164E4",
+      "root_cpu_address": "D17968",
+      "initial_cursor_cpu_address": "D17969",
+      "pointer_bytes_sha256": "02b9fee20b66a5d1fe467835495b12d65754db28c5433f04305211b37e567c23",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 61,
+      "table_cpu_address": "D164E6",
+      "root_cpu_address": "D179A5",
+      "initial_cursor_cpu_address": "D179A6",
+      "pointer_bytes_sha256": "7c23b68d4d70a53878745cfb805b93fd8fe60078f1bca68a1672c617c1bc14cd",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 62,
+      "table_cpu_address": "D164E8",
+      "root_cpu_address": "D18870",
+      "initial_cursor_cpu_address": "D18871",
+      "pointer_bytes_sha256": "46c0d966e58ff40747e48dfa7587846692fe570acd45411870ba766611c4b68e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 63,
+      "table_cpu_address": "D164EA",
+      "root_cpu_address": "D187EA",
+      "initial_cursor_cpu_address": "D187EB",
+      "pointer_bytes_sha256": "7c43244324077f7bc4793a3ada66b1bce6502a06af32ccbd5a800c9ece37269e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 64,
+      "table_cpu_address": "D164EC",
+      "root_cpu_address": "D178F3",
+      "initial_cursor_cpu_address": "D178F4",
+      "pointer_bytes_sha256": "278631bd64f911a2b91b0850600a73319ab2fa0a7857b7eaab74f373593d30ed",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 65,
+      "table_cpu_address": "D164EE",
+      "root_cpu_address": "D178E0",
+      "initial_cursor_cpu_address": "D178E1",
+      "pointer_bytes_sha256": "ccf84481747c192349a30f8109c0a9bb223ace52c88de4e176315967424df8c2",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 66,
+      "table_cpu_address": "D164F0",
+      "root_cpu_address": "D18787",
+      "initial_cursor_cpu_address": "D18788",
+      "pointer_bytes_sha256": "07be0fda616e7e836696a66b64802869dd7dfd842c77f6164562b3d9e286a39e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 67,
+      "table_cpu_address": "D164F2",
+      "root_cpu_address": "D184BD",
+      "initial_cursor_cpu_address": "D184BE",
+      "pointer_bytes_sha256": "989082cc4726edac41cb3911b0027439f985b76e33ef0b7adc74359a30ab5028",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 68,
+      "table_cpu_address": "D164F4",
+      "root_cpu_address": "D18715",
+      "initial_cursor_cpu_address": "D18716",
+      "pointer_bytes_sha256": "d3ea50d0cf844a516e3928e75d6e8021135c3d2c9103ea34120af93e054414e9",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 69,
+      "table_cpu_address": "D164F6",
+      "root_cpu_address": "D186DC",
+      "initial_cursor_cpu_address": "D186DD",
+      "pointer_bytes_sha256": "e051784b2cb79226d3a4a5af8d678b84700dc71ef2fa3e48eab4796f9cafd9cb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 70,
+      "table_cpu_address": "D164F8",
+      "root_cpu_address": "D1853D",
+      "initial_cursor_cpu_address": "D1853E",
+      "pointer_bytes_sha256": "16f8fec852eb8b3a0c2ba03a30b80e09901558dbd95a189ca17f4e81a9de127d",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 71,
+      "table_cpu_address": "D164FA",
+      "root_cpu_address": "D185D9",
+      "initial_cursor_cpu_address": "D185DA",
+      "pointer_bytes_sha256": "988ada1c5b979ec64d5e52f89028403777059b2d2e6fd60f350e44481858aa90",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 72,
+      "table_cpu_address": "D164FC",
+      "root_cpu_address": "D1857A",
+      "initial_cursor_cpu_address": "D1857B",
+      "pointer_bytes_sha256": "27aacfab3ba5f3c643f18aceceb76d4c4bb0426140bdf0a172ad762a6d3f4f98",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 73,
+      "table_cpu_address": "D164FE",
+      "root_cpu_address": "D1851F",
+      "initial_cursor_cpu_address": "D18520",
+      "pointer_bytes_sha256": "47992717193d3633ffa6e745c8e300fd468e38e764f6ef01dcaf71eca4d40007",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 74,
+      "table_cpu_address": "D16500",
+      "root_cpu_address": "D184C7",
+      "initial_cursor_cpu_address": "D184C8",
+      "pointer_bytes_sha256": "a27e3a60bd064424af2206c8f759aa833c319bcb904c6d2491ec29a7766944d8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 75,
+      "table_cpu_address": "D16502",
+      "root_cpu_address": "D18424",
+      "initial_cursor_cpu_address": "D18425",
+      "pointer_bytes_sha256": "0725be57b72a4651ff7c2b68f2b0beb77001a886785548bb4993fd86ffaacaa0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 76,
+      "table_cpu_address": "D16504",
+      "root_cpu_address": "D183DF",
+      "initial_cursor_cpu_address": "D183E0",
+      "pointer_bytes_sha256": "2a3056e574be9b4d7f0e3169e39141d2801d2b7ca23c5bd36d5f6f61815f6265",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 77,
+      "table_cpu_address": "D16506",
+      "root_cpu_address": "D174F7",
+      "initial_cursor_cpu_address": "D174F8",
+      "pointer_bytes_sha256": "f0322c265998a7f3ec9ba244df822860645af7ac81c0392c3ffb32dc58f8fd85",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 78,
+      "table_cpu_address": "D16508",
+      "root_cpu_address": "D182C7",
+      "initial_cursor_cpu_address": "D182C8",
+      "pointer_bytes_sha256": "f5a534e00ca5fd653fe60d47cb6897b58f1e73ab7faf6e54d88d89ba114d6d3e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 79,
+      "table_cpu_address": "D1650A",
+      "root_cpu_address": "D182AE",
+      "initial_cursor_cpu_address": "D182AF",
+      "pointer_bytes_sha256": "602813e950355914945ecc95b5f6fa1e931d83b682587cf5a414642f9cf17424",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 80,
+      "table_cpu_address": "D1650C",
+      "root_cpu_address": "D18242",
+      "initial_cursor_cpu_address": "D18243",
+      "pointer_bytes_sha256": "43a286effac35df5d4864a650a8e64ba60367543d984a7b95f9ae0a8b702d4d8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 81,
+      "table_cpu_address": "D1650E",
+      "root_cpu_address": "D181DC",
+      "initial_cursor_cpu_address": "D181DD",
+      "pointer_bytes_sha256": "ae52848a5cc2bd113f185a9a29bd78e5955cb6337c99baca59f29c771d406f67",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 82,
+      "table_cpu_address": "D16510",
+      "root_cpu_address": "D18071",
+      "initial_cursor_cpu_address": "D18072",
+      "pointer_bytes_sha256": "c89a000cd9da7b1e0283732ed65170cbedd3cf695be304b336f55a27343108bf",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 83,
+      "table_cpu_address": "D16512",
+      "root_cpu_address": "D17E91",
+      "initial_cursor_cpu_address": "D17E92",
+      "pointer_bytes_sha256": "b03b63f3befee87a8474adfdf651941cac98c0752bc8aa9bf0ffb1714e63a5e3",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 84,
+      "table_cpu_address": "D16514",
+      "root_cpu_address": "D17DCE",
+      "initial_cursor_cpu_address": "D17DCF",
+      "pointer_bytes_sha256": "d701981e79139c6cea60756c5b462e5c8d3df3247a567220a0f55ec24b2c7bef",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 85,
+      "table_cpu_address": "D16516",
+      "root_cpu_address": "D17D89",
+      "initial_cursor_cpu_address": "D17D8A",
+      "pointer_bytes_sha256": "97dc38430cb7d6091f02eab21d4ef1a4008f0a7c93251b7c85d035de8c3db956",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 86,
+      "table_cpu_address": "D16518",
+      "root_cpu_address": "D17DA0",
+      "initial_cursor_cpu_address": "D17DA1",
+      "pointer_bytes_sha256": "628257a096e5b5a92c334848371bd7656a0d7c1b70e5697deb75fc3a6e9979c4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 87,
+      "table_cpu_address": "D1651A",
+      "root_cpu_address": "D17DB7",
+      "initial_cursor_cpu_address": "D17DB8",
+      "pointer_bytes_sha256": "f69ab333a3c9f15446d00e2d0e7d870cb3c510d5ab90cec1c8ed4298f5a20d90",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 88,
+      "table_cpu_address": "D1651C",
+      "root_cpu_address": "D17D89",
+      "initial_cursor_cpu_address": "D17D8A",
+      "pointer_bytes_sha256": "97dc38430cb7d6091f02eab21d4ef1a4008f0a7c93251b7c85d035de8c3db956",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 89,
+      "table_cpu_address": "D1651E",
+      "root_cpu_address": "D17DA0",
+      "initial_cursor_cpu_address": "D17DA1",
+      "pointer_bytes_sha256": "628257a096e5b5a92c334848371bd7656a0d7c1b70e5697deb75fc3a6e9979c4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 90,
+      "table_cpu_address": "D16520",
+      "root_cpu_address": "D17DB7",
+      "initial_cursor_cpu_address": "D17DB8",
+      "pointer_bytes_sha256": "f69ab333a3c9f15446d00e2d0e7d870cb3c510d5ab90cec1c8ed4298f5a20d90",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 91,
+      "table_cpu_address": "D16522",
+      "root_cpu_address": "D17D6E",
+      "initial_cursor_cpu_address": "D17D6F",
+      "pointer_bytes_sha256": "e91787068a3c60e9712a7abeb6a67f518a40723c1b89c11d6070fe5f9389ebf9",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 92,
+      "table_cpu_address": "D16524",
+      "root_cpu_address": "D17D77",
+      "initial_cursor_cpu_address": "D17D78",
+      "pointer_bytes_sha256": "e35db786b9a791db6e7fbb10ca931b3abd639e992fb5fc897b7bbc4df060ffcf",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 93,
+      "table_cpu_address": "D16526",
+      "root_cpu_address": "D17D80",
+      "initial_cursor_cpu_address": "D17D81",
+      "pointer_bytes_sha256": "36c5082c05171a3f55ac6b595712b5e142c474f51ef9f8bc4190d8253ca3e939",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 94,
+      "table_cpu_address": "D16528",
+      "root_cpu_address": "D17D6E",
+      "initial_cursor_cpu_address": "D17D6F",
+      "pointer_bytes_sha256": "e91787068a3c60e9712a7abeb6a67f518a40723c1b89c11d6070fe5f9389ebf9",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 95,
+      "table_cpu_address": "D1652A",
+      "root_cpu_address": "D17D77",
+      "initial_cursor_cpu_address": "D17D78",
+      "pointer_bytes_sha256": "e35db786b9a791db6e7fbb10ca931b3abd639e992fb5fc897b7bbc4df060ffcf",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 96,
+      "table_cpu_address": "D1652C",
+      "root_cpu_address": "D17D80",
+      "initial_cursor_cpu_address": "D17D81",
+      "pointer_bytes_sha256": "36c5082c05171a3f55ac6b595712b5e142c474f51ef9f8bc4190d8253ca3e939",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 97,
+      "table_cpu_address": "D1652E",
+      "root_cpu_address": "D17D41",
+      "initial_cursor_cpu_address": "D17D42",
+      "pointer_bytes_sha256": "1ee1aa786ce554587e0b685f4d1dad025c96518c82b1c93df455757fd835eccd",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 98,
+      "table_cpu_address": "D16530",
+      "root_cpu_address": "D17D0D",
+      "initial_cursor_cpu_address": "D17D0E",
+      "pointer_bytes_sha256": "f2c9a6a4b7ab68a83434414962fcc15df693181d269001b0c8a83764055a0f44",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 99,
+      "table_cpu_address": "D16532",
+      "root_cpu_address": "D17C5F",
+      "initial_cursor_cpu_address": "D17C60",
+      "pointer_bytes_sha256": "5a27351b82703147b235e14b8d50d2fa08f66d5825c74c3af826ce7d18fd5d64",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 100,
+      "table_cpu_address": "D16534",
+      "root_cpu_address": "D17C02",
+      "initial_cursor_cpu_address": "D17C03",
+      "pointer_bytes_sha256": "91739dbbd0eafb516c42753ddbfa13a3c04bfc81c68ca8365f6745bd4f48bffb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 101,
+      "table_cpu_address": "D16536",
+      "root_cpu_address": "D17B9F",
+      "initial_cursor_cpu_address": "D17BA0",
+      "pointer_bytes_sha256": "28c3471dbdfa4f522d8a713cb1462943d31f4bba35594d1e965fe23930f5e6f0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 102,
+      "table_cpu_address": "D16538",
+      "root_cpu_address": "D17B7C",
+      "initial_cursor_cpu_address": "D17B7D",
+      "pointer_bytes_sha256": "3ed242c692310bb021be1b09aed9860984f8e9bc0c49391e1b4fd9d510a9375b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 103,
+      "table_cpu_address": "D1653A",
+      "root_cpu_address": "D17525",
+      "initial_cursor_cpu_address": "D17526",
+      "pointer_bytes_sha256": "7609874831a23f229981aea7750bbf898b7481be76359e323171d8ce36da577b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 104,
+      "table_cpu_address": "D1653C",
+      "root_cpu_address": "D17867",
+      "initial_cursor_cpu_address": "D17868",
+      "pointer_bytes_sha256": "c1cbb8108bc8f123dd633dfa518481cb84dc00d12807b6be4915a80aab091636",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 105,
+      "table_cpu_address": "D1653E",
+      "root_cpu_address": "D17832",
+      "initial_cursor_cpu_address": "D17833",
+      "pointer_bytes_sha256": "b595b214b5d4865e79bd091744879680590d80e7656edd099474752aa09703de",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 106,
+      "table_cpu_address": "D16540",
+      "root_cpu_address": "D177FB",
+      "initial_cursor_cpu_address": "D177FC",
+      "pointer_bytes_sha256": "cbff4cb185c1d6326e574a687710bab3c070817d8e6f6c87b55da39fbceaf3f8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 107,
+      "table_cpu_address": "D16542",
+      "root_cpu_address": "D17761",
+      "initial_cursor_cpu_address": "D17762",
+      "pointer_bytes_sha256": "f5fe88ee08735ae259265495a93c8de2b0eacfecf0cd90b5821479be3199fa8c",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 108,
+      "table_cpu_address": "D16544",
+      "root_cpu_address": "D176B3",
+      "initial_cursor_cpu_address": "D176B4",
+      "pointer_bytes_sha256": "e7645fe2f4102da6996adf58502a18edfa8e8c0f72a93902ef22b12c6782d8b9",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 109,
+      "table_cpu_address": "D16546",
+      "root_cpu_address": "D17577",
+      "initial_cursor_cpu_address": "D17578",
+      "pointer_bytes_sha256": "cf4e39ae462a0f95b17df439ce97a49187cbbdda9c658129ff5f5cd27a2884bc",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 110,
+      "table_cpu_address": "D16548",
+      "root_cpu_address": "D1760B",
+      "initial_cursor_cpu_address": "D1760C",
+      "pointer_bytes_sha256": "2b68c8665a4e5abe227ec040148466b5cf28329e07bc81b2e268fd9bf6f7a3c4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 111,
+      "table_cpu_address": "D1654A",
+      "root_cpu_address": "D1738F",
+      "initial_cursor_cpu_address": "D17390",
+      "pointer_bytes_sha256": "7156c731c385574bb1517dd0a56c6dd0b3d237651ef7cc8130dbd6fc92ad8e6d",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 112,
+      "table_cpu_address": "D1654C",
+      "root_cpu_address": "D172AB",
+      "initial_cursor_cpu_address": "D172AC",
+      "pointer_bytes_sha256": "a65dac1c83975dc383300aafda251453cb45ccd2810364eead08014e8217cda4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 113,
+      "table_cpu_address": "D1654E",
+      "root_cpu_address": "D171FE",
+      "initial_cursor_cpu_address": "D171FF",
+      "pointer_bytes_sha256": "0eb1a20da0658769be0432b380e422c973c3109f63fa29e66e9be11ac1260414",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 114,
+      "table_cpu_address": "D16550",
+      "root_cpu_address": "D17157",
+      "initial_cursor_cpu_address": "D17158",
+      "pointer_bytes_sha256": "d950c92d95ba4c628625646f2b6c8a8d13d116b06630d0a8f792316c648531dd",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 115,
+      "table_cpu_address": "D16552",
+      "root_cpu_address": "D17140",
+      "initial_cursor_cpu_address": "D17141",
+      "pointer_bytes_sha256": "9abc7915140f163f3fc7178d2993534b69c516d676ba7486506e471e32582da2",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 116,
+      "table_cpu_address": "D16554",
+      "root_cpu_address": "D16CD8",
+      "initial_cursor_cpu_address": "D16CD9",
+      "pointer_bytes_sha256": "e8e2efcdb52c9c6b2437e945cc14aa0a8148a67bc2c89f9bf18143cdaf24e62b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 117,
+      "table_cpu_address": "D16556",
+      "root_cpu_address": "D170DD",
+      "initial_cursor_cpu_address": "D170DE",
+      "pointer_bytes_sha256": "c5e97d46c8761b17879e8a9ab48df7b11e041966aa06fd6b8d3eb15b82dbe59d",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 118,
+      "table_cpu_address": "D16558",
+      "root_cpu_address": "D1707D",
+      "initial_cursor_cpu_address": "D1707E",
+      "pointer_bytes_sha256": "272218c0b22ef322f149de347e5542f0a2389a16ea7b244329006bb74d310da3",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 119,
+      "table_cpu_address": "D1655A",
+      "root_cpu_address": "D17035",
+      "initial_cursor_cpu_address": "D17036",
+      "pointer_bytes_sha256": "3f6e6d308d460e08b85eb1ccbd5a99000a853ed56815e59495c8547000f44ad1",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 120,
+      "table_cpu_address": "D1655C",
+      "root_cpu_address": "D16FEF",
+      "initial_cursor_cpu_address": "D16FF0",
+      "pointer_bytes_sha256": "c0a4654a0ab7cbe48ac0cc930f9101848990110fb5de5b9012a08a3225484d67",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 121,
+      "table_cpu_address": "D1655E",
+      "root_cpu_address": "D16F56",
+      "initial_cursor_cpu_address": "D16F57",
+      "pointer_bytes_sha256": "0536d4e1f50e56b6e136821f749d6c68355080ec71ec4afaff3c32efd9c379b4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 122,
+      "table_cpu_address": "D16560",
+      "root_cpu_address": "D16EE9",
+      "initial_cursor_cpu_address": "D16EEA",
+      "pointer_bytes_sha256": "605b334cad0910f3ab2522d5b2090a790a02b15efe087e8b5aa77562391660cd",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 123,
+      "table_cpu_address": "D16562",
+      "root_cpu_address": "D16E85",
+      "initial_cursor_cpu_address": "D16E86",
+      "pointer_bytes_sha256": "ec4e5acfbb602766acf627a3a4255a5f5365445336d1578a042d8b312d221473",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 124,
+      "table_cpu_address": "D16564",
+      "root_cpu_address": "D16E62",
+      "initial_cursor_cpu_address": "D16E63",
+      "pointer_bytes_sha256": "c81b021331344adcdd57a84413824fe14faa33769d9982e13d00c260e643b0f7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 125,
+      "table_cpu_address": "D16566",
+      "root_cpu_address": "D166E1",
+      "initial_cursor_cpu_address": "D166E2",
+      "pointer_bytes_sha256": "207b03451b2c2e31d7d66161019820f2c1eb85719cb3b5b554d0d1d6effd6eb8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 126,
+      "table_cpu_address": "D16568",
+      "root_cpu_address": "D16E19",
+      "initial_cursor_cpu_address": "D16E1A",
+      "pointer_bytes_sha256": "40506ab9bf7b56b62d2f08811360b339feabb66e7cf8a53a856f15bc246f4504",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 127,
+      "table_cpu_address": "D1656A",
+      "root_cpu_address": "D16DCB",
+      "initial_cursor_cpu_address": "D16DCC",
+      "pointer_bytes_sha256": "03dc60f1836e1fa3c6153524d1f4543716acf41ed3b3b4a33674fa978b287463",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 128,
+      "table_cpu_address": "D1656C",
+      "root_cpu_address": "D16C6F",
+      "initial_cursor_cpu_address": "D16C70",
+      "pointer_bytes_sha256": "e20882595488fa4f5a9ecf837ef7e2d220e9898cac625f1163dba2c1c7ec56f7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 129,
+      "table_cpu_address": "D1656E",
+      "root_cpu_address": "D16C50",
+      "initial_cursor_cpu_address": "D16C51",
+      "pointer_bytes_sha256": "07e0f038b0b06dd82848338e80b9903a387d0e8b33fbdb5216a51ac51f898b20",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 130,
+      "table_cpu_address": "D16570",
+      "root_cpu_address": "D16DAC",
+      "initial_cursor_cpu_address": "D16DAD",
+      "pointer_bytes_sha256": "f455f3da0d9231d580a5acfdb9878e160490aefabe1a53b6bc5593108e11f0f4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 131,
+      "table_cpu_address": "D16572",
+      "root_cpu_address": "D16D79",
+      "initial_cursor_cpu_address": "D16D7A",
+      "pointer_bytes_sha256": "6eabf42984bac707c0770d29b917259cae40f662a38bcfb0f35c7e81ad698ecd",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 132,
+      "table_cpu_address": "D16574",
+      "root_cpu_address": "D16D3E",
+      "initial_cursor_cpu_address": "D16D3F",
+      "pointer_bytes_sha256": "a07208b1e1bcf932782dc0a9a4e57944194fbd2abc2637f6a11203dbe7c77ed5",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 133,
+      "table_cpu_address": "D16576",
+      "root_cpu_address": "D16D47",
+      "initial_cursor_cpu_address": "D16D48",
+      "pointer_bytes_sha256": "f0a5555f67ae5d3ae6948344bb52ea9091df8e915d9ee70099915b3bf40eb3d8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 134,
+      "table_cpu_address": "D16578",
+      "root_cpu_address": "D16D50",
+      "initial_cursor_cpu_address": "D16D51",
+      "pointer_bytes_sha256": "78f4626dbe97b494df14cdf65ac35d70685a02cf60e1190efac1d50938ab1bd4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 135,
+      "table_cpu_address": "D1657A",
+      "root_cpu_address": "D16D59",
+      "initial_cursor_cpu_address": "D16D5A",
+      "pointer_bytes_sha256": "09805ee1556339996090f39094e3a720a51d74db1157ecb5968d52ae0590b69c",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 136,
+      "table_cpu_address": "D1657C",
+      "root_cpu_address": "D16D62",
+      "initial_cursor_cpu_address": "D16D63",
+      "pointer_bytes_sha256": "7292b55d8cfc45bafdf2e1b0f95fa765a408db524664d882aa49d9769f9c9ead",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 137,
+      "table_cpu_address": "D1657E",
+      "root_cpu_address": "D16B86",
+      "initial_cursor_cpu_address": "D16B87",
+      "pointer_bytes_sha256": "fe378d4d58f90781fa0fe26e54aad28ced11344c4312b8df6551c24e9fe4b016",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 138,
+      "table_cpu_address": "D16580",
+      "root_cpu_address": "D16AD9",
+      "initial_cursor_cpu_address": "D16ADA",
+      "pointer_bytes_sha256": "672b4f43d39443ba9ede43336147beb1bbe7c4548616878b2db24fa76dfe792a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 139,
+      "table_cpu_address": "D16582",
+      "root_cpu_address": "D169AF",
+      "initial_cursor_cpu_address": "D169B0",
+      "pointer_bytes_sha256": "d986482e7cd5e6ecdc2c9e78fe293510023406c776054fef14de6965ee1cba85",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 140,
+      "table_cpu_address": "D16584",
+      "root_cpu_address": "D168A4",
+      "initial_cursor_cpu_address": "D168A5",
+      "pointer_bytes_sha256": "7a6ab0a8180781bc4f8b01c858d52dd8e249844e426b614018a632edf62a9289",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 141,
+      "table_cpu_address": "D16586",
+      "root_cpu_address": "D1684E",
+      "initial_cursor_cpu_address": "D1684F",
+      "pointer_bytes_sha256": "d2d9634873e33baeaeb14abc2630c1c7f322ecf7d0ac32669884c0f48b99c68e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 142,
+      "table_cpu_address": "D16588",
+      "root_cpu_address": "D167D5",
+      "initial_cursor_cpu_address": "D167D6",
+      "pointer_bytes_sha256": "ffe7e69582bf96e77c2a45dd8d4f5ec9a2937d348c8d83cf546372da14d05f8e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 143,
+      "table_cpu_address": "D1658A",
+      "root_cpu_address": "D16795",
+      "initial_cursor_cpu_address": "D16796",
+      "pointer_bytes_sha256": "8a4bb031aed4a564bb04d6a8a1db5441925fb29595becbb1e86775f3715efe52",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 144,
+      "table_cpu_address": "D1658C",
+      "root_cpu_address": "D166BC",
+      "initial_cursor_cpu_address": "D166BD",
+      "pointer_bytes_sha256": "5468d70f8e5922d2ee495b8390bdc06061f2bf025c736f62537ed079100f4de9",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 145,
+      "table_cpu_address": "D1658E",
+      "root_cpu_address": "D16594",
+      "initial_cursor_cpu_address": "D16595",
+      "pointer_bytes_sha256": "9e94a99224722ac8a348f5511b9ef06c9fd175c0cbd11258b88476709e61cca2",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 146,
+      "table_cpu_address": "D16590",
+      "root_cpu_address": "D1661A",
+      "initial_cursor_cpu_address": "D1661B",
+      "pointer_bytes_sha256": "f08d5186966df7987da59da1870d47d1035a8c172885b2528582b0b8a4257f9b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 147,
+      "table_cpu_address": "D16592",
+      "root_cpu_address": "D1666B",
+      "initial_cursor_cpu_address": "D1666C",
+      "pointer_bytes_sha256": "fa37be71bea1abe989546295b5d10f6a34598aa7ce90cfed1f870131e8e30c9e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 148,
+      "table_cpu_address": "D16594",
+      "root_cpu_address": "D1B001",
+      "initial_cursor_cpu_address": "D1B002",
+      "pointer_bytes_sha256": "146cb1bd5c639e50589db67598e4a3f423eb736f7911d3b8329f72e0f5cd5fac",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 149,
+      "table_cpu_address": "D16596",
+      "root_cpu_address": "D19441",
+      "initial_cursor_cpu_address": "D19442",
+      "pointer_bytes_sha256": "529665b336dde35e963f0f8a90ae29b973ef4627ed0ae4824411426c61d203bb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 150,
+      "table_cpu_address": "D16598",
+      "root_cpu_address": "D18A0A",
+      "initial_cursor_cpu_address": "D18A0B",
+      "pointer_bytes_sha256": "1b1176fe26af8ab5bd7fcf844b680ac5b01da0634e329639886540c79d98910b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 151,
+      "table_cpu_address": "D1659A",
+      "root_cpu_address": "D14601",
+      "initial_cursor_cpu_address": "D14602",
+      "pointer_bytes_sha256": "6a632187a3abf9bebb66d43368fccd612f631cbcfb6fdcc90337233c41ff1c7a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 152,
+      "table_cpu_address": "D1659C",
+      "root_cpu_address": "D1004C",
+      "initial_cursor_cpu_address": "D1004D",
+      "pointer_bytes_sha256": "1f6f527973a21d4c7d6b16476ef4f57b433b130041ab9fe5100fb72c93066c9e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 153,
+      "table_cpu_address": "D1659E",
+      "root_cpu_address": "D1008A",
+      "initial_cursor_cpu_address": "D1008B",
+      "pointer_bytes_sha256": "b812734dd9e02884d289a66fcd043599372f896c3e5df2d8b6627771084d42cb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 154,
+      "table_cpu_address": "D165A0",
+      "root_cpu_address": "D15580",
+      "initial_cursor_cpu_address": "D15581",
+      "pointer_bytes_sha256": "591bdf4fd2b31af09e924b39ca09634f97484568e069ba0d91cad5d05fcb55ac",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 155,
+      "table_cpu_address": "D165A2",
+      "root_cpu_address": "D18300",
+      "initial_cursor_cpu_address": "D18301",
+      "pointer_bytes_sha256": "34ee08ba62b88a43f6756eb77a5c627dcd34d6810c2e539678df2e0069f69952",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 156,
+      "table_cpu_address": "D165A4",
+      "root_cpu_address": "D10007",
+      "initial_cursor_cpu_address": "D10008",
+      "pointer_bytes_sha256": "0a6361b3a802f55cd5ae06101c88a1e216320fe11cc0cfe1d791eed08a1200fd",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 157,
+      "table_cpu_address": "D165A6",
+      "root_cpu_address": "D18E84",
+      "initial_cursor_cpu_address": "D18E85",
+      "pointer_bytes_sha256": "ab70b49018bd643012eb1ba746976b1bb993f4bedf629bdc1107f2812d793ac8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 158,
+      "table_cpu_address": "D165A8",
+      "root_cpu_address": "D1C050",
+      "initial_cursor_cpu_address": "D1C051",
+      "pointer_bytes_sha256": "dee96a22e44220719226583ca783612c4424d5eb8eb8752f628c7341bf818581",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 159,
+      "table_cpu_address": "D165AA",
+      "root_cpu_address": "D1FF10",
+      "initial_cursor_cpu_address": "D1FF11",
+      "pointer_bytes_sha256": "f603020a137f0a13d3d1a2c0c22697de3ba722bf9be183e63480994f5096fe2f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 160,
+      "table_cpu_address": "D165AC",
+      "root_cpu_address": "D10BFF",
+      "initial_cursor_cpu_address": "D10C00",
+      "pointer_bytes_sha256": "8e235f2e7a311629405b1aa7517681a82bac3ca13fbfea681c7eced005e5766b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 161,
+      "table_cpu_address": "D165AE",
+      "root_cpu_address": "D19D01",
+      "initial_cursor_cpu_address": "D19D02",
+      "pointer_bytes_sha256": "37b6f445e15050238071611f3894f3a5d11e9056c68d06b2644e7c18a444ee8e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 162,
+      "table_cpu_address": "D165B0",
+      "root_cpu_address": "D19115",
+      "initial_cursor_cpu_address": "D19116",
+      "pointer_bytes_sha256": "46d947c168ff35a3e9910e202d67e1aa23d52bf2cf873623f70682a9ff64280b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 163,
+      "table_cpu_address": "D165B2",
+      "root_cpu_address": "D19EBE",
+      "initial_cursor_cpu_address": "D19EBF",
+      "pointer_bytes_sha256": "9783dbc6867e18d5566c1b476bd14adfecad231fbd81b3d776d0f5a188707d10",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 164,
+      "table_cpu_address": "D165B4",
+      "root_cpu_address": "D11883",
+      "initial_cursor_cpu_address": "D11884",
+      "pointer_bytes_sha256": "8d05d25412e61eea535ef5deec572f396f9168921933ee1f578421bc9af2a52e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 165,
+      "table_cpu_address": "D165B6",
+      "root_cpu_address": "D10088",
+      "initial_cursor_cpu_address": "D10089",
+      "pointer_bytes_sha256": "4ed3faf468082eac4eda4924e4673874e50c30f816c05c73246fd56cf78163d0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 166,
+      "table_cpu_address": "D165B8",
+      "root_cpu_address": "D10089",
+      "initial_cursor_cpu_address": "D1008A",
+      "pointer_bytes_sha256": "abc8a336b459eb08ac926b0c1cf19f0741bf543c64aaa7fccbba331c8ba0fc23",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 167,
+      "table_cpu_address": "D165BA",
+      "root_cpu_address": "D10000",
+      "initial_cursor_cpu_address": "D10001",
+      "pointer_bytes_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 168,
+      "table_cpu_address": "D165BC",
+      "root_cpu_address": "D18901",
+      "initial_cursor_cpu_address": "D18902",
+      "pointer_bytes_sha256": "4c239bec6d499ee640fe6e3728e43a5f3ed90f95482fe08289daf2d72d4e93ad",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 169,
+      "table_cpu_address": "D165BE",
+      "root_cpu_address": "D10001",
+      "initial_cursor_cpu_address": "D10002",
+      "pointer_bytes_sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 170,
+      "table_cpu_address": "D165C0",
+      "root_cpu_address": "D10100",
+      "initial_cursor_cpu_address": "D10101",
+      "pointer_bytes_sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 171,
+      "table_cpu_address": "D165C2",
+      "root_cpu_address": "D1008B",
+      "initial_cursor_cpu_address": "D1008C",
+      "pointer_bytes_sha256": "736aaffccc35e5ac4a9c0d7b2f64ae9ed7ead848f3eb93c8ad4b50b9b76b5e39",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 172,
+      "table_cpu_address": "D165C4",
+      "root_cpu_address": "D1018B",
+      "initial_cursor_cpu_address": "D1018C",
+      "pointer_bytes_sha256": "85041a0b25ed7b917ea9cc7ee7e912da1fece2d849ea5ee107f18f800123e64f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 173,
+      "table_cpu_address": "D165C6",
+      "root_cpu_address": "D18400",
+      "initial_cursor_cpu_address": "D18401",
+      "pointer_bytes_sha256": "905240728323dea0e4e49776d3483a2e7e8479f60acf23a6e6002ec87886cbe8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 174,
+      "table_cpu_address": "D165C8",
+      "root_cpu_address": "D11383",
+      "initial_cursor_cpu_address": "D11384",
+      "pointer_bytes_sha256": "9f025faf0c4a8fd7a1c79915b72fb38a65317e068ca4738ebec5e54950ce9729",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 175,
+      "table_cpu_address": "D165CA",
+      "root_cpu_address": "D10088",
+      "initial_cursor_cpu_address": "D10089",
+      "pointer_bytes_sha256": "4ed3faf468082eac4eda4924e4673874e50c30f816c05c73246fd56cf78163d0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 176,
+      "table_cpu_address": "D165CC",
+      "root_cpu_address": "D10089",
+      "initial_cursor_cpu_address": "D1008A",
+      "pointer_bytes_sha256": "abc8a336b459eb08ac926b0c1cf19f0741bf543c64aaa7fccbba331c8ba0fc23",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 177,
+      "table_cpu_address": "D165CE",
+      "root_cpu_address": "D10000",
+      "initial_cursor_cpu_address": "D10001",
+      "pointer_bytes_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 178,
+      "table_cpu_address": "D165D0",
+      "root_cpu_address": "D18B01",
+      "initial_cursor_cpu_address": "D18B02",
+      "pointer_bytes_sha256": "469dacecdef1d68cb354c4a5c015df7cb6d655bfdba3dbac7720445eaecf3093",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 179,
+      "table_cpu_address": "D165D2",
+      "root_cpu_address": "D18B00",
+      "initial_cursor_cpu_address": "D18B01",
+      "pointer_bytes_sha256": "bbdd1a6d40d4470f372a17524a0f6eaafef967d98b497e3ca9c5cd5d62aca063",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 180,
+      "table_cpu_address": "D165D4",
+      "root_cpu_address": "D10001",
+      "initial_cursor_cpu_address": "D10002",
+      "pointer_bytes_sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 181,
+      "table_cpu_address": "D165D6",
+      "root_cpu_address": "D18884",
+      "initial_cursor_cpu_address": "D18885",
+      "pointer_bytes_sha256": "907be070ea68a00854d36490d6e021a37b51f2fbe59fa30d62ac19d445b99d32",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 182,
+      "table_cpu_address": "D165D8",
+      "root_cpu_address": "D18B00",
+      "initial_cursor_cpu_address": "D18B01",
+      "pointer_bytes_sha256": "bbdd1a6d40d4470f372a17524a0f6eaafef967d98b497e3ca9c5cd5d62aca063",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 183,
+      "table_cpu_address": "D165DA",
+      "root_cpu_address": "D18B00",
+      "initial_cursor_cpu_address": "D18B01",
+      "pointer_bytes_sha256": "bbdd1a6d40d4470f372a17524a0f6eaafef967d98b497e3ca9c5cd5d62aca063",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 184,
+      "table_cpu_address": "D165DC",
+      "root_cpu_address": "D18E01",
+      "initial_cursor_cpu_address": "D18E02",
+      "pointer_bytes_sha256": "4ab449c2aacb962be1c9a6825e1f2a63478e23b3fd70de728e3243d00d0a5a3a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 185,
+      "table_cpu_address": "D165DE",
+      "root_cpu_address": "D1C050",
+      "initial_cursor_cpu_address": "D1C051",
+      "pointer_bytes_sha256": "dee96a22e44220719226583ca783612c4424d5eb8eb8752f628c7341bf818581",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 186,
+      "table_cpu_address": "D165E0",
+      "root_cpu_address": "D10010",
+      "initial_cursor_cpu_address": "D10011",
+      "pointer_bytes_sha256": "707bf0b938f307b5c222e670598b865d5e1f8a8003df82c7abbf7c9f8fa4d720",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 187,
+      "table_cpu_address": "D165E2",
+      "root_cpu_address": "D10BFF",
+      "initial_cursor_cpu_address": "D10C00",
+      "pointer_bytes_sha256": "8e235f2e7a311629405b1aa7517681a82bac3ca13fbfea681c7eced005e5766b",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 188,
+      "table_cpu_address": "D165E4",
+      "root_cpu_address": "D19323",
+      "initial_cursor_cpu_address": "D19324",
+      "pointer_bytes_sha256": "236db4debd7a13f34397cb6a9433b170a0258da49e199c90db83a9af96a1c007",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 189,
+      "table_cpu_address": "D165E6",
+      "root_cpu_address": "D10210",
+      "initial_cursor_cpu_address": "D10211",
+      "pointer_bytes_sha256": "5c6037e17112ad2502ced33a32a65e1df780e7996de2b65aff08f47c4c58a3d0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 190,
+      "table_cpu_address": "D165E8",
+      "root_cpu_address": "D18304",
+      "initial_cursor_cpu_address": "D18305",
+      "pointer_bytes_sha256": "3afdf9001c96a179fef72bca7cde12f81e38545c2f6d6f8b5369b6bf8a7ad802",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 191,
+      "table_cpu_address": "D165EA",
+      "root_cpu_address": "D10060",
+      "initial_cursor_cpu_address": "D10061",
+      "pointer_bytes_sha256": "f3df0a62b10f205b0f29768aa3d69e777154caaa179f64aabb0a4899c666b017",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 192,
+      "table_cpu_address": "D165EC",
+      "root_cpu_address": "D1E584",
+      "initial_cursor_cpu_address": "D1E585",
+      "pointer_bytes_sha256": "1e67542ac9bd2e636347918ecc38033264327e32d527f1d40be61d8d7fa2c005",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 193,
+      "table_cpu_address": "D165EE",
+      "root_cpu_address": "D1831A",
+      "initial_cursor_cpu_address": "D1831B",
+      "pointer_bytes_sha256": "2c007dfda8e1689a93808bef840af929180b663489c52d38deac60b0834ef61d",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 194,
+      "table_cpu_address": "D165F0",
+      "root_cpu_address": "D10020",
+      "initial_cursor_cpu_address": "D10021",
+      "pointer_bytes_sha256": "869f1dfb999a452f497a4cf7f44db2d6ee661f74a9e7e05251bc1420e50672d4",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 195,
+      "table_cpu_address": "D165F2",
+      "root_cpu_address": "D18384",
+      "initial_cursor_cpu_address": "D18385",
+      "pointer_bytes_sha256": "27b85f02d4eb9bf44cad8b4132ecb24df415d49a91033e99fe5dfe7def9c60ed",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 196,
+      "table_cpu_address": "D165F4",
+      "root_cpu_address": "D18818",
+      "initial_cursor_cpu_address": "D18819",
+      "pointer_bytes_sha256": "ea8131cbfe4c74bbd860e361d7634a023fa81cc54838f7c43a6df1bc9b2c3799",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 197,
+      "table_cpu_address": "D165F6",
+      "root_cpu_address": "D18900",
+      "initial_cursor_cpu_address": "D18901",
+      "pointer_bytes_sha256": "d9feacea96faa0720f9a24827e7a7f3c9510e32de8985908b7938b6ce0fdc926",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 198,
+      "table_cpu_address": "D165F8",
+      "root_cpu_address": "D10000",
+      "initial_cursor_cpu_address": "D10001",
+      "pointer_bytes_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 199,
+      "table_cpu_address": "D165FA",
+      "root_cpu_address": "D1FF00",
+      "initial_cursor_cpu_address": "D1FF01",
+      "pointer_bytes_sha256": "06eb7d6a69ee19e5fbdf749018d3d2abfa04bcbd1365db312eb86dc7169389b8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 200,
+      "table_cpu_address": "D165FC",
+      "root_cpu_address": "D10189",
+      "initial_cursor_cpu_address": "D1018A",
+      "pointer_bytes_sha256": "a52154f6ae9b203b56f6ce53c7f4efd334fad4c468c128869d75d8ebc46ab313",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 201,
+      "table_cpu_address": "D165FE",
+      "root_cpu_address": "D10000",
+      "initial_cursor_cpu_address": "D10001",
+      "pointer_bytes_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 202,
+      "table_cpu_address": "D16600",
+      "root_cpu_address": "D18BFF",
+      "initial_cursor_cpu_address": "D18C00",
+      "pointer_bytes_sha256": "999b222dbf9a6083c10cc64e6b52cb18ae176f7e37ed1abb7347fe4a0c24a63a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 203,
+      "table_cpu_address": "D16602",
+      "root_cpu_address": "D18B00",
+      "initial_cursor_cpu_address": "D18B01",
+      "pointer_bytes_sha256": "bbdd1a6d40d4470f372a17524a0f6eaafef967d98b497e3ca9c5cd5d62aca063",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 204,
+      "table_cpu_address": "D16604",
+      "root_cpu_address": "D10001",
+      "initial_cursor_cpu_address": "D10002",
+      "pointer_bytes_sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 205,
+      "table_cpu_address": "D16606",
+      "root_cpu_address": "D18384",
+      "initial_cursor_cpu_address": "D18385",
+      "pointer_bytes_sha256": "27b85f02d4eb9bf44cad8b4132ecb24df415d49a91033e99fe5dfe7def9c60ed",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 206,
+      "table_cpu_address": "D16608",
+      "root_cpu_address": "D18813",
+      "initial_cursor_cpu_address": "D18814",
+      "pointer_bytes_sha256": "efc2cf6ec93926d8ade64bbf37da2ebc1ead578e969d6ae5ee8814e5a7e743a5",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 207,
+      "table_cpu_address": "D1660A",
+      "root_cpu_address": "D18900",
+      "initial_cursor_cpu_address": "D18901",
+      "pointer_bytes_sha256": "d9feacea96faa0720f9a24827e7a7f3c9510e32de8985908b7938b6ce0fdc926",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 208,
+      "table_cpu_address": "D1660C",
+      "root_cpu_address": "D10000",
+      "initial_cursor_cpu_address": "D10001",
+      "pointer_bytes_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 209,
+      "table_cpu_address": "D1660E",
+      "root_cpu_address": "D1FF00",
+      "initial_cursor_cpu_address": "D1FF01",
+      "pointer_bytes_sha256": "06eb7d6a69ee19e5fbdf749018d3d2abfa04bcbd1365db312eb86dc7169389b8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 210,
+      "table_cpu_address": "D16610",
+      "root_cpu_address": "D1008B",
+      "initial_cursor_cpu_address": "D1008C",
+      "pointer_bytes_sha256": "736aaffccc35e5ac4a9c0d7b2f64ae9ed7ead848f3eb93c8ad4b50b9b76b5e39",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 211,
+      "table_cpu_address": "D16612",
+      "root_cpu_address": "D1018B",
+      "initial_cursor_cpu_address": "D1018C",
+      "pointer_bytes_sha256": "85041a0b25ed7b917ea9cc7ee7e912da1fece2d849ea5ee107f18f800123e64f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 212,
+      "table_cpu_address": "D16614",
+      "root_cpu_address": "D18400",
+      "initial_cursor_cpu_address": "D18401",
+      "pointer_bytes_sha256": "905240728323dea0e4e49776d3483a2e7e8479f60acf23a6e6002ec87886cbe8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 213,
+      "table_cpu_address": "D16616",
+      "root_cpu_address": "D10891",
+      "initial_cursor_cpu_address": "D10892",
+      "pointer_bytes_sha256": "f85272dd8cc1b621d35c7019a31c53916e750a7981112a2c5fc25d8717d8f2e0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 214,
+      "table_cpu_address": "D16618",
+      "root_cpu_address": "D1FFA2",
+      "initial_cursor_cpu_address": "D1FFA3",
+      "pointer_bytes_sha256": "5ff1f52c821e03a68d3c750a4d9a5d4c1b967e7306029bba4320e3eba32d4417",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 215,
+      "table_cpu_address": "D1661A",
+      "root_cpu_address": "D1B001",
+      "initial_cursor_cpu_address": "D1B002",
+      "pointer_bytes_sha256": "146cb1bd5c639e50589db67598e4a3f423eb736f7911d3b8329f72e0f5cd5fac",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 216,
+      "table_cpu_address": "D1661C",
+      "root_cpu_address": "D19441",
+      "initial_cursor_cpu_address": "D19442",
+      "pointer_bytes_sha256": "529665b336dde35e963f0f8a90ae29b973ef4627ed0ae4824411426c61d203bb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 217,
+      "table_cpu_address": "D1661E",
+      "root_cpu_address": "D18A08",
+      "initial_cursor_cpu_address": "D18A09",
+      "pointer_bytes_sha256": "5bc56ecf15116b914ae02206370d1088a79851c160b8597466d57453c323f146",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 218,
+      "table_cpu_address": "D16620",
+      "root_cpu_address": "D14601",
+      "initial_cursor_cpu_address": "D14602",
+      "pointer_bytes_sha256": "6a632187a3abf9bebb66d43368fccd612f631cbcfb6fdcc90337233c41ff1c7a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 219,
+      "table_cpu_address": "D16622",
+      "root_cpu_address": "D1004C",
+      "initial_cursor_cpu_address": "D1004D",
+      "pointer_bytes_sha256": "1f6f527973a21d4c7d6b16476ef4f57b433b130041ab9fe5100fb72c93066c9e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 220,
+      "table_cpu_address": "D16624",
+      "root_cpu_address": "D10783",
+      "initial_cursor_cpu_address": "D10784",
+      "pointer_bytes_sha256": "5a45220da885d16a25e63e5fdd9e09c499a10ef53f566722180cb11bd6ab3d29",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 221,
+      "table_cpu_address": "D16626",
+      "root_cpu_address": "D18400",
+      "initial_cursor_cpu_address": "D18401",
+      "pointer_bytes_sha256": "905240728323dea0e4e49776d3483a2e7e8479f60acf23a6e6002ec87886cbe8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 222,
+      "table_cpu_address": "D16628",
+      "root_cpu_address": "D1508E",
+      "initial_cursor_cpu_address": "D1508F",
+      "pointer_bytes_sha256": "ab3d6d7a6f7596cbe9a92f0f41ebd5b474ec699cc0e036ef5a47e8cb8106d2e5",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 223,
+      "table_cpu_address": "D1662A",
+      "root_cpu_address": "D110C0",
+      "initial_cursor_cpu_address": "D110C1",
+      "pointer_bytes_sha256": "56209a3e8e1a083d4776ede2f28ade7f19ea1a209ca380e7138e1741a05d3a97",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 224,
+      "table_cpu_address": "D1662C",
+      "root_cpu_address": "D1FFFF",
+      "initial_cursor_cpu_address": "D10000",
+      "pointer_bytes_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 225,
+      "table_cpu_address": "D1662E",
+      "root_cpu_address": "D1010B",
+      "initial_cursor_cpu_address": "D1010C",
+      "pointer_bytes_sha256": "1b696403d8982756c236afbc5b09c0f54dd0682ee534a75dc4b70a5d5ed0ba8f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 226,
+      "table_cpu_address": "D16630",
+      "root_cpu_address": "D1159D",
+      "initial_cursor_cpu_address": "D1159E",
+      "pointer_bytes_sha256": "234ec4fcdbe4f9b118d3065cbb2d97e6c9a801925f9735812efbad22e9dcca59",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 227,
+      "table_cpu_address": "D16632",
+      "root_cpu_address": "D1BE91",
+      "initial_cursor_cpu_address": "D1BE92",
+      "pointer_bytes_sha256": "8f308732c4404ec4ad3fc25845beae81a50599e36d01dac0eb5c31ae8288e122",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 228,
+      "table_cpu_address": "D16634",
+      "root_cpu_address": "D1839E",
+      "initial_cursor_cpu_address": "D1839F",
+      "pointer_bytes_sha256": "43a48d1210d321f005131effe0dae4d63ea3d359e8e92b998a7b530efe1dc04a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 229,
+      "table_cpu_address": "D16636",
+      "root_cpu_address": "D18818",
+      "initial_cursor_cpu_address": "D18819",
+      "pointer_bytes_sha256": "ea8131cbfe4c74bbd860e361d7634a023fa81cc54838f7c43a6df1bc9b2c3799",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 230,
+      "table_cpu_address": "D16638",
+      "root_cpu_address": "D18900",
+      "initial_cursor_cpu_address": "D18901",
+      "pointer_bytes_sha256": "d9feacea96faa0720f9a24827e7a7f3c9510e32de8985908b7938b6ce0fdc926",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 231,
+      "table_cpu_address": "D1663A",
+      "root_cpu_address": "D10001",
+      "initial_cursor_cpu_address": "D10002",
+      "pointer_bytes_sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 232,
+      "table_cpu_address": "D1663C",
+      "root_cpu_address": "D10100",
+      "initial_cursor_cpu_address": "D10101",
+      "pointer_bytes_sha256": "b413f47d13ee2fe6c845b2ee141af81de858df4ec549a58b7970bb96645bc8d2",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 233,
+      "table_cpu_address": "D1663E",
+      "root_cpu_address": "D1018B",
+      "initial_cursor_cpu_address": "D1018C",
+      "pointer_bytes_sha256": "85041a0b25ed7b917ea9cc7ee7e912da1fece2d849ea5ee107f18f800123e64f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 234,
+      "table_cpu_address": "D16640",
+      "root_cpu_address": "D18400",
+      "initial_cursor_cpu_address": "D18401",
+      "pointer_bytes_sha256": "905240728323dea0e4e49776d3483a2e7e8479f60acf23a6e6002ec87886cbe8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 235,
+      "table_cpu_address": "D16642",
+      "root_cpu_address": "D1018B",
+      "initial_cursor_cpu_address": "D1018C",
+      "pointer_bytes_sha256": "85041a0b25ed7b917ea9cc7ee7e912da1fece2d849ea5ee107f18f800123e64f",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 236,
+      "table_cpu_address": "D16644",
+      "root_cpu_address": "D1508E",
+      "initial_cursor_cpu_address": "D1508F",
+      "pointer_bytes_sha256": "ab3d6d7a6f7596cbe9a92f0f41ebd5b474ec699cc0e036ef5a47e8cb8106d2e5",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 237,
+      "table_cpu_address": "D16646",
+      "root_cpu_address": "D110C0",
+      "initial_cursor_cpu_address": "D110C1",
+      "pointer_bytes_sha256": "56209a3e8e1a083d4776ede2f28ade7f19ea1a209ca380e7138e1741a05d3a97",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 238,
+      "table_cpu_address": "D16648",
+      "root_cpu_address": "D1FF00",
+      "initial_cursor_cpu_address": "D1FF01",
+      "pointer_bytes_sha256": "06eb7d6a69ee19e5fbdf749018d3d2abfa04bcbd1365db312eb86dc7169389b8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 239,
+      "table_cpu_address": "D1664A",
+      "root_cpu_address": "D1230B",
+      "initial_cursor_cpu_address": "D1230C",
+      "pointer_bytes_sha256": "97808f5efd386e2f2d62e8b95b17a5f4428c7d80078a625c91f6c6f56f6f97c3",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 240,
+      "table_cpu_address": "D1664C",
+      "root_cpu_address": "D11093",
+      "initial_cursor_cpu_address": "D11094",
+      "pointer_bytes_sha256": "2535f467e6a852727e98fa5e07615894312d0ff58e5bd15de7e15b13ecf0c8ae",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 241,
+      "table_cpu_address": "D1664E",
+      "root_cpu_address": "D10402",
+      "initial_cursor_cpu_address": "D10403",
+      "pointer_bytes_sha256": "421dd6c30feb9149b349ae67525aae7556eb6c552e0b363edd78f8a8d8646ab8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 242,
+      "table_cpu_address": "D16650",
+      "root_cpu_address": "D16083",
+      "initial_cursor_cpu_address": "D16084",
+      "pointer_bytes_sha256": "8829ccfc44f5e996c041a01eace2fb8ee27a585d0596b100f0ae83d1c61f86a3",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 243,
+      "table_cpu_address": "D16652",
+      "root_cpu_address": "D18400",
+      "initial_cursor_cpu_address": "D18401",
+      "pointer_bytes_sha256": "905240728323dea0e4e49776d3483a2e7e8479f60acf23a6e6002ec87886cbe8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 244,
+      "table_cpu_address": "D16654",
+      "root_cpu_address": "D11AE5",
+      "initial_cursor_cpu_address": "D11AE6",
+      "pointer_bytes_sha256": "5d9da9f17ed40694b79e3e6ce8e59128e83383b0affb713f2545cbbeee117811",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 245,
+      "table_cpu_address": "D16656",
+      "root_cpu_address": "D12083",
+      "initial_cursor_cpu_address": "D12084",
+      "pointer_bytes_sha256": "32cf0d5895ed6b59ec7c272929627c61176b314799f3df13746352d3126cb6fb",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 246,
+      "table_cpu_address": "D16658",
+      "root_cpu_address": "D18400",
+      "initial_cursor_cpu_address": "D18401",
+      "pointer_bytes_sha256": "905240728323dea0e4e49776d3483a2e7e8479f60acf23a6e6002ec87886cbe8",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 247,
+      "table_cpu_address": "D1665A",
+      "root_cpu_address": "D11883",
+      "initial_cursor_cpu_address": "D11884",
+      "pointer_bytes_sha256": "8d05d25412e61eea535ef5deec572f396f9168921933ee1f578421bc9af2a52e",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 248,
+      "table_cpu_address": "D1665C",
+      "root_cpu_address": "D10088",
+      "initial_cursor_cpu_address": "D10089",
+      "pointer_bytes_sha256": "4ed3faf468082eac4eda4924e4673874e50c30f816c05c73246fd56cf78163d0",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 249,
+      "table_cpu_address": "D1665E",
+      "root_cpu_address": "D10189",
+      "initial_cursor_cpu_address": "D1018A",
+      "pointer_bytes_sha256": "a52154f6ae9b203b56f6ce53c7f4efd334fad4c468c128869d75d8ebc46ab313",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 250,
+      "table_cpu_address": "D16660",
+      "root_cpu_address": "D10000",
+      "initial_cursor_cpu_address": "D10001",
+      "pointer_bytes_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 251,
+      "table_cpu_address": "D16662",
+      "root_cpu_address": "D18BFF",
+      "initial_cursor_cpu_address": "D18C00",
+      "pointer_bytes_sha256": "999b222dbf9a6083c10cc64e6b52cb18ae176f7e37ed1abb7347fe4a0c24a63a",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 252,
+      "table_cpu_address": "D16664",
+      "root_cpu_address": "D10001",
+      "initial_cursor_cpu_address": "D10002",
+      "pointer_bytes_sha256": "47dc540c94ceb704a23875c11273e16bb0b8a87aed84de911f2133568115f254",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 253,
+      "table_cpu_address": "D16666",
+      "root_cpu_address": "D19184",
+      "initial_cursor_cpu_address": "D19185",
+      "pointer_bytes_sha256": "1fc889688f6a3473a6e589c3ef4c521e55e4223325e570feda1b15acd15a04ef",
+      "reachability_proved": false
+    },
+    {
+      "script_id": 254,
+      "table_cpu_address": "D16668",
+      "root_cpu_address": "D1A208",
+      "initial_cursor_cpu_address": "D1A209",
+      "pointer_bytes_sha256": "81835493b32a1d90dd131ae724212d08f25e9096ffba062c11b50d73941f34b3",
+      "reachability_proved": false
+    }
+  ],
+  "possible_id_distinct_roots": 207,
+  "complete_legal_command_domain_proved": false,
+  "complete_legal_script_id_domain_proved": false,
+  "script_token_grammar_proved": false,
+  "script_reachability_or_lifetime_proved": false,
+  "helper_frame_ownership_proved": false,
+  "whole_nmi_stack_bound": null,
+  "production_approval": false,
+  "limits": [
+    "Native M1/X0 and D0 are explicit prefix entry premises; DBR7E is required to name the WRAM fields.",
+    "Prefix branch outcomes overapproximate inputs and stop before the first indexed call; no command handler is assigned an opaque return.",
+    "The 122-cell prefix is a reviewed physical prefix, not a certified complete legal table; canonical code/data dual use is not forbidden.",
+    "FA-FE syntax values and arbitrary incoming B remain possible at the local consumer without a source-domain proof.",
+    "255 non-FF script IDs are hypothetical local-consumer inputs, not 255 certified scripts.",
+    "No new command execution, original cartridge run, game hook, allocation, or interrupt ownership is approved."
+  ],
+  "sources": {
+    "auditor": {
+      "path": "tools/audit_schala_scene_dispatch_inputs_v1.py",
+      "size": 14561,
+      "sha256": "3aef357ad9c557d21015711e834d37a370737228665cca4c2ece4745a71f4d30"
+    },
+    "tests": {
+      "path": "tests/test_schala_scene_dispatch_inputs_v1.py",
+      "size": 6509,
+      "sha256": "d6c96fa9a8444f4e5e5bb403e36bf3035433f6e190f21dbc1454eccf6a2fe195"
+    },
+    "closure_reference": {
+      "path": "references/schala_package_normal_nmi_closure_v2.json",
+      "size": 321839,
+      "sha256": "413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242"
+    },
+    "closure_auditor": {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    "cd_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CD.asm",
+      "size": 474851,
+      "sha256": "0d230620c6accf311c0588e2fefaf3bcc48b0d42575f3745fec3a402a6ca19fb"
+    },
+    "d1_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_D1.asm",
+      "size": 189600,
+      "sha256": "020f6df9efd22cc12a35608da6523b5d2e5d76d965d94567e0b74d50ab9eacea"
+    },
+    "SnesCpu.Shared.h": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    "SnesCpu.Instructions.h": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    }
+  },
+  "preserved_closure_dependency_identities": [
+    {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    {
+      "path": "tests/test_schala_package_normal_nmi_closure_v2.py",
+      "size": 8449,
+      "sha256": "ed5c9cfc7960eeac0a0ca27c97cb462b67b0e518a9b9164d03a8ada3ae0b53fb"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_v1.py",
+      "size": 16826,
+      "sha256": "81a145b4ec078d5cf22ec5680cdfb66d427f876f40eefd0a50af432f8b9f51a9"
+    },
+    {
+      "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+      "size": 13647,
+      "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_v1.json",
+      "size": 71372,
+      "sha256": "27dd6f602781b83107bd7ab9072f1704e26bb39433713a3188679114db3b4f2c"
+    }
+  ],
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_schala_scene_dispatch_inputs_v1.py"
+  ]
+}

@@ -58,6 +58,9 @@ proofs have separate scopes and should be reused:
 | [Original-NMI preemption](schala_package_helper_v2_original_nmi.md) | Two identical 224-case runs with exact hardware frames, handler/RTI continuity and complete final WRAM ledgers | V2 helper in synthetic WRAM and an original minimal handler; separate from ROM execution |
 | [Canonical-donor preflight](schala_package_preflight_planner_v1.md) | Exact successful/refused contexts, donor byte `+0` substitution and mandatory both-mask policy recomputation; 33 tests | Source-only transport eligibility; no native cleanup, completion or integration approval |
 | [Normal-NMI direct callees](schala_package_normal_nmi_closure_v2.md) | 25 direct contracts covering 34 original call sites; 42 tests | Conditional typed-stack model; 10 sites and all physical alias/global bounds remain open |
+| [Completion witness](schala_package_completion_witness_v1.md) | Revalidated accepted pair: 516 zero waits, actual package-counter write, eight latch write/readback pairs and same queue-caller return; 54 tests | Existing vanilla action; no encoded default opcode, pointer delta, owner-store readback or new high-package protocol |
+| [Scene-dispatch inputs](schala_scene_dispatch_inputs_v1.md) | First tick-reached indexed command has B=0; complete local byte/index recipes and occupied successor cells; 27 tests | Later returned B, complete legal producer domains, selected command effects and whole-NMI bound remain open |
+| [Outer-mode inputs](schala_nmi_mode_inputs_v1.md) | Exact busy-zero caller registers from symbolic native inputs and all initial widths; 23 tests | Conditional 16-byte prefix count, eight-bit aliases and reviewed cells; no legal producer domain or selected-body closure |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
@@ -84,6 +87,13 @@ corrects our unavailable `ppu.nmiScanline` assumption. The separate direct
 callee closure leaves seven distinct implementations open at reset or
 indexed dispatch. The complete normal-game NMI closure and global nested
 bound remain unproved.
+The completion witness now connects the already accepted native trace's
+actual signal to its caller and cleanup; reuse it instead of replaying the
+same action. The scene-input prefix narrows one indexed frontier, but only
+the first command inherits its proved B=0. Subsequent handler returns need
+their own byte/width contracts. A separate immutable-ROM/NMI experiment is
+under calibration after its first pilot exposed a whole-fixture VBlank
+assumption; it has no accepted combined-preemption result yet.
 
 No production hook, allocation, scratch ownership, high selector, Schala
 command or logical PC `$07` is approved. The
@@ -260,8 +270,22 @@ sound deceptively similar.
 | `BA-CMD-1E-FINAL-EXPANDED-POLICY` | `complete-static` | Profile `decoded-command-1e-exclusion-flat-direct-v0` forbids decoded `$1E/$1F/$21`, permits raw operand byte `$1E`, independently decodes both masks and every suffix/shared entrypoint through `$00`, and requires disjoint exact named spans with complete token ownership. The certificate pins content and interpreter identities. It adapts no handler and binds no package. |
 | `BA-SYMBOLIC-HIGH-PACKAGE` | `complete-source-host` | One terminal-only symbolic package, exact named synthetic spans, two mask relations sharing one direct entry, all 256 `$A0B3` inputs, canonical row `$01` with only byte `+0` changed, 128 unchanged canonical selectors, and 16 unbound default high selectors. No action, effect, runtime, or production allocation follows. |
 | `BA-NATIVE-HELPER-CONFORMANCE` | `complete-native-synthetic` | Original 537-byte 65C816 helper passes 879 cases in three Mesen runs at two code origins. The identical-origin pair has matching traces; native CPU state and exact writes satisfy the host contract. Diagnostic WRAM source banks only; no game hook, expanded-ROM read, allocation, scratch ownership, interrupt compatibility, or PC `$07` proof. |
-| `BA-NATIVE-INTEGRATION-DESIGN` | `in-progress` | The primary live entry/return baseline is complete. Define refusal/cancellation semantics, prove ROM-source reads and the ordinary alternate branch, and resolve named placement and scratch/interrupt ownership before guarded installation. |
+| `BA-NATIVE-INTEGRATION-DESIGN` | `in-progress` | Primary/alternate live observations, both vanilla transaction outcomes, ROM transport, bounded original-NMI preemption and the source-only preflight are complete in separate scopes below. Native rejection, intentional completion, combined ROM preemption, named production placement and actual game interrupt/stack ownership remain open. |
 | `BA-LIVE-RESOLVER-PRIMARY-OBSERVATION` | `complete-bounded-runtime` | Two identical clean-ROM Mesen traces for one ordinary PC type-2 primary invocation, exact entry/return state and ordered publications, and its paired completion. Does not prove alternate branch, cancellation, expanded-ROM access, interrupts, or a high selector. |
+| `BA-LIVE-RESOLVER-ALTERNATE-OBSERVATION` | `complete-bounded-runtime` | [Black Hole/Spekkio](schala_package_resolver_alternate_v1.md): two identical traces, selector `$37`, branch `$0040`, 42 publications and completion. Boss immunity is distinct from the corrected nonboss equality predicate. |
+| `BA-LIVE-TRANSACTION-SUCCESS` | `complete-bounded-runtime` | [Successful Luminaire](schala_package_transaction_observation_v1.md): two identical traces of exact pre-effect/MP/results/finalizer/return boundaries. Watched ranges only; existing evidence is reused for later interpretation. |
+| `BA-LIVE-TRANSACTION-REFUSAL` | `complete-bounded-runtime` | [Naturally refused Cure](schala_package_natural_refusal_observation_v1.md): two identical traces from living-target queue through target death, no-charge refusal, exact cleanup and later actor readiness. No new helper rejection is installed. |
+| `BA-ROM-SOURCE-HELPER-V1` | `complete-native-synthetic` | [Two 1,454-case runs](schala_package_helper_v1_rom_source.md) prove ROM source reads from WRAM code; its historical global scratch is unsuitable for game use. |
+| `BA-STACK-HELPER-V2` | `complete-native-synthetic` | [Two 2,980-case normal runs](schala_package_helper_v2_stack.md) prove the 577-byte stack-local helper, complete CPU/WRAM ledger and explicit floor boundaries. Low-SP specimens have no interrupt reserve. |
+| `BA-ORIGINAL-CARTRIDGE-BUILDER` | `complete-original-static` | [Two deterministic builds](original_snes_package_cartridge_v1.md) pass a separate original-diagnostic intent/complete-diff contract. This creates no exception for canonical-ROM mutation or production allocation. |
+| `BA-NATIVE-ROM-CODE-REGISTRY-CONFORMANCE` | `complete-native-synthetic` | [Two 3,184-case v3 runs](schala_package_helper_v3_rom.md) execute `$410000` and read immutable `$42/$43`; pointed terminal streams are certified but not executed. |
+| `BA-ORIGINAL-NMI-PREEMPTION-V2` | `complete-native-synthetic` | [Two 224-case runs](schala_package_helper_v2_original_nmi.md) prove real emulated hardware-frame/RTI behavior and full WRAM reconciliation for WRAM code plus the original minimal handler. No ROM-code or real-game handler preemption follows. |
+| `BA-CANONICAL-PREFLIGHT-HOST` | `complete-source-host` | [Reviewed planner](schala_package_preflight_planner_v1.md) preserves exact successful/refused contexts and donor `$08` auxiliary bytes, then recomputes both package masks. All cleanup/completion/runtime authority flags remain false. |
+| `BA-COMPLETION-CONTRACT-V1` | `complete-bounded-static` | [Selected stop/default effects](schala_package_completion_contract_v1.md), independent caller waits and the exact existing-policy intersection; MAP-011 corrects the D=0 consume claim. Not an all-command writer census or new completion policy. |
+| `BA-COMPLETION-WITNESS-V1` | `complete-bounded-runtime-reuse` | [Accepted trace pair revalidated](schala_package_completion_witness_v1.md): exact counter/latch writes, caller snapshots and return within the same action. No new emulator run, encoded default opcode, pointer delta or original high-package completion. |
+| `BA-SCENE-DISPATCH-INPUTS-V1` | `complete-bounded-static` | [First tick-reached B=0 and local index recipes](schala_scene_dispatch_inputs_v1.md); later handler-return B, legal command/script producer domains and full callee ownership remain open. |
+| `BA-NMI-MODE-INPUTS-V1` | `complete-bounded-static` | [Exact normal-prefix register contract](schala_nmi_mode_inputs_v1.md), conditional prefix stack count and local indexed mode aliases. Selected bodies, producer domain and physical frame ownership remain open. |
+| `BA-NORMAL-NMI-DIRECT-CLOSURE-V2` | `partial-static` | [25 direct contracts / 34 original call sites](schala_package_normal_nmi_closure_v2.md) close under an explicit non-stack-alias premise. Ten original sites, physical ownership, full handler and nested bounds remain open. |
 
 Resume at `BA-NATIVE-INTEGRATION-DESIGN`. Reopen a completed gate only
 when pinned evidence changes or a failing regression invalidates it. The

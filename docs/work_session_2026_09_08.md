@@ -86,6 +86,15 @@ closed for this session.
   The normal-NMI direct-callee audit has 42 passing tests and a root-reproduced
   reference, with a second review pending. A new completion-source correction
   is under review. The original six-hour deadline remains 20:58:41 UTC.
+- 19:05 UTC: completed independent review and exact reference reproduction
+  for the completion-witness reuse (54 tests), scene-input prefix (27 tests)
+  and outer NMI mode-input prefix (23 tests). The latter's two generalized
+  model gaps were corrected before reference emission; its canonical result
+  is unchanged. The combined ROM/NMI pilot remains rejected history. The
+  separate timing calibration has passed source review and 46 host tests,
+  including preparation raster/clock and duplicated CPU/SP consistency
+  checks; its first bounded native run is now approved.
+  The session remains active until 20:58:41 UTC.
 
 ## Gates and evidence boundaries
 
