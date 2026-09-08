@@ -1,0 +1,2997 @@
+{
+  "schema": "project-epoch-package-helper-v4-timing-calibration-accepted-pair",
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "original immutable-ROM normal execution timing; no requested interrupt or stream execution",
+  "source_identities": {
+    "adapter_reference": {
+      "path": "references/schala_player_tech_package_bank_adapter_v0.json",
+      "size": 12280,
+      "sha256": "dab2834afb28ea2b89e814747d4a079fef7a403ec67eba592a7f866c88faa69e"
+    },
+    "cartridge_build_audit": {
+      "path": "private/test_runs/original_package_20260908_build1/audited-build.json",
+      "size": 24236,
+      "sha256": "217267873a81fc537e124113de7c9517e3cdb88ee1ea46abb3225246892c69a0"
+    },
+    "cartridge_completion": {
+      "path": "private/test_runs/original_package_20260908_build1/completion.json",
+      "size": 537,
+      "sha256": "abc2a916f8be06743e230b602b2b57c746daff5a25e6f8e08137e12846882343"
+    },
+    "collector": {
+      "path": "tools/mesen_schala_package_helper_v4_timing_calibration.lua",
+      "size": 16105,
+      "sha256": "371ed979e7fd0ca82188b3ab622da32bcc4c43be0a0a148fb7da61981ffb5872"
+    },
+    "grammar_reference": {
+      "path": "references/battle_command_grammar_census_v0.json",
+      "size": 12433,
+      "sha256": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c"
+    },
+    "grammar_source": {
+      "path": "tools/audit_battle_command_grammar_census_v0.py",
+      "size": 53608,
+      "sha256": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228"
+    },
+    "harfbuzz": {
+      "path": "private/tools/mesen2/app/libHarfBuzzSharp.dll",
+      "size": 1804872,
+      "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+    },
+    "helper_source": {
+      "path": "asm/schala_package_helper_v2_stack.asm",
+      "size": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+    },
+    "host_adapter": {
+      "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+      "size": 35887,
+      "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3"
+    },
+    "host_model": {
+      "path": "tools/schala_package_helper_v3_rom_model.py",
+      "size": 7001,
+      "sha256": "f58d9abbd7271604bacb72791af79e9e96e067968b76de27759199ad88e37261"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    },
+    "launcher": {
+      "path": "tools/run_schala_package_helper_v4_timing_calibration.py",
+      "size": 22783,
+      "sha256": "69103c7dfc7fa88b5d89f78b03dfffa802dc32d11eeea3746cb2dd2dc003a40e"
+    },
+    "mesen": {
+      "path": "private/tools/mesen2/app/Mesen.exe",
+      "size": 70470144,
+      "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+    },
+    "mesen_core": {
+      "path": "private/tools/mesen2/app/MesenCore.dll",
+      "size": 7143424,
+      "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+    },
+    "nesdb": {
+      "path": "private/tools/mesen2/app/MesenNesDB.txt",
+      "size": 559118,
+      "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+    },
+    "original_fixture_source": {
+      "path": "tools/original_snes_package_fixtures_v1.py",
+      "size": 4761,
+      "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60"
+    },
+    "package_policy_source": {
+      "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+      "size": 39897,
+      "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f"
+    },
+    "policy_reference": {
+      "path": "references/schala_expanded_package_command_policy_v0.json",
+      "size": 6717,
+      "sha256": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9"
+    },
+    "rom": {
+      "path": "private/test_runs/original_package_20260908_build1/original_package_test.sfc",
+      "size": 8388608,
+      "sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b"
+    },
+    "settings": {
+      "path": "private/tools/mesen2/app/settings.json",
+      "size": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "skia": {
+      "path": "private/tools/mesen2/app/libSkiaSharp.dll",
+      "size": 9414216,
+      "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+    },
+    "tests": {
+      "path": "tests/test_schala_package_helper_v4_timing_calibration.py",
+      "size": 12400,
+      "sha256": "527d8501744f0dbfc535bc0eaedad75e7f892d55351ed72950f109f3fc81e0e8"
+    },
+    "v0_validation_library": {
+      "path": "tools/run_schala_package_helper_conformance_v0.py",
+      "size": 20922,
+      "sha256": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844"
+    },
+    "v1_contract_library": {
+      "path": "tools/run_schala_package_helper_v1_rom_source.py",
+      "size": 23279,
+      "sha256": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+    },
+    "v2_validation_source": {
+      "path": "tools/run_schala_package_helper_v2_stack.py",
+      "size": 22162,
+      "sha256": "88214b069ef49c3e512e625640fd67aa39019441119e8306782f225b9e48c251"
+    },
+    "v3_launcher": {
+      "path": "tools/run_schala_package_helper_v3_rom.py",
+      "size": 25406,
+      "sha256": "e4ac4c9281649b6d7cf96ac0c20a14b325e32f0350dd238b930e3e853324d4be"
+    },
+    "v3_collector": {
+      "path": "tools/mesen_schala_package_helper_v3_rom.lua",
+      "size": 12224,
+      "sha256": "667cdfdfd42d58b439c08c4118e7b7915fb2f481b6b68ef993837c04091f6858"
+    },
+    "v3_tests": {
+      "path": "tests/test_schala_package_helper_v3_rom.py",
+      "size": 14431,
+      "sha256": "2b8bb9a3a47cb87798ff1c3c15a51b4b4ffc9afb0755a947551189024b5cff84"
+    },
+    "v3_reference": {
+      "path": "references/schala_package_helper_v3_rom.json",
+      "size": 78936,
+      "sha256": "4c6c469ffde9c75517b1b7087f6c8956e2b2b2637355b87a99a1ae7981d15677"
+    },
+    "phase_audit": {
+      "path": "tools/audit_mesen_nmi_phase_contract_v2.py",
+      "size": 7994,
+      "sha256": "9c576d1f8c1b5b2d8a393f1ed6631ea926e3c5d71a2693553079750981d9dfb4"
+    },
+    "prior_phase_audit": {
+      "path": "tools/audit_mesen_nmi_request_source_v1.py",
+      "size": 7372,
+      "sha256": "d3fd8af81c89fcc8040f5daedafe328a975d5cd7f7dfef01043a9810514225d2"
+    },
+    "phase_reference": {
+      "path": "references/mesen_nmi_phase_contract_v2.json",
+      "size": 9835,
+      "sha256": "a948e62fa24c8be7520902ec3e0763bbaf3ae097409961c0f7474b77a0a54c5a"
+    },
+    "ppu_source": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    }
+  },
+  "metadata_collector": {
+    "path": "tools/collect_schala_package_helper_v4_timing_calibration.py",
+    "size": 12944,
+    "sha256": "b17211132e84f5a2cd27cc6ad38c043461270c9f98d2852c4b8ac78430fc0794"
+  },
+  "runs": [
+    {
+      "directory": "private/test_runs/package_helper_v4_timing_20260908_final1",
+      "repetition": 1,
+      "artifacts": {
+        "manifest.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/manifest.json",
+          "size": 7747,
+          "sha256": "5592818b5113845452a7e08fedb14de99e60d80fbd11b6cfa7baae5f8d03da63"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/launch_inputs.json",
+          "size": 6372,
+          "sha256": "426636a6e7d34b5cfb3ec217d12fc9ab0e7a3241c636c4913626238115065672"
+        },
+        "trace.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/trace.json",
+          "size": 13852910,
+          "sha256": "7b21a5bb512514923eb39e5bbed22f4f34d121b7f26ca73c8a16ce63aaf6d6af"
+        },
+        "case_contract.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/case_contract.json",
+          "size": 34966,
+          "sha256": "369679736ba9d67a6fd29534d07bf68a486f3aa0f836d8f81e2bb1ca80d5d281"
+        },
+        "elapsed_observations.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/elapsed_observations.json",
+          "size": 1117407,
+          "sha256": "dc0450834643d9189ec1b975891d9bdb68c0cd4b4a7cd6daa0a2e41481f55bf8"
+        },
+        "schedule.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/schedule.json",
+          "size": 18584,
+          "sha256": "961021271ea9e8f508e418cc758f2f9c5b97aaadc60380a623ae797d106a0baf"
+        },
+        "rom_input_fixture_hashes.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/rom_input_fixture_hashes.json",
+          "size": 8956,
+          "sha256": "38aa180cfe3c00c210828c5b124352660c9edce081a86256f0efd869ff19a3b2"
+        },
+        "progress.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/progress.json",
+          "size": 123,
+          "sha256": "6b7ff8ae0d498af893fa69a3f8ae756688ceda6ffcdfe721ce3e8ff90fde7d75"
+        },
+        "source_snapshots.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/source_snapshots.json",
+          "size": 7865,
+          "sha256": "a5835b5593051ab6860b62ce8e5d2c4c7fb5376c7e5a8bab0d26bb0ec1ac1976"
+        },
+        "process.log": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/process.log",
+          "size": 168,
+          "sha256": "6b717be2e12cb3c64c5d2e8b8c117d685e014462ca1baa3ccf5cf1c82989b163"
+        }
+      },
+      "staged_identities": {
+        "mesen": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/app/Mesen.exe",
+          "size": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        "mesen_core": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/app/MesenCore.dll",
+          "size": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        "harfbuzz": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/app/libHarfBuzzSharp.dll",
+          "size": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        "skia": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/app/libSkiaSharp.dll",
+          "size": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        "nesdb": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/app/MesenNesDB.txt",
+          "size": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        "settings": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/app/settings.json",
+          "size": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        "rom": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/pe_package_06479a70b87fa4e80f95a5dd.sfc",
+          "size": 8388608,
+          "sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b"
+        },
+        "sram": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/app/Saves/pe_package_06479a70b87fa4e80f95a5dd.srm",
+          "size": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "collector": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/collector.lua",
+          "size": 16105,
+          "sha256": "371ed979e7fd0ca82188b3ab622da32bcc4c43be0a0a148fb7da61981ffb5872"
+        },
+        "inputs": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final1/staged/inputs.lua",
+          "size": 14784,
+          "sha256": "944043f38804778e6b5364cc453ed4d5102862c0ea6a919dbae6e19d0d7caf13"
+        }
+      },
+      "source_archive_hashes": {
+        "snapshot_metadata": "a5835b5593051ab6860b62ce8e5d2c4c7fb5376c7e5a8bab0d26bb0ec1ac1976",
+        "adapter_reference": "dab2834afb28ea2b89e814747d4a079fef7a403ec67eba592a7f866c88faa69e",
+        "cartridge_build_audit": "217267873a81fc537e124113de7c9517e3cdb88ee1ea46abb3225246892c69a0",
+        "cartridge_completion": "abc2a916f8be06743e230b602b2b57c746daff5a25e6f8e08137e12846882343",
+        "collector": "371ed979e7fd0ca82188b3ab622da32bcc4c43be0a0a148fb7da61981ffb5872",
+        "grammar_reference": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c",
+        "grammar_source": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228",
+        "helper_source": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "host_model": "f58d9abbd7271604bacb72791af79e9e96e067968b76de27759199ad88e37261",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "69103c7dfc7fa88b5d89f78b03dfffa802dc32d11eeea3746cb2dd2dc003a40e",
+        "original_fixture_source": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60",
+        "package_policy_source": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f",
+        "phase_audit": "9c576d1f8c1b5b2d8a393f1ed6631ea926e3c5d71a2693553079750981d9dfb4",
+        "phase_reference": "a948e62fa24c8be7520902ec3e0763bbaf3ae097409961c0f7474b77a0a54c5a",
+        "policy_reference": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9",
+        "prior_phase_audit": "d3fd8af81c89fcc8040f5daedafe328a975d5cd7f7dfef01043a9810514225d2",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "tests": "527d8501744f0dbfc535bc0eaedad75e7f892d55351ed72950f109f3fc81e0e8",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff",
+        "v2_validation_source": "88214b069ef49c3e512e625640fd67aa39019441119e8306782f225b9e48c251",
+        "v3_collector": "667cdfdfd42d58b439c08c4118e7b7915fb2f481b6b68ef993837c04091f6858",
+        "v3_launcher": "e4ac4c9281649b6d7cf96ac0c20a14b325e32f0350dd238b930e3e853324d4be",
+        "v3_reference": "4c6c469ffde9c75517b1b7087f6c8956e2b2b2637355b87a99a1ae7981d15677",
+        "v3_tests": "2b8bb9a3a47cb87798ff1c3c15a51b4b4ffc9afb0755a947551189024b5cff84"
+      },
+      "elapsed_projection_sha256": "b959dc620fab68d2ebd927b7467a2b11326f9c5ebd976a01561bfa3fa5030c75",
+      "execution_observations": 15090,
+      "duration_master_clocks": {
+        "minimum": 550,
+        "maximum": 54108
+      },
+      "absolute_timing_by_group": [
+        {
+          "name": "calibration-80-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 40779,
+            "frameCount": 1,
+            "masterClock": 308280,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 308280,
+            "ppu.frameCount": 1,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 40783,
+            "frameCount": 1,
+            "masterClock": 308312,
+            "memoryManager.hClock": 48,
+            "memoryManager.masterClock": 308312,
+            "ppu.frameCount": 1,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 47718,
+            "frameCount": 1,
+            "masterClock": 362262,
+            "memoryManager.hClock": 802,
+            "memoryManager.masterClock": 362262,
+            "ppu.frameCount": 1,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-80-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 87876,
+            "frameCount": 2,
+            "masterClock": 665634,
+            "memoryManager.hClock": 2,
+            "memoryManager.masterClock": 665634,
+            "ppu.frameCount": 2,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 87880,
+            "frameCount": 2,
+            "masterClock": 665666,
+            "memoryManager.hClock": 34,
+            "memoryManager.masterClock": 665666,
+            "ppu.frameCount": 2,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 94836,
+            "frameCount": 2,
+            "masterClock": 719774,
+            "memoryManager.hClock": 950,
+            "memoryManager.masterClock": 719774,
+            "ppu.frameCount": 2,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-81-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 134976,
+            "frameCount": 3,
+            "masterClock": 1023014,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 1023014,
+            "ppu.frameCount": 3,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 134980,
+            "frameCount": 3,
+            "masterClock": 1023046,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 1023046,
+            "ppu.frameCount": 3,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 137721,
+            "frameCount": 3,
+            "masterClock": 1044348,
+            "memoryManager.hClock": 892,
+            "memoryManager.masterClock": 1044348,
+            "ppu.frameCount": 3,
+            "ppu.scanline": 241
+          }
+        },
+        {
+          "name": "calibration-81-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 182202,
+            "frameCount": 4,
+            "masterClock": 1380382,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 1380382,
+            "ppu.frameCount": 4,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 182206,
+            "frameCount": 4,
+            "masterClock": 1380414,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 1380414,
+            "ppu.frameCount": 4,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 184672,
+            "frameCount": 4,
+            "masterClock": 1399546,
+            "memoryManager.hClock": 86,
+            "memoryManager.masterClock": 1399546,
+            "ppu.frameCount": 4,
+            "ppu.scanline": 240
+          }
+        },
+        {
+          "name": "calibration-82-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 229435,
+            "frameCount": 5,
+            "masterClock": 1737728,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 1737728,
+            "ppu.frameCount": 5,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 229439,
+            "frameCount": 5,
+            "masterClock": 1737760,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 1737760,
+            "ppu.frameCount": 5,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 231223,
+            "frameCount": 5,
+            "masterClock": 1751586,
+            "memoryManager.hClock": 218,
+            "memoryManager.masterClock": 1751586,
+            "ppu.frameCount": 5,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-82-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 276691,
+            "frameCount": 6,
+            "masterClock": 2095098,
+            "memoryManager.hClock": 2,
+            "memoryManager.masterClock": 2095098,
+            "ppu.frameCount": 6,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 276695,
+            "frameCount": 6,
+            "masterClock": 2095130,
+            "memoryManager.hClock": 34,
+            "memoryManager.masterClock": 2095130,
+            "ppu.frameCount": 6,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 278426,
+            "frameCount": 6,
+            "masterClock": 2108552,
+            "memoryManager.hClock": 1180,
+            "memoryManager.masterClock": 2108552,
+            "ppu.frameCount": 6,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 323948,
+            "frameCount": 7,
+            "masterClock": 2452460,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 2452460,
+            "ppu.frameCount": 7,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 323952,
+            "frameCount": 7,
+            "masterClock": 2452492,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 2452492,
+            "ppu.frameCount": 7,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 325662,
+            "frameCount": 7,
+            "masterClock": 2465756,
+            "memoryManager.hClock": 1020,
+            "memoryManager.masterClock": 2465756,
+            "ppu.frameCount": 7,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 371208,
+            "frameCount": 8,
+            "masterClock": 2809840,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 2809840,
+            "ppu.frameCount": 8,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 371212,
+            "frameCount": 8,
+            "masterClock": 2809872,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 2809872,
+            "ppu.frameCount": 8,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 373017,
+            "frameCount": 8,
+            "masterClock": 2823856,
+            "memoryManager.hClock": 388,
+            "memoryManager.masterClock": 2823856,
+            "ppu.frameCount": 8,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-7F-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 418461,
+            "frameCount": 9,
+            "masterClock": 3167192,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 3167192,
+            "ppu.frameCount": 9,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 418465,
+            "frameCount": 9,
+            "masterClock": 3167224,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 3167224,
+            "ppu.frameCount": 9,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 418533,
+            "frameCount": 9,
+            "masterClock": 3167774,
+            "memoryManager.hClock": 582,
+            "memoryManager.masterClock": 3167774,
+            "ppu.frameCount": 9,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-90-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 465762,
+            "frameCount": 10,
+            "masterClock": 3524560,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 3524560,
+            "ppu.frameCount": 10,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 465766,
+            "frameCount": 10,
+            "masterClock": 3524592,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 3524592,
+            "ppu.frameCount": 10,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 465840,
+            "frameCount": 10,
+            "masterClock": 3525186,
+            "memoryManager.hClock": 626,
+            "memoryManager.masterClock": 3525186,
+            "ppu.frameCount": 10,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-84-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 513063,
+            "frameCount": 11,
+            "masterClock": 3881928,
+            "memoryManager.hClock": 4,
+            "memoryManager.masterClock": 3881928,
+            "ppu.frameCount": 11,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 513067,
+            "frameCount": 11,
+            "masterClock": 3881960,
+            "memoryManager.hClock": 36,
+            "memoryManager.masterClock": 3881960,
+            "ppu.frameCount": 11,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 513241,
+            "frameCount": 11,
+            "masterClock": 3883304,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 3883304,
+            "ppu.frameCount": 11,
+            "ppu.scanline": 227
+          }
+        },
+        {
+          "name": "calibration-80-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 560362,
+            "frameCount": 12,
+            "masterClock": 4239298,
+            "memoryManager.hClock": 6,
+            "memoryManager.masterClock": 4239298,
+            "ppu.frameCount": 12,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 560366,
+            "frameCount": 12,
+            "masterClock": 4239330,
+            "memoryManager.hClock": 38,
+            "memoryManager.masterClock": 4239330,
+            "ppu.frameCount": 12,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 567301,
+            "frameCount": 12,
+            "masterClock": 4293280,
+            "memoryManager.hClock": 796,
+            "memoryManager.masterClock": 4293280,
+            "ppu.frameCount": 12,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-80-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 607462,
+            "frameCount": 13,
+            "masterClock": 4596674,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 4596674,
+            "ppu.frameCount": 13,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 607466,
+            "frameCount": 13,
+            "masterClock": 4596706,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 4596706,
+            "ppu.frameCount": 13,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 614422,
+            "frameCount": 13,
+            "masterClock": 4650814,
+            "memoryManager.hClock": 962,
+            "memoryManager.masterClock": 4650814,
+            "ppu.frameCount": 13,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-81-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 654559,
+            "frameCount": 14,
+            "masterClock": 4954032,
+            "memoryManager.hClock": 8,
+            "memoryManager.masterClock": 4954032,
+            "ppu.frameCount": 14,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 654563,
+            "frameCount": 14,
+            "masterClock": 4954064,
+            "memoryManager.hClock": 40,
+            "memoryManager.masterClock": 4954064,
+            "ppu.frameCount": 14,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 657304,
+            "frameCount": 14,
+            "masterClock": 4975366,
+            "memoryManager.hClock": 886,
+            "memoryManager.masterClock": 4975366,
+            "ppu.frameCount": 14,
+            "ppu.scanline": 241
+          }
+        },
+        {
+          "name": "calibration-81-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 701785,
+            "frameCount": 15,
+            "masterClock": 5311400,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 5311400,
+            "ppu.frameCount": 15,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 701789,
+            "frameCount": 15,
+            "masterClock": 5311432,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 5311432,
+            "ppu.frameCount": 15,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 704255,
+            "frameCount": 15,
+            "masterClock": 5330564,
+            "memoryManager.hClock": 80,
+            "memoryManager.masterClock": 5330564,
+            "ppu.frameCount": 15,
+            "ppu.scanline": 240
+          }
+        },
+        {
+          "name": "calibration-82-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 749021,
+            "frameCount": 16,
+            "masterClock": 5668768,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 5668768,
+            "ppu.frameCount": 16,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 749025,
+            "frameCount": 16,
+            "masterClock": 5668800,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 5668800,
+            "ppu.frameCount": 16,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 750809,
+            "frameCount": 16,
+            "masterClock": 5682626,
+            "memoryManager.hClock": 230,
+            "memoryManager.masterClock": 5682626,
+            "ppu.frameCount": 16,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-82-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 796277,
+            "frameCount": 17,
+            "masterClock": 6026138,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 6026138,
+            "ppu.frameCount": 17,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 796281,
+            "frameCount": 17,
+            "masterClock": 6026170,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 6026170,
+            "ppu.frameCount": 17,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 798012,
+            "frameCount": 17,
+            "masterClock": 6039592,
+            "memoryManager.hClock": 1196,
+            "memoryManager.masterClock": 6039592,
+            "ppu.frameCount": 17,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 843534,
+            "frameCount": 18,
+            "masterClock": 6383500,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 6383500,
+            "ppu.frameCount": 18,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 843538,
+            "frameCount": 18,
+            "masterClock": 6383532,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 6383532,
+            "ppu.frameCount": 18,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 845248,
+            "frameCount": 18,
+            "masterClock": 6396796,
+            "memoryManager.hClock": 1032,
+            "memoryManager.masterClock": 6396796,
+            "ppu.frameCount": 18,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 890791,
+            "frameCount": 19,
+            "masterClock": 6740858,
+            "memoryManager.hClock": 6,
+            "memoryManager.masterClock": 6740858,
+            "ppu.frameCount": 19,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 890795,
+            "frameCount": 19,
+            "masterClock": 6740890,
+            "memoryManager.hClock": 38,
+            "memoryManager.masterClock": 6740890,
+            "ppu.frameCount": 19,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 892600,
+            "frameCount": 19,
+            "masterClock": 6754874,
+            "memoryManager.hClock": 382,
+            "memoryManager.masterClock": 6754874,
+            "ppu.frameCount": 19,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-7F-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 938047,
+            "frameCount": 20,
+            "masterClock": 7098232,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 7098232,
+            "ppu.frameCount": 20,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 938051,
+            "frameCount": 20,
+            "masterClock": 7098264,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 7098264,
+            "ppu.frameCount": 20,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 938119,
+            "frameCount": 20,
+            "masterClock": 7098814,
+            "memoryManager.hClock": 594,
+            "memoryManager.masterClock": 7098814,
+            "ppu.frameCount": 20,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-90-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 985348,
+            "frameCount": 21,
+            "masterClock": 7455600,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 7455600,
+            "ppu.frameCount": 21,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 985352,
+            "frameCount": 21,
+            "masterClock": 7455632,
+            "memoryManager.hClock": 48,
+            "memoryManager.masterClock": 7455632,
+            "ppu.frameCount": 21,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 985426,
+            "frameCount": 21,
+            "masterClock": 7456226,
+            "memoryManager.hClock": 642,
+            "memoryManager.masterClock": 7456226,
+            "ppu.frameCount": 21,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-84-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 1032649,
+            "frameCount": 22,
+            "masterClock": 7812968,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 7812968,
+            "ppu.frameCount": 22,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 1032653,
+            "frameCount": 22,
+            "masterClock": 7813000,
+            "memoryManager.hClock": 48,
+            "memoryManager.masterClock": 7813000,
+            "ppu.frameCount": 22,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 1032827,
+            "frameCount": 22,
+            "masterClock": 7814344,
+            "memoryManager.hClock": 28,
+            "memoryManager.masterClock": 7814344,
+            "ppu.frameCount": 22,
+            "ppu.scanline": 227
+          }
+        }
+      ]
+    },
+    {
+      "directory": "private/test_runs/package_helper_v4_timing_20260908_final2",
+      "repetition": 2,
+      "artifacts": {
+        "manifest.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/manifest.json",
+          "size": 7747,
+          "sha256": "80d14da9f44b1782ebaad49bd87f4d61e0b10b2976621fe52065258c8432226c"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/launch_inputs.json",
+          "size": 6372,
+          "sha256": "426636a6e7d34b5cfb3ec217d12fc9ab0e7a3241c636c4913626238115065672"
+        },
+        "trace.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/trace.json",
+          "size": 13852910,
+          "sha256": "7b21a5bb512514923eb39e5bbed22f4f34d121b7f26ca73c8a16ce63aaf6d6af"
+        },
+        "case_contract.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/case_contract.json",
+          "size": 34966,
+          "sha256": "369679736ba9d67a6fd29534d07bf68a486f3aa0f836d8f81e2bb1ca80d5d281"
+        },
+        "elapsed_observations.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/elapsed_observations.json",
+          "size": 1117407,
+          "sha256": "dc0450834643d9189ec1b975891d9bdb68c0cd4b4a7cd6daa0a2e41481f55bf8"
+        },
+        "schedule.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/schedule.json",
+          "size": 18584,
+          "sha256": "961021271ea9e8f508e418cc758f2f9c5b97aaadc60380a623ae797d106a0baf"
+        },
+        "rom_input_fixture_hashes.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/rom_input_fixture_hashes.json",
+          "size": 8956,
+          "sha256": "38aa180cfe3c00c210828c5b124352660c9edce081a86256f0efd869ff19a3b2"
+        },
+        "progress.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/progress.json",
+          "size": 123,
+          "sha256": "6b7ff8ae0d498af893fa69a3f8ae756688ceda6ffcdfe721ce3e8ff90fde7d75"
+        },
+        "source_snapshots.json": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/source_snapshots.json",
+          "size": 7865,
+          "sha256": "a5835b5593051ab6860b62ce8e5d2c4c7fb5376c7e5a8bab0d26bb0ec1ac1976"
+        },
+        "process.log": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/process.log",
+          "size": 168,
+          "sha256": "6b717be2e12cb3c64c5d2e8b8c117d685e014462ca1baa3ccf5cf1c82989b163"
+        }
+      },
+      "staged_identities": {
+        "mesen": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/app/Mesen.exe",
+          "size": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        "mesen_core": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/app/MesenCore.dll",
+          "size": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        "harfbuzz": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/app/libHarfBuzzSharp.dll",
+          "size": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        "skia": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/app/libSkiaSharp.dll",
+          "size": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        "nesdb": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/app/MesenNesDB.txt",
+          "size": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        "settings": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/app/settings.json",
+          "size": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        "rom": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/pe_package_0f4f1fba9adf74b426f70b94.sfc",
+          "size": 8388608,
+          "sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b"
+        },
+        "sram": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/app/Saves/pe_package_0f4f1fba9adf74b426f70b94.srm",
+          "size": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "collector": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/collector.lua",
+          "size": 16105,
+          "sha256": "371ed979e7fd0ca82188b3ab622da32bcc4c43be0a0a148fb7da61981ffb5872"
+        },
+        "inputs": {
+          "path": "private/test_runs/package_helper_v4_timing_20260908_final2/staged/inputs.lua",
+          "size": 14784,
+          "sha256": "944043f38804778e6b5364cc453ed4d5102862c0ea6a919dbae6e19d0d7caf13"
+        }
+      },
+      "source_archive_hashes": {
+        "snapshot_metadata": "a5835b5593051ab6860b62ce8e5d2c4c7fb5376c7e5a8bab0d26bb0ec1ac1976",
+        "adapter_reference": "dab2834afb28ea2b89e814747d4a079fef7a403ec67eba592a7f866c88faa69e",
+        "cartridge_build_audit": "217267873a81fc537e124113de7c9517e3cdb88ee1ea46abb3225246892c69a0",
+        "cartridge_completion": "abc2a916f8be06743e230b602b2b57c746daff5a25e6f8e08137e12846882343",
+        "collector": "371ed979e7fd0ca82188b3ab622da32bcc4c43be0a0a148fb7da61981ffb5872",
+        "grammar_reference": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c",
+        "grammar_source": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228",
+        "helper_source": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "host_model": "f58d9abbd7271604bacb72791af79e9e96e067968b76de27759199ad88e37261",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "69103c7dfc7fa88b5d89f78b03dfffa802dc32d11eeea3746cb2dd2dc003a40e",
+        "original_fixture_source": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60",
+        "package_policy_source": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f",
+        "phase_audit": "9c576d1f8c1b5b2d8a393f1ed6631ea926e3c5d71a2693553079750981d9dfb4",
+        "phase_reference": "a948e62fa24c8be7520902ec3e0763bbaf3ae097409961c0f7474b77a0a54c5a",
+        "policy_reference": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9",
+        "prior_phase_audit": "d3fd8af81c89fcc8040f5daedafe328a975d5cd7f7dfef01043a9810514225d2",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "tests": "527d8501744f0dbfc535bc0eaedad75e7f892d55351ed72950f109f3fc81e0e8",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff",
+        "v2_validation_source": "88214b069ef49c3e512e625640fd67aa39019441119e8306782f225b9e48c251",
+        "v3_collector": "667cdfdfd42d58b439c08c4118e7b7915fb2f481b6b68ef993837c04091f6858",
+        "v3_launcher": "e4ac4c9281649b6d7cf96ac0c20a14b325e32f0350dd238b930e3e853324d4be",
+        "v3_reference": "4c6c469ffde9c75517b1b7087f6c8956e2b2b2637355b87a99a1ae7981d15677",
+        "v3_tests": "2b8bb9a3a47cb87798ff1c3c15a51b4b4ffc9afb0755a947551189024b5cff84"
+      },
+      "elapsed_projection_sha256": "b959dc620fab68d2ebd927b7467a2b11326f9c5ebd976a01561bfa3fa5030c75",
+      "execution_observations": 15090,
+      "duration_master_clocks": {
+        "minimum": 550,
+        "maximum": 54108
+      },
+      "absolute_timing_by_group": [
+        {
+          "name": "calibration-80-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 40779,
+            "frameCount": 1,
+            "masterClock": 308280,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 308280,
+            "ppu.frameCount": 1,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 40783,
+            "frameCount": 1,
+            "masterClock": 308312,
+            "memoryManager.hClock": 48,
+            "memoryManager.masterClock": 308312,
+            "ppu.frameCount": 1,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 47718,
+            "frameCount": 1,
+            "masterClock": 362262,
+            "memoryManager.hClock": 802,
+            "memoryManager.masterClock": 362262,
+            "ppu.frameCount": 1,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-80-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 87876,
+            "frameCount": 2,
+            "masterClock": 665634,
+            "memoryManager.hClock": 2,
+            "memoryManager.masterClock": 665634,
+            "ppu.frameCount": 2,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 87880,
+            "frameCount": 2,
+            "masterClock": 665666,
+            "memoryManager.hClock": 34,
+            "memoryManager.masterClock": 665666,
+            "ppu.frameCount": 2,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 94836,
+            "frameCount": 2,
+            "masterClock": 719774,
+            "memoryManager.hClock": 950,
+            "memoryManager.masterClock": 719774,
+            "ppu.frameCount": 2,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-81-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 134976,
+            "frameCount": 3,
+            "masterClock": 1023014,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 1023014,
+            "ppu.frameCount": 3,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 134980,
+            "frameCount": 3,
+            "masterClock": 1023046,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 1023046,
+            "ppu.frameCount": 3,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 137721,
+            "frameCount": 3,
+            "masterClock": 1044348,
+            "memoryManager.hClock": 892,
+            "memoryManager.masterClock": 1044348,
+            "ppu.frameCount": 3,
+            "ppu.scanline": 241
+          }
+        },
+        {
+          "name": "calibration-81-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 182202,
+            "frameCount": 4,
+            "masterClock": 1380382,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 1380382,
+            "ppu.frameCount": 4,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 182206,
+            "frameCount": 4,
+            "masterClock": 1380414,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 1380414,
+            "ppu.frameCount": 4,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 184672,
+            "frameCount": 4,
+            "masterClock": 1399546,
+            "memoryManager.hClock": 86,
+            "memoryManager.masterClock": 1399546,
+            "ppu.frameCount": 4,
+            "ppu.scanline": 240
+          }
+        },
+        {
+          "name": "calibration-82-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 229435,
+            "frameCount": 5,
+            "masterClock": 1737728,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 1737728,
+            "ppu.frameCount": 5,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 229439,
+            "frameCount": 5,
+            "masterClock": 1737760,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 1737760,
+            "ppu.frameCount": 5,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 231223,
+            "frameCount": 5,
+            "masterClock": 1751586,
+            "memoryManager.hClock": 218,
+            "memoryManager.masterClock": 1751586,
+            "ppu.frameCount": 5,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-82-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 276691,
+            "frameCount": 6,
+            "masterClock": 2095098,
+            "memoryManager.hClock": 2,
+            "memoryManager.masterClock": 2095098,
+            "ppu.frameCount": 6,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 276695,
+            "frameCount": 6,
+            "masterClock": 2095130,
+            "memoryManager.hClock": 34,
+            "memoryManager.masterClock": 2095130,
+            "ppu.frameCount": 6,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 278426,
+            "frameCount": 6,
+            "masterClock": 2108552,
+            "memoryManager.hClock": 1180,
+            "memoryManager.masterClock": 2108552,
+            "ppu.frameCount": 6,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 323948,
+            "frameCount": 7,
+            "masterClock": 2452460,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 2452460,
+            "ppu.frameCount": 7,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 323952,
+            "frameCount": 7,
+            "masterClock": 2452492,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 2452492,
+            "ppu.frameCount": 7,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 325662,
+            "frameCount": 7,
+            "masterClock": 2465756,
+            "memoryManager.hClock": 1020,
+            "memoryManager.masterClock": 2465756,
+            "ppu.frameCount": 7,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-40-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 371208,
+            "frameCount": 8,
+            "masterClock": 2809840,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 2809840,
+            "ppu.frameCount": 8,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 371212,
+            "frameCount": 8,
+            "masterClock": 2809872,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 2809872,
+            "ppu.frameCount": 8,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 373017,
+            "frameCount": 8,
+            "masterClock": 2823856,
+            "memoryManager.hClock": 388,
+            "memoryManager.masterClock": 2823856,
+            "ppu.frameCount": 8,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-7F-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 418461,
+            "frameCount": 9,
+            "masterClock": 3167192,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 3167192,
+            "ppu.frameCount": 9,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 418465,
+            "frameCount": 9,
+            "masterClock": 3167224,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 3167224,
+            "ppu.frameCount": 9,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 418533,
+            "frameCount": 9,
+            "masterClock": 3167774,
+            "memoryManager.hClock": 582,
+            "memoryManager.masterClock": 3167774,
+            "ppu.frameCount": 9,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-90-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 465762,
+            "frameCount": 10,
+            "masterClock": 3524560,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 3524560,
+            "ppu.frameCount": 10,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 465766,
+            "frameCount": 10,
+            "masterClock": 3524592,
+            "memoryManager.hClock": 32,
+            "memoryManager.masterClock": 3524592,
+            "ppu.frameCount": 10,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 465840,
+            "frameCount": 10,
+            "masterClock": 3525186,
+            "memoryManager.hClock": 626,
+            "memoryManager.masterClock": 3525186,
+            "ppu.frameCount": 10,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-84-00-sp-1FEF",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 513063,
+            "frameCount": 11,
+            "masterClock": 3881928,
+            "memoryManager.hClock": 4,
+            "memoryManager.masterClock": 3881928,
+            "ppu.frameCount": 11,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 513067,
+            "frameCount": 11,
+            "masterClock": 3881960,
+            "memoryManager.hClock": 36,
+            "memoryManager.masterClock": 3881960,
+            "ppu.frameCount": 11,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 513241,
+            "frameCount": 11,
+            "masterClock": 3883304,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 3883304,
+            "ppu.frameCount": 11,
+            "ppu.scanline": 227
+          }
+        },
+        {
+          "name": "calibration-80-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 560362,
+            "frameCount": 12,
+            "masterClock": 4239298,
+            "memoryManager.hClock": 6,
+            "memoryManager.masterClock": 4239298,
+            "ppu.frameCount": 12,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 560366,
+            "frameCount": 12,
+            "masterClock": 4239330,
+            "memoryManager.hClock": 38,
+            "memoryManager.masterClock": 4239330,
+            "ppu.frameCount": 12,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 567301,
+            "frameCount": 12,
+            "masterClock": 4293280,
+            "memoryManager.hClock": 796,
+            "memoryManager.masterClock": 4293280,
+            "ppu.frameCount": 12,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-80-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 607462,
+            "frameCount": 13,
+            "masterClock": 4596674,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 4596674,
+            "ppu.frameCount": 13,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 607466,
+            "frameCount": 13,
+            "masterClock": 4596706,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 4596706,
+            "ppu.frameCount": 13,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 614422,
+            "frameCount": 13,
+            "masterClock": 4650814,
+            "memoryManager.hClock": 962,
+            "memoryManager.masterClock": 4650814,
+            "ppu.frameCount": 13,
+            "ppu.scanline": 3
+          }
+        },
+        {
+          "name": "calibration-81-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 654559,
+            "frameCount": 14,
+            "masterClock": 4954032,
+            "memoryManager.hClock": 8,
+            "memoryManager.masterClock": 4954032,
+            "ppu.frameCount": 14,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 654563,
+            "frameCount": 14,
+            "masterClock": 4954064,
+            "memoryManager.hClock": 40,
+            "memoryManager.masterClock": 4954064,
+            "ppu.frameCount": 14,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 657304,
+            "frameCount": 14,
+            "masterClock": 4975366,
+            "memoryManager.hClock": 886,
+            "memoryManager.masterClock": 4975366,
+            "ppu.frameCount": 14,
+            "ppu.scanline": 241
+          }
+        },
+        {
+          "name": "calibration-81-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 701785,
+            "frameCount": 15,
+            "masterClock": 5311400,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 5311400,
+            "ppu.frameCount": 15,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 701789,
+            "frameCount": 15,
+            "masterClock": 5311432,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 5311432,
+            "ppu.frameCount": 15,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 704255,
+            "frameCount": 15,
+            "masterClock": 5330564,
+            "memoryManager.hClock": 80,
+            "memoryManager.masterClock": 5330564,
+            "ppu.frameCount": 15,
+            "ppu.scanline": 240
+          }
+        },
+        {
+          "name": "calibration-82-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 749021,
+            "frameCount": 16,
+            "masterClock": 5668768,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 5668768,
+            "ppu.frameCount": 16,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 749025,
+            "frameCount": 16,
+            "masterClock": 5668800,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 5668800,
+            "ppu.frameCount": 16,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 750809,
+            "frameCount": 16,
+            "masterClock": 5682626,
+            "memoryManager.hClock": 230,
+            "memoryManager.masterClock": 5682626,
+            "ppu.frameCount": 16,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-82-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 796277,
+            "frameCount": 17,
+            "masterClock": 6026138,
+            "memoryManager.hClock": 18,
+            "memoryManager.masterClock": 6026138,
+            "ppu.frameCount": 17,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 796281,
+            "frameCount": 17,
+            "masterClock": 6026170,
+            "memoryManager.hClock": 50,
+            "memoryManager.masterClock": 6026170,
+            "ppu.frameCount": 17,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 798012,
+            "frameCount": 17,
+            "masterClock": 6039592,
+            "memoryManager.hClock": 1196,
+            "memoryManager.masterClock": 6039592,
+            "ppu.frameCount": 17,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 843534,
+            "frameCount": 18,
+            "masterClock": 6383500,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 6383500,
+            "ppu.frameCount": 18,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 843538,
+            "frameCount": 18,
+            "masterClock": 6383532,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 6383532,
+            "ppu.frameCount": 18,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 845248,
+            "frameCount": 18,
+            "masterClock": 6396796,
+            "memoryManager.hClock": 1032,
+            "memoryManager.masterClock": 6396796,
+            "ppu.frameCount": 18,
+            "ppu.scanline": 235
+          }
+        },
+        {
+          "name": "calibration-83-40-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 890791,
+            "frameCount": 19,
+            "masterClock": 6740858,
+            "memoryManager.hClock": 6,
+            "memoryManager.masterClock": 6740858,
+            "ppu.frameCount": 19,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 890795,
+            "frameCount": 19,
+            "masterClock": 6740890,
+            "memoryManager.hClock": 38,
+            "memoryManager.masterClock": 6740890,
+            "ppu.frameCount": 19,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 892600,
+            "frameCount": 19,
+            "masterClock": 6754874,
+            "memoryManager.hClock": 382,
+            "memoryManager.masterClock": 6754874,
+            "ppu.frameCount": 19,
+            "ppu.scanline": 236
+          }
+        },
+        {
+          "name": "calibration-7F-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 938047,
+            "frameCount": 20,
+            "masterClock": 7098232,
+            "memoryManager.hClock": 12,
+            "memoryManager.masterClock": 7098232,
+            "ppu.frameCount": 20,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 938051,
+            "frameCount": 20,
+            "masterClock": 7098264,
+            "memoryManager.hClock": 44,
+            "memoryManager.masterClock": 7098264,
+            "ppu.frameCount": 20,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 938119,
+            "frameCount": 20,
+            "masterClock": 7098814,
+            "memoryManager.hClock": 594,
+            "memoryManager.masterClock": 7098814,
+            "ppu.frameCount": 20,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-90-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 985348,
+            "frameCount": 21,
+            "masterClock": 7455600,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 7455600,
+            "ppu.frameCount": 21,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 985352,
+            "frameCount": 21,
+            "masterClock": 7455632,
+            "memoryManager.hClock": 48,
+            "memoryManager.masterClock": 7455632,
+            "ppu.frameCount": 21,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 985426,
+            "frameCount": 21,
+            "masterClock": 7456226,
+            "memoryManager.hClock": 642,
+            "memoryManager.masterClock": 7456226,
+            "ppu.frameCount": 21,
+            "ppu.scanline": 226
+          }
+        },
+        {
+          "name": "calibration-84-00-sp-06D8",
+          "baseline": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 1032649,
+            "frameCount": 22,
+            "masterClock": 7812968,
+            "memoryManager.hClock": 16,
+            "memoryManager.masterClock": 7812968,
+            "ppu.frameCount": 22,
+            "ppu.scanline": 226
+          },
+          "first_helper": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 1032653,
+            "frameCount": 22,
+            "masterClock": 7813000,
+            "memoryManager.hClock": 48,
+            "memoryManager.masterClock": 7813000,
+            "ppu.frameCount": 22,
+            "ppu.scanline": 226
+          },
+          "last_tail": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 1032827,
+            "frameCount": 22,
+            "masterClock": 7814344,
+            "memoryManager.hClock": 28,
+            "memoryManager.masterClock": 7814344,
+            "ppu.frameCount": 22,
+            "ppu.scanline": 227
+          }
+        }
+      ]
+    }
+  ],
+  "case_count_per_run": 22,
+  "schedule_row_count": 92,
+  "elapsed_projections_identical": true,
+  "schedules_identical": true,
+  "schedule_elapsed_basis": "fixture-baseline-before-original-entry-JML",
+  "execution_elapsed_basis": "first-observed-helper-opcode",
+  "schedule": [
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 53772,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 53922,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 53950,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 53930,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 54080,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 54108,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 21124,
+      "start_scanline": 212,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 21274,
+      "start_scanline": 212,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 21302,
+      "start_scanline": 212,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 18954,
+      "start_scanline": 214,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 19104,
+      "start_scanline": 213,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-1FEF"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 19132,
+      "start_scanline": 213,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13648,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13798,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13826,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13244,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13394,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-1FEF"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13422,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13086,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13236,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13264,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13806,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13956,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-1FEF"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 8175,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13984,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-1FEF"
+    },
+    {
+      "selector": 127,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "canonical-pull-p",
+      "trigger": 4259865,
+      "elapsed_master_clocks": 428,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-7F-00-sp-1FEF"
+    },
+    {
+      "selector": 127,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "canonical-jml-tail",
+      "trigger": 4259870,
+      "elapsed_master_clocks": 510,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-7F-00-sp-1FEF"
+    },
+    {
+      "selector": 144,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "refusal-pull-p",
+      "trigger": 4260397,
+      "elapsed_master_clocks": 526,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-90-00-sp-1FEF"
+    },
+    {
+      "selector": 144,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "refusal-jml-tail",
+      "trigger": 4260398,
+      "elapsed_master_clocks": 594,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-90-00-sp-1FEF"
+    },
+    {
+      "selector": 132,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "refusal-release-tcs",
+      "trigger": 4260390,
+      "elapsed_master_clocks": 1144,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-84-00-sp-1FEF"
+    },
+    {
+      "selector": 132,
+      "flag": 0,
+      "sp": 8175,
+      "boundary": "refusal-jml-tail",
+      "trigger": 4260398,
+      "elapsed_master_clocks": 1344,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-84-00-sp-1FEF"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 53772,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 53922,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 53950,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-00-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 53930,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 54080,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-06D8"
+    },
+    {
+      "selector": 128,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 54108,
+      "start_scanline": 188,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-80-40-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 21124,
+      "start_scanline": 212,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 21274,
+      "start_scanline": 212,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 21302,
+      "start_scanline": 212,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-00-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 18954,
+      "start_scanline": 214,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 19104,
+      "start_scanline": 213,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-06D8"
+    },
+    {
+      "selector": 129,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 19132,
+      "start_scanline": 213,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-81-40-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13648,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13798,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13826,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-00-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13244,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13394,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-06D8"
+    },
+    {
+      "selector": 130,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13422,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-82-40-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13086,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13236,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13264,
+      "start_scanline": 218,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-00-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "allocate-tcs",
+      "trigger": 4259907,
+      "elapsed_master_clocks": 582,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "first-countbits-jsr",
+      "trigger": 4260078,
+      "elapsed_master_clocks": 2496,
+      "start_scanline": 226,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "release-tcs",
+      "trigger": 4260373,
+      "elapsed_master_clocks": 13806,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "pull-p",
+      "trigger": 4260378,
+      "elapsed_master_clocks": 13956,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-06D8"
+    },
+    {
+      "selector": 131,
+      "flag": 64,
+      "sp": 1752,
+      "boundary": "success-jml-tail",
+      "trigger": 4260379,
+      "elapsed_master_clocks": 13984,
+      "start_scanline": 217,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-83-40-sp-06D8"
+    },
+    {
+      "selector": 127,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "canonical-pull-p",
+      "trigger": 4259865,
+      "elapsed_master_clocks": 428,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-7F-00-sp-06D8"
+    },
+    {
+      "selector": 127,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "canonical-jml-tail",
+      "trigger": 4259870,
+      "elapsed_master_clocks": 510,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-7F-00-sp-06D8"
+    },
+    {
+      "selector": 144,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "refusal-pull-p",
+      "trigger": 4260397,
+      "elapsed_master_clocks": 566,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-90-00-sp-06D8"
+    },
+    {
+      "selector": 144,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "refusal-jml-tail",
+      "trigger": 4260398,
+      "elapsed_master_clocks": 594,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-90-00-sp-06D8"
+    },
+    {
+      "selector": 132,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "refusal-release-tcs",
+      "trigger": 4260390,
+      "elapsed_master_clocks": 1144,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-84-00-sp-06D8"
+    },
+    {
+      "selector": 132,
+      "flag": 0,
+      "sp": 1752,
+      "boundary": "refusal-jml-tail",
+      "trigger": 4260398,
+      "elapsed_master_clocks": 1344,
+      "start_scanline": 227,
+      "observed_rise_scanline": 225,
+      "group_name": "calibration-84-00-sp-06D8"
+    }
+  ],
+  "schedule_is_inference": true,
+  "schedule_executed": false,
+  "absolute_clocks_compared_for_equality": false,
+  "trace_bytes_equal": true,
+  "source_review_history": {
+    "receipt": {
+      "path": "private/test_runs/package_helper_v4_timing_20260908_prephase_review/receipt.json",
+      "size": 1261,
+      "sha256": "3ea3da75bcf4df96584256ec000b150e0a3d5a4f3d48fc218deb85e0b611d8de"
+    },
+    "sources": [
+      {
+        "path": "private/test_runs/package_helper_v4_timing_20260908_prephase_review/run_schala_package_helper_v4_timing_calibration.py",
+        "size": 22049,
+        "sha256": "c08a96b540067162782dcbb8bcd66c5a1700c0287a9f69bb6888291a36f3f7b0"
+      },
+      {
+        "path": "private/test_runs/package_helper_v4_timing_20260908_prephase_review/mesen_schala_package_helper_v4_timing_calibration.lua",
+        "size": 16105,
+        "sha256": "371ed979e7fd0ca82188b3ab622da32bcc4c43be0a0a148fb7da61981ffb5872"
+      },
+      {
+        "path": "private/test_runs/package_helper_v4_timing_20260908_prephase_review/test_schala_package_helper_v4_timing_calibration.py",
+        "size": 11523,
+        "sha256": "128bb156c532568e3d14fea8eaea7618b9b97cc7a8524fd4641e551d836ecd7d"
+      },
+      {
+        "path": "private/test_runs/package_helper_v4_timing_20260908_prephase_review/schala_package_helper_v4_timing_calibration.md",
+        "size": 6616,
+        "sha256": "11bc158b84f8e942238688eaef8b52d9e1a0c2062228f97c038c3cb39eade884"
+      }
+    ],
+    "native_execution": false
+  },
+  "metadata_review_history": {
+    "receipt": {
+      "path": "private/test_runs/package_helper_v4_timing_20260908_metadata_review1/receipt.json",
+      "size": 616,
+      "sha256": "36c2bf3326a5effef2f94c0cfc6ddaa958d01ac4bb32d82f30da3d934b613501"
+    },
+    "source": {
+      "path": "private/test_runs/package_helper_v4_timing_20260908_metadata_review1/collect_schala_package_helper_v4_timing_calibration.py",
+      "size": 11950,
+      "sha256": "34ec51f04f38130b2eb5bdfe94f1b9a535bcfd2270ef6f8d18843116232bd80f"
+    },
+    "native_rejection": false
+  },
+  "production_approval": false,
+  "game_interrupt_ownership_proved": false,
+  "other_entry_status_timings_calibrated": false,
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/collect_schala_package_helper_v4_timing_calibration.py"
+  ]
+}

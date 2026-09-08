@@ -61,6 +61,9 @@ proofs have separate scopes and should be reused:
 | [Completion witness](schala_package_completion_witness_v1.md) | Revalidated accepted pair: 516 zero waits, actual package-counter write, eight latch write/readback pairs and same queue-caller return; 54 tests | Existing vanilla action; no encoded default opcode, pointer delta, owner-store readback or new high-package protocol |
 | [Scene-dispatch inputs](schala_scene_dispatch_inputs_v1.md) | First tick-reached indexed command has B=0; complete local byte/index recipes and occupied successor cells; 27 tests | Later returned B, complete legal producer domains, selected command effects and whole-NMI bound remain open |
 | [Outer-mode inputs](schala_nmi_mode_inputs_v1.md) | Exact busy-zero caller registers from symbolic native inputs and all initial widths; 23 tests | Conditional 16-byte prefix count, eight-bit aliases and reviewed cells; no legal producer domain or selected-body closure |
+| [Mode-body composition](schala_nmi_mode_bodies_v1.md) | Mode-zero target closes with 12 additional bytes / 14 including its near frame; 40 tests | Other target open at `$CD06B9`; D/DBR, DMA, physical aliases and whole-NMI bound remain open |
+| [Native dispatch snapshots](schala_nmi_dispatch_witness_v1.md) | 1,201 exact mode frames and 3,097 B0 scene observations reused from the accepted pair; 22 tests | 44 command values reconstructed from static recipes; no stream/pointer bus reads or global domain/stack proof |
+| [ROM timing calibration](schala_package_helper_v4_timing_calibration.md) | Two identical 22-group traces, full v3 checks, 15,090 instruction observations each, 92 scheduling rows; 46 tests | No requested NMI; calculated start times remain inference until the separate combined experiment passes |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
@@ -91,9 +94,16 @@ The completion witness now connects the already accepted native trace's
 actual signal to its caller and cleanup; reuse it instead of replaying the
 same action. The scene-input prefix narrows one indexed frontier, but only
 the first command inherits its proved B=0. Subsequent handler returns need
-their own byte/width contracts. A separate immutable-ROM/NMI experiment is
-under calibration after its first pilot exposed a whole-fixture VBlank
-assumption; it has no accepted combined-preemption result yet.
+their own byte/width contracts. A separate immutable-ROM/NMI experiment
+preserves its first pilot's rejected whole-fixture VBlank assumption.
+The calibration pair is now accepted, and a two-case calibrated pilot passed
+its actual hardware/RTI and complete WRAM contracts. The full 152-case pair
+remains under evaluation. Its first full run completed all records but four
+failed a sampled-clear timing assumption. A narrowly source-bound correction
+has passed independent review and 92 tests; two fresh repetitions are
+authorized, while the old run remains rejected history.
+Mode-zero direct-call composition and the existing
+game trace's mode/scene register snapshots are separate completed gates.
 
 No production hook, allocation, scratch ownership, high selector, Schala
 command or logical PC `$07` is approved. The
@@ -285,6 +295,9 @@ sound deceptively similar.
 | `BA-COMPLETION-WITNESS-V1` | `complete-bounded-runtime-reuse` | [Accepted trace pair revalidated](schala_package_completion_witness_v1.md): exact counter/latch writes, caller snapshots and return within the same action. No new emulator run, encoded default opcode, pointer delta or original high-package completion. |
 | `BA-SCENE-DISPATCH-INPUTS-V1` | `complete-bounded-static` | [First tick-reached B=0 and local index recipes](schala_scene_dispatch_inputs_v1.md); later handler-return B, legal command/script producer domains and full callee ownership remain open. |
 | `BA-NMI-MODE-INPUTS-V1` | `complete-bounded-static` | [Exact normal-prefix register contract](schala_nmi_mode_inputs_v1.md), conditional prefix stack count and local indexed mode aliases. Selected bodies, producer domain and physical frame ownership remain open. |
+| `BA-NMI-MODE-BODIES-V1` | `partial-bounded-static` | [Two reviewed targets](schala_nmi_mode_bodies_v1.md): mode zero closes under prior typed-stack premises, mode one/two remains open at indexed scroll dispatch. No register/alias/global bound. |
+| `BA-NMI-DISPATCH-WITNESS-V1` | `complete-bounded-runtime-reuse` | [Exact saved frame and input snapshots](schala_nmi_dispatch_witness_v1.md) from the full accepted pair, with static-reconstructed target/command provenance explicitly separated from bus reads. |
+| `BA-ROM-TIMING-CALIBRATION-V4` | `complete-native-synthetic` | [Two 22-group traces](schala_package_helper_v4_timing_calibration.md), identical per-instruction elapsed projections and 92 inferred schedule rows. No NMI request or executed scheduling claim. |
 | `BA-NORMAL-NMI-DIRECT-CLOSURE-V2` | `partial-static` | [25 direct contracts / 34 original call sites](schala_package_normal_nmi_closure_v2.md) close under an explicit non-stack-alias premise. Ten original sites, physical ownership, full handler and nested bounds remain open. |
 
 Resume at `BA-NATIVE-INTEGRATION-DESIGN`. Reopen a completed gate only

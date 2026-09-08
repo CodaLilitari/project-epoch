@@ -1,0 +1,375 @@
+{
+  "schema": "project-epoch-nmi-dispatch-witness-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "reuse-only register/stack snapshots from the accepted bounded clean-ROM context pair",
+  "sources": {
+    "context_reference": {
+      "path": "references/package_resolver_context_v1.json",
+      "size": 15085,
+      "sha256": "d7eb845a97f1398996ff28936b0117a423b6534aa1d518fbf49023e28317fd99"
+    },
+    "context_collector": {
+      "path": "tools/collect_package_resolver_context_evidence_v1.py",
+      "size": 9820,
+      "sha256": "c68696d1a0d050dbbbea833299a1ed959d53d68ffaae992c600cd968a3b1532b"
+    },
+    "mode_reference": {
+      "path": "references/schala_nmi_mode_inputs_v1.json",
+      "size": 138037,
+      "sha256": "dc715f6726e482a00e649d15252b5ca42f933f82198d8520c78d7867f3932530"
+    },
+    "mode_auditor": {
+      "path": "tools/audit_schala_nmi_mode_inputs_v1.py",
+      "size": 13792,
+      "sha256": "2372dd5c829f889ca0069227d1d4322726ce2c893c4e55cdf1471a3f0f28614f"
+    },
+    "scene_reference": {
+      "path": "references/schala_scene_dispatch_inputs_v1.json",
+      "size": 156163,
+      "sha256": "d5604c65934dff1dfa4796ea3d990e227065e9b28a5499695f590fff912a8c13"
+    },
+    "scene_auditor": {
+      "path": "tools/audit_schala_scene_dispatch_inputs_v1.py",
+      "size": 14561,
+      "sha256": "3aef357ad9c557d21015711e834d37a370737228665cca4c2ece4745a71f4d30"
+    },
+    "auditor": {
+      "path": "tools/audit_nmi_dispatch_witness_v1.py",
+      "size": 13445,
+      "sha256": "2795e5ce3c7acc9be0edbf22873cea2cb5e3fe08e4118bc16d2cf558f97cf59c"
+    },
+    "tests": {
+      "path": "tests/test_nmi_dispatch_witness_v1.py",
+      "size": 6964,
+      "sha256": "a127ecf3fe4c706057e6da3523a5226f7f1bcd794129dcfc0aebafa5b467cc9b"
+    }
+  },
+  "revalidated_runs": [
+    {
+      "run_directory": "private/test_runs/resolver_context_20260908_final1",
+      "manifest": {
+        "path": "private/test_runs/resolver_context_20260908_final1/manifest.json",
+        "size": 5569,
+        "sha256": "abc8abbbf135fb1bc4e79ad4b893977015936fb55b4f76746dabd19b573a5c13"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_context_20260908_final1/trace.json",
+        "size": 10811008,
+        "sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679"
+      },
+      "process_log": {
+        "path": "private/test_runs/resolver_context_20260908_final1/process.log",
+        "size": 1340346,
+        "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59"
+      }
+    },
+    {
+      "run_directory": "private/test_runs/resolver_context_20260908_final2",
+      "manifest": {
+        "path": "private/test_runs/resolver_context_20260908_final2/manifest.json",
+        "size": 5569,
+        "sha256": "abc8abbbf135fb1bc4e79ad4b893977015936fb55b4f76746dabd19b573a5c13"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_context_20260908_final2/trace.json",
+        "size": 10811008,
+        "sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679"
+      },
+      "process_log": {
+        "path": "private/test_runs/resolver_context_20260908_final2/process.log",
+        "size": 1340346,
+        "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59"
+      }
+    }
+  ],
+  "observations": {
+    "normal_nmi_pairs": 1201,
+    "mode_observations": 1201,
+    "scene_observations": 3097,
+    "nmi_contexts_with_scene_observations": 657,
+    "scene_derived_command_count": 44,
+    "scene_derived_commands": [
+      {
+        "command": "80",
+        "count": 2
+      },
+      {
+        "command": "81",
+        "count": 2
+      },
+      {
+        "command": "82",
+        "count": 84
+      },
+      {
+        "command": "83",
+        "count": 8
+      },
+      {
+        "command": "84",
+        "count": 440
+      },
+      {
+        "command": "85",
+        "count": 1
+      },
+      {
+        "command": "86",
+        "count": 14
+      },
+      {
+        "command": "88",
+        "count": 343
+      },
+      {
+        "command": "89",
+        "count": 186
+      },
+      {
+        "command": "8A",
+        "count": 2
+      },
+      {
+        "command": "8B",
+        "count": 286
+      },
+      {
+        "command": "8E",
+        "count": 22
+      },
+      {
+        "command": "91",
+        "count": 2
+      },
+      {
+        "command": "92",
+        "count": 2
+      },
+      {
+        "command": "93",
+        "count": 4
+      },
+      {
+        "command": "94",
+        "count": 2
+      },
+      {
+        "command": "95",
+        "count": 4
+      },
+      {
+        "command": "96",
+        "count": 2
+      },
+      {
+        "command": "98",
+        "count": 4
+      },
+      {
+        "command": "99",
+        "count": 2
+      },
+      {
+        "command": "9A",
+        "count": 2
+      },
+      {
+        "command": "9B",
+        "count": 2
+      },
+      {
+        "command": "9C",
+        "count": 34
+      },
+      {
+        "command": "9D",
+        "count": 4
+      },
+      {
+        "command": "A0",
+        "count": 2
+      },
+      {
+        "command": "A1",
+        "count": 198
+      },
+      {
+        "command": "A2",
+        "count": 6
+      },
+      {
+        "command": "A3",
+        "count": 198
+      },
+      {
+        "command": "A4",
+        "count": 6
+      },
+      {
+        "command": "A5",
+        "count": 258
+      },
+      {
+        "command": "A6",
+        "count": 255
+      },
+      {
+        "command": "B1",
+        "count": 24
+      },
+      {
+        "command": "BB",
+        "count": 312
+      },
+      {
+        "command": "BD",
+        "count": 1
+      },
+      {
+        "command": "BF",
+        "count": 30
+      },
+      {
+        "command": "C6",
+        "count": 312
+      },
+      {
+        "command": "C8",
+        "count": 1
+      },
+      {
+        "command": "C9",
+        "count": 1
+      },
+      {
+        "command": "DE",
+        "count": 1
+      },
+      {
+        "command": "E0",
+        "count": 2
+      },
+      {
+        "command": "E1",
+        "count": 1
+      },
+      {
+        "command": "E5",
+        "count": 1
+      },
+      {
+        "command": "E6",
+        "count": 4
+      },
+      {
+        "command": "EF",
+        "count": 30
+      }
+    ],
+    "selected_record_ordinals_sha256": "02b6cfbce833f1ad43f2595317243549b715936d3a1ca1bc53dcd23e0ee8ab52",
+    "selected_complete_records_sha256": "5a6e341a24d86fe525581dccc62930902714f3aa06b519cd92336105266ee676",
+    "mode_projection_sha256": "8fc226d38a7f43154274d764406614fd90bba4e8bf46282afb54d5a274f4e275",
+    "scene_projection_sha256": "4774a644a0ec4471b729b298c0035c8ba0150238d44813759e768a83e82adfc4",
+    "context_projection_sha256": "edf1ccb7be8d489c239e2cdcb1de25ba12d8ec1fbfda960806971c768d8786ce",
+    "mode_entry_stack_deltas": [
+      12
+    ],
+    "scene_entry_stack_deltas": [
+      24
+    ],
+    "mode_register_summary": {
+      "a": 2,
+      "x": 2,
+      "y": 52368,
+      "d": 0,
+      "dbr": 0,
+      "mode_byte": 1,
+      "hidden_b": 0
+    },
+    "mode_all_snapshot_save_frames_match": true,
+    "scene_all_observed_hidden_b_zero": true,
+    "mode_static_target": "CD088D",
+    "mode_minimum_observed_sp": 1717,
+    "scene_minimum_observed_sp": 1705,
+    "context_scene_count_histogram": [
+      {
+        "scene_observations": 0,
+        "contexts": 544
+      },
+      {
+        "scene_observations": 1,
+        "contexts": 73
+      },
+      {
+        "scene_observations": 2,
+        "contexts": 230
+      },
+      {
+        "scene_observations": 3,
+        "contexts": 6
+      },
+      {
+        "scene_observations": 4,
+        "contexts": 82
+      },
+      {
+        "scene_observations": 5,
+        "contexts": 4
+      },
+      {
+        "scene_observations": 6,
+        "contexts": 1
+      },
+      {
+        "scene_observations": 7,
+        "contexts": 69
+      },
+      {
+        "scene_observations": 8,
+        "contexts": 80
+      },
+      {
+        "scene_observations": 9,
+        "contexts": 74
+      },
+      {
+        "scene_observations": 10,
+        "contexts": 27
+      },
+      {
+        "scene_observations": 11,
+        "contexts": 9
+      },
+      {
+        "scene_observations": 14,
+        "contexts": 1
+      },
+      {
+        "scene_observations": 20,
+        "contexts": 1
+      }
+    ],
+    "target_pointer_bus_reads_observed": false,
+    "scene_command_fetch_bytes_observed": false,
+    "complete_legal_input_domains_proved": false,
+    "full_stack_low_water_proved": false,
+    "production_approval": false
+  },
+  "limits": [
+    "The complete prior context validator and exact static reference reproduction run before projection.",
+    "Entry is after the native hardware frame; 12/24-byte deltas are measured from that recorded SP, not interrupted-main SP.",
+    "Each mode stack snapshot matches nine saved entry-register bytes and the pinned JSL return; nonstack alias ownership remains unproved.",
+    "All observed mode inputs are 1 and all observed scene indices have B0; no other mode or scene lifetime is covered.",
+    "Scene command bytes and targets are reconstructed from canonical local instruction/table recipes, not observed stream or pointer bus reads.",
+    "44 derived command values are an observed-context subset, not a complete legal command or script corpus.",
+    "Snapshot minima are not full stack low-water measurements, interrupt reserve recommendations or helper preemption evidence.",
+    "No native run, ROM mutation, production placement, high-package binding or PC07 integration is added."
+  ],
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_nmi_dispatch_witness_v1.py"
+  ],
+  "production_approval": false
+}

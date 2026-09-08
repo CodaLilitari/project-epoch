@@ -300,6 +300,25 @@ These are separate namespaces. Never conflate them.
   The mode dispatcher's 8-bit ASL makes `$80-$FF` alias `$00-$7F` under B=0;
   256 hypothetical inputs select 128 physical cells. The first three cells
   and occupied successor wrapper do not prove the complete legal mode domain.
+- The two reviewed mode-body targets now have a separate additive composition:
+  `$CD09F1` closes direct M1/X0/I1 typed-stack control flow with 12 additional
+  bytes below entry, or 14 including its near frame. Eight previously closed
+  callees and the full unchanged walker agree. `$CD088D` remains open at
+  indexed JMP `$CD06B9`; its encountered local peak is not a bound. Neither
+  result proves D/DBR values, physical aliases, DMA or the whole NMI.
+- A separately numbered reuse audit connects the accepted context pair to
+  1,201 mode-one snapshots with all twelve JSL/saved-register bytes matching
+  their same-NMI entry, plus 3,097 scene snapshots in 657 NMI contexts.
+  Every observed scene index has B0; 44 command values are reconstructed
+  through pinned static recipes. They are not captured stream/pointer bus
+  reads or a complete legal domain. The 12/24-byte SP deltas start at the
+  recorded post-hardware-entry SP; sampled minima are not full low-water marks.
+- The original immutable-ROM timing calibration passes two identical
+  22-group traces and unchanged v3 helper validation. Its 92 scheduling rows
+  are measured-delay inferences for the separate v4 NMI experiment; they do
+  not prove that the scheduled interrupt actually occurs in VBlank. The
+  calibration report/source/reference are frozen and guarded by v4; append
+  later review receipts externally rather than changing those pinned bytes.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
   ten-region census retains 44 original callee frontiers and explicit conditional

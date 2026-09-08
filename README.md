@@ -10,7 +10,8 @@ the latest log entry identifies the current resume boundary.
 
 ## Latest integration update — 2026-09-08
 
-The six-hour engineering session is in progress. The original package helper
+The engineering session is in progress, extended by Andrei from six to nine
+elapsed hours. The original package helper
 now executes from cartridge ROM and reads its immutable registry and package
 descriptors from ROM in two identical 3,184-case Mesen runs. It preserves its
 CPU/stack contract and complete WRAM write ledger. The 577-byte implementation
@@ -57,6 +58,13 @@ reproduction receipts and preserve the earlier evidence.
 The [outer-mode input contract](docs/schala_nmi_mode_inputs_v1.md) also
 establishes the exact busy-zero caller registers and records eight-bit index
 aliases, without turning its three reviewed cells into a proved legal domain.
+The [native snapshot reuse](docs/schala_nmi_dispatch_witness_v1.md) connects
+1,201 mode-one and 3,097 scene observations to those contracts. The
+[two-body composition](docs/schala_nmi_mode_bodies_v1.md) closes one conditional
+stack/control-flow branch while locating the other's open scroll dispatcher.
+The separate [ROM timing calibration](docs/schala_package_helper_v4_timing_calibration.md)
+has two identical 22-case traces; its 92 inferred start times feed the
+combined ROM/NMI matrix, which is still under evaluation.
 No game hook, production allocation, high production selector or logical PC
 `$07` is installed. Original cartridge tests and vanilla observations have
 separate evidence scopes.

@@ -858,3 +858,109 @@ tests pass, and independent import/actual-CLI reproduction gives the exact
 138,037-byte reference, SHA-256
 `dc715f6726e482a00e649d15252b5ca42f933f82198d8520c78d7867f3932530`.
 No accepted native run or earlier closure source needed to be repeated.
+
+## 2026-09-08 — reused native dispatch frames and selected-mode composition
+
+**Status:** separate reviewed runtime reuse and conditional static closure.
+The [native dispatch witness](schala_nmi_dispatch_witness_v1.md) revalidates
+the complete accepted context pair, then both current static input references.
+All 1,201 mode snapshots have A=X=`$0002`, Y=`$CC90`, D=0, DBR=0, M1/X0/I1
+and physical mode byte one. Each twelve-byte stack snapshot exactly matches
+the pinned JSL return and nine saved register bytes from its own NMI entry.
+The SP delta is twelve bytes from entry, which is already after the hardware
+frame. All 3,097 scene snapshots in 657 NMI contexts have B0 and the expected
+local ABI; their entry-relative SP delta is 24 bytes. Forty-four command
+values are reconstructed from the static recipe, not recorded stream reads.
+
+The 22 original tests and independent full reference reproduction pass.
+Two actual CLI processes reproduce the 9,693-byte metadata, SHA-256
+`e84739ef37b32812491b9166bf1f706a8d3490a3bf1810b3a4296c5305f47e20`.
+Sampled minima `$06B5/$06A9` are not full stack low-water measurements.
+This adds no new emulator run or proof of arbitrary handler-return B.
+
+The [mode-body composition](schala_nmi_mode_bodies_v1.md) uses the unchanged
+v2 walker and its eight previously closed callees. At `$CD09F1`, the full
+walk agrees with the independent maximum of those sequential contributions:
+12 additional bytes below entry, 14 including the near frame, and sole RTS
+`$CD0ADD` in M1/X0/I1. `$CD088D` remains open at indexed JMP `$CD06B9` with
+two typed near frames; its full bound remains null. All 40 tests passed for
+author/root/peer, and two actual CLI outputs match the 160,900-byte reference,
+SHA-256 `f3057c1cf9d0b354a318e3e67b2c760fdf9d8bfc49784d4efed344ba997a8d85`.
+Register values, DMA, aliases and a whole-NMI bound remain separate work.
+
+## 2026-09-08 — original-ROM timing calibration and combined pilot
+
+**Status:** the [timing calibration](schala_package_helper_v4_timing_calibration.md)
+passes two source-frozen 22-case runs. Each preserves the complete v3 normal
+ROM/stack/WRAM contract and adds 15,090 instruction/timing observations.
+Both 13,852,910-byte traces have SHA-256
+`7b21a5bb512514923eb39e5bbed22f4f34d121b7f26ca73c8a16ce63aaf6d6af`.
+Their elapsed projections and 92 rows are identical; the source-derived start
+scanlines span 188 through 227. These are scheduling inferences, not a claim
+that the corresponding interrupt was already executed.
+
+Source review added preparation-edge raster/full-clock checks and duplicate
+CPU/SP consistency checks before the native pair. All 46 host tests pass.
+A new offline metadata collector initially expected LF in the launcher's
+Windows-generated `inputs.lua`; it was corrected to reconstruct the actual
+pinned CRLF bytes. That failed metadata attempt and source are preserved,
+without relabeling either successful native run or altering its source.
+
+The root independently revalidated both complete traces, archives, staged
+inputs, elapsed projections and source identities, reproducing the 98,917-byte
+reference exactly, SHA-256
+`8efb143221fa29fbd7e1e06ff077d1675050bc618cd08664270ff913d334dbfb`.
+Its report retains its historical review wording because the separate v4
+experiment now guards that report's exact bytes. This entry records the root
+acceptance externally so the native provenance does not drift.
+
+The calibrated combined ROM/NMI pilot then passed both selected deepest-JSR
+cases. Its 7,146,635-byte trace has SHA-256
+`f61cad80bb75e209568415828df683e5cff2e97c2f373390aeac6ce4b853ffa9`.
+Root revalidation checks all 3,635 events per case, 48 current/prepared source
+identities, all 41 archived sources, immutable staged inputs and the complete
+actual WRAM ledger before the unchanged v3 helper projection. The interrupt
+enters on scanline 227, returns on 228 and the longer continuation ends on
+scanline 3 after wrap. The full 152-case pair is approved for evaluation; this
+pilot is not its acceptance. The original rejected pilot remains unchanged.
+
+**Publication and resume:** the preceding three-packet input increment is
+published as
+[`25080cc6b84ed8ee4124f0d2626527b5d25a6523`](https://github.com/andreipemberton/project-epoch/commit/25080cc6b84ed8ee4124f0d2626527b5d25a6523),
+with authenticated branch/commit/remote-ref agreement and all 18 changed-file
+byte strings verified. Continue the full combined matrix and exact scroll
+input/target frontier, while keeping production catalogs and high bindings empty.
+
+## 2026-09-08 — session extension and sampled-clear correction review
+
+Andrei extended the original six-hour session by another three hours at
+20:06 UTC. The planned finish is now 23:58:41 UTC, nine elapsed hours from
+the original start. A coordinating context-recovery connection failure
+interrupted root review; independent workers preserved their handoffs and
+paused changed-source native execution until root recovered.
+
+The first full combined ROM/NMI experiment completed all 152 native records.
+Its frozen host validator accepted 148 and rejected four: selector `$80`,
+branch `$40`, synthetic SP `$1FEF`, first-JSR boundary, statuses
+`$00/$C3/$4C/$8F`. The rejected trace is 217,544,660 bytes, SHA-256
+`69f2173421da9d5d0dada58e096b8937fbb6819f3ac6b95f656997f10895b061`.
+Its exact source archive and explicit host rejection remain preserved.
+
+The failed condition bounded the time between sampled pending and clear
+states to 32 master clocks. Pinned emulator CPU, DMA and callback-filter
+source explains an exact 38-clock observation gap across the original
+`$4101DF` publication-word store and `$4101E3` stack-relative load:
+initialization clears before an opcode fetch that is not a retained data
+callback. The next retained stack read samples the already-cleared state.
+This is not evidence of 38 clocks of pending DMA. The separately numbered
+correction keeps the generic 32-clock limit and requires the entire original
+instruction/event sequence, CPU states, physical addresses, publication
+bytes, ordinals and exact clock/cycle intervals for the single exception.
+
+Independent review reproduced the historical four failures with the archived
+validator and passed all 152 records through the correction offline. Root
+reviewed the source derivation and passed 81 native-envelope plus eleven
+metadata tests. That offline check does not accept the historical run.
+Two fresh frozen-source 152-case runs are now authorized; their actual
+acceptance and full paired reproduction remain pending. The developer guide
+continues to mark real game-stack ownership and production hooks unresolved.

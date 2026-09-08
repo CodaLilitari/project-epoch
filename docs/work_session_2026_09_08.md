@@ -7,6 +7,11 @@ for a blocker or a question requiring his input. The session began at
 2026-09-08 14:58:41 UTC and reaches six hours at 20:58:41 UTC
 (10:58:41 AM to 4:58:41 PM America/New_York).
 
+At 20:06 UTC, Andrei explicitly requested another three hours of work.
+The session deadline is therefore extended to 23:58:41 UTC (7:58:41 PM
+America/New_York), nine elapsed hours from the original start. The six-hour
+entries below remain historical; they do not supersede this extension.
+
 Starting source: `main` at
 `f387a077052195df833b2984076a0962cf4aff72`. The only untracked starting path
 was `%SystemDrive%/`; it is unrelated and excluded from this work. Andrei
@@ -95,6 +100,20 @@ closed for this session.
   including preparation raster/clock and duplicated CPU/SP consistency
   checks; its first bounded native run is now approved.
   The session remains active until 20:58:41 UTC.
+
+- 20:06 UTC: recovered the coordinating session after a remote context-recovery
+  connection failure. The independent workers preserved their completed
+  reviews and stopped new native launches at the source-review boundary.
+  The timing calibration, native dispatch witness and selected-mode composition
+  are independently accepted; their source publication is being completed.
+- 20:10 UTC: root reviewed the corrected sampled-clear witness and pinned
+  emulator source, and passed all 81 native-envelope plus eleven metadata
+  tests. The first full combined run remains rejected: all 152 native records
+  completed, but four failed the old 32-clock sampled-clear condition. The
+  correction permits exactly 38 clocks only for the complete original
+  publication-store/stack-read instruction sequence with exact CPU, memory,
+  ordinal and clock ownership. Fresh unchanged-source repetitions 1/2 are
+  authorized in distinct directories; the old trace is never relabeled.
 
 ## Gates and evidence boundaries
 

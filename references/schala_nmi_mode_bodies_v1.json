@@ -1,0 +1,4407 @@
+{
+  "schema": "project-epoch-nmi-mode-body-composition-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "scope": "exact two near-call targets of three reviewed physical NMI mode cells; unchanged closure-v2 walker",
+  "selected_cells": [
+    {
+      "mode": 0,
+      "target": "$CD09F1",
+      "legal_or_reachable_input_proved": false
+    },
+    {
+      "mode": 1,
+      "target": "$CD088D",
+      "legal_or_reachable_input_proved": false
+    },
+    {
+      "mode": 2,
+      "target": "$CD088D",
+      "legal_or_reachable_input_proved": false
+    }
+  ],
+  "named_spans": [
+    {
+      "name": "mode0-wrapper",
+      "start": "$CD09F1",
+      "end_exclusive": "$CD0ADE",
+      "size": 237,
+      "sha256": "224aaf43ca64993c9e7b861ee95ebc4b98ccbd1e579abf60f32384712dab37c7"
+    },
+    {
+      "name": "mode0-bank-publish",
+      "start": "$CD0AAB",
+      "end_exclusive": "$CD0AAF",
+      "size": 4,
+      "sha256": "80cf1d79c04196eb604cf1d960215ebe07fc0b310f71d23871b10076753e144d"
+    },
+    {
+      "name": "mode0-temporary-bank",
+      "start": "$CD0AB8",
+      "end_exclusive": "$CD0ACC",
+      "size": 20,
+      "sha256": "5af9df71e8507d8d7f9f32e5a4f5c992696a43c3b9281ea7fbb103a654570384"
+    },
+    {
+      "name": "mode1-entry-bank",
+      "start": "$CD088D",
+      "end_exclusive": "$CD08A4",
+      "size": 23,
+      "sha256": "099e96805e4ac785d4c5b6fef4a1ac9518209607ceaa9f81beac314b312d5e17"
+    },
+    {
+      "name": "scroll-dispatch",
+      "start": "$CD06B4",
+      "end_exclusive": "$CD06BC",
+      "size": 8,
+      "sha256": "0016098af9a67c4facae3dd092e328de1da7bb6e0c74f4ec5075db44779827d7"
+    },
+    {
+      "name": "palette-worker-bank-d-setup",
+      "start": "$FDE39C",
+      "end_exclusive": "$FDE3AC",
+      "size": 16,
+      "sha256": "89e9d73273897666c3bb296add7881983b4ca6d1f6b30b2aa5c2c1fb6faf3783"
+    },
+    {
+      "name": "palette-worker-restore",
+      "start": "$FDE434",
+      "end_exclusive": "$FDE437",
+      "size": 3,
+      "sha256": "55f64236c7b149ae783fca7fff3b03c5d69c1bb4eac32c8c2b5ac670650a6e35"
+    }
+  ],
+  "conditional_target_walks": [
+    {
+      "entry": "$CD09F1",
+      "kind": "near",
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "status": "closed-direct-stack-width-control-flow",
+      "frontier": null,
+      "abstract_states": 1916,
+      "instruction_contexts": 1398,
+      "instruction_starts": 1398,
+      "decoded_byte_intervals": [
+        {
+          "start": "$C1000F",
+          "end_exclusive": "$C10012",
+          "sha256": "ebfe6c2be5085f7f9fd71877c2145a96312c786011f74ebf5d395000da7edf3c"
+        },
+        {
+          "start": "$C10072",
+          "end_exclusive": "$C10076",
+          "sha256": "4b1d9e790783c056ef86b5aacb8ae57afbb3adefe8fca834cea78b742ecbaa1a"
+        },
+        {
+          "start": "$CCE000",
+          "end_exclusive": "$CCE290",
+          "sha256": "9d1a77a5403a3b7b9be7a2853eae24dc9bf8f17852bb8d7902931973e4b9a55e"
+        },
+        {
+          "start": "$CD06C4",
+          "end_exclusive": "$CD076C",
+          "sha256": "d1e1f7f095655c4aceda4d0367a52cb1964e33d447efa9528eaad35a087628a3"
+        },
+        {
+          "start": "$CD09CE",
+          "end_exclusive": "$CD0B16",
+          "sha256": "32d6b0a0e2dafd5d043818098732dc301b5fc0ae96c234e0d359ef1cfc76daaf"
+        },
+        {
+          "start": "$CD0B1E",
+          "end_exclusive": "$CD0B51",
+          "sha256": "af8ddb1cfa94c642e6efb0de424f6cd3d867a29f805426f8508db3bb1269d2ee"
+        },
+        {
+          "start": "$D1F411",
+          "end_exclusive": "$D1F474",
+          "sha256": "9110fe28a83a025e7553efb7d72eb97a4def5cb0af2087b1cf4fd79b90a83d17"
+        },
+        {
+          "start": "$FDE39C",
+          "end_exclusive": "$FDEAA6",
+          "sha256": "5cd5c347ca55f93e259cb6e8bac79714457f50fed3616a4c4e45c1c207d1a521"
+        },
+        {
+          "start": "$FDFFF7",
+          "end_exclusive": "$FDFFFA",
+          "sha256": "4941f0dd97b4784fc787f57ca755cdfb789176c75a6846d27474e88c4f1571b7"
+        }
+      ],
+      "decoded_context_identity_sha256": "fd96bfff54e614eb90d043e3f213d06ad9f1aa44e9fc104d5d9f0ba4d201fafa",
+      "maximum_additional_bytes_below_callee_entry": 12,
+      "exploratory_observed_local_peak_not_a_bound": null,
+      "maximum_counted_bytes_including_root_call_frame": 14,
+      "peak_instruction_sites": [
+        "$FDE5F2",
+        "$FDE5FA",
+        "$FDE602",
+        "$FDE60A",
+        "$FDE612",
+        "$FDE61A",
+        "$FDE61F",
+        "$FDE87A",
+        "$FDE882",
+        "$FDE88A",
+        "$FDE892",
+        "$FDE89A",
+        "$FDE8A2",
+        "$FDE8A7"
+      ],
+      "return_width_states": [
+        {
+          "site": "$CD0ADD",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        }
+      ],
+      "matches_prior_return_width_premise": true,
+      "direct_calls": [
+        {
+          "site": "$CCE1A9",
+          "target": "$CCE22E",
+          "kind": "near"
+        },
+        {
+          "site": "$CD09F1",
+          "target": "$CD09CE",
+          "kind": "long"
+        },
+        {
+          "site": "$CD0AB4",
+          "target": "$C1000F",
+          "kind": "long"
+        },
+        {
+          "site": "$CD0ABC",
+          "target": "$CD0AEE",
+          "kind": "near"
+        },
+        {
+          "site": "$CD0ACC",
+          "target": "$CD06C4",
+          "kind": "near"
+        },
+        {
+          "site": "$CD0ACF",
+          "target": "$CD0B1E",
+          "kind": "near"
+        },
+        {
+          "site": "$CD0AD2",
+          "target": "$D1F426",
+          "kind": "long"
+        },
+        {
+          "site": "$CD0AD6",
+          "target": "$FDFFF7",
+          "kind": "long"
+        },
+        {
+          "site": "$CD0ADA",
+          "target": "$CD0ADE",
+          "kind": "near"
+        },
+        {
+          "site": "$D1F439",
+          "target": "$D1F411",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE3ED",
+          "target": "$FDE437",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE3F5",
+          "target": "$FDE532",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE3FD",
+          "target": "$FDE4E8",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE405",
+          "target": "$FDE82C",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE40D",
+          "target": "$FDE5A4",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE415",
+          "target": "$FDE807",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE41D",
+          "target": "$FDE57C",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE422",
+          "target": "$FDE485",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE5F2",
+          "target": "$FDE64F",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE5FA",
+          "target": "$FDE7C0",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE602",
+          "target": "$FDE73A",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE60A",
+          "target": "$FDE6A1",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE612",
+          "target": "$FDE779",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE61A",
+          "target": "$FDE6D1",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE61F",
+          "target": "$FDE708",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE87A",
+          "target": "$FDE8D7",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE882",
+          "target": "$FDE962",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE88A",
+          "target": "$FDE98F",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE892",
+          "target": "$FDEA5C",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE89A",
+          "target": "$FDE935",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE8A2",
+          "target": "$FDE9CA",
+          "kind": "near"
+        },
+        {
+          "site": "$FDE8A7",
+          "target": "$FDEA11",
+          "kind": "near"
+        }
+      ],
+      "direct_far_jumps": [
+        {
+          "site": "$C10072",
+          "target": "$CCE000",
+          "instruction_sha256": "4b1d9e790783c056ef86b5aacb8ae57afbb3adefe8fca834cea78b742ecbaa1a"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CCE00E",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE014",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE01A",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE020",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE026",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE02C",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE032",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE037",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE03D",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE043",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE049",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE04F",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE055",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE05B",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE061",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE067",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE06C",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE072",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE078",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE07E",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE084",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE08A",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE090",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE096",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE09B",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0A1",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0A5",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$98CA",
+          "width_bytes": 1,
+          "instruction_sha256": "8432b31ed23d8941dd9b68833fb7b94165c894cfffd7a49f417ae982587785a1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0B1",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0B7",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0BD",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0C3",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0C9",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0CF",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0D5",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0DB",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0E1",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0E7",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0ED",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0F3",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0F9",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE0FF",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE105",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE10B",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE111",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE117",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE11D",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE123",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE129",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE12F",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE135",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE13B",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE141",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE147",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE14D",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE153",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE159",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE15F",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE165",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE16A",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE170",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE176",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE17C",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE182",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE188",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE18E",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE194",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE199",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE19F",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1A5",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1AC",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$98CA",
+          "width_bytes": 1,
+          "instruction_sha256": "8432b31ed23d8941dd9b68833fb7b94165c894cfffd7a49f417ae982587785a1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1B5",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1BB",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1C1",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1C7",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1CD",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1D3",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1D9",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1DE",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1E4",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1EA",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1F0",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1F6",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE1FC",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE202",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE208",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE20E",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE214",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE21A",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE220",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE226",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE22A",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$98CA",
+          "width_bytes": 1,
+          "instruction_sha256": "8432b31ed23d8941dd9b68833fb7b94165c894cfffd7a49f417ae982587785a1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE230",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE236",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE23C",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE242",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE248",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE24E",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE254",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE259",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE25D",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE263",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE269",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE26F",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE275",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE27B",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE280",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE285",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CCE28B",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD06D3",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$45",
+          "width_bytes": 2,
+          "instruction_sha256": "50b8792b60950af8721afe46f051e87163901747409a0efc5058bacb6bd62572",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD06E0",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$47",
+          "width_bytes": 2,
+          "instruction_sha256": "432ad892e14690c7fa024d780af1dfff4f124c97c181ce6f76a5c3bea2316dcf",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD06E9",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$49",
+          "width_bytes": 2,
+          "instruction_sha256": "e3772345a56ecfa47b1f4c51511247b470427c7e6875b8bb2a0569a6fc6a22ff",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD06F2",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$4B",
+          "width_bytes": 2,
+          "instruction_sha256": "936de6a2c2e5e03819e0a82018e03f60ba6f86dcb1805d1431aff1c8e81368fe",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD06FB",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$4D",
+          "width_bytes": 2,
+          "instruction_sha256": "314b8d55dae558e1076768251bab7f28629dae69a9a28b7b537e8cb4f943e9e7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0704",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$4F",
+          "width_bytes": 2,
+          "instruction_sha256": "24fdb91c8e27e6c65add4d0d4b62969fa1aa5202b4036f1488bd654f8ff268d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD070A",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC89",
+          "width_bytes": 2,
+          "instruction_sha256": "032fd7538dc5a2b2546fc0ab09d38e7d0c43ac9d1ede54859c388057a3bb9147",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD070D",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC8D",
+          "width_bytes": 2,
+          "instruction_sha256": "23a5a2ecfd351155c8ed300565ce90b060a9220fd9032f9fb68e976e46158648",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0710",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC91",
+          "width_bytes": 2,
+          "instruction_sha256": "d7791a50bf49749cd84f8d5876510611b5a3e8aa94c130bb9fd25e776aa44384",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0713",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC95",
+          "width_bytes": 2,
+          "instruction_sha256": "fabe9123ac47d04529fb6ad10d0e5adc45ceb8d1ac08b3a1c3bea1bf9f9e5494",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0718",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC8B",
+          "width_bytes": 2,
+          "instruction_sha256": "f74f497d8514ad3a3cb4657c3eb4e0b615b589c772f27e5d0610bdbdb5e11fab",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD071B",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC8F",
+          "width_bytes": 2,
+          "instruction_sha256": "457eb01a058ea0ead92f2a2f9229d376a9779637a222d00929278527d9e84a18",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD071E",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC93",
+          "width_bytes": 2,
+          "instruction_sha256": "a72bbc239f8ec49cabaa72122a4af240d3f3a0a1c4d25065cceb1cc27abc41f4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0721",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BC97",
+          "width_bytes": 2,
+          "instruction_sha256": "fff230e7f9deabea8b12864f8383c914fb6f853148cdfa4c95a434eb2e210fc5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0726",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD09",
+          "width_bytes": 2,
+          "instruction_sha256": "c1a644220c426a5641397f531310bcbf19debe3ac4ac9f4cbe0e0ac43492ce46",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0729",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD0D",
+          "width_bytes": 2,
+          "instruction_sha256": "de4ead833514e229dbe25190c075eec2c2323052fb5227fd850359414de8f75b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD072C",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD11",
+          "width_bytes": 2,
+          "instruction_sha256": "d4c08c0e2b9e3525cb0d6f9a903202cdb5c6143b02f13c824016756a85224481",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD072F",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD15",
+          "width_bytes": 2,
+          "instruction_sha256": "223c8f9cfde21bf78b6b55e321ab0ddf501d428fe47f2f330f8ed9a93f9cb799",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0734",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD0B",
+          "width_bytes": 2,
+          "instruction_sha256": "1b2831493476b12e0d06b8a3f9b45f4a23c935358872c65f6975fe3703451c19",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0737",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD0F",
+          "width_bytes": 2,
+          "instruction_sha256": "19fac4573c0edce184257862c532738bc103507da73032454de24f804ce1517f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD073A",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD13",
+          "width_bytes": 2,
+          "instruction_sha256": "fec96a14b7b21ae783fe20773c9d0278d20cf913657224a47a07408f3ff95d53",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD073D",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD17",
+          "width_bytes": 2,
+          "instruction_sha256": "a19777313f7bd0fae006b0a34c48f8a85732efbf239e860087855182a4d2b397",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0742",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD89",
+          "width_bytes": 2,
+          "instruction_sha256": "82af1f3aed59da92546ffee5b0afcb5cd8c75aa815730677becd1196298f6113",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0745",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD8D",
+          "width_bytes": 2,
+          "instruction_sha256": "0dda8ffdc7d50dfe003de752fdfd6667447fcb445c0a090106a2960e3b6938b6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0748",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD91",
+          "width_bytes": 2,
+          "instruction_sha256": "d6139c093e1c35bd532503febca798f98254231165a4df50545e080043afb2f3",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD074B",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD95",
+          "width_bytes": 2,
+          "instruction_sha256": "9f8c71ec8b9272abcc338f9a3815884ee784cdaf1812bd5e00d25fdc3ce4964b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0750",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD8B",
+          "width_bytes": 2,
+          "instruction_sha256": "a5fc36cd4a23d1a9b5f493289ae8bd5088f1e64ceb81e5940b1be2f62a3f8644",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0753",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD8F",
+          "width_bytes": 2,
+          "instruction_sha256": "e50fdf5289f4616e63eaf4a372b3ac0677b41fddd4cb9022bafa4c6a7c46f5ac",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0756",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD93",
+          "width_bytes": 2,
+          "instruction_sha256": "e2e335f6fa62171b3a13174a503ceba33806b8f22884f2986707a2144ee7c78b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0759",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$BD97",
+          "width_bytes": 2,
+          "instruction_sha256": "2f40fe88942f3c607b56421a6436946370f7d2132510f58c638a6b299c7d6505",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09CE",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$4377",
+          "width_bytes": 1,
+          "instruction_sha256": "6e082ef07cd0e287952101463d4dc368e9ace67a7cb6aec1b7a771b4dccfa4b3",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09D1",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$2121",
+          "width_bytes": 1,
+          "instruction_sha256": "972d7dde14e97722e9fcfd90f174d9f4270d3511de442b35a60664d27a929569",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09D7",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 2,
+          "instruction_sha256": "5b920701895b075c0121e63f175cb64c6d4ee3eabaa3474f04e9794a4bc3a977",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09DD",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09E2",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "568be44e66f7cbbdef3bc5ebae317c4a990c7ff3fd5b7de8f32e56cee55acbc7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09E8",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4375",
+          "width_bytes": 2,
+          "instruction_sha256": "2766258363639bada566d315f81460a4f22a6a161186b8b13a106fb652930976",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09ED",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "1abac965aef22553cf189b416e326c3b4bca06f56e48b8fd63c85fdf8cead19c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09F7",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4300",
+          "width_bytes": 1,
+          "instruction_sha256": "fcd482c9ac22bf941f60de3fb986452eb0cbe02122a8ca5979caea0082fc4f2e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09FC",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4301",
+          "width_bytes": 1,
+          "instruction_sha256": "325689b227f396535a6b968e9f0a0334ba7ab499243887fd2ae05295465bc88c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A02",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4302",
+          "width_bytes": 2,
+          "instruction_sha256": "268e22809fd74427b4049faf1fc7c688b2bcc4225b973f749a0abc62a6e0f3be",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A07",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4304",
+          "width_bytes": 1,
+          "instruction_sha256": "afb597539985ffe2224230effe85c1bd6193e629906ef778036fddc82fc35358",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A0C",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4307",
+          "width_bytes": 1,
+          "instruction_sha256": "171ba4e2b142165f3310c4b9e232997f4874a9c77699754a938e04f864e7999a",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A11",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4310",
+          "width_bytes": 1,
+          "instruction_sha256": "054ac8548d9149f11ac68cdf268dae0d8013045a97a5d4945b950b1c8a796b49",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A16",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4311",
+          "width_bytes": 1,
+          "instruction_sha256": "aff5cdc296d4af13f4c98d26517c8acbd61f5e390b173733b5535eb72818dcb4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A1C",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4312",
+          "width_bytes": 2,
+          "instruction_sha256": "0c58d8177521ace7692541afc05fd6169d73baddc8e28e90c4b6a55f50ef8e03",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A21",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4314",
+          "width_bytes": 1,
+          "instruction_sha256": "ccb5c22b5651aac1d132ec0391a1c48caf3ea1bf3fd2150a732aa4f2a2a0cffd",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A26",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4317",
+          "width_bytes": 1,
+          "instruction_sha256": "1cfe2909abe4ffdc6e780908210dca96fcff757ed71270afc9a6d862a5266753",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A2B",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4320",
+          "width_bytes": 1,
+          "instruction_sha256": "8912cb532129952e60b36efbcd4516abbb887a8e671e01cb762a97ad0ce8673e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A30",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4321",
+          "width_bytes": 1,
+          "instruction_sha256": "b0f171fe1394798a785489c72804da8c9b64b4670ad005ff7aff1e0021c8a30c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A36",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4322",
+          "width_bytes": 2,
+          "instruction_sha256": "3744ea3d18de30774a877ba414d25c52bbff8ba9d70a5ff97c2389f7eea4e26c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A3B",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4324",
+          "width_bytes": 1,
+          "instruction_sha256": "e762c4a2ec84ef967b94e83d02e8b7af69fbedd7c3792c8a9cd2968221179974",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A40",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4327",
+          "width_bytes": 1,
+          "instruction_sha256": "2362df6597d04f7e4e975e7fc0fc3beb36c97149dd4080f01b5103e3b2edd417",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A45",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4330",
+          "width_bytes": 1,
+          "instruction_sha256": "89b5acffaf146106fcf63c36622bb996979bb5c47ac7fecca75354dc8f6f4389",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A4A",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4331",
+          "width_bytes": 1,
+          "instruction_sha256": "c5c9b44d70715d329b3f34aaa35806e1cc572dfa05b6bcf92e9a0af6a88d223b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A50",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4332",
+          "width_bytes": 2,
+          "instruction_sha256": "e008b02d547f14492615885d6b4c9755c295212ad633e739b848eae09fc34d9c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A55",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4334",
+          "width_bytes": 1,
+          "instruction_sha256": "bd52697691deef6ec77fc345fd50ce72a104f19eba582b58916a40672b78f227",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A5A",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4337",
+          "width_bytes": 1,
+          "instruction_sha256": "30e39cceb999670abad46a60a398d020e65eb9daf6c6d0e2783cf6f86aa46c88",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A5F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4340",
+          "width_bytes": 1,
+          "instruction_sha256": "76bec172f0893c0f323f48cf2f6db6f26e87f7341652bfccd2bd355ea487adad",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A64",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4341",
+          "width_bytes": 1,
+          "instruction_sha256": "1781661dcbfd7d9c5355beb544f36a3ca2ee83852e39a72006a1af6c168316c0",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A6A",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4342",
+          "width_bytes": 2,
+          "instruction_sha256": "2ead5e5ed624ad086ef5bffa4cc41bdcc398dbc1cb1c914a49cec404d63daaeb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A6F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4344",
+          "width_bytes": 1,
+          "instruction_sha256": "2c1d57c0ad4a23d9e197936c2d3cc239ae8b27e2983081b5afd86113655c098f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A74",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4347",
+          "width_bytes": 1,
+          "instruction_sha256": "4420990e0930ca7c37d279e6f0739f97eb99188f04ea052c266df05c1b70128f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A79",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4350",
+          "width_bytes": 1,
+          "instruction_sha256": "07aef6296ea03e59cbe3ffd4d9c44f21d05043defe361d1d02961402cb7c26ab",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A7E",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4351",
+          "width_bytes": 1,
+          "instruction_sha256": "5f0b4d0d4a2bedcc9e34c39b1ce0ba95bed1930ce1ad3e2e8ad1d508209216dc",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A84",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4352",
+          "width_bytes": 2,
+          "instruction_sha256": "25b553e6ffb4f1f79fddf8996e8d731ea6f068d5a6e347fbc900b1e8f2d0ec79",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A89",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4354",
+          "width_bytes": 1,
+          "instruction_sha256": "18d7e377b7feda20f202d38dd3e13833dc4cf643f48781d9210eddf0aec0ced7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A8E",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4357",
+          "width_bytes": 1,
+          "instruction_sha256": "7d5ef98ab4f9a75570e2bdf80142f4c302c18b19cca55d82307883d269cfe476",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A93",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4360",
+          "width_bytes": 1,
+          "instruction_sha256": "87beae4cb444b4fb5e3cac8e0f19188b20f3158c5901bddbc4d2ea9f17c98edb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A98",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4361",
+          "width_bytes": 1,
+          "instruction_sha256": "78fa8460c2e96c00c75c3a74966964ee87fd890e5b45aa13951ff2bdf7a5c74e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A9E",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4362",
+          "width_bytes": 2,
+          "instruction_sha256": "9045f2db4693741cb90c2eb5ea18d1295fd3d4daefa5914995ef7fafd32a463c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AA3",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4364",
+          "width_bytes": 1,
+          "instruction_sha256": "2cb589e99b9dbf70a55d56c425a071523cf47c4ec7b1efb29d4d0ba68958c4b1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AA8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4367",
+          "width_bytes": 1,
+          "instruction_sha256": "e37f11a8c785d19ac218dbbf85f19a29fee54bba06013bd0a0158462ca9b4d32",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AC1",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420C",
+          "width_bytes": 1,
+          "instruction_sha256": "f7f94ffcc2c9484d4d2e67f308fadb2fe33b32b4c9dc265d3b67ed6fe6e729b4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AC8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$2100",
+          "width_bytes": 1,
+          "instruction_sha256": "278179067191373b25359e0ced095fed2ec56c09cf694418f9d8c78ea27dae35",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AE3",
+          "mnemonic": "DEC abs",
+          "encoded_operand": "$CDC9",
+          "width_bytes": 1,
+          "instruction_sha256": "ad15d31dae86848982df299b910026b8490247017398c7b997b37179d84b6f47",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AEA",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CDC9",
+          "width_bytes": 1,
+          "instruction_sha256": "62f770f3a4fac1f3ad936855daea00fba8ad9f2b6e4fdffa2b7227e57ee34c6e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AF0",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "9087fccd5e8ba52279cd0575e7c53ec7642505b2f007bd8dbbee668c22ea2e31",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AF5",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "a48082bbfaed6482023ad56bb96c16df3b50573038d799bf3aaaf907eb171f89",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AFA",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4377",
+          "width_bytes": 1,
+          "instruction_sha256": "bc1b4025a17345314c28ad36d159333517be86bd913ae2c9206f81e7c4d3bdcc",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AFF",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "568be44e66f7cbbdef3bc5ebae317c4a990c7ff3fd5b7de8f32e56cee55acbc7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0B0B",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0B12",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0B43",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$582",
+          "width_bytes": 1,
+          "instruction_sha256": "89026475f1bffaec12b071c5c1c93ec7895c7ea3d02a4dbc55564faab1540385",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1F417",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$CD2F",
+          "width_bytes": 1,
+          "instruction_sha256": "6b8f7bf180aae0115ae3632e5595ca55c2171a1e9d506c985c6d42cf98a9a3e9",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1F436",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CE12",
+          "width_bytes": 1,
+          "instruction_sha256": "85a89398b74fddecd8f68943538d6b944961022121e4fcb7b31ea82478348afb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1F449",
+          "mnemonic": "STZ abs,X",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "1a57504e995cb8d464e4b582b3cadefdaf2d4de8eedb62275f3752c505978ef3",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1F45C",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CE12",
+          "width_bytes": 1,
+          "instruction_sha256": "2d0aa6f4c6cb67cd73e85c05bf98f938a836bd45319de11ead202e6cb747cfa1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1F465",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "4276a57ec9b528e2151afca6780840097465dea8d3e68b1635695ac18304c209",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE3B0",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$524",
+          "width_bytes": 1,
+          "instruction_sha256": "9aec17b9cee38dacd46ee52e619b2f4dd1bef8a635270c9a4a187e29d5b38fb2",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE3BA",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$524",
+          "width_bytes": 1,
+          "instruction_sha256": "9aec17b9cee38dacd46ee52e619b2f4dd1bef8a635270c9a4a187e29d5b38fb2",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE3CE",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$523",
+          "width_bytes": 1,
+          "instruction_sha256": "fddfcfd5c8ca6a6374c259b9f3b6fd4cec7d7600db5afc4443c9745d3ec8dde6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE3DE",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$523",
+          "width_bytes": 1,
+          "instruction_sha256": "fddfcfd5c8ca6a6374c259b9f3b6fd4cec7d7600db5afc4443c9745d3ec8dde6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE441",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "3fcb4aae0e1e6ea56397c7a73459b6b4c08081fafa506a909d72a7e9862d8f82",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE44A",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$1A",
+          "width_bytes": 1,
+          "instruction_sha256": "be82119f6539eb25c91db0287a36f60f1b4bd175b1a812b4dab6909928a2b491",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE44F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE456",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE473",
+          "mnemonic": "STA [dp]",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "148c59047f0809590258580c2ba7376e034c2af7ffbb180b1456bcbeba22e20f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE475",
+          "mnemonic": "INC dp",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "25bdd45f85a1853a11003a95c6bc51a55cdfb0f5bb912ae7ec5991214874202c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE477",
+          "mnemonic": "INC dp",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "25bdd45f85a1853a11003a95c6bc51a55cdfb0f5bb912ae7ec5991214874202c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE48D",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "3fcb4aae0e1e6ea56397c7a73459b6b4c08081fafa506a909d72a7e9862d8f82",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE497",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$1A",
+          "width_bytes": 1,
+          "instruction_sha256": "be82119f6539eb25c91db0287a36f60f1b4bd175b1a812b4dab6909928a2b491",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4A6",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "3fcb4aae0e1e6ea56397c7a73459b6b4c08081fafa506a909d72a7e9862d8f82",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4AF",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$1A",
+          "width_bytes": 1,
+          "instruction_sha256": "be82119f6539eb25c91db0287a36f60f1b4bd175b1a812b4dab6909928a2b491",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4B2",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4B9",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4D6",
+          "mnemonic": "STA [dp]",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "148c59047f0809590258580c2ba7376e034c2af7ffbb180b1456bcbeba22e20f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4D8",
+          "mnemonic": "INC dp",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "25bdd45f85a1853a11003a95c6bc51a55cdfb0f5bb912ae7ec5991214874202c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4DA",
+          "mnemonic": "INC dp",
+          "encoded_operand": "$18",
+          "width_bytes": 2,
+          "instruction_sha256": "25bdd45f85a1853a11003a95c6bc51a55cdfb0f5bb912ae7ec5991214874202c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4EC",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$12",
+          "width_bytes": 1,
+          "instruction_sha256": "f8d778a3c584b20270d814137cd82d78644db70d3eb244cfc5e4522c9c7df73d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4EE",
+          "mnemonic": "STZ dp",
+          "encoded_operand": "$13",
+          "width_bytes": 1,
+          "instruction_sha256": "94ad67950e00416b3e2d7064193de4ac5cba7103a124d119e1b5c753498ba957",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE4F6",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$10",
+          "width_bytes": 2,
+          "instruction_sha256": "ae1d356989d15b60b5655188d4f97cc6abc1d4b990dc295130d3571f1ac0b3f6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE506",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE50B",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$E",
+          "width_bytes": 2,
+          "instruction_sha256": "0e5dd775a452ca81147f5eca1e1ec4bb22b1f88e9240308d6bdcad07bf8ca74e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE510",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2000",
+          "width_bytes": 2,
+          "instruction_sha256": "0fcae7d74bd9bf93ffcd7a4a7a3d9a9a5dfda957d784aba72b4f0ed0f9d270c6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE516",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2200",
+          "width_bytes": 2,
+          "instruction_sha256": "624b7af99693c79ebc78ebafcca1355d7fecd885f89d8a57b0ca37455210990f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE521",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2000",
+          "width_bytes": 2,
+          "instruction_sha256": "0fcae7d74bd9bf93ffcd7a4a7a3d9a9a5dfda957d784aba72b4f0ed0f9d270c6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE526",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2200",
+          "width_bytes": 2,
+          "instruction_sha256": "624b7af99693c79ebc78ebafcca1355d7fecd885f89d8a57b0ca37455210990f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE536",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$12",
+          "width_bytes": 1,
+          "instruction_sha256": "f8d778a3c584b20270d814137cd82d78644db70d3eb244cfc5e4522c9c7df73d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE538",
+          "mnemonic": "STZ dp",
+          "encoded_operand": "$13",
+          "width_bytes": 1,
+          "instruction_sha256": "94ad67950e00416b3e2d7064193de4ac5cba7103a124d119e1b5c753498ba957",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE543",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$10",
+          "width_bytes": 2,
+          "instruction_sha256": "ae1d356989d15b60b5655188d4f97cc6abc1d4b990dc295130d3571f1ac0b3f6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE550",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE555",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$E",
+          "width_bytes": 2,
+          "instruction_sha256": "0e5dd775a452ca81147f5eca1e1ec4bb22b1f88e9240308d6bdcad07bf8ca74e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE55A",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2000",
+          "width_bytes": 2,
+          "instruction_sha256": "0fcae7d74bd9bf93ffcd7a4a7a3d9a9a5dfda957d784aba72b4f0ed0f9d270c6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE560",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2200",
+          "width_bytes": 2,
+          "instruction_sha256": "624b7af99693c79ebc78ebafcca1355d7fecd885f89d8a57b0ca37455210990f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE56B",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2000",
+          "width_bytes": 2,
+          "instruction_sha256": "0fcae7d74bd9bf93ffcd7a4a7a3d9a9a5dfda957d784aba72b4f0ed0f9d270c6",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE570",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$2200",
+          "width_bytes": 2,
+          "instruction_sha256": "624b7af99693c79ebc78ebafcca1355d7fecd885f89d8a57b0ca37455210990f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE584",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$527",
+          "width_bytes": 1,
+          "instruction_sha256": "c8d346eef11840dab897da877840ff94bf644ba116d8da405dbeb2be9be2538f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE58D",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE593",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE59F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE5BE",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "3b7c62891d4c750c4c00a3d772bae3ffa7f55673c434420a4e200e210e6a764e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE5D2",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "3b7c62891d4c750c4c00a3d772bae3ffa7f55673c434420a4e200e210e6a764e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE5D8",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$527",
+          "width_bytes": 1,
+          "instruction_sha256": "c8d346eef11840dab897da877840ff94bf644ba116d8da405dbeb2be9be2538f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE5DE",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE626",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "3b7c62891d4c750c4c00a3d772bae3ffa7f55673c434420a4e200e210e6a764e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE63F",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE659",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE669",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE677",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE684",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE695",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE6AB",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE6BA",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE6C5",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE6DE",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE6EB",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE6FC",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE712",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE720",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE72B",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE744",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE754",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE762",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE76D",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE788",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE796",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE7A3",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE7B4",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE7CA",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE7DD",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE7EA",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE7FB",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE80F",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$527",
+          "width_bytes": 1,
+          "instruction_sha256": "c8d346eef11840dab897da877840ff94bf644ba116d8da405dbeb2be9be2538f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE818",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE81E",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE827",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE846",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "3b7c62891d4c750c4c00a3d772bae3ffa7f55673c434420a4e200e210e6a764e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE85A",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "3b7c62891d4c750c4c00a3d772bae3ffa7f55673c434420a4e200e210e6a764e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE860",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$527",
+          "width_bytes": 1,
+          "instruction_sha256": "c8d346eef11840dab897da877840ff94bf644ba116d8da405dbeb2be9be2538f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE866",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4202",
+          "width_bytes": 1,
+          "instruction_sha256": "e8af6f15dc7bbfc8f4a9832f9fc8d9103feb8b86ac8207b3b0c9b3c92a7d5ccb",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE8AE",
+          "mnemonic": "STA abs,Y",
+          "encoded_operand": "$520",
+          "width_bytes": 1,
+          "instruction_sha256": "3b7c62891d4c750c4c00a3d772bae3ffa7f55673c434420a4e200e210e6a764e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE8C7",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE8E1",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$D",
+          "width_bytes": 1,
+          "instruction_sha256": "5ce46aa36d86c102fd317bf4e42230d78e9685be1dd77597ea6efd37d1ff5529",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE8E5",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE8F5",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE8F9",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE907",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE914",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$E",
+          "width_bytes": 1,
+          "instruction_sha256": "0e5dd775a452ca81147f5eca1e1ec4bb22b1f88e9240308d6bdcad07bf8ca74e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE918",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE929",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE93F",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE943",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE94E",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE958",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2201",
+          "width_bytes": 1,
+          "instruction_sha256": "dc598d86d9b1b2514a308846bebaa675e44e882ec0217b265845b4584d5e5770",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE96C",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE970",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE97B",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE985",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 1,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9A0",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9A4",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9B3",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9BE",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9D4",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9D8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9E8",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9EC",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDE9FA",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA05",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA1B",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA1F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA2E",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA3B",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$E",
+          "width_bytes": 1,
+          "instruction_sha256": "0e5dd775a452ca81147f5eca1e1ec4bb22b1f88e9240308d6bdcad07bf8ca74e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA3F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA50",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA66",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 1,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA6A",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA78",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$C",
+          "width_bytes": 2,
+          "instruction_sha256": "8894e7267c4715478a392229b6ae04d0732ff60739241c4f9f5cb2663bc1971d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA85",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$E",
+          "width_bytes": 1,
+          "instruction_sha256": "0e5dd775a452ca81147f5eca1e1ec4bb22b1f88e9240308d6bdcad07bf8ca74e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA89",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4203",
+          "width_bytes": 1,
+          "instruction_sha256": "487ec017b538bdbd1799b6fa06c2aaf00c12c5d6483997a652b292444c8f3a6f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$FDEA9A",
+          "mnemonic": "STA long,X",
+          "encoded_operand": "$7E2200",
+          "width_bytes": 2,
+          "instruction_sha256": "339a022c209d287f6f15a593d3115beaf366006d107afd2098eb8b11b4acfb6b",
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "mnemonic_context_counts": {
+        "ADC #": 8,
+        "ADC abs": 22,
+        "ADC abs,X": 1,
+        "ADC abs,Y": 5,
+        "ADC dp": 2,
+        "AND #": 56,
+        "ASL A": 30,
+        "CLC": 31,
+        "CMP #": 4,
+        "CMP abs": 1,
+        "CMP abs,Y": 8,
+        "CPX #": 3,
+        "CPX dp": 2,
+        "CPY #": 2,
+        "DEC A": 20,
+        "DEC abs": 1,
+        "DEX": 2,
+        "DEY": 18,
+        "EOR #": 15,
+        "INC A": 7,
+        "INC abs": 4,
+        "INC dp": 4,
+        "INX": 38,
+        "INY": 2,
+        "JML": 1,
+        "JMP": 7,
+        "JSL": 4,
+        "JSR": 28,
+        "LDA #": 162,
+        "LDA [dp]": 1,
+        "LDA abs": 28,
+        "LDA abs,X": 12,
+        "LDA abs,Y": 57,
+        "LDA dp": 23,
+        "LDA long": 1,
+        "LDA long,X": 38,
+        "LDX #": 14,
+        "LDY #": 1,
+        "LSR A": 20,
+        "NOP": 44,
+        "ORA dp": 14,
+        "PHA": 8,
+        "PHB": 2,
+        "PHD": 1,
+        "PHX": 1,
+        "PHY": 6,
+        "PLA": 1,
+        "PLB": 9,
+        "PLD": 2,
+        "PLY": 18,
+        "REP": 39,
+        "RTL": 8,
+        "RTS": 42,
+        "SBC abs,X": 1,
+        "SBC abs,Y": 2,
+        "SEC": 1,
+        "SEP": 39,
+        "STA [dp]": 2,
+        "STA abs": 73,
+        "STA abs,X": 34,
+        "STA abs,Y": 15,
+        "STA dp": 46,
+        "STA long": 105,
+        "STA long,X": 16,
+        "STX abs": 12,
+        "STZ abs": 3,
+        "STZ abs,X": 1,
+        "STZ dp": 2,
+        "TAX": 17,
+        "TAY": 21,
+        "TDC": 17,
+        "TXA": 5,
+        "TYA": 1,
+        "XBA": 13,
+        "branch": 94
+      },
+      "callee_register_value_preservation": false,
+      "nonstack_alias_closure": false,
+      "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+      "termination_proved": false,
+      "whole_nmi_bound": null
+    },
+    {
+      "entry": "$CD088D",
+      "kind": "near",
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "status": "open-frontier",
+      "frontier": {
+        "category": "indexed-jump-dispatch",
+        "site": "$CD06B9",
+        "reason": "indexed JMP requires bounded target and index provenance",
+        "incoming_width_state": {
+          "m8": true,
+          "x8": false,
+          "irq_masked": true
+        },
+        "counted_stack_bytes_at_frontier": 4,
+        "active_call_return_sites": [
+          {
+            "return": "abstract-caller",
+            "kind": "near"
+          },
+          {
+            "return": "$CD092C",
+            "kind": "near"
+          }
+        ]
+      },
+      "abstract_states": 475,
+      "instruction_contexts": 388,
+      "instruction_starts": 388,
+      "decoded_byte_intervals": [
+        {
+          "start": "$C10009",
+          "end_exclusive": "$C1000C",
+          "sha256": "e15cf60da4280a0a4c503607d735ffa758a83ecc2e8502ec4a016a7a2a539901"
+        },
+        {
+          "start": "$C10076",
+          "end_exclusive": "$C1007A",
+          "sha256": "f5e75a19a6ac9bd3f4a7000634941a491cecc2c9ae3ef7645da835189e82e4c8"
+        },
+        {
+          "start": "$C28002",
+          "end_exclusive": "$C28004",
+          "sha256": "d404b24986b2963deb3378e98664bfe617910d92095df1f0bdb40d7c2d813e21"
+        },
+        {
+          "start": "$CD053C",
+          "end_exclusive": "$CD0554",
+          "sha256": "5df550df2ae4630bf728f372cf64dec85cc17ce9ba52751d77feae1762c0d1ff"
+        },
+        {
+          "start": "$CD0577",
+          "end_exclusive": "$CD058F",
+          "sha256": "b2d962651eb588b4839681a43960a6b3b43543a54ac19f004a6beebf69fb7357"
+        },
+        {
+          "start": "$CD05B2",
+          "end_exclusive": "$CD05C1",
+          "sha256": "e74ae369931ddd57abfb3eca756d6cef47895838ee3ebfc58f98eda1ee374860"
+        },
+        {
+          "start": "$CD05D0",
+          "end_exclusive": "$CD05DE",
+          "sha256": "f7fa8554fca3bc37924ab312bde7e905950c385c4da025cfdeddb08342dd1995"
+        },
+        {
+          "start": "$CD05E5",
+          "end_exclusive": "$CD05E8",
+          "sha256": "08850728285038b6478a6487cf0d88d9a88c50dc7cbe51cdc23c98eced0fd79e"
+        },
+        {
+          "start": "$CD05F3",
+          "end_exclusive": "$CD05FF",
+          "sha256": "e9a09b20ba5f1f8323926013522ad2816ab82773882f4734d5807e0e90400ac0"
+        },
+        {
+          "start": "$CD0607",
+          "end_exclusive": "$CD06B2",
+          "sha256": "09211e44ba63d55157c7950f74457c5bcf94006e35f0e8bbd8fa367b42f51a8b"
+        },
+        {
+          "start": "$CD06B4",
+          "end_exclusive": "$CD06BC",
+          "sha256": "0016098af9a67c4facae3dd092e328de1da7bb6e0c74f4ec5075db44779827d7"
+        },
+        {
+          "start": "$CD088D",
+          "end_exclusive": "$CD091E",
+          "sha256": "8732613934850464b423d2b0ec4a187a2469a16b6e0df06757c33d1e7e3c3d26"
+        },
+        {
+          "start": "$CD0922",
+          "end_exclusive": "$CD092C",
+          "sha256": "bf026adf5ede697baaaa976571f0229d5290a6a34b17b12e316219abd0aedb3a"
+        },
+        {
+          "start": "$CD09CE",
+          "end_exclusive": "$CD09F1",
+          "sha256": "65c3e12a3d48afac4a9167badfb85aa13ec374901293b443e7c55e1d636752f6"
+        },
+        {
+          "start": "$CD0AEE",
+          "end_exclusive": "$CD0B16",
+          "sha256": "b9c03740d7f37918176017d98faacf21192a182b03b6f307ba7b637559a2f3a5"
+        },
+        {
+          "start": "$CD3E8E",
+          "end_exclusive": "$CD3ECE",
+          "sha256": "4be192e71a740182c162550849d9e9e75d0bea49c4879e51d9bb33294b2c0cf0"
+        },
+        {
+          "start": "$CEEE6E",
+          "end_exclusive": "$CEEE82",
+          "sha256": "0d6de3420d0b7892ab826fde8f98a5e74e9d4e3803d153aa453d28606ddd33e0"
+        },
+        {
+          "start": "$CFE300",
+          "end_exclusive": "$CFE418",
+          "sha256": "610a2d5cfc51c08483462b91deddc1e771a4447b42b763644104338db4b06835"
+        },
+        {
+          "start": "$CFE481",
+          "end_exclusive": "$CFE499",
+          "sha256": "3475bdca24bde38fe4b75a6773a9bc59a4de48e51be74792672e2dded9c05181"
+        },
+        {
+          "start": "$CFE510",
+          "end_exclusive": "$CFE520",
+          "sha256": "42a1be2549165344a0f935485a2177d4ac694344e106acb2b389394236cffe6a"
+        },
+        {
+          "start": "$CFE589",
+          "end_exclusive": "$CFE58A",
+          "sha256": "8254c329a92850f6d539dd376f4816ee2764517da5e0235514af433164480d7a"
+        },
+        {
+          "start": "$D1E8D9",
+          "end_exclusive": "$D1E91A",
+          "sha256": "d061f36aae2bdb1a6931a0fd8d78cb572594ffcfb89fbce97c933c37d51df6f7"
+        }
+      ],
+      "decoded_context_identity_sha256": "10e312441f00b63af1b9e9ad7b622e1fb96a2105e1dc1df41ebfff73d08f496b",
+      "maximum_additional_bytes_below_callee_entry": null,
+      "exploratory_observed_local_peak_not_a_bound": 10,
+      "maximum_counted_bytes_including_root_call_frame": null,
+      "peak_instruction_sites": [],
+      "return_width_states": [],
+      "matches_prior_return_width_premise": false,
+      "direct_calls": [
+        {
+          "site": "$CD05BE",
+          "target": "$CD053C",
+          "kind": "near"
+        },
+        {
+          "site": "$CD05DA",
+          "target": "$CEEE6E",
+          "kind": "long"
+        },
+        {
+          "site": "$CD05E5",
+          "target": "$CD0577",
+          "kind": "near"
+        },
+        {
+          "site": "$CD0644",
+          "target": "$D1E8D9",
+          "kind": "long"
+        },
+        {
+          "site": "$CD0893",
+          "target": "$CD09CE",
+          "kind": "long"
+        },
+        {
+          "site": "$CD089B",
+          "target": "$CD3EB4",
+          "kind": "near"
+        },
+        {
+          "site": "$CD08A9",
+          "target": "$CD0607",
+          "kind": "near"
+        },
+        {
+          "site": "$CD08AC",
+          "target": "$CD3EB4",
+          "kind": "near"
+        },
+        {
+          "site": "$CD08B4",
+          "target": "$C10009",
+          "kind": "long"
+        },
+        {
+          "site": "$CD08F1",
+          "target": "$CD0AEE",
+          "kind": "near"
+        },
+        {
+          "site": "$CD08F5",
+          "target": "$CD05B2",
+          "kind": "near"
+        },
+        {
+          "site": "$CD08F8",
+          "target": "$CD05B2",
+          "kind": "near"
+        },
+        {
+          "site": "$CD091A",
+          "target": "$C28002",
+          "kind": "long"
+        },
+        {
+          "site": "$CD0929",
+          "target": "$CD06B4",
+          "kind": "near"
+        },
+        {
+          "site": "$CD3EC7",
+          "target": "$CD3E8E",
+          "kind": "near"
+        }
+      ],
+      "direct_far_jumps": [
+        {
+          "site": "$C10076",
+          "target": "$CFE300",
+          "instruction_sha256": "f5e75a19a6ac9bd3f4a7000634941a491cecc2c9ae3ef7645da835189e82e4c8"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD053E",
+          "mnemonic": "DEC abs,X",
+          "encoded_operand": "$C86A",
+          "width_bytes": 1,
+          "instruction_sha256": "f5fa05646badb254174f4553aee641d7417b1665101bc68641fa3c6fe429cc49",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0547",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C86D",
+          "width_bytes": 1,
+          "instruction_sha256": "ae0cc645e15a11085d6412fcf79d12f43da8913db49fc82d70ef4d50908457af",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD054A",
+          "mnemonic": "DEC abs,X",
+          "encoded_operand": "$C870",
+          "width_bytes": 1,
+          "instruction_sha256": "345f0c2426c06baf3771f39ca1f8634a230737fb0e914abcafb1d4e0d3b47c8a",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0579",
+          "mnemonic": "INC abs,X",
+          "encoded_operand": "$C86A",
+          "width_bytes": 1,
+          "instruction_sha256": "0815feda1921f1d6be5f0083113712294c9c2a6a79612a1b29cfd61c861a921b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0582",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$C86D",
+          "width_bytes": 1,
+          "instruction_sha256": "ae0cc645e15a11085d6412fcf79d12f43da8913db49fc82d70ef4d50908457af",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0585",
+          "mnemonic": "INC abs,X",
+          "encoded_operand": "$C870",
+          "width_bytes": 1,
+          "instruction_sha256": "336bb1f2d7edcfbd86040179e3a76b3917a316f6f563e08fa592b2f0e55835c3",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05D4",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA25",
+          "width_bytes": 1,
+          "instruction_sha256": "4bde9f6863f228674b0a1024ce63aad776b3eaa256681e0e08427736ae86af6d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05F8",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CE16",
+          "width_bytes": 1,
+          "instruction_sha256": "4bf4fe1433e225967f43b30f6466da346ba025d966f0834cd234dd214d7b687d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05FB",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA1E",
+          "width_bytes": 1,
+          "instruction_sha256": "53ea582c66ab04231e5d98475f8e2d56d942b18f3f98f1b5b211b13e43f3179c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD060C",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA17",
+          "width_bytes": 1,
+          "instruction_sha256": "e6c05191aa11595406545829d0396fa23755b28dc3c6396cb4cf57c25acf3a85",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0614",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA16",
+          "width_bytes": 1,
+          "instruction_sha256": "d22a4356d33bff6dec6e97b031d69bd0b61ba600eafc91a8452159f511715540",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD061E",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$45",
+          "width_bytes": 2,
+          "instruction_sha256": "50b8792b60950af8721afe46f051e87163901747409a0efc5058bacb6bd62572",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0631",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$CD20",
+          "width_bytes": 2,
+          "instruction_sha256": "d2b3b82b85bfb5fcd3f1b2cc66e73b48ddacb74869b608a3b611769a0d650f61",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0636",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CD1F",
+          "width_bytes": 1,
+          "instruction_sha256": "f1d8c525156809d2e4af1accf17d0ff116048815d5069b2b09ac9f2ff8be5c39",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD063C",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$CD20",
+          "width_bytes": 2,
+          "instruction_sha256": "d2b3b82b85bfb5fcd3f1b2cc66e73b48ddacb74869b608a3b611769a0d650f61",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0648",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$A01F",
+          "width_bytes": 1,
+          "instruction_sha256": "8afdbb5d962601d3df332f4711759738774ffb68a213f6ded8bedd23ba79951e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD064E",
+          "mnemonic": "STX dp",
+          "encoded_operand": "$45",
+          "width_bytes": 2,
+          "instruction_sha256": "fda8ba9ea99e3701d6a1368bc13bc85353eaf98c37bfe41dcbcbf7f2460586f0",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0650",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CE14",
+          "width_bytes": 1,
+          "instruction_sha256": "76c893693d1603f14def043f6046b5d8f5c37241a3c71cb5413ded84efb4a506",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD066F",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$2116",
+          "width_bytes": 2,
+          "instruction_sha256": "cdef6f9317bc7a670ccd0aeb27f9eb5179f51f4a9bfd89c5519ccce9b90e9adc",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0674",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "9087fccd5e8ba52279cd0575e7c53ec7642505b2f007bd8dbbee668c22ea2e31",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0679",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "a48082bbfaed6482023ad56bb96c16df3b50573038d799bf3aaaf907eb171f89",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD067F",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0684",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "568be44e66f7cbbdef3bc5ebae317c4a990c7ff3fd5b7de8f32e56cee55acbc7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD068A",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4375",
+          "width_bytes": 2,
+          "instruction_sha256": "2766258363639bada566d315f81460a4f22a6a161186b8b13a106fb652930976",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD068F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "1abac965aef22553cf189b416e326c3b4bca06f56e48b8fd63c85fdf8cead19c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08BB",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2123",
+          "width_bytes": 1,
+          "instruction_sha256": "06fa615855d7857639c32d6a4c55512def0745df63aff0657a9934593a270ba4",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08C2",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2124",
+          "width_bytes": 1,
+          "instruction_sha256": "99e738a0128e38c524d166ceda0211bab6933e6c7fd7f62bcecf41844e19ca9d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08C9",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2125",
+          "width_bytes": 1,
+          "instruction_sha256": "aba45bdad93cd66a218b8977275f95211916113812724e08c2355e1a34b5a990",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08D0",
+          "mnemonic": "STA long",
+          "encoded_operand": "$212A",
+          "width_bytes": 1,
+          "instruction_sha256": "bb7418aa766ab476a3e38aba435da9aa7ccea09c48eb62a171ed6b55a5000664",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08D7",
+          "mnemonic": "STA long",
+          "encoded_operand": "$212B",
+          "width_bytes": 1,
+          "instruction_sha256": "230524898d7291935c0ffdaa281641094c15a2277bc299d41965506fc956f466",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08DE",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$BE93",
+          "width_bytes": 1,
+          "instruction_sha256": "ceab8b3ae7493399f2f9682a1ce5994c270514b8c8d11d5c95bfc1a1e6729af9",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08E4",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$C151",
+          "width_bytes": 2,
+          "instruction_sha256": "9c19f6760097eff6e4ddef517ec392f02deb5178de528cd8b1ebc42c7591b62c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08EA",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$C153",
+          "width_bytes": 2,
+          "instruction_sha256": "887da00271cb3be171e83cc9d8a3a67fd51f8332a3cdfa694a1cd2319a64b60f",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08FE",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420C",
+          "width_bytes": 1,
+          "instruction_sha256": "297c995f41d5d67104e04530025eccdfcce23757d87353daaaa709fc63152cd5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0916",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2100",
+          "width_bytes": 1,
+          "instruction_sha256": "481b886396d6438321a71ac3ec6caa4a0a90881e9fa5b3b8d7cc79ba3e16bc69",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0925",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2100",
+          "width_bytes": 1,
+          "instruction_sha256": "481b886396d6438321a71ac3ec6caa4a0a90881e9fa5b3b8d7cc79ba3e16bc69",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09CE",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$4377",
+          "width_bytes": 1,
+          "instruction_sha256": "6e082ef07cd0e287952101463d4dc368e9ace67a7cb6aec1b7a771b4dccfa4b3",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09D1",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$2121",
+          "width_bytes": 1,
+          "instruction_sha256": "972d7dde14e97722e9fcfd90f174d9f4270d3511de442b35a60664d27a929569",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09D7",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 2,
+          "instruction_sha256": "5b920701895b075c0121e63f175cb64c6d4ee3eabaa3474f04e9794a4bc3a977",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09DD",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09E2",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "568be44e66f7cbbdef3bc5ebae317c4a990c7ff3fd5b7de8f32e56cee55acbc7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09E8",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4375",
+          "width_bytes": 2,
+          "instruction_sha256": "2766258363639bada566d315f81460a4f22a6a161186b8b13a106fb652930976",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09ED",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "1abac965aef22553cf189b416e326c3b4bca06f56e48b8fd63c85fdf8cead19c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AF0",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "9087fccd5e8ba52279cd0575e7c53ec7642505b2f007bd8dbbee668c22ea2e31",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AF5",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "a48082bbfaed6482023ad56bb96c16df3b50573038d799bf3aaaf907eb171f89",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AFA",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4377",
+          "width_bytes": 1,
+          "instruction_sha256": "bc1b4025a17345314c28ad36d159333517be86bd913ae2c9206f81e7c4d3bdcc",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AFF",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "568be44e66f7cbbdef3bc5ebae317c4a990c7ff3fd5b7de8f32e56cee55acbc7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0B0B",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0B12",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3E95",
+          "mnemonic": "STY abs",
+          "encoded_operand": "$2116",
+          "width_bytes": 2,
+          "instruction_sha256": "07980d0b97c6aab8f89732140e3e563dacbe8019f8c854a58746939634b05d3b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3E98",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3E9B",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "568be44e66f7cbbdef3bc5ebae317c4a990c7ff3fd5b7de8f32e56cee55acbc7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3EA0",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "9087fccd5e8ba52279cd0575e7c53ec7642505b2f007bd8dbbee668c22ea2e31",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3EA5",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "a48082bbfaed6482023ad56bb96c16df3b50573038d799bf3aaaf907eb171f89",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3EAA",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4375",
+          "width_bytes": 2,
+          "instruction_sha256": "2766258363639bada566d315f81460a4f22a6a161186b8b13a106fb652930976",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3EAF",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "1abac965aef22553cf189b416e326c3b4bca06f56e48b8fd63c85fdf8cead19c",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3EBC",
+          "mnemonic": "STX dp",
+          "encoded_operand": "$45",
+          "width_bytes": 2,
+          "instruction_sha256": "fda8ba9ea99e3701d6a1368bc13bc85353eaf98c37bfe41dcbcbf7f2460586f0",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD3ECA",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA26",
+          "width_bytes": 1,
+          "instruction_sha256": "38b3cfcafeccbb1d2b80d8a6533d0386e693141670c879490611f39dd9e8a629",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE301",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE307",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE30D",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE313",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE319",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE31F",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE325",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE32A",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2102",
+          "width_bytes": 1,
+          "instruction_sha256": "20cf1921acca18f1377e44b6747faad68a775119fd0660de76cf79fbe59e066b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE330",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE33B",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE342",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE349",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE350",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE357",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE35E",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE365",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE36C",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE373",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE379",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE37D",
+          "mnemonic": "STZ dp",
+          "encoded_operand": "$A0",
+          "width_bytes": 1,
+          "instruction_sha256": "e6a7825eb3ccf60599f4e6aed6134120c884b1214722243788baf435b39ad28e",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE386",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE38C",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE392",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE398",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE39E",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3A4",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3AA",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3B0",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2116",
+          "width_bytes": 1,
+          "instruction_sha256": "0e8f9c911f3a10dfb33ba1b59dc3bc2d5c7a0e2516ed8ab0030812796ba2e959",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3B6",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2117",
+          "width_bytes": 1,
+          "instruction_sha256": "00b56bc3b65bdc031fbe6ece6c8fe2426adbdc26b9bab37deac2fbab595771d7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3BC",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3C0",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$99E2",
+          "width_bytes": 1,
+          "instruction_sha256": "485aeb0dc8596086573c4f6c2289880222318d88a17db4d468576180968bd267",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3C5",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3CB",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3D1",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4372",
+          "width_bytes": 1,
+          "instruction_sha256": "6a5c7111414293ead5049c418eb2647ccf22e2d9cd0c44a6a5b203edbca467c8",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3D7",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4373",
+          "width_bytes": 1,
+          "instruction_sha256": "4fc7f2d91a37f9233558f398155d2d46aa44f7ef65d36a31c9454b62ce9d9516",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3DD",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "a509b5f9b59ef2ebc2922566d73323053d99074a126ede741e38c9e6f77d819d",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3E3",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "4e00d74e7f9397ac3ea289989ebd225895c34c34e35ba6ed36425292e7faaad5",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3E9",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "3cb6f391b9500c3b696e6b33ea793b602a8733d231a33ff2afdd77dac15fbcf1",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3EE",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2121",
+          "width_bytes": 1,
+          "instruction_sha256": "8edddf546e619364ef72068e7dbab26ece521da2f86803a69336a259751b1547",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE3F4",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "691d12a7b08f0caf7c4ee30d65c50b374ca7f2afcc60bf500738a64be272cf2b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE40A",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE410",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "869aa78324d00cdb76199fcfbbc2dc47bfe0bae096af961f63d7b45e73af4270",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE48D",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$A012",
+          "width_bytes": 1,
+          "instruction_sha256": "c659a0d15c5f6d234c9e6ced81c79344a95dc25b3ddbe0991b089dec6f5ba353",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE515",
+          "mnemonic": "DEC abs",
+          "encoded_operand": "$A118",
+          "width_bytes": 1,
+          "instruction_sha256": "d8f78ed57280947a0c4d3e5822abee07f5834b13e3d0bc1798a7a4d7c3404a7b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CFE51C",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "b35404e71c274d738e6c72662193ef3d69e692545d6e92e47e743ea964cc1421",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E8E0",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "instruction_sha256": "bbac4bcbefd29c935d1486f0a91ab3ac7c0607fe5d49026f959efcb641fbf187",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E8E3",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "instruction_sha256": "568be44e66f7cbbdef3bc5ebae317c4a990c7ff3fd5b7de8f32e56cee55acbc7",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E8E8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 1,
+          "instruction_sha256": "9087fccd5e8ba52279cd0575e7c53ec7642505b2f007bd8dbbee668c22ea2e31",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E8ED",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4371",
+          "width_bytes": 1,
+          "instruction_sha256": "a48082bbfaed6482023ad56bb96c16df3b50573038d799bf3aaaf907eb171f89",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E8F0",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$4376",
+          "width_bytes": 1,
+          "instruction_sha256": "e4211456bf98ed949352db2258cc6f61fe82fa2f89e6eda0833dd957644578e0",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E8FE",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$47",
+          "width_bytes": 2,
+          "instruction_sha256": "432ad892e14690c7fa024d780af1dfff4f124c97c181ce6f76a5c3bea2316dcf",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E902",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$2116",
+          "width_bytes": 2,
+          "instruction_sha256": "b8027697168718309e5e1c631b09f78f4d4dd3e9884b728245ab91da708cc85b",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E905",
+          "mnemonic": "STY abs",
+          "encoded_operand": "$4375",
+          "width_bytes": 1,
+          "instruction_sha256": "22cbe0d3232aaa9a6b3ecfea2a6812a36163789ad20d260fbb3604b1cfe481bf",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E908",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "instruction_sha256": "7c673a3ad5f12e20d9255a06e176b330f95cc95eead2e43626fab67eb7edcb85",
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E90F",
+          "mnemonic": "DEC dp",
+          "encoded_operand": "$47",
+          "width_bytes": 2,
+          "instruction_sha256": "ed8f2caf991bf029aba2f731a60d83dd7d40476529e2dfb2adf39287bf474bae",
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "mnemonic_context_counts": {
+        "ADC #": 4,
+        "AND #": 3,
+        "ASL A": 4,
+        "CLC": 4,
+        "CMP #": 4,
+        "CMP abs": 1,
+        "CPX abs": 1,
+        "DEC abs": 1,
+        "DEC abs,X": 2,
+        "DEC dp": 1,
+        "INC abs": 2,
+        "INC abs,X": 2,
+        "JML": 1,
+        "JMP": 5,
+        "JMP (abs,X)": 1,
+        "JSL": 5,
+        "JSR": 10,
+        "LDA #": 53,
+        "LDA abs": 37,
+        "LDA abs,X": 3,
+        "LDA dp": 5,
+        "LDA long": 4,
+        "LDA long,X": 5,
+        "LDX #": 13,
+        "LDX abs": 7,
+        "LDX dp": 1,
+        "LDY #": 3,
+        "LDY abs": 1,
+        "LSR A": 1,
+        "PHA": 11,
+        "PHB": 5,
+        "PLA": 3,
+        "PLB": 10,
+        "REP": 6,
+        "RTL": 3,
+        "RTS": 6,
+        "SBC #": 1,
+        "SEC": 1,
+        "SEP": 3,
+        "STA abs": 20,
+        "STA abs,X": 2,
+        "STA dp": 2,
+        "STA long": 49,
+        "STX abs": 16,
+        "STX dp": 2,
+        "STY abs": 2,
+        "STZ abs": 11,
+        "STZ dp": 1,
+        "TAX": 8,
+        "TDC": 8,
+        "TXA": 2,
+        "branch": 32
+      },
+      "callee_register_value_preservation": false,
+      "nonstack_alias_closure": false,
+      "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+      "termination_proved": false,
+      "whole_nmi_bound": null
+    }
+  ],
+  "composition": {
+    "mode0_wrapper_components": [
+      {
+        "site": "$CD09F1",
+        "target": "$CD09CE",
+        "kind": "long",
+        "persistent_wrapper_bytes": 0,
+        "callee_call_frame_bytes": 3,
+        "reused_callee_additional_bytes": 0,
+        "composed_additional_below_mode_entry": 3,
+        "prior_callee_metadata_sha256": "3299babaa6809c1a02b0100f9b904653bf9b111e0d1610c94e9443e22a74284b"
+      },
+      {
+        "site": "$CD0AB4",
+        "target": "$C1000F",
+        "kind": "long",
+        "persistent_wrapper_bytes": 0,
+        "callee_call_frame_bytes": 3,
+        "reused_callee_additional_bytes": 2,
+        "composed_additional_below_mode_entry": 5,
+        "prior_callee_metadata_sha256": "8469d2e0f29fab965a1bd903070330b589d1adde4df6c2c8d3616221f8807d59"
+      },
+      {
+        "site": "$CD0ABC",
+        "target": "$CD0AEE",
+        "kind": "near",
+        "persistent_wrapper_bytes": 1,
+        "callee_call_frame_bytes": 2,
+        "reused_callee_additional_bytes": 0,
+        "composed_additional_below_mode_entry": 3,
+        "prior_callee_metadata_sha256": "8373e3e02247825fc898347a0ff3aaf396ad2878d1d934d0ba179c6734981c04"
+      },
+      {
+        "site": "$CD0ACC",
+        "target": "$CD06C4",
+        "kind": "near",
+        "persistent_wrapper_bytes": 0,
+        "callee_call_frame_bytes": 2,
+        "reused_callee_additional_bytes": 0,
+        "composed_additional_below_mode_entry": 2,
+        "prior_callee_metadata_sha256": "a17f91c353c2f63b9e2da07d4fa7ad128e5ed4cdd55eecd2c9d209801dc36e5d"
+      },
+      {
+        "site": "$CD0ACF",
+        "target": "$CD0B1E",
+        "kind": "near",
+        "persistent_wrapper_bytes": 0,
+        "callee_call_frame_bytes": 2,
+        "reused_callee_additional_bytes": 0,
+        "composed_additional_below_mode_entry": 2,
+        "prior_callee_metadata_sha256": "7b66e697e81fd2f0625ce6fe4c52b80a88a5091fc6af3856c20644fc85822eb6"
+      },
+      {
+        "site": "$CD0AD2",
+        "target": "$D1F426",
+        "kind": "long",
+        "persistent_wrapper_bytes": 0,
+        "callee_call_frame_bytes": 3,
+        "reused_callee_additional_bytes": 2,
+        "composed_additional_below_mode_entry": 5,
+        "prior_callee_metadata_sha256": "90c7251ca10c128fb3429829c46d16b3670a0149c7862e6ee1692da033743b27"
+      },
+      {
+        "site": "$CD0AD6",
+        "target": "$FDFFF7",
+        "kind": "long",
+        "persistent_wrapper_bytes": 0,
+        "callee_call_frame_bytes": 3,
+        "reused_callee_additional_bytes": 9,
+        "composed_additional_below_mode_entry": 12,
+        "prior_callee_metadata_sha256": "0a1343774ef570fde3a7933637b3f1b0536e11d2f02cf4bb0d0de4cdce772bca"
+      },
+      {
+        "site": "$CD0ADA",
+        "target": "$CD0ADE",
+        "kind": "near",
+        "persistent_wrapper_bytes": 0,
+        "callee_call_frame_bytes": 2,
+        "reused_callee_additional_bytes": 0,
+        "composed_additional_below_mode_entry": 2,
+        "prior_callee_metadata_sha256": "681108e23e8b03f91c43c5d9e6dc6bc83c22d83b36f29f7bc57e2e1f9d45a2dc"
+      }
+    ],
+    "mode0_local_noncall_peak_bytes": 2,
+    "mode0_composed_additional_below_entry": 12,
+    "mode0_conditional_total_including_indexed_near_frame": 14,
+    "mode0_full_walk_matches_composition": true,
+    "mode0_sole_return": "$CD0ADD",
+    "mode12_first_frontier": "$CD06B9",
+    "mode12_frontier_counted_stack_bytes": 4,
+    "mode12_traversal_local_peak_explicitly_not_a_bound": 10,
+    "mode12_additional_stack_bound": null,
+    "callee_register_value_preservation": false,
+    "d_dbr_return_values_proved": false,
+    "nonstack_alias_closure": false,
+    "dma_effects_proved": false,
+    "complete_legal_mode_domain_proved": false,
+    "termination_proved": false,
+    "asynchronous_entry_proved": false,
+    "whole_nmi_stack_bound": null,
+    "production_approval": false,
+    "new_native_execution": false
+  },
+  "register_value_obligations": [
+    "Mode0 publishes DBR7E with PHA/PLB, then uses TDC in temporary-bank setup; values require a separate D/DBR proof.",
+    "The palette worker saves D/DBR, installs D0500, and later pulls D/DBR; typed stack balance does not itself prove physical saved-value integrity.",
+    "Mode12 also publishes DBR7E before its open scroll frontier; incoming hidden B and CA92 domain there remain unproved.",
+    "A/X/Y values and flags beyond M/X/I are not preserved by the closure contract; no source caller ABI is silently inferred."
+  ],
+  "premises": [
+    "Native M1/X0/I1 near entry with an exact two-byte typed return frame.",
+    "Ordinary writable stack and no nonstack write, DMA effect or alias changes a saved frame/status/control-flow input outside the abstract branch overapproximation.",
+    "No intervening asynchronous handler or stack-pointer reassignment; no physical SP ownership is established.",
+    "All conditional branches are overapproximated; finite traversal is not a termination or timing proof.",
+    "The local wrapper-save counts are reviewer-encoded composition over exact pinned source and prior callee contracts."
+  ],
+  "callee_register_value_preservation": false,
+  "d_dbr_return_values_proved": false,
+  "nonstack_alias_closure": false,
+  "dma_effects_proved": false,
+  "complete_legal_mode_domain_proved": false,
+  "termination_proved": false,
+  "asynchronous_entry_proved": false,
+  "whole_nmi_stack_bound": null,
+  "production_approval": false,
+  "new_native_execution": false,
+  "source_identities": {
+    "closure": {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    "mode_inputs": {
+      "path": "tools/audit_schala_nmi_mode_inputs_v1.py",
+      "size": 13792,
+      "sha256": "2372dd5c829f889ca0069227d1d4322726ce2c893c4e55cdf1471a3f0f28614f"
+    },
+    "closure_reference": {
+      "path": "references/schala_package_normal_nmi_closure_v2.json",
+      "size": 321839,
+      "sha256": "413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242"
+    },
+    "mode_input_reference": {
+      "path": "references/schala_nmi_mode_inputs_v1.json",
+      "size": 138037,
+      "sha256": "dc715f6726e482a00e649d15252b5ca42f933f82198d8520c78d7867f3932530"
+    }
+  },
+  "auditor": {
+    "path": "tools/audit_schala_nmi_mode_bodies_v1.py",
+    "size": 13937,
+    "sha256": "9b685d63e68153d1c7d56213af5b1211237c3f36d067046a9e854ae5beb34187"
+  },
+  "tests": {
+    "path": "tests/test_schala_nmi_mode_bodies_v1.py",
+    "size": 8308,
+    "sha256": "3bccabc53eda3357079a2db236c37cbd81e1cf139c6e5c5ec913ee0facb38833"
+  },
+  "reused_closure_source_identities": [
+    {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    {
+      "path": "tests/test_schala_package_normal_nmi_closure_v2.py",
+      "sha256": "ed5c9cfc7960eeac0a0ca27c97cb462b67b0e518a9b9164d03a8ada3ae0b53fb"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_v1.py",
+      "sha256": "81a145b4ec078d5cf22ec5680cdfb66d427f876f40eefd0a50af432f8b9f51a9"
+    },
+    {
+      "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+      "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_v1.json",
+      "sha256": "27dd6f602781b83107bd7ab9072f1704e26bb39433713a3188679114db3b4f2c"
+    }
+  ],
+  "reused_primary_cpu_sources": [
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f",
+      "size_bytes": 20483,
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd",
+      "size_bytes": 27673,
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h"
+    }
+  ],
+  "reused_mode_input_sources": {
+    "auditor": {
+      "path": "tools/audit_schala_nmi_mode_inputs_v1.py",
+      "size": 13792,
+      "sha256": "2372dd5c829f889ca0069227d1d4322726ce2c893c4e55cdf1471a3f0f28614f"
+    },
+    "tests": {
+      "path": "tests/test_schala_nmi_mode_inputs_v1.py",
+      "size": 7189,
+      "sha256": "4a1be7a22359d6f9388a36b6c92af937574592525734dc3d092b7df843839e2c"
+    },
+    "closure_reference": {
+      "path": "references/schala_package_normal_nmi_closure_v2.json",
+      "size": 321839,
+      "sha256": "413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242"
+    },
+    "closure_auditor": {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    "cd_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CD.asm",
+      "size": 474851,
+      "sha256": "0d230620c6accf311c0588e2fefaf3bcc48b0d42575f3745fec3a402a6ca19fb"
+    },
+    "d1_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_D1.asm",
+      "size": 189600,
+      "sha256": "020f6df9efd22cc12a35608da6523b5d2e5d76d965d94567e0b74d50ab9eacea"
+    },
+    "SnesCpu.Shared.h": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    "SnesCpu.Instructions.h": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    }
+  },
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_schala_nmi_mode_bodies_v1.py"
+  ],
+  "serialization": "UTF-8 indented JSON, LF, one trailing newline"
+}
