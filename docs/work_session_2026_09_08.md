@@ -66,6 +66,13 @@ closed for this session.
   audit; their private written ROM/SRAM hashes were reread and verified. The
   source-only NMI mechanism reference also reproduces exactly. ROM execution,
   real NMI preemption and a natural unsuccessful action remain active work.
+- 17:23 UTC: independently checked the numbered Mesen phase correction and
+  all ten tests. MAP-010 cites our published unavailable-key claim and the
+  exact upstream Map exclusion. The failed first pilot is preserved as a
+  preparation failure. The natural Cure refusal has a reviewed exploratory
+  witness and 39 passing tests, with acceptance pending a fresh frozen pair.
+  The original-ROM execution matrix has passed review and 52 tests; its
+  full repeat runs are underway. No production gate is promoted.
 
 ## Gates and evidence boundaries
 

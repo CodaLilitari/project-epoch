@@ -1,0 +1,297 @@
+{
+  "schema": "project-epoch-natural-refusal-boundaries-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "annotation_source": {
+    "revision": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+    "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa",
+    "url": "https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm"
+  },
+  "new_spans": [
+    {
+      "role": "queue-commit",
+      "cpu_start": "C1161A",
+      "cpu_end_exclusive": "C1172A",
+      "size": 272,
+      "sha256": "25a4741004ba44a6142785bd822812809acf6ad470f28415bbce82ecc35390b9"
+    },
+    {
+      "role": "queue-selected-fields",
+      "cpu_start": "C116E6",
+      "cpu_end_exclusive": "C11713",
+      "size": 45,
+      "sha256": "02dd0d7e38ce227be6a1971a9d4209dbc103e43bd055a492f4740162da2f59bf"
+    },
+    {
+      "role": "pending-first-hp",
+      "cpu_start": "C1EC8F",
+      "cpu_end_exclusive": "C1ECA3",
+      "size": 20,
+      "sha256": "86c35afbcbda563a31d906cac34a2f60e821645c621448ed16b7af94ef76dd42"
+    },
+    {
+      "role": "negative-hp-death-clamp",
+      "cpu_start": "C1ECC7",
+      "cpu_end_exclusive": "C1ED17",
+      "size": 80,
+      "sha256": "e851bfa66320e6dae1f9c0d5fef62903fa447a5051f4075a167ca47061575574"
+    },
+    {
+      "role": "selected-dead-target",
+      "cpu_start": "C1C355",
+      "cpu_end_exclusive": "C1C371",
+      "size": 28,
+      "sha256": "37fa65aeec1a93c0360b13159306e8d0a63234be092cd52ea3be3cc9ddb95b8c"
+    },
+    {
+      "role": "ready-list-insertion",
+      "cpu_start": "C11B7C",
+      "cpu_end_exclusive": "C11B83",
+      "size": 7,
+      "sha256": "1074eec1a292d91ad5ad1792a5be500487980c2559b79eebb83a4bc79dff9b9e"
+    },
+    {
+      "role": "failure-latch",
+      "cpu_start": "C1C72B",
+      "cpu_end_exclusive": "C1C731",
+      "size": 6,
+      "sha256": "00b61d4af0ecdd4432fdb986f4a98d3ff2acad576bcd41b9f071247c7267f18c"
+    }
+  ],
+  "selected_instruction_assertions": [
+    {
+      "cpu_address": "C11B7C",
+      "instruction": "LDA absolute; ready queue head",
+      "operand": "95D6"
+    },
+    {
+      "cpu_address": "C11B80",
+      "instruction": "STA absolute,X; ready-list insertion",
+      "operand": "A6D9"
+    },
+    {
+      "cpu_address": "C116F2",
+      "instruction": "STA absolute,X; queue ready flags",
+      "operand": "93EE"
+    },
+    {
+      "cpu_address": "C116FA",
+      "instruction": "STA absolute,X; command flags",
+      "operand": "93EF"
+    },
+    {
+      "cpu_address": "C11700",
+      "instruction": "STA absolute,X; copied menu field $9615",
+      "operand": "93F0"
+    },
+    {
+      "cpu_address": "C11703",
+      "instruction": "LDA absolute; selected target",
+      "operand": "A62D"
+    },
+    {
+      "cpu_address": "C11706",
+      "instruction": "STA absolute,X; queued target",
+      "operand": "93F1"
+    },
+    {
+      "cpu_address": "C1170B",
+      "instruction": "STA absolute,X; participant descriptor",
+      "operand": "93F3"
+    },
+    {
+      "cpu_address": "C11710",
+      "instruction": "STA absolute,X; queued action ID",
+      "operand": "93F4"
+    },
+    {
+      "cpu_address": "C1EC99",
+      "instruction": "LDA absolute,X; current HP word",
+      "operand": "5E30"
+    },
+    {
+      "cpu_address": "C1EC9D",
+      "instruction": "SBC absolute,Y; first pending result word",
+      "operand": "B328"
+    },
+    {
+      "cpu_address": "C1ECA0",
+      "instruction": "STA absolute,X; first HP result word",
+      "operand": "5E30"
+    },
+    {
+      "cpu_address": "C1ECC7",
+      "instruction": "LDA absolute,X; HP clamp input",
+      "operand": "5E30"
+    },
+    {
+      "cpu_address": "C1ED04",
+      "instruction": "LDA absolute,X; current status byte 0",
+      "operand": "5E4A"
+    },
+    {
+      "cpu_address": "C1ED09",
+      "instruction": "STA absolute,X; death status",
+      "operand": "5E4A"
+    },
+    {
+      "cpu_address": "C1ED0F",
+      "instruction": "STA absolute,X; zero HP clamp",
+      "operand": "5E30"
+    },
+    {
+      "cpu_address": "C1C356",
+      "instruction": "LDA absolute; queued selected target",
+      "operand": "B2AE"
+    },
+    {
+      "cpu_address": "C1C359",
+      "instruction": "JSR near; expand target identity",
+      "operand": "C8F7"
+    },
+    {
+      "cpu_address": "C1C367",
+      "instruction": "LDA absolute,X; selected target status",
+      "operand": "5E4A"
+    },
+    {
+      "cpu_address": "C1C36E",
+      "instruction": "JMP near; selected dead target failure",
+      "operand": "C72B"
+    },
+    {
+      "cpu_address": "C1C72D",
+      "instruction": "STA absolute; invalid-target flag",
+      "operand": "AF23"
+    },
+    {
+      "cpu_address": "C1EC8F",
+      "instruction": "REP; M=0 before HP subtraction",
+      "operand": "20"
+    },
+    {
+      "cpu_address": "C1ECDC",
+      "instruction": "SEP; M=1 for death status",
+      "operand": "20"
+    },
+    {
+      "cpu_address": "C1ED07",
+      "instruction": "ORA immediate; set death bit",
+      "operand": "80"
+    },
+    {
+      "cpu_address": "C1ED0C",
+      "instruction": "REP; M=0 before zero HP store",
+      "operand": "20"
+    },
+    {
+      "cpu_address": "C1C365",
+      "instruction": "SEP; M=1 before selected-target check",
+      "operand": "20"
+    },
+    {
+      "cpu_address": "C1C36A",
+      "instruction": "BIT immediate; selected target death bit",
+      "operand": "80"
+    },
+    {
+      "cpu_address": "C1C72B",
+      "instruction": "LDA immediate; failure flag value",
+      "operand": "01"
+    },
+    {
+      "cpu_address": "C1ECCA",
+      "instruction": "BMI; negative HP enters death/clamp path",
+      "destination": "C1ECDB"
+    },
+    {
+      "cpu_address": "C1ECCF",
+      "instruction": "BEQ; zero HP enters death/clamp path",
+      "destination": "C1ECDB"
+    },
+    {
+      "cpu_address": "C1ECF5",
+      "instruction": "BCC; PC result slots bypass enemy reward call",
+      "destination": "C1ED04"
+    },
+    {
+      "cpu_address": "C1C36C",
+      "instruction": "BEQ; living selected target skips failure JMP",
+      "destination": "C1C371"
+    },
+    {
+      "cpu_address": "C1EC9C",
+      "instruction": "SEC before subtraction"
+    },
+    {
+      "cpu_address": "C1ED0E",
+      "instruction": "TDC supplies zero when D=0"
+    },
+    {
+      "cpu_address": "C1C730",
+      "instruction": "RTS from invalid-target flag setter"
+    }
+  ],
+  "reused_cancellation_spans": [
+    {
+      "role": "queued-tech-preparation",
+      "cpu_start": "C1BB49",
+      "cpu_end_exclusive": "C1BBD4",
+      "size": 139,
+      "sha256": "4449dcbfa74ed8d603426f98e639b727a9be43608f1f9b3a88f2947c19ba5b8b"
+    },
+    {
+      "role": "prepare-charge-and-commit",
+      "cpu_start": "C1BBD4",
+      "cpu_end_exclusive": "C1BC21",
+      "size": 77,
+      "sha256": "8b3c37b61d5c6455f6bb01bd1befcd18337bd557ff54c363aa3de55f1c2b5570"
+    },
+    {
+      "role": "shared-success-failure-tail",
+      "cpu_start": "C1BC4A",
+      "cpu_end_exclusive": "C1BC60",
+      "size": 22,
+      "sha256": "2258622ba95551f41347b852f03148795064fb55c5932ae7b92b40f3fa6e4f70"
+    },
+    {
+      "role": "queue-and-partner-release",
+      "cpu_start": "C1BCF8",
+      "cpu_end_exclusive": "C1BD6F",
+      "size": 119,
+      "sha256": "6ce9e5574a0c6892a773ed1da81b03069c5ba47c68cb9b53e257eac9830c1aab"
+    },
+    {
+      "role": "participant-atb-finalizer",
+      "cpu_start": "C1BDB3",
+      "cpu_end_exclusive": "C1BF46",
+      "size": 403,
+      "sha256": "b3281d8212fb9d53d70068adff23d3281d86defa936fc07174fb07c79f4c15bc"
+    }
+  ],
+  "reused_auditor": {
+    "path": "tools/audit_package_cancellation_boundaries_v1.py",
+    "sha256": "c3693afadfb6b1d46252e40c5d2c9db645879c56c9227f48b3ed3d98acfd1114"
+  },
+  "scope": [
+    "Queue fields are interpreted under the observed M=1/D=0/DBR=7E menu contract; selected instructions alone do not prove every menu predecessor.",
+    "The first pending HP word may wrap negative before later canonical death handling and zero clamp; no all-healing/overflow behavior claim.",
+    "For the selected-dead-target path, status bit80 takes the AF23=1 setter and returns to the queued-Tech validation check.",
+    "The existing shared finalizer/queue spans are reused, not relabeled as MP refund or fully decoded anew.",
+    "Runtime witness pairing, full watched memory ledger and later next-command progression belong to the separate observer.",
+    "No natural failure, high-selector refusal, game hook, allocation or PC07 is proved by this static artifact alone."
+  ],
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_package_natural_refusal_boundaries_v1.py",
+    "--rom",
+    "private/input/rom_archive/Chrono Trigger (USA).sfc"
+  ],
+  "production_approval": false,
+  "rom_mutated": false
+}

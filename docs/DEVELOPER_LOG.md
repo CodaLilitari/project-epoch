@@ -574,3 +574,47 @@ immutable-registry CPU reads and separately scoped preemption. Natural
 unsuccessful-action observation remains open; selecting Life2 on an entirely
 living party did not queue an action, so that exploratory route supplies no
 cancellation evidence.
+
+## 2026-09-08 — corrected our NMI observability claim and bounded natural refusal
+
+**Status:** `verified-static` source correction, with exploratory native
+witnesses kept separate. MAP-010 identifies our own incorrect published
+requirement for `ppu.nmiScanline`. Mesen's pinned `SnesPpu.cpp` explicitly
+hides that field from Lua Map serialization. The original source audit had
+verified file hashes, but those checks did not derive the document's runtime
+key inventory. The first NMI pilot therefore stopped during preparation,
+before requesting an interrupt. Its trace and source archive remain intact.
+
+The [numbered v2 phase contract](mesen_nmi_phase_contract_v2.md) observes the
+natural VBlank latch transition, checks the non-destructive register peek,
+and enters on the next observed public scanline. The root independently
+reproduced its metadata exactly and ran all ten rejection tests. The v1
+auditor/reference remain unchanged; the old document now carries a correction
+banner linked to the source-cited register. Exploratory hardware NMI success
+is not promoted by this source correction.
+
+The separate [natural-refusal boundary audit](../tools/audit_package_natural_refusal_boundaries_v1.py)
+now pins seven new canonical spans and 35 selected instruction assertions,
+reusing five prior cancellation spans. It connects actual menu queue fields,
+the selected target's first HP subtraction, death status and zero clamp,
+the dead-target failure branch, and a later ready-list insertion. Queue byte
+`+2` is conservatively described as the copied menu field `$9615`; this
+audit does not independently name its full semantics. The reproduction
+command is an argument list so the canonical ROM path's spaces are preserved.
+
+A controller-only exploration queues Marle's Cure for living Lucca, whose
+187 HP is overtaken by a later 192-point enemy result before Cure executes.
+The observed rejection changes neither party MP nor HP, performs the shared
+queue/timing finalization, returns to the actual caller, and later re-enters
+Marle into the ready list. The root has independently reviewed its 150-record
+exploration and all 39 current host tests. Acceptance still awaits archived
+source hardening and a fresh frozen pair; no helper rejection or game hook is
+inferred from this vanilla event.
+
+**Publication and resume:** the preceding stack/original-cartridge milestone
+is published as
+[`9e42e747fc523d7a99dad90ce21940dfbd18c51c`](https://github.com/andreipemberton/project-epoch/commit/9e42e747fc523d7a99dad90ce21940dfbd18c51c),
+with the authenticated branch, commit and all 26 changed-file bytes verified.
+The complete original-ROM helper pair is running after independent review
+and 52 passing tests. The NMI boundary matrix is being hardened separately.
+The overall gate remains `BA-NATIVE-INTEGRATION-DESIGN`.

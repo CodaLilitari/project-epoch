@@ -1,5 +1,14 @@
 # Mesen 2.1.1 NMI request mechanism for a bounded helper experiment
 
+> **Correction, 2026-09-08 — MAP-010:** the original phase instructions and
+> runtime-key inventory below incorrectly require `ppu.nmiScanline`, which
+> Mesen hides from Lua Map serialization. Use the separately numbered
+> [v2 observable phase contract](mesen_nmi_phase_contract_v2.md). The first
+> pilot failed during preparation before requesting an interrupt. The original
+> published text remains identifiable at commit `9e42e747`; its companion v1
+> auditor/reference are preserved. The register-enable edge and CPU pipeline
+> findings are separate claims. See [the correction register](DATA_MAPPING_CORRECTIONS.md#map-010--mesens-internal-nmi-scanline-is-hidden-from-lua).
+
 Status: `verified-static` source/fixture audit; runtime behavior below is an
 unexecuted prediction. No interrupt, register write, ROM edit or new native
 run was performed for this design. Preserve the frozen normal-only v2 proof.

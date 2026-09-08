@@ -304,6 +304,146 @@
       "authenticated_commit_api_verified": true,
       "authenticated_branch_head_verified": true,
       "all_changed_file_bytes_verified": true
+    },
+    {
+      "commit": "9e42e747fc523d7a99dad90ce21940dfbd18c51c",
+      "verified_at_utc": "2026-09-08T17:04:45.445976+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 29294,
+          "sha256": "6b95f74c9215d59714b79240f8381cd8d4e8c7ff9bfd9c40e6f19d3dc23dbbbb"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 37674,
+          "sha256": "d3549afc5e475d7d2f10890a464e6342d05ad7caff1fe5a29b7382fa20c4508b"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 5107,
+          "sha256": "d8fea3b67965495ddd27881d8a597678a4fe6c800e8bcea2a5ac39cc4f086ab6"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 11985,
+          "sha256": "e3d2dee49c0ae07c89b982addac4e24c582be8a1c4ea53dd422786dec7ce763f"
+        },
+        {
+          "path": "asm/schala_package_helper_v2_stack.asm",
+          "size": 8617,
+          "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+        },
+        {
+          "path": "tools/run_schala_package_helper_v2_stack.py",
+          "size": 22162,
+          "sha256": "88214b069ef49c3e512e625640fd67aa39019441119e8306782f225b9e48c251"
+        },
+        {
+          "path": "tools/mesen_schala_package_helper_v2_stack.lua",
+          "size": 11656,
+          "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+        },
+        {
+          "path": "tests/test_schala_package_helper_v2_stack.py",
+          "size": 11104,
+          "sha256": "3b71e286d694c3adee2b1ccce648b1f5475a8da85591a29d4a0c1dd63fbffedb"
+        },
+        {
+          "path": "docs/schala_package_helper_v2_stack.md",
+          "size": 13636,
+          "sha256": "c64153a612e969178af7c5d8cbc44b46d3bd4ebc6016f9c7985735d77359e186"
+        },
+        {
+          "path": "tools/collect_schala_package_helper_v2_stack_evidence.py",
+          "size": 13371,
+          "sha256": "fc4540b9fb78530fbe19d3f494adf16f383828eb39a062ebf9290de652ef8f4a"
+        },
+        {
+          "path": "references/schala_package_helper_v2_stack.json",
+          "size": 84742,
+          "sha256": "a095a1e18e97bd7f9746f3bc21affc90e30d76de10a34a2ffdff164e4b3c423f"
+        },
+        {
+          "path": "docs/schala_package_helper_v2_stack_interrupt_preparation.md",
+          "size": 6412,
+          "sha256": "d70743faade8208d72a9c127682cd04a8ce02229fb9a9d4c10e6f667ec239910"
+        },
+        {
+          "path": "asm/original_snes_package_cartridge_v1.asm",
+          "size": 1151,
+          "sha256": "3cd5b800e57ec4085e5b706e3bc283be6e2d2d7fb79000c2741d5828819be15b"
+        },
+        {
+          "path": "tools/build_original_snes_package_cartridge_v1.py",
+          "size": 11809,
+          "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a"
+        },
+        {
+          "path": "tools/original_snes_package_fixtures_v1.py",
+          "size": 4761,
+          "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60"
+        },
+        {
+          "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+          "size": 12383,
+          "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318"
+        },
+        {
+          "path": "tools/validate_rom_write_intents.py",
+          "size": 38861,
+          "sha256": "8bc61538b20da7a316048326059fe71de685264355a4db3410256cf6aee4369b"
+        },
+        {
+          "path": "tests/test_original_snes_package_cartridge_v1.py",
+          "size": 6917,
+          "sha256": "237b9aa86fc70987f19c8eed6844476d9ca3a97b6134a001b4f00f6378025c6c"
+        },
+        {
+          "path": "tests/test_original_snes_diagnostic_write_contract_v1.py",
+          "size": 11781,
+          "sha256": "c05db0a9ebd7f4798155230ab34e1536cf369a02282942abd978999253cfb007"
+        },
+        {
+          "path": "docs/original_snes_package_cartridge_design_v1.md",
+          "size": 5659,
+          "sha256": "325e351bee26d1e6eb979cd0d73e757a9f04af8aa180f63e9de2cc53980d1e52"
+        },
+        {
+          "path": "docs/original_snes_package_cartridge_v1.md",
+          "size": 8516,
+          "sha256": "35ac19845b382602dcebb550bbdd35e2676c01a575becd40eb569435f0449281"
+        },
+        {
+          "path": "tools/collect_original_snes_package_cartridge_evidence_v1.py",
+          "size": 8039,
+          "sha256": "8056231fdc92c03ec668bcc854aac35017afa28db1c7030d617f74a38095e4fb"
+        },
+        {
+          "path": "references/original_snes_package_cartridge_v1.json",
+          "size": 38368,
+          "sha256": "2e0190209de26ace55c5f393527f485083cf9815e276e4130be61777d4e33ea6"
+        },
+        {
+          "path": "docs/mesen_nmi_request_source_v1.md",
+          "size": 10036,
+          "sha256": "c8262bf4ea157e58f17e55bbd0d9581055424798c463807c804f019ec62725cd"
+        },
+        {
+          "path": "tools/audit_mesen_nmi_request_source_v1.py",
+          "size": 7372,
+          "sha256": "d3fd8af81c89fcc8040f5daedafe328a975d5cd7f7dfef01043a9810514225d2"
+        },
+        {
+          "path": "references/mesen_nmi_request_source_v1.json",
+          "size": 15210,
+          "sha256": "e126a4eabc8def87b7055d80298a85658126fa593cc6f63023484bc189fa6494"
+        }
+      ],
+      "authenticated_commit_api_verified": true,
+      "authenticated_branch_head_verified": true,
+      "all_changed_file_bytes_verified": true
     }
   ]
 }

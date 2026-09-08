@@ -38,6 +38,7 @@ runtime trace.
 | MAP-007 | 2026-09-08 | External cancellation/refund annotation contradicted | Shared queued-Tech success/failure finalization |
 | MAP-008 | 2026-09-08 | External instruction-width decode contradicted | IRQ-path 16-bit immediate operands versus apparent WRAM writes |
 | MAP-009 | 2026-09-08 | External strict-threshold annotation contradicted | Black Hole nonboss comparison equality boundary |
+| MAP-010 | 2026-09-08 | Project Lua observability claim contradicted | Internal PPU NMI scanline versus serialized Lua fields |
 
 ## MAP-001 — exact bank end is not an out-of-range CPU register
 
@@ -348,3 +349,49 @@ package path but is not a runtime equality-boundary test.
 and boundary tests. Do not misclassify the normally completed immune-target
 action as transaction cancellation, and do not infer a Schala effect binding
 or an approved high selector from this vanilla observation.
+
+## MAP-010 — Mesen's internal NMI scanline is hidden from Lua
+
+**Recorded:** 2026-09-08. This corrects our own published source interpretation.
+
+**Wrong source:** [Project Epoch's original NMI request note at commit
+`9e42e747fc523d7a99dad90ce21940dfbd18c51c`, lines 93–94](https://github.com/andreipemberton/project-epoch/blob/9e42e747fc523d7a99dad90ce21940dfbd18c51c/docs/mesen_nmi_request_source_v1.md#L93)
+requires preparation one scanline after `ppu.nmiScanline`. Its line 109 lists
+that key among retained `emu.getState()` fields, and lines 113–115 attribute
+the inventory to the serializers. The original document's SHA-256 is
+`c8262bf4ea157e58f17e55bbd0d9581055424798c463807c804f019ec62725cd`.
+The source auditor verified pinned files but did not derive this human-written
+key inventory; passing those hashes did not substantiate the claim.
+
+**Corrected result:** Mesen's internal `_nmiScanline` exists but is deliberately
+excluded from Lua Map serialization. The public `ppu.scanline` remains
+available. The numbered v2 preparation contract observes consecutive natural
+VBlank-latch samples, cross-checks `$4210` through a non-destructive peek,
+and starts on the next observed public scanline. The samples bracket the
+latch transition; they do not establish its exact cycle. No PPU clocks,
+scanline, latch, pending NMI flag, or hardware stack frame are manufactured.
+
+**Contrary source and evidence provenance:** [Mesen commit
+`137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1`, `SnesPpu.cpp:2287–2292`](https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L2287)
+places the field inside the `SerializeFormat::Map` exclusion and explicitly
+identifies these entries as hidden from Lua. The complete file is 83,153
+bytes, SHA-256
+`5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180`;
+the exact six-line LF span hashes to
+`7b96d992d9395abd46a8060e7c09a65aa31fb2508a4127242c5f60c8fd3fc724`.
+
+The first private pilot independently exposed the error: its 233-byte trace,
+SHA-256 `afb1fac64efd1cf2fba526478a4d39667d831a8aaa9d927813fcf03333f8338d`,
+contains an arithmetic-on-nil error for `ppu.nmiScanline`, zero completed
+records and zero active fixture events. It failed before a baseline or NMI
+request. This is a collector preparation failure, not evidence of a failed
+hardware interrupt. The [corrected source report](mesen_nmi_phase_contract_v2.md)
+and [metadata reference](../references/mesen_nmi_phase_contract_v2.json)
+pin the archived collector, prelaunch receipt, exact historical Git object,
+all 24 upstream files and exploratory corrected phase witnesses.
+
+**Evidence level:** `verified-static` for the source correction, with separately
+identified exploratory runtime key/phase observations. The original v1 audit
+and reference are preserved. The hardware interrupt matrix requires its own
+native acceptance; this correction grants no game stack ownership, production
+hook, allocation or eighth-character integration.

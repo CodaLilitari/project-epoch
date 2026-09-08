@@ -213,6 +213,11 @@ These are separate namespaces. Never conflate them.
   registry reads and preemption require separate native evidence. The source-
   pinned Mesen NMI request design uses a real `$4200` enable edge at natural
   VBlank; it is a debugger register event, not a CPU store or fabricated frame.
+  Its original Lua inventory incorrectly required `ppu.nmiScanline`, which
+  Mesen explicitly excludes from Map serialization. Follow the numbered v2
+  phase contract: observe the natural latch transition and the next public
+  scanline. MAP-010 pins our incorrect published claim, contrary source, and
+  failed preparation pilot. Preserve the historical v1 auditor/reference.
   Preserve these distinctions and the existing production-default unbound set.
 - A separate repeated clean-ROM context observation records 2,402 paired
   interrupt entries/pre-RTI snapshots per run and one PC-scoped NMI scene

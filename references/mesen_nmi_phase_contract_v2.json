@@ -1,0 +1,271 @@
+{
+  "schema": "project-epoch-mesen-nmi-phase-contract-v2",
+  "date": "2026-09-08",
+  "evidence_scope": "verified-static source correction plus exact exploratory runtime key/phase witnesses; no matched interrupt acceptance",
+  "audit_source": {
+    "path": "tools/audit_mesen_nmi_phase_contract_v2.py",
+    "size": 7994,
+    "sha256": "9c576d1f8c1b5b2d8a393f1ed6631ea926e3c5d71a2693553079750981d9dfb4"
+  },
+  "upstream_commit": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "upstream_tree": {
+    "path": "private/research/mesen_nmi_request_2_1_1/upstream_tree.json",
+    "size": 589285,
+    "sha256": "ce0f115f9df7f02a99b4c66c8e949d7e47e38a79dec0b29e1a6e2efe9187c77f"
+  },
+  "source_manifest": {
+    "path": "private/research/mesen_nmi_request_2_1_1/source_manifest.json",
+    "size": 5476,
+    "sha256": "c7d42d4952ec19b421312b3d8f446c3742a755f538f10aac38e450875ac57745"
+  },
+  "prior_source_and_reference_preserved": [
+    {
+      "path": "tools/audit_mesen_nmi_request_source_v1.py",
+      "size": 7372,
+      "sha256": "d3fd8af81c89fcc8040f5daedafe328a975d5cd7f7dfef01043a9810514225d2"
+    },
+    {
+      "path": "references/mesen_nmi_request_source_v1.json",
+      "size": 15210,
+      "sha256": "e126a4eabc8def87b7055d80298a85658126fa593cc6f63023484bc189fa6494"
+    }
+  ],
+  "incorrect_published_claim": {
+    "commit": "9e42e747fc523d7a99dad90ce21940dfbd18c51c",
+    "path": "docs/mesen_nmi_request_source_v1.md",
+    "original_bytes": 10036,
+    "original_sha256": "c8262bf4ea157e58f17e55bbd0d9581055424798c463807c804f019ec62725cd",
+    "phase_claim_lines": [
+      93,
+      94
+    ],
+    "inventory_claim_line": 109,
+    "serialization_attribution_lines": [
+      113,
+      115
+    ],
+    "correction": "ppu.nmiScanline is hidden from the Lua Map serialization; do not require, assign, or substitute this key"
+  },
+  "correct_source": {
+    "file": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    },
+    "exclusion": {
+      "first_line": 2287,
+      "last_line": 2292,
+      "bytes": 384,
+      "sha256": "7b96d992d9395abd46a8060e7c09a65aa31fb2508a4127242c5f60c8fd3fc724",
+      "encoding": "exact upstream UTF-8 bytes, including original LF line endings"
+    },
+    "public_scanline_line": 2255,
+    "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L2287"
+  },
+  "failed_pilot": {
+    "artifacts": [
+      {
+        "path": "private/test_runs/package_helper_v2_nmi_20260908_pilot1/trace.json",
+        "size": 233,
+        "sha256": "afb1fac64efd1cf2fba526478a4d39667d831a8aaa9d927813fcf03333f8338d"
+      },
+      {
+        "path": "private/test_runs/package_helper_v2_nmi_20260908_pilot1/launch_inputs.json",
+        "size": 2312,
+        "sha256": "6e956dce76467b4f9551de08df08a23d4315f7ac9ad0433397a36bd3ea53c6fb"
+      },
+      {
+        "path": "private/test_runs/package_helper_v2_nmi_20260908_pilot1/staged/collector.lua",
+        "size": 9811,
+        "sha256": "803176d842464bccac0c2a894b5ed8d8626032a1e72c8276c1dcc465f03517e0"
+      }
+    ],
+    "error": "...ckage_helper_v2_nmi_20260908_pilot1\\staged\\collector.lua:129: attempt to perform arithmetic on a nil value (field 'ppu.nmiScanline')",
+    "completed_records": 0,
+    "active_events": 0,
+    "interpretation": "preparation failed before a fixture baseline or interrupt request; this is not a failed hardware NMI"
+  },
+  "corrected_phase_contract": {
+    "phase_source": "observe false then true internalRegisters.nmiFlag while original idle CPU instructions advance emulation",
+    "cross_check": "debugger peek of 4210 bit7 at both samples; no side-effecting CPU register read",
+    "interior_gate": "first observed later instruction on scanline observed-rise.scanline+1 with latch true and all declared interrupt/DMA pending state clear",
+    "bounds": "finite full-master-clock wait; request and complete before declared VBlank phase limit",
+    "forbidden_mutations": [
+      "PPU scanline or clocks",
+      "NMI latch/countdown/need flag",
+      "manufactured hardware stack frames"
+    ],
+    "allowed_fixture_setup": "declared original WRAM code/data and baseline CPU state outside observation; normal debugger register writes4200/420B/420C",
+    "required_getState_flag_keys": [
+      "cpu.irqLock",
+      "cpu.irqSource",
+      "cpu.needNmi",
+      "cpu.nmiFlagCounter",
+      "cpu.prevIrqSource",
+      "dmaController.dmaPending",
+      "dmaController.dmaStartDelay",
+      "dmaController.hdmaChannels",
+      "dmaController.hdmaInitPending",
+      "dmaController.hdmaPending",
+      "dmaController.needToProcess",
+      "internalRegisters.enableAutoJoypadRead",
+      "internalRegisters.enableHorizontalIrq",
+      "internalRegisters.enableNmi",
+      "internalRegisters.enableVerticalIrq",
+      "internalRegisters.nmiFlag"
+    ],
+    "required_getState_timing_keys": [
+      "clockRate",
+      "cpu.cycleCount",
+      "frameCount",
+      "masterClock",
+      "memoryManager.hClock",
+      "memoryManager.masterClock",
+      "ppu.frameCount",
+      "ppu.scanline"
+    ]
+  },
+  "exploratory_corrected_key_phase_receipt": {
+    "trace": {
+      "path": "private/test_runs/package_helper_v2_nmi_20260908_pilot4/trace.json",
+      "size": 3805795,
+      "sha256": "86afd09fa16a4d49fff5f5e55766f4b8fab6255366e2bb4e09892db5b0711937"
+    },
+    "witnesses": [
+      {
+        "case": "rom-41-flag-00-sp-1FEF",
+        "preparation": {
+          "latch_rise": {
+            "after": {
+              "clock": 306912,
+              "cycles": 40599,
+              "frame": 1,
+              "hclock": 12,
+              "latch": true,
+              "peek": 242,
+              "scanline": 225
+            },
+            "before": {
+              "clock": 306890,
+              "cycles": 40596,
+              "frame": 0,
+              "hclock": 1354,
+              "latch": false,
+              "peek": 114,
+              "scanline": 224
+            }
+          },
+          "wait_start_clock": 186
+        },
+        "baseline_timing": {
+          "clockRate": 21477270,
+          "cpu.cycleCount": 40779,
+          "frameCount": 1,
+          "masterClock": 308272,
+          "memoryManager.hClock": 8,
+          "memoryManager.masterClock": 308272,
+          "ppu.frameCount": 1,
+          "ppu.scanline": 226
+        },
+        "observed_flag_keys": [
+          "cpu.irqLock",
+          "cpu.irqSource",
+          "cpu.needNmi",
+          "cpu.nmiFlagCounter",
+          "cpu.prevIrqSource",
+          "dmaController.dmaPending",
+          "dmaController.dmaStartDelay",
+          "dmaController.hdmaChannels",
+          "dmaController.hdmaInitPending",
+          "dmaController.hdmaPending",
+          "dmaController.needToProcess",
+          "internalRegisters.enableAutoJoypadRead",
+          "internalRegisters.enableHorizontalIrq",
+          "internalRegisters.enableNmi",
+          "internalRegisters.enableVerticalIrq",
+          "internalRegisters.nmiFlag"
+        ],
+        "observed_timing_keys": [
+          "clockRate",
+          "cpu.cycleCount",
+          "frameCount",
+          "masterClock",
+          "memoryManager.hClock",
+          "memoryManager.masterClock",
+          "ppu.frameCount",
+          "ppu.scanline"
+        ],
+        "interpretation": "two consecutive idle-instruction samples bracket the natural latch rise; no exact edge clock is inferred"
+      },
+      {
+        "case": "rom-41-flag-00-sp-06D8",
+        "preparation": {
+          "latch_rise": {
+            "after": {
+              "clock": 664270,
+              "cycles": 87792,
+              "frame": 2,
+              "hclock": 2,
+              "latch": true,
+              "peek": 242,
+              "scanline": 225
+            },
+            "before": {
+              "clock": 664248,
+              "cycles": 87789,
+              "frame": 1,
+              "hclock": 1344,
+              "latch": false,
+              "peek": 114,
+              "scanline": 224
+            }
+          },
+          "wait_start_clock": 337800
+        },
+        "baseline_timing": {
+          "clockRate": 21477270,
+          "cpu.cycleCount": 87975,
+          "frameCount": 2,
+          "masterClock": 665652,
+          "memoryManager.hClock": 20,
+          "memoryManager.masterClock": 665652,
+          "ppu.frameCount": 2,
+          "ppu.scanline": 226
+        },
+        "observed_flag_keys": [
+          "cpu.irqLock",
+          "cpu.irqSource",
+          "cpu.needNmi",
+          "cpu.nmiFlagCounter",
+          "cpu.prevIrqSource",
+          "dmaController.dmaPending",
+          "dmaController.dmaStartDelay",
+          "dmaController.hdmaChannels",
+          "dmaController.hdmaInitPending",
+          "dmaController.hdmaPending",
+          "dmaController.needToProcess",
+          "internalRegisters.enableAutoJoypadRead",
+          "internalRegisters.enableHorizontalIrq",
+          "internalRegisters.enableNmi",
+          "internalRegisters.enableVerticalIrq",
+          "internalRegisters.nmiFlag"
+        ],
+        "observed_timing_keys": [
+          "clockRate",
+          "cpu.cycleCount",
+          "frameCount",
+          "masterClock",
+          "memoryManager.hClock",
+          "memoryManager.masterClock",
+          "ppu.frameCount",
+          "ppu.scanline"
+        ],
+        "interpretation": "two consecutive idle-instruction samples bracket the natural latch rise; no exact edge clock is inferred"
+      }
+    ],
+    "limitation": "this collector checks only the source/key/phase correction; interrupt proof requires the separate native validator and independent review"
+  },
+  "production_approval": false,
+  "serialization": "UTF-8 indented JSON, LF, one trailing newline",
+  "reproduce": "python -B tools/audit_mesen_nmi_phase_contract_v2.py"
+}
