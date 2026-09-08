@@ -1,0 +1,1251 @@
+{
+  "schema": "project-epoch-battle-exploration-history-20260908-v1",
+  "date": "2026-09-08",
+  "evidence_level": "hypothesis",
+  "scope": "hash-verified history and discovery metadata; no new native acceptance",
+  "collector_source": {
+    "path": "tools/collect_battle_exploration_history_20260908.py",
+    "size": 7043,
+    "sha256": "7263cc62686557567cba7eac69cd59e9e1812ab84ca75d6d991134e7d801e4a7"
+  },
+  "current_source_identities": [
+    {
+      "path": "tools/run_package_alternate_branch_probe_v1.py",
+      "size": 9623,
+      "sha256": "63417bde0941db1c03c3e063e73be4c29fe9ac7aa223a2fb1e0422fb392ae46e"
+    },
+    {
+      "path": "tools/mesen_package_alternate_branch_probe_v1.lua",
+      "size": 10253,
+      "sha256": "6f685dba0fab4bd878e30bed86f3c71607cedee23534df8640a03555cda6d9f3"
+    },
+    {
+      "path": "tools/run_package_refusal_probe_v1.py",
+      "size": 7384,
+      "sha256": "172b5f8b6978fc6e6db4c8331739cfa0737a9c9eac493b5c814fc1b548f5d104"
+    },
+    {
+      "path": "tools/mesen_package_refusal_probe_v1.lua",
+      "size": 10145,
+      "sha256": "3dbb71217c9eea57cbd71a32aa5bea68ea5bfaa763ce40e3585f0ebfe46439b2"
+    }
+  ],
+  "run_count": 17,
+  "runs": [
+    {
+      "run": "alternate_branch_20260908_baseline_hit_evade",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_baseline_hit_evade/manifest.json",
+        "size": 3185,
+        "sha256": "c5cf3d4e97a4801996bddcf82d826cc1fe2b1bed97ce69ba6214d7ad14def216"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_baseline_hit_evade/trace.json",
+        "size": 163485,
+        "sha256": "e2418f88ae794a66d92660ca4d77d86b758ed66248dabfa3b1298cf7c3ea4b0e"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_baseline_hit_evade/staged/collector.lua",
+        "size": 8325,
+        "sha256": "555147a0313c76c0a20f597be95c9e1b5fbd65abdc0a6202cf40b5a2d0dbb71b"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "555147a0313c76c0a20f597be95c9e1b5fbd65abdc0a6202cf40b5a2d0dbb71b",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "15c95df54a7105a7dc9a63b4dc38208e98c65e09bf9e3b150082dc933d74fb71",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "baseline-menu",
+      "records": 162,
+      "event_counts": {
+        "baseline": 1,
+        "caller-package-latch": 79,
+        "caller-resume": 79,
+        "menu-observation": 2,
+        "terminal": 1
+      },
+      "observed_branch_words": [],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "baseline-menu"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "menu/setup exploration with no player resolver entry"
+    },
+    {
+      "run": "alternate_branch_20260908_baseline_menu",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_baseline_menu/manifest.json",
+        "size": 3159,
+        "sha256": "8fd819317b7ce55e17d75075d0094613ca783693851b171009f9bbe6d45b205d"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_baseline_menu/trace.json",
+        "size": 98361,
+        "sha256": "eada40fec197c25069b204e10c1b7a1638db96909c27dac91450e81c581923b4"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_baseline_menu/staged/collector.lua",
+        "size": 6140,
+        "sha256": "7c3228a84ecf1500bd6eb873d184df0c54c9a6a9da5ddf017e8e7821f986da56"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "7c3228a84ecf1500bd6eb873d184df0c54c9a6a9da5ddf017e8e7821f986da56",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "29a28de8721cf542d18d117f44e2a850262b9f2d0d24fdcb6e266e38d8574371",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "baseline-menu",
+      "records": 162,
+      "event_counts": {
+        "baseline": 1,
+        "caller-package-latch": 79,
+        "caller-resume": 79,
+        "menu-observation": 2,
+        "terminal": 1
+      },
+      "observed_branch_words": [],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "menu/setup exploration with no player resolver entry"
+    },
+    {
+      "run": "alternate_branch_20260908_crono-spincut",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut/manifest.json",
+        "size": 4505,
+        "sha256": "e2adb698ed625d1ee0d3902c35397896217703e00b5ccbbdb68c741777ec7c7f"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut/trace.json",
+        "size": 1546013,
+        "sha256": "0fd24c7fe41dd77014d88c599f21e11fae1c7ca73936ae3faeba4dfc102f6328"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut/staged/collector.lua",
+        "size": 7966,
+        "sha256": "6d906dec181899c19bd9861398e9c2915da8aa805254fdbfcabe1d76a2b26f5b"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "6d906dec181899c19bd9861398e9c2915da8aa805254fdbfcabe1d76a2b26f5b",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "15c95df54a7105a7dc9a63b4dc38208e98c65e09bf9e3b150082dc933d74fb71",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "crono-spincut",
+      "records": 2417,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 6,
+        "caller-effect-latch": 6,
+        "caller-package-latch": 1141,
+        "caller-resume": 1140,
+        "common-loader-entry": 6,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "latch-write": 51,
+        "menu-observation": 12,
+        "publication-write": 18,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 6,
+        "terminal": 1,
+        "terminal-command-clear": 17
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "crono-spincut"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_crono-spincut-left",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut-left/manifest.json",
+        "size": 4515,
+        "sha256": "2acc581212b723d1f889b09ec67242c92041fd4f72557fd6aaa6b5c255a02bee"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut-left/trace.json",
+        "size": 1565224,
+        "sha256": "888697e7350cf4c06d8666f9f7448e10e382e8c6bd175337d63e824f87aeff40"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut-left/staged/collector.lua",
+        "size": 7966,
+        "sha256": "6d906dec181899c19bd9861398e9c2915da8aa805254fdbfcabe1d76a2b26f5b"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "6d906dec181899c19bd9861398e9c2915da8aa805254fdbfcabe1d76a2b26f5b",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "15c95df54a7105a7dc9a63b4dc38208e98c65e09bf9e3b150082dc933d74fb71",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "crono-spincut-left",
+      "records": 2447,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 5,
+        "caller-effect-latch": 6,
+        "caller-package-latch": 1157,
+        "caller-resume": 1156,
+        "common-loader-entry": 5,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "latch-write": 51,
+        "menu-observation": 12,
+        "publication-write": 18,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 6,
+        "terminal": 1,
+        "terminal-command-clear": 17
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "crono-spincut-left"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_crono-spincut-right",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut-right/manifest.json",
+        "size": 4517,
+        "sha256": "74e0fbe7206bf04e8652b1d2547c6b025b92cef34d95762a4f66d58882cefd6b"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut-right/trace.json",
+        "size": 1553713,
+        "sha256": "318dccdcb7c18a34ef6740edf3934e7018a6134a5bbecfa6fd11a33360d4254c"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_crono-spincut-right/staged/collector.lua",
+        "size": 7966,
+        "sha256": "6d906dec181899c19bd9861398e9c2915da8aa805254fdbfcabe1d76a2b26f5b"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "6d906dec181899c19bd9861398e9c2915da8aa805254fdbfcabe1d76a2b26f5b",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "15c95df54a7105a7dc9a63b4dc38208e98c65e09bf9e3b150082dc933d74fb71",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "crono-spincut-right",
+      "records": 2429,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 6,
+        "caller-effect-latch": 6,
+        "caller-package-latch": 1147,
+        "caller-resume": 1146,
+        "common-loader-entry": 6,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "latch-write": 51,
+        "menu-observation": 12,
+        "publication-write": 18,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 6,
+        "terminal": 1,
+        "terminal-command-clear": 17
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "crono-spincut-right"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_lucca_hypnowave1",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_lucca_hypnowave1/manifest.json",
+        "size": 4508,
+        "sha256": "4d600c68c8ee155e0cdec489a992e4dc4aa2971ae99cd9519fe3b32f2e026ba6"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_lucca_hypnowave1/trace.json",
+        "size": 1494167,
+        "sha256": "bda1edba67407785dcb3b52ef9babdcd30fedefe208b35f5e7ab1a0cc4e3c629"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_lucca_hypnowave1/staged/collector.lua",
+        "size": 7181,
+        "sha256": "8c6e77c3441d1b91e313fbff29a936b90ade7b9b9b94e06bccd0b98bd9fe03f9"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "8c6e77c3441d1b91e313fbff29a936b90ade7b9b9b94e06bccd0b98bd9fe03f9",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "f19cd4e0cc2a4c24d128d643ad25cbc3765ad36f8d1b10378b1a1907411f6502",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "lucca-hypnowave",
+      "records": 2342,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 5,
+        "caller-effect-latch": 6,
+        "caller-package-latch": 1121,
+        "caller-resume": 1120,
+        "common-loader-entry": 5,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "latch-write": 32,
+        "menu-observation": 12,
+        "publication-write": 6,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 6,
+        "terminal": 1,
+        "terminal-command-clear": 15
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "lucca-hypnowave"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_marle_delayed_menu",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_delayed_menu/manifest.json",
+        "size": 3593,
+        "sha256": "835696394a9ab3ed3e96e1af042961ec0fb2de2a0672fe1aa32fde277a0401d8"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_delayed_menu/trace.json",
+        "size": 430641,
+        "sha256": "9fffae2651ab077f28b8285f431a8b9695d5bd8ea24d61bff49016b508fe0f10"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_delayed_menu/staged/collector.lua",
+        "size": 6357,
+        "sha256": "e2a968179040d852c8371fce2e62d964349607921f85d0764f40066a20b25610"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "e2a968179040d852c8371fce2e62d964349607921f85d0764f40066a20b25610",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "4fa3070200d492e37cceefa6a25811483981fe0280046960fc7e5b32b3250709",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "marle-menu",
+      "records": 675,
+      "event_counts": {
+        "baseline": 1,
+        "caller-effect-latch": 1,
+        "caller-package-latch": 330,
+        "caller-resume": 329,
+        "latch-write": 4,
+        "menu-observation": 5,
+        "sync-command-increment": 1,
+        "terminal": 1,
+        "terminal-command-clear": 3
+      },
+      "observed_branch_words": [],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "marle-menu"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "menu/setup exploration with no player resolver entry"
+    },
+    {
+      "run": "alternate_branch_20260908_marle_menu",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_menu/manifest.json",
+        "size": 3156,
+        "sha256": "e77295ce381601521e788a49fb3941effd4e18db953f077aa55369e69435224f"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_menu/trace.json",
+        "size": 98361,
+        "sha256": "eada40fec197c25069b204e10c1b7a1638db96909c27dac91450e81c581923b4"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_menu/staged/collector.lua",
+        "size": 6140,
+        "sha256": "7c3228a84ecf1500bd6eb873d184df0c54c9a6a9da5ddf017e8e7821f986da56"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "7c3228a84ecf1500bd6eb873d184df0c54c9a6a9da5ddf017e8e7821f986da56",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "29a28de8721cf542d18d117f44e2a850262b9f2d0d24fdcb6e266e38d8574371",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "marle-menu",
+      "records": 162,
+      "event_counts": {
+        "baseline": 1,
+        "caller-package-latch": 79,
+        "caller-resume": 79,
+        "menu-observation": 2,
+        "terminal": 1
+      },
+      "observed_branch_words": [],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "menu/setup exploration with no player resolver entry"
+    },
+    {
+      "run": "alternate_branch_20260908_marle_provoke1",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_provoke1/manifest.json",
+        "size": 4291,
+        "sha256": "c82af835cb8179fc532c47b8784f694cc4d98890da2430e83a2c02fbd04a9ba4"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_provoke1/trace.json",
+        "size": 1682743,
+        "sha256": "da2f5efa21bb922914de6af6ca39262285b4816aac859e4a014ac150a831ceb2"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_provoke1/staged/collector.lua",
+        "size": 6857,
+        "sha256": "cc1d5d0303e2500e3cf899b9523a5f021ed6beb6b62b8beff0834ec50187d0ac"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "cc1d5d0303e2500e3cf899b9523a5f021ed6beb6b62b8beff0834ec50187d0ac",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "8ec01c4bc5940e4cf10d6947b5081d64a01fb460ad0cb80232cc802f6cc6bc3b",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "marle-provoke",
+      "records": 2640,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 5,
+        "caller-effect-latch": 5,
+        "caller-package-latch": 1257,
+        "caller-resume": 1257,
+        "common-loader-entry": 5,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "latch-write": 29,
+        "menu-observation": 10,
+        "publication-write": 36,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 5,
+        "terminal": 1,
+        "terminal-command-clear": 17
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "marle-provoke"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_marle_provoke2",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_provoke2/manifest.json",
+        "size": 4291,
+        "sha256": "2ed5a563f725146c3faf53cde6a5962483b1e9b131bdc64fa9caf17c964a54f6"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_provoke2/trace.json",
+        "size": 1433323,
+        "sha256": "70b879576671f514412994f267d4642e6621d020a12f41d089b310e8f83417b9"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_provoke2/staged/collector.lua",
+        "size": 6826,
+        "sha256": "4eb0cd4a60329ea3b5e38f06a6d28aaf4784c5bc1dcf8a9c598586756ab11218"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "4eb0cd4a60329ea3b5e38f06a6d28aaf4784c5bc1dcf8a9c598586756ab11218",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "8ec01c4bc5940e4cf10d6947b5081d64a01fb460ad0cb80232cc802f6cc6bc3b",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "marle-provoke",
+      "records": 2248,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 5,
+        "caller-effect-latch": 6,
+        "caller-package-latch": 1070,
+        "caller-resume": 1069,
+        "common-loader-entry": 5,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "latch-write": 29,
+        "menu-observation": 10,
+        "publication-write": 18,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 6,
+        "terminal": 1,
+        "terminal-command-clear": 16
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "marle-provoke"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_marle_ready_menu",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_ready_menu/manifest.json",
+        "size": 3793,
+        "sha256": "8bcc4293d124266fa60f6e371d32a9809bd5790e0b8f31d6359d8fbc1fb86f11"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_ready_menu/trace.json",
+        "size": 503390,
+        "sha256": "2c1858bf3260979f3bcf76ba5c0c05711f73497e43e6ec3e1b8997af74e4a200"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_marle_ready_menu/staged/collector.lua",
+        "size": 6385,
+        "sha256": "ed3731ff196b5a17888cfe8514c43f41460d1574695b7626f31a0705e6966e8f"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "ed3731ff196b5a17888cfe8514c43f41460d1574695b7626f31a0705e6966e8f",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "4fa3070200d492e37cceefa6a25811483981fe0280046960fc7e5b32b3250709",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "marle-menu",
+      "records": 789,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 1,
+        "caller-effect-latch": 1,
+        "caller-package-latch": 382,
+        "caller-resume": 382,
+        "common-loader-entry": 1,
+        "common-loader-rts": 1,
+        "dispatcher-rts": 1,
+        "latch-write": 6,
+        "menu-observation": 6,
+        "sync-command-increment": 1,
+        "terminal": 1,
+        "terminal-command-clear": 5
+      },
+      "observed_branch_words": [],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "marle-menu"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "menu/setup exploration with no player resolver entry"
+    },
+    {
+      "run": "alternate_branch_20260908_spekkio_magus_black_hole1",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_magus_black_hole1/manifest.json",
+        "size": 5314,
+        "sha256": "d10fe7cfd3b21e0c2f0013f48007a0e2a8a1a6b8ba1d86463839247f9fb04379"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_magus_black_hole1/trace.json",
+        "size": 3974026,
+        "sha256": "d2ed5937f4b2704c39286e042fb5b02cd6133b510017ad0917375165e9ec012b"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_magus_black_hole1/staged/collector.lua",
+        "size": 10253,
+        "sha256": "6f685dba0fab4bd878e30bed86f3c71607cedee23534df8640a03555cda6d9f3"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "6f685dba0fab4bd878e30bed86f3c71607cedee23534df8640a03555cda6d9f3",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "63417bde0941db1c03c3e063e73be4c29fe9ac7aa223a2fb1e0422fb392ae46e",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+        "state": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e"
+      },
+      "matching_current_sources": {
+        "launcher": [
+          "tools/run_package_alternate_branch_probe_v1.py"
+        ],
+        "collector": [
+          "tools/mesen_package_alternate_branch_probe_v1.lua"
+        ]
+      },
+      "route": "spekkio-magus-black-hole",
+      "records": 3793,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 5,
+        "caller-effect-latch": 5,
+        "caller-package-latch": 1815,
+        "caller-resume": 1815,
+        "common-loader-entry": 5,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "exhausted-mask-alternate-store": 1,
+        "latch-write": 50,
+        "menu-observation": 18,
+        "publication-write": 42,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 5,
+        "terminal": 1,
+        "terminal-command-clear": 18
+      },
+      "observed_branch_words": [
+        64
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "spekkio-magus-black-hole"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "alternate branch discovery only; superseded by the separately accepted focused alternate observer"
+    },
+    {
+      "run": "alternate_branch_20260908_spekkio_robo_rocket1",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_robo_rocket1/manifest.json",
+        "size": 5268,
+        "sha256": "0cf59e48d5a2dfb429d7e6448a15708faa114fddf454786fc71571e3eefc7645"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_robo_rocket1/trace.json",
+        "size": 3476820,
+        "sha256": "c18f797c3c540ac3829a9f9a52a2125e8dcbd74bad505a50c62a31f333107884"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_robo_rocket1/staged/collector.lua",
+        "size": 9806,
+        "sha256": "05a632ed21c475e622b3e3621c23013f9018533eb5d932a85a14508eecfb88ce"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "05a632ed21c475e622b3e3621c23013f9018533eb5d932a85a14508eecfb88ce",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "75755a1f16a2e197a92b5ba507134ec32174e1a95a3d6ac46dca8611b70065f7",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+        "state": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "spekkio-robo-rocket",
+      "records": 3314,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 5,
+        "caller-effect-latch": 4,
+        "caller-package-latch": 1569,
+        "caller-resume": 1570,
+        "common-loader-entry": 5,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "latch-write": 45,
+        "menu-observation": 18,
+        "publication-write": 60,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 4,
+        "terminal": 1,
+        "terminal-command-clear": 20
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "spekkio-robo-rocket"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_spekkio_robo_rocket2",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_robo_rocket2/manifest.json",
+        "size": 5268,
+        "sha256": "398712b36e6dcdd71fa9132926111488a01f7c7531032a10ab7b6066b58c790f"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_robo_rocket2/trace.json",
+        "size": 3619109,
+        "sha256": "a0c30137219890c3218d423ea0a35807eb6049912133bd5cea18d53680b279cc"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_robo_rocket2/staged/collector.lua",
+        "size": 9841,
+        "sha256": "45845f0bb573443310486aadffa346256e77d6adf09b87016b718df697455885"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "45845f0bb573443310486aadffa346256e77d6adf09b87016b718df697455885",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "75755a1f16a2e197a92b5ba507134ec32174e1a95a3d6ac46dca8611b70065f7",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+        "state": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "spekkio-robo-rocket",
+      "records": 3459,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 4,
+        "caller-effect-latch": 4,
+        "caller-package-latch": 1647,
+        "caller-resume": 1647,
+        "common-loader-entry": 4,
+        "common-loader-rts": 4,
+        "dispatcher-rts": 4,
+        "latch-write": 40,
+        "menu-observation": 18,
+        "publication-write": 60,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 4,
+        "terminal": 1,
+        "terminal-command-clear": 19
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "spekkio-robo-rocket"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "alternate_branch_20260908_spekkio_talk1",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_talk1/manifest.json",
+        "size": 4439,
+        "sha256": "53210f589b5e5e361b8b31c974c3eb01215de92b0b4acb1577f5ad565acbd253"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_talk1/trace.json",
+        "size": 1747161,
+        "sha256": "d9032f63c93376e1bc6f63f6db65e59b5c5e5fc96880fe4dc1ab1f9cc62034c2"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_talk1/staged/collector.lua",
+        "size": 8905,
+        "sha256": "86ffa17b0942c32c4d82551f6033210602311dbfbeb73b2a24ee9c6332f35984"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "86ffa17b0942c32c4d82551f6033210602311dbfbeb73b2a24ee9c6332f35984",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "ead338afb2dec8e1d81bf519b10c14c07073ce469d5867d54b2615597afdd2e8",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+        "state": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "spekkio-talk",
+      "records": 1665,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 3,
+        "caller-effect-latch": 3,
+        "caller-package-latch": 796,
+        "caller-resume": 796,
+        "common-loader-entry": 3,
+        "common-loader-rts": 3,
+        "dispatcher-rts": 3,
+        "latch-write": 29,
+        "menu-observation": 12,
+        "sync-command-increment": 3,
+        "terminal": 1,
+        "terminal-command-clear": 12
+      },
+      "observed_branch_words": [],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "spekkio-talk"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "menu/setup exploration with no player resolver entry"
+    },
+    {
+      "run": "alternate_branch_20260908_spincut_accuracy",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_spincut_accuracy/manifest.json",
+        "size": 4583,
+        "sha256": "32e06b93c4bdf9e4e6abf591c0d35ecd55a5fd97747431ea1139083f06d8dc39"
+      },
+      "trace": {
+        "path": "private/test_runs/alternate_branch_20260908_spincut_accuracy/trace.json",
+        "size": 1929532,
+        "sha256": "a8158da3be280f6c8822659f838a2ada6435ed060c6c961928bf4f4fa6f2d1bc"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/alternate_branch_20260908_spincut_accuracy/staged/collector.lua",
+        "size": 8171,
+        "sha256": "51a4352c5a409f05f327aa1c2d353ebf8480beb4c2778f8e058b39ec889a3c10"
+      },
+      "prelaunch_receipt": null,
+      "historical_source_archives": [],
+      "recorded_source_hashes": {
+        "collector": "51a4352c5a409f05f327aa1c2d353ebf8480beb4c2778f8e058b39ec889a3c10",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "15c95df54a7105a7dc9a63b4dc38208e98c65e09bf9e3b150082dc933d74fb71",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "matching_current_sources": {
+        "launcher": [],
+        "collector": []
+      },
+      "route": "crono-spincut-right",
+      "records": 2432,
+      "event_counts": {
+        "baseline": 1,
+        "branch-producer-complete": 6,
+        "caller-effect-latch": 6,
+        "caller-package-latch": 1147,
+        "caller-resume": 1146,
+        "common-loader-entry": 6,
+        "common-loader-rts": 5,
+        "dispatcher-rts": 5,
+        "hit-percentage-entry": 1,
+        "hit-roll-compare": 1,
+        "hit-roll-result": 1,
+        "latch-write": 51,
+        "menu-observation": 12,
+        "publication-write": 18,
+        "resolver-entry": 1,
+        "resolver-tail": 1,
+        "sync-command-increment": 6,
+        "terminal": 1,
+        "terminal-command-clear": 17
+      },
+      "observed_branch_words": [
+        0
+      ],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_alternate_branch_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/alternate_branch_NEW",
+        "--route",
+        "crono-spincut-right"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "ordinary primary-branch discovery; no accepted alternate-branch proof"
+    },
+    {
+      "run": "package_refusal_20260908_life2_living1",
+      "manifest": {
+        "path": "private/test_runs/package_refusal_20260908_life2_living1/manifest.json",
+        "size": 2734,
+        "sha256": "91b648d2bdaaa467a0cd033ba56855d1849671ac1b634e5ab468c540f4d4bbed"
+      },
+      "trace": {
+        "path": "private/test_runs/package_refusal_20260908_life2_living1/trace.json",
+        "size": 33470,
+        "sha256": "ed65b25bf45e1782955102ae19df8a4a7fdb2078ba605e927c853df7dfb6fc25"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/package_refusal_20260908_life2_living1/staged/collector.lua",
+        "size": 10145,
+        "sha256": "3dbb71217c9eea57cbd71a32aa5bea68ea5bfaa763ce40e3585f0ebfe46439b2"
+      },
+      "prelaunch_receipt": {
+        "path": "private/test_runs/package_refusal_20260908_life2_living1/launch_inputs.json",
+        "size": 2432,
+        "sha256": "f426f2712583cba9e4127e6f37e384e9d9f03be1c76f81046b36a4d881792404"
+      },
+      "historical_source_archives": [
+        {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/source_archive/mesen_package_refusal_probe_v1.lua",
+          "size": 10145,
+          "sha256": "3dbb71217c9eea57cbd71a32aa5bea68ea5bfaa763ce40e3585f0ebfe46439b2"
+        },
+        {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/source_archive/package_transaction_validation_v1.py",
+          "size": 25442,
+          "sha256": "cb03514d844d5a50671ec3bf98ce6566a05ad3e1b423d9156ff8d50101d3928b"
+        },
+        {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/source_archive/run_mesen_field_animation_probe_v0.py",
+          "size": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        },
+        {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/source_archive/run_package_refusal_probe_v1.py",
+          "size": 7384,
+          "sha256": "172b5f8b6978fc6e6db4c8331739cfa0737a9c9eac493b5c814fc1b548f5d104"
+        },
+        {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/source_archive/test_package_transaction_observation_v1.py",
+          "size": 12620,
+          "sha256": "846749a9c84271d7b99c5553631b5d698b737321a5540b7e76cc9d0ccd90966c"
+        }
+      ],
+      "recorded_source_hashes": {
+        "collector": "3dbb71217c9eea57cbd71a32aa5bea68ea5bfaa763ce40e3585f0ebfe46439b2",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "172b5f8b6978fc6e6db4c8331739cfa0737a9c9eac493b5c814fc1b548f5d104",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b",
+        "tests": "846749a9c84271d7b99c5553631b5d698b737321a5540b7e76cc9d0ccd90966c",
+        "validation_library": "cb03514d844d5a50671ec3bf98ce6566a05ad3e1b423d9156ff8d50101d3928b"
+      },
+      "matching_current_sources": {
+        "launcher": [
+          "tools/run_package_refusal_probe_v1.py"
+        ],
+        "collector": [
+          "tools/mesen_package_refusal_probe_v1.lua"
+        ]
+      },
+      "route": "fixed Life2 selection against a living party",
+      "records": 7,
+      "event_counts": {
+        "baseline": 1,
+        "menu-observation": 5,
+        "terminal": 1
+      },
+      "observed_branch_words": [],
+      "historical_reproduce_argv": [
+        "python",
+        "-B",
+        "tools/run_package_refusal_probe_v1.py",
+        "--output-dir",
+        "private/test_runs/package_transaction_NEW"
+      ],
+      "accepted_runtime_evidence": false,
+      "reproduction_limit": "historical manifest command alone cannot reproduce an unavailable historical launcher; use the source identities and retained staged Lua, not a substituted current version",
+      "outcome": "Life2 selection on a living party did not queue an action in this bounded route; no natural refusal witness"
+    }
+  ],
+  "current_source_note": "the alternate launcher/collector match the final Black Hole exploration; earlier launcher revisions may be unavailable. Life2 matches its retained archive.",
+  "accepted_successor": "docs/schala_package_resolver_alternate_v1.md",
+  "private_artifacts_unchanged": true,
+  "production_approval": false,
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/collect_battle_exploration_history_20260908.py"
+  ]
+}

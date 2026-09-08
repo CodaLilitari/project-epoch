@@ -10,22 +10,41 @@ the latest log entry identifies the current resume boundary.
 
 ## Latest integration update — 2026-09-08
 
-The original helper milestone is published in commit
-[`9f14ae7`](https://github.com/andreipemberton/project-epoch/commit/9f14ae7f407ce783ada02b996db4e0955a5a5918).
-The next live integration work now has a bounded ordinary-game baseline:
-two fresh Mesen observations of the unchanged canonical ROM produce identical
-traces for one primary PC type-2 package invocation and its later action
-completion. The observed stack/return chain and eighteen ordered publication
-bytes agree with the model. See the
-[read-only observation and reproduction](docs/schala_package_resolver_observation_v0.md).
+The six-hour engineering session is in progress. The original package helper
+now executes from cartridge ROM and reads its immutable registry and package
+descriptors from ROM in two identical 3,184-case Mesen runs. It preserves its
+CPU/stack contract and complete WRAM write ledger. The 577-byte implementation
+uses stack-relative locals; it needs no global scratch. See the
+[ROM execution proof](docs/schala_package_helper_v3_rom.md) and the separate
+[normal stack-helper proof](docs/schala_package_helper_v2_stack.md).
 
-The [resolver design](docs/schala_package_resolver_integration_design_v0.md)
-and [placement/interrupt review](docs/schala_package_placement_interrupt_review_v0.md)
-identify a separate cancellation contract, known vanilla use of synthetic
-scratch `$7E4000`, and five named candidate expanded spans. These are design
-results: no hook, allocation, scratch ownership, ROM-source reader, or high
-production selector is approved. `BA-NATIVE-INTEGRATION-DESIGN` remains open;
-the completed primary observation must not be repeated as though still missing.
+The unchanged game now supplies repeated observations of both the
+[primary resolver](docs/schala_package_resolver_observation_v0.md) and
+[Black Hole's alternate resolver branch](docs/schala_package_resolver_alternate_v1.md),
+plus complete bounded observations of a
+[successful queued action](docs/schala_package_transaction_observation_v1.md)
+and a [naturally refused queued Cure](docs/schala_package_natural_refusal_observation_v1.md).
+The latter preserves MP, releases the selected command and later returns Marle
+to the ready list. It does not yet prove cleanup from a new package rejection
+at the proposed pre-effect boundary.
+
+`BA-NATIVE-INTEGRATION-DESIGN` remains open. The active work is a source-only
+canonical-donor preflight design, separate action-completion policy, and
+interrupt/stack ownership. Original-NMI pilots remain exploratory pending
+their complete review and repeated matrix. MAP-010 corrects our published
+Mesen Lua field inventory; use the
+[numbered observable-phase contract](docs/mesen_nmi_phase_contract_v2.md).
+No game hook, production allocation, high production selector or logical PC
+`$07` is installed. Original cartridge tests and vanilla observations have
+separate evidence scopes.
+
+Follow the [developer log](docs/DEVELOPER_LOG.md) and
+[elapsed-session ledger](docs/work_session_2026_09_08.md) for current decisions.
+The [exploration history](docs/battle_exploration_history_20260908.md) preserves
+unsuccessful routes and explicit gaps in older source archival. The earlier
+[online survey](docs/online_research_2026_09_08.md) and
+[development-tool assessment](docs/development_tools_strategy_2026_09_08.md)
+remain the dated research baseline.
 
 ## Earlier native helper update — 2026-09-08
 

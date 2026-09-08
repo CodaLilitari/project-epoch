@@ -73,6 +73,12 @@ closed for this session.
   witness and 39 passing tests, with acceptance pending a fresh frozen pair.
   The original-ROM execution matrix has passed review and 52 tests; its
   full repeat runs are underway. No production gate is promoted.
+- 17:50 UTC: independently revalidated the complete v3 ROM execution pair
+  (3,184 cases per run) and natural Cure refusal pair (150 records per run),
+  reproducing both metadata references exactly. Updated the living handoff
+  guide and indexed 17 discovery runs with explicit historical-source gaps.
+  The preflight planner has passed design review. The NMI review found two
+  validator gaps, which are being fixed before final native acceptance.
 
 ## Gates and evidence boundaries
 

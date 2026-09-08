@@ -32,8 +32,8 @@ policy has now passed, with exact retained canonical config bytes and an
 explicit ceiling on its still-fixed-bank auxiliary readers. The original
 65C816 helper now passes its complete synthetic Mesen conformance matrix at
 two code origins. The next work is its live resolver integration design,
-including exact hook/continuation evidence, expanded-ROM access, and
-scratch/interrupt ownership. It is not another
+using the completed ROM-access and transaction observations while resolving
+preflight, action completion, and interrupt/stack ownership. It is not another
 supported-slot sprite swap, command-width census, or disassembly of the same
 handler. The remaining production gate is
 still to install and prove the complete relocated compatibility lifecycle and
@@ -41,40 +41,48 @@ sidecar behavior, complete Schala's field palette/frame adapters, and
 implement the selected record, command, item, and recruitment boundaries. A
 booting ROM or a visually plausible sprite is not sufficient evidence.
 
-## Latest integration update: primary live resolver observed and repeated
+## Latest integration update: ROM transport and both transaction outcomes
 
-The ordinary primary PC resolver now has a repeated clean-ROM observation.
-Two isolated Mesen launches produce identical 1,774-record traces. The one
-observed invocation uses actor `$00`, type `$02`, physical config and package
-selector `$08`, and branch word `$0000`. Native entry state, SP `$06D8`,
-return words `$432A/$40AF`, all eighteen ordered publication bytes, and the
-tail/return chain agree with the model. The same PC action later satisfies
-the package and effect completion reads at input polls 991 and 992, before
-the next action producer at 1133. These counts are input polls, not cycle
-or verified video-frame timing. See the
-[observation contract and reproduction](schala_package_resolver_observation_v0.md).
+The current gate remains `BA-NATIVE-INTEGRATION-DESIGN`. These completed
+proofs have separate scopes and should be reused:
 
-The [resolver design](schala_package_resolver_integration_design_v0.md)
-identifies why refusal is a separate lifecycle contract: restored entry
-state and a terminal-only stream do not themselves finish an action waiting
-on `$9876/$5D9B`. The [placement review](schala_package_placement_interrupt_review_v0.md)
-defines five named geometric candidates without promoting them, proves
-vanilla use of synthetic scratch `$7E4000`, and separates synthetic stack and
-disabled-interrupt conditions from the actual game.
+| Proof | Current result | Evidence boundary |
+| --- | --- | --- |
+| [Primary resolver](schala_package_resolver_observation_v0.md) | Two identical ordinary-game traces, selector `$08`, branch `$0000`, 18 publication bytes and both completion reads | One supported PC invocation |
+| [Alternate resolver](schala_package_resolver_alternate_v1.md) | Two identical Black Hole/Spekkio traces, selector `$37`, branch `$0040`, 42 publication bytes | Boss immunity; not an RNG equality test |
+| [Successful queued Tech](schala_package_transaction_observation_v1.md) | Pre-effect boundary, MP charge, result stores, shared finalizer and actual caller | Declared watched ranges, not full WRAM |
+| [Naturally refused Cure](schala_package_natural_refusal_observation_v1.md) | Living-target queue, later death/clamp, failure flag, 22 cleanup writes, no MP charge, actual caller and later readiness | Vanilla dead-target refusal; no injected helper rejection |
+| [V1 ROM-source helper](schala_package_helper_v1_rom_source.md) | Two 1,454-case native runs with bank-qualified source reads | Historical WRAM code and unsuitable global scratch fixture |
+| [V2 stack helper](schala_package_helper_v2_stack.md) | Two 2,980-case runs; exact 42-byte locals, 52-byte deepest contribution, complete stack/write ledger | Synthetic normal calls; low-SP cases have no interrupt reserve |
+| [V3 ROM code and registry](schala_package_helper_v3_rom.md) | Two identical 3,184-case runs executing `$410000`, reading immutable `$42/$43`, with exact CPU, input and WRAM checks | Original diagnostic cartridge; pointed streams are not executed |
 
-`BA-NATIVE-INTEGRATION-DESIGN` remains open. Reuse the completed primary
-observation; next define the exact rejection/cancellation lifecycle and
-allowed cleanup/return state, then prove the separately versioned ROM-source
-reader and scratch/interrupt ownership. Ordinary alternate-branch evidence
-is still absent. No hook, production allocation, scratch area, high selector,
-or PC `$07` is installed or approved by these observations.
+The shared finalizer is reached by both success and failure. The successful
+pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
+natural failure exits earlier at `$C1BB8B`. Those contexts are not interchangeable.
+A source-only donor planner must preserve that distinction. At the earlier
+failure boundary, animation identity fields still describe prior work.
 
-MAP-005 corrects the upstream active-script "8 slots" annotation to thirteen
-possible checks with conditional gates, preserving the distinct sixteen-bit
-descriptor format. MAP-006 narrows our old universal `JSL/RTL` guidance to
-distinguish calls from frame-preserving `JML` tail transfers. The
-[correction register](DATA_MAPPING_CORRECTIONS.md) preserves exact source
-revisions and the canonical/native evidence.
+The original v0, v1 and v2 proofs remain preserved. V3 uses the same v2 assembly
+with explicitly relocated diagnostic symbols, so its ROM byte hash differs.
+It proves no game allocation. The original cartridge was built twice through
+its separate complete-diff guard; no canonical-ROM exception or production
+catalog was added.
+
+The next work resolves the source-only preflight and action-completion
+contracts, then native rejection and real-game interrupt/stack ownership.
+A valid terminal-only package does not satisfy the caller's `$9876/$5D9B`
+completion protocol by itself. Original-NMI pilots are still exploratory;
+use the [v2 phase contract](mesen_nmi_phase_contract_v2.md), since MAP-010
+corrects our unavailable `ppu.nmiScanline` assumption. The complete normal-game
+NMI closure and global nested bound remain unproved.
+
+No production hook, allocation, scratch ownership, high selector, Schala
+command or logical PC `$07` is approved. The
+[developer log](DEVELOPER_LOG.md), [correction register](DATA_MAPPING_CORRECTIONS.md),
+[session ledger](work_session_2026_09_08.md) and
+[exploration history](battle_exploration_history_20260908.md) retain the current
+resume boundary and provenance. Test totals in the older sections below are
+historical checkpoint totals, not a newly run current full suite.
 
 ## Earlier developer update: original native helper conformance complete
 

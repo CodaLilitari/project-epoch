@@ -444,6 +444,76 @@
       "authenticated_commit_api_verified": true,
       "authenticated_branch_head_verified": true,
       "all_changed_file_bytes_verified": true
+    },
+    {
+      "commit": "10d572740c2839cb771137550a9f7051518b0f06",
+      "verified_at_utc": "2026-09-08T17:24:46.629517+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 29670,
+          "sha256": "acf61f368d5402ae54f5400b8284f350d73fadc90d480aaa646bcccc37eec558"
+        },
+        {
+          "path": "docs/DATA_MAPPING_CORRECTIONS.md",
+          "size": 25097,
+          "sha256": "c29533ca627303ffa01d5577200886d894d5084e0a33ceae4a7b048a62057a66"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 40497,
+          "sha256": "24e08c78ac22ca3659389b05feaf9f988462306631a064c4574ad1a83455a3b2"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 5619,
+          "sha256": "ff1a47b8e72142ac508110a964041f51e82fab8a466a1571857c0bb62ad43879"
+        },
+        {
+          "path": "docs/mesen_nmi_request_source_v1.md",
+          "size": 10718,
+          "sha256": "bf30a43b97216f852a242e5334cf73fa1925ce5ce3276c089e74dd4f5a62b546"
+        },
+        {
+          "path": "docs/mesen_nmi_phase_contract_v2.md",
+          "size": 5174,
+          "sha256": "f435fad4905e7920e1becc59397c89a25b7e2249e4a304a61d44ecda71d87736"
+        },
+        {
+          "path": "tools/audit_mesen_nmi_phase_contract_v2.py",
+          "size": 7994,
+          "sha256": "9c576d1f8c1b5b2d8a393f1ed6631ea926e3c5d71a2693553079750981d9dfb4"
+        },
+        {
+          "path": "tests/test_mesen_nmi_phase_contract_v2.py",
+          "size": 2642,
+          "sha256": "61295f26a5e6f4b2f9ab51540821d9a7d96797832f60bc74024a5d0cf70b5e61"
+        },
+        {
+          "path": "references/mesen_nmi_phase_contract_v2.json",
+          "size": 9835,
+          "sha256": "a948e62fa24c8be7520902ec3e0763bbaf3ae097409961c0f7474b77a0a54c5a"
+        },
+        {
+          "path": "tools/audit_package_natural_refusal_boundaries_v1.py",
+          "size": 7741,
+          "sha256": "216673a8e557e0c86e05d248d9f1ccd3c44ece4f1c1096afa109fbbd6c0ccc54"
+        },
+        {
+          "path": "references/package_natural_refusal_boundaries_v1.json",
+          "size": 8837,
+          "sha256": "91aa1a0a01e56859c974a43690bf93e9ed27dff71f892c1939bb9e2b8aa512f0"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 17469,
+          "sha256": "ac3013bfd1d7bb6ebb782110f17ddf42ee404de0588a300bfbafa53a44260776"
+        }
+      ],
+      "authenticated_commit_api_verified": true,
+      "authenticated_branch_head_verified": true,
+      "all_changed_file_bytes_verified": true
     }
   ]
 }

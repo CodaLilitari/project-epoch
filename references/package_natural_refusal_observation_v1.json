@@ -1,0 +1,837 @@
+{
+  "schema": "project-epoch-package-natural-refusal-evidence-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "scope": "two source-matched identical controller-only naturally refused Cure transactions from the pinned diagnostic checkpoint",
+  "sources": {
+    "launcher": {
+      "path": "tools/run_package_natural_refusal_observation_v1.py",
+      "size": 7294,
+      "sha256": "1a9e7a0e1b6d1bb51c94fe965bdf671562be0cd0695ea6e894b90796382ede76"
+    },
+    "collector": {
+      "path": "tools/mesen_package_natural_refusal_observation_v1.lua",
+      "size": 13232,
+      "sha256": "0e5ceaf568f3744f87cbe495018d476f4957626756d65c872eab4259f38984de"
+    },
+    "validation_library": {
+      "path": "tools/package_natural_refusal_validation_v1.py",
+      "size": 23717,
+      "sha256": "4422ee7448f37cfba6cfa73e78a8671a0a5dad50ebfd35a4c81a5643afc173e2"
+    },
+    "tests": {
+      "path": "tests/test_package_natural_refusal_observation_v1.py",
+      "size": 11578,
+      "sha256": "7ee154740ac20ffcdf733d914230dc13213d7b2e8668790e61562776121a9b4a"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    }
+  },
+  "metadata_collector": {
+    "path": "tools/collect_package_natural_refusal_evidence_v1.py",
+    "size": 13547,
+    "sha256": "2b2dc9015db25626f544492016a006160a6770dbb1e92b74ce89dc2f986364dd"
+  },
+  "inputs": {
+    "rom": {
+      "path": "private/input/rom_archive/Chrono Trigger (USA).sfc",
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "sram": {
+      "path": "private/input/lavos_save/chrono_trigger.srm",
+      "size": 8192,
+      "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+    },
+    "state": {
+      "path": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v17/battle_ready.mss",
+      "size": 261614,
+      "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+    }
+  },
+  "runtime": {
+    "mesen": {
+      "path": "private/tools/mesen2/app/Mesen.exe",
+      "size": 70470144,
+      "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+    },
+    "mesen_core": {
+      "path": "private/tools/mesen2/app/MesenCore.dll",
+      "size": 7143424,
+      "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+    },
+    "harfbuzz": {
+      "path": "private/tools/mesen2/app/libHarfBuzzSharp.dll",
+      "size": 1804872,
+      "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+    },
+    "skia": {
+      "path": "private/tools/mesen2/app/libSkiaSharp.dll",
+      "size": 9414216,
+      "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+    },
+    "nesdb": {
+      "path": "private/tools/mesen2/app/MesenNesDB.txt",
+      "size": 559118,
+      "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+    },
+    "settings": {
+      "path": "private/tools/mesen2/app/settings.json",
+      "size": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    }
+  },
+  "provenance": {
+    "checkpoint_acceptance": {
+      "path": "references/mesen_lavos_battle_checkpoint_accepted_artifacts_v1.json",
+      "size": 4983,
+      "sha256": "67cc7c9f7460a3de30a23c90aca53a079b8334c5e80c1975651fcdc60ba08564"
+    },
+    "checkpoint_collector": {
+      "path": "tools/mesen_lavos_battle_checkpoint.lua",
+      "size": 14672,
+      "sha256": "3bcc3146d9b5ef7fe7287f9031b7ad6f2d0c0423bfcf7c5f910efac4431cce11"
+    },
+    "checkpoint_launcher": {
+      "path": "tools/run_mesen_lavos_battle_checkpoint.py",
+      "size": 78682,
+      "sha256": "377024c212a72c4e2f3b000e44a7573cedd94093f86463c665be8925ae8c6321"
+    },
+    "canonical_bank_c1_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_C1.asm",
+      "size": 2768817,
+      "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+    },
+    "canonical_bank_fd_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_FD.asm",
+      "size": 691286,
+      "sha256": "0f8a0d59e97de7d60945fdfef1b614217e3d673cca1e14f543234d789a87779e"
+    }
+  },
+  "checkpoint_scope": "recovered SRAM was copied into emulated SRAM during historical checkpoint acquisition; current observer only loads the pinned state and supplies joypad",
+  "runs": [
+    {
+      "directory": "private/test_runs/package_natural_refusal_20260908_final1",
+      "trace": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final1/trace.json",
+        "size": 746878,
+        "sha256": "63f94fff2b81292b593073e1197b7a8b8778cf6f4b217e2caa02adb0d61efd15"
+      },
+      "manifest": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final1/manifest.json",
+        "size": 5888,
+        "sha256": "de617a852ac43de156c6895a987ef72494afdb886bc9b243dca27aee4070da2f"
+      },
+      "prelaunch": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final1/launch_inputs.json",
+        "size": 2880,
+        "sha256": "8b4f33c4c5d77a78904867ca9c84f0b78f608681706c62125f73cc6f36762d50"
+      },
+      "source_archive": {
+        "launcher": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/source_archive/run_package_natural_refusal_observation_v1.py",
+          "size": 7294,
+          "sha256": "1a9e7a0e1b6d1bb51c94fe965bdf671562be0cd0695ea6e894b90796382ede76"
+        },
+        "collector": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/source_archive/mesen_package_natural_refusal_observation_v1.lua",
+          "size": 13232,
+          "sha256": "0e5ceaf568f3744f87cbe495018d476f4957626756d65c872eab4259f38984de"
+        },
+        "validation_library": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/source_archive/package_natural_refusal_validation_v1.py",
+          "size": 23717,
+          "sha256": "4422ee7448f37cfba6cfa73e78a8671a0a5dad50ebfd35a4c81a5643afc173e2"
+        },
+        "tests": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/source_archive/test_package_natural_refusal_observation_v1.py",
+          "size": 11578,
+          "sha256": "7ee154740ac20ffcdf733d914230dc13213d7b2e8668790e61562776121a9b4a"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/source_archive/run_mesen_field_animation_probe_v0.py",
+          "size": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        }
+      },
+      "screenshots": [
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/menu_2180.png",
+          "size": 23748,
+          "sha256": "3ffc52331ed456afaf5ece9443ee50d2fd2431aa41e9cd0a2e51f5799843275d"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/menu_2320.png",
+          "size": 20266,
+          "sha256": "707ad75b41c75007831a3c696eb6f354f0bcbaddd83625fa95b4964eec5b93da"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/menu_2390.png",
+          "size": 21605,
+          "sha256": "c62f200e8826618e2f4df5b019c1e999f6fb7d5b7542fc62fee966ec1fad6f1b"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/menu_2410.png",
+          "size": 21552,
+          "sha256": "d10b219b0c255adb4e38c01e5cc8c5ee9ad713cbd5b38bff79f73d9384a5900c"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/menu_2435.png",
+          "size": 21874,
+          "sha256": "280923dd7c7b51f8d4e3c65dba238bfb8d7fb9e1bb9e35d477fa41c8c20315fc"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/menu_2600.png",
+          "size": 24476,
+          "sha256": "b068af4e51c6787d0eedf05d7bd33080cfe588c8cadcd27332965af0d1c1631b"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final1/menu_3600.png",
+          "size": 23849,
+          "sha256": "e9d592eff1005aa1257794a7db68087af472dec4c9555f101f4016fff6af8822"
+        }
+      ],
+      "process_log": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final1/process.log",
+        "size": 1500702,
+        "sha256": "2700efac3fbf02072171b2d5f1086a53387e205ba53aecef859dc4e831673c31"
+      },
+      "all_staged_input_bytes_revalidated": true
+    },
+    {
+      "directory": "private/test_runs/package_natural_refusal_20260908_final2",
+      "trace": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final2/trace.json",
+        "size": 746878,
+        "sha256": "63f94fff2b81292b593073e1197b7a8b8778cf6f4b217e2caa02adb0d61efd15"
+      },
+      "manifest": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final2/manifest.json",
+        "size": 5888,
+        "sha256": "229dbaa3543f4d4b97706514a75ca84d85f36b4798aff3318add420cd5f896c1"
+      },
+      "prelaunch": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final2/launch_inputs.json",
+        "size": 2880,
+        "sha256": "8b4f33c4c5d77a78904867ca9c84f0b78f608681706c62125f73cc6f36762d50"
+      },
+      "source_archive": {
+        "launcher": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/source_archive/run_package_natural_refusal_observation_v1.py",
+          "size": 7294,
+          "sha256": "1a9e7a0e1b6d1bb51c94fe965bdf671562be0cd0695ea6e894b90796382ede76"
+        },
+        "collector": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/source_archive/mesen_package_natural_refusal_observation_v1.lua",
+          "size": 13232,
+          "sha256": "0e5ceaf568f3744f87cbe495018d476f4957626756d65c872eab4259f38984de"
+        },
+        "validation_library": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/source_archive/package_natural_refusal_validation_v1.py",
+          "size": 23717,
+          "sha256": "4422ee7448f37cfba6cfa73e78a8671a0a5dad50ebfd35a4c81a5643afc173e2"
+        },
+        "tests": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/source_archive/test_package_natural_refusal_observation_v1.py",
+          "size": 11578,
+          "sha256": "7ee154740ac20ffcdf733d914230dc13213d7b2e8668790e61562776121a9b4a"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/source_archive/run_mesen_field_animation_probe_v0.py",
+          "size": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        }
+      },
+      "screenshots": [
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/menu_2180.png",
+          "size": 23698,
+          "sha256": "f3f09b64f976153d5b0a3c083411743614e7eb679249a6967d6588c6a5870c84"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/menu_2320.png",
+          "size": 20025,
+          "sha256": "8303f466ba01a2cbaccc982acf550cc6fb233688a899cc74d910942329fc2cb9"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/menu_2390.png",
+          "size": 21361,
+          "sha256": "f76a99ce8fc9a24a6b50b79addfb7b00607266c8ffc65e1d52e934a07fd7abad"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/menu_2410.png",
+          "size": 21532,
+          "sha256": "7b5eb88e9b51ee879d85d358ae3bf3af11e57ed2b17ec70283ea0e0b93796247"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/menu_2435.png",
+          "size": 21869,
+          "sha256": "fc6d2d4a530186211849a92eb54eab6631d5598127ab8b7ff2d9089d2e0c4cec"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/menu_2600.png",
+          "size": 24467,
+          "sha256": "714c09786490632435ccdf38382a4057920b562d60811603376e412c7f87671c"
+        },
+        {
+          "path": "private/test_runs/package_natural_refusal_20260908_final2/menu_3600.png",
+          "size": 23799,
+          "sha256": "9e01b375a0695a09b200d5d43319ca6418a19193f1029a9614a19823bb84e8b0"
+        }
+      ],
+      "process_log": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final2/process.log",
+        "size": 1500702,
+        "sha256": "2700efac3fbf02072171b2d5f1086a53387e205ba53aecef859dc4e831673c31"
+      },
+      "all_staged_input_bytes_revalidated": true
+    }
+  ],
+  "identical_trace_sha256": "63f94fff2b81292b593073e1197b7a8b8778cf6f4b217e2caa02adb0d61efd15",
+  "identical_prelaunch_sha256": "8b4f33c4c5d77a78904867ca9c84f0b78f608681706c62125f73cc6f36762d50",
+  "manifest_differing_fields": [
+    "screenshots"
+  ],
+  "observations": {
+    "actor_slot": 1,
+    "af23_write_indices": [
+      112,
+      116
+    ],
+    "caller_cpu_address": "C185EA",
+    "caller_return_index": 144,
+    "caller_sp": 1772,
+    "canonical_tech_id": 12,
+    "entry_sp": 1770,
+    "limits": [
+      "one fixed natural dead-target refusal; not a helper cancellation adapter",
+      "ledger covers declared ranges only, not all WRAM",
+      "pre-execution snapshots plus actual byte stores, not independent operand bus reads",
+      "future ready-list insertion is observed; a subsequent command is not executed",
+      "no game mutation, installed helper, allocation, high binding or PC07"
+    ],
+    "no_effect_preparation_mp_charge_resolver_or_result_dispatch_in_invocation": true,
+    "other_queue_records_unchanged": true,
+    "pc_mp_after": [
+      93,
+      97,
+      99
+    ],
+    "pc_mp_before": [
+      93,
+      97,
+      99
+    ],
+    "pending_damage": 192,
+    "polls": {
+      "menu-commit-complete": 2443,
+      "menu-commit-entry": 2443,
+      "menu-queue-fields-written": 2443,
+      "preselection-living-target": 2435,
+      "queue-release-entry": 2561,
+      "queue-release-rts": 2561,
+      "queued-tech-entry": 2560,
+      "selected-target-dead-jump": 2560,
+      "selected-target-status-read": 2560,
+      "shared-finalizer-call": 2560,
+      "shared-finalizer-entry": 2560,
+      "shared-finalizer-return": 2561,
+      "target-failure-jump": 2560,
+      "target-hp-before-subtraction": 2524,
+      "target-hp-clamp-readback": 2524,
+      "target-hp-clamp-store": 2524,
+      "target-hp-subtraction-readback": 2524,
+      "target-hp-subtraction-store": 2524,
+      "target-status-before-death": 2524,
+      "target-status-death-readback": 2524,
+      "target-validation-entry": 2560,
+      "target-validation-failure": 2560,
+      "target-validation-return": 2560,
+      "transaction-caller-resume": 2561
+    },
+    "post_refusal_ready": {
+      "actor_slot": 1,
+      "menu_ready_value": 1,
+      "poll": 2773,
+      "readback_index": 147,
+      "subsequent_command_not_executed": true,
+      "write_index": 146
+    },
+    "prelude_and_transaction_watched_ledgers_reconciled": true,
+    "preselection_index": 4,
+    "queue_selected_record_released": true,
+    "queued_entry_index": 110,
+    "record_count": 150,
+    "status": "validated-checkpoint-bounded-natural-Cure-refusal",
+    "target_hp_after_clamp": 0,
+    "target_hp_before": 187,
+    "target_hp_wrapped_subtraction": 65531,
+    "target_slot": 2,
+    "transaction_actual_write_count": 22,
+    "transaction_id": 1,
+    "transaction_master_clocks": 166954
+  },
+  "static_boundary_artifacts": {
+    "auditor": {
+      "path": "tools/audit_package_natural_refusal_boundaries_v1.py",
+      "size": 7741,
+      "sha256": "216673a8e557e0c86e05d248d9f1ccd3c44ece4f1c1096afa109fbbd6c0ccc54"
+    },
+    "reference": {
+      "path": "references/package_natural_refusal_boundaries_v1.json",
+      "size": 8837,
+      "sha256": "91aa1a0a01e56859c974a43690bf93e9ed27dff71f892c1939bb9e2b8aa512f0"
+    }
+  },
+  "static_boundaries": {
+    "schema": "project-epoch-natural-refusal-boundaries-v1",
+    "date": "2026-09-08",
+    "evidence_level": "verified-static",
+    "canonical_rom": {
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "annotation_source": {
+      "revision": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+      "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa",
+      "url": "https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm"
+    },
+    "new_spans": [
+      {
+        "role": "queue-commit",
+        "cpu_start": "C1161A",
+        "cpu_end_exclusive": "C1172A",
+        "size": 272,
+        "sha256": "25a4741004ba44a6142785bd822812809acf6ad470f28415bbce82ecc35390b9"
+      },
+      {
+        "role": "queue-selected-fields",
+        "cpu_start": "C116E6",
+        "cpu_end_exclusive": "C11713",
+        "size": 45,
+        "sha256": "02dd0d7e38ce227be6a1971a9d4209dbc103e43bd055a492f4740162da2f59bf"
+      },
+      {
+        "role": "pending-first-hp",
+        "cpu_start": "C1EC8F",
+        "cpu_end_exclusive": "C1ECA3",
+        "size": 20,
+        "sha256": "86c35afbcbda563a31d906cac34a2f60e821645c621448ed16b7af94ef76dd42"
+      },
+      {
+        "role": "negative-hp-death-clamp",
+        "cpu_start": "C1ECC7",
+        "cpu_end_exclusive": "C1ED17",
+        "size": 80,
+        "sha256": "e851bfa66320e6dae1f9c0d5fef62903fa447a5051f4075a167ca47061575574"
+      },
+      {
+        "role": "selected-dead-target",
+        "cpu_start": "C1C355",
+        "cpu_end_exclusive": "C1C371",
+        "size": 28,
+        "sha256": "37fa65aeec1a93c0360b13159306e8d0a63234be092cd52ea3be3cc9ddb95b8c"
+      },
+      {
+        "role": "ready-list-insertion",
+        "cpu_start": "C11B7C",
+        "cpu_end_exclusive": "C11B83",
+        "size": 7,
+        "sha256": "1074eec1a292d91ad5ad1792a5be500487980c2559b79eebb83a4bc79dff9b9e"
+      },
+      {
+        "role": "failure-latch",
+        "cpu_start": "C1C72B",
+        "cpu_end_exclusive": "C1C731",
+        "size": 6,
+        "sha256": "00b61d4af0ecdd4432fdb986f4a98d3ff2acad576bcd41b9f071247c7267f18c"
+      }
+    ],
+    "selected_instruction_assertions": [
+      {
+        "cpu_address": "C11B7C",
+        "instruction": "LDA absolute; ready queue head",
+        "operand": "95D6"
+      },
+      {
+        "cpu_address": "C11B80",
+        "instruction": "STA absolute,X; ready-list insertion",
+        "operand": "A6D9"
+      },
+      {
+        "cpu_address": "C116F2",
+        "instruction": "STA absolute,X; queue ready flags",
+        "operand": "93EE"
+      },
+      {
+        "cpu_address": "C116FA",
+        "instruction": "STA absolute,X; command flags",
+        "operand": "93EF"
+      },
+      {
+        "cpu_address": "C11700",
+        "instruction": "STA absolute,X; copied menu field $9615",
+        "operand": "93F0"
+      },
+      {
+        "cpu_address": "C11703",
+        "instruction": "LDA absolute; selected target",
+        "operand": "A62D"
+      },
+      {
+        "cpu_address": "C11706",
+        "instruction": "STA absolute,X; queued target",
+        "operand": "93F1"
+      },
+      {
+        "cpu_address": "C1170B",
+        "instruction": "STA absolute,X; participant descriptor",
+        "operand": "93F3"
+      },
+      {
+        "cpu_address": "C11710",
+        "instruction": "STA absolute,X; queued action ID",
+        "operand": "93F4"
+      },
+      {
+        "cpu_address": "C1EC99",
+        "instruction": "LDA absolute,X; current HP word",
+        "operand": "5E30"
+      },
+      {
+        "cpu_address": "C1EC9D",
+        "instruction": "SBC absolute,Y; first pending result word",
+        "operand": "B328"
+      },
+      {
+        "cpu_address": "C1ECA0",
+        "instruction": "STA absolute,X; first HP result word",
+        "operand": "5E30"
+      },
+      {
+        "cpu_address": "C1ECC7",
+        "instruction": "LDA absolute,X; HP clamp input",
+        "operand": "5E30"
+      },
+      {
+        "cpu_address": "C1ED04",
+        "instruction": "LDA absolute,X; current status byte 0",
+        "operand": "5E4A"
+      },
+      {
+        "cpu_address": "C1ED09",
+        "instruction": "STA absolute,X; death status",
+        "operand": "5E4A"
+      },
+      {
+        "cpu_address": "C1ED0F",
+        "instruction": "STA absolute,X; zero HP clamp",
+        "operand": "5E30"
+      },
+      {
+        "cpu_address": "C1C356",
+        "instruction": "LDA absolute; queued selected target",
+        "operand": "B2AE"
+      },
+      {
+        "cpu_address": "C1C359",
+        "instruction": "JSR near; expand target identity",
+        "operand": "C8F7"
+      },
+      {
+        "cpu_address": "C1C367",
+        "instruction": "LDA absolute,X; selected target status",
+        "operand": "5E4A"
+      },
+      {
+        "cpu_address": "C1C36E",
+        "instruction": "JMP near; selected dead target failure",
+        "operand": "C72B"
+      },
+      {
+        "cpu_address": "C1C72D",
+        "instruction": "STA absolute; invalid-target flag",
+        "operand": "AF23"
+      },
+      {
+        "cpu_address": "C1EC8F",
+        "instruction": "REP; M=0 before HP subtraction",
+        "operand": "20"
+      },
+      {
+        "cpu_address": "C1ECDC",
+        "instruction": "SEP; M=1 for death status",
+        "operand": "20"
+      },
+      {
+        "cpu_address": "C1ED07",
+        "instruction": "ORA immediate; set death bit",
+        "operand": "80"
+      },
+      {
+        "cpu_address": "C1ED0C",
+        "instruction": "REP; M=0 before zero HP store",
+        "operand": "20"
+      },
+      {
+        "cpu_address": "C1C365",
+        "instruction": "SEP; M=1 before selected-target check",
+        "operand": "20"
+      },
+      {
+        "cpu_address": "C1C36A",
+        "instruction": "BIT immediate; selected target death bit",
+        "operand": "80"
+      },
+      {
+        "cpu_address": "C1C72B",
+        "instruction": "LDA immediate; failure flag value",
+        "operand": "01"
+      },
+      {
+        "cpu_address": "C1ECCA",
+        "instruction": "BMI; negative HP enters death/clamp path",
+        "destination": "C1ECDB"
+      },
+      {
+        "cpu_address": "C1ECCF",
+        "instruction": "BEQ; zero HP enters death/clamp path",
+        "destination": "C1ECDB"
+      },
+      {
+        "cpu_address": "C1ECF5",
+        "instruction": "BCC; PC result slots bypass enemy reward call",
+        "destination": "C1ED04"
+      },
+      {
+        "cpu_address": "C1C36C",
+        "instruction": "BEQ; living selected target skips failure JMP",
+        "destination": "C1C371"
+      },
+      {
+        "cpu_address": "C1EC9C",
+        "instruction": "SEC before subtraction"
+      },
+      {
+        "cpu_address": "C1ED0E",
+        "instruction": "TDC supplies zero when D=0"
+      },
+      {
+        "cpu_address": "C1C730",
+        "instruction": "RTS from invalid-target flag setter"
+      }
+    ],
+    "reused_cancellation_spans": [
+      {
+        "role": "queued-tech-preparation",
+        "cpu_start": "C1BB49",
+        "cpu_end_exclusive": "C1BBD4",
+        "size": 139,
+        "sha256": "4449dcbfa74ed8d603426f98e639b727a9be43608f1f9b3a88f2947c19ba5b8b"
+      },
+      {
+        "role": "prepare-charge-and-commit",
+        "cpu_start": "C1BBD4",
+        "cpu_end_exclusive": "C1BC21",
+        "size": 77,
+        "sha256": "8b3c37b61d5c6455f6bb01bd1befcd18337bd557ff54c363aa3de55f1c2b5570"
+      },
+      {
+        "role": "shared-success-failure-tail",
+        "cpu_start": "C1BC4A",
+        "cpu_end_exclusive": "C1BC60",
+        "size": 22,
+        "sha256": "2258622ba95551f41347b852f03148795064fb55c5932ae7b92b40f3fa6e4f70"
+      },
+      {
+        "role": "queue-and-partner-release",
+        "cpu_start": "C1BCF8",
+        "cpu_end_exclusive": "C1BD6F",
+        "size": 119,
+        "sha256": "6ce9e5574a0c6892a773ed1da81b03069c5ba47c68cb9b53e257eac9830c1aab"
+      },
+      {
+        "role": "participant-atb-finalizer",
+        "cpu_start": "C1BDB3",
+        "cpu_end_exclusive": "C1BF46",
+        "size": 403,
+        "sha256": "b3281d8212fb9d53d70068adff23d3281d86defa936fc07174fb07c79f4c15bc"
+      }
+    ],
+    "reused_auditor": {
+      "path": "tools/audit_package_cancellation_boundaries_v1.py",
+      "sha256": "c3693afadfb6b1d46252e40c5d2c9db645879c56c9227f48b3ed3d98acfd1114"
+    },
+    "scope": [
+      "Queue fields are interpreted under the observed M=1/D=0/DBR=7E menu contract; selected instructions alone do not prove every menu predecessor.",
+      "The first pending HP word may wrap negative before later canonical death handling and zero clamp; no all-healing/overflow behavior claim.",
+      "For the selected-dead-target path, status bit80 takes the AF23=1 setter and returns to the queued-Tech validation check.",
+      "The existing shared finalizer/queue spans are reused, not relabeled as MP refund or fully decoded anew.",
+      "Runtime witness pairing, full watched memory ledger and later next-command progression belong to the separate observer.",
+      "No natural failure, high-selector refusal, game hook, allocation or PC07 is proved by this static artifact alone."
+    ],
+    "reproduce": [
+      "python",
+      "-B",
+      "tools/audit_package_natural_refusal_boundaries_v1.py",
+      "--rom",
+      "private/input/rom_archive/Chrono Trigger (USA).sfc"
+    ],
+    "production_approval": false,
+    "rom_mutated": false
+  },
+  "history": [
+    {
+      "directory": "private/test_runs/package_refusal_20260908_life2_living1",
+      "status": "Life2 selected for living party; UI never queued a Tech",
+      "artifacts": {
+        "trace.json": {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/trace.json",
+          "size": 33470,
+          "sha256": "ed65b25bf45e1782955102ae19df8a4a7fdb2078ba605e927c853df7dfb6fc25"
+        },
+        "manifest.json": {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/manifest.json",
+          "size": 2734,
+          "sha256": "91b648d2bdaaa467a0cd033ba56855d1849671ac1b634e5ab468c540f4d4bbed"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_refusal_20260908_life2_living1/launch_inputs.json",
+          "size": 2432,
+          "sha256": "f426f2712583cba9e4127e6f37e384e9d9f03be1c76f81046b36a4d881792404"
+        }
+      },
+      "exact_five_source_archive_verified": true,
+      "accepted_as_final_pair": false,
+      "historical_launcher_command_requires_its_archived_source_revision": true
+    },
+    {
+      "directory": "private/test_runs/package_natural_refusal_20260908_lavos_idle1",
+      "status": "historical idle timeline ended at poll6000; no action input",
+      "artifacts": {
+        "trace.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_idle1/trace.json",
+          "size": 253106,
+          "sha256": "24a929b49c3aef8f4395cd3949d807f11eded185d3c8a8fd5e4f3608c77e9ef1"
+        },
+        "manifest.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_idle1/manifest.json",
+          "size": 3085,
+          "sha256": "7b20b830d0c2f8d478dfeb0daa509bd1e52a487b101577800ec3df559bb7cd7c"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_idle1/launch_inputs.json",
+          "size": 2440,
+          "sha256": "f11f86a4a348643fc26cb06e19c2552c40074dffe34a0b0864c44164c2d1b6f9"
+        }
+      },
+      "exact_five_source_archive_verified": true,
+      "accepted_as_final_pair": false,
+      "historical_launcher_command_requires_its_archived_source_revision": true
+    },
+    {
+      "directory": "private/test_runs/package_natural_refusal_20260908_lavos_cure1",
+      "status": "first Cure experiment targeted Crono; successful ordinary Cure",
+      "artifacts": {
+        "trace.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_cure1/trace.json",
+          "size": 5667214,
+          "sha256": "c163bb6d5a9c49e44190017781fe74b0335e951f52b1ebbdb5a01d62b864b40f"
+        },
+        "manifest.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_cure1/manifest.json",
+          "size": 7846,
+          "sha256": "1e3feb20802d29dc07e20c9fd1437ce4b4330f988c72f59e1ba55afbe9e557ad"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_cure1/launch_inputs.json",
+          "size": 2471,
+          "sha256": "32870c35e1bbc53204405559988bbd1006fb1d0a5b0ca21c25fec5fbcd02e3d4"
+        }
+      },
+      "exact_five_source_archive_verified": true,
+      "accepted_as_final_pair": false,
+      "historical_launcher_command_requires_its_archived_source_revision": true
+    },
+    {
+      "directory": "private/test_runs/package_natural_refusal_20260908_lavos_cure_lucca1",
+      "status": "first natural dead-Lucca Cure refusal; exploratory schema only",
+      "artifacts": {
+        "trace.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_cure_lucca1/trace.json",
+          "size": 1379124,
+          "sha256": "0827235a26cc3e69ae4916e5c9b4b17681b37a954f41830e0bea31ee96046036"
+        },
+        "manifest.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_cure_lucca1/manifest.json",
+          "size": 5551,
+          "sha256": "0167883e4341e2bf7b9f8ced3e854cf5de8ed3fda72de35d07d69f64164a827f"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_lavos_cure_lucca1/launch_inputs.json",
+          "size": 2477,
+          "sha256": "f06de421414ea733fe3321898fa064f8dfd2cafacb30c2072f02f41d00bd37d2"
+        }
+      },
+      "exact_five_source_archive_verified": true,
+      "accepted_as_final_pair": false,
+      "historical_launcher_command_requires_its_archived_source_revision": true
+    },
+    {
+      "directory": "private/test_runs/package_natural_refusal_20260908_observation_explore1",
+      "status": "enriched trace rejected by overly early participant assertion; no accepted manifest",
+      "artifacts": {
+        "trace.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_observation_explore1/trace.json",
+          "size": 741902,
+          "sha256": "a71a896c72795a7a03d72f026d8996e733421d870496b1a238df0356257e681f"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_observation_explore1/launch_inputs.json",
+          "size": 2446,
+          "sha256": "a712b21f16321171ef4a9c720816a17217bb735b72fce28eedd473b93e2b0c1d"
+        }
+      },
+      "exact_five_source_archive_verified": true,
+      "accepted_as_final_pair": false,
+      "historical_launcher_command_requires_its_archived_source_revision": true
+    },
+    {
+      "directory": "private/test_runs/package_natural_refusal_20260908_hardened1",
+      "status": "source-matched hardening before final validator/test/archive changes; historical acceptance only",
+      "artifacts": {
+        "trace.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_hardened1/trace.json",
+          "size": 746878,
+          "sha256": "63f94fff2b81292b593073e1197b7a8b8778cf6f4b217e2caa02adb0d61efd15"
+        },
+        "manifest.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_hardened1/manifest.json",
+          "size": 5454,
+          "sha256": "6d9c248b40a4cc29a47edd9e0be6a758364c9d44f83a0f312a3ef9f682093244"
+        },
+        "launch_inputs.json": {
+          "path": "private/test_runs/package_natural_refusal_20260908_hardened1/launch_inputs.json",
+          "size": 2446,
+          "sha256": "5eabd6d1536251e19e3b21737926a7e50ad68bc0f37b96ea24066a60493caaca"
+        }
+      },
+      "exact_five_source_archive_verified": true,
+      "accepted_as_final_pair": false,
+      "historical_launcher_command_requires_its_archived_source_revision": true
+    }
+  ],
+  "independent_review": "root reviewed observer/validator/runner, all41 tests and hardened trace, then archive hardening before final pair",
+  "tests": {
+    "passed_at_freeze": 41,
+    "command": "python -B -m unittest discover -s tests -p test_package_natural_refusal_observation_v1.py",
+    "fixtures": "original synthetic metadata and original source-archive files, not game traces"
+  },
+  "reproduce_observation": "python -B tools/run_package_natural_refusal_observation_v1.py --output-dir private/test_runs/package_natural_refusal_NEW_UNIQUE",
+  "reproduce_metadata": "python -B tools/collect_package_natural_refusal_evidence_v1.py",
+  "serialization": "json.dumps(value, indent=2), UTF-8, LF, one trailing newline",
+  "production_approval": false
+}

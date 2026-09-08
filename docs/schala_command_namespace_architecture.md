@@ -149,8 +149,11 @@ These must be patched before any `$80` command is emitted:
 5. **Main-menu state.** Add high-ID sources for `$C2:BDB2/$C2:BDEB`,
    `$C2:B3F9-$C2:B448`, and `$C2:BC22-$C2:BC4D`. `$7E7700[$80+]` belongs
    to item state, not extended tech state.
-6. **ATB refund.** Branch high IDs at `$C1:BDF1-$C1:BDF5`,
+6. **Shared participant timing finalization.** Branch high IDs at `$C1:BDF1-$C1:BDF5`,
    `$C1:BE6D-$C1:BE71`, and `$C1:BEEA-$C1:BEEE`.
+   The earlier refund label does not establish a rollback or failure-only API;
+   successful and failed queued Techs share this routine. See
+   [MAP-007](DATA_MAPPING_CORRECTIONS.md#map-007--queued-tech-finalization-is-shared-by-success-and-failure).
 7. **Player animation.** Branch at `$C1:45AA-$C1:45BB` to an extended
    16-record animation-config table and rejoin at `$C1:45EC`. ID `$80`
    otherwise aliases enemy attack-animation data at `$CD:4926`.
@@ -186,7 +189,7 @@ readers selected by action-config bytes `+3` through `+5`. See
 - [ ] `$7C-$7F` remain invalid and are never emitted as player commands;
       no global-unused claim is made for the same numeric values.
 - [ ] `$80-$90` survive list build, selection, target choice, queue commit,
-      execution, refund/cancel, animation, and result-state copy.
+      execution, participant timing finalization, animation, and result-state copy.
 - [ ] Every name, description, MP cost, target, and property resolves from
       Project Epoch data, never adjacent vanilla/item/enemy data.
 - [ ] `$C1:D70D` semantics are established by a watchpoint trace.

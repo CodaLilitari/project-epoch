@@ -618,3 +618,56 @@ with the authenticated branch, commit and all 26 changed-file bytes verified.
 The complete original-ROM helper pair is running after independent review
 and 52 passing tests. The NMI boundary matrix is being hardened separately.
 The overall gate remains `BA-NATIVE-INTEGRATION-DESIGN`.
+
+## 2026-09-08 — immutable ROM execution and natural refusal accepted
+
+**Status:** two separate `verified-runtime` results, with independent scopes.
+The [v3 ROM execution report](schala_package_helper_v3_rom.md) now accepts two
+identical 3,184-case runs, 6,368 cases total. Each executes the unchanged
+577-byte v2 implementation at `$410000` and reads immutable package data from
+`$42` and registry/allowlists from `$43`. Every case preserves the expected
+CPU/stack result, ordered publications and complete final WRAM write ledger.
+The pointed terminal streams are certified at source level but never executed.
+
+Each v3 run records 2,537,920 executed helper instructions, 221,600 ROM data
+byte reads, 1,561,056 instruction-owned stack accesses and 52,720 required
+post-SP-change observations. Their 113,917,080-byte traces have SHA-256
+`f9d042c5d76a15a717c7330204d0764a2783191875ac3c91b727a799e6450710`.
+The root reviewed the complete evidence collector, independently revalidated
+both traces and all source/stage/archive identities, and regenerated the
+78,936-byte metadata reference exactly. All 52 host tests pass. Synthetic
+normal-call results do not prove a game hook or interrupted game stack.
+
+The [natural refusal report](schala_package_natural_refusal_observation_v1.md)
+separately accepts two identical 150-record clean-game observations. Cure is
+queued while Lucca has 187 HP; a pending enemy result of 192 then causes the
+observed negative word, death-status update and zero clamp. Cure subsequently
+takes the selected-dead-target failure, preserves party MP `[93,97,99]`, makes
+exactly 22 watched cleanup writes and returns to `$C185EA`. Marle later
+reenters the ready list at input poll 2773. No second player command is proved.
+
+The 746,878-byte refusal traces and prelaunch receipts are identical. The
+completed manifests differ only in documentary screenshot hashes. Both
+screenshot sets are retained; no pixel determinism or cause of that variation
+is inferred. All 41 host tests pass. The root revalidated both final traces,
+all archives and input copies, the static packet and six historical attempts,
+then reproduced the 32,864-byte reference exactly.
+
+The [discovery history](battle_exploration_history_20260908.md) additionally
+indexes 17 root-owned alternate/menu/Life2 explorations. Every manifest,
+trace and staged Lua identity is checked. Fifteen older launcher revisions
+are not supplied as matching source files in that packet, and the broad
+alternate observer lacked prelaunch receipts. Those gaps are explicit;
+neither later source nor stronger validation is substituted for history.
+The current original discovery sources are preserved unchanged in Git.
+
+**Corrections and resume:** the living guide and README now point to these
+completed proofs. The command-namespace document uses shared participant
+timing finalization instead of its earlier refund label, propagating MAP-007
+without changing the identified high-ID reader addresses. MAP-010's correction
+increment is published as
+[`10d572740c2839cb771137550a9f7051518b0f06`](https://github.com/andreipemberton/project-epoch/commit/10d572740c2839cb771137550a9f7051518b0f06),
+with all 12 changed remote files byte-verified. The source-only donor preflight
+is being implemented after design review. The original-NMI validator needs
+two identified evidence-schema/read-scope fixes and stronger archive checks
+before its final matrix. All production catalogs and high bindings stay empty.

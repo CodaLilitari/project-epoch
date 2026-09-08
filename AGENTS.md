@@ -209,8 +209,12 @@ These are separate namespaces. Never conflate them.
 - The original package cartridge separately assembles that unchanged include
   in ROM at `$410000` with immutable registry `$430000` and target lists
   `$430100`. Four certified terminal-only test bindings `$80-$83` and twelve
-  unbound rows remain diagnostic identities. Actual ROM execution, real CPU
-  registry reads and preemption require separate native evidence. The source-
+  unbound rows remain diagnostic identities. The separate v3 now passes two
+  identical 3,184-case normal Mesen runs: actual helper execution at `$410000`,
+  ordered descriptor/registry CPU reads from `$42/$43`, unchanged immutable
+  inputs, complete WRAM write/diff reconciliation and stack liveness. Preserve
+  v0/v1/v2 and this v3 proof; none approves a game allocation or interrupt
+  policy. Pointed terminal streams are certified but not executed. The source-
   pinned Mesen NMI request design uses a real `$4200` enable edge at natural
   VBlank; it is a debugger register event, not a CPU store or fabricated frame.
   Its original Lua inventory incorrectly required `ppu.nmiScanline`, which
@@ -239,7 +243,13 @@ These are separate namespaces. Never conflate them.
   eleven first HP stores/readbacks, shared finalizer, queue release and actual
   caller. Its ledger covers declared watched ranges only, not full WRAM;
   later HP clamps and snapshot-only target clearing retain their limits.
-  No unsuccessful route or cancellation destination is runtime-proved.
+  A separate repeated natural Cure refusal now verifies that a living queued
+  target can die before resolution: actual death/clamp, `$AF23=1`, unchanged
+  HP/MP during refusal, exact 22 watched cleanup writes, actual caller return
+  and later actor readiness. This is a vanilla failure lifecycle, not a new
+  cancellation adapter. It exits before the successful route's AE/mask setup;
+  cleanup from a new rejection at `$C1:BBD4` remains unproved. At the earlier
+  `$C1:BB8B` failure boundary, AE fields still belong to previous work.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
   ten-region census retains 44 opaque callee frontiers and explicit conditional
