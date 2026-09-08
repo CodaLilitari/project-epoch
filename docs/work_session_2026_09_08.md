@@ -115,6 +115,14 @@ closed for this session.
   ordinal and clock ownership. Fresh unchanged-source repetitions 1/2 are
   authorized in distinct directories; the old trace is never relabeled.
 
+- 20:32 UTC: independently accepted the scroll-input packet after 49 tests,
+  full prerequisite reproduction and two exact CLI outputs. The separately
+  reviewed scene-handler census passes 40 tests after a metadata type-check
+  correction; 114 targets close and seven indirect frontiers remain. The
+  first corrected combined ROM/NMI run passed all 152 cases; the identical
+  second run is still active. IRQ CPU-write/register analysis and scene-return
+  values are proceeding as separate packets with their own review gates.
+
 ## Gates and evidence boundaries
 
 The overall gate is `BA-NATIVE-INTEGRATION-DESIGN`. A source design, host

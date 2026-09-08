@@ -964,3 +964,49 @@ metadata tests. That offline check does not accept the historical run.
 Two fresh frozen-source 152-case runs are now authorized; their actual
 acceptance and full paired reproduction remain pending. The developer guide
 continues to mark real game-stack ownership and production hooks unresolved.
+
+## 2026-09-08 — scroll caller values and scene-handler control-flow census
+
+**Status:** two independently reviewed additive static packets. The
+[scroll caller audit](schala_nmi_scroll_inputs_v1.md) starts at `$CD088D`
+with unknown B, D0, DBR0 and native M1/X0/I1. Its 947 states and 587 instruction
+contexts inline the relevant direct callees, including actual temporary-bank
+save/restore sequences. Every path reaching `$CD0929` before the explicit
+`$CD0907` cut has B0/D0/DBR7E and the exact two-byte root frame. The separate
+pad route is not silently assumed to return or preserve that ABI.
+
+The four reviewed scroll cells then compose under a stated selected-input
+premise. The table jump adds no return frame; local totals including the
+existing scroll near frame are 2/2/2/4 bytes. The even base/index prevents a
+pointer word from straddling the bank boundary, although base-plus-index can
+wrap within PBR. The first successor cell is occupied executable code, and
+the `$CA92` producer domain remains open. Root and a second reviewer each
+passed all 49 tests and reproduced the 87,273-byte reference exactly, SHA-256
+`003bf6be7e686445a8aa0a7bddf36bd8ca35b2fb49aa4d184ec5f3bc15db8013`.
+Two actual CLI processes also agreed byte for byte before reference emission.
+
+The [scene-handler census](schala_scene_handler_closure_v1.md) reuses the
+122 previously reviewed B0 cells and their 121 distinct targets. Its separate
+decoder adds ten source-cited instructions without changing prior source.
+All 67 targets closed by the old walker retain exactly the same contracts
+apart from declared ASL/ROL write metadata. The new total is 114 closed
+targets and seven explicit indirect frontiers. The 123 closed return contexts
+all have M1/X0/I1; their largest additional depth is 16 bytes at `$CD1805`.
+That closed-subset maximum is not a dispatcher or whole-NMI bound.
+
+The only pointer alias, `$B5/$B6`, selects an open target. A pre-review check
+corrected the draft's guessed 115 closed cells to the derived 114. Independent
+review then caught acceptance of floating-point `2.0` as a metadata stack
+count; an exact-integer guard and negative fixture close that gap. Both
+pre-fix source packets remain private preserved history. The canonical
+control-flow and stack results did not change. Author and reviewer passed
+all 40 tests, and two post-review CLI outputs reproduce the 1,029,264-byte
+reference exactly, SHA-256
+`ac44bd733e1b6f4dffd91887e5ac42738a57ace78a8583c5ff9c5bf2e602a43a`.
+
+**Publication and resume:** the preceding calibration/dispatch checkpoint is
+[`60bda0f9260633102db14c6dd43044edf979e616`](https://github.com/andreipemberton/project-epoch/commit/60bda0f9260633102db14c6dd43044edf979e616).
+Authenticated commit/branch/remote-ref agreement and all 20 changed-file byte
+strings were verified. Active work is the fresh combined ROM/NMI pair,
+scene-handler return values and a separately reviewed IRQ memory/register
+contract. No production catalog, high binding or PC `$07` claim is promoted.

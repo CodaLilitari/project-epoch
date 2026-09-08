@@ -64,6 +64,8 @@ proofs have separate scopes and should be reused:
 | [Mode-body composition](schala_nmi_mode_bodies_v1.md) | Mode-zero target closes with 12 additional bytes / 14 including its near frame; 40 tests | Other target open at `$CD06B9`; D/DBR, DMA, physical aliases and whole-NMI bound remain open |
 | [Native dispatch snapshots](schala_nmi_dispatch_witness_v1.md) | 1,201 exact mode frames and 3,097 B0 scene observations reused from the accepted pair; 22 tests | 44 command values reconstructed from static recipes; no stream/pointer bus reads or global domain/stack proof |
 | [ROM timing calibration](schala_package_helper_v4_timing_calibration.md) | Two identical 22-group traces, full v3 checks, 15,090 instruction observations each, 92 scheduling rows; 46 tests | No requested NMI; calculated start times remain inference until the separate combined experiment passes |
+| [Scroll caller inputs](schala_nmi_scroll_inputs_v1.md) | 947 states and six inlined callee roots prove B0/D0/DBR7E before the bounded scroll call; four conditional target contracts; 49 tests | Stops before the separate pad route; CA92 producer domain and target return values remain open |
+| [Scene-handler conditional closure](schala_scene_handler_closure_v1.md) | 114 of 121 reviewed targets close with M1/X0/I1 returns; exact cell relation and seven indirect frontiers; 40 tests | Closed-subset maximum 16 additional bytes is not a whole-dispatcher/NMI bound; B/D/DBR values and aliases remain open |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
@@ -104,6 +106,10 @@ has passed independent review and 92 tests; two fresh repetitions are
 authorized, while the old run remains rejected history.
 Mode-zero direct-call composition and the existing
 game trace's mode/scene register snapshots are separate completed gates.
+The scroll-input proof now follows the intervening callees before its bounded
+dispatch call. The scene-handler census separately narrows the remaining
+control-flow work to seven indirect frontiers; its 114 closed targets still
+need value/alias contracts before any global composition.
 
 No production hook, allocation, scratch ownership, high selector, Schala
 command or logical PC `$07` is approved. The

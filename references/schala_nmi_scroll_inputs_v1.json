@@ -1,0 +1,2826 @@
+{
+  "schema": "project-epoch-nmi-scroll-inputs-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "caller_value_projection": {
+    "entry": "$CD088D",
+    "kind": "near",
+    "entry_b": null,
+    "entry_d": 0,
+    "entry_dbr": 0,
+    "entry_m8": true,
+    "entry_x8": false,
+    "entry_irq_masked": true,
+    "abstract_states": 947,
+    "instruction_contexts": 587,
+    "direct_calls": [
+      {
+        "site": "$CD05BE",
+        "target": "$CD053C",
+        "kind": "near"
+      },
+      {
+        "site": "$CD05DA",
+        "target": "$CEEE6E",
+        "kind": "long"
+      },
+      {
+        "site": "$CD05E5",
+        "target": "$CD0577",
+        "kind": "near"
+      },
+      {
+        "site": "$CD0644",
+        "target": "$D1E8D9",
+        "kind": "long"
+      },
+      {
+        "site": "$CD0893",
+        "target": "$CD09CE",
+        "kind": "long"
+      },
+      {
+        "site": "$CD089B",
+        "target": "$CD3EB4",
+        "kind": "near"
+      },
+      {
+        "site": "$CD08A9",
+        "target": "$CD0607",
+        "kind": "near"
+      },
+      {
+        "site": "$CD08AC",
+        "target": "$CD3EB4",
+        "kind": "near"
+      },
+      {
+        "site": "$CD08B4",
+        "target": "$C10009",
+        "kind": "long"
+      },
+      {
+        "site": "$CD08F1",
+        "target": "$CD0AEE",
+        "kind": "near"
+      },
+      {
+        "site": "$CD08F5",
+        "target": "$CD05B2",
+        "kind": "near"
+      },
+      {
+        "site": "$CD08F8",
+        "target": "$CD05B2",
+        "kind": "near"
+      },
+      {
+        "site": "$CD3EC7",
+        "target": "$CD3E8E",
+        "kind": "near"
+      }
+    ],
+    "decoded_context_identity_sha256": "50bc05d5ddcaf899f17d8ddc625cad596f640cb32afe909665b38302e9087f5e",
+    "edge_identity_sha256": "233e021af4febaebe8cf79781bde1596d527890dd38cefc32353a83b0f82d0f0",
+    "decoded_byte_intervals": [
+      {
+        "start": "$C10009",
+        "end_exclusive": "$C1000C",
+        "sha256": "e15cf60da4280a0a4c503607d735ffa758a83ecc2e8502ec4a016a7a2a539901"
+      },
+      {
+        "start": "$C10076",
+        "end_exclusive": "$C1007A",
+        "sha256": "f5e75a19a6ac9bd3f4a7000634941a491cecc2c9ae3ef7645da835189e82e4c8"
+      },
+      {
+        "start": "$CD053C",
+        "end_exclusive": "$CD05FF",
+        "sha256": "2dec0343db6f1f064f27d5ba118b1db16c16bd5c55c8f0e988a8dd12d88fb84b"
+      },
+      {
+        "start": "$CD0607",
+        "end_exclusive": "$CD06B2",
+        "sha256": "09211e44ba63d55157c7950f74457c5bcf94006e35f0e8bbd8fa367b42f51a8b"
+      },
+      {
+        "start": "$CD088D",
+        "end_exclusive": "$CD0907",
+        "sha256": "8d37d5ef53dfb47cefaa8e17e0a7a15f79a57ca96de073a32f7776dc5a2fa1bc"
+      },
+      {
+        "start": "$CD0922",
+        "end_exclusive": "$CD0929",
+        "sha256": "5acb8c8054a6325e2cd9e00e83c4981cce117412ce7d5bc5ebf443b8c7d46230"
+      },
+      {
+        "start": "$CD09CE",
+        "end_exclusive": "$CD09F1",
+        "sha256": "65c3e12a3d48afac4a9167badfb85aa13ec374901293b443e7c55e1d636752f6"
+      },
+      {
+        "start": "$CD0AEE",
+        "end_exclusive": "$CD0B16",
+        "sha256": "b9c03740d7f37918176017d98faacf21192a182b03b6f307ba7b637559a2f3a5"
+      },
+      {
+        "start": "$CD3E8E",
+        "end_exclusive": "$CD3ECE",
+        "sha256": "4be192e71a740182c162550849d9e9e75d0bea49c4879e51d9bb33294b2c0cf0"
+      },
+      {
+        "start": "$CEEE6E",
+        "end_exclusive": "$CEEF11",
+        "sha256": "8456e61e3b3230c2c98593561fb66e7a675df5b58fbd5e04d56dd45fdcf0e177"
+      },
+      {
+        "start": "$CFE300",
+        "end_exclusive": "$CFE58A",
+        "sha256": "b8355027fc542d1c6f0433522ab0460fef7429f6ba6fd12611e8ccaf238546c7"
+      },
+      {
+        "start": "$D1E8D9",
+        "end_exclusive": "$D1E91A",
+        "sha256": "d061f36aae2bdb1a6931a0fd8d78cb572594ffcfb89fbce97c933c37d51df6f7"
+      }
+    ],
+    "mnemonic_context_counts": {
+      "ADC #": 6,
+      "AND #": 4,
+      "ASL A": 4,
+      "CLC": 6,
+      "CMP #": 5,
+      "CMP abs": 1,
+      "CPX #": 2,
+      "CPX abs": 1,
+      "DEC abs": 3,
+      "DEC abs,X": 2,
+      "DEC dp": 1,
+      "INC abs": 4,
+      "INC abs,X": 2,
+      "INC dp": 1,
+      "JML": 1,
+      "JMP": 5,
+      "JSL": 4,
+      "JSR": 9,
+      "LDA #": 76,
+      "LDA abs": 39,
+      "LDA abs,X": 15,
+      "LDA dp": 6,
+      "LDA long": 11,
+      "LDA long,X": 20,
+      "LDX #": 13,
+      "LDX abs": 7,
+      "LDX dp": 1,
+      "LDY #": 12,
+      "LDY abs": 1,
+      "MVN": 9,
+      "PHA": 17,
+      "PHB": 5,
+      "PLA": 3,
+      "PLB": 11,
+      "PLX": 8,
+      "REP": 12,
+      "RTL": 4,
+      "RTS": 8,
+      "SBC #": 3,
+      "SEC": 3,
+      "SEP": 14,
+      "STA abs": 26,
+      "STA abs,X": 2,
+      "STA dp": 2,
+      "STA long": 88,
+      "STX abs": 16,
+      "STX dp": 2,
+      "STY abs": 2,
+      "STZ abs": 12,
+      "STZ dp": 2,
+      "TAX": 11,
+      "TDC": 19,
+      "TXA": 3,
+      "branch": 43
+    },
+    "ends": [
+      {
+        "site": "$CD0907",
+        "kind": "stop",
+        "m8": true,
+        "x8": false,
+        "irq_masked": true,
+        "a_low": null,
+        "b": 0,
+        "d": 0,
+        "dbr": 126,
+        "counted_stack_bytes": 2,
+        "frames": [
+          {
+            "return": "abstract-caller",
+            "kind": "near"
+          }
+        ]
+      },
+      {
+        "site": "$CD0929",
+        "kind": "stop",
+        "m8": true,
+        "x8": false,
+        "irq_masked": true,
+        "a_low": null,
+        "b": 0,
+        "d": 0,
+        "dbr": 126,
+        "counted_stack_bytes": 2,
+        "frames": [
+          {
+            "return": "abstract-caller",
+            "kind": "near"
+          }
+        ]
+      }
+    ],
+    "exploratory_peak_counted_bytes_not_a_whole_path_bound": 24,
+    "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+    "all_direct_callees_inlined": true,
+    "branch_conditions_overapproximated": true,
+    "nonstack_memory_and_dma_effects_proved": false,
+    "termination_proved": false
+  },
+  "caller_contract": {
+    "site": "$CD0929",
+    "b": 0,
+    "d": 0,
+    "dbr": 126,
+    "m8": true,
+    "x8": false,
+    "irq_masked": true,
+    "conditional_on_reaching_scroll_call_before_the_other_branch_cut": true,
+    "outgoing_near_return": "$CD092C",
+    "other_branch_cut_before_external_pad_route": "$CD0907",
+    "other_branch_returns_or_rejoins_proved": false,
+    "incoming_b_not_required_zero": true,
+    "callee_register_preservation_assumed": false,
+    "ca92_effective_read_address": "$7ECA92",
+    "ca92_value_domain_proved": false
+  },
+  "six_callee_value_projections": [
+    {
+      "entry": "$CD09CE",
+      "kind": "long",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 13,
+      "instruction_contexts": 13,
+      "direct_calls": [],
+      "decoded_context_identity_sha256": "d5650e60e15a5f8ac35d8252683d626d10760b7cd38754732087a6886ff5c2ee",
+      "edge_identity_sha256": "6f14c95d076b4adef410ceca64f723b69014c9c56817aaf1a5031f2b3290bef5",
+      "decoded_byte_intervals": [
+        {
+          "start": "$CD09CE",
+          "end_exclusive": "$CD09F1",
+          "sha256": "65c3e12a3d48afac4a9167badfb85aa13ec374901293b443e7c55e1d636752f6"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "LDA #": 2,
+        "LDX #": 3,
+        "RTL": 1,
+        "STA abs": 2,
+        "STX abs": 3,
+        "STZ abs": 2
+      },
+      "ends": [
+        {
+          "site": "$CD09F0",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 128,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 3,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false,
+      "prior_typed_closure_metadata_sha256": "3299babaa6809c1a02b0100f9b904653bf9b111e0d1610c94e9443e22a74284b"
+    },
+    {
+      "entry": "$CD3EB4",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 30,
+      "instruction_contexts": 29,
+      "direct_calls": [
+        {
+          "site": "$CD3EC7",
+          "target": "$CD3E8E",
+          "kind": "near"
+        }
+      ],
+      "decoded_context_identity_sha256": "739d03b6f44651f1ba755dc833aeef575da9b5b13981919f8bb427650f35a18b",
+      "edge_identity_sha256": "baebe7472b52a80970b8ea773825c0366be87db0b3d7dab566fe91ad12ece6bc",
+      "decoded_byte_intervals": [
+        {
+          "start": "$CD3E8E",
+          "end_exclusive": "$CD3ECE",
+          "sha256": "4be192e71a740182c162550849d9e9e75d0bea49c4879e51d9bb33294b2c0cf0"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "JSR": 1,
+        "LDA #": 4,
+        "LDA abs": 2,
+        "LDX abs": 2,
+        "LDX dp": 1,
+        "LDY abs": 1,
+        "PHA": 2,
+        "PHB": 1,
+        "PLA": 1,
+        "PLB": 2,
+        "RTS": 2,
+        "STA abs": 4,
+        "STX abs": 2,
+        "STX dp": 1,
+        "STY abs": 1,
+        "STZ abs": 1,
+        "branch": 1
+      },
+      "ends": [
+        {
+          "site": "$CD3ECD",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 128,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CD3ECD",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": null,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 7,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false,
+      "prior_typed_closure_metadata_sha256": "561f7b542b0c6f8591e9031af88617e349481c29a91b68066f2e1e4dbf45b663"
+    },
+    {
+      "entry": "$CD0607",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 125,
+      "instruction_contexts": 121,
+      "direct_calls": [
+        {
+          "site": "$CD0644",
+          "target": "$D1E8D9",
+          "kind": "long"
+        }
+      ],
+      "decoded_context_identity_sha256": "70e43c1f7751a3cea30dc5006f2a424fd185767bb83c52eb002c5b7cf70db598",
+      "edge_identity_sha256": "0ed968d8a922da8d79ddee32eed128ccf9c27860f123578f89729246e7da68d5",
+      "decoded_byte_intervals": [
+        {
+          "start": "$CD0607",
+          "end_exclusive": "$CD06B2",
+          "sha256": "09211e44ba63d55157c7950f74457c5bcf94006e35f0e8bbd8fa367b42f51a8b"
+        },
+        {
+          "start": "$CD3E8E",
+          "end_exclusive": "$CD3EB4",
+          "sha256": "9ceb46cd1504c9e286680748861a7134937ea0048d31ea750d63010ad5ecbf52"
+        },
+        {
+          "start": "$D1E8D9",
+          "end_exclusive": "$D1E91A",
+          "sha256": "d061f36aae2bdb1a6931a0fd8d78cb572594ffcfb89fbce97c933c37d51df6f7"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "ADC #": 1,
+        "AND #": 2,
+        "ASL A": 1,
+        "CLC": 1,
+        "CMP #": 1,
+        "CMP abs": 1,
+        "CPX abs": 1,
+        "DEC dp": 1,
+        "INC abs": 2,
+        "JMP": 2,
+        "JSL": 1,
+        "LDA #": 16,
+        "LDA abs": 3,
+        "LDA dp": 1,
+        "LDA long": 2,
+        "LDA long,X": 1,
+        "LDX #": 8,
+        "LDX abs": 3,
+        "LDX dp": 1,
+        "LDY #": 3,
+        "PHA": 6,
+        "PHB": 3,
+        "PLA": 3,
+        "PLB": 6,
+        "REP": 3,
+        "RTL": 1,
+        "RTS": 2,
+        "SEP": 3,
+        "STA abs": 13,
+        "STA dp": 2,
+        "STX abs": 9,
+        "STX dp": 1,
+        "STY abs": 2,
+        "STZ abs": 3,
+        "TAX": 1,
+        "TDC": 2,
+        "branch": 9
+      },
+      "ends": [
+        {
+          "site": "$CD0693",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 128,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CD3EB3",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 128,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 8,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false,
+      "prior_typed_closure_metadata_sha256": "2d300e3b11ebddffd3206e516fb6e9b1f6fcf1629733219bc6e73eb3685e42d3"
+    },
+    {
+      "entry": "$C10009",
+      "kind": "long",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 229,
+      "instruction_contexts": 222,
+      "direct_calls": [],
+      "decoded_context_identity_sha256": "3c6e476407f3b94ff1397034d9a2f55c8034a181626e8fb68267ce606143eaad",
+      "edge_identity_sha256": "4300b8a965d70898962cfd92c0283a07058b1dd3714c637f7a84cf8f1e7c592d",
+      "decoded_byte_intervals": [
+        {
+          "start": "$C10009",
+          "end_exclusive": "$C1000C",
+          "sha256": "e15cf60da4280a0a4c503607d735ffa758a83ecc2e8502ec4a016a7a2a539901"
+        },
+        {
+          "start": "$C10076",
+          "end_exclusive": "$C1007A",
+          "sha256": "f5e75a19a6ac9bd3f4a7000634941a491cecc2c9ae3ef7645da835189e82e4c8"
+        },
+        {
+          "start": "$CFE300",
+          "end_exclusive": "$CFE58A",
+          "sha256": "b8355027fc542d1c6f0433522ab0460fef7429f6ba6fd12611e8ccaf238546c7"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "ASL A": 2,
+        "CMP #": 3,
+        "DEC abs": 1,
+        "INC dp": 1,
+        "JML": 1,
+        "JMP": 3,
+        "LDA #": 41,
+        "LDA abs": 14,
+        "LDA abs,X": 13,
+        "LDA dp": 4,
+        "LDA long": 8,
+        "LDA long,X": 8,
+        "REP": 4,
+        "RTL": 1,
+        "SEP": 6,
+        "STA long": 81,
+        "STZ abs": 2,
+        "STZ dp": 2,
+        "TAX": 3,
+        "TDC": 9,
+        "TXA": 1,
+        "branch": 14
+      },
+      "ends": [
+        {
+          "site": "$CFE589",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 0,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CFE589",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 128,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CFE589",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": null,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 3,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false,
+      "prior_typed_closure_metadata_sha256": "50fb2fc52b7f77c46d95e72c32695d84178871cd5899515758336fb7ffbf7c4c"
+    },
+    {
+      "entry": "$CD0AEE",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 17,
+      "instruction_contexts": 17,
+      "direct_calls": [],
+      "decoded_context_identity_sha256": "0d6b4ef55720a873faabf855e74b2e005511caaa7d5aa599efd08c148a1d7387",
+      "edge_identity_sha256": "17fc3851cb649908d2ec983f15d24743ca78adddfd715849b7227044e236c160",
+      "decoded_byte_intervals": [
+        {
+          "start": "$CD0AEE",
+          "end_exclusive": "$CD0B16",
+          "sha256": "b9c03740d7f37918176017d98faacf21192a182b03b6f307ba7b637559a2f3a5"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "AND #": 1,
+        "LDA #": 4,
+        "LDA dp": 1,
+        "LDX #": 2,
+        "RTS": 2,
+        "STA abs": 4,
+        "STX abs": 2,
+        "branch": 1
+      },
+      "ends": [
+        {
+          "site": "$CD0B0E",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": null,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CD0B15",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": null,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 2,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false,
+      "prior_typed_closure_metadata_sha256": "8373e3e02247825fc898347a0ff3aaf396ad2878d1d934d0ba179c6734981c04"
+    },
+    {
+      "entry": "$CD05B2",
+      "kind": "near",
+      "entry_b": 0,
+      "entry_d": 0,
+      "entry_dbr": 126,
+      "entry_m8": true,
+      "entry_x8": false,
+      "entry_irq_masked": true,
+      "abstract_states": 160,
+      "instruction_contexts": 156,
+      "direct_calls": [
+        {
+          "site": "$CD05BE",
+          "target": "$CD053C",
+          "kind": "near"
+        },
+        {
+          "site": "$CD05DA",
+          "target": "$CEEE6E",
+          "kind": "long"
+        },
+        {
+          "site": "$CD05E5",
+          "target": "$CD0577",
+          "kind": "near"
+        }
+      ],
+      "decoded_context_identity_sha256": "b6f4cf193208958ef5e962fb8fa5a3b27640ae15d6c1b64618a0161957f193a6",
+      "edge_identity_sha256": "036cc914d20bab13613de6979b38b6904ddc41d0cb25eff43c8fafa95d89f9cd",
+      "decoded_byte_intervals": [
+        {
+          "start": "$CD053C",
+          "end_exclusive": "$CD05FF",
+          "sha256": "2dec0343db6f1f064f27d5ba118b1db16c16bd5c55c8f0e988a8dd12d88fb84b"
+        },
+        {
+          "start": "$CEEE6E",
+          "end_exclusive": "$CEEF11",
+          "sha256": "8456e61e3b3230c2c98593561fb66e7a675df5b58fbd5e04d56dd45fdcf0e177"
+        }
+      ],
+      "mnemonic_context_counts": {
+        "ADC #": 5,
+        "AND #": 1,
+        "ASL A": 1,
+        "CLC": 5,
+        "CMP #": 1,
+        "CPX #": 2,
+        "DEC abs": 2,
+        "DEC abs,X": 2,
+        "INC abs": 2,
+        "INC abs,X": 2,
+        "JSL": 1,
+        "JSR": 2,
+        "LDA #": 11,
+        "LDA abs": 9,
+        "LDA abs,X": 2,
+        "LDA long,X": 11,
+        "LDY #": 9,
+        "MVN": 9,
+        "PHA": 8,
+        "PHB": 1,
+        "PLB": 1,
+        "PLX": 8,
+        "REP": 5,
+        "RTL": 1,
+        "RTS": 3,
+        "SBC #": 3,
+        "SEC": 3,
+        "SEP": 5,
+        "STA abs": 6,
+        "STA abs,X": 2,
+        "STZ abs": 4,
+        "TAX": 7,
+        "TDC": 7,
+        "TXA": 2,
+        "branch": 13
+      },
+      "ends": [
+        {
+          "site": "$CD05FE",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 0,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CD05FE",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 1,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CD05FE",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": 2,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        },
+        {
+          "site": "$CD05FE",
+          "kind": "return",
+          "m8": true,
+          "x8": false,
+          "irq_masked": true,
+          "a_low": null,
+          "b": 0,
+          "d": 0,
+          "dbr": 126,
+          "counted_stack_bytes": 0,
+          "frames": []
+        }
+      ],
+      "exploratory_peak_counted_bytes_not_a_whole_path_bound": 22,
+      "d_invariant_proved_under_no_alias_no_asynchronous_premises": true,
+      "all_direct_callees_inlined": true,
+      "branch_conditions_overapproximated": true,
+      "nonstack_memory_and_dma_effects_proved": false,
+      "termination_proved": false,
+      "prior_typed_closure_metadata_sha256": "fd39d3bb12443d17978105b76fe911cfca4ad3a222c949f55c4a60001ddddb67"
+    }
+  ],
+  "dispatch": {
+    "span": [
+      "$CD06B4",
+      "$CD06BC"
+    ],
+    "sha256": "0016098af9a67c4facae3dd092e328de1da7bb6e0c74f4ec5075db44779827d7",
+    "absolute_read_requires_dbr_7e": true,
+    "direct_page_not_used_by_ca92_absolute_read": true,
+    "recipe": "X = (B << 8) | ((CA92 << 1) & 255); pointer word read in PBR CD with 16-bit address arithmetic",
+    "hypothetical_byte_b_pairs": 65536,
+    "high_bit_alias_pairs": 32768,
+    "pointer_word_boundary_wrap_pairs": 0,
+    "base_plus_index_can_wrap_in_pbr": true,
+    "b0_possible_physical_cells": [
+      {
+        "ca92_low7": 0,
+        "pointer": "$CD06BC",
+        "target": "$CD06C4",
+        "among_four_reviewed_cells": true
+      },
+      {
+        "ca92_low7": 1,
+        "pointer": "$CD06BE",
+        "target": "$CD076C",
+        "among_four_reviewed_cells": true
+      },
+      {
+        "ca92_low7": 2,
+        "pointer": "$CD06C0",
+        "target": "$CD07E2",
+        "among_four_reviewed_cells": true
+      },
+      {
+        "ca92_low7": 3,
+        "pointer": "$CD06C2",
+        "target": "$CD07B9",
+        "among_four_reviewed_cells": true
+      },
+      {
+        "ca92_low7": 4,
+        "pointer": "$CD06C4",
+        "target": "$CD10E2",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 5,
+        "pointer": "$CD06C6",
+        "target": "$CD20C2",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 6,
+        "pointer": "$CD06C8",
+        "target": "$CD70AD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 7,
+        "pointer": "$CD06CA",
+        "target": "$CD182C",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 8,
+        "pointer": "$CD06CC",
+        "target": "$CDA46D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 9,
+        "pointer": "$CD06CE",
+        "target": "$CD18CC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 10,
+        "pointer": "$CD06D0",
+        "target": "$CD016D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 11,
+        "pointer": "$CD06D2",
+        "target": "$CD85BB",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 12,
+        "pointer": "$CD06D4",
+        "target": "$CDAD45",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 13,
+        "pointer": "$CD06D6",
+        "target": "$CD2C72",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 14,
+        "pointer": "$CD06D8",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 15,
+        "pointer": "$CD06DA",
+        "target": "$CDCCA6",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 16,
+        "pointer": "$CD06DC",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 17,
+        "pointer": "$CD06DE",
+        "target": "$CDBB03",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 18,
+        "pointer": "$CD06E0",
+        "target": "$CD4785",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 19,
+        "pointer": "$CD06E2",
+        "target": "$CD74AD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 20,
+        "pointer": "$CD06E4",
+        "target": "$CD182C",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 21,
+        "pointer": "$CD06E6",
+        "target": "$CDA86D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 22,
+        "pointer": "$CD06E8",
+        "target": "$CD85CC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 23,
+        "pointer": "$CD06EA",
+        "target": "$CDAD49",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 24,
+        "pointer": "$CD06EC",
+        "target": "$CD2C76",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 25,
+        "pointer": "$CD06EE",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 26,
+        "pointer": "$CD06F0",
+        "target": "$CDCCAA",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 27,
+        "pointer": "$CD06F2",
+        "target": "$CD4B85",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 28,
+        "pointer": "$CD06F4",
+        "target": "$CD78AD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 29,
+        "pointer": "$CD06F6",
+        "target": "$CD182C",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 30,
+        "pointer": "$CD06F8",
+        "target": "$CDAC6D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 31,
+        "pointer": "$CD06FA",
+        "target": "$CD85CC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 32,
+        "pointer": "$CD06FC",
+        "target": "$CDAD4D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 33,
+        "pointer": "$CD06FE",
+        "target": "$CD2C7A",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 34,
+        "pointer": "$CD0700",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 35,
+        "pointer": "$CD0702",
+        "target": "$CDCCAE",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 36,
+        "pointer": "$CD0704",
+        "target": "$CD4F85",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 37,
+        "pointer": "$CD0706",
+        "target": "$CD00A2",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 38,
+        "pointer": "$CD0708",
+        "target": "$CD45A5",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 39,
+        "pointer": "$CD070A",
+        "target": "$CD899D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 40,
+        "pointer": "$CD070C",
+        "target": "$CD9DBC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 41,
+        "pointer": "$CD070E",
+        "target": "$CDBC8D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 42,
+        "pointer": "$CD0710",
+        "target": "$CD919D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 43,
+        "pointer": "$CD0712",
+        "target": "$CD9DBC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 44,
+        "pointer": "$CD0714",
+        "target": "$CDBC95",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 45,
+        "pointer": "$CD0716",
+        "target": "$CD47A5",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 46,
+        "pointer": "$CD0718",
+        "target": "$CD8B9D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 47,
+        "pointer": "$CD071A",
+        "target": "$CD9DBC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 48,
+        "pointer": "$CD071C",
+        "target": "$CDBC8F",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 49,
+        "pointer": "$CD071E",
+        "target": "$CD939D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 50,
+        "pointer": "$CD0720",
+        "target": "$CD9DBC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 51,
+        "pointer": "$CD0722",
+        "target": "$CDBC97",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 52,
+        "pointer": "$CD0724",
+        "target": "$CD49A5",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 53,
+        "pointer": "$CD0726",
+        "target": "$CD099D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 54,
+        "pointer": "$CD0728",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 55,
+        "pointer": "$CD072A",
+        "target": "$CDBD0D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 56,
+        "pointer": "$CD072C",
+        "target": "$CD119D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 57,
+        "pointer": "$CD072E",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 58,
+        "pointer": "$CD0730",
+        "target": "$CDBD15",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 59,
+        "pointer": "$CD0732",
+        "target": "$CD4BA5",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 60,
+        "pointer": "$CD0734",
+        "target": "$CD0B9D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 61,
+        "pointer": "$CD0736",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 62,
+        "pointer": "$CD0738",
+        "target": "$CDBD0F",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 63,
+        "pointer": "$CD073A",
+        "target": "$CD139D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 64,
+        "pointer": "$CD073C",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 65,
+        "pointer": "$CD073E",
+        "target": "$CDBD17",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 66,
+        "pointer": "$CD0740",
+        "target": "$CD4DA5",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 67,
+        "pointer": "$CD0742",
+        "target": "$CD899D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 68,
+        "pointer": "$CD0744",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 69,
+        "pointer": "$CD0746",
+        "target": "$CDBD8D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 70,
+        "pointer": "$CD0748",
+        "target": "$CD919D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 71,
+        "pointer": "$CD074A",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 72,
+        "pointer": "$CD074C",
+        "target": "$CDBD95",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 73,
+        "pointer": "$CD074E",
+        "target": "$CD4FA5",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 74,
+        "pointer": "$CD0750",
+        "target": "$CD8B9D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 75,
+        "pointer": "$CD0752",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 76,
+        "pointer": "$CD0754",
+        "target": "$CDBD8F",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 77,
+        "pointer": "$CD0756",
+        "target": "$CD939D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 78,
+        "pointer": "$CD0758",
+        "target": "$CD9DBD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 79,
+        "pointer": "$CD075A",
+        "target": "$CDBD97",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 80,
+        "pointer": "$CD075C",
+        "target": "$CD188A",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 81,
+        "pointer": "$CD075E",
+        "target": "$CD1069",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 82,
+        "pointer": "$CD0760",
+        "target": "$CDAA00",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 83,
+        "pointer": "$CD0762",
+        "target": "$CD80E0",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 84,
+        "pointer": "$CD0764",
+        "target": "$CDA2D0",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 85,
+        "pointer": "$CD0766",
+        "target": "$CDE27B",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 86,
+        "pointer": "$CD0768",
+        "target": "$CDC220",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 87,
+        "pointer": "$CD076A",
+        "target": "$CD6010",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 88,
+        "pointer": "$CD076C",
+        "target": "$CD10E2",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 89,
+        "pointer": "$CD076E",
+        "target": "$CD20C2",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 90,
+        "pointer": "$CD0770",
+        "target": "$CD70AD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 91,
+        "pointer": "$CD0772",
+        "target": "$CD182C",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 92,
+        "pointer": "$CD0774",
+        "target": "$CDA46D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 93,
+        "pointer": "$CD0776",
+        "target": "$CD18CC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 94,
+        "pointer": "$CD0778",
+        "target": "$CD016D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 95,
+        "pointer": "$CD077A",
+        "target": "$CD85BB",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 96,
+        "pointer": "$CD077C",
+        "target": "$CDAD45",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 97,
+        "pointer": "$CD077E",
+        "target": "$CD2C72",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 98,
+        "pointer": "$CD0780",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 99,
+        "pointer": "$CD0782",
+        "target": "$CDCCA6",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 100,
+        "pointer": "$CD0784",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 101,
+        "pointer": "$CD0786",
+        "target": "$CDBB03",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 102,
+        "pointer": "$CD0788",
+        "target": "$CD4785",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 103,
+        "pointer": "$CD078A",
+        "target": "$CD74AD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 104,
+        "pointer": "$CD078C",
+        "target": "$CD182C",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 105,
+        "pointer": "$CD078E",
+        "target": "$CDA86D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 106,
+        "pointer": "$CD0790",
+        "target": "$CD85CC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 107,
+        "pointer": "$CD0792",
+        "target": "$CDAD49",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 108,
+        "pointer": "$CD0794",
+        "target": "$CD2C76",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 109,
+        "pointer": "$CD0796",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 110,
+        "pointer": "$CD0798",
+        "target": "$CDCCAA",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 111,
+        "pointer": "$CD079A",
+        "target": "$CD4B85",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 112,
+        "pointer": "$CD079C",
+        "target": "$CD5AAD",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 113,
+        "pointer": "$CD079E",
+        "target": "$CD18CA",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 114,
+        "pointer": "$CD07A0",
+        "target": "$CD5E6D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 115,
+        "pointer": "$CD07A2",
+        "target": "$CD18CA",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 116,
+        "pointer": "$CD07A4",
+        "target": "$CDAC6D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 117,
+        "pointer": "$CD07A6",
+        "target": "$CD85CC",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 118,
+        "pointer": "$CD07A8",
+        "target": "$CDAD4D",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 119,
+        "pointer": "$CD07AA",
+        "target": "$CDCA5C",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 120,
+        "pointer": "$CD07AC",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 121,
+        "pointer": "$CD07AE",
+        "target": "$CDCA60",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 122,
+        "pointer": "$CD07B0",
+        "target": "$CD6D18",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 123,
+        "pointer": "$CD07B2",
+        "target": "$CDCCAE",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 124,
+        "pointer": "$CD07B4",
+        "target": "$CD4F85",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 125,
+        "pointer": "$CD07B6",
+        "target": "$CD064C",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 126,
+        "pointer": "$CD07B8",
+        "target": "$CD2007",
+        "among_four_reviewed_cells": false
+      },
+      {
+        "ca92_low7": 127,
+        "pointer": "$CD07BA",
+        "target": "$CD07E2",
+        "among_four_reviewed_cells": false
+      }
+    ],
+    "four_reviewed_span": [
+      "$CD06BC",
+      "$CD06C4"
+    ],
+    "four_reviewed_span_sha256": "f4550a3836711684fe08986e19e960aada6390feda374fefcd34b99f8fdb7372",
+    "first_successor_overlaps_executable_instruction": {
+      "site": "$CD06C4",
+      "mnemonic": "SEP #$10",
+      "instruction_sha256": "5877c098c40f5d4d80d6894627f5f833ce5a8541abda8a84784fd8c547a8771b",
+      "interpreted_pointer_target": "$CD10E2",
+      "legal_input_or_free_space_proved": false
+    }
+  },
+  "four_conditional_targets": [
+    {
+      "cell_index": 0,
+      "pointer": "$CD06BC",
+      "target": "$CD06C4",
+      "b0_aliasing_ca92_bytes": [
+        0,
+        128
+      ],
+      "conditional_target_closure": {
+        "entry": "$CD06C4",
+        "kind": "near",
+        "entry_m8": true,
+        "entry_x8": false,
+        "entry_irq_masked": true,
+        "status": "closed-direct-stack-width-control-flow",
+        "frontier": null,
+        "abstract_states": 71,
+        "instruction_contexts": 71,
+        "instruction_starts": 71,
+        "decoded_byte_intervals": [
+          {
+            "start": "$CD06C4",
+            "end_exclusive": "$CD076C",
+            "sha256": "d1e1f7f095655c4aceda4d0367a52cb1964e33d447efa9528eaad35a087628a3"
+          }
+        ],
+        "decoded_context_identity_sha256": "814a2ef71f9a7e5a318b71e1fa0e49fd518da5367ce54f33b6593c85ecfc04d7",
+        "maximum_additional_bytes_below_callee_entry": 0,
+        "exploratory_observed_local_peak_not_a_bound": null,
+        "maximum_counted_bytes_including_root_call_frame": 2,
+        "peak_instruction_sites": [],
+        "return_width_states": [
+          {
+            "site": "$CD076B",
+            "m8": true,
+            "x8": false,
+            "irq_masked": true
+          }
+        ],
+        "matches_prior_return_width_premise": true,
+        "direct_calls": [],
+        "direct_far_jumps": [],
+        "syntactic_write_operands": [
+          {
+            "site": "$CD06D3",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$45",
+            "width_bytes": 2,
+            "instruction_sha256": "50b8792b60950af8721afe46f051e87163901747409a0efc5058bacb6bd62572",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD06E0",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$47",
+            "width_bytes": 2,
+            "instruction_sha256": "432ad892e14690c7fa024d780af1dfff4f124c97c181ce6f76a5c3bea2316dcf",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD06E9",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$49",
+            "width_bytes": 2,
+            "instruction_sha256": "e3772345a56ecfa47b1f4c51511247b470427c7e6875b8bb2a0569a6fc6a22ff",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD06F2",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4B",
+            "width_bytes": 2,
+            "instruction_sha256": "936de6a2c2e5e03819e0a82018e03f60ba6f86dcb1805d1431aff1c8e81368fe",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD06FB",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4D",
+            "width_bytes": 2,
+            "instruction_sha256": "314b8d55dae558e1076768251bab7f28629dae69a9a28b7b537e8cb4f943e9e7",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0704",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4F",
+            "width_bytes": 2,
+            "instruction_sha256": "24fdb91c8e27e6c65add4d0d4b62969fa1aa5202b4036f1488bd654f8ff268d7",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD070A",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC89",
+            "width_bytes": 2,
+            "instruction_sha256": "032fd7538dc5a2b2546fc0ab09d38e7d0c43ac9d1ede54859c388057a3bb9147",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD070D",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8D",
+            "width_bytes": 2,
+            "instruction_sha256": "23a5a2ecfd351155c8ed300565ce90b060a9220fd9032f9fb68e976e46158648",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0710",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC91",
+            "width_bytes": 2,
+            "instruction_sha256": "d7791a50bf49749cd84f8d5876510611b5a3e8aa94c130bb9fd25e776aa44384",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0713",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC95",
+            "width_bytes": 2,
+            "instruction_sha256": "fabe9123ac47d04529fb6ad10d0e5adc45ceb8d1ac08b3a1c3bea1bf9f9e5494",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0718",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8B",
+            "width_bytes": 2,
+            "instruction_sha256": "f74f497d8514ad3a3cb4657c3eb4e0b615b589c772f27e5d0610bdbdb5e11fab",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD071B",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8F",
+            "width_bytes": 2,
+            "instruction_sha256": "457eb01a058ea0ead92f2a2f9229d376a9779637a222d00929278527d9e84a18",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD071E",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC93",
+            "width_bytes": 2,
+            "instruction_sha256": "a72bbc239f8ec49cabaa72122a4af240d3f3a0a1c4d25065cceb1cc27abc41f4",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0721",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC97",
+            "width_bytes": 2,
+            "instruction_sha256": "fff230e7f9deabea8b12864f8383c914fb6f853148cdfa4c95a434eb2e210fc5",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0726",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD09",
+            "width_bytes": 2,
+            "instruction_sha256": "c1a644220c426a5641397f531310bcbf19debe3ac4ac9f4cbe0e0ac43492ce46",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0729",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0D",
+            "width_bytes": 2,
+            "instruction_sha256": "de4ead833514e229dbe25190c075eec2c2323052fb5227fd850359414de8f75b",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD072C",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD11",
+            "width_bytes": 2,
+            "instruction_sha256": "d4c08c0e2b9e3525cb0d6f9a903202cdb5c6143b02f13c824016756a85224481",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD072F",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD15",
+            "width_bytes": 2,
+            "instruction_sha256": "223c8f9cfde21bf78b6b55e321ab0ddf501d428fe47f2f330f8ed9a93f9cb799",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0734",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0B",
+            "width_bytes": 2,
+            "instruction_sha256": "1b2831493476b12e0d06b8a3f9b45f4a23c935358872c65f6975fe3703451c19",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0737",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0F",
+            "width_bytes": 2,
+            "instruction_sha256": "19fac4573c0edce184257862c532738bc103507da73032454de24f804ce1517f",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD073A",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD13",
+            "width_bytes": 2,
+            "instruction_sha256": "fec96a14b7b21ae783fe20773c9d0278d20cf913657224a47a07408f3ff95d53",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD073D",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD17",
+            "width_bytes": 2,
+            "instruction_sha256": "a19777313f7bd0fae006b0a34c48f8a85732efbf239e860087855182a4d2b397",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0742",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD89",
+            "width_bytes": 2,
+            "instruction_sha256": "82af1f3aed59da92546ffee5b0afcb5cd8c75aa815730677becd1196298f6113",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0745",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8D",
+            "width_bytes": 2,
+            "instruction_sha256": "0dda8ffdc7d50dfe003de752fdfd6667447fcb445c0a090106a2960e3b6938b6",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0748",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD91",
+            "width_bytes": 2,
+            "instruction_sha256": "d6139c093e1c35bd532503febca798f98254231165a4df50545e080043afb2f3",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD074B",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD95",
+            "width_bytes": 2,
+            "instruction_sha256": "9f8c71ec8b9272abcc338f9a3815884ee784cdaf1812bd5e00d25fdc3ce4964b",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0750",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8B",
+            "width_bytes": 2,
+            "instruction_sha256": "a5fc36cd4a23d1a9b5f493289ae8bd5088f1e64ceb81e5940b1be2f62a3f8644",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0753",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8F",
+            "width_bytes": 2,
+            "instruction_sha256": "e50fdf5289f4616e63eaf4a372b3ac0677b41fddd4cb9022bafa4c6a7c46f5ac",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0756",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD93",
+            "width_bytes": 2,
+            "instruction_sha256": "e2e335f6fa62171b3a13174a503ceba33806b8f22884f2986707a2144ee7c78b",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0759",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD97",
+            "width_bytes": 2,
+            "instruction_sha256": "2f40fe88942f3c607b56421a6436946370f7d2132510f58c638a6b299c7d6505",
+            "effective_address_and_aliasing_proved": false
+          }
+        ],
+        "mnemonic_context_counts": {
+          "ADC #": 1,
+          "ADC abs": 8,
+          "CLC": 9,
+          "CPX #": 1,
+          "LDA abs": 6,
+          "LDA dp": 6,
+          "LDX #": 1,
+          "REP": 2,
+          "RTS": 1,
+          "SEP": 2,
+          "STA abs,X": 24,
+          "STA dp": 6,
+          "TAX": 1,
+          "TDC": 1,
+          "TXA": 1,
+          "branch": 1
+        },
+        "callee_register_value_preservation": false,
+        "nonstack_alias_closure": false,
+        "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+        "termination_proved": false,
+        "whole_nmi_bound": null
+      },
+      "new_frame_added_by_dispatch_jmp": 0,
+      "existing_scroll_jsr_frame_bytes": 2,
+      "conditional_scroll_call_bytes_including_existing_near_frame": 2,
+      "target_register_value_return_proved": false
+    },
+    {
+      "cell_index": 1,
+      "pointer": "$CD06BE",
+      "target": "$CD076C",
+      "b0_aliasing_ca92_bytes": [
+        1,
+        129
+      ],
+      "conditional_target_closure": {
+        "entry": "$CD076C",
+        "kind": "near",
+        "entry_m8": true,
+        "entry_x8": false,
+        "entry_irq_masked": true,
+        "status": "closed-direct-stack-width-control-flow",
+        "frontier": null,
+        "abstract_states": 76,
+        "instruction_contexts": 76,
+        "instruction_starts": 76,
+        "decoded_byte_intervals": [
+          {
+            "start": "$CD0706",
+            "end_exclusive": "$CD07B9",
+            "sha256": "4137414cd030a908f2ebaed8eb972ea8ad19ba20f46b87457b207c55bd0ed9a6"
+          }
+        ],
+        "decoded_context_identity_sha256": "b64e56b2ac0dd74ff836edee3d1f17ee72bbfb523ffdfe70263f192851f2cb5e",
+        "maximum_additional_bytes_below_callee_entry": 0,
+        "exploratory_observed_local_peak_not_a_bound": null,
+        "maximum_counted_bytes_including_root_call_frame": 2,
+        "peak_instruction_sites": [],
+        "return_width_states": [
+          {
+            "site": "$CD076B",
+            "m8": true,
+            "x8": false,
+            "irq_masked": true
+          }
+        ],
+        "matches_prior_return_width_premise": true,
+        "direct_calls": [],
+        "direct_far_jumps": [],
+        "syntactic_write_operands": [
+          {
+            "site": "$CD070A",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC89",
+            "width_bytes": 2,
+            "instruction_sha256": "032fd7538dc5a2b2546fc0ab09d38e7d0c43ac9d1ede54859c388057a3bb9147",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD070D",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8D",
+            "width_bytes": 2,
+            "instruction_sha256": "23a5a2ecfd351155c8ed300565ce90b060a9220fd9032f9fb68e976e46158648",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0710",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC91",
+            "width_bytes": 2,
+            "instruction_sha256": "d7791a50bf49749cd84f8d5876510611b5a3e8aa94c130bb9fd25e776aa44384",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0713",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC95",
+            "width_bytes": 2,
+            "instruction_sha256": "fabe9123ac47d04529fb6ad10d0e5adc45ceb8d1ac08b3a1c3bea1bf9f9e5494",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0718",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8B",
+            "width_bytes": 2,
+            "instruction_sha256": "f74f497d8514ad3a3cb4657c3eb4e0b615b589c772f27e5d0610bdbdb5e11fab",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD071B",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8F",
+            "width_bytes": 2,
+            "instruction_sha256": "457eb01a058ea0ead92f2a2f9229d376a9779637a222d00929278527d9e84a18",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD071E",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC93",
+            "width_bytes": 2,
+            "instruction_sha256": "a72bbc239f8ec49cabaa72122a4af240d3f3a0a1c4d25065cceb1cc27abc41f4",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0721",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC97",
+            "width_bytes": 2,
+            "instruction_sha256": "fff230e7f9deabea8b12864f8383c914fb6f853148cdfa4c95a434eb2e210fc5",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0726",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD09",
+            "width_bytes": 2,
+            "instruction_sha256": "c1a644220c426a5641397f531310bcbf19debe3ac4ac9f4cbe0e0ac43492ce46",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0729",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0D",
+            "width_bytes": 2,
+            "instruction_sha256": "de4ead833514e229dbe25190c075eec2c2323052fb5227fd850359414de8f75b",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD072C",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD11",
+            "width_bytes": 2,
+            "instruction_sha256": "d4c08c0e2b9e3525cb0d6f9a903202cdb5c6143b02f13c824016756a85224481",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD072F",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD15",
+            "width_bytes": 2,
+            "instruction_sha256": "223c8f9cfde21bf78b6b55e321ab0ddf501d428fe47f2f330f8ed9a93f9cb799",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0734",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0B",
+            "width_bytes": 2,
+            "instruction_sha256": "1b2831493476b12e0d06b8a3f9b45f4a23c935358872c65f6975fe3703451c19",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0737",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0F",
+            "width_bytes": 2,
+            "instruction_sha256": "19fac4573c0edce184257862c532738bc103507da73032454de24f804ce1517f",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD073A",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD13",
+            "width_bytes": 2,
+            "instruction_sha256": "fec96a14b7b21ae783fe20773c9d0278d20cf913657224a47a07408f3ff95d53",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD073D",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD17",
+            "width_bytes": 2,
+            "instruction_sha256": "a19777313f7bd0fae006b0a34c48f8a85732efbf239e860087855182a4d2b397",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0742",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD89",
+            "width_bytes": 2,
+            "instruction_sha256": "82af1f3aed59da92546ffee5b0afcb5cd8c75aa815730677becd1196298f6113",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0745",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8D",
+            "width_bytes": 2,
+            "instruction_sha256": "0dda8ffdc7d50dfe003de752fdfd6667447fcb445c0a090106a2960e3b6938b6",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0748",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD91",
+            "width_bytes": 2,
+            "instruction_sha256": "d6139c093e1c35bd532503febca798f98254231165a4df50545e080043afb2f3",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD074B",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD95",
+            "width_bytes": 2,
+            "instruction_sha256": "9f8c71ec8b9272abcc338f9a3815884ee784cdaf1812bd5e00d25fdc3ce4964b",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0750",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8B",
+            "width_bytes": 2,
+            "instruction_sha256": "a5fc36cd4a23d1a9b5f493289ae8bd5088f1e64ceb81e5940b1be2f62a3f8644",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0753",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8F",
+            "width_bytes": 2,
+            "instruction_sha256": "e50fdf5289f4616e63eaf4a372b3ac0677b41fddd4cb9022bafa4c6a7c46f5ac",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0756",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD93",
+            "width_bytes": 2,
+            "instruction_sha256": "e2e335f6fa62171b3a13174a503ceba33806b8f22884f2986707a2144ee7c78b",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0759",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD97",
+            "width_bytes": 2,
+            "instruction_sha256": "2f40fe88942f3c607b56421a6436946370f7d2132510f58c638a6b299c7d6505",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD077B",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$45",
+            "width_bytes": 2,
+            "instruction_sha256": "50b8792b60950af8721afe46f051e87163901747409a0efc5058bacb6bd62572",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0788",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$47",
+            "width_bytes": 2,
+            "instruction_sha256": "432ad892e14690c7fa024d780af1dfff4f124c97c181ce6f76a5c3bea2316dcf",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0791",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$49",
+            "width_bytes": 2,
+            "instruction_sha256": "e3772345a56ecfa47b1f4c51511247b470427c7e6875b8bb2a0569a6fc6a22ff",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD079A",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4B",
+            "width_bytes": 2,
+            "instruction_sha256": "936de6a2c2e5e03819e0a82018e03f60ba6f86dcb1805d1431aff1c8e81368fe",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD07A7",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4D",
+            "width_bytes": 2,
+            "instruction_sha256": "314b8d55dae558e1076768251bab7f28629dae69a9a28b7b537e8cb4f943e9e7",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD07B4",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4F",
+            "width_bytes": 2,
+            "instruction_sha256": "24fdb91c8e27e6c65add4d0d4b62969fa1aa5202b4036f1488bd654f8ff268d7",
+            "effective_address_and_aliasing_proved": false
+          }
+        ],
+        "mnemonic_context_counts": {
+          "ADC #": 1,
+          "ADC abs": 10,
+          "CLC": 11,
+          "CPX #": 1,
+          "JMP": 1,
+          "LDA abs": 6,
+          "LDA dp": 6,
+          "LDX #": 1,
+          "REP": 2,
+          "RTS": 1,
+          "SEP": 2,
+          "STA abs,X": 24,
+          "STA dp": 6,
+          "TAX": 1,
+          "TDC": 1,
+          "TXA": 1,
+          "branch": 1
+        },
+        "callee_register_value_preservation": false,
+        "nonstack_alias_closure": false,
+        "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+        "termination_proved": false,
+        "whole_nmi_bound": null
+      },
+      "new_frame_added_by_dispatch_jmp": 0,
+      "existing_scroll_jsr_frame_bytes": 2,
+      "conditional_scroll_call_bytes_including_existing_near_frame": 2,
+      "target_register_value_return_proved": false
+    },
+    {
+      "cell_index": 2,
+      "pointer": "$CD06C0",
+      "target": "$CD07E2",
+      "b0_aliasing_ca92_bytes": [
+        2,
+        130
+      ],
+      "conditional_target_closure": {
+        "entry": "$CD07E2",
+        "kind": "near",
+        "entry_m8": true,
+        "entry_x8": false,
+        "entry_irq_masked": true,
+        "status": "closed-direct-stack-width-control-flow",
+        "frontier": null,
+        "abstract_states": 81,
+        "instruction_contexts": 81,
+        "instruction_starts": 81,
+        "decoded_byte_intervals": [
+          {
+            "start": "$CD07E2",
+            "end_exclusive": "$CD088D",
+            "sha256": "c0b7ad0ef0170ed23381087a594094d01e022d4497083e17c10f3c07e181046e"
+          }
+        ],
+        "decoded_context_identity_sha256": "86656073faf6fcd684193a0a3cdc907cefd968f68510a781edad85ddf5e11da7",
+        "maximum_additional_bytes_below_callee_entry": 0,
+        "exploratory_observed_local_peak_not_a_bound": null,
+        "maximum_counted_bytes_including_root_call_frame": 2,
+        "peak_instruction_sites": [],
+        "return_width_states": [
+          {
+            "site": "$CD088C",
+            "m8": true,
+            "x8": false,
+            "irq_masked": true
+          }
+        ],
+        "matches_prior_return_width_premise": true,
+        "direct_calls": [],
+        "direct_far_jumps": [],
+        "syntactic_write_operands": [
+          {
+            "site": "$CD07F1",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$45",
+            "width_bytes": 2,
+            "instruction_sha256": "50b8792b60950af8721afe46f051e87163901747409a0efc5058bacb6bd62572",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD07FE",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$47",
+            "width_bytes": 2,
+            "instruction_sha256": "432ad892e14690c7fa024d780af1dfff4f124c97c181ce6f76a5c3bea2316dcf",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0807",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$49",
+            "width_bytes": 2,
+            "instruction_sha256": "e3772345a56ecfa47b1f4c51511247b470427c7e6875b8bb2a0569a6fc6a22ff",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0810",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4B",
+            "width_bytes": 2,
+            "instruction_sha256": "936de6a2c2e5e03819e0a82018e03f60ba6f86dcb1805d1431aff1c8e81368fe",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD081D",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4D",
+            "width_bytes": 2,
+            "instruction_sha256": "314b8d55dae558e1076768251bab7f28629dae69a9a28b7b537e8cb4f943e9e7",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD082A",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4F",
+            "width_bytes": 2,
+            "instruction_sha256": "24fdb91c8e27e6c65add4d0d4b62969fa1aa5202b4036f1488bd654f8ff268d7",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD082F",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$1A",
+            "width_bytes": 2,
+            "instruction_sha256": "be82119f6539eb25c91db0287a36f60f1b4bd175b1a812b4dab6909928a2b491",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0834",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$1C",
+            "width_bytes": 2,
+            "instruction_sha256": "ce26119ff97b1e0473476705de5ca674ef65a8764eeadb4785722a07739dee29",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0839",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$1E",
+            "width_bytes": 2,
+            "instruction_sha256": "242ad8bc30ba71cebe2a9acbfc78228dae8716d9d5bbbfb48b021aa0087c86ad",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD084B",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC89",
+            "width_bytes": 2,
+            "instruction_sha256": "032fd7538dc5a2b2546fc0ab09d38e7d0c43ac9d1ede54859c388057a3bb9147",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD085C",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD09",
+            "width_bytes": 2,
+            "instruction_sha256": "c1a644220c426a5641397f531310bcbf19debe3ac4ac9f4cbe0e0ac43492ce46",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD086D",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD89",
+            "width_bytes": 2,
+            "instruction_sha256": "82af1f3aed59da92546ffee5b0afcb5cd8c75aa815730677becd1196298f6113",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0872",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8B",
+            "width_bytes": 2,
+            "instruction_sha256": "f74f497d8514ad3a3cb4657c3eb4e0b615b589c772f27e5d0610bdbdb5e11fab",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0877",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0B",
+            "width_bytes": 2,
+            "instruction_sha256": "1b2831493476b12e0d06b8a3f9b45f4a23c935358872c65f6975fe3703451c19",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD087C",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8B",
+            "width_bytes": 2,
+            "instruction_sha256": "a5fc36cd4a23d1a9b5f493289ae8bd5088f1e64ceb81e5940b1be2f62a3f8644",
+            "effective_address_and_aliasing_proved": false
+          }
+        ],
+        "mnemonic_context_counts": {
+          "ADC abs": 10,
+          "ADC dp": 3,
+          "CLC": 13,
+          "CPX #": 1,
+          "INX": 4,
+          "LDA abs": 9,
+          "LDA abs,X": 3,
+          "LDA dp": 9,
+          "LDX #": 1,
+          "REP": 2,
+          "RTS": 1,
+          "SEP": 2,
+          "STA abs,X": 6,
+          "STA dp": 9,
+          "TDC": 1,
+          "branch": 7
+        },
+        "callee_register_value_preservation": false,
+        "nonstack_alias_closure": false,
+        "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+        "termination_proved": false,
+        "whole_nmi_bound": null
+      },
+      "new_frame_added_by_dispatch_jmp": 0,
+      "existing_scroll_jsr_frame_bytes": 2,
+      "conditional_scroll_call_bytes_including_existing_near_frame": 2,
+      "target_register_value_return_proved": false
+    },
+    {
+      "cell_index": 3,
+      "pointer": "$CD06C2",
+      "target": "$CD07B9",
+      "b0_aliasing_ca92_bytes": [
+        3,
+        131
+      ],
+      "conditional_target_closure": {
+        "entry": "$CD07B9",
+        "kind": "near",
+        "entry_m8": true,
+        "entry_x8": false,
+        "entry_irq_masked": true,
+        "status": "closed-direct-stack-width-control-flow",
+        "frontier": null,
+        "abstract_states": 103,
+        "instruction_contexts": 103,
+        "instruction_starts": 103,
+        "decoded_byte_intervals": [
+          {
+            "start": "$CD07B9",
+            "end_exclusive": "$CD088D",
+            "sha256": "05ee5be09193e2288514add1dd34789e17a142f13fb8676d5f178a96b80c611c"
+          }
+        ],
+        "decoded_context_identity_sha256": "cff3214ec70c8e5f9e12fc09acd0e76e97e1e255e602fa696ec588a9c1f299f7",
+        "maximum_additional_bytes_below_callee_entry": 2,
+        "exploratory_observed_local_peak_not_a_bound": null,
+        "maximum_counted_bytes_including_root_call_frame": 4,
+        "peak_instruction_sites": [
+          "$CD07B9"
+        ],
+        "return_width_states": [
+          {
+            "site": "$CD07E1",
+            "m8": true,
+            "x8": false,
+            "irq_masked": true
+          }
+        ],
+        "matches_prior_return_width_premise": true,
+        "direct_calls": [
+          {
+            "site": "$CD07B9",
+            "target": "$CD07E2",
+            "kind": "near"
+          }
+        ],
+        "direct_far_jumps": [],
+        "syntactic_write_operands": [
+          {
+            "site": "$CD07CE",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD89",
+            "width_bytes": 2,
+            "instruction_sha256": "82af1f3aed59da92546ffee5b0afcb5cd8c75aa815730677becd1196298f6113",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD07D3",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8B",
+            "width_bytes": 2,
+            "instruction_sha256": "a5fc36cd4a23d1a9b5f493289ae8bd5088f1e64ceb81e5940b1be2f62a3f8644",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD07F1",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$45",
+            "width_bytes": 2,
+            "instruction_sha256": "50b8792b60950af8721afe46f051e87163901747409a0efc5058bacb6bd62572",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD07FE",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$47",
+            "width_bytes": 2,
+            "instruction_sha256": "432ad892e14690c7fa024d780af1dfff4f124c97c181ce6f76a5c3bea2316dcf",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0807",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$49",
+            "width_bytes": 2,
+            "instruction_sha256": "e3772345a56ecfa47b1f4c51511247b470427c7e6875b8bb2a0569a6fc6a22ff",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0810",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4B",
+            "width_bytes": 2,
+            "instruction_sha256": "936de6a2c2e5e03819e0a82018e03f60ba6f86dcb1805d1431aff1c8e81368fe",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD081D",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4D",
+            "width_bytes": 2,
+            "instruction_sha256": "314b8d55dae558e1076768251bab7f28629dae69a9a28b7b537e8cb4f943e9e7",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD082A",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$4F",
+            "width_bytes": 2,
+            "instruction_sha256": "24fdb91c8e27e6c65add4d0d4b62969fa1aa5202b4036f1488bd654f8ff268d7",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD082F",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$1A",
+            "width_bytes": 2,
+            "instruction_sha256": "be82119f6539eb25c91db0287a36f60f1b4bd175b1a812b4dab6909928a2b491",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0834",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$1C",
+            "width_bytes": 2,
+            "instruction_sha256": "ce26119ff97b1e0473476705de5ca674ef65a8764eeadb4785722a07739dee29",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0839",
+            "mnemonic": "STA dp",
+            "encoded_operand": "$1E",
+            "width_bytes": 2,
+            "instruction_sha256": "242ad8bc30ba71cebe2a9acbfc78228dae8716d9d5bbbfb48b021aa0087c86ad",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD084B",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC89",
+            "width_bytes": 2,
+            "instruction_sha256": "032fd7538dc5a2b2546fc0ab09d38e7d0c43ac9d1ede54859c388057a3bb9147",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD085C",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD09",
+            "width_bytes": 2,
+            "instruction_sha256": "c1a644220c426a5641397f531310bcbf19debe3ac4ac9f4cbe0e0ac43492ce46",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD086D",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD89",
+            "width_bytes": 2,
+            "instruction_sha256": "82af1f3aed59da92546ffee5b0afcb5cd8c75aa815730677becd1196298f6113",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0872",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BC8B",
+            "width_bytes": 2,
+            "instruction_sha256": "f74f497d8514ad3a3cb4657c3eb4e0b615b589c772f27e5d0610bdbdb5e11fab",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD0877",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD0B",
+            "width_bytes": 2,
+            "instruction_sha256": "1b2831493476b12e0d06b8a3f9b45f4a23c935358872c65f6975fe3703451c19",
+            "effective_address_and_aliasing_proved": false
+          },
+          {
+            "site": "$CD087C",
+            "mnemonic": "STA abs,X",
+            "encoded_operand": "$BD8B",
+            "width_bytes": 2,
+            "instruction_sha256": "a5fc36cd4a23d1a9b5f493289ae8bd5088f1e64ceb81e5940b1be2f62a3f8644",
+            "effective_address_and_aliasing_proved": false
+          }
+        ],
+        "mnemonic_context_counts": {
+          "ADC abs": 10,
+          "ADC dp": 4,
+          "CLC": 14,
+          "CPX #": 1,
+          "INX": 8,
+          "JSR": 1,
+          "LDA abs": 9,
+          "LDA abs,X": 4,
+          "LDA dp": 12,
+          "LDX #": 1,
+          "REP": 4,
+          "RTS": 2,
+          "SEP": 4,
+          "STA abs,X": 8,
+          "STA dp": 9,
+          "TDC": 2,
+          "branch": 10
+        },
+        "callee_register_value_preservation": false,
+        "nonstack_alias_closure": false,
+        "premise_nonstack_writes_do_not_modify_stack_or_saved_status": true,
+        "termination_proved": false,
+        "whole_nmi_bound": null
+      },
+      "new_frame_added_by_dispatch_jmp": 0,
+      "existing_scroll_jsr_frame_bytes": 2,
+      "conditional_scroll_call_bytes_including_existing_near_frame": 4,
+      "target_register_value_return_proved": false
+    }
+  ],
+  "premises": [
+    "Native M1/X0/I1 mode-body near entry; D=0 and DBR=0 come from the separately reproduced mode-input prefix.",
+    "Unknown memory loads range over every byte; conditional branches take both edges, without flag feasibility pruning.",
+    "Ordinary writable typed stack; no nonstack CPU write or DMA alias modifies stack frames or the pinned instruction bytes.",
+    "No intervening asynchronous handler or externally changing architectural registers; the decoder refuses SP reassignment and every D-changing instruction.",
+    "Caller proof stops at CD0907 before the external-pad route; only paths reaching CD0929 before that cut are claimed.",
+    "A selected CA92 byte among the eight listed aliases is an additional explicit premise for four-target composition."
+  ],
+  "global_ca92_producer_domain_proved": false,
+  "complete_table_extent_proved": false,
+  "callee_memory_read_values_proved": false,
+  "nonstack_alias_closure": false,
+  "dma_effects_proved": false,
+  "termination_proved": false,
+  "timing_proved": false,
+  "asynchronous_entry_proved": false,
+  "whole_nmi_stack_bound": null,
+  "production_approval": false,
+  "new_native_execution": false,
+  "prerequisites": {
+    "closure": {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    "mode_inputs": {
+      "path": "tools/audit_schala_nmi_mode_inputs_v1.py",
+      "size": 13792,
+      "sha256": "2372dd5c829f889ca0069227d1d4322726ce2c893c4e55cdf1471a3f0f28614f"
+    },
+    "closure_reference": {
+      "path": "references/schala_package_normal_nmi_closure_v2.json",
+      "size": 321839,
+      "sha256": "413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242"
+    },
+    "mode_input_reference": {
+      "path": "references/schala_nmi_mode_inputs_v1.json",
+      "size": 138037,
+      "sha256": "dc715f6726e482a00e649d15252b5ca42f933f82198d8520c78d7867f3932530"
+    },
+    "mode_bodies": {
+      "path": "tools/audit_schala_nmi_mode_bodies_v1.py",
+      "size": 13937,
+      "sha256": "9b685d63e68153d1c7d56213af5b1211237c3f36d067046a9e854ae5beb34187"
+    },
+    "mode_body_tests": {
+      "path": "tests/test_schala_nmi_mode_bodies_v1.py",
+      "size": 8308,
+      "sha256": "3bccabc53eda3357079a2db236c37cbd81e1cf139c6e5c5ec913ee0facb38833"
+    },
+    "mode_body_reference": {
+      "path": "references/schala_nmi_mode_bodies_v1.json",
+      "size": 160900,
+      "sha256": "f3057c1cf9d0b354a318e3e67b2c760fdf9d8bfc49784d4efed344ba997a8d85"
+    },
+    "ce_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CE.asm",
+      "size": 67102,
+      "sha256": "23b885667ad4f454ed95f4d441253378cb40964c3e2d543120f5f9c1288a35ad"
+    },
+    "cf_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CF.asm",
+      "size": 300449,
+      "sha256": "f2783556f4963cbeb75b320c996a3fd8e5da6d435009aa8c1516086c65ed02a6"
+    }
+  },
+  "reproduced_mode_body_reference_sha256": "f3057c1cf9d0b354a318e3e67b2c760fdf9d8bfc49784d4efed344ba997a8d85",
+  "source_identities": [
+    {
+      "path": "tools/audit_schala_nmi_scroll_inputs_v1.py",
+      "size": 19678,
+      "sha256": "4153a240d3a1fa750dd0ac67626776e061ceb049f03b9fce54fc08da8e31c686"
+    },
+    {
+      "path": "tests/test_schala_nmi_scroll_inputs_v1.py",
+      "size": 9965,
+      "sha256": "f4083eb152d606a39511a011e7454384c237f3ece149d786202bd718c328a3c9"
+    }
+  ],
+  "reused_underlying_source_identities": [
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CD.asm",
+      "size": 474851,
+      "sha256": "0d230620c6accf311c0588e2fefaf3bcc48b0d42575f3745fec3a402a6ca19fb"
+    },
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_D1.asm",
+      "size": 189600,
+      "sha256": "020f6df9efd22cc12a35608da6523b5d2e5d76d965d94567e0b74d50ab9eacea"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_closure_v2.json",
+      "size": 321839,
+      "sha256": "413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_v1.json",
+      "size": 71372,
+      "sha256": "27dd6f602781b83107bd7ab9072f1704e26bb39433713a3188679114db3b4f2c"
+    },
+    {
+      "path": "tests/test_schala_nmi_mode_inputs_v1.py",
+      "size": 7189,
+      "sha256": "4a1be7a22359d6f9388a36b6c92af937574592525734dc3d092b7df843839e2c"
+    },
+    {
+      "path": "tests/test_schala_package_normal_nmi_closure_v2.py",
+      "size": 8449,
+      "sha256": "ed5c9cfc7960eeac0a0ca27c97cb462b67b0e518a9b9164d03a8ada3ae0b53fb"
+    },
+    {
+      "path": "tools/audit_schala_nmi_mode_inputs_v1.py",
+      "size": 13792,
+      "sha256": "2372dd5c829f889ca0069227d1d4322726ce2c893c4e55cdf1471a3f0f28614f"
+    },
+    {
+      "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+      "size": 13647,
+      "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_v1.py",
+      "size": 16826,
+      "sha256": "81a145b4ec078d5cf22ec5680cdfb66d427f876f40eefd0a50af432f8b9f51a9"
+    }
+  ],
+  "primary_instruction_sources": [
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f",
+      "size_bytes": 20483,
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd",
+      "size_bytes": 27673,
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h"
+    }
+  ],
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_schala_nmi_scroll_inputs_v1.py"
+  ],
+  "serialization": "UTF-8 indented JSON, LF, one trailing newline"
+}

@@ -913,6 +913,113 @@
           "sha256": "b6d5bea5cefce016f50176eb373ee4b0df41118d439163f8218663186f59616e"
         }
       ]
+    },
+    {
+      "commit": "60bda0f9260633102db14c6dd43044edf979e616",
+      "verified_at_utc": "2026-09-08T20:10:28.089678+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 35950,
+          "sha256": "045dc62b8a2da2993cb7d529c118474e1336a43afc567899d87e333654d3ab6e"
+        },
+        {
+          "path": "README.md",
+          "size": 50078,
+          "sha256": "788962eef5cd8c5008d2efd3a2b7880c1536f6517c34cce5145c1d19978a06a5"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 62138,
+          "sha256": "71df57a193d5704c9d485f0308c3b77e3f3b4e835adba9033658a50fb9aea330"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 199955,
+          "sha256": "b9ce9388a158ba1cb20e009b4c8045dce6a0a71e685ab923c6b1404bd108a77b"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 8492,
+          "sha256": "39a0d51ecf887309cfa0f0f4a2dd9d65ec8c27bf20302e7755d767a6f4b82cdb"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 35563,
+          "sha256": "b27062013bdd5e85827de1308fce6c98d253d635a88b961e1783887653af5784"
+        },
+        {
+          "path": "tools/run_schala_package_helper_v4_timing_calibration.py",
+          "size": 22783,
+          "sha256": "69103c7dfc7fa88b5d89f78b03dfffa802dc32d11eeea3746cb2dd2dc003a40e"
+        },
+        {
+          "path": "tools/mesen_schala_package_helper_v4_timing_calibration.lua",
+          "size": 16105,
+          "sha256": "371ed979e7fd0ca82188b3ab622da32bcc4c43be0a0a148fb7da61981ffb5872"
+        },
+        {
+          "path": "tools/collect_schala_package_helper_v4_timing_calibration.py",
+          "size": 12944,
+          "sha256": "b17211132e84f5a2cd27cc6ad38c043461270c9f98d2852c4b8ac78430fc0794"
+        },
+        {
+          "path": "tests/test_schala_package_helper_v4_timing_calibration.py",
+          "size": 12400,
+          "sha256": "527d8501744f0dbfc535bc0eaedad75e7f892d55351ed72950f109f3fc81e0e8"
+        },
+        {
+          "path": "docs/schala_package_helper_v4_timing_calibration.md",
+          "size": 10174,
+          "sha256": "85aad0ac8b7a5fc45f2f0d797e21ba143f67e497d23108dc3a8a8a07c3fb0981"
+        },
+        {
+          "path": "references/schala_package_helper_v4_timing_calibration.json",
+          "size": 98917,
+          "sha256": "8efb143221fa29fbd7e1e06ff077d1675050bc618cd08664270ff913d334dbfb"
+        },
+        {
+          "path": "tools/audit_schala_nmi_mode_bodies_v1.py",
+          "size": 13937,
+          "sha256": "9b685d63e68153d1c7d56213af5b1211237c3f36d067046a9e854ae5beb34187"
+        },
+        {
+          "path": "tests/test_schala_nmi_mode_bodies_v1.py",
+          "size": 8308,
+          "sha256": "3bccabc53eda3357079a2db236c37cbd81e1cf139c6e5c5ec913ee0facb38833"
+        },
+        {
+          "path": "docs/schala_nmi_mode_bodies_v1.md",
+          "size": 11840,
+          "sha256": "33cacacf724e8eb3e28fa1c55ce3fba5525ffaa80626d3fb9a329e45ef419c8c"
+        },
+        {
+          "path": "references/schala_nmi_mode_bodies_v1.json",
+          "size": 160900,
+          "sha256": "f3057c1cf9d0b354a318e3e67b2c760fdf9d8bfc49784d4efed344ba997a8d85"
+        },
+        {
+          "path": "tools/audit_nmi_dispatch_witness_v1.py",
+          "size": 13445,
+          "sha256": "2795e5ce3c7acc9be0edbf22873cea2cb5e3fe08e4118bc16d2cf558f97cf59c"
+        },
+        {
+          "path": "tests/test_nmi_dispatch_witness_v1.py",
+          "size": 6964,
+          "sha256": "a127ecf3fe4c706057e6da3523a5226f7f1bcd794129dcfc0aebafa5b467cc9b"
+        },
+        {
+          "path": "docs/schala_nmi_dispatch_witness_v1.md",
+          "size": 5405,
+          "sha256": "c92de1dd3dd1e37b450c87bb020339b6dec7b14e61ae4405a92afc91ea34f1d0"
+        },
+        {
+          "path": "references/nmi_dispatch_witness_v1.json",
+          "size": 9693,
+          "sha256": "e84739ef37b32812491b9166bf1f706a8d3490a3bf1810b3a4296c5305f47e20"
+        }
+      ]
     }
   ]
 }

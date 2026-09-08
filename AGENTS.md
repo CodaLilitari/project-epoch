@@ -319,6 +319,17 @@ These are separate namespaces. Never conflate them.
   not prove that the scheduled interrupt actually occurs in VBlank. The
   calibration report/source/reference are frozen and guarded by v4; append
   later review receipts externally rather than changing those pinned bytes.
+- The separate scroll-input value proof inlines all relevant direct callees
+  from `$CD088D` with unknown B, D0 and DBR0. Paths reaching `$CD0929` before
+  the explicit `$CD0907` cut have B0/D0/DBR7E and the exact near frame.
+  The four scroll cells have conditional local stack contracts; `$CA92`
+  values, the cut route and target-return values remain separate obligations.
+- The scene-handler conditional census covers the 122 reviewed B0 cells and
+  121 distinct targets. A separately versioned decoder closes 114 targets;
+  seven remain at indirect dispatches, including the shared `$B5/$B6` target.
+  All closed returns have M1/X0/I1. The largest closed handler's 16 additional
+  bytes are not a whole-dispatcher or NMI bound. B/D/DBR return values, legal
+  domains and physical memory/stack aliases remain open in that packet.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
   ten-region census retains 44 original callee frontiers and explicit conditional

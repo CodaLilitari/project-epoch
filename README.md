@@ -65,6 +65,12 @@ stack/control-flow branch while locating the other's open scroll dispatcher.
 The separate [ROM timing calibration](docs/schala_package_helper_v4_timing_calibration.md)
 has two identical 22-case traces; its 92 inferred start times feed the
 combined ROM/NMI matrix, which is still under evaluation.
+The [scroll caller proof](docs/schala_nmi_scroll_inputs_v1.md) now checks the
+intervening callees before establishing B0/D0/DBR7E at its bounded call path.
+The [scene-handler census](docs/schala_scene_handler_closure_v1.md) closes
+114 of 121 distinct reviewed targets under typed-stack and register-width
+premises, leaving seven explicit indirect frontiers and all return-value
+and memory-alias obligations visible.
 No game hook, production allocation, high production selector or logical PC
 `$07` is installed. Original cartridge tests and vanilla observations have
 separate evidence scopes.
