@@ -37,6 +37,7 @@ runtime trace.
 | MAP-006 | 2026-09-08 | Project architecture instruction narrowed | Cross-bank calls versus tail transfers retaining a near-call frame |
 | MAP-007 | 2026-09-08 | External cancellation/refund annotation contradicted | Shared queued-Tech success/failure finalization |
 | MAP-008 | 2026-09-08 | External instruction-width decode contradicted | IRQ-path 16-bit immediate operands versus apparent WRAM writes |
+| MAP-009 | 2026-09-08 | External strict-threshold annotation contradicted | Black Hole nonboss comparison equality boundary |
 
 ## MAP-001 — exact bank end is not an out-of-range CPU register
 
@@ -306,3 +307,44 @@ binds the exact corpus, source, and results.
 **Evidence level:** `verified-static` within the bounded, non-nested IRQ CPU
 closure. Data-dependent DMA sources, the complete NMI tree, interrupt nesting,
 and global stack headroom remain separate obligations.
+
+## MAP-009 — Black Hole's nonboss comparison accepts equality
+
+**Recorded:** 2026-09-08. This concerns a battle-effect comparison, separately
+from package selector identity and the boss-immunity path.
+
+**Wrong source:**
+[`dscotton/ct_disassembly` at `eeae27ac`, `bank_C1.asm:30747-30754`](https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm#L30747-L30754)
+describes success as a roll strictly below the threshold. Its
+[line 30767](https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm#L30767)
+includes equality in the survivor branch.
+
+**Corrected result:** the unsigned comparison succeeds when the roll is less
+than or equal to the threshold. `$C1:F144` compares the roll with direct-page
+`$1C`; `$C1:F146` takes equality directly to success at `$C1:F14A`, before
+the carry-set branch at `$C1:F148` can select the survivor path. For example,
+roll 40 and threshold 40 set both zero and carry, and the earlier equality
+branch wins. This audit does not independently derive the threshold parameter
+or establish the RNG distribution, so it makes no probability claim.
+
+**Evidence and provenance:** the exact six-byte half-open comparison span
+`$C1:F144-$C1:F14A` has SHA-256
+`c6f99397ead976a855cd7f8dc2c5fb643d6370fdb3be3efb16228355e1499859`.
+The larger 149-byte `$C1:F132-$C1:F1C7` span has SHA-256
+`f94e11174a1a852b30352a765aedddd47195e9324fb71e00e19be4c9fd0c89aa`.
+The pinned annotation file has SHA-256
+`298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa`.
+The [read-only audit](../tools/audit_package_black_hole_threshold_v1.py)
+verifies eight selected instructions and all 65,536 original byte-pair
+comparison cases; its [metadata reference](../references/package_black_hole_threshold_v1.json)
+reproduces exactly from the pinned canonical ROM.
+
+**Evidence level:** `verified-static`. The separate repeated
+[Black Hole/Spekkio observation](schala_package_resolver_alternate_v1.md)
+uses boss immunity, which bypasses the RNG comparison. It proves the alternate
+package path but is not a runtime equality-boundary test.
+
+**Consequence:** reproduce the inclusive predicate in future effect models
+and boundary tests. Do not misclassify the normally completed immune-target
+action as transaction cancellation, and do not infer a Schala effect binding
+or an approved high selector from this vanilla observation.

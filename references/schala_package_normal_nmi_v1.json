@@ -1,0 +1,2226 @@
+{
+  "schema": "project-epoch-package-normal-nmi-frontiers-v1",
+  "evidence_level": "verified-static",
+  "status": "pass-busy-fast-path-and-conditional-frontier-census-full-nmi-open",
+  "canonical_rom_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+  "source_identities": [
+    {
+      "path": "tools/audit_schala_package_normal_nmi_v1.py",
+      "sha256": "81a145b4ec078d5cf22ec5680cdfb66d427f876f40eefd0a50af432f8b9f51a9"
+    },
+    {
+      "path": "tests/test_schala_package_normal_nmi_v1.py",
+      "sha256": "cf63058669bb8b13dd0f39764c31728beb612af4141746a89150130bfe2fced5"
+    },
+    {
+      "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+      "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+    }
+  ],
+  "busy_fast_path": [
+    {
+      "entry_m8": false,
+      "entry_x8": false,
+      "instruction_count": 24,
+      "instruction_addresses": [
+        "$D1E77C",
+        "$D1E77E",
+        "$D1E77F",
+        "$D1E780",
+        "$D1E781",
+        "$D1E782",
+        "$D1E783",
+        "$D1E786",
+        "$D1E787",
+        "$D1E788",
+        "$D1E78A",
+        "$D1E78E",
+        "$D1E792",
+        "$D1E794",
+        "$D1E798",
+        "$D1E79A",
+        "$D1E79C",
+        "$D1E891",
+        "$D1E893",
+        "$D1E894",
+        "$D1E895",
+        "$D1E896",
+        "$D1E897",
+        "$D1E898"
+      ],
+      "maximum_depth_including_hardware": 13,
+      "software_depth": 9,
+      "register_bytes_preserved": [
+        "A including B",
+        "X",
+        "Y",
+        "D",
+        "DBR"
+      ],
+      "incoming_d_and_dbr": "unrestricted symbolic register values",
+      "stack_and_hardware_return_frame": "software saves balanced; original four hardware bytes untouched",
+      "nonstack_reads": [
+        "$004210",
+        "$00007F"
+      ],
+      "nonstack_writes": [
+        {
+          "address": "$00420C",
+          "value": 0
+        },
+        {
+          "address": "$004200",
+          "value": 161
+        }
+      ],
+      "premise": "native interrupt entry; physical $00007F nonzero when read; no additional asynchronous interrupt"
+    },
+    {
+      "entry_m8": false,
+      "entry_x8": true,
+      "instruction_count": 24,
+      "instruction_addresses": [
+        "$D1E77C",
+        "$D1E77E",
+        "$D1E77F",
+        "$D1E780",
+        "$D1E781",
+        "$D1E782",
+        "$D1E783",
+        "$D1E786",
+        "$D1E787",
+        "$D1E788",
+        "$D1E78A",
+        "$D1E78E",
+        "$D1E792",
+        "$D1E794",
+        "$D1E798",
+        "$D1E79A",
+        "$D1E79C",
+        "$D1E891",
+        "$D1E893",
+        "$D1E894",
+        "$D1E895",
+        "$D1E896",
+        "$D1E897",
+        "$D1E898"
+      ],
+      "maximum_depth_including_hardware": 13,
+      "software_depth": 9,
+      "register_bytes_preserved": [
+        "A including B",
+        "X",
+        "Y",
+        "D",
+        "DBR"
+      ],
+      "incoming_d_and_dbr": "unrestricted symbolic register values",
+      "stack_and_hardware_return_frame": "software saves balanced; original four hardware bytes untouched",
+      "nonstack_reads": [
+        "$004210",
+        "$00007F"
+      ],
+      "nonstack_writes": [
+        {
+          "address": "$00420C",
+          "value": 0
+        },
+        {
+          "address": "$004200",
+          "value": 161
+        }
+      ],
+      "premise": "native interrupt entry; physical $00007F nonzero when read; no additional asynchronous interrupt"
+    },
+    {
+      "entry_m8": true,
+      "entry_x8": false,
+      "instruction_count": 24,
+      "instruction_addresses": [
+        "$D1E77C",
+        "$D1E77E",
+        "$D1E77F",
+        "$D1E780",
+        "$D1E781",
+        "$D1E782",
+        "$D1E783",
+        "$D1E786",
+        "$D1E787",
+        "$D1E788",
+        "$D1E78A",
+        "$D1E78E",
+        "$D1E792",
+        "$D1E794",
+        "$D1E798",
+        "$D1E79A",
+        "$D1E79C",
+        "$D1E891",
+        "$D1E893",
+        "$D1E894",
+        "$D1E895",
+        "$D1E896",
+        "$D1E897",
+        "$D1E898"
+      ],
+      "maximum_depth_including_hardware": 13,
+      "software_depth": 9,
+      "register_bytes_preserved": [
+        "A including B",
+        "X",
+        "Y",
+        "D",
+        "DBR"
+      ],
+      "incoming_d_and_dbr": "unrestricted symbolic register values",
+      "stack_and_hardware_return_frame": "software saves balanced; original four hardware bytes untouched",
+      "nonstack_reads": [
+        "$004210",
+        "$00007F"
+      ],
+      "nonstack_writes": [
+        {
+          "address": "$00420C",
+          "value": 0
+        },
+        {
+          "address": "$004200",
+          "value": 161
+        }
+      ],
+      "premise": "native interrupt entry; physical $00007F nonzero when read; no additional asynchronous interrupt"
+    },
+    {
+      "entry_m8": true,
+      "entry_x8": true,
+      "instruction_count": 24,
+      "instruction_addresses": [
+        "$D1E77C",
+        "$D1E77E",
+        "$D1E77F",
+        "$D1E780",
+        "$D1E781",
+        "$D1E782",
+        "$D1E783",
+        "$D1E786",
+        "$D1E787",
+        "$D1E788",
+        "$D1E78A",
+        "$D1E78E",
+        "$D1E792",
+        "$D1E794",
+        "$D1E798",
+        "$D1E79A",
+        "$D1E79C",
+        "$D1E891",
+        "$D1E893",
+        "$D1E894",
+        "$D1E895",
+        "$D1E896",
+        "$D1E897",
+        "$D1E898"
+      ],
+      "maximum_depth_including_hardware": 13,
+      "software_depth": 9,
+      "register_bytes_preserved": [
+        "A including B",
+        "X",
+        "Y",
+        "D",
+        "DBR"
+      ],
+      "incoming_d_and_dbr": "unrestricted symbolic register values",
+      "stack_and_hardware_return_frame": "software saves balanced; original four hardware bytes untouched",
+      "nonstack_reads": [
+        "$004210",
+        "$00007F"
+      ],
+      "nonstack_writes": [
+        {
+          "address": "$00420C",
+          "value": 0
+        },
+        {
+          "address": "$004200",
+          "value": 161
+        }
+      ],
+      "premise": "native interrupt entry; physical $00007F nonzero when read; no additional asynchronous interrupt"
+    }
+  ],
+  "conditional_regions": [
+    {
+      "role": "normal_handler_shell",
+      "span": [
+        "$D1E77C",
+        "$D1E899"
+      ],
+      "span_sha256": "3c6995513ccffd360ecba0594ea3c16c72104cac046999a673f72fc3c8932b4c",
+      "entry_depth_premise": 4,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 121,
+      "decoded_width_contexts": 121,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 10,
+      "maximum_local_saved_plus_one_call_frame": 12,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 3,
+      "calls": [
+        {
+          "site": "$D1E7DA",
+          "target_or_table": "$CD0C95",
+          "kind": "long",
+          "instruction_sha256": "51d2072ab733792f8fe27c32507f7145b4822812bd1e8418dd61f08f987c0c15",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 9,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 16,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$D1E7E3",
+          "target_or_table": "$CD0C89",
+          "kind": "long",
+          "instruction_sha256": "59356af54ee9477a94555666d45ac7cdbca562993dba4838c456c11ae7b7f103",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 9,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 16,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$D1E841",
+          "target_or_table": "$D1FE71",
+          "kind": "long",
+          "instruction_sha256": "63642c422e7f4bd8b55b58c38bb17318a13ecc3a1fabf3e9e0e3dadea5f4e093",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 9,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 16,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$D1E78A",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420C",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E794",
+          "mnemonic": "STA long",
+          "encoded_operand": "$4200",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E79F",
+          "mnemonic": "INC dp",
+          "encoded_operand": "$7F",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7AC",
+          "mnemonic": "MVN",
+          "encoded_operand": "$7E7E",
+          "width_bytes": null,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7B2",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$BE8D",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7B8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$BE8F",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7BE",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$BE95",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7C4",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$BE97",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7CC",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420C",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7D4",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$2100",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7D7",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$2115",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7EA",
+          "mnemonic": "STX dp",
+          "encoded_operand": "$7C",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7F1",
+          "mnemonic": "DEC abs",
+          "encoded_operand": "$CCEB",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E7FD",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CE17",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E800",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CD1D",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E803",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CCEC",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E806",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CCED",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E809",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CA24",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E831",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CD02",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E836",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CD03",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E83B",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CD02",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E83E",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CD03",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E853",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CD02",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E856",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CD03",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E860",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CE19",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E877",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CD02",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E885",
+          "mnemonic": "MVN",
+          "encoded_operand": "$7E7E",
+          "width_bytes": null,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E88B",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$7F",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$D1E88D",
+          "mnemonic": "STA long",
+          "encoded_operand": "$7ECA20",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [
+        {
+          "site": "$D1E78E",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$4210"
+        },
+        {
+          "site": "$D1E798",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$7F"
+        },
+        {
+          "site": "$D1E7AF",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$BE89"
+        },
+        {
+          "site": "$D1E7B5",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$BE8B"
+        },
+        {
+          "site": "$D1E7BB",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$BE91"
+        },
+        {
+          "site": "$D1E7C1",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$BE93"
+        },
+        {
+          "site": "$D1E7CF",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$213F"
+        },
+        {
+          "site": "$D1E7DE",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD02"
+        },
+        {
+          "site": "$D1E7E7",
+          "mnemonic": "LDX dp",
+          "encoded_operand": "$7C"
+        },
+        {
+          "site": "$D1E7EC",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CCED"
+        },
+        {
+          "site": "$D1E7F6",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD1D"
+        },
+        {
+          "site": "$D1E80C",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$7E"
+        },
+        {
+          "site": "$D1E812",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD27"
+        },
+        {
+          "site": "$D1E819",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CE16"
+        },
+        {
+          "site": "$D1E81E",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$4219"
+        },
+        {
+          "site": "$D1E826",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD03"
+        },
+        {
+          "site": "$D1E82B",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD02"
+        },
+        {
+          "site": "$D1E845",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$CD3FFF"
+        },
+        {
+          "site": "$D1E84B",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$4218"
+        },
+        {
+          "site": "$D1E85B",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD03"
+        },
+        {
+          "site": "$D1E863",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CE19"
+        },
+        {
+          "site": "$D1E86A",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$4218"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "mode_dispatch",
+      "span": [
+        "$CD0C95",
+        "$CD0C9D"
+      ],
+      "span_sha256": "ef7128b199049373d36aac5b3e2aeb852edbf0e0e04eea2f5ef7b1c1b3c69a0d",
+      "entry_depth_premise": 16,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 5,
+      "decoded_width_contexts": 5,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 0,
+      "maximum_local_saved_plus_one_call_frame": 2,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 1,
+      "calls": [
+        {
+          "site": "$CD0C99",
+          "target_or_table": "$CD0C83",
+          "kind": "indexed-near",
+          "instruction_sha256": "2211a3e399f5889356ce55a83b35c6e0d5eee5120462744bd136dcfeca9e3101",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 18,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [],
+      "syntactic_load_operands": [
+        {
+          "site": "$CD0C95",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$7E"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "regular_mode_body",
+      "span": [
+        "$CD088D",
+        "$CD09CE"
+      ],
+      "span_sha256": "375ef0e5bacfa712d55a80ac5fd75dd04c5206aa9e3d055cb10bdf7a85f5cf55",
+      "entry_depth_premise": 18,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 122,
+      "decoded_width_contexts": 122,
+      "balanced_conditional_exits": 2,
+      "maximum_local_saved_bytes": 2,
+      "maximum_local_saved_plus_one_call_frame": 3,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 24,
+      "calls": [
+        {
+          "site": "$CD0893",
+          "target_or_table": "$CD09CE",
+          "kind": "long",
+          "instruction_sha256": "6518098438049b903ccbaf1c72915de99530a5838168b1396b7a5836e922cdb3",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD089B",
+          "target_or_table": "$CD3EB4",
+          "kind": "near",
+          "instruction_sha256": "c27266780176e3da5b7bd37e2b6dc6d25d2673028f5c49ab20ce3dd49a9dad62",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD08A9",
+          "target_or_table": "$CD0607",
+          "kind": "near",
+          "instruction_sha256": "bd7ba4191a6e2b8aabc99d73c49668f7d91da26133947dbac34ab8e885d5c907",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD08AC",
+          "target_or_table": "$CD3EB4",
+          "kind": "near",
+          "instruction_sha256": "c27266780176e3da5b7bd37e2b6dc6d25d2673028f5c49ab20ce3dd49a9dad62",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD08B4",
+          "target_or_table": "$C10009",
+          "kind": "long",
+          "instruction_sha256": "d67f01bdbaafbab39397088757e83926badd2a04abc1a45d780a0f16e944be1c",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD08F1",
+          "target_or_table": "$CD0AEE",
+          "kind": "near",
+          "instruction_sha256": "29eb50d8c3adb0cc00f5ca2952ee9713bb1e2f9b003ad77930360835f2ac8634",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 1,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD08F5",
+          "target_or_table": "$CD05B2",
+          "kind": "near",
+          "instruction_sha256": "3248b5b767c53762c070f427e72796779e39f1cd97402d89b05797c56ba085b7",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD08F8",
+          "target_or_table": "$CD05B2",
+          "kind": "near",
+          "instruction_sha256": "3248b5b767c53762c070f427e72796779e39f1cd97402d89b05797c56ba085b7",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD091A",
+          "target_or_table": "$C28002",
+          "kind": "long",
+          "instruction_sha256": "e66d906c91c4456a24119b41d67d1d96c0c188b145eef29684f02b911463918d",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD091E",
+          "target_or_table": "$CD0340",
+          "kind": "near",
+          "instruction_sha256": "1de9825abd10d392313d4905e2879e6a5d18e26fb5ee38ab95d8cd5ca34287a6",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0929",
+          "target_or_table": "$CD06B4",
+          "kind": "near",
+          "instruction_sha256": "0104dab5bf255382af99b9db10c828b649fe61110940c984c5579b4e3a02047d",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD092C",
+          "target_or_table": "$CD0B51",
+          "kind": "near",
+          "instruction_sha256": "66a8320bf17149ae8c55218af64fbdd2b141fdb5048c6842f82f1034fce587bf",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD097A",
+          "target_or_table": "$CEE18E",
+          "kind": "long",
+          "instruction_sha256": "332626c9fc7fe30f8ecd7e841767776206fc75367c42d1ef8120cccc5a17cf64",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0985",
+          "target_or_table": "$D1EA4B",
+          "kind": "long",
+          "instruction_sha256": "6ac959ca038406cc536c412710ab766a20276223cff55fe7bd51d378e644c150",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0993",
+          "target_or_table": "$CEF066",
+          "kind": "long",
+          "instruction_sha256": "995bdebf9d3517b9dd94a1af4b9b615c34856c225f6edec6451f03c3adf13303",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0997",
+          "target_or_table": "$C1000C",
+          "kind": "long",
+          "instruction_sha256": "b012e4436d9a0c75a8c728a8f09e73703c8aae05a974ba4d33c97aa10143ddcb",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09AC",
+          "target_or_table": "$CD3B82",
+          "kind": "near",
+          "instruction_sha256": "458c3768a854c8c4b5843da80ad1e7420be18dcdafcd8d1117da19023d288ec5",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09AF",
+          "target_or_table": "$CD1609",
+          "kind": "near",
+          "instruction_sha256": "3b3388497637beae179ca124ecf927b9afd0470dd4efaf749e2a3d589db2ed7f",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09B8",
+          "target_or_table": "$CD0B1E",
+          "kind": "near",
+          "instruction_sha256": "fe0b6babd90c015d12b2e461c9a4af458b7d281de72a6b8820fb59cd5e6202c6",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09BB",
+          "target_or_table": "$D1F426",
+          "kind": "long",
+          "instruction_sha256": "d2de03d796f9fb8e4d7114b99a133de12fc240ee484c6fe81d52e4f761f97d58",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09BF",
+          "target_or_table": "$FDFFF7",
+          "kind": "long",
+          "instruction_sha256": "8ca144532cc52ee7da45b066ab1bfa334097fee7a9fa8e33cd3fefd7d7d555aa",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09C3",
+          "target_or_table": "$CD0ADE",
+          "kind": "near",
+          "instruction_sha256": "ba1760bfcb4f740a290089188bb9393bbce3fb610a05f14fe312d6ca5dc53289",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09C6",
+          "target_or_table": "$C28002",
+          "kind": "long",
+          "instruction_sha256": "e66d906c91c4456a24119b41d67d1d96c0c188b145eef29684f02b911463918d",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD09CA",
+          "target_or_table": "$CD0340",
+          "kind": "near",
+          "instruction_sha256": "1de9825abd10d392313d4905e2879e6a5d18e26fb5ee38ab95d8cd5ca34287a6",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD08BB",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2123",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08C2",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2124",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08C9",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2125",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08D0",
+          "mnemonic": "STA long",
+          "encoded_operand": "$212A",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08D7",
+          "mnemonic": "STA long",
+          "encoded_operand": "$212B",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08DE",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$BE93",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08E4",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$C151",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08EA",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$C153",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD08FE",
+          "mnemonic": "STA long",
+          "encoded_operand": "$420C",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0916",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2100",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0925",
+          "mnemonic": "STA long",
+          "encoded_operand": "$2100",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0947",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CA21",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD094A",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$EC",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0964",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CA21",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0967",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$EC",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD096B",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CA23",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0970",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA23",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09B5",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$A028",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [
+        {
+          "site": "$CD088D",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$7ECE0F"
+        },
+        {
+          "site": "$CD08A4",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA1E"
+        },
+        {
+          "site": "$CD08AF",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD02"
+        },
+        {
+          "site": "$CD08B8",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$C861"
+        },
+        {
+          "site": "$CD08BF",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$C862"
+        },
+        {
+          "site": "$CD08C6",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$C863"
+        },
+        {
+          "site": "$CD08CD",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$C864"
+        },
+        {
+          "site": "$CD08D4",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$C865"
+        },
+        {
+          "site": "$CD08DB",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$C866"
+        },
+        {
+          "site": "$CD08E1",
+          "mnemonic": "LDX abs",
+          "encoded_operand": "$C155"
+        },
+        {
+          "site": "$CD08E7",
+          "mnemonic": "LDX abs",
+          "encoded_operand": "$C157"
+        },
+        {
+          "site": "$CD08FB",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA1D"
+        },
+        {
+          "site": "$CD0902",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD02"
+        },
+        {
+          "site": "$CD0907",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$CD3FFF"
+        },
+        {
+          "site": "$CD090D",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$BB00"
+        },
+        {
+          "site": "$CD0912",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$BB00"
+        },
+        {
+          "site": "$CD0922",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$BB00"
+        },
+        {
+          "site": "$CD092F",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$7C"
+        },
+        {
+          "site": "$CD0935",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA1E"
+        },
+        {
+          "site": "$CD093A",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$EC"
+        },
+        {
+          "site": "$CD0941",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA21"
+        },
+        {
+          "site": "$CD094C",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD27"
+        },
+        {
+          "site": "$CD0953",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$F8"
+        },
+        {
+          "site": "$CD0959",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA23"
+        },
+        {
+          "site": "$CD095E",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA21"
+        },
+        {
+          "site": "$CD0973",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$2A21"
+        },
+        {
+          "site": "$CD097E",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$7C"
+        },
+        {
+          "site": "$CD0989",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD2D"
+        },
+        {
+          "site": "$CD098E",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$A028"
+        },
+        {
+          "site": "$CD099B",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD2E"
+        },
+        {
+          "site": "$CD09A0",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$A013"
+        },
+        {
+          "site": "$CD09A5",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$A028"
+        },
+        {
+          "site": "$CD09B2",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CD29"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "mode_zero_body",
+      "span": [
+        "$CD09F1",
+        "$CD0ADE"
+      ],
+      "span_sha256": "224aaf43ca64993c9e7b861ee95ebc4b98ccbd1e579abf60f32384712dab37c7",
+      "entry_depth_premise": 18,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 93,
+      "decoded_width_contexts": 93,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 2,
+      "maximum_local_saved_plus_one_call_frame": 3,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 8,
+      "calls": [
+        {
+          "site": "$CD09F1",
+          "target_or_table": "$CD09CE",
+          "kind": "long",
+          "instruction_sha256": "6518098438049b903ccbaf1c72915de99530a5838168b1396b7a5836e922cdb3",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0AB4",
+          "target_or_table": "$C1000F",
+          "kind": "long",
+          "instruction_sha256": "5792353e6d42a254452589a8a2c41e4c12caabb3ff6e13866be0b63babac0586",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0ABC",
+          "target_or_table": "$CD0AEE",
+          "kind": "near",
+          "instruction_sha256": "29eb50d8c3adb0cc00f5ca2952ee9713bb1e2f9b003ad77930360835f2ac8634",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 1,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0ACC",
+          "target_or_table": "$CD06C4",
+          "kind": "near",
+          "instruction_sha256": "674ccff9d250fdb18c86a7814533208f97af11f769796714d9872613a5a988f6",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0ACF",
+          "target_or_table": "$CD0B1E",
+          "kind": "near",
+          "instruction_sha256": "fe0b6babd90c015d12b2e461c9a4af458b7d281de72a6b8820fb59cd5e6202c6",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0AD2",
+          "target_or_table": "$D1F426",
+          "kind": "long",
+          "instruction_sha256": "d2de03d796f9fb8e4d7114b99a133de12fc240ee484c6fe81d52e4f761f97d58",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0AD6",
+          "target_or_table": "$FDFFF7",
+          "kind": "long",
+          "instruction_sha256": "8ca144532cc52ee7da45b066ab1bfa334097fee7a9fa8e33cd3fefd7d7d555aa",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 21,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD0ADA",
+          "target_or_table": "$CD0ADE",
+          "kind": "near",
+          "instruction_sha256": "ba1760bfcb4f740a290089188bb9393bbce3fb610a05f14fe312d6ca5dc53289",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 20,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD09F7",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4300",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09FC",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4301",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A02",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4302",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A07",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4304",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A0C",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4307",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A11",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4310",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A16",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4311",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A1C",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4312",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A21",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4314",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A26",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4317",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A2B",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4320",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A30",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4321",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A36",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4322",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A3B",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4324",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A40",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4327",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A45",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4330",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A4A",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4331",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A50",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4332",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A55",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4334",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A5A",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4337",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A5F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4340",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A64",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4341",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A6A",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4342",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A6F",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4344",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A74",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4347",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A79",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4350",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A7E",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4351",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A84",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4352",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A89",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4354",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A8E",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4357",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A93",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4360",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A98",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4361",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0A9E",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4362",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AA3",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4364",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AA8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4367",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AC1",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420C",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD0AC8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$2100",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [
+        {
+          "site": "$CD0AAF",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CAD3"
+        },
+        {
+          "site": "$CD0AC4",
+          "mnemonic": "LDA long",
+          "encoded_operand": "$7EBB00"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "cgram_leaf",
+      "span": [
+        "$CD09CE",
+        "$CD09F1"
+      ],
+      "span_sha256": "65c3e12a3d48afac4a9167badfb85aa13ec374901293b443e7c55e1d636752f6",
+      "entry_depth_premise": 21,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 13,
+      "decoded_width_contexts": 13,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 0,
+      "maximum_local_saved_plus_one_call_frame": 0,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 0,
+      "calls": [],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD09CE",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$4377",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09D1",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$2121",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09D7",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4370",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09DD",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4372",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09E2",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$4374",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09E8",
+          "mnemonic": "STX abs",
+          "encoded_operand": "$4375",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD09ED",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$420B",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "field_service_wrapper",
+      "span": [
+        "$CD0C89",
+        "$CD0C95"
+      ],
+      "span_sha256": "659a8a28fd2a6955a6d2c7f84e919a344f34990dd81ecf7214059e0434fcf89f",
+      "entry_depth_premise": 16,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 9,
+      "decoded_width_contexts": 9,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 4,
+      "maximum_local_saved_plus_one_call_frame": 7,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 1,
+      "calls": [
+        {
+          "site": "$CD0C8C",
+          "target_or_table": "$C00002",
+          "kind": "long",
+          "instruction_sha256": "9cb980b6cc7bc277a185a2e20a59b8718977cf6dd322739534b8d953396ae5cd",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 4,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 23,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [],
+      "syntactic_load_operands": [],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "screen_transition",
+      "span": [
+        "$CD05B2",
+        "$CD05FF"
+      ],
+      "span_sha256": "dd4f5988e8b34773f672e818ef9f5e9f5e4dbd0d4a48b1778b47d45a0e0037d4",
+      "entry_depth_premise": 20,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 30,
+      "decoded_width_contexts": 30,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 0,
+      "maximum_local_saved_plus_one_call_frame": 3,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 3,
+      "calls": [
+        {
+          "site": "$CD05BE",
+          "target_or_table": "$CD053C",
+          "kind": "near",
+          "instruction_sha256": "b37e48fc631a36d47d3ac57b2b909807592b178fed5092590b75bea3b3615f82",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 22,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD05DA",
+          "target_or_table": "$CEEE6E",
+          "kind": "long",
+          "instruction_sha256": "61edbc3bc229a4dbe0ff6d604d07ef41ff048907e617b6f0f42d92e69fcb590a",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 3,
+          "conditional_depth_at_callee_entry": 23,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD05E5",
+          "target_or_table": "$CD0577",
+          "kind": "near",
+          "instruction_sha256": "08850728285038b6478a6487cf0d88d9a88c50dc7cbe51cdc23c98eced0fd79e",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 22,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD05C1",
+          "mnemonic": "DEC abs",
+          "encoded_operand": "$CA1F",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05C8",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CA25",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05CB",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CA24",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05D4",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA25",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05E0",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CA1E",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05E8",
+          "mnemonic": "DEC abs",
+          "encoded_operand": "$CA1F",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05ED",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA25",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05F0",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CA24",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05F8",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CE16",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD05FB",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$CA1E",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [
+        {
+          "site": "$CD05B2",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA1E"
+        },
+        {
+          "site": "$CD05B9",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA1F"
+        },
+        {
+          "site": "$CD05D7",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA22"
+        },
+        {
+          "site": "$CD05F3",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CA1E"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "scene_tick",
+      "span": [
+        "$CD1609",
+        "$CD1654"
+      ],
+      "span_sha256": "dce62d3d48a939537e1f9976e6177b9fda6f39e9076b72c4f4fc0e2af798fca9",
+      "entry_depth_premise": 20,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 36,
+      "decoded_width_contexts": 36,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 2,
+      "maximum_local_saved_plus_one_call_frame": 4,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 2,
+      "calls": [
+        {
+          "site": "$CD1613",
+          "target_or_table": "$CD0E9D",
+          "kind": "near",
+          "instruction_sha256": "187d07a137697cb018f824ff5b2b89daec95cad8e5f4868c5ab20c7436c1e164",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 22,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        },
+        {
+          "site": "$CD1631",
+          "target_or_table": "$CD1654",
+          "kind": "near",
+          "instruction_sha256": "7738cff75a080c5a3f94eccc11e6ecddbed33d8f3a611047f7e914cc16710c8a",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 2,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 24,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD161A",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CA92",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD1625",
+          "mnemonic": "DEC abs,X",
+          "encoded_operand": "$CA39",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD162D",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$CA39",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD164D",
+          "mnemonic": "STZ abs",
+          "encoded_operand": "$5D9B",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD1650",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CCEA",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [
+        {
+          "site": "$CD1609",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$CCEA"
+        },
+        {
+          "site": "$CD160E",
+          "mnemonic": "LDA abs",
+          "encoded_operand": "$5D9B"
+        },
+        {
+          "site": "$CD1620",
+          "mnemonic": "LDA abs,X",
+          "encoded_operand": "$CA32"
+        },
+        {
+          "site": "$CD162A",
+          "mnemonic": "LDA abs,X",
+          "encoded_operand": "$CA38"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "scene_slot",
+      "span": [
+        "$CD1654",
+        "$CD16A6"
+      ],
+      "span_sha256": "c3f95e5fe6d77458c2fcb7b274031a9bda66a20121a5c88e7284d60fdf34f1b7",
+      "entry_depth_premise": 24,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 43,
+      "decoded_width_contexts": 43,
+      "balanced_conditional_exits": 2,
+      "maximum_local_saved_bytes": 2,
+      "maximum_local_saved_plus_one_call_frame": 4,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 1,
+      "calls": [
+        {
+          "site": "$CD1695",
+          "target_or_table": "$CD16A6",
+          "kind": "near",
+          "instruction_sha256": "6a08c843b01c7bc187ca3b2011eaeed554c312462116b902ab3d977b482115c9",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 2,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 28,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD1658",
+          "mnemonic": "STY dp",
+          "encoded_operand": "$40",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD165D",
+          "mnemonic": "STA dp",
+          "encoded_operand": "$42",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD166C",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$CA35",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD1680",
+          "mnemonic": "STA abs",
+          "encoded_operand": "$CA18",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD1686",
+          "mnemonic": "STA abs,X",
+          "encoded_operand": "$CA35",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD168C",
+          "mnemonic": "INC abs",
+          "encoded_operand": "$CA17",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD169B",
+          "mnemonic": "STY dp",
+          "encoded_operand": "$40",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD16A1",
+          "mnemonic": "STZ abs,X",
+          "encoded_operand": "$CA32",
+          "width_bytes": 1,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [
+        {
+          "site": "$CD1655",
+          "mnemonic": "LDY abs,X",
+          "encoded_operand": "$CA35"
+        },
+        {
+          "site": "$CD165A",
+          "mnemonic": "LDA abs,X",
+          "encoded_operand": "$CA37"
+        },
+        {
+          "site": "$CD165F",
+          "mnemonic": "LDA [dp]",
+          "encoded_operand": "$40"
+        },
+        {
+          "site": "$CD1669",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$40"
+        },
+        {
+          "site": "$CD1683",
+          "mnemonic": "LDA dp",
+          "encoded_operand": "$40"
+        },
+        {
+          "site": "$CD1698",
+          "mnemonic": "LDY dp",
+          "encoded_operand": "$40"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    },
+    {
+      "role": "scene_dispatch",
+      "span": [
+        "$CD16A6",
+        "$CD16B5"
+      ],
+      "span_sha256": "de006cb5ff3d9e1303b29063bd54b1ff51cc794b038b1da68a285a8aa9efd28f",
+      "entry_depth_premise": 28,
+      "entry_width_premise": "M=1/X=0; shell immediately REP #$30",
+      "instruction_starts": 9,
+      "decoded_width_contexts": 9,
+      "balanced_conditional_exits": 1,
+      "maximum_local_saved_bytes": 0,
+      "maximum_local_saved_plus_one_call_frame": 2,
+      "whole_callee_depth_bound": null,
+      "opaque_call_frontier_count": 1,
+      "calls": [
+        {
+          "site": "$CD16AF",
+          "target_or_table": "$CD16B5",
+          "kind": "indexed-near",
+          "instruction_sha256": "ece5fceb57bbf0112d86c45ac0b82f13708a7c47312201afcf49a9f31d2713e2",
+          "entry_m8": true,
+          "entry_x8": false,
+          "local_saved_bytes": 0,
+          "call_frame_bytes": 2,
+          "conditional_depth_at_callee_entry": 30,
+          "continuation_premise": "callee returns with exact call frame consumed, M=1/X=0/I=1; preservation and memory effects unproved here"
+        }
+      ],
+      "syntactic_write_operands": [
+        {
+          "site": "$CD16A6",
+          "mnemonic": "STX dp",
+          "encoded_operand": "$43",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        },
+        {
+          "site": "$CD16AD",
+          "mnemonic": "STY dp",
+          "encoded_operand": "$40",
+          "width_bytes": 2,
+          "effective_address_and_aliasing_proved": false
+        }
+      ],
+      "syntactic_load_operands": [
+        {
+          "site": "$CD16AA",
+          "mnemonic": "LDY dp",
+          "encoded_operand": "$40"
+        },
+        {
+          "site": "$CD16B2",
+          "mnemonic": "LDX dp",
+          "encoded_operand": "$43"
+        }
+      ],
+      "interpretation": "conditional local CFG inventory; no unknown callee stack/memory behavior is certified"
+    }
+  ],
+  "mode_table_three_reviewed_cells": [
+    {
+      "mode": 0,
+      "target": "$CD09F1"
+    },
+    {
+      "mode": 1,
+      "target": "$CD088D"
+    },
+    {
+      "mode": 2,
+      "target": "$CD088D"
+    }
+  ],
+  "full_nmi_stack_bound": null,
+  "global_nested_interrupt_stack_bound": null,
+  "global_stack_headroom_proved": false,
+  "nonstack_memory_alias_closure": false,
+  "whole_normal_nmi_call_closure": false,
+  "production_approval": false,
+  "rom_mutated": false,
+  "remaining_frontiers": [
+    "opaque callees and their return-width/register/memory contracts",
+    "mode predecessor constraints; initial mode-dispatch B=0 follows the pre-call TDC, but later scene-command B depends on callee contracts",
+    "scene command legal table extent, stream provenance, termination and callees",
+    "DMA/HDMA effective sources and destinations, nonstack writes aliasing stack",
+    "leading/trailing zero-busy windows and hardware reentry timing",
+    "alternate installed NMI and its early incoming-DBR dependency"
+  ]
+}

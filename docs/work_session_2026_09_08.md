@@ -44,6 +44,23 @@ closed for this session.
   independent validator, and repeated frozen runs. The accepted primary
   observation remains unchanged.
 
+- 16:24 UTC: resumed after the user's usage reset, retaining the original
+  six-hour elapsed-time deadline. The existing native helper run was recovered
+  from its still-running process instead of restarted.
+- 16:39 UTC: independently regenerated the accepted alternate-resolver,
+  normal-NMI and threshold-correction references exactly. All 54 associated
+  host tests pass. MAP-009 identifies the threshold annotation error and
+  separates its static equality evidence from the boss-immunity runtime path.
+  The stack helper and transaction probes remain under final validation.
+  The original cartridge builder has assembled and audited components in
+  memory only; its first preparation wrote no ROM or SRAM.
+- 16:45 UTC: independently regenerated the successful transaction reference
+  from its two identical 1,277-record traces, manifests and prelaunch receipts.
+  All 41 host tests pass; exact MP charge, first HP-store witnesses, watched
+  memory ledger and actual queued-action caller are proved within the declared
+  scope. Natural refusal remains open. The original-cartridge builder is under
+  independent review before its first image write.
+
 ## Gates and evidence boundaries
 
 The overall gate is `BA-NATIVE-INTEGRATION-DESIGN`. A source design, host

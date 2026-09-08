@@ -403,3 +403,101 @@ registry, guarded placement, and transaction-level cancellation remain open.
 A natural Black Hole/Spekkio alternate-branch exploration has succeeded and
 is being converted to a fixed, reviewed replay. This increment's own push
 will receive a subsequent verified publication entry.
+
+## 2026-09-08 — alternate resolver and bounded normal-NMI contracts
+
+**Status:** the alternate resolver is `verified-runtime` within the exact
+imported-save checkpoint and fixed controller replay; the NMI result is
+`verified-static` within its explicitly bounded paths. The preceding runtime
+increment is published as
+[`afdf85610b078bbc2452ddf360e81b051dc78fb7`](https://github.com/andreipemberton/project-epoch/commit/afdf85610b078bbc2452ddf360e81b051dc78fb7).
+Authenticated GitHub branch, commit and all twenty changed-file bytes were
+verified. Its receipt is retained in the
+[session publication history](../references/work_session_publications_2026_09_08.json).
+
+The [alternate observation](schala_package_resolver_alternate_v1.md) now repeats
+with 3,783 byte-identical CPU/data-flow records. Magus's Black Hole targets
+Spekkio, takes the canonical boss-immunity branch, and writes `$AE94=$40`.
+The observed resolver then reads selector `$37` and branch `$0040`, publishes
+42 bytes in the expected order, preserves its return chain, and reaches both
+completion conditions within the same action. Later action cleanup is outside
+that lifetime. The [reference](../references/package_resolver_alternate_v1.json)
+revalidates both traces, current frozen sources and private inputs without
+rerunning the emulator. Its documentary screenshots differ; CPU/data-flow
+reproducibility is accepted without a pixel-reproducibility or renderer-cause
+claim.
+
+Checkpoint provenance matters here. The SRAM is byte-identical to the archived
+Outrunner save; the historical collector imported that SRAM before navigating
+to the talkable Spekkio checkpoint. The accepted new replay loads that unchanged
+checkpoint and uses controller input afterward. It does not inherit the later
+event-grant/canary profiles or claim fresh-New-Game progression. This is an
+ordinary completed immune-target action, not a cancellation proof.
+
+**Mapping correction:** [MAP-009](DATA_MAPPING_CORRECTIONS.md#map-009--black-holes-nonboss-comparison-accepts-equality)
+cites the older disassembly's incorrect strict-threshold comments. The canonical
+nonboss comparison accepts equality before its survivor branch. Eight selected
+instruction assertions and all 65,536 original byte-pair cases reproduce the
+inclusive predicate. The Spekkio runtime path bypasses that comparison, so
+its evidence is deliberately kept separate from the static equality proof.
+
+The [normal-NMI audit](schala_package_normal_nmi_v1.md) proves the busy-flag
+fast path for all four native M/X combinations, with restored CPU context and
+13 bytes of stack use including the hardware frame. Its ten-region census
+also identifies 44 opaque call frontiers. Those frontiers are explicit
+assumptions, not secretly assigned zero stack depth. The full normal-NMI and
+global nested-interrupt bounds remain null. The conditional 40-byte route and
+52-byte helper arithmetic establish no game stack ownership. The
+[metadata reference](../references/schala_package_normal_nmi_v1.json) reproduces
+byte for byte from the canonical image and audited sources.
+
+**Validation and resume:** all 31 alternate-observation and 23 normal-NMI host
+tests pass. The root independently regenerated both references and the
+threshold reference exactly. The separate stack helper's final acceptance is
+being strengthened to reconcile each final WRAM change with its recorded
+write history. The transaction probe is under independent review. A new
+original-cartridge guard and raw-component builder are in preparation; no
+cartridge from that builder has been written or executed at this entry.
+The remaining overall gate is still `BA-NATIVE-INTEGRATION-DESIGN`.
+
+## 2026-09-08 — successful action transaction reproduced
+
+**Status:** `verified-runtime` for one supported-PC queued Tech, repeated from
+the pinned pre-Lavos diagnostic checkpoint. The
+[transaction report](schala_package_transaction_observation_v1.md) and
+[metadata reference](../references/package_transaction_observation_v1.json)
+retain two identical 1,277-record traces, identical manifests and identical
+prelaunch receipts. The original sources were archived before each run and
+are rechecked by the read-only evidence collector.
+
+The action enters `$C1:BB49` with SP `$06EA` and saved near return `$85D0`.
+After target validation it reaches the candidate preflight boundary before
+`$C1:BBD4` with valid participant 0 and two `$FF` entries. The three separately
+paired MP calls charge participant 0 by 20, changing party MP from
+`[93,97,99]` to `[73,97,99]`, before the resolver runs. After animation, eleven
+first HP-subtraction witnesses connect their pending terms, arithmetic,
+ordered stores and immediate readbacks. The shared finalizer and queue
+release then return to the actual caller `$C1:85D1` at SP `$06EC`.
+
+The watched-memory ledger reconciles its declared HP/MP, queue, pending,
+ATB, flag and latch ranges through the final active caller. It does not cover
+full WRAM. Later HP clamping is outside the first-subtraction proof, and
+the result-table clear is a snapshot witness without directly watched stores.
+No refusal path was executed. These limits keep the evidence useful for
+designing an earlier preflight without presenting success as cancellation.
+
+An early exploratory run exceeded its old four-MiB trace-reader limit.
+A later validator attempt used the wrong result-clear extent; the canonical
+reader establishes index `$AD9B` plus `$AD9C-$AE4B`, preserving the first
+18 bytes of the `$AD89` snapshot and clearing the following 177. Both failed
+attempts remain identified in the report. This was an unpublished observer
+assumption, not a newly contradicted community data map.
+
+**Validation and resume:** independent review and the root each ran all 41
+tests, and the root regenerated the reference byte for byte. Additional
+review mutations at the final caller reject unexplained memory changes,
+reversed clocks, changed invocation identity and incorrect program bank.
+The next refusal work must establish an unsuccessful route's complete
+participant, queue, ATB and result lifecycle before selecting a cancellation
+destination. The helper's stack/interrupt and original-ROM placement work
+continues separately; production selectors remain unbound.

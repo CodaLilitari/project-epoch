@@ -67,6 +67,113 @@
         }
       ],
       "all_changed_bytes_match": true
+    },
+    {
+      "commit": "afdf85610b078bbc2452ddf360e81b051dc78fb7",
+      "verified_at_utc": "2026-09-08T15:52:50.570274+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 25809,
+          "sha256": "ed3652ecc0a1de853ea67f74a3eb23a176a8bbeae132a6281883c7644c587c80"
+        },
+        {
+          "path": "asm/schala_package_helper_v1_rom_source.asm",
+          "size": 8200,
+          "sha256": "0a71029770a494707cc03eae6d80461de6de3a30544dc01cc632bf82d1079e9b"
+        },
+        {
+          "path": "docs/DATA_MAPPING_CORRECTIONS.md",
+          "size": 19420,
+          "sha256": "6251c493d0b137cdaa5046004cf7d3959dd5a5eb7009552ee21114283b1329a4"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 26844,
+          "sha256": "b7a912a351b996eb69eebdad533f4f07303106c6aaa9102665bec4435cede039"
+        },
+        {
+          "path": "docs/schala_package_helper_v1_rom_source.md",
+          "size": 15707,
+          "sha256": "f5170c51053eb5278bf7c8fd7c31a985f4dfc722858e7f873ccff445bdf826d4"
+        },
+        {
+          "path": "docs/schala_package_integration_review_receipt_2026_09_08.md",
+          "size": 7222,
+          "sha256": "f19889b39dc137a2b885978b010ad17b02fe128dd943085db321da63bf61f10b"
+        },
+        {
+          "path": "docs/schala_package_resolver_context_v1.md",
+          "size": 14556,
+          "sha256": "2f55ae6332814b3f3b45d452e053174d38aeb05f32a0aded0136f0dbec3e56b1"
+        },
+        {
+          "path": "docs/schala_package_stack_frame_design_v2.md",
+          "size": 10713,
+          "sha256": "b4dbdedacf8fafdb5471152fae26fc0656f2fbd6559d565ecbd5c5273559e8d6"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 3488,
+          "sha256": "910427f09ccc552f33f661af64ccd1b0380cda9c9ac36d6fea2e1bbea0e1808d"
+        },
+        {
+          "path": "references/package_resolver_context_v1.json",
+          "size": 15085,
+          "sha256": "d7eb845a97f1398996ff28936b0117a423b6534aa1d518fbf49023e28317fd99"
+        },
+        {
+          "path": "references/schala_package_helper_v1_rom_source.json",
+          "size": 84071,
+          "sha256": "d8b9c9ea589e33517331e377c084c0fadf91a42f1e665f5adbfb9c7895931c92"
+        },
+        {
+          "path": "references/schala_package_helper_v1_rom_source_before_exec_guard.json",
+          "size": 50016,
+          "sha256": "0494c43bab6358c395a1f05daefec8d17a277c14182c07f3d674338f62c849b4"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 2780,
+          "sha256": "4ec44a6f32d07075be2ace3e574254d958d271567cb580cb69ac5bee7b8bb58b"
+        },
+        {
+          "path": "tests/test_package_resolver_context_v1.py",
+          "size": 10546,
+          "sha256": "8927c5ee0d2b29a89e59f5a9534a1a42c0e42511a6efaa8f07b8d590de53d86a"
+        },
+        {
+          "path": "tests/test_schala_package_helper_v1_rom_source.py",
+          "size": 9169,
+          "sha256": "51b9682d8be459cdb52f7c9bc7baa0f3a57b5bcc6426305e87641deaf39a60a9"
+        },
+        {
+          "path": "tools/collect_package_resolver_context_evidence_v1.py",
+          "size": 9820,
+          "sha256": "c68696d1a0d050dbbbea833299a1ed959d53d68ffaae992c600cd968a3b1532b"
+        },
+        {
+          "path": "tools/mesen_package_resolver_context_v1.lua",
+          "size": 7746,
+          "sha256": "f7b74d551b74e1b81f0b1be68f07a96ab1a6915a42d6d1d0d832b6d7be5b6519"
+        },
+        {
+          "path": "tools/mesen_schala_package_helper_v1_rom_source.lua",
+          "size": 8161,
+          "sha256": "3c4f7bfc994e583c3a1f258f8a24e48da762c524ab40a5c8669b43b67ba4d83c"
+        },
+        {
+          "path": "tools/run_package_resolver_context_v1.py",
+          "size": 24784,
+          "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+        },
+        {
+          "path": "tools/run_schala_package_helper_v1_rom_source.py",
+          "size": 23279,
+          "sha256": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+        }
+      ]
     }
   ]
 }

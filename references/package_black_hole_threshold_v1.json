@@ -1,0 +1,127 @@
+{
+  "schema": "project-epoch-black-hole-threshold-v1",
+  "evidence_level": "verified-static",
+  "rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "source": {
+    "revision": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+    "bank_C1_asm_sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa",
+    "url": "https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm#L30747-L30767"
+  },
+  "correction": {
+    "proposed_id": "MAP-009",
+    "scope": "Black Hole nonboss comparison; boss path bypasses this comparison",
+    "wrong_claims": [
+      {
+        "lines": [
+          30747,
+          30754
+        ],
+        "claim": "roll strictly below the threshold succeeds"
+      },
+      {
+        "lines": [
+          30767,
+          30767
+        ],
+        "claim": "roll greater than or equal to 40 takes survivor path"
+      }
+    ],
+    "corrected_predicate": "roll <= threshold succeeds; only roll > threshold takes survivor path",
+    "equality_counterexample": {
+      "roll": 40,
+      "threshold": 40,
+      "cmp_zero": true,
+      "cmp_carry": true,
+      "first_taken_branch": "C1F146 -> C1F14A"
+    },
+    "uniform_rng_distribution_proved": false,
+    "threshold_40_source": "pinned upstream annotation; this audit does not derive the Tech parameter table"
+  },
+  "spans": [
+    {
+      "role": "black-hole-effect-and-mask-tail",
+      "cpu_start": "C1F132",
+      "cpu_end_exclusive": "C1F1C7",
+      "size": 149,
+      "sha256": "f94e11174a1a852b30352a765aedddd47195e9324fb71e00e19be4c9fd0c89aa"
+    },
+    {
+      "role": "boss-and-threshold-branches",
+      "cpu_start": "C1F139",
+      "cpu_end_exclusive": "C1F14A",
+      "size": 17,
+      "sha256": "ca28e738c8ef98f0f9e4a636df0bad111395294fb648a8ada14bbaeb6cb8abb2"
+    },
+    {
+      "role": "inclusive-threshold-counterexample",
+      "cpu_start": "C1F144",
+      "cpu_end_exclusive": "C1F14A",
+      "size": 6,
+      "sha256": "c6f99397ead976a855cd7f8dc2c5fb643d6370fdb3be3efb16228355e1499859"
+    },
+    {
+      "role": "survivor-mask-exhaustion",
+      "cpu_start": "C1F156",
+      "cpu_end_exclusive": "C1F1C7",
+      "size": 113,
+      "sha256": "440f24c139b59e2e701637bf2c38bbb1ce4c15e1adb77a3482a7f4144d530a47"
+    }
+  ],
+  "instruction_assertions": [
+    {
+      "address": "C1F139",
+      "instruction": "BIT immediate, 8-bit",
+      "operand": 128
+    },
+    {
+      "address": "C1F13F",
+      "instruction": "LDA immediate, 8-bit",
+      "operand": 100
+    },
+    {
+      "address": "C1F144",
+      "instruction": "CMP direct page, 8-bit",
+      "operand": 28
+    },
+    {
+      "address": "C1F13B",
+      "instruction": "BNE",
+      "destination": "C1F156"
+    },
+    {
+      "address": "C1F146",
+      "instruction": "BEQ",
+      "destination": "C1F14A"
+    },
+    {
+      "address": "C1F148",
+      "instruction": "BCS",
+      "destination": "C1F156"
+    },
+    {
+      "address": "C1F141",
+      "instruction": "JSR",
+      "destination": "C1AF22"
+    },
+    {
+      "address": "C1F1C0",
+      "instruction": "STA absolute",
+      "operand": "AE94"
+    }
+  ],
+  "original_semantics_truth_table": {
+    "byte_count": 65536,
+    "order": "threshold 0..255 outer, roll 0..255 inner; success=1, survivor=0",
+    "sha256": "67d438c1899741946baa1b913d7e08f65e68114179afde69db5d74aab0c6d7fe",
+    "all_65536_pairs_match_inclusive_unsigned_predicate": true
+  },
+  "limitations": [
+    "No RNG-distribution proof or probability claim.",
+    "No dynamic equality-boundary execution in this artifact.",
+    "Semantic instruction labels are reviewed interpretations, not auto-derived from hashes.",
+    "No hook, allocation, high selector, helper installation, or ROM mutation."
+  ]
+}

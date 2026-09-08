@@ -166,6 +166,12 @@ These are separate namespaces. Never conflate them.
   exact ordered publication bytes, and paired action-completion latch reads.
   This is checkpoint-bounded vanilla runtime evidence, not high-selector
   integration or alternate-branch proof. Preserve the completed observation.
+  The separate canonical alternate observation also repeats identically from
+  the pinned imported-save Spekkio checkpoint: Magus Black Hole selector `$37`,
+  actual `$AE94=$40` write/readback, branch `$0040`, 42 ordered publications,
+  and completion within that action. This is a normally completed immune-target
+  action, not transaction cancellation. Documentary screenshots differ while
+  the 3,783-record CPU/data-flow traces match; preserve that distinction.
   Integration design must separately establish cancellation, expanded-ROM
   reads, and scratch/interrupt ownership. Synthetic `$7E4000` has a proved
   vanilla menu/overworld collision and must not be adopted as game scratch.
@@ -198,6 +204,19 @@ These are separate namespaces. Never conflate them.
   before `$C1:BBD4`; reusing `$C1:BC5A` still requires valid participant,
   queue, finalizer-table, CPU, and stack context. `$C1:BDB3` is shared by
   successful and failed Tech paths, not a cancellation/refund API.
+  A repeated successful canonical transaction now observes the candidate
+  pre-effect boundary, three MP calls with only participant 0 charged 20,
+  eleven first HP stores/readbacks, shared finalizer, queue release and actual
+  caller. Its ledger covers declared watched ranges only, not full WRAM;
+  later HP clamps and snapshot-only target clearing retain their limits.
+  No unsuccessful route or cancellation destination is runtime-proved.
+- The normal-NMI busy-flag fast path is statically proved for all four native
+  M/X combinations with 13 bytes including its hardware frame. The separate
+  ten-region census retains 44 opaque callee frontiers and explicit conditional
+  return contracts. Full normal-NMI and global nested-interrupt bounds remain
+  null. The conditional 40-byte route is not a universal bound; leading/trailing
+  zero-busy windows, callee closure, DMA aliases, alternate NMI and game stack
+  headroom remain unresolved. See `docs/schala_package_normal_nmi_v1.md`.
 - The bounded direct battle-IRQ CPU closure now covers 401 instruction starts
   in 404 width contexts, with balanced near/long calls and 35 bytes maximum
   stack use including the native four-byte hardware frame. NMI nesting,
@@ -357,8 +376,10 @@ matrix. The next gate is `BA-NATIVE-INTEGRATION-DESIGN`: exact live resolver
 hook/continuation evidence, named expanded placement and source-bank access,
 and scratch/interrupt ownership before installation.
 The ordinary primary resolver and its completion latches now have a repeated
-clean-ROM observation; alternate inputs and the refusal lifecycle remain
-separate obligations. The lossless battle-command
+clean-ROM observation. A separate repeated Black Hole/Spekkio observation proves
+the canonical alternate branch from its pinned imported-save checkpoint;
+the high-selector integration and refusal lifecycle remain separate obligations.
+The lossless battle-command
 grammar/canonical stream census and strict flat-direct decoded-`$1E` exclusion
 policy are complete at `verified-static`, reusing rather than repeating the
 decoded native `$1E/$1F` handler semantics. Every default `$80-$8F` selector

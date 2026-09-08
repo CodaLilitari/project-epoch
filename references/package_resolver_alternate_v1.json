@@ -1,0 +1,531 @@
+{
+  "schema": "project-epoch-package-resolver-alternate-evidence-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "two byte-identical canonical alternate-resolver CPU/data-flow observations from the declared external-save checkpoint",
+  "private_manifest_status_preserved": "exploratory-runtime-not-accepted; this separate reviewed reference accepts the repeated bounded observations",
+  "source_files": {
+    "launcher": {
+      "path": "tools/run_package_resolver_alternate_v1.py",
+      "size": 23869,
+      "sha256": "46497341c658cea57bf09ddf0382246ad271e6fc43892612c4090aa3023bd758"
+    },
+    "collector": {
+      "path": "tools/mesen_package_resolver_alternate_v1.lua",
+      "size": 7030,
+      "sha256": "2bcbdc504b353940917f021bb99274aa682821bd186b40c397b2b105ca3b18ef"
+    },
+    "tests": {
+      "path": "tests/test_package_resolver_alternate_v1.py",
+      "size": 11076,
+      "sha256": "d96bd5a7e626427350fb1f1a2b6caed20c0129177ca157f3065e07b4ec017371"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    },
+    "descriptor_model": {
+      "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+      "size": 35887,
+      "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3"
+    },
+    "threshold_auditor": {
+      "path": "tools/audit_package_black_hole_threshold_v1.py",
+      "size": 5903,
+      "sha256": "707796948c846f9c80ee35a711452d79c73deea3eb80c1931e3e38e2715c505b"
+    },
+    "evidence_collector": {
+      "path": "tools/collect_package_resolver_alternate_evidence_v1.py",
+      "size": 12642,
+      "sha256": "72cb66cb1786934962f07d5c5b107d03e00858c7732a71f7633fa2c743bdae97"
+    }
+  },
+  "private_inputs": {
+    "rom": {
+      "path": "private/input/rom_archive/Chrono Trigger (USA).sfc",
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "sram": {
+      "path": "private/tools/mesen2/app/Saves/project_epoch_mesen_event11c_clean.srm",
+      "size": 8192,
+      "sha256": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9"
+    },
+    "state": {
+      "path": "private/test_runs/mesen2/event11c_checkpoint_v5/spekkio_talkable.mss",
+      "size": 133993,
+      "sha256": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e"
+    }
+  },
+  "checkpoint_provenance": {
+    "archive": {
+      "path": "private/downloads/chrono_trigger_saves/zophar_7175_after_crono_return.zip",
+      "size": 2421,
+      "sha256": "0a49d5634b6739202b9be7f1992b59d285f8589087056c75fd84d92111c80ca2"
+    },
+    "embedded_sram_member": "ChronoTrigger.srm",
+    "embedded_sram_matches_input": true,
+    "attribution": "Outrunner, as named by the archived readme; external save, not new-game acquisition evidence",
+    "source_listing": "https://www.zophar.net/savestates/snes/chrono-trigger.html",
+    "readme": {
+      "path": "private/downloads/chrono_trigger_saves/zophar_7175_after_crono_return/ChronoTrigger.txt",
+      "size": 405,
+      "sha256": "9e32a2de4672afc239122d1735e861f94829ec65674f1640cefdd197394a2160"
+    },
+    "checkpoint_route_log": {
+      "path": "private/test_runs/mesen2/event11c_checkpoint_v5/checkpoint.tsv",
+      "size": 621,
+      "sha256": "fa3b549802d54510bb1362b79feb6fb16e4e6c1d8eacfc446f76fd5b321515d2"
+    },
+    "checkpoint_collector": {
+      "path": "tools/mesen_spekkio_checkpoint.lua",
+      "size": 6494,
+      "sha256": "6edd5fc924fb272714ccbb56c72f038003c3118f9c02d14dc5a5252c6cb01948"
+    },
+    "setup_scope": "historical collector imports the entire byte-exact external SRAM through snesSaveRam writes before boot, then navigates with controller input to capture the talkable state",
+    "post_load_scope": "unchanged talkable state; fixed joypad only; no subsequent event-grant or canary preparation profiles"
+  },
+  "source_input_runtime_hashes": {
+    "collector": "2bcbdc504b353940917f021bb99274aa682821bd186b40c397b2b105ca3b18ef",
+    "descriptor_model": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+    "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+    "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+    "launcher": "46497341c658cea57bf09ddf0382246ad271e6fc43892612c4090aa3023bd758",
+    "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+    "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+    "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+    "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+    "sram": "a94c9df27a6ff8200064a35f80531a4964de0334e361b7ba8b147a21c40b27d9",
+    "state": "26788b52f63a32a7539d8acb18495df1a458064f700d5411916e2bfc34c4522e"
+  },
+  "runs": [
+    {
+      "run_directory": "private/test_runs/resolver_alternate_20260908_final1",
+      "prepared_receipt": {
+        "path": "private/test_runs/resolver_alternate_20260908_final1/launch_inputs.json",
+        "size": 2111,
+        "sha256": "9db2937e37fa69b91658977ad30a20a8c881b4926e2cb3f2bb99f0b85f400274"
+      },
+      "manifest": {
+        "path": "private/test_runs/resolver_alternate_20260908_final1/manifest.json",
+        "size": 4829,
+        "sha256": "d5ac67a6fdfde4fa1e6a0a117d27dd93cb452c8245cddf9f93549677d89a2b78"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_alternate_20260908_final1/trace.json",
+        "size": 3296451,
+        "sha256": "f4400adb7488b9f65d290bb7dafedfd29228037bdcf2470e340ef06e9bb9b26b"
+      },
+      "process_log": {
+        "path": "private/test_runs/resolver_alternate_20260908_final1/process.log",
+        "size": 773052,
+        "sha256": "eecf95c319f27c22cd9d97cd6322e85b76d3d2be23365d7c268cf2d457d402a9"
+      },
+      "screenshots": [
+        {
+          "path": "private/test_runs/resolver_alternate_20260908_final1/menu_2100.png",
+          "size": 14574,
+          "sha256": "16eb15d6989f4b2e3ed628510eda7e0c2cf62aae3a3f88c36dad4c7f38313513"
+        },
+        {
+          "path": "private/test_runs/resolver_alternate_20260908_final1/menu_2680.png",
+          "size": 14936,
+          "sha256": "09020358929fa8664d6dc90ce790bbe18729067c493eb4d1f6713f9b575a55d0"
+        },
+        {
+          "path": "private/test_runs/resolver_alternate_20260908_final1/menu_3000.png",
+          "size": 15296,
+          "sha256": "ec5becc4a10f7a1a97adb8066fd6e1b72d75745bbab8980ad9578a80110a1241"
+        }
+      ]
+    },
+    {
+      "run_directory": "private/test_runs/resolver_alternate_20260908_final2",
+      "prepared_receipt": {
+        "path": "private/test_runs/resolver_alternate_20260908_final2/launch_inputs.json",
+        "size": 2111,
+        "sha256": "9db2937e37fa69b91658977ad30a20a8c881b4926e2cb3f2bb99f0b85f400274"
+      },
+      "manifest": {
+        "path": "private/test_runs/resolver_alternate_20260908_final2/manifest.json",
+        "size": 4829,
+        "sha256": "4e15244238340be92b6d8bf09656bf186e57a46e6a35b3d1f4c115004e9ef960"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_alternate_20260908_final2/trace.json",
+        "size": 3296451,
+        "sha256": "f4400adb7488b9f65d290bb7dafedfd29228037bdcf2470e340ef06e9bb9b26b"
+      },
+      "process_log": {
+        "path": "private/test_runs/resolver_alternate_20260908_final2/process.log",
+        "size": 773052,
+        "sha256": "eecf95c319f27c22cd9d97cd6322e85b76d3d2be23365d7c268cf2d457d402a9"
+      },
+      "screenshots": [
+        {
+          "path": "private/test_runs/resolver_alternate_20260908_final2/menu_2100.png",
+          "size": 14561,
+          "sha256": "482832070940d84ccb53b3dfd838a7e00ab64123de54dafcf1ae71cda1094f95"
+        },
+        {
+          "path": "private/test_runs/resolver_alternate_20260908_final2/menu_2680.png",
+          "size": 14956,
+          "sha256": "83399c28348e025e0d27d275adc0208d402ea4706958896a5a6bc6ab8574f9bd"
+        },
+        {
+          "path": "private/test_runs/resolver_alternate_20260908_final2/menu_3000.png",
+          "size": 15337,
+          "sha256": "a730c5233ddf11edc0d00850a7f276c3c1fcaec2276131c6375855da00b8f126"
+        }
+      ]
+    }
+  ],
+  "identical_trace_sha256": "f4400adb7488b9f65d290bb7dafedfd29228037bdcf2470e340ef06e9bb9b26b",
+  "identical_prepared_receipt_sha256": "9db2937e37fa69b91658977ad30a20a8c881b4926e2cb3f2bb99f0b85f400274",
+  "manifest_pair_differing_keys": [
+    "screenshots"
+  ],
+  "screenshot_pixel_reproducibility_claimed": false,
+  "observations": {
+    "action_config": 55,
+    "actor_slot": 0,
+    "alternate_flag_witness": {
+      "actual_write_index": 1658,
+      "pre_store_index": 1657,
+      "pre_store_poll": 2766,
+      "producer_poll": 2768,
+      "readback_producer_index": 1661
+    },
+    "boss_immunity_bypasses_rng": true,
+    "both_result_masks_exhausted": true,
+    "branch_word_at_entry": 64,
+    "canonical_selector": 55,
+    "completion": {
+      "effect_read_index": 2812,
+      "effect_read_poll": 3366,
+      "package_read_index": 2811,
+      "package_read_poll": 3365,
+      "sync_command_index": 2809,
+      "sync_write_index": 2810
+    },
+    "entry_abi_verified": true,
+    "entry_poll": 2769,
+    "entry_record_index": 1662,
+    "entry_sp": 1752,
+    "event_counts": {
+      "baseline": 1,
+      "black-hole-entry": 1,
+      "black-hole-mask-advance": 1,
+      "black-hole-survivor": 1,
+      "black-hole-type-test": 1,
+      "branch-producer-complete": 5,
+      "caller-effect-latch": 5,
+      "caller-package-latch": 1815,
+      "caller-resume": 1815,
+      "canonical-continuation": 1,
+      "common-loader-entry": 5,
+      "common-loader-rts": 5,
+      "dispatcher-rts": 5,
+      "exhausted-mask-alternate-store": 1,
+      "latch-write": 50,
+      "menu-observation": 3,
+      "publication-write": 42,
+      "resolver-entry": 1,
+      "resolver-tail": 1,
+      "sync-command-increment": 5,
+      "terminal": 1,
+      "terminal-command-clear": 18
+    },
+    "host_model_publication_comparison": true,
+    "logical_pc_id": 6,
+    "pc_observation_window_end_index": 2815,
+    "pc_observation_window_end_poll": 3370,
+    "preflight_cancellation_tested": false,
+    "publication_byte_count": 42,
+    "published_owner_slots": [
+      0,
+      1,
+      2,
+      8,
+      9,
+      10,
+      11
+    ],
+    "record_count": 3783,
+    "resolver_entry_to_pre_jmp_tail": {
+      "cpu_cycle_counter_increment": 1195,
+      "end_record_index": 1706,
+      "interrupt_attribution": "not collected",
+      "master_clocks": 9248,
+      "video_frame_increment": 0
+    },
+    "return_chain": [
+      {
+        "kind": "resolver-tail",
+        "poll": 2769,
+        "record_index": 1706,
+        "sp": 1752
+      },
+      {
+        "kind": "common-loader-entry",
+        "poll": 2769,
+        "record_index": 1707,
+        "sp": 1752
+      },
+      {
+        "kind": "common-loader-rts",
+        "poll": 2818,
+        "record_index": 1709,
+        "sp": 1752
+      },
+      {
+        "kind": "dispatcher-rts",
+        "poll": 2818,
+        "record_index": 1710,
+        "sp": 1754
+      },
+      {
+        "kind": "caller-resume",
+        "poll": 2818,
+        "record_index": 1711,
+        "sp": 1756
+      }
+    ],
+    "tail_cpu_stack_and_descriptor_match": true,
+    "target_slot": 3,
+    "target_type_boss_bit_set": true
+  },
+  "threshold_correction_reference": {
+    "path": "references/package_black_hole_threshold_v1.json",
+    "size": 3787,
+    "sha256": "ed21a1f2531be8d5bb4ec032d924c6d9537ce8865b6dcc16e1da07b326dabb8c"
+  },
+  "threshold_correction": {
+    "schema": "project-epoch-black-hole-threshold-v1",
+    "evidence_level": "verified-static",
+    "rom": {
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "source": {
+      "revision": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+      "bank_C1_asm_sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa",
+      "url": "https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm#L30747-L30767"
+    },
+    "correction": {
+      "proposed_id": "MAP-009",
+      "scope": "Black Hole nonboss comparison; boss path bypasses this comparison",
+      "wrong_claims": [
+        {
+          "lines": [
+            30747,
+            30754
+          ],
+          "claim": "roll strictly below the threshold succeeds"
+        },
+        {
+          "lines": [
+            30767,
+            30767
+          ],
+          "claim": "roll greater than or equal to 40 takes survivor path"
+        }
+      ],
+      "corrected_predicate": "roll <= threshold succeeds; only roll > threshold takes survivor path",
+      "equality_counterexample": {
+        "roll": 40,
+        "threshold": 40,
+        "cmp_zero": true,
+        "cmp_carry": true,
+        "first_taken_branch": "C1F146 -> C1F14A"
+      },
+      "uniform_rng_distribution_proved": false,
+      "threshold_40_source": "pinned upstream annotation; this audit does not derive the Tech parameter table"
+    },
+    "spans": [
+      {
+        "role": "black-hole-effect-and-mask-tail",
+        "cpu_start": "C1F132",
+        "cpu_end_exclusive": "C1F1C7",
+        "size": 149,
+        "sha256": "f94e11174a1a852b30352a765aedddd47195e9324fb71e00e19be4c9fd0c89aa"
+      },
+      {
+        "role": "boss-and-threshold-branches",
+        "cpu_start": "C1F139",
+        "cpu_end_exclusive": "C1F14A",
+        "size": 17,
+        "sha256": "ca28e738c8ef98f0f9e4a636df0bad111395294fb648a8ada14bbaeb6cb8abb2"
+      },
+      {
+        "role": "inclusive-threshold-counterexample",
+        "cpu_start": "C1F144",
+        "cpu_end_exclusive": "C1F14A",
+        "size": 6,
+        "sha256": "c6f99397ead976a855cd7f8dc2c5fb643d6370fdb3be3efb16228355e1499859"
+      },
+      {
+        "role": "survivor-mask-exhaustion",
+        "cpu_start": "C1F156",
+        "cpu_end_exclusive": "C1F1C7",
+        "size": 113,
+        "sha256": "440f24c139b59e2e701637bf2c38bbb1ce4c15e1adb77a3482a7f4144d530a47"
+      }
+    ],
+    "instruction_assertions": [
+      {
+        "address": "C1F139",
+        "instruction": "BIT immediate, 8-bit",
+        "operand": 128
+      },
+      {
+        "address": "C1F13F",
+        "instruction": "LDA immediate, 8-bit",
+        "operand": 100
+      },
+      {
+        "address": "C1F144",
+        "instruction": "CMP direct page, 8-bit",
+        "operand": 28
+      },
+      {
+        "address": "C1F13B",
+        "instruction": "BNE",
+        "destination": "C1F156"
+      },
+      {
+        "address": "C1F146",
+        "instruction": "BEQ",
+        "destination": "C1F14A"
+      },
+      {
+        "address": "C1F148",
+        "instruction": "BCS",
+        "destination": "C1F156"
+      },
+      {
+        "address": "C1F141",
+        "instruction": "JSR",
+        "destination": "C1AF22"
+      },
+      {
+        "address": "C1F1C0",
+        "instruction": "STA absolute",
+        "operand": "AE94"
+      }
+    ],
+    "original_semantics_truth_table": {
+      "byte_count": 65536,
+      "order": "threshold 0..255 outer, roll 0..255 inner; success=1, survivor=0",
+      "sha256": "67d438c1899741946baa1b913d7e08f65e68114179afde69db5d74aab0c6d7fe",
+      "all_65536_pairs_match_inclusive_unsigned_predicate": true
+    },
+    "limitations": [
+      "No RNG-distribution proof or probability claim.",
+      "No dynamic equality-boundary execution in this artifact.",
+      "Semantic instruction labels are reviewed interpretations, not auto-derived from hashes.",
+      "No hook, allocation, high selector, helper installation, or ROM mutation."
+    ]
+  },
+  "pinned_navigation_source": {
+    "path": "private/research/ct_disassembly_eeae27a/bank_C1.asm",
+    "size": 2768817,
+    "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+  },
+  "timing_api_reference": {
+    "path": "references/package_resolver_context_v1.json",
+    "size": 15085,
+    "sha256": "d7eb845a97f1398996ff28936b0117a423b6534aa1d518fbf49023e28317fd99"
+  },
+  "mesen_source_revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "mesen_source_files": [
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/LuaApi.cpp",
+      "size": 34647,
+      "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24",
+      "upstream_path": "Core/Debugger/LuaApi.cpp",
+      "git_blob_sha1": "4deebdedaf976b584574a4c2371f614cc929f4ff",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/LuaApi.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesConsole.cpp",
+      "size": 15424,
+      "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706",
+      "upstream_path": "Core/SNES/SnesConsole.cpp",
+      "git_blob_sha1": "94ed65811b6c5db95b2abbc4786d0faf303c22b8",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesConsole.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f",
+      "upstream_path": "Core/SNES/SnesCpu.Shared.h",
+      "git_blob_sha1": "bbabf420bd1bd8899b62e392fcadcf3a500468c5",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58",
+      "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+      "git_blob_sha1": "8c7b9433f1aa33aa42624b9c7686b91136fdcd2e",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180",
+      "upstream_path": "Core/SNES/SnesPpu.cpp",
+      "git_blob_sha1": "3c7245217083e3e7d9ce72bcf2e037f43b463b0b",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8",
+      "upstream_path": "Core/SNES/SnesCpu.cpp",
+      "git_blob_sha1": "e8441981c7f2527e16303ddd35d5010deec850f7",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd",
+      "upstream_path": "Core/SNES/SnesCpu.Instructions.h",
+      "git_blob_sha1": "46b8553e24ab5151c0da049b4fcc49289c3648a9",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h"
+    }
+  ],
+  "validator_tests": {
+    "command": "python -B -m unittest tests.test_package_resolver_alternate_v1 -q",
+    "tests_passed_at_freeze": 31,
+    "scope": "original synthetic metadata and descriptor; adversarial schema, timing, publication, ABI, flag, return and completion boundaries"
+  },
+  "history": [
+    {
+      "run_directory": "private/test_runs/alternate_branch_20260908_spekkio_magus_black_hole1",
+      "manifest": {
+        "path": "private/test_runs/alternate_branch_20260908_spekkio_magus_black_hole1/manifest.json",
+        "size": 5314,
+        "sha256": "d10fe7cfd3b21e0c2f0013f48007a0e2a8a1a6b8ba1d86463839247f9fb04379"
+      },
+      "status": "historical broad-route exploration; separate schema, unchanged, not the accepted focused collector"
+    },
+    {
+      "run_directory": "private/test_runs/resolver_alternate_20260908_explore1",
+      "trace": {
+        "path": "private/test_runs/resolver_alternate_20260908_explore1/trace.json",
+        "size": 3296451,
+        "sha256": "f4400adb7488b9f65d290bb7dafedfd29228037bdcf2470e340ef06e9bb9b26b"
+      },
+      "status": "focused collector executed; former overstrict action-window validator rejected later cleanup; no final manifest or prelaunch receipt existed; preserved without rewriting or claiming final source alignment"
+    }
+  ],
+  "reproduce_observation": "python -B tools/run_package_resolver_alternate_v1.py --output-dir private/test_runs/resolver_alternate_NEW_UNIQUE",
+  "reproduce_reference": "python -B tools/collect_package_resolver_alternate_evidence_v1.py",
+  "serialization": "json.dumps(value, indent=2), UTF-8, LF, exactly one trailing newline",
+  "production_approval": false
+}

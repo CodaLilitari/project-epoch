@@ -1,0 +1,1015 @@
+{
+  "schema": "project-epoch-package-transaction-evidence-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "two source-matched identical successful supported-PC queued-Tech observations; no helper installed",
+  "sources": {
+    "launcher": {
+      "path": "tools/run_package_transaction_observation_v1.py",
+      "size": 6318,
+      "sha256": "eb709e0188f588b17b7abe28b877654eee337f1f1728b7901ffbfc5281bb90f2"
+    },
+    "collector": {
+      "path": "tools/mesen_package_transaction_observation_v1.lua",
+      "size": 9670,
+      "sha256": "c6923bd608804795cfc6b3dfd143dc65c2b99bc3a858f422bfae7dd889492cdd"
+    },
+    "validation_library": {
+      "path": "tools/package_transaction_validation_v1.py",
+      "size": 25442,
+      "sha256": "cb03514d844d5a50671ec3bf98ce6566a05ad3e1b423d9156ff8d50101d3928b"
+    },
+    "tests": {
+      "path": "tests/test_package_transaction_observation_v1.py",
+      "size": 12620,
+      "sha256": "846749a9c84271d7b99c5553631b5d698b737321a5540b7e76cc9d0ccd90966c"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    },
+    "metadata_collector": {
+      "path": "tools/collect_package_transaction_evidence_v1.py",
+      "size": 9491,
+      "sha256": "610ced62a320c9a0ae53efd0174ed4e1a661a4db63b1d0a43d15ca2c48a377b4"
+    }
+  },
+  "provenance": {
+    "checkpoint_acceptance": {
+      "path": "references/mesen_lavos_battle_checkpoint_accepted_artifacts_v1.json",
+      "size": 4983,
+      "sha256": "67cc7c9f7460a3de30a23c90aca53a079b8334c5e80c1975651fcdc60ba08564"
+    },
+    "checkpoint_collector": {
+      "path": "tools/mesen_lavos_battle_checkpoint.lua",
+      "size": 14672,
+      "sha256": "3bcc3146d9b5ef7fe7287f9031b7ad6f2d0c0423bfcf7c5f910efac4431cce11"
+    },
+    "checkpoint_launcher": {
+      "path": "tools/run_mesen_lavos_battle_checkpoint.py",
+      "size": 78682,
+      "sha256": "377024c212a72c4e2f3b000e44a7573cedd94093f86463c665be8925ae8c6321"
+    },
+    "canonical_bank_c1_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_C1.asm",
+      "size": 2768817,
+      "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+    },
+    "canonical_bank_fd_annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_FD.asm",
+      "size": 691286,
+      "sha256": "0f8a0d59e97de7d60945fdfef1b614217e3d673cca1e14f543234d789a87779e"
+    }
+  },
+  "inputs": {
+    "rom": {
+      "path": "private/input/rom_archive/Chrono Trigger (USA).sfc",
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "sram": {
+      "path": "private/input/lavos_save/chrono_trigger.srm",
+      "size": 8192,
+      "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+    },
+    "state": {
+      "path": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v17/battle_ready.mss",
+      "size": 261614,
+      "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+    }
+  },
+  "runtime": {
+    "mesen": {
+      "path": "private/tools/mesen2/app/Mesen.exe",
+      "size": 70470144,
+      "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+    },
+    "mesen_core": {
+      "path": "private/tools/mesen2/app/MesenCore.dll",
+      "size": 7143424,
+      "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+    },
+    "harfbuzz": {
+      "path": "private/tools/mesen2/app/libHarfBuzzSharp.dll",
+      "size": 1804872,
+      "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+    },
+    "skia": {
+      "path": "private/tools/mesen2/app/libSkiaSharp.dll",
+      "size": 9414216,
+      "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+    },
+    "nesdb": {
+      "path": "private/tools/mesen2/app/MesenNesDB.txt",
+      "size": 559118,
+      "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+    },
+    "settings": {
+      "path": "private/tools/mesen2/app/settings.json",
+      "size": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    }
+  },
+  "runs": [
+    {
+      "directory": "private/test_runs/package_transaction_20260908_final1",
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_final1/trace.json",
+        "size": 6113025,
+        "sha256": "fc9e89c139d00a23ab67a84ee77f497e6dfe63133c14509b23f50ce72d0523e7"
+      },
+      "manifest": {
+        "path": "private/test_runs/package_transaction_20260908_final1/manifest.json",
+        "size": 11409,
+        "sha256": "44b746ad5924ee085a7d203b84cf3f22480838d8bbea751ccef98149a508378d"
+      },
+      "prelaunch": {
+        "path": "private/test_runs/package_transaction_20260908_final1/launch_inputs.json",
+        "size": 2442,
+        "sha256": "bad38935adf7604e296b0ce03b77ef3cc529a79670c4d2ce7013b8d2bc6017e8"
+      },
+      "process_log": {
+        "path": "private/test_runs/package_transaction_20260908_final1/process.log",
+        "size": 1340346,
+        "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59"
+      },
+      "source_archive": {
+        "launcher": {
+          "path": "private/test_runs/package_transaction_20260908_final1/source_archive/run_package_transaction_observation_v1.py",
+          "size": 6318,
+          "sha256": "eb709e0188f588b17b7abe28b877654eee337f1f1728b7901ffbfc5281bb90f2"
+        },
+        "collector": {
+          "path": "private/test_runs/package_transaction_20260908_final1/source_archive/mesen_package_transaction_observation_v1.lua",
+          "size": 9670,
+          "sha256": "c6923bd608804795cfc6b3dfd143dc65c2b99bc3a858f422bfae7dd889492cdd"
+        },
+        "validation_library": {
+          "path": "private/test_runs/package_transaction_20260908_final1/source_archive/package_transaction_validation_v1.py",
+          "size": 25442,
+          "sha256": "cb03514d844d5a50671ec3bf98ce6566a05ad3e1b423d9156ff8d50101d3928b"
+        },
+        "tests": {
+          "path": "private/test_runs/package_transaction_20260908_final1/source_archive/test_package_transaction_observation_v1.py",
+          "size": 12620,
+          "sha256": "846749a9c84271d7b99c5553631b5d698b737321a5540b7e76cc9d0ccd90966c"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/package_transaction_20260908_final1/source_archive/run_mesen_field_animation_probe_v0.py",
+          "size": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        }
+      },
+      "all_staged_input_bytes_revalidated": true
+    },
+    {
+      "directory": "private/test_runs/package_transaction_20260908_final2",
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_final2/trace.json",
+        "size": 6113025,
+        "sha256": "fc9e89c139d00a23ab67a84ee77f497e6dfe63133c14509b23f50ce72d0523e7"
+      },
+      "manifest": {
+        "path": "private/test_runs/package_transaction_20260908_final2/manifest.json",
+        "size": 11409,
+        "sha256": "44b746ad5924ee085a7d203b84cf3f22480838d8bbea751ccef98149a508378d"
+      },
+      "prelaunch": {
+        "path": "private/test_runs/package_transaction_20260908_final2/launch_inputs.json",
+        "size": 2442,
+        "sha256": "bad38935adf7604e296b0ce03b77ef3cc529a79670c4d2ce7013b8d2bc6017e8"
+      },
+      "process_log": {
+        "path": "private/test_runs/package_transaction_20260908_final2/process.log",
+        "size": 1340346,
+        "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59"
+      },
+      "source_archive": {
+        "launcher": {
+          "path": "private/test_runs/package_transaction_20260908_final2/source_archive/run_package_transaction_observation_v1.py",
+          "size": 6318,
+          "sha256": "eb709e0188f588b17b7abe28b877654eee337f1f1728b7901ffbfc5281bb90f2"
+        },
+        "collector": {
+          "path": "private/test_runs/package_transaction_20260908_final2/source_archive/mesen_package_transaction_observation_v1.lua",
+          "size": 9670,
+          "sha256": "c6923bd608804795cfc6b3dfd143dc65c2b99bc3a858f422bfae7dd889492cdd"
+        },
+        "validation_library": {
+          "path": "private/test_runs/package_transaction_20260908_final2/source_archive/package_transaction_validation_v1.py",
+          "size": 25442,
+          "sha256": "cb03514d844d5a50671ec3bf98ce6566a05ad3e1b423d9156ff8d50101d3928b"
+        },
+        "tests": {
+          "path": "private/test_runs/package_transaction_20260908_final2/source_archive/test_package_transaction_observation_v1.py",
+          "size": 12620,
+          "sha256": "846749a9c84271d7b99c5553631b5d698b737321a5540b7e76cc9d0ccd90966c"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/package_transaction_20260908_final2/source_archive/run_mesen_field_animation_probe_v0.py",
+          "size": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        }
+      },
+      "all_staged_input_bytes_revalidated": true
+    }
+  ],
+  "history": [
+    {
+      "directory": "private/test_runs/package_transaction_20260908_explore1",
+      "status": "root exploratory trace; old schema; launcher rejected its former 4 MiB read limit",
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_explore1/trace.json",
+        "size": 5609540,
+        "sha256": "4a702089c2e585d808bc681b32aa57380f6cd4a374371d690f2d0adeb2287224"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/package_transaction_20260908_explore1/staged/collector.lua",
+        "size": 9354,
+        "sha256": "7f461a5a8d6df03d84e48832765c42d075862ae80c6c6444626794f7a273b190"
+      },
+      "prelaunch_source_archive_available": false
+    },
+    {
+      "directory": "private/test_runs/package_transaction_20260908_hardened1",
+      "status": "rejected: exploratory target-result clear range was incomplete; no accepted manifest",
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_hardened1/trace.json",
+        "size": 6054283,
+        "sha256": "3944b62700e24832d28e01e561f738643042ca5205166f9425258db577f58373"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/package_transaction_20260908_hardened1/staged/collector.lua",
+        "size": 9670,
+        "sha256": "6f220bea5f2a2b3a6932e434fdfaea1aec9afdbd81b7db468606c9d588360ef8"
+      },
+      "prelaunch_source_archive_available": false
+    },
+    {
+      "directory": "private/test_runs/package_transaction_20260908_hardened2",
+      "status": "source-frozen exploratory acceptance before independent review and final pair",
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_hardened2/trace.json",
+        "size": 6113025,
+        "sha256": "fc9e89c139d00a23ab67a84ee77f497e6dfe63133c14509b23f50ce72d0523e7"
+      },
+      "staged_collector": {
+        "path": "private/test_runs/package_transaction_20260908_hardened2/staged/collector.lua",
+        "size": 9670,
+        "sha256": "c6923bd608804795cfc6b3dfd143dc65c2b99bc3a858f422bfae7dd889492cdd"
+      },
+      "prelaunch_source_archive_available": true
+    }
+  ],
+  "identical_trace_sha256": "fc9e89c139d00a23ab67a84ee77f497e6dfe63133c14509b23f50ce72d0523e7",
+  "identical_manifest_sha256": "44b746ad5924ee085a7d203b84cf3f22480838d8bbea751ccef98149a508378d",
+  "identical_prelaunch_sha256": "bad38935adf7604e296b0ce03b77ef3cc529a79670c4d2ce7013b8d2bc6017e8",
+  "observations": {
+    "boundary_cpu_contexts": {
+      "animation-result-call": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48158,
+        "ps": 35,
+        "sp": 1770,
+        "x": 0,
+        "y": 0
+      },
+      "animation-result-return": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48161,
+        "ps": 35,
+        "sp": 1770,
+        "x": 132,
+        "y": 44
+      },
+      "animation-wrapper-entry": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 44119,
+        "ps": 35,
+        "sp": 1768,
+        "x": 0,
+        "y": 0
+      },
+      "branch-producer-complete": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 16540,
+        "ps": 34,
+        "sp": 1756,
+        "x": 0,
+        "y": 0
+      },
+      "caller-effect-latch": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 16615,
+        "ps": 35,
+        "sp": 1756,
+        "x": 0,
+        "y": 65535
+      },
+      "common-loader-entry": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 18483,
+        "ps": 35,
+        "sp": 1752,
+        "x": 3994,
+        "y": 16
+      },
+      "common-loader-rts": {
+        "a": 16,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 18667,
+        "ps": 35,
+        "sp": 1752,
+        "x": 96,
+        "y": 15
+      },
+      "dispatcher-rts": {
+        "a": 16,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 17195,
+        "ps": 35,
+        "sp": 1754,
+        "x": 96,
+        "y": 15
+      },
+      "effect-preparation-return": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48087,
+        "ps": 35,
+        "sp": 1770,
+        "x": 88,
+        "y": 4
+      },
+      "mp-participant0-call": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48129,
+        "ps": 34,
+        "sp": 1770,
+        "x": 8,
+        "y": 20
+      },
+      "mp-participant0-return": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48132,
+        "ps": 35,
+        "sp": 1770,
+        "x": 0,
+        "y": 20
+      },
+      "mp-participant1-call": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48142,
+        "ps": 160,
+        "sp": 1770,
+        "x": 0,
+        "y": 0
+      },
+      "mp-participant1-return": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48145,
+        "ps": 35,
+        "sp": 1770,
+        "x": 0,
+        "y": 0
+      },
+      "mp-participant2-call": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48155,
+        "ps": 160,
+        "sp": 1770,
+        "x": 0,
+        "y": 0
+      },
+      "pre-effect-boundary": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48084,
+        "ps": 34,
+        "sp": 1770,
+        "x": 0,
+        "y": 3
+      },
+      "preparation-af23-branch": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48090,
+        "ps": 35,
+        "sp": 1770,
+        "x": 88,
+        "y": 4
+      },
+      "preparation-b3c8-branch": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48095,
+        "ps": 35,
+        "sp": 1770,
+        "x": 88,
+        "y": 4
+      },
+      "queue-release-entry": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48376,
+        "ps": 35,
+        "sp": 1770,
+        "x": 0,
+        "y": 0
+      },
+      "queue-release-rts": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48494,
+        "ps": 160,
+        "sp": 1770,
+        "x": 37870,
+        "y": 0
+      },
+      "queued-tech-entry": {
+        "a": 128,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 47945,
+        "ps": 160,
+        "sp": 1770,
+        "x": 37870,
+        "y": 0
+      },
+      "resolver-entry": {
+        "a": 43836,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 17938,
+        "ps": 128,
+        "sp": 1752,
+        "x": 16,
+        "y": 2
+      },
+      "resolver-tail": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 18047,
+        "ps": 35,
+        "sp": 1752,
+        "x": 3994,
+        "y": 16
+      },
+      "result-application-entry": {
+        "a": 4,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 60543,
+        "ps": 33,
+        "sp": 1764,
+        "x": 0,
+        "y": 0
+      },
+      "result-wrapper-entry": {
+        "a": 4,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 44122,
+        "ps": 33,
+        "sp": 1768,
+        "x": 0,
+        "y": 0
+      },
+      "shared-finalizer-call": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48218,
+        "ps": 35,
+        "sp": 1770,
+        "x": 176,
+        "y": 44
+      },
+      "shared-finalizer-entry": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48563,
+        "ps": 35,
+        "sp": 1768,
+        "x": 176,
+        "y": 44
+      },
+      "shared-finalizer-return": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48221,
+        "ps": 35,
+        "sp": 1770,
+        "x": 0,
+        "y": 0
+      },
+      "successful-table-clear": {
+        "a": 1,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48214,
+        "ps": 33,
+        "sp": 1770,
+        "x": 132,
+        "y": 44
+      },
+      "target-validation-return": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48011,
+        "ps": 35,
+        "sp": 1770,
+        "x": 11,
+        "y": 3
+      },
+      "transaction-caller-resume": {
+        "a": 255,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 34257,
+        "ps": 160,
+        "sp": 1772,
+        "x": 37870,
+        "y": 0
+      }
+    },
+    "caller_cpu_address": "C185D1",
+    "caller_return_index": 1275,
+    "caller_return_poll": 994,
+    "caller_sp": 1772,
+    "entry_poll": 373,
+    "entry_sp": 1770,
+    "event_counts": {
+      "animation-result-call": 1,
+      "animation-result-return": 1,
+      "animation-wrapper-entry": 1,
+      "baseline": 1,
+      "branch-producer-complete": 1,
+      "caller-effect-latch": 1,
+      "caller-package-latch": 517,
+      "caller-resume": 517,
+      "common-loader-entry": 1,
+      "common-loader-rts": 1,
+      "dispatcher-rts": 1,
+      "effect-preparation-return": 1,
+      "hp-result-store": 11,
+      "hp-result-store-readback": 11,
+      "latch-write": 8,
+      "menu-observation": 4,
+      "mp-deduction-entry": 3,
+      "mp-deduction-rts": 3,
+      "mp-participant0-call": 1,
+      "mp-participant0-return": 1,
+      "mp-participant1-call": 1,
+      "mp-participant1-return": 1,
+      "mp-participant2-call": 1,
+      "pre-effect-boundary": 1,
+      "preparation-af23-branch": 1,
+      "preparation-b3c8-branch": 1,
+      "publication-write": 18,
+      "queue-release-entry": 1,
+      "queue-release-rts": 1,
+      "queued-tech-entry": 1,
+      "resolver-entry": 1,
+      "resolver-tail": 1,
+      "result-application-entry": 1,
+      "result-wrapper-entry": 1,
+      "shared-finalizer-call": 1,
+      "shared-finalizer-entry": 1,
+      "shared-finalizer-return": 1,
+      "successful-table-clear": 1,
+      "sync-command-increment": 1,
+      "target-validation-return": 1,
+      "terminal": 1,
+      "terminal-command-clear": 2,
+      "transaction-caller-resume": 1,
+      "transaction-memory-write": 150
+    },
+    "hp_after_results": [
+      739,
+      821,
+      712,
+      6337,
+      1,
+      1,
+      10335,
+      1,
+      1,
+      1,
+      19920
+    ],
+    "hp_before_results": [
+      739,
+      821,
+      712,
+      8000,
+      1,
+      1,
+      12000,
+      1,
+      1,
+      1,
+      20000
+    ],
+    "hp_first_pass_witnesses": [
+      {
+        "byte_write_indices": [
+          1122,
+          1123
+        ],
+        "hp_after_first_store": 739,
+        "hp_before": 739,
+        "pending_first_term": 0,
+        "readback_index": 1124,
+        "slot": 0,
+        "store_index": 1121
+      },
+      {
+        "byte_write_indices": [
+          1134,
+          1135
+        ],
+        "hp_after_first_store": 821,
+        "hp_before": 821,
+        "pending_first_term": 0,
+        "readback_index": 1136,
+        "slot": 1,
+        "store_index": 1133
+      },
+      {
+        "byte_write_indices": [
+          1146,
+          1147
+        ],
+        "hp_after_first_store": 712,
+        "hp_before": 712,
+        "pending_first_term": 0,
+        "readback_index": 1148,
+        "slot": 2,
+        "store_index": 1145
+      },
+      {
+        "byte_write_indices": [
+          1158,
+          1159
+        ],
+        "hp_after_first_store": 6337,
+        "hp_before": 8000,
+        "pending_first_term": 1663,
+        "readback_index": 1160,
+        "slot": 3,
+        "store_index": 1157
+      },
+      {
+        "byte_write_indices": [
+          1170,
+          1171
+        ],
+        "hp_after_first_store": 1,
+        "hp_before": 1,
+        "pending_first_term": 0,
+        "readback_index": 1172,
+        "slot": 4,
+        "store_index": 1169
+      },
+      {
+        "byte_write_indices": [
+          1182,
+          1183
+        ],
+        "hp_after_first_store": 1,
+        "hp_before": 1,
+        "pending_first_term": 0,
+        "readback_index": 1184,
+        "slot": 5,
+        "store_index": 1181
+      },
+      {
+        "byte_write_indices": [
+          1194,
+          1195
+        ],
+        "hp_after_first_store": 10335,
+        "hp_before": 12000,
+        "pending_first_term": 1665,
+        "readback_index": 1196,
+        "slot": 6,
+        "store_index": 1193
+      },
+      {
+        "byte_write_indices": [
+          1206,
+          1207
+        ],
+        "hp_after_first_store": 1,
+        "hp_before": 1,
+        "pending_first_term": 0,
+        "readback_index": 1208,
+        "slot": 7,
+        "store_index": 1205
+      },
+      {
+        "byte_write_indices": [
+          1218,
+          1219
+        ],
+        "hp_after_first_store": 1,
+        "hp_before": 1,
+        "pending_first_term": 0,
+        "readback_index": 1220,
+        "slot": 8,
+        "store_index": 1217
+      },
+      {
+        "byte_write_indices": [
+          1230,
+          1231
+        ],
+        "hp_after_first_store": 1,
+        "hp_before": 1,
+        "pending_first_term": 0,
+        "readback_index": 1232,
+        "slot": 9,
+        "store_index": 1229
+      },
+      {
+        "byte_write_indices": [
+          1242,
+          1243
+        ],
+        "hp_after_first_store": 19920,
+        "hp_before": 20000,
+        "pending_first_term": 80,
+        "readback_index": 1244,
+        "slot": 10,
+        "store_index": 1241
+      }
+    ],
+    "limits": [
+      "fixed successful supported-PC action from a diagnostic checkpoint; no failure/refusal path executed",
+      "first HP subtraction has direct operand/write/readback proof; later clamping and other result semantics remain outside that arithmetic claim",
+      "memory ledger covers declared watched ranges, not every effect-preparation side effect",
+      "three live party MP words observed; not all seven serialized playable-character records",
+      "no installed helper, hook, production allocation, high binding, or PC07"
+    ],
+    "mp_deductions": [
+      {
+        "actual_write_indices": [
+          36,
+          37
+        ],
+        "call_index": 34,
+        "cost_argument": 20,
+        "entry_index": 35,
+        "mp_after": 73,
+        "mp_before": 93,
+        "participant_id": 0,
+        "participant_position": 0,
+        "return_index": 39,
+        "rts_index": 38
+      },
+      {
+        "actual_write_indices": [],
+        "call_index": 40,
+        "cost_argument": 0,
+        "entry_index": 41,
+        "mp_after": null,
+        "mp_before": null,
+        "participant_id": 255,
+        "participant_position": 1,
+        "return_index": 43,
+        "rts_index": 42
+      },
+      {
+        "actual_write_indices": [],
+        "call_index": 44,
+        "cost_argument": 0,
+        "entry_index": 45,
+        "mp_after": null,
+        "mp_before": null,
+        "participant_id": 255,
+        "participant_position": 2,
+        "return_index": 47,
+        "rts_index": 46
+      }
+    ],
+    "other_two_queue_records_unchanged_to_caller": true,
+    "participants_unchanged_after_target_validation": true,
+    "pc_mp_after": [
+      73,
+      97,
+      99
+    ],
+    "pc_mp_before": [
+      93,
+      97,
+      99
+    ],
+    "pending_result_application_observed": true,
+    "pre_effect_boundary": {
+      "action_id": 8,
+      "actor_slot": 0,
+      "cpu": {
+        "a": 0,
+        "d": 0,
+        "dbr": 126,
+        "emulationMode": false,
+        "k": 193,
+        "pc": 48084,
+        "ps": 34,
+        "sp": 1770,
+        "x": 0,
+        "y": 3
+      },
+      "participant_ids": [
+        0,
+        255,
+        255
+      ],
+      "queue_pointer": "7E93EE",
+      "record_index": 9,
+      "selector_binding": "canonical action/config 08; no high package binding"
+    },
+    "queued_entry_index": 5,
+    "record_count": 1277,
+    "resolver_branch_word": 0,
+    "resolver_entry_index": 52,
+    "selected_queue_released": true,
+    "shared_finalizer_success_path_observed": true,
+    "target_result_clear_snapshot": {
+      "actual_stores_not_watched": true,
+      "preserved_length": 18,
+      "preserved_start": "7EAD89",
+      "zero_length": 177,
+      "zero_start": "7EAD9B"
+    },
+    "timing_basis": "full memoryManager.masterClock; generic masterClock is low32; frame is input-poll ordinal",
+    "transaction_count": 1,
+    "transaction_id": 1,
+    "watched_snapshot_changes_explained_by_actual_writes": true
+  },
+  "canonical_spans": [
+    {
+      "name": "queued-tech-transaction",
+      "cpu_start": "C1BB49",
+      "cpu_end_exclusive": "C1BC60",
+      "size": 279,
+      "sha256": "7c1f714e24d2a05548e5fd0b8df02fb18f5c56b59a29acc257cf7ecf71984ac7",
+      "evidence_level": "verified-static"
+    },
+    {
+      "name": "queue-release",
+      "cpu_start": "C1BCF8",
+      "cpu_end_exclusive": "C1BD6F",
+      "size": 119,
+      "sha256": "6ce9e5574a0c6892a773ed1da81b03069c5ba47c68cb9b53e257eac9830c1aab",
+      "evidence_level": "verified-static"
+    },
+    {
+      "name": "shared-finalizer",
+      "cpu_start": "C1BDB3",
+      "cpu_end_exclusive": "C1BF46",
+      "size": 403,
+      "sha256": "b3281d8212fb9d53d70068adff23d3281d86defa936fc07174fb07c79f4c15bc",
+      "evidence_level": "verified-static"
+    },
+    {
+      "name": "participant-mp-deduction",
+      "cpu_start": "C1CC71",
+      "cpu_end_exclusive": "C1CCCB",
+      "size": 90,
+      "sha256": "a244c0b228a6f66df81db5c4fb32bf3c98d9c0d2c9f7e98193264648ac0d93bc",
+      "evidence_level": "verified-static"
+    },
+    {
+      "name": "result-wrapper",
+      "cpu_start": "C1AC57",
+      "cpu_end_exclusive": "C1AC89",
+      "size": 50,
+      "sha256": "ff8182f33ad9fa24681c7e6829cf722328d39b7f301ead7c6604ca569859c3ec",
+      "evidence_level": "verified-static"
+    },
+    {
+      "name": "result-application-and-first-hp-store",
+      "cpu_start": "C1EC7F",
+      "cpu_end_exclusive": "C1ECA3",
+      "size": 36,
+      "sha256": "4fd8fb28635325d22bd8c0dae9a942bfa420ee78b9e0b2f8bf464555fe35004c",
+      "evidence_level": "verified-static"
+    },
+    {
+      "name": "target-result-clear",
+      "cpu_start": "FDACEE",
+      "cpu_end_exclusive": "FDACFD",
+      "size": 15,
+      "sha256": "7d997492d65c91df133e899332b61dc7aaa0cafe2bb6915775ae153918d4ac5f",
+      "evidence_level": "verified-static"
+    }
+  ],
+  "annotation_revision": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+  "checkpoint_scope": "captured diagnostic checkpoint from recovered pre-Lavos SRAM; exact SRAM loaded into emulated SRAM during acquisition; current observer only reloads pinned state and supplies fixed joypad",
+  "tests": {
+    "command": "python -B -m unittest discover -s tests -p test_package_transaction_observation_v1.py",
+    "passed_at_freeze": 41,
+    "fixture_scope": "original synthetic metadata; not native refusal evidence"
+  },
+  "reproduce_observation": "python -B tools/run_package_transaction_observation_v1.py --output-dir private/test_runs/package_transaction_NEW_UNIQUE",
+  "reproduce_metadata": "python -B tools/collect_package_transaction_evidence_v1.py",
+  "serialization": "json.dumps(value, indent=2), UTF-8, LF, one trailing newline",
+  "production_approval": false
+}
