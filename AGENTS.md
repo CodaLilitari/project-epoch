@@ -172,6 +172,26 @@ These are separate namespaces. Never conflate them.
   The terminal-only symbolic stream does not by itself complete an action;
   the caller also waits on `$9876` and `$5D9B`. See the developer log and
   `docs/DATA_MAPPING_CORRECTIONS.md` before adopting an old annotation.
+- The separately versioned 676-byte ROM-source helper now passes two identical
+  1,454-case synthetic Mesen runs using actual CPU reads from banks `$41/$42`
+  of the unchanged original SHA benchmark. Both masks and every direct target
+  are preflighted before publication. Complete observed helper PC sequences,
+  ordered reads/writes, final CPU state, full WRAM diffs, and unchanged input
+  snapshots pass. Those descriptor-shaped original bytes are not certified
+  battle streams. The helper still executes in synthetic WRAM and uses the
+  known-unsuitable `$7E4000` scratch fixture; no ROM code placement, immutable
+  production registry, game hook, interrupt ownership, or selector is approved.
+  Preserve v0 and v1; the separate v2 stack-frame design is the next temporary
+  storage experiment, not an approved game-stack allocation.
+- A separate repeated clean-ROM context observation records 2,402 paired
+  interrupt entries/pre-RTI snapshots per run and one PC-scoped NMI scene
+  clear with an actual write and later readback. No interrupt enters its short
+  canonical resolver interval of 4,244 master clocks / 548 CPU-cycle-counter
+  increments. The recorded minimum handler SP `$06A2` is sampled, not the
+  whole stack floor. Use the full serialized `memoryManager.masterClock`;
+  Mesen's generic `masterClock` is only its low 32 bits. Saved IRQ I=0 is an
+  observation, not a universal precondition: a previously sampled IRQ can
+  remain pending across SEI. This proves no helper preemption behavior.
 - A late resolver refusal is not queued-Tech cancellation: the vanilla path
   prepares effects and charges participant MP before animation, then applies
   pending results after normal animation return. The candidate preflight is

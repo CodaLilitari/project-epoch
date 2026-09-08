@@ -29,6 +29,20 @@ closed for this session.
   its validator is being hardened before acceptance. The immutable-ROM helper
   has a repeated transport result, with a newly requested complete execution
   whitelist still being added before publication.
+- 15:25 UTC: pushed the static cancellation/IRQ increment as `8cdc06a` and
+  verified the remote branch, authenticated commit API, and exact bytes of
+  all eleven changed files. The publication receipt preserves their hashes.
+- 15:49 UTC: independently reviewed the stronger ROM-source v1 proof and the
+  final context observation. The new 62 host tests pass, and the context
+  metadata reproduces byte for byte from its two identical frozen runs.
+  A separate stack-relative v2 helper is in synthetic testing. Its first
+  full instrumented attempt exceeded the declared timeout and remains
+  incomplete; no acceptance is inferred from partial progress.
+- 15:50 UTC: a controller-only continuation from the pinned Spekkio checkpoint
+  reaches the alternate resolver branch: Magus Black Hole, selector `$37`,
+  branch `$0040`. This is still exploratory pending a focused collector,
+  independent validator, and repeated frozen runs. The accepted primary
+  observation remains unchanged.
 
 ## Gates and evidence boundaries
 

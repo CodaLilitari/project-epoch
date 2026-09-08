@@ -35,6 +35,8 @@ runtime trace.
 | MAP-004 | 2026-09-08 | Historical upstream concern superseded by later implementation | Owner-mask positions versus counts and pointer alias identity |
 | MAP-005 | 2026-09-08 | External active-runner annotation contradicted | Descriptor owner transport versus active-script dispatch |
 | MAP-006 | 2026-09-08 | Project architecture instruction narrowed | Cross-bank calls versus tail transfers retaining a near-call frame |
+| MAP-007 | 2026-09-08 | External cancellation/refund annotation contradicted | Shared queued-Tech success/failure finalization |
+| MAP-008 | 2026-09-08 | External instruction-width decode contradicted | IRQ-path 16-bit immediate operands versus apparent WRAM writes |
 
 ## MAP-001 — exact bank end is not an out-of-range CPU register
 

@@ -1,0 +1,72 @@
+{
+  "schema": "project-epoch-six-hour-publications-v1",
+  "evidence_level": "verified-remote-source",
+  "session_start_utc": "2026-09-08T14:58:41Z",
+  "repository": "https://github.com/andreipemberton/project-epoch",
+  "verification_scope": "Authenticated branch, commit API, and complete changed-file content bytes. User acknowledged account restriction; anonymous visibility not rechecked.",
+  "publications": [
+    {
+      "commit": "8cdc06a830eaf2124b7aa7dbc1a47081bc21fda0",
+      "verified_at_utc": "2026-09-08T15:25:03.331430+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 24296,
+          "sha256": "cd76a156c2095cd2f887d4921ef1874b964ed1b1afc978a27793f51c48781a53"
+        },
+        {
+          "path": "docs/DATA_MAPPING_CORRECTIONS.md",
+          "size": 19151,
+          "sha256": "69725fd1956eb9263f847a6b3d38cb1167700a274174450764336c0ace353fb2"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 22739,
+          "sha256": "c71ecfa8971c732acb9dab88ed61b45343ee3684fcb28e0e47c9a756c8d6d0b8"
+        },
+        {
+          "path": "docs/schala_package_cancellation_contract_v1.md",
+          "size": 16431,
+          "sha256": "2c0e168312536c84f62e3023012804e523ed6f93e92174571fc7e802259931cb"
+        },
+        {
+          "path": "docs/schala_package_interrupt_closure_v1.md",
+          "size": 12691,
+          "sha256": "875fddbadf057e5fd97ba71558a12c3cd16d5f1785ee9ce64df7911f3217ec96"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 2502,
+          "sha256": "3b9ebaa453d1fa6fa1338f12e30d667aee2f8c6b0613571fe587539d0a581913"
+        },
+        {
+          "path": "references/package_cancellation_boundaries_v1.json",
+          "size": 8576,
+          "sha256": "3b7161f9dbd295ad5bd2c685fc9e9122170e3615662ea1eb69d252bc32d8372b"
+        },
+        {
+          "path": "references/schala_package_interrupt_closure_v1.json",
+          "size": 6774,
+          "sha256": "8ae0108d9412b404e461e4a17d95713e6a5b950308693efec69eef0c90bd2b04"
+        },
+        {
+          "path": "tests/test_schala_package_interrupt_closure_v1.py",
+          "size": 3530,
+          "sha256": "064e11334f9d1f13cc9ecd4b3b4adb242723a2589c01aad2510cf8cce9cbfec3"
+        },
+        {
+          "path": "tools/audit_package_cancellation_boundaries_v1.py",
+          "size": 8894,
+          "sha256": "c3693afadfb6b1d46252e40c5d2c9db645879c56c9227f48b3ed3d98acfd1114"
+        },
+        {
+          "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+          "size": 13647,
+          "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+        }
+      ],
+      "all_changed_bytes_match": true
+    }
+  ]
+}

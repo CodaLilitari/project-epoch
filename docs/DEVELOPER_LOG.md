@@ -342,3 +342,64 @@ naturally selected alternate package branch, and complete the separately
 versioned ROM-source helper proof. The original global scratch remains
 unsuitable for game use; stack-owned temporary storage needs its own ABI and
 interrupt proof. This increment's publication will be recorded after push.
+
+## 2026-09-08 — expanded-ROM reads and interrupt context reproduced
+
+**Status:** `verified-runtime` in two separate bounded experiments during the
+six-hour continuation. No production helper or eighth-character patch is
+installed. The preceding static cancellation/IRQ increment is published as
+[`8cdc06a830eaf2124b7aa7dbc1a47081bc21fda0`](https://github.com/andreipemberton/project-epoch/commit/8cdc06a830eaf2124b7aa7dbc1a47081bc21fda0),
+with all eleven changed files verified byte for byte through authenticated
+GitHub access. The [session publication receipt](../references/work_session_publications_2026_09_08.json)
+records that completed synchronization.
+
+The separately versioned [676-byte ROM-source helper](schala_package_helper_v1_rom_source.md)
+passes two identical 1,454-case Mesen runs. It reads actual emulated ROM banks
+`$41/$42` from the unchanged original SHA benchmark, preflights both masks and
+every direct target, and publishes the expected bank-qualified entries.
+Each run retains 1,049,158 observed PCs and 543,631 CPU data reads, including
+26,690 exact ROM-source reads. Final CPU state, ordered publications, complete
+WRAM differences, input snapshots, and source/staged hashes pass. These are
+original descriptor-shaped byte fixtures; their pointed bytes are neither
+executed nor certified as battle commands. Code and scratch remain synthetic
+WRAM placements, so real ROM code placement and game ownership remain open.
+The [current reference](../references/schala_package_helper_v1_rom_source.json)
+preserves all earlier attempts and the exact pre-execution-guard reference.
+
+Review found an observation gap in the first execution-guard attempt:
+Mesen executes a `setState` redirect's first opcode without another callback.
+A separate original JML setup bridge makes the helper's first instruction
+observable. The accepted pair covers the complete helper interval. The
+helper assembly stayed unchanged, and all four old/new CPU/read/write/state
+projections match. The report also preserves the earlier endpoint-carry bug,
+its correction, and the prepared-only metadata serialization failure.
+
+The [clean-ROM context observation](schala_package_resolver_context_v1.md)
+also repeats exactly. Each run has 11,905 records and 2,402 paired handler
+entries/pre-RTI snapshots with preserved registers and hardware return frames.
+A PC-scoped NMI scene clear has a pre-instruction snapshot, actual zero write,
+post-write readback, and later caller read. The earlier enemy clear is excluded.
+No interrupt enters the short canonical resolver interval: 4,244 emulated
+master clocks and 548 CPU-cycle-counter increments. Recorded SP minima are
+samples, not a proved stack floor. The [reference](../references/package_resolver_context_v1.json)
+and read-only metadata collector reproduce these identities without another
+emulator run.
+
+**Review and validation:** the two new host suites pass all 62 tests. The
+root independently regenerated the context reference byte for byte and
+reviewed both reports. The [independent review receipt](schala_package_integration_review_receipt_2026_09_08.md)
+records source checks, exact artifact identities, the complete-execution
+fix, and the IRQ latency correction. Mesen's generic clock is 32 bits;
+intervals now use its full serialized counter. A proposed universal saved-I=0
+IRQ rule was withdrawn after source review because a previously sampled IRQ
+can survive SEI. These are diagnostic-tool refinements, not new canonical
+character-data contradictions.
+
+**Resume:** the [separate stack-frame design](schala_package_stack_frame_design_v2.md)
+defines 42 bytes of locals and a 52-byte maximum helper contribution. Its
+implementation and deliberate-interruption proof are separate next results.
+The full normal-NMI tree, actual game stack headroom, immutable production
+registry, guarded placement, and transaction-level cancellation remain open.
+A natural Black Hole/Spekkio alternate-branch exploration has succeeded and
+is being converted to a fixed, reviewed replay. This increment's own push
+will receive a subsequent verified publication entry.

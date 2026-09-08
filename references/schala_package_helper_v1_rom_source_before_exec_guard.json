@@ -1,0 +1,1039 @@
+{
+  "schema": "project-epoch-package-helper-v1-rom-source-evidence",
+  "version": 1,
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "original-helper-immutable-synthetic-rom-source-transport",
+  "gate": "BA-NATIVE-INTEGRATION-DESIGN",
+  "subgate": "BA-NATIVE-ROM-SOURCE-TRANSPORT",
+  "scope": {
+    "source_rom_unchanged": true,
+    "source_rom_contains_no_chrono_trigger_data": true,
+    "helper_executed_in_synthetic_wram": true,
+    "exact_cpu_rom_reads_observed": true,
+    "pointed_stream_read_or_execution": false,
+    "production_hook_or_allocation": false,
+    "production_registry_or_scratch_ownership": false,
+    "real_game_interrupt_policy": false,
+    "cancellation_lifecycle": false,
+    "pc07_runtime": false,
+    "canonical_rom_mutation": false,
+    "synthetic_rom_mutation": false,
+    "high_selector_production_binding": false
+  },
+  "source_identities": [
+    {
+      "path": "asm/schala_package_helper_v1_rom_source.asm",
+      "size_bytes": 8200,
+      "sha256": "0a71029770a494707cc03eae6d80461de6de3a30544dc01cc632bf82d1079e9b"
+    },
+    {
+      "path": "tools/run_schala_package_helper_v1_rom_source.py",
+      "size_bytes": 22064,
+      "sha256": "e2c68fa958b0ed3ec843bfc9b4969774765345343fa2953ef15db6b816d93ad1"
+    },
+    {
+      "path": "tools/mesen_schala_package_helper_v1_rom_source.lua",
+      "size_bytes": 7184,
+      "sha256": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499"
+    },
+    {
+      "path": "tests/test_schala_package_helper_v1_rom_source.py",
+      "size_bytes": 7932,
+      "sha256": "d826f73f48068bffc658bb73c4869a5a7f9b07fd754fe2e20a7c62ddc2097c25"
+    }
+  ],
+  "preserved_v0_source": {
+    "path": "asm/schala_package_helper_v0.asm",
+    "size_bytes": 6012,
+    "sha256": "26987977881f24cbe234262f59c4a3f8de438e4bde3eb053375f0f29ae436f80"
+  },
+  "fixture_contract": {
+    "accepted_bank_words": [
+      65,
+      66
+    ],
+    "source_rom_sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+    "descriptors": [
+      {
+        "identity": "IMMUTABLE_ORIGINAL_SHA_CODE_AS_DESCRIPTOR_BYTES",
+        "bank": 65,
+        "file_start": 4259842,
+        "file_end_exclusive": 4259862,
+        "pointer_occurrences": 8,
+        "sha256": "d6b8165c0913a74324c7d46b24330ddd7fbcd99cf05b12d2fabf9b82fe2b91e7"
+      },
+      {
+        "identity": "IMMUTABLE_ORIGINAL_SHA_CONSTANTS_AS_DESCRIPTOR_BYTES",
+        "bank": 66,
+        "file_start": 4325376,
+        "file_end_exclusive": 4325408,
+        "pointer_occurrences": 14,
+        "sha256": "04f93fd18db0bc237c01a03fe85c033f2c090085f0cd3d6301669ae4cc2bb8ab"
+      }
+    ],
+    "registry_record_size": 16,
+    "registry_count": 16,
+    "allowed_target_array_size": 64,
+    "allowed_target_count_max": 32,
+    "registry_fixture_span": [
+      8269824,
+      8270080
+    ],
+    "target_fixture_span": [
+      8270080,
+      8271104
+    ],
+    "scratch_fixture_span": [
+      8273920,
+      8274048
+    ],
+    "stack_write_span": [
+      8265702,
+      8265712
+    ],
+    "code_origin": 8355840,
+    "code_size": 676,
+    "production_bank43_accepted": false
+  },
+  "accepted_runs": [
+    {
+      "run_id": "package_helper_v1_rom_source_20260908_final2",
+      "evidence_level": "verified-runtime",
+      "manifest": {
+        "case_categories": {
+          "all-native-status-bits": 256,
+          "allowlist-count-boundary": 12,
+          "bank-high-byte-refusal": 6,
+          "both-rom-banks-all-flag-bytes": 512,
+          "canonical-selector": 128,
+          "each-high-selector-both-rom-banks": 64,
+          "every-allowlisted-target-required-before-publication": 44,
+          "every-bank-word-low-byte": 256,
+          "exact-descriptor-extent": 12,
+          "registry-reserved-fields": 18,
+          "source-bank-boundary": 10,
+          "unbound-selector": 128,
+          "wide-branch-refusal": 4,
+          "wide-selector": 4
+        },
+        "case_contract_sha256": "4735df3a5b5c1ee1e6d6a76d842f88b25ebeaf4e1234ba3bff6a02ad7523dd48",
+        "case_count": 1454,
+        "cpu_instruction_counts": {
+          "max": 1717,
+          "min": 16
+        },
+        "evidence_level": "verified-runtime",
+        "evidence_scope": "immutable-original-rom-source-transport-only",
+        "helper_code_base": 8355840,
+        "helper_sha256": "9a8554aa0045163abcc15f021fb80dc6606f3d6ce444dea682ff04ec6cc46b63",
+        "helper_size": 676,
+        "interrupt_policy": "synthetic IRQ/NMI sources disabled; no game interrupt claim",
+        "no_game_input": true,
+        "no_rom_write_or_patch": true,
+        "passed": true,
+        "pointed_stream_execution": false,
+        "production_hook_allocation_or_integration": false,
+        "repetition": 1,
+        "reproduce": [
+          "python",
+          "tools/run_schala_package_helper_v1_rom_source.py",
+          "--output-dir",
+          "private/test_runs/package_helper_v1_rom_source_NEW",
+          "--repetition",
+          "1",
+          "--timeout",
+          "90",
+          "--code-base",
+          "0x7F8000"
+        ],
+        "rom_source_banks": [
+          65,
+          66
+        ],
+        "schema": "project-epoch-package-helper-v1-rom-source",
+        "source_hashes": {
+          "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+          "collector": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "helper": "0a71029770a494707cc03eae6d80461de6de3a30544dc01cc632bf82d1079e9b",
+          "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+          "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+          "launcher": "e2c68fa958b0ed3ec843bfc9b4969774765345343fa2953ef15db6b816d93ad1",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844"
+        },
+        "sources_and_staged_inputs_unchanged": true,
+        "staged_hashes": {
+          "collector": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "inputs": "3be15df674b85138316870924c984bc9a8e00b092b09219119f4224c740e4f94",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "sram": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "subset_only": false,
+        "trace_sha256": "1a03ad63469d06b4946191e48a1324e2cca540bc16afc0205853c56e56cf94ac",
+        "wram_input_fixture_hashes_sha256": "65d0c3a398a79a667c3bc1c42074672a7d5bb480c283898ced8f002fead4556d"
+      },
+      "route_counts": {
+        "canonical": 192,
+        "refusal": 553,
+        "success": 709
+      },
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/case_contract.json",
+          "size_bytes": 2110930,
+          "sha256": "4735df3a5b5c1ee1e6d6a76d842f88b25ebeaf4e1234ba3bff6a02ad7523dd48"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/helper.asm",
+          "size_bytes": 8749,
+          "sha256": "ddea0e26b4bfd98514683a90fb37be873d2092f544103c63bd3af5203b6407f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/helper.bin",
+          "size_bytes": 676,
+          "sha256": "9a8554aa0045163abcc15f021fb80dc6606f3d6ce444dea682ff04ec6cc46b63"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/launch_inputs.json",
+          "size_bytes": 2421,
+          "sha256": "cda3fa22b740f783155784f47591b2fda7fab68df9913f9a7244b661d75cad18"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/manifest.json",
+          "size_bytes": 3502,
+          "sha256": "d66addb8abd34e8be775b2eccafcfaf0c3178400a5beaca23ed553e24252cda7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Debugger/pe_package_13747e651a99216663a5968f.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/Saves/pe_package_13747e651a99216663a5968f.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/collector.lua",
+          "size_bytes": 7184,
+          "sha256": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/inputs.lua",
+          "size_bytes": 1287996,
+          "sha256": "3be15df674b85138316870924c984bc9a8e00b092b09219119f4224c740e4f94"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/pe_package_13747e651a99216663a5968f.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/trace.json",
+          "size_bytes": 11725045,
+          "sha256": "1a03ad63469d06b4946191e48a1324e2cca540bc16afc0205853c56e56cf94ac"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final2/wram_input_fixture_hashes.json",
+          "size_bytes": 277904,
+          "sha256": "65d0c3a398a79a667c3bc1c42074672a7d5bb480c283898ced8f002fead4556d"
+        }
+      ],
+      "cpu_data_reads_total": 543631,
+      "cpu_rom_data_reads_total": 26690
+    },
+    {
+      "run_id": "package_helper_v1_rom_source_20260908_final3",
+      "evidence_level": "verified-runtime",
+      "manifest": {
+        "case_categories": {
+          "all-native-status-bits": 256,
+          "allowlist-count-boundary": 12,
+          "bank-high-byte-refusal": 6,
+          "both-rom-banks-all-flag-bytes": 512,
+          "canonical-selector": 128,
+          "each-high-selector-both-rom-banks": 64,
+          "every-allowlisted-target-required-before-publication": 44,
+          "every-bank-word-low-byte": 256,
+          "exact-descriptor-extent": 12,
+          "registry-reserved-fields": 18,
+          "source-bank-boundary": 10,
+          "unbound-selector": 128,
+          "wide-branch-refusal": 4,
+          "wide-selector": 4
+        },
+        "case_contract_sha256": "4735df3a5b5c1ee1e6d6a76d842f88b25ebeaf4e1234ba3bff6a02ad7523dd48",
+        "case_count": 1454,
+        "cpu_instruction_counts": {
+          "max": 1717,
+          "min": 16
+        },
+        "evidence_level": "verified-runtime",
+        "evidence_scope": "immutable-original-rom-source-transport-only",
+        "helper_code_base": 8355840,
+        "helper_sha256": "9a8554aa0045163abcc15f021fb80dc6606f3d6ce444dea682ff04ec6cc46b63",
+        "helper_size": 676,
+        "interrupt_policy": "synthetic IRQ/NMI sources disabled; no game interrupt claim",
+        "no_game_input": true,
+        "no_rom_write_or_patch": true,
+        "passed": true,
+        "pointed_stream_execution": false,
+        "production_hook_allocation_or_integration": false,
+        "repetition": 2,
+        "reproduce": [
+          "python",
+          "tools/run_schala_package_helper_v1_rom_source.py",
+          "--output-dir",
+          "private/test_runs/package_helper_v1_rom_source_NEW",
+          "--repetition",
+          "2",
+          "--timeout",
+          "90",
+          "--code-base",
+          "0x7F8000"
+        ],
+        "rom_source_banks": [
+          65,
+          66
+        ],
+        "schema": "project-epoch-package-helper-v1-rom-source",
+        "source_hashes": {
+          "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+          "collector": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "helper": "0a71029770a494707cc03eae6d80461de6de3a30544dc01cc632bf82d1079e9b",
+          "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+          "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+          "launcher": "e2c68fa958b0ed3ec843bfc9b4969774765345343fa2953ef15db6b816d93ad1",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844"
+        },
+        "sources_and_staged_inputs_unchanged": true,
+        "staged_hashes": {
+          "collector": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "inputs": "3be15df674b85138316870924c984bc9a8e00b092b09219119f4224c740e4f94",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "sram": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "subset_only": false,
+        "trace_sha256": "1a03ad63469d06b4946191e48a1324e2cca540bc16afc0205853c56e56cf94ac",
+        "wram_input_fixture_hashes_sha256": "65d0c3a398a79a667c3bc1c42074672a7d5bb480c283898ced8f002fead4556d"
+      },
+      "route_counts": {
+        "canonical": 192,
+        "refusal": 553,
+        "success": 709
+      },
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/case_contract.json",
+          "size_bytes": 2110930,
+          "sha256": "4735df3a5b5c1ee1e6d6a76d842f88b25ebeaf4e1234ba3bff6a02ad7523dd48"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/helper.asm",
+          "size_bytes": 8749,
+          "sha256": "ddea0e26b4bfd98514683a90fb37be873d2092f544103c63bd3af5203b6407f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/helper.bin",
+          "size_bytes": 676,
+          "sha256": "9a8554aa0045163abcc15f021fb80dc6606f3d6ce444dea682ff04ec6cc46b63"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/launch_inputs.json",
+          "size_bytes": 2421,
+          "sha256": "cda3fa22b740f783155784f47591b2fda7fab68df9913f9a7244b661d75cad18"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/manifest.json",
+          "size_bytes": 3502,
+          "sha256": "d1d81c58e08f3edcfd67229b2491991696f907d14c7af33e940511ffa2613f3b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Debugger/pe_package_a2afb334d8b425525d2c7f8e.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/Saves/pe_package_a2afb334d8b425525d2c7f8e.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/collector.lua",
+          "size_bytes": 7184,
+          "sha256": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/inputs.lua",
+          "size_bytes": 1287996,
+          "sha256": "3be15df674b85138316870924c984bc9a8e00b092b09219119f4224c740e4f94"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/pe_package_a2afb334d8b425525d2c7f8e.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/trace.json",
+          "size_bytes": 11725045,
+          "sha256": "1a03ad63469d06b4946191e48a1324e2cca540bc16afc0205853c56e56cf94ac"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final3/wram_input_fixture_hashes.json",
+          "size_bytes": 277904,
+          "sha256": "65d0c3a398a79a667c3bc1c42074672a7d5bb480c283898ced8f002fead4556d"
+        }
+      ],
+      "cpu_data_reads_total": 543631,
+      "cpu_rom_data_reads_total": 26690
+    }
+  ],
+  "identical_raw_traces": true,
+  "total_accepted_cases": 2908,
+  "host_tests": {
+    "command": "python -B -m unittest discover -s tests -p test_schala_package_helper_v1_rom_source.py",
+    "tests_run": 25,
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0
+  },
+  "exploratory_history": [
+    {
+      "run_id": "package_helper_v1_rom_source_20260908_explore1",
+      "status": "exploratory-not-final-evidence",
+      "reason": "Native conformance rejected two expected-success cases. The first v1 endpoint check branched on stale CMP #2 flags after STA. A CMP #0 now establishes the zero endpoint-carry test. This run is not positive conformance evidence.",
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/case_contract.json",
+          "size_bytes": 77755,
+          "sha256": "293c9a86baa2069076f8278eaff9826c1b59c712bad3f2c1228370384de68f67"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/helper.asm",
+          "size_bytes": 8731,
+          "sha256": "490ad60012751a8e5ba41524a886823ccd818945ad4c96f057298f54f7a084ed"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/helper.bin",
+          "size_bytes": 673,
+          "sha256": "43631c4e5e93e2e1799fd9085eb644932a7844f21f2d9ae044f6b8850e424fc1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/process.log",
+          "size_bytes": 672,
+          "sha256": "b70f46042dc22dafe1b515b35f47035e7d70868774d1a58186e71f904fd627d4"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Debugger/pe_package_71c7547d29309ce70fa0120c.cdl",
+          "size_bytes": 8388617,
+          "sha256": "8e7b372ddfc24b0ec5c6d897f99d837254c8019164df2eebca2c49f23ad49533"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/Saves/pe_package_71c7547d29309ce70fa0120c.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/collector.lua",
+          "size_bytes": 6295,
+          "sha256": "00de1145c2445a6b77c58d0ce8e9b22355aa0f9077595c83c9cda73ac3351d97"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/inputs.lua",
+          "size_bytes": 64095,
+          "sha256": "b26702be4c98d6e5d2c41db8151d22c3567f02b9a3b2954f669829140a071d94"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/pe_package_71c7547d29309ce70fa0120c.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore1/trace.json",
+          "size_bytes": 52546,
+          "sha256": "71120ce996e539b451ea8f7595961b39d100d13f9f71236a7f110f94bb2b6fe1"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v1_rom_source_20260908_explore2",
+      "status": "exploratory-not-final-evidence",
+      "reason": "130-case subset passed after the helper correction; predates complete input-fixture and all-CPU-read collection. Superseded as final evidence, preserved as exploratory history.",
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/case_contract.json",
+          "size_bytes": 77755,
+          "sha256": "293c9a86baa2069076f8278eaff9826c1b59c712bad3f2c1228370384de68f67"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/helper.asm",
+          "size_bytes": 8749,
+          "sha256": "ddea0e26b4bfd98514683a90fb37be873d2092f544103c63bd3af5203b6407f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/helper.bin",
+          "size_bytes": 676,
+          "sha256": "9a8554aa0045163abcc15f021fb80dc6606f3d6ce444dea682ff04ec6cc46b63"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/manifest.json",
+          "size_bytes": 3053,
+          "sha256": "36654aafcd57410838288fc6e325c06edd7256d04f8fe4ed3dd874ab3fc4760e"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/process.log",
+          "size_bytes": 1512,
+          "sha256": "6cfa7876e4165c5ce76cbf002ae6c6744b8953159db594cb250a18922a73b0eb"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Debugger/pe_package_d49922d6a4d1853f93746c3e.cdl",
+          "size_bytes": 8388617,
+          "sha256": "fc5a0ecb955117dc155fdd625f13485a7e4d5d123b1da21b68eea6b92dc58a90"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/Saves/pe_package_d49922d6a4d1853f93746c3e.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/collector.lua",
+          "size_bytes": 6295,
+          "sha256": "00de1145c2445a6b77c58d0ce8e9b22355aa0f9077595c83c9cda73ac3351d97"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/inputs.lua",
+          "size_bytes": 64101,
+          "sha256": "03c0171340f64d87743b9a7ba24bb67398bf572566c5feea826788763bbc37ec"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/pe_package_d49922d6a4d1853f93746c3e.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore2/trace.json",
+          "size_bytes": 60501,
+          "sha256": "fbae203bfc081ed9fda2bb4991bd7a41cdba74ec4a3c4af62c16f2a8eeef432c"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v1_rom_source_20260908_explore3",
+      "status": "exploratory-not-final-evidence",
+      "reason": "1454-case full matrix passed before the final all-CPU-read whitelist and prepared launch record. Superseded as final evidence, preserved as exploratory history.",
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/case_contract.json",
+          "size_bytes": 2110930,
+          "sha256": "4735df3a5b5c1ee1e6d6a76d842f88b25ebeaf4e1234ba3bff6a02ad7523dd48"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/helper.asm",
+          "size_bytes": 8749,
+          "sha256": "ddea0e26b4bfd98514683a90fb37be873d2092f544103c63bd3af5203b6407f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/helper.bin",
+          "size_bytes": 676,
+          "sha256": "9a8554aa0045163abcc15f021fb80dc6606f3d6ce444dea682ff04ec6cc46b63"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/manifest.json",
+          "size_bytes": 3502,
+          "sha256": "d490562c812629d67249084916bafe913a93e143a76cabe4c55ccda6ae7e906c"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Debugger/pe_package_76fe0b9600647504b44b0a9c.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/Saves/pe_package_76fe0b9600647504b44b0a9c.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/collector.lua",
+          "size_bytes": 6678,
+          "sha256": "86836db27fd8470a86223b48b1db07c7fc1052427d7bf26a21ba2da90dc9d829"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/inputs.lua",
+          "size_bytes": 1287996,
+          "sha256": "3be15df674b85138316870924c984bc9a8e00b092b09219119f4224c740e4f94"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/pe_package_76fe0b9600647504b44b0a9c.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/trace.json",
+          "size_bytes": 11699573,
+          "sha256": "07c0246b47b8898a9317fbfdf68a0c5528cac1fc1852e32e0903217b50e85307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_explore3/wram_input_fixture_hashes.json",
+          "size_bytes": 277904,
+          "sha256": "65d0c3a398a79a667c3bc1c42074672a7d5bb480c283898ced8f002fead4556d"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v1_rom_source_20260908_final1",
+      "status": "exploratory-not-final-evidence",
+      "reason": "Prepared-only attempt. Launch metadata serialization encountered a WindowsPath and failed before Mesen launch. Runtime sizes and hashes now serialize directly. Directory name is historical and does not mean final acceptance.",
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/case_contract.json",
+          "size_bytes": 2110930,
+          "sha256": "4735df3a5b5c1ee1e6d6a76d842f88b25ebeaf4e1234ba3bff6a02ad7523dd48"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/helper.asm",
+          "size_bytes": 8749,
+          "sha256": "ddea0e26b4bfd98514683a90fb37be873d2092f544103c63bd3af5203b6407f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/helper.bin",
+          "size_bytes": 676,
+          "sha256": "9a8554aa0045163abcc15f021fb80dc6606f3d6ce444dea682ff04ec6cc46b63"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/app/Saves/pe_package_a4e1e1b1fb03ea3eecf95877.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/collector.lua",
+          "size_bytes": 7184,
+          "sha256": "c11fc1339f55074daeee28458cbc758cac324230cf43e34ced93ef986cdce499"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/inputs.lua",
+          "size_bytes": 1287996,
+          "sha256": "3be15df674b85138316870924c984bc9a8e00b092b09219119f4224c740e4f94"
+        },
+        {
+          "path": "private/test_runs/package_helper_v1_rom_source_20260908_final1/staged/pe_package_a4e1e1b1fb03ea3eecf95877.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        }
+      ]
+    }
+  ],
+  "reproduce": [
+    "python -B -m unittest discover -s tests -p test_schala_package_helper_v1_rom_source.py",
+    "python -B tools/run_schala_package_helper_v1_rom_source.py --output-dir private/test_runs/package_helper_v1_rom_source_NEW1 --repetition 1 --timeout 90",
+    "python -B tools/run_schala_package_helper_v1_rom_source.py --output-dir private/test_runs/package_helper_v1_rom_source_NEW2 --repetition 2 --timeout 90"
+  ],
+  "next_gates": [
+    "actual resolver refusal lifecycle",
+    "immutable named ROM registry and target-set certification",
+    "production bank43 data and code placement under write guard",
+    "real game scratch/stack and interrupt ownership",
+    "pointed command stream semantics and completion",
+    "logical PC07 integration"
+  ]
+}

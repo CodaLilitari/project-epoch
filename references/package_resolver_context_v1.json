@@ -1,0 +1,371 @@
+{
+  "schema": "project-epoch-package-resolver-context-evidence-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "two identical bounded clean-ROM context observations; no helper installed",
+  "private_manifest_status_preserved": "exploratory-runtime-not-accepted; this separate reference records reviewed repeated acceptance",
+  "source_files": {
+    "launcher": {
+      "path": "tools/run_package_resolver_context_v1.py",
+      "size": 24784,
+      "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+    },
+    "collector": {
+      "path": "tools/mesen_package_resolver_context_v1.lua",
+      "size": 7746,
+      "sha256": "f7b74d551b74e1b81f0b1be68f07a96ab1a6915a42d6d1d0d832b6d7be5b6519"
+    },
+    "tests": {
+      "path": "tests/test_package_resolver_context_v1.py",
+      "size": 10546,
+      "sha256": "8927c5ee0d2b29a89e59f5a9534a1a42c0e42511a6efaa8f07b8d590de53d86a"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    },
+    "evidence_collector": {
+      "path": "tools/collect_package_resolver_context_evidence_v1.py",
+      "size": 9820,
+      "sha256": "c68696d1a0d050dbbbea833299a1ed959d53d68ffaae992c600cd968a3b1532b"
+    }
+  },
+  "mesen_source_revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "mesen_source_files": [
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/LuaApi.cpp",
+      "size": 34647,
+      "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24",
+      "upstream_path": "Core/Debugger/LuaApi.cpp",
+      "git_blob_sha1": "4deebdedaf976b584574a4c2371f614cc929f4ff",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/LuaApi.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesConsole.cpp",
+      "size": 15424,
+      "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706",
+      "upstream_path": "Core/SNES/SnesConsole.cpp",
+      "git_blob_sha1": "94ed65811b6c5db95b2abbc4786d0faf303c22b8",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesConsole.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f",
+      "upstream_path": "Core/SNES/SnesCpu.Shared.h",
+      "git_blob_sha1": "bbabf420bd1bd8899b62e392fcadcf3a500468c5",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58",
+      "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+      "git_blob_sha1": "8c7b9433f1aa33aa42624b9c7686b91136fdcd2e",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180",
+      "upstream_path": "Core/SNES/SnesPpu.cpp",
+      "git_blob_sha1": "3c7245217083e3e7d9ce72bcf2e037f43b463b0b",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8",
+      "upstream_path": "Core/SNES/SnesCpu.cpp",
+      "git_blob_sha1": "e8441981c7f2527e16303ddd35d5010deec850f7",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd",
+      "upstream_path": "Core/SNES/SnesCpu.Instructions.h",
+      "git_blob_sha1": "46b8553e24ab5151c0da049b4fcc49289c3648a9",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h"
+    }
+  ],
+  "source_input_hashes": {
+    "collector": "f7b74d551b74e1b81f0b1be68f07a96ab1a6915a42d6d1d0d832b6d7be5b6519",
+    "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+    "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+    "launcher": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214",
+    "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+    "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+    "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+    "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+    "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+    "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+  },
+  "runs": [
+    {
+      "run_directory": "private/test_runs/resolver_context_20260908_final1",
+      "manifest": {
+        "path": "private/test_runs/resolver_context_20260908_final1/manifest.json",
+        "size": 5569,
+        "sha256": "abc8abbbf135fb1bc4e79ad4b893977015936fb55b4f76746dabd19b573a5c13"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_context_20260908_final1/trace.json",
+        "size": 10811008,
+        "sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679"
+      },
+      "process_log": {
+        "path": "private/test_runs/resolver_context_20260908_final1/process.log",
+        "size": 1340346,
+        "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59"
+      }
+    },
+    {
+      "run_directory": "private/test_runs/resolver_context_20260908_final2",
+      "manifest": {
+        "path": "private/test_runs/resolver_context_20260908_final2/manifest.json",
+        "size": 5569,
+        "sha256": "abc8abbbf135fb1bc4e79ad4b893977015936fb55b4f76746dabd19b573a5c13"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_context_20260908_final2/trace.json",
+        "size": 10811008,
+        "sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679"
+      },
+      "process_log": {
+        "path": "private/test_runs/resolver_context_20260908_final2/process.log",
+        "size": 1340346,
+        "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59"
+      }
+    }
+  ],
+  "identical_trace_sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679",
+  "identical_manifest_sha256": "abc8abbbf135fb1bc4e79ad4b893977015936fb55b4f76746dabd19b573a5c13",
+  "observations": {
+    "effect_latch_clear_contexts": {
+      "normal-nmi": 2
+    },
+    "event_counts": {
+      "baseline": 1,
+      "branch-producer-complete": 2,
+      "caller-effect-latch": 2,
+      "caller-package-latch": 858,
+      "caller-resume": 858,
+      "canonical-continuation": 1,
+      "common-loader-entry": 2,
+      "common-loader-rts": 2,
+      "dispatcher-rts": 2,
+      "interrupt-entry": 2402,
+      "interrupt-rti": 2402,
+      "irq-display-stack-lowpoint": 2,
+      "latch-or-flag-write": 21,
+      "menu-observation": 4,
+      "nmi-effect-latch-clear": 2,
+      "nmi-effect-latch-read": 949,
+      "nmi-mode-dispatch": 1201,
+      "nmi-scene-dispatch": 3097,
+      "publication-write": 18,
+      "resolver-entry": 1,
+      "resolver-tail": 1,
+      "sync-command-increment": 2,
+      "temporary-read": 32,
+      "temporary-write": 36,
+      "terminal": 1,
+      "terminal-command-clear": 6
+    },
+    "interrupt_preservation_scope": "A/X/Y/D/DBR/SP and native four-byte hardware return frame; live P at pre-RTI is not expected to equal entry P",
+    "irq_saved_interrupt_disable_counts": {
+      "0": 1201
+    },
+    "limitations": [
+      "no installed helper or expanded-ROM read",
+      "no interrupt occurred inside the resolver unless counted explicitly",
+      "absence of observed temporary access is checkpoint-bounded, not scratch ownership",
+      "PC windows run from resolver entry until the next branch producer or terminal, not a proved complete action lifetime",
+      "exec snapshots precede the named instruction; memory callback CPU PC may have advanced beyond its operands"
+    ],
+    "master_clock_basis": "memoryManager.masterClock full counter; masterClock equals low 32 bits",
+    "maximum_observed_context_depth": 1,
+    "minimum_observed_entry_sp": 1729,
+    "minimum_sampled_handler_sp": 1698,
+    "observed_branch_words": [
+      0
+    ],
+    "open_interrupt_ids_at_terminal": [],
+    "outside_pc_window_scene_clear_count": 1,
+    "paired_interrupt_count": 2402,
+    "paired_interrupt_hardware_frames_unchanged": true,
+    "paired_interrupt_kind_counts": {
+      "battle-irq": 1201,
+      "normal-nmi": 1201
+    },
+    "paired_interrupt_registers_preserved": true,
+    "paired_interrupts_entered_during_action_epoch": 1510,
+    "paired_interrupts_entered_during_resolver": 0,
+    "pc_invocation_windows": [
+      {
+        "branch_word": 0,
+        "direct_page_positive_control_count": 1,
+        "entry_clock": 2155080050,
+        "entry_cpu_cycles": 292067614,
+        "entry_index": 4227,
+        "entry_poll": 378,
+        "entry_to_pre_jump_tail_cpu_cycles": 548,
+        "entry_to_pre_jump_tail_master_clocks": 4244,
+        "id": 1,
+        "selector_word": 8,
+        "tail_index": 4315,
+        "tail_poll": 378,
+        "window_end_index": 11410,
+        "window_end_kind": "branch-producer-complete"
+      }
+    ],
+    "pc_scoped_scene_clear_count": 1,
+    "record_count": 11905,
+    "resolver_entry_contexts": [
+      "main"
+    ],
+    "resolver_invocations": 1,
+    "scene_clear_witnesses": [
+      {
+        "caller_zero_read_index": null,
+        "context_id": 395,
+        "context_kind": "normal-nmi",
+        "exec_index": 3018,
+        "pc_invocation_id": null,
+        "poll": 197,
+        "rti_readback_index": 3020,
+        "write_index": 3019
+      },
+      {
+        "caller_zero_read_index": 10580,
+        "context_id": 1855,
+        "context_kind": "normal-nmi",
+        "exec_index": 10119,
+        "pc_invocation_id": 1,
+        "poll": 927,
+        "rti_readback_index": 10121,
+        "write_index": 10120
+      }
+    ],
+    "stack_sampling_scope": "minimum across recorded handler snapshots only; not a complete stack low-water measurement",
+    "temporary_access_counts": {
+      "main:temporary-read": 32,
+      "main:temporary-write": 36
+    },
+    "timing_keys": [
+      "clockRate",
+      "cpu.cycleCount",
+      "frameCount",
+      "masterClock",
+      "memoryManager.hClock",
+      "memoryManager.masterClock",
+      "ppu.frameCount",
+      "ppu.scanline"
+    ],
+    "trampoline_values": [
+      [
+        92,
+        124,
+        231,
+        209,
+        92,
+        151,
+        254,
+        209
+      ]
+    ]
+  },
+  "canonical_spans": [
+    {
+      "name": "canonical-resolver",
+      "evidence_level": "verified-static",
+      "cpu_start": "C14612",
+      "cpu_end_exclusive": "C14682",
+      "size": 112,
+      "sha256": "a68be4a9dfa59349976827ca080eec58a5057e8144c5ba18a4609bceae291968"
+    },
+    {
+      "name": "direct-page-positive-control-instruction",
+      "evidence_level": "verified-static",
+      "cpu_start": "C14627",
+      "cpu_end_exclusive": "C14629",
+      "size": 2,
+      "sha256": "d86cadc511301380e6584bda7a9fca5d51bdd38141e544c27698194a3395447e"
+    },
+    {
+      "name": "normal-nmi-handler",
+      "evidence_level": "verified-static",
+      "cpu_start": "D1E77C",
+      "cpu_end_exclusive": "D1E899",
+      "size": 285,
+      "sha256": "3c6995513ccffd360ecba0594ea3c16c72104cac046999a673f72fc3c8932b4c"
+    },
+    {
+      "name": "battle-irq-handler",
+      "evidence_level": "verified-static",
+      "cpu_start": "D1FE97",
+      "cpu_end_exclusive": "D1FEF4",
+      "size": 93,
+      "sha256": "cc06d1d9a49444be184db23bce01e1552c68497b288589d9f3d6475308942633"
+    },
+    {
+      "name": "alternate-nmi-handler-not-observed",
+      "evidence_level": "verified-static",
+      "cpu_start": "D1F4C0",
+      "cpu_end_exclusive": "D1F559",
+      "size": 153,
+      "sha256": "d92f1c6960851bf54a8ee2ade314be437335f285c1f3086034a0113f0357449b"
+    },
+    {
+      "name": "scene-latch-tick-and-clear",
+      "evidence_level": "verified-static",
+      "cpu_start": "CD1609",
+      "cpu_end_exclusive": "CD1654",
+      "size": 75,
+      "sha256": "dce62d3d48a939537e1f9976e6177b9fda6f39e9076b72c4f4fc0e2af798fca9"
+    }
+  ],
+  "validator_tests": {
+    "command": "python -B -m unittest discover -s tests -p test_package_resolver_context_v1.py",
+    "tests_passed_at_freeze": 30,
+    "fixture_scope": "original synthetic metadata, including a feasible latched IRQ-I1 boundary; not new native interrupt schedules"
+  },
+  "history": [
+    {
+      "run_directory": "private/test_runs/resolver_context_20260908_explore1",
+      "manifest": {
+        "path": "private/test_runs/resolver_context_20260908_explore1/manifest.json",
+        "size": 556349,
+        "sha256": "c762107d294c85e9611bc2c4ce8807fc83a341e88a846c424721704dfe21cbf1"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_context_20260908_explore1/trace.json",
+        "size": 9022236,
+        "sha256": "eb2550239c8ee047c8e6d719654249cdd4fad26b7108f07a9845280cd5af6e69"
+      },
+      "status": "historical exploratory trace has superseded timing-key shape; unmodified and not accepted by current strict schema"
+    },
+    {
+      "run_directory": "private/test_runs/resolver_context_20260908_hardened1",
+      "manifest": {
+        "path": "private/test_runs/resolver_context_20260908_hardened1/manifest.json",
+        "size": 5371,
+        "sha256": "90fc56491cf23c3ec88cc53e6be105bdeb73849e0e1fdf63346a2303dd03bf93"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_context_20260908_hardened1/trace.json",
+        "size": 10811008,
+        "sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679"
+      },
+      "status": "preserved pre-final-validator exploratory replay; current final runs independently repeated after source freeze"
+    }
+  ],
+  "reproduce_observation": "python -B tools/run_package_resolver_context_v1.py --output-dir private/test_runs/resolver_context_NEW_UNIQUE",
+  "reproduce_reference": "python -B tools/collect_package_resolver_context_evidence_v1.py",
+  "serialization": "json.dumps(value, indent=2), UTF-8, LF, exactly one trailing newline",
+  "production_approval": false
+}
