@@ -92,6 +92,17 @@ The conditional [$8C/$8D](docs/schala_scene8c8d_subdispatch_v1.md) and
 cells and call frames while preserving the input-domain limits. One `$88`
 ordinal returns hidden B=$FF, so the complete scene loop cannot inherit a
 blanket B0 assumption from the 114 direct targets.
+The [scene $80 topology](docs/schala_scene80_subdispatch_v1.md) proves 29
+physical pointer words before selected code, with 27 conditional returns and
+two explicit frontiers. Its wider 128-cell arithmetic is preserved as a
+hypothetical census, not a legal table. The
+[scene $8B input contract](docs/schala_scene8b_dispatch_inputs_v1.md) proves
+that only the helper's successful return supplies B0 to dispatch; two of
+six reviewed targets close, while four retain their copy-pointer frontiers.
+The separate [B5/B6 copy-pointer proof](docs/schala_scene_copy_pointer_v1.md)
+exhaustively derives 64,414 safe copy-sequence selections among 65,536 byte
+pairs. The other 1,122 are outside that proved sequence; legal gameplay
+inputs and effective memory addresses remain unresolved.
 No game hook, production allocation, high production selector or logical PC
 `$07` is installed. Original cartridge tests and vanilla observations have
 separate evidence scopes.

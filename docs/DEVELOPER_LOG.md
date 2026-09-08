@@ -1178,3 +1178,73 @@ $8B and $B5/$B6 pointer/control boundaries and the actual NMI publication
 readers. Keep parameter legality, memory aliases, nested interrupts, physical
 stack ownership and native rejection cleanup as explicit unfinished gates.
 The session continues through 23:58:41 UTC; production catalogs remain empty.
+
+## 2026-09-08 - conditional scene topology and exact copy-pointer arithmetic
+
+**Status:** three more static packets passed root and independent peer
+review, their focused tests, and byte-exact CLI reference reproduction.
+No native execution or image mutation belongs to these three packets.
+
+The [scene $80 packet](schala_scene80_subdispatch_v1.md) proves 29 physical
+pointer words before the first selected code body. The first 29 target walks
+cover all 156 bytes of the remaining annotated incbin interval as code.
+This does not make the preceding words a proved legal parameter domain, and
+the annotation did not itself claim 107 legal entries. No false correction
+is attributed to the upstream author. Twenty-seven targets close with
+B0/D0/DBR7E; two retain exact MVP and ADC-dp-X frontiers. The already completed
+128-cell B0 census remains explicitly hypothetical, including its accidental
+closed paths and a near-frame-incompatible RTI destination. The 40 tests pass;
+two root CLI outputs exactly match the 424,188-byte reference, SHA-256
+`98ef60b958f997bc125d2550ff90c9cd6948a9f7b269be7fc0194790cfbece2f`.
+A separately numbered proof is now reviewing the two remaining instruction
+effects while preserving this v1 source and reference.
+
+The [scene $8B packet](schala_scene8b_dispatch_inputs_v1.md) derives B0 from
+the helper's successful return, with unknown incoming B. A complete local
+CFG owns every return predecessor: failure executes CLC/RTS and the caller
+exits; success executes SEC/RTS and reaches dispatch. The earlier temporary
+index can still contain incoming B. After success, q selects a byte at
+CAD1+q, while z's bit7 is discarded by byte ASL. Those are distinct input
+namespaces. Two of six reviewed targets have exact conditional returns with
+two additional stack bytes; the four other targets retain distinct producers
+at the shared CEE7CC jump. No B5/B6 contract is substituted by address alone.
+The 35 tests pass; two root CLI outputs match the 124,619-byte reference,
+SHA-256 `f3cb6cef7e04c2dd101eb69ee4ccb212443ea3ea91e248f07ed2a586155609bf`.
+
+The [B5/B6 copy-pointer packet](schala_scene_copy_pointer_v1.md) executes a
+finite source projection over all 65,536 stable r/s byte pairs. Its independent
+integer expression and actual binary carry/borrow/width calculation agree.
+Exactly 64,414 select a verified copy suffix, equivalent to abs(r-s)<=222;
+1,122 do not. The physical 256 copy pairs yield 257 suffix entries, whereas
+safe inputs from this producer select only 223. The unknown CAAB high byte
+remains unknown until an exact immediately following M16 AND removes it.
+The DP pointer writer and bank-zero absolute-indirect reader coincide only
+under D0. Both parity continuations preserve the typed 11-byte return chain.
+These are conditional source facts, not legal-input, effective-address or
+whole-handler proofs. The 37 tests pass; root and peer CLI reproduction
+matches the 70,722-byte reference, SHA-256
+`13913c7b244b454a8afd4afd89977408466e2dda06699578f344b9c691789c53`.
+The initial unknown-high and overlap-test development refusals are described
+in its report; no rejected native artifact is being relabeled.
+
+The package-owner reconfirmation is the existing MAP-005 thirteen-owner
+correction, not a new discovery or a new numbered correction. The verified
+upstream citation and exact 224-byte source-span hash remain in the register.
+The next native measurement has a reviewed design: five fixed actual-game
+normal-NMI intervals, all instruction boundaries inside each interval, exact
+SP and implicit stack-write transitions, complete WRAM baseline/final
+reconciliation against bus writes, and declared publication-range accesses.
+It uses the unchanged clean ROM, checkpoint and input sequence. Its source
+is being authored; no pilot or runtime result is yet accepted. Bus callbacks
+combine CPU/DMA/dummy writes, so broad observations will not be mislabeled
+as CPU-only writes. The existing dispatch snapshots remain preserved and
+are not upgraded into complete stack-depth measurements.
+
+**Publication and resume:** the prior checkpoint is
+[`a6f88fb10be6bc4b454c9db560c84bb248f88db7`](https://github.com/andreipemberton/project-epoch/commit/a6f88fb10be6bc4b454c9db560c84bb248f88db7).
+Its authenticated commit, main branch and remote ref agree, and all 22 changed
+files match the exact committed bytes. Continue the bounded native observer,
+the separately numbered two-target $80 extension and actual $8B pointer
+producers. Legal domains, physical memory/stack ownership, full game-NMI
+composition, publication isolation and native rejection cleanup remain open.
+The nine-hour session remains active through 23:58:41 UTC.

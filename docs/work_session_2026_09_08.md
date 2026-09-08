@@ -143,6 +143,15 @@ closed for this session.
   Model-development mistakes and corrections remain explicitly logged.
   Next work targets the remaining scene dispatches and publication readers.
 
+- 21:40 UTC: accepted the scene-$80 topology (40 tests), scene-$8B success
+  input contract (35), and B5/B6 copy-pointer producer (37) after root and
+  independent peer review and exact CLI reproduction. Their conditional
+  input/return scopes remain distinct from legal game-data domains. Approved
+  source authoring for five bounded actual-game NMI stack observations;
+  no native launch is yet approved. The existing thirteen-owner correction
+  is MAP-005 and is reused without a duplicate entry. Work continues on the
+  two $80 effects and the different $8B copy-pointer producers.
+
 ## Gates and evidence boundaries
 
 The overall gate is `BA-NATIVE-INTEGRATION-DESIGN`. A source design, host

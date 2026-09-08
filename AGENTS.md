@@ -368,6 +368,24 @@ These are separate namespaces. Never conflate them.
   Exact JSL3+indexed-JSR2 adds five bytes below scene entry, seven including
   its near frame. This proves no legal parameter3 producer or vanilla runtime
   bug. Never generalize the 114 direct-target B0 result to this handler.
+- Scene `$80` has 29 physical words before its first selected code body;
+  27 targets have conditional B0/D0/DBR7E returns and two remain explicit
+  MVP/ADC-dp-X frontiers in the preserved v1 packet. Its annotated 214-byte
+  incbin contains a completely decoded 156-byte code suffix, not 107 proved
+  legal entries. The wider 128-cell B0 census is hypothetical only.
+- Scene `$8B`'s helper has exact CLC/failure and SEC/success return paths.
+  Only success establishes B0 before the caller's dispatch; failure can
+  retain unknown B and exits. Distinguish q's preserved high bit in the
+  selector-source index from z's discarded high bit in the final index.
+  Two of six reviewed targets close; four retain their own `$CEE7CC`
+  pointer producers. Never reuse the B5/B6 pointer proof by jump address alone.
+- The B5/B6 copy-pointer producer is separately proved under stable byte
+  inputs r/s, CAAA=0, native M8/X16, D0/DBR7E and binary arithmetic. Its
+  signed count n spans -33..222; 64,414 of 65,536 pairs select the proved
+  physical copy sequence, while 1,122 do not. The physical 256 pairs/257
+  suffixes differ from 223 producer-admitted safe suffixes. The typed
+  11-byte return chain is conditional; legal producers, effective memory,
+  stack ownership and complete B5/B6 closure remain unproved.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
   ten-region census retains 44 original callee frontiers and explicit conditional

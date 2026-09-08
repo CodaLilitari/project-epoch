@@ -74,6 +74,9 @@ proofs have separate scopes and should be reused:
 | [IRQ manual DMA7 destinations](schala_package_irq_dma7_contract_v3.md) | Twelve ordered 128-byte requests target VRAM ports $2118/$2119; 41 tests | Source reads, pending DMA/HDMA, interleaving, completion and timing remain open |
 | [Scene $8C/$8D selected leaves](schala_scene8c8d_subdispatch_v1.md) | Eight conditional leaves return A/B0/D0/DBR7E with no new frame; 34 tests | B0 and parameter&7F below4 are premises; Y, pointer lifetime and memory addresses remain open |
 | [Scene $88 selected calls](schala_scene88_subdispatch_v1.md) | Four conditional targets; five added call-frame bytes, seven including scene frame; 33 tests | Ordinal3 returns B=$FF through RTL/RTS; no legal parameter3 producer or vanilla runtime bug is proved |
+| [Scene $80 topology](schala_scene80_subdispatch_v1.md) | 29 physical words before selected code; 27 conditional returns, two frontiers; 40 tests | First 29 is a source-topology boundary, not legal parameter extent; wider 128-cell census is hypothetical |
+| [Scene $8B dispatch inputs](schala_scene8b_dispatch_inputs_v1.md) | Successful helper return proves B0; exact q/z geometry and two closed selected targets; 35 tests | Failure B unknown; four targets retain different copy-pointer producers, with no complete legal domain |
+| [B5/B6 copy-pointer producer](schala_scene_copy_pointer_v1.md) | All 65,536 byte pairs checked; 64,414 select proved suffixes; typed 11-byte return chain; 37 tests | Stable inputs and binary arithmetic required; effective memory, legal producers and full handler remain open |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
@@ -133,6 +136,16 @@ contracts. One $88 ordinal returns B=$FF and must not inherit a blanket B0
 assumption from the direct-target set. Legal parameter producers, complete
 game-NMI/stack ownership and publication-reader isolation are still required
 before global composition or installation.
+The scene $80 packet now separates its 29 physical prefix words from the
+annotated mixed code/data interval, retaining two undecoded target effects.
+Scene $8B's successful prehelper return establishes B0 locally while keeping
+failure B unknown. Its four copy-pointer paths have different producers from
+the separately audited B5/B6 path. That producer's exact arithmetic admits
+64,414 of all 65,536 byte pairs to the proved copy sequence; neither that
+ratio nor the conditional 11-byte call chain proves a legal input domain or
+safe memory destinations. A bounded read-only native observation of five
+actual game-NMI intervals is being prepared to measure their stack minima;
+implementation preparation is not an executed or accepted runtime result.
 
 No production hook, allocation, scratch ownership, high selector, Schala
 command or logical PC `$07` is approved. The
