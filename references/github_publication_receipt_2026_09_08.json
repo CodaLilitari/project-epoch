@@ -1,0 +1,122 @@
+{
+  "anonymous_access": {
+    "authenticated_repository_visibility": "PUBLIC",
+    "cause": "unresolved",
+    "commit_pinned_raw_readme_at_previous_milestone": 404,
+    "public_mesen_api_control": 200,
+    "repository_api": 404,
+    "repository_page": 404,
+    "visibility_settings_changed": false
+  },
+  "artifact_identity": {
+    "canonical_json_sha256_excluding_artifact_identity": "5f9e91d9aaaee498601de42eb36a51a33a80cce01df352d820d2db9b8f6f5269"
+  },
+  "authenticated_published_files_byte_identical_to_commit": [
+    {
+      "git_blob_sha1": "83290058de4287e405d23c882a40736424a45932",
+      "path": "AGENTS.md",
+      "sha256": "56f60eedc5fc6e65c306598744ace65dc5160135764b12d920e48601bef5985c",
+      "size": 23408
+    },
+    {
+      "git_blob_sha1": "16e3ba3a5e57f128d49953fb9246feffd6b0c8f5",
+      "path": "README.md",
+      "sha256": "e990747f6a9d394fbc3506a1054565a6dbe876a994fd80a6eed4ff73b6358e9d",
+      "size": 46821
+    },
+    {
+      "git_blob_sha1": "ba98be07331902686730bad0f5258057648736fd",
+      "path": "docs/DATA_MAPPING_CORRECTIONS.md",
+      "sha256": "5f594fe4868d720bb4e8d4000e1e3c8cd4be487b4520606aa4dcd343b0c5ebd4",
+      "size": 15618
+    },
+    {
+      "git_blob_sha1": "bc6d07e0fe03dc0575e0c61b66fc624323cd060b",
+      "path": "docs/DEVELOPER_LOG.md",
+      "sha256": "d6fad370609fc1bab356f5e9ff3bcac17aa8b598704dd8aa7f89a43ed2a04e9d",
+      "size": 18520
+    },
+    {
+      "git_blob_sha1": "61928a5f415c56e750cb20e1e9136cf05a52f421",
+      "path": "docs/schala_eighth_character_developer_guide.md",
+      "sha256": "fb6c33f3c316d61ac6b0d905fc0aca03a7d4f983a9caf90eb4c41d94b5600f94",
+      "size": 189900
+    },
+    {
+      "git_blob_sha1": "285c5754cce1e50f86b64289352242cfb807c9f5",
+      "path": "docs/schala_package_placement_interrupt_review_v0.md",
+      "sha256": "efb089ad6cd3ca5925867f92e0babf278a256c0358bafb9597c109f571b6bbfd",
+      "size": 16807
+    },
+    {
+      "git_blob_sha1": "66db2b076fe07f0d51439191b4a8ac6a9224ce94",
+      "path": "docs/schala_package_resolver_integration_design_v0.md",
+      "sha256": "e835b40519c872464ce96222eade762f4f919207f71ad41767eacfd94de7978b",
+      "size": 15847
+    },
+    {
+      "git_blob_sha1": "00a9786416805a818828232f57e99a3c98a46180",
+      "path": "docs/schala_package_resolver_observation_v0.md",
+      "sha256": "827ea0aad6f0c6915ef99b9c64ec4e705027efcb665b65b5d64e653f1ec8d73d",
+      "size": 8741
+    },
+    {
+      "git_blob_sha1": "527e1b86b2db2980871d6ff73cd4e2df68985859",
+      "path": "docs/schala_rom_expansion_architecture.md",
+      "sha256": "e00c691d3503d6bfd7fcbe7c17c2580b2f0af7e4c1629e9e1f325343d71da295",
+      "size": 13903
+    },
+    {
+      "git_blob_sha1": "aefeec43114b713dd0f7d67a142cd9467d27f926",
+      "path": "references/integration_checkpoint_2026_09_08.json",
+      "sha256": "92ec07823e7e4e763919b9553edc4fe17d5b4746a2cb8d04ddf47cf20978b679",
+      "size": 6659
+    },
+    {
+      "git_blob_sha1": "984dbbe95cf7795033dc14300b94ce05df7b1b17",
+      "path": "references/package_resolver_observation_v0.json",
+      "sha256": "a9685b37bb3cc13e61593730ff74fa5f0288b4dc00572c756559e388915ef1c1",
+      "size": 25890
+    },
+    {
+      "git_blob_sha1": "db5a8ee49b961c718526f25ef3a3d218742a0759",
+      "path": "tests/test_package_resolver_observation_v0.py",
+      "sha256": "00e3554737ffdb8de9ae69f22b024bf6bfcb7b4513e5fe1a9525168f068c1af2",
+      "size": 13155
+    },
+    {
+      "git_blob_sha1": "cbe7d02fb23d41814b5fc85d825061f3289386b2",
+      "path": "tools/mesen_package_resolver_observation_v0.lua",
+      "sha256": "fa94aeedf92d58900b42511f74be1f2f771c554775707598dc9cf18f0506691d",
+      "size": 5560
+    },
+    {
+      "git_blob_sha1": "d891e1266044fc1a388c684c8544c42afaaeffd7",
+      "path": "tools/run_package_resolver_observation_v0.py",
+      "sha256": "e62eb4af54600a34524316a2b19f020a39ed8a631c9fa26bd635c9b962d1f1f9",
+      "size": 8576
+    }
+  ],
+  "branch": "main",
+  "commit_url": "https://github.com/andreipemberton/project-epoch/commit/ac2b9a96ec816bbd33a4f69f40dedb8e865fdf0e",
+  "evidence_level": "verified-static",
+  "note": "This receipt and its developer-log publication entry are follow-up documentation. They do not alter or rerun the published runtime sources, and the exact source commit remains pinned above.",
+  "previous_published_milestone_commit": "9f14ae7f407ce783ada02b996db4e0955a5a5918",
+  "published_integration_commit": "ac2b9a96ec816bbd33a4f69f40dedb8e865fdf0e",
+  "remote": "origin",
+  "remote_branch_and_authenticated_commit_api_verified": true,
+  "repository": "https://github.com/andreipemberton/project-epoch",
+  "reproduction": [
+    "git ls-remote origin refs/heads/main",
+    "gh api repos/andreipemberton/project-epoch/commits/ac2b9a96ec816bbd33a4f69f40dedb8e865fdf0e",
+    "For each published path query the GitHub contents API with ref=published_integration_commit, decode base64 content, compare to git show COMMIT:PATH, size and SHA256",
+    "Repeat anonymous page/API/raw-file requests without credentials and record actual responses separately from authenticated success"
+  ],
+  "runtime_and_test_checkpoint": {
+    "path": "references/integration_checkpoint_2026_09_08.json",
+    "sha256": "92ec07823e7e4e763919b9553edc4fe17d5b4746a2cb8d04ddf47cf20978b679"
+  },
+  "schema": "project-epoch-github-publication-receipt-v0",
+  "verification_scope": "authenticated GitHub source publication, not unrestricted public accessibility",
+  "verified_at_utc": "2026-09-08T14:52:21.356558+00:00"
+}

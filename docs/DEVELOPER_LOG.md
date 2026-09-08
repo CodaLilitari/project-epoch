@@ -272,3 +272,27 @@ public Mesen repository API returns 200. This establishes an access
 discrepancy, not its cause. Do not claim that unauthenticated readers can
 retrieve the handoff until a later anonymous check succeeds. No repository
 visibility toggle, account change, or alternate publication was attempted.
+
+## 2026-09-08 — GitHub source publication verified
+
+**Status:** committed and pushed to `origin/main`. The integration source,
+runtime evidence metadata, developer history, correction register, and
+updated guidance are published in
+[`ac2b9a96ec816bbd33a4f69f40dedb8e865fdf0e`](https://github.com/andreipemberton/project-epoch/commit/ac2b9a96ec816bbd33a4f69f40dedb8e865fdf0e),
+following the helper milestone
+[`9f14ae7f407ce783ada02b996db4e0955a5a5918`](https://github.com/andreipemberton/project-epoch/commit/9f14ae7f407ce783ada02b996db4e0955a5a5918).
+
+The remote branch and authenticated GitHub commit API returned the exact
+integration commit. All fourteen files changed in that commit were fetched
+through the authenticated contents API and matched the committed bytes,
+sizes, and SHA-256 values. The
+[publication receipt](../references/github_publication_receipt_2026_09_08.json)
+records those identities and reproduction steps. This entry and the receipt
+are a documentation follow-up; they do not change or rerun the pinned native
+sources or test results.
+
+Anonymous access still has the separately observed 404 limitation recorded
+above. Therefore the verified claim is synchronization to the authenticated
+repository, not confirmed availability to unauthenticated readers. The next
+engineering work remains the explicit cancellation contract and the other
+integration obligations in the preceding entry.
