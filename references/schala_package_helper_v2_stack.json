@@ -1,0 +1,1736 @@
+{
+  "schema": "project-epoch-package-helper-v2-stack-evidence",
+  "version": 2,
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "gate": "BA-NATIVE-INTEGRATION-DESIGN",
+  "subgate": "BA-NATIVE-STACK-FRAME-CONFORMANCE",
+  "evidence_scope": "original stack-relative helper in synthetic WRAM, immutable original ExHiROM descriptor-shaped source, interrupts disabled",
+  "source_identities": {
+    "mesen": {
+      "path": "private/tools/mesen2/app/Mesen.exe",
+      "size_bytes": 70470144,
+      "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+    },
+    "mesen_core": {
+      "path": "private/tools/mesen2/app/MesenCore.dll",
+      "size_bytes": 7143424,
+      "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+    },
+    "harfbuzz": {
+      "path": "private/tools/mesen2/app/libHarfBuzzSharp.dll",
+      "size_bytes": 1804872,
+      "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+    },
+    "skia": {
+      "path": "private/tools/mesen2/app/libSkiaSharp.dll",
+      "size_bytes": 9414216,
+      "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+    },
+    "nesdb": {
+      "path": "private/tools/mesen2/app/MesenNesDB.txt",
+      "size_bytes": 559118,
+      "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+    },
+    "settings": {
+      "path": "private/tools/mesen2/app/settings.json",
+      "size_bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "rom": {
+      "path": "private/test_runs/sha256_65c816/schala_sha256_profile1_benchmark.sfc",
+      "size_bytes": 8388608,
+      "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+    },
+    "collector": {
+      "path": "tools/mesen_schala_package_helper_v2_stack.lua",
+      "size_bytes": 11656,
+      "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+    },
+    "launcher": {
+      "path": "tools/run_schala_package_helper_v2_stack.py",
+      "size_bytes": 22162,
+      "sha256": "88214b069ef49c3e512e625640fd67aa39019441119e8306782f225b9e48c251"
+    },
+    "asar": {
+      "path": "private/tools/asar-1.91/asar.exe",
+      "size_bytes": 501248,
+      "sha256": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8"
+    },
+    "host_adapter": {
+      "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+      "size_bytes": 35887,
+      "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size_bytes": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    },
+    "v0_validation_library": {
+      "path": "tools/run_schala_package_helper_conformance_v0.py",
+      "size_bytes": 20922,
+      "sha256": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844"
+    },
+    "v1_contract_library": {
+      "path": "tools/run_schala_package_helper_v1_rom_source.py",
+      "size_bytes": 23279,
+      "sha256": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+    },
+    "helper": {
+      "path": "asm/schala_package_helper_v2_stack.asm",
+      "size_bytes": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+    }
+  },
+  "tests_identity": {
+    "path": "tests/test_schala_package_helper_v2_stack.py",
+    "size_bytes": 11104,
+    "sha256": "3b71e286d694c3adee2b1ccce648b1f5475a8da85591a29d4a0c1dd63fbffedb"
+  },
+  "evidence_collector_identity": {
+    "path": "tools/collect_schala_package_helper_v2_stack_evidence.py",
+    "size_bytes": 13371,
+    "sha256": "fc4540b9fb78530fbe19d3f494adf16f383828eb39a062ebf9290de652ef8f4a"
+  },
+  "preserved_v1_reference": {
+    "path": "references/schala_package_helper_v1_rom_source.json",
+    "size_bytes": 84071,
+    "sha256": "d8b9c9ea589e33517331e377c084c0fadf91a42f1e665f5adbfb9c7895931c92"
+  },
+  "fixture_contract": {
+    "source_rom_sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+    "descriptor_fixtures": [
+      {
+        "identity": "IMMUTABLE_ORIGINAL_SHA_CODE_AS_DESCRIPTOR_BYTES",
+        "bank": 65,
+        "file_start": 4259842,
+        "file_end_exclusive": 4259862,
+        "pointer_occurrences": 8,
+        "sha256": "d6b8165c0913a74324c7d46b24330ddd7fbcd99cf05b12d2fabf9b82fe2b91e7"
+      },
+      {
+        "identity": "IMMUTABLE_ORIGINAL_SHA_CONSTANTS_AS_DESCRIPTOR_BYTES",
+        "bank": 66,
+        "file_start": 4325376,
+        "file_end_exclusive": 4325408,
+        "pointer_occurrences": 14,
+        "sha256": "04f93fd18db0bc237c01a03fe85c033f2c090085f0cd3d6301669ae4cc2bb8ab"
+      }
+    ],
+    "accepted_complete_bank_words": [
+      65,
+      66
+    ],
+    "registry_span": [
+      8269824,
+      8270080
+    ],
+    "target_array_span": [
+      8270080,
+      8271104
+    ],
+    "code_origin": 8355840,
+    "code_size": 577,
+    "code_sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8",
+    "entry_bridge_span": [
+      8384768,
+      8384772
+    ],
+    "entry_stack_values": [
+      8175,
+      1752,
+      52,
+      51,
+      8
+    ],
+    "local_bytes": 42,
+    "saved_context_bytes": 8,
+    "maximum_local_call_bytes": 2,
+    "maximum_helper_depth": 52,
+    "retired_global_scratch_unchanged": [
+      8273920,
+      8274048
+    ]
+  },
+  "accepted_runs": [
+    {
+      "run_id": "package_helper_v2_stack_20260908_finalledger1",
+      "manifest": {
+        "case_categories": {
+          "all-native-status-bits": 512,
+          "allowlist-count-boundary": 24,
+          "bank-high-byte-refusal": 12,
+          "both-rom-banks-all-flag-bytes": 1024,
+          "canonical-selector": 256,
+          "each-high-selector-both-rom-banks": 128,
+          "every-allowlisted-target-required-before-publication": 88,
+          "every-bank-word-low-byte": 512,
+          "exact-descriptor-extent": 24,
+          "registry-reserved-fields": 36,
+          "source-bank-boundary": 20,
+          "stack-floor-and-underflow": 72,
+          "unbound-selector": 256,
+          "wide-branch-refusal": 8,
+          "wide-selector": 8
+        },
+        "case_contract_sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76",
+        "case_count": 2980,
+        "complete_execution_pc_sequences": true,
+        "complete_execution_span_guard": true,
+        "cpu_instruction_counts": {
+          "max": 1730,
+          "min": 17
+        },
+        "entry_bridge": 8384768,
+        "evidence_level": "verified-runtime",
+        "evidence_scope": "immutable-original-rom-source-stack-frame-only",
+        "helper_code_base": 8355840,
+        "helper_sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8",
+        "helper_size": 577,
+        "interrupt_policy": "synthetic IRQ/NMI sources disabled; no game interrupt claim",
+        "no_game_input": true,
+        "no_global_scratch_access": true,
+        "no_rom_write_or_patch": true,
+        "passed": true,
+        "pointed_stream_execution": false,
+        "production_hook_allocation_or_integration": false,
+        "progress_sha256": "3e5bad05e0acadb175b19ee1913a6970165c0b1b37a70fe1255d6fbd576cf831",
+        "repetition": 1,
+        "reproduce": [
+          "python",
+          "tools/run_schala_package_helper_v2_stack.py",
+          "--output-dir",
+          "private/test_runs/package_helper_v2_stack_NEW",
+          "--repetition",
+          "1",
+          "--timeout",
+          "900",
+          "--code-base",
+          "0x7F8000"
+        ],
+        "rom_source_banks": [
+          65,
+          66
+        ],
+        "schema": "project-epoch-package-helper-v2-stack",
+        "source_hashes": {
+          "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+          "collector": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+          "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+          "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+          "launcher": "88214b069ef49c3e512e625640fd67aa39019441119e8306782f225b9e48c251",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+          "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+        },
+        "sources_and_staged_inputs_unchanged": true,
+        "stack_entry_values": [
+          8175,
+          1752,
+          52,
+          51,
+          8
+        ],
+        "staged_hashes": {
+          "collector": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "inputs": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "sram": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "subset_only": false,
+        "trace_sha256": "41931d1424daf97d633aa446c4c964e3aa3fecedb6b62ea494400c0161071a9f",
+        "wram_input_fixture_hashes_sha256": "045f11d61b61c205028afaaf7cbf49e1b301d09427a84558520b79f72045c70e"
+      },
+      "observations": {
+        "route_counts": {
+          "canonical": 396,
+          "refusal": 1158,
+          "success": 1426
+        },
+        "rom_byte_reads": 53748,
+        "cpu_data_reads": 1095290,
+        "execution_pc_observations": 2140126,
+        "executed_helper_instructions": 2137146,
+        "terminal_observations_not_executed": 2980,
+        "stack_accesses": 1096204,
+        "post_sp_change_observations": 43656,
+        "per_entry_sp": {
+          "1FEF": {
+            "case_count": 1454,
+            "minimum_observed_sp": 8123
+          },
+          "06D8": {
+            "case_count": 1454,
+            "minimum_observed_sp": 1700
+          },
+          "0034": {
+            "case_count": 24,
+            "minimum_observed_sp": 0
+          },
+          "0033": {
+            "case_count": 24,
+            "minimum_observed_sp": 43
+          },
+          "0008": {
+            "case_count": 24,
+            "minimum_observed_sp": 0
+          }
+        }
+      },
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/case_contract.json",
+          "size_bytes": 4555460,
+          "sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "5aae8cf310dca8357b626ca9b6a205b06431c3951a2ce37db23b373913076ef5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/manifest.json",
+          "size_bytes": 3870,
+          "sha256": "739690a870193684797c19c2800d7639b473f2a9554c237b587c16f0bee902e6"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/progress.json",
+          "size_bytes": 114,
+          "sha256": "3e5bad05e0acadb175b19ee1913a6970165c0b1b37a70fe1255d6fbd576cf831"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Debugger/pe_package_36eefe22636330f915a395fa.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/Saves/pe_package_36eefe22636330f915a395fa.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/collector.lua",
+          "size_bytes": 11656,
+          "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/inputs.lua",
+          "size_bytes": 2908283,
+          "sha256": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/pe_package_36eefe22636330f915a395fa.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/trace.json",
+          "size_bytes": 70196608,
+          "sha256": "41931d1424daf97d633aa446c4c964e3aa3fecedb6b62ea494400c0161071a9f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/wram_input_fixture_hashes.json",
+          "size_bytes": 594334,
+          "sha256": "045f11d61b61c205028afaaf7cbf49e1b301d09427a84558520b79f72045c70e"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v2_stack_20260908_finalledger2",
+      "manifest": {
+        "case_categories": {
+          "all-native-status-bits": 512,
+          "allowlist-count-boundary": 24,
+          "bank-high-byte-refusal": 12,
+          "both-rom-banks-all-flag-bytes": 1024,
+          "canonical-selector": 256,
+          "each-high-selector-both-rom-banks": 128,
+          "every-allowlisted-target-required-before-publication": 88,
+          "every-bank-word-low-byte": 512,
+          "exact-descriptor-extent": 24,
+          "registry-reserved-fields": 36,
+          "source-bank-boundary": 20,
+          "stack-floor-and-underflow": 72,
+          "unbound-selector": 256,
+          "wide-branch-refusal": 8,
+          "wide-selector": 8
+        },
+        "case_contract_sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76",
+        "case_count": 2980,
+        "complete_execution_pc_sequences": true,
+        "complete_execution_span_guard": true,
+        "cpu_instruction_counts": {
+          "max": 1730,
+          "min": 17
+        },
+        "entry_bridge": 8384768,
+        "evidence_level": "verified-runtime",
+        "evidence_scope": "immutable-original-rom-source-stack-frame-only",
+        "helper_code_base": 8355840,
+        "helper_sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8",
+        "helper_size": 577,
+        "interrupt_policy": "synthetic IRQ/NMI sources disabled; no game interrupt claim",
+        "no_game_input": true,
+        "no_global_scratch_access": true,
+        "no_rom_write_or_patch": true,
+        "passed": true,
+        "pointed_stream_execution": false,
+        "production_hook_allocation_or_integration": false,
+        "progress_sha256": "3e5bad05e0acadb175b19ee1913a6970165c0b1b37a70fe1255d6fbd576cf831",
+        "repetition": 2,
+        "reproduce": [
+          "python",
+          "tools/run_schala_package_helper_v2_stack.py",
+          "--output-dir",
+          "private/test_runs/package_helper_v2_stack_NEW",
+          "--repetition",
+          "2",
+          "--timeout",
+          "900",
+          "--code-base",
+          "0x7F8000"
+        ],
+        "rom_source_banks": [
+          65,
+          66
+        ],
+        "schema": "project-epoch-package-helper-v2-stack",
+        "source_hashes": {
+          "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+          "collector": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+          "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+          "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+          "launcher": "88214b069ef49c3e512e625640fd67aa39019441119e8306782f225b9e48c251",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+          "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+        },
+        "sources_and_staged_inputs_unchanged": true,
+        "stack_entry_values": [
+          8175,
+          1752,
+          52,
+          51,
+          8
+        ],
+        "staged_hashes": {
+          "collector": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3",
+          "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "inputs": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5",
+          "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+          "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "sram": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "subset_only": false,
+        "trace_sha256": "41931d1424daf97d633aa446c4c964e3aa3fecedb6b62ea494400c0161071a9f",
+        "wram_input_fixture_hashes_sha256": "045f11d61b61c205028afaaf7cbf49e1b301d09427a84558520b79f72045c70e"
+      },
+      "observations": {
+        "route_counts": {
+          "canonical": 396,
+          "refusal": 1158,
+          "success": 1426
+        },
+        "rom_byte_reads": 53748,
+        "cpu_data_reads": 1095290,
+        "execution_pc_observations": 2140126,
+        "executed_helper_instructions": 2137146,
+        "terminal_observations_not_executed": 2980,
+        "stack_accesses": 1096204,
+        "post_sp_change_observations": 43656,
+        "per_entry_sp": {
+          "1FEF": {
+            "case_count": 1454,
+            "minimum_observed_sp": 8123
+          },
+          "06D8": {
+            "case_count": 1454,
+            "minimum_observed_sp": 1700
+          },
+          "0034": {
+            "case_count": 24,
+            "minimum_observed_sp": 0
+          },
+          "0033": {
+            "case_count": 24,
+            "minimum_observed_sp": 43
+          },
+          "0008": {
+            "case_count": 24,
+            "minimum_observed_sp": 0
+          }
+        }
+      },
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/case_contract.json",
+          "size_bytes": 4555460,
+          "sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "5aae8cf310dca8357b626ca9b6a205b06431c3951a2ce37db23b373913076ef5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/manifest.json",
+          "size_bytes": 3870,
+          "sha256": "eb305f20e70069429213e85df0fc5f625a766aae24ba6a06bbaa97ec7d7e0ad0"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/progress.json",
+          "size_bytes": 114,
+          "sha256": "3e5bad05e0acadb175b19ee1913a6970165c0b1b37a70fe1255d6fbd576cf831"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Debugger/pe_package_2b3752731e8ce90135e0c53b.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/Saves/pe_package_2b3752731e8ce90135e0c53b.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/collector.lua",
+          "size_bytes": 11656,
+          "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/inputs.lua",
+          "size_bytes": 2908283,
+          "sha256": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/pe_package_2b3752731e8ce90135e0c53b.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/trace.json",
+          "size_bytes": 70196608,
+          "sha256": "41931d1424daf97d633aa446c4c964e3aa3fecedb6b62ea494400c0161071a9f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger2/wram_input_fixture_hashes.json",
+          "size_bytes": 594334,
+          "sha256": "045f11d61b61c205028afaaf7cbf49e1b301d09427a84558520b79f72045c70e"
+        }
+      ]
+    }
+  ],
+  "identical_raw_trace_sha256": "41931d1424daf97d633aa446c4c964e3aa3fecedb6b62ea494400c0161071a9f",
+  "total_accepted_cases": 5960,
+  "v1_behavior_equivalence": {
+    "case_count_per_synthetic_sp": 1454,
+    "synthetic_entry_sps": [
+      8175,
+      1752
+    ],
+    "fields": "route, final CPU except SP, ordered existing outputs, exact ROM reads, before/after immutable input snapshots",
+    "common_projection_sha256": "47cd832dd4a0eaf9caf4bd623e0d2783abb832a0e106efa8aaabaf7af589245d",
+    "v1_trace_sha256": "bb5a9f54a57fb59072f6b9011bc80c4ba761b13d820e9df5acaee44b1e5595c9"
+  },
+  "execution_and_stack_guards": {
+    "complete_helper_span_and_exact_terminal": true,
+    "first_helper_opcode_observed": true,
+    "independent_instruction_start_disassembly_guard": false,
+    "required_post_sp_change_observations_derived_from_exact_code_and_pc_sequence": true,
+    "stack_access_owning_instruction_ordinal_required": true,
+    "stack_relative_access_strictly_above_sp": true,
+    "stack_relative_operand_one_or_two_byte_span_required": true,
+    "independent_m_state_width_emulation": false,
+    "full_wram_diff_restricted_to_exact_allocated_stack_and_existing_outputs": true,
+    "entire_final_wram_diff_reconciled_to_last_cpu_writes_and_exact_setup_baseline": true
+  },
+  "host_tests": {
+    "count": 48,
+    "command": "python -B -m unittest discover -s tests -p test_schala_package_helper_v2_stack.py -v"
+  },
+  "exploratory_history": [
+    {
+      "run_id": "package_helper_v2_stack_20260908_final1",
+      "status": "First 2980-case matched run with instruction ownership; full stack diff not yet reconciled to last CPU writes",
+      "historical_source_hashes": {
+        "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+        "collector": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "ef295d3f3009652408d4818efda6080204e817c81f5738f8dc23b21d94d77a65",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+      },
+      "historical_completed_case_count": 2980,
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/case_contract.json",
+          "size_bytes": 4555460,
+          "sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "dddc391eea3b9bb74f122f77429b72aba29bc8643a569510e149e34d4a05705b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/manifest.json",
+          "size_bytes": 3870,
+          "sha256": "2b73209fbc9922636a3b323dd09a01108f303c4330b967e41f0cd4b4bd795126"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/progress.json",
+          "size_bytes": 114,
+          "sha256": "3e5bad05e0acadb175b19ee1913a6970165c0b1b37a70fe1255d6fbd576cf831"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Debugger/pe_package_e46bf49c28f121ed146ced8e.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/Saves/pe_package_e46bf49c28f121ed146ced8e.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/collector.lua",
+          "size_bytes": 11656,
+          "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/inputs.lua",
+          "size_bytes": 2908283,
+          "sha256": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/pe_package_e46bf49c28f121ed146ced8e.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/trace.json",
+          "size_bytes": 70196608,
+          "sha256": "41931d1424daf97d633aa446c4c964e3aa3fecedb6b62ea494400c0161071a9f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final1/wram_input_fixture_hashes.json",
+          "size_bytes": 594334,
+          "sha256": "045f11d61b61c205028afaaf7cbf49e1b301d09427a84558520b79f72045c70e"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v2_stack_20260908_final2",
+      "status": "Second 2980-case matched run; byte-identical trace preserved before final full-WRAM ledger hardening",
+      "historical_source_hashes": {
+        "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+        "collector": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "ef295d3f3009652408d4818efda6080204e817c81f5738f8dc23b21d94d77a65",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+      },
+      "historical_completed_case_count": 2980,
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/case_contract.json",
+          "size_bytes": 4555460,
+          "sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "dddc391eea3b9bb74f122f77429b72aba29bc8643a569510e149e34d4a05705b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/manifest.json",
+          "size_bytes": 3870,
+          "sha256": "46730d7356753ad427a02974aebdcb85eca80201062fa2de1efca4055c2df2e8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/progress.json",
+          "size_bytes": 114,
+          "sha256": "3e5bad05e0acadb175b19ee1913a6970165c0b1b37a70fe1255d6fbd576cf831"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Debugger/pe_package_089a31403863be5373d00eff.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/Saves/pe_package_089a31403863be5373d00eff.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/collector.lua",
+          "size_bytes": 11656,
+          "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/inputs.lua",
+          "size_bytes": 2908283,
+          "sha256": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/pe_package_089a31403863be5373d00eff.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/trace.json",
+          "size_bytes": 70196608,
+          "sha256": "41931d1424daf97d633aa446c4c964e3aa3fecedb6b62ea494400c0161071a9f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_final2/wram_input_fixture_hashes.json",
+          "size_bytes": 594334,
+          "sha256": "045f11d61b61c205028afaaf7cbf49e1b301d09427a84558520b79f72045c70e"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v2_stack_20260908_explore1",
+      "status": "130-case exploratory subset before post-instruction SP observations; not final evidence",
+      "historical_source_hashes": {
+        "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+        "collector": "d98c83b7390e3359e5951c866cdde854abb5fee6de326f0ed059ea72f26162ef",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "33dea013efb17bcf818b6d9f3df934f3216172f8d47ffb9ce838492c58e15784",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+      },
+      "historical_completed_case_count": 130,
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/case_contract.json",
+          "size_bytes": 88805,
+          "sha256": "c36d2112d18672a68a9c4419cf0095fc5e0de2479748c67a0bae51bad24f2055"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "88fb6ab151e31e024bc88d458c103904b23a4701e57b0be36ab531eae4b0b932"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/manifest.json",
+          "size_bytes": 3398,
+          "sha256": "76756e6ee2f8c93655984cd36d703a1288b56e916bda6dd9f854ae4516b7e116"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/process.log",
+          "size_bytes": 1512,
+          "sha256": "6cfa7876e4165c5ce76cbf002ae6c6744b8953159db594cb250a18922a73b0eb"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Debugger/pe_package_927bf2f568802b1816315498.cdl",
+          "size_bytes": 8388617,
+          "sha256": "fc5a0ecb955117dc155fdd625f13485a7e4d5d123b1da21b68eea6b92dc58a90"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/Saves/pe_package_927bf2f568802b1816315498.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/collector.lua",
+          "size_bytes": 9354,
+          "sha256": "d98c83b7390e3359e5951c866cdde854abb5fee6de326f0ed059ea72f26162ef"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/inputs.lua",
+          "size_bytes": 75753,
+          "sha256": "e08bf098150891741fbe7c1ab6e15f75916be0440af84d92917e82bbaa049287"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/pe_package_927bf2f568802b1816315498.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/trace.json",
+          "size_bytes": 918801,
+          "sha256": "02a0176adde74af17d7cf3578a6d67ce969bc9fa7c1834d5555492a97340b819"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore1/wram_input_fixture_hashes.json",
+          "size_bytes": 25616,
+          "sha256": "ee7f5bd43d5a0b21824f6a5f13df8dbaa07c3cf2e81e400aea19c087ff078c06"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v2_stack_20260908_explore2",
+      "status": "Executed full attempt exceeded 240-second emulator bound; no completed trace or accepted manifest",
+      "historical_source_hashes": {
+        "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+        "collector": "ae4228d3799d9e267459aae08904cc1c7c5b68183d12d7d318564005e5d8771c",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "37aae1dec75dc5a8bdb257b6ae81181a4b9d7591e67f97590c706618a5f6828d",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+      },
+      "historical_completed_case_count": null,
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/case_contract.json",
+          "size_bytes": 4555460,
+          "sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "fe09aa26f315447c403648c28d2b7a9b7c8dcb39138f1ef064cc6a54fedc5f53"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Debugger/pe_package_82a8990fdc6b49ba611be023.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/Saves/pe_package_82a8990fdc6b49ba611be023.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/collector.lua",
+          "size_bytes": 10247,
+          "sha256": "ae4228d3799d9e267459aae08904cc1c7c5b68183d12d7d318564005e5d8771c"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/inputs.lua",
+          "size_bytes": 2908283,
+          "sha256": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/pe_package_82a8990fdc6b49ba611be023.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore2/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v2_stack_20260908_explore3",
+      "status": "2980 cases passed before independent review reproduced omitted SP metadata and missing instruction ownership gaps",
+      "historical_source_hashes": {
+        "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+        "collector": "f78f064849d8f8ddfa12a46e73ce3f8a7a5651fdc18d27cb0d1fc8ad1d40d162",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "a155c32a604c1d704c6dbf356a99a72dc899464691e8d7986b4a699d1d73a048",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+      },
+      "historical_completed_case_count": 2980,
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/case_contract.json",
+          "size_bytes": 4555460,
+          "sha256": "5c46bd0e5885a2a463f02399f6cd9879b13b2ab25d2af19d5c705b43d05e7d76"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "fed7c48912c84e6d3793f87bfa0d92f9819d89865a98ef19b3c719c2fcfc715a"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/manifest.json",
+          "size_bytes": 3870,
+          "sha256": "2020f1f02d246464ab97c9dfc372ba2a7498812d72cfdb882cae13319211ef9a"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/process.log",
+          "size_bytes": 29736,
+          "sha256": "031b9366d311b37f34cf7ced4c553cb2b041c75a911afd47c5d342107805f79b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/progress.json",
+          "size_bytes": 114,
+          "sha256": "3e5bad05e0acadb175b19ee1913a6970165c0b1b37a70fe1255d6fbd576cf831"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Debugger/pe_package_ffa298507d5e57165f2eda95.cdl",
+          "size_bytes": 8388617,
+          "sha256": "a086bf591e044fe1dad1f3efb241eae4f209b7ffd8c2ee615c6df5da56057e27"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/Saves/pe_package_ffa298507d5e57165f2eda95.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/collector.lua",
+          "size_bytes": 10850,
+          "sha256": "f78f064849d8f8ddfa12a46e73ce3f8a7a5651fdc18d27cb0d1fc8ad1d40d162"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/inputs.lua",
+          "size_bytes": 2908283,
+          "sha256": "57a390e255ab66f3e3a030b79d90ecbc0cd0ef96be2d3ba5171cb2a373b4a0a5"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/pe_package_ffa298507d5e57165f2eda95.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/trace.json",
+          "size_bytes": 65423628,
+          "sha256": "06cf3fd2bb7aaa3c063a7aaf558592213a694d923510f64f9ef97c92804d4bb2"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_explore3/wram_input_fixture_hashes.json",
+          "size_bytes": 594334,
+          "sha256": "045f11d61b61c205028afaaf7cbf49e1b301d09427a84558520b79f72045c70e"
+        }
+      ]
+    },
+    {
+      "run_id": "package_helper_v2_stack_20260908_execownership1",
+      "status": "130-case fresh subset after complete instruction-owned SP/access evidence; precedes final matched pair",
+      "historical_source_hashes": {
+        "asar": "ecb04bce4a9a5a3b4dab4c9fafdc7875f30763fec15dec640b9cac11e11496e8",
+        "collector": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "helper": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+        "host_adapter": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "ef295d3f3009652408d4818efda6080204e817c81f5738f8dc23b21d94d77a65",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "v0_validation_library": "ec3691bcf247123e690cfdc11551f9355c8af05795d6ab8d9ff0a07ca3981844",
+        "v1_contract_library": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
+      },
+      "historical_completed_case_count": 130,
+      "artifact_identities": [
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/asar.log",
+          "size_bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/case_contract.json",
+          "size_bytes": 88805,
+          "sha256": "c36d2112d18672a68a9c4419cf0095fc5e0de2479748c67a0bae51bad24f2055"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/helper.asm",
+          "size_bytes": 9180,
+          "sha256": "3830753a4dc9eaa191d18ad51f6be2e0d3b4a4dad9b31153cdd672440358a668"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/helper.bin",
+          "size_bytes": 577,
+          "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/launch_inputs.json",
+          "size_bytes": 2505,
+          "sha256": "7621e7627727e6e052ac9464cd78efe4516b89feedd9e733f8462697f41146d4"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/manifest.json",
+          "size_bytes": 3484,
+          "sha256": "b53e6fcf44239a26335353331dd54d7f9d7494184bf8424abc690ebfdd480b4a"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/process.log",
+          "size_bytes": 1512,
+          "sha256": "6cfa7876e4165c5ce76cbf002ae6c6744b8953159db594cb250a18922a73b0eb"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/progress.json",
+          "size_bytes": 112,
+          "sha256": "72590162614f3c1b9fab87b0b07501992f368e26d27b13511c60febfb68e5459"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Debugger/pe_package_8cac16a8b7222c0b3d42977f.cdl",
+          "size_bytes": 8388617,
+          "sha256": "fc5a0ecb955117dc155fdd625f13485a7e4d5d123b1da21b68eea6b92dc58a90"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Satellaview/BSX0120-0.bin",
+          "size_bytes": 34,
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Satellaview/BSX0121-0.bin",
+          "size_bytes": 34,
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Satellaview/BSX0122-0.bin",
+          "size_bytes": 1031,
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Satellaview/BSX0123-0.bin",
+          "size_bytes": 16,
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Satellaview/BSX0124-0.bin",
+          "size_bytes": 97,
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/Saves/pe_package_8cac16a8b7222c0b3d42977f.srm",
+          "size_bytes": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/collector.lua",
+          "size_bytes": 11656,
+          "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/inputs.lua",
+          "size_bytes": 75753,
+          "sha256": "e08bf098150891741fbe7c1ab6e15f75916be0440af84d92917e82bbaa049287"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/pe_package_8cac16a8b7222c0b3d42977f.sfc",
+          "size_bytes": 8388608,
+          "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/staged/profile/Documents/desktop.ini",
+          "size_bytes": 418,
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/trace.json",
+          "size_bytes": 953933,
+          "sha256": "548bb599d147d9f6ec6de2b3eae9b73718e7906b22770f405493a1bd549c249a"
+        },
+        {
+          "path": "private/test_runs/package_helper_v2_stack_20260908_execownership1/wram_input_fixture_hashes.json",
+          "size_bytes": 25616,
+          "sha256": "ee7f5bd43d5a0b21824f6a5f13df8dbaa07c3cf2e81e400aea19c087ff078c06"
+        }
+      ]
+    }
+  ],
+  "pre_hardening_source_archives": [
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_exec_ownership_sources/manifest.json",
+      "size_bytes": 1442,
+      "sha256": "fb0030f3720efdd6bacbca72ba075b39be111900106acadb5bb1b79615ca517e"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_exec_ownership_sources/mesen_schala_package_helper_v2_stack.lua",
+      "size_bytes": 10850,
+      "sha256": "f78f064849d8f8ddfa12a46e73ce3f8a7a5651fdc18d27cb0d1fc8ad1d40d162"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_exec_ownership_sources/run_schala_package_helper_v2_stack.py",
+      "size_bytes": 19875,
+      "sha256": "a155c32a604c1d704c6dbf356a99a72dc899464691e8d7986b4a699d1d73a048"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_exec_ownership_sources/schala_package_helper_v2_stack.asm",
+      "size_bytes": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_exec_ownership_sources/test_schala_package_helper_v2_stack.py",
+      "size_bytes": 7907,
+      "sha256": "f143740a9345254ae02ee4cc7d8eff6dbb4244d46b19072497a1c366f0480a26"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_complete_diff_ledger_sources/manifest.json",
+      "size_bytes": 1340,
+      "sha256": "8a7bbb2de98b06aa27081927496f1e3eeb0a7cf01fa28d64519ffcebf9e585a4"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_complete_diff_ledger_sources/mesen_schala_package_helper_v2_stack.lua",
+      "size_bytes": 11656,
+      "sha256": "1cbe17e731871f2a8bcfc940b5c503215c511d77b67e7acb7978cdfe2b6b26c3"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_complete_diff_ledger_sources/run_schala_package_helper_v2_stack.py",
+      "size_bytes": 21649,
+      "sha256": "ef295d3f3009652408d4818efda6080204e817c81f5738f8dc23b21d94d77a65"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_complete_diff_ledger_sources/schala_package_helper_v2_stack.asm",
+      "size_bytes": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+    },
+    {
+      "path": "private/test_runs/package_helper_v2_stack_20260908_before_complete_diff_ledger_sources/test_schala_package_helper_v2_stack.py",
+      "size_bytes": 10111,
+      "sha256": "c094cab31d74cfa44b4151ad54a21065a0fbfcdf22a92c2b9f5a527db15e8896"
+    }
+  ],
+  "scope": {
+    "rom_mutation": false,
+    "pointed_stream_read_or_execution": false,
+    "production_hook_allocation_or_registry": false,
+    "game_stack_ownership": false,
+    "interrupt_execution_or_safety": false,
+    "cancellation_lifecycle": false,
+    "logical_pc07_runtime": false
+  },
+  "reproduce_reference": "python -B tools/collect_schala_package_helper_v2_stack_evidence.py",
+  "serialization": "json.dumps(value, indent=2), UTF-8, LF, exactly one trailing newline",
+  "next_gates": [
+    "separately measured original interrupt fixture",
+    "real game stack and normal-NMI closure",
+    "immutable ROM registry and ROM helper execution",
+    "cancellation and production placement/hook contracts"
+  ]
+}

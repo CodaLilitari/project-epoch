@@ -60,6 +60,12 @@ closed for this session.
   memory ledger and actual queued-action caller are proved within the declared
   scope. Natural refusal remains open. The original-cartridge builder is under
   independent review before its first image write.
+- 17:00 UTC: passed the two-hour point with the final stack-helper reference
+  regenerated exactly and all 48 tests passing. Two original cartridge builds
+  are byte-identical after independent review, intent audit and complete-diff
+  audit; their private written ROM/SRAM hashes were reread and verified. The
+  source-only NMI mechanism reference also reproduces exactly. ROM execution,
+  real NMI preemption and a natural unsuccessful action remain active work.
 
 ## Gates and evidence boundaries
 

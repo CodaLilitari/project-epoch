@@ -1089,6 +1089,20 @@ def audit_images(
     }
 
 
+def validate_original_diagnostic_manifest(manifest, *, workspace_root=None):
+    """Separate blank-source contract; never expands the game source catalogs."""
+    import original_snes_diagnostic_write_contract_v1 as original
+    kwargs = {} if workspace_root is None else {"workspace_root": workspace_root}
+    return original.validate_manifest(manifest, **kwargs)
+
+
+def audit_original_diagnostic_images(manifest, source, target, *, workspace_root=None):
+    """Fail-closed original-cartridge intent and complete-diff audit, read-only."""
+    import original_snes_diagnostic_write_contract_v1 as original
+    kwargs = {} if workspace_root is None else {"workspace_root": workspace_root}
+    return original.audit_images(manifest, source, target, **kwargs)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifest", type=pathlib.Path)

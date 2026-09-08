@@ -21,6 +21,13 @@
   hooks require exact approved spans and pinned preimages. The trusted
   production hook and allocation catalogs remain empty until evidence is
   explicitly promoted.
+- A separate original-cartridge diagnostic contract accepts only the pinned
+  eight-MiB literal all-`$FF` source, a private-only schema, and seven fixed
+  original diagnostic sections. Its two explicit APIs in the write guard
+  perform intent and complete-diff audits before image emission. It changes
+  no legacy source kind, production catalog or game ownership. The original
+  package test cartridge has two identical guarded builds; this is static
+  construction evidence, separate from all native execution claims.
 
 ## Namespace doctrine
 
@@ -188,7 +195,25 @@ These are separate namespaces. Never conflate them.
   known-unsuitable `$7E4000` scratch fixture; no ROM code placement, immutable
   production registry, game hook, interrupt ownership, or selector is approved.
   Preserve v0 and v1; the separate v2 stack-frame design is the next temporary
-  storage experiment, not an approved game-stack allocation.
+  storage architecture, not an approved game-stack allocation.
+- The separately versioned 577-byte stack helper now passes two identical
+  2,980-case normal synthetic Mesen runs. Its 42 locals are S-relative, with
+  eight saved context bytes and 52-byte deepest helper contribution. Final
+  values are staged before releasing locals. Every stack access owns an
+  observed instruction, required post-SP-change observations are complete,
+  and every final WRAM difference matches its last observed CPU write and
+  exact setup baseline. Retired `$7E4000-$7E4080` remains unchanged. The five
+  tested entry SPs include exact helper-only floor/refusal boundaries, which
+  have no interrupt reserve. Preserve this normal-only v2 proof; it approves
+  neither game stack ownership nor interrupt safety. See the v2 report.
+- The original package cartridge separately assembles that unchanged include
+  in ROM at `$410000` with immutable registry `$430000` and target lists
+  `$430100`. Four certified terminal-only test bindings `$80-$83` and twelve
+  unbound rows remain diagnostic identities. Actual ROM execution, real CPU
+  registry reads and preemption require separate native evidence. The source-
+  pinned Mesen NMI request design uses a real `$4200` enable edge at natural
+  VBlank; it is a debugger register event, not a CPU store or fabricated frame.
+  Preserve these distinctions and the existing production-default unbound set.
 - A separate repeated clean-ROM context observation records 2,402 paired
   interrupt entries/pre-RTI snapshots per run and one PC-scoped NMI scene
   clear with an actual write and later readback. No interrupt enters its short

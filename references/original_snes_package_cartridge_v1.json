@@ -1,0 +1,892 @@
+{
+  "schema": "project-epoch-original-package-cartridge-evidence-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "status": "two-identical-guarded-original-private-builds",
+  "image_size": 8388608,
+  "identical_image_sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b",
+  "sources": [
+    {
+      "path": "asm/original_snes_package_cartridge_v1.asm",
+      "size": 1151,
+      "sha256": "3cd5b800e57ec4085e5b706e3bc283be6e2d2d7fb79000c2741d5828819be15b",
+      "provenance": "reviewed-original-project-source"
+    },
+    {
+      "path": "asm/schala_package_helper_v2_stack.asm",
+      "size": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+      "provenance": "reviewed-original-project-source"
+    },
+    {
+      "path": "tools/build_original_snes_package_cartridge_v1.py",
+      "size": 11809,
+      "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a",
+      "provenance": "reviewed-original-project-source"
+    },
+    {
+      "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+      "size": 12383,
+      "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318",
+      "provenance": "reviewed-original-project-source"
+    },
+    {
+      "path": "tools/original_snes_package_fixtures_v1.py",
+      "size": 4761,
+      "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60",
+      "provenance": "reviewed-original-project-source"
+    },
+    {
+      "path": "tools/validate_rom_write_intents.py",
+      "size": 38861,
+      "sha256": "8bc61538b20da7a316048326059fe71de685264355a4db3410256cf6aee4369b",
+      "provenance": "reviewed-original-project-source"
+    }
+  ],
+  "certification": {
+    "schema": "project-epoch-original-package-fixtures-v1",
+    "evidence_level": "verified-static",
+    "bank": 66,
+    "packages": [
+      {
+        "selector": 128,
+        "layout": {
+          "source": {
+            "selector": 128,
+            "bank": 66,
+            "root_offset": 0,
+            "allocation_name": "ORIGINAL_TEST_PACKAGE_80_DESCRIPTOR",
+            "source_kind": "synthetic-test"
+          },
+          "descriptor_span": {
+            "name": "ORIGINAL_TEST_PACKAGE_80_DESCRIPTOR",
+            "bank": 66,
+            "start": 0,
+            "end_exclusive": 68
+          },
+          "stream_spans": [
+            {
+              "name": "ORIGINAL_TEST_PACKAGE_80_TERMINAL_0",
+              "bank": 66,
+              "start": 128,
+              "end_exclusive": 129
+            },
+            {
+              "name": "ORIGINAL_TEST_PACKAGE_80_TERMINAL_1",
+              "bank": 66,
+              "start": 129,
+              "end_exclusive": 130
+            }
+          ]
+        },
+        "targets": [
+          128,
+          129
+        ],
+        "descriptor_size": 68,
+        "descriptor_sha256": "b0c0cf75487159d463589b61cac427a13a0dc107fd5234d8c04a235b5f1284aa",
+        "certificate": {
+          "status": "pass-all-selected-flat-direct-streams-exclude-command-1e",
+          "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+          "expanded_source_1e_absence_proved": true,
+          "command_1e_cross_bank_subscripts_resolved": false,
+          "package_selector": "80",
+          "descriptor_relation_count": 32,
+          "mask0_relation_count": 16,
+          "mask1_relation_count": 16,
+          "both_descriptor_masks_validated": true,
+          "distinct_direct_entrypoint_count": 2,
+          "stream_span_count": 2,
+          "unique_token_start_count": 2,
+          "unique_owned_byte_count": 2,
+          "total_entrypoint_traversal_token_count": 2,
+          "shared_token_start_count": 0,
+          "decoded_command_1e_site_count": 0,
+          "top_level_command_1f_site_count": 0,
+          "top_level_command_21_site_count": 0,
+          "raw_byte_equal_1e_inside_stream_span_count": 0,
+          "command_00_terminal_count": 2,
+          "command_25_site_count": 0,
+          "command_80_site_count": 0,
+          "command_da_site_count": 0,
+          "descriptor_stream_overlap_count": 0,
+          "unowned_stream_byte_count": 0,
+          "token_extent_conflict_count": 0,
+          "source_content_size": 70,
+          "source_content_ledger_sha256": "f37f5d786e63782154407ec20e9f9f4c9bda21e317da0ce61efd33844e42852c",
+          "command_exclusion_proof_sha256": "d0ba17d350daa203ae62f20a4beaba4d8294f1544e0cc2fc3e45b61d3b84f993",
+          "descriptor_entry_ledger_sha256": "2d33632beb40bfda66d658e237191214857c50c26b7ee8dfbc00199a1423db98",
+          "token_ledger_sha256": "7d1df5e4f489f438a81ba8f94745d7ee7ef173e4924b35e2e8763169199e9812",
+          "trace_ledger_sha256": "8c6ecff035ba2eb00d8f883402d470962ef661939a4dae33347c730d5abeb2c4",
+          "termination_ledger_sha256": "29888638cd0394959c7ee73fcd7803358c1c4d67f08d6af534e2d39524db6cb6",
+          "owned_byte_ledger_sha256": "622dd9331714899bef8275f735f96cefa919cecdedcb129d4b7bb5c43d5202c5",
+          "descriptor_span_size": 68,
+          "stream_span_total_size": 2,
+          "raw_stream_or_descriptor_bytes_emitted": false
+        }
+      },
+      {
+        "selector": 129,
+        "layout": {
+          "source": {
+            "selector": 129,
+            "bank": 66,
+            "root_offset": 256,
+            "allocation_name": "ORIGINAL_TEST_PACKAGE_81_DESCRIPTOR",
+            "source_kind": "synthetic-test"
+          },
+          "descriptor_span": {
+            "name": "ORIGINAL_TEST_PACKAGE_81_DESCRIPTOR",
+            "bank": 66,
+            "start": 256,
+            "end_exclusive": 272
+          },
+          "stream_spans": [
+            {
+              "name": "ORIGINAL_TEST_PACKAGE_81_TERMINAL_0",
+              "bank": 66,
+              "start": 384,
+              "end_exclusive": 385
+            },
+            {
+              "name": "ORIGINAL_TEST_PACKAGE_81_TERMINAL_1",
+              "bank": 66,
+              "start": 385,
+              "end_exclusive": 386
+            }
+          ]
+        },
+        "targets": [
+          384,
+          385
+        ],
+        "descriptor_size": 16,
+        "descriptor_sha256": "7c1ae78b3f70767bf669f1e0639075e235eeb7bfb1e844294150ae88affa049d",
+        "certificate": {
+          "status": "pass-all-selected-flat-direct-streams-exclude-command-1e",
+          "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+          "expanded_source_1e_absence_proved": true,
+          "command_1e_cross_bank_subscripts_resolved": false,
+          "package_selector": "81",
+          "descriptor_relation_count": 6,
+          "mask0_relation_count": 5,
+          "mask1_relation_count": 1,
+          "both_descriptor_masks_validated": true,
+          "distinct_direct_entrypoint_count": 2,
+          "stream_span_count": 2,
+          "unique_token_start_count": 2,
+          "unique_owned_byte_count": 2,
+          "total_entrypoint_traversal_token_count": 2,
+          "shared_token_start_count": 0,
+          "decoded_command_1e_site_count": 0,
+          "top_level_command_1f_site_count": 0,
+          "top_level_command_21_site_count": 0,
+          "raw_byte_equal_1e_inside_stream_span_count": 0,
+          "command_00_terminal_count": 2,
+          "command_25_site_count": 0,
+          "command_80_site_count": 0,
+          "command_da_site_count": 0,
+          "descriptor_stream_overlap_count": 0,
+          "unowned_stream_byte_count": 0,
+          "token_extent_conflict_count": 0,
+          "source_content_size": 18,
+          "source_content_ledger_sha256": "838cb9873e99c744529a2877a19d9be7215d813da171677f75976dc31c3a6688",
+          "command_exclusion_proof_sha256": "f1b72eeb6f35d398beb92d6023ee7eb7290c51018862dd9ff4c80b42fc228995",
+          "descriptor_entry_ledger_sha256": "8f0d6e43f61a8705a9c3fb9424a1fd2ce0ecb6f23b9bdcb5b1726e842fa90f8c",
+          "token_ledger_sha256": "c3064267138e5a976e69ee13bf6e51b22d1c26b3d5c722dfcac65cacdc7aaffb",
+          "trace_ledger_sha256": "d724034a8cb0519c5fd8db4e95edff522e8f8c0b2c6fed0b871c56b5184b106e",
+          "termination_ledger_sha256": "a13242280d4abf5ec17010f7611756bc0be2280490dfa2bc3008b6add6576c1c",
+          "owned_byte_ledger_sha256": "4c1b718183ccfcaaaff6a5d2d7c42b1b6d222800e5a7e4978a47d04d66b15a51",
+          "descriptor_span_size": 16,
+          "stream_span_total_size": 2,
+          "raw_stream_or_descriptor_bytes_emitted": false
+        }
+      },
+      {
+        "selector": 130,
+        "layout": {
+          "source": {
+            "selector": 130,
+            "bank": 66,
+            "root_offset": 512,
+            "allocation_name": "ORIGINAL_TEST_PACKAGE_82_DESCRIPTOR",
+            "source_kind": "synthetic-test"
+          },
+          "descriptor_span": {
+            "name": "ORIGINAL_TEST_PACKAGE_82_DESCRIPTOR",
+            "bank": 66,
+            "start": 512,
+            "end_exclusive": 518
+          },
+          "stream_spans": [
+            {
+              "name": "ORIGINAL_TEST_PACKAGE_82_TERMINAL_0",
+              "bank": 66,
+              "start": 640,
+              "end_exclusive": 641
+            }
+          ]
+        },
+        "targets": [
+          640
+        ],
+        "descriptor_size": 6,
+        "descriptor_sha256": "7694d4d6ab38cff330b5819129f9bd0c0d03090000693ac7b1f427b5be7873df",
+        "certificate": {
+          "status": "pass-all-selected-flat-direct-streams-exclude-command-1e",
+          "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+          "expanded_source_1e_absence_proved": true,
+          "command_1e_cross_bank_subscripts_resolved": false,
+          "package_selector": "82",
+          "descriptor_relation_count": 1,
+          "mask0_relation_count": 1,
+          "mask1_relation_count": 0,
+          "both_descriptor_masks_validated": true,
+          "distinct_direct_entrypoint_count": 1,
+          "stream_span_count": 1,
+          "unique_token_start_count": 1,
+          "unique_owned_byte_count": 1,
+          "total_entrypoint_traversal_token_count": 1,
+          "shared_token_start_count": 0,
+          "decoded_command_1e_site_count": 0,
+          "top_level_command_1f_site_count": 0,
+          "top_level_command_21_site_count": 0,
+          "raw_byte_equal_1e_inside_stream_span_count": 0,
+          "command_00_terminal_count": 1,
+          "command_25_site_count": 0,
+          "command_80_site_count": 0,
+          "command_da_site_count": 0,
+          "descriptor_stream_overlap_count": 0,
+          "unowned_stream_byte_count": 0,
+          "token_extent_conflict_count": 0,
+          "source_content_size": 7,
+          "source_content_ledger_sha256": "6625d07c9ab7a13db4a6a73b3ea3b229c34d779db1455f4f3321dfdae0076b0e",
+          "command_exclusion_proof_sha256": "7b77c343b7298103c73320a043edc3acacc589efc81f1eb9a79398c3ffd587b3",
+          "descriptor_entry_ledger_sha256": "5298b992dd3bc98758e3899f75a6f3fab86e8a04edaeb69910fe28598577b294",
+          "token_ledger_sha256": "263a3d5795fa14176bd9a55e72c7d75108b6e6128fa9001ebe595c8559dccd65",
+          "trace_ledger_sha256": "30b89e35068d40dc21fdd556fc5d552c5584f305d58a25421bfb057a15b9c822",
+          "termination_ledger_sha256": "87747d226b4e3a8e5201a4b148781dc7e1b81c3130bb512ebb00f4756272a2a3",
+          "owned_byte_ledger_sha256": "162fe3fd28773d410ca96568c1d347d5516a3e575b27ca94a594b6c55f5b7b73",
+          "descriptor_span_size": 6,
+          "stream_span_total_size": 1,
+          "raw_stream_or_descriptor_bytes_emitted": false
+        }
+      },
+      {
+        "selector": 131,
+        "layout": {
+          "source": {
+            "selector": 131,
+            "bank": 66,
+            "root_offset": 768,
+            "allocation_name": "ORIGINAL_TEST_PACKAGE_83_DESCRIPTOR",
+            "source_kind": "synthetic-test"
+          },
+          "descriptor_span": {
+            "name": "ORIGINAL_TEST_PACKAGE_83_DESCRIPTOR",
+            "bank": 66,
+            "start": 768,
+            "end_exclusive": 774
+          },
+          "stream_spans": [
+            {
+              "name": "ORIGINAL_TEST_PACKAGE_83_TERMINAL_0",
+              "bank": 66,
+              "start": 896,
+              "end_exclusive": 897
+            }
+          ]
+        },
+        "targets": [
+          896
+        ],
+        "descriptor_size": 6,
+        "descriptor_sha256": "08a55fae82b127bef580755e2dd410e018c5b9ecaeb6f7bc61ab84b37cdfa28c",
+        "certificate": {
+          "status": "pass-all-selected-flat-direct-streams-exclude-command-1e",
+          "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+          "expanded_source_1e_absence_proved": true,
+          "command_1e_cross_bank_subscripts_resolved": false,
+          "package_selector": "83",
+          "descriptor_relation_count": 1,
+          "mask0_relation_count": 0,
+          "mask1_relation_count": 1,
+          "both_descriptor_masks_validated": true,
+          "distinct_direct_entrypoint_count": 1,
+          "stream_span_count": 1,
+          "unique_token_start_count": 1,
+          "unique_owned_byte_count": 1,
+          "total_entrypoint_traversal_token_count": 1,
+          "shared_token_start_count": 0,
+          "decoded_command_1e_site_count": 0,
+          "top_level_command_1f_site_count": 0,
+          "top_level_command_21_site_count": 0,
+          "raw_byte_equal_1e_inside_stream_span_count": 0,
+          "command_00_terminal_count": 1,
+          "command_25_site_count": 0,
+          "command_80_site_count": 0,
+          "command_da_site_count": 0,
+          "descriptor_stream_overlap_count": 0,
+          "unowned_stream_byte_count": 0,
+          "token_extent_conflict_count": 0,
+          "source_content_size": 7,
+          "source_content_ledger_sha256": "7986cb0f8f3afc43712d79b998805a09e9472f4ae2f3386defc5ee44acd4b81b",
+          "command_exclusion_proof_sha256": "ec866de2802f048aceee52f4051bff13e761bfd4bdd84e55e39668ddd8f551d3",
+          "descriptor_entry_ledger_sha256": "f4f8c88e74be74c7dd6818c7d5fb5bd21dc02cb587ff81dc48478e5af2477d63",
+          "token_ledger_sha256": "2111c95c25fc03b0d2e615fe857b767fae585c8dbc3b65c52a96949d1d312f2e",
+          "trace_ledger_sha256": "7aad552437bae8da4db95226076002d9a76a679d51e0c34982188e3a266f862c",
+          "termination_ledger_sha256": "0ffb27190266ca1f95a2ed0506385071be64514a3360cf081c98dc6fcea8b57e",
+          "owned_byte_ledger_sha256": "517ae58b501d64b8774e601ea80acfac6bb6da43ebd1290ff839c22959c1fce2",
+          "descriptor_span_size": 6,
+          "stream_span_total_size": 1,
+          "raw_stream_or_descriptor_bytes_emitted": false
+        }
+      }
+    ],
+    "package_payload_size": 897,
+    "package_payload_sha256": "2eaa608733618d79876b55e9bde43f4bf213f9556484b15216781a5df52dce70",
+    "registry_size": 1280,
+    "registry_sha256": "6cb7223449fca8f93771e37639cf0e9e28ac520ce5bb2b77d43154447e1ac965",
+    "certification_dependencies": [
+      {
+        "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+        "size": 39897,
+        "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f"
+      },
+      {
+        "path": "references/schala_expanded_package_command_policy_v0.json",
+        "size": 6717,
+        "sha256": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9"
+      }
+    ],
+    "policy_contract_dependencies": {
+      "battle_command_grammar_reference": {
+        "schema": "project-epoch-battle-command-grammar-census-contract-v0",
+        "sha256": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c",
+        "size": 12433
+      },
+      "package_bank_adapter_reference": {
+        "schema": "project-epoch-schala-player-tech-package-bank-adapter-contract-v0",
+        "sha256": "dab2834afb28ea2b89e814747d4a079fef7a403ec67eba592a7f866c88faa69e",
+        "size": 12280
+      },
+      "interpreter_identities": {
+        "grammar_auditor_source": {
+          "path": "tools/audit_battle_command_grammar_census_v0.py",
+          "sha256": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228",
+          "size": 53608
+        },
+        "grammar_token_shape_profile": {
+          "row_count": 511,
+          "sha256": "25502f827efd57ecaf920896a6216db2ad4278e66a2410ada1b7695a25a95f3d"
+        },
+        "package_bank_adapter_source": {
+          "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+          "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+          "size": 35887
+        }
+      }
+    },
+    "production_approval": false,
+    "pointed_stream_execution_proved": false,
+    "scope": "original terminal-only transport fixtures; all unlisted synthetic registry records are zero/unbound"
+  },
+  "runs": [
+    {
+      "directory": "private/test_runs/original_package_20260908_build1",
+      "artifacts": [
+        {
+          "path": "private/test_runs/original_package_20260908_build1/original_package_test.sfc",
+          "size": 8388608,
+          "sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build1/original_package_test.srm",
+          "size": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build1/original-boot.bin",
+          "size": 290,
+          "sha256": "785fbd007bcfe71e802a32ac69fce5dfc169c7c7045812b3a2b54fc5e5eed1e5"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build1/original-helper.bin",
+          "size": 577,
+          "sha256": "7242ff96f07e8d5ed9f0a994e474dbf3b49e7c2e576bd07d6536b6dfe3004f3b"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build1/audited-build.json",
+          "size": 24236,
+          "sha256": "217267873a81fc537e124113de7c9517e3cdb88ee1ea46abb3225246892c69a0"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build1/completion.json",
+          "size": 537,
+          "sha256": "abc2a916f8be06743e230b602b2b57c746daff5a25e6f8e08137e12846882343"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build1/source-identities.json",
+          "size": 1331,
+          "sha256": "8c61c1d1679258427eb2c33b5e1440eb068aa9bcc0cfbf18214276206f92c022"
+        }
+      ],
+      "original_source_archives_verified": 6,
+      "sections": [
+        {
+          "id": "original-boot",
+          "file_start": 32768,
+          "size": 290,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-code",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "asm/original_snes_package_cartridge_v1.asm"
+          ],
+          "preimage_sha256": "1dfff5e6852dd184c038a63dcba6e242c1c5539c3c310334161eab6e7c2f0e3b",
+          "replacement_sha256": "785fbd007bcfe71e802a32ac69fce5dfc169c7c7045812b3a2b54fc5e5eed1e5"
+        },
+        {
+          "id": "original-header",
+          "file_start": 65472,
+          "size": 64,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-header",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/build_original_snes_package_cartridge_v1.py"
+          ],
+          "preimage_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+          "replacement_sha256": "7f06422e76e980ede1c3edd1a17b0fa70a4f4500c9d3451eac81a50c9444ec78"
+        },
+        {
+          "id": "boot-mirror",
+          "file_start": 4227072,
+          "size": 290,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "exact-mirror",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "asm/original_snes_package_cartridge_v1.asm"
+          ],
+          "preimage_sha256": "1dfff5e6852dd184c038a63dcba6e242c1c5539c3c310334161eab6e7c2f0e3b",
+          "replacement_sha256": "785fbd007bcfe71e802a32ac69fce5dfc169c7c7045812b3a2b54fc5e5eed1e5"
+        },
+        {
+          "id": "header-mirror",
+          "file_start": 4259776,
+          "size": 64,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "exact-mirror",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/build_original_snes_package_cartridge_v1.py"
+          ],
+          "preimage_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+          "replacement_sha256": "7f06422e76e980ede1c3edd1a17b0fa70a4f4500c9d3451eac81a50c9444ec78"
+        },
+        {
+          "id": "original-helper",
+          "file_start": 4259840,
+          "size": 577,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-code",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "asm/schala_package_helper_v2_stack.asm",
+            "tools/build_original_snes_package_cartridge_v1.py"
+          ],
+          "preimage_sha256": "ad4af27b584842281c1b9e40c9bc3bebd6aed42ae3ab58988da8e76b1dab33d8",
+          "replacement_sha256": "7242ff96f07e8d5ed9f0a994e474dbf3b49e7c2e576bd07d6536b6dfe3004f3b"
+        },
+        {
+          "id": "authored-packages",
+          "file_start": 4325376,
+          "size": 897,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-package-fixtures",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/original_snes_package_fixtures_v1.py"
+          ],
+          "preimage_sha256": "000d05c48c0cebeb3913754c3412ad4bae96ed93f35df9a3248acf93de34db8b",
+          "replacement_sha256": "2eaa608733618d79876b55e9bde43f4bf213f9556484b15216781a5df52dce70"
+        },
+        {
+          "id": "immutable-registry",
+          "file_start": 4390912,
+          "size": 1280,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-registry",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/original_snes_package_fixtures_v1.py"
+          ],
+          "preimage_sha256": "f232749538acee34b68bf8ec06180cf9447128cec8c05889182f7126f9b5d484",
+          "replacement_sha256": "6cb7223449fca8f93771e37639cf0e9e28ac520ce5bb2b77d43154447e1ac965"
+        }
+      ],
+      "original_output": "private/test_runs/original_package_20260908_build1/original_package_test.sfc",
+      "read_only_replay_output_never_created": "private/test_runs/original_package_readonly_replay_build1/unwritten.sfc",
+      "reaudit": {
+        "schema": "project-epoch-original-snes-diagnostic-intents-v1",
+        "status": "images-valid",
+        "build_mode": "private-original-diagnostic",
+        "manifest_sha256": "0b3e204c27c79a71bf55ae53965d6b470a8aa1509fa6a7396e92b289e3261140",
+        "production_approval": false,
+        "rom_modified": false,
+        "source_sha256": "9f9b02f5ee6cbef5e018c1ee424095fc21a842ea6968c0d36114b5930dab2ba1",
+        "target_sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b",
+        "changed_bytes_by_section": {
+          "original-boot": 289,
+          "original-header": 64,
+          "boot-mirror": 289,
+          "header-mirror": 64,
+          "original-helper": 571,
+          "authored-packages": 98,
+          "immutable-registry": 1280
+        },
+        "changed_byte_count": 2655,
+        "complete_diff_coverage": true,
+        "source_artifacts_verified": true,
+        "mirrors_verified": true,
+        "header_verified": true,
+        "evidence_level": "verified-static"
+      },
+      "reproduce": "python -B tools/build_original_snes_package_cartridge_v1.py --output-dir private/test_runs/original_package_NEW_UNIQUE"
+    },
+    {
+      "directory": "private/test_runs/original_package_20260908_build2",
+      "artifacts": [
+        {
+          "path": "private/test_runs/original_package_20260908_build2/original_package_test.sfc",
+          "size": 8388608,
+          "sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build2/original_package_test.srm",
+          "size": 8192,
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build2/original-boot.bin",
+          "size": 290,
+          "sha256": "785fbd007bcfe71e802a32ac69fce5dfc169c7c7045812b3a2b54fc5e5eed1e5"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build2/original-helper.bin",
+          "size": 577,
+          "sha256": "7242ff96f07e8d5ed9f0a994e474dbf3b49e7c2e576bd07d6536b6dfe3004f3b"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build2/audited-build.json",
+          "size": 24236,
+          "sha256": "b761f1b1a12925d58437de5ed5d601ea675b3691c2dd64389f200df1472c1cce"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build2/completion.json",
+          "size": 537,
+          "sha256": "5e67d1e50738afdf9ec1f15e2fe23bb897c7af578505a57f843f2c0b8b66a021"
+        },
+        {
+          "path": "private/test_runs/original_package_20260908_build2/source-identities.json",
+          "size": 1331,
+          "sha256": "8c61c1d1679258427eb2c33b5e1440eb068aa9bcc0cfbf18214276206f92c022"
+        }
+      ],
+      "original_source_archives_verified": 6,
+      "sections": [
+        {
+          "id": "original-boot",
+          "file_start": 32768,
+          "size": 290,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-code",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "asm/original_snes_package_cartridge_v1.asm"
+          ],
+          "preimage_sha256": "1dfff5e6852dd184c038a63dcba6e242c1c5539c3c310334161eab6e7c2f0e3b",
+          "replacement_sha256": "785fbd007bcfe71e802a32ac69fce5dfc169c7c7045812b3a2b54fc5e5eed1e5"
+        },
+        {
+          "id": "original-header",
+          "file_start": 65472,
+          "size": 64,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-header",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/build_original_snes_package_cartridge_v1.py"
+          ],
+          "preimage_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+          "replacement_sha256": "7f06422e76e980ede1c3edd1a17b0fa70a4f4500c9d3451eac81a50c9444ec78"
+        },
+        {
+          "id": "boot-mirror",
+          "file_start": 4227072,
+          "size": 290,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "exact-mirror",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "asm/original_snes_package_cartridge_v1.asm"
+          ],
+          "preimage_sha256": "1dfff5e6852dd184c038a63dcba6e242c1c5539c3c310334161eab6e7c2f0e3b",
+          "replacement_sha256": "785fbd007bcfe71e802a32ac69fce5dfc169c7c7045812b3a2b54fc5e5eed1e5"
+        },
+        {
+          "id": "header-mirror",
+          "file_start": 4259776,
+          "size": 64,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "exact-mirror",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/build_original_snes_package_cartridge_v1.py"
+          ],
+          "preimage_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+          "replacement_sha256": "7f06422e76e980ede1c3edd1a17b0fa70a4f4500c9d3451eac81a50c9444ec78"
+        },
+        {
+          "id": "original-helper",
+          "file_start": 4259840,
+          "size": 577,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-code",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "asm/schala_package_helper_v2_stack.asm",
+            "tools/build_original_snes_package_cartridge_v1.py"
+          ],
+          "preimage_sha256": "ad4af27b584842281c1b9e40c9bc3bebd6aed42ae3ab58988da8e76b1dab33d8",
+          "replacement_sha256": "7242ff96f07e8d5ed9f0a994e474dbf3b49e7c2e576bd07d6536b6dfe3004f3b"
+        },
+        {
+          "id": "authored-packages",
+          "file_start": 4325376,
+          "size": 897,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-package-fixtures",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/original_snes_package_fixtures_v1.py"
+          ],
+          "preimage_sha256": "000d05c48c0cebeb3913754c3412ad4bae96ed93f35df9a3248acf93de34db8b",
+          "replacement_sha256": "2eaa608733618d79876b55e9bde43f4bf213f9556484b15216781a5df52dce70"
+        },
+        {
+          "id": "immutable-registry",
+          "file_start": 4390912,
+          "size": 1280,
+          "owner": "project-epoch-original-package-test-v1",
+          "payload_kind": "original-registry",
+          "evidence_level": "verified-static",
+          "source_paths": [
+            "tools/original_snes_package_fixtures_v1.py"
+          ],
+          "preimage_sha256": "f232749538acee34b68bf8ec06180cf9447128cec8c05889182f7126f9b5d484",
+          "replacement_sha256": "6cb7223449fca8f93771e37639cf0e9e28ac520ce5bb2b77d43154447e1ac965"
+        }
+      ],
+      "original_output": "private/test_runs/original_package_20260908_build2/original_package_test.sfc",
+      "read_only_replay_output_never_created": "private/test_runs/original_package_readonly_replay_build2/unwritten.sfc",
+      "reaudit": {
+        "schema": "project-epoch-original-snes-diagnostic-intents-v1",
+        "status": "images-valid",
+        "build_mode": "private-original-diagnostic",
+        "manifest_sha256": "3a107ebdcb1bd84041bedce1e01f0cba5a8b83dc5c5636b984b6baf9b3a4f43f",
+        "production_approval": false,
+        "rom_modified": false,
+        "source_sha256": "9f9b02f5ee6cbef5e018c1ee424095fc21a842ea6968c0d36114b5930dab2ba1",
+        "target_sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b",
+        "changed_bytes_by_section": {
+          "original-boot": 289,
+          "original-header": 64,
+          "boot-mirror": 289,
+          "header-mirror": 64,
+          "original-helper": 571,
+          "authored-packages": 98,
+          "immutable-registry": 1280
+        },
+        "changed_byte_count": 2655,
+        "complete_diff_coverage": true,
+        "source_artifacts_verified": true,
+        "mirrors_verified": true,
+        "header_verified": true,
+        "evidence_level": "verified-static"
+      },
+      "reproduce": "python -B tools/build_original_snes_package_cartridge_v1.py --output-dir private/test_runs/original_package_NEW_UNIQUE"
+    }
+  ],
+  "preparation_history": [
+    {
+      "directory": "private/test_runs/original_package_20260908_prepare1",
+      "receipt": {
+        "path": "private/test_runs/original_package_20260908_prepare1/audited-build.json",
+        "size": 23800,
+        "sha256": "4bb515107b3f3b544dda3f76a031c021a112a435378c19b5d1bbcad731dc00fb"
+      },
+      "status": "historical preparation only; no cartridge or SRAM written",
+      "source_revision": [
+        {
+          "path": "asm/original_snes_package_cartridge_v1.asm",
+          "size": 1151,
+          "sha256": "3cd5b800e57ec4085e5b706e3bc283be6e2d2d7fb79000c2741d5828819be15b",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "asm/schala_package_helper_v2_stack.asm",
+          "size": 8617,
+          "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/build_original_snes_package_cartridge_v1.py",
+          "size": 10986,
+          "sha256": "5b5f680ee5caae19be0d1fa69e02608658d019440a3fd32e0ab6286c52abafd8",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+          "size": 12383,
+          "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/original_snes_package_fixtures_v1.py",
+          "size": 3747,
+          "sha256": "5b09dd8c601eb9ec9efecf1b21383cd07bfd88f326bdcc02199dca4333b26002",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/validate_rom_write_intents.py",
+          "size": 38861,
+          "sha256": "8bc61538b20da7a316048326059fe71de685264355a4db3410256cf6aee4369b",
+          "provenance": "reviewed-original-project-source"
+        }
+      ],
+      "current_source_alignment_claimed": false,
+      "known_receipt_limitation": "prepare1/prepare2 predate final certification pins; prepare1 reproduction omitted prepare-only"
+    },
+    {
+      "directory": "private/test_runs/original_package_20260908_prepare2",
+      "receipt": {
+        "path": "private/test_runs/original_package_20260908_prepare2/audited-build.json",
+        "size": 23815,
+        "sha256": "dbaff1f62641bb98d775d64df6336b8b0680ad2a1ad31a1e57b843acf35898b2"
+      },
+      "status": "historical preparation only; no cartridge or SRAM written",
+      "source_revision": [
+        {
+          "path": "asm/original_snes_package_cartridge_v1.asm",
+          "size": 1151,
+          "sha256": "3cd5b800e57ec4085e5b706e3bc283be6e2d2d7fb79000c2741d5828819be15b",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "asm/schala_package_helper_v2_stack.asm",
+          "size": 8617,
+          "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/build_original_snes_package_cartridge_v1.py",
+          "size": 11609,
+          "sha256": "ca8a6b640201ecc2885e2d95ad1ac04f28b739214f535996d3bc08b5dd73bbff",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+          "size": 12383,
+          "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/original_snes_package_fixtures_v1.py",
+          "size": 3747,
+          "sha256": "5b09dd8c601eb9ec9efecf1b21383cd07bfd88f326bdcc02199dca4333b26002",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/validate_rom_write_intents.py",
+          "size": 38861,
+          "sha256": "8bc61538b20da7a316048326059fe71de685264355a4db3410256cf6aee4369b",
+          "provenance": "reviewed-original-project-source"
+        }
+      ],
+      "current_source_alignment_claimed": false,
+      "known_receipt_limitation": "prepare1/prepare2 predate final certification pins; prepare1 reproduction omitted prepare-only"
+    },
+    {
+      "directory": "private/test_runs/original_package_20260908_review_prepare3",
+      "receipt": {
+        "path": "private/test_runs/original_package_20260908_review_prepare3/audited-build.json",
+        "size": 24294,
+        "sha256": "7a1cffc2fd9359b6781d42728d680245690765e118be8eac4266bc9d67330785"
+      },
+      "status": "historical preparation only; no cartridge or SRAM written",
+      "source_revision": [
+        {
+          "path": "asm/original_snes_package_cartridge_v1.asm",
+          "size": 1151,
+          "sha256": "3cd5b800e57ec4085e5b706e3bc283be6e2d2d7fb79000c2741d5828819be15b",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "asm/schala_package_helper_v2_stack.asm",
+          "size": 8617,
+          "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/build_original_snes_package_cartridge_v1.py",
+          "size": 11809,
+          "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+          "size": 12383,
+          "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/original_snes_package_fixtures_v1.py",
+          "size": 4761,
+          "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60",
+          "provenance": "reviewed-original-project-source"
+        },
+        {
+          "path": "tools/validate_rom_write_intents.py",
+          "size": 38861,
+          "sha256": "8bc61538b20da7a316048326059fe71de685264355a4db3410256cf6aee4369b",
+          "provenance": "reviewed-original-project-source"
+        }
+      ],
+      "current_source_alignment_claimed": true,
+      "known_receipt_limitation": null
+    }
+  ],
+  "tests": {
+    "builder_and_fixtures": 8,
+    "original_diagnostic_guard": 19,
+    "legacy_guard_regression": 16
+  },
+  "legacy_contract": "legacy module AST unchanged apart from the two explicitly named new original-diagnostic wrappers; production catalogs remain empty",
+  "independent_review": "guard, raw builder, fixtures and preparation-only full reconstruction reviewed before first image write",
+  "collector": {
+    "path": "tools/collect_original_snes_package_cartridge_evidence_v1.py",
+    "size": 8039,
+    "sha256": "8056231fdc92c03ec668bcc854aac35017afa28db1c7030d617f74a38095e4fb"
+  },
+  "reproduce_metadata": "python -B tools/collect_original_snes_package_cartridge_evidence_v1.py",
+  "serialization": "json.dumps(value, indent=2), UTF-8, LF, one trailing newline",
+  "scope": {
+    "contains_game_source_or_extracted_game_bytes": false,
+    "production_approval": false,
+    "native_execution_proved": false,
+    "interrupt_safety_proved": false,
+    "logical_pc07_runtime": false
+  }
+}

@@ -174,6 +174,136 @@
           "sha256": "29d11882f02c74f4212bea0c964f208dbb1366b16fc688be96908c125fa740ff"
         }
       ]
+    },
+    {
+      "commit": "0ad7df239bb3f2392ccdf8ea764ed4a3a1c59743",
+      "verified_at_utc": "2026-09-08T16:44:54.495023+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 27404,
+          "sha256": "b3fa3922ed78b34c6d8019f960e7a11d71c47d354aa1d89e744f3a6d8f8f4a5b"
+        },
+        {
+          "path": "docs/DATA_MAPPING_CORRECTIONS.md",
+          "size": 21970,
+          "sha256": "a7ed0f04e4c006f114291f7ea9cbf8061db27eeb74c5c276e5f0492ff01eb013"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 33091,
+          "sha256": "9c08762e397507911f28010fd54b208d15268c2a0161abefe32469ec82f344c9"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 4643,
+          "sha256": "b8c6f5f145e936c8ac66d51bd098dde3dd630603f3003388dbce98e5ee4e61a0"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 6927,
+          "sha256": "8e7281542c44e31cc59d8d9b05429d8c18f1194e31bff8ce0cdbc2ffb24d40e9"
+        },
+        {
+          "path": "tools/run_package_resolver_alternate_v1.py",
+          "size": 23869,
+          "sha256": "46497341c658cea57bf09ddf0382246ad271e6fc43892612c4090aa3023bd758"
+        },
+        {
+          "path": "tools/mesen_package_resolver_alternate_v1.lua",
+          "size": 7030,
+          "sha256": "2bcbdc504b353940917f021bb99274aa682821bd186b40c397b2b105ca3b18ef"
+        },
+        {
+          "path": "tests/test_package_resolver_alternate_v1.py",
+          "size": 11076,
+          "sha256": "d96bd5a7e626427350fb1f1a2b6caed20c0129177ca157f3065e07b4ec017371"
+        },
+        {
+          "path": "tools/collect_package_resolver_alternate_evidence_v1.py",
+          "size": 12642,
+          "sha256": "72cb66cb1786934962f07d5c5b107d03e00858c7732a71f7633fa2c743bdae97"
+        },
+        {
+          "path": "docs/schala_package_resolver_alternate_v1.md",
+          "size": 17226,
+          "sha256": "36a3823631db439de6777919ba1e8a790d81c5a5a1ada33ec0e2e341cbc6e30d"
+        },
+        {
+          "path": "references/package_resolver_alternate_v1.json",
+          "size": 21115,
+          "sha256": "6a971ccf6507737863c2e92b4272a23c894a61b8e9493b92b4d0de053e0eb38a"
+        },
+        {
+          "path": "tools/audit_package_black_hole_threshold_v1.py",
+          "size": 5903,
+          "sha256": "707796948c846f9c80ee35a711452d79c73deea3eb80c1931e3e38e2715c505b"
+        },
+        {
+          "path": "references/package_black_hole_threshold_v1.json",
+          "size": 3787,
+          "sha256": "ed21a1f2531be8d5bb4ec032d924c6d9537ce8865b6dcc16e1da07b326dabb8c"
+        },
+        {
+          "path": "tools/audit_schala_package_normal_nmi_v1.py",
+          "size": 16826,
+          "sha256": "81a145b4ec078d5cf22ec5680cdfb66d427f876f40eefd0a50af432f8b9f51a9"
+        },
+        {
+          "path": "tests/test_schala_package_normal_nmi_v1.py",
+          "size": 5915,
+          "sha256": "cf63058669bb8b13dd0f39764c31728beb612af4141746a89150130bfe2fced5"
+        },
+        {
+          "path": "docs/schala_package_normal_nmi_v1.md",
+          "size": 11886,
+          "sha256": "033113810d1fd34b451f8c9d7c947065d1af8e22c8f0f68ca334855637bf3674"
+        },
+        {
+          "path": "references/schala_package_normal_nmi_v1.json",
+          "size": 71372,
+          "sha256": "27dd6f602781b83107bd7ab9072f1704e26bb39433713a3188679114db3b4f2c"
+        },
+        {
+          "path": "tools/run_package_transaction_observation_v1.py",
+          "size": 6318,
+          "sha256": "eb709e0188f588b17b7abe28b877654eee337f1f1728b7901ffbfc5281bb90f2"
+        },
+        {
+          "path": "tools/mesen_package_transaction_observation_v1.lua",
+          "size": 9670,
+          "sha256": "c6923bd608804795cfc6b3dfd143dc65c2b99bc3a858f422bfae7dd889492cdd"
+        },
+        {
+          "path": "tools/package_transaction_validation_v1.py",
+          "size": 25442,
+          "sha256": "cb03514d844d5a50671ec3bf98ce6566a05ad3e1b423d9156ff8d50101d3928b"
+        },
+        {
+          "path": "tests/test_package_transaction_observation_v1.py",
+          "size": 12620,
+          "sha256": "846749a9c84271d7b99c5553631b5d698b737321a5540b7e76cc9d0ccd90966c"
+        },
+        {
+          "path": "tools/collect_package_transaction_evidence_v1.py",
+          "size": 9491,
+          "sha256": "610ced62a320c9a0ae53efd0174ed4e1a661a4db63b1d0a43d15ca2c48a377b4"
+        },
+        {
+          "path": "docs/schala_package_transaction_observation_v1.md",
+          "size": 13464,
+          "sha256": "096d57fd7333a7536d8b28d3b16633e24dcf60e7d35aede5b9b7c7ed15c2831e"
+        },
+        {
+          "path": "references/package_transaction_observation_v1.json",
+          "size": 29391,
+          "sha256": "1cc3030e1bbfe5f167ae69262ec7d78487ec4184e3500915b9dfbda94bea2787"
+        }
+      ],
+      "authenticated_commit_api_verified": true,
+      "authenticated_branch_head_verified": true,
+      "all_changed_file_bytes_verified": true
     }
   ]
 }

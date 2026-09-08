@@ -501,3 +501,76 @@ The next refusal work must establish an unsuccessful route's complete
 participant, queue, ATB and result lifecycle before selecting a cancellation
 destination. The helper's stack/interrupt and original-ROM placement work
 continues separately; production selectors remain unbound.
+
+## 2026-09-08 — stack-owned helper state passes normal conformance
+
+**Status:** `verified-runtime`, original synthetic normal-call scope. The
+[v2 stack-helper report](schala_package_helper_v2_stack.md) records two fresh
+2,980-case runs under the final frozen validator, 5,960 accepted cases total.
+Each has 1,426 transports, 1,158 refusals and 396 canonical paths. Their
+70,196,608-byte traces are identical. The 577-byte helper uses 42 S-relative
+local bytes and reaches 52 bytes below its entry SP, retaining the caller's
+direct-page register and staging success outputs before frame release.
+
+The accepted evidence now ties all 1,096,204 stack accesses per run to their
+owning observed instructions. It derives all 43,656 required post-SP-change
+observations from the exact assembly and PC sequence. Every final WRAM change
+must match the last recorded CPU write and exact setup baseline, including
+stack bytes. The retired global scratch remains unchanged. Both full matrix
+blocks retain the v1 transport behavior exactly after the declared SP change.
+
+The [reference](../references/schala_package_helper_v2_stack.json) preserves
+the timeout, omitted-SP and instruction-ownership gaps, and the later final
+stack-diff reconciliation gap. The initial final-named pair remains historical;
+acceptance names `finalledger1` and `finalledger2`. These were observation and
+validator gaps, not newly observed native helper defects. Independent reviews
+accepted each hardening step, and the root revalidated all 48 tests and
+regenerated the complete metadata byte for byte. V0/v1 remain unchanged.
+
+**Resume:** normal conformance includes two ordinary synthetic stack placements
+and three explicit floor/refusal boundaries. The latter have no interrupt
+reserve. This proves no real-game stack ownership or interrupt behavior.
+Separate ROM execution and original-NMI experiments are underway; no game
+allocation, hook, action binding or PC `$07` is installed.
+
+## 2026-09-08 — original ROM execution carrier built through the write guard
+
+**Status:** `verified-static`. The
+[original cartridge report](original_snes_package_cartridge_v1.md) and
+[reference](../references/original_snes_package_cartridge_v1.json) preserve two
+independent, byte-identical guarded builds. The image hash is
+`1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b`.
+The 290-byte original boot, 577-byte relocated helper, four original certified
+terminal-only packages and immutable registry are assembled into memory from
+literal blank bytes. There is no game-ROM argument or extracted-game input.
+
+The original diagnostic has a distinct private schema and fixed section
+catalog. The existing canonical/inert guard behavior and empty production
+catalogs are unchanged. Both intent and complete-diff audits pass before
+exclusive image creation. Asar sees only raw `.bin` components. Source,
+assembler and certification identities are rechecked at the write boundary,
+then actual written ROM/SRAM bytes are reread and hashed. All generated images
+and source snapshots remain private. Only authored source and metadata enter Git.
+
+Independent review caught Windows path aliases and receipt-provenance gaps
+before any image write. All 43 guard/builder/regression tests pass. The review
+reconstructed the final preparation in memory, then the root performed two
+actual guarded builds. A further independent review regenerated the completed
+build reference exactly and confirmed that the read-only replay paths were
+never created. Failed/preparation revisions retain their own scope and hashes.
+
+The [NMI mechanism source audit](mesen_nmi_request_source_v1.md) separately
+pins 24 Mesen source files and the unchanged original handler. It defines a
+real register-triggered edge during natural VBlank and predicts an authentic
+native hardware frame after the selected instruction. The root regenerated
+its reference exactly. No interrupt result is inferred from that design.
+
+**Publication and resume:** the preceding alternate/NMI/transaction increment
+is published as
+[`0ad7df239bb3f2392ccdf8ea764ed4a3a1c59743`](https://github.com/andreipemberton/project-epoch/commit/0ad7df239bb3f2392ccdf8ea764ed4a3a1c59743),
+with authenticated branch/commit and all 24 changed-file bytes verified.
+The current native work must prove execution at the new ROM location,
+immutable-registry CPU reads and separately scoped preemption. Natural
+unsuccessful-action observation remains open; selecting Life2 on an entirely
+living party did not queue an action, so that exploratory route supplies no
+cancellation evidence.

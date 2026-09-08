@@ -1,0 +1,310 @@
+{
+  "schema": "project-epoch-mesen-nmi-request-source-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "evidence_scope": "pinned emulator source and original fixture bytes; runtime trigger is an unexecuted prediction",
+  "source_revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "source_manifest": {
+    "path": "private/research/mesen_nmi_request_2_1_1/source_manifest.json",
+    "size": 5476,
+    "sha256": "c7d42d4952ec19b421312b3d8f446c3742a755f538f10aac38e450875ac57745"
+  },
+  "upstream_tree": {
+    "path": "private/research/mesen_nmi_request_2_1_1/upstream_tree.json",
+    "size": 589285,
+    "sha256": "ce0f115f9df7f02a99b4c66c8e949d7e47e38a79dec0b29e1a6e2efe9187c77f"
+  },
+  "source_files": [
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.cpp",
+      "size": 12742,
+      "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc",
+      "upstream_path": "Core/SNES/InternalRegisters.cpp",
+      "git_blob_sha1": "4310d8c5aff4dd4a6c955b84e89cb2acdcdff613",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.h",
+      "size": 5020,
+      "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698",
+      "upstream_path": "Core/SNES/InternalRegisters.h",
+      "git_blob_sha1": "b713a16afce1d86bfdf11c205d18a37833102769",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.h"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/RegisterHandlerA.h",
+      "size": 1635,
+      "sha256": "782f34e6b68d6b247d37a5142f8071fad85b2dd13bd33a96d3f5bb085f176f3c",
+      "upstream_path": "Core/SNES/RegisterHandlerA.h",
+      "git_blob_sha1": "7107a2380f07d71b1cc92d247199393e5ff69788",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/RegisterHandlerA.h"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesMemoryManager.h",
+      "size": 2698,
+      "sha256": "dc819f2f0dcb7d1150e1502d19022f9c866befddcd4bd6ca19e1ebb0b9120723",
+      "upstream_path": "Core/SNES/SnesMemoryManager.h",
+      "git_blob_sha1": "00f9b96e198e0fb6be70bae1b4d33a4e4f6a19ba",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.h"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/MemoryDumper.cpp",
+      "size": 15315,
+      "sha256": "db1422d7ff1794334f55f5e30a66e3bc859347de42f7dc5425d9ac93e45ca197",
+      "upstream_path": "Core/Debugger/MemoryDumper.cpp",
+      "git_blob_sha1": "15f0308148ba3b6d8f6529b8ea801f89fb3442f5",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/MemoryDumper.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDebugger.cpp",
+      "size": 21180,
+      "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51",
+      "upstream_path": "Core/SNES/Debugger/SnesDebugger.cpp",
+      "git_blob_sha1": "c1017d232c71378577be675eadf29f2835b31731",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesDebugger.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/MemoryMappings.cpp",
+      "size": 3390,
+      "sha256": "b7837cb35ecd64bd12de2bae42d61c4f0850b4d9a30855e55ed14226110bf8b0",
+      "upstream_path": "Core/SNES/MemoryMappings.cpp",
+      "git_blob_sha1": "f1391054e799aef892ea1bce9e93d6dd17e65b70",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/MemoryMappings.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/MemoryMappings.h",
+      "size": 830,
+      "sha256": "2920850aa8f8c40841f5ddb759e52e23702d1dbd6863badc7a6b47a5a4c7e57b",
+      "upstream_path": "Core/SNES/MemoryMappings.h",
+      "git_blob_sha1": "c20942ff4f919ea979f6be0c9f83636fe30dc0d0",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/MemoryMappings.h"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/Debugger.cpp",
+      "size": 53890,
+      "sha256": "71fa7d663b8cb61c7290bdf404244270a8c9d3f907224c990b43ae82a6c95db3",
+      "upstream_path": "Core/Debugger/Debugger.cpp",
+      "git_blob_sha1": "786fe876756aa0f7032d56ba4158b835a893dd7d",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/Debugger.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/ScriptManager.cpp",
+      "size": 2712,
+      "sha256": "3ca28238e2d2f484c39f52b43176762822ecced1e79846b38f296c3cdb3cdfeb",
+      "upstream_path": "Core/Debugger/ScriptManager.cpp",
+      "git_blob_sha1": "680fe59358f6d72e033e748043307ca510adb2cf",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/ScriptManager.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/Serializer.h",
+      "size": 13678,
+      "sha256": "fa82a8e441b5ce002daf343bf3813443d0b3796cbe1258924b1879fe771f21df",
+      "upstream_path": "Utilities/Serializer.h",
+      "git_blob_sha1": "dc03c576ddac19033e7644de03c06f21344f9529",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Utilities/Serializer.h"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/Emulator.h",
+      "size": 10277,
+      "sha256": "3ff88094b5fd2f43103006bbb2b0e9a99851f88683a8fe42e4816265849eee7b",
+      "upstream_path": "Core/Shared/Emulator.h",
+      "git_blob_sha1": "d962bb02f9eeb93d055d1f53e4556ae795062edf",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/Emulator.h"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/Serializer.cpp",
+      "size": 6454,
+      "sha256": "b7af6a8b8b628ed6fd44f450a50d1a06af1bb8ce86cb65e44bf1ad978b0fc4a9",
+      "upstream_path": "Utilities/Serializer.cpp",
+      "git_blob_sha1": "c11cab622472d0086688c7c4615864e2a8d940c9",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Utilities/Serializer.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "size": 19939,
+      "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6",
+      "upstream_path": "Core/SNES/SnesDmaController.cpp",
+      "git_blob_sha1": "7fc0d5f0568369c8c1abfab5c1b969d1b0b08d18",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.h",
+      "size": 1451,
+      "sha256": "05a4c63d0f18efd11b12bd476f4bf99bb0d7cd8ba2b51f95bdb463653f82cdfd",
+      "upstream_path": "Core/SNES/SnesDmaController.h",
+      "git_blob_sha1": "d65164cade361521fdc5c0540d0eadeb85760fe5",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.h"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/ScriptingContext.cpp",
+      "size": 10794,
+      "sha256": "1e4645ab7783c179a2998e906b72a42bce98c340badb269c0506996229ba0157",
+      "upstream_path": "Core/Debugger/ScriptingContext.cpp",
+      "git_blob_sha1": "24181ba632a0074a565f3ddccf8d2b816642863f",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/ScriptingContext.cpp"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/ScriptManager.h",
+      "size": 2217,
+      "sha256": "c6ec04a297abaf8b6f2927d8d6433278a69fb24df908786ca7a0f74bdea6c8a5",
+      "upstream_path": "Core/Debugger/ScriptManager.h",
+      "git_blob_sha1": "8b5b5cb2ff9a1bf338cfd04ceec683ba7b8cbdb8",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/ScriptManager.h"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/LuaApi.cpp",
+      "size": 34647,
+      "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24",
+      "upstream_path": "Core/Debugger/LuaApi.cpp",
+      "git_blob_sha1": "4deebdedaf976b584574a4c2371f614cc929f4ff",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/LuaApi.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8",
+      "upstream_path": "Core/SNES/SnesCpu.cpp",
+      "git_blob_sha1": "e8441981c7f2527e16303ddd35d5010deec850f7",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f",
+      "upstream_path": "Core/SNES/SnesCpu.Shared.h",
+      "git_blob_sha1": "bbabf420bd1bd8899b62e392fcadcf3a500468c5",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd",
+      "upstream_path": "Core/SNES/SnesCpu.Instructions.h",
+      "git_blob_sha1": "46b8553e24ab5151c0da049b4fcc49289c3648a9",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58",
+      "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+      "git_blob_sha1": "8c7b9433f1aa33aa42624b9c7686b91136fdcd2e",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180",
+      "upstream_path": "Core/SNES/SnesPpu.cpp",
+      "git_blob_sha1": "3c7245217083e3e7d9ce72bcf2e037f43b463b0b",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesConsole.cpp",
+      "size": 15424,
+      "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706",
+      "upstream_path": "Core/SNES/SnesConsole.cpp",
+      "git_blob_sha1": "94ed65811b6c5db95b2abbc4786d0faf303c22b8",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesConsole.cpp"
+    }
+  ],
+  "audit_source": {
+    "path": "tools/audit_mesen_nmi_request_source_v1.py",
+    "size": 7372,
+    "sha256": "d3fd8af81c89fcc8040f5daedafe328a975d5cd7f7dfef01043a9810514225d2"
+  },
+  "helper": {
+    "path": "private/test_runs/package_helper_v2_stack_20260908_finalledger1/helper.bin",
+    "size": 577,
+    "sha256": "77dc3224baaa93077218d43d64cbef10bb55494a37057c1a5bfcf0d8fd6758f8"
+  },
+  "original_carrier": {
+    "path": "private/test_runs/sha256_65c816/schala_sha256_profile1_benchmark.sfc",
+    "size": 8388608,
+    "sha256": "e438143c95006f587fc20e74ea1bb18407ff726abe0cb8cda922b65740992bdd"
+  },
+  "original_nmi_handler": {
+    "cpu_start": "008020",
+    "cpu_end_exclusive": "008030",
+    "size": 16,
+    "sha256": "7455f84c456c0cfb47a1422ba3cf633cc4ec752ce9c8f30027b21520993af448",
+    "native_vector_cpu": "00FFEA"
+  },
+  "trigger_plan": {
+    "kind": "debugger write through emulated register path",
+    "cpu_address": "004200",
+    "value": 128,
+    "api": "emu.write(0x004200,0x80,emu.memType.snesMemory)",
+    "pre_exec_cpu_address": "7F80EE",
+    "normal_execution_ordinal": 87,
+    "predicted_service_continuation": "7F8232",
+    "cpu_delay_cycles": 2,
+    "current_instruction_finishes_before_service": true,
+    "register_write_advances_cpu_cycles": false,
+    "preconditions": {
+      "internalRegisters.nmiFlag": true,
+      "internalRegisters.enableNmi": false,
+      "internalRegisters.enableHorizontalIrq": false,
+      "internalRegisters.enableVerticalIrq": false,
+      "internalRegisters.enableAutoJoypadRead": false,
+      "cpu.nmiFlagCounter": 0,
+      "cpu.needNmi": false,
+      "cpu.irqLock": false,
+      "cpu.irqSource": 0,
+      "cpu.prevIrqSource": 0,
+      "dmaController.needToProcess": false,
+      "dmaController.hdmaChannels": 0
+    },
+    "require_native_serialized_keys_and_types_at_runtime": true,
+    "natural_ppu_latch_required": true,
+    "never_assign_nmi_or_ppu_internal_state": true,
+    "preparation": "run an explicit original idle fixture to an interior VBlank boundary; drain old requests before fixture baseline; no direct PPU timing edit",
+    "one_shot": "disable NMI at handler entry through 4200=0 and record that debugger event; stop before another frame-edge request",
+    "safe_initial_entry_sps": [
+      "1FEF",
+      "06D8"
+    ],
+    "excluded_low_entry_sps": [
+      "0034",
+      "0033",
+      "0008"
+    ]
+  },
+  "predicted_stack": {
+    "helper_bytes_after_jsr": 52,
+    "native_hardware_bytes": 4,
+    "original_handler_save_bytes": 3,
+    "combined_maximum_bytes": 59,
+    "initial_1FEF": {
+      "after_jsr": "1FBB",
+      "handler_entry": "1FB7",
+      "minimum": "1FB4"
+    },
+    "initial_06D8": {
+      "after_jsr": "06A4",
+      "handler_entry": "06A0",
+      "minimum": "069D"
+    }
+  },
+  "mandatory_witnesses": [
+    "4200 debugger-event before/after state and unchanged CPU/master clocks",
+    "two JSR near-frame writes then four distinct hardware-frame writes",
+    "00FFEA/00FFEB actual vector reads",
+    "008020 handler entry with hardware frame and native P transform",
+    "complete handler instruction and stack-access evidence",
+    "one 16-bit counter increment at 7E5EF0 plus guards",
+    "pre-RTI and actual 7F8232 post-RTI continuation",
+    "unchanged helper result and full final WRAM diff explained by complete CPU writes"
+  ],
+  "limitations": [
+    "not a physical-SNES timing validation",
+    "register debugger event is not a CPU store instruction",
+    "minimum original-handler fixture only; no normal-game NMI, IRQ nesting, publication visibility or game-stack ownership",
+    "helper plus handler must remain inside declared PPU phase; missed phase or pre-existing request refuses"
+  ],
+  "interrupt_executed": false,
+  "rom_mutated": false,
+  "production_approval": false,
+  "reproduce": "python -B tools/audit_mesen_nmi_request_source_v1.py",
+  "serialization": "UTF-8 indented JSON, LF, one trailing newline"
+}
