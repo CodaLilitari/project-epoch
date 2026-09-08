@@ -41,7 +41,7 @@ sidecar behavior, complete Schala's field palette/frame adapters, and
 implement the selected record, command, item, and recruitment boundaries. A
 booting ROM or a visually plausible sprite is not sufficient evidence.
 
-## Latest integration update: ROM transport and both transaction outcomes
+## Latest integration update: transport, preflight and bounded preemption
 
 The current gate remains `BA-NATIVE-INTEGRATION-DESIGN`. These completed
 proofs have separate scopes and should be reused:
@@ -55,11 +55,14 @@ proofs have separate scopes and should be reused:
 | [V1 ROM-source helper](schala_package_helper_v1_rom_source.md) | Two 1,454-case native runs with bank-qualified source reads | Historical WRAM code and unsuitable global scratch fixture |
 | [V2 stack helper](schala_package_helper_v2_stack.md) | Two 2,980-case runs; exact 42-byte locals, 52-byte deepest contribution, complete stack/write ledger | Synthetic normal calls; low-SP cases have no interrupt reserve |
 | [V3 ROM code and registry](schala_package_helper_v3_rom.md) | Two identical 3,184-case runs executing `$410000`, reading immutable `$42/$43`, with exact CPU, input and WRAM checks | Original diagnostic cartridge; pointed streams are not executed |
+| [Original-NMI preemption](schala_package_helper_v2_original_nmi.md) | Two identical 224-case runs with exact hardware frames, handler/RTI continuity and complete final WRAM ledgers | V2 helper in synthetic WRAM and an original minimal handler; separate from ROM execution |
+| [Canonical-donor preflight](schala_package_preflight_planner_v1.md) | Exact successful/refused contexts, donor byte `+0` substitution and mandatory both-mask policy recomputation; 33 tests | Source-only transport eligibility; no native cleanup, completion or integration approval |
+| [Normal-NMI direct callees](schala_package_normal_nmi_closure_v2.md) | 25 direct contracts covering 34 original call sites; 42 tests | Conditional typed-stack model; 10 sites and all physical alias/global bounds remain open |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
 natural failure exits earlier at `$C1BB8B`. Those contexts are not interchangeable.
-A source-only donor planner must preserve that distinction. At the earlier
+A source-only donor planner now preserves that distinction. At the earlier
 failure boundary, animation identity fields still describe prior work.
 
 The original v0, v1 and v2 proofs remain preserved. V3 uses the same v2 assembly
@@ -68,13 +71,19 @@ It proves no game allocation. The original cartridge was built twice through
 its separate complete-diff guard; no canonical-ROM exception or production
 catalog was added.
 
-The next work resolves the source-only preflight and action-completion
-contracts, then native rejection and real-game interrupt/stack ownership.
+The next work resolves action-completion contracts, native rejection and
+real-game interrupt/stack ownership. The preflight planner preserves config
+row `$08` bytes `+1..+6` exactly and changes only byte `+0` inside an explicit
+synthetic association. Its immutable contexts and source-policy certificate
+grant no native runtime authority.
 A valid terminal-only package does not satisfy the caller's `$9876/$5D9B`
-completion protocol by itself. Original-NMI pilots are still exploratory;
-use the [v2 phase contract](mesen_nmi_phase_contract_v2.md), since MAP-010
-corrects our unavailable `ppu.nmiScanline` assumption. The complete normal-game
-NMI closure and global nested bound remain unproved.
+completion protocol by itself. The original-NMI matched pair is accepted;
+its pilot failures and the two TCS reads remain in the evidence history.
+It uses the [v2 phase contract](mesen_nmi_phase_contract_v2.md), since MAP-010
+corrects our unavailable `ppu.nmiScanline` assumption. The separate direct
+callee closure leaves seven distinct implementations open at reset or
+indexed dispatch. The complete normal-game NMI closure and global nested
+bound remain unproved.
 
 No production hook, allocation, scratch ownership, high selector, Schala
 command or logical PC `$07` is approved. The

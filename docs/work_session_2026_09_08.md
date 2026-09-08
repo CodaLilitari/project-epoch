@@ -79,6 +79,13 @@ closed for this session.
   guide and indexed 17 discovery runs with explicit historical-source gaps.
   The preflight planner has passed design review. The NMI review found two
   validator gaps, which are being fixed before final native acceptance.
+- 18:19 UTC: independently revalidated the two complete 224-case original-NMI
+  traces and reproduced their 605,688-byte reference exactly. All 55 NMI tests
+  and 33 source-only preflight tests pass. The preflight reference also
+  reproduces exactly, including the final Windows UTF-8/LF CLI correction.
+  The normal-NMI direct-callee audit has 42 passing tests and a root-reproduced
+  reference, with a second review pending. A new completion-source correction
+  is under review. The original six-hour deadline remains 20:58:41 UTC.
 
 ## Gates and evidence boundaries
 

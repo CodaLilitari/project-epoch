@@ -395,3 +395,48 @@ identified exploratory runtime key/phase observations. The original v1 audit
 and reference are preserved. The hardware interrupt matrix requires its own
 native acceptance; this correction grants no game stack ownership, production
 hook, allocation or eighth-character integration.
+
+## MAP-011 — the default handler's D=0 pointer advance is zero
+
+**Recorded:** 2026-09-08. This is a bounded command-semantics correction.
+
+**Wrong source:**
+[`dscotton/ct_disassembly`, commit `eeae27acdb6565e96d1d796a3d60792c250c0aa1`,
+`bank_C1.asm:9969`](https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm#L9969)
+describes the `$A3D1`-set branch of the default command handler as consuming
+the command. The original 2,768,817-byte source has SHA-256
+`298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa`.
+
+**Corrected result:** under the declared native D=0, binary-arithmetic
+contract, `$C1:4CFC` executes `TDC`, supplying a zero advance to `$C1:75BB`.
+`REP #$21` clears carry before the low-word addition. The low pointer word
+therefore remains unchanged without carry, and the following high-word add
+also adds zero. The stream pointer stays on the same command. The code still
+performs same-value 16-bit stores at direct-page `$E6` and `$E8`; these actual
+writes cover `$E6-$E9`. This branch does not increment `$9876`.
+
+The `$A3D1=0` branch instead increments the byte `$9876` at `$C1:4D00`, with
+ordinary byte wrap, while retaining the owner-active byte and pointer.
+Command `$00` clears only the selected owner-active byte. Neither handler
+implicitly advances through the dispatcher's immediate-repeat mechanism.
+The caller's `$9876` and `$5D9B` waits remain separate conditions.
+
+**Evidence and provenance:** the 13-byte half-open default-handler span
+`$C1:4CF7-$C1:4D04` has SHA-256
+`3ecae483e18298b9f38e37cbd69662a65e1c6ff345e6f34fc568478d3e38ae6b`.
+The 17-byte `$C1:75BB-$C1:75CC` pointer helper has SHA-256
+`81ec99810c0832f34277d117410919282e14891d51bb3869533e60ae3ef97142`.
+The [completion contract](schala_package_completion_contract_v1.md),
+[read-only auditor](../tools/audit_schala_package_completion_contract_v1.py)
+and [metadata reference](../references/schala_package_completion_contract_v1.json)
+pin the canonical clean ROM, seven spans, 31 selected instruction assertions,
+the existing grammar/policy and all 65,536 original mode/counter model pairs.
+Twelve boundary/refusal tests and independent semantic review pass.
+
+**Evidence level:** `verified-static` for these selected effects with native
+M=1/X=0/D=0/DBR=$7E and binary arithmetic. This is not a new CPU replay or a
+census of every completion-state writer. All 70 direct default-handler
+opcodes are excluded by the existing 123-opcode v0 authoring policy; that
+intersection does not prove that every other allowed command lacks indirect
+or aliased completion effects. The policy remains unchanged, and no new
+completion stream, action binding, hook or allocation is approved.

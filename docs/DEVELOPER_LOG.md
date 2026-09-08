@@ -671,3 +671,106 @@ with all 12 changed remote files byte-verified. The source-only donor preflight
 is being implemented after design review. The original-NMI validator needs
 two identified evidence-schema/read-scope fixes and stronger archive checks
 before its final matrix. All production catalogs and high bindings stay empty.
+
+## 2026-09-08 — original NMI and source-only preflight accepted
+
+**Status:** the [original-NMI matrix](schala_package_helper_v2_original_nmi.md)
+now has two accepted, independently staged 224-case runs. Their complete
+420,429,445-byte traces are identical, SHA-256
+`3a84fca5e618a9aaaeac9c3056b7a15858f396b5cbfe5e2ae4fd2ae4fe147d50`.
+This is `verified-runtime` for the unchanged v2 WRAM helper and original
+minimal NMI handler. Each run records 422,544 events, 896 actual hardware
+frame-byte writes, 448 vector-byte reads and 224 complete final-WRAM
+reconciliations. The observed minimum SPs are `$1FB4/$069D` for the two
+declared entry placements; they are not game stack bounds.
+
+The final validator closes the two independently found host gaps: numeric
+aliases in change records and an unexplained retired-scratch read. Exact
+source-archive inventory is checked before and after execution. The 24 TCS
+idle-read observations are distinct from the hardware dummy reads: the first
+occurs before TCS changes SP; the second occurs after that instruction and
+before the CPU's actual interrupt frame. Pinned Mesen source explains the
+sequence. The genuine full trace and full-WRAM write ledger are validated
+before the deliberately derived interrupt-free helper projection.
+
+All 55 tests pass. A separate reviewer and the root each revalidated both
+entire native traces, source/staged/archive identities, all seven retained
+pilot histories and prior phase/normal-helper dependencies. Both independently
+reproduced the 605,688-byte reference, SHA-256
+`4a517b6c58ef5516b192bdd0558c242afba693b13fae8da71cf1985edb67957a`.
+No game handler, ROM-code preemption or nested interrupt is inferred.
+
+The [preflight planner](schala_package_preflight_planner_v1.md) separately
+passes source-only review. Its exact successful Luminaire context and
+earlier naturally refused Cure context cannot be substituted for each other.
+The pure planner returns a qualified package request. The read-only auditor
+then revalidates both previously accepted trace pairs, checks source-derived
+config row `$08`, preserves all six auxiliary bytes and recomputes both
+descriptor masks through the existing complete command policy. The default
+high registry remains empty. No supplied certificate or coincident numeric
+action/package ID establishes an association.
+
+All 33 tests pass, including mutable/type aliases, every donor/auxiliary
+byte, inconsistent contexts, malformed alternate streams and decoded `$1E`
+refusal with raw operand `$1E` still accepted. The root independently
+regenerated the metadata. A final output-only correction makes actual Windows
+CLI output UTF-8/LF, matching the stated format and reference exactly;
+the earlier CRLF output identity remains in the human receipt. The final
+14,779-byte reference has SHA-256
+`cd14a36b8d4e725349b1c3256fd2fb36e65a5be9597029998a4bf8273d58f0a9`.
+This is `verified-static` transport eligibility, not native MP feasibility,
+action completion, cancellation or integration.
+
+**Publication and resume:** the preceding ROM/refusal increment is published
+as [`50bc50860c700b381dce399633625b518af83411`](https://github.com/andreipemberton/project-epoch/commit/50bc50860c700b381dce399633625b518af83411),
+with the authenticated branch/commit and all 30 changed-file bytes verified.
+The next synthetic experiment combines immutable ROM execution with NMI
+preemption under a separate reviewed contract. Normal-game indexed dispatch,
+physical stack aliases and a deliberate completion protocol remain open.
+The overall gate remains `BA-NATIVE-INTEGRATION-DESIGN`.
+
+## 2026-09-08 — direct NMI callees and command-completion correction
+
+**Status:** `verified-static` with explicit model premises. The separate
+[normal-NMI v2 audit](schala_package_normal_nmi_closure_v2.md) closes 25
+distinct direct callees, covering 34 of the original 44 call sites. Their
+typed return frames and M/X/I states satisfy the prior census's return-width
+premise. Ten original sites remain open. Both outcomes of branches are
+traversed, near returns cannot restore a changed program bank, and unknown
+or unbounded paths retain a null bound. Non-stack aliasing and termination
+are not proved. The reset prefix explicitly assigns SP `$06FF`; it cannot
+be modeled as a balanced ordinary return.
+
+Two independent reviews found no blocking issue in the completed bounded
+packet. The root and reviewer each passed all 42 original tests and
+regenerated the 321,839-byte reference exactly, SHA-256
+`413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242`.
+The original v1 census and its 44-site inventory remain unchanged. The four
+reviewed scroll table cells and unresolved scene dispatcher retain their
+separate input-range/hidden-accumulator provenance requirements.
+
+MAP-011 corrects the upstream annotation at `bank_C1.asm:9969`: its
+`$A3D1`-set default handler does not consume the command under D=0. `TDC`
+supplies zero to the pointer-add helper; the low and high words are stored
+back unchanged, including the real same-value writes at `$E6-$E9`.
+The mode-zero branch instead increments `$9876` modulo 256. Command `$00`
+clears the owner-active byte without supplying the package-counter signal.
+The [completion contract](schala_package_completion_contract_v1.md) preserves
+the exact wrong source, pinned canonical spans, ABI premises and limitations.
+
+Independent review checked the canonical instructions and all twelve original
+boundary tests. The audit reproduces seven span hashes, 31 selected
+instruction assertions, all 65,536 mode/counter model pairs and the existing
+policy intersection. All 70 direct default-handler opcodes are excluded by
+v0's 123-opcode allowed set; the audit does not claim that every other allowed
+command lacks indirect or aliased completion effects. The 9,212-byte metadata
+reference has SHA-256
+`76c5d5a157748717c42301a7cbfd9d00f9f656cdeba048415e77c123d7095766`.
+No new CPU replay or completion-policy extension is implied.
+
+**Resume:** reuse the already recorded successful transaction's actual
+default-handler increment, owner-stop entry sites, scene clear and caller
+readbacks to document a bounded native completion witness. Its encoded
+command ID and pointer movement were not captured and must not be invented.
+The separate ROM/NMI design is ready for implementation. All production
+hooks, allocations and high selector bindings remain absent.

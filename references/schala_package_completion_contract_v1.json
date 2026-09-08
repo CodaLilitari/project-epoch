@@ -1,0 +1,359 @@
+{
+  "schema": "project-epoch-package-completion-contract-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "spans": [
+    {
+      "name": "stop",
+      "cpu_start": "C14CF0",
+      "cpu_end_exclusive": "C14CF7",
+      "size": 7,
+      "sha256": "6b6ae5cc58afc13a72560a847a3fee2162fb54d4ebc452c0d4ee175305a01118"
+    },
+    {
+      "name": "default",
+      "cpu_start": "C14CF7",
+      "cpu_end_exclusive": "C14D04",
+      "size": 13,
+      "sha256": "3ecae483e18298b9f38e37cbd69662a65e1c6ff345e6f34fc568478d3e38ae6b"
+    },
+    {
+      "name": "pointer-advance",
+      "cpu_start": "C175BB",
+      "cpu_end_exclusive": "C175CC",
+      "size": 17,
+      "sha256": "81ec99810c0832f34277d117410919282e14891d51bb3869533e60ae3ef97142"
+    },
+    {
+      "name": "dispatch-control",
+      "cpu_start": "C14CBF",
+      "cpu_end_exclusive": "C14CEF",
+      "size": 48,
+      "sha256": "de7765406557d36ba72360c5830144026feaea182ea1887ca7ceb81949a7b2ed"
+    },
+    {
+      "name": "package-wait",
+      "cpu_start": "C140CE",
+      "cpu_end_exclusive": "C140D3",
+      "size": 5,
+      "sha256": "abdedd4f211f2e8cf12dc01899734d4f870bfa697b1a37d742cc23501597d2e1"
+    },
+    {
+      "name": "scene-wait",
+      "cpu_start": "C140E7",
+      "cpu_end_exclusive": "C140EC",
+      "size": 5,
+      "sha256": "d1f67450f4b76233667c43435c1a5829936c308a7b90b86cdfc67330ae9f9f3a"
+    },
+    {
+      "name": "counter-reset",
+      "cpu_start": "CCF0E9",
+      "cpu_end_exclusive": "CCF0EC",
+      "size": 3,
+      "sha256": "fb5a84e33ae83efddc90e0bda1b7aedb191b9e179ae2d1017e8a19bd09424161"
+    }
+  ],
+  "selected_instruction_assertions": [
+    {
+      "cpu_address": "C14CF0",
+      "opcode": "AE",
+      "operand": "A010"
+    },
+    {
+      "cpu_address": "C14CF3",
+      "opcode": "9E",
+      "operand": "5DAC"
+    },
+    {
+      "cpu_address": "C14CF7",
+      "opcode": "AD",
+      "operand": "A3D1"
+    },
+    {
+      "cpu_address": "C14CFD",
+      "opcode": "4C",
+      "operand": "75BB"
+    },
+    {
+      "cpu_address": "C14D00",
+      "opcode": "EE",
+      "operand": "9876"
+    },
+    {
+      "cpu_address": "C175C3",
+      "opcode": "69",
+      "operand": "0000"
+    },
+    {
+      "cpu_address": "C14CBF",
+      "opcode": "9C",
+      "operand": "A00F"
+    },
+    {
+      "cpu_address": "C14CD4",
+      "opcode": "FC",
+      "operand": "7A6B"
+    },
+    {
+      "cpu_address": "C14CD7",
+      "opcode": "AD",
+      "operand": "A00F"
+    },
+    {
+      "cpu_address": "C140CE",
+      "opcode": "AD",
+      "operand": "9876"
+    },
+    {
+      "cpu_address": "C140E7",
+      "opcode": "AD",
+      "operand": "5D9B"
+    },
+    {
+      "cpu_address": "CCF0E9",
+      "opcode": "9C",
+      "operand": "9876"
+    },
+    {
+      "cpu_address": "C175BB",
+      "opcode": "C2",
+      "operand": "21"
+    },
+    {
+      "cpu_address": "C175BD",
+      "opcode": "65",
+      "operand": "E6"
+    },
+    {
+      "cpu_address": "C175BF",
+      "opcode": "85",
+      "operand": "E6"
+    },
+    {
+      "cpu_address": "C175C1",
+      "opcode": "A5",
+      "operand": "E8"
+    },
+    {
+      "cpu_address": "C175C6",
+      "opcode": "85",
+      "operand": "E8"
+    },
+    {
+      "cpu_address": "C175C9",
+      "opcode": "E2",
+      "operand": "20"
+    },
+    {
+      "cpu_address": "C14CCD",
+      "opcode": "C2",
+      "operand": "20"
+    },
+    {
+      "cpu_address": "C14CD2",
+      "opcode": "E2",
+      "operand": "20"
+    },
+    {
+      "cpu_address": "C14CFC",
+      "opcode": "7B"
+    },
+    {
+      "cpu_address": "C175C8",
+      "opcode": "7B"
+    },
+    {
+      "cpu_address": "C14CC2",
+      "opcode": "7B"
+    },
+    {
+      "cpu_address": "C14CD1",
+      "opcode": "7B"
+    },
+    {
+      "cpu_address": "C14CF6",
+      "opcode": "60"
+    },
+    {
+      "cpu_address": "C14D03",
+      "opcode": "60"
+    },
+    {
+      "cpu_address": "C175CB",
+      "opcode": "60"
+    },
+    {
+      "cpu_address": "C14CFA",
+      "opcode": "F0",
+      "destination": "C14D00"
+    },
+    {
+      "cpu_address": "C14CDA",
+      "opcode": "D0",
+      "destination": "C14CBF"
+    },
+    {
+      "cpu_address": "C140D1",
+      "opcode": "F0",
+      "destination": "C140B0"
+    },
+    {
+      "cpu_address": "C140EA",
+      "opcode": "D0",
+      "destination": "C140E1"
+    }
+  ],
+  "dispatch_table": {
+    "name": "command_dispatch_table",
+    "label": "219-word command dispatch table for opcodes 00-DA",
+    "start": "C17A6B",
+    "end_exclusive": "C17C21",
+    "size": 438,
+    "sha256": "59145c787a5a5c57c59de7992ec0e17d5c6a64f32ef9e1e3273d174f90e8d995"
+  },
+  "direct_default_handler_opcode_count": 70,
+  "allowed_v0_opcode_count": 123,
+  "default_handler_opcodes_allowed_by_v0": [],
+  "canonical_01_is_default": true,
+  "bounded_original_examples": [
+    {
+      "opcode": "00",
+      "before": {
+        "pointer": 4337664,
+        "owner_active": true,
+        "package_counter": 0,
+        "scene_busy": 0,
+        "mode_a3d1": 0
+      },
+      "after": {
+        "pointer": 4337664,
+        "owner_active": false,
+        "package_counter": 0,
+        "scene_busy": 0,
+        "mode_a3d1": 0
+      },
+      "caller_wait": "continue-package-loop",
+      "same_value_dp_word_stores": false
+    },
+    {
+      "opcode": "00",
+      "before": {
+        "pointer": 4337664,
+        "owner_active": true,
+        "package_counter": 0,
+        "scene_busy": 0,
+        "mode_a3d1": 1
+      },
+      "after": {
+        "pointer": 4337664,
+        "owner_active": false,
+        "package_counter": 0,
+        "scene_busy": 0,
+        "mode_a3d1": 1
+      },
+      "caller_wait": "continue-package-loop",
+      "same_value_dp_word_stores": false
+    },
+    {
+      "opcode": "01",
+      "before": {
+        "pointer": 4337664,
+        "owner_active": true,
+        "package_counter": 0,
+        "scene_busy": 0,
+        "mode_a3d1": 0
+      },
+      "after": {
+        "pointer": 4337664,
+        "owner_active": true,
+        "package_counter": 1,
+        "scene_busy": 0,
+        "mode_a3d1": 0
+      },
+      "caller_wait": "both-observed-waits-satisfied",
+      "same_value_dp_word_stores": false
+    },
+    {
+      "opcode": "01",
+      "before": {
+        "pointer": 4337664,
+        "owner_active": true,
+        "package_counter": 0,
+        "scene_busy": 0,
+        "mode_a3d1": 1
+      },
+      "after": {
+        "pointer": 4337664,
+        "owner_active": true,
+        "package_counter": 0,
+        "scene_busy": 0,
+        "mode_a3d1": 1
+      },
+      "caller_wait": "continue-package-loop",
+      "same_value_dp_word_stores": true
+    }
+  ],
+  "exhaustive_mode_counter_pairs": 65536,
+  "current_policy_unchanged": true,
+  "limits": [
+    "native M1/X0, D0, DBR7E and binary arithmetic are explicit semantic premises",
+    "only command00/default01 selected effects are modeled, not arbitrary allowed command side effects",
+    "DP E6/E7 and E8/E9 are rewritten with the same values on the A3D1-set default path",
+    "no claim that these are the only global or aliased writers of completion state",
+    "no newly authored completion policy, stream, native diagnostic, game hook or allocation is approved"
+  ],
+  "production_approval": false,
+  "sources": {
+    "auditor": {
+      "path": "tools/audit_schala_package_completion_contract_v1.py",
+      "size": 9676,
+      "sha256": "76840c5b0edfea07e117745ee0dd70da77dd489eeabb406684d48f2177121214"
+    },
+    "tests": {
+      "path": "tests/test_schala_package_completion_contract_v1.py",
+      "size": 5149,
+      "sha256": "9a5a8cefacf70d59ba5cbdf47630fc3a6c699e3a5a3e42f1f44f1ddad093fc79"
+    },
+    "annotation": {
+      "path": "private/research/ct_disassembly_eeae27a/bank_C1.asm",
+      "size": 2768817,
+      "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+    },
+    "policy": {
+      "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+      "size": 39897,
+      "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f"
+    },
+    "policy_reference": {
+      "path": "references/schala_expanded_package_command_policy_v0.json",
+      "size": 6717,
+      "sha256": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9"
+    },
+    "grammar": {
+      "path": "tools/audit_battle_command_grammar_census_v0.py",
+      "size": 53608,
+      "sha256": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228"
+    },
+    "grammar_reference": {
+      "path": "references/battle_command_grammar_census_v0.json",
+      "size": 12433,
+      "sha256": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c"
+    }
+  },
+  "wrong_annotation": {
+    "revision": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+    "line": 9969,
+    "url": "https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm#L9969",
+    "claim": "A3D1-set default handler consumes the command",
+    "correction": "D0 supplies zero advance, so the pointer remains on the same command; no completion-counter increment"
+  },
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_schala_package_completion_contract_v1.py"
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "schema": "project-epoch-package-preflight-evidence-v1",
+  "date": "2026-09-08",
+  "evidence_level": "verified-static",
+  "scope": "two exact observed contexts imported; new donor association and decisions are host-only transport eligibility",
+  "dependencies": {
+    "planner": {
+      "path": "tools/schala_package_preflight_planner_v1.py",
+      "size": 15049,
+      "sha256": "5b5848d0e47d5c068d61e3728d3044137ac26bcad1da3ba301c28f6b6ebf9640"
+    },
+    "symbolic_source": {
+      "path": "tools/audit_schala_symbolic_high_package_v0.py",
+      "size": 20486,
+      "sha256": "e6911a979a60cb06ee78b4b58a410875a2b7acbeb2fce4733bf2795828ad2b5d"
+    },
+    "symbolic_reference": {
+      "path": "references/schala_symbolic_high_package_v0.json",
+      "size": 8164,
+      "sha256": "37c13271c3632bca6b27a2daa0e5e2820d502a6673b1863b64b29a647df470e2"
+    },
+    "policy_source": {
+      "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+      "size": 39897,
+      "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f"
+    },
+    "policy_reference": {
+      "path": "references/schala_expanded_package_command_policy_v0.json",
+      "size": 6717,
+      "sha256": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9"
+    },
+    "success_collector": {
+      "path": "tools/collect_package_transaction_evidence_v1.py",
+      "size": 9491,
+      "sha256": "610ced62a320c9a0ae53efd0174ed4e1a661a4db63b1d0a43d15ca2c48a377b4"
+    },
+    "refusal_collector": {
+      "path": "tools/collect_package_natural_refusal_evidence_v1.py",
+      "size": 13547,
+      "sha256": "2b2dc9015db25626f544492016a006160a6770dbb1e92b74ce89dc2f986364dd"
+    },
+    "success_reference": {
+      "path": "references/package_transaction_observation_v1.json",
+      "size": 29391,
+      "sha256": "1cc3030e1bbfe5f167ae69262ec7d78487ec4184e3500915b9dfbda94bea2787"
+    },
+    "refusal_reference": {
+      "path": "references/package_natural_refusal_observation_v1.json",
+      "size": 32864,
+      "sha256": "a1318f53d2db33e73288da2c7a1faf8765da58b8696f47441afdcbcf0352114c"
+    },
+    "design": {
+      "path": "docs/schala_package_preflight_planner_design_v1.md",
+      "size": 19571,
+      "sha256": "8d569df20932b81d59a6f7f072de729cf046d179cdbd099fee6d0c944d9def05"
+    },
+    "transitive_policy_dependencies": {
+      "command_policy_source": {
+        "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+        "size": 39897,
+        "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f"
+      },
+      "command_policy_reference": {
+        "path": "references/schala_expanded_package_command_policy_v0.json",
+        "size": 6717,
+        "sha256": "35246c00e274f35a80cfe589cfe3557b7585ff515c7e43747453d161de99f0d9"
+      },
+      "transitive_closed_dependencies": {
+        "battle_command_grammar_reference": {
+          "schema": "project-epoch-battle-command-grammar-census-contract-v0",
+          "sha256": "1582aca15e209d8015d5c34fdf4016ee45e75d9872ff76f4933e29f80ce46e0c",
+          "size": 12433
+        },
+        "package_bank_adapter_reference": {
+          "schema": "project-epoch-schala-player-tech-package-bank-adapter-contract-v0",
+          "sha256": "dab2834afb28ea2b89e814747d4a079fef7a403ec67eba592a7f866c88faa69e",
+          "size": 12280
+        },
+        "interpreter_identities": {
+          "grammar_auditor_source": {
+            "path": "tools/audit_battle_command_grammar_census_v0.py",
+            "sha256": "4d66c6b038cc5c541919b14c499890955e2797bc42300c956aefc98b73d13228",
+            "size": 53608
+          },
+          "grammar_token_shape_profile": {
+            "row_count": 511,
+            "sha256": "25502f827efd57ecaf920896a6216db2ad4278e66a2410ada1b7695a25a95f3d"
+          },
+          "package_bank_adapter_source": {
+            "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+            "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+            "size": 35887
+          }
+        }
+      }
+    }
+  },
+  "auditor": {
+    "path": "tools/audit_schala_package_preflight_planner_v1.py",
+    "size": 16567,
+    "sha256": "68aff1f41f379f10deb1a293e57b5bb780486079c5c4ef459dc99f3946ebc4a4"
+  },
+  "tests_source": {
+    "path": "tests/test_schala_package_preflight_planner_v1.py",
+    "size": 15742,
+    "sha256": "2180e966ca1005c1a40248411a2b84f091d7f9f747c414bbe28935ed37966b1c"
+  },
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "imported_contexts": {
+    "observed-lavos-luminaire-pre-effect-v1": {
+      "accepted_reference": {
+        "path": "references/package_transaction_observation_v1.json",
+        "size": 29391,
+        "sha256": "1cc3030e1bbfe5f167ae69262ec7d78487ec4184e3500915b9dfbda94bea2787"
+      },
+      "trace": {
+        "path": "private/test_runs/package_transaction_20260908_final1/trace.json",
+        "size": 6113025,
+        "sha256": "fc9e89c139d00a23ab67a84ee77f497e6dfe63133c14509b23f50ce72d0523e7"
+      },
+      "record_indices": [
+        5,
+        8,
+        9
+      ],
+      "boundary": "C1BBD4",
+      "record_sha256": "b9ddf0bea98b713a8b13cbc89540c4f3f71fc23e2547909054b4c8112b2b6fa5",
+      "context_sha256": "11e6d6b95553b79a0da8a929860cc2dbdb5a4b7ad0e5ff28df1eaab79bf7a29f",
+      "full_pair_metadata_reproduced": true,
+      "origin": "previously accepted checkpoint-bounded native observation; this import executes no CPU"
+    },
+    "observed-lavos-cure-target-refusal-v1": {
+      "accepted_reference": {
+        "path": "references/package_natural_refusal_observation_v1.json",
+        "size": 32864,
+        "sha256": "a1318f53d2db33e73288da2c7a1faf8765da58b8696f47441afdcbcf0352114c"
+      },
+      "trace": {
+        "path": "private/test_runs/package_natural_refusal_20260908_final1/trace.json",
+        "size": 746878,
+        "sha256": "63f94fff2b81292b593073e1197b7a8b8778cf6f4b217e2caa02adb0d61efd15"
+      },
+      "record_indices": [
+        110,
+        117
+      ],
+      "boundary": "C1BB8B",
+      "record_sha256": "b798a62edf5e1eee2d469e47866ec69b149351daa66706e345cd7a37e10fb0bb",
+      "context_sha256": "f4c67ce9cbd19146fb729fa8d641ccd3a8986f76b8e6539668a1b282b9c963ea",
+      "full_pair_metadata_reproduced": true,
+      "origin": "previously accepted checkpoint-bounded native observation; this import executes no CPU"
+    }
+  },
+  "donor": {
+    "physical_action_config_row": "08",
+    "file_start": "0D45DE",
+    "file_end_exclusive": "0D45E5",
+    "size": 7,
+    "sha256": "044dfdb673f9506789daf42470a7d5173f70354169f6ecc5006235783a46b334",
+    "preserved_plus1_through6_sha256": "642eb9302b2906890aceb5baf58a28e11dfdaff1ed15d1233db7c401bb5f1a96",
+    "candidate_sha256": "9c747786b110ff2b63c293e3cacefa0fb84e436f48257cd139742e0a339dbf3e",
+    "changed_byte_offsets": [
+      0
+    ],
+    "preserved_byte_offsets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "preserved_equalities": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "auxiliary_evidence": "source-derived donor equality; all live auxiliary fields were not independently traced",
+    "payload_emitted": false
+  },
+  "decisions": {
+    "canonical_baseline": {
+      "status": "canonical-path-preserved",
+      "profile": "observed-lavos-luminaire-pre-effect-v1",
+      "context_sha256": "11e6d6b95553b79a0da8a929860cc2dbdb5a4b7ad0e5ff28df1eaab79bf7a29f",
+      "package_evaluation": "not-evaluated",
+      "donor_evaluation": "canonical-source-equality",
+      "donor_sha256": "044dfdb673f9506789daf42470a7d5173f70354169f6ecc5006235783a46b334",
+      "suffix_sha256": "642eb9302b2906890aceb5baf58a28e11dfdaff1ed15d1233db7c401bb5f1a96",
+      "candidate_sha256": null,
+      "image_sha256": null,
+      "layout_sha256": null,
+      "association_sha256": null,
+      "policy_id": null,
+      "production_approved": false,
+      "native_cleanup_approved": false,
+      "action_completion_approved": false,
+      "runtime_integration_proved": false,
+      "runtime_context_certified": false
+    },
+    "diagnostic_primary_substitution": {
+      "status": "transport-valid-source-only",
+      "profile": "observed-lavos-luminaire-pre-effect-v1",
+      "context_sha256": "11e6d6b95553b79a0da8a929860cc2dbdb5a4b7ad0e5ff28df1eaab79bf7a29f",
+      "package_evaluation": "both-masks-recomputed",
+      "donor_evaluation": "canonical-donor-equality",
+      "donor_sha256": "044dfdb673f9506789daf42470a7d5173f70354169f6ecc5006235783a46b334",
+      "suffix_sha256": "642eb9302b2906890aceb5baf58a28e11dfdaff1ed15d1233db7c401bb5f1a96",
+      "candidate_sha256": "9c747786b110ff2b63c293e3cacefa0fb84e436f48257cd139742e0a339dbf3e",
+      "image_sha256": "d1d085d52aade99d212e033f498f2626ca83994de7512fa6206bf3e478e1afd3",
+      "layout_sha256": "6bcf4288c902c9b6e494ce63771f64aba51542d47c98c2e8a2ab2ba71bbb0f0b",
+      "association_sha256": "024c58fbb0308e0c9b17a1d89753b6f5a625925d5ed651ed3a3dfcae6dbe2054",
+      "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+      "production_approved": false,
+      "native_cleanup_approved": false,
+      "action_completion_approved": false,
+      "runtime_integration_proved": false,
+      "runtime_context_certified": false,
+      "policy_certificate_sha256": "1e361bf0c7db8f901a6539aa0f3561649e534b96d4f00cbc140a528190e3a846",
+      "policy_certificate": {
+        "status": "pass-all-selected-flat-direct-streams-exclude-command-1e",
+        "policy_id": "decoded-command-1e-exclusion-flat-direct-v0",
+        "expanded_source_1e_absence_proved": true,
+        "command_1e_cross_bank_subscripts_resolved": false,
+        "package_selector": "80",
+        "descriptor_relation_count": 2,
+        "mask0_relation_count": 1,
+        "mask1_relation_count": 1,
+        "both_descriptor_masks_validated": true,
+        "distinct_direct_entrypoint_count": 1,
+        "stream_span_count": 1,
+        "unique_token_start_count": 1,
+        "unique_owned_byte_count": 1,
+        "total_entrypoint_traversal_token_count": 1,
+        "shared_token_start_count": 0,
+        "decoded_command_1e_site_count": 0,
+        "top_level_command_1f_site_count": 0,
+        "top_level_command_21_site_count": 0,
+        "raw_byte_equal_1e_inside_stream_span_count": 0,
+        "command_00_terminal_count": 1,
+        "command_25_site_count": 0,
+        "command_80_site_count": 0,
+        "command_da_site_count": 0,
+        "descriptor_stream_overlap_count": 0,
+        "unowned_stream_byte_count": 0,
+        "token_extent_conflict_count": 0,
+        "source_content_size": 9,
+        "source_content_ledger_sha256": "6c0c1094a778c7152c96c63bf2133102bf80e9ca8f15c9e5600c55b06721e8f4",
+        "command_exclusion_proof_sha256": "13cfc9f9175d61e173f133e171dd5199d1c65cfe73cbf5fdc7af826de4bbf209",
+        "descriptor_entry_ledger_sha256": "92be310afc2bc9dbecb2c47d0e7b53fefef798a2d7a5dffba56b37a2d994961f",
+        "token_ledger_sha256": "52611ca1bd1afea1353260e341502c0d06abfe5ad9f97e7ef88eb5a891905610",
+        "trace_ledger_sha256": "26dd32e51ed2ff3e1e1045744becca5337fb2df20253dec72ac2ad54c0ba2a91",
+        "termination_ledger_sha256": "9abaea5c5f0e99e26c53cb38c47b455730f0882f3b897b64dc6fbe5e3b03e0ec",
+        "owned_byte_ledger_sha256": "3dcd80442e2bc12df6ff94c5abbf6d2e9cf2b00e8f3c5c3150507ba2f0ee5639",
+        "descriptor_span_size": 8,
+        "stream_span_total_size": 1,
+        "raw_stream_or_descriptor_bytes_emitted": false
+      }
+    },
+    "already_refused_cure": {
+      "status": "native-target-refusal-observed",
+      "profile": "observed-lavos-cure-target-refusal-v1",
+      "context_sha256": "f4c67ce9cbd19146fb729fa8d641ccd3a8986f76b8e6539668a1b282b9c963ea",
+      "package_evaluation": "not-evaluated",
+      "donor_evaluation": "not-evaluated",
+      "donor_sha256": null,
+      "suffix_sha256": null,
+      "candidate_sha256": null,
+      "image_sha256": null,
+      "layout_sha256": null,
+      "association_sha256": null,
+      "policy_id": null,
+      "production_approved": false,
+      "native_cleanup_approved": false,
+      "action_completion_approved": false,
+      "runtime_integration_proved": false,
+      "runtime_context_certified": false
+    }
+  },
+  "default_diagnostic_refusal": "unbound-diagnostic-package",
+  "namespace_equivalence": {
+    "canonical_selector_equivalence_count": 128,
+    "canonical_source_identity_ledger_sha256": "103ea8106dea86c9308147c36bf66f9fe0d7b0eb3fbe2bbd25ee5e9e3f05e9e7",
+    "default_high_selector_bound_count": 0,
+    "default_high_selector_refusal_count": 16,
+    "explicit_synthetic_mapping_selectors": [
+      "80"
+    ],
+    "explicit_synthetic_mapping_bound_count": 1,
+    "remaining_explicit_high_selector_refusal_count": 15,
+    "production_high_selector_bound_count": 0,
+    "schala_action_mapping_bound": false,
+    "command_1e_refusal_preserved": true
+  },
+  "symbolic_source_sha256": "d1d085d52aade99d212e033f498f2626ca83994de7512fa6206bf3e478e1afd3",
+  "layout": {
+    "selector": 128,
+    "bank": 66,
+    "root": 8192,
+    "source_kind": "synthetic-test",
+    "descriptor": {
+      "name": "EPOCH_PKG80_SYMBOLIC_DESCRIPTOR_V0",
+      "bank": 66,
+      "start": 8192,
+      "end": 8200
+    },
+    "streams": [
+      {
+        "name": "EPOCH_PKG80_SYMBOLIC_STREAM_V0",
+        "bank": 66,
+        "start": 12288,
+        "end": 12289
+      }
+    ]
+  },
+  "association_sha256": "024c58fbb0308e0c9b17a1d89753b6f5a625925d5ed651ed3a3dfcae6dbe2054",
+  "production_approved": false,
+  "native_cleanup_approved": false,
+  "action_completion_approved": false,
+  "runtime_integration_proved": false,
+  "runtime_context_certified": false,
+  "inputs_unchanged": true,
+  "new_native_execution": false,
+  "game_payload_emitted": false,
+  "limitations": [
+    "Exact checkpoint profiles only; no general queue, target, participant or MP-eligibility model.",
+    "B3C8 at the pre-effect boundary does not certify the later native MP/status check.",
+    "The already refused Cure retains earlier AE actor/config fields and supplies no pre-effect snapshot.",
+    "Transport policy validity and terminal00 closure do not prove action completion.",
+    "No cleanup, late-refusal recovery, allocation, hook, ROM write, action80..90 or logicalPC07 permission.",
+    "Pure context decisions cannot authenticate caller-authored objects as native evidence.",
+    "The prepared checkpoint provenance remains distinct from controller-only post-load behavior.",
+    "Existing symbolic donor01, policy, production catalogs and accepted native sources remain unchanged."
+  ],
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_schala_package_preflight_planner_v1.py"
+  ],
+  "serialization": "json.dumps(value, indent=2), UTF-8, LF, one trailing newline"
+}

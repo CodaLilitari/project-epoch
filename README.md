@@ -28,12 +28,25 @@ The latter preserves MP, releases the selected command and later returns Marle
 to the ready list. It does not yet prove cleanup from a new package rejection
 at the proposed pre-effect boundary.
 
-`BA-NATIVE-INTEGRATION-DESIGN` remains open. The active work is a source-only
-canonical-donor preflight design, separate action-completion policy, and
-interrupt/stack ownership. Original-NMI pilots remain exploratory pending
-their complete review and repeated matrix. MAP-010 corrects our published
-Mesen Lua field inventory; use the
+The separate [original-NMI proof](docs/schala_package_helper_v2_original_nmi.md)
+now passes two identical 224-case runs, including hardware-frame construction,
+RTI preservation and complete WRAM reconciliation. It interrupts the WRAM
+helper with an original minimal handler; the ROM-execution and preemption
+proofs still have separate scopes. The
+[source-only preflight planner](docs/schala_package_preflight_planner_v1.md)
+also passes review, preserving exact successful and refused action contexts.
+
+`BA-NATIVE-INTEGRATION-DESIGN` remains open. Active work covers explicit action
+completion, native rejection and interrupt/stack ownership. The
+[normal-NMI direct-callee audit](docs/schala_package_normal_nmi_closure_v2.md)
+closes 34 of the original 44 call sites under stated stack-alias premises;
+reset and indexed dispatch paths remain open. MAP-010 corrects our published
+Mesen Lua field inventory; the accepted original-NMI experiment uses the
 [numbered observable-phase contract](docs/mesen_nmi_phase_contract_v2.md).
+MAP-011 separately corrects the default command handler's claimed pointer
+advance. The [completion contract](docs/schala_package_completion_contract_v1.md)
+shows why terminal `$00` and the caller's completion signals need distinct
+proofs; the existing authoring policy is unchanged.
 No game hook, production allocation, high production selector or logical PC
 `$07` is installed. Original cartridge tests and vanilla observations have
 separate evidence scopes.

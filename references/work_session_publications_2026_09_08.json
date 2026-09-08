@@ -514,6 +514,166 @@
       "authenticated_commit_api_verified": true,
       "authenticated_branch_head_verified": true,
       "all_changed_file_bytes_verified": true
+    },
+    {
+      "commit": "50bc50860c700b381dce399633625b518af83411",
+      "verified_at_utc": "2026-09-08T17:54:15.711399+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "README.md",
+          "size": 47882,
+          "sha256": "de4709799723d62d9577ee19b56579af41447c632c8ae8205fcbf5a5fa2d0484"
+        },
+        {
+          "path": "AGENTS.md",
+          "size": 30446,
+          "sha256": "21dc272cb63a6647daf075a85f82fe1714c2a45278a4b3395262dc1bdca847e8"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 43971,
+          "sha256": "726152edd9726c1ea7e9485e49e04ce60646267d271404d997763858c81c9b4d"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 6068,
+          "sha256": "79e5f49102f938101ad873b31e15b4184bd8a0d1ab79c27132cddc0bd5e6f176"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 191281,
+          "sha256": "3ec3f6bf8a2f7ae27cc1bfa35334a8cf09db885fb4170377809bb54f1ea76df9"
+        },
+        {
+          "path": "docs/schala_command_namespace_architecture.md",
+          "size": 9215,
+          "sha256": "f49d0c8dea7d214f7d2c15fa412cdfd1ef492bedd1ffe78d7feb975f6b987092"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 20104,
+          "sha256": "82b046c8d6d5b5399b73761f900cecdbfbc78bb19427d464a0d22dd334d77bbf"
+        },
+        {
+          "path": "tools/run_package_natural_refusal_probe_v1.py",
+          "size": 8268,
+          "sha256": "045bf0c036b9cd1ac0b588f5802eb622c451d145d7109e3c4a0d49df23a734db"
+        },
+        {
+          "path": "tools/mesen_package_natural_refusal_probe_v1.lua",
+          "size": 11224,
+          "sha256": "46ae537bb9fa85b35ff7af853b0648d06a7405d7a5e31978947a36bcf0211b0f"
+        },
+        {
+          "path": "tools/run_package_natural_refusal_observation_v1.py",
+          "size": 7294,
+          "sha256": "1a9e7a0e1b6d1bb51c94fe965bdf671562be0cd0695ea6e894b90796382ede76"
+        },
+        {
+          "path": "tools/mesen_package_natural_refusal_observation_v1.lua",
+          "size": 13232,
+          "sha256": "0e5ceaf568f3744f87cbe495018d476f4957626756d65c872eab4259f38984de"
+        },
+        {
+          "path": "tools/package_natural_refusal_validation_v1.py",
+          "size": 23717,
+          "sha256": "4422ee7448f37cfba6cfa73e78a8671a0a5dad50ebfd35a4c81a5643afc173e2"
+        },
+        {
+          "path": "tests/test_package_natural_refusal_observation_v1.py",
+          "size": 11578,
+          "sha256": "7ee154740ac20ffcdf733d914230dc13213d7b2e8668790e61562776121a9b4a"
+        },
+        {
+          "path": "tools/collect_package_natural_refusal_evidence_v1.py",
+          "size": 13547,
+          "sha256": "2b2dc9015db25626f544492016a006160a6770dbb1e92b74ce89dc2f986364dd"
+        },
+        {
+          "path": "docs/schala_package_natural_refusal_observation_v1.md",
+          "size": 13517,
+          "sha256": "e51f8e01fffc6ecd619f6a69fbb591c03af123c29212b2326e1297b19006d3ab"
+        },
+        {
+          "path": "references/package_natural_refusal_observation_v1.json",
+          "size": 32864,
+          "sha256": "a1318f53d2db33e73288da2c7a1faf8765da58b8696f47441afdcbcf0352114c"
+        },
+        {
+          "path": "tools/run_schala_package_helper_v3_rom.py",
+          "size": 25406,
+          "sha256": "e4ac4c9281649b6d7cf96ac0c20a14b325e32f0350dd238b930e3e853324d4be"
+        },
+        {
+          "path": "tools/schala_package_helper_v3_rom_model.py",
+          "size": 7001,
+          "sha256": "f58d9abbd7271604bacb72791af79e9e96e067968b76de27759199ad88e37261"
+        },
+        {
+          "path": "tools/mesen_schala_package_helper_v3_rom.lua",
+          "size": 12224,
+          "sha256": "667cdfdfd42d58b439c08c4118e7b7915fb2f481b6b68ef993837c04091f6858"
+        },
+        {
+          "path": "tests/test_schala_package_helper_v3_rom.py",
+          "size": 14431,
+          "sha256": "2b8bb9a3a47cb87798ff1c3c15a51b4b4ffc9afb0755a947551189024b5cff84"
+        },
+        {
+          "path": "tools/collect_schala_package_helper_v3_rom_evidence.py",
+          "size": 13484,
+          "sha256": "2609d4a6c29958405c61d6ccf704386c449f2656317494c325e54fde2231cfbd"
+        },
+        {
+          "path": "docs/schala_package_helper_v3_rom.md",
+          "size": 10611,
+          "sha256": "d60480e8057a8ae87cd0c56eabddddf98df8db25eb2f22f2c5ef31551c2cb5eb"
+        },
+        {
+          "path": "references/schala_package_helper_v3_rom.json",
+          "size": 78936,
+          "sha256": "4c6c469ffde9c75517b1b7087f6c8956e2b2b2637355b87a99a1ae7981d15677"
+        },
+        {
+          "path": "tools/run_package_alternate_branch_probe_v1.py",
+          "size": 9623,
+          "sha256": "63417bde0941db1c03c3e063e73be4c29fe9ac7aa223a2fb1e0422fb392ae46e"
+        },
+        {
+          "path": "tools/mesen_package_alternate_branch_probe_v1.lua",
+          "size": 10253,
+          "sha256": "6f685dba0fab4bd878e30bed86f3c71607cedee23534df8640a03555cda6d9f3"
+        },
+        {
+          "path": "tools/run_package_refusal_probe_v1.py",
+          "size": 7384,
+          "sha256": "172b5f8b6978fc6e6db4c8331739cfa0737a9c9eac493b5c814fc1b548f5d104"
+        },
+        {
+          "path": "tools/mesen_package_refusal_probe_v1.lua",
+          "size": 10145,
+          "sha256": "3dbb71217c9eea57cbd71a32aa5bea68ea5bfaa763ce40e3585f0ebfe46439b2"
+        },
+        {
+          "path": "tools/collect_battle_exploration_history_20260908.py",
+          "size": 7043,
+          "sha256": "7263cc62686557567cba7eac69cd59e9e1812ab84ca75d6d991134e7d801e4a7"
+        },
+        {
+          "path": "docs/battle_exploration_history_20260908.md",
+          "size": 4536,
+          "sha256": "b524e720e8f695d9577adfcb38cbdd372ed450872a89e808ddcbf61c1d8b3a74"
+        },
+        {
+          "path": "references/battle_exploration_history_20260908.json",
+          "size": 57033,
+          "sha256": "e08c620eb31892bb456111f3ba8395ca40323cd3d6da73dd3ac7f96508bb05f2"
+        }
+      ],
+      "authenticated_commit_api_verified": true,
+      "authenticated_branch_head_verified": true,
+      "all_changed_file_bytes_verified": true
     }
   ]
 }

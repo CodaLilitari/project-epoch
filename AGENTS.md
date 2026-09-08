@@ -223,6 +223,16 @@ These are separate namespaces. Never conflate them.
   scanline. MAP-010 pins our incorrect published claim, contrary source, and
   failed preparation pilot. Preserve the historical v1 auditor/reference.
   Preserve these distinctions and the existing production-default unbound set.
+- The separate original-NMI experiment now passes two identical 224-case
+  runs of the unchanged v2 helper at synthetic `$7F8000`, using the original
+  minimal handler at `$008020`. Real emulated `$4200` edges produce four-byte
+  hardware frames, vector reads, exact handler/RTI preservation and complete
+  WRAM write reconciliation. The actual native ledger is distinct from its
+  derived interrupt-free helper projection. TCS boundaries include both the
+  pending-interrupt implied-address idle read before TCS and hardware dummy
+  read after TCS. The observed minima `$1FB4/$069D` belong only to this fixed
+  matrix. No ROM-code preemption, normal-game handler, nested interrupt or
+  game-stack ownership is proved. Preserve the accepted pair and its pilots.
 - A separate repeated clean-ROM context observation records 2,402 paired
   interrupt entries/pre-RTI snapshots per run and one PC-scoped NMI scene
   clear with an actual write and later readback. No interrupt enters its short
@@ -250,10 +260,31 @@ These are separate namespaces. Never conflate them.
   cancellation adapter. It exits before the successful route's AE/mask setup;
   cleanup from a new rejection at `$C1:BBD4` remains unproved. At the earlier
   `$C1:BB8B` failure boundary, AE fields still belong to previous work.
+- The source-only canonical-donor preflight planner now preserves those two
+  exact contexts. It changes only config row `$08` byte `+0` under an explicit
+  synthetic selector-`$80` association; bytes `+1..+6` remain source-equal.
+  Its pure function returns a qualified request, and the separate read-only
+  auditor revalidates the accepted trace pairs and both full command-policy
+  masks. No caller certificate is trusted. All default high bindings remain
+  absent; native cleanup, action completion and integration flags stay false.
+  Preserve the older symbolic donor-`$01` proof independently.
+- The bounded completion contract proves command `$00` clears its owner-active
+  byte without incrementing `$9876`. The direct default handler increments
+  that byte modulo 256 when `$A3D1=0`; with `$A3D1!=0` and D=0 its TDC-driven
+  pointer advance is zero, including real same-value DP stores at `$E6-$E9`.
+  MAP-011 cites the upstream consume annotation and contrary canonical spans.
+  All 70 direct default-handler opcodes are excluded by the existing v0
+  authoring policy. This does not close every other command's indirect or
+  aliased completion effects. No completion stream/policy is installed.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
-  ten-region census retains 44 opaque callee frontiers and explicit conditional
-  return contracts. Full normal-NMI and global nested-interrupt bounds remain
+  ten-region census retains 44 original callee frontiers and explicit conditional
+  return contracts. The separate v2 direct-callee walker now closes 25 of 32
+  distinct direct contracts, covering 34 of 44 original sites. Ten sites
+  remain open at reset or indexed dispatch. Its typed stack bounds assume
+  non-stack writes do not alias saved frames; they do not establish physical
+  ownership. Reset explicitly replaces SP with `$06FF`, not a balanced return.
+  Full normal-NMI and global nested-interrupt bounds remain
   null. The conditional 40-byte route is not a universal bound; leading/trailing
   zero-busy windows, callee closure, DMA aliases, alternate NMI and game stack
   headroom remain unresolved. See `docs/schala_package_normal_nmi_v1.md`.
