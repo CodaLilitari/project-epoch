@@ -66,6 +66,10 @@ proofs have separate scopes and should be reused:
 | [ROM timing calibration](schala_package_helper_v4_timing_calibration.md) | Two identical 22-group traces, full v3 checks, 15,090 instruction observations each, 92 scheduling rows; 46 tests | No requested NMI; calculated start times remain inference until the separate combined experiment passes |
 | [Scroll caller inputs](schala_nmi_scroll_inputs_v1.md) | 947 states and six inlined callee roots prove B0/D0/DBR7E before the bounded scroll call; four conditional target contracts; 49 tests | Stops before the separate pad route; CA92 producer domain and target return values remain open |
 | [Scene-handler conditional closure](schala_scene_handler_closure_v1.md) | 114 of 121 reviewed targets close with M1/X0/I1 returns; exact cell relation and seven indirect frontiers; 40 tests | Closed-subset maximum 16 additional bytes is not a whole-dispatcher/NMI bound; B/D/DBR values and aliases remain open |
+| [Combined ROM/NMI helper](schala_package_helper_v4_rom_nmi.md) | Two identical 152-case traces, 59-byte combined peak, exact hardware/RTI and full WRAM; 99 host tests | Original minimal handler and named boundaries only; game NMI/IRQ and physical stack ownership remain open |
+| [IRQ memory/register contract](schala_package_irq_memory_contract_v2.md) | Four symbolic native-width entries; 109 ordinary writes / 298 physical WRAM bytes, exact saved-register restoration; 49 tests | Conditional nonalias result for explicit helper envelopes; DMA, NMI nesting and actual ownership remain open |
+| [Scene-handler return values](schala_scene_handler_values_v1.md) | All 114 closed targets traversed; 111 return B0/D0/DBR7E and three keep B unresolved; 43 tests | Per-handler input/alias premises; seven control-flow frontiers and complete loop ABI remain open |
+| [Scene command $82 subdispatch](schala_scene82_subdispatch_v1.md) | Independent p/q reads prove eight B0 targets; exact A/B/D/DBR and width returns, inherited near frame only; 31 tests | No parameter-source lifetime, memory-alias, whole-NMI or package-selector claim |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
@@ -100,16 +104,25 @@ their own byte/width contracts. A separate immutable-ROM/NMI experiment
 preserves its first pilot's rejected whole-fixture VBlank assumption.
 The calibration pair is now accepted, and a two-case calibrated pilot passed
 its actual hardware/RTI and complete WRAM contracts. The full 152-case pair
-remains under evaluation. Its first full run completed all records but four
-failed a sampled-clear timing assumption. A narrowly source-bound correction
-has passed independent review and 92 tests; two fresh repetitions are
-authorized, while the old run remains rejected history.
+now passes in two fresh unchanged-source runs with byte-identical traces.
+Its first full run completed all records but four failed a sampled-clear
+timing assumption. The reviewed correction keeps the generic 32-clock rule
+and accepts exactly 38 clocks only for the full source-owned original store/
+stack-read observation sequence. All 99 host tests and independent complete
+trace reconstruction pass; the old run remains rejected history. No native
+observation byte differs between the rejected and new traces after the
+explicit initial protocol-label substitution recorded in metadata.
 Mode-zero direct-call composition and the existing
 game trace's mode/scene register snapshots are separate completed gates.
 The scroll-input proof now follows the intervening callees before its bounded
 dispatch call. The scene-handler census separately narrows the remaining
-control-flow work to seven indirect frontiers; its 114 closed targets still
-need value/alias contracts before any global composition.
+control-flow work to seven indirect frontiers. The additive value packet
+proves the required B0/D0/DBR7E return for 111 closed targets, preserving
+three unresolved B results. A separate conditional proof closes command
+`$82`'s eight-way frontier without changing the historical census. The IRQ
+memory packet resolves ordinary CPU writes and symbolic register restores;
+DMA and complete game-NMI/stack ownership are still required before global
+composition or installation.
 
 No production hook, allocation, scratch ownership, high selector, Schala
 command or logical PC `$07` is approved. The

@@ -324,12 +324,33 @@ These are separate namespaces. Never conflate them.
   the explicit `$CD0907` cut have B0/D0/DBR7E and the exact near frame.
   The four scroll cells have conditional local stack contracts; `$CA92`
   values, the cut route and target-return values remain separate obligations.
+- The combined original-ROM/NMI helper proof now passes two identical
+  152-case traces with immutable ROM code/data, actual native interrupt
+  frames, RTI continuity and complete WRAM reconciliation. The declared
+  allocation/JSR/release/PLP/JML windows reach a 59-byte combined peak with
+  the original minimal handler. All 52 source/staged identities and 45
+  archived sources are checked. This is synthetic scope, not the game's
+  full NMI/IRQ, physical stack ownership or production integration. Preserve
+  the rejected earlier run and its narrowly source-owned 38-clock sampled
+  clear witness; the generic 32-clock rule remains unchanged.
 - The scene-handler conditional census covers the 122 reviewed B0 cells and
   121 distinct targets. A separately versioned decoder closes 114 targets;
   seven remain at indirect dispatches, including the shared `$B5/$B6` target.
   All closed returns have M1/X0/I1. The largest closed handler's 16 additional
   bytes are not a whole-dispatcher or NMI bound. B/D/DBR return values, legal
   domains and physical memory/stack aliases remain open in that packet.
+- The additive scene-return value model traverses all 114 closed targets
+  under B0/D0/DBR7E and M1/X0/I1, retaining all 65 previously supported
+  projections. It proves B0/D0/DBR7E returns for 111; `$CD1805`, `$CD19B1`
+  and `$CD2460` retain unresolved B values while D0/DBR7E remain proved.
+  This is conditional per-handler evidence, not a global scene-loop ABI.
+- The separate scene-command `$82` proof closes its eight subdispatch
+  targets from independent parameter reads. B0 gives X=2*(q>>5), while
+  the earlier count store uses (p&31)+1. Nonzero hidden B is preserved,
+  not silently truncated. All eight conditional targets return A0/B0/D0/
+  DBR7E and M1/X0/I1 with no stack beyond the inherited two-byte near frame.
+  This scene opcode is unrelated to a Schala action or package selector.
+  Memory aliases, producer lifetime and whole-NMI closure remain open.
 - The normal-NMI busy-flag fast path is statically proved for all four native
   M/X combinations with 13 bytes including its hardware frame. The separate
   ten-region census retains 44 original callee frontiers and explicit conditional
@@ -348,6 +369,14 @@ These are separate namespaces. Never conflate them.
   data-dependent DMA sources, the complete NMI tree, and global stack
   headroom remain unproved. The two apparent `$AAEB` writes in the old
   `$FD:E21B/$FD:E247` annotations are 16-bit immediate operands, not writes.
+- The additive IRQ memory/register model preserves symbolic A/B/X/Y/D/DBR
+  and exact typed frames across all four native initial M/X combinations.
+  Its 109 ordinary CPU-write contexts resolve to 298 physical WRAM bytes,
+  disjoint from the explicitly proposed helper stack, DP and publication
+  envelopes. The 35-byte IRQ depth composes to SP `$0681` only under the
+  declared `$06D8` helper-entry plan and alias assumptions. This proves no
+  physical stack ownership, DMA destination safety, NMI nesting, publication
+  reader isolation or global interrupt bound.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.

@@ -32,8 +32,11 @@ at the proposed pre-effect boundary.
 The separate [original-NMI proof](docs/schala_package_helper_v2_original_nmi.md)
 now passes two identical 224-case runs, including hardware-frame construction,
 RTI preservation and complete WRAM reconciliation. It interrupts the WRAM
-helper with an original minimal handler; the ROM-execution and preemption
-proofs still have separate scopes. The
+helper with an original minimal handler. The new
+[combined ROM/NMI proof](docs/schala_package_helper_v4_rom_nmi.md) joins those
+conditions in two identical 152-case runs: immutable ROM code/data, actual
+emulated NMI entry and RTI, a 59-byte combined peak, and complete WRAM checks.
+Its original minimal handler still leaves the full game interrupt tree open. The
 [source-only preflight planner](docs/schala_package_preflight_planner_v1.md)
 also passes review, preserving exact successful and refused action contexts.
 
@@ -64,13 +67,21 @@ The [native snapshot reuse](docs/schala_nmi_dispatch_witness_v1.md) connects
 stack/control-flow branch while locating the other's open scroll dispatcher.
 The separate [ROM timing calibration](docs/schala_package_helper_v4_timing_calibration.md)
 has two identical 22-case traces; its 92 inferred start times feed the
-combined ROM/NMI matrix, which is still under evaluation.
+accepted combined ROM/NMI matrix. The earlier rejected run and its exact
+sampled-clear timing correction remain preserved in the evidence history.
 The [scroll caller proof](docs/schala_nmi_scroll_inputs_v1.md) now checks the
 intervening callees before establishing B0/D0/DBR7E at its bounded call path.
 The [scene-handler census](docs/schala_scene_handler_closure_v1.md) closes
 114 of 121 distinct reviewed targets under typed-stack and register-width
-premises, leaving seven explicit indirect frontiers and all return-value
-and memory-alias obligations visible.
+premises, leaving seven explicit indirect frontiers. The additive
+[return-value audit](docs/schala_scene_handler_values_v1.md) proves B0/D0/DBR7E
+for 111 of those targets and retains three unresolved B returns. The separate
+[scene command $82 proof](docs/schala_scene82_subdispatch_v1.md) closes its
+eight-way dispatch under explicit input and memory-alias premises.
+The [IRQ memory contract](docs/schala_package_irq_memory_contract_v2.md)
+also resolves all ordinary CPU writes in the reviewed IRQ and its saved
+registers across all four native width combinations. DMA and full-game NMI
+ownership remain separate work.
 No game hook, production allocation, high production selector or logical PC
 `$07` is installed. Original cartridge tests and vanilla observations have
 separate evidence scopes.

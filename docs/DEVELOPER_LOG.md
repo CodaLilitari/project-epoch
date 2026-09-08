@@ -1010,3 +1010,90 @@ Authenticated commit/branch/remote-ref agreement and all 20 changed-file byte
 strings were verified. Active work is the fresh combined ROM/NMI pair,
 scene-handler return values and a separately reviewed IRQ memory/register
 contract. No production catalog, high binding or PC `$07` claim is promoted.
+
+## 2026-09-08 - combined ROM/NMI acceptance and conditional memory/value proofs
+
+**Status:** four additive packets independently accepted. The
+[combined original-ROM/NMI proof](schala_package_helper_v4_rom_nmi.md)
+passes two fresh 152-case Mesen runs. Each exact trace is 217,544,660 bytes,
+SHA-256 `9752443839e73d8cdb29e6096f41838ffb4091372b5fd910209cb0a74ab19c6e`.
+The immutable ROM helper, registry and descriptor inputs remain unchanged.
+Across each run, the validator checks 218,732 retained events, 119,960 helper/
+terminal execution observations, 608 hardware stack writes, 304 actual vector
+reads, 152 minimal-handler counter increments and complete WRAM reconciliation.
+The named allocation, first-JSR, release, PLP and JML boundaries include
+canonical, refused and successful routes. The observed combined peak is 59
+bytes, including the original minimal handler, under the two declared entry
+SPs. This is not the game's full interrupt handler or a global stack bound.
+
+The correction permits exactly four 38-clock sampled-clear observations only
+when the entire pinned original instruction/memory/CPU sequence agrees. The
+generic 32-clock condition remains intact. The exact first rejected trace is
+preserved, along with its source archive and mandatory rejection receipt.
+An explicit initial-header-only protocol substitution reproduces the new
+trace hash while retaining every other byte. That comparison documents the
+correction transparently; it does not retroactively accept the old protocol.
+The two earlier pilots, metadata draft and original paused handoff remain
+separately pinned history. No raw trace or cartridge enters source control.
+
+Root independently read the final collector and tests, passed all 99 tests,
+and reconstructed both complete native records, archives, staged inputs and
+source identities through a separate actual CLI. The exact 523,168-byte
+public reference reproduces with empty stderr, SHA-256
+`62eb9deae8cd960c05f8732d308cfc862b59e4daf3a233e64043ec4ce9ad6e01`.
+All 52 guarded source/staged identities and 45 archived sources are checked.
+The accepted calibration report remains frozen; this entry records its
+later successful use without changing native prerequisites.
+
+The [IRQ memory/register contract](schala_package_irq_memory_contract_v2.md)
+reuses the accepted control-flow census and traces all four symbolic native
+M/X entry combinations. It proves exact saved A/B/X/Y/D/DBR and typed-frame
+restoration, and resolves 109 ordinary CPU-write contexts to 298 physical
+WRAM bytes, including nine complete 30-byte MVN footprints. These writes are
+disjoint from the explicitly proposed helper stack, direct-page and
+publication ranges. Under the planning entry SP $06D8 and 52-byte helper
+contribution, its 35-byte IRQ depth reaches SP $0681; this arithmetic does
+not reserve that space or establish a game-wide ownership floor.
+
+Both independent reviewers passed 49 tests and reproduced the 84,558-byte
+reference exactly, SHA-256
+`6a6cc3ac65cc2e9ae5d5fe92a313a7a716f31cdbc1256fc18d38a4731eaadc31`.
+Original negative specimens also reject bank-mirror word aliases, MVN writes
+into live frames and protected initial hardware-frame overlap. A pre-review
+metadata/decoder hardening and Windows LF-stdout correction remain preserved
+as draft history. DMA register writes are inventoried but their effects are
+not claimed by this packet.
+
+The [scene return-value audit](schala_scene_handler_values_v1.md) applies a
+separate, source-pinned extension of the conservative value model to all
+114 already control-flow-closed targets. Its 65 earlier supported projections
+remain identical. All 114 return D0/DBR7E; 111 also return B0. The three roots
+$CD1805, $CD19B1 and $CD2460 retain unresolved B values. No guessed branch
+condition is used to close them. Author, root and a second reviewer passed
+43 tests, and two actual CLI processes reproduce the 376,981-byte reference
+with empty stderr, SHA-256
+`cb99bfff13c319a7ec67742eeed1ab0fee0827799ec80b89cce2f3dd668af543`.
+This is conditional per-handler evidence, not a whole command-loop invariant.
+
+The [scene command $82 subdispatch](schala_scene82_subdispatch_v1.md) is
+separate from Schala action IDs and package selectors. Its two parameter
+reads remain independent: the first supplies count (p&31)+1; with B0 the
+second supplies index 2*(q>>5). Exhaustive original byte-input checks retain
+the hidden high accumulator byte when nonzero. All eight canonical target
+words select individually closed near-return bodies, each returning
+A0/B0/D0/DBR7E and M1/X0/I1 with no extra stack beyond the inherited two-byte
+frame. This conditionally resolves one historical indirect frontier without
+rewriting the original seven-frontier census. Memory-source/alias premises
+remain explicit. Both reviewers passed 31 tests, and two actual CLI outputs
+reproduce the 49,712-byte reference exactly, SHA-256
+`b7e3144a800512e8e6391b72c9bc733b33240e0cc0a88e57092e2e13af0c0dfc`.
+
+**Publication and resume:** the preceding scroll/census checkpoint is
+[`6d13aac03f6228854de08af14da5b238c5d53dcb`](https://github.com/andreipemberton/project-epoch/commit/6d13aac03f6228854de08af14da5b238c5d53dcb).
+Authenticated commit/branch/remote-ref agreement and all 14 changed-file
+byte strings were verified. Continue the separate manual-DMA destination
+contract, narrow return-value branch refinement and remaining indirect
+scene paths. Full normal-game NMI closure, physical stack ownership,
+publication-reader isolation and native preflight-rejection cleanup remain
+required. The overall gate stays BA-NATIVE-INTEGRATION-DESIGN, with empty
+production hook/allocation catalogs and unbound high production selectors.

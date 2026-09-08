@@ -1020,6 +1020,83 @@
           "sha256": "e84739ef37b32812491b9166bf1f706a8d3490a3bf1810b3a4296c5305f47e20"
         }
       ]
+    },
+    {
+      "commit": "6d13aac03f6228854de08af14da5b238c5d53dcb",
+      "verified_at_utc": "2026-09-08T20:33:54.310005+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 36784,
+          "sha256": "2b52a77237a11f7c11d23a9481faf3ab57fa64633ec540c5781cbdb8ceada127"
+        },
+        {
+          "path": "README.md",
+          "size": 50494,
+          "sha256": "a751ef444eec32407e8e03d2620b1f4ee0f8da1f152fe6ec78bb8331daf0f1c2"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 65145,
+          "sha256": "62a977cf182bd6dcacb2aea2c598ff2fe7de4e19a877252e8a7ba1e1b938485b"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 200846,
+          "sha256": "4d9ff49fe7707e8775f9824683fdb7c5ce1d446ca788271248dafbb902aaa6ea"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 9020,
+          "sha256": "951afac090e3dcede55d5aefb950422c3d8c7d79a7cca9ef43e72894d8bf37a1"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 39666,
+          "sha256": "163d4cfa1401fdb9cb9dbf37cdff3b738d4ba58dcfe978c8ec5f6277799bd389"
+        },
+        {
+          "path": "tools/audit_schala_nmi_scroll_inputs_v1.py",
+          "size": 19678,
+          "sha256": "4153a240d3a1fa750dd0ac67626776e061ceb049f03b9fce54fc08da8e31c686"
+        },
+        {
+          "path": "tests/test_schala_nmi_scroll_inputs_v1.py",
+          "size": 9965,
+          "sha256": "f4083eb152d606a39511a011e7454384c237f3ece149d786202bd718c328a3c9"
+        },
+        {
+          "path": "docs/schala_nmi_scroll_inputs_v1.md",
+          "size": 13770,
+          "sha256": "88a9e935e993e609e066f7a3cfed93f484b8708c4c82068f269758953d4cf90d"
+        },
+        {
+          "path": "references/schala_nmi_scroll_inputs_v1.json",
+          "size": 87273,
+          "sha256": "003bf6be7e686445a8aa0a7bddf36bd8ca35b2fb49aa4d184ec5f3bc15db8013"
+        },
+        {
+          "path": "tools/audit_schala_scene_handler_closure_v1.py",
+          "size": 24705,
+          "sha256": "2c8de06dea25a35971143bf6a8c868aea1996a6ab6a8de26fa4b5a12c9ade71d"
+        },
+        {
+          "path": "tests/test_schala_scene_handler_closure_v1.py",
+          "size": 9821,
+          "sha256": "89b50ffd56f3fdc9aa528fd14c563281226421d10140c92a7d4483aa727357da"
+        },
+        {
+          "path": "docs/schala_scene_handler_closure_v1.md",
+          "size": 9152,
+          "sha256": "2a4b8a4825900043629340b09abed44c5232c353646b73411c20ae40f8771e5f"
+        },
+        {
+          "path": "references/schala_scene_handler_closure_v1.json",
+          "size": 1029264,
+          "sha256": "ac44bd733e1b6f4dffd91887e5ac42738a57ace78a8583c5ff9c5bf2e602a43a"
+        }
+      ]
     }
   ]
 }

@@ -123,6 +123,17 @@ closed for this session.
   second run is still active. IRQ CPU-write/register analysis and scene-return
   values are proceeding as separate packets with their own review gates.
 
+
+- 20:53 UTC: independently accepted both corrected 152-case ROM/NMI runs
+  after complete trace and source reconstruction; all 99 related host tests
+  pass. The IRQ CPU-memory/register packet (49 tests), scene-return values
+  (43 tests) and conditional scene-command $82 dispatch (31 tests) also pass
+  root and independent peer review, with exact CLI reference reproduction.
+  The DMA-destination draft remains under correction after review found an
+  unmodeled mirrored hardware-register write in an original host specimen;
+  the canonical game path is unchanged. The three-hour extension remains
+  active through 23:58:41 UTC.
+
 ## Gates and evidence boundaries
 
 The overall gate is `BA-NATIVE-INTEGRATION-DESIGN`. A source design, host
