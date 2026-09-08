@@ -2,7 +2,32 @@
 
 This workspace resumes the Chrono Trigger playable eighth-character investigation recovered from the ChatGPT conversation **Chrono Trigger 8th Character**.
 
-## Latest developer update — 2026-09-08
+Start with the [human-readable developer log](docs/DEVELOPER_LOG.md), the
+[correction register with exact source citations](docs/DATA_MAPPING_CORRECTIONS.md),
+and the [current developer guide](docs/schala_eighth_character_developer_guide.md).
+Historical checkpoints preserve the bytes and evidence available when made;
+the latest log entry identifies the current resume boundary.
+
+## Latest integration update — 2026-09-08
+
+The original helper milestone is published in commit
+[`9f14ae7`](https://github.com/andreipemberton/project-epoch/commit/9f14ae7f407ce783ada02b996db4e0955a5a5918).
+The next live integration work now has a bounded ordinary-game baseline:
+two fresh Mesen observations of the unchanged canonical ROM produce identical
+traces for one primary PC type-2 package invocation and its later action
+completion. The observed stack/return chain and eighteen ordered publication
+bytes agree with the model. See the
+[read-only observation and reproduction](docs/schala_package_resolver_observation_v0.md).
+
+The [resolver design](docs/schala_package_resolver_integration_design_v0.md)
+and [placement/interrupt review](docs/schala_package_placement_interrupt_review_v0.md)
+identify a separate cancellation contract, known vanilla use of synthetic
+scratch `$7E4000`, and five named candidate expanded spans. These are design
+results: no hook, allocation, scratch ownership, ROM-source reader, or high
+production selector is approved. `BA-NATIVE-INTEGRATION-DESIGN` remains open;
+the completed primary observation must not be repeated as though still missing.
+
+## Earlier native helper update — 2026-09-08
 
 `BA-NATIVE-HELPER-CONFORMANCE` now passes as `complete-native-synthetic`.
 The original 537-byte 65C816 package helper executes in an isolated Mesen

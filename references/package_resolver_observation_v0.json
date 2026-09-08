@@ -1,0 +1,630 @@
+{
+  "canonical_static_spans_independently_reverified": [
+    {
+      "end_bus_exclusive": "C1409C",
+      "evidence_level": "verified-static",
+      "sha256": "44120c3dc47c4c65db83c27ca3306f6a948a65d0d4535aee824eed9082e72872",
+      "size": 12,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14090"
+    },
+    {
+      "end_bus_exclusive": "C140ED",
+      "evidence_level": "verified-static",
+      "sha256": "2adb6b1ad231dc5bd91cabd37e48b3f64e31803c2913360be64aa378f33ed4bf",
+      "size": 64,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C140AD"
+    },
+    {
+      "end_bus_exclusive": "C1432C",
+      "evidence_level": "verified-static",
+      "sha256": "797fef4227ddc1fdf7225d7e39bb52d5c9cb9e24ebe4d57b67122aa3db727e37",
+      "size": 28,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14310"
+    },
+    {
+      "end_bus_exclusive": "C14612",
+      "evidence_level": "verified-static",
+      "sha256": "e4792a2406f40aed51cd3f68d5463bd4c53ec2acf4bdc63293fed09b1250c1f0",
+      "size": 114,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C145A0"
+    },
+    {
+      "end_bus_exclusive": "C14616",
+      "evidence_level": "verified-static",
+      "sha256": "de49003154a89c179eab719b3741a288e7f53742ff31e29bc446923aa2cbd2ac",
+      "size": 4,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14612"
+    },
+    {
+      "end_bus_exclusive": "C14682",
+      "evidence_level": "verified-static",
+      "sha256": "a68be4a9dfa59349976827ca080eec58a5057e8144c5ba18a4609bceae291968",
+      "size": 112,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14612"
+    },
+    {
+      "end_bus_exclusive": "C148EC",
+      "evidence_level": "verified-static",
+      "sha256": "640f3fc03f7287806cca4b0ea552f6d74033c78da2b71e7e9b95e1f98ba35f58",
+      "size": 185,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14833"
+    },
+    {
+      "end_bus_exclusive": "C14C9E",
+      "evidence_level": "verified-static",
+      "sha256": "d65a749d8401c79fae00a9ba24b85ea0b1e83246a06448735339834e0747945e",
+      "size": 224,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14BBE"
+    },
+    {
+      "end_bus_exclusive": "C14CF0",
+      "evidence_level": "verified-static",
+      "sha256": "f9eee9ad39ebab931c5a65d55bbff45585670770b528be2f10d65e9cc7dab561",
+      "size": 82,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14C9E"
+    },
+    {
+      "end_bus_exclusive": "C14D04",
+      "evidence_level": "verified-static",
+      "sha256": "5e3e65e7fc683da6fa456fbe499b2cab80825745a86db42c2f5b3ec82aa7cc7c",
+      "size": 20,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C14CF0"
+    },
+    {
+      "end_bus_exclusive": "C17A6B",
+      "evidence_level": "verified-static",
+      "sha256": "e5a449366a0a43d8946ada789564a45409e824c2e88b9603ceafaf6b0239ce47",
+      "size": 8,
+      "source_document": "docs/schala_package_resolver_integration_design_v0.md",
+      "start_bus": "C17A63"
+    },
+    {
+      "end_bus_exclusive": "C0FF18",
+      "evidence_level": "verified-static",
+      "sha256": "f3288e3ad2ccd368f44986d97c03a675641cdf43e7fd8a4b7bcbd886f6464f09",
+      "size": 8,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "C0FF10"
+    },
+    {
+      "end_bus_exclusive": "D1F1D7",
+      "evidence_level": "verified-static",
+      "sha256": "e44fbe1c3ced6fd6730f1c09bfab3e2220cd022777d80f64493202e43d70b21e",
+      "size": 39,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "D1F1B0"
+    },
+    {
+      "end_bus_exclusive": "D1E7CC",
+      "evidence_level": "verified-static",
+      "sha256": "0ee3b242e1811ef61c9402abe32a50c0a6fb6b0461bb4c3c72e7e624cc874ea3",
+      "size": 80,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "D1E77C"
+    },
+    {
+      "end_bus_exclusive": "D1E899",
+      "evidence_level": "verified-static",
+      "sha256": "3506d00fa4aa18ee5c9c49efc33ee2aa5253a0571cf0bbf77270eb176e5237dd",
+      "size": 31,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "D1E87A"
+    },
+    {
+      "end_bus_exclusive": "D1FEF4",
+      "evidence_level": "verified-static",
+      "sha256": "cc06d1d9a49444be184db23bce01e1552c68497b288589d9f3d6475308942633",
+      "size": 93,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "D1FE97"
+    },
+    {
+      "end_bus_exclusive": "D1F4F5",
+      "evidence_level": "verified-static",
+      "sha256": "79a16c51f1a3a18a4203b76372c66956a4a11645ba644b9324f697a0a491f883",
+      "size": 53,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "D1F4C0"
+    },
+    {
+      "end_bus_exclusive": "D1F559",
+      "evidence_level": "verified-static",
+      "sha256": "210a63f913857e3046eeb3f40b5d09f3ef8f0776c926081ae5f1b9e3c74178ea",
+      "size": 8,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "D1F551"
+    },
+    {
+      "end_bus_exclusive": "C29B4C",
+      "evidence_level": "verified-static",
+      "sha256": "338a80c89593f32eeeb4c666e399c60eeb8ef6605dd1326f52c3a75ab4c95395",
+      "size": 12,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "C29B40"
+    },
+    {
+      "end_bus_exclusive": "C22997",
+      "evidence_level": "verified-static",
+      "sha256": "f014459c9a5df222b1f0e19e97b43d048e76d48169f7a1ba48697381e180e0a9",
+      "size": 11,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "C2298C"
+    },
+    {
+      "end_bus_exclusive": "FDC008",
+      "evidence_level": "verified-static",
+      "sha256": "2a6477619775f64770cf7050c5801f42470de5649cb17081a0d40c746792eca0",
+      "size": 8,
+      "source_document": "docs/schala_package_placement_interrupt_review_v0.md",
+      "start_bus": "FDC000"
+    }
+  ],
+  "date": "2026-09-08",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "one ordinary canonical PC type2 primary invocation and its completion, independently repeated; no helper installed",
+  "exploratory_history": [
+    {
+      "directory": "private/test_runs/resolver_observation_20260908_exploratory1",
+      "result": "missed PC resolver; omitted explicit controller setting; not acceptance evidence"
+    },
+    {
+      "directory": "private/test_runs/resolver_observation_20260908_exploratory2",
+      "result": "entry/publications/returns observed but PC not complete by600polls"
+    },
+    {
+      "directory": "private/test_runs/resolver_observation_20260908_exploratory3",
+      "result": "full1200poll observation; exploratory predecessor to final independent pair"
+    }
+  ],
+  "independent_review": {
+    "entry_and_tail_cpu_and_eight_stack_bytes_match": true,
+    "next_action_producer_input_poll": 1133,
+    "ordered_publication_bytes_match_host_model": 18,
+    "paired_completion_input_polls": [
+      991,
+      992
+    ],
+    "selected_owner_indices": [
+      0,
+      3,
+      4
+    ],
+    "wrong_prior_enemy_completion_not_used": true
+  },
+  "input_schedule": {
+    "a_inclusive": [
+      [
+        60,
+        63
+      ],
+      [
+        100,
+        103
+      ],
+      [
+        140,
+        143
+      ]
+    ],
+    "basis": "relative inputPolled callback index, not cycle/video-frame timing",
+    "controller": "SnesController",
+    "down_inclusive": [
+      20,
+      23
+    ],
+    "other_buttons": false,
+    "terminal_poll": 1200
+  },
+  "private_input_identities": {
+    "rom": {
+      "path": "private/input/rom_archive/Chrono Trigger (USA).sfc",
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+      "size": 4194304
+    },
+    "sram": {
+      "path": "private/input/lavos_save/chrono_trigger.srm",
+      "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+      "size": 8192
+    },
+    "state": {
+      "path": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v17/battle_ready.mss",
+      "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b",
+      "size": 261614
+    }
+  },
+  "raw_traces_identical": true,
+  "remaining": [
+    "alternate branch ordinary context",
+    "safe refusal and action cancellation",
+    "expanded-ROM source-reader conformance",
+    "approved code/data allocations",
+    "scratch and interrupt ownership",
+    "high-selector integration",
+    "logical PC07 playability"
+  ],
+  "reproduction_notes": [
+    "Use fresh private directories for both run commands; require all observation booleans and unchanged input hashes",
+    "Compare exact raw trace SHA256 values; summarize each trace with the tracked runner",
+    "Reproduce static span hashes by requiring canonical full-ROM SHA256 then slicing headerless HiROM offsets bus_address & 0x3FFFFF",
+    "See docs/schala_package_resolver_observation_v0.md for independent ordered-word publication comparison and completion attribution"
+  ],
+  "runs": [
+    {
+      "all_private_artifacts": [
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/manifest.json",
+          "sha256": "009e819eb029f632fef1881a84c4f48f3b82b7f006c75cc884484c06570606c9",
+          "size": 3041
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/process.log",
+          "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59",
+          "size": 1340346
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Debugger/pe_resolver_3dab527036151e40312959b3.cdl",
+          "sha256": "1afb1d7e71c37a402c223ddccb95caeb7eb06e0678e4a215cd198c818c8f76d9",
+          "size": 4194313
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/libHarfBuzzSharp.dll",
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "size": 1804872
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/libSkiaSharp.dll",
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "size": 9414216
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Mesen.exe",
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "size": 70470144
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/MesenCore.dll",
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "size": 7143424
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/MesenNesDB.txt",
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "size": 559118
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Satellaview/BSX0120-0.bin",
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Satellaview/BSX0121-0.bin",
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Satellaview/BSX0122-0.bin",
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7",
+          "size": 1031
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Satellaview/BSX0123-0.bin",
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590",
+          "size": 16
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Satellaview/BSX0124-0.bin",
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1",
+          "size": 97
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/Saves/pe_resolver_3dab527036151e40312959b3.srm",
+          "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+          "size": 8192
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/app/settings.json",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "size": 3
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/collector.lua",
+          "sha256": "fa94aeedf92d58900b42511f74be1f2f771c554775707598dc9cf18f0506691d",
+          "size": 5560
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/pe_resolver_3dab527036151e40312959b3.mss",
+          "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b",
+          "size": 261614
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/pe_resolver_3dab527036151e40312959b3.sfc",
+          "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+          "size": 4194304
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/staged/profile/Documents/desktop.ini",
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274",
+          "size": 418
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final1/trace.json",
+          "sha256": "699776cf0d3c69fe13f7fbd7eb9240e47b56cc651395ac53cf15253c73b25190",
+          "size": 836752
+        }
+      ],
+      "manifest": {
+        "path": "private/test_runs/resolver_observation_20260908_final1/manifest.json",
+        "sha256": "009e819eb029f632fef1881a84c4f48f3b82b7f006c75cc884484c06570606c9",
+        "size": 3041
+      },
+      "observations": {
+        "all_entry_return_frames_match": true,
+        "entry_abi_matches_static_contract": true,
+        "entry_stack_pointers": [
+          1752
+        ],
+        "event_counts": {
+          "baseline": 1,
+          "branch-producer-complete": 2,
+          "caller-effect-latch": 2,
+          "caller-package-latch": 858,
+          "caller-resume": 858,
+          "common-loader-entry": 2,
+          "common-loader-rts": 2,
+          "dispatcher-rts": 2,
+          "latch-write": 14,
+          "menu-observation": 4,
+          "publication-write": 18,
+          "resolver-entry": 1,
+          "resolver-tail": 1,
+          "sync-command-increment": 2,
+          "terminal": 1,
+          "terminal-command-clear": 6
+        },
+        "observed_branch_words": [
+          0
+        ],
+        "paired_pc_action_completion_observed": true,
+        "paired_return_chain_matches_static_contract": true,
+        "record_count": 1774,
+        "resolver_invocations": 1,
+        "resolver_observed": true
+      },
+      "reproduce": [
+        "python",
+        "-B",
+        "tools/run_package_resolver_observation_v0.py",
+        "--output-dir",
+        "private/test_runs/resolver_observation_NEW"
+      ],
+      "role": "final1",
+      "source_hashes": {
+        "collector": "fa94aeedf92d58900b42511f74be1f2f771c554775707598dc9cf18f0506691d",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "e62eb4af54600a34524316a2b19f020a39ed8a631c9fa26bd635c9b962d1f1f9",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_observation_20260908_final1/trace.json",
+        "sha256": "699776cf0d3c69fe13f7fbd7eb9240e47b56cc651395ac53cf15253c73b25190",
+        "size": 836752
+      }
+    },
+    {
+      "all_private_artifacts": [
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/manifest.json",
+          "sha256": "009e819eb029f632fef1881a84c4f48f3b82b7f006c75cc884484c06570606c9",
+          "size": 3041
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/process.log",
+          "sha256": "20e22f38479eea6ca67ce92de3bd3ca8d92be15e63ccdfb84916d5ba328ead59",
+          "size": 1340346
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Debugger/pe_resolver_d7635ddd18f61a4f711cdc72.cdl",
+          "sha256": "1afb1d7e71c37a402c223ddccb95caeb7eb06e0678e4a215cd198c818c8f76d9",
+          "size": 4194313
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/libHarfBuzzSharp.dll",
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+          "size": 1804872
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/libSkiaSharp.dll",
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+          "size": 9414216
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Mesen.exe",
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+          "size": 70470144
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/MesenCore.dll",
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+          "size": 7143424
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/MesenNesDB.txt",
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+          "size": 559118
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Satellaview/BSX0120-0.bin",
+          "sha256": "ba0c17b5786724959bc206714fc18f708c16fdcd77f8fb19aaf9768338e3ce01",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Satellaview/BSX0121-0.bin",
+          "sha256": "fbe51a53638dd366b50ea53adf92f54447667d7767c502e508d89b008e31c53f",
+          "size": 34
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Satellaview/BSX0122-0.bin",
+          "sha256": "a0329450e1d42cd18d30070a86e0e481a876cb5c9cfbaab4a0d8895150976ee7",
+          "size": 1031
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Satellaview/BSX0123-0.bin",
+          "sha256": "dbf5ef12ce586712ee666fc5805e6dfcaa1e253fdd36644f773909514868a590",
+          "size": 16
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Satellaview/BSX0124-0.bin",
+          "sha256": "4d7d7bf5afe5c4f71b96965e58003816c70c13e8af9b581431504d5e52a0cec1",
+          "size": 97
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/Saves/pe_resolver_d7635ddd18f61a4f711cdc72.srm",
+          "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+          "size": 8192
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/app/settings.json",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+          "size": 3
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/collector.lua",
+          "sha256": "fa94aeedf92d58900b42511f74be1f2f771c554775707598dc9cf18f0506691d",
+          "size": 5560
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/pe_resolver_d7635ddd18f61a4f711cdc72.mss",
+          "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b",
+          "size": 261614
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/pe_resolver_d7635ddd18f61a4f711cdc72.sfc",
+          "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+          "size": 4194304
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/staged/profile/Documents/desktop.ini",
+          "sha256": "954b525be189a7fee40084bce8a1d9380280d109d64695e0c09b940c708aa274",
+          "size": 418
+        },
+        {
+          "path": "private/test_runs/resolver_observation_20260908_final2/trace.json",
+          "sha256": "699776cf0d3c69fe13f7fbd7eb9240e47b56cc651395ac53cf15253c73b25190",
+          "size": 836752
+        }
+      ],
+      "manifest": {
+        "path": "private/test_runs/resolver_observation_20260908_final2/manifest.json",
+        "sha256": "009e819eb029f632fef1881a84c4f48f3b82b7f006c75cc884484c06570606c9",
+        "size": 3041
+      },
+      "observations": {
+        "all_entry_return_frames_match": true,
+        "entry_abi_matches_static_contract": true,
+        "entry_stack_pointers": [
+          1752
+        ],
+        "event_counts": {
+          "baseline": 1,
+          "branch-producer-complete": 2,
+          "caller-effect-latch": 2,
+          "caller-package-latch": 858,
+          "caller-resume": 858,
+          "common-loader-entry": 2,
+          "common-loader-rts": 2,
+          "dispatcher-rts": 2,
+          "latch-write": 14,
+          "menu-observation": 4,
+          "publication-write": 18,
+          "resolver-entry": 1,
+          "resolver-tail": 1,
+          "sync-command-increment": 2,
+          "terminal": 1,
+          "terminal-command-clear": 6
+        },
+        "observed_branch_words": [
+          0
+        ],
+        "paired_pc_action_completion_observed": true,
+        "paired_return_chain_matches_static_contract": true,
+        "record_count": 1774,
+        "resolver_invocations": 1,
+        "resolver_observed": true
+      },
+      "reproduce": [
+        "python",
+        "-B",
+        "tools/run_package_resolver_observation_v0.py",
+        "--output-dir",
+        "private/test_runs/resolver_observation_NEW"
+      ],
+      "role": "final2",
+      "source_hashes": {
+        "collector": "fa94aeedf92d58900b42511f74be1f2f771c554775707598dc9cf18f0506691d",
+        "harfbuzz": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d",
+        "isolation_library": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+        "launcher": "e62eb4af54600a34524316a2b19f020a39ed8a631c9fa26bd635c9b962d1f1f9",
+        "mesen": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b",
+        "mesen_core": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74",
+        "nesdb": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307",
+        "rom": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+        "settings": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+        "skia": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd",
+        "sram": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203",
+        "state": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+      },
+      "trace": {
+        "path": "private/test_runs/resolver_observation_20260908_final2/trace.json",
+        "sha256": "699776cf0d3c69fe13f7fbd7eb9240e47b56cc651395ac53cf15253c73b25190",
+        "size": 836752
+      }
+    }
+  ],
+  "schema": "project-epoch-package-resolver-observation-evidence-v0",
+  "source_files": [
+    {
+      "path": "tools/run_package_resolver_observation_v0.py",
+      "sha256": "e62eb4af54600a34524316a2b19f020a39ed8a631c9fa26bd635c9b962d1f1f9",
+      "size": 8576
+    },
+    {
+      "path": "tools/mesen_package_resolver_observation_v0.lua",
+      "sha256": "fa94aeedf92d58900b42511f74be1f2f771c554775707598dc9cf18f0506691d",
+      "size": 5560
+    },
+    {
+      "path": "tests/test_package_resolver_observation_v0.py",
+      "sha256": "00e3554737ffdb8de9ae69f22b024bf6bfcb7b4513e5fe1a9525168f068c1af2",
+      "size": 13155
+    },
+    {
+      "path": "tools/audit_schala_player_tech_package_bank_adapter_v0.py",
+      "sha256": "3ea222fdcc45028a174989769fa726a04a09506b5b65d071bceed855d60774f3",
+      "size": 35887
+    },
+    {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96",
+      "size": 55200
+    }
+  ],
+  "status": "complete-bounded-primary-observation"
+}

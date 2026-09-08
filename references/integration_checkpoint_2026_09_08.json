@@ -1,0 +1,168 @@
+{
+  "artifact_identity": {
+    "canonical_json_sha256_excluding_artifact_identity": "89aacf261519e7ee7f591e069b78af33a60aca3fb93e3dec83f7ecba222494ac"
+  },
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "56f60eedc5fc6e65c306598744ace65dc5160135764b12d920e48601bef5985c",
+      "size": 23408
+    },
+    {
+      "path": "README.md",
+      "sha256": "e990747f6a9d394fbc3506a1054565a6dbe876a994fd80a6eed4ff73b6358e9d",
+      "size": 46821
+    },
+    {
+      "path": "docs/DEVELOPER_LOG.md",
+      "sha256": "d6fad370609fc1bab356f5e9ff3bcac17aa8b598704dd8aa7f89a43ed2a04e9d",
+      "size": 18520
+    },
+    {
+      "path": "docs/DATA_MAPPING_CORRECTIONS.md",
+      "sha256": "5f594fe4868d720bb4e8d4000e1e3c8cd4be487b4520606aa4dcd343b0c5ebd4",
+      "size": 15618
+    },
+    {
+      "path": "docs/schala_eighth_character_developer_guide.md",
+      "sha256": "fb6c33f3c316d61ac6b0d905fc0aca03a7d4f983a9caf90eb4c41d94b5600f94",
+      "size": 189900
+    },
+    {
+      "path": "docs/schala_rom_expansion_architecture.md",
+      "sha256": "e00c691d3503d6bfd7fcbe7c17c2580b2f0af7e4c1629e9e1f325343d71da295",
+      "size": 13903
+    },
+    {
+      "path": "docs/schala_package_resolver_integration_design_v0.md",
+      "sha256": "e835b40519c872464ce96222eade762f4f919207f71ad41767eacfd94de7978b",
+      "size": 15847
+    },
+    {
+      "path": "docs/schala_package_placement_interrupt_review_v0.md",
+      "sha256": "efb089ad6cd3ca5925867f92e0babf278a256c0358bafb9597c109f571b6bbfd",
+      "size": 16807
+    },
+    {
+      "path": "docs/schala_package_resolver_observation_v0.md",
+      "sha256": "827ea0aad6f0c6915ef99b9c64ec4e705027efcb665b65b5d64e653f1ec8d73d",
+      "size": 8741
+    },
+    {
+      "path": "tools/run_package_resolver_observation_v0.py",
+      "sha256": "e62eb4af54600a34524316a2b19f020a39ed8a631c9fa26bd635c9b962d1f1f9",
+      "size": 8576
+    },
+    {
+      "path": "tools/mesen_package_resolver_observation_v0.lua",
+      "sha256": "fa94aeedf92d58900b42511f74be1f2f771c554775707598dc9cf18f0506691d",
+      "size": 5560
+    },
+    {
+      "path": "tests/test_package_resolver_observation_v0.py",
+      "sha256": "00e3554737ffdb8de9ae69f22b024bf6bfcb7b4513e5fe1a9525168f068c1af2",
+      "size": 13155
+    },
+    {
+      "path": "references/package_resolver_observation_v0.json",
+      "sha256": "a9685b37bb3cc13e61593730ff74fa5f0288b4dc00572c756559e388915ef1c1",
+      "size": 25890
+    },
+    {
+      "path": "references/native_helper_checkpoint_2026_09_08.json",
+      "sha256": "974e13134df6ede3e938d4e00a8914579d57215fa25863c0e63863e86aa5dbd7",
+      "size": 8562
+    },
+    {
+      "path": "references/schala_package_helper_conformance_v0.json",
+      "sha256": "492dfbb054ac2bc55253864a28fdbe9217bcb82553983133583da4b84698810e",
+      "size": 27081
+    }
+  ],
+  "as_of": "2026-09-08T14:51:16.785067+00:00",
+  "baseline_commit": "9f14ae7f407ce783ada02b996db4e0955a5a5918",
+  "completed_scope": "one canonical ordinary PC type2 primary invocation and completion, two exact fresh replays",
+  "corrections": [
+    "MAP-001 physical extent versus native X",
+    "MAP-002 endpoint notation",
+    "MAP-003 growth versus base/live stat order and own overbroad criticism",
+    "MAP-004 upstream sparse-position concern superseded",
+    "MAP-005 thirteen possible active-owner checks",
+    "MAP-006 JSL/RTL versus retained-frame JML tail transfers"
+  ],
+  "github_access_observation": {
+    "anonymous_commit_pinned_raw_readme_status": 404,
+    "anonymous_public_mesen_api_control_status": 200,
+    "anonymous_repo_api_status": 404,
+    "anonymous_repo_page_status": 404,
+    "authenticated_permission": "ADMIN",
+    "authenticated_visibility": "PUBLIC",
+    "cause": "unresolved; no inference from404 alone",
+    "first_milestone_push_verified": true
+  },
+  "latest_completed_gate": "BA-LIVE-RESOLVER-PRIMARY-OBSERVATION",
+  "next_work": [
+    "Define exact refusal/action-cancellation state, cleanup writes and bank-correct return",
+    "Prove a separately versioned expanded-ROM source reader",
+    "Capture ordinary alternate branch in its own real action context",
+    "Resolve scratch/interrupt ownership before hook/allocation promotion"
+  ],
+  "parent_gate": "BA-NATIVE-INTEGRATION-DESIGN",
+  "parent_gate_status": "in-progress",
+  "prior_reference_lf_publication_conversion": {
+    "historical_checkpoints_retained": true,
+    "json_values_and_internal_evidence_hashes_unchanged": true,
+    "local_crlf_sha256": "cc89531d1794edd8482988938ab6c4ae250f7cc743d5c76d9ac5ed0e30b2d2c8",
+    "path": "references/schala_package_helper_conformance_v0.json",
+    "published_lf_sha256": "492dfbb054ac2bc55253864a28fdbe9217bcb82553983133583da4b84698810e"
+  },
+  "production_state": {
+    "allocations_approved": false,
+    "high_selectors_bound": false,
+    "hooks_installed": false,
+    "interrupt_policy_approved": false,
+    "pc07_playability_proved": false,
+    "scratch_approved": false
+  },
+  "reproduction": [
+    "Follow docs/schala_package_resolver_observation_v0.md for two fresh private replays and exact observation checks",
+    "python -B -m unittest discover -s tests",
+    "Verify each bound source/document/private-evidence file by length and SHA256",
+    "Historical checkpoints identify observation-time bytes; later living-document changes require the newer checkpoint",
+    "For self-identity remove artifact_identity, serialize sorted compact JSON plus final newline, encodeUTF8 and SHA256"
+  ],
+  "schema": "project-epoch-live-integration-handoff-v0",
+  "suite_evidence": [
+    {
+      "path": "private/test_runs/resolver_integration_suite_20260908_01/unittest.log",
+      "sha256": "9f68622f3e65aac11dfd11af79484721b1ba58286142f82ea9c79c58b3d56c70",
+      "size": 1180
+    },
+    {
+      "path": "private/test_runs/resolver_integration_suite_20260908_01/suite.json",
+      "sha256": "1ac60a49ba5d22c75bb9e97f01585d9f913a3d2a9e8ba2a129adadb18ac7740e",
+      "size": 233
+    },
+    {
+      "path": "private/test_runs/resolver_integration_suite_20260908_01/python_compile.json",
+      "sha256": "51fe1a9fcbd3dc757ef1e0b36b62ed3229aeada642e345ba7f87358d96d70ae4",
+      "size": 30695
+    }
+  ],
+  "validation": {
+    "failed": 0,
+    "independent_canonical_span_hashes": 21,
+    "new_observer_tests": 18,
+    "passed": 1038,
+    "private_runtime_artifacts_bound": 40,
+    "python_sources_compiled_in_memory": 195,
+    "raw_trace_sha256": "699776cf0d3c69fe13f7fbd7eb9240e47b56cc651395ac53cf15253c73b25190",
+    "runtime_repetitions": 2,
+    "skipped": 22,
+    "suite_seconds": 43.743,
+    "total_tests": 1060,
+    "trace_records_each": 1774
+  },
+  "work_committed_at_capture": false,
+  "work_pushed_at_capture": false
+}

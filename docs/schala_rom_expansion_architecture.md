@@ -269,7 +269,11 @@ paths, and no full ROM belongs in a release.
 
 ## Pointer and code rules
 
-- Use `JSL/RTL` for cross-bank runtime helpers.
+- Use `JSL/RTL` for deliberately matched cross-bank calls and returns. An
+  intercepted routine that must retain an existing near `JSR` frame uses
+  `JML` entry and tail transfers to bank-correct continuations instead;
+  do not apply `RTL` to that near-call frame. See the September 8
+  [MAP-006 correction and evidence](DATA_MAPPING_CORRECTIONS.md#map-006--a-cross-bank-tail-transfer-must-preserve-its-existing-call-frame).
 - A vanilla 16-bit bank-local pointer table cannot point to `$41-$7D`;
   patch its reader or install a same-bank trampoline.
 - Full 24-bit graphics pointers may target expanded banks only after every

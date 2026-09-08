@@ -5,6 +5,11 @@ Selected eighth character: Schala
 Target logical playable ID: `$07`  
 Last updated: 2026-09-08
 
+For chronological handoff, read [DEVELOPER_LOG.md](DEVELOPER_LOG.md). For
+claims contradicted or superseded by later evidence, read
+[DATA_MAPPING_CORRECTIONS.md](DATA_MAPPING_CORRECTIONS.md); each entry cites
+the exact old source and its replacement evidence.
+
 This is the living implementation and verification guide for adding Schala as
 a genuine eighth playable character. Update it whenever a ROM fact is proved,
 an architectural decision changes, a builder emits a new artifact, or an
@@ -36,7 +41,42 @@ sidecar behavior, complete Schala's field palette/frame adapters, and
 implement the selected record, command, item, and recruitment boundaries. A
 booting ROM or a visually plausible sprite is not sufficient evidence.
 
-## Latest developer update: original native helper conformance complete
+## Latest integration update: primary live resolver observed and repeated
+
+The ordinary primary PC resolver now has a repeated clean-ROM observation.
+Two isolated Mesen launches produce identical 1,774-record traces. The one
+observed invocation uses actor `$00`, type `$02`, physical config and package
+selector `$08`, and branch word `$0000`. Native entry state, SP `$06D8`,
+return words `$432A/$40AF`, all eighteen ordered publication bytes, and the
+tail/return chain agree with the model. The same PC action later satisfies
+the package and effect completion reads at input polls 991 and 992, before
+the next action producer at 1133. These counts are input polls, not cycle
+or verified video-frame timing. See the
+[observation contract and reproduction](schala_package_resolver_observation_v0.md).
+
+The [resolver design](schala_package_resolver_integration_design_v0.md)
+identifies why refusal is a separate lifecycle contract: restored entry
+state and a terminal-only stream do not themselves finish an action waiting
+on `$9876/$5D9B`. The [placement review](schala_package_placement_interrupt_review_v0.md)
+defines five named geometric candidates without promoting them, proves
+vanilla use of synthetic scratch `$7E4000`, and separates synthetic stack and
+disabled-interrupt conditions from the actual game.
+
+`BA-NATIVE-INTEGRATION-DESIGN` remains open. Reuse the completed primary
+observation; next define the exact rejection/cancellation lifecycle and
+allowed cleanup/return state, then prove the separately versioned ROM-source
+reader and scratch/interrupt ownership. Ordinary alternate-branch evidence
+is still absent. No hook, production allocation, scratch area, high selector,
+or PC `$07` is installed or approved by these observations.
+
+MAP-005 corrects the upstream active-script "8 slots" annotation to thirteen
+possible checks with conditional gates, preserving the distinct sixteen-bit
+descriptor format. MAP-006 narrows our old universal `JSL/RTL` guidance to
+distinguish calls from frame-preserving `JML` tail transfers. The
+[correction register](DATA_MAPPING_CORRECTIONS.md) preserves exact source
+revisions and the canonical/native evidence.
+
+## Earlier developer update: original native helper conformance complete
 
 On 2026-09-08, `BA-NATIVE-HELPER-CONFORMANCE` reached
 `complete-native-synthetic`. The original 537-byte helper passes 879 cases
@@ -203,7 +243,8 @@ sound deceptively similar.
 | `BA-CMD-1E-FINAL-EXPANDED-POLICY` | `complete-static` | Profile `decoded-command-1e-exclusion-flat-direct-v0` forbids decoded `$1E/$1F/$21`, permits raw operand byte `$1E`, independently decodes both masks and every suffix/shared entrypoint through `$00`, and requires disjoint exact named spans with complete token ownership. The certificate pins content and interpreter identities. It adapts no handler and binds no package. |
 | `BA-SYMBOLIC-HIGH-PACKAGE` | `complete-source-host` | One terminal-only symbolic package, exact named synthetic spans, two mask relations sharing one direct entry, all 256 `$A0B3` inputs, canonical row `$01` with only byte `+0` changed, 128 unchanged canonical selectors, and 16 unbound default high selectors. No action, effect, runtime, or production allocation follows. |
 | `BA-NATIVE-HELPER-CONFORMANCE` | `complete-native-synthetic` | Original 537-byte 65C816 helper passes 879 cases in three Mesen runs at two code origins. The identical-origin pair has matching traces; native CPU state and exact writes satisfy the host contract. Diagnostic WRAM source banks only; no game hook, expanded-ROM read, allocation, scratch ownership, interrupt compatibility, or PC `$07` proof. |
-| `BA-NATIVE-INTEGRATION-DESIGN` | `next-gate` | Connect the helper to exact live resolver hook/continuation evidence; define named expanded placement and prove source-bank reads; resolve scratch and interrupt ownership before guarded installation. |
+| `BA-NATIVE-INTEGRATION-DESIGN` | `in-progress` | The primary live entry/return baseline is complete. Define refusal/cancellation semantics, prove ROM-source reads and the ordinary alternate branch, and resolve named placement and scratch/interrupt ownership before guarded installation. |
+| `BA-LIVE-RESOLVER-PRIMARY-OBSERVATION` | `complete-bounded-runtime` | Two identical clean-ROM Mesen traces for one ordinary PC type-2 primary invocation, exact entry/return state and ordered publications, and its paired completion. Does not prove alternate branch, cancellation, expanded-ROM access, interrupts, or a high selector. |
 
 Resume at `BA-NATIVE-INTEGRATION-DESIGN`. Reopen a completed gate only
 when pinned evidence changes or a failing regression invalidates it. The

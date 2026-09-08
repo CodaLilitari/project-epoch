@@ -160,6 +160,18 @@ These are separate namespaces. Never conflate them.
   command execution, or PC `$07`. Keep production selectors unbound. Resume
   at `BA-NATIVE-INTEGRATION-DESIGN`; do not repeat the completed synthetic
   proof without source drift or a new failing boundary.
+- The clean-ROM primary resolver observation now repeats identically in two
+  isolated Mesen runs: one ordinary PC type-2 invocation, config/selector
+  `$08`, branch `$0000`, entry SP `$06D8`, return words `$432A/$40AF`, eighteen
+  exact ordered publication bytes, and paired action-completion latch reads.
+  This is checkpoint-bounded vanilla runtime evidence, not high-selector
+  integration or alternate-branch proof. Preserve the completed observation.
+  Integration design must separately establish cancellation, expanded-ROM
+  reads, and scratch/interrupt ownership. Synthetic `$7E4000` has a proved
+  vanilla menu/overworld collision and must not be adopted as game scratch.
+  The terminal-only symbolic stream does not by itself complete an action;
+  the caller also waits on `$9876` and `$5D9B`. See the developer log and
+  `docs/DATA_MAPPING_CORRECTIONS.md` before adopting an old annotation.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.
@@ -311,7 +323,10 @@ model level while every production high package binding remains absent.
 `BA-NATIVE-HELPER-CONFORMANCE` is complete in the isolated synthetic Mesen
 matrix. The next gate is `BA-NATIVE-INTEGRATION-DESIGN`: exact live resolver
 hook/continuation evidence, named expanded placement and source-bank access,
-and scratch/interrupt ownership before installation. The lossless battle-command
+and scratch/interrupt ownership before installation.
+The ordinary primary resolver and its completion latches now have a repeated
+clean-ROM observation; alternate inputs and the refusal lifecycle remain
+separate obligations. The lossless battle-command
 grammar/canonical stream census and strict flat-direct decoded-`$1E` exclusion
 policy are complete at `verified-static`, reusing rather than repeating the
 decoded native `$1E/$1F` handler semantics. Every default `$80-$8F` selector
