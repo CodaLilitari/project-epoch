@@ -243,3 +243,64 @@ its call frame at both tested code origins.
 **Evidence level:** `verified-static` call semantics, supplemented by
 `verified-runtime` for the bounded canonical return chain. This does not
 select a rejection trampoline or authorize a production hook.
+
+## MAP-007 — queued-Tech finalization is shared by success and failure
+
+**Wrong source:**
+[`dscotton/ct_disassembly` at `eeae27ac`, `bank_C1.asm:23863`](https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_C1.asm#L23863)
+describes `$C1:BDB3` as failed/cancelled-action handling and characterizes its
+timing work as a partial gauge refund.
+
+**Corrected result:** `$C1:BDB3` is shared queued-Tech participant and timing
+finalization. The successful path's four-byte `JSL` at `$C1:BC56` returns
+directly to `$C1:BC5A`, which calls `$C1:BDB3`. Earlier validation failures
+also reach that tail. Reaching the routine therefore does not demonstrate
+cancellation or a refund of previously charged MP.
+
+**Evidence and provenance:** canonical half-open `$C1:BC4A-$C1:BC60` is
+22 bytes with SHA-256
+`2258622ba95551f41347b852f03148795064fb55c5932ae7b92b40f3fa6e4f70`.
+The complete named finalizer span `$C1:BDB3-$C1:BF46` is 403 bytes with
+SHA-256 `b3281d8212fb9d53d70068adff23d3281d86defa936fc07174fb07c79f4c15bc`.
+The [cancellation contract](schala_package_cancellation_contract_v1.md)
+and [read-only verifier](../tools/audit_package_cancellation_boundaries_v1.py)
+also prove that the queued-Tech path charges participant MP before animation
+and applies pending results after normal animation return. Their
+[metadata reference](../references/package_cancellation_boundaries_v1.json)
+binds 19 spans and 32 selected instruction assertions to the exact canonical
+US Rev0 ROM and pinned annotation source.
+
+**Evidence level:** `verified-static`. A late resolver refusal is not semantic
+action cancellation. An earlier preflight before effect preparation is a
+candidate design; its participant, queue, finalizer, and late-failure policy
+still require separate proof.
+
+## MAP-008 — two IRQ-path operands were mistaken for `$AAEB` writes
+
+**Wrong source:**
+[`dscotton/ct_disassembly` at `eeae27ac`, `bank_FD.asm:6032`](https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_FD.asm#L6032)
+and [line 6050](https://github.com/dscotton/ct_disassembly/blob/eeae27acdb6565e96d1d796a3d60792c250c0aa1/bank_FD.asm#L6050)
+decode `$FD:E21B` and `$FD:E247` as eight-bit `AND #$00`, each followed by
+`ASL $AAEB`.
+
+**Corrected result:** the audited IRQ path executes `REP #$21` at `$FD:E160`
+and retains M=0 at both sites. Each sequence is a 16-bit `AND #$0E00`, then
+`XBA`, then `TAX`. The apparent `ASL` opcode is an immediate operand byte.
+Neither sequence writes to `$AAEB`; this does not establish any other meaning
+or ownership for that address.
+
+**Evidence and provenance:** the two half-open spans `$FD:E21B-$FD:E220`
+and `$FD:E247-$FD:E24C` each have five bytes and SHA-256
+`ea507cc8d6ab6f2681420c5099a90369d6f0ef195c8e1b6a82b3075464391a4a`.
+The [interrupt closure report](schala_package_interrupt_closure_v1.md)
+cites the unchanged upstream file and the width-setting path. Its
+[fail-closed auditor](../tools/audit_schala_package_interrupt_closure_v1.py)
+tracks width and typed call/status frames through 401 instruction starts
+(404 width contexts), reaches all six corrected instruction boundaries,
+and rejects unsupported paths. The
+[metadata reference](../references/schala_package_interrupt_closure_v1.json)
+binds the exact corpus, source, and results.
+
+**Evidence level:** `verified-static` within the bounded, non-nested IRQ CPU
+closure. Data-dependent DMA sources, the complete NMI tree, interrupt nesting,
+and global stack headroom remain separate obligations.

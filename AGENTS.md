@@ -172,6 +172,18 @@ These are separate namespaces. Never conflate them.
   The terminal-only symbolic stream does not by itself complete an action;
   the caller also waits on `$9876` and `$5D9B`. See the developer log and
   `docs/DATA_MAPPING_CORRECTIONS.md` before adopting an old annotation.
+- A late resolver refusal is not queued-Tech cancellation: the vanilla path
+  prepares effects and charges participant MP before animation, then applies
+  pending results after normal animation return. The candidate preflight is
+  before `$C1:BBD4`; reusing `$C1:BC5A` still requires valid participant,
+  queue, finalizer-table, CPU, and stack context. `$C1:BDB3` is shared by
+  successful and failed Tech paths, not a cancellation/refund API.
+- The bounded direct battle-IRQ CPU closure now covers 401 instruction starts
+  in 404 width contexts, with balanced near/long calls and 35 bytes maximum
+  stack use including the native four-byte hardware frame. NMI nesting,
+  data-dependent DMA sources, the complete NMI tree, and global stack
+  headroom remain unproved. The two apparent `$AAEB` writes in the old
+  `$FD:E21B/$FD:E247` annotations are 16-bit immediate operands, not writes.
 - Proposed Schala item IDs are `$E8-$EE`, with `$EF-$F1` reserved. They are
   `verified-static` as unclaimed by canonical US Rev0 location events after
   all 513 pointer entries and every valid referenced script were audited.

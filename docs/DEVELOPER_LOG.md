@@ -296,3 +296,49 @@ above. Therefore the verified claim is synchronization to the authenticated
 repository, not confirmed availability to unauthenticated readers. The next
 engineering work remains the explicit cancellation contract and the other
 integration obligations in the preceding entry.
+
+## 2026-09-08 — six-hour continuation started
+
+**Status:** in progress, beginning at 14:58:41 UTC with a six-hour target of
+20:58:41 UTC. Andrei acknowledged the account restriction and requested
+continued engineering. The starting source is `f387a077052195df833b2984076a0962cf4aff72`.
+The [session ledger](work_session_2026_09_08.md) records the time boundary and
+active work streams. The completed primary observation and native v0 proof
+are preserved; new work addresses cancellation, expanded-ROM access, the
+ordinary alternate branch, and interrupt/temporary-state ownership.
+
+## 2026-09-08 — cancellation boundary and bounded IRQ closure established
+
+**Status:** two integration constraints completed at `verified-static` during
+the six-hour continuation; no game adapter is installed.
+
+The queued-Tech path deducts participant MP before the animation resolver
+runs and applies prepared results after animation returns. A resolver refusal
+cannot therefore be called complete action cancellation. The new
+[cancellation contract](schala_package_cancellation_contract_v1.md) identifies
+an earlier pre-effect preflight candidate and the exact existing failure
+continuations. Reusing them still requires proof of the participant map,
+queued command, finalizer eligibility, and caller state. The verifier passes
+19 canonical span hashes and 32 selected instruction assertions, rejects
+altered input, and reproduces the checked-in metadata exactly.
+
+The [interrupt closure audit](schala_package_interrupt_closure_v1.md) follows
+all conditional outcomes in the bounded direct battle-IRQ CPU graph. Its
+401 instruction starts and 404 width contexts retain balanced near/long
+return frames and keep IRQ masked. The maximum modeled stack use is 35 bytes
+including the four-byte native hardware frame. This excludes NMI nesting,
+data-dependent DMA sources, and global stack ownership. Fifteen focused
+tests pass, including incorrect-width and invalid-return rejection.
+
+**Corrections:** [MAP-007 and MAP-008](DATA_MAPPING_CORRECTIONS.md) identify
+two wrong upstream annotations with pinned source links and canonical hashes.
+The first mislabels shared success/failure finalization as cancellation/refund.
+The second decodes two 16-bit immediate operands as apparent `$AAEB` writes.
+The reports preserve the original sources and state exactly what the evidence
+changes. No unrelated SRAM, graphics, or playable-PC mapping is promoted.
+
+**Resume:** finish the interrupt-attributed runtime observation, confirm a
+naturally selected alternate package branch, and complete the separately
+versioned ROM-source helper proof. The original global scratch remains
+unsuitable for game use; stack-owned temporary storage needs its own ABI and
+interrupt proof. This increment's publication will be recorded after push.

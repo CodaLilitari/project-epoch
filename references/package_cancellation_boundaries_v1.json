@@ -1,0 +1,326 @@
+{
+  "schema": "project-epoch-package-cancellation-boundaries-v1",
+  "evidence_level": "verified-static",
+  "scope": "reviewer-named canonical spans and selected control-flow/write assertions",
+  "limitations": [
+    "not a complete control-flow closure",
+    "not runtime cancellation evidence",
+    "no hook, scratch, allocation, or production package binding approved",
+    "semantic labels are reviewed interpretations, not derived from hashes"
+  ],
+  "rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "navigation_source": {
+    "repository": "https://github.com/dscotton/ct_disassembly",
+    "revision": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+    "bank_C1_asm_sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+  },
+  "spans": [
+    {
+      "role": "queued-tech-preparation",
+      "cpu_start": "C1BB49",
+      "cpu_end_exclusive": "C1BBD4",
+      "size": 139,
+      "sha256": "4449dcbfa74ed8d603426f98e639b727a9be43608f1f9b3a88f2947c19ba5b8b"
+    },
+    {
+      "role": "prepare-charge-and-commit",
+      "cpu_start": "C1BBD4",
+      "cpu_end_exclusive": "C1BC21",
+      "size": 77,
+      "sha256": "8b3c37b61d5c6455f6bb01bd1befcd18337bd557ff54c363aa3de55f1c2b5570"
+    },
+    {
+      "role": "shared-success-failure-tail",
+      "cpu_start": "C1BC4A",
+      "cpu_end_exclusive": "C1BC60",
+      "size": 22,
+      "sha256": "2258622ba95551f41347b852f03148795064fb55c5932ae7b92b40f3fa6e4f70"
+    },
+    {
+      "role": "queue-and-partner-release",
+      "cpu_start": "C1BCF8",
+      "cpu_end_exclusive": "C1BD6F",
+      "size": 119,
+      "sha256": "6ce9e5574a0c6892a773ed1da81b03069c5ba47c68cb9b53e257eac9830c1aab"
+    },
+    {
+      "role": "participant-atb-finalizer",
+      "cpu_start": "C1BDB3",
+      "cpu_end_exclusive": "C1BF46",
+      "size": 403,
+      "sha256": "b3281d8212fb9d53d70068adff23d3281d86defa936fc07174fb07c79f4c15bc"
+    },
+    {
+      "role": "effect-preparation-wrapper",
+      "cpu_start": "C1BF79",
+      "cpu_end_exclusive": "C1BF81",
+      "size": 8,
+      "sha256": "2bf3698eedf41dbd69881491d760c0be9c3f01306442fd1e8b02e427cc6f18a9"
+    },
+    {
+      "role": "animation-and-result-commit-wrapper",
+      "cpu_start": "C1AC57",
+      "cpu_end_exclusive": "C1AC5E",
+      "size": 7,
+      "sha256": "d46f35d4a2da30eb6ba1b9e286d34b944fb853ee0ec9b5eedc8fcc7742122499"
+    },
+    {
+      "role": "result-commit-wrapper",
+      "cpu_start": "C1AC85",
+      "cpu_end_exclusive": "C1AC89",
+      "size": 4,
+      "sha256": "53804b9808e9f29231fa2f9c58ec92413ae5223679b3730f1678e89bbaac9cd2"
+    },
+    {
+      "role": "animation-service-4-wrapper",
+      "cpu_start": "C1BFA4",
+      "cpu_end_exclusive": "C1BFAA",
+      "size": 6,
+      "sha256": "922c4c8dff971adfd1a66a5a58c1125e5432cefa9b6b4fb25d34c106b5396a1c"
+    },
+    {
+      "role": "direct-participant-mp-deductions",
+      "cpu_start": "C1CC71",
+      "cpu_end_exclusive": "C1CCCB",
+      "size": 90,
+      "sha256": "a244c0b228a6f66df81db5c4fb32bf3c98d9c0d2c9f7e98193264648ac0d93bc"
+    },
+    {
+      "role": "participant-and-mp-validation",
+      "cpu_start": "C1D523",
+      "cpu_end_exclusive": "C1D584",
+      "size": 97,
+      "sha256": "ae9d9c2c8a0d1357665b898c7883a3c2c720479a213582e5d0e8ee725e86e5bc"
+    },
+    {
+      "role": "pending-hp-result-write",
+      "cpu_start": "C1EC7F",
+      "cpu_end_exclusive": "C1ECA3",
+      "size": 36,
+      "sha256": "4fd8fb28635325d22bd8c0dae9a942bfa420ee78b9e0b2f8bf464555fe35004c"
+    },
+    {
+      "role": "animation-phase-setup",
+      "cpu_start": "C14058",
+      "cpu_end_exclusive": "C140B0",
+      "size": 88,
+      "sha256": "fd8b1591cbdf8250416d0e64aa21ae8e03e79b776f0f7878183c6f98269d3943"
+    },
+    {
+      "role": "animation-waits-and-cleanup",
+      "cpu_start": "C140B0",
+      "cpu_end_exclusive": "C141BE",
+      "size": 270,
+      "sha256": "1ad3a83e7d9eced0d19bc50e08c386d453e84e91e4f212c0b7a2c20883d0e4e9"
+    },
+    {
+      "role": "animation-work-reset",
+      "cpu_start": "CCF06B",
+      "cpu_end_exclusive": "CCF102",
+      "size": 151,
+      "sha256": "80831e2419fc9425538ac36ddb83d979266a158a392ecba1e0bc6e009a1788ae"
+    },
+    {
+      "role": "scene-latch-owner",
+      "cpu_start": "CD1609",
+      "cpu_end_exclusive": "CD1654",
+      "size": 75,
+      "sha256": "dce62d3d48a939537e1f9976e6177b9fda6f39e9076b72c4f4fc0e2af798fca9"
+    },
+    {
+      "role": "stop-and-sync-handlers",
+      "cpu_start": "C14CF0",
+      "cpu_end_exclusive": "C14D04",
+      "size": 20,
+      "sha256": "5e3e65e7fc683da6fa456fbe499b2cab80825745a86db42c2f5b3ec82aa7cc7c"
+    },
+    {
+      "role": "type-zero-rts",
+      "cpu_start": "C1475A",
+      "cpu_end_exclusive": "C1475B",
+      "size": 1,
+      "sha256": "8d33f520a3c4cef80d2453aef81b612bfe1cb44c8b2025630ad38662763f13d3"
+    },
+    {
+      "role": "service-dispatch-and-table",
+      "cpu_start": "C10045",
+      "cpu_end_exclusive": "C10065",
+      "size": 32,
+      "sha256": "0ac26cab8ecb85df3b1478299f8e6a719847011892ca2d7bb74da7cbefeb9097"
+    }
+  ],
+  "instruction_checks": [
+    {
+      "address": "C1BB88",
+      "instruction": "JSR",
+      "target": "C1C1DD"
+    },
+    {
+      "address": "C1BBD4",
+      "instruction": "JSR",
+      "target": "C1BF79"
+    },
+    {
+      "address": "C1BF7D",
+      "instruction": "JSR",
+      "target": "C1D523"
+    },
+    {
+      "address": "C1D573",
+      "instruction": "JSR",
+      "target": "C1D74F"
+    },
+    {
+      "address": "C1BC01",
+      "instruction": "JSR",
+      "target": "C1CC71"
+    },
+    {
+      "address": "C1BC0E",
+      "instruction": "JSR",
+      "target": "C1CC71"
+    },
+    {
+      "address": "C1BC1B",
+      "instruction": "JSR",
+      "target": "C1CC71"
+    },
+    {
+      "address": "C1BC1E",
+      "instruction": "JSR",
+      "target": "C1AC57"
+    },
+    {
+      "address": "C1AC57",
+      "instruction": "JSR",
+      "target": "C1BFA4"
+    },
+    {
+      "address": "C1AC5A",
+      "instruction": "JSR",
+      "target": "C1AC85"
+    },
+    {
+      "address": "C1AC85",
+      "instruction": "JSR",
+      "target": "C1EC7F"
+    },
+    {
+      "address": "C1BFA6",
+      "instruction": "JSR",
+      "target": "C10003"
+    },
+    {
+      "address": "C1BC5A",
+      "instruction": "JSR",
+      "target": "C1BDB3"
+    },
+    {
+      "address": "C140AD",
+      "instruction": "JSR",
+      "target": "C14310"
+    },
+    {
+      "address": "C140CB",
+      "instruction": "JSR",
+      "target": "C14BBE"
+    },
+    {
+      "address": "C1BB90",
+      "instruction": "JMP",
+      "target": "C1BC5A"
+    },
+    {
+      "address": "C1BC5D",
+      "instruction": "JMP",
+      "target": "C1BCF8"
+    },
+    {
+      "address": "C1BB8E",
+      "instruction": "BEQ",
+      "target": "C1BB93"
+    },
+    {
+      "address": "C1BBDA",
+      "instruction": "BNE",
+      "target": "C1BC5A"
+    },
+    {
+      "address": "C1BBDF",
+      "instruction": "BNE",
+      "target": "C1BC5A"
+    },
+    {
+      "address": "C1BC4F",
+      "instruction": "BCC",
+      "target": "C1BC56"
+    },
+    {
+      "address": "C140D1",
+      "instruction": "BEQ",
+      "target": "C140B0"
+    },
+    {
+      "address": "C140EA",
+      "instruction": "BNE",
+      "target": "C140E1"
+    },
+    {
+      "address": "C1CC8C",
+      "instruction": "STA",
+      "absolute_operand": "5E34"
+    },
+    {
+      "address": "C1CCA9",
+      "instruction": "STA",
+      "absolute_operand": "5EB4"
+    },
+    {
+      "address": "C1CCC2",
+      "instruction": "STA",
+      "absolute_operand": "5F34"
+    },
+    {
+      "address": "CCF0E9",
+      "instruction": "STZ",
+      "absolute_operand": "9876"
+    },
+    {
+      "address": "CD164D",
+      "instruction": "STZ",
+      "absolute_operand": "5D9B"
+    },
+    {
+      "address": "C14D00",
+      "instruction": "INC",
+      "absolute_operand": "9876"
+    },
+    {
+      "address": "C1BC56",
+      "instruction": "JSL",
+      "target": "FDACEE",
+      "return_continuation": "C1BC5A"
+    },
+    {
+      "address": "C1475A",
+      "instruction": "RTS"
+    },
+    {
+      "address": "C10059",
+      "table_entry": "service 4",
+      "target": "C14058"
+    }
+  ],
+  "span_count": 19,
+  "instruction_check_count": 32,
+  "conclusions": {
+    "resolver_refusal_is_semantic_action_cancellation": false,
+    "queued_tech_mp_calls_precede_animation": true,
+    "normal_animation_return_reaches_pending_result_application": true,
+    "successful_and_failed_queued_tech_paths_share_finalization": true,
+    "proposed_pre_effect_check_boundary": "before C1BBD4; hypothesis pending caller and finalizer proof"
+  }
+}

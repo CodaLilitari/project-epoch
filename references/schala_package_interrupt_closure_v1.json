@@ -1,0 +1,266 @@
+{
+  "schema": "project-epoch-package-interrupt-closure-v1",
+  "evidence_level": "verified-static",
+  "status": "pass-bounded-non-nested-irq-closure-nmi-remains-open",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "source": {
+    "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+    "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+  },
+  "spans": [
+    {
+      "role": "irq_and_direct_services",
+      "cpu_start": "$D1FE4C",
+      "cpu_end_exclusive": "$D1FEF4",
+      "size": 168,
+      "sha256": "f86e45704580f7a8c879ff075ee2c58543913da28a10eb445a53d56bafa77e1c"
+    },
+    {
+      "role": "irq_display_table_loader",
+      "cpu_start": "$CEEE6E",
+      "cpu_end_exclusive": "$CEEF11",
+      "size": 163,
+      "sha256": "8456e61e3b3230c2c98593561fb66e7a675df5b58fbd5e04d56dd45fdcf0e177"
+    },
+    {
+      "role": "irq_field_vram_dma_service",
+      "cpu_start": "$FDE022",
+      "cpu_end_exclusive": "$FDE275",
+      "size": 595,
+      "sha256": "710683e30da8a2b55b5c7865cbc61161b200618537bb5ccdacffe33d4a07cf61"
+    },
+    {
+      "role": "irq_field_vram_dma_stub",
+      "cpu_start": "$FDFFFD",
+      "cpu_end_exclusive": "$FE0000",
+      "size": 3,
+      "sha256": "10d81620264acc80f485880aaae6aca618776d72c5233de85b9a7c994b08e68d"
+    },
+    {
+      "role": "normal_nmi",
+      "cpu_start": "$D1E77C",
+      "cpu_end_exclusive": "$D1E899",
+      "size": 285,
+      "sha256": "3c6995513ccffd360ecba0594ea3c16c72104cac046999a673f72fc3c8932b4c"
+    },
+    {
+      "role": "normal_nmi_dispatch",
+      "cpu_start": "$CD0C83",
+      "cpu_end_exclusive": "$CD0C9D",
+      "size": 26,
+      "sha256": "9b5bbb390982840a7ab010ed1ad4ebd7d0603ff290e8917c159838a80b50ee0e"
+    },
+    {
+      "role": "normal_nmi_mode_1_2_body",
+      "cpu_start": "$CD088D",
+      "cpu_end_exclusive": "$CD09CE",
+      "size": 321,
+      "sha256": "375ef0e5bacfa712d55a80ac5fd75dd04c5206aa9e3d055cb10bdf7a85f5cf55"
+    },
+    {
+      "role": "normal_nmi_scene_interpreter",
+      "cpu_start": "$CD1609",
+      "cpu_end_exclusive": "$CD16B5",
+      "size": 172,
+      "sha256": "4ed9769ba6946b9400ecaf48bb604aaf77c5bb7fbc0d1a43dffc187700e6f77e"
+    },
+    {
+      "role": "alternate_nmi",
+      "cpu_start": "$D1F4C0",
+      "cpu_end_exclusive": "$D1F559",
+      "size": 153,
+      "sha256": "d92f1c6960851bf54a8ee2ade314be437335f285c1f3086034a0113f0357449b"
+    },
+    {
+      "role": "alternate_nmi_early_cgram_service",
+      "cpu_start": "$CD09CE",
+      "cpu_end_exclusive": "$CD09F1",
+      "size": 35,
+      "sha256": "65c3e12a3d48afac4a9167badfb85aa13ec374901293b443e7c55e1d636752f6"
+    },
+    {
+      "role": "field_dma_width_correction_1",
+      "cpu_start": "$FDE21B",
+      "cpu_end_exclusive": "$FDE220",
+      "size": 5,
+      "sha256": "ea507cc8d6ab6f2681420c5099a90369d6f0ef195c8e1b6a82b3075464391a4a"
+    },
+    {
+      "role": "field_dma_width_correction_2",
+      "cpu_start": "$FDE247",
+      "cpu_end_exclusive": "$FDE24C",
+      "size": 5,
+      "sha256": "ea507cc8d6ab6f2681420c5099a90369d6f0ef195c8e1b6a82b3075464391a4a"
+    }
+  ],
+  "irq_abstract_walk": {
+    "abstract_state_count": 404,
+    "instruction_context_count": 404,
+    "unique_instruction_start_count": 401,
+    "maximum_depth_including_native_hardware_frame": 35,
+    "maximum_depth_software_only": 31,
+    "balanced_rti_context_count": 1,
+    "peak_successor_watchpoints": [
+      "$CEEEAE",
+      "$CEEEB2",
+      "$CEEEB3",
+      "$CEEEB6",
+      "$CEEEB9",
+      "$CEEEBC",
+      "$CEEEBF",
+      "$CEEEC2"
+    ],
+    "all_modeled_paths_keep_irq_masked": true,
+    "direct_calls": [
+      {
+        "site": "$D1FE69",
+        "target": "$CEEE6E",
+        "kind": "long"
+      },
+      {
+        "site": "$D1FECE",
+        "target": "$D1FE4C",
+        "kind": "near"
+      },
+      {
+        "site": "$D1FEDA",
+        "target": "$FDFFFD",
+        "kind": "long"
+      },
+      {
+        "site": "$D1FEE6",
+        "target": "$D1FE71",
+        "kind": "long"
+      }
+    ],
+    "mnemonic_context_counts": {
+      "ADC abs": 2,
+      "ADC long,X": 12,
+      "AND #": 15,
+      "ASL A": 1,
+      "BRA": 3,
+      "CLC": 14,
+      "CMP abs": 1,
+      "INC dp": 2,
+      "JMP": 2,
+      "JSL": 3,
+      "JSR": 1,
+      "LDA #": 19,
+      "LDA abs": 5,
+      "LDA dp": 43,
+      "LDA long": 3,
+      "LDA long,X": 23,
+      "LDX #": 2,
+      "LDX dp": 12,
+      "LDY #": 10,
+      "LSR A": 1,
+      "MVN": 9,
+      "PHA": 12,
+      "PHB": 3,
+      "PHD": 2,
+      "PHP": 2,
+      "PHX": 3,
+      "PHY": 1,
+      "PLA": 1,
+      "PLB": 7,
+      "PLD": 5,
+      "PLP": 3,
+      "PLX": 9,
+      "PLY": 1,
+      "REP": 11,
+      "RTI": 1,
+      "RTL": 5,
+      "RTS": 1,
+      "SEP": 6,
+      "STA abs": 30,
+      "STA dp": 12,
+      "STA long": 6,
+      "STX abs": 12,
+      "STY abs": 24,
+      "STZ abs": 13,
+      "STZ dp": 1,
+      "TAX": 15,
+      "TCD": 1,
+      "TDC": 2,
+      "XBA": 12,
+      "conditional branch": 20
+    },
+    "width_correction_witnesses": [
+      {
+        "address": "$FDE21B",
+        "m8": false,
+        "x8": true,
+        "mnemonic": "AND #",
+        "length": 3
+      },
+      {
+        "address": "$FDE21E",
+        "m8": false,
+        "x8": true,
+        "mnemonic": "XBA",
+        "length": 1
+      },
+      {
+        "address": "$FDE21F",
+        "m8": false,
+        "x8": true,
+        "mnemonic": "TAX",
+        "length": 1
+      },
+      {
+        "address": "$FDE247",
+        "m8": false,
+        "x8": true,
+        "mnemonic": "AND #",
+        "length": 3
+      },
+      {
+        "address": "$FDE24A",
+        "m8": false,
+        "x8": true,
+        "mnemonic": "XBA",
+        "length": 1
+      },
+      {
+        "address": "$FDE24B",
+        "m8": false,
+        "x8": true,
+        "mnemonic": "TAX",
+        "length": 1
+      }
+    ]
+  },
+  "nmi_mode_table_bounded_entries": [
+    {
+      "mode": 0,
+      "target": "$CD09F1"
+    },
+    {
+      "mode": 1,
+      "target": "$CD088D"
+    },
+    {
+      "mode": 2,
+      "target": "$CD088D"
+    }
+  ],
+  "nmi_lifecycle_shared_state": {
+    "effect_latch": "$7E5D9B",
+    "read_site": "$CD160E",
+    "clear_site": "$CD164D",
+    "scene_command_indirect_call": "$CD16AF"
+  },
+  "interpretation": {
+    "data_conditions": "both conditional outcomes; some combinations may be infeasible",
+    "register_values_and_dma_sources": "not modeled",
+    "non_stack_instruction_writes_to_stack": "not modeled; canonical direct destinations reviewed separately",
+    "nmi_nesting": "not included in the 35-byte bound",
+    "global_stack_headroom": "not established",
+    "production_hook_or_allocation_approved": false,
+    "production_scratch_approved": false,
+    "game_rom_mutated": false
+  }
+}
