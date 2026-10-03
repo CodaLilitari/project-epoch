@@ -657,3 +657,22 @@ No production eighth-character patch is allowed until trace evidence identifies 
 - `verified-runtime`: reproduced in an emulator with recorded inputs and hashes.
 - `documented`: supported by a cited technical source but not independently traced here.
 - `hypothesis`: plausible and explicitly awaiting verification.
+
+
+## October 3 additive phase checkpoint
+
+The separate resolver-phase v2 observer now has two identical actual-game
+traces with 2,261 records and 161 required engine fields per record. Eight
+complete early contexts between pre-effect and resolver are individually
+reconciled to the accepted context trace, then a named validation projection
+reuses frozen v1 checks for the following IRQ/NMI pair. Preserve the rejected
+v1 pilot and its explicit earlier-interrupt refusal. All original rows remain
+in the native trace; the projection is not interrupt-free execution evidence.
+Both scene gates have directly owned data-read witnesses. The actual 4,244
+master-clock resolver interval remains unchanged. All eight HDMA channels are
+enabled and unfinished at resolver entry; no pending transfer at that snapshot
+does not prove absence of later stalls or table reads. Internal IRQ h/v counters
+and relevant overclock settings were not captured. Neither timer211 with PPU
+line119 nor the historical handler-entry subtraction certifies a deadline.
+The original helper has not been inserted into the game. Keep all production
+hooks, allocations and high bindings unapproved. See the current handoff.

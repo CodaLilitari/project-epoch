@@ -1437,3 +1437,52 @@ published source. The proposed 8A/AB/8B writer chain still lacks a rooted
 script, same-slot lifetime and intervening-writer proof. No MAP correction
 is invented for an obligation that was explicitly unresolved. No production
 hook, allocation, selector or actual eighth-PC behavior is added.
+
+
+## 2026-10-03 — repeated resolver phase and explicit early-interrupt scope
+
+The accepted half-fill checkpoint was pushed to CodaLilitari GitHub at
+`36f5093614fb00ab182791f865de84fd8fd37de9`. Authenticated API and Git main
+agree, and all ten changed files were independently downloaded and checked
+against their committed bytes. Its exact receipt is retained in the October3
+publication reference. GitLab synchronization has not been authorized by an
+answer to the pending question; its check and the portfolio check remain read-only.
+
+The first phase observer completed natively but correctly refused its declared
+unsupported sequence: pre-effect at poll374 precedes the poll378 resolver by
+eight balanced interrupt contexts. There was no actual nesting or export
+failure. The unchanged v1 source, tests, archived inputs, trace, process52
+receipt and host rejection are preserved. A separate v2 wrapper validates all
+original records, individually matches those early contexts to the accepted
+historical trace, then reuses the frozen v1 validator on an explicit projection.
+The original trace remains intact and the projection is not claimed as an
+interrupt-free native execution. Both scene gate markers now require their
+own immediately following watched data read with exact CPU/context continuity.
+
+After source review and 43 preserved v1 plus 34 v2 tests, a fresh v2 pilot
+completed. Its entire decoded observation equals the rejected v1 trace except
+for the schema name. Two subsequent isolated full v2 runs then produced
+identical 17,782,665-byte traces, SHA-256
+`7e2d2925f8523a134721427c1001128a073b6b64518abe3810ee637cb5e71bb0`.
+Each has 2,261 records, 161 engine fields per record, eight early contexts
+and the following IRQ/NMI pair. The resolver interval remains 4,244 master
+clocks / 548 CPU-counter increments. Each log contains 28,319 uninitialized-
+read diagnostics; this is not a warning-free or general initialization proof.
+
+The separate acceptance auditor checks the actual 38 guarded identities,
+28 archived sources and ten staged inputs per run, exact inventories and
+process52 receipts, then reconstructs the launch receipts and full manifests
+from complete trace revalidation. It passes 39 original/adversarial tests.
+Root's two fresh CLI outputs and the independent peer's output match the
+53,831-byte accepted reference, SHA-256
+`8e3898c7886a88e166bf5fd13f69ac37b44b59bd202d5780c0a8ae98ae30c120`.
+The peer additionally verified eighteen original rejection challenges.
+The [report](schala_package_resolver_phase_v2.md) links exact review provenance.
+
+The accepted observation exposes all eight HDMA channels enabled and unfinished
+at resolver entry, despite no pending service at that instant. It also exposes
+the next evidence gap: the observer did not capture the IRQ circuit's distinct
+h/v counters or all relevant overclock settings. PPU position and timer values
+alone cannot certify a deadline. No new upstream mapping contradiction was
+found here; the v1 result is a documented protocol scope limit. The helper
+still has no game placement, stack-ownership certificate or production binding.

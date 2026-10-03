@@ -241,3 +241,24 @@ used LF; only parsed equality was claimed for that earlier comparison. The
 published source writes explicit UTF-8/LF bytes. The original proposal and
 independent review receipt remain unchanged under
 `private/test_runs/helper_timing_bound_review_20261003/`.
+
+
+## Additive resolver-phase result — 2026-10-03
+
+The separate [v2 phase packet](schala_package_resolver_phase_v2.md) now repeats
+in two unchanged-game runs. The earlier pre-effect point precedes resolver
+entry by four frames and eight complete interrupts. These are individually
+reconciled to the accepted historical context trace; they are not ignored.
+At resolver entry, no IRQ/NMI or DMA request is pending in the declared
+serialized fields, but all eight HDMA channels are enabled and unfinished.
+The old no-DMA/HDMA timing premise therefore needs a separate service bound.
+
+The selected PPU position is line119/h754 and the vertical IRQ timer is211.
+These values are not sufficient to prove the next IRQ request time. The pinned
+`InternalRegisters.h` uses independent `_hCounter` and `_vCounter` in
+`ProcessIrqCounters` and `UpdateIrqLevel`; both are serialized by
+`InternalRegisters.cpp` but omitted from this observer's 161-field contract.
+Relevant overclock settings were also not captured. Preserve the actual
+historical gap as an observation and obtain the missing state/source closure
+before claiming an admission boundary. DMA source-read aliases and render
+effects remain separate from any finite service-cost calculation.

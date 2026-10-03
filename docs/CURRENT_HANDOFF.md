@@ -67,9 +67,20 @@ or a newly identified boundary.
    Do not borrow the game's busy byte as a helper lock. The exact small
    original-cartridge fixture has a reviewed 67,112-clock conditional timing
    envelope, excluding DMA/HDMA and interrupt work. The general 32-target
-   registry has a much larger envelope. A new read-only resolver-phase
-   observer is being prepared to expose pending interrupt and DMA/HDMA state;
-   no phase admission rule or game insertion is approved.
+   registry has a much larger envelope.
+5. The [resolver-phase v2 observation](schala_package_resolver_phase_v2.md)
+   now repeats identically in two isolated runs: 2,261 records, eight earlier
+   interrupt contexts and the following IRQ/NMI pair, with 161 engine fields
+   per record. Preserve the intentionally rejected v1 pilot and its unchanged
+   protocol. The 43 v1, 34 v2 and 39 acceptance tests pass. HDMA is enabled
+   for all eight unfinished channels at resolver entry; no-pending snapshots
+   do not prove no future service. IRQ circuit counters and relevant overclock
+   settings were not captured, so no interrupt deadline is certified.
+6. Continue the conditional DMA/HDMA timing and memory-read isolation review
+   before designing a bounded helper admission experiment. Table payloads,
+   helper-source/read aliases, actual IRQ recognition, additional wrapper
+   instructions and game-stack ownership remain separate obligations.
+   No phase admission rule or game insertion is approved.
 
 All ROMs, SRAMs, emulator states, raw traces and extracted data stay under
 ignored `private/`. Source-controlled outputs contain original tools, tests,

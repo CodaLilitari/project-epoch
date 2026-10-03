@@ -32,6 +32,12 @@ produces a full X-period fill under the declared local conditions. The report
 includes exact source identities, independent reproductions and the remaining
 legal-input and memory-ownership obligations.
 
+The [resolver phase observation](docs/schala_package_resolver_phase_v2.md)
+also repeats identically, accounting for actual interrupts between pre-effect
+and resolver entry. It captures pending interrupt and DMA/HDMA state without
+altering the game. Enabled HDMA and the still-missing IRQ-counter evidence
+remain explicit timing obligations.
+
 ## Preserved integration checkpoint — 2026-09-08
 
 At this historical checkpoint, Andrei had extended the engineering session
