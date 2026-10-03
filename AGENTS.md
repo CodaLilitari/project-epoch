@@ -414,6 +414,16 @@ These are separate namespaces. Never conflate them.
   Zero-copy skip still enters the half-fill continuation, whose effective
   destinations and termination remain outside v1. Legal domains, physical
   memory/stack ownership and full scene/NMI closure remain unproved.
+- The additive scene `$8B` half-fill v1 packet proves its local fixed-target
+  recurrence: s1..255 causes s word stores; s0 causes 16,384 word stores and
+  one X wrap, even when the earlier copy skips. Absolute-X word addressing
+  carries into bank `$7F`. Both DP45 setup stores are counted. The `$380`
+  comparison interval fits exactly s1..224 and is not an allocation. Copy-safe
+  s225/226 examples reach another canonical base or a known IRQ destination;
+  they prove source-use overlap, not a runtime collision. Local own q/CAAB
+  writes do not alter the initialized loop, but defeat stronger lifetime
+  assumptions. The proposed 8A/AB/8B writer sequence is not a rooted legal
+  script or whole-path ownership proof. Preserve the older copy packet.
 - The B5/B6 copy-pointer producer is separately proved under stable byte
   inputs r/s, CAAA=0, native M8/X16, D0/DBR7E and binary arithmetic. Its
   signed count n spans -33..222; 64,414 of 65,536 pairs select the proved

@@ -26,6 +26,12 @@ documents why the game busy flag is unsuitable as a helper lock and provides
 a reproducible conditional timing envelope for the exact original diagnostic
 fixture. Actual game helper integration remains open.
 
+The additive [scene $8B half-fill proof](docs/schala_scene8b_half_fill_v1.md)
+now separates safe copy arithmetic from the later fill loop: zero height
+produces a full X-period fill under the declared local conditions. The report
+includes exact source identities, independent reproductions and the remaining
+legal-input and memory-ownership obligations.
+
 ## Preserved integration checkpoint — 2026-09-08
 
 At this historical checkpoint, Andrei had extended the engineering session

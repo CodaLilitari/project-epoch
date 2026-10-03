@@ -80,6 +80,95 @@
           "sha256": "f3fc3cf0999d0782f80c76a39ace13332dc31ef895482391e3e3282512d14ee6"
         }
       ]
+    },
+    {
+      "commit": "0bd483ab268e3e65cfa843dc6a9ecc9348c59a7e",
+      "verified_at_utc": "2026-10-03T21:45:29.822288+00:00",
+      "repository": "https://github.com/CodaLilitari/project-epoch",
+      "branch": "main",
+      "authenticated_commit_branch_and_remote_agree": true,
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 45044,
+          "sha256": "fb14b499e99800840f7606cb06403fbd4b145a6a4d921a5a089fdc6d641a3bc9"
+        },
+        {
+          "path": "README.md",
+          "size": 53912,
+          "sha256": "5a54d456efee9086f11270b15730599e986147437c478632ca259ed3777c5570"
+        },
+        {
+          "path": "docs/CURRENT_HANDOFF.md",
+          "size": 4394,
+          "sha256": "184ee8b1b8b1f1abf7aa1ac2041898c115acb8d54dabe2ab306bb79101c38e13"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 90851,
+          "sha256": "53aed3e8877403b3b533b3962ce51ab183834a6cd11708aec9b772adaa3c016e"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 210032,
+          "sha256": "2d0ab72865034cac37b07849d79ee11d5ffb73dfbf2f0ce41b7fe4d9287a01b1"
+        },
+        {
+          "path": "docs/normal_nmi_stack_observation_v1.md",
+          "size": 20233,
+          "sha256": "639fa8679fe4a31c597da7fa2abc8a7d2d29311caa61d2b990af94cd5c08419f"
+        },
+        {
+          "path": "docs/schala_package_interrupt_strategy_review_2026_10_03.md",
+          "size": 15518,
+          "sha256": "93b9effd564aa2579a42f9ea76fe0b0aab8c6061cc66c3a8d93f992eaec29061"
+        },
+        {
+          "path": "tools/run_normal_nmi_stack_observation_v1.py",
+          "size": 32546,
+          "sha256": "bb4bddb1f995124ebdd269a0b937ad988d972ad524d6237073cdeb1ae0b60784"
+        },
+        {
+          "path": "tools/mesen_normal_nmi_stack_observation_v1.lua",
+          "size": 8496,
+          "sha256": "77a39e798cb0b82c30e8d46cf3ecf64987ce30bf3902308b98fa2549177a8ee4"
+        },
+        {
+          "path": "tools/audit_normal_nmi_stack_observation_v1.py",
+          "size": 17388,
+          "sha256": "7a6bd6c7300db1899d7cd5619f4120682be29f695fbe9f0c7ac4353dbffadc9b"
+        },
+        {
+          "path": "tools/research_helper_timing_envelope_v1.py",
+          "size": 7962,
+          "sha256": "c8f160d8eb57bd4b22f10954bc6cbda231802272df1f55344345a2c30158733a"
+        },
+        {
+          "path": "tests/test_normal_nmi_stack_observation_v1.py",
+          "size": 20641,
+          "sha256": "0e8420e13806d9b637367bbfed717fdaeff08454fccded7bdc44e82f7c12c2de"
+        },
+        {
+          "path": "tests/test_audit_normal_nmi_stack_observation_v1.py",
+          "size": 17471,
+          "sha256": "5e8fef4a56b53be3d744bde4611aef75898778f6946d63105d6789b51b846bb1"
+        },
+        {
+          "path": "references/normal_nmi_stack_observation_v1.json",
+          "size": 148513,
+          "sha256": "5431d238814391247771973e7c12e10bb1567da169c76aefd019c2b43b2ce97d"
+        },
+        {
+          "path": "references/schala_package_helper_timing_envelope_v1.json",
+          "size": 5974,
+          "sha256": "058d9f1ac1a2bb1c9a2f7ea375e9f507d3e1536e475eaf1316f1afd5dad0d8db"
+        },
+        {
+          "path": "references/work_session_publications_2026_10_03.json",
+          "size": 3147,
+          "sha256": "e876f8d53081217ec8043521f7165fa334feed1facc1e1997b650a48e1fdfd4c"
+        }
+      ]
     }
   ]
 }

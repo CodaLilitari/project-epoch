@@ -1,0 +1,1798 @@
+{
+  "schema": "project-epoch-scene8b-half-fill-v1",
+  "evidence_level": "verified-static",
+  "canonical_rom": {
+    "size": 4194304,
+    "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+  },
+  "source_spans": [
+    {
+      "start": "$CD34F1",
+      "end_exclusive": "$CD352D",
+      "size": 60,
+      "sha256": "b9df1c83b5d4336c44848cef615acc9c51da614efd37e63403d7d0ddbddc70c8"
+    },
+    {
+      "start": "$CD350E",
+      "end_exclusive": "$CD3519",
+      "size": 11,
+      "sha256": "5376e5bd2a369d754b41fa8b4f94c678f36930be63a30ffb3a5f96e824a30900"
+    },
+    {
+      "start": "$CD351E",
+      "end_exclusive": "$CD3529",
+      "size": 11,
+      "sha256": "f96e72446d5cfa5fefc44ad0c1714d98ea13ef6def308b572ac53935e19fcad9"
+    }
+  ],
+  "local_interpretations": 1024,
+  "matrix_sha256": "474ba6ace131be2e07b5a73e293f6d2b5b66e9a38aefa8183dd684c55035ce36",
+  "matrix_serialization": "UTF-8/LF serial(list of complete compact summaries), q/frame/s order",
+  "unknown_high_endpoint_pairs": 72,
+  "additional_endpoint_interpretations": 144,
+  "word_mask_algebra_pairs": 64512,
+  "frame_word_parity_inputs": 65536,
+  "complete_instruction_contexts": [
+    [
+      13448433,
+      false
+    ],
+    [
+      13448435,
+      false
+    ],
+    [
+      13448436,
+      false
+    ],
+    [
+      13448437,
+      false
+    ],
+    [
+      13448439,
+      false
+    ],
+    [
+      13448442,
+      false
+    ],
+    [
+      13448445,
+      false
+    ],
+    [
+      13448446,
+      false
+    ],
+    [
+      13448447,
+      false
+    ],
+    [
+      13448448,
+      false
+    ],
+    [
+      13448450,
+      false
+    ],
+    [
+      13448452,
+      false
+    ],
+    [
+      13448454,
+      false
+    ],
+    [
+      13448457,
+      false
+    ],
+    [
+      13448459,
+      false
+    ],
+    [
+      13448462,
+      false
+    ],
+    [
+      13448465,
+      false
+    ],
+    [
+      13448466,
+      false
+    ],
+    [
+      13448467,
+      false
+    ],
+    [
+      13448468,
+      false
+    ],
+    [
+      13448469,
+      false
+    ],
+    [
+      13448471,
+      false
+    ],
+    [
+      13448473,
+      false
+    ],
+    [
+      13448475,
+      false
+    ],
+    [
+      13448478,
+      false
+    ],
+    [
+      13448481,
+      false
+    ],
+    [
+      13448482,
+      false
+    ],
+    [
+      13448483,
+      false
+    ],
+    [
+      13448484,
+      false
+    ],
+    [
+      13448485,
+      false
+    ],
+    [
+      13448487,
+      false
+    ],
+    [
+      13448489,
+      false
+    ],
+    [
+      13448490,
+      false
+    ],
+    [
+      13448492,
+      true
+    ]
+  ],
+  "termination": {
+    "recurrence": "X_k=(2*(q&1)+4*k) mod 65536, target=2*(q&1)+4*s.",
+    "first_test_after_store": true,
+    "period": 16384,
+    "positive_s_store_count": "s",
+    "zero_s_store_count": 16384,
+    "zero_s_x_wraps": 1,
+    "general_fixed_target_condition": "A fixed target is reachable iff target-X0 is divisible by 4 modulo 65536; first positive solution is used.",
+    "condition": "DP45 stays fixed after setup; no asynchronous register/status/code mutation."
+  },
+  "comparison_envelope": {
+    "width": 896,
+    "meaning": "distance between the two canonical fill bases; neither interval is an approved allocation",
+    "indexed_writes_within_condition": "1<=s<=224 for either q parity and either frame parity"
+  },
+  "examples": [
+    {
+      "q": 0,
+      "s": 0,
+      "frame_parity": 0,
+      "word_stores": 16384,
+      "indexed_distinct_byte_writes": 32768,
+      "dp_word_stores": 2,
+      "ordinary_cpu_byte_store_events": 32772,
+      "first": [
+        8307041,
+        8307042
+      ],
+      "last": [
+        8372573,
+        8372574
+      ],
+      "x_wraps": 1,
+      "final_x": 0,
+      "final_a": 0,
+      "return_m8": true,
+      "comparison_envelope": [
+        8307041,
+        8307937
+      ],
+      "first_beyond_envelope": {
+        "iteration": 225,
+        "low": 8307937,
+        "high": 8307938
+      },
+      "first_bank7f_write": {
+        "iteration": 4009,
+        "low": 8323073,
+        "high": 8323074
+      },
+      "writes_q_byte_7ecaaa": true,
+      "writes_q_high_7ecaab": false,
+      "writes_known_irq_destination_7ec867": false,
+      "writes_known_irq_destination_7ec868": false,
+      "indexed_addresses_sha256": "e5600966c8ab8092312f6bce46c2933638a9d1e10022c4f4a8ed03f2cbbf3c06",
+      "ordered_cpu_word_writes_sha256": "4546c851f3603eeaed15e862bbb2cbdcf39789d71590d8c028006acb029caf4c",
+      "contexts": [
+        [
+          13448433,
+          false
+        ],
+        [
+          13448435,
+          false
+        ],
+        [
+          13448436,
+          false
+        ],
+        [
+          13448437,
+          false
+        ],
+        [
+          13448439,
+          false
+        ],
+        [
+          13448442,
+          false
+        ],
+        [
+          13448445,
+          false
+        ],
+        [
+          13448446,
+          false
+        ],
+        [
+          13448447,
+          false
+        ],
+        [
+          13448448,
+          false
+        ],
+        [
+          13448450,
+          false
+        ],
+        [
+          13448452,
+          false
+        ],
+        [
+          13448454,
+          false
+        ],
+        [
+          13448457,
+          false
+        ],
+        [
+          13448475,
+          false
+        ],
+        [
+          13448478,
+          false
+        ],
+        [
+          13448481,
+          false
+        ],
+        [
+          13448482,
+          false
+        ],
+        [
+          13448483,
+          false
+        ],
+        [
+          13448484,
+          false
+        ],
+        [
+          13448485,
+          false
+        ],
+        [
+          13448487,
+          false
+        ],
+        [
+          13448489,
+          false
+        ],
+        [
+          13448490,
+          false
+        ],
+        [
+          13448492,
+          true
+        ]
+      ],
+      "read_sites": [
+        [
+          13448433,
+          8257607
+        ],
+        [
+          13448439,
+          8309418
+        ],
+        [
+          13448452,
+          8257660
+        ],
+        [
+          13448475,
+          8305152
+        ]
+      ],
+      "steps": 114706,
+      "r": 1,
+      "copy_pair_count": 0,
+      "copy_skipped": true,
+      "copy_pointer": null
+    },
+    {
+      "q": 0,
+      "s": 0,
+      "frame_parity": 0,
+      "word_stores": 16384,
+      "indexed_distinct_byte_writes": 32768,
+      "dp_word_stores": 2,
+      "ordinary_cpu_byte_store_events": 32772,
+      "first": [
+        8307041,
+        8307042
+      ],
+      "last": [
+        8372573,
+        8372574
+      ],
+      "x_wraps": 1,
+      "final_x": 0,
+      "final_a": 0,
+      "return_m8": true,
+      "comparison_envelope": [
+        8307041,
+        8307937
+      ],
+      "first_beyond_envelope": {
+        "iteration": 225,
+        "low": 8307937,
+        "high": 8307938
+      },
+      "first_bank7f_write": {
+        "iteration": 4009,
+        "low": 8323073,
+        "high": 8323074
+      },
+      "writes_q_byte_7ecaaa": true,
+      "writes_q_high_7ecaab": false,
+      "writes_known_irq_destination_7ec867": false,
+      "writes_known_irq_destination_7ec868": false,
+      "indexed_addresses_sha256": "e5600966c8ab8092312f6bce46c2933638a9d1e10022c4f4a8ed03f2cbbf3c06",
+      "ordered_cpu_word_writes_sha256": "4546c851f3603eeaed15e862bbb2cbdcf39789d71590d8c028006acb029caf4c",
+      "contexts": [
+        [
+          13448433,
+          false
+        ],
+        [
+          13448435,
+          false
+        ],
+        [
+          13448436,
+          false
+        ],
+        [
+          13448437,
+          false
+        ],
+        [
+          13448439,
+          false
+        ],
+        [
+          13448442,
+          false
+        ],
+        [
+          13448445,
+          false
+        ],
+        [
+          13448446,
+          false
+        ],
+        [
+          13448447,
+          false
+        ],
+        [
+          13448448,
+          false
+        ],
+        [
+          13448450,
+          false
+        ],
+        [
+          13448452,
+          false
+        ],
+        [
+          13448454,
+          false
+        ],
+        [
+          13448457,
+          false
+        ],
+        [
+          13448475,
+          false
+        ],
+        [
+          13448478,
+          false
+        ],
+        [
+          13448481,
+          false
+        ],
+        [
+          13448482,
+          false
+        ],
+        [
+          13448483,
+          false
+        ],
+        [
+          13448484,
+          false
+        ],
+        [
+          13448485,
+          false
+        ],
+        [
+          13448487,
+          false
+        ],
+        [
+          13448489,
+          false
+        ],
+        [
+          13448490,
+          false
+        ],
+        [
+          13448492,
+          true
+        ]
+      ],
+      "read_sites": [
+        [
+          13448433,
+          8257607
+        ],
+        [
+          13448439,
+          8309418
+        ],
+        [
+          13448452,
+          8257660
+        ],
+        [
+          13448475,
+          8305152
+        ]
+      ],
+      "steps": 114706,
+      "r": 2,
+      "copy_pair_count": 1,
+      "copy_skipped": false,
+      "copy_pointer": 59329
+    },
+    {
+      "q": 1,
+      "s": 0,
+      "frame_parity": 1,
+      "word_stores": 16384,
+      "indexed_distinct_byte_writes": 32768,
+      "dp_word_stores": 2,
+      "ordinary_cpu_byte_store_events": 32772,
+      "first": [
+        8307939,
+        8307940
+      ],
+      "last": [
+        8373471,
+        8373472
+      ],
+      "x_wraps": 1,
+      "final_x": 2,
+      "final_a": 0,
+      "return_m8": true,
+      "comparison_envelope": [
+        8307937,
+        8308833
+      ],
+      "first_beyond_envelope": {
+        "iteration": 225,
+        "low": 8308835,
+        "high": 8308836
+      },
+      "first_bank7f_write": {
+        "iteration": 3784,
+        "low": 8323071,
+        "high": 8323072
+      },
+      "writes_q_byte_7ecaaa": false,
+      "writes_q_high_7ecaab": true,
+      "writes_known_irq_destination_7ec867": true,
+      "writes_known_irq_destination_7ec868": true,
+      "indexed_addresses_sha256": "a9ecfdf12a006341c9614255eba2d2b003ddbfe444303655f8d32836f772c9c6",
+      "ordered_cpu_word_writes_sha256": "e3deafc498074263a7e42e794f6b7cf36808221d072512cb0b069f081f87d136",
+      "contexts": [
+        [
+          13448433,
+          false
+        ],
+        [
+          13448435,
+          false
+        ],
+        [
+          13448436,
+          false
+        ],
+        [
+          13448437,
+          false
+        ],
+        [
+          13448439,
+          false
+        ],
+        [
+          13448442,
+          false
+        ],
+        [
+          13448445,
+          false
+        ],
+        [
+          13448446,
+          false
+        ],
+        [
+          13448447,
+          false
+        ],
+        [
+          13448448,
+          false
+        ],
+        [
+          13448450,
+          false
+        ],
+        [
+          13448452,
+          false
+        ],
+        [
+          13448454,
+          false
+        ],
+        [
+          13448457,
+          false
+        ],
+        [
+          13448459,
+          false
+        ],
+        [
+          13448462,
+          false
+        ],
+        [
+          13448465,
+          false
+        ],
+        [
+          13448466,
+          false
+        ],
+        [
+          13448467,
+          false
+        ],
+        [
+          13448468,
+          false
+        ],
+        [
+          13448469,
+          false
+        ],
+        [
+          13448471,
+          false
+        ],
+        [
+          13448473,
+          false
+        ],
+        [
+          13448489,
+          false
+        ],
+        [
+          13448490,
+          false
+        ],
+        [
+          13448492,
+          true
+        ]
+      ],
+      "read_sites": [
+        [
+          13448433,
+          8257607
+        ],
+        [
+          13448439,
+          8309418
+        ],
+        [
+          13448452,
+          8257660
+        ],
+        [
+          13448459,
+          8305152
+        ]
+      ],
+      "steps": 114707,
+      "r": 1,
+      "copy_pair_count": 0,
+      "copy_skipped": true,
+      "copy_pointer": null
+    },
+    {
+      "q": 0,
+      "s": 225,
+      "frame_parity": 0,
+      "word_stores": 225,
+      "indexed_distinct_byte_writes": 450,
+      "dp_word_stores": 2,
+      "ordinary_cpu_byte_store_events": 454,
+      "first": [
+        8307041,
+        8307042
+      ],
+      "last": [
+        8307937,
+        8307938
+      ],
+      "x_wraps": 0,
+      "final_x": 900,
+      "final_a": 0,
+      "return_m8": true,
+      "comparison_envelope": [
+        8307041,
+        8307937
+      ],
+      "first_beyond_envelope": {
+        "iteration": 225,
+        "low": 8307937,
+        "high": 8307938
+      },
+      "first_bank7f_write": null,
+      "writes_q_byte_7ecaaa": false,
+      "writes_q_high_7ecaab": false,
+      "writes_known_irq_destination_7ec867": false,
+      "writes_known_irq_destination_7ec868": false,
+      "indexed_addresses_sha256": "fb26133cadc1ed641d02d175604ef3832475b9ccf5aefcd5eb1b8394f2a1d692",
+      "ordered_cpu_word_writes_sha256": "628ee36f2f0f949b8892cc4d68553ffe94fa1378f43d53ad6158e4330b45c65d",
+      "contexts": [
+        [
+          13448433,
+          false
+        ],
+        [
+          13448435,
+          false
+        ],
+        [
+          13448436,
+          false
+        ],
+        [
+          13448437,
+          false
+        ],
+        [
+          13448439,
+          false
+        ],
+        [
+          13448442,
+          false
+        ],
+        [
+          13448445,
+          false
+        ],
+        [
+          13448446,
+          false
+        ],
+        [
+          13448447,
+          false
+        ],
+        [
+          13448448,
+          false
+        ],
+        [
+          13448450,
+          false
+        ],
+        [
+          13448452,
+          false
+        ],
+        [
+          13448454,
+          false
+        ],
+        [
+          13448457,
+          false
+        ],
+        [
+          13448475,
+          false
+        ],
+        [
+          13448478,
+          false
+        ],
+        [
+          13448481,
+          false
+        ],
+        [
+          13448482,
+          false
+        ],
+        [
+          13448483,
+          false
+        ],
+        [
+          13448484,
+          false
+        ],
+        [
+          13448485,
+          false
+        ],
+        [
+          13448487,
+          false
+        ],
+        [
+          13448489,
+          false
+        ],
+        [
+          13448490,
+          false
+        ],
+        [
+          13448492,
+          true
+        ]
+      ],
+      "read_sites": [
+        [
+          13448433,
+          8257607
+        ],
+        [
+          13448439,
+          8309418
+        ],
+        [
+          13448452,
+          8257660
+        ],
+        [
+          13448475,
+          8305152
+        ]
+      ],
+      "steps": 1593,
+      "r": 225,
+      "copy_pair_count": 222,
+      "copy_skipped": false,
+      "copy_pointer": 58003
+    },
+    {
+      "q": 1,
+      "s": 226,
+      "frame_parity": 1,
+      "word_stores": 226,
+      "indexed_distinct_byte_writes": 452,
+      "dp_word_stores": 2,
+      "ordinary_cpu_byte_store_events": 456,
+      "first": [
+        8307939,
+        8307940
+      ],
+      "last": [
+        8308839,
+        8308840
+      ],
+      "x_wraps": 0,
+      "final_x": 906,
+      "final_a": 0,
+      "return_m8": true,
+      "comparison_envelope": [
+        8307937,
+        8308833
+      ],
+      "first_beyond_envelope": {
+        "iteration": 225,
+        "low": 8308835,
+        "high": 8308836
+      },
+      "first_bank7f_write": null,
+      "writes_q_byte_7ecaaa": false,
+      "writes_q_high_7ecaab": false,
+      "writes_known_irq_destination_7ec867": true,
+      "writes_known_irq_destination_7ec868": true,
+      "indexed_addresses_sha256": "428f66cd911bfe8dcd0ebd8a96e4360d1d05cf8558d32663662223dac354890d",
+      "ordered_cpu_word_writes_sha256": "3905290ff844b64fdf138c8d7a45ca1b1b97f347bf5e3957d189b3aacffcc8ff",
+      "contexts": [
+        [
+          13448433,
+          false
+        ],
+        [
+          13448435,
+          false
+        ],
+        [
+          13448436,
+          false
+        ],
+        [
+          13448437,
+          false
+        ],
+        [
+          13448439,
+          false
+        ],
+        [
+          13448442,
+          false
+        ],
+        [
+          13448445,
+          false
+        ],
+        [
+          13448446,
+          false
+        ],
+        [
+          13448447,
+          false
+        ],
+        [
+          13448448,
+          false
+        ],
+        [
+          13448450,
+          false
+        ],
+        [
+          13448452,
+          false
+        ],
+        [
+          13448454,
+          false
+        ],
+        [
+          13448457,
+          false
+        ],
+        [
+          13448459,
+          false
+        ],
+        [
+          13448462,
+          false
+        ],
+        [
+          13448465,
+          false
+        ],
+        [
+          13448466,
+          false
+        ],
+        [
+          13448467,
+          false
+        ],
+        [
+          13448468,
+          false
+        ],
+        [
+          13448469,
+          false
+        ],
+        [
+          13448471,
+          false
+        ],
+        [
+          13448473,
+          false
+        ],
+        [
+          13448489,
+          false
+        ],
+        [
+          13448490,
+          false
+        ],
+        [
+          13448492,
+          true
+        ]
+      ],
+      "read_sites": [
+        [
+          13448433,
+          8257607
+        ],
+        [
+          13448439,
+          8309418
+        ],
+        [
+          13448452,
+          8257660
+        ],
+        [
+          13448459,
+          8305152
+        ]
+      ],
+      "steps": 1601,
+      "r": 226,
+      "copy_pair_count": 222,
+      "copy_skipped": false,
+      "copy_pointer": 58003
+    },
+    {
+      "q": 0,
+      "s": 224,
+      "frame_parity": 0,
+      "word_stores": 224,
+      "indexed_distinct_byte_writes": 448,
+      "dp_word_stores": 2,
+      "ordinary_cpu_byte_store_events": 452,
+      "first": [
+        8307041,
+        8307042
+      ],
+      "last": [
+        8307933,
+        8307934
+      ],
+      "x_wraps": 0,
+      "final_x": 896,
+      "final_a": 0,
+      "return_m8": true,
+      "comparison_envelope": [
+        8307041,
+        8307937
+      ],
+      "first_beyond_envelope": null,
+      "first_bank7f_write": null,
+      "writes_q_byte_7ecaaa": false,
+      "writes_q_high_7ecaab": false,
+      "writes_known_irq_destination_7ec867": false,
+      "writes_known_irq_destination_7ec868": false,
+      "indexed_addresses_sha256": "c2aa0ba2cd2e7cc270f9a5b1b2c4c5a29c576f8e381d830a12e9ef21000631a4",
+      "ordered_cpu_word_writes_sha256": "368bddec50dce32040d1ee73581c0d026e4fd5ef783f98bc3a778a8db3dbc040",
+      "contexts": [
+        [
+          13448433,
+          false
+        ],
+        [
+          13448435,
+          false
+        ],
+        [
+          13448436,
+          false
+        ],
+        [
+          13448437,
+          false
+        ],
+        [
+          13448439,
+          false
+        ],
+        [
+          13448442,
+          false
+        ],
+        [
+          13448445,
+          false
+        ],
+        [
+          13448446,
+          false
+        ],
+        [
+          13448447,
+          false
+        ],
+        [
+          13448448,
+          false
+        ],
+        [
+          13448450,
+          false
+        ],
+        [
+          13448452,
+          false
+        ],
+        [
+          13448454,
+          false
+        ],
+        [
+          13448457,
+          false
+        ],
+        [
+          13448475,
+          false
+        ],
+        [
+          13448478,
+          false
+        ],
+        [
+          13448481,
+          false
+        ],
+        [
+          13448482,
+          false
+        ],
+        [
+          13448483,
+          false
+        ],
+        [
+          13448484,
+          false
+        ],
+        [
+          13448485,
+          false
+        ],
+        [
+          13448487,
+          false
+        ],
+        [
+          13448489,
+          false
+        ],
+        [
+          13448490,
+          false
+        ],
+        [
+          13448492,
+          true
+        ]
+      ],
+      "read_sites": [
+        [
+          13448433,
+          8257607
+        ],
+        [
+          13448439,
+          8309418
+        ],
+        [
+          13448452,
+          8257660
+        ],
+        [
+          13448475,
+          8305152
+        ]
+      ],
+      "steps": 1586,
+      "r": 224,
+      "copy_pair_count": 222,
+      "copy_skipped": false,
+      "copy_pointer": 58003
+    }
+  ],
+  "writer_candidate": {
+    "status": "reviewer-derived direct-writer candidate; not a proved rooted script chain",
+    "source_spans": [
+      {
+        "start": "$CD2FBC",
+        "end_exclusive": "$CD3017",
+        "size": 91,
+        "sha256": "4bff9f0807a89e766aaca2fb1ceb616f08b2749e605f45cb18ff36b46e9dba99"
+      },
+      {
+        "start": "$CD24F3",
+        "end_exclusive": "$CD2518",
+        "size": 37,
+        "sha256": "19daf796369f42785a86065c353ad7160392566b7700a784cb56def0d11d8731"
+      },
+      {
+        "start": "$CD2436",
+        "end_exclusive": "$CD2460",
+        "size": 42,
+        "sha256": "7d36aaf905137a336eac62422ed7a8bef5282258dfa85a46aa4e5cc0374d5c75"
+      },
+      {
+        "start": "$CD1B42",
+        "end_exclusive": "$CD1B5E",
+        "size": 28,
+        "sha256": "c894d84f43b7195f7a18a3d69bc52f6849698ca9af5cf1021b7cda14c4d92f32"
+      },
+      {
+        "start": "$CD1A8B",
+        "end_exclusive": "$CD1AB2",
+        "size": 39,
+        "sha256": "4b1bea2954252c900444ffa8c9fef2982196dd9bed98c6fb4b3cffe6532b94f4"
+      },
+      {
+        "start": "$CD3189",
+        "end_exclusive": "$CD31B7",
+        "size": 46,
+        "sha256": "93d0ebd1f808af0d973421c0d9cd3792adc3d547d645c4d41580e4d4617ec046"
+      },
+      {
+        "start": "$CD109F",
+        "end_exclusive": "$CD10B9",
+        "size": 26,
+        "sha256": "6641bad845d13e252dc2281357366d8ca7a419ffdfaa0623dd1afb1af483af83"
+      },
+      {
+        "start": "$CD1F96",
+        "end_exclusive": "$CD1F9F",
+        "size": 9,
+        "sha256": "4110f74a0744178e385033bf9b77a4df87029b49903da2bb385b4ab1079e9e78"
+      }
+    ],
+    "command_cells": [
+      {
+        "command": 137,
+        "cell": "$CD16C7",
+        "target": "$CD2FBC",
+        "cell_sha256": "68e3e6a2861cdc382ad794160a05db0e9c199c2e7c462169ad0cb0e52ce10bee"
+      },
+      {
+        "command": 138,
+        "cell": "$CD16C9",
+        "target": "$CD2FED",
+        "cell_sha256": "2b72771098cc05c4175d866226c4aa0abbc0816282932ea9190ffaff1e9c2531"
+      },
+      {
+        "command": 139,
+        "cell": "$CD16CB",
+        "target": "$CD2FB7",
+        "cell_sha256": "a8e20963d9af132c4c6780965362cdd241df0c3163548c825e4169746597a469"
+      },
+      {
+        "command": 171,
+        "cell": "$CD170B",
+        "target": "$CD24F3",
+        "cell_sha256": "2fec46a90ac9ea7a084de840c3a4b6509577cfa9048255f1292061df80d94c90"
+      },
+      {
+        "command": 211,
+        "cell": "$CD175B",
+        "target": "$CD1A9C",
+        "cell_sha256": "25e4420492ce7d43118dd58b8df3992dc49f3bf79c2d7fe96c761a572ba7e219"
+      },
+      {
+        "command": 212,
+        "cell": "$CD175D",
+        "target": "$CD1A8B",
+        "cell_sha256": "f7b79a5fb57309578519c34afe9a23a3d9801c96a1905127b6960fe95eba6689"
+      }
+    ],
+    "candidate": {
+      "ordered_commands": [
+        "$8A",
+        "$AB",
+        "$8B"
+      ],
+      "slot0": {
+        "initializer_parameter": "$20",
+        "ab_parameter_choices": [
+          "$00",
+          "$01"
+        ],
+        "draw_q": 0
+      },
+      "slot1": {
+        "initializer_parameter": "$21",
+        "ab_parameter_choices": [
+          "$80",
+          "$81"
+        ],
+        "draw_q": 1
+      },
+      "chosen_r_inclusive": [
+        1,
+        127
+      ],
+      "conditional_clamped_s_inclusive": [
+        8,
+        212
+      ],
+      "arithmetic_pairs_checked": 26035,
+      "maximum_abs_r_minus_s": 211,
+      "requires": [
+        "M8/X16/B0/D0/DBR7E at command entries and binary arithmetic.",
+        "Each command parameter is stable across its repeated reads.",
+        "The selected slot, r and s survive intervening commands, emitters and asynchronous effects.",
+        "The half-shape selector and matching final raw q are deliberately chosen."
+      ]
+    },
+    "counterexample": {
+      "ordered_commands": [
+        "$8A",
+        "$89",
+        "$8B"
+      ],
+      "q": 0,
+      "initial_r": 1,
+      "initial_s": 1,
+      "s_delta": 255,
+      "final_s": 0,
+      "reason": "$89 computes min((old_s+delta)&255,211), so its upper clamp does not prove positivity."
+    },
+    "other_direct_writes": [
+      "$8A writes raw r/s and masks only its own index; it does not write q.",
+      "$8B stores its own unmasked q at CAAA.",
+      "$AB gives s8..212 only when its source parameter selects one of the just-clamped primary pairs.",
+      "$D4 can saturate r to zero; $D3 uses a dynamic upper bound.",
+      "$CD10B6 writes word CAAB/CAAC after AND00FF, leaving variable CAAB.",
+      "$CD1F99 clears CAAA in the separate B5/B6 path, not this draw chain."
+    ],
+    "rooted_legal_script_proved": false,
+    "whole_wram_writer_census": false,
+    "source_lifetime_proved": false,
+    "whole_emitter_memory_ownership_proved": false
+  },
+  "known_irq_destination": {
+    "reference_sha256": "6a6cc3ac65cc2e9ae5d5fe92a313a7a716f31cdbc1256fc18d38a4731eaadc31",
+    "site": "$CEEEB9",
+    "bytes": [
+      "$7EC867",
+      "$7EC868"
+    ],
+    "claim": "source-use overlap, not a proved concurrent runtime collision"
+  },
+  "premises": [
+    "Native M16/X16, D0/DBR7E and binary arithmetic at CD34F1; DP47 is zero-extended s.",
+    "The earlier emitter and optional copy return, retaining the accepted alias/input premises until this entry.",
+    "DP45 is written twice during setup and remains fixed through the selected fill loop.",
+    "Local physical stores cannot alias DP45/47/7C or BA00; asynchronous writers and live stack ownership remain separate.",
+    "q is read once before the fill. A later own store to CAAA/CAAB does not change this local loop, but defeats stronger whole-path input-lifetime assumptions."
+  ],
+  "q_alias_cases_unresolved": [
+    2,
+    3,
+    6,
+    7
+  ],
+  "copy_packet_unchanged": true,
+  "legal_game_input_domain_proved": false,
+  "whole_scene8b_closed": false,
+  "effective_whole_path_alias_closure": false,
+  "native_execution": false,
+  "production_approval": false,
+  "whole_nmi_bound": null,
+  "prerequisites": {
+    "copy_source": {
+      "path": "tools/audit_schala_scene8b_copy_producers_v1.py",
+      "size": 29492,
+      "sha256": "9a9619921c7cb310c8f0ad545109fe9b3c16cb04c63e3787b025c4087a39aec1"
+    },
+    "copy_tests": {
+      "path": "tests/test_schala_scene8b_copy_producers_v1.py",
+      "size": 16150,
+      "sha256": "60b316d31947f86703d6ba46384930f25a3f7aa04fc1db293f24d1fff6c2ae19"
+    },
+    "copy_reference": {
+      "path": "references/schala_scene8b_copy_producers_v1.json",
+      "size": 171599,
+      "sha256": "f3fc3cf0999d0782f80c76a39ace13332dc31ef895482391e3e3282512d14ee6"
+    },
+    "irq_reference": {
+      "path": "references/schala_package_irq_memory_contract_v2.json",
+      "size": 84558,
+      "sha256": "6a6cc3ac65cc2e9ae5d5fe92a313a7a716f31cdbc1256fc18d38a4731eaadc31"
+    },
+    "cpu_instructions": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    "cpu_shared": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    "cpu_core": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+    },
+    "cpu_memory": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+    }
+  },
+  "source_identities": [
+    {
+      "path": "tools/audit_schala_scene8b_half_fill_v1.py",
+      "size": 27649,
+      "sha256": "0b71d1b3c08b94acfc2781bcefebaaf174c39a5e18b52b9ffa8932eee0f6fa7a"
+    },
+    {
+      "path": "tests/test_schala_scene8b_half_fill_v1.py",
+      "size": 12403,
+      "sha256": "0667fd0da67493b8848aa073a1ebc2cafd09c1c8ec5b223e36d475993ec7a035"
+    }
+  ],
+  "reused_underlying_source_identities": [
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CD.asm",
+      "size": 474851,
+      "sha256": "0d230620c6accf311c0588e2fefaf3bcc48b0d42575f3745fec3a402a6ca19fb"
+    },
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CE.asm",
+      "size": 67102,
+      "sha256": "23b885667ad4f454ed95f4d441253378cb40964c3e2d543120f5f9c1288a35ad"
+    },
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_CF.asm",
+      "size": 300449,
+      "sha256": "f2783556f4963cbeb75b320c996a3fd8e5da6d435009aa8c1516086c65ed02a6"
+    },
+    {
+      "path": "private/research/ct_disassembly_eeae27a/bank_D1.asm",
+      "size": 189600,
+      "sha256": "020f6df9efd22cc12a35608da6523b5d2e5d76d965d94567e0b74d50ab9eacea"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    {
+      "path": "references/schala_nmi_mode_bodies_v1.json",
+      "size": 160900,
+      "sha256": "f3057c1cf9d0b354a318e3e67b2c760fdf9d8bfc49784d4efed344ba997a8d85"
+    },
+    {
+      "path": "references/schala_nmi_mode_inputs_v1.json",
+      "size": 138037,
+      "sha256": "dc715f6726e482a00e649d15252b5ca42f933f82198d8520c78d7867f3932530"
+    },
+    {
+      "path": "references/schala_nmi_scroll_inputs_v1.json",
+      "size": 87273,
+      "sha256": "003bf6be7e686445a8aa0a7bddf36bd8ca35b2fb49aa4d184ec5f3bc15db8013"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_closure_v2.json",
+      "size": 321839,
+      "sha256": "413a6e70a222aee957d9d9f37a7655634e034bda91b777ebdcebad7c29911242"
+    },
+    {
+      "path": "references/schala_package_normal_nmi_v1.json",
+      "size": 71372,
+      "sha256": "27dd6f602781b83107bd7ab9072f1704e26bb39433713a3188679114db3b4f2c"
+    },
+    {
+      "path": "references/schala_scene8b_dispatch_inputs_v1.json",
+      "size": 124619,
+      "sha256": "f3cb6cef7e04c2dd101eb69ee4ccb212443ea3ea91e248f07ed2a586155609bf"
+    },
+    {
+      "path": "references/schala_scene_copy_pointer_v1.json",
+      "size": 70722,
+      "sha256": "13913c7b244b454a8afd4afd89977408466e2dda06699578f344b9c691789c53"
+    },
+    {
+      "path": "references/schala_scene_dispatch_inputs_v1.json",
+      "size": 156163,
+      "sha256": "d5604c65934dff1dfa4796ea3d990e227065e9b28a5499695f590fff912a8c13"
+    },
+    {
+      "path": "references/schala_scene_handler_closure_v1.json",
+      "size": 1029264,
+      "sha256": "ac44bd733e1b6f4dffd91887e5ac42738a57ace78a8583c5ff9c5bf2e602a43a"
+    },
+    {
+      "path": "references/schala_scene_handler_values_v1.json",
+      "size": 376981,
+      "sha256": "cb99bfff13c319a7ec67742eeed1ab0fee0827799ec80b89cce2f3dd668af543"
+    },
+    {
+      "path": "references/schala_scene_handler_values_v2.json",
+      "size": 357484,
+      "sha256": "52543e1820669eac00b90baa39e307dcb9b35c9be14e7a0eff42e5aa762d8b87"
+    },
+    {
+      "path": "tests/test_schala_nmi_mode_bodies_v1.py",
+      "size": 8308,
+      "sha256": "3bccabc53eda3357079a2db236c37cbd81e1cf139c6e5c5ec913ee0facb38833"
+    },
+    {
+      "path": "tests/test_schala_nmi_mode_inputs_v1.py",
+      "size": 7189,
+      "sha256": "4a1be7a22359d6f9388a36b6c92af937574592525734dc3d092b7df843839e2c"
+    },
+    {
+      "path": "tests/test_schala_nmi_scroll_inputs_v1.py",
+      "size": 9965,
+      "sha256": "f4083eb152d606a39511a011e7454384c237f3ece149d786202bd718c328a3c9"
+    },
+    {
+      "path": "tests/test_schala_package_normal_nmi_closure_v2.py",
+      "size": 8449,
+      "sha256": "ed5c9cfc7960eeac0a0ca27c97cb462b67b0e518a9b9164d03a8ada3ae0b53fb"
+    },
+    {
+      "path": "tests/test_schala_scene8b_copy_producers_v1.py",
+      "size": 16150,
+      "sha256": "60b316d31947f86703d6ba46384930f25a3f7aa04fc1db293f24d1fff6c2ae19"
+    },
+    {
+      "path": "tests/test_schala_scene8b_dispatch_inputs_v1.py",
+      "size": 7461,
+      "sha256": "1424f403932f3d5a3f106deac480c628c7f10957944d2b3398d7c2ed1f44622e"
+    },
+    {
+      "path": "tests/test_schala_scene_copy_pointer_v1.py",
+      "size": 9614,
+      "sha256": "9dd6fb63ca9877da69226648a7de4fa3198b2bf67bdd6612ca0767bf655862ca"
+    },
+    {
+      "path": "tests/test_schala_scene_dispatch_inputs_v1.py",
+      "size": 6509,
+      "sha256": "d6c96fa9a8444f4e5e5bb403e36bf3035433f6e190f21dbc1454eccf6a2fe195"
+    },
+    {
+      "path": "tests/test_schala_scene_handler_closure_v1.py",
+      "size": 9821,
+      "sha256": "89b50ffd56f3fdc9aa528fd14c563281226421d10140c92a7d4483aa727357da"
+    },
+    {
+      "path": "tests/test_schala_scene_handler_values_v1.py",
+      "size": 8109,
+      "sha256": "6c3d7e6f1b1da9c2b9166452842a4dcb0bf93b2b942905b154b615a5017f7601"
+    },
+    {
+      "path": "tests/test_schala_scene_handler_values_v2.py",
+      "size": 6150,
+      "sha256": "76bd30b55b96d1c2580a76af7827256119899b8bfbc4f4e56974e743603b9528"
+    },
+    {
+      "path": "tools/audit_schala_nmi_mode_bodies_v1.py",
+      "size": 13937,
+      "sha256": "9b685d63e68153d1c7d56213af5b1211237c3f36d067046a9e854ae5beb34187"
+    },
+    {
+      "path": "tools/audit_schala_nmi_mode_inputs_v1.py",
+      "size": 13792,
+      "sha256": "2372dd5c829f889ca0069227d1d4322726ce2c893c4e55cdf1471a3f0f28614f"
+    },
+    {
+      "path": "tools/audit_schala_nmi_scroll_inputs_v1.py",
+      "size": 19678,
+      "sha256": "4153a240d3a1fa750dd0ac67626776e061ceb049f03b9fce54fc08da8e31c686"
+    },
+    {
+      "path": "tools/audit_schala_package_interrupt_closure_v1.py",
+      "size": 13647,
+      "sha256": "727264d7c6e2de635eb6c32b53977a3f83464a85919c72e3bb2cf04f68d96ea9"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_closure_v2.py",
+      "size": 19110,
+      "sha256": "c346e0db11dc35a4ecd4e756dcc951ca7a760d3bd52849da55b1f7fe7e7b7e13"
+    },
+    {
+      "path": "tools/audit_schala_package_normal_nmi_v1.py",
+      "size": 16826,
+      "sha256": "81a145b4ec078d5cf22ec5680cdfb66d427f876f40eefd0a50af432f8b9f51a9"
+    },
+    {
+      "path": "tools/audit_schala_scene8b_copy_producers_v1.py",
+      "size": 29492,
+      "sha256": "9a9619921c7cb310c8f0ad545109fe9b3c16cb04c63e3787b025c4087a39aec1"
+    },
+    {
+      "path": "tools/audit_schala_scene8b_dispatch_inputs_v1.py",
+      "size": 17345,
+      "sha256": "d71ceb87f2840ce59f7056ccecb904797de326e28ef9261e12e16fcbf0a607c6"
+    },
+    {
+      "path": "tools/audit_schala_scene_copy_pointer_v1.py",
+      "size": 18696,
+      "sha256": "e3fb94da358b0bd122d9e6f502cacd4fb424af0ec19831ccb89b0bb5ceb4e973"
+    },
+    {
+      "path": "tools/audit_schala_scene_dispatch_inputs_v1.py",
+      "size": 14561,
+      "sha256": "3aef357ad9c557d21015711e834d37a370737228665cca4c2ece4745a71f4d30"
+    },
+    {
+      "path": "tools/audit_schala_scene_handler_closure_v1.py",
+      "size": 24705,
+      "sha256": "2c8de06dea25a35971143bf6a8c868aea1996a6ab6a8de26fa4b5a12c9ade71d"
+    },
+    {
+      "path": "tools/audit_schala_scene_handler_values_v1.py",
+      "size": 21359,
+      "sha256": "b92e5ff6534cb6383754753fa484ac6c4e8d38fab68e6645d207db9e47796610"
+    },
+    {
+      "path": "tools/audit_schala_scene_handler_values_v2.py",
+      "size": 19076,
+      "sha256": "cfacea4c27289daa12f8a2965ee4e16b46b53b4f7b72b23ec91b648eedf9c872"
+    }
+  ],
+  "preserved_copy_contract": {
+    "reference_sha256": "f3fc3cf0999d0782f80c76a39ace13332dc31ef895482391e3e3282512d14ee6",
+    "entry": "$CD347D",
+    "continuation": "$CD34F1",
+    "earlier_termination_proved": false,
+    "earlier_memory_effects_proved": false,
+    "reference_modified": false,
+    "inherited_near_frame_bytes": 2,
+    "additional_stack_bytes": 0
+  },
+  "reviewed_cpu_semantic_spans": [
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "first_line": 29,
+      "last_line_inclusive": 36,
+      "sha256": "711c6af3205abcf8c3f4488835f720b817e426736fbc8bc7fa4ec4a90d83f9c0",
+      "role": "native instruction begins with 24-bit read/write mask",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "first_line": 374,
+      "last_line_inclusive": 378,
+      "sha256": "b64a6c8adfd279a48f05c0482b76f990bea27d00dad92a8bd130d7ba6a5bb687",
+      "role": "DBR-qualified absolute data address",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "first_line": 435,
+      "last_line_inclusive": 454,
+      "sha256": "d1a544297d905e2920654c2575ff8b63aee75cb0e53ea407fe792a2324cbf908",
+      "role": "word loads/stores and independently carried high byte",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "first_line": 506,
+      "last_line_inclusive": 513,
+      "sha256": "2e0114b8b92bff6b5d334d8872613200ddc9798dd74f680397e2c7f4dd5c3db5",
+      "role": "D-relative address and native direct-page addition",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "first_line": 580,
+      "last_line_inclusive": 589,
+      "sha256": "6d14cbba0e777e8f4026afbb48d239b25eaa5b8333ade84c09275e830e7cadcd",
+      "role": "word register assignment and zero flag",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 35,
+      "last_line_inclusive": 98,
+      "sha256": "3f10c05cd254a47ee62944abf5c75253724484b761efdcf9d1026d552aa6de70",
+      "role": "binary word ADC including carry and truncation",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 173,
+      "last_line_inclusive": 226,
+      "sha256": "639b50d7820b356f05b2ebfe472afa2d5e67b3350e0129484f1bcd87f7bbff53",
+      "role": "BEQ/BNE consume current zero flag; relative branch",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 275,
+      "last_line_inclusive": 284,
+      "sha256": "f4a2c3299aba7011a1d025ca772de02421c1a636852526c849ab1ab2e426a295",
+      "role": "SEP20 changes M without truncating X/Y",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 299,
+      "last_line_inclusive": 302,
+      "sha256": "4efd6eef702bfbc2073369d0e9c0665adafde4725d19eb6807f1dbbb72e9184f",
+      "role": "INX calls increment helper",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 329,
+      "last_line_inclusive": 332,
+      "sha256": "adb8be936fa77aaf86e64ff8ede147901dc0dc88627a6bba64c27219501b4a25",
+      "role": "index-width increment with word truncation",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 354,
+      "last_line_inclusive": 386,
+      "sha256": "256440aa0e9fda39df29395ebf10fb4911f6cae5729c66278b1314b06cb7665e",
+      "role": "CPX compares at X width and sets carry/zero",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 548,
+      "last_line_inclusive": 554,
+      "sha256": "80efe82353d76ac3584277f7e6834f6218194529addf3950269ba7185825feeb",
+      "role": "AND at M width",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 578,
+      "last_line_inclusive": 588,
+      "sha256": "8f94e3c871c18af4dfccb0ce34555113037d8379ee3c178102e0d247b686a604",
+      "role": "left shift carry and word truncation",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 626,
+      "last_line_inclusive": 633,
+      "sha256": "ebe59a074178544f5d283b64190b70b730660d45d38f66a5d2017a9ff524cc66",
+      "role": "ASL accumulator at M width",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 915,
+      "last_line_inclusive": 957,
+      "sha256": "a5e2abef6b55516e09cac236d207ac34f0412a68e1d82e846c038323ac475aab",
+      "role": "word data load/store selection",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 1058,
+      "last_line_inclusive": 1081,
+      "sha256": "5f19d9767798abf6977b7315439bf7dca322ac16f78783019bb9a9c4b1ca6ecc",
+      "role": "TAX at X width and TDC transfers whole D",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 1173,
+      "last_line_inclusive": 1185,
+      "sha256": "90410170a5a700ad2ce966e47f5c780482bdd9a298d3c3565b9e5708ed404c6b",
+      "role": "absolute-X addition carries across bank boundary",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "first_line": 1255,
+      "last_line_inclusive": 1259,
+      "sha256": "8eead4af2e4d8bccb41e4af881845c2714da872b2ea850f582517148a61bd819",
+      "role": "direct-page mode uses bank-zero address",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "first_line": 53,
+      "last_line_inclusive": 68,
+      "sha256": "f2339d541dbb1ab0400dfa1511b7fcfe9170f0915bd54e32d03f4d461eaf3753",
+      "role": "WRAM banks 7E/7F and low-bank 0000..1FFF mirrors",
+      "interpretation": "reviewer-derived over pinned source"
+    }
+  ],
+  "prerequisite_scope": "Exact accepted copy source/tests/reference and declared transitive identities checked before/after; six selected canonical predecessor replays. No full prerequisite collector regeneration.",
+  "reviewed_cpu_semantics": {
+    "commit": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+    "interpretation": "Reviewer-derived M16 ASL/ADC, X16 INX/CPX/flags, native direct-page and 24-bit absolute-X word stores; hashes identify source, not automatic semantics."
+  },
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_schala_scene8b_half_fill_v1.py"
+  ],
+  "serialization": "UTF-8 indented JSON, LF, one trailing newline"
+}

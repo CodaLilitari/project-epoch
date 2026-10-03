@@ -51,7 +51,11 @@ or a newly identified boundary.
 2. The [scene `$8B` copy-producer packet](schala_scene8b_copy_producers_v1.md)
    is accepted after independent peer/root review, 52 tests and exact CLI
    reproduction. Four stubs reduce to three pointer producers with explicit
-   input/alias premises. The separate half-fill boundary remains under review.
+   input/alias premises. The separate [half-fill packet](schala_scene8b_half_fill_v1.md)
+   is now accepted with 38 tests and independently repeated metadata. Zero s
+   causes 16,384 word stores under fixed-target premises; positive s fits the
+   $380 comparison interval exactly for 1..224. This proves no legal script
+   domain or ownership of that interval.
 3. The [actual-game NMI observer](normal_nmi_stack_observation_v1.md) now has
    two identical full traces across five selected intervals, independently
    revalidated with complete observed WRAM reconciliation. Each reaches 34

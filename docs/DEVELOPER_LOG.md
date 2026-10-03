@@ -1400,3 +1400,40 @@ evidence and was not retried after ambiguous delivery. Completed independent
 local reviews and root-executed tests/reproductions support this checkpoint.
 All game inputs and raw traces remain ignored and private. No production
 hook, allocation, selector, completion protocol or eighth-PC claim is added.
+
+## 2026-10-03 — half-fill boundary independently accepted
+
+The preceding actual-NMI/timing checkpoint was pushed to CodaLilitari GitHub
+as `0bd483ab268e3e65cfa843dc6a9ecc9348c59a7e`. Authenticated API and remote
+branch identities agree; all sixteen changed files were fetched at that commit
+and independently compared with the local committed bytes. Its receipt is in
+the October3 publication reference. A fresh read-only GitLab check at 21:50 UTC
+still returned `a0b17f6227ed6a54cdfb7c63e726feb94d26b89d`; no mirror write or
+portfolio change has occurred.
+
+The [half-fill v1 packet](schala_scene8b_half_fill_v1.md) closes the declared
+local continuation at CD34F1 under explicit fixed-input/machine premises.
+Positive byte s causes s word stores; s0 causes 16,384 stores, 32,768 distinct
+indexed WRAM byte writes and one X wrap. Both DP45 setup word stores are
+included. Address addition and a word's high byte carry into bank7F.
+The comparison interval between canonical bases fits s1..224 exactly but is
+not an approved allocation. Copy-safe witnesses s225/226 reach another base
+or the separately established IRQ destination C867/68. No concurrent runtime
+collision or legal vanilla producer has been proved.
+
+Root reviewed the complete new source/tests/report, passed 38 tests and ran
+two fresh CLI forms. Both match the author and independent peer's 44,048-byte
+metadata, SHA-256 `97c7c22478aa688e6ceacb4508c3fc6b947dfdcc43930c0a8569402c6c7f10af`.
+The collector performs 1,024 full local interpretations, 144 endpoint
+interpretations, 64,512 mask projections and six actual canonical predecessor
+replays. It checks 41 inherited identities before/after without pretending
+to regenerate all older exhaustive collectors. The peer separately used a
+mutable-memory model for 112 cases and checked all frame words and admitted
+q/high combinations at s1. Exact review receipts are linked in the report.
+
+The older copy packet already declared this continuation open and remains
+unchanged. This result therefore adds evidence without contradicting a
+published source. The proposed 8A/AB/8B writer chain still lacks a rooted
+script, same-slot lifetime and intervening-writer proof. No MAP correction
+is invented for an obligation that was explicitly unresolved. No production
+hook, allocation, selector or actual eighth-PC behavior is added.
