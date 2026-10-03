@@ -1248,3 +1248,77 @@ the separately numbered two-target $80 extension and actual $8B pointer
 producers. Legal domains, physical memory/stack ownership, full game-NMI
 composition, publication isolation and native rejection cleanup remain open.
 The nine-hour session remains active through 23:58:41 UTC.
+
+## 2026-10-03 — interrupted-session recovery and current host audit
+
+Work resumed at 20:40 UTC from the interrupted September 8 checkpoint.
+The historical September deadline above is preserved as history; the gap
+between sessions is not engineering time. Before edits, nine unfinished or
+locally changed files were copied byte-for-byte into an ignored recovery
+archive, with source paths, sizes and SHA-256 identities in its manifest.
+Accepted September sources, references and native traces remain unchanged.
+
+At Andrei's request, Coda checked CodaLilitari's GitHub, GitLab and portfolio.
+The authenticated [GitHub main](https://github.com/CodaLilitari/project-epoch)
+and public [GitLab main](https://gitlab.com/codalilitari/project-epoch) both
+matched the local `a0b17f6227ed6a54cdfb7c63e726feb94d26b89d` checkpoint.
+GitLab's September 28 project activity did not represent newer engineering
+commits. The old `andreipemberton/project-epoch` GitHub API path returned 404;
+the local `origin` now uses the verified CodaLilitari path. This changes a
+local remote URL, not repository ownership or account restriction status.
+
+The [portfolio case](https://richard-pemberton-research.darkahn.chatgpt.site/#project-epoch)
+already points to GitLab and accurately describes ongoing eighth-character
+research, locally retained game inputs and no finished playable release.
+No portfolio edit was needed or performed. A focused public research refresh
+also confirmed that `dscotton/ct_disassembly` main is still the pinned
+`eeae27acdb6565e96d1d796a3d60792c250c0aa1`, dated July 11. That verifies
+this dependency's current head; it is not a claim that every online project
+or unreleased patch was exhaustively searched.
+
+The separate [scene80 remaining-return v2 packet](schala_scene80_remaining_returns_v2.md)
+now closes its two former conditional frontiers. Index 9's completed MVPs
+leave B=$FF until the later TDC restores B0. Index 13's long callee explicitly
+uses temporary D=$0A00 and restores saved D0 at both returns. All 29 reviewed
+physical targets have conditional B0/D0/DBR7E/M1X0I1 returns, with a largest
+seven additional stack bytes, nine including the existing near frame.
+The complete old reference and all 114 prior direct-control contracts
+reproduce unchanged. Root reviewed the full new source/report/tests, passed
+38 tests, and ran two independent CLI processes yielding identical 59,258-byte
+metadata, SHA-256 `9f24a7fb84c1534363c4d0384d835e41cdf03d62e4ca303f3502519a1d781338`.
+This is an additive conditional proof, not a new legal-input, physical-memory
+or whole-NMI claim. The current short resume page is [CURRENT_HANDOFF](CURRENT_HANDOFF.md).
+
+The separate [scene8B copy-producer v1 packet](schala_scene8b_copy_producers_v1.md)
+also passed root and independent peer review. Three distinct producers serve
+the four previously open stubs. Their 393,216 actual evaluations cover two
+q-parity representatives and all r/s byte pairs; full-q source use has an
+explicit dependency proof, and four alias cases refuse. Each producer has
+64,414 safe-or-skipped r/s pairs and 1,122 outside the copy suffix domain.
+The typed return chain is nine counted bytes including the scene frame.
+All 52 tests pass; author, peer and root CLI outputs match the 171,599-byte
+reference, SHA-256 `f3fc3cf0999d0782f80c76a39ace13332dc31ef895482391e3e3282512d14ee6`.
+The peer additionally checked 9,072 canonical high-q/boundary cases. The
+interrupted draft's word-versus-bank-qualified pointer mismatch was our
+unpublished implementation error, documented with its preserved source
+identity; it was not an upstream mapping contradiction. The half-fill
+continuation remains a distinct memory/termination obligation, even when
+the preceding copy is skipped.
+
+Before any native use of the new NMI observer, independent review exposed
+an unpublished validator defect: high-ROM indirect-pointer bus values were
+not reconciled with immutable source bytes. An original forged-jump example
+could skip instructions and pass a falsely shallow interval. The correction
+checks all captured high-ROM reads; positive and negative whole-interval
+fixtures now pass their intended outcomes. All 79 focused tests pass, and
+the primary implementation behind nonmutating debugger reads is now pinned.
+The defective source remains preserved; it supported no accepted native run.
+
+A single read-only pilot then observed the unchanged game's NMI at poll 379.
+Independent revalidation found 5,507 executed instructions, 13,028 bus events,
+exact full-WRAM reconciliation and minimum SP=$06A8: 34 bytes below handler
+entry, 38 including its already-existing hardware frame. The process log
+contains 28,319 Mesen uninitialized-read diagnostics; it is not a warning-free
+run or a general initialization-safety proof. The pilot is not yet a repeated
+runtime result. Full-pair execution and further source/evidence review remain
+in progress; no game hook, production allocation or selector is approved.

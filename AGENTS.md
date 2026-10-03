@@ -373,12 +373,29 @@ These are separate namespaces. Never conflate them.
   MVP/ADC-dp-X frontiers in the preserved v1 packet. Its annotated 214-byte
   incbin contains a completely decoded 156-byte code suffix, not 107 proved
   legal entries. The wider 128-cell B0 census is hypothetical only.
+- The additive scene `$80` remaining-returns v2 packet closes those two
+  conditional frontiers without changing v1. MVP completion leaves B=$FF
+  until later TDC; the other routine temporarily uses D=$0A00 and explicitly
+  restores saved D0 on both returns. All 29 reviewed physical targets have
+  conditional B0/D0/DBR7E/M1X0I1 returns, with at most seven additional
+  bytes, nine including the inherited near frame. Legal input domains,
+  effective memory/stack aliases, termination and whole-NMI remain open.
 - Scene `$8B`'s helper has exact CLC/failure and SEC/success return paths.
   Only success establishes B0 before the caller's dispatch; failure can
   retain unknown B and exits. Distinguish q's preserved high bit in the
   selector-source index from z's discarded high bit in the final index.
   Two of six reviewed targets close; four retain their own `$CEE7CC`
   pointer producers. Never reuse the B5/B6 pointer proof by jump address alone.
+- The separate scene `$8B` copy-producers v1 packet proves conditional
+  emitter returns and three distinct count/pointer producers for those four
+  stubs. Exactly 393,216 CPU projections cover two q-parity representatives;
+  full-q source use is separately factored and q=2/3/6/7 aliases refuse.
+  Each producer has 64,414 safe-or-skipped r/s pairs and 1,122 outside the
+  proved suffix domain; shortened variants skip 291 zero-count pairs. Their
+  typed copy-return chain is nine bytes including the scene near frame.
+  Zero-copy skip still enters the half-fill continuation, whose effective
+  destinations and termination remain outside v1. Legal domains, physical
+  memory/stack ownership and full scene/NMI closure remain unproved.
 - The B5/B6 copy-pointer producer is separately proved under stable byte
   inputs r/s, CAAA=0, native M8/X16, D0/DBR7E and binary arithmetic. Its
   signed count n spans -33..222; 64,414 of 65,536 pairs select the proved
@@ -568,9 +585,13 @@ source-only bank-qualified direct-entry adapter are now complete at the host
 model level while every production high package binding remains absent.
 `BA-SYMBOLIC-HIGH-PACKAGE` is complete as a source-only host proof, and
 `BA-NATIVE-HELPER-CONFORMANCE` is complete in the isolated synthetic Mesen
-matrix. The next gate is `BA-NATIVE-INTEGRATION-DESIGN`: exact live resolver
-hook/continuation evidence, named expanded placement and source-bank access,
-and scratch/interrupt ownership before installation.
+matrix. The current gate is `BA-NATIVE-INTEGRATION-DESIGN`. Exact primary and
+alternate resolver observations, natural success/refusal transactions, ROM
+code/data access, stack-local helper execution and combined original-NMI
+preemption now have separate completed evidence. Remaining integration work
+is named production placement, actual game interrupt/stack and publication
+ownership, intentional action completion, and native cleanup for a new
+preflight refusal.
 The ordinary primary resolver and its completion latches now have a repeated
 clean-ROM observation. A separate repeated Black Hole/Spekkio observation proves
 the canonical alternate branch from its pinned imported-save checkpoint;
@@ -582,9 +603,12 @@ decoded native `$1E/$1F` handler semantics. Every default `$80-$8F` selector
 remains unbound; high associations exist only inside the symbolic and native
 synthetic proof fixtures. The stronger
 location-event contextual model and complete source-role/facing inventory
-remain explicit later gates. The original helper is authored and executed
-only in synthetic WRAM; no production placement, hook, scratch ownership, or
-game integration is approved.
+remain explicit later gates. The historical 537-byte helper was proved only
+in synthetic WRAM. Its separate 577-byte stack-local successor now executes
+from an original diagnostic cartridge in two 3,184-case normal runs and two
+152-case runs with a minimal original NMI. Those completed scopes must not
+be described as WRAM-only or as actual game-NMI integration. No production
+placement, hook, scratch ownership or game integration is approved.
 
 The clone diagnostic must separately account for:
 

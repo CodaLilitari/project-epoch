@@ -3,9 +3,10 @@
 Status: active engineering guide  
 Selected eighth character: Schala  
 Target logical playable ID: `$07`  
-Last updated: 2026-09-08
+Last updated: 2026-10-03
 
-For chronological handoff, read [DEVELOPER_LOG.md](DEVELOPER_LOG.md). For
+Start with [CURRENT_HANDOFF.md](CURRENT_HANDOFF.md). For chronological
+handoff, read [DEVELOPER_LOG.md](DEVELOPER_LOG.md). For
 claims contradicted or superseded by later evidence, read
 [DATA_MAPPING_CORRECTIONS.md](DATA_MAPPING_CORRECTIONS.md); each entry cites
 the exact old source and its replacement evidence.
@@ -77,6 +78,8 @@ proofs have separate scopes and should be reused:
 | [Scene $80 topology](schala_scene80_subdispatch_v1.md) | 29 physical words before selected code; 27 conditional returns, two frontiers; 40 tests | First 29 is a source-topology boundary, not legal parameter extent; wider 128-cell census is hypothetical |
 | [Scene $8B dispatch inputs](schala_scene8b_dispatch_inputs_v1.md) | Successful helper return proves B0; exact q/z geometry and two closed selected targets; 35 tests | Failure B unknown; four targets retain different copy-pointer producers, with no complete legal domain |
 | [B5/B6 copy-pointer producer](schala_scene_copy_pointer_v1.md) | All 65,536 byte pairs checked; 64,414 select proved suffixes; typed 11-byte return chain; 37 tests | Stable inputs and binary arithmetic required; effective memory, legal producers and full handler remain open |
+| [Scene $80 remaining returns v2](schala_scene80_remaining_returns_v2.md) | Two remaining targets close; explicit MVP and temporary-D effects, all 29 conditional returns; 38 tests | Preserves v1 and all 114 earlier direct contracts; no legal producer domain, physical aliases or whole-NMI bound |
+| [Scene $8B copy producers v1](schala_scene8b_copy_producers_v1.md) | Three producers, 393,216 CPU projections, full-q factorization and nine-byte typed return chains; 52 tests | Four q aliases refuse; safe copy arithmetic does not prove half-fill memory safety or whole-target closure |
 
 The shared finalizer is reached by both success and failure. The successful
 pre-effect `$C1BBD4` boundary already follows AE/target-mask setup, while the
@@ -322,7 +325,7 @@ sound deceptively similar.
 | `BA-CMD-1E-FINAL-EXPANDED-POLICY` | `complete-static` | Profile `decoded-command-1e-exclusion-flat-direct-v0` forbids decoded `$1E/$1F/$21`, permits raw operand byte `$1E`, independently decodes both masks and every suffix/shared entrypoint through `$00`, and requires disjoint exact named spans with complete token ownership. The certificate pins content and interpreter identities. It adapts no handler and binds no package. |
 | `BA-SYMBOLIC-HIGH-PACKAGE` | `complete-source-host` | One terminal-only symbolic package, exact named synthetic spans, two mask relations sharing one direct entry, all 256 `$A0B3` inputs, canonical row `$01` with only byte `+0` changed, 128 unchanged canonical selectors, and 16 unbound default high selectors. No action, effect, runtime, or production allocation follows. |
 | `BA-NATIVE-HELPER-CONFORMANCE` | `complete-native-synthetic` | Original 537-byte 65C816 helper passes 879 cases in three Mesen runs at two code origins. The identical-origin pair has matching traces; native CPU state and exact writes satisfy the host contract. Diagnostic WRAM source banks only; no game hook, expanded-ROM read, allocation, scratch ownership, interrupt compatibility, or PC `$07` proof. |
-| `BA-NATIVE-INTEGRATION-DESIGN` | `in-progress` | Primary/alternate live observations, both vanilla transaction outcomes, ROM transport, bounded original-NMI preemption and the source-only preflight are complete in separate scopes below. Native rejection, intentional completion, combined ROM preemption, named production placement and actual game interrupt/stack ownership remain open. |
+| `BA-NATIVE-INTEGRATION-DESIGN` | `in-progress` | Primary/alternate live observations, both vanilla transaction outcomes, ROM transport, combined ROM/original-NMI preemption and the source-only preflight are complete in separate scopes below. Native rejection, intentional completion, named production placement and actual game interrupt/stack/publication ownership remain open. |
 | `BA-LIVE-RESOLVER-PRIMARY-OBSERVATION` | `complete-bounded-runtime` | Two identical clean-ROM Mesen traces for one ordinary PC type-2 primary invocation, exact entry/return state and ordered publications, and its paired completion. Does not prove alternate branch, cancellation, expanded-ROM access, interrupts, or a high selector. |
 | `BA-LIVE-RESOLVER-ALTERNATE-OBSERVATION` | `complete-bounded-runtime` | [Black Hole/Spekkio](schala_package_resolver_alternate_v1.md): two identical traces, selector `$37`, branch `$0040`, 42 publications and completion. Boss immunity is distinct from the corrected nonboss equality predicate. |
 | `BA-LIVE-TRANSACTION-SUCCESS` | `complete-bounded-runtime` | [Successful Luminaire](schala_package_transaction_observation_v1.md): two identical traces of exact pre-effect/MP/results/finalizer/return boundaries. Watched ranges only; existing evidence is reused for later interpretation. |
@@ -341,6 +344,20 @@ sound deceptively similar.
 | `BA-NMI-DISPATCH-WITNESS-V1` | `complete-bounded-runtime-reuse` | [Exact saved frame and input snapshots](schala_nmi_dispatch_witness_v1.md) from the full accepted pair, with static-reconstructed target/command provenance explicitly separated from bus reads. |
 | `BA-ROM-TIMING-CALIBRATION-V4` | `complete-native-synthetic` | [Two 22-group traces](schala_package_helper_v4_timing_calibration.md), identical per-instruction elapsed projections and 92 inferred schedule rows. No NMI request or executed scheduling claim. |
 | `BA-NORMAL-NMI-DIRECT-CLOSURE-V2` | `partial-static` | [25 direct contracts / 34 original call sites](schala_package_normal_nmi_closure_v2.md) close under an explicit non-stack-alias premise. Ten original sites, physical ownership, full handler and nested bounds remain open. |
+| `BA-ROM-NMI-PREEMPTION-V4` | `complete-native-synthetic` | [Two identical 152-case runs](schala_package_helper_v4_rom_nmi.md) combine ROM helper/data with an original minimal NMI, exact hardware/RTI/WRAM checks and a 59-byte peak. Actual game handlers and physical stack ownership remain open. |
+| `BA-IRQ-MEMORY-CONTRACT-V2` | `complete-bounded-static` | [Exact ordinary CPU writes and saved registers](schala_package_irq_memory_contract_v2.md) across four native widths; conditional nonalias results for named helper envelopes. |
+| `BA-IRQ-DMA7-CONTRACT-V3` | `complete-bounded-static` | [Twelve manual requests](schala_package_irq_dma7_contract_v3.md) have exact VRAM destinations; DMA source/lifetime/interference and actual completion remain open. |
+| `BA-NMI-SCROLL-INPUTS-V1` | `complete-bounded-static` | [Intervening callee values and four selected scroll paths](schala_nmi_scroll_inputs_v1.md); legal CA92 producer, effective memory and global stack ownership remain open. |
+| `BA-SCENE-HANDLER-CLOSURE-V1` | `partial-bounded-static` | [114 direct targets close, seven indirect frontiers remain](schala_scene_handler_closure_v1.md); closed-subset depth is not a whole-handler bound. |
+| `BA-SCENE-HANDLER-VALUES-V2` | `complete-bounded-static` | [All 114 direct targets](schala_scene_handler_values_v2.md) return B0/D0/DBR7E under stated premises; preserves v1 and excludes all seven indirect targets. |
+| `BA-SCENE-82-SUBDISPATCH-V1` | `complete-bounded-static` | [Eight selected targets](schala_scene82_subdispatch_v1.md) and independent p/q input arithmetic; memory/source lifetime remains open. |
+| `BA-SCENE-8C8D-SUBDISPATCH-V1` | `complete-bounded-static` | [Eight selected leaves](schala_scene8c8d_subdispatch_v1.md); B0 and parameter-domain predicates are explicit premises. |
+| `BA-SCENE-88-SUBDISPATCH-V1` | `complete-bounded-static` | [Four selected calls](schala_scene88_subdispatch_v1.md); ordinal3 returns B=$FF, so no blanket loop B0 contract. |
+| `BA-SCENE-80-SUBDISPATCH-V1` | `partial-bounded-static` | [29 physical prefix words](schala_scene80_subdispatch_v1.md), 27 conditional returns and two instruction frontiers; no legal producer extent. |
+| `BA-SCENE-8B-DISPATCH-INPUTS-V1` | `partial-bounded-static` | [Success establishes B0](schala_scene8b_dispatch_inputs_v1.md); two selected targets close and four retain different copy-pointer producers. |
+| `BA-SCENE-COPY-POINTER-V1` | `complete-bounded-static` | [B5/B6 producer arithmetic](schala_scene_copy_pointer_v1.md), exact safe relation and typed continuations; legal inputs and effective memory remain open. |
+| `BA-SCENE-80-REMAINING-RETURNS-V2` | `complete-bounded-static` | [Two separate return proofs](schala_scene80_remaining_returns_v2.md) compose the first 29 physical targets under their stated premises; v1 remains unchanged. |
+| `BA-SCENE-8B-COPY-PRODUCERS-V1` | `complete-bounded-static` | [Three actual pointer producers](schala_scene8b_copy_producers_v1.md), exact q factorization, count domains and typed continuations; no legal input or fill-memory ownership claim. |
 
 Resume at `BA-NATIVE-INTEGRATION-DESIGN`. Reopen a completed gate only
 when pinned evidence changes or a failing regression invalidates it. The

@@ -1361,6 +1361,103 @@
           "sha256": "321483c1f061847c9c24fadf1a2d43ca58d46edc7734c11c59cc990edbe03d84"
         }
       ]
+    },
+    {
+      "commit": "a0b17f6227ed6a54cdfb7c63e726feb94d26b89d",
+      "verified_at_utc": "2026-09-08T21:42:22.280079+00:00",
+      "branch": "main",
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 41945,
+          "sha256": "3390fa950002dec965f0a1789d6a7a56289c79263fe606f25e6ef5b084ff8a43"
+        },
+        {
+          "path": "README.md",
+          "size": 52796,
+          "sha256": "4d528ef4b3ae6bb82ec60da42baab59a320898c9077be24b04d597983ea8ab3f"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 205608,
+          "sha256": "465c19e9cdc97c66a2e7e5f24aba6fcfdbb4d62780f189cda392b46b00837b16"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 80823,
+          "sha256": "0ec263778a403da41ba85b4f42f4151a8688c82bb676bcd32225673f9a8bb3d8"
+        },
+        {
+          "path": "docs/work_session_2026_09_08.md",
+          "size": 10762,
+          "sha256": "34a25cd3984a18709f8c735ba589c1b5c3d4d88e074d3666c37b6c312c496e71"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 52736,
+          "sha256": "8caf38a6795ab9b9e0e6163bc19593015cced9c21c892cc140c9a5106bd41973"
+        },
+        {
+          "path": "tools/audit_schala_scene80_subdispatch_v1.py",
+          "size": 17082,
+          "sha256": "5bf0ff11fa69ad09f74e204524444ec336b036a6c1ccc6ee90c649275a68492f"
+        },
+        {
+          "path": "tests/test_schala_scene80_subdispatch_v1.py",
+          "size": 8999,
+          "sha256": "909da68de2896c0dcda47df71fb37e35b6ae15387e8bad2278b82803461a8c89"
+        },
+        {
+          "path": "docs/schala_scene80_subdispatch_v1.md",
+          "size": 11989,
+          "sha256": "075c34d20ed38e926e2dc8148b4069dc45b7acd889042afa8cfe19c6ddf71428"
+        },
+        {
+          "path": "references/schala_scene80_subdispatch_v1.json",
+          "size": 424188,
+          "sha256": "98ef60b958f997bc125d2550ff90c9cd6948a9f7b269be7fc0194790cfbece2f"
+        },
+        {
+          "path": "tools/audit_schala_scene8b_dispatch_inputs_v1.py",
+          "size": 17345,
+          "sha256": "d71ceb87f2840ce59f7056ccecb904797de326e28ef9261e12e16fcbf0a607c6"
+        },
+        {
+          "path": "tests/test_schala_scene8b_dispatch_inputs_v1.py",
+          "size": 7461,
+          "sha256": "1424f403932f3d5a3f106deac480c628c7f10957944d2b3398d7c2ed1f44622e"
+        },
+        {
+          "path": "docs/schala_scene8b_dispatch_inputs_v1.md",
+          "size": 11555,
+          "sha256": "b007c5a7da8573f57eadbaf7e335ef94f99b12536d12e4d609934cd440dae4bf"
+        },
+        {
+          "path": "references/schala_scene8b_dispatch_inputs_v1.json",
+          "size": 124619,
+          "sha256": "f3cb6cef7e04c2dd101eb69ee4ccb212443ea3ea91e248f07ed2a586155609bf"
+        },
+        {
+          "path": "tools/audit_schala_scene_copy_pointer_v1.py",
+          "size": 18696,
+          "sha256": "e3fb94da358b0bd122d9e6f502cacd4fb424af0ec19831ccb89b0bb5ceb4e973"
+        },
+        {
+          "path": "tests/test_schala_scene_copy_pointer_v1.py",
+          "size": 9614,
+          "sha256": "9dd6fb63ca9877da69226648a7de4fa3198b2bf67bdd6612ca0767bf655862ca"
+        },
+        {
+          "path": "docs/schala_scene_copy_pointer_v1.md",
+          "size": 12341,
+          "sha256": "687aa34fe7de1224474efcd2076c9f2039f62d4c3c78d8d00ee68e6932603f4f"
+        },
+        {
+          "path": "references/schala_scene_copy_pointer_v1.json",
+          "size": 70722,
+          "sha256": "13913c7b244b454a8afd4afd89977408466e2dda06699578f344b9c691789c53"
+        }
+      ]
     }
   ]
 }

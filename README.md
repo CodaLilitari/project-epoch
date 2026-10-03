@@ -2,16 +2,25 @@
 
 This workspace resumes the Chrono Trigger playable eighth-character investigation recovered from the ChatGPT conversation **Chrono Trigger 8th Character**.
 
-Start with the [human-readable developer log](docs/DEVELOPER_LOG.md), the
+Start with the [short current handoff](docs/CURRENT_HANDOFF.md), the
+[human-readable developer log](docs/DEVELOPER_LOG.md), the
 [correction register with exact source citations](docs/DATA_MAPPING_CORRECTIONS.md),
 and the [current developer guide](docs/schala_eighth_character_developer_guide.md).
 Historical checkpoints preserve the bytes and evidence available when made;
 the latest log entry identifies the current resume boundary.
 
-## Latest integration update — 2026-09-08
+## Resumption — 2026-10-03
 
-The engineering session is in progress, extended by Andrei from six to nine
-elapsed hours. The original package helper
+The interrupted September session has resumed. Both CodaLilitari GitHub and
+GitLab main branches were verified at `a0b17f6` before further work; the
+portfolio's Project Epoch case correctly describes research still in progress.
+See the [current handoff](docs/CURRENT_HANDOFF.md) for the active review and
+native-observation boundary. The interruption is not counted as work time.
+
+## Preserved integration checkpoint — 2026-09-08
+
+At this historical checkpoint, Andrei had extended the engineering session
+from six to nine elapsed hours. The original package helper
 now executes from cartridge ROM and reads its immutable registry and package
 descriptors from ROM in two identical 3,184-case Mesen runs. It preserves its
 CPU/stack contract and complete WRAM write ledger. The 577-byte implementation
