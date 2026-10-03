@@ -3089,3 +3089,19 @@ states where useful, and a written result.
   Schala smoke from aliasing its clean input path, and made it refuse to
   replace a different existing ROM.
 - Created this living developer guide.
+
+## October 3 HDMA timing acceptance and next observation
+
+The [conditional HDMA report](schala_package_hdma_timing_v1.md) and its
+[accepted reference](../references/schala_package_helper_hdma_envelope_v1.json)
+extend the fixed diagnostic helper's timing model. Root independently ran
+all 13 tests and reproduced the exact metadata twice; author and peer agree.
+The 106,342-clock phase refinement assumes explicit line/frame minima and
+unchanged helper/memory conditions. It is not a measured execution or a game
+admission deadline. Arbitrary nonnegative settings alone cannot establish
+those minima because the cached PPU thresholds are uint16.
+
+Continue from the current handoff: observe actual internal IRQ h/v counters
+and a source-owned post-load cache refresh under guarded zero extras. Retain
+HDMA source-read/rendering isolation, wrapper cost, stack ownership and
+pre-effect admission versus late cleanup as separate proof obligations.

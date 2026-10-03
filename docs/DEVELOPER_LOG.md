@@ -1486,3 +1486,67 @@ h/v counters or all relevant overclock settings. PPU position and timer values
 alone cannot certify a deadline. No new upstream mapping contradiction was
 found here; the v1 result is a documented protocol scope limit. The helper
 still has no game placement, stack-ownership certificate or production binding.
+
+## 2026-10-03 — final conditional HDMA checkpoint and explicit next experiment
+
+The resolver-phase checkpoint was published to authenticated CodaLilitari
+GitHub as `6b4a58826aca0f6c58a284a6018a3213cc1c53ea`. The commit API,
+branch API and Git remote agree; all eighteen changed files were independently
+downloaded at that exact commit and matched to local committed bytes. The
+October3 publication reference retains that receipt. A fresh read-only GitLab
+check at approximately 22:44 UTC still returned
+`a0b17f6227ed6a54cdfb7c63e726feb94d26b89d`. No GitLab write or portfolio edit
+was made; the synchronization question remains unanswered.
+
+Root accepted the separate [HDMA v1 packet](schala_package_hdma_timing_v1.md)
+after complete source/test/report review, all 13 focused tests, and two actual
+CLI reproductions matching the author and independent peer. The accepted
+reference is 18,674 bytes, SHA-256
+`0d672ccd12b658e7ffff59b4acf45465749dd84f130ee5cf4e4a400cce8e0e8d`.
+Root outputs and acceptance receipt are under
+`private/test_runs/hdma_root_review_20261003/`; peer receipt is
+`private/test_runs/resolver_hdma_peer_review_20261003/public_review_receipt.json`,
+SHA-256 `5bfe61cb3684c564a79ac9289a37368e64499ba6627fa17ca292f3c3cd194e51`.
+The frozen report's preparation-status paragraph is historical; this entry
+records acceptance without changing its reviewed bytes.
+
+Generic HDMA service is at most 472 clocks and initialization 216 under the
+pinned source model. The fixed-fixture helper composes to 144,088 clocks
+coarsely, 106,689 with at most one initialization, and 106,342 when the
+observed phase and declared frame minimum exclude initialization. The argument
+bounds every finite prefix, including partially started service; it does not
+assume completion to establish progress. The collector checks 131,072 channel
+cases and 456 alignments. The peer's independent private model additionally
+checks 4,194,304 counter/payload cases. No native helper execution or game
+admission is established by these calculations.
+
+Review corrected an insufficient premise in our earlier unpublished private
+proposal: nonnegative extra-scanline settings alone are not enough. At pinned
+Mesen revision `137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1`,
+[SettingTypes.h lines 572-573](https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/SettingTypes.h#L572)
+uses uint32 settings, while
+[SnesPpu.h lines 56-60](https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.h#L56)
+uses uint16 cached thresholds: `(225+65535) mod 65536 = 224` is the original
+counterexample. The public packet requires line/frame minima directly and
+leaves actual settings/cache provenance unproved. Both private predecessors
+are preserved. This corrects our proposal, not an upstream mapping claim;
+no new MAP entry is invented.
+
+The minimal next-observation design is retained at
+`private/test_runs/resolver_irq_admission_design_20261003/design_note.md`,
+13,965 bytes, SHA-256
+`a65a7c1aeaefa202b03681a41623154b8898cbce0b9d3640911e55a5bbb95751`.
+Its source receipt pins six individually retrieved exact-revision primary
+files, checked against upstream Git blobs. Add the real serialized uint16
+`internalRegisters.hCounter` and `internalRegisters.vCounter`; retain all
+existing pending-state fields and observe post-load line 0 to 1 under guarded
+zero extra-scanline settings. This establishes a prospective cache-refresh
+witness without inventing hidden Lua fields. The design is not implemented
+and no successor native run is claimed.
+
+HDMA source-read/rendering isolation, exact request timing, wrapper costs,
+physical game-stack ownership and the earlier pre-effect versus later-resolver
+lifecycle remain open. The session ends at a reproducible research checkpoint;
+the eighth playable character remains unfinished. Production hooks, expanded
+allocations and high-selector bindings stay unapproved. All game inputs and
+raw traces remain private and ignored.

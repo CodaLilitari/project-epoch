@@ -38,6 +38,13 @@ and resolver entry. It captures pending interrupt and DMA/HDMA state without
 altering the game. Enabled HDMA and the still-missing IRQ-counter evidence
 remain explicit timing obligations.
 
+The additive [HDMA timing model](docs/schala_package_hdma_timing_v1.md) is
+accepted as a conditional static calculation after 13 tests and independent
+byte-exact reproduction. Its 106,342-clock phase refinement applies only to
+the fixed diagnostic helper under explicit timing and memory premises. The
+next observer must capture internal IRQ counters and a timing-cache refresh;
+no game admission deadline or helper integration is approved.
+
 ## Preserved integration checkpoint — 2026-09-08
 
 At this historical checkpoint, Andrei had extended the engineering session

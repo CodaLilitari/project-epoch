@@ -1,0 +1,418 @@
+{
+  "schema": "project-epoch-helper-hdma-envelope-v1",
+  "evidence_level": "conditional-static-model",
+  "status": "conditional-envelope-not-admission-certificate",
+  "source_identities": [
+    {
+      "path": "tools/research_helper_hdma_envelope_v1.py",
+      "size_bytes": 15924,
+      "sha256": "57a1c6b8ab62d00848a8334e2963f0e9e7dd8d0037f20ac29962907223fdb7ab"
+    },
+    {
+      "path": "tests/test_research_helper_hdma_envelope_v1.py",
+      "size_bytes": 5275,
+      "sha256": "d366fd677e992615b7a62f16c5fa28655e7b02bee7e9ebb4e87b291e858fa7ae"
+    }
+  ],
+  "prerequisites": {
+    "baseline_source": {
+      "path": "tools/research_helper_timing_envelope_v1.py",
+      "size_bytes": 7962,
+      "sha256": "c8f160d8eb57bd4b22f10954bc6cbda231802272df1f55344345a2c30158733a"
+    },
+    "baseline_reference": {
+      "path": "references/schala_package_helper_timing_envelope_v1.json",
+      "size_bytes": 5974,
+      "sha256": "058d9f1ac1a2bb1c9a2f7ea375e9f507d3e1536e475eaf1316f1afd5dad0d8db"
+    },
+    "phase_reference": {
+      "path": "references/schala_package_resolver_phase_v2.json",
+      "size_bytes": 53831,
+      "sha256": "8e3898c7886a88e166bf5fd13f69ac37b44b59bd202d5780c0a8ae98ae30c120"
+    },
+    "dma": {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "size_bytes": 19939,
+      "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6"
+    },
+    "dma_header": {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.h",
+      "size_bytes": 1451,
+      "sha256": "05a4c63d0f18efd11b12bd476f4bf99bb0d7cd8ba2b51f95bdb463653f82cdfd"
+    },
+    "dma_types": {
+      "path": "private/research/mesen_resolver_phase_2_1_1/DmaControllerTypes.h",
+      "size_bytes": 540,
+      "sha256": "b03114d7ff465eee145356c204ab95ca110a856f95dc80edfbe1833e7a0537c7"
+    },
+    "memory": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size_bytes": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+    },
+    "ppu": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size_bytes": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    },
+    "cpu": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+    },
+    "bus_b": {
+      "path": "private/research/mesen_irq_dma7_2_1_1/RegisterHandlerB.cpp",
+      "size_bytes": 2969,
+      "sha256": "a3ebaecac6e6fe2d2bdfc04f072e77a9ba47251cdc5ae9d4b6fcdd4618af7ea7"
+    },
+    "irq_header": {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.h",
+      "size_bytes": 5020,
+      "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698"
+    },
+    "irq_cpp": {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.cpp",
+      "size_bytes": 12742,
+      "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc"
+    }
+  },
+  "baseline_source_identities_rechecked": [
+    {
+      "path": "asm/original_snes_package_cartridge_v1.asm",
+      "size_bytes": 1151,
+      "sha256": "3cd5b800e57ec4085e5b706e3bc283be6e2d2d7fb79000c2741d5828819be15b"
+    },
+    {
+      "path": "asm/schala_package_helper_v2_stack.asm",
+      "size_bytes": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size_bytes": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size_bytes": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size_bytes": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size_bytes": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    },
+    {
+      "path": "tools/original_snes_package_fixtures_v1.py",
+      "size_bytes": 4761,
+      "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60"
+    }
+  ],
+  "mesen_commit": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "reviewed_source_spans": [
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 8,
+      "last_line_inclusive": 12,
+      "sha256": "cdbd9069990bc64a170a7ec9c8af56159549c3a68dc86ae41d1248ca4e65b1e6",
+      "role": "transfer-mode byte counts and register offsets",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 46,
+      "last_line_inclusive": 66,
+      "sha256": "05de230b9338cfe184b7370a84151b89c2b80d39dd32a1458d45b620465bc68c",
+      "role": "one DMA data byte has eight base clocks",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 68,
+      "last_line_inclusive": 102,
+      "sha256": "7cb8c166b085f813e5aabef0c3b14f3445f4e6a5f8da8207695966574915b081",
+      "role": "manual DMA transfer loop and HDMA interleaving",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 104,
+      "last_line_inclusive": 172,
+      "sha256": "1059964e0a63333a5d1f2ca469d0cd46b08e33fec2e6e7d3f71e9b5c8c2cd046",
+      "role": "initialization at most three table bytes per enabled channel",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 174,
+      "last_line_inclusive": 204,
+      "sha256": "e3a7dd16d808786b5caa2bcb6af6e9914db6f6e577c02922db485743c8ef4f69",
+      "role": "HDMA bounded payload loop",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 206,
+      "last_line_inclusive": 218,
+      "sha256": "1537803f62ee9c6aac7b2d5c5940367384ec23e5295ab651944e924050afce55",
+      "role": "start/end synchronization",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 230,
+      "last_line_inclusive": 335,
+      "sha256": "9248a2e21231450cb7f8630b2429cf97c4e3a60690c3a9cf51a3337ceef06bd8",
+      "role": "HDMA transfer and counter/indirect reload service",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 347,
+      "last_line_inclusive": 405,
+      "sha256": "b7ebac18534f519dbf1d1c06b2fb8d54ea11f2c397fe537bd1da0321baa3adb0",
+      "role": "request flags, start delay and service dispatch",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "first_line": 408,
+      "last_line_inclusive": 436,
+      "sha256": "875b1bb578530135d898da7c7ed2925eca0d5479ffdcd14bcf40e77605ffb658",
+      "role": "CPU MDMAEN and HDMAEN writes",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "first_line": 158,
+      "last_line_inclusive": 219,
+      "sha256": "53a24a3b9a3892e86719c885af36b4025d95757e20057ea37dc3879bd80b7d62",
+      "role": "clock increments and refresh cost",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "first_line": 224,
+      "last_line_inclusive": 264,
+      "sha256": "48e9ed8274e63471e2297320da68c00fdb15411ea1dec857af0fbc28472cffa8",
+      "role": "HDMA/refresh requests and frame-zero initialization",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "first_line": 293,
+      "last_line_inclusive": 328,
+      "sha256": "ea10906d3fcba07992d62370e4bb51fc17b64f1dad7bb4cf78aeb85446d03ae8",
+      "role": "DMA read four clocks",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "first_line": 360,
+      "last_line_inclusive": 388,
+      "sha256": "f6d121f9a4b87566b4063ab941a5f049e9b0cfc23fbffbaf94ac1313bc9c3018",
+      "role": "DMA write four clocks; DMA-controller writes ignored",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "first_line": 395,
+      "last_line_inclusive": 398,
+      "sha256": "d71cfa1bb458606b7b9b168cdd7ca734a6a65b60a7a8e72cc3635507507d33c0",
+      "role": "scanline timing under the declared minimum-line premise",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "first_line": 459,
+      "last_line_inclusive": 486,
+      "sha256": "a8e0fc267991adecd5448950ea013c6e11bebb00cb111027317c6b5f4633c2f8",
+      "role": "scanline advancement and frame zero",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "first_line": 538,
+      "last_line_inclusive": 560,
+      "sha256": "cecd00ccf230ed7502d0f35137d09d690b35576364c9d27184984b1e2476eb16",
+      "role": "frame threshold updates; declared minimum-frame premise remains required",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "first_line": 2253,
+      "last_line_inclusive": 2257,
+      "sha256": "85229b85bbbfdb130a09c9137c7589dd169bd1d56dcbf45e2886426ecdda1b26",
+      "role": "serialized scanline is the internal scanline",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "first_line": 88,
+      "last_line_inclusive": 96,
+      "sha256": "cf0199442ec83cd3cfb1014ccb1d0369a26f932739785a1ccc5f81ef4ae40a54",
+      "role": "idle CPU speed six",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "first_line": 119,
+      "last_line_inclusive": 130,
+      "sha256": "f36cee8c3908cefd5378fc52911f7b5f5f61c4db32e9f866b54f944c4e254a99",
+      "role": "pending service at CPU cycle",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "first_line": 143,
+      "last_line_inclusive": 157,
+      "sha256": "c94135e3a393035a1fbcfda1e03d03dfe06165a6931b71cfa53bbbda81ddb56c",
+      "role": "CPU speed selected before pending service",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_irq_dma7_2_1_1/RegisterHandlerB.cpp",
+      "first_line": 61,
+      "last_line_inclusive": 88,
+      "sha256": "7b3225326620f064eabdbac73ceed276a60868958618d843494a3d39c96e0435",
+      "role": "PPU versus WRAM-port destinations",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.h",
+      "first_line": 27,
+      "last_line_inclusive": 34,
+      "sha256": "0fba0776c19f8dc24580dd194e5281a850db21f6fbae7972615517433bb1ccfb",
+      "role": "separate uint16 internal IRQ counters",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.h",
+      "first_line": 79,
+      "last_line_inclusive": 102,
+      "sha256": "8d0c7500e6df84b7a0486007daf8b0c87efd952c07d956c6cf2b999a9e05545b",
+      "role": "timer comparison uses internal counters",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.h",
+      "first_line": 104,
+      "last_line_inclusive": 162,
+      "sha256": "cb6611c9d52f02c2d2ac130a472c104a112e49b8a42d18fc58ea994e916d57b0",
+      "role": "counter update and overclock-aware advancement",
+      "interpretation": "reviewer-derived over pinned source"
+    },
+    {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.cpp",
+      "first_line": 409,
+      "last_line_inclusive": 410,
+      "sha256": "aebde3bc4f68da9eb56b4d017bba58f0a640a6676b7fd536ba2e3088bf666976",
+      "role": "internal IRQ counters are serialized",
+      "interpretation": "reviewer-derived over pinned source"
+    }
+  ],
+  "phase_observation": {
+    "kind": "resolver-entry",
+    "poll": 378,
+    "master_clock": 2155080050,
+    "scanline": 119,
+    "hclock": 754,
+    "hdma_enabled_mask": 255,
+    "dma_active_channels": [],
+    "hdma_unfinished_enabled_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "pending_flags": {
+      "dmaPending": false,
+      "dmaStartDelay": false,
+      "needToProcess": false,
+      "hdmaPending": false,
+      "hdmaInitPending": false
+    },
+    "transfer_modes_or_table_payloads_inferred": false,
+    "source": "accepted compact projection only; no raw trace or native rerun"
+  },
+  "cost_model": {
+    "channel_equivalence_cases": 131072,
+    "per_mode_max_base_clocks": [
+      32,
+      40,
+      40,
+      56,
+      56,
+      56,
+      40,
+      56
+    ],
+    "alignment_cases": 456,
+    "maximum_start_plus_end_alignment": 16,
+    "common_service_clocks": 8,
+    "generic_eight_mode_hdma_clocks": 472,
+    "generic_eight_channel_initialization_clocks": 216,
+    "per_channel_derivation": "at most four payload bytes, one counter read, two indirect-pointer reads; each costs eight base clocks"
+  },
+  "generic_envelope": {
+    "helper_base_clocks": 65046,
+    "hdma_service_max": 472,
+    "refresh_event_clocks": 40,
+    "initialization_service_max": 216,
+    "weakened_event_spacing": 1352,
+    "coarse_allowing_init_at_line_frequency": 144088,
+    "minimum_initialization_event_spacing": 356312,
+    "phase_independent_at_most_one_init": 106689,
+    "phase_to_next_frame_zero_lower_bound": 193726,
+    "phase_no_init": 106342,
+    "initialization_refinement_requires_no_pending_initial_service": true
+  },
+  "derivation": "For every finite elapsed execution prefix, CPU work is at most B; charge any partially started service its entire bound. For each family N<=1+ceil(T/1352)<=2+T/1352. Thus T<=B+2*C+(C/1352)*T. Solving this inequality bounds every prefix and rules out unbounded starvation under the premises without assuming completion. Strict coarse-bound comparisons then permit at-most-one-init or no-init refinement.",
+  "baseline_scope": "Unchanged immutable-v3 fixture only, including original entry JML through final helper JML; excludes tail opcode and additional wrappers.",
+  "validation_scope": "Exact published baseline source/reference and its eight declared source identities rechecked. Accepted compact phase reference checked. Neither earlier collector is regenerated; no raw ROM or trace is read.",
+  "premises": [
+    "Original helper CPU cycles have six/eight-clock speeds; native fixed-SP and immutable registry/source assumptions remain.",
+    "Normal pinned event scheduling with minimum 1360-clock lines and 262-line frames as explicit independent premises; no reset/stop or external CPU mutation. Actual configuration and cached timing thresholds are not certified here.",
+    "No interrupt handler, coprocessor stall, memory corruption or new manual-DMA request occurs in the interval.",
+    "Initially clear pending/manual-active state is observed; future absence must follow from an established writer/handler contract.",
+    "HDMA control remains valid, with at most eight channels and supported modes; normal internal pointers/counters may evolve and all table/payload values remain unconstrained.",
+    "HDMA does not corrupt helper live counters, frames, registry or code. The compact phase projection does not certify destination/source isolation.",
+    "Any extra admission, trampoline or wrapper work needs additional base-cost accounting."
+  ],
+  "open_obligations": [
+    "InternalRegisters hCounter/vCounter and overclock/extra-scanline configuration were not captured; PPU line119 plus verticalTimer211 is not a certified request boundary.",
+    "Nonnegative extra-scanline settings alone do not establish the line/frame minima: cached thresholds may wrap. Configuration bounds and valid cache recomputation remain unproved for the observed phase.",
+    "An observed IRQ handler-entry gap follows recognition and is not an admission deadline.",
+    "Unknown forward HDMA source reads may observe helper stack/publication writes and transmit changed values to PPU; source-read isolation and rendering equivalence remain open.",
+    "Unknown payloads may alter SETINI when that destination is configured; initial PPU mode flags are not assumed constant.",
+    "Generic 32-target helper base235926 is a separate contract; even no-init HDMA arithmetic would be381377. The fixed-v3 bound is not reusable for arbitrary future bindings.",
+    "Transfer modes omitted from compact phase metadata are not reconstructed here; mode-specific private refinements are not published by this model."
+  ],
+  "native_helper_executed": false,
+  "new_native_run": false,
+  "raw_game_data_emitted": false,
+  "deadline_certified": false,
+  "memory_source_isolation_proved": false,
+  "render_equivalence_proved": false,
+  "production_approval": false,
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/research_helper_hdma_envelope_v1.py"
+  ],
+  "serialization": "binary UTF-8/LF JSON with one trailing newline"
+}

@@ -228,6 +228,105 @@
           "sha256": "12d3d54ae37e30a90a1d1eb1fb6e0de510ae0b15aac6eba805c9d8aa927e68f2"
         }
       ]
+    },
+    {
+      "commit": "6b4a58826aca0f6c58a284a6018a3213cc1c53ea",
+      "verified_at_utc": "2026-10-03T22:30:44.776641+00:00",
+      "repository": "https://github.com/CodaLilitari/project-epoch",
+      "branch": "main",
+      "authenticated_commit_branch_and_remote_agree": true,
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 46989,
+          "sha256": "7cad3d8572626b1dfd0ab0efb8afb36e6ce2156b732b6dff7e9cbfff6d868802"
+        },
+        {
+          "path": "README.md",
+          "size": 54608,
+          "sha256": "7eacccb2492b2b8c2a96144a1747565351036be0814176c72bc97cf266fad424"
+        },
+        {
+          "path": "docs/CURRENT_HANDOFF.md",
+          "size": 5474,
+          "sha256": "7b03b680dbde0630333fee1e4c1a813c44ab413a348351c7a118c3d11ad72c48"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 96320,
+          "sha256": "5adbc30254b3a0d1837ba4e4bb97f11b34acaa55a53d3efd4670def0bcbee707"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 210716,
+          "sha256": "6edded45914856da5afbc90ff0485bc522e2d34c7dc6b111d4a3fae1dbb2e47b"
+        },
+        {
+          "path": "docs/schala_package_interrupt_strategy_review_2026_10_03.md",
+          "size": 16757,
+          "sha256": "77d29eb3115a68804536c0964816c0d6a94e3b3f4fc5b4e5db34cc3218ef2faa"
+        },
+        {
+          "path": "docs/schala_package_resolver_phase_v1.md",
+          "size": 13212,
+          "sha256": "e7846b1ef7efb0d118ac93b3a1f8202932f4c8360b0db7b111137e4e37540e01"
+        },
+        {
+          "path": "docs/schala_package_resolver_phase_v2.md",
+          "size": 15460,
+          "sha256": "0fe3b1445f3b3c168ab70a6c1dde7e243803063e4fdd48eb03fd6a647d4bbef5"
+        },
+        {
+          "path": "tools/run_package_resolver_phase_v1.py",
+          "size": 23426,
+          "sha256": "cf931ff23f11bd5045b437001f3365f69d3c1530a43e6569f2b41474356cb321"
+        },
+        {
+          "path": "tools/run_package_resolver_phase_v2.py",
+          "size": 15114,
+          "sha256": "f06f95c4e3169780220444db774024ab7b1c55227a7b3c9dbdfc0b0bd8e29acd"
+        },
+        {
+          "path": "tools/mesen_package_resolver_phase_v1.lua",
+          "size": 9539,
+          "sha256": "2dbab520abbd8bc95bd078a81153d0d2f6d49147e01a66591ce0c5e726c6850c"
+        },
+        {
+          "path": "tools/mesen_package_resolver_phase_v2.lua",
+          "size": 9548,
+          "sha256": "63e9f8203ff5a31af43c616a502a66fda6e0505146f5b747dbe2d9867bc403fe"
+        },
+        {
+          "path": "tools/audit_package_resolver_phase_v2.py",
+          "size": 11760,
+          "sha256": "26cfdc820525a58b854674b3267845bf0273a4a2a2620242cc86ce11d5b3d72b"
+        },
+        {
+          "path": "tests/test_package_resolver_phase_v1.py",
+          "size": 10949,
+          "sha256": "06ecf78a69dc4f0167c4a83ad36ac46d31b3a601357821b747e1d634818784fe"
+        },
+        {
+          "path": "tests/test_package_resolver_phase_v2.py",
+          "size": 9242,
+          "sha256": "748a2c43bc7713b07e2195c3e06d6886598a25bda9ac39bdfd99511f6217c4a6"
+        },
+        {
+          "path": "tests/test_audit_package_resolver_phase_v2.py",
+          "size": 11454,
+          "sha256": "44a94be764c3bbb7ce54b0331f602e67f57bd56dfef000e89ff437764314e517"
+        },
+        {
+          "path": "references/schala_package_resolver_phase_v2.json",
+          "size": 53831,
+          "sha256": "8e3898c7886a88e166bf5fd13f69ac37b44b59bd202d5780c0a8ae98ae30c120"
+        },
+        {
+          "path": "references/work_session_publications_2026_10_03.json",
+          "size": 8771,
+          "sha256": "fecdac72774c8a67c0b6ffa3fbb68dcc303bef229e668856173c7399a52acbb3"
+        }
+      ]
     }
   ]
 }

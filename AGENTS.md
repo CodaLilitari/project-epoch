@@ -676,3 +676,20 @@ and relevant overclock settings were not captured. Neither timer211 with PPU
 line119 nor the historical handler-entry subtraction certifies a deadline.
 The original helper has not been inserted into the game. Keep all production
 hooks, allocations and high bindings unapproved. See the current handoff.
+
+## October 3 conditional HDMA checkpoint
+
+The additive HDMA v1 source/reference preserves the earlier timing packet.
+Generic service costs at most 472 clocks and initialization 216 under the
+pinned model. The fixed-v3 helper has a 144,088-clock coarse envelope,
+106,689 with at most one initialization, and 106,342 with initialization
+excluded at the observed phase. These are conditional static bounds, not
+measurements or admission certificates. Every finite-prefix argument requires
+minimum 1,360-clock lines and 262-line frames as explicit premises; arbitrary
+nonnegative extra-scanline settings can wrap uint16 cached thresholds.
+Actual settings/cache binding, IRQ request phase, HDMA source-read isolation,
+rendering equivalence, wrapper cost and game ownership remain unproved.
+Preserve the published collector and reference. The next observation needs
+internalRegisters.hCounter/vCounter plus a post-load line-0-to-line-1 cache
+refresh witness under guarded zero extras. No late rejection after MP/effect
+preparation is authorized. No production hook/allocation/binding is added.

@@ -76,12 +76,26 @@ or a newly identified boundary.
    for all eight unfinished channels at resolver entry; no-pending snapshots
    do not prove no future service. IRQ circuit counters and relevant overclock
    settings were not captured, so no interrupt deadline is certified.
-6. Continue the conditional DMA/HDMA timing and memory-read isolation review
-   before designing a bounded helper admission experiment. Table payloads,
-   helper-source/read aliases, actual IRQ recognition, additional wrapper
-   instructions and game-stack ownership remain separate obligations.
-   No phase admission rule or game insertion is approved.
+6. The [HDMA timing model](schala_package_hdma_timing_v1.md) is now accepted
+   as conditional static evidence: 13 tests and two root CLI reproductions
+   match the independent peer and author exactly. Generic service is 472
+   clocks; the fixed-fixture phase refinement is 106,342. Explicit line/frame
+   minima and unproved configuration/cache binding prevent treating this as
+   an admission certificate. The frozen report records preparation status;
+   this handoff and the latest developer-log entry record root acceptance.
+7. Next: add internalRegisters.hCounter/vCounter to a separately versioned
+   observer and witness post-load line 0 to 1 under guarded zero extra-scanline
+   settings. Reuse the accepted v2 observation unchanged. The private source-
+   cited design is private/test_runs/resolver_irq_admission_design_20261003/.
+   Prove the actual IRQ request boundary and all timing/memory premises before
+   considering helper admission. HDMA source-read/rendering isolation, wrapper
+   cost, physical stack ownership and pre-effect versus later-resolver lifecycle
+   remain separate obligations. No phase rule or game insertion is approved.
 
 All ROMs, SRAMs, emulator states, raw traces and extracted data stay under
 ignored `private/`. Source-controlled outputs contain original tools, tests,
 hashes and bounded analysis. No production selector or game hook is installed.
+
+At the October 3 final host check, GitLab main remains `a0b17f6`; GitHub
+contains the newer accepted checkpoints. The synchronization question remains
+unanswered. The portfolio is accurate and was left unchanged.
