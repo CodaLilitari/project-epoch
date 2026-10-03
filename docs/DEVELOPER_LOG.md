@@ -1322,3 +1322,81 @@ contains 28,319 Mesen uninitialized-read diagnostics; it is not a warning-free
 run or a general initialization-safety proof. The pilot is not yet a repeated
 runtime result. Full-pair execution and further source/evidence review remain
 in progress; no game hook, production allocation or selector is approved.
+
+## 2026-10-03 — repeated actual NMI observation and narrowed integration strategy
+
+The first resumed static checkpoint was published to CodaLilitari GitHub at
+`af3852f9b08285a5011a744d37e3a0b5cd279d49`. Authenticated commit lookup,
+branch lookup and the Git remote agreed, and all fourteen changed files were
+downloaded at that exact commit and compared byte-for-byte and by SHA-256.
+The metadata receipt is
+[`work_session_publications_2026_10_03.json`](../references/work_session_publications_2026_10_03.json).
+GitLab remained at the earlier checked checkpoint. The question of keeping
+that additional mirror synchronized remains pending; read-only inspection
+and GitHub publication continued independently. No portfolio edit was needed.
+
+The first five-interval NMI run did not succeed. Its whole-run JSON export
+left a partial file and the emulator reached the declared 900-second timeout.
+The frozen collector set its done flag before serialization; its exception
+handler then called the same finalizer, which immediately returned and skipped
+the stop request. This error-swallowing defect is directly established by our
+source. The pinned Mesen callback watchdog defaults to one second, making
+watchdog expiry during the large export a supported causal inference; the
+actual exception was not captured. The failed source archive and partial
+trace remain unchanged. A separate review also found that unverified
+bank-zero indirect pointer reads could bypass the immutable-ROM guard.
+Both are defects in our unpublished observer, not newly discovered game
+mapping errors. The [report](normal_nmi_stack_observation_v1.md) retains exact
+source/trace identities and the adversarial specimens.
+
+The repaired collector writes each bounded event in its existing callback,
+flushes completed intervals and uses a separate direct fail-stop path.
+The validator refuses control pointers outside reconciled WRAM or pinned
+high ROM. Eighty focused tests passed, followed by independent source review.
+A fresh pilot completed with its entire decoded JSON equal to the old pilot;
+only JSON serialization order differs. No watchdog setting was raised.
+
+Two fresh isolated full runs then completed. Their 37,645,178-byte traces
+are identical, SHA-256
+`b1daedf1b9fafebbc148263ef498f46a2af57fa5730aad96d038e0e5b91c552a`.
+Each captures five selected normal-NMI intervals, 28,581 executed instructions
+and 59,408 bus events. Independent pointwise review checked 10,071 direct
+WRAM writes, 30,353 WRAM reads and 2,746 high-ROM reads per run. All complete
+final WRAM snapshots reconcile. Every selected interval reaches 34 bytes
+below handler entry, or 38 including the native frame already present.
+No observed access reaches the declared helper publication ranges, so this
+does not test partial-publication safety. Logs repeat 28,824 uninitialized-read
+diagnostics; success is not a warning-free or general initialization claim.
+
+The separate metadata-only acceptance auditor checks actual files and reruns
+the complete trace validator; it does not trust manifest acceptance flags.
+All 46 original/adversarial acceptance tests pass. Root read both complete
+source/test packets and reproduced the author's exact output in two fresh
+CLI processes. The accepted 148,513-byte
+[reference](../references/normal_nmi_stack_observation_v1.json) hashes to
+`5431d238814391247771973e7c12e10bb1567da169c76aefd019c2b43b2ce97d`.
+This promotes the declared repeated observation to `verified-runtime`, not
+whole-game stack ownership or helper integration. The runner checked native
+exit 52, but did not preserve a separate exit-code receipt; the auditor
+states that provenance limit explicitly.
+
+The [strategy review](schala_package_interrupt_strategy_review_2026_10_03.md)
+now rules out borrowing the game busy byte as a helper lock: IRQ's later
+unconditional clear can erase it, and the NMI fast return changes normal
+frame service. A separate reviewed original timing model gives 67,112
+master clocks for the unchanged small-registry diagnostic helper, including
+conservative DRAM refresh. The general 32-target registry gives a loose
+243,202-clock envelope. Both depend on explicit no-DMA/HDMA, no-interrupt
+and uncorrupted-memory premises. Root rechecked the historical 124,904-clock
+entry-to-IRQ gap directly in its pinned trace; that observed subtraction is
+not a deadline or permission to reject an already charged action late.
+The [calculation source](../tools/research_helper_timing_envelope_v1.py) emits
+deterministic metadata and keeps all production flags false. A separate
+read-only phase observer is the next concrete experiment.
+
+An optional subscription-backed Claude source review timed out without a
+response or provider completion receipt. It contributes no accepted review
+evidence and was not retried after ambiguous delivery. Completed independent
+local reviews and root-executed tests/reproductions support this checkpoint.
+All game inputs and raw traces remain ignored and private. No production
+hook, allocation, selector, completion protocol or eighth-PC claim is added.

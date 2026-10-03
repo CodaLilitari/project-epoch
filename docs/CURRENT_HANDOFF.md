@@ -52,12 +52,20 @@ or a newly identified boundary.
    is accepted after independent peer/root review, 52 tests and exact CLI
    reproduction. Four stubs reduce to three pointer producers with explicit
    input/alias premises. The separate half-fill boundary remains under review.
-3. Finish the bounded actual-game NMI observer. The first one-interval pilot
-   passed host validation after a pre-execution review fixed immutable-ROM
-   read reconciliation. It measured minimum SP `$06A8`, 34 additional bytes
-   below handler entry and 38 including its existing hardware frame. This is
-   still a pilot; a source-frozen repeated full experiment and independent
-   evidence review are required before runtime acceptance.
+3. The [actual-game NMI observer](normal_nmi_stack_observation_v1.md) now has
+   two identical full traces across five selected intervals, independently
+   revalidated with complete observed WRAM reconciliation. Each reaches 34
+   bytes below handler entry, 38 including its existing hardware frame.
+   The accepted metadata preserves all limits and the failed earlier run.
+   Its 80 observer and 46 acceptance tests pass. Preserve this pair; it is
+   neither a whole-NMI bound nor helper-preemption/stack-ownership proof.
+4. Follow the [interrupt strategy review](schala_package_interrupt_strategy_review_2026_10_03.md).
+   Do not borrow the game's busy byte as a helper lock. The exact small
+   original-cartridge fixture has a reviewed 67,112-clock conditional timing
+   envelope, excluding DMA/HDMA and interrupt work. The general 32-target
+   registry has a much larger envelope. A new read-only resolver-phase
+   observer is being prepared to expose pending interrupt and DMA/HDMA state;
+   no phase admission rule or game insertion is approved.
 
 All ROMs, SRAMs, emulator states, raw traces and extracted data stay under
 ignored `private/`. Source-controlled outputs contain original tools, tests,

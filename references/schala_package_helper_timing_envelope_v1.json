@@ -1,0 +1,205 @@
+{
+  "schema": "project-epoch-helper-timing-envelope-v1",
+  "evidence_level": "reviewed-conditional-static-model",
+  "source_identities": {
+    "asm/schala_package_helper_v2_stack.asm": {
+      "size_bytes": 8617,
+      "sha256": "7ee849f04444567ae6a67f5642edc0ec0b7ef09f41c7ea5f2b1773e6373fdb5f"
+    },
+    "asm/original_snes_package_cartridge_v1.asm": {
+      "size_bytes": 1151,
+      "sha256": "3cd5b800e57ec4085e5b706e3bc283be6e2d2d7fb79000c2741d5828819be15b"
+    },
+    "tools/original_snes_package_fixtures_v1.py": {
+      "size_bytes": 4761,
+      "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60"
+    },
+    "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp": {
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+    },
+    "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h": {
+      "size_bytes": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h": {
+      "size_bytes": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp": {
+      "size_bytes": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+    },
+    "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp": {
+      "size_bytes": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    }
+  },
+  "original_cartridge": {
+    "path": "private/test_runs/original_package_20260908_build1/original_package_test.sfc",
+    "size_bytes": 8388608,
+    "sha256": "1e0788500ad4181fea0ed767eed48c9d8da0f52ce86fec27cc8107d29033621b"
+  },
+  "assembled_helper": {
+    "cpu_address": 4259840,
+    "size_bytes": 577,
+    "sha256": "7242ff96f07e8d5ed9f0a994e474dbf3b49e7c2e576bd07d6536b6dfe3004f3b"
+  },
+  "model_sha256": "c8f160d8eb57bd4b22f10954bc6cbda231802272df1f55344345a2c30158733a",
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/research_helper_timing_envelope_v1.py"
+  ],
+  "production_approval": false,
+  "interrupt_exclusion_proved": false,
+  "dma_hdma_bounded": false,
+  "status": "reviewed-structural-envelope-not-admission-certificate",
+  "encoded_instruction_bytes": 577,
+  "source_instruction_rows": 280,
+  "scope": "interrupt-free, no DMA/HDMA service, no memory corruption, fixed v3 entry SPs, entry bridge through final JML before tail opcode",
+  "results": {
+    "immutable_v3_all_paths": {
+      "parts": {
+        "all_nonloop_blocks_once_including_mutually_exclusive_exits": {
+          "vector_code_data_idle_optional": [
+            421,
+            173,
+            139,
+            34
+          ],
+          "clocks": 5858
+        },
+        "preflight_body_32_times_excluding_nested_search": {
+          "vector_code_data_idle_optional": [
+            2080,
+            832,
+            768,
+            256
+          ],
+          "clocks": 29952
+        },
+        "target_search_iterations": {
+          "vector_code_data_idle_optional": [
+            832,
+            256,
+            192,
+            192
+          ],
+          "clocks": 11392
+        },
+        "publication_body_16_times_including_unselected_body": {
+          "vector_code_data_idle_optional": [
+            1008,
+            480,
+            224,
+            176
+          ],
+          "clocks": 14656
+        },
+        "countbits_init_and_exit_twice": {
+          "vector_code_data_idle_optional": [
+            16,
+            4,
+            6,
+            2
+          ],
+          "clocks": 212
+        },
+        "countbits_body_32_times": {
+          "vector_code_data_idle_optional": [
+            224,
+            0,
+            64,
+            96
+          ],
+          "clocks": 2944
+        },
+        "entry_bridge_JML_008060": {
+          "vector_code_data_idle_optional": [
+            4,
+            0,
+            0,
+            0
+          ],
+          "clocks": 32
+        }
+      },
+      "base_clocks": 65046,
+      "including_dram_refresh_upper_bound": 67112,
+      "difference_below_observed_irq_entry_124904": 57792,
+      "comparison_iterations_bound": 64
+    },
+    "generic_registry_32_targets": {
+      "parts": {
+        "all_nonloop_blocks_once_including_mutually_exclusive_exits": {
+          "vector_code_data_idle_optional": [
+            421,
+            173,
+            139,
+            34
+          ],
+          "clocks": 5858
+        },
+        "preflight_body_32_times_excluding_nested_search": {
+          "vector_code_data_idle_optional": [
+            2080,
+            832,
+            768,
+            256
+          ],
+          "clocks": 29952
+        },
+        "target_search_iterations": {
+          "vector_code_data_idle_optional": [
+            13312,
+            4096,
+            3072,
+            3072
+          ],
+          "clocks": 182272
+        },
+        "publication_body_16_times_including_unselected_body": {
+          "vector_code_data_idle_optional": [
+            1008,
+            480,
+            224,
+            176
+          ],
+          "clocks": 14656
+        },
+        "countbits_init_and_exit_twice": {
+          "vector_code_data_idle_optional": [
+            16,
+            4,
+            6,
+            2
+          ],
+          "clocks": 212
+        },
+        "countbits_body_32_times": {
+          "vector_code_data_idle_optional": [
+            224,
+            0,
+            64,
+            96
+          ],
+          "clocks": 2944
+        },
+        "entry_bridge_JML_008060": {
+          "vector_code_data_idle_optional": [
+            4,
+            0,
+            0,
+            0
+          ],
+          "clocks": 32
+        }
+      },
+      "base_clocks": 235926,
+      "including_dram_refresh_upper_bound": 243202,
+      "difference_below_observed_irq_entry_124904": -118298,
+      "comparison_iterations_bound": 1024
+    }
+  }
+}

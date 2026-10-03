@@ -242,6 +242,24 @@ These are separate namespaces. Never conflate them.
   Mesen's generic `masterClock` is only its low 32 bits. Saved IRQ I=0 is an
   observation, not a universal precondition: a previously sampled IRQ can
   remain pending across SEI. This proves no helper preemption behavior.
+- The separate read-only normal-NMI observer now has two identical full
+  traces over five selected post-publication intervals. Each interval reaches
+  34 bytes below its post-hardware-entry SP, 38 including the existing frame.
+  Complete observed WRAM reads/writes and final snapshots reconcile; all
+  declared publication ranges have zero observed accesses. This is a selected
+  runtime observation, not a whole-NMI, helper-preemption or physical stack
+  ownership proof. Preserve its accepted pair, pilots and failed earlier
+  serialization run. The stronger validator rejects unverified indirect
+  pointer domains; the collector streams bounded events and fails directly.
+  See `docs/normal_nmi_stack_observation_v1.md` and its metadata auditor.
+- The game's busy byte is not a helper lock: IRQ increments it and then
+  unconditionally clears it, while the NMI busy route has already changed
+  hardware configuration and skips normal frame services. The reviewed
+  67,112-clock helper envelope applies only to the exact original-cartridge
+  small registry, fixed entry premises, no DMA/HDMA, no interrupts or memory
+  corruption. The general 32-target model is 243,202 clocks. Neither is a
+  game admission certificate. Use the phase-specific strategy in
+  `docs/schala_package_interrupt_strategy_review_2026_10_03.md`.
 - A late resolver refusal is not queued-Tech cancellation: the vanilla path
   prepares effects and charges participant MP before animation, then applies
   pending results after normal animation return. The candidate preflight is

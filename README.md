@@ -17,6 +17,15 @@ portfolio's Project Epoch case correctly describes research still in progress.
 See the [current handoff](docs/CURRENT_HANDOFF.md) for the active review and
 native-observation boundary. The interruption is not counted as work time.
 
+The [five-interval normal-NMI observation](docs/normal_nmi_stack_observation_v1.md)
+now repeats identically in two isolated runs, with complete observed WRAM
+reconciliation and 126 passing observer/acceptance tests. Its observed
+38-byte depth includes the existing hardware frame and applies only to those
+selected intervals. The [interrupt strategy review](docs/schala_package_interrupt_strategy_review_2026_10_03.md)
+documents why the game busy flag is unsuitable as a helper lock and provides
+a reproducible conditional timing envelope for the exact original diagnostic
+fixture. Actual game helper integration remains open.
+
 ## Preserved integration checkpoint — 2026-09-08
 
 At this historical checkpoint, Andrei had extended the engineering session

@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-03",
+  "repository": "https://github.com/CodaLilitari/project-epoch",
+  "publication_checks": [
+    {
+      "commit": "af3852f9b08285a5011a744d37e3a0b5cd279d49",
+      "verified_at_utc": "2026-10-03T21:12:02.777659+00:00",
+      "repository": "https://github.com/CodaLilitari/project-epoch",
+      "branch": "main",
+      "authenticated_commit_branch_and_remote_agree": true,
+      "changed_files": [
+        {
+          "path": "AGENTS.md",
+          "size": 43720,
+          "sha256": "b3597e63b9d768cfd110a766cf00a0cdadeb8d1cfa4d845d3fbfa77eff027de0"
+        },
+        {
+          "path": "README.md",
+          "size": 53284,
+          "sha256": "2ebba7fa964f3f67641864114b82c69b5fdd32b40a03d826a53286acd2e96030"
+        },
+        {
+          "path": "docs/CURRENT_HANDOFF.md",
+          "size": 3781,
+          "sha256": "e408e74a915c9722348c97731ec9c66681447d16fbe401323b12b22989094415"
+        },
+        {
+          "path": "docs/DEVELOPER_LOG.md",
+          "size": 85786,
+          "sha256": "e562c15c6e34f36ad71c79dcfd12e5ee44862e8da925d6c7cb6d070e6e12f741"
+        },
+        {
+          "path": "docs/schala_eighth_character_developer_guide.md",
+          "size": 209312,
+          "sha256": "f01cac27e0869f16866e52e9c1dd725d5a5c4bc633ff59fc8fca99c805d5194d"
+        },
+        {
+          "path": "references/work_session_publications_2026_09_08.json",
+          "size": 56404,
+          "sha256": "2496f3109628412b062fb4969191ad149d11f299cdec77ba4f797ad9ae39bcb8"
+        },
+        {
+          "path": "tools/audit_schala_scene80_remaining_returns_v2.py",
+          "size": 22166,
+          "sha256": "7321c79ad154551eb77f002a4a28e00aca777d53fe0fab09e1591d2f5b47963e"
+        },
+        {
+          "path": "tests/test_schala_scene80_remaining_returns_v2.py",
+          "size": 12522,
+          "sha256": "a49ef133c2dea51f76ae7a98a269f7bffe42d0f6b13d6450631cf894d79fe467"
+        },
+        {
+          "path": "docs/schala_scene80_remaining_returns_v2.md",
+          "size": 11042,
+          "sha256": "8417d356f8a1d90818aac70905caa9b65339bc1a25c264c7243aedfaabd229fc"
+        },
+        {
+          "path": "references/schala_scene80_remaining_returns_v2.json",
+          "size": 59258,
+          "sha256": "9f24a7fb84c1534363c4d0384d835e41cdf03d62e4ca303f3502519a1d781338"
+        },
+        {
+          "path": "tools/audit_schala_scene8b_copy_producers_v1.py",
+          "size": 29492,
+          "sha256": "9a9619921c7cb310c8f0ad545109fe9b3c16cb04c63e3787b025c4087a39aec1"
+        },
+        {
+          "path": "tests/test_schala_scene8b_copy_producers_v1.py",
+          "size": 16150,
+          "sha256": "60b316d31947f86703d6ba46384930f25a3f7aa04fc1db293f24d1fff6c2ae19"
+        },
+        {
+          "path": "docs/schala_scene8b_copy_producers_v1.md",
+          "size": 16298,
+          "sha256": "68b4cb1d30eee8b5adf021624854e8f7e7b574ff53e05318264827df2d548818"
+        },
+        {
+          "path": "references/schala_scene8b_copy_producers_v1.json",
+          "size": 171599,
+          "sha256": "f3fc3cf0999d0782f80c76a39ace13332dc31ef895482391e3e3282512d14ee6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5250 @@
+{
+  "schema": "project-epoch-normal-nmi-stack-observation-v1-accepted-pair",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "two identical selected clean-ROM normal-NMI observation traces; handler-entry through pre-RTI only",
+  "acceptance_auditor": {
+    "path": "tools/audit_normal_nmi_stack_observation_v1.py",
+    "size_bytes": 17388,
+    "sha256": "7a6bd6c7300db1899d7cd5619f4120682be29f695fbe9f0c7ac4353dbffadc9b"
+  },
+  "acceptance_tests": {
+    "path": "tests/test_audit_normal_nmi_stack_observation_v1.py",
+    "size_bytes": 17471,
+    "sha256": "5e8fef4a56b53be3d744bde4611aef75898778f6946d63105d6789b51b846bb1"
+  },
+  "source_identities": {
+    "launcher": {
+      "path": "tools/run_normal_nmi_stack_observation_v1.py",
+      "size_bytes": 32546,
+      "sha256": "bb4bddb1f995124ebdd269a0b937ad988d972ad524d6237073cdeb1ae0b60784"
+    },
+    "collector": {
+      "path": "tools/mesen_normal_nmi_stack_observation_v1.lua",
+      "size_bytes": 8496,
+      "sha256": "77a39e798cb0b82c30e8d46cf3ecf64987ce30bf3902308b98fa2549177a8ee4"
+    },
+    "tests": {
+      "path": "tests/test_normal_nmi_stack_observation_v1.py",
+      "size_bytes": 20641,
+      "sha256": "0e8420e13806d9b637367bbfed717fdaeff08454fccded7bdc44e82f7c12c2de"
+    },
+    "context_launcher": {
+      "path": "tools/run_package_resolver_context_v1.py",
+      "size_bytes": 24784,
+      "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size_bytes": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    },
+    "reference_trace": {
+      "path": "private/test_runs/resolver_context_20260908_final1/trace.json",
+      "size_bytes": 10811008,
+      "sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679"
+    },
+    "engine_shared": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size_bytes": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    "engine_instructions": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Instructions.h",
+      "size_bytes": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    "engine_SnesCpu": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+    },
+    "engine_LuaApi": {
+      "path": "private/research/mesen_timing_api_2_1_1/LuaApi.cpp",
+      "size_bytes": 34647,
+      "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24"
+    },
+    "engine_SnesMemoryManager": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesMemoryManager.cpp",
+      "size_bytes": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+    },
+    "engine_SnesDebugger": {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDebugger.cpp",
+      "size_bytes": 21180,
+      "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51"
+    },
+    "engine_Debugger": {
+      "path": "private/research/mesen_nmi_request_2_1_1/Debugger.cpp",
+      "size_bytes": 53890,
+      "sha256": "71fa7d663b8cb61c7290bdf404244270a8c9d3f907224c990b43ae82a6c95db3"
+    },
+    "engine_ScriptManager": {
+      "path": "private/research/mesen_nmi_request_2_1_1/ScriptManager.h",
+      "size_bytes": 2217,
+      "sha256": "c6ec04a297abaf8b6f2927d8d6433278a69fb24df908786ca7a0f74bdea6c8a5"
+    },
+    "engine_MemoryDumper": {
+      "path": "private/research/mesen_nmi_request_2_1_1/MemoryDumper.cpp",
+      "size_bytes": 15315,
+      "sha256": "db1422d7ff1794334f55f5e30a66e3bc859347de42f7dc5425d9ac93e45ca197"
+    },
+    "engine_ScriptingContext": {
+      "path": "private/research/mesen_nmi_stack_watchdog_2_1_1/ScriptingContext.cpp",
+      "size_bytes": 10794,
+      "sha256": "1e4645ab7783c179a2998e906b72a42bce98c340badb269c0506996229ba0157"
+    },
+    "engine_ScriptWindowConfig": {
+      "path": "private/research/mesen_nmi_stack_watchdog_2_1_1/ScriptWindowConfig.cs",
+      "size_bytes": 1741,
+      "sha256": "d58e9419defca6c3fd2e182ed23ebb08c39e61b7f5ea677275cf86d9ccb5a51a"
+    },
+    "rom": {
+      "path": "private/input/rom_archive/Chrono Trigger (USA).sfc",
+      "size_bytes": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "sram": {
+      "path": "private/input/lavos_save/chrono_trigger.srm",
+      "size_bytes": 8192,
+      "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+    },
+    "state": {
+      "path": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v17/battle_ready.mss",
+      "size_bytes": 261614,
+      "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+    },
+    "mesen": {
+      "path": "private/tools/mesen2/app/Mesen.exe",
+      "size_bytes": 70470144,
+      "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+    },
+    "mesen_core": {
+      "path": "private/tools/mesen2/app/MesenCore.dll",
+      "size_bytes": 7143424,
+      "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+    },
+    "harfbuzz": {
+      "path": "private/tools/mesen2/app/libHarfBuzzSharp.dll",
+      "size_bytes": 1804872,
+      "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+    },
+    "skia": {
+      "path": "private/tools/mesen2/app/libSkiaSharp.dll",
+      "size_bytes": 9414216,
+      "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+    },
+    "nesdb": {
+      "path": "private/tools/mesen2/app/MesenNesDB.txt",
+      "size_bytes": 559118,
+      "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+    },
+    "settings": {
+      "path": "private/tools/mesen2/app/settings.json",
+      "size_bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    }
+  },
+  "runs": [
+    {
+      "directory": "private/test_runs/normal_nmi_stack_full_20261003_2",
+      "staged_stem": "pe_nmi_stack_c94789a997a67547163729fe",
+      "artifacts": {
+        "launch_inputs": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/launch_inputs.json",
+          "size_bytes": 5113,
+          "sha256": "9609be34860586d9ab04ca3785d3bbff603c2fbc6d7cb1c95588d72dfd3d7dc2"
+        },
+        "manifest": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/manifest.json",
+          "size_bytes": 362716,
+          "sha256": "ca60682b3ef259886b900f1667cca25c8eee1f19960a9c034a4183e454af3854"
+        },
+        "trace": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/trace.json",
+          "size_bytes": 37645178,
+          "sha256": "b1daedf1b9fafebbc148263ef498f46a2af57fa5730aad96d038e0e5b91c552a"
+        },
+        "process_log": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/process.log",
+          "size_bytes": 1210608,
+          "sha256": "a4267dbe2c5b6c158da82dd767fb6a980b6c6cc5c35e27c8d5393e4026129514"
+        }
+      },
+      "staged_identities": {
+        "mesen": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        "mesen_core": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        "harfbuzz": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        "skia": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        "nesdb": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        "settings": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        "rom": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/pe_nmi_stack_c94789a997a67547163729fe.sfc",
+          "size_bytes": 4194304,
+          "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+        },
+        "state": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/pe_nmi_stack_c94789a997a67547163729fe.mss",
+          "size_bytes": 261614,
+          "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+        },
+        "sram": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/app/Saves/pe_nmi_stack_c94789a997a67547163729fe.srm",
+          "size_bytes": 8192,
+          "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+        },
+        "collector": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/staged/collector.lua",
+          "size_bytes": 8496,
+          "sha256": "77a39e798cb0b82c30e8d46cf3ecf64987ce30bf3902308b98fa2549177a8ee4"
+        }
+      },
+      "archived_identities": {
+        "launcher": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/launcher.py",
+          "size_bytes": 32546,
+          "sha256": "bb4bddb1f995124ebdd269a0b937ad988d972ad524d6237073cdeb1ae0b60784"
+        },
+        "collector": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/collector.lua",
+          "size_bytes": 8496,
+          "sha256": "77a39e798cb0b82c30e8d46cf3ecf64987ce30bf3902308b98fa2549177a8ee4"
+        },
+        "tests": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/tests.py",
+          "size_bytes": 20641,
+          "sha256": "0e8420e13806d9b637367bbfed717fdaeff08454fccded7bdc44e82f7c12c2de"
+        },
+        "context_launcher": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/context_launcher.py",
+          "size_bytes": 24784,
+          "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/isolation_library.py",
+          "size_bytes": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        },
+        "engine_shared": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_shared.h",
+          "size_bytes": 20483,
+          "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+        },
+        "engine_instructions": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_instructions.h",
+          "size_bytes": 27673,
+          "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+        },
+        "engine_SnesCpu": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_SnesCpu.cpp",
+          "size_bytes": 3666,
+          "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+        },
+        "engine_LuaApi": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_LuaApi.cpp",
+          "size_bytes": 34647,
+          "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24"
+        },
+        "engine_SnesMemoryManager": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_SnesMemoryManager.cpp",
+          "size_bytes": 12100,
+          "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+        },
+        "engine_SnesDebugger": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_SnesDebugger.cpp",
+          "size_bytes": 21180,
+          "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51"
+        },
+        "engine_Debugger": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_Debugger.cpp",
+          "size_bytes": 53890,
+          "sha256": "71fa7d663b8cb61c7290bdf404244270a8c9d3f907224c990b43ae82a6c95db3"
+        },
+        "engine_ScriptManager": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_ScriptManager.h",
+          "size_bytes": 2217,
+          "sha256": "c6ec04a297abaf8b6f2927d8d6433278a69fb24df908786ca7a0f74bdea6c8a5"
+        },
+        "engine_MemoryDumper": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_MemoryDumper.cpp",
+          "size_bytes": 15315,
+          "sha256": "db1422d7ff1794334f55f5e30a66e3bc859347de42f7dc5425d9ac93e45ca197"
+        },
+        "engine_ScriptingContext": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_ScriptingContext.cpp",
+          "size_bytes": 10794,
+          "sha256": "1e4645ab7783c179a2998e906b72a42bce98c340badb269c0506996229ba0157"
+        },
+        "engine_ScriptWindowConfig": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_2/source_archive/engine_ScriptWindowConfig.cs",
+          "size_bytes": 1741,
+          "sha256": "d58e9419defca6c3fd2e182ed23ebb08c39e61b7f5ea677275cf86d9ccb5a51a"
+        }
+      },
+      "revalidated_summary_sha256": "cf1f8a9123a9da2ee6a5161a276d729b6508dd62a10cd0f499e4415f7b0988e4",
+      "compact_projection_sha256": "fde2240aaa2d18ae51a6e05869a26ab4f2287731f148e5e8cd23c7caac97bbb2",
+      "intervals": [
+        {
+          "poll": 379,
+          "execution_observations": 5508,
+          "executed_instructions": 5507,
+          "bus_events": 13028,
+          "entry_sp": 1738,
+          "minimum_instruction_boundary_sp": 1704,
+          "minimum_recorded_sp": 1704,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 172136,
+          "execution_projection_sha256": "8375410c47846442eb1fe91283e3e7683fb8b27a897e0819374fd9ec1f15d20f",
+          "wram_changed_bytes": 60,
+          "wram_before_sha256": "2eab300bbdc3572c211254c6b47fcb71f5270dce4ace2eb7a21ef4212b13f8fe",
+          "wram_after_sha256": "c0782031735ec3c3a5e52894e0b3924931e20cd9995a96e64148f5d9f16d1e5c",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748020,
+              "observations": 38
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748020,
+              "observations": 30
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 396,
+          "call_return_transition_counts": {
+            "call": 65,
+            "indexed-call": 1,
+            "indirect-jump": 1,
+            "return": 66
+          }
+        },
+        {
+          "poll": 500,
+          "execution_observations": 5614,
+          "executed_instructions": 5613,
+          "bus_events": 11398,
+          "entry_sp": 1750,
+          "minimum_instruction_boundary_sp": 1716,
+          "minimum_recorded_sp": 1716,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 167084,
+          "execution_projection_sha256": "8458807cc987e6dbadec5830a6b70901ff8463dfa836b87dadaa3c6abf4071e9",
+          "wram_changed_bytes": 35,
+          "wram_before_sha256": "a90d66493f3ee1298c1a84ef72c168ea93dde9289e44cd0a39ea8eb931c6d7f8",
+          "wram_after_sha256": "0808d2c359c992fdf2661b8e7f1a53db65d45494395ce380e4f48aa781130798",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 36
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748197,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 18
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 408,
+          "call_return_transition_counts": {
+            "call": 68,
+            "indexed-call": 2,
+            "indirect-jump": 1,
+            "return": 70
+          }
+        },
+        {
+          "poll": 700,
+          "execution_observations": 6367,
+          "executed_instructions": 6366,
+          "bus_events": 12400,
+          "entry_sp": 1745,
+          "minimum_instruction_boundary_sp": 1711,
+          "minimum_recorded_sp": 1711,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 184590,
+          "execution_projection_sha256": "0b2afb9d16b4780f7ad33e1585f94c55e29dd59459e00966dc8a005a03a10494",
+          "wram_changed_bytes": 88,
+          "wram_before_sha256": "39f57bc39064ae6c54b44cc526ad0bc8b828e1b8eb9ae784882f531a6a3cb4a8",
+          "wram_after_sha256": "16e6ed4e3196b89df9af7ded4a1a7105a64dec980986435e67a6ba4ad27d7a2e",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748107,
+              "observations": 24
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748203,
+              "observations": 24
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748107,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748201,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 18
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 428,
+          "call_return_transition_counts": {
+            "call": 75,
+            "indexed-call": 3,
+            "indirect-jump": 3,
+            "return": 78
+          }
+        },
+        {
+          "poll": 927,
+          "execution_observations": 5554,
+          "executed_instructions": 5553,
+          "bus_events": 11291,
+          "entry_sp": 1747,
+          "minimum_instruction_boundary_sp": 1713,
+          "minimum_recorded_sp": 1713,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 165324,
+          "execution_projection_sha256": "fb85510254389823d7e7e186cef748fcc1477bf736bd0f1f6040041cd1a9387d",
+          "wram_changed_bytes": 39,
+          "wram_before_sha256": "eb4b9b341ec205136b19d663febb6a2f223d159d81e97668c0e3bc6f0c838a61",
+          "wram_after_sha256": "e635e64e2815e0945431c821973db7c8dff3c73027d3fd0ec318e4a322cdba4e",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748132,
+              "observations": 24
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748132,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748134,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 398,
+          "call_return_transition_counts": {
+            "call": 66,
+            "indexed-call": 1,
+            "indirect-jump": 1,
+            "return": 67
+          }
+        },
+        {
+          "poll": 928,
+          "execution_observations": 5543,
+          "executed_instructions": 5542,
+          "bus_events": 11291,
+          "entry_sp": 1747,
+          "minimum_instruction_boundary_sp": 1713,
+          "minimum_recorded_sp": 1713,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 165092,
+          "execution_projection_sha256": "6be8504285c01603ce1586edc1a2507fdb1c11321a3123dd6ec774f71f6a16b5",
+          "wram_changed_bytes": 36,
+          "wram_before_sha256": "815f8fd86b2574f4bf417475b6c84b8d232b4f6bdad9ff67f21c5f2831a7def9",
+          "wram_after_sha256": "b8a88cc42dd615648b4b5b7b9d1b03c32c26a7879a477b2dabfde74e8432513e",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 18
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748151,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 396,
+          "call_return_transition_counts": {
+            "call": 65,
+            "indexed-call": 1,
+            "indirect-jump": 1,
+            "return": 66
+          }
+        }
+      ]
+    },
+    {
+      "directory": "private/test_runs/normal_nmi_stack_full_20261003_3",
+      "staged_stem": "pe_nmi_stack_f7e14fe11692d918ab61ff68",
+      "artifacts": {
+        "launch_inputs": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/launch_inputs.json",
+          "size_bytes": 5113,
+          "sha256": "9609be34860586d9ab04ca3785d3bbff603c2fbc6d7cb1c95588d72dfd3d7dc2"
+        },
+        "manifest": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/manifest.json",
+          "size_bytes": 362716,
+          "sha256": "ca60682b3ef259886b900f1667cca25c8eee1f19960a9c034a4183e454af3854"
+        },
+        "trace": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/trace.json",
+          "size_bytes": 37645178,
+          "sha256": "b1daedf1b9fafebbc148263ef498f46a2af57fa5730aad96d038e0e5b91c552a"
+        },
+        "process_log": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/process.log",
+          "size_bytes": 1210608,
+          "sha256": "a4267dbe2c5b6c158da82dd767fb6a980b6c6cc5c35e27c8d5393e4026129514"
+        }
+      },
+      "staged_identities": {
+        "mesen": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        "mesen_core": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        "harfbuzz": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        "skia": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        "nesdb": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        "settings": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        "rom": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/pe_nmi_stack_f7e14fe11692d918ab61ff68.sfc",
+          "size_bytes": 4194304,
+          "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+        },
+        "state": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/pe_nmi_stack_f7e14fe11692d918ab61ff68.mss",
+          "size_bytes": 261614,
+          "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+        },
+        "sram": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/app/Saves/pe_nmi_stack_f7e14fe11692d918ab61ff68.srm",
+          "size_bytes": 8192,
+          "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+        },
+        "collector": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/staged/collector.lua",
+          "size_bytes": 8496,
+          "sha256": "77a39e798cb0b82c30e8d46cf3ecf64987ce30bf3902308b98fa2549177a8ee4"
+        }
+      },
+      "archived_identities": {
+        "launcher": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/launcher.py",
+          "size_bytes": 32546,
+          "sha256": "bb4bddb1f995124ebdd269a0b937ad988d972ad524d6237073cdeb1ae0b60784"
+        },
+        "collector": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/collector.lua",
+          "size_bytes": 8496,
+          "sha256": "77a39e798cb0b82c30e8d46cf3ecf64987ce30bf3902308b98fa2549177a8ee4"
+        },
+        "tests": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/tests.py",
+          "size_bytes": 20641,
+          "sha256": "0e8420e13806d9b637367bbfed717fdaeff08454fccded7bdc44e82f7c12c2de"
+        },
+        "context_launcher": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/context_launcher.py",
+          "size_bytes": 24784,
+          "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/isolation_library.py",
+          "size_bytes": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        },
+        "engine_shared": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_shared.h",
+          "size_bytes": 20483,
+          "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+        },
+        "engine_instructions": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_instructions.h",
+          "size_bytes": 27673,
+          "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+        },
+        "engine_SnesCpu": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_SnesCpu.cpp",
+          "size_bytes": 3666,
+          "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+        },
+        "engine_LuaApi": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_LuaApi.cpp",
+          "size_bytes": 34647,
+          "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24"
+        },
+        "engine_SnesMemoryManager": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_SnesMemoryManager.cpp",
+          "size_bytes": 12100,
+          "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+        },
+        "engine_SnesDebugger": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_SnesDebugger.cpp",
+          "size_bytes": 21180,
+          "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51"
+        },
+        "engine_Debugger": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_Debugger.cpp",
+          "size_bytes": 53890,
+          "sha256": "71fa7d663b8cb61c7290bdf404244270a8c9d3f907224c990b43ae82a6c95db3"
+        },
+        "engine_ScriptManager": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_ScriptManager.h",
+          "size_bytes": 2217,
+          "sha256": "c6ec04a297abaf8b6f2927d8d6433278a69fb24df908786ca7a0f74bdea6c8a5"
+        },
+        "engine_MemoryDumper": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_MemoryDumper.cpp",
+          "size_bytes": 15315,
+          "sha256": "db1422d7ff1794334f55f5e30a66e3bc859347de42f7dc5425d9ac93e45ca197"
+        },
+        "engine_ScriptingContext": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_ScriptingContext.cpp",
+          "size_bytes": 10794,
+          "sha256": "1e4645ab7783c179a2998e906b72a42bce98c340badb269c0506996229ba0157"
+        },
+        "engine_ScriptWindowConfig": {
+          "path": "private/test_runs/normal_nmi_stack_full_20261003_3/source_archive/engine_ScriptWindowConfig.cs",
+          "size_bytes": 1741,
+          "sha256": "d58e9419defca6c3fd2e182ed23ebb08c39e61b7f5ea677275cf86d9ccb5a51a"
+        }
+      },
+      "revalidated_summary_sha256": "cf1f8a9123a9da2ee6a5161a276d729b6508dd62a10cd0f499e4415f7b0988e4",
+      "compact_projection_sha256": "fde2240aaa2d18ae51a6e05869a26ab4f2287731f148e5e8cd23c7caac97bbb2",
+      "intervals": [
+        {
+          "poll": 379,
+          "execution_observations": 5508,
+          "executed_instructions": 5507,
+          "bus_events": 13028,
+          "entry_sp": 1738,
+          "minimum_instruction_boundary_sp": 1704,
+          "minimum_recorded_sp": 1704,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 172136,
+          "execution_projection_sha256": "8375410c47846442eb1fe91283e3e7683fb8b27a897e0819374fd9ec1f15d20f",
+          "wram_changed_bytes": 60,
+          "wram_before_sha256": "2eab300bbdc3572c211254c6b47fcb71f5270dce4ace2eb7a21ef4212b13f8fe",
+          "wram_after_sha256": "c0782031735ec3c3a5e52894e0b3924931e20cd9995a96e64148f5d9f16d1e5c",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748020,
+              "observations": 38
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748020,
+              "observations": 30
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 396,
+          "call_return_transition_counts": {
+            "call": 65,
+            "indexed-call": 1,
+            "indirect-jump": 1,
+            "return": 66
+          }
+        },
+        {
+          "poll": 500,
+          "execution_observations": 5614,
+          "executed_instructions": 5613,
+          "bus_events": 11398,
+          "entry_sp": 1750,
+          "minimum_instruction_boundary_sp": 1716,
+          "minimum_recorded_sp": 1716,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 167084,
+          "execution_projection_sha256": "8458807cc987e6dbadec5830a6b70901ff8463dfa836b87dadaa3c6abf4071e9",
+          "wram_changed_bytes": 35,
+          "wram_before_sha256": "a90d66493f3ee1298c1a84ef72c168ea93dde9289e44cd0a39ea8eb931c6d7f8",
+          "wram_after_sha256": "0808d2c359c992fdf2661b8e7f1a53db65d45494395ce380e4f48aa781130798",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 36
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748197,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 18
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 408,
+          "call_return_transition_counts": {
+            "call": 68,
+            "indexed-call": 2,
+            "indirect-jump": 1,
+            "return": 70
+          }
+        },
+        {
+          "poll": 700,
+          "execution_observations": 6367,
+          "executed_instructions": 6366,
+          "bus_events": 12400,
+          "entry_sp": 1745,
+          "minimum_instruction_boundary_sp": 1711,
+          "minimum_recorded_sp": 1711,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 184590,
+          "execution_projection_sha256": "0b2afb9d16b4780f7ad33e1585f94c55e29dd59459e00966dc8a005a03a10494",
+          "wram_changed_bytes": 88,
+          "wram_before_sha256": "39f57bc39064ae6c54b44cc526ad0bc8b828e1b8eb9ae784882f531a6a3cb4a8",
+          "wram_after_sha256": "16e6ed4e3196b89df9af7ded4a1a7105a64dec980986435e67a6ba4ad27d7a2e",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748107,
+              "observations": 24
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748203,
+              "observations": 24
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748107,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748201,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 18
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 428,
+          "call_return_transition_counts": {
+            "call": 75,
+            "indexed-call": 3,
+            "indirect-jump": 3,
+            "return": 78
+          }
+        },
+        {
+          "poll": 927,
+          "execution_observations": 5554,
+          "executed_instructions": 5553,
+          "bus_events": 11291,
+          "entry_sp": 1747,
+          "minimum_instruction_boundary_sp": 1713,
+          "minimum_recorded_sp": 1713,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 165324,
+          "execution_projection_sha256": "fb85510254389823d7e7e186cef748fcc1477bf736bd0f1f6040041cd1a9387d",
+          "wram_changed_bytes": 39,
+          "wram_before_sha256": "eb4b9b341ec205136b19d663febb6a2f223d159d81e97668c0e3bc6f0c838a61",
+          "wram_after_sha256": "e635e64e2815e0945431c821973db7c8dff3c73027d3fd0ec318e4a322cdba4e",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748132,
+              "observations": 24
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748132,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748134,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 398,
+          "call_return_transition_counts": {
+            "call": 66,
+            "indexed-call": 1,
+            "indirect-jump": 1,
+            "return": 67
+          }
+        },
+        {
+          "poll": 928,
+          "execution_observations": 5543,
+          "executed_instructions": 5542,
+          "bus_events": 11291,
+          "entry_sp": 1747,
+          "minimum_instruction_boundary_sp": 1713,
+          "minimum_recorded_sp": 1713,
+          "additional_bytes_below_handler_entry": 34,
+          "bytes_below_interrupted_sp_including_existing_hardware_frame": 38,
+          "master_clocks": 165092,
+          "execution_projection_sha256": "6be8504285c01603ce1586edc1a2507fdb1c11321a3123dd6ec774f71f6a16b5",
+          "wram_changed_bytes": 36,
+          "wram_before_sha256": "815f8fd86b2574f4bf417475b6c84b8d232b4f6bdad9ff67f21c5f2831a7def9",
+          "wram_after_sha256": "b8a88cc42dd615648b4b5b7b9d1b03c32c26a7879a477b2dabfde74e8432513e",
+          "minimum_recorded_sites": [
+            {
+              "event_kind": "exec",
+              "pc": 12748015,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748019,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748106,
+              "observations": 1
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748117,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748149,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748151,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748203,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748204,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748205,
+              "observations": 2
+            },
+            {
+              "event_kind": "exec",
+              "pc": 12748211,
+              "observations": 1
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748121,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748124,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748127,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748131,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748134,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748137,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748141,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748144,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748147,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748149,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748151,
+              "observations": 26
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748154,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748157,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748161,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748164,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748167,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748171,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748174,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748177,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748181,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748184,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748187,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748191,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748194,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748197,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "read",
+              "pc": 12748201,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748119,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748129,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748139,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748149,
+              "observations": 18
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748151,
+              "observations": 16
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748159,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748169,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748179,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748189,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748199,
+              "observations": 2
+            },
+            {
+              "event_kind": "write",
+              "pc": 12748203,
+              "observations": 2
+            }
+          ],
+          "publication_access_counts": {
+            "owners_and_script_pointers": {
+              "reads": 0,
+              "writes": 0
+            },
+            "completion_and_config": {
+              "reads": 0,
+              "writes": 0
+            },
+            "branch_word": {
+              "reads": 0,
+              "writes": 0
+            }
+          },
+          "sp_change_count": 396,
+          "call_return_transition_counts": {
+            "call": 65,
+            "indexed-call": 1,
+            "indirect-jump": 1,
+            "return": 66
+          }
+        }
+      ]
+    }
+  ],
+  "full_trace_bytes_identical": true,
+  "revalidated_summaries_identical": true,
+  "interval_count_per_run": 5,
+  "minimum_recorded_sp": 1704,
+  "maximum_observed_depth_including_existing_hardware_frame": 38,
+  "raw_game_data_emitted": false,
+  "native_hardware_pushes_captured": false,
+  "process_exit_code_independently_recorded": false,
+  "process_exit_provenance": "pinned runner checks exit 52 before manifest emission; no separate exit-code receipt exists",
+  "full_cpu_alu_independently_reexecuted": false,
+  "all_game_nmi_paths_proved": false,
+  "publication_preemption_proved": false,
+  "production_stack_headroom_proved": false,
+  "production_approval": false,
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_normal_nmi_stack_observation_v1.py",
+    "--run-a",
+    "private/test_runs/normal_nmi_stack_full_20261003_2",
+    "--run-b",
+    "private/test_runs/normal_nmi_stack_full_20261003_3"
+  ]
+}
