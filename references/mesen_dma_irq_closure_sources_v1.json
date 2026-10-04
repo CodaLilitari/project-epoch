@@ -1,0 +1,344 @@
+{
+  "schema": "project-epoch-dma-irq-closure-upstream-sources-v1",
+  "revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "evidence_level": "exact-revision-source-identity",
+  "sources": [
+    {
+      "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesMemoryManager.cpp",
+      "size_bytes": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58",
+      "git_blob_sha1": "8c7b9433f1aa33aa42624b9c7686b91136fdcd2e"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesMemoryManager.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesMemoryManager.h",
+      "size_bytes": 2698,
+      "sha256": "dc819f2f0dcb7d1150e1502d19022f9c866befddcd4bd6ca19e1ebb0b9120723",
+      "git_blob_sha1": "00f9b96e198e0fb6be70bae1b4d33a4e4f6a19ba"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesPpu.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesPpu.cpp",
+      "size_bytes": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180",
+      "git_blob_sha1": "3c7245217083e3e7d9ce72bcf2e037f43b463b0b"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesPpu.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesPpu.h",
+      "size_bytes": 7336,
+      "sha256": "15859642a2f720b4fbc8298583705e4fecd16397d6da32f57cf8f2bd12cc8f89",
+      "git_blob_sha1": "0d73374a9addcab3321d0df80c7e643235154706"
+    },
+    {
+      "upstream_path": "Core/SNES/InternalRegisters.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/InternalRegisters.cpp",
+      "size_bytes": 12742,
+      "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc",
+      "git_blob_sha1": "4310d8c5aff4dd4a6c955b84e89cb2acdcdff613"
+    },
+    {
+      "upstream_path": "Core/SNES/InternalRegisters.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/InternalRegisters.h",
+      "size_bytes": 5020,
+      "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698",
+      "git_blob_sha1": "b713a16afce1d86bfdf11c205d18a37833102769"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesDmaController.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesDmaController.cpp",
+      "size_bytes": 19939,
+      "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6",
+      "git_blob_sha1": "7fc0d5f0568369c8c1abfab5c1b969d1b0b08d18"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesDmaController.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesDmaController.h",
+      "size_bytes": 1451,
+      "sha256": "05a4c63d0f18efd11b12bd476f4bf99bb0d7cd8ba2b51f95bdb463653f82cdfd",
+      "git_blob_sha1": "d65164cade361521fdc5c0540d0eadeb85760fe5"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesCpu.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesCpu.cpp",
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8",
+      "git_blob_sha1": "e8441981c7f2527e16303ddd35d5010deec850f7"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesCpu.Shared.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesCpu.Shared.h",
+      "size_bytes": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f",
+      "git_blob_sha1": "bbabf420bd1bd8899b62e392fcadcf3a500468c5"
+    },
+    {
+      "upstream_path": "Core/SNES/BaseCartridge.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/BaseCartridge.h",
+      "size_bytes": 3531,
+      "sha256": "ee6f270d95414de941ab4cdc59e662081316b76fe7129bf47f8b3a5b9033b087",
+      "git_blob_sha1": "80c3abad8dc326f95728a90e7b8b67bfdf53b988"
+    },
+    {
+      "upstream_path": "Core/SNES/BaseCartridge.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/BaseCartridge.cpp",
+      "size_bytes": 28524,
+      "sha256": "8a902a8eb8a232b59d0495f8a1f2c47a4fc40e92c4bafc6e9cc98fff10056ed6",
+      "git_blob_sha1": "22f0c65be5ca08481e18ca4afb8d36fecf77863f"
+    },
+    {
+      "upstream_path": "Core/SNES/Spc.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Spc.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Spc.cpp",
+      "size_bytes": 15455,
+      "sha256": "889890c164301011787dbb9345a32163f8737e3f44129507eff16e8a7389956c",
+      "git_blob_sha1": "efeac45328d12f2adf58519fcf2d6e6d16fc890a"
+    },
+    {
+      "upstream_path": "Core/SNES/Spc.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Spc.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Spc.h",
+      "size_bytes": 6635,
+      "sha256": "119797199eb11aa11e2f2da2db79b4035d10c395095447e022bee748a801ed49",
+      "git_blob_sha1": "9b907c3d6be122b0ffe2dc000e952ba04c6907e2"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesConsole.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesConsole.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesConsole.cpp",
+      "size_bytes": 15424,
+      "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706",
+      "git_blob_sha1": "94ed65811b6c5db95b2abbc4786d0faf303c22b8"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesControlManager.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesControlManager.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesControlManager.cpp",
+      "size_bytes": 4656,
+      "sha256": "3780cbbd27146cd68c452c69a416457d5ae15f6b799cb2e5fdc74435b7f6fe34",
+      "git_blob_sha1": "a38e489dacecf78f4bcb1b1c060ef394b6066c73"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesControlManager.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesControlManager.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesControlManager.h",
+      "size_bytes": 1066,
+      "sha256": "94488d201cb15452edf99bbcd0651e2a433043d67aa308bd194a1bdad66f7065",
+      "git_blob_sha1": "48e5253593a31d815a8bebeccf40f6153bdb7aaf"
+    },
+    {
+      "upstream_path": "Core/Shared/Emulator.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/Emulator.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/Shared/Emulator.h",
+      "size_bytes": 10277,
+      "sha256": "3ff88094b5fd2f43103006bbb2b0e9a99851f88683a8fe42e4816265849eee7b",
+      "git_blob_sha1": "d962bb02f9eeb93d055d1f53e4556ae795062edf"
+    },
+    {
+      "upstream_path": "Core/Debugger/Debugger.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/Debugger.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/Debugger/Debugger.h",
+      "size_bytes": 7556,
+      "sha256": "209e28beccaa4579f48be2e63b34343ed56fe55c9f68286fe46a122f86c2e48a",
+      "git_blob_sha1": "3f78502f8cea6a0cefc2075619ba1b16fd04fee8"
+    },
+    {
+      "upstream_path": "Core/Debugger/Debugger.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/Debugger.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/Debugger/Debugger.cpp",
+      "size_bytes": 53890,
+      "sha256": "71fa7d663b8cb61c7290bdf404244270a8c9d3f907224c990b43ae82a6c95db3",
+      "git_blob_sha1": "786fe876756aa0f7032d56ba4158b835a893dd7d"
+    },
+    {
+      "upstream_path": "Core/SNES/Debugger/SnesDebugger.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesDebugger.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Debugger/SnesDebugger.cpp",
+      "size_bytes": 21180,
+      "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51",
+      "git_blob_sha1": "c1017d232c71378577be675eadf29f2835b31731"
+    },
+    {
+      "upstream_path": "Core/SNES/Debugger/SnesPpuTools.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesPpuTools.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Debugger/SnesPpuTools.h",
+      "size_bytes": 3198,
+      "sha256": "808b192d2cd67eabba42f8c2fed16c1b36dc13c384af090d078b7deae8b97bf5",
+      "git_blob_sha1": "367bc186d5fd327dc3467302f837a432f35879e8"
+    },
+    {
+      "upstream_path": "Core/SNES/Debugger/SnesPpuTools.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesPpuTools.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Debugger/SnesPpuTools.cpp",
+      "size_bytes": 21915,
+      "sha256": "f5c90dd5e8e5946f2fe330574acb0cbdab48a4e9848deb669a8b2a3884745f82",
+      "git_blob_sha1": "69aed4e80269028646f4b1675a4a083406a29175"
+    },
+    {
+      "upstream_path": "Core/Debugger/PpuTools.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/PpuTools.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/Debugger/PpuTools.cpp",
+      "size_bytes": 14000,
+      "sha256": "96a22626712de53fa5cb1b9f5873aef29fc9696f161227bcb90a61f021c78639",
+      "git_blob_sha1": "1c233368ed7f172c2b7857841e185580b8b28954"
+    },
+    {
+      "upstream_path": "Core/Debugger/PpuTools.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/PpuTools.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/Debugger/PpuTools.h",
+      "size_bytes": 12713,
+      "sha256": "d291e269110c41eba3678fe4775dedd734219cf82f521f6c0843c0c2238f2c87",
+      "git_blob_sha1": "fabd49d28e6ba86f4a83b68a6de6e4172e5d6f44"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/SnesController.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesController.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/SnesController.h",
+      "size_bytes": 779,
+      "sha256": "9367d7ffcdc585dac2daca6f3d23b0fd4ccc3a5b79390f431ff923f1db882acb",
+      "git_blob_sha1": "17a01d02e62b280ab97ba94e28804b785e5afef3"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/SnesMouse.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesMouse.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/SnesMouse.h",
+      "size_bytes": 3369,
+      "sha256": "5b49f6c4b60af296bf6b64bade713a426526786f84db7bbc751d92ed0b80b8df",
+      "git_blob_sha1": "9e686fdbb76d6e1693053d7144bdbb2e31fac6d2"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/Multitap.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/Multitap.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/Multitap.h",
+      "size_bytes": 378,
+      "sha256": "3a9399e233e44cd4ceee7087b346586dc7d3483e6fc17d2d3e69c61ccba80c11",
+      "git_blob_sha1": "c5004536490d91ef8e3c7d109f560a6d5f017869"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/SuperScope.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SuperScope.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/SuperScope.h",
+      "size_bytes": 3618,
+      "sha256": "f8c2285f5117e2005d0c4fe1a04d3033a74b14adf0a60bed0602c54a54f524d4",
+      "git_blob_sha1": "a191487b6b2ac1d00a091eb7ec8bb2459e65d104"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/SnesRumbleController.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesRumbleController.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/SnesRumbleController.h",
+      "size_bytes": 543,
+      "sha256": "2c17ba024c07171d6c743d0d504c47d7ee3c5c2f9b074fb3b894a3ffb2bc6c05",
+      "git_blob_sha1": "b9f2dcd5e643b838e6625b916473b875fabb0e1a"
+    },
+    {
+      "upstream_path": "Core/Shared/BaseControlDevice.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/BaseControlDevice.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/Shared/BaseControlDevice.h",
+      "size_bytes": 2891,
+      "sha256": "112e446da4caecd218aa0e1b84e8d26b1bffc2b1df56b71395ddf9f18cc84ce9",
+      "git_blob_sha1": "e167fa55a1c3d2f77563a9ab909a5949903990e4"
+    },
+    {
+      "upstream_path": "Core/Shared/BaseControlDevice.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/BaseControlDevice.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/Shared/BaseControlDevice.cpp",
+      "size_bytes": 6717,
+      "sha256": "1c781d797bc2e62ed41affbc787b653dfc1a1858d82cf8ea695dcfa281734615",
+      "git_blob_sha1": "97d8a3b88a147ee72b83dc2d33da946be5fc08f2"
+    },
+    {
+      "upstream_path": "Core/SNES/Spc.Instructions.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Spc.Instructions.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Spc.Instructions.cpp",
+      "size_bytes": 42881,
+      "sha256": "de9bc56db41217dd4560f4614e107bc19fcfd637add03efe552635fdbbb26467",
+      "git_blob_sha1": "e6a5b7490ea37afc96703eb4f9a3e643da3ba2ba"
+    },
+    {
+      "upstream_path": "Core/SNES/Coprocessors/BaseCoprocessor.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Coprocessors/BaseCoprocessor.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Coprocessors/BaseCoprocessor.h",
+      "size_bytes": 433,
+      "sha256": "481b6b24bb3ba491b93f5fa0eff9b10e7d6bc12f3979326ff3ae246ec1f0d45e",
+      "git_blob_sha1": "110bbf2bfffda7fbbdb11e0da9a3d3da3fe7d5d8"
+    },
+    {
+      "upstream_path": "Core/SNES/DmaControllerTypes.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/DmaControllerTypes.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/DmaControllerTypes.h",
+      "size_bytes": 540,
+      "sha256": "b03114d7ff465eee145356c204ab95ca110a856f95dc80edfbe1833e7a0537c7",
+      "git_blob_sha1": "278d8d0262c56dc60058c8e2e3899e0df71bd2f6"
+    },
+    {
+      "upstream_path": "Core/SNES/RegisterHandlerB.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/RegisterHandlerB.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/RegisterHandlerB.cpp",
+      "size_bytes": 2969,
+      "sha256": "a3ebaecac6e6fe2d2bdfc04f072e77a9ba47251cdc5ae9d4b6fcdd4618af7ea7",
+      "git_blob_sha1": "d169dac88c0c36062aef208ba9d25ffc32fc5198"
+    },
+    {
+      "upstream_path": "Core/SNES/RegisterHandlerB.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/RegisterHandlerB.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/RegisterHandlerB.h",
+      "size_bytes": 874,
+      "sha256": "709fb56c99d894650c4a0c55fbcf1c6714cac59fa85fe8518e486302d2519e20",
+      "git_blob_sha1": "51cf7340724830568822a4f74bafa04025c0af97"
+    },
+    {
+      "upstream_path": "Core/SNES/RamHandler.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/RamHandler.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/RamHandler.h",
+      "size_bytes": 1127,
+      "sha256": "53b435690530a814a5089fe09e4b2259be86ee5e7f761eb0be2a461e61985de9",
+      "git_blob_sha1": "06b14bd5b9000d2195dca160acc283dd05278c00"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/SnesController.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesController.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/SnesController.cpp",
+      "size_bytes": 4779,
+      "sha256": "9593bb789b1b98bf704d1a8c03c1f4bac30e567aa60f79847f323a0e179c8678",
+      "git_blob_sha1": "2f28a06f41dbbaedcf448700b7f4edd21c256c20"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/Multitap.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/Multitap.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/Multitap.cpp",
+      "size_bytes": 879,
+      "sha256": "47c5478a57ef1674a694e3398f74cd0957c3f672276cf7a677104b5d06c1b66f",
+      "git_blob_sha1": "46ea6d2f5c8979506455c1acda3a4a0d29bf9c72"
+    },
+    {
+      "upstream_path": "Core/SNES/Input/SnesRumbleController.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesRumbleController.cpp",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/Input/SnesRumbleController.cpp",
+      "size_bytes": 1518,
+      "sha256": "776f9b09bbd81cd85601ad45c1c76bfc316ca0037a990cbfe9ecb15810672106",
+      "git_blob_sha1": "f2ee18e0538bb0c1ee39592a88427bb36bc008ff"
+    },
+    {
+      "upstream_path": "Core/SNES/SnesPpuTypes.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpuTypes.h",
+      "path": "private/research/mesen_callback_closure_v1/Core/SNES/SnesPpuTypes.h",
+      "size_bytes": 3762,
+      "sha256": "938489933483084a6928f35ab0f634466499c2c4b1c7b1e95a8bd42ef715428b",
+      "git_blob_sha1": "bebde191e6318e32e03418fdfa0e2961eb989774"
+    }
+  ],
+  "reproduce": "Fetch exact URLs, require size, SHA256 and Git blob SHA1. Hashes pin bytes; semantic claims require source review."
+}

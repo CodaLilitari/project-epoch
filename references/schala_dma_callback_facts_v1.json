@@ -1,0 +1,771 @@
+{
+  "schema": "project-epoch-callback-closure-review-facts-v1",
+  "evidence_level": "source-conditional-call-effect-inventory",
+  "facts": [
+    {
+      "id": "CC01",
+      "status": "closed",
+      "scope": "direct-source-order",
+      "claim": "Exec advances clocks, handles an event, selects PPU/counter phase using current post-event H, then syncs coprocs.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 206,
+          "line_end": 222,
+          "span_sha256": "ed5b32e4be56e569fd4913928dd99d9b244dbdbf7e52f76435d0db6417ab0509",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L206-L222"
+        }
+      ],
+      "limits": [
+        "Nested targets remain separately gated."
+      ]
+    },
+    {
+      "id": "CC02",
+      "status": "closed",
+      "scope": "conditional-refresh-nesting",
+      "claim": "DRAM performs twenty nested Exec calls. Under fixed normal even phase it starts at H532/534/536/538 and returns H572/574/576/578.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 176,
+          "line_end": 184,
+          "span_sha256": "29cc8e7e9df6a68f1c90b1dc4b1b9fb0d6cc0fae23ba407b0e7f08762f24b69f",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L176-L184"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 224,
+          "line_end": 271,
+          "span_sha256": "e7509f0ea868168c5aa450cccaff1e4dda2e9815ac7990d9706a2ebad20e9bfb",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L224-L271"
+        }
+      ],
+      "limits": [
+        "Requires no extra callback reentry/mutation/reset/load."
+      ]
+    },
+    {
+      "id": "CC03",
+      "status": "closed",
+      "scope": "direct-HDMA-events",
+      "claim": "BeginHdmaTransfer/Init only set pending and delay flags, without copying bytes.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesDmaController.cpp",
+          "line_start": 345,
+          "line_end": 367,
+          "span_sha256": "c9e0c7a4443bcab594bc144fd73d42bf2c95aa0bdcf9c1798cf7e322dd907d5b",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp#L345-L367"
+        }
+      ],
+      "limits": [
+        "Pending is not absence of future service."
+      ]
+    },
+    {
+      "id": "CC04",
+      "status": "closed",
+      "scope": "DMA-service-callers",
+      "claim": "CPU pending service precedes signal sampling. DMA also services at RunDma entry/after each byte and manual-DMA startup.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesCpu.cpp",
+          "line_start": 121,
+          "line_end": 131,
+          "span_sha256": "fca193342a438b3c79dd62ff66a22f7f12357b0d0760868ddb3c3e90ee6afd5e",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp#L121-L131"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesDmaController.cpp",
+          "line_start": 68,
+          "line_end": 103,
+          "span_sha256": "3d50d445100744b6e51a82922b6997ba7f52217faade800a30a6eb39bf5dccc3",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp#L68-L103"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesDmaController.cpp",
+          "line_start": 369,
+          "line_end": 407,
+          "span_sha256": "90a76d6b67bcae157cd6e60ff68ff93cbd0bd0b109552d82afb011f69e231fa8",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp#L369-L407"
+        }
+      ],
+      "limits": [
+        "DMA service recursion is distinct from recursion into an unfinished Exec dispatch."
+      ]
+    },
+    {
+      "id": "CC05",
+      "status": "closed",
+      "scope": "PPU-debugger-routing",
+      "claim": "Exec ProcessPpuCycle is debugger dispatch. SNES debugger can update viewers, stop for stepping, catch up SPC, and run NEC DSP.",
+      "evidence": [
+        {
+          "upstream_path": "Core/Shared/Emulator.h",
+          "line_start": 308,
+          "line_end": 313,
+          "span_sha256": "5a4cd06e45df036505d2ea771317e7379281576eb77e7c1f333302855133e17f",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/Emulator.h#L308-L313"
+        },
+        {
+          "upstream_path": "Core/Debugger/Debugger.cpp",
+          "line_start": 447,
+          "line_end": 463,
+          "span_sha256": "b0c1ad54d52c18d077cdbbfabf4ba013e7086f76c954b010811150e57677f108",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/Debugger.cpp#L447-L463"
+        },
+        {
+          "upstream_path": "Core/SNES/Debugger/SnesDebugger.cpp",
+          "line_start": 413,
+          "line_end": 439,
+          "span_sha256": "6d77f4c80d317807098881672c5e6f6ab5feee1e9e2aebd412f998ab87f0bdd3",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesDebugger.cpp#L413-L439"
+        },
+        {
+          "upstream_path": "Core/SNES/BaseCartridge.cpp",
+          "line_start": 926,
+          "line_end": 932,
+          "span_sha256": "f6e3f150abf7bed408f3e87ece0435397a434a53440dc767d3ce6edd13a405fa",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.cpp#L926-L932"
+        }
+      ],
+      "limits": [
+        "This callback is not RenderScanline."
+      ]
+    },
+    {
+      "id": "CC06",
+      "status": "open",
+      "scope": "debugger-host-targets",
+      "claim": "Viewer notifications and pauses reach host subscribers and CodeBreak scripts; concrete active targets are not closed.",
+      "evidence": [
+        {
+          "upstream_path": "Core/Debugger/PpuTools.cpp",
+          "line_start": 401,
+          "line_end": 411,
+          "span_sha256": "44e20b6867ca929140c3fbddac2b3fb249bb9ea97547243883c26bfad0ebfa34",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/PpuTools.cpp#L401-L411"
+        },
+        {
+          "upstream_path": "Core/Debugger/Debugger.cpp",
+          "line_start": 466,
+          "line_end": 522,
+          "span_sha256": "adcea41fa3b1ea577d75d1f855f94ba8457a20f614834e5b8e71290b11b1c3fe",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/Debugger.cpp#L466-L522"
+        },
+        {
+          "upstream_path": "Core/Debugger/Debugger.cpp",
+          "line_start": 580,
+          "line_end": 583,
+          "span_sha256": "6928544f08ef42da2d0cd535f3c21a9ca55fa4db7bfc46c7fc12c87687286549",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/Debugger.cpp#L580-L583"
+        }
+      ],
+      "limits": [
+        "A premise boolean cannot certify target closure."
+      ]
+    },
+    {
+      "id": "CC07",
+      "status": "closed",
+      "scope": "conditional-debugger-inert-branches",
+      "claim": "No debugger object makes the wrapper inert; with a debugger, no viewers/step request/needed coprocs closes the SNES body callouts.",
+      "evidence": [
+        {
+          "upstream_path": "Core/Shared/Emulator.h",
+          "line_start": 308,
+          "line_end": 313,
+          "span_sha256": "5a4cd06e45df036505d2ea771317e7379281576eb77e7c1f333302855133e17f",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/Emulator.h#L308-L313"
+        },
+        {
+          "upstream_path": "Core/SNES/Debugger/SnesDebugger.cpp",
+          "line_start": 413,
+          "line_end": 439,
+          "span_sha256": "6d77f4c80d317807098881672c5e6f6ab5feee1e9e2aebd412f998ab87f0bdd3",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesDebugger.cpp#L413-L439"
+        },
+        {
+          "upstream_path": "Core/Debugger/PpuTools.h",
+          "line_start": 268,
+          "line_end": 271,
+          "span_sha256": "de468a671074bd0091b02addc5d2cb76f4040cc1901c0cf890b79b2caed378e9",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/PpuTools.h#L268-L271"
+        }
+      ],
+      "limits": [
+        "Requires actual valid guard binding; not newly observed here."
+      ]
+    },
+    {
+      "id": "CC08",
+      "status": "closed",
+      "scope": "line-end-order",
+      "claim": "Renderer executes before scanline increment and H=0. Autojoy and SPC update execute after H=0.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 395,
+          "line_end": 511,
+          "span_sha256": "8f5712850030bc946010b1b0129af2b5185e7ec68cb9ab6aeb59bb4535d80931",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L395-L511"
+        }
+      ],
+      "limits": [
+        "Frame callbacks excluded only under bounded valid raster/cache premises."
+      ]
+    },
+    {
+      "id": "CC09",
+      "status": "closed",
+      "scope": "conditional-render-call-effects",
+      "claim": "Reviewed render-family direct calls use PPU-owned arrays and arithmetic; external paths read H or copy debugger display buffers without advancing main clock.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 95,
+          "line_end": 105,
+          "span_sha256": "9f2c17b5a12c76035ec2d3ad16fae223a9cf919b73ef7b06d32f43e9280b9cbd",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L95-L105"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 145,
+          "line_end": 393,
+          "span_sha256": "7a56b2a912fbf3f51eb7c89e4caff0fa74d8e05c5aaf8df60fa0bae10838d18d",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L145-L393"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 595,
+          "line_end": 1485,
+          "span_sha256": "3189c15f22b6bc3cfb654b36801a1135abdc4a0bd5625c40a3a2b92dcc6c3819",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L595-L1485"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 1551,
+          "line_end": 1574,
+          "span_sha256": "2c3984fc412e7952bef94d65d064784ecfbfd7fea87fa57bc061c7378970341f",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L1551-L1574"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 1594,
+          "line_end": 1621,
+          "span_sha256": "4d33f185bb97d166591cfa56536762eff6e25893d413c81243d2f72a7d0640b0",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L1594-L1621"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 2411,
+          "line_end": 2471,
+          "span_sha256": "e7503f1317b72a5b59bd123f4f270c7ec9fe19db3da2fbec0fa0fa939e465bde",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L2411-L2471"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpuTypes.h",
+          "line_start": 19,
+          "line_end": 56,
+          "span_sha256": "4d4a00f53ca391664c2b40d610fa50e4d48aaa2fa8be62615cd34e420fac7005",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpuTypes.h#L19-L56"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpuTypes.h",
+          "line_start": 96,
+          "line_end": 119,
+          "span_sha256": "e3601684186b033fec42f4ea727895bdb04a20eff4fb68d9d539f2b6034ed456",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpuTypes.h#L96-L119"
+        },
+        {
+          "upstream_path": "Core/SNES/Debugger/SnesPpuTools.cpp",
+          "line_start": 23,
+          "line_end": 43,
+          "span_sha256": "eb5fcded5d4e80319145337976f49834d12369d28a3cce9a46a5cbfeccc7bf0c",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesPpuTools.cpp#L23-L43"
+        },
+        {
+          "upstream_path": "Core/Debugger/Debugger.cpp",
+          "line_start": 1156,
+          "line_end": 1162,
+          "span_sha256": "6bb8185630b0a219a0c629cb3a8509c5b17900456dc8d650b4baa43409acdb10",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Debugger/Debugger.cpp#L1156-L1162"
+        },
+        {
+          "upstream_path": "Core/SNES/Debugger/SnesDebugger.cpp",
+          "line_start": 527,
+          "line_end": 530,
+          "span_sha256": "457dd10607a8910d17a4b7eeb1a919acbb3b5aff5652869c081274a7740a16a6",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesDebugger.cpp#L527-L530"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 398,
+          "line_end": 401,
+          "span_sha256": "752a9c2b97be254cc0dcc3c02063e492bd63c8188bc947137986fd8038c61039",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L398-L401"
+        }
+      ],
+      "limits": [
+        "Assumes valid objects/bounds and ordinary defined execution. Not pixel-equivalence, memory-safety or termination proof; all overload bodies matter.",
+        "DebugProcess overlay copies require the exact SNES debugger target and valid non-null PPU tools; the virtual GetPpuTools route is not closed for arbitrary debugger implementations."
+      ]
+    },
+    {
+      "id": "CC10",
+      "status": "closed",
+      "scope": "autojoy-direct-effects",
+      "claim": "Autojoy updates its own scheduler/controller latches and calls direct control-manager methods; those invoke device ReadRam/WriteRam virtually.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/InternalRegisters.cpp",
+          "line_start": 62,
+          "line_end": 146,
+          "span_sha256": "a33f51bc0ce15f83d3434785e030718c4eefcc7e7288e831413374c0f3a1e9cc",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp#L62-L146"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesControlManager.cpp",
+          "line_start": 93,
+          "line_end": 142,
+          "span_sha256": "a5116d20dcee163e340a6d7e152474a0e67d7f88357f04399857c4a5aebba7f2",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesControlManager.cpp#L93-L142"
+        }
+      ],
+      "limits": [
+        "Scalar caller does not advance main clock; runtime virtual types remain gated.",
+        "Automatic reads pass forAutoRead=true, excluding the ordinary read branch that invokes debugger break and ProcessAutoJoypad again."
+      ]
+    },
+    {
+      "id": "CC11",
+      "status": "closed",
+      "scope": "ordinary-controller-leaf",
+      "claim": "For exact SnesController dynamic type, ReadRam/WriteRam reaches local shift/strobe state and RefreshStateBuffer/ToByte. Button reads use locks, capacity checks and inherited HasCoordinates=false before indexing stored state; these reviewed bodies do not advance the main clock.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/Input/SnesController.cpp",
+          "line_start": 61,
+          "line_end": 124,
+          "span_sha256": "995771866efe22974985b63bf1e0a2e7a387562078b77be4305bbcfa1f3605fc",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesController.cpp#L61-L124"
+        },
+        {
+          "upstream_path": "Core/Shared/BaseControlDevice.cpp",
+          "line_start": 43,
+          "line_end": 68,
+          "span_sha256": "429157733d7749fbfa235602cd5d4013082168330bc27e08193ad61f845e42e8",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/BaseControlDevice.cpp#L43-L68"
+        },
+        {
+          "upstream_path": "Core/Shared/BaseControlDevice.cpp",
+          "line_start": 163,
+          "line_end": 195,
+          "span_sha256": "9e41268b4eb6add12ce82071ba60195a4c21040e349fe7ecff8f42ebc3bb7266",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/BaseControlDevice.cpp#L163-L195"
+        },
+        {
+          "upstream_path": "Core/SNES/Input/SnesController.h",
+          "line_start": 1,
+          "line_end": 29,
+          "span_sha256": "9367d7ffcdc585dac2daca6f3d23b0fd4ccc3a5b79390f431ff923f1db882acb",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesController.h#L1-L29"
+        }
+      ],
+      "limits": [
+        "Does not close every BaseControlDevice subclass; requires exact dynamic type.",
+        "Requires valid objects, defined standard-library allocation/indexing and ordinary synchronization behavior; lock acquisition is not a termination or host-mutation proof."
+      ]
+    },
+    {
+      "id": "CC12",
+      "status": "open",
+      "scope": "controller-runtime-binding",
+      "claim": "Active control-device vector and all transitive targets are not certified. Rumble reaches force-feedback; multitap reaches controller-hub methods.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesControlManager.cpp",
+          "line_start": 34,
+          "line_end": 72,
+          "span_sha256": "08ff9b776fff7be7bebcd0d2da6682d48291a5365425a0f1435ae93cc0cabb2b",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesControlManager.cpp#L34-L72"
+        },
+        {
+          "upstream_path": "Core/Shared/BaseControlDevice.h",
+          "line_start": 99,
+          "line_end": 100,
+          "span_sha256": "d8dac762070db6c80b5f30b673dfda3877b857707d4dc7d62cd4523694a7e5f9",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/BaseControlDevice.h#L99-L100"
+        },
+        {
+          "upstream_path": "Core/SNES/Input/SnesRumbleController.cpp",
+          "line_start": 26,
+          "line_end": 52,
+          "span_sha256": "ab6ae6eda839cb68583b139630973015eb7d2ec4e45e7a3bc64652313fd4d2c6",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/SnesRumbleController.cpp#L26-L52"
+        },
+        {
+          "upstream_path": "Core/SNES/Input/Multitap.cpp",
+          "line_start": 11,
+          "line_end": 31,
+          "span_sha256": "9771c0a0f41cab31f0ae2f7109f34ccffd10ad9cdce5f47f277b40c52b6cd8eb",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Input/Multitap.cpp#L11-L31"
+        }
+      ],
+      "limits": [
+        "Do not transfer ordinary-controller proof to mouse/scope/rumble/hub without target audit."
+      ]
+    },
+    {
+      "id": "CC13",
+      "status": "closed",
+      "scope": "bounded-SPC-no-call",
+      "claim": "Fixed cached VBlank start225 and scanlines119..211 make UpdateSpcState perform no SPC call and leave inOverclockedScanline false regardless raw SETINI bits.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 519,
+          "line_end": 535,
+          "span_sha256": "3eaf33f10b023c0a2ba6bdf8dee83e6493dfcf74562c6a2a072ffa2332f54992",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L519-L535"
+        }
+      ],
+      "limits": [
+        "Debugger and register-bus SPC paths remain separate."
+      ]
+    },
+    {
+      "id": "CC14",
+      "status": "open",
+      "scope": "SPC-transitive-targets",
+      "claim": "Spc::Run reads main clock as target for SPC-local cycles but can invoke instruction/debugger hooks and DSP execution.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/Spc.Instructions.cpp",
+          "line_start": 7,
+          "line_end": 36,
+          "span_sha256": "3ab63865efe28ec4337a54443680de19632307fba32138d4f9619cd330d8ef02",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Spc.Instructions.cpp#L7-L36"
+        },
+        {
+          "upstream_path": "Core/SNES/Spc.cpp",
+          "line_start": 109,
+          "line_end": 134,
+          "span_sha256": "f78131b8eb48b80312351201b1f9a9893c3037aa2331aa03feb176056200df5d",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Spc.cpp#L109-L134"
+        },
+        {
+          "upstream_path": "Core/SNES/Spc.cpp",
+          "line_start": 155,
+          "line_end": 180,
+          "span_sha256": "fd6f2ed17311862f169204817a71f474f0f5b86d576beabb61f5d89fd6cf9cce",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Spc.cpp#L155-L180"
+        }
+      ],
+      "limits": [
+        "No complete DSP/audio/debugger target closure attempted. SPC-local cycles are not main clock."
+      ]
+    },
+    {
+      "id": "CC15",
+      "status": "closed",
+      "scope": "coprocessor-disabled-branch",
+      "claim": "SyncCoprocessors is inert when needCoprocSync is false. Initialization sets it true for SA1/GSU/CX4/SGB.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/BaseCartridge.h",
+          "line_start": 39,
+          "line_end": 40,
+          "span_sha256": "fc65c4f35fd92c997e1cc176d6d2c08d2873418ddb1a199059f66ca14c6e5848",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.h#L39-L40"
+        },
+        {
+          "upstream_path": "Core/SNES/BaseCartridge.h",
+          "line_start": 144,
+          "line_end": 149,
+          "span_sha256": "b8d2784a6a4f22d55fb7c3282addbb1151dee0ee995e9a48446b512b21febf62",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.h#L144-L149"
+        },
+        {
+          "upstream_path": "Core/SNES/BaseCartridge.cpp",
+          "line_start": 519,
+          "line_end": 563,
+          "span_sha256": "9b01c71cd466fea7a14a788a8a8a548376794aaa9bba3024e60ac624acd8bac7",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.cpp#L519-L563"
+        }
+      ],
+      "limits": [
+        "Actual target/guard binding required; game title alone is not a certificate."
+      ]
+    },
+    {
+      "id": "CC16",
+      "status": "open",
+      "scope": "coprocessor-virtual-frontier",
+      "claim": "Enabled SyncCoprocessors calls virtual BaseCoprocessor::Run, whose selected implementations are outside this packet.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/BaseCartridge.h",
+          "line_start": 144,
+          "line_end": 149,
+          "span_sha256": "b8d2784a6a4f22d55fb7c3282addbb1151dee0ee995e9a48446b512b21febf62",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.h#L144-L149"
+        },
+        {
+          "upstream_path": "Core/SNES/Coprocessors/BaseCoprocessor.h",
+          "line_start": 1,
+          "line_end": 18,
+          "span_sha256": "481b6b24bb3ba491b93f5fa0eff9b10e7d6bc12f3979326ff3ae246ec1f0d45e",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Coprocessors/BaseCoprocessor.h#L1-L18"
+        }
+      ],
+      "limits": [
+        "Inspect actual target or refuse."
+      ]
+    },
+    {
+      "id": "CC17",
+      "status": "closed",
+      "scope": "SETINI-direct-effects",
+      "claim": "SETINI changes raw ExtBg/HiRes/Overscan/ObjInterlace/ScreenInterlace and converts output buffers; no timing-cache refresh occurs in this write.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 1882,
+          "line_end": 1888,
+          "span_sha256": "c1b30d55b4a6e4a503c47ae4777713e087948ac46275f1a1bf76599251fdc3dd",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L1882-L1888"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 2227,
+          "line_end": 2247,
+          "span_sha256": "1b8e7dd5ad3624f4f1eeedda97a33633909ab4f3ed61a6dc390e194e42af0371",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L2227-L2247"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 1396,
+          "line_end": 1427,
+          "span_sha256": "7f1365f2f205fd7940200c6eba35ae425bdb0b1c4e5fc7c632a3ad02513e3c58",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L1396-L1427"
+        }
+      ],
+      "limits": [
+        "Renderer executes before register mutation; not visually inert."
+      ]
+    },
+    {
+      "id": "CC18",
+      "status": "closed",
+      "scope": "known-timing-cache-refresh-sites",
+      "claim": "PowerOn and line-zero completion call UpdateNmiScanline; it derives VBlank225/240 and frame end from mode/region/odd frame/settings.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 48,
+          "line_end": 76,
+          "span_sha256": "0c6e7b338d04663bb9ff54347e048cdb8e3257fa72e819e015260ed362af8616",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L48-L76"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 395,
+          "line_end": 418,
+          "span_sha256": "24c210d1395d68b0a780f36ec89164637b412ce1e333b134854a471f87dccefd",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L395-L418"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 538,
+          "line_end": 561,
+          "span_sha256": "f7341f105b2dc77ae34b695552304e112131b417f933a94b53b43cbafdc4b0ac",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L538-L561"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.h",
+          "line_start": 244,
+          "line_end": 247,
+          "span_sha256": "601045d94af540c77619a92192cdb4da6d719d5b0016cf9292a069690bd02027",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.h#L244-L247"
+        }
+      ],
+      "limits": [
+        "Method is public: this is not complete external-callsite closure; reset/load/direct host calls remain excluded."
+      ]
+    },
+    {
+      "id": "CC19",
+      "status": "closed",
+      "scope": "bounded-SETINI-timing",
+      "claim": "Under valid fixed cache and no external refresh/reset/load, SETINI writes do not directly change the pinned cache values or the 1364-clock line-length predicate within lines119..211. The live interlace short-line condition requires line240.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 395,
+          "line_end": 397,
+          "span_sha256": "ba583dd16749eb651d3759d182d6a55d66c0bd4f2f0d7095bb34f50576c78581",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L395-L397"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 459,
+          "line_end": 511,
+          "span_sha256": "9b26674080e44f020a074f977c1e1cab8a4877e36d9d3ca31e734e2aed30f879",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L459-L511"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 519,
+          "line_end": 535,
+          "span_sha256": "3eaf33f10b023c0a2ba6bdf8dee83e6493dfcf74562c6a2a072ffa2332f54992",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L519-L535"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesPpu.cpp",
+          "line_start": 2227,
+          "line_end": 2247,
+          "span_sha256": "1b8e7dd5ad3624f4f1eeedda97a33633909ab4f3ed61a6dc390e194e42af0371",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L2227-L2247"
+        },
+        {
+          "upstream_path": "Core/SNES/InternalRegisters.h",
+          "line_start": 129,
+          "line_end": 162,
+          "span_sha256": "9a68190608c14bf90dd7c469e2d57130165fa89661a730dac410fadf1f05f5af",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.h#L129-L162"
+        }
+      ],
+      "limits": [
+        "Not DMA-input lifetime, image-equivalence or later-frame proof.",
+        "Preservation of the complete IRQ/NMI schedule still requires the separate callback and bus-mutation premises."
+      ]
+    },
+    {
+      "id": "CC20",
+      "status": "closed",
+      "scope": "SETINI-handler-routing",
+      "claim": "RegisterHandlerB routes2133 to PPU Write rather than SPC2140..217F or WRAM2180..2183.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/RegisterHandlerB.cpp",
+          "line_start": 60,
+          "line_end": 85,
+          "span_sha256": "bd8999cb59ed5890046283982f14d96ef93ffc9735e8386030c9a3792c1a7760",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/RegisterHandlerB.cpp#L60-L85"
+        }
+      ],
+      "limits": [
+        "Requires actual mapping to this handler."
+      ]
+    },
+    {
+      "id": "CC21",
+      "status": "closed",
+      "scope": "RAM-leaf",
+      "claim": "RamHandler Read/Write are direct mapped-byte array operations with no external callout.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/RamHandler.h",
+          "line_start": 16,
+          "line_end": 53,
+          "span_sha256": "8eb89f835414de151d45a2e18939437497f0f00880c2488221060aded33dbb80",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/RamHandler.h#L16-L53"
+        }
+      ],
+      "limits": [
+        "Does not establish actual handler mapping or outer wrappers."
+      ]
+    },
+    {
+      "id": "CC22",
+      "status": "open",
+      "scope": "DMA-wrapper-hooks",
+      "claim": "ReadDma/WriteDma advance clocks, resolve virtual memory handlers and invoke cheat/debugger wrappers.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 293,
+          "line_end": 329,
+          "span_sha256": "8763bff90383474a9b7992e9e6603e34f59e5131bf6d8663f3c698871bd3fddc",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L293-L329"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 361,
+          "line_end": 388,
+          "span_sha256": "42024284df8155bdd9e0e91d16a5409dabba06ebb81a4f5252b9b1d2513ae804",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L361-L388"
+        }
+      ],
+      "limits": [
+        "Actual map/hook closure and fixed register premises remain separate."
+      ]
+    },
+    {
+      "id": "CC23",
+      "status": "closed",
+      "scope": "restricted-no-H6-H10-recursion-implication",
+      "claim": "With concrete closed/absent callback branches and bus/host mutation excluded, only DRAM nests unfinished Exec dispatch and returns H572..578. Service may end at H6/H10 without duplicating unfinished Exec phase.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 176,
+          "line_end": 222,
+          "span_sha256": "57bc0826c37f972636a6dc2d85aba1628063901345733739ce70999f224d3b4b",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L176-L222"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 224,
+          "line_end": 271,
+          "span_sha256": "e7509f0ea868168c5aa450cccaff1e4dda2e9815ac7990d9706a2ebad20e9bfb",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L224-L271"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesCpu.cpp",
+          "line_start": 121,
+          "line_end": 155,
+          "span_sha256": "1ced5c91bec2f2b969d0f8c80d476193fd014e27458d427049b50ac28dbb1a82",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp#L121-L155"
+        },
+        {
+          "upstream_path": "Core/SNES/SnesDmaController.cpp",
+          "line_start": 369,
+          "line_end": 407,
+          "span_sha256": "90a76d6b67bcae157cd6e60ff68ff93cbd0bd0b109552d82afb011f69e231fa8",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp#L369-L407"
+        }
+      ],
+      "limits": [
+        "Conditional implication only. Does not certify premises or accept an arbitrary nonmutating callback class."
+      ]
+    },
+    {
+      "id": "CC24",
+      "status": "closed",
+      "scope": "phase-branch-position",
+      "claim": "PPU callback is after phase selection; coprocessor sync is after both phase branches. Reentry there alone does not rerun the outer counter branch.",
+      "evidence": [
+        {
+          "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+          "line_start": 206,
+          "line_end": 222,
+          "span_sha256": "ed5b32e4be56e569fd4913928dd99d9b244dbdbf7e52f76435d0db6417ab0509",
+          "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L206-L222"
+        }
+      ],
+      "limits": [
+        "An ancestor event frame can still matter; reentry is not proved harmless."
+      ]
+    }
+  ],
+  "game_deadline_certified": false,
+  "runtime_premises_certified": false,
+  "whole_program_closure": false,
+  "production_approval": false,
+  "source_revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "game_callback_closure_proved": false,
+  "interpretation_is_auto_derived_by_hashes": false
+}

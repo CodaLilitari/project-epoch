@@ -1775,3 +1775,70 @@ metadata and documentation. Game inputs and raw traces stay ignored/private;
 GitLab and portfolio writes remain outside this checkpoint. The exact GitHub
 commit/branch and downloaded-file comparison receipt will be retained at
 private/test_runs/irq_request_transition_v1_publication_20261003.json.
+
+## 2026-10-03 - DMA IRQ domains and callback inventory v1
+
+This new Project Epoch continuation completes an additive source/reuse packet
+at [DMA IRQ closure v1](schala_dma_irq_closure_v1.md). It preserves every older
+accepted proof. The frozen resolver-v3 auditor was rerun offline and reproduced
+its reference byte for byte; no emulator matrix or game mutation was performed.
+
+The new domain model handles exact-width channel fields, all transfer modes,
+manual zero-size wrap, both payload directions, discarded HDMA counter reads,
+indirect reloads and the WRAM/$2180 exception. Under explicit mapping,
+configuration, service and external-mutation hypotheses, all eight observed
+entry channels keep table/payload A reads in bank $7E and B writes in $21xx.
+Direct TIMEUP/IRQ-register effects are therefore excluded in that conditional
+address model without recovering table payloads. The supplied 65,536-service
+cap is not a timing bound. Synthetic bank-zero/reverse examples retain the
+missing hypotheses' significance. No handler effects or runtime premises are
+certified by passing boolean arguments.
+
+The independent hardware reuse agrees with root: entry/tail 81 records and 4,244
+clocks; through following IRQ 682 records and 124,904 clocks; zero watched hardware
+events in both intervals. The first later write is $4200=$81 at +125,226; the full
+window has 280 hardware writes and later channel 7 reconfiguration. The collector
+omits $4211 and PPU payload traffic, autojoy internals and controller types.
+These original-game intervals do not execute the proposed helper.
+
+The callback packet pins 42 upstream files, 24 qualified facts and 70 exact
+source spans at Mesen 137ae7ce. SETINI changes raw rendering flags and buffers
+but does not directly change cached timing inputs or the 1,364-clock predicate
+within 119..211; the live short-line exception is 240. Valid fixed caches and
+no external refresh/reset/load remain premises. Exec's PPU callback is debugger
+dispatch; rendering precedes H=0 while autojoy/SPC update follow it. With cached
+VBlank 225 the local SPC-update branch makes no SPC call in this interval.
+Concrete ordinary controller and inert debugger branches close conditionally;
+runtime target binding, other devices, enabled coprocs, debugger/host hooks,
+outer bus callbacks and reset/load remain explicit frontiers. Sequential DMA
+service is not automatically recursion into an unfinished Exec dispatch.
+
+Root passes 293 selected tests: 34 new, 81 existing transition and 178 existing
+phase tests. The model's independent mutable scalar replay contains 1,792
+scenarios of six services each and all 1,024 B-port addition combinations.
+Native cross-review corrected late input-identity capture and completed the
+controller, memory-write and debugger getter evidence spans. The auditor now
+captures identities before use, parses hashed buffers, checks exact pinned
+inventories and 70 spans, and rechecks the initial identities after computation.
+Mutation tests cover omitted/duplicated inventory and concurrent source drift.
+
+Root verified all 42 source files against the earlier Git tree and freshly
+fetched eight exact primary URLs. The independent peer passes all 34 new tests
+and reproduces the final 77,504-byte metadata exactly, SHA256
+0b99435c6b6209188284ebfc6f5db77f2726db0ec501e81872346286e146b50e.
+Original and final review receipts, the superseded root result and test receipt
+remain in private/reviews/20261003d/. Three native collaborators contributed;
+no external provider was newly dispatched and no reviewer remains running.
+
+Next is DMA-CALLBACK-BINDING-DESIGN: inventory accepted launch/state evidence
+for actual mapping, controller, coprocessor and debugger targets before defining
+only genuinely missing read-only observations. Do not promote this conditional
+packet to a game deadline, helper admission, production hook/allocation,
+interrupt policy or eighth-PC support. Wrapper cost, physical stack ownership
+and pre-effect/later-resolver lifecycle remain separate obligations.
+
+Publication is the explicit source/test/metadata/documentation allowlist only.
+Private game inputs and upstream source downloads stay ignored. GitLab and
+portfolio remain outside this checkpoint. The exact GitHub commit/branch and
+downloaded-byte comparisons are recorded separately at
+private/test_runs/dma_irq_closure_v1_publication_20261003.json.

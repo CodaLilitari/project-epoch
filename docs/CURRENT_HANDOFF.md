@@ -103,17 +103,31 @@ or a newly identified boundary.
    124372/124376/124380. Neither is a certified game deadline. Unknown
    callback/register/reset premises refuse. Preserve the older private drafts
    and earlier peer generation rather than relabeling them accepted.
-9. Next: design a bounded source/observation closure packet for DMA/HDMA bus
-   effects and omitted renderer/control/SPC/debugger/coprocessor callbacks.
-   Reverse DMA can write IRQ enables/timers; DMA source reads can acknowledge
-   TIMEUP. Unknown reentry can duplicate H6 or H10 and defeat a generic
-   four-clock spacing assumption. Use the current phase evidence to separate
-   already-known inputs from genuinely missing observations before proposing
-   another native run. The [new review disposition](external_review_irq_transition_2026_10_03.md)
-   records the verified H10 counterexample and final review limits.
-   HDMA source-read/rendering isolation, wrapper cost, physical stack ownership
-   and pre-effect versus later-resolver lifecycle remain separate obligations.
-   No phase rule, high-selector binding or game insertion is approved.
+9. The separate [DMA/IRQ and callback packet v1](schala_dma_irq_closure_v1.md)
+   is accepted at reused-observation plus source-conditional-domain-model.
+   All eight entry channels are forward/indirect with both source banks `$7E`;
+   exact conditional bus unions exclude direct IRQ-register effects despite
+   unknown table contents. This is not handler/callback closure. SETINI can
+   change rendering but does not directly change the fixed timing-cache inputs
+   or line-length predicate on lines 119..211. The source inventory pins 42
+   files, 24 qualified facts and 70 spans. Root passes 293 tests (34 new,
+   81 transition, 178 phase); the peer independently passes all 34 and produces
+   identical metadata, SHA-256
+   `0b99435c6b6209188284ebfc6f5db77f2726db0ec501e81872346286e146b50e`.
+   The frozen v3 audit is reproduced unchanged; no native run was repeated.
+10. Next: **DMA-CALLBACK-BINDING-DESIGN**. Inventory the accepted launch/state
+    artifacts for actual memory mappings, coprocessor presence, debugger
+    guards/script targets and controller types, then specify only missing
+    read-only observations. The existing 163 fields omit controller profile,
+    autojoy scheduler internals, TIMEUP/PPU payload traffic and direct hidden
+    cache values. Exact ordinary controller/debugger source branches are
+    conditional; host/virtual targets, reset/load and external cache refresh
+    remain open. Service recursion is not automatically unfinished-Exec
+    recursion. Preserve the older synthetic H6/H10 counterexamples in their
+    declared positions. Do not compare the IRQ offsets with the helper envelope
+    as though all premises were jointly proved. Wrapper cost, physical stack,
+    interrupt policy and pre-effect/later-resolver lifecycle remain separate.
+    No phase rule, high-selector binding or game insertion is approved.
 
 The [October research refresh](online_research_2026_10_03.md) found 22 new
 randomizer commits, including a useful Beast Toss counter-handshake fix, and
@@ -137,15 +151,18 @@ grok_irq_followup/. Two initial claims were corrected, not adopted by
 consensus. See the full disposition before reusing its advice. Refresh usage
 before future dispatch. The old chat reached its native subagent limit.
 
-The fresh continuation has completed the IRQ transition checkpoint. Three
+The earlier continuation completed the IRQ transition checkpoint. Three
 native collaborators and root independently checked the implementation; the
 final peer output equals the root reference byte for byte. Two further Grok
 messages in the same project session reviewed the model and received our
 verified H10 correction/thanks. Fresh usage was 18% before each send, model
 options and helper source were unchanged, and the final official export now
 matches all eight saved messages. See private/reviews/20261003c/ and the new
-review disposition. No reviewer remains running. The next source/observation
-closure design is step 9 above; do not restart the completed transition model.
+review disposition. The current continuation completed the additive DMA and
+callback checkpoint with three native collaborators and independent root
+checks. Prior findings and final peer receipts remain in
+private/reviews/20261003d/. No new external-provider dispatch or native run was
+used; no reviewer remains running. Resume at step 10, preserving both packets.
 
 All ROMs, SRAMs, emulator states, raw traces and extracted data stay under
 ignored `private/`. Source-controlled outputs contain original tools, tests,
@@ -162,3 +179,6 @@ still accurately described the unfinished project, and was left unchanged.
 The newer IRQ transition publication receipt is retained separately at
 private/test_runs/irq_request_transition_v1_publication_20261003.json; use its
 exact commit and downloaded-byte comparisons for this checkpoint's host state.
+The newer DMA/callback publication receipt is retained separately at
+private/test_runs/dma_irq_closure_v1_publication_20261003.json. Use that receipt
+for this checkpoint's exact GitHub commit and downloaded-file comparisons.
