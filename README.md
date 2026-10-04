@@ -35,15 +35,22 @@ legal-input and memory-ownership obligations.
 The [resolver phase observation](docs/schala_package_resolver_phase_v2.md)
 also repeats identically, accounting for actual interrupts between pre-effect
 and resolver entry. It captures pending interrupt and DMA/HDMA state without
-altering the game. Enabled HDMA and the still-missing IRQ-counter evidence
-remain explicit timing obligations.
+altering the game. The separate [v3 observation](docs/schala_package_resolver_phase_v3.md)
+adds internal IRQ counters and a source-conditional timing-cache crossing:
+two identical 2,263-record traces, 163 engine fields, and exact projection to
+the complete accepted v2 trace. All 178 focused phase tests pass.
 
 The additive [HDMA timing model](docs/schala_package_hdma_timing_v1.md) is
 accepted as a conditional static calculation after 13 tests and independent
 byte-exact reproduction. Its 106,342-clock phase refinement applies only to
 the fixed diagnostic helper under explicit timing and memory premises. The
-next observer must capture internal IRQ counters and a timing-cache refresh;
-no game admission deadline or helper integration is approved.
+new v3 counters do not yet certify an IRQ-request deadline. Hidden-cache
+bootstrap, HDMA memory/rendering isolation and game integration remain open.
+
+The [October public-source refresh](docs/online_research_2026_10_03.md) records
+new randomizer counter-handshake work and substantial SNESRecomp activity.
+It found no newly verified additive eighth-character release in the checked
+sources. Exact revisions, unchanged projects and access limits are recorded.
 
 ## Preserved integration checkpoint — 2026-09-08
 

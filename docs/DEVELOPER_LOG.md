@@ -1550,3 +1550,93 @@ lifecycle remain open. The session ends at a reproducible research checkpoint;
 the eighth playable character remains unfinished. Production hooks, expanded
 allocations and high-selector bindings stay unapproved. All game inputs and
 raw traces remain private and ignored.
+
+## 2026-10-03 - public refresh, IRQ counters and timing-cache crossing
+
+A new bounded goal refreshed outside reverse-engineering work, then advanced
+BA-NATIVE-INTEGRATION-DESIGN through a separately versioned read-only observer.
+The date is October 3 in America/New_York; the actual review/run receipts are
+October 4 UTC. This is a new checkpoint, not completion of the eighth PC.
+
+The [public-source report](online_research_2026_10_03.md) compares exact heads
+against September 8. Pseudoarc/ctrando advanced 22 commits and includes a
+September 10 Beast Toss counter-handshake fix worth a later canonical audit.
+The RetroPortingToolKit framework advanced 434 reported commits; the retained
+comparison is capped at 250 commit entries and 300 files. It still requires
+game-specific integration and excludes ExHiROM. The two tracked disassemblies
+and main editor/mapping heads are unchanged. No new reproducible additive
+eighth-PC patch was verified. Direct forum refresh failed, and restricted
+authenticated repository search was retained as failed rather than disguised
+as comprehensive coverage. Source receipt SHA-256:
+`a46a12970fd9c5bcd024b9f491bea0b3c08fb547a14686210ea7dbe97afd0fa9`
+for references/online_research_2026_10_03.json (8,019 bytes).
+
+The separate [phase-v3 observer](schala_package_resolver_phase_v3.md) captures
+internalRegisters.hCounter/vCounter and two post-load cache-crossing events,
+with explicit zero extra-scanline arguments. Two actual full process launches
+completed with exit 52 and identical 17,946,524-byte traces, SHA-256
+`cbcfee04c0eab0381d77392e43baf8cc5ed3c62b8a22ac533bf2d263424bd619`.
+Each has 2,263 records and 163 engine fields. Removing only the additions
+reproduces the entire accepted v2 trace; the original 4,244-clock / 548-cycle
+resolver interval and all watched bus/context records remain unchanged. The
+new observed internal IRQ counters at resolver entry are H=186/V=119. Each log
+still contains 28,319 uninitialized-read diagnostics, preserved as a limitation.
+
+The first v3 pilot rejected my new main-thread-only cache premise. Both new
+records actually lie inside historical normal-NMI context 1, strictly between
+entry 2,019,782,308 and RTI 2,019,989,232. The crossing is clock 2,019,832,632, line 0/H=0
+to clock 2,019,834,076, line 1/H=80: exactly 1,364+80. The rejected pilot, original
+collector/launcher/test source archive and host rejection remain unchanged in
+private/test_runs/resolver_phase_v3_pilot_20261003_1/. The corrected second
+pilot passed, then two separate full runs were performed. This corrects our
+unpublished expectation; no upstream mapping error or new MAP entry is claimed.
+Hidden PPU cache values remain outside the Map API; the valid-source-state
+bootstrap premise is explicit and is not discharged by these snapshots.
+
+All 178 focused phase tests passed: preserved v1/v2 coverage plus 23 new
+observer and 39 new acceptance cases. The 39 acceptance cases were rerun after
+the evidence-authentication clarification. The separate auditor checks exact
+source/staged/archive bytes, canonical process/manifest receipts, all trace
+semantics and equal pair bytes. Accepted reference SHA-256:
+`ef647b161531bc1d207f3aa1feacb4b8d669863e04b7390348d0d16381a3d1c1`
+for references/schala_package_resolver_phase_v3.json (63,846 bytes).
+
+Antigravity returned two subscription-backed, tool-denied source reviews.
+The [full disposition](external_review_2026_10_03.md) preserves disagreement:
+its unsigned-receipt critique is accepted as an authentication limit; the
+auditor now explicitly reports that file consistency cannot authenticate
+execution against fabricated receipts. Actual process invocations are separate
+coordinator/tool evidence. Its instruction-overshoot claim is contradicted by
+Mesen's two-clock Exec/event scheduling; the cached-state objection restates
+an already-declared premise and does not override the pinned input hash.
+Neither critique nor agreement is promoted to model authority. Review metadata
+is references/external_review_2026_10_03.json (1,751 bytes), SHA-256
+`81174f5f12ce40b76c398fcb12e457a8bfa7b3084d61848822e0eeb2b4482ba7`.
+
+Claude Code attempted its packet but timed out at 1,800 seconds without an
+answer; job 8cf82ea83be948d89d7af51a80e106fe remains delivery_unknown. No
+automatic resend occurred. Grok's initial user-skill startup refusal was solved
+by a per-child empty USERPROFILE, preserving HOME and its dedicated auth
+profile. Catalog and SuperGrok weekly 17% usage were checked non-generatively.
+The initial paid-extra question was resolved by Andrei confirming it is
+disabled. One bounded Grok IRQ-timing review is now running; the exact packet
+and helper receipts are retained. Its result is not yet claimed. No billing or normal setup was
+changed. Native subagents hit this old chat's thread limit.
+
+Next work is an additive IRQ request-transition proof, distinct from observed
+handler latency. Preserve v3 rather than rerunning it without source drift.
+HDMA source-read/rendering isolation, wrapper timing, physical game-stack
+ownership and the pre-effect versus later-resolver lifecycle remain open.
+All production hooks, allocations and high selectors remain unapproved.
+ROMs, SRAM, states and raw traces stay private. GitLab synchronization remains
+unanswered; no GitLab write or portfolio edit was made. After exact GitHub
+publication verification, the user-authorized fresh project chat will receive
+these handoff paths and the precise next gate.
+
+Publication preparation normalized the new launcher to the repository LF
+contract. Because its source hash changed, two final-source native replays
+were executed as resolver_phase_v3_full_20261003_3 and _4; their complete
+traces remain identical to the earlier pair. The acceptance reference now
+pins that final source. Runs 1/2 and all pilots remain unchanged. All 178
+phase tests passed again. The committed developer-log prefix is byte-identical
+to its previous revision; only this new entry and follow-up are appended.

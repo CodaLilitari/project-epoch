@@ -693,3 +693,19 @@ Preserve the published collector and reference. The next observation needs
 internalRegisters.hCounter/vCounter plus a post-load line-0-to-line-1 cache
 refresh witness under guarded zero extras. No late rejection after MP/effect
 preparation is authorized. No production hook/allocation/binding is added.
+
+## October 3 additive counter/cache checkpoint
+
+The separate resolver-phase v3 now has two identical 2,263-record traces with
+163 engine fields. Internal IRQ H/V at resolver entry are 186/119. Exactly
+two added fields and two cache-witness rows project to the complete unchanged
+v2 trace. The post-load line-zero crossing occurs inside historical normal-NMI
+context 1, not the main thread; preserve the rejected pilot. Zero extras are
+explicit CLI arguments, but hidden cache values are not directly observed and
+the valid-source-state bootstrap premise remains. All 178 phase tests pass.
+Artifact consistency is not authenticated execution against fabricated
+receipts; actual process launches are separate coordinator/tool evidence.
+Next prove IRQ request transitions independently of handler-entry latency;
+HDMA source/read rendering isolation, wrapper cost and physical stack ownership
+remain open. No game helper, hook, allocation, selector or PC07 is approved.
+See docs/schala_package_resolver_phase_v3.md and the external review note.

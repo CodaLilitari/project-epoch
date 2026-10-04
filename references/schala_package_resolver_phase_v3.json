@@ -1,0 +1,1488 @@
+{
+  "schema": "project-epoch-package-resolver-phase-v3-accepted-pair",
+  "evidence_level": "verified-runtime",
+  "evidence_scope": "exact repeated primary checkpoint; selected hardware snapshots, source-conditional cache crossing and watched bus domains only",
+  "acceptance_source_identities": [
+    {
+      "path": "tools/audit_package_resolver_phase_v3.py",
+      "size_bytes": 12368,
+      "sha256": "e43873e89da96bec4f733376590fe04f3f94a02b29deda08b993f7ea747268d6"
+    },
+    {
+      "path": "tests/test_audit_package_resolver_phase_v3.py",
+      "size_bytes": 11593,
+      "sha256": "03d2212d32698fcceab10b12d268a112b559d631444acec1155eb6b16657cdd4"
+    }
+  ],
+  "file_guard_utility": {
+    "path": "tools/audit_normal_nmi_stack_observation_v1.py",
+    "size_bytes": 17388,
+    "sha256": "7a6bd6c7300db1899d7cd5619f4120682be29f695fbe9f0c7ac4353dbffadc9b"
+  },
+  "source_identities": {
+    "launcher": {
+      "path": "tools/run_package_resolver_phase_v3.py",
+      "size_bytes": 12674,
+      "sha256": "c1ef98fca6660cc33381503c8e38e98b279eb3ef84413b637b6e6d33cd12790f"
+    },
+    "collector": {
+      "path": "tools/mesen_package_resolver_phase_v3.lua",
+      "size_bytes": 10424,
+      "sha256": "0ad2559374c23816dad376f2ee4f6bc51ce8288f2c9a7107d87d7eb44f576fa4"
+    },
+    "tests": {
+      "path": "tests/test_package_resolver_phase_v3.py",
+      "size_bytes": 5857,
+      "sha256": "0f2b5fdcfc7e11d7ab43b0e7bc05be24c7ad642db69d471eb05d6b2b8a544ecc"
+    },
+    "context_launcher": {
+      "path": "tools/run_package_resolver_context_v1.py",
+      "size_bytes": 24784,
+      "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+    },
+    "isolation_library": {
+      "path": "tools/run_mesen_field_animation_probe_v0.py",
+      "size_bytes": 55200,
+      "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+    },
+    "reference_trace": {
+      "path": "private/test_runs/resolver_context_20260908_final1/trace.json",
+      "size_bytes": 10811008,
+      "sha256": "6174e223615cbbcc44e1f53862a14f7e103a6c9ed1f850625ebc289624f33679"
+    },
+    "engine_SnesCpuTypes_h": {
+      "path": "private/research/mesen_resolver_phase_2_1_1/SnesCpuTypes.h",
+      "size_bytes": 1399,
+      "sha256": "5394d51e2dd6e765eb8805e318d8f1b3407d2bd2a7076047250936e5838d1b9d"
+    },
+    "engine_InternalRegisterTypes_h": {
+      "path": "private/research/mesen_resolver_phase_2_1_1/InternalRegisterTypes.h",
+      "size_bytes": 532,
+      "sha256": "4813491e579eda91d6954153cfa4dceabe36f7feaf22e0c5616cad4936b4fbe3"
+    },
+    "engine_DmaControllerTypes_h": {
+      "path": "private/research/mesen_resolver_phase_2_1_1/DmaControllerTypes.h",
+      "size_bytes": 540,
+      "sha256": "b03114d7ff465eee145356c204ab95ca110a856f95dc80edfbe1833e7a0537c7"
+    },
+    "engine_SnesPpuTypes_h": {
+      "path": "private/research/mesen_resolver_phase_2_1_1/SnesPpuTypes.h",
+      "size_bytes": 3762,
+      "sha256": "938489933483084a6928f35ab0f634466499c2c4b1c7b1e95a8bd42ef715428b"
+    },
+    "engine_Serializer_h": {
+      "path": "private/research/mesen_nmi_request_2_1_1/Serializer.h",
+      "size_bytes": 13678,
+      "sha256": "fa82a8e441b5ce002daf343bf3813443d0b3796cbe1258924b1879fe771f21df"
+    },
+    "engine_Serializer_cpp": {
+      "path": "private/research/mesen_nmi_request_2_1_1/Serializer.cpp",
+      "size_bytes": 6454,
+      "sha256": "b7af6a8b8b628ed6fd44f450a50d1a06af1bb8ce86cb65e44bf1ad978b0fc4a9"
+    },
+    "engine_InternalRegisters_cpp": {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.cpp",
+      "size_bytes": 12742,
+      "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc"
+    },
+    "engine_InternalRegisters_h": {
+      "path": "private/research/mesen_nmi_request_2_1_1/InternalRegisters.h",
+      "size_bytes": 5020,
+      "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698"
+    },
+    "engine_SnesDmaController_cpp": {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.cpp",
+      "size_bytes": 19939,
+      "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6"
+    },
+    "engine_SnesDmaController_h": {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDmaController.h",
+      "size_bytes": 1451,
+      "sha256": "05a4c63d0f18efd11b12bd476f4bf99bb0d7cd8ba2b51f95bdb463653f82cdfd"
+    },
+    "engine_MemoryDumper_cpp": {
+      "path": "private/research/mesen_nmi_request_2_1_1/MemoryDumper.cpp",
+      "size_bytes": 15315,
+      "sha256": "db1422d7ff1794334f55f5e30a66e3bc859347de42f7dc5425d9ac93e45ca197"
+    },
+    "engine_SnesDebugger_cpp": {
+      "path": "private/research/mesen_nmi_request_2_1_1/SnesDebugger.cpp",
+      "size_bytes": 21180,
+      "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51"
+    },
+    "engine_ScriptManager_h": {
+      "path": "private/research/mesen_nmi_request_2_1_1/ScriptManager.h",
+      "size_bytes": 2217,
+      "sha256": "c6ec04a297abaf8b6f2927d8d6433278a69fb24df908786ca7a0f74bdea6c8a5"
+    },
+    "engine_SnesConsole_cpp": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesConsole.cpp",
+      "size_bytes": 15424,
+      "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706"
+    },
+    "engine_LuaApi_cpp": {
+      "path": "private/research/mesen_timing_api_2_1_1/LuaApi.cpp",
+      "size_bytes": 34647,
+      "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24"
+    },
+    "engine_SnesCpu_Shared_h": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.Shared.h",
+      "size_bytes": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    "engine_SnesCpu_cpp": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesCpu.cpp",
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+    },
+    "engine_SnesPpu_cpp": {
+      "path": "private/research/mesen_timing_api_2_1_1/SnesPpu.cpp",
+      "size_bytes": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    },
+    "engine_ScriptingContext_cpp": {
+      "path": "private/research/mesen_nmi_stack_watchdog_2_1_1/ScriptingContext.cpp",
+      "size_bytes": 10794,
+      "sha256": "1e4645ab7783c179a2998e906b72a42bce98c340badb269c0506996229ba0157"
+    },
+    "engine_ScriptWindowConfig_cs": {
+      "path": "private/research/mesen_nmi_stack_watchdog_2_1_1/ScriptWindowConfig.cs",
+      "size_bytes": 1741,
+      "sha256": "d58e9419defca6c3fd2e182ed23ebb08c39e61b7f5ea677275cf86d9ccb5a51a"
+    },
+    "v1_launcher": {
+      "path": "tools/run_package_resolver_phase_v1.py",
+      "size_bytes": 23426,
+      "sha256": "cf931ff23f11bd5045b437001f3365f69d3c1530a43e6569f2b41474356cb321"
+    },
+    "v1_collector": {
+      "path": "tools/mesen_package_resolver_phase_v1.lua",
+      "size_bytes": 9539,
+      "sha256": "2dbab520abbd8bc95bd078a81153d0d2f6d49147e01a66591ce0c5e726c6850c"
+    },
+    "v1_tests": {
+      "path": "tests/test_package_resolver_phase_v1.py",
+      "size_bytes": 10949,
+      "sha256": "06ecf78a69dc4f0167c4a83ad36ac46d31b3a601357821b747e1d634818784fe"
+    },
+    "v2_launcher": {
+      "path": "tools/run_package_resolver_phase_v2.py",
+      "size_bytes": 15114,
+      "sha256": "f06f95c4e3169780220444db774024ab7b1c55227a7b3c9dbdfc0b0bd8e29acd"
+    },
+    "v2_collector": {
+      "path": "tools/mesen_package_resolver_phase_v2.lua",
+      "size_bytes": 9548,
+      "sha256": "63e9f8203ff5a31af43c616a502a66fda6e0505146f5b747dbe2d9867bc403fe"
+    },
+    "v2_tests": {
+      "path": "tests/test_package_resolver_phase_v2.py",
+      "size_bytes": 9242,
+      "sha256": "748a2c43bc7713b07e2195c3e06d6886598a25bda9ac39bdfd99511f6217c4a6"
+    },
+    "config_SnesConfig_cs": {
+      "path": "private/test_runs/resolver_irq_admission_design_20261003/source/SnesConfig.cs",
+      "size_bytes": 7521,
+      "sha256": "17f100d1219270861a6f524ac078e279bd2bed190ac9c62dc8a74b20c35a7a59"
+    },
+    "config_ConfigManager_cs": {
+      "path": "private/test_runs/resolver_irq_admission_design_20261003/source/ConfigManager.cs",
+      "size_bytes": 9654,
+      "sha256": "e2ec6d0a15bb5e9908baf4c4c8cc8cbb3cbdaf2b13fb0980390bd99beda6641d"
+    },
+    "config_SettingTypes_h": {
+      "path": "private/test_runs/resolver_irq_admission_design_20261003/source/SettingTypes.h",
+      "size_bytes": 21147,
+      "sha256": "0396504d406ce23e30761a3875c35392a941f94cb3164910747951bca179f14c"
+    },
+    "config_SnesPpu_h": {
+      "path": "private/test_runs/resolver_irq_admission_design_20261003/source/SnesPpu.h",
+      "size_bytes": 7336,
+      "sha256": "15859642a2f720b4fbc8298583705e4fecd16397d6da32f57cf8f2bd12cc8f89"
+    },
+    "v2_reference_trace": {
+      "path": "private/test_runs/resolver_phase_v2_full_20261003_1/trace.json",
+      "size_bytes": 17782665,
+      "sha256": "7e2d2925f8523a134721427c1001128a073b6b64518abe3810ee637cb5e71bb0"
+    },
+    "rom": {
+      "path": "private/input/rom_archive/Chrono Trigger (USA).sfc",
+      "size_bytes": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "sram": {
+      "path": "private/input/lavos_save/chrono_trigger.srm",
+      "size_bytes": 8192,
+      "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+    },
+    "state": {
+      "path": "private/test_runs/mesen2/lavos_battle_checkpoint_accepted_v17/battle_ready.mss",
+      "size_bytes": 261614,
+      "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+    },
+    "mesen": {
+      "path": "private/tools/mesen2/app/Mesen.exe",
+      "size_bytes": 70470144,
+      "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+    },
+    "mesen_core": {
+      "path": "private/tools/mesen2/app/MesenCore.dll",
+      "size_bytes": 7143424,
+      "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+    },
+    "harfbuzz": {
+      "path": "private/tools/mesen2/app/libHarfBuzzSharp.dll",
+      "size_bytes": 1804872,
+      "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+    },
+    "skia": {
+      "path": "private/tools/mesen2/app/libSkiaSharp.dll",
+      "size_bytes": 9414216,
+      "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+    },
+    "nesdb": {
+      "path": "private/tools/mesen2/app/MesenNesDB.txt",
+      "size_bytes": 559118,
+      "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+    },
+    "settings": {
+      "path": "private/tools/mesen2/app/settings.json",
+      "size_bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    }
+  },
+  "runs": [
+    {
+      "directory": "private/test_runs/resolver_phase_v3_full_20261003_3",
+      "staged_stem": "pe_resolver_phase_v3_1ef0facd79b386e5e69b87bf",
+      "artifacts": {
+        "launch_inputs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/launch_inputs.json",
+          "size_bytes": 9864,
+          "sha256": "55829c7c80bdb5b7afcbecd9a585c4087ac6b474424e8f54022ff61e4a48800d"
+        },
+        "manifest": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/manifest.json",
+          "size_bytes": 208392,
+          "sha256": "f0788291bf038b5ea47e64ef36e318e5cd3d003d3d5e9d10d82ad47b025b5777"
+        },
+        "process_receipt": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/process_receipt.json",
+          "size_bytes": 86,
+          "sha256": "f4e27e7444a928c4fc777644fed5a64f9dceea19f2404a8bb9aac73e47acdb7a"
+        },
+        "trace": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/trace.json",
+          "size_bytes": 17946524,
+          "sha256": "cbcfee04c0eab0381d77392e43baf8cc5ed3c62b8a22ac533bf2d263424bd619"
+        },
+        "process_log": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/process.log",
+          "size_bytes": 1189398,
+          "sha256": "b0d63832a9650e7e405093cc92d146051c212b6e87c0f8b9f7ff298f9fb1d6ed"
+        }
+      },
+      "uninitialized_read_diagnostics": 28319,
+      "staged_identities": {
+        "mesen": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        "mesen_core": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        "harfbuzz": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        "skia": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        "nesdb": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        "settings": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        "rom": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/pe_resolver_phase_v3_1ef0facd79b386e5e69b87bf.sfc",
+          "size_bytes": 4194304,
+          "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+        },
+        "state": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/pe_resolver_phase_v3_1ef0facd79b386e5e69b87bf.mss",
+          "size_bytes": 261614,
+          "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+        },
+        "sram": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/app/Saves/pe_resolver_phase_v3_1ef0facd79b386e5e69b87bf.srm",
+          "size_bytes": 8192,
+          "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+        },
+        "collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/staged/collector.lua",
+          "size_bytes": 10424,
+          "sha256": "0ad2559374c23816dad376f2ee4f6bc51ce8288f2c9a7107d87d7eb44f576fa4"
+        }
+      },
+      "archived_identities": {
+        "launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/launcher.py",
+          "size_bytes": 12674,
+          "sha256": "c1ef98fca6660cc33381503c8e38e98b279eb3ef84413b637b6e6d33cd12790f"
+        },
+        "collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/collector.lua",
+          "size_bytes": 10424,
+          "sha256": "0ad2559374c23816dad376f2ee4f6bc51ce8288f2c9a7107d87d7eb44f576fa4"
+        },
+        "tests": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/tests.py",
+          "size_bytes": 5857,
+          "sha256": "0f2b5fdcfc7e11d7ab43b0e7bc05be24c7ad642db69d471eb05d6b2b8a544ecc"
+        },
+        "context_launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/context_launcher.py",
+          "size_bytes": 24784,
+          "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/isolation_library.py",
+          "size_bytes": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        },
+        "engine_SnesCpuTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesCpuTypes_h.h",
+          "size_bytes": 1399,
+          "sha256": "5394d51e2dd6e765eb8805e318d8f1b3407d2bd2a7076047250936e5838d1b9d"
+        },
+        "engine_InternalRegisterTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_InternalRegisterTypes_h.h",
+          "size_bytes": 532,
+          "sha256": "4813491e579eda91d6954153cfa4dceabe36f7feaf22e0c5616cad4936b4fbe3"
+        },
+        "engine_DmaControllerTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_DmaControllerTypes_h.h",
+          "size_bytes": 540,
+          "sha256": "b03114d7ff465eee145356c204ab95ca110a856f95dc80edfbe1833e7a0537c7"
+        },
+        "engine_SnesPpuTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesPpuTypes_h.h",
+          "size_bytes": 3762,
+          "sha256": "938489933483084a6928f35ab0f634466499c2c4b1c7b1e95a8bd42ef715428b"
+        },
+        "engine_Serializer_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_Serializer_h.h",
+          "size_bytes": 13678,
+          "sha256": "fa82a8e441b5ce002daf343bf3813443d0b3796cbe1258924b1879fe771f21df"
+        },
+        "engine_Serializer_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_Serializer_cpp.cpp",
+          "size_bytes": 6454,
+          "sha256": "b7af6a8b8b628ed6fd44f450a50d1a06af1bb8ce86cb65e44bf1ad978b0fc4a9"
+        },
+        "engine_InternalRegisters_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_InternalRegisters_cpp.cpp",
+          "size_bytes": 12742,
+          "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc"
+        },
+        "engine_InternalRegisters_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_InternalRegisters_h.h",
+          "size_bytes": 5020,
+          "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698"
+        },
+        "engine_SnesDmaController_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesDmaController_cpp.cpp",
+          "size_bytes": 19939,
+          "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6"
+        },
+        "engine_SnesDmaController_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesDmaController_h.h",
+          "size_bytes": 1451,
+          "sha256": "05a4c63d0f18efd11b12bd476f4bf99bb0d7cd8ba2b51f95bdb463653f82cdfd"
+        },
+        "engine_MemoryDumper_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_MemoryDumper_cpp.cpp",
+          "size_bytes": 15315,
+          "sha256": "db1422d7ff1794334f55f5e30a66e3bc859347de42f7dc5425d9ac93e45ca197"
+        },
+        "engine_SnesDebugger_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesDebugger_cpp.cpp",
+          "size_bytes": 21180,
+          "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51"
+        },
+        "engine_ScriptManager_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_ScriptManager_h.h",
+          "size_bytes": 2217,
+          "sha256": "c6ec04a297abaf8b6f2927d8d6433278a69fb24df908786ca7a0f74bdea6c8a5"
+        },
+        "engine_SnesConsole_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesConsole_cpp.cpp",
+          "size_bytes": 15424,
+          "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706"
+        },
+        "engine_LuaApi_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_LuaApi_cpp.cpp",
+          "size_bytes": 34647,
+          "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24"
+        },
+        "engine_SnesCpu_Shared_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesCpu_Shared_h.h",
+          "size_bytes": 20483,
+          "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+        },
+        "engine_SnesCpu_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesCpu_cpp.cpp",
+          "size_bytes": 3666,
+          "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+        },
+        "engine_SnesPpu_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_SnesPpu_cpp.cpp",
+          "size_bytes": 83153,
+          "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+        },
+        "engine_ScriptingContext_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_ScriptingContext_cpp.cpp",
+          "size_bytes": 10794,
+          "sha256": "1e4645ab7783c179a2998e906b72a42bce98c340badb269c0506996229ba0157"
+        },
+        "engine_ScriptWindowConfig_cs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/engine_ScriptWindowConfig_cs.cs",
+          "size_bytes": 1741,
+          "sha256": "d58e9419defca6c3fd2e182ed23ebb08c39e61b7f5ea677275cf86d9ccb5a51a"
+        },
+        "v1_launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/v1_launcher.py",
+          "size_bytes": 23426,
+          "sha256": "cf931ff23f11bd5045b437001f3365f69d3c1530a43e6569f2b41474356cb321"
+        },
+        "v1_collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/v1_collector.lua",
+          "size_bytes": 9539,
+          "sha256": "2dbab520abbd8bc95bd078a81153d0d2f6d49147e01a66591ce0c5e726c6850c"
+        },
+        "v1_tests": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/v1_tests.py",
+          "size_bytes": 10949,
+          "sha256": "06ecf78a69dc4f0167c4a83ad36ac46d31b3a601357821b747e1d634818784fe"
+        },
+        "v2_launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/v2_launcher.py",
+          "size_bytes": 15114,
+          "sha256": "f06f95c4e3169780220444db774024ab7b1c55227a7b3c9dbdfc0b0bd8e29acd"
+        },
+        "v2_collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/v2_collector.lua",
+          "size_bytes": 9548,
+          "sha256": "63e9f8203ff5a31af43c616a502a66fda6e0505146f5b747dbe2d9867bc403fe"
+        },
+        "v2_tests": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/v2_tests.py",
+          "size_bytes": 9242,
+          "sha256": "748a2c43bc7713b07e2195c3e06d6886598a25bda9ac39bdfd99511f6217c4a6"
+        },
+        "config_SnesConfig_cs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/config_SnesConfig_cs.cs",
+          "size_bytes": 7521,
+          "sha256": "17f100d1219270861a6f524ac078e279bd2bed190ac9c62dc8a74b20c35a7a59"
+        },
+        "config_ConfigManager_cs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/config_ConfigManager_cs.cs",
+          "size_bytes": 9654,
+          "sha256": "e2ec6d0a15bb5e9908baf4c4c8cc8cbb3cbdaf2b13fb0980390bd99beda6641d"
+        },
+        "config_SettingTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/config_SettingTypes_h.h",
+          "size_bytes": 21147,
+          "sha256": "0396504d406ce23e30761a3875c35392a941f94cb3164910747951bca179f14c"
+        },
+        "config_SnesPpu_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/config_SnesPpu_h.h",
+          "size_bytes": 7336,
+          "sha256": "15859642a2f720b4fbc8298583705e4fecd16397d6da32f57cf8f2bd12cc8f89"
+        },
+        "v2_reference_trace": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_3/source_archive/v2_reference_trace.json",
+          "size_bytes": 17782665,
+          "sha256": "7e2d2925f8523a134721427c1001128a073b6b64518abe3810ee637cb5e71bb0"
+        }
+      },
+      "summary_sha256": "01107206b1541940dfb3be8aa52b09a6db9d8f95125bc7b44d9baf74768e1415",
+      "projection": {
+        "record_count": 2263,
+        "event_counts": {
+          "baseline": 1,
+          "bus-read": 1804,
+          "bus-write": 429,
+          "cache-frame-start": 1,
+          "cache-line-one": 1,
+          "common-loader-entry": 1,
+          "interrupt-entry": 10,
+          "interrupt-rti": 10,
+          "pre-effect": 1,
+          "resolver-entry": 1,
+          "resolver-tail": 1,
+          "scene-effect-gate": 1,
+          "scene-gate": 1,
+          "terminal": 1
+        },
+        "interrupt_entry_counts": {
+          "battle-irq": 5,
+          "normal-nmi": 5
+        },
+        "engine_fields_per_record": 163,
+        "cache_witness": {
+          "start_index": 1,
+          "end_index": 2,
+          "elapsed_master_clocks": 1444,
+          "start_timing": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 275066808,
+            "frameCount": 5652,
+            "masterClock": 2019832632,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 2019832632,
+            "ppu.frameCount": 5652,
+            "ppu.scanline": 0
+          },
+          "end_timing": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 275066939,
+            "frameCount": 5652,
+            "masterClock": 2019834076,
+            "memoryManager.hClock": 80,
+            "memoryManager.masterClock": 2019834076,
+            "ppu.frameCount": 5652,
+            "ppu.scanline": 1
+          },
+          "guarded_cli_settings": [
+            "--snes.ppuExtraScanlinesBeforeNmi=0",
+            "--snes.ppuExtraScanlinesAfterNmi=0"
+          ],
+          "valid_source_state_required": true,
+          "hidden_cache_values_directly_observed": false,
+          "source_conditional_refresh_crossing": true,
+          "context_kind": "normal-nmi",
+          "context_id": 1,
+          "interrupt_free_crossing": false
+        },
+        "complete_v2_trace_equal": true,
+        "resolver_to_tail_master_clocks": 4244,
+        "resolver_to_tail_cpu_counter": 548,
+        "phases": [
+          {
+            "kind": "pre-effect",
+            "poll": 374,
+            "master_clock": 2153595368,
+            "scanline": 79,
+            "hclock": 96,
+            "hardware": {
+              "internalRegisters.hCounter": 21,
+              "internalRegisters.vCounter": 79,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "resolver-entry",
+            "poll": 378,
+            "master_clock": 2155080050,
+            "scanline": 119,
+            "hclock": 754,
+            "hardware": {
+              "internalRegisters.hCounter": 186,
+              "internalRegisters.vCounter": 119,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "resolver-tail",
+            "poll": 378,
+            "master_clock": 2155084294,
+            "scanline": 122,
+            "hclock": 906,
+            "hardware": {
+              "internalRegisters.hCounter": 224,
+              "internalRegisters.vCounter": 122,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "common-loader-entry",
+            "poll": 378,
+            "master_clock": 2155084312,
+            "scanline": 122,
+            "hclock": 924,
+            "hardware": {
+              "internalRegisters.hCounter": 228,
+              "internalRegisters.vCounter": 122,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "scene-gate",
+            "poll": 379,
+            "master_clock": 2155378262,
+            "scanline": 76,
+            "hclock": 250,
+            "hardware": {
+              "internalRegisters.hCounter": 60,
+              "internalRegisters.vCounter": 76,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "scene-effect-gate",
+            "poll": 379,
+            "master_clock": 2155378300,
+            "scanline": 76,
+            "hclock": 288,
+            "hardware": {
+              "internalRegisters.hCounter": 69,
+              "internalRegisters.vCounter": 76,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "raw_cpu_stack_gate_arrays_emitted": false,
+        "complete_dma_bus_trace": false,
+        "future_dma_absence_proved": false,
+        "interrupt_exclusion_proved": false,
+        "deadline_certified": false,
+        "native_helper_executed": false,
+        "production_approval": false
+      }
+    },
+    {
+      "directory": "private/test_runs/resolver_phase_v3_full_20261003_4",
+      "staged_stem": "pe_resolver_phase_v3_e434e93cafa2bfe024e755a3",
+      "artifacts": {
+        "launch_inputs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/launch_inputs.json",
+          "size_bytes": 9864,
+          "sha256": "55829c7c80bdb5b7afcbecd9a585c4087ac6b474424e8f54022ff61e4a48800d"
+        },
+        "manifest": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/manifest.json",
+          "size_bytes": 208392,
+          "sha256": "f0788291bf038b5ea47e64ef36e318e5cd3d003d3d5e9d10d82ad47b025b5777"
+        },
+        "process_receipt": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/process_receipt.json",
+          "size_bytes": 86,
+          "sha256": "f4e27e7444a928c4fc777644fed5a64f9dceea19f2404a8bb9aac73e47acdb7a"
+        },
+        "trace": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/trace.json",
+          "size_bytes": 17946524,
+          "sha256": "cbcfee04c0eab0381d77392e43baf8cc5ed3c62b8a22ac533bf2d263424bd619"
+        },
+        "process_log": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/process.log",
+          "size_bytes": 1189398,
+          "sha256": "b0d63832a9650e7e405093cc92d146051c212b6e87c0f8b9f7ff298f9fb1d6ed"
+        }
+      },
+      "uninitialized_read_diagnostics": 28319,
+      "staged_identities": {
+        "mesen": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/app/Mesen.exe",
+          "size_bytes": 70470144,
+          "sha256": "d2eb03c2590c648bf329f127ebcfefd70130e7690a9e2ccdba8616faea1fe96b"
+        },
+        "mesen_core": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/app/MesenCore.dll",
+          "size_bytes": 7143424,
+          "sha256": "65f69a7bdb25c35fdca77c9c73e71ef3e8ec233380204d94cfc0179933048c74"
+        },
+        "harfbuzz": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/app/libHarfBuzzSharp.dll",
+          "size_bytes": 1804872,
+          "sha256": "eb76238c9e8e41d44b5a5b18167c4c5b39ca5db4277af5dbe92d730f0fc14a7d"
+        },
+        "skia": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/app/libSkiaSharp.dll",
+          "size_bytes": 9414216,
+          "sha256": "9a0d95e8caaa852c70d085af6a40a744242172ad9ea3fd6bc7599875a8a1dbcd"
+        },
+        "nesdb": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/app/MesenNesDB.txt",
+          "size_bytes": 559118,
+          "sha256": "cff835b8a3d5b07d9d111382da6c49ccae150cdbaa9a0e49e15aa381af471307"
+        },
+        "settings": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/app/settings.json",
+          "size_bytes": 3,
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        "rom": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/pe_resolver_phase_v3_e434e93cafa2bfe024e755a3.sfc",
+          "size_bytes": 4194304,
+          "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+        },
+        "state": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/pe_resolver_phase_v3_e434e93cafa2bfe024e755a3.mss",
+          "size_bytes": 261614,
+          "sha256": "d5825ffff2f2a3b7edbe3c37e7118155d67727dc02ed672d13257f3824482b8b"
+        },
+        "sram": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/app/Saves/pe_resolver_phase_v3_e434e93cafa2bfe024e755a3.srm",
+          "size_bytes": 8192,
+          "sha256": "cc5fa36da8185128e510c63f637842c77cf09dde413a196c3ab770656abff203"
+        },
+        "collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/staged/collector.lua",
+          "size_bytes": 10424,
+          "sha256": "0ad2559374c23816dad376f2ee4f6bc51ce8288f2c9a7107d87d7eb44f576fa4"
+        }
+      },
+      "archived_identities": {
+        "launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/launcher.py",
+          "size_bytes": 12674,
+          "sha256": "c1ef98fca6660cc33381503c8e38e98b279eb3ef84413b637b6e6d33cd12790f"
+        },
+        "collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/collector.lua",
+          "size_bytes": 10424,
+          "sha256": "0ad2559374c23816dad376f2ee4f6bc51ce8288f2c9a7107d87d7eb44f576fa4"
+        },
+        "tests": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/tests.py",
+          "size_bytes": 5857,
+          "sha256": "0f2b5fdcfc7e11d7ab43b0e7bc05be24c7ad642db69d471eb05d6b2b8a544ecc"
+        },
+        "context_launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/context_launcher.py",
+          "size_bytes": 24784,
+          "sha256": "88ccf83e83a68f7bbdc3c65e626b1480041c9e95db4fe36541a6c267b8030214"
+        },
+        "isolation_library": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/isolation_library.py",
+          "size_bytes": 55200,
+          "sha256": "d5cde9c33fddcfbacbae6aa28af6e820238226115bfe9b9f5775976570b75b96"
+        },
+        "engine_SnesCpuTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesCpuTypes_h.h",
+          "size_bytes": 1399,
+          "sha256": "5394d51e2dd6e765eb8805e318d8f1b3407d2bd2a7076047250936e5838d1b9d"
+        },
+        "engine_InternalRegisterTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_InternalRegisterTypes_h.h",
+          "size_bytes": 532,
+          "sha256": "4813491e579eda91d6954153cfa4dceabe36f7feaf22e0c5616cad4936b4fbe3"
+        },
+        "engine_DmaControllerTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_DmaControllerTypes_h.h",
+          "size_bytes": 540,
+          "sha256": "b03114d7ff465eee145356c204ab95ca110a856f95dc80edfbe1833e7a0537c7"
+        },
+        "engine_SnesPpuTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesPpuTypes_h.h",
+          "size_bytes": 3762,
+          "sha256": "938489933483084a6928f35ab0f634466499c2c4b1c7b1e95a8bd42ef715428b"
+        },
+        "engine_Serializer_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_Serializer_h.h",
+          "size_bytes": 13678,
+          "sha256": "fa82a8e441b5ce002daf343bf3813443d0b3796cbe1258924b1879fe771f21df"
+        },
+        "engine_Serializer_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_Serializer_cpp.cpp",
+          "size_bytes": 6454,
+          "sha256": "b7af6a8b8b628ed6fd44f450a50d1a06af1bb8ce86cb65e44bf1ad978b0fc4a9"
+        },
+        "engine_InternalRegisters_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_InternalRegisters_cpp.cpp",
+          "size_bytes": 12742,
+          "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc"
+        },
+        "engine_InternalRegisters_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_InternalRegisters_h.h",
+          "size_bytes": 5020,
+          "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698"
+        },
+        "engine_SnesDmaController_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesDmaController_cpp.cpp",
+          "size_bytes": 19939,
+          "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6"
+        },
+        "engine_SnesDmaController_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesDmaController_h.h",
+          "size_bytes": 1451,
+          "sha256": "05a4c63d0f18efd11b12bd476f4bf99bb0d7cd8ba2b51f95bdb463653f82cdfd"
+        },
+        "engine_MemoryDumper_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_MemoryDumper_cpp.cpp",
+          "size_bytes": 15315,
+          "sha256": "db1422d7ff1794334f55f5e30a66e3bc859347de42f7dc5425d9ac93e45ca197"
+        },
+        "engine_SnesDebugger_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesDebugger_cpp.cpp",
+          "size_bytes": 21180,
+          "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51"
+        },
+        "engine_ScriptManager_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_ScriptManager_h.h",
+          "size_bytes": 2217,
+          "sha256": "c6ec04a297abaf8b6f2927d8d6433278a69fb24df908786ca7a0f74bdea6c8a5"
+        },
+        "engine_SnesConsole_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesConsole_cpp.cpp",
+          "size_bytes": 15424,
+          "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706"
+        },
+        "engine_LuaApi_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_LuaApi_cpp.cpp",
+          "size_bytes": 34647,
+          "sha256": "fd1292483bd2e7fa1f5a13c392afadcae2d9ff418cab216c964d623f97e10e24"
+        },
+        "engine_SnesCpu_Shared_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesCpu_Shared_h.h",
+          "size_bytes": 20483,
+          "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+        },
+        "engine_SnesCpu_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesCpu_cpp.cpp",
+          "size_bytes": 3666,
+          "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+        },
+        "engine_SnesPpu_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_SnesPpu_cpp.cpp",
+          "size_bytes": 83153,
+          "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+        },
+        "engine_ScriptingContext_cpp": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_ScriptingContext_cpp.cpp",
+          "size_bytes": 10794,
+          "sha256": "1e4645ab7783c179a2998e906b72a42bce98c340badb269c0506996229ba0157"
+        },
+        "engine_ScriptWindowConfig_cs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/engine_ScriptWindowConfig_cs.cs",
+          "size_bytes": 1741,
+          "sha256": "d58e9419defca6c3fd2e182ed23ebb08c39e61b7f5ea677275cf86d9ccb5a51a"
+        },
+        "v1_launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/v1_launcher.py",
+          "size_bytes": 23426,
+          "sha256": "cf931ff23f11bd5045b437001f3365f69d3c1530a43e6569f2b41474356cb321"
+        },
+        "v1_collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/v1_collector.lua",
+          "size_bytes": 9539,
+          "sha256": "2dbab520abbd8bc95bd078a81153d0d2f6d49147e01a66591ce0c5e726c6850c"
+        },
+        "v1_tests": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/v1_tests.py",
+          "size_bytes": 10949,
+          "sha256": "06ecf78a69dc4f0167c4a83ad36ac46d31b3a601357821b747e1d634818784fe"
+        },
+        "v2_launcher": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/v2_launcher.py",
+          "size_bytes": 15114,
+          "sha256": "f06f95c4e3169780220444db774024ab7b1c55227a7b3c9dbdfc0b0bd8e29acd"
+        },
+        "v2_collector": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/v2_collector.lua",
+          "size_bytes": 9548,
+          "sha256": "63e9f8203ff5a31af43c616a502a66fda6e0505146f5b747dbe2d9867bc403fe"
+        },
+        "v2_tests": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/v2_tests.py",
+          "size_bytes": 9242,
+          "sha256": "748a2c43bc7713b07e2195c3e06d6886598a25bda9ac39bdfd99511f6217c4a6"
+        },
+        "config_SnesConfig_cs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/config_SnesConfig_cs.cs",
+          "size_bytes": 7521,
+          "sha256": "17f100d1219270861a6f524ac078e279bd2bed190ac9c62dc8a74b20c35a7a59"
+        },
+        "config_ConfigManager_cs": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/config_ConfigManager_cs.cs",
+          "size_bytes": 9654,
+          "sha256": "e2ec6d0a15bb5e9908baf4c4c8cc8cbb3cbdaf2b13fb0980390bd99beda6641d"
+        },
+        "config_SettingTypes_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/config_SettingTypes_h.h",
+          "size_bytes": 21147,
+          "sha256": "0396504d406ce23e30761a3875c35392a941f94cb3164910747951bca179f14c"
+        },
+        "config_SnesPpu_h": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/config_SnesPpu_h.h",
+          "size_bytes": 7336,
+          "sha256": "15859642a2f720b4fbc8298583705e4fecd16397d6da32f57cf8f2bd12cc8f89"
+        },
+        "v2_reference_trace": {
+          "path": "private/test_runs/resolver_phase_v3_full_20261003_4/source_archive/v2_reference_trace.json",
+          "size_bytes": 17782665,
+          "sha256": "7e2d2925f8523a134721427c1001128a073b6b64518abe3810ee637cb5e71bb0"
+        }
+      },
+      "summary_sha256": "01107206b1541940dfb3be8aa52b09a6db9d8f95125bc7b44d9baf74768e1415",
+      "projection": {
+        "record_count": 2263,
+        "event_counts": {
+          "baseline": 1,
+          "bus-read": 1804,
+          "bus-write": 429,
+          "cache-frame-start": 1,
+          "cache-line-one": 1,
+          "common-loader-entry": 1,
+          "interrupt-entry": 10,
+          "interrupt-rti": 10,
+          "pre-effect": 1,
+          "resolver-entry": 1,
+          "resolver-tail": 1,
+          "scene-effect-gate": 1,
+          "scene-gate": 1,
+          "terminal": 1
+        },
+        "interrupt_entry_counts": {
+          "battle-irq": 5,
+          "normal-nmi": 5
+        },
+        "engine_fields_per_record": 163,
+        "cache_witness": {
+          "start_index": 1,
+          "end_index": 2,
+          "elapsed_master_clocks": 1444,
+          "start_timing": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 275066808,
+            "frameCount": 5652,
+            "masterClock": 2019832632,
+            "memoryManager.hClock": 0,
+            "memoryManager.masterClock": 2019832632,
+            "ppu.frameCount": 5652,
+            "ppu.scanline": 0
+          },
+          "end_timing": {
+            "clockRate": 21477270,
+            "cpu.cycleCount": 275066939,
+            "frameCount": 5652,
+            "masterClock": 2019834076,
+            "memoryManager.hClock": 80,
+            "memoryManager.masterClock": 2019834076,
+            "ppu.frameCount": 5652,
+            "ppu.scanline": 1
+          },
+          "guarded_cli_settings": [
+            "--snes.ppuExtraScanlinesBeforeNmi=0",
+            "--snes.ppuExtraScanlinesAfterNmi=0"
+          ],
+          "valid_source_state_required": true,
+          "hidden_cache_values_directly_observed": false,
+          "source_conditional_refresh_crossing": true,
+          "context_kind": "normal-nmi",
+          "context_id": 1,
+          "interrupt_free_crossing": false
+        },
+        "complete_v2_trace_equal": true,
+        "resolver_to_tail_master_clocks": 4244,
+        "resolver_to_tail_cpu_counter": 548,
+        "phases": [
+          {
+            "kind": "pre-effect",
+            "poll": 374,
+            "master_clock": 2153595368,
+            "scanline": 79,
+            "hclock": 96,
+            "hardware": {
+              "internalRegisters.hCounter": 21,
+              "internalRegisters.vCounter": 79,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "resolver-entry",
+            "poll": 378,
+            "master_clock": 2155080050,
+            "scanline": 119,
+            "hclock": 754,
+            "hardware": {
+              "internalRegisters.hCounter": 186,
+              "internalRegisters.vCounter": 119,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "resolver-tail",
+            "poll": 378,
+            "master_clock": 2155084294,
+            "scanline": 122,
+            "hclock": 906,
+            "hardware": {
+              "internalRegisters.hCounter": 224,
+              "internalRegisters.vCounter": 122,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "common-loader-entry",
+            "poll": 378,
+            "master_clock": 2155084312,
+            "scanline": 122,
+            "hclock": 924,
+            "hardware": {
+              "internalRegisters.hCounter": 228,
+              "internalRegisters.vCounter": 122,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "scene-gate",
+            "poll": 379,
+            "master_clock": 2155378262,
+            "scanline": 76,
+            "hclock": 250,
+            "hardware": {
+              "internalRegisters.hCounter": 60,
+              "internalRegisters.vCounter": 76,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "kind": "scene-effect-gate",
+            "poll": 379,
+            "master_clock": 2155378300,
+            "scanline": 76,
+            "hclock": 288,
+            "hardware": {
+              "internalRegisters.hCounter": 69,
+              "internalRegisters.vCounter": 76,
+              "cpu.irqSource": 0,
+              "cpu.prevIrqSource": 0,
+              "cpu.irqLock": false,
+              "cpu.needNmi": false,
+              "cpu.nmiFlagCounter": 0,
+              "internalRegisters.enableNmi": true,
+              "internalRegisters.enableHorizontalIrq": false,
+              "internalRegisters.enableVerticalIrq": true,
+              "internalRegisters.horizontalTimer": 0,
+              "internalRegisters.verticalTimer": 211,
+              "internalRegisters.irqFlag": false,
+              "internalRegisters.irqLevel": false,
+              "internalRegisters.needIrq": 0,
+              "internalRegisters.nmiFlag": false,
+              "dmaController.hdmaChannels": 255,
+              "dmaController.dmaPending": false,
+              "dmaController.dmaStartDelay": false,
+              "dmaController.needToProcess": false,
+              "dmaController.hdmaPending": false,
+              "dmaController.hdmaInitPending": false,
+              "ppu.overscanMode": false,
+              "ppu.screenInterlace": false,
+              "ppu.objInterlace": false
+            },
+            "dma_active_channels": [],
+            "hdma_unfinished_enabled_channels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "raw_cpu_stack_gate_arrays_emitted": false,
+        "complete_dma_bus_trace": false,
+        "future_dma_absence_proved": false,
+        "interrupt_exclusion_proved": false,
+        "deadline_certified": false,
+        "native_helper_executed": false,
+        "production_approval": false
+      }
+    }
+  ],
+  "full_trace_bytes_identical": true,
+  "native_process_exit_receipts_checked": true,
+  "raw_game_data_emitted": false,
+  "execution_authenticated_against_fabricated_receipts": false,
+  "native_helper_executed": false,
+  "deadline_certified": false,
+  "production_approval": false,
+  "reproduce": [
+    "python",
+    "-B",
+    "tools/audit_package_resolver_phase_v3.py",
+    "--run-a",
+    "private/test_runs/resolver_phase_v3_full_20261003_3",
+    "--run-b",
+    "private/test_runs/resolver_phase_v3_full_20261003_4"
+  ]
+}

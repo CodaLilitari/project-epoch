@@ -3105,3 +3105,20 @@ Continue from the current handoff: observe actual internal IRQ h/v counters
 and a source-owned post-load cache refresh under guarded zero extras. Retain
 HDMA source-read/rendering isolation, wrapper cost, stack ownership and
 pre-effect admission versus late cleanup as separate proof obligations.
+
+## October 3 counter/cache observation and public refresh
+
+The separate [phase-v3 packet](schala_package_resolver_phase_v3.md) now passes
+two full native replays, 23 observer tests and 39 acceptance tests; all 178
+focused phase tests pass. Two new counter fields and two crossing events extend
+the full unchanged v2 observation. Hidden cached thresholds still require the
+explicit source-state premise; the crossing is inside the first normal NMI.
+Preserve the rejected pilot, both accepted runs and earlier v1/v2 packets.
+The next gate is an actual IRQ-request transition proof, not handler-entry
+subtraction. File consistency does not authenticate fabricated run receipts.
+
+The [public research refresh](online_research_2026_10_03.md) records the newer
+randomizer counter handshake and general framework changes, with exact commit
+pins and bounded coverage. The [external review disposition](external_review_2026_10_03.md)
+records accepted limitations and source-based disagreements, the Claude timeout,
+and Grok's pending paid-usage boundary. No reviewed source is production authority.

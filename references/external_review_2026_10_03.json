@@ -1,0 +1,43 @@
+{
+  "schema": "epoch-external-review-disposition-20261003",
+  "recorded_utc": "2026-10-04T00:51:11.541038+00:00",
+  "reviews": [
+    {
+      "provider": "antigravity",
+      "job": "4ac378e9918c449988d2f03c7998dcbd",
+      "answer_sha256": "e078e2ac509d17d050bc9fbfd9804f6756a49cb3c53b94e0c9b09efc8b3f04e2",
+      "state": "returned",
+      "disposition": "HDMA arithmetic agrees with independently checked source; omitted-source limits retained"
+    },
+    {
+      "provider": "antigravity",
+      "job": "9181e5480b9845c3926a81c3dd9725a4",
+      "answer_sha256": "3a5f9e8d39a3e0adaa861a50121eb4fe66375ba16f9791342f640c71c71d0bfd",
+      "state": "returned",
+      "disposition": "See docs/external_review_2026_10_03.md; not a clean approval"
+    },
+    {
+      "provider": "claude-code",
+      "job": "8cf82ea83be948d89d7af51a80e106fe",
+      "state": "delivery_unknown",
+      "timeout_seconds": 1800,
+      "answer_received": false
+    },
+    {
+      "provider": "grok",
+      "state": "running",
+      "usage_observed": "SuperGrok weekly17% used; saved4.7/xhigh available",
+      "paid_extra_status": "disabled according to explicit current user confirmation",
+      "startup_isolation": "empty per-child USERPROFILE only; existing HOME and GROK_HOME preserved",
+      "packet_sha256": "46b93615f46f66176ae87b7678f183db05fbfde926e44f39828062a7396bcaf9",
+      "packet_size": 19400,
+      "helper_output": "private/reviews/20261003b/grok_irq_review_live/"
+    }
+  ],
+  "scope": "Project-only text/source packets; no ROM/save/state/rawtrace inputs",
+  "native_v3_invocations": [
+    "private/test_runs/resolver_phase_v3_full_20261003_3",
+    "private/test_runs/resolver_phase_v3_full_20261003_4"
+  ],
+  "artifact_execution_authentication": false
+}

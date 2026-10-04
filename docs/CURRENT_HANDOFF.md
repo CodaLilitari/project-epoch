@@ -83,14 +83,36 @@ or a newly identified boundary.
    minima and unproved configuration/cache binding prevent treating this as
    an admission certificate. The frozen report records preparation status;
    this handoff and the latest developer-log entry record root acceptance.
-7. Next: add internalRegisters.hCounter/vCounter to a separately versioned
-   observer and witness post-load line 0 to 1 under guarded zero extra-scanline
-   settings. Reuse the accepted v2 observation unchanged. The private source-
-   cited design is private/test_runs/resolver_irq_admission_design_20261003/.
-   Prove the actual IRQ request boundary and all timing/memory premises before
+7. The separate [v3 observer](schala_package_resolver_phase_v3.md) now passes
+   twice: 2,263 identical records, 163 engine fields and exact complete v2
+   projection. It captures internalRegisters.hCounter/vCounter and a post-load
+   line-0-to-line-1 crossing under guarded zero extras. The crossing occurs in
+   historical NMI context 1; preserve the rejected main-context-only pilot.
+   Hidden cache values remain unobserved and a valid-source-state premise is
+   explicit. All 178 phase tests pass. Read the external review disposition
+   before treating file consistency as authenticated execution evidence.
+8. Next: prove the actual IRQ request boundary and all timing/memory premises before
    considering helper admission. HDMA source-read/rendering isolation, wrapper
    cost, physical stack ownership and pre-effect versus later-resolver lifecycle
    remain separate obligations. No phase rule or game insertion is approved.
+
+The [October research refresh](online_research_2026_10_03.md) found 22 new
+randomizer commits, including a useful Beast Toss counter-handshake fix, and
+434 reported SNESRecomp commits since the prior pin. Its comparison response
+is capped, ExHiROM remains unsupported there, and no new additive eighth-PC
+release was verified. The two tracked disassemblies and main mapping/editor
+tools are unchanged. Chrono Compendium refresh failed; no old forum timestamp
+is claimed as freshly verified.
+
+External review state: Antigravity returned two bounded reviews, independently
+dispositioned in [the review note](external_review_2026_10_03.md). Claude Code
+job `8cf82ea83be948d89d7af51a80e106fe` timed out after 1,800 seconds with
+delivery unknown; do not blindly retry. Grok startup isolation is solved with
+a per-child empty USERPROFILE while preserving HOME and the dedicated profile.
+Its model catalog and SuperGrok 17% weekly usage were observed. Andrei then
+confirmed paid extra usage is disabled; one isolated Grok 4.7/xhigh IRQ-timing
+review is running under private/reviews/20261003b/grok_irq_review_live/. Native subagents hit this
+old chat's thread limit. A fresh project chat is the intended continuation.
 
 All ROMs, SRAMs, emulator states, raw traces and extracted data stay under
 ignored `private/`. Source-controlled outputs contain original tools, tests,

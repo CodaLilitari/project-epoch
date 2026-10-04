@@ -1,0 +1,177 @@
+{
+  "schema": "project-epoch-public-research-2026-10-03",
+  "evidence_level": "documented",
+  "heads": {
+    "checked_utc": "2026-10-04T00:17:17.245320+00:00",
+    "repos": [
+      {
+        "repo": "dscotton/ct_disassembly",
+        "sha": "eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+        "date": "2026-07-11T22:55:32Z",
+        "message": "Corrected info in equipment elemental absorb and stat boosts.",
+        "url": "https://github.com/dscotton/ct_disassembly/commit/eeae27acdb6565e96d1d796a3d60792c250c0aa1",
+        "response_sha256": "4092e9550eb7ab1c96586e77c9972ccbbed0cbcc82d16715dee194e8822a1936"
+      },
+      {
+        "repo": "DocDamage/chronotrigger_disassembly",
+        "sha": "487a698bc1fd25cd564853cffe03c26902b7bbeb",
+        "date": "2026-08-18T23:44:01Z",
+        "message": "Merge pull request #3 from DocDamage/live-work-from-pass166",
+        "url": "https://github.com/DocDamage/chronotrigger_disassembly/commit/487a698bc1fd25cd564853cffe03c26902b7bbeb",
+        "response_sha256": "e423696bec82ffea78d7ddd8d43a6d7bcab3bfd8d5c52c7903033a6e24efe4da"
+      },
+      {
+        "repo": "OnemusCT/temporal-redux",
+        "sha": "d8d4e38c0bf08b51a29441ef7ea2a489d63da58f",
+        "date": "2026-09-02T03:16:21Z",
+        "message": "fix tests for 3.9",
+        "url": "https://github.com/OnemusCT/temporal-redux/commit/d8d4e38c0bf08b51a29441ef7ea2a489d63da58f",
+        "response_sha256": "408668c3f411db4f35af2455bcb51c9c0385019c1316705d8957120d1b5ccbf3"
+      },
+      {
+        "repo": "Pseudoarc/ctrando",
+        "sha": "b2d8c0ba5836e23fc51c483f83b254176c7b3846",
+        "date": "2026-09-21T22:21:49Z",
+        "message": "Delete bad code from pre Zenan 600 split",
+        "url": "https://github.com/Pseudoarc/ctrando/commit/b2d8c0ba5836e23fc51c483f83b254176c7b3846",
+        "response_sha256": "0bfb2874a99d9900e365651e7ade2f548a47975e619c9521119ec3401fa25f07"
+      },
+      {
+        "repo": "GitExl/CTViewer",
+        "sha": "2e5a206e09f0028fd5a1ca6cb9a9ed18bfc64fea",
+        "date": "2026-07-19T16:27:12Z",
+        "message": "SNES draws sprites one pixel lower than OAM would indicate.",
+        "url": "https://github.com/GitExl/CTViewer/commit/2e5a206e09f0028fd5a1ca6cb9a9ed18bfc64fea",
+        "response_sha256": "95c43f8dd2e207a12a2c72a4ef5ebdfbb162a20a255807f5572e031b8ec12925"
+      },
+      {
+        "repo": "nmrugg/chrono-editor",
+        "sha": "66cbee13fe00fc46ca0aba56b61986adb3946618",
+        "date": "2026-06-22T20:06:26Z",
+        "message": "readme",
+        "url": "https://github.com/nmrugg/chrono-editor/commit/66cbee13fe00fc46ca0aba56b61986adb3946618",
+        "response_sha256": "d71758980e1a695704f20e2b6713d839556ab20093b14e69088327b5b77263f3"
+      },
+      {
+        "repo": "maci0/ct-recomp",
+        "available": false,
+        "error": "gh: Not Found (HTTP 404)",
+        "response_sha256": "60e109409399f69781ddd25f5a6aca961ec3d28a6ec90693d197f0686aaf6a6b"
+      },
+      {
+        "repo": "mstan/snesrecomp",
+        "sha": "88a9f7f51be3b1f0a805821e0fff7aa6f9e2246e",
+        "date": "2026-10-03T20:56:47Z",
+        "message": "Merge pull request #145 from RetroPortingToolKit/split89/brk-vector",
+        "url": "https://github.com/RetroPortingToolKit/snesrecomp/commit/88a9f7f51be3b1f0a805821e0fff7aa6f9e2246e",
+        "response_sha256": "0c22b100887249e806c508f28bba34f7f14ffcd4a2fee6072b61505a32a13576"
+      },
+      {
+        "repo": "sp00nznet/snesrecomp",
+        "sha": "644c7647a9b2a6f286abe14ff07e1751e98c4a17",
+        "date": "2026-09-07T16:07:18Z",
+        "message": "cpu_ops: add OP_TXS/OP_TSX; interpreter: SNESRECOMP_INTERP_STATS",
+        "url": "https://github.com/sp00nznet/snesrecomp/commit/644c7647a9b2a6f286abe14ff07e1751e98c4a17",
+        "response_sha256": "768827ce2807e3857b6838be9817dd654e5ccdb1ec0ef5fb9bca58ca1d3520f6"
+      },
+      {
+        "repo": "springah/ct_pm",
+        "sha": "1a3b457c230ffd714c3677f5f41a51e3e5343e72",
+        "date": "2026-09-05T07:27:22Z",
+        "message": "review fixes: sequenced cave emitters, panel-based framing, font fallbacks, config migration",
+        "url": "https://github.com/springah/ct_pm/commit/1a3b457c230ffd714c3677f5f41a51e3e5343e72",
+        "response_sha256": "cca055e266596fbde5bc9f6e7bf2ae6c05ca5dfc25437882c6007c905f0b13bc"
+      }
+    ]
+  },
+  "sources": {
+    "checked_utc": "2026-10-04T00:39:08.223491+00:00",
+    "sources": [
+      {
+        "name": "ctrando_charid.py",
+        "url": "https://raw.githubusercontent.com/Pseudoarc/ctrando/b2d8c0ba5836e23fc51c483f83b254176c7b3846/src/ctrando/common/ctenums.py",
+        "size": 59179,
+        "sha256": "169479a8e8aabf062afe9c52cf930b556b642d04d6249c7140dbc8cff3570f2d",
+        "status": 200
+      },
+      {
+        "name": "ctrando_animationscript.py",
+        "url": "https://raw.githubusercontent.com/Pseudoarc/ctrando/fe0c0cb72c0e67af6561cf311d69220309afb8ca/src/ctrando/techs/animationscript.py",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "name": "framework_readme.md",
+        "url": "https://raw.githubusercontent.com/RetroPortingToolKit/snesrecomp/88a9f7f51be3b1f0a805821e0fff7aa6f9e2246e/README.md",
+        "size": 28384,
+        "sha256": "8d5bde6b7c074249372a789ff170438dd4aa47d5697f4ff493b91385edff1f4a",
+        "status": 200
+      },
+      {
+        "name": "framework_license.txt",
+        "url": "https://raw.githubusercontent.com/RetroPortingToolKit/snesrecomp/88a9f7f51be3b1f0a805821e0fff7aa6f9e2246e/LICENSE",
+        "size": 3791,
+        "sha256": "b5cb175d55c9f49f0f532aff9d04424444f3354bc274fc4d0d726292701b8dfd",
+        "status": 200
+      },
+      {
+        "name": "ctrando_animationscript.py",
+        "url": "https://raw.githubusercontent.com/Pseudoarc/ctrando/fe0c0cb72c0e67af6561cf311d69220309afb8ca/src/ctrando/attacks/animationscript.py",
+        "status": 200,
+        "size": 41244,
+        "sha256": "3f1ea50d461fd0249f4e1cf690ab84b9693e1904b58e25ffecedbae042536432"
+      }
+    ]
+  },
+  "private_receipts": [
+    {
+      "path": "private/research/public_refresh_20261003b/heads.json",
+      "size_bytes": 4115,
+      "sha256": "674cc315a7fa4c26bdf2ff467b4146d5a9361a37e8fc87080497bd68a967bd7c"
+    },
+    {
+      "path": "private/research/public_refresh_20261003b/ctrando_compare.json",
+      "size_bytes": 151399,
+      "sha256": "388b3f0c7c104595441574edc5aaab7fbeaa2cc7776213d2b43368a483e91c90"
+    },
+    {
+      "path": "private/research/public_refresh_20261003b/framework_compare.json",
+      "size_bytes": 2216242,
+      "sha256": "8395f43637472dfa2af70666014ffe8986b8303da8054081695ec45315cf9eb7"
+    },
+    {
+      "path": "private/research/public_refresh_20261003b/framework_release.json",
+      "size_bytes": 3859,
+      "sha256": "bd12b424ae438b32147ee1099052d05f1d14b0b87a52cd2dc2b5bc03551d9c19"
+    },
+    {
+      "path": "private/research/public_refresh_20261003b/forum_receipts.json",
+      "size_bytes": 668,
+      "sha256": "f99705c07d0b96f16281dfff6d04b009269ffb23228a9ef221c10f0fa5b093e0"
+    },
+    {
+      "path": "private/research/public_refresh_20261003b/source_receipts.json",
+      "size_bytes": 1612,
+      "sha256": "f24ff1849d407eb7c9ca70d281c36308a7244eebdef2c32f97592c820362fa38"
+    },
+    {
+      "path": "private/research/public_refresh_20261003b/repo_search.json",
+      "size_bytes": 201,
+      "sha256": "b359c0ee4e6e5d1bc9c1191510f390fbfc05c91bba17f6f7f6c901ed0835cb74"
+    },
+    {
+      "path": "private/research/public_refresh_20261003b/repo_search_corrected.json",
+      "size_bytes": 201,
+      "sha256": "b359c0ee4e6e5d1bc9c1191510f390fbfc05c91bba17f6f7f6c901ed0835cb74"
+    }
+  ],
+  "limits": {
+    "new_eighth_pc_patch_verified": false,
+    "complete_ct_decompilation_verified": false,
+    "forum_current_state_verified": false,
+    "github_search_available": false,
+    "framework_compare_commits_returned": 250,
+    "framework_compare_files_returned": 300,
+    "framework_ahead_by": 434
+  },
+  "reproduce": "See docs/online_research_2026_10_03.md for exact API/source retrieval procedure."
+}
