@@ -1,0 +1,134 @@
+{
+  "schema": "project-epoch-irq-transition-upstream-sources-v1",
+  "revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "evidence_level": "exact-revision-source-identity",
+  "sources": [
+    {
+      "upstream_path": "Core/SNES/InternalRegisters.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.h",
+      "path": "private/research/mesen_irq_transition_2_1_1/InternalRegisters.h",
+      "size_bytes": 5020,
+      "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698",
+      "git_blob_sha1": "b713a16afce1d86bfdf11c205d18a37833102769",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/InternalRegisters.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp",
+      "path": "private/research/mesen_irq_transition_2_1_1/InternalRegisters.cpp",
+      "size_bytes": 12742,
+      "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc",
+      "git_blob_sha1": "4310d8c5aff4dd4a6c955b84e89cb2acdcdff613",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesMemoryManager.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesMemoryManager.cpp",
+      "size_bytes": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58",
+      "git_blob_sha1": "8c7b9433f1aa33aa42624b9c7686b91136fdcd2e",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesDmaController.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesDmaController.cpp",
+      "size_bytes": 19939,
+      "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6",
+      "git_blob_sha1": "7fc0d5f0568369c8c1abfab5c1b969d1b0b08d18",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesPpu.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesPpu.cpp",
+      "size_bytes": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180",
+      "git_blob_sha1": "3c7245217083e3e7d9ce72bcf2e037f43b463b0b",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesCpu.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpu.cpp",
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8",
+      "git_blob_sha1": "e8441981c7f2527e16303ddd35d5010deec850f7",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesCpu.Shared.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpu.Shared.h",
+      "size_bytes": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f",
+      "git_blob_sha1": "bbabf420bd1bd8899b62e392fcadcf3a500468c5",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesCpu.Instructions.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpu.Instructions.h",
+      "size_bytes": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd",
+      "git_blob_sha1": "46b8553e24ab5151c0da049b4fcc49289c3648a9",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesCpuTypes.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpuTypes.h",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpuTypes.h",
+      "size_bytes": 1399,
+      "sha256": "5394d51e2dd6e765eb8805e318d8f1b3407d2bd2a7076047250936e5838d1b9d",
+      "git_blob_sha1": "f0ee03d2ba74c79fc0b8b529e4786cda3dc194cf",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/BaseCartridge.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.h",
+      "path": "private/research/mesen_irq_transition_2_1_1/BaseCartridge.h",
+      "size_bytes": 3531,
+      "sha256": "ee6f270d95414de941ab4cdc59e662081316b76fe7129bf47f8b3a5b9033b087",
+      "git_blob_sha1": "80c3abad8dc326f95728a90e7b8b67bfdf53b988",
+      "existing_local_bytes_equal": null
+    },
+    {
+      "upstream_path": "Core/Shared/Emulator.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/Emulator.h",
+      "path": "private/research/mesen_irq_transition_2_1_1/Emulator.h",
+      "size_bytes": 10277,
+      "sha256": "3ff88094b5fd2f43103006bbb2b0e9a99851f88683a8fe42e4816265849eee7b",
+      "git_blob_sha1": "d962bb02f9eeb93d055d1f53e4556ae795062edf",
+      "existing_local_bytes_equal": null
+    },
+    {
+      "upstream_path": "Core/SNES/Debugger/SnesDebugger.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesDebugger.cpp",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesDebugger.cpp",
+      "size_bytes": 21180,
+      "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51",
+      "git_blob_sha1": "c1017d232c71378577be675eadf29f2835b31731",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/SnesConsole.cpp",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesConsole.cpp",
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesConsole.cpp",
+      "size_bytes": 15424,
+      "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706",
+      "git_blob_sha1": "94ed65811b6c5db95b2abbc4786d0faf303c22b8",
+      "existing_local_bytes_equal": true
+    },
+    {
+      "upstream_path": "Core/SNES/RegisterHandlerA.h",
+      "url": "https://raw.githubusercontent.com/SourMesen/Mesen2/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/RegisterHandlerA.h",
+      "path": "private/research/mesen_irq_transition_2_1_1/RegisterHandlerA.h",
+      "size_bytes": 1635,
+      "sha256": "782f34e6b68d6b247d37a5142f8071fad85b2dd13bd33a96d3f5bb085f176f3c",
+      "git_blob_sha1": "7107a2380f07d71b1cc92d247199393e5ff69788",
+      "existing_local_bytes_equal": true
+    }
+  ],
+  "reproduce": "Fetch each exact URL; require SHA256, size and Git blob SHA1 equality. This pins bytes, not semantic interpretation."
+}

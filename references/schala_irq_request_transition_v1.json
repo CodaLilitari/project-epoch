@@ -1,0 +1,1267 @@
+{
+  "schema": "project-epoch-irq-request-transition-v1",
+  "evidence_level": "source-conditional-host-model",
+  "source_commit": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+  "phase_reference": {
+    "path": "references/schala_package_resolver_phase_v3.json",
+    "size_bytes": 63846,
+    "sha256": "ef647b161531bc1d207f3aa1feacb4b8d669863e04b7390348d0d16381a3d1c1"
+  },
+  "upstream_reference": {
+    "path": "references/mesen_irq_transition_sources_v1.json",
+    "size_bytes": 7340,
+    "sha256": "bbef4d4282eb7e696c9e51a6b1c110720634c44dbdb4c175bc31193f670830e6"
+  },
+  "source_identities": [
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/InternalRegisters.h",
+      "size_bytes": 5020,
+      "sha256": "d4433c01d99f587d3686a5df72d50fc5942e51ad56ef868987d7ec0bce2a4698"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/InternalRegisters.cpp",
+      "size_bytes": 12742,
+      "sha256": "2b964a17f6cd16bb98f7953d7f8f8036cdf0c1178e87bb204eb846782cf96cbc"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesMemoryManager.cpp",
+      "size_bytes": 12100,
+      "sha256": "2f1e365d5a2b5e7f2bbfe61abf8ecf04c96760842e0ec68de2aa603118664d58"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesDmaController.cpp",
+      "size_bytes": 19939,
+      "sha256": "f0bd85d5a3001cb3c847980922d6cf2aa19ef294a562a9c827f189328a1cfae6"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesPpu.cpp",
+      "size_bytes": 83153,
+      "sha256": "5f61ed7c8da25938b494a4d42b270109dd9500ea5d155130b6b69ff774458180"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpu.cpp",
+      "size_bytes": 3666,
+      "sha256": "ea81ccb2b6093fdde5ff2d1bfbc4a4a88a596e39b841e94786f343c5974491b8"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpu.Shared.h",
+      "size_bytes": 20483,
+      "sha256": "dd84d0794c9588adfd28932659edb07a7b5b9d2d052fbcd4696925026237210f"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpu.Instructions.h",
+      "size_bytes": 27673,
+      "sha256": "9b24ffaf04411f309a2d0b7899c6a883d64b146b42513cdbd850ba44f34649bd"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesCpuTypes.h",
+      "size_bytes": 1399,
+      "sha256": "5394d51e2dd6e765eb8805e318d8f1b3407d2bd2a7076047250936e5838d1b9d"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/BaseCartridge.h",
+      "size_bytes": 3531,
+      "sha256": "ee6f270d95414de941ab4cdc59e662081316b76fe7129bf47f8b3a5b9033b087"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/Emulator.h",
+      "size_bytes": 10277,
+      "sha256": "3ff88094b5fd2f43103006bbb2b0e9a99851f88683a8fe42e4816265849eee7b"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesDebugger.cpp",
+      "size_bytes": 21180,
+      "sha256": "cdc731b03b249a32305be0e020cbcdb3f13e9f8ca897aeadae142d06ef55bd51"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/SnesConsole.cpp",
+      "size_bytes": 15424,
+      "sha256": "cdfa45011f3dfd39fa5a8686e7f827cb8ea660d5a1b79ecb20da9d0c2606c706"
+    },
+    {
+      "path": "private/research/mesen_irq_transition_2_1_1/RegisterHandlerA.h",
+      "size_bytes": 1635,
+      "sha256": "782f34e6b68d6b247d37a5142f8071fad85b2dd13bd33a96d3f5bb085f176f3c"
+    }
+  ],
+  "original_source_identities": [
+    {
+      "path": "tools/schala_irq_transition_core_v1.py",
+      "size_bytes": 11874,
+      "sha256": "0bc4b855fc3fa120795ba199f1e1a3db0d242344655fcbe1c2fa834ec89d19fd"
+    },
+    {
+      "path": "tests/test_schala_irq_transition_core_v1.py",
+      "size_bytes": 18936,
+      "sha256": "0871f73d08191dde5f71802a7f8672a0de3eaefd315038177b1c070b4430ef5b"
+    },
+    {
+      "path": "tools/schala_irq_exec_v1.py",
+      "size_bytes": 10222,
+      "sha256": "7e2fc1af62ea528c8bbf7b04a26251a04503be7406a1630ca1e1a3f6b0de7772"
+    },
+    {
+      "path": "tests/test_schala_irq_exec_v1.py",
+      "size_bytes": 7246,
+      "sha256": "27c72a1ce0fa1379413191c82099af95ad3637d9def4e6bd302b98e0f26f5314"
+    },
+    {
+      "path": "tools/schala_irq_cpu_gate_v1.py",
+      "size_bytes": 6949,
+      "sha256": "dac1ee597f9500de8c6bc83618445e423feaf831be969f84075f723b869a76dc"
+    },
+    {
+      "path": "tests/test_schala_irq_cpu_gate_v1.py",
+      "size_bytes": 8879,
+      "sha256": "9a7c12467c4a2aab4081428162d3b8532fdaa6a964fd90459c98f5b6cae46355"
+    },
+    {
+      "path": "tools/audit_schala_irq_request_transition_v1.py",
+      "size_bytes": 15657,
+      "sha256": "eba2ce5368a559661cd958b38e5765edfca82d9fc311ce844d5dbba5b211057d"
+    },
+    {
+      "path": "tests/test_audit_schala_irq_request_transition_v1.py",
+      "size_bytes": 6358,
+      "sha256": "5106a43c134c77d2746b7b9e459d024f1370f834a57c7d4d71b665abe082bdfa"
+    }
+  ],
+  "source_spans": [
+    {
+      "source": "Core/SNES/InternalRegisters.h",
+      "first_line": 81,
+      "last_line": 162,
+      "role": "consume pending, update counters, compare and arm",
+      "sha256": "f3883bbf90f9adfb4fdc0833528948639dd2b619b12335e1d5fa27b884965e07",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.h#L81-L162"
+    },
+    {
+      "source": "Core/SNES/InternalRegisters.cpp",
+      "first_line": 180,
+      "last_line": 187,
+      "role": "flag setter clears source but never asserts",
+      "sha256": "ab4a120214e63002a418ad004f83db7d32af599091c78dc01b70077b68437d48",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp#L180-L187"
+    },
+    {
+      "source": "Core/SNES/InternalRegisters.cpp",
+      "first_line": 246,
+      "last_line": 255,
+      "role": "TIMEUP read captures old flag then conditionally clears",
+      "sha256": "497d1f16ff47d97dc9bd9cc961c25e0ef2052c13995cb0dcd15f265f4fecf5e5",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp#L246-L255"
+    },
+    {
+      "source": "Core/SNES/InternalRegisters.cpp",
+      "first_line": 299,
+      "last_line": 375,
+      "role": "NMITIMEN and immediate timer-write comparison",
+      "sha256": "bf6b0c5b784fc8fd1579ece1cfb54129c1118f4193885894d63c8402c18b2bb8",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp#L299-L375"
+    },
+    {
+      "source": "Core/SNES/InternalRegisters.cpp",
+      "first_line": 394,
+      "last_line": 413,
+      "role": "serializer replaces counters and pending state",
+      "sha256": "c0f154d1a6a7606f2276d727212cf06ac54c819a46231ea118a24dc5dbb562d6",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/InternalRegisters.cpp#L394-L413"
+    },
+    {
+      "source": "Core/SNES/SnesMemoryManager.cpp",
+      "first_line": 179,
+      "last_line": 275,
+      "role": "nested refresh and event-before-current-phase Exec",
+      "sha256": "5822ca70c305c14905f97f17003f439201b1b2a0672a2f982ffa62c22acc5620",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L179-L275"
+    },
+    {
+      "source": "Core/SNES/SnesMemoryManager.cpp",
+      "first_line": 293,
+      "last_line": 328,
+      "role": "DMA source reads may have register side effects",
+      "sha256": "ea10906d3fcba07992d62370e4bb51fc17b64f1dad7bb4cf78aeb85446d03ae8",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L293-L328"
+    },
+    {
+      "source": "Core/SNES/SnesMemoryManager.cpp",
+      "first_line": 360,
+      "last_line": 388,
+      "role": "reverse DMA may write IRQ control registers",
+      "sha256": "f6d121f9a4b87566b4063ab941a5f049e9b0cfc23fbffbaf94ac1313bc9c3018",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesMemoryManager.cpp#L360-L388"
+    },
+    {
+      "source": "Core/SNES/SnesDmaController.cpp",
+      "first_line": 347,
+      "last_line": 405,
+      "role": "HDMA request flags and separate service dispatch",
+      "sha256": "b7ebac18534f519dbf1d1c06b2fb8d54ea11f2c397fe537bd1da0321baa3adb0",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesDmaController.cpp#L347-L405"
+    },
+    {
+      "source": "Core/SNES/SnesPpu.cpp",
+      "first_line": 395,
+      "last_line": 511,
+      "role": "ordinary line rule and renderer/control/frame callback frontier",
+      "sha256": "8f5712850030bc946010b1b0129af2b5185e7ec68cb9ab6aeb59bb4535d80931",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesPpu.cpp#L395-L511"
+    },
+    {
+      "source": "Core/SNES/BaseCartridge.h",
+      "first_line": 144,
+      "last_line": 149,
+      "role": "conditional virtual coprocessor synchronization",
+      "sha256": "b8d2784a6a4f22d55fb7c3282addbb1151dee0ee995e9a48446b512b21febf62",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/BaseCartridge.h#L144-L149"
+    },
+    {
+      "source": "Core/Shared/Emulator.h",
+      "first_line": 308,
+      "last_line": 313,
+      "role": "PPU debugger callback frontier",
+      "sha256": "5a4cd06e45df036505d2ea771317e7379281576eb77e7c1f333302855133e17f",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/Shared/Emulator.h#L308-L313"
+    },
+    {
+      "source": "Core/SNES/Debugger/SnesDebugger.cpp",
+      "first_line": 413,
+      "last_line": 439,
+      "role": "PPU callback SPC/DSP and debugger frontier",
+      "sha256": "6d77f4c80d317807098881672c5e6f6ab5feee1e9e2aebd412f998ab87f0bdd3",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/Debugger/SnesDebugger.cpp#L413-L439"
+    },
+    {
+      "source": "Core/SNES/SnesConsole.cpp",
+      "first_line": 72,
+      "last_line": 107,
+      "role": "end-frame callback and reset frontier",
+      "sha256": "1846154f4cfff8855b198bb5cfd898b40a15a36e0f1983d3f8b93ffce61638b2",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesConsole.cpp#L72-L107"
+    },
+    {
+      "source": "Core/SNES/SnesCpu.cpp",
+      "first_line": 29,
+      "last_line": 83,
+      "role": "post-op acceptance selection and WAI pre-idle wake snapshot",
+      "sha256": "2b1102dfcf6a79c0adb1c3b2854077ae823fe45f084370175eb4e5bd47f0e0ba",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp#L29-L83"
+    },
+    {
+      "source": "Core/SNES/SnesCpu.cpp",
+      "first_line": 121,
+      "last_line": 130,
+      "role": "DMA service precedes sampling",
+      "sha256": "a7e45c6cc80cd7670eb6fac900b3e3549c92891e7115033e3fccedfa46e466b5",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.cpp#L121-L130"
+    },
+    {
+      "source": "Core/SNES/SnesCpu.Shared.h",
+      "first_line": 315,
+      "last_line": 367,
+      "role": "NMI sampling, IRQ sample and source mask operations",
+      "sha256": "319fe4c757db05f41fe9ce283a12fa9af8025b94c8ca099ecf17e13445740e1b",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Shared.h#L315-L367"
+    },
+    {
+      "source": "Core/SNES/SnesCpuTypes.h",
+      "first_line": 5,
+      "last_line": 78,
+      "role": "CPU byte types, status mask, source bits and stop states",
+      "sha256": "cad9b091f1a303fec20a26356e43d00cd2d89c574d3506a9f52cd2ec907b79fc",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpuTypes.h#L5-L78"
+    },
+    {
+      "source": "Core/SNES/SnesCpu.Instructions.h",
+      "first_line": 505,
+      "last_line": 534,
+      "role": "frame/vector work after selection; outside model",
+      "sha256": "2a62752e0929465d9c7a54acf873d759a71a8941c02d2a180aa2976cc4c57a89",
+      "url": "https://github.com/SourMesen/Mesen2/blob/137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1/Core/SNES/SnesCpu.Instructions.h#L505-L534"
+    }
+  ],
+  "observed_seed": {
+    "kind": "resolver-entry",
+    "poll": 378,
+    "master_clock": 2155080050,
+    "scanline": 119,
+    "hclock": 754,
+    "hardware": {
+      "internalRegisters.hCounter": 186,
+      "internalRegisters.vCounter": 119,
+      "cpu.irqSource": 0,
+      "cpu.prevIrqSource": 0,
+      "cpu.irqLock": false,
+      "cpu.needNmi": false,
+      "cpu.nmiFlagCounter": 0,
+      "internalRegisters.enableNmi": true,
+      "internalRegisters.enableHorizontalIrq": false,
+      "internalRegisters.enableVerticalIrq": true,
+      "internalRegisters.horizontalTimer": 0,
+      "internalRegisters.verticalTimer": 211,
+      "internalRegisters.irqFlag": false,
+      "internalRegisters.irqLevel": false,
+      "internalRegisters.needIrq": 0,
+      "internalRegisters.nmiFlag": false,
+      "dmaController.hdmaChannels": 255,
+      "dmaController.dmaPending": false,
+      "dmaController.dmaStartDelay": false,
+      "dmaController.needToProcess": false,
+      "dmaController.hdmaPending": false,
+      "dmaController.hdmaInitPending": false,
+      "ppu.overscanMode": false,
+      "ppu.screenInterlace": false,
+      "ppu.objInterlace": false
+    },
+    "dma_active_channels": [],
+    "hdma_unfinished_enabled_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "cache_enable_bootstrap": "irq_enabled_cache derived from register enables under valid-source-state premise; no hidden-field observation",
+  "unused_core_field": "auto_joy_enabled defaults false in this projection; it is not asserted observed and no NMITIMEN write is performed",
+  "request_model": {
+    "premises": {
+      "fixed_timers_and_enables": true,
+      "no_reset_or_state_restore": true,
+      "no_irq_acknowledgement": true,
+      "no_external_irq_source": true,
+      "inert_debugger_and_ppu_callbacks": true,
+      "absent_coprocessors": true,
+      "dma_bus_effects_excluded": true,
+      "valid_source_cache_and_zero_extras": true
+    },
+    "premises_are_runtime_certificates": false,
+    "fixed_registers_cover": "all CPU, DMA/HDMA, debugger, external and state-load routes",
+    "additional_requirements": [
+      "exact initial v3 seed",
+      "no earlier pending/source state or unknown IRQ source",
+      "no counter-changing reentry beyond pinned midline DRAM refresh",
+      "ordinary source raster; no wrap before V211; minimum line1360",
+      "no intervening TIMEUP acknowledgment; no reset/load/clock replacement"
+    ],
+    "lower_offset_derivation": "(211-119)*1360-754+6; then +4 and +8. Refresh only occupies H532..578; H6/H10/H14 are unique under these premises.",
+    "stronger_ordinary_line_derivation": "(211-119)*1364-754+6; then +4 and +8. Short line240 is not reached.",
+    "scenarios": [
+      {
+        "line_model": "shortened-1360-comparison",
+        "scripted_adversarial_callbacks": false,
+        "ordinary_callback_hypothesis_applies": true,
+        "clock": 2155204430,
+        "line": 211,
+        "hclock": 14,
+        "counter_h": 1,
+        "counter_v": 211,
+        "exec_calls": 62190,
+        "max_exec_depth": 2,
+        "irq_counter_calls": 31095,
+        "distinct_tick_clocks": 31004,
+        "tick_ledger_sha256": "f20ba0fcfa984b85bdc9eae7ce7333243bb4f7884786085a49f919266692dc92",
+        "changes": [
+          {
+            "clock": 2155204422,
+            "offset": 124372,
+            "line": 211,
+            "hclock": 6,
+            "field": "need_irq",
+            "before": 0,
+            "after": 2
+          },
+          {
+            "clock": 2155204422,
+            "offset": 124372,
+            "line": 211,
+            "hclock": 6,
+            "field": "irq_level",
+            "before": false,
+            "after": true
+          },
+          {
+            "clock": 2155204426,
+            "offset": 124376,
+            "line": 211,
+            "hclock": 10,
+            "field": "need_irq",
+            "before": 2,
+            "after": 1
+          },
+          {
+            "clock": 2155204426,
+            "offset": 124376,
+            "line": 211,
+            "hclock": 10,
+            "field": "irq_flag",
+            "before": false,
+            "after": true
+          },
+          {
+            "clock": 2155204430,
+            "offset": 124380,
+            "line": 211,
+            "hclock": 14,
+            "field": "need_irq",
+            "before": 1,
+            "after": 0
+          },
+          {
+            "clock": 2155204430,
+            "offset": 124380,
+            "line": 211,
+            "hclock": 14,
+            "field": "ppu_irq_source",
+            "before": false,
+            "after": true
+          }
+        ],
+        "hdma_request_pending": true,
+        "hdma_service_or_bus_effects_simulated": false,
+        "callback_premises_authenticated": false,
+        "cpu_acceptance_clock": null,
+        "handler_entry_clock": null,
+        "game_request_deadline_certified": false,
+        "helper_admitted": false,
+        "request_offsets": {
+          "match": 124372,
+          "flag": 124376,
+          "source": 124380
+        }
+      },
+      {
+        "line_model": "source-1364-pre-VBlank",
+        "scripted_adversarial_callbacks": false,
+        "ordinary_callback_hypothesis_applies": true,
+        "clock": 2155204798,
+        "line": 211,
+        "hclock": 14,
+        "counter_h": 1,
+        "counter_v": 211,
+        "exec_calls": 62374,
+        "max_exec_depth": 2,
+        "irq_counter_calls": 31187,
+        "distinct_tick_clocks": 31096,
+        "tick_ledger_sha256": "b981056d847455e7a65d2d0e50a46ccc57e71d320a23a6af3ae994f7b5806f5d",
+        "changes": [
+          {
+            "clock": 2155204790,
+            "offset": 124740,
+            "line": 211,
+            "hclock": 6,
+            "field": "need_irq",
+            "before": 0,
+            "after": 2
+          },
+          {
+            "clock": 2155204790,
+            "offset": 124740,
+            "line": 211,
+            "hclock": 6,
+            "field": "irq_level",
+            "before": false,
+            "after": true
+          },
+          {
+            "clock": 2155204794,
+            "offset": 124744,
+            "line": 211,
+            "hclock": 10,
+            "field": "need_irq",
+            "before": 2,
+            "after": 1
+          },
+          {
+            "clock": 2155204794,
+            "offset": 124744,
+            "line": 211,
+            "hclock": 10,
+            "field": "irq_flag",
+            "before": false,
+            "after": true
+          },
+          {
+            "clock": 2155204798,
+            "offset": 124748,
+            "line": 211,
+            "hclock": 14,
+            "field": "need_irq",
+            "before": 1,
+            "after": 0
+          },
+          {
+            "clock": 2155204798,
+            "offset": 124748,
+            "line": 211,
+            "hclock": 14,
+            "field": "ppu_irq_source",
+            "before": false,
+            "after": true
+          }
+        ],
+        "hdma_request_pending": true,
+        "hdma_service_or_bus_effects_simulated": false,
+        "callback_premises_authenticated": false,
+        "cpu_acceptance_clock": null,
+        "handler_entry_clock": null,
+        "game_request_deadline_certified": false,
+        "helper_admitted": false,
+        "request_offsets": {
+          "match": 124740,
+          "flag": 124744,
+          "source": 124748
+        }
+      }
+    ],
+    "game_deadline": null,
+    "game_helper_admitted": false
+  },
+  "adversaries": {
+    "pending": [
+      {
+        "initial_need": 1,
+        "initial_flag": false,
+        "first_source_offset": 124748
+      },
+      {
+        "initial_need": 1,
+        "initial_flag": true,
+        "first_source_offset": 4
+      },
+      {
+        "initial_need": 2,
+        "initial_flag": false,
+        "first_source_offset": 8
+      },
+      {
+        "initial_need": 3,
+        "initial_flag": false,
+        "first_source_offset": 12
+      },
+      {
+        "initial_need": 255,
+        "initial_flag": false,
+        "first_source_offset": 1020
+      }
+    ],
+    "refresh_endpoint_scenarios": [
+      {
+        "refresh_h": 532,
+        "final_h": 186,
+        "counter_calls": 186,
+        "distinct_tick_clocks": 186,
+        "tick_ledger_sha256": "c14a38164d32cbc9fee95b9b2a846d296279ea8110890caa6de3e1b9ec5f7363",
+        "at_event": [
+          [
+            536,
+            119,
+            530,
+            1,
+            130,
+            119
+          ],
+          [
+            540,
+            119,
+            534,
+            2,
+            131,
+            119
+          ],
+          [
+            544,
+            119,
+            538,
+            2,
+            132,
+            119
+          ],
+          [
+            548,
+            119,
+            542,
+            2,
+            133,
+            119
+          ],
+          [
+            552,
+            119,
+            546,
+            2,
+            134,
+            119
+          ],
+          [
+            556,
+            119,
+            550,
+            2,
+            135,
+            119
+          ],
+          [
+            560,
+            119,
+            554,
+            2,
+            136,
+            119
+          ],
+          [
+            564,
+            119,
+            558,
+            2,
+            137,
+            119
+          ],
+          [
+            568,
+            119,
+            562,
+            2,
+            138,
+            119
+          ],
+          [
+            572,
+            119,
+            566,
+            2,
+            139,
+            119
+          ],
+          [
+            576,
+            119,
+            570,
+            2,
+            140,
+            119
+          ],
+          [
+            580,
+            119,
+            574,
+            1,
+            141,
+            119
+          ]
+        ]
+      },
+      {
+        "refresh_h": 534,
+        "final_h": 186,
+        "counter_calls": 186,
+        "distinct_tick_clocks": 185,
+        "tick_ledger_sha256": "f0c4466daea4b70ee92eb92b0e036966a6f04076ac3822e287eef4933bf49bd8",
+        "at_event": [
+          [
+            534,
+            119,
+            530,
+            1,
+            130,
+            119
+          ],
+          [
+            542,
+            119,
+            538,
+            2,
+            131,
+            119
+          ],
+          [
+            546,
+            119,
+            542,
+            2,
+            132,
+            119
+          ],
+          [
+            550,
+            119,
+            546,
+            2,
+            133,
+            119
+          ],
+          [
+            554,
+            119,
+            550,
+            2,
+            134,
+            119
+          ],
+          [
+            558,
+            119,
+            554,
+            2,
+            135,
+            119
+          ],
+          [
+            562,
+            119,
+            558,
+            2,
+            136,
+            119
+          ],
+          [
+            566,
+            119,
+            562,
+            2,
+            137,
+            119
+          ],
+          [
+            570,
+            119,
+            566,
+            2,
+            138,
+            119
+          ],
+          [
+            574,
+            119,
+            570,
+            2,
+            139,
+            119
+          ],
+          [
+            578,
+            119,
+            574,
+            2,
+            140,
+            119
+          ],
+          [
+            578,
+            119,
+            574,
+            1,
+            141,
+            119
+          ],
+          [
+            582,
+            119,
+            578,
+            1,
+            142,
+            119
+          ]
+        ]
+      },
+      {
+        "refresh_h": 536,
+        "final_h": 186,
+        "counter_calls": 186,
+        "distinct_tick_clocks": 186,
+        "tick_ledger_sha256": "b9ffa1db641cb717e3bd6d36a4e2066f0682b99e6a69de7efd641f51bfbc9f81",
+        "at_event": [
+          [
+            536,
+            119,
+            534,
+            1,
+            131,
+            119
+          ],
+          [
+            540,
+            119,
+            538,
+            2,
+            132,
+            119
+          ],
+          [
+            544,
+            119,
+            542,
+            2,
+            133,
+            119
+          ],
+          [
+            548,
+            119,
+            546,
+            2,
+            134,
+            119
+          ],
+          [
+            552,
+            119,
+            550,
+            2,
+            135,
+            119
+          ],
+          [
+            556,
+            119,
+            554,
+            2,
+            136,
+            119
+          ],
+          [
+            560,
+            119,
+            558,
+            2,
+            137,
+            119
+          ],
+          [
+            564,
+            119,
+            562,
+            2,
+            138,
+            119
+          ],
+          [
+            568,
+            119,
+            566,
+            2,
+            139,
+            119
+          ],
+          [
+            572,
+            119,
+            570,
+            2,
+            140,
+            119
+          ],
+          [
+            576,
+            119,
+            574,
+            2,
+            141,
+            119
+          ],
+          [
+            580,
+            119,
+            578,
+            1,
+            142,
+            119
+          ]
+        ]
+      },
+      {
+        "refresh_h": 538,
+        "final_h": 186,
+        "counter_calls": 186,
+        "distinct_tick_clocks": 185,
+        "tick_ledger_sha256": "3fb932b214c89f5078d21ab242fe1e46024a5320d1635cb969b625387669866b",
+        "at_event": [
+          [
+            534,
+            119,
+            534,
+            1,
+            131,
+            119
+          ],
+          [
+            542,
+            119,
+            542,
+            2,
+            132,
+            119
+          ],
+          [
+            546,
+            119,
+            546,
+            2,
+            133,
+            119
+          ],
+          [
+            550,
+            119,
+            550,
+            2,
+            134,
+            119
+          ],
+          [
+            554,
+            119,
+            554,
+            2,
+            135,
+            119
+          ],
+          [
+            558,
+            119,
+            558,
+            2,
+            136,
+            119
+          ],
+          [
+            562,
+            119,
+            562,
+            2,
+            137,
+            119
+          ],
+          [
+            566,
+            119,
+            566,
+            2,
+            138,
+            119
+          ],
+          [
+            570,
+            119,
+            570,
+            2,
+            139,
+            119
+          ],
+          [
+            574,
+            119,
+            574,
+            2,
+            140,
+            119
+          ],
+          [
+            578,
+            119,
+            578,
+            2,
+            141,
+            119
+          ],
+          [
+            578,
+            119,
+            578,
+            1,
+            142,
+            119
+          ],
+          [
+            582,
+            119,
+            582,
+            1,
+            143,
+            119
+          ]
+        ]
+      }
+    ],
+    "horizontal_match_near_refresh": {
+      "line_model": "source-1364-pre-VBlank",
+      "scripted_adversarial_callbacks": false,
+      "ordinary_callback_hypothesis_applies": true,
+      "clock": 578,
+      "line": 119,
+      "hclock": 578,
+      "counter_h": 142,
+      "counter_v": 119,
+      "exec_calls": 22,
+      "max_exec_depth": 2,
+      "irq_counter_calls": 11,
+      "distinct_tick_clocks": 10,
+      "tick_ledger_sha256": "043680e79bb02d11e53e99211af902c62c10c0fe754ed2fc334b525f997c0c60",
+      "changes": [
+        {
+          "clock": 574,
+          "offset": 40,
+          "line": 119,
+          "hclock": 574,
+          "field": "need_irq",
+          "before": 0,
+          "after": 2
+        },
+        {
+          "clock": 574,
+          "offset": 40,
+          "line": 119,
+          "hclock": 574,
+          "field": "irq_level",
+          "before": false,
+          "after": true
+        },
+        {
+          "clock": 578,
+          "offset": 44,
+          "line": 119,
+          "hclock": 578,
+          "field": "need_irq",
+          "before": 2,
+          "after": 1
+        },
+        {
+          "clock": 578,
+          "offset": 44,
+          "line": 119,
+          "hclock": 578,
+          "field": "irq_flag",
+          "before": false,
+          "after": true
+        },
+        {
+          "clock": 578,
+          "offset": 44,
+          "line": 119,
+          "hclock": 578,
+          "field": "irq_level",
+          "before": true,
+          "after": false
+        },
+        {
+          "clock": 578,
+          "offset": 44,
+          "line": 119,
+          "hclock": 578,
+          "field": "need_irq",
+          "before": 1,
+          "after": 0
+        },
+        {
+          "clock": 578,
+          "offset": 44,
+          "line": 119,
+          "hclock": 578,
+          "field": "ppu_irq_source",
+          "before": false,
+          "after": true
+        }
+      ],
+      "hdma_request_pending": false,
+      "hdma_service_or_bus_effects_simulated": false,
+      "callback_premises_authenticated": false,
+      "cpu_acceptance_clock": null,
+      "handler_entry_clock": null,
+      "game_request_deadline_certified": false,
+      "helper_admitted": false
+    },
+    "unclosed_line_callback_counterexample": {
+      "line_model": "source-1364-pre-VBlank",
+      "scripted_adversarial_callbacks": true,
+      "ordinary_callback_hypothesis_applies": false,
+      "clock": 2155142054,
+      "line": 165,
+      "hclock": 14,
+      "counter_h": 1,
+      "counter_v": 211,
+      "exec_calls": 31002,
+      "max_exec_depth": 2,
+      "irq_counter_calls": 15547,
+      "distinct_tick_clocks": 15456,
+      "tick_ledger_sha256": "849a95d60153cbe07d87bbb4ac2c538f590857692b8905a191c6bd711e116973",
+      "changes": [
+        {
+          "clock": 2155142046,
+          "offset": 61996,
+          "line": 165,
+          "hclock": 6,
+          "field": "need_irq",
+          "before": 0,
+          "after": 2
+        },
+        {
+          "clock": 2155142046,
+          "offset": 61996,
+          "line": 165,
+          "hclock": 6,
+          "field": "irq_level",
+          "before": false,
+          "after": true
+        },
+        {
+          "clock": 2155142050,
+          "offset": 62000,
+          "line": 165,
+          "hclock": 10,
+          "field": "need_irq",
+          "before": 2,
+          "after": 1
+        },
+        {
+          "clock": 2155142050,
+          "offset": 62000,
+          "line": 165,
+          "hclock": 10,
+          "field": "irq_flag",
+          "before": false,
+          "after": true
+        },
+        {
+          "clock": 2155142054,
+          "offset": 62004,
+          "line": 165,
+          "hclock": 14,
+          "field": "need_irq",
+          "before": 1,
+          "after": 0
+        },
+        {
+          "clock": 2155142054,
+          "offset": 62004,
+          "line": 165,
+          "hclock": 14,
+          "field": "ppu_irq_source",
+          "before": false,
+          "after": true
+        }
+      ],
+      "hdma_request_pending": true,
+      "hdma_service_or_bus_effects_simulated": false,
+      "callback_premises_authenticated": false,
+      "cpu_acceptance_clock": null,
+      "handler_entry_clock": null,
+      "game_request_deadline_certified": false,
+      "helper_admitted": false
+    },
+    "unclosed_h10_callback_counterexample": {
+      "line_model": "source-1364-pre-VBlank",
+      "scripted_adversarial_callbacks": true,
+      "ordinary_callback_hypothesis_applies": false,
+      "clock": 2155204794,
+      "line": 211,
+      "hclock": 10,
+      "counter_h": 0,
+      "counter_v": 211,
+      "exec_calls": 62372,
+      "max_exec_depth": 2,
+      "irq_counter_calls": 31187,
+      "distinct_tick_clocks": 31095,
+      "tick_ledger_sha256": "c60811aac0fed2b878629676ac16019d1ed640e9e69f3cdcc9c4a89af41a795f",
+      "changes": [
+        {
+          "clock": 2155204790,
+          "offset": 124740,
+          "line": 211,
+          "hclock": 6,
+          "field": "need_irq",
+          "before": 0,
+          "after": 2
+        },
+        {
+          "clock": 2155204790,
+          "offset": 124740,
+          "line": 211,
+          "hclock": 6,
+          "field": "irq_level",
+          "before": false,
+          "after": true
+        },
+        {
+          "clock": 2155204794,
+          "offset": 124744,
+          "line": 211,
+          "hclock": 10,
+          "field": "need_irq",
+          "before": 2,
+          "after": 1
+        },
+        {
+          "clock": 2155204794,
+          "offset": 124744,
+          "line": 211,
+          "hclock": 10,
+          "field": "irq_flag",
+          "before": false,
+          "after": true
+        },
+        {
+          "clock": 2155204794,
+          "offset": 124744,
+          "line": 211,
+          "hclock": 10,
+          "field": "need_irq",
+          "before": 1,
+          "after": 0
+        },
+        {
+          "clock": 2155204794,
+          "offset": 124744,
+          "line": 211,
+          "hclock": 10,
+          "field": "ppu_irq_source",
+          "before": false,
+          "after": true
+        }
+      ],
+      "hdma_request_pending": true,
+      "hdma_service_or_bus_effects_simulated": false,
+      "callback_premises_authenticated": false,
+      "cpu_acceptance_clock": null,
+      "handler_entry_clock": null,
+      "game_request_deadline_certified": false,
+      "helper_admitted": false
+    },
+    "line_callback_is_observed_native_behavior": false
+  },
+  "pending_census": {
+    "cases": 16384,
+    "ordered_projection_sha256": "deba67ed97411b21726560b14b6da5f0422fd51ebefd9a4477491a5342d25f75",
+    "scope": "all uint8 pending x flag/source/register-enables/cached-enable/level booleans at fixed H14 with unequal timer/counter values, including vacuous matches in incoherent enable-cache states; not all reachable emulator states"
+  },
+  "cpu_gate_examples": {
+    "source_before_sample": "none",
+    "sampled": "irq",
+    "sample_then_sei": "irq",
+    "sample_then_source_clear": "irq",
+    "dma_lock": "none",
+    "nmi_priority": "nmi",
+    "handler_entry_proved": false,
+    "selection_master_clock": null
+  },
+  "native_pair_reexecuted": false,
+  "raw_game_data_emitted": false,
+  "game_deadline_certified": false,
+  "cpu_acceptance_deadline_certified": false,
+  "handler_entry_proved": false,
+  "production_approval": false,
+  "open_gates": [
+    "DMA/HDMA source-read and reverse-write isolation",
+    "debugger/PPU/render/control/SPC/coprocessor callback closure",
+    "cache/bootstrap and runtime fixed-register/reset premises",
+    "wrapper cost, physical stack ownership and game interrupt policy",
+    "pre-effect refusal lifecycle and later resolver completion"
+  ],
+  "reproduce": [
+    "python -B -m unittest discover -s tests -p \"test*schala_irq*v1.py\"",
+    "python -B tools/audit_schala_irq_request_transition_v1.py --output private/test_runs/UNIQUE_irq_request_v1.json",
+    "Compare exact output bytes to references/schala_irq_request_transition_v1.json; upstream sources are recoverable by exact URLs."
+  ]
+}

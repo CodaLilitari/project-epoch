@@ -1,0 +1,57 @@
+{
+  "schema": "project-epoch-external-review-irq-transition-2026-10-03",
+  "evidence_level": "review-receipt-and-independent-disposition",
+  "reviews": [
+    {
+      "name": "grok_transition_review",
+      "route": "Grok Build subscription CLI",
+      "session_id": "01a10469-782e-79c1-bd85-71071fc07e34",
+      "request_id": "70b8977a-6e3b-46c1-82f7-ac574c0e14df",
+      "requested_model": "grok-4.7",
+      "requested_effort": "xhigh",
+      "returned_model_labels": [
+        "grok-4.7-build"
+      ],
+      "completed": true,
+      "request_sha256": "c76d7f26e94ae5c5f0c96f9a50d8a05b221083c1343585f8aa1a43ec97e40a41",
+      "answer_sha256": "afdf1c354838d636409ff17b51097ff9bee37269e7626c98ed0659b83942227c",
+      "startup_helper_sha256": "4f2386261328067f64ab7f3a40f63016167cce8209012b8d3d538b3dcda20527",
+      "official_weekly_used_percent": 18,
+      "paid_extra_usage": "disabled per existing explicit user confirmation",
+      "same_session_verified": true
+    },
+    {
+      "name": "grok_transition_closure",
+      "route": "Grok Build subscription CLI",
+      "session_id": "01a10469-782e-79c1-bd85-71071fc07e34",
+      "request_id": "2998e33c-a01f-4466-b56b-a1e18c29c470",
+      "requested_model": "grok-4.7",
+      "requested_effort": "xhigh",
+      "returned_model_labels": [
+        "grok-4.7-build"
+      ],
+      "completed": true,
+      "request_sha256": "47fdab3bee353ba4c942f8f060ea745352c30510aa3f82bea3aab91885a5961f",
+      "answer_sha256": "314a5b3b64ee23e128827d2cebeaaddffe6d65d1530288a31dd4bae07b198b0a",
+      "startup_helper_sha256": "4f2386261328067f64ab7f3a40f63016167cce8209012b8d3d538b3dcda20527",
+      "official_weekly_used_percent": 18,
+      "paid_extra_usage": "disabled per existing explicit user confirmation",
+      "same_session_verified": true
+    }
+  ],
+  "persistence": {
+    "session_id": "01a10469-782e-79c1-bd85-71071fc07e34",
+    "message_count": 8,
+    "all_eight_messages_equal_saved_packets_after_newline_normalization": true,
+    "export_size": 83232,
+    "export_sha256": "c6c79c8b6d90c7bc2e26f54c3a5cc267ce0d486a2daa63187877dea932cd68c9"
+  },
+  "disposition": "docs/external_review_irq_transition_2026_10_03.md",
+  "native_peer_final_sha256": "846a54df9c490cee263bb86cf1b351683262562915eaecb148e3c182bd1686a7",
+  "native_peer_earlier_generation_sha256": "b56a52d830ca728119d4c79cdd289f7632e285e5c51bc53e3f530d61fbb9af0f",
+  "courtesy_followup_delivered": true,
+  "reviewer_test_execution_claimed": false,
+  "game_callback_closure_proved": false,
+  "production_approval": false,
+  "reproduce": "Verify private sent/returned/export bytes by listed hashes; run the original transition auditor for independent host-model results. Review output is advice, not a certificate."
+}

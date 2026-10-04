@@ -1698,3 +1698,80 @@ metadata only, so it does not repeat the 178 tests or native runs without
 source drift. The fresh project chat is authorized by Andrei and needed for
 new subagent capacity. Production hooks, allocations and high selectors remain
 unapproved, and no game input or raw trace enters the publication allowlist.
+
+## 2026-10-03 - IRQ request transitions, recursive events and CPU gates
+
+The fresh project chat resumed from verified local/GitHub checkpoint 3360a486
+and set a new bounded goal. The [separate IRQ request-transition v1 packet](schala_irq_request_transition_v1.md)
+now completes that source-model checkpoint. The eighth playable character
+remains unfinished; BA-NATIVE-INTEGRATION-DESIGN stays open.
+
+The original register core preserves consume-pending -> flag/source -> H/V
+update -> comparison/rearm order, all uint8 pending values, uint16 counters,
+the H6 horizontal exception, timer writes and TIMEUP acknowledgment. The
+separate Exec projection reproduces the real 40-clock DRAM recursion and
+current-H outer continuation. HDMA begin requests work; transfer bus effects
+remain excluded. CPU sampling, post-op acceptance selection and handler entry
+are kept separate, including stale samples across SEI/source clear, DMA lock,
+NMI priority, WAI and the STP transition versus later stopped calls.
+
+Fourteen exact-revision Mesen files were freshly fetched and checked against
+SHA-256, Git blobs and earlier local identities where available. The collector
+pins the full accepted phase-v3 reference and exact matching resolver seeds.
+The source manifest is references/mesen_irq_transition_sources_v1.json;
+the final 35,737-byte result is references/schala_irq_request_transition_v1.json,
+SHA-256 846a54df9c490cee263bb86cf1b351683262562915eaecb148e3c182bd1686a7.
+Independent root and native-peer CLI executions produce identical complete
+bytes. The earlier peer generation is preserved separately, not relabeled.
+
+All 81 new focused tests pass, including 16,384 pending-state equivalence
+combinations and 65,536 CPU status/source pairs. Independent peer review also
+executed 12,000 hostile core comparisons against a separate imperative source
+interpretation without mismatch. Its four Exec findings were corrected with
+regressions: invalid starting event phases, recursive duration overruns,
+continuation after refusal and uint64 wrap. The 178 existing phase tests pass.
+No emulator matrix was rerun; accepted native traces, source archives, rejected
+pilots and all older evidence packets remain unchanged.
+
+The exact-seed DRAM-only host projection produces match/flag/source offsets
+124740/124744/124748 under explicit callback, register, reset and raster
+hypotheses. An abstract all-1360 comparison produces 124372/124376/124380.
+Those figures are conditional host results, not observed or certified game
+request times. All game, CPU deadline, handler-entry and production flags
+remain false/null. The unused auto-joy field and derived enable cache are
+labeled as model inputs/premises, not invented observations.
+
+Two deeper counterexamples matter. Repeated synthetic six-clock line-boundary
+reentry duplicates H6 and reaches source62004 at PPUline165. Grok's sharper
+H10 case was independently executed and added: a ten-clock callback on the
+arming line makes flag and source share offset124744. Both scripts explicitly
+invalidate the ordinary callback hypothesis; neither is claimed actual native
+behavior. Reverse DMA/HDMA can also write IRQ control registers, and DMA reads
+can acknowledge TIMEUP. CPU-store absence alone cannot close those gates.
+
+Grok reviewed the source packet and received a verification/thank-you follow-up
+in the existing project session 01a10469-782e-79c1-bd85-71071fc07e34. The
+unchanged current catalog retained grok-4.7/xhigh, and official SuperGrok usage
+was freshly observed at 18% before each request. Paid extra usage remains off
+per Andrei's explicit confirmation. The final official export matches all
+eight saved messages; it is 83,232 bytes, SHA-256
+c6c79c8b6d90c7bc2e26f54c3a5cc267ce0d486a2daa63187877dea932cd68c9.
+The [review disposition](external_review_irq_transition_2026_10_03.md) preserves
+its whole-program closure objection as an unresolved antecedent. Its final
+reply had no blocking objection to the conditional publication, while stating
+it had not run tests or inspected the new exact-seed entry point. Final-source
+inspection and reproduction came from the coordinator and native peer. No
+reviewer remains running; the earlier Claude timeout was not retried.
+
+Next: a bounded DMA/HDMA bus-effect and callback closure design that separates
+already observed fields from genuinely missing evidence before any new native
+run. Do not compare the IRQ offsets with the old helper envelope as though
+their premises were jointly established. Wrapper cost, physical game stack,
+interrupt policy and pre-effect refusal versus later completion remain open.
+All production hooks, allocations and high selectors remain unapproved.
+
+Publication is limited to the exact allowlisted original source, tests, hash
+metadata and documentation. Game inputs and raw traces stay ignored/private;
+GitLab and portfolio writes remain outside this checkpoint. The exact GitHub
+commit/branch and downloaded-file comparison receipt will be retained at
+private/test_runs/irq_request_transition_v1_publication_20261003.json.

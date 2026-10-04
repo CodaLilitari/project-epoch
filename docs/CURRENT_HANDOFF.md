@@ -91,17 +91,29 @@ or a newly identified boundary.
    Hidden cache values remain unobserved and a valid-source-state premise is
    explicit. All 178 phase tests pass. Read the external review disposition
    before treating file consistency as authenticated execution evidence.
-8. Next: build a separately versioned, source-pinned IRQ request-transition
-   model, including recursive Exec/event work, pending-count/flag combinations,
-   fixed-enable/timer premises and reset refusal. Distinguish request from CPU
-   acceptance and handler entry. The private drafts and their hash inventory
-   are in private/reviews/20261003b/next_model_handoff.json; they are unaccepted
-   experiments, not reusable certificates. The Grok follow-up and independent
-   disposition explain the omitted-refresh/repeated-update counterexample.
-   Prove all timing/memory premises before considering helper admission.
-   HDMA source-read/rendering isolation, wrapper
-   cost, physical stack ownership and pre-effect versus later-resolver lifecycle
-   remain separate obligations. No phase rule or game insertion is approved.
+8. The separate [IRQ request-transition v1 packet](schala_irq_request_transition_v1.md)
+   is accepted at source-conditional-host-model: 81 tests and identical independent
+   root/peer metadata, SHA-256
+   `846a54df9c490cee263bb86cf1b351683262562915eaecb148e3c182bd1686a7`.
+   It pins fourteen Mesen files and the accepted v3 reference, models recursive
+   DRAM Exec order, all uint8 pending counts, explicit register operations and
+   separate CPU sampling/selection gates. The existing 178 phase tests pass;
+   no native matrix was rerun. Exact observed-seed hypotheses give host-model
+   offsets 124740/124744/124748; the abstract 1360-clock floor gives
+   124372/124376/124380. Neither is a certified game deadline. Unknown
+   callback/register/reset premises refuse. Preserve the older private drafts
+   and earlier peer generation rather than relabeling them accepted.
+9. Next: design a bounded source/observation closure packet for DMA/HDMA bus
+   effects and omitted renderer/control/SPC/debugger/coprocessor callbacks.
+   Reverse DMA can write IRQ enables/timers; DMA source reads can acknowledge
+   TIMEUP. Unknown reentry can duplicate H6 or H10 and defeat a generic
+   four-clock spacing assumption. Use the current phase evidence to separate
+   already-known inputs from genuinely missing observations before proposing
+   another native run. The [new review disposition](external_review_irq_transition_2026_10_03.md)
+   records the verified H10 counterexample and final review limits.
+   HDMA source-read/rendering isolation, wrapper cost, physical stack ownership
+   and pre-effect versus later-resolver lifecycle remain separate obligations.
+   No phase rule, high-selector binding or game insertion is approved.
 
 The [October research refresh](online_research_2026_10_03.md) found 22 new
 randomizer commits, including a useful Beast Toss counter-handshake fix, and
@@ -111,7 +123,7 @@ release was verified. The two tracked disassemblies and main mapping/editor
 tools are unchanged. Chrono Compendium refresh failed; no old forum timestamp
 is claimed as freshly verified.
 
-External review state: Antigravity returned two bounded reviews, independently
+Earlier review state: Antigravity returned two bounded reviews, independently
 dispositioned in [the review note](external_review_2026_10_03.md). Claude Code
 job `8cf82ea83be948d89d7af51a80e106fe` timed out after 1,800 seconds with
 delivery unknown; do not blindly retry. Grok startup isolation is solved with
@@ -123,8 +135,17 @@ all four saved messages. Session: 01a10469-782e-79c1-bd85-71071fc07e34.
 Receipts are in private/reviews/20261003b/grok_irq_review_live/ and
 grok_irq_followup/. Two initial claims were corrected, not adopted by
 consensus. See the full disposition before reusing its advice. Refresh usage
-before future dispatch; no review remains running. Native subagents hit this
-old chat's thread limit. A fresh project chat is the intended continuation.
+before future dispatch. The old chat reached its native subagent limit.
+
+The fresh continuation has completed the IRQ transition checkpoint. Three
+native collaborators and root independently checked the implementation; the
+final peer output equals the root reference byte for byte. Two further Grok
+messages in the same project session reviewed the model and received our
+verified H10 correction/thanks. Fresh usage was 18% before each send, model
+options and helper source were unchanged, and the final official export now
+matches all eight saved messages. See private/reviews/20261003c/ and the new
+review disposition. No reviewer remains running. The next source/observation
+closure design is step 9 above; do not restart the completed transition model.
 
 All ROMs, SRAMs, emulator states, raw traces and extracted data stay under
 ignored `private/`. Source-controlled outputs contain original tools, tests,
@@ -138,3 +159,6 @@ receipt is private/test_runs/counters_checkpoint_20261003_publication.json.
 At the October 3 final host check, GitLab main remains `a0b17f6`. The
 synchronization question remains unanswered. The portfolio was refreshed,
 still accurately described the unfinished project, and was left unchanged.
+The newer IRQ transition publication receipt is retained separately at
+private/test_runs/irq_request_transition_v1_publication_20261003.json; use its
+exact commit and downloaded-byte comparisons for this checkpoint's host state.
