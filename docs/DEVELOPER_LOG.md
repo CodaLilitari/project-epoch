@@ -1640,3 +1640,61 @@ traces remain identical to the earlier pair. The acceptance reference now
 pins that final source. Runs 1/2 and all pilots remain unchanged. All 178
 phase tests passed again. The committed developer-log prefix is byte-identical
 to its previous revision; only this new entry and follow-up are appended.
+
+## 2026-10-03 - completed Grok review and fresh-chat handoff
+
+The preceding research/v3 checkpoint was published as GitHub commit
+`7ac6499ae484a6598c1727659f18979aaf838a74`. Authenticated commit and branch
+reads and the remote main ref agreed. All 16 changed files were downloaded at
+that exact commit and matched against the local committed bytes. The receipt
+is private/test_runs/counters_checkpoint_20261003_publication.json. GitLab
+main still resolved to `a0b17f6227ed6a54cdfb7c63e726feb94d26b89d`; no GitLab
+write occurred. The portfolio's Project Epoch case still accurately states
+that this is unfinished research and no finished eighth-character release is
+available. It was not edited.
+
+Grok completed its initial bounded source review and a same-session follow-up
+in `01a10469-782e-79c1-bd85-71071fc07e34`. Before the second request the
+official usage panel showed 18% weekly use; Andrei's explicit confirmation
+that paid extra usage is disabled remained in force. The follow-up thanked
+the reviewer, supplied omitted source bodies and challenged two errors.
+Grok acknowledged both: count one needs an already-set flag to assert the
+CPU source, and adding four clocks can invalidate a not-before bound. The
+initial answer's opposite statements are preserved in the private transcript
+and explicitly rejected in the [review disposition](external_review_2026_10_03.md).
+These are review corrections, not newly discovered ROM mapping contradictions.
+
+The useful nested-Exec observation was checked independently against pinned
+Mesen source and a private draft: refresh at H=538 can omit that counter
+update and duplicate H=578, leaving the final H=754 counter at 186. The same
+end value does not prove a uniform four-clock schedule. The follow-up gives
+the same compensating-update explanation. H=538 is a conditional example;
+neither the draft nor the review observed that refresh position in the native
+trace. Callback closure, fixed timer/enable premises, reset behavior and CPU
+acceptance remain separate proof obligations. The candidate 124380-clock
+source-assertion lower bound remains unaccepted and must not admit a helper.
+
+The official export succeeded and contains exactly User/Assistant/User/Assistant;
+all four messages match the saved packets and results after newline
+normalization. Export: 37,717 bytes, SHA-256
+`a0031233837190895e68daab6231d0e93bf938293f49273c7154ffcd8222d9e5`.
+The follow-up result's provider UTF-8/LF digest and its CRLF file digest are
+recorded separately; they are not conflicting execution identities. See
+private/reviews/20261003b/grok_irq_followup/persistence_verification.json.
+Updated public review metadata is 2,764 bytes, SHA-256
+`c9bdcbf9e34b97d96c4c5866b9bdf955181f4c1b69a11efc4154988f89686f27`.
+The earlier log entry and its 1,751-byte metadata hash describe the previous
+published state and remain unchanged. Claude Code still has no returned
+answer; its 1,800-second timeout is delivery unknown, not approval or failure
+of the technical proposal. No automatic retry was performed.
+
+The next bounded goal is a separately versioned source-pinned IRQ transition
+model, including nested event execution and adversarial pending-count/flag
+states. Draft paths, hashes and reproduction commands are recorded in
+private/reviews/20261003b/next_model_handoff.json. They are exploration, not
+accepted prerequisites. The accepted v3 tools/reference and all earlier
+proofs remain byte-identical; this follow-up changes documentation and review
+metadata only, so it does not repeat the 178 tests or native runs without
+source drift. The fresh project chat is authorized by Andrei and needed for
+new subagent capacity. Production hooks, allocations and high selectors remain
+unapproved, and no game input or raw trace enters the publication allowlist.

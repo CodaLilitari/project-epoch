@@ -91,8 +91,15 @@ or a newly identified boundary.
    Hidden cache values remain unobserved and a valid-source-state premise is
    explicit. All 178 phase tests pass. Read the external review disposition
    before treating file consistency as authenticated execution evidence.
-8. Next: prove the actual IRQ request boundary and all timing/memory premises before
-   considering helper admission. HDMA source-read/rendering isolation, wrapper
+8. Next: build a separately versioned, source-pinned IRQ request-transition
+   model, including recursive Exec/event work, pending-count/flag combinations,
+   fixed-enable/timer premises and reset refusal. Distinguish request from CPU
+   acceptance and handler entry. The private drafts and their hash inventory
+   are in private/reviews/20261003b/next_model_handoff.json; they are unaccepted
+   experiments, not reusable certificates. The Grok follow-up and independent
+   disposition explain the omitted-refresh/repeated-update counterexample.
+   Prove all timing/memory premises before considering helper admission.
+   HDMA source-read/rendering isolation, wrapper
    cost, physical stack ownership and pre-effect versus later-resolver lifecycle
    remain separate obligations. No phase rule or game insertion is approved.
 
@@ -109,15 +116,25 @@ dispositioned in [the review note](external_review_2026_10_03.md). Claude Code
 job `8cf82ea83be948d89d7af51a80e106fe` timed out after 1,800 seconds with
 delivery unknown; do not blindly retry. Grok startup isolation is solved with
 a per-child empty USERPROFILE while preserving HOME and the dedicated profile.
-Its model catalog and SuperGrok 17% weekly usage were observed. Andrei then
-confirmed paid extra usage is disabled; one isolated Grok 4.7/xhigh IRQ-timing
-review is running under private/reviews/20261003b/grok_irq_review_live/. Native subagents hit this
+Its model catalog and SuperGrok 17%, then 18%, weekly usage were observed.
+Andrei confirmed paid extra usage is disabled. Grok returned the IRQ-timing
+review and a same-session follow-up; the official export was checked against
+all four saved messages. Session: 01a10469-782e-79c1-bd85-71071fc07e34.
+Receipts are in private/reviews/20261003b/grok_irq_review_live/ and
+grok_irq_followup/. Two initial claims were corrected, not adopted by
+consensus. See the full disposition before reusing its advice. Refresh usage
+before future dispatch; no review remains running. Native subagents hit this
 old chat's thread limit. A fresh project chat is the intended continuation.
 
 All ROMs, SRAMs, emulator states, raw traces and extracted data stay under
 ignored `private/`. Source-controlled outputs contain original tools, tests,
 hashes and bounded analysis. No production selector or game hook is installed.
 
-At the October 3 final host check, GitLab main remains `a0b17f6`; GitHub
-contains the newer accepted checkpoints. The synchronization question remains
-unanswered. The portfolio is accurate and was left unchanged.
+The v3/research checkpoint is GitHub commit
+`7ac6499ae484a6598c1727659f18979aaf838a74`. Authenticated commit and branch
+reads agree with the remote, and all 16 changed files were downloaded at that
+exact commit and matched to committed local bytes. The private publication
+receipt is private/test_runs/counters_checkpoint_20261003_publication.json.
+At the October 3 final host check, GitLab main remains `a0b17f6`. The
+synchronization question remains unanswered. The portfolio was refreshed,
+still accurately described the unfinished project, and was left unchanged.

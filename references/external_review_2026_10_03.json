@@ -1,6 +1,6 @@
 {
   "schema": "epoch-external-review-disposition-20261003",
-  "recorded_utc": "2026-10-04T00:51:11.541038+00:00",
+  "recorded_utc": "2026-10-04T01:21:46.875893+00:00",
   "reviews": [
     {
       "provider": "antigravity",
@@ -25,13 +25,24 @@
     },
     {
       "provider": "grok",
-      "state": "running",
-      "usage_observed": "SuperGrok weekly17% used; saved4.7/xhigh available",
+      "state": "returned-with-same-session-followup",
+      "usage_observed": "SuperGrok weekly17% then18% used; saved4.7/xhigh available",
       "paid_extra_status": "disabled according to explicit current user confirmation",
       "startup_isolation": "empty per-child USERPROFILE only; existing HOME and GROK_HOME preserved",
       "packet_sha256": "46b93615f46f66176ae87b7678f183db05fbfde926e44f39828062a7396bcaf9",
       "packet_size": 19400,
-      "helper_output": "private/reviews/20261003b/grok_irq_review_live/"
+      "helper_output": "private/reviews/20261003b/grok_irq_review_live/",
+      "session_id": "01a10469-782e-79c1-bd85-71071fc07e34",
+      "answer_file_sha256": "e551f691bb26721774c4090d39308de35b3823788096f07e458e57d9c01b2cf7",
+      "followup_output": "private/reviews/20261003b/grok_irq_followup/",
+      "followup_request_sha256": "aab0c4a5c04bbb0750cff6d30dabe8ed37eb106189b692243c34b699af83ba13",
+      "followup_provider_text_utf8_lf_sha256": "cdde8c82bcc09c63ca1fd832405bbc731f03744f1e1c80a1846fd8d1600b620e",
+      "followup_answer_file_crlf_sha256": "21522f92078a1724a6602d327eb9efec9467e9e6334b0b4043e33c364e2fac88",
+      "session_export_sha256": "a0031233837190895e68daab6231d0e93bf938293f49273c7154ffcd8222d9e5",
+      "session_export_size": 37717,
+      "session_export_four_messages_verified": true,
+      "backend_independently_attested": false,
+      "disposition": "Two initial counterexample/bound-direction errors corrected in follow-up; nested refresh ordering independently checked; candidate timing model remains unaccepted"
     }
   ],
   "scope": "Project-only text/source packets; no ROM/save/state/rawtrace inputs",
