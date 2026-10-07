@@ -1842,3 +1842,276 @@ Private game inputs and upstream source downloads stay ignored. GitLab and
 portfolio remain outside this checkpoint. The exact GitHub commit/branch and
 downloaded-byte comparisons are recorded separately at
 private/test_runs/dma_irq_closure_v1_publication_20261003.json.
+
+## 2026-10-07 - Resume toward a bounded playable eighth identity
+
+Andrei requested a new goal and explicitly authorized focused AI delegation,
+including Claude Code through existing subscriptions. The active goal is a
+genuine eighth identity with independent state, field behavior, an ordinary
+battle action and a save/cold-load round trip, preserving all seven original
+characters. SNES remains the primary route; recompilation is a fallback.
+The ordinary-Attack proposal reuses canonical low-action mechanics, so the
+unfinished high-Tech package helper is not on this prototype's critical path.
+No playable eighth character is claimed at this checkpoint.
+
+The native save-layout v1 diagnostic passes two identical saves and two
+identical loads. It changes only two guarded loop-bound operand bytes and
+uses explicitly recorded debugger preparation. Native transfers cover 2,100
+bytes across ten regions while protecting an opaque candidate-record marker;
+the save reads all 80 relocated compatibility bytes and the load replaces all
+80 distinct poison bytes. Seven original record positions remain unchanged.
+The save's authoritative pre-RTL SRAM snapshot passes clean-ROM cold-boot
+validation; subsequent resumed load execution is a separate observation.
+An installed wrapper, real PC07 persistence, sidecar and global WRAM ownership
+remain open. The accepted metadata-only chain and offline reproducer are
+`references/schala_save_layout_native_chain_v1.json` and
+`tools/revalidate_save_layout_native_chain_v1.py`. The reference SHA256 is
+`7ee90c74c042b8b5fdcd60dd4b8475a4d7c548f70992b3641fda2dbdce38b0a4`.
+
+The bounded menu relocation uses seven guarded operand substitutions, then
+follows native load return, menu entry, the Tech screen and field return.
+Two controls and two relocated runs agree in their declared observations;
+all seven original records, roster and SRAM remain preserved. Root inspected
+the principal screenshots. One early repeated PNG differs in the save-point
+orb's animation frame despite identical native trace and memory snapshots.
+The pair reference is `references/schala_compat_menu_pair_v1.json`, SHA256
+`b3e57bb4c906a6fa56aac6f5be2617bb003cc7bb1d6433f56b3d4cdfdba6a182`.
+Reproduce offline with `python tools/revalidate_compat_menu_pair_v1.py`.
+
+A narrow additive v2 observation resolved the two residual Y bytes without
+reopening the prior matrix. Each mode records 14,196 aligned accesses to four
+physical bytes; exactly 16 values differ, attributable to coroutine PHY/PLY
+and the existing field backup/restore. The decompressor writes identical
+values before reading its overlapping buffer. No captured screen-X consumer
+reads the differing values. Both complete original observation projections
+match both accepted v1 runs of their mode. The selected question is closed;
+this is not universal field-index safety. Root reproduced the independent
+receipt with `python -B private/research/compat_menu_v2_residue_review_20261007/reproduce.py --check private/research/compat_menu_v2_residue_review_20261007/receipt.json`.
+Its SHA256 is `f4e90a5091736762ab82159c8eeb4a62cc6e5d4f3289c01071adfd462f989fe8`.
+
+Claude Code completed two subscription-backed source reviews. Root and an
+independent local collaborator reconciled the consequential findings against
+source and trace data. The second reviewer received six files rather than
+all ten bundle dependencies and did not execute or hash them; no blanket
+approval is inferred. Its answer is retained privately, SHA256
+`85ef62a4780de6061388110d14f3a7f803ab632fb84de6abf2bad079a7700edd`.
+The additive `tools/audit_save_layout_native_review_v1.py` checks exact ordered
+physical stream equivalence and the observed native global metadata stores.
+Its seven tests include wrong-slot and same-value wrong-context refusals.
+Together with the native-layout, checkpoint, chain, menu and residue tests,
+82 focused tests have passed. Existing frozen packets remain unchanged.
+
+Andrei then explicitly emphasized avoiding repeated completed work and using
+community maps while allowing that they can be wrong. The current handoff now
+records reuse rules and concrete dependencies. In particular, do not redo
+the accepted all-event parser cross-check, the historical eighth-character
+mapping survey, or completed native helper/serializer/menu matrices without
+an identified new condition. The selected event0125 insertion inventory uses
+the existing parser; it does not invent event formats or object insertion.
+Community provenance includes Mauron's PC-before-NPC ordering and doubled
+object-index rule, plus Temporal Redux / Jets of Time's object insertion and
+call-renumbering implementation. Existing corrections apply to our claims
+as well as community claims; MAP-003 supersedes our overbroad criticism of
+base-stat order. Local confirmation is not a first-ever discovery claim.
+
+All game inputs, generated diagnostic images, SRAM, checkpoints, traces and
+review packets remain private. No commit, push or external publication was
+performed for this checkpoint. See CURRENT_HANDOFF.md for the exact next
+prototype step and any later additive results.
+
+The selected event0125 inventory then passed root's 15 focused checks and
+exact metadata reproduction. Its separately versioned in-memory transform
+passed 12 checks: a complete existing PC object's copied body now targets07,
+with the loader and thirteen identity comparisons adapted, while all original
+objects remain intact. Actual pointer/branch validation and inverse projection
+recover every original packet byte. The 2,553-byte result's SHA256 is
+`d81b7bfc4db23d95adc8a576ba2472e1cd005ab8e43cf997fda3e5e3da29a51d`;
+the metadata-only reference is `references/pc07_selected_event_transform_v1.json`,
+SHA256 `0bb253c1f296e5719b204052588f25254a045a3cc716d32127347b6e304cdd66`.
+Reproduce with `python -B tools/transform_pc07_selected_event_v1.py --rom <canonical-private-US-Rev0-ROM>`.
+These are construction results, not native PC07 behavior. Credit the existing
+community insertion algorithm and the already accepted decoder/topology work.
+
+One new clean-ROM field observation confirms the exact later staging boundary:
+scene entry atC00085, canonical packet/builtins and actual stored0111 atC05D36,
+then actualC00112. It reuses the accepted checkpoint and isolated launcher;
+four focused new-boundary checks pass. Trace SHA256 is
+`95a1528b0c2cad29984fa86c27f2337b7e77710c9b371b75418d4492925428e0`
+under `private/test_runs/mesen2/pc07_field_entry_v1_run1`. Seven records and
+SRAM remain unchanged. The short walk moves the leader and first follower;
+the watched third-follower coordinates do not change. No monitored scene-call
+site executes. Root inspected the idle/left images. Preserve this useful
+negative movement result and lengthen the upcoming PC07 diagnostic inputs;
+do not repeat the clean observation merely for a matching pair.
+
+The separate PC07 field v1 pilot stops at poll30 on a known compatibility
+consumer, rather than reaching movement. Preserve
+`private/test_runs/mesen2/pc07_field_probe_v1_run1`, source bundle
+`67ff816f41fa0a5f34d4c8a3c55224577398e3f58419373052e8727baaee810c`,
+trace SHA256
+`2208b2883d8354ee17e51ce5f635538faece9c644c6d0f35530fb27b74b08535`.
+Reproduction: `python -B tools/run_mesen_pc07_field_probe_v1.py --output <fresh-private-directory> --run-reviewed-bundle 67ff816f41fa0a5f34d4c8a3c55224577398e3f58419373052e8727baaee810c`.
+Evidence level remains rejected-pilot. Independent read-only review of the
+recorded prefix verifies the full staging diffs and 2,725 injection/readback
+pairs, native generic80 logical07/role2/object10 publication, and both actual
+graphics returns with identical nineteen donor ROM reads. The candidate uses
+one explicit debugger A-low substitution; no native graphics adapter exists.
+Native write event row10146 atC282E4 targets2857 with00 versus candidate+27=8F;
+the guard fails immediately, with no postfailure readback or movement snapshot.
+Root omitted the previously accepted compatibility operand relocations from
+this first probe. Correct by reusing that builder, not by relearning its map
+or weakening the record guard. Consumers execute beforeC00085, so compatibility
+must be prepared at the acceptedC2E65B point; identity publication stays later.
+V1 sources and failed output remain unchanged; the correction is separatev2.
+
+The corrected v2 run completes through poll400, exit63, 45,184 trace records.
+It reuses the unchanged guarded seven-operand compatibility builder, changes
+exactly14ROM operand bytes, and prepares the compatibility copy atC2E65B.
+Record/roster/joined preparation remains atC00085; event and graphics staging
+remain the previously reviewed v1 operations. Source bundle:
+`e5ff0b284a76a712c206933d492d83e295f6df86bd2b5250b28e27429e65afaa`.
+Reproduce with `python -B tools/run_mesen_pc07_field_probe_v2.py --output <fresh-private-directory> --run-reviewed-bundle e5ff0b284a76a712c206933d492d83e295f6df86bd2b5250b28e27429e65afaa`.
+The accepted-emission target hash is
+`34937f84d1b6905171226a800a065b07912b1a790bad846bc82d6520784eef79`;
+no production hook/allocation catalog changes. Recorded output lives at
+`private/test_runs/mesen2/pc07_field_probe_v2_run1`; trace SHA256
+`1ce216f8a903cfdedc0fc24643515fb3c11c2ed50be9cd6fdd1586c18724039a`.
+Host validation passes all three complete preparation diffs and2,725 explicit
+byte-write/readback pairs. All seven original records and exact input SRAM
+remain unchanged across ten snapshots. Candidate logical07 owns a distinct
+record withHP968 while donor00 retainsHP969. Third-follower screenX changes
+184/170/150/154 atpolls90/180/280/400. Root viewedpoll180/400 screenshots,
+which show Crono, Marle and a second Crono-looking candidate. This is new
+selected-prototype movement evidence, not discovery of the community format.
+Evidence level: emulator-assisted-runtime-observation, awaiting separate
+offline review. No native graphics adapter, ordinary Attack, menu support or
+PC07 persistence has been demonstrated. No identical repeat is needed merely
+to obtain a pair; preserve this progress and advance the existing Attack plan.
+
+The separate offline v2 review now passes. Root read its source and reproduced
+the metadata receipt byte-for-byte without an emulator launch or image emission:
+`python -B private/research/pc07_field_probe_v2_review_20261007/reproduce.py`.
+Receipt SHA256 is
+`328745a195b3d4c0bd9790545bda856c4db3d6b4b0b78e155894f7a9fb4a1e47`;
+reproducer SHA256 is
+`54b030fb5378f41462aa75f514926dc5bb74a1ae2709459569335da03b6ecf31`.
+Each of the three actors has 2,480 watched coordinate-byte stores after poll90;
+changed-store counts are 198/167/136 for IDs00/01/07. PC07 first changes at
+poll166, rows22831 (world X) and22837 (screen X). The native stores reconcile
+with all later coordinate snapshots; CPU coordinate-read callbacks were not
+collected. The known C282E4 writes now target2CC7/2CC8 atpolls0/30. No native
+record or SRAM writes are observed. The two early pre-render PNGs are empty;
+only the separately inspected later screenshots are visual evidence. Accepted
+scope is one verified emulator-assisted selected-field diagnostic, with all
+native-adapter, battle, menu and PC07 persistence limitations retained.
+
+### October 7: Epoch preservation and destination/battle source preparation
+
+Andrei explicitly required the Epoch vehicle to be preserved or deliberately
+relocated. The existing corrected character map already distinguishes naming
+selector07 and Epoch's six-byte name at7E2C4D..52 from a new playable identity.
+The plan preserves the vehicle in its existing contexts, adds independent PC
+name storage/resolvers, and forbids a global07 rewrite. The selected field run's
+ten WRAM snapshots retain identical Epoch-name bytes (SHA256
+`90612fe14f612921ea04f64ea7b4a17834ddad86b415f0b7e2728d75b4e522b1`)
+and unchanged SRAM; these snapshots do not prove boarding, travel or renaming.
+Those vehicle interactions are now explicit completion requirements in the
+current handoff. This is reuse and clarification of the existing map, not a
+newly discovered universal character-ID allocation.
+
+The separate event0126 in-memory transform is now independently reviewed and
+root-verified with all eleven focused tests passing against the canonical ROM.
+It preserves the original fourteen objects and introduces a separately copied
+playable object8 before the original NPC/battle object. Six copied identity
+literals and its loader are adapted; four original doubled object operands
+are relocated. Exact inverse projection preserves all original bytes, including
+all original function-pointer aliases and branches. The copied function4 audio
+mailbox effect remains explicit. No complete cutscene/victory proof is claimed.
+Result:1914bytes, SHA256
+`6999eb3bb0cc4f9b3db8d6d405a8aa4ebe94a0b590b5c8f01c531a31c3bd3bc5`.
+Source:`tools/transform_pc07_lavos_event_v1.py`; metadata-only reference:
+`references/pc07_lavos_event_transform_v1.json`. Reproduce with its recorded CLI
+or `CT_US_REV0_ROM` plus the eleven-test unittest command. No raw packet, patch
+or ROM was emitted. The accepted0125 transform and native field run are reused.
+
+The source-only ordered battle setup note is saved in
+`private/research/pc07_battle_setup_20261007/setup_note.json`, SHA256
+`a2a8d505720c943a56ab28f4b4a86e304c018e85e2be7c0bff695bcaf5ec7c57`.
+Root checked its ten source identities. It adds the precise battle learned-mask,
+name, graphics, equipment-owner and initial turn-order consumers. It also
+corrects the earlier C1CF15 assumption: the reached normal initialization
+calls read equipped item IDs and use CC0000 as a bank base, not as an indexed
+new-character initialization row. The older proposal remains unchanged.
+
+Root authored raw native donor lookup components without assigning ROM space
+or emitting a game image. Independent review rejected v1's field hook because
+the proposed five-byte span split an LDA operand and omitted INY. Preserve that
+source and assembled component as rejected. The separate corrected v2 uses
+the exact six-byte STA4202/INY/LDA05 span and restores the missing INY. Its157
+assembled bytes differ from v1 only by C8 at offset45. Six table-reader routines
+remain unchanged and restore incoming status before their final LDA; the field
+routine remains restricted to the actual role2/logical07/roster07 object.
+
+Current source:`asm/pc07_donor_read_adapters_v2.asm`, SHA256
+`df0584a820d3b6b4994298cc1f0d6b3ffc4089797b42c5d6c6217d02a4e5a914`.
+Raw component SHA256:
+`315f409ece80e84c656930c47bc5a0d6e0f97d83aecc95b7c474abc2056750e7`.
+Pinned Asar command, hashes, limits and reproduction are recorded in
+`private/test_runs/pc07_donor_native_source_v2/receipt.json`; independent review
+is `source_review.json`, SHA256
+`5b1ea5cff78b79f2f1a12a008e6731873eb20adb9535012bf482f540e484c7ca`.
+Root inspected that review and verified all eight input identities. Evidence
+is assembled-source and component review only; no hook, placement, game-stack
+ownership, native execution, ordinary Attack or vehicle function is proved.
+
+The existing write guard and empty production catalogs are unchanged. Native
+expanded-image packaging needs a distinct honest private diagnostic contract;
+it must not label an experiment production-approved. Guard-file dependencies
+must remain reproducible when that separate extension is implemented. Preserve
+accepted source bundles rather than silently changing their pins or rerunning
+completed emulator matrices. The playable-character goal remains active.
+
+## 2026-10-07 — Native field helper observed; publication checkpoint and pause
+
+One isolated Mesen run now executes the qualified field helper from ROM410000
+through the real six-byte C0448D hook. PCs00/01 pass through and PC07 uses donor00
+graphics; the independent record and candidate movement remain observed. The
+run contains 45,276 trace rows and 2,725 explicit debugger preparation byte pairs.
+There are no debugger CPU edits. Three helper windows reconcile fifteen actual
+stack writes and fifteen reads, preserve sixteen live caller bytes per call, and
+return with the required context. Their measured lengths are320/360/664 master
+clocks. All original seven records, Epoch's six name bytes and ten SRAM snapshots
+remain unchanged. Root inspected poll180/poll400 screenshots. This is one
+prepared field run, not battle, PC07 persistence, vehicle behavior or a release.
+
+The new private expanded diagnostic contract is separate from production. Its
+fixed source, twelve sections and complete-diff guard accept191 changed bytes
+relative to the validated inert8MiB scaffold. Only two forwarding APIs were added
+to the shared guard; the remaining guard AST and empty production catalogs are
+unchanged. A read-only historical source capsule at
+private/research/pc07_guard_history_20261007 preserves29 source files. Its bounded
+reproducer succeeds before and after the live guard addition without swapping
+working files or changing old pins. This is local reproduction for two selected
+workflows and a native-save bundle identity, not the entire older corpus.
+
+Independent review found a host validator weakness: a forged ROM stack address
+with matching low bits could pass the frozen mask-only check. The separate
+validate_pc07_native_field_v3_stack_bus_v1.py wrapper pins that runner and requires
+exact bank00 bus/physical equality. All30 actual events satisfy it; frozen runtime
+sources and the trace remain unchanged. Root passed13 helper-validator tests,
+17 diagnostic-contract tests and16 existing guard tests, then reproduced the
+10,853-byte independent receipt with SHA256
+fdfb4f48b23ec7aa694ba7f0d68831e994f39259f33ba80266db07c65cfb8032.
+
+See [the public human report](pc07_native_field_checkpoint_2026_10_07.md) and
+[the deterministic machine checkpoint](../references/pc07_native_field_checkpoint_2026_10_07.json)
+for exact source/run identities, community attribution, reproduction and limits.
+The public metadata builder checks pinned reports and sources; full native
+reproduction still requires private inputs. No ROM, save, state, screenshot,
+extracted packet or raw trace is published.
+
+Andrei requested publication to GitHub, GitLab and the existing portfolio, then
+a pause. The stopping point is this reviewed native field observation. Work
+remains incomplete. After explicit resume, reuse the accepted event0126 transform
+and ordinary-Attack setup note for the bounded field-to-battle experiment. Do
+not rerun completed surveys or matrices without a concrete missing condition.

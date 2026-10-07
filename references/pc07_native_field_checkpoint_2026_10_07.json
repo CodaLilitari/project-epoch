@@ -1,0 +1,387 @@
+{
+  "community_reuse": {
+    "credits": [
+      "Mauron",
+      "Vehek",
+      "JLukas",
+      "Temporal Redux / Jets of Time"
+    ],
+    "implementation_reference": "https://github.com/OnemusCT/temporal-redux/blob/365086c1c0a33144b24bff4933998bdff82c9940/sourcefiles/jetsoftime/ctevent.py",
+    "method": "Reuse pinned community mappings and insertion methods; validate the selected dependencies and retain corrections.",
+    "novel_mapping_discovery_claimed": false
+  },
+  "date": "2026-10-07",
+  "distribution": {
+    "contains_rom_save_state_game_assets_or_raw_trace": false,
+    "private_paths_are_metadata_references_only": true
+  },
+  "epoch_preservation": {
+    "global_id_rewrite_allowed": false,
+    "name_wram_span_hex": [
+      "7E2C4D",
+      "7E2C53"
+    ],
+    "naming_selector_hex": "07",
+    "new_playable_name_storage_required": true,
+    "span_end_exclusive": true,
+    "vehicle_behaviour_verified": false
+  },
+  "evidence_level": "verified-runtime, one instrumented selected-field run; independent offline review",
+  "focused_tests": {
+    "existing_rom_write_guard": 16,
+    "native_helper_host_validator": 13,
+    "private_expanded_write_contract": 17,
+    "scope": "Focused host tests; not a full repository suite or extra emulator runs.",
+    "total_passed": 46
+  },
+  "goal_complete": false,
+  "headline": "Logical PC07 moves with a qualified native ROM graphics helper in a prepared field scene.",
+  "identities": {
+    "human_report": {
+      "bytes": 10278,
+      "path": "docs/pc07_native_field_checkpoint_2026_10_07.md",
+      "sha256": "864025bfe031eced273df52d5449aa62c0854c8495ae031067240e43f96baeec"
+    },
+    "json_builder": {
+      "bytes": 8018,
+      "path": "tools/build_pc07_native_field_checkpoint_v1.py",
+      "sha256": "5028d49777284073a67aaf139d88c9c1b6a16bec17f2a55316043ddac0cf2c9b"
+    },
+    "private_diagnostic_rom_sha256": "cb33610be9adceaf12298a820e63c9a2aedaf32fb5b231ef54a8b14caa3cd51c",
+    "private_review_receipt": {
+      "bytes": 10853,
+      "path": "private/research/pc07_native_field_v3_review_20261007/receipt.json",
+      "sha256": "fdfb4f48b23ec7aa694ba7f0d68831e994f39259f33ba80266db07c65cfb8032"
+    },
+    "private_run_receipt": {
+      "bytes": 48406,
+      "path": "private/test_runs/pc07_field_probe_v3_run1/receipt.json",
+      "sha256": "042e6805cad04baaef5c395ca9357cd66f53c06e3bfe19e470d841d9afee2449"
+    },
+    "private_trace": {
+      "bytes": 14006159,
+      "sha256": "3c34e1f22b5cf74c95ea2e3444b2c6459f9e5a39738236fc0b68636949ef1516"
+    },
+    "run_source_bundle_sha256": "b40b55833d905141ac8acc8a3b1752016f3981edbda8d641cdc6bb4174b8a063",
+    "source_manifest": [
+      {
+        "path": "tools/schala_compat_menu_v1.py",
+        "sha256": "4b679c79791a8d2ec879f2f9e1e5ad5b46bb4655f59c7d00d217cc3613c35f59"
+      },
+      {
+        "path": "tools/build_schala_compat_menu_v1.py",
+        "sha256": "2b52518dc365e0bbfef0259dfbea990e69b8d5407fffa8b9b1df859ebf5fa47d"
+      },
+      {
+        "path": "references/schala_compat_menu_pair_v1.json",
+        "sha256": "b3e57bb4c906a6fa56aac6f5be2617bb003cc7bb1d6433f56b3d4cdfdba6a182"
+      },
+      {
+        "path": "tools/run_mesen_pc07_field_entry_v1.py",
+        "sha256": "7c6eae5771acfcbc5749c93eb29d6b540c757bcde46a741b0b1bc486b810b6b5"
+      },
+      {
+        "path": "tools/mesen_pc07_field_entry_v1.lua",
+        "sha256": "6c36380b93cb19ef7b031299a8f1d04d0def7338d27a594037e828ff60d00b47"
+      },
+      {
+        "path": "tools/transform_pc07_selected_event_v1.py",
+        "sha256": "1213ae3f274ba044608185d9b9e806cf9f6db2cfdb0ab89f70a09de0e2ff1d3a"
+      },
+      {
+        "path": "references/pc07_selected_event_transform_v1.json",
+        "sha256": "0bb253c1f296e5719b204052588f25254a045a3cc716d32127347b6e304cdd66"
+      },
+      {
+        "path": "private/research/pc07_field_route_v1/field_route_design.json",
+        "sha256": "243b78eeca4b645c749af299ffa679e21d158464f746685f60d53c50afefd37b"
+      },
+      {
+        "path": "tools/audit_location_event_items.py",
+        "sha256": "cb39dd4485e6330c4f9d5b8817fe8e6a161cb2e965020cb1cd10a3fd30f7812a"
+      },
+      {
+        "path": "tools/run_mesen_save_layout_native_v1.py",
+        "sha256": "847bf77d28757ddad07b75b30d9071534b4792f7ad09a6cb3762153c8c29cd75"
+      },
+      {
+        "path": "references/ct_disassembly/bank_C0.asm",
+        "sha256": "b5b209cd03ae430f095482a429798ee3600d97af3774841c069d8f9a071140b8"
+      },
+      {
+        "path": "references/ct_disassembly/bank_C2.asm",
+        "sha256": "d96c0d9707d9150dbdb3ad7d995f7ae135e87ebb6329691cab2eb86447611032"
+      },
+      {
+        "path": "references/ct_disassembly/bank_E4.asm",
+        "sha256": "160bdd0ef4791f81a468ca0088f65a79fa6fbd638584fece50d6735950b29fda"
+      },
+      {
+        "path": "references/ct_disassembly/bank_FF.asm",
+        "sha256": "18f30c2a4f547722f30934bde43eb6a638d9467aa064e21340aa2065ab71829e"
+      },
+      {
+        "path": "asm/pc07_donor_read_adapters_v2.asm",
+        "sha256": "df0584a820d3b6b4994298cc1f0d6b3ffc4089797b42c5d6c6217d02a4e5a914"
+      },
+      {
+        "path": "private/test_runs/pc07_donor_native_source_v2/source_review.json",
+        "sha256": "5b1ea5cff78b79f2f1a12a008e6731873eb20adb9535012bf482f540e484c7ca"
+      },
+      {
+        "path": "tools/schala_rom_scaffold.py",
+        "sha256": "a517ad5c9d5a1f6b19a3050dfcc4903e2e177abe685ecaf78a60ca6884a9ed4a"
+      },
+      {
+        "path": "tools/build_pc07_native_field_v1.py",
+        "sha256": "3bdc4a53057fa032b8f8af534caeac74a21b5a93b68ffc1df3a2c9e24411f71f"
+      },
+      {
+        "path": "tools/pc07_private_expanded_write_contract_v1.py",
+        "sha256": "b8bb7cec02a5041658922a842cc29a086e45edeef82d12059f436d794e39f376"
+      },
+      {
+        "path": "tools/validate_rom_write_intents.py",
+        "sha256": "d109fa0ca691652a82c1d8f3ffab7ebbec7c57342e5cc1c6e472dea60bc8aac2"
+      },
+      {
+        "path": "tools/build_original_snes_package_cartridge_v1.py",
+        "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a"
+      },
+      {
+        "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+        "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318"
+      },
+      {
+        "path": "tools/original_snes_package_fixtures_v1.py",
+        "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60"
+      },
+      {
+        "path": "tools/run_mesen_pc07_field_probe_v3.py",
+        "sha256": "d06c2dcf0790e79117d17fd31552e0a4c5b449154b2c36173681641a96fa9204"
+      },
+      {
+        "path": "tools/mesen_pc07_field_probe_v3.lua",
+        "sha256": "f1b29205209c216db135863b57734771ec0dd525716e5b11299b091adcc4eee8"
+      }
+    ]
+  },
+  "independent_review": {
+    "coverage": "Declared watched intervals and snapshots, not a global WRAM ledger.",
+    "epoch_name_preserved_in_snapshots": 10,
+    "file_identities_rechecked_at_end": 90,
+    "movement_coordinate_byte_stores_per_actor": 2480,
+    "observed_sram_writes": 0,
+    "original_seven_records_preserved": true,
+    "receipt_reproduced_by_root": true,
+    "source_files_verified": 25,
+    "sram_preserved_in_snapshots": 10,
+    "stack_bus_events": 30
+  },
+  "native_reruns_for_review": 0,
+  "native_run_count": 1,
+  "next_after_explicit_resume": "Reuse this field checkpoint and the static event0126 transform for the bounded ordinary-Attack experiment; do not repeat completed mapping surveys or native matrices without a named missing condition.",
+  "not_proved": [
+    "native recruitment and event installation",
+    "destination event0126 execution",
+    "battle participation and ordinary Attack",
+    "PC07 Tech and menu support",
+    "PC07 normal save and cold-load persistence",
+    "authored Schala graphics",
+    "Epoch vehicle naming UI, boarding, travel and save/load",
+    "interrupt safety",
+    "global stack and memory ownership",
+    "whole-game compatibility",
+    "absence of slowdown",
+    "a playable eighth-character release"
+  ],
+  "observations": {
+    "all_original_records_preserved": true,
+    "battle_menu_save_support": false,
+    "candidate_screen_movement_observed": true,
+    "early_compatibility_entry_and_event_complete_diff": true,
+    "epoch_name_snapshots_preserved": true,
+    "evidence": "native ROM graphics adapter in an instrumented selected field diagnostic; not a playable release",
+    "graphics_donor_control_and_candidate_observed": true,
+    "independent_candidate_hp": 968,
+    "injection_bytes": 2725,
+    "installed_private_native_adapter": true,
+    "native_helper": {
+      "actual_rom_helper": true,
+      "debugger_cpu_edits": 0,
+      "expanded_mapping_observed": true,
+      "global_stack_ownership_proved": false,
+      "interrupt_safety_proved": false,
+      "interrupts_observed_in_helper": 0,
+      "windows": [
+        {
+          "entry_sp": 1783,
+          "instructions": 12,
+          "live_caller_bytes_preserved": 16,
+          "master_clocks": 320,
+          "minimum_observed_sp": 1778,
+          "ordered_stack_reconciliation": true,
+          "stack_reads": 5,
+          "stack_writes": 5,
+          "which": "original00"
+        },
+        {
+          "entry_sp": 1783,
+          "instructions": 12,
+          "live_caller_bytes_preserved": 16,
+          "master_clocks": 360,
+          "minimum_observed_sp": 1778,
+          "ordered_stack_reconciliation": true,
+          "stack_reads": 5,
+          "stack_writes": 5,
+          "which": "original01"
+        },
+        {
+          "entry_sp": 1783,
+          "instructions": 25,
+          "live_caller_bytes_preserved": 16,
+          "master_clocks": 664,
+          "minimum_observed_sp": 1778,
+          "ordered_stack_reconciliation": true,
+          "stack_reads": 5,
+          "stack_writes": 5,
+          "which": "candidate07"
+        }
+      ]
+    },
+    "original_donor_hp": 969,
+    "screen_positions": [
+      {
+        "screen_x": [
+          184,
+          184,
+          184
+        ],
+        "screen_y": [
+          175,
+          175,
+          175
+        ],
+        "snapshot": "poll_90"
+      },
+      {
+        "screen_x": [
+          136,
+          151,
+          170
+        ],
+        "screen_y": [
+          175,
+          175,
+          175
+        ],
+        "snapshot": "poll_180"
+      },
+      {
+        "screen_x": [
+          184,
+          169,
+          150
+        ],
+        "screen_y": [
+          175,
+          175,
+          175
+        ],
+        "snapshot": "poll_280"
+      },
+      {
+        "screen_x": [
+          184,
+          169,
+          154
+        ],
+        "screen_y": [
+          175,
+          175,
+          175
+        ],
+        "snapshot": "poll_400"
+      }
+    ]
+  },
+  "playable_release": false,
+  "preparation": [
+    "checkpoint replay",
+    "compatibility block copy",
+    "independent record",
+    "roster and joined state",
+    "transformed selected event and length"
+  ],
+  "project": "Project Epoch",
+  "reproduction": {
+    "focused_tests": [
+      "python -B -m unittest discover -s tests -p test_mesen_pc07_field_probe_v3.py",
+      "python -B -m unittest discover -s tests -p test_pc07_private_expanded_write_contract_v1.py",
+      "python -B -m unittest discover -s tests -p test_rom_write_intent_guard.py"
+    ],
+    "frozen_run_receipt_status": "collected-awaiting-field-review",
+    "future_native_run": "python -B tools/run_mesen_pc07_field_probe_v3.py --output <fresh-private-directory> --run-reviewed-bundle b40b55833d905141ac8acc8a3b1752016f3981edbda8d641cdc6bb4174b8a063",
+    "offline_review": "python -B private/research/pc07_native_field_v3_review_20261007/reproduce.py",
+    "private_fixture_requirement": "Native observation, review and JSON regeneration require exact private fixtures and locally held game inputs. The public checkout alone is insufficient. Focused synthetic host tests can be inspected and run without distributed ROM data.",
+    "public_json": "python -B tools/build_pc07_native_field_checkpoint_v1.py",
+    "status_explanation": "The raw receipt predates independent review and is preserved unchanged. Later review is additive."
+  },
+  "route": {
+    "primary": "SNES",
+    "recompilation": "comparative fallback; no route switch"
+  },
+  "schema": "project-epoch-public-checkpoint-v1",
+  "scope": {
+    "debugger_cpu_edits": 0,
+    "debugger_preparation_byte_pairs": 2725,
+    "event_hex": "0125",
+    "game_rom_bytes": 8388608,
+    "guarded_changed_bytes_relative_to_inert_scaffold": 191,
+    "helper_cpu_address_hex": "410000",
+    "hook_cpu_span_hex": [
+      "C0448D",
+      "C04493"
+    ],
+    "last_controller_poll": 400,
+    "location_hex": "01DA",
+    "production_hook_or_allocation_approved": false,
+    "span_end_exclusive": true,
+    "trace_records": 45276
+  },
+  "status": "paused-at-user-request",
+  "validation_correction": {
+    "finding": "The frozen host validator masks bus addresses with 1FFF and can admit a forged ROM-bank alias. The additive exact bank00 check rejects that case; all 30 actual events satisfy it.",
+    "frozen_runner_or_collector_changed": false,
+    "native_repeat_required": false,
+    "result": {
+      "checked_stack_events": 30,
+      "evidence": "additive offline validation of the selected native helper windows",
+      "exact_bank00_low_wram": true,
+      "frozen_runner_sha256": "d06c2dcf0790e79117d17fd31552e0a4c5b449154b2c36173681641a96fa9204",
+      "new_native_run": false,
+      "other_mirrors_admitted": false,
+      "physical_equals_bus": true,
+      "schema": "project-epoch-pc07-native-field-v3-stack-bus-v1"
+    },
+    "sources": {
+      "tests/test_mesen_pc07_field_probe_v3.py": {
+        "bytes": 16087,
+        "sha256": "e2e21f7345885ef353af13a4627403d1bd5797e7650792b23bf7704a84e8ce32"
+      },
+      "tools/validate_pc07_native_field_v3_stack_bus_v1.py": {
+        "bytes": 2066,
+        "sha256": "9c45e72f1b7f6f3d989744bcc04d60b9c42fa95cb731f8389c807bd9988c5afa"
+      }
+    }
+  },
+  "visual_inspection": {
+    "by": "root",
+    "images_public": false,
+    "independent_reviewers_viewed_images": false,
+    "screenshots": [
+      "poll_180.png",
+      "poll_400.png"
+    ]
+  }
+}

@@ -9,7 +9,23 @@ and the [current developer guide](docs/schala_eighth_character_developer_guide.m
 Historical checkpoints preserve the bytes and evidence available when made;
 the latest log entry identifies the current resume boundary.
 
-## Resumption — 2026-10-03
+## Paused checkpoint — 2026-10-07
+
+One instrumented field run now observes logical PC07 using a qualified graphics
+helper executed from cartridge ROM and moving alongside PC00 and PC01. Its
+independent record, all seven original records, Epoch's name bytes and captured
+SRAM remain preserved. The setup still requires explicit debugger preparation;
+battle actions, PC07 save/cold-load and Epoch vehicle interactions remain open.
+This is a field prototype, not a playable release or proof of no slowdown.
+
+Read the [human-readable checkpoint](docs/pc07_native_field_checkpoint_2026_10_07.md)
+or its [machine-readable JSON](references/pc07_native_field_checkpoint_2026_10_07.json)
+for the evidence, hashes, community credits, review correction and reproduction
+limits. Work is paused at Andrei's request. The next step after explicit resume
+is the bounded ordinary-Attack experiment; the SNES route remains primary and
+recompilation remains a comparative fallback.
+
+## Historical resumption — 2026-10-03
 
 The interrupted September session has resumed. Both CodaLilitari GitHub and
 GitLab main branches were verified at `a0b17f6` before further work; the

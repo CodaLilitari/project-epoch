@@ -4,3 +4,13 @@
 
 # Original Project Epoch concept art is binary source material.
 *.png binary
+
+# Frozen October 7 observation dependencies were collected with CRLF bytes.
+# Preserve their exact reviewed identities; do not normalize historical sources.
+references/pc07_selected_event_remap_v1.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+references/pc07_selected_event_transform_v1.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+references/schala_compat_menu_pair_v1.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+references/schala_save_layout_native_chain_v1.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/mesen_pc07_field_probe_v1.lua -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/mesen_pc07_field_probe_v2.lua -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/mesen_pc07_field_probe_v3.lua -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

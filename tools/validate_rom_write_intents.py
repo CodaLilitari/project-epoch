@@ -1103,6 +1103,20 @@ def audit_original_diagnostic_images(manifest, source, target, *, workspace_root
     return original.audit_images(manifest, source, target, **kwargs)
 
 
+def validate_pc07_private_expanded_manifest(manifest, *, workspace_root=None):
+    """Fixed private field-helper contract; no legacy or production expansion."""
+    import pc07_private_expanded_write_contract_v1 as diagnostic
+    kwargs = {} if workspace_root is None else {"workspace_root": workspace_root}
+    return diagnostic.validate_manifest(manifest, **kwargs)
+
+
+def audit_pc07_private_expanded_images(manifest, source, target, *, workspace_root=None):
+    """Audit the pinned inert-source field diagnostic before private emission."""
+    import pc07_private_expanded_write_contract_v1 as diagnostic
+    kwargs = {} if workspace_root is None else {"workspace_root": workspace_root}
+    return diagnostic.audit_images(manifest, source, target, **kwargs)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifest", type=pathlib.Path)
