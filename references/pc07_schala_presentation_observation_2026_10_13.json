@@ -1,0 +1,121 @@
+{
+  "build_receipt": {
+    "bytes": 26301,
+    "path": "private/test_runs/pc07_schala_presentation_diagnostic_v2/build_receipt.json",
+    "sha256": "38c4a0662a7dc42a6cb2878f0b658bb4bea0954dd1225caf6ed955dc17efdd4c"
+  },
+  "character": {
+    "Epoch_stored_name_preserved": true,
+    "display_type": 2,
+    "fixed_battle_display_name": "Schala",
+    "global_name_or_save_integration": false,
+    "logical_pc_id": 7,
+    "original_seven_preserved": true
+  },
+  "corrected_disposition": "accepted-existing-run-under-corrected-temporal-contract",
+  "date": "2026-10-13",
+  "image": {
+    "bytes": 8388608,
+    "path": "private/test_runs/pc07_schala_presentation_diagnostic_v2/diagnostic.sfc",
+    "sha256": "111d903b760d90b4fc8232fd0786baf0924f63d7f7d201facd6858a4c8065429"
+  },
+  "independent_review": {
+    "bytes": 43010,
+    "path": "private/research/pc07_schala_presentation_review_20261013/review_v1.json",
+    "sha256": "adf5e69982f542dc7bdbca4fd65ea71c5ff309b68a1333b61ea56dbd3cdef8ca"
+  },
+  "limits": [
+    "Debugger-prepared private PC07 fixture, not a standalone campaign release.",
+    "No new Attack after appearance change; prior donor-appearance Attack evidence remains separate.",
+    "No fourth-facing or all-pose native coverage.",
+    "No menu/dialogue/editable/serialized Schala-name implementation.",
+    "No recruitment, save/cold-load or Epoch vehicle behavior proof.",
+    "No full renderer, DMA or global interrupt safety claim."
+  ],
+  "name_evidence": {
+    "VRAM_upload_ledger_captured": false,
+    "exact_reuse_instruction_captured": false,
+    "final_shared_tile_buffer_contains_name": false,
+    "first_five_HUD_tile_writes_captured": false,
+    "five_byte_source_buffer": true,
+    "full_name_separately_visually_inspected": true,
+    "sixth_glyph_native_stores_and_immediate_readbacks": true
+  },
+  "native_checks": {
+    "WRAM_snapshots": 18,
+    "candidate_complete_tile_copies": 4,
+    "candidate_palette_matches_retail": true,
+    "cpu_edits": 0,
+    "debugger_preparation_write_readback_pairs": 4642,
+    "original_Crono_Marle_palettes_retained": true,
+    "original_fallback_controls": 4,
+    "sampled_presentation_windows": 96,
+    "sampled_tile_copy_or_fallback_windows": 8,
+    "unchanged_SRAM_snapshots": 18
+  },
+  "native_exit_code": 63,
+  "original_host_refusal": "six letter type2 HUD tile readback",
+  "original_host_status_preserved": "quarantined-failure",
+  "original_run_receipt": {
+    "bytes": 99058,
+    "path": "private/test_runs/pc07_schala_presentation_v2_run1/receipt.json",
+    "sha256": "bb204e3a94ae275f17f9bfe9d01a1227985fb0790c2fdc5e5d50f0f0121f293b"
+  },
+  "preservation": "Keep the v1 static pilot, old accepted Attack image/run, and original failed v2 host receipt unchanged; no repeat native run is needed for this corrected temporal audit.",
+  "production_release": false,
+  "provider": {
+    "all_poses_exercised_natively": false,
+    "copied_fallback_selectors": [
+      9,
+      255
+    ],
+    "facings_in_provider": 4,
+    "guard_cell": 256,
+    "new_art_generated": false,
+    "numeric_original_cells_per_facing": 9,
+    "retail_assembly_records": 23,
+    "retail_tiles": 79
+  },
+  "recipe": {
+    "bytes": 21004,
+    "path": "references/pc07_schala_presentation_private_contract_v2.json",
+    "sha256": "6795e2064dc8754a0c09567427fd089bc333b07b20e94b52a8a2f9cb4ec8d3ad"
+  },
+  "reproduction": [
+    "python -B private/research/pc07_schala_presentation_temporal_review_20261013/reproduce_receipt.py",
+    "python -B private/research/pc07_schala_presentation_review_20261013/review_v1.py --check",
+    "python -B -m unittest discover -s tests -p test_pc07_schala_presentation_write_contract_v2.py"
+  ],
+  "rows": 270641,
+  "schema": "project-epoch-pc07-schala-presentation-observation-v1",
+  "source_bundle_sha256": "126f8b2a39cfb21e8b81496b24a0fa033460593ddaf6f83c328ddf358c4105d5",
+  "status": "verified-runtime-selected-private-presentation",
+  "temporal_requalification": {
+    "bytes": 6979,
+    "path": "private/research/pc07_schala_presentation_temporal_review_20261013/receipt.json",
+    "sha256": "650b9c9682e6d94ead85d12c86acfe6a9ec0d1a7766d6cd95d120a501e25e9aa"
+  },
+  "trace": {
+    "bytes": 90275024,
+    "path": "private/test_runs/pc07_schala_presentation_v2_run1/events.jsonl",
+    "sha256": "beae63bd64af6dc6073cdf13880c74adadb382e18ce7fd1953381a976cd0b31e"
+  },
+  "visual_evidence": [
+    {
+      "artifact": {
+        "bytes": 21722,
+        "path": "private/test_runs/pc07_schala_presentation_v2_run1/poll_400.png",
+        "sha256": "39ba0085c6ecbfd395fb00cd0aea0170405a34bf77630af359c0770ddb37d76a"
+      },
+      "inspection": "root and independent reviewer inspected actual emulator screenshot"
+    },
+    {
+      "artifact": {
+        "bytes": 24582,
+        "path": "private/test_runs/pc07_schala_presentation_v2_run1/presentation_ready.png",
+        "sha256": "0d5b4418402f9ce5fe570c1847f4bf402c4b89f12aeb85fd6828d1472ecf1d5a"
+      },
+      "inspection": "root and independent reviewer inspected actual emulator screenshot"
+    }
+  ]
+}

@@ -9,7 +9,46 @@ and the [current developer guide](docs/schala_eighth_character_developer_guide.m
 Historical checkpoints preserve the bytes and evidence available when made;
 the latest log entry identifies the current resume boundary.
 
-## Paused checkpoint — 2026-10-07
+## Schala appearance and battle milestones — 2026-10-13
+
+**Schala's retail sprites and full six-letter battle name now run as logical
+PC07 in a continuous field-to-battle diagnostic.** Her NPC graphics are adapted
+to the PC readers; missing animation selectors use copied retail poses. The
+seven original character records, all stored names including Epoch, and captured
+SRAM remain preserved. This is an instrumented SNES prototype. Native
+recruitment, complete battle-to-field restoration, and normal save/cold-load
+still remain to be demonstrated before a playable release.
+
+The October 13 evidence has separate, explicitly scoped milestones:
+
+| Milestone | Human-readable findings | Machine-readable evidence |
+| --- | --- | --- |
+| Continuous field-to-battle handoff | [Field and battle](docs/pc07_field_battle_handoff_2026_10_13.md) | [JSON](references/pc07_field_battle_handoff_2026_10_13.json) |
+| Native ordinary Attack with renewed readiness | [First Attack](docs/pc07_first_attack_checkpoint_2026_10_13.md) | [JSON](references/pc07_first_attack_checkpoint_2026_10_13.json) |
+| Retail Schala appearance and full HUD name | [Schala presentation](docs/pc07_schala_presentation_2026_10_13.md) | [JSON](references/pc07_schala_presentation_observation_2026_10_13.json) |
+| First native escape work-to-live record copy | [Escape commit](docs/pc07_first_escape_commit_2026_10_13.md) | [JSON](references/pc07_first_escape_commit_2026_10_13.json) |
+
+Attack and escape use the earlier donor-appearance image. The Schala presentation
+run ends before Attack; these are complementary observations, not one combined
+gameplay run. PC07 deals 962 damage in the accepted Attack fixture. The escape
+test later carries her independent 608 HP into her live record, distinct from
+the other active characters' 739 and 603 HP. Its authored encounter permits
+escape; it makes no claim about escaping the retail encounter.
+
+Use the additive [field-handoff v2 reproduction](docs/pc07_field_battle_handoff_2026_10_13_v2.md)
+and [Attack v2 reproduction](docs/pc07_first_attack_checkpoint_2026_10_13_v2.md)
+to resolve the exact archived guard versions. The original reports and source
+bundles are preserved unchanged. A [milestone overview](docs/pc07_milestone_2026_10_13.md)
+and [machine-readable index](references/pc07_milestone_2026_10_13.json) collect
+the separate findings and their limits.
+
+The [practical recompilation and Ghidra assessment](docs/recomp_tool_practical_assessment_2026_10_13.md)
+records executed tool tests and their limits. The SNES route remains primary;
+recompilation remains a comparative fallback. Existing community mappings and
+insertion methods are credited and checked. No first-discovery or general
+no-slowdown claim is made. Game inputs and raw runtime evidence remain private.
+
+## Historical paused checkpoint — 2026-10-07
 
 One instrumented field run now observes logical PC07 using a qualified graphics
 helper executed from cartridge ROM and moving alongside PC00 and PC01. Its
@@ -21,9 +60,8 @@ This is a field prototype, not a playable release or proof of no slowdown.
 Read the [human-readable checkpoint](docs/pc07_native_field_checkpoint_2026_10_07.md)
 or its [machine-readable JSON](references/pc07_native_field_checkpoint_2026_10_07.json)
 for the evidence, hashes, community credits, review correction and reproduction
-limits. Work is paused at Andrei's request. The next step after explicit resume
-is the bounded ordinary-Attack experiment; the SNES route remains primary and
-recompilation remains a comparative fallback.
+limits. Work was paused at Andrei's request at that checkpoint and has since
+resumed. Its original observations and evidence remain preserved.
 
 ## Historical resumption — 2026-10-03
 

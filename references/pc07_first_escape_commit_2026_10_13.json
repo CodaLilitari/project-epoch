@@ -1,0 +1,269 @@
+{
+  "schema": "project-epoch-pc07-first-escape-commit-2026-10-13-v1",
+  "date": "2026-10-13",
+  "status": "independently-reviewed-local-checkpoint-goal-active",
+  "evidence_level": "one emulator-assisted native first escape commit; exact independent offline reproduction",
+  "human_report": {
+    "path": "docs/pc07_first_escape_commit_2026_10_13.md",
+    "bytes": 8118,
+    "sha256": "29973b06d8d6c8833a14ae2c498ffc8b63a69bca548627f61353e7efb8279dbb"
+  },
+  "auditor": {
+    "path": "tools/audit_pc07_first_escape_commit_2026_10_13.py",
+    "bytes": 8829,
+    "sha256": "20ff6a3fd2a410917be3f5cd914ea1e179eac4596391cb953628c5055eb987c5"
+  },
+  "run_receipt": {
+    "path": "private/test_runs/pc07_escape_commit_v2_run1/receipt.json",
+    "bytes": 117015,
+    "sha256": "0d4bf2fa68ee9af3136c85644267dd864338242728e2493b37d715ff69e1b468"
+  },
+  "original_run_status_preserved": "collected-awaiting-independent-route-review",
+  "independent_receipt": {
+    "path": "private/research/pc07_escape_commit_independent_review_20261013/review_receipt.json",
+    "bytes": 19794,
+    "sha256": "3ff22606f13a1919e32d227c9c22af9eadac30931685c59ed6a619129b288556"
+  },
+  "independent_reproducer": {
+    "path": "private/research/pc07_escape_commit_independent_review_20261013/review_escape_v2.py",
+    "bytes": 15191,
+    "sha256": "7a5bed1ad7cd0e08f2ecf07190eacf415d1fa1bd9aea5270b7365af1ed427f32"
+  },
+  "review_source_manifest": {
+    "path": "private/research/pc07_escape_commit_independent_review_20261013/source_manifest.json",
+    "bytes": 958,
+    "sha256": "4e4e55f02599165ff458222420f45b5ab67d5977a9e5a160265972550d89e897"
+  },
+  "root_reproduction_stdout": {
+    "path": "private/research/pc07_escape_commit_independent_review_20261013/root_reproduction.json",
+    "bytes": 20419,
+    "sha256": "6452dd26aacc9de970c6677ebcefcc6654ae1f47fe7b2ed6e2d2da5ea2c015ef"
+  },
+  "root_reproduction_JSON_equal_receipt": true,
+  "root_stdout_bytes_equal_receipt": false,
+  "root_reproduction_format_note": "Windows stdout uses CRLF and one extra print newline; normalizing CRLF yields exact receipt bytes plus one LF; the executed reproducer internally checks exact receipt bytes",
+  "source_bundle_sha256": "9cd03aa10f60f8f912c2852861d4d2c7dc6a23bd7d6d5e2b67c6d0772c866ca3",
+  "source_rows_rehashed": 124,
+  "run_artifacts_rehashed": 95,
+  "original_inputs_rehashed": 11,
+  "staged_runtime_files_rehashed": 6,
+  "staged_inputs_reconstructed": 13,
+  "trace": {
+    "path": "private/test_runs/pc07_escape_commit_v2_run1/events.jsonl",
+    "bytes": 135279998,
+    "sha256": "51ae3ffb9be98d6eac1ab8c225e71b689dd4bc1048b1b7a6f122b22767e34942"
+  },
+  "rows": 402532,
+  "successful_complete_runs": 1,
+  "repeat_pair": false,
+  "private_image_sha256": "6d420e3daa6761a6ca2b0dd6bfc9119aa15967124f92c5d731a431f76726eefa",
+  "new_image_emitted_for_this_run": false,
+  "archived_intent_and_complete_diff_passed": true,
+  "changed_bytes_relative_to_inert_scaffold": 481,
+  "authored_event": {
+    "bytes": 1914,
+    "one_change_offset": 1351,
+    "before": 147,
+    "after": 19,
+    "sha256": "13879385d478acbdab1c92c1289414fcfb4761e50b4d913928a34964686341c4",
+    "retail_escape_claim": false
+  },
+  "event_transform": {
+    "path": "tools/transform_pc07_escape_event_v1.py",
+    "bytes": 4248,
+    "sha256": "6e1cc83374c340907c7f189eab85158ffc59637be78fb182077ae49ccdc4eb77"
+  },
+  "preparation_byte_write_readback_pairs": 4642,
+  "debugger_cpu_edits": 0,
+  "escape_counter_or_result_injection": false,
+  "native_Attack_and_readiness_prefix_validated": true,
+  "native_LR_qualifying_ticks": 220,
+  "native_escape_request_publications": 101,
+  "native_commit_read_write_snapshot_readback_triples": 240,
+  "native_copy_groups": [
+    {
+      "slot": 0,
+      "logical": 0,
+      "bytes": 80,
+      "source_start": 24109,
+      "destination_start": 9728,
+      "last_readback_row": 401867
+    },
+    {
+      "slot": 1,
+      "logical": 1,
+      "bytes": 80,
+      "source_start": 24237,
+      "destination_start": 9808,
+      "last_readback_row": 402187
+    },
+    {
+      "slot": 2,
+      "logical": 7,
+      "bytes": 80,
+      "source_start": 24365,
+      "destination_start": 10288,
+      "last_readback_row": 402527
+    }
+  ],
+  "actual_entry_pc_hex": "C1B442",
+  "actual_call_site_hex": "C18215",
+  "actual_pre_RTS_pc_hex": "C1B487",
+  "actual_return_cut_pc_hex": "C18218",
+  "actual_cut_row": 402531,
+  "cut_before_inventory_commit": true,
+  "HP_values": [
+    {
+      "slot": 0,
+      "logical": 0,
+      "live_hp_before_first_commit": 969,
+      "work_hp_at_attack_ready": 739,
+      "work_hp_at_commit_entry": 739,
+      "live_hp_at_first_commit_return": 739
+    },
+    {
+      "slot": 1,
+      "logical": 1,
+      "live_hp_before_first_commit": 898,
+      "work_hp_at_attack_ready": 603,
+      "work_hp_at_commit_entry": 603,
+      "live_hp_at_first_commit_return": 603
+    },
+    {
+      "slot": 2,
+      "logical": 7,
+      "live_hp_before_first_commit": 968,
+      "work_hp_at_attack_ready": 608,
+      "work_hp_at_commit_entry": 608,
+      "live_hp_at_first_commit_return": 608
+    }
+  ],
+  "status_cleanup": [
+    {
+      "slot": 0,
+      "logical": 0,
+      "work_changes_ready_to_commit_entry": [
+        {
+          "offset": 35,
+          "before": 255,
+          "after": 0
+        }
+      ],
+      "native_cleanup_stores": [
+        {
+          "offset": 35,
+          "row": 392643,
+          "physical": 24144,
+          "preceding_exec_pc": 12708540,
+          "value": 0,
+          "same_value_at_ready": false
+        },
+        {
+          "offset": 38,
+          "row": 392646,
+          "physical": 24147,
+          "preceding_exec_pc": 12708549,
+          "value": 0,
+          "same_value_at_ready": true
+        }
+      ],
+      "live_offsets_1D_through_26_zero_at_cut": true
+    },
+    {
+      "slot": 1,
+      "logical": 1,
+      "work_changes_ready_to_commit_entry": [
+        {
+          "offset": 35,
+          "before": 255,
+          "after": 0
+        },
+        {
+          "offset": 38,
+          "before": 64,
+          "after": 0
+        }
+      ],
+      "native_cleanup_stores": [
+        {
+          "offset": 35,
+          "row": 392657,
+          "physical": 24272,
+          "preceding_exec_pc": 12708540,
+          "value": 0,
+          "same_value_at_ready": false
+        },
+        {
+          "offset": 38,
+          "row": 392660,
+          "physical": 24275,
+          "preceding_exec_pc": 12708549,
+          "value": 0,
+          "same_value_at_ready": false
+        }
+      ],
+      "live_offsets_1D_through_26_zero_at_cut": true
+    },
+    {
+      "slot": 2,
+      "logical": 7,
+      "work_changes_ready_to_commit_entry": [
+        {
+          "offset": 35,
+          "before": 255,
+          "after": 0
+        }
+      ],
+      "native_cleanup_stores": [
+        {
+          "offset": 35,
+          "row": 392671,
+          "physical": 24400,
+          "preceding_exec_pc": 12708540,
+          "value": 0,
+          "same_value_at_ready": false
+        },
+        {
+          "offset": 38,
+          "row": 392674,
+          "physical": 24403,
+          "preceding_exec_pc": 12708549,
+          "value": 0,
+          "same_value_at_ready": true
+        }
+      ],
+      "live_offsets_1D_through_26_zero_at_cut": true
+    }
+  ],
+  "status_changes_not_individual_damage_attribution": true,
+  "snapshot_count": 26,
+  "SRAM_snapshots_equal_input": 26,
+  "all48_stored_names_including_Epoch_preserved": true,
+  "reserve_PC02_through_PC06_records_preserved": true,
+  "active_PC00_PC01_PC07_updates_only_witnessed_commit_writes": true,
+  "declared_compatibility_and_guard_checks_passed": true,
+  "bootstrap_rear_guard_hex": "2CF0..2CFF; prior field extension2D00..2D0F is not preserved",
+  "graphics_branch": "accepted Crono donor diagnostic; separate Schala appearance run is not merged",
+  "Schala_presentation_reference": "docs/pc07_schala_presentation_2026_10_13.md",
+  "screenshots_in_this_checkpoint": false,
+  "empty_documentary_PNGs": [
+    "post_load.png",
+    "compatibility_staged.png"
+  ],
+  "focused_synthetic_review_tests": 3,
+  "deferred_stop_execution_excluded": true,
+  "shutdown_SRAM_authoritative": false,
+  "first_commit_only": true,
+  "second_commit_observed": false,
+  "full_field_return_proved": false,
+  "normal_save_or_coldload_proved": false,
+  "victory_or_progression_proved": false,
+  "Epoch_vehicle_behavior_proved": false,
+  "full_WRAM_reconciled": false,
+  "global_interrupt_safety_proved": false,
+  "playable_release": false,
+  "production_approved": false,
+  "publication_performed_by_auditor": false,
+  "next_gate": "native inventory merge, second live commit and actual field restoration before normal save/cold-load",
+  "reproduction": "python -B tools/audit_pc07_first_escape_commit_2026_10_13.py"
+}

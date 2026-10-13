@@ -1,0 +1,539 @@
+{
+  "schema": "project-epoch-recomp-practical-assessment-2026-10-13-v1",
+  "date": "2026-10-13",
+  "evidence_level": "executed bounded local tool tests; source review; no eighth-character or production proof",
+  "human_report": {
+    "path": "docs/recomp_tool_practical_assessment_2026_10_13.md",
+    "bytes": 11824,
+    "sha256": "ccef0a3a71da6ca34636386e2cd90d2ab429eebb4d29fe583ef285d00c4b674c"
+  },
+  "auditor": {
+    "path": "tools/audit_recomp_tool_assessment_2026_10_13.py",
+    "bytes": 6812,
+    "sha256": "c9583a75d68c29700855cf9ee7596d47316404198114bb605896d23bd9ed7539"
+  },
+  "decision": "retain SNES implementation baseline; ct-recomp is now a working comparative research tool; no route migration",
+  "ct_recomp": {
+    "source_commit": "a6b49257e527d1f219ce6466075b5e035dd8e5f2",
+    "source_files_verified": 135,
+    "source_unchanged": true,
+    "canonical_rom_unchanged": {
+      "path": "private/input/rom_archive/Chrono Trigger (USA).sfc",
+      "size": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "system_packages_installed": false,
+    "frontend_built": false,
+    "engine_c_harness_check_count": 20105284,
+    "game_tests_selected": 9,
+    "remaining_nonengine_tests_not_run": 31,
+    "headless_binary": {
+      "path": "private/tools/ct_recomp_20261013/build-game/ct_boot",
+      "size": 9132984,
+      "sha256": "0950975c25d46f6e40d50d52e1dd7da9a7fae70f035bf31456672484f37d59f3"
+    },
+    "independent_emulator_comparison": false,
+    "human_visual_inspection": false,
+    "pc07_tested": false,
+    "full_game_correctness_established": false,
+    "performance_comparison": false,
+    "epoch_vehicle_tested": false,
+    "suites": [
+      {
+        "source": "engine-junit.xml",
+        "test_count": 23,
+        "failures": 0,
+        "skipped": 0,
+        "cases": [
+          {
+            "name": "runtime",
+            "status": "run",
+            "time_seconds": 0.451558
+          },
+          {
+            "name": "runtime_fatal_open_bus",
+            "status": "run",
+            "time_seconds": 0.0339415
+          },
+          {
+            "name": "runtime_fatal_rom_write",
+            "status": "run",
+            "time_seconds": 0.0228831
+          },
+          {
+            "name": "runtime_fatal_unhooked",
+            "status": "run",
+            "time_seconds": 0.0230679
+          },
+          {
+            "name": "runtime_fatal_decimal",
+            "status": "run",
+            "time_seconds": 0.0227387
+          },
+          {
+            "name": "runtime_fatal_entry",
+            "status": "run",
+            "time_seconds": 0.021787
+          },
+          {
+            "name": "snes_bus",
+            "status": "run",
+            "time_seconds": 0.0254048
+          },
+          {
+            "name": "hw_map",
+            "status": "run",
+            "time_seconds": 0.0269577
+          },
+          {
+            "name": "interp_modes",
+            "status": "run",
+            "time_seconds": 0.0281183
+          },
+          {
+            "name": "interp_system",
+            "status": "run",
+            "time_seconds": 0.0247206
+          },
+          {
+            "name": "sched",
+            "status": "run",
+            "time_seconds": 0.0426721
+          },
+          {
+            "name": "stack_guard",
+            "status": "run",
+            "time_seconds": 0.023883
+          },
+          {
+            "name": "replay",
+            "status": "run",
+            "time_seconds": 0.00361395
+          },
+          {
+            "name": "resample",
+            "status": "run",
+            "time_seconds": 0.03109
+          },
+          {
+            "name": "dsp",
+            "status": "run",
+            "time_seconds": 0.00273323
+          },
+          {
+            "name": "native",
+            "status": "run",
+            "time_seconds": 0.0752601
+          },
+          {
+            "name": "lockstep_report",
+            "status": "run",
+            "time_seconds": 0.241927
+          },
+          {
+            "name": "ref_compare_report",
+            "status": "run",
+            "time_seconds": 2.11053
+          },
+          {
+            "name": "ctest_cache_report",
+            "status": "run",
+            "time_seconds": 0.381323
+          },
+          {
+            "name": "tas_convert",
+            "status": "run",
+            "time_seconds": 0.873501
+          },
+          {
+            "name": "decode_calls",
+            "status": "run",
+            "time_seconds": 0.118965
+          },
+          {
+            "name": "funcs_meta",
+            "status": "run",
+            "time_seconds": 0.156514
+          },
+          {
+            "name": "check_agnostic",
+            "status": "run",
+            "time_seconds": 0.825
+          }
+        ]
+      },
+      {
+        "source": "game-replay-junit.xml",
+        "test_count": 9,
+        "failures": 0,
+        "skipped": 0,
+        "cases": [
+          {
+            "name": "boot_interp",
+            "status": "run",
+            "time_seconds": 3.27849
+          },
+          {
+            "name": "boot_menu",
+            "status": "run",
+            "time_seconds": 3.63008
+          },
+          {
+            "name": "lockstep_boot",
+            "status": "run",
+            "time_seconds": 4.34684
+          },
+          {
+            "name": "lockstep_leene_square",
+            "status": "run",
+            "time_seconds": 27.086
+          },
+          {
+            "name": "lockstep_gato_battle",
+            "status": "run",
+            "time_seconds": 32.4699
+          },
+          {
+            "name": "lockstep_gato_win",
+            "status": "run",
+            "time_seconds": 40.2352
+          },
+          {
+            "name": "stack_field_replay",
+            "status": "run",
+            "time_seconds": 23.6071
+          },
+          {
+            "name": "battle_no_flicker",
+            "status": "run",
+            "time_seconds": 32.992
+          },
+          {
+            "name": "native_coverage",
+            "status": "run",
+            "time_seconds": 24.364
+          }
+        ]
+      }
+    ]
+  },
+  "generic_cli": {
+    "release": {
+      "release": "v0.2.0-alpha",
+      "commit": "ead6f15c5d91e555ad0b6a7b178bf3a4ca2af738",
+      "asset_url": "https://github.com/RetroPortingToolKit/snesrecomp/releases/download/v0.2.0-alpha/snesrecomp-cli-windows-x86_64.zip",
+      "archive_sha256": "932c36d5de90f9bb5aa6f9a31c8844eb74149adc1a3d0a8ff5f877340b4911bd",
+      "archive_size": 9798719,
+      "github_digest_matched": true,
+      "executable": "private\\tools\\ct_recomp_20261013\\snesrecomp_cli_v0_2\\snesrecomp-cli-windows-x86_64\\snesrecomp.exe",
+      "exe_sha256": "42c3908efae1b21cc6e2e617803ddbc3bab1ceca1d480c0aec6b296071e72e10",
+      "help_exit_code": 0
+    },
+    "result": {
+      "command": [
+        "C:\\CHRONO TRIGGER\\private\\tools\\ct_recomp_20261013\\snesrecomp_cli_v0_2\\snesrecomp-cli-windows-x86_64\\snesrecomp.exe",
+        "build",
+        "--rom",
+        "C:\\CHRONO TRIGGER\\private\\tools\\ct_recomp_20261013\\build-engine\\test_rom.sfc",
+        "--output",
+        "C:\\CHRONO TRIGGER\\private\\tools\\ct_recomp_20261013\\snesrecomp_synthetic_generated",
+        "--name",
+        "Epoch Synthetic Tool Test"
+      ],
+      "duration_seconds": 0.7821211999980733,
+      "exit_code": 0,
+      "synthetic_source": "private\\tools\\ct_recomp_20261013\\ct-recomp-a6b49257e527d1f219ce6466075b5e035dd8e5f2\\tools\\make_test_rom.py",
+      "synthetic_source_sha256": "e4270c7ff06edcaf1818d00b9721a9af1af588f55b468bcb18653245c6788c70",
+      "synthetic_matches_exact_source_image": true,
+      "synthetic_size": 4194304,
+      "synthetic_sha256": "648dd7eda8f8f128a0cf1564c8a203573c5f395e16467dc6dfd888046af19b0c",
+      "rom_contains_canonical_game_bytes": false,
+      "source_makes_valid_bootable_game": false,
+      "generated_path": "private\\tools\\ct_recomp_20261013\\snesrecomp_synthetic_generated"
+    },
+    "generated_output_compiled_or_executed": false,
+    "inspected_current_head": "e54427bad93fb75729ce8214fdd7a46e197e6223",
+    "current_readme_ExHiROM_supported": false
+  },
+  "ghidra": {
+    "version": "12.1.4",
+    "extension": "ghidra-snes 1.3.0",
+    "extension_metadata_version": "12.0.4",
+    "probe_count": 5,
+    "hidden_B_selected_case_matches": true,
+    "automatic_PLP_width_counterexample": true,
+    "manual_context_is_synthetic_broad_assertion": true,
+    "indexed_jump_original_probe_decompile_failed": true,
+    "canonical_selected_spans_match": 3,
+    "whole_mapping_verified": false,
+    "expanded_header_candidates": [
+      {
+        "location": "7fbf",
+        "map_type": "UNKNOWN",
+        "declared_size": 8796093022208,
+        "stored_checksum": 6282,
+        "six_checks": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "checksum_check_executed": false,
+        "accepted": false
+      },
+      {
+        "location": "ffbf",
+        "map_type": "ExHiROM",
+        "declared_size": 8388608,
+        "stored_checksum": 56679,
+        "computed_checksum": 56679,
+        "six_checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "checksum_check_executed": true,
+        "accepted": true
+      },
+      {
+        "location": "40ffbf",
+        "map_type": "ExHiROM",
+        "declared_size": 8388608,
+        "stored_checksum": 56679,
+        "computed_checksum": 56679,
+        "six_checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "checksum_check_executed": true,
+        "accepted": true
+      }
+    ],
+    "expanded_import_succeeded": false,
+    "canonical_initialized_writable_blocks": []
+  },
+  "ghidra_indirect_followup": {
+    "evidence_level": "executed synthetic Ghidra p-code/decompiler experiment; not SNES runtime",
+    "checks_passed": true,
+    "cases": [
+      {
+        "name": "jmp_indexed_7c",
+        "decompile_completed": false,
+        "transfer_opcode": "BRANCH",
+        "transfer_input": {
+          "space": "unique",
+          "offset": "de00",
+          "size": 3
+        },
+        "emulator_after_transfer": "unique:0000de00",
+        "emulator_last_step_ok": false
+      },
+      {
+        "name": "jsr_indexed_fc",
+        "decompile_completed": true,
+        "transfer_opcode": "CALL",
+        "transfer_input": {
+          "space": "unique",
+          "offset": "de00",
+          "size": 3
+        },
+        "emulator_after_transfer": "unique:0000de00",
+        "emulator_last_step_ok": false
+      },
+      {
+        "name": "jmp_indirect_6c",
+        "decompile_completed": false,
+        "transfer_opcode": "BRANCH",
+        "transfer_input": {
+          "space": "unique",
+          "offset": "f100",
+          "size": 3
+        },
+        "emulator_after_transfer": "unique:0000f100",
+        "emulator_last_step_ok": false
+      },
+      {
+        "name": "jml_indirect_dc",
+        "decompile_completed": false,
+        "transfer_opcode": "BRANCH",
+        "transfer_input": {
+          "space": "unique",
+          "offset": "10900",
+          "size": 3
+        },
+        "emulator_after_transfer": "unique:00010900",
+        "emulator_last_step_ok": false
+      },
+      {
+        "name": "jmp_direct_4c_control",
+        "decompile_completed": true,
+        "transfer_opcode": "BRANCH",
+        "transfer_input": {
+          "space": "bus",
+          "offset": "c08100",
+          "size": 3
+        },
+        "emulator_after_transfer": "c08100",
+        "emulator_last_step_ok": true
+      },
+      {
+        "name": "jsr_direct_20_control",
+        "decompile_completed": true,
+        "transfer_opcode": "CALL",
+        "transfer_input": {
+          "space": "bus",
+          "offset": "c08120",
+          "size": 3
+        },
+        "emulator_after_transfer": "c08120",
+        "emulator_last_step_ok": true
+      }
+    ],
+    "fixture_sha256": "b5a6523e44594aae88129769f665986526d6d6b188d4e40dbba79205eece1f3c",
+    "output_sha256": "5866c2021019a635f026c9d8166e42ad13e5b674ac4e209c5968792a1565b798",
+    "installed_and_recompiled_sla_sha256": "fdf8a34533d88d506a799feae4c1039dc71d82d4a946d2da0e723842f0b0d671",
+    "release_archive_contains_sla": false,
+    "conclusion": "All four indirect transfer constructors emit an extra three-byte LOAD then a direct transfer to its unique-space varnode; known X, explicit PBR and mapped pointers do not prevent wrong emulator transfer. FC can decompile without warnings while retaining the wrong target.",
+    "limits": [
+      "One isolated final run, preceded by an emulation-confirming pilot and a rejected duplicate-class compilation pilot.",
+      "Native E0/M0/X0 and ordinary nonwrapping pointers only; no emulation-mode or boundary matrix.",
+      "Ghidra legacy EmulatorHelper is deprecated; this proves its observed p-code execution and static constructors, not actual SNES behavior.",
+      "Explicit function bodies and readable/nonwritable imported code block are synthetic harness premises.",
+      "No extension fix, production disassembly rewrite, canonical import, game ROM access/mutation, upstream report or external message.",
+      "The release archive has language source but no shipped SLA; the actual loaded installed SLA equals an independent compile of that unchanged source."
+    ]
+  },
+  "external_review": {
+    "provider": "Claude Code",
+    "reported_model": [
+      "claude-opus-5-5"
+    ],
+    "backend_independently_attested": false,
+    "answer_sha256": "984fd55133ae23c01edfb6af0dfebf527e14693d9b06130ec14d7cb93d734117",
+    "status": "returned and inspected; consequential claims independently checked or explicitly left open",
+    "reviewer_executed_tools": false
+  },
+  "archives": [
+    {
+      "path": "private/tools/recomp_assessment_20261013/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+      "bytes": 205073461,
+      "sha256": "f9d6e191ab098c0d416e7d588a24420a8621cd2f4720dab2459b8b7b2d2d8b4e",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_x64_windows_hotspot_21.0.12.1_1.zip",
+      "digest_source": "GitHub release asset digest"
+    },
+    {
+      "path": "private/tools/recomp_assessment_20261013/ghidra_12.1.4_PUBLIC_20260921.zip",
+      "bytes": 569649598,
+      "sha256": "ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db",
+      "url": "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.1.4_build/ghidra_12.1.4_PUBLIC_20260921.zip",
+      "digest_source": "GitHub release asset digest"
+    },
+    {
+      "path": "private/tools/recomp_assessment_20261013/ghidra_snes-v1.3.0.zip",
+      "bytes": 334210,
+      "sha256": "40265aeca0785f56437e40983e22ff209cb10ab31f75323fe696d54e21322cd3",
+      "url": "https://github.com/joshleaves/ghidra-snes/releases/download/v1.3.0/ghidra_snes-v1.3.0.zip",
+      "digest_source": "GitHub release asset digest"
+    }
+  ],
+  "evidence_artifacts": [
+    {
+      "path": "private/research/ct_recomp_test_20261013/receipt.json",
+      "bytes": 18691,
+      "sha256": "85deb068bd23050fb2745833b18253e69f136e52123bb55d763718c2488a90b7"
+    },
+    {
+      "path": "private/research/ct_recomp_test_20261013/assessment.md",
+      "bytes": 10220,
+      "sha256": "bc084c9c97118a36ee1190618e8fcbeee6a897ea2103bead02064bc6be52100a"
+    },
+    {
+      "path": "private/research/ct_recomp_test_20261013/reproduce_receipt.py",
+      "bytes": 5064,
+      "sha256": "640355e11bf586c75ba8bebc0e0f08670c869a64b6dcbd142de48ce8a2348caf"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/assessment.json",
+      "bytes": 5338,
+      "sha256": "fa3f0aee231db1c03e402fae0dc9624d50eeaf021ed0b31d90ca106c38e0d9fe"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/assess_ghidra_results.py",
+      "bytes": 4459,
+      "sha256": "343596be3bd224d140a5c8e140ed7c1bb5011d022ac661cf8df420f879e78c1f"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/ghidra_probe.json",
+      "bytes": 40716,
+      "sha256": "3f77f4b6d1531375249cbd5d6091a85a2bd3403c973d0acf2388025ea33cbb8b"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/ghidra_run_receipt.json",
+      "bytes": 1186,
+      "sha256": "227aeae7ae497955bfe1591fcc3eadfc6848518cd73f76c6943741e1427a073a"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/ghidra_stdout.txt",
+      "bytes": 8917,
+      "sha256": "c771b0573dcf3f0893b82bbe0f1854e0456ba5e32bc69ee1504b761862c91fbc"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/ghidra_mapping.json",
+      "bytes": 2003,
+      "sha256": "85f3ee73964d1ba70026ac433da4f47cf8c393b79d26ec7d6c757b2f77560762"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/ghidra_mapping_receipt.json",
+      "bytes": 2180,
+      "sha256": "2568d92b04a5e111f34ded1d27fa78c478bfc8cb4515a11d6bc6da4581922dfd"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/mapping_review_v1/receipt.json",
+      "bytes": 2969,
+      "sha256": "4a0d43a1c318c76ffaa5a0ec2c626e5bee24fb34de0edeee1617e4e5134f287c"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/claude_review_receipt.json",
+      "bytes": 14328,
+      "sha256": "84bd8ab16c9ccc4a08bdc6aaabd581a4e759e75c9a49c234e5ffe6d6780e3bbc"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/indirect_verification_v1/assessment_v1.json",
+      "bytes": 4049,
+      "sha256": "cad83dba63eea0d29b1a8b114e7ad1b15d9f0c4d00448ad53d114db2cc3af28c"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/indirect_verification_v1/verify_existing_v1.py",
+      "bytes": 2286,
+      "sha256": "cf38a076bca7c3fc3fb7c19819722f793021a8fbe6f51bdaa3b90c7a89ef0fc9"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/indirect_verification_v1/run_isolated3/source_snapshot/verify_results_first_receipt.py",
+      "bytes": 7620,
+      "sha256": "a3009a94330be2abff9c18a07b68b7c8d9f38683c96ca47b291033d9c3543f67"
+    },
+    {
+      "path": "private/research/recomp_tool_assessment_20261013/indirect_verification_v1/run_isolated3/run_receipt.json",
+      "bytes": 13507,
+      "sha256": "43146eeeb70cd786663b6cc92f98fcad5546e68d67c9761747e72b474f9c16ed"
+    }
+  ],
+  "rom_modified": false,
+  "production_bindings_or_allocations_approved": false,
+  "publication": false,
+  "reproduction": [
+    "python -B tools/audit_recomp_tool_assessment_2026_10_13.py",
+    "python -B private/research/ct_recomp_test_20261013/reproduce_receipt.py",
+    "python -B private/research/recomp_tool_assessment_20261013/assess_ghidra_results.py",
+    "python -B private/research/recomp_tool_assessment_20261013/indirect_verification_v1/verify_existing_v1.py"
+  ]
+}

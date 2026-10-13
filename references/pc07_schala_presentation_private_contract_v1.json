@@ -1,0 +1,464 @@
+{
+  "accepted_base_sha256": "6d420e3daa6761a6ca2b0dd6bfc9119aa15967124f92c5d731a431f76726eefa",
+  "assembly_components": [
+    {
+      "bytes": 604,
+      "cpu_address": 4263936,
+      "id": "schala-graphics",
+      "sha256": "8a622b0b85526ae9cf6d5d06fbd5c5b73849ec8c4454271fc47a47ed87d17532",
+      "source": "asm/pc07_schala_presentation_v1.asm"
+    },
+    {
+      "bytes": 153,
+      "cpu_address": 4268032,
+      "id": "schala-name",
+      "sha256": "8ee24de53c44206ac33dda08ed837f75261b82a07798ee260fa4253595970542",
+      "source": "asm/pc07_schala_name_v1.asm"
+    }
+  ],
+  "evidence_level": "verified-static-recipe-only",
+  "new_sections": [
+    {
+      "accepted_preimage_sha256": "3b8bfebc42947bc23b0c4cb1b3d02ca5d78728732bf5eecd86afcf4707434b1d",
+      "bytes": 5,
+      "file_start": 17741,
+      "id": "graphics-schala-field-publish",
+      "kind": "instruction-hook",
+      "replacement_hex": "22001041ea",
+      "sha256": "d1205d654ada97c96c5edad211d7fa938fe3930c38cb03beed3805580fe1eb83"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 51765,
+      "id": "graphics-schala-field-timing-next",
+      "kind": "instruction-hook",
+      "replacement_hex": "22af1041",
+      "sha256": "074d28565826eaca268611cf5272aa26b0e64812114a409d6a9dde7bc5294480"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 51773,
+      "id": "graphics-schala-field-timing-reset",
+      "kind": "instruction-hook",
+      "replacement_hex": "22af1041",
+      "sha256": "074d28565826eaca268611cf5272aa26b0e64812114a409d6a9dde7bc5294480"
+    },
+    {
+      "accepted_preimage_sha256": "90f68b811c562d0fc31365e1bff743d29899439f7a07712fdbdfa14953fb35ad",
+      "bytes": 4,
+      "file_start": 52206,
+      "id": "graphics-schala-field-primary-bank",
+      "kind": "instruction-hook",
+      "replacement_hex": "22651041",
+      "sha256": "22a26d3f1aefe65711214317bf4fe05e285894a15b9609b6d4d67b041ba7636e"
+    },
+    {
+      "accepted_preimage_sha256": "088f96f60d01d8978c6ac6989ef7f9645305927a96b3c040739ee360024cdb55",
+      "bytes": 5,
+      "file_start": 66382,
+      "id": "name-sixth-status-panel-cell",
+      "kind": "instruction-hook",
+      "replacement_hex": "22572041ea",
+      "sha256": "04c49311066f693d6a1343e4c7eef355fc402b74cd755b9e7b92ed21c0ded179"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 77498,
+      "id": "graphics-schala-battle-tick-timing",
+      "kind": "instruction-hook",
+      "replacement_hex": "22601141",
+      "sha256": "1290f418088ebe2c979010987ec9e037d093cc350767db07f6e9db4ba8df5969"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 77547,
+      "id": "graphics-schala-battle-tick-primary",
+      "kind": "instruction-hook",
+      "replacement_hex": "229f1141",
+      "sha256": "ea8d59a208d7869d25ecbf0fba6a7c8ac85b6360e87b33cf3456164662241f2e"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 79417,
+      "id": "graphics-schala-battle-init-timing",
+      "kind": "instruction-hook",
+      "replacement_hex": "22de1141",
+      "sha256": "a45c787175ffa3249d6ca4f42316936fa41c05e5118a9fcd3cde6a946ad64ca8"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 79440,
+      "id": "graphics-schala-battle-init-primary",
+      "kind": "instruction-hook",
+      "replacement_hex": "221d1241",
+      "sha256": "888619ca2c86bb457995a9d293d97a75e2fdb734ee21f0157eaad46e89ec9488"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 82640,
+      "id": "graphics-schala-battle-advance-timing",
+      "kind": "instruction-hook",
+      "replacement_hex": "22de1141",
+      "sha256": "a45c787175ffa3249d6ca4f42316936fa41c05e5118a9fcd3cde6a946ad64ca8"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 82688,
+      "id": "graphics-schala-battle-advance-primary",
+      "kind": "instruction-hook",
+      "replacement_hex": "221d1241",
+      "sha256": "888619ca2c86bb457995a9d293d97a75e2fdb734ee21f0157eaad46e89ec9488"
+    },
+    {
+      "accepted_preimage_sha256": "5ae999275ef4d1904dbd30bd7f11587ed20b3783c52c869d2478a89b57c4c586",
+      "bytes": 37,
+      "file_start": 845334,
+      "id": "name-active-name-source",
+      "kind": "instruction-hook",
+      "replacement_hex": "22002041eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea",
+      "sha256": "ede2cb21cb8222223bd915eab19595ec44b1acc2debd33d8adfd871ad1d80e08"
+    },
+    {
+      "accepted_preimage_sha256": "234f189953083d0fa3259d658d1897c24b6ebfd16ec9e9a0d998a5b2e5d756c7",
+      "bytes": 12,
+      "file_start": 846364,
+      "id": "graphics-schala-battle-publish",
+      "kind": "instruction-hook",
+      "replacement_hex": "22001141eaeaeaeaeaeaeaea",
+      "sha256": "2d4428635c5446360d12dc11472274062e1ae8774b5af0f8c1d9d5dc092217bc"
+    },
+    {
+      "accepted_preimage_sha256": "3b8bfebc42947bc23b0c4cb1b3d02ca5d78728732bf5eecd86afcf4707434b1d",
+      "bytes": 5,
+      "file_start": 4212045,
+      "id": "graphics-schala-field-publish-boot-mirror",
+      "kind": "instruction-hook",
+      "replacement_hex": "22001041ea",
+      "sha256": "d1205d654ada97c96c5edad211d7fa938fe3930c38cb03beed3805580fe1eb83"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 4246069,
+      "id": "graphics-schala-field-timing-next-boot-mirror",
+      "kind": "instruction-hook",
+      "replacement_hex": "22af1041",
+      "sha256": "074d28565826eaca268611cf5272aa26b0e64812114a409d6a9dde7bc5294480"
+    },
+    {
+      "accepted_preimage_sha256": "c1ac2d1b852c23c116c206f6637ab2da36839f71e9964364b86614007b37f00b",
+      "bytes": 4,
+      "file_start": 4246077,
+      "id": "graphics-schala-field-timing-reset-boot-mirror",
+      "kind": "instruction-hook",
+      "replacement_hex": "22af1041",
+      "sha256": "074d28565826eaca268611cf5272aa26b0e64812114a409d6a9dde7bc5294480"
+    },
+    {
+      "accepted_preimage_sha256": "90f68b811c562d0fc31365e1bff743d29899439f7a07712fdbdfa14953fb35ad",
+      "bytes": 4,
+      "file_start": 4246510,
+      "id": "graphics-schala-field-primary-bank-boot-mirror",
+      "kind": "instruction-hook",
+      "replacement_hex": "22651041",
+      "sha256": "22a26d3f1aefe65711214317bf4fe05e285894a15b9609b6d4d67b041ba7636e"
+    },
+    {
+      "accepted_preimage_sha256": "92bae51f565688a0e08bf5da2baed36c768949298b8137a18c954979db5b63ea",
+      "bytes": 604,
+      "file_start": 4263936,
+      "id": "schala-graphics-helper",
+      "kind": "original-helper",
+      "path": "private/test_runs/pc07_schala_presentation_assembly_v1/graphics.bin",
+      "sha256": "8a622b0b85526ae9cf6d5d06fbd5c5b73849ec8c4454271fc47a47ed87d17532"
+    },
+    {
+      "accepted_preimage_sha256": "47f3e607122495a3b4828b619c46e54890e3b682e58135ef4921ae4b9ce22613",
+      "bytes": 153,
+      "file_start": 4268032,
+      "id": "schala-name-helper",
+      "kind": "original-helper",
+      "path": "private/test_runs/pc07_schala_name_source_v1/name.bin",
+      "sha256": "8ee24de53c44206ac33dda08ed837f75261b82a07798ee260fa4253595970542"
+    },
+    {
+      "accepted_preimage_sha256": "057221a3e8cdb1cc76ce54c6e6c4f78d8ce4fbc4f8f5ad97d4f24029cee97f57",
+      "bytes": 2528,
+      "file_start": 4325376,
+      "id": "retail-schala-raw-graphics",
+      "kind": "retail-provider",
+      "sha256": "69322758b77fff5701cb0d5edb4ca34ab4109c2313ececd37bc018106fe84b73"
+    },
+    {
+      "accepted_preimage_sha256": "2de5d676c95a67bb5007e69ab6233983ce700a1ec524363f278435dd9ed627f5",
+      "bytes": 920,
+      "file_start": 4329472,
+      "id": "retail-schala-assembly",
+      "kind": "retail-provider",
+      "sha256": "ed6ad15d16d60b2135d1af3bc6fb10de283dcda744d06da33ea37699373d2314"
+    },
+    {
+      "accepted_preimage_sha256": "2f49f7b0112d44e2bec5262b3714e249f5d5c91144a60e8c26b0fb26c66718c1",
+      "bytes": 4112,
+      "file_start": 4341760,
+      "id": "retail-schala-primary",
+      "kind": "retail-provider",
+      "sha256": "1fbe99a8e2b9a129a04f3d9ae3025d322a9defa312767b0b30a00c3ed6757896"
+    },
+    {
+      "accepted_preimage_sha256": "24b18b819a31619e30736cefd697252c564499abaf74531fcd98834aa268b179",
+      "bytes": 1028,
+      "file_start": 4346112,
+      "id": "retail-schala-timing",
+      "kind": "retail-provider",
+      "sha256": "b2dcf0cc4f995209a527d75e298b44a4a1895484fded4c6731f37465e79c07a3"
+    }
+  ],
+  "prior_components": [
+    {
+      "bytes": 157,
+      "id": "original-helper-component",
+      "path": "private/test_runs/pc07_donor_native_source_v2/adapters.bin",
+      "sha256": "315f409ece80e84c656930c47bc5a0d6e0f97d83aecc95b7c474abc2056750e7"
+    },
+    {
+      "bytes": 215,
+      "id": "original-battle-component",
+      "path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.bin",
+      "sha256": "39410b2ccdc09a9ad3667f363d7358bf91f552ee20d145d33c8cfc3c76a9849b"
+    }
+  ],
+  "production_approval": false,
+  "provider": {
+    "allocations": [
+      {
+        "bytes": 2528,
+        "id": "retail-schala-raw-graphics",
+        "private_proposed_cpu_address": 4325376,
+        "sha256": "69322758b77fff5701cb0d5edb4ca34ab4109c2313ececd37bc018106fe84b73"
+      },
+      {
+        "bytes": 920,
+        "id": "retail-schala-assembly",
+        "private_proposed_cpu_address": 4329472,
+        "sha256": "ed6ad15d16d60b2135d1af3bc6fb10de283dcda744d06da33ea37699373d2314"
+      },
+      {
+        "bytes": 4112,
+        "id": "retail-schala-primary",
+        "private_proposed_cpu_address": 4341760,
+        "sha256": "1fbe99a8e2b9a129a04f3d9ae3025d322a9defa312767b0b30a00c3ed6757896"
+      },
+      {
+        "bytes": 1028,
+        "id": "retail-schala-timing",
+        "private_proposed_cpu_address": 4346112,
+        "sha256": "b2dcf0cc4f995209a527d75e298b44a4a1895484fded4c6731f37465e79c07a3"
+      }
+    ],
+    "bounded_primary_and_timing_entries_checked": 1024,
+    "canonical_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "entrypoint_semantic_equivalence_proved": false,
+    "evidence_level": "verified-static-private-provider",
+    "extra_retail_guard_cells_per_facing_and_timing": 1,
+    "facing_count": 4,
+    "facing_stride": 1028,
+    "fallback": "exact retail entry-zero cell for the corresponding facing",
+    "fallback_frame_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fallback_selector_range": [
+      9,
+      255
+    ],
+    "first_nine_numeric_cells_preserved": true,
+    "logical_pc_identity": 7,
+    "name_requested": "Schala",
+    "name_runtime_installed": false,
+    "native_init_eight_byte_reads_bounded": true,
+    "prior_supported_slot_prefix_reproduced": true,
+    "production_approval": false,
+    "reproduction": "python -B tools/build_pc07_schala_presentation_v1.py",
+    "retail_npc_id": 9,
+    "retail_palette_cpu_address": 14945280,
+    "retail_palette_size": 24,
+    "rom_emitted": false,
+    "runtime_integration": false,
+    "schema": "project-epoch-pc07-retail-schala-presentation-v1",
+    "selectors_per_facing": 256,
+    "source_frame_count": 23,
+    "source_tile_count": 79,
+    "sources": {
+      "tools/build_schala_vanilla_npc_compat_v0.py": "0ad950e0e069b1171a306da52479014ac896f1d3d4c7e773896f63db34b6c1a9",
+      "tools/build_schala_vanilla_npc_supported_slot_smoke_v0.py": "d5b43ee02d7a5064cd2cd673f743aa92826d94213e7f1cdb1b811ea2ed3f301b"
+    }
+  },
+  "runtime_qualified": false,
+  "schema": "project-epoch-pc07-schala-private-recipe-v1",
+  "scope": "Private PC07 presentation with original six-byte Schala text, display type2, copied retail pose fallbacks; no global name, menu, save, vehicle or production proof.",
+  "sources": [
+    {
+      "bytes": 2541,
+      "path": "asm/pc07_donor_read_adapters_v2.asm",
+      "sha256": "df0584a820d3b6b4994298cc1f0d6b3ffc4089797b42c5d6c6217d02a4e5a914"
+    },
+    {
+      "bytes": 5190,
+      "path": "asm/pc07_first_attack_adapters_v1.asm",
+      "sha256": "290d3335b0c4143895a5804ed1b20273108f6fc231859ff08733e1af9a33fbd1"
+    },
+    {
+      "bytes": 3391,
+      "path": "asm/pc07_schala_name_v1.asm",
+      "sha256": "3eee0b41312aeaeb0646b2fa8da3f4e0f8c4a299fcdf0cd3ca49d9e118aae72f"
+    },
+    {
+      "bytes": 6697,
+      "path": "asm/pc07_schala_presentation_v1.asm",
+      "sha256": "9a1ef269533203c0d4e8d8fe0aa81fb75cacfe7e54f7fc30b469a3aef6288226"
+    },
+    {
+      "bytes": 18878,
+      "path": "private/research/ctrando_20609d5/src/ctrando/strings/ctstrings.py",
+      "sha256": "60447727f20cb97d0455ddb512cade7450f70a2c2e20d373485680a940bd46e6"
+    },
+    {
+      "bytes": 38556,
+      "path": "private/research/pc07_battle_adapters_20261013/assembled_hook_manifest_v1.json",
+      "sha256": "ea41d24c92de9757093c8c4874672a7efa06a696adf733b9094976987883addb"
+    },
+    {
+      "bytes": 6987,
+      "path": "private/research/pc07_battle_adapters_20261013/claude_disposition_v1.txt",
+      "sha256": "b61185bad2b57a08e8cb2ec242fdf310f4797178d8bc5e34a34dd1e4e2405742"
+    },
+    {
+      "bytes": 4446,
+      "path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.json",
+      "sha256": "23aa9fac0322af0ea71b681d7aa8b99b76790eeca1e8325852f9e3627cfaa8e5"
+    },
+    {
+      "bytes": 215,
+      "path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.bin",
+      "sha256": "39410b2ccdc09a9ad3667f363d7358bf91f552ee20d145d33c8cfc3c76a9849b"
+    },
+    {
+      "bytes": 12217,
+      "path": "private/research/pc07_schala_presentation_20261013/build_graphics_helpers_v1.py",
+      "sha256": "b179ef75542824d8c97aeff6eac498652359193c81f1761fa4803d5b6dd0b771"
+    },
+    {
+      "bytes": 25099,
+      "path": "private/research/pc07_schala_presentation_20261013/hook_plan.json",
+      "sha256": "2fef3fe8efcc7d0f18a80f10fd8e90d0aae8b6eaef5bf2518bd622662294e6b3"
+    },
+    {
+      "bytes": 9118,
+      "path": "private/research/pc07_schala_presentation_20261013/name_hook_plan.json",
+      "sha256": "c5ac3879ba4f4c9945dfede8e8415b59441d8f1afd2642c572e71dbac1ea7bf0"
+    },
+    {
+      "bytes": 6530,
+      "path": "private/research/pc07_schala_presentation_20261013/seal_recipe_v1.py",
+      "sha256": "3d910050f9ac49ad09a7d4aacb778b67aa9bf2e155aa78f64eae4191e491d7ad"
+    },
+    {
+      "bytes": 157,
+      "path": "private/test_runs/pc07_donor_native_source_v2/adapters.bin",
+      "sha256": "315f409ece80e84c656930c47bc5a0d6e0f97d83aecc95b7c474abc2056750e7"
+    },
+    {
+      "bytes": 4571,
+      "path": "private/test_runs/pc07_donor_native_source_v2/source_review.json",
+      "sha256": "5b1ea5cff78b79f2f1a12a008e6731873eb20adb9535012bf482f540e484c7ca"
+    },
+    {
+      "bytes": 153,
+      "path": "private/test_runs/pc07_schala_name_source_v1/name.bin",
+      "sha256": "8ee24de53c44206ac33dda08ed837f75261b82a07798ee260fa4253595970542"
+    },
+    {
+      "bytes": 604,
+      "path": "private/test_runs/pc07_schala_presentation_assembly_v1/graphics.bin",
+      "sha256": "8a622b0b85526ae9cf6d5d06fbd5c5b73849ec8c4454271fc47a47ed87d17532"
+    },
+    {
+      "bytes": 2800445,
+      "path": "references/ct_disassembly/bank_C0.asm",
+      "sha256": "b5b209cd03ae430f095482a429798ee3600d97af3774841c069d8f9a071140b8"
+    },
+    {
+      "bytes": 2768817,
+      "path": "references/ct_disassembly/bank_C1.asm",
+      "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+    },
+    {
+      "bytes": 290190,
+      "path": "references/ct_disassembly/bank_CC.asm",
+      "sha256": "d60669a2de45ce888298b5d1e4a88739173bb707a8293ddadbeffb2eeab2eb7d"
+    },
+    {
+      "bytes": 691286,
+      "path": "references/ct_disassembly/bank_FD.asm",
+      "sha256": "0f8a0d59e97de7d60945fdfef1b614217e3d673cca1e14f543234d789a87779e"
+    },
+    {
+      "bytes": 11809,
+      "path": "tools/build_original_snes_package_cartridge_v1.py",
+      "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a"
+    },
+    {
+      "bytes": 5138,
+      "path": "tools/build_pc07_schala_presentation_v1.py",
+      "sha256": "8ee3eead6571e9eb05043e91d3d1a1e46b3cb151479a708f15cd55be3aa5864a"
+    },
+    {
+      "bytes": 36018,
+      "path": "tools/build_schala_vanilla_npc_compat_v0.py",
+      "sha256": "0ad950e0e069b1171a306da52479014ac896f1d3d4c7e773896f63db34b6c1a9"
+    },
+    {
+      "bytes": 26389,
+      "path": "tools/build_schala_vanilla_npc_supported_slot_smoke_v0.py",
+      "sha256": "d5b43ee02d7a5064cd2cd673f743aa92826d94213e7f1cdb1b811ea2ed3f301b"
+    },
+    {
+      "bytes": 12383,
+      "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+      "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318"
+    },
+    {
+      "bytes": 15819,
+      "path": "tools/pc07_private_expanded_write_contract_v1.py",
+      "sha256": "b8bb7cec02a5041658922a842cc29a086e45edeef82d12059f436d794e39f376"
+    },
+    {
+      "bytes": 13561,
+      "path": "tools/pc07_private_first_attack_write_contract_v1.py",
+      "sha256": "32364652a0c744ceecaa38c246d0ea6aec19407198764d2d29e2491d63676e1d"
+    },
+    {
+      "bytes": 7734,
+      "path": "tools/schala_compat_menu_v1.py",
+      "sha256": "4b679c79791a8d2ec879f2f9e1e5ad5b46bb4655f59c7d00d217cc3613c35f59"
+    },
+    {
+      "bytes": 13386,
+      "path": "tools/schala_rom_scaffold.py",
+      "sha256": "a517ad5c9d5a1f6b19a3050dfcc4903e2e177abe685ecaf78a60ca6884a9ed4a"
+    }
+  ],
+  "target_bytes": 8388608,
+  "target_sha256": "96f2121be7c94d2acdf80bc3e22a3c06493e00345575802354725b71f43a2106"
+}

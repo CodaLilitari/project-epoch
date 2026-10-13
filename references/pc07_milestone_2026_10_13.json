@@ -1,0 +1,187 @@
+{
+  "schema": "project-epoch-public-milestone-index-v1",
+  "date": "2026-10-13",
+  "status": "instrumented-native-SNES-prototype",
+  "goal_complete": false,
+  "scope": "Four distinct observed milestones; not one combined gameplay/save run.",
+  "milestones": [
+    {
+      "id": "field-to-battle",
+      "evidence": "reviewed-emulator-runtime-observation",
+      "report": "docs/pc07_field_battle_handoff_2026_10_13.md",
+      "reproduction_update": "docs/pc07_field_battle_handoff_2026_10_13_v2.md",
+      "result": "Independent PC07 field movement, destination event and native battle handoff."
+    },
+    {
+      "id": "ordinary-attack",
+      "evidence": "reviewed-emulator-runtime-observation",
+      "report": "docs/pc07_first_attack_checkpoint_2026_10_13.md",
+      "reproduction_update": "docs/pc07_first_attack_checkpoint_2026_10_13_v2.md",
+      "appearance": "earlier-Crono-donor-image",
+      "damage": 962,
+      "later_actor_ready": true
+    },
+    {
+      "id": "schala-presentation",
+      "evidence": "reviewed-emulator-runtime-observation-and-visual-inspection",
+      "report": "docs/pc07_schala_presentation_2026_10_13.md",
+      "appearance": "retail-Schala-with-copied-pose-fallbacks",
+      "HUD_name": "Schala",
+      "presentation_windows": 96,
+      "tile_copy_and_control_windows": 8,
+      "player_attack_observed_in_this_run": false
+    },
+    {
+      "id": "first-escape-commit",
+      "evidence": "reviewed-emulator-runtime-observation",
+      "report": "docs/pc07_first_escape_commit_2026_10_13.md",
+      "appearance": "earlier-Crono-donor-image",
+      "authored_escape_enabled_encounter": true,
+      "copied_bytes": 240,
+      "active_logical_ids": [
+        0,
+        1,
+        7
+      ],
+      "live_hp_at_cut": [
+        739,
+        603,
+        608
+      ],
+      "PC07_MP_at_cut": 93,
+      "cut": "C18218-before-instruction",
+      "trace_rows": 402532,
+      "second_commit_observed": false
+    }
+  ],
+  "preservation": {
+    "seven_original_identities_retained": true,
+    "presentation_seven_original_records_unchanged": true,
+    "escape_active_original_records_receive_native_battle_updates": true,
+    "escape_reserve_original_records_02_to_06_unchanged": true,
+    "original_stored_names_including_Epoch_preserved": true,
+    "captured_SRAM_unchanged": true,
+    "complete_Epoch_vehicle_behavior_proved": false
+  },
+  "preparation": {
+    "explicit_debugger_write_readback_pairs": 4642,
+    "CPU_register_edits": 0,
+    "native_recruitment_proved": false
+  },
+  "open": [
+    "combined Schala appearance and ordinary Attack",
+    "complete battle-to-field restoration",
+    "normal save and genuine cold load",
+    "native recruitment",
+    "Techs and general menus",
+    "full animation and scene coverage",
+    "victory/progression",
+    "full vehicle and interrupt matrix"
+  ],
+  "route": {
+    "primary": "SNES",
+    "comparative_fallback": "recompilation",
+    "general_no_slowdown_claim": false
+  },
+  "portfolio_illustration": {
+    "file": "schala-pc07-hero-2026-10-13.jpg",
+    "sha256": "251cbbab9403803edd7531d83d611e20e4d7b13184da0cab15959160bf47e06c",
+    "bytes": 135964,
+    "width": 1280,
+    "height": 1120,
+    "source": "exact user-supplied screenshot, unedited",
+    "raw_runtime_trace": false
+  },
+  "sources": [
+    {
+      "path": "docs/pc07_milestone_2026_10_13.md",
+      "bytes": 6542,
+      "sha256": "12f3a4061914f0346fbf7eda8134b9d53ba2cf00f3bd1e1fca492b6c39c74b21"
+    },
+    {
+      "path": "docs/pc07_field_battle_handoff_2026_10_13.md",
+      "bytes": 7279,
+      "sha256": "74251b2dd6f72b5e76d5b2b3056a9a2a68efd42ac699b6e7f9fc4d91207ee5b9"
+    },
+    {
+      "path": "references/pc07_field_battle_handoff_2026_10_13.json",
+      "bytes": 7334,
+      "sha256": "8aa574931621bea81350516d2f054d96dbbf8728933d372650d7fbb057ae9d13"
+    },
+    {
+      "path": "docs/pc07_field_battle_handoff_2026_10_13_v2.md",
+      "bytes": 4427,
+      "sha256": "d417726664cce0e07bc6727c5cdea15f48f1b00715f59be0b52b57cfcb94ba26"
+    },
+    {
+      "path": "references/pc07_field_battle_handoff_2026_10_13_v2.json",
+      "bytes": 9582,
+      "sha256": "a990bed9c87d988ad98fcffda538ff1651e7d9cd8ac549271316140a68e75be9"
+    },
+    {
+      "path": "docs/pc07_first_attack_checkpoint_2026_10_13.md",
+      "bytes": 9626,
+      "sha256": "e69dfc16b5bd068ff7cd7f41107a237240ba19200fa8bf602dbeda04e2711d77"
+    },
+    {
+      "path": "references/pc07_first_attack_checkpoint_2026_10_13.json",
+      "bytes": 10972,
+      "sha256": "ff1c4e88b60e4de35c63dcbfc126ad6c3f8dac27be9d93ac0ee253b6973989df"
+    },
+    {
+      "path": "docs/pc07_first_attack_checkpoint_2026_10_13_v2.md",
+      "bytes": 1711,
+      "sha256": "74101b1dcfda555172bfc64760520ab9986d3c06069b85aeebd251b5bce978d4"
+    },
+    {
+      "path": "references/pc07_first_attack_checkpoint_2026_10_13_v2.json",
+      "bytes": 35658,
+      "sha256": "42cec75374d9415d8e25c1d81456dcf497125f2626d59f58c67b108827763d81"
+    },
+    {
+      "path": "docs/pc07_schala_presentation_2026_10_13.md",
+      "bytes": 11740,
+      "sha256": "1997eb72cda092fbcca506ad83cb18398697c1ee27f3dfdd470ad3aed253dc68"
+    },
+    {
+      "path": "references/pc07_schala_presentation_observation_2026_10_13.json",
+      "bytes": 5031,
+      "sha256": "2b9e0e461b268b3484d635e02c37569e7dc81598d136ea75c6b91c09e2e9df78"
+    },
+    {
+      "path": "docs/pc07_first_escape_commit_2026_10_13.md",
+      "bytes": 8118,
+      "sha256": "29973b06d8d6c8833a14ae2c498ffc8b63a69bca548627f61353e7efb8279dbb"
+    },
+    {
+      "path": "references/pc07_first_escape_commit_2026_10_13.json",
+      "bytes": 8765,
+      "sha256": "c73c6b4f24997aaf4ac52f8ab51d9d5c1fcdc36a28244810ca00289ab1a1fa8c"
+    },
+    {
+      "path": "docs/recomp_tool_practical_assessment_2026_10_13.md",
+      "bytes": 11824,
+      "sha256": "ccef0a3a71da6ca34636386e2cd90d2ab429eebb4d29fe583ef285d00c4b674c"
+    },
+    {
+      "path": "references/recomp_tool_practical_assessment_2026_10_13.json",
+      "bytes": 19501,
+      "sha256": "14d223a72bd2798519a99f4d169e28229f5c3b5f2b60d90050bdf1ce29f33d72"
+    }
+  ],
+  "reproduction": {
+    "requires_private_fixtures_for_full_native_replay": true,
+    "ROMs_saves_states_extracted_payloads_raw_traces_distributed": false
+  },
+  "credits": {
+    "direction_and_screenshot": "Andrei Pemberton",
+    "implementation_and_research": "Coda through Codex",
+    "community_mappings": [
+      "Mauron",
+      "Vehek",
+      "JLukas"
+    ],
+    "event_insertion_methods": "Temporal Redux / Jets of Time",
+    "first_discovery_claim": false
+  }
+}

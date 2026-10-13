@@ -1117,6 +1117,44 @@ def audit_pc07_private_expanded_images(manifest, source, target, *, workspace_ro
     return diagnostic.audit_images(manifest, source, target, **kwargs)
 
 
+def validate_pc07_private_first_attack_manifest(manifest, *, workspace_root=None):
+    """Fixed private first-Attack contract; no production catalog expansion."""
+    import pc07_private_first_attack_write_contract_v1 as diagnostic
+    kwargs = {} if workspace_root is None else {"workspace_root": workspace_root}
+    return diagnostic.validate_manifest(manifest, **kwargs)
+
+
+def audit_pc07_private_first_attack_images(manifest, source, target, *, workspace_root=None):
+    """Audit all fixed first-Attack sections before private image emission."""
+    import pc07_private_first_attack_write_contract_v1 as diagnostic
+    kwargs = {} if workspace_root is None else {"workspace_root": workspace_root}
+    return diagnostic.audit_images(manifest, source, target, **kwargs)
+
+
+def validate_pc07_schala_presentation_manifest(manifest):
+    """Separate fixed private retail-Schala recipe; production stays empty."""
+    import pc07_schala_presentation_write_contract_v1 as presentation
+    return presentation.validate_manifest(manifest)
+
+
+def audit_pc07_schala_presentation_images(manifest, source, target):
+    """Audit the entire pinned-source presentation image before emission."""
+    import pc07_schala_presentation_write_contract_v1 as presentation
+    return presentation.audit_images(manifest, source, target)
+
+
+def validate_pc07_schala_presentation_v2_manifest(manifest):
+    """Separate fixed v2 tile-bank repair; all production catalogs stay empty."""
+    import pc07_schala_presentation_write_contract_v2 as presentation
+    return presentation.validate_manifest(manifest)
+
+
+def audit_pc07_schala_presentation_v2_images(manifest, source, target):
+    """Audit the complete v2 image, including its exact extra tile-bank hook."""
+    import pc07_schala_presentation_write_contract_v2 as presentation
+    return presentation.audit_images(manifest, source, target)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifest", type=pathlib.Path)

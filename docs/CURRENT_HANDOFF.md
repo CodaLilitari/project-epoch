@@ -1,5 +1,185 @@
 # Project Epoch current handoff
 
+## October 13 publication and first escape commit
+
+Andrei explicitly requested an updated GitHub/GitLab/portfolio publication and
+supplied the Schala battle screenshot as the portfolio's main hero. This is
+current publication authorization. Preserve the existing portfolio and all
+historical evidence; publish source and curated findings, not ROMs, saves,
+states, extracted game payloads or raw traces. The supplied screenshot is the
+specific authorized portfolio illustration. The playable-eighth-character
+goal remains active and incomplete.
+
+The [first native escape commit](pc07_first_escape_commit_2026_10_13.md) now
+passes its frozen validator and an additive independent review, reproduced
+by root. The unchanged accepted Attack image executes the authored escape
+fixture, then copies 240 bytes for logical PCs 00/01/07 and returns at
+`$C18218`. Their live HP become 739/603/608; PC07 MP remains 93. Five reserve
+original records, all 48 stored name bytes including Epoch, and all 26 SRAM
+snapshots remain unchanged. This is the first commit only, on the earlier
+donor-appearance image. Do not claim complete field return or a combined
+Schala-appearance Attack from it.
+
+Resume implementation from the source-only continuation packet
+`private/research/pc07_escape_field_return_20261013/review_v1.md`: second
+commit at `$C18440`, actual battle return `$C018AB`, then the proposed full
+transition cut `$C018CD`. The exact 24-byte exit branch is conditionally
+decoded for its selected premises; no new collector or native full-return
+run has been executed. Preserve the completed first-commit proof.
+
+The separate save design at
+`private/research/pc07_save_integration_20261013/save_integration_v1.md`
+reuses the ten-region serializer and selects a separately numbered private
+profile-01 diagnostic with an explicitly longer transition. It installs
+nothing. Scratch/interrupt ownership, the actual load success/failure ABI,
+preview handling, declared recruited-state fixture and final post-field record
+admission remain prerequisites. Claude Code review was requested through the
+verified subscription route. The helper reported `sent: true` and a timeout,
+with `model_review_completed: false`; the hub records delivery as unknown.
+No returned Claude review has been accepted, and no duplicate was submitted.
+
+Andrei also requested a later world-map sprite set for Schala. Match the
+existing playable characters' map-sprite scale, palette, silhouettes, poses
+and animation timing. Prefer deliberate pixel work or a code-assisted sprite
+workflow over generative image creation. At that stage, confer with Lily and
+other relevant collaborators, including the available Claude Desktop Code
+routes, before choosing the method. This is a future art task, not an asset
+already produced or verified by the current field/battle preview.
+
+## October 13 active Schala presentation branch
+
+Andrei now requests retail Schala sprites and the full name Schala for PC07,
+with copied retail poses as fallbacks. The additive implementation is tracked
+in [the presentation work note](pc07_schala_presentation_2026_10_13.md).
+The old accepted Crono-appearance image and Attack run remain frozen. The new
+provider compiler reuses the accepted NPC provider and fills all 256 numeric
+animation selectors, with explicit guard cells for eight-byte initialization
+reads. The fixed six-letter battle-name helper is separately assembled.
+The v1 presentation image was emitted with both shared guard audits passing,
+but later source review caught bank `$42` falling through to hardcoded `$D5`
+in the non-flipped field decoder. No v1 native launch occurred. Preserve it as
+a static pilot. The additive v2 decoder repair now has an actual continuous
+field-to-battle run with visible Schala and the full six-letter battle HUD name.
+All 96 sampled presentation windows and eight tile-copy/control windows pass;
+original records, stored names including Epoch, body palettes and SRAM checks
+pass. Preserve the initial validator failure: it wrongly required a temporary
+HUD buffer to retain its name cells after command-menu reuse. The additive
+temporal validator qualifies the same trace with correctly limited name claims.
+The screenshot, not an unrecorded VRAM ledger, establishes the full visible name.
+Do not repeat this preview without source drift or a new failing boundary.
+
+The request's field/battle appearance milestone is achieved in the private
+fixture. Battle action after the appearance change, the fourth rendered facing,
+menu/dialogue names, recruitment and save/cold-load remain separate work. Keep
+the prior Attack and parked escape packets unchanged; do not describe this
+preview as a standalone playable release or an Epoch vehicle test.
+
+The separate authored escape-event transform is complete-static:
+`tools/transform_pc07_escape_event_v1.py` changes only accepted event0126 packet
+offset0547 from93 to13. Its two focused tests pass. The new escape collector
+has since run through the first native commit using the additive v2 launcher
+and explicit historical source resolution described above. Complete
+battle-to-field return remains unproved. Preserve the original source packet.
+
+## October 13 resumed work, tool tests and first native Attack
+
+Andrei explicitly said “You may resume,” confirmed E: is unlocked if needed,
+and authorized downloading/testing useful Ghidra and recompilation tools.
+The playable-eighth-character goal is active and incomplete. This resumption
+supersedes the pause instruction in the historical October 7 section below;
+it does not erase or reinterpret that frozen evidence. No new publication is
+implied by the local work recorded here.
+
+The [practical tool assessment](recomp_tool_practical_assessment_2026_10_13.md)
+records new executed evidence: a local headless ct-recomp build passes 23
+engine tests and nine selected game tests through a Gato victory replay.
+These compare native dispatch with its own interpreter, not Mesen or the full
+campaign. Ghidra and its SNES extension have actual small-probe results and
+specific limitations. A Windows generic SNES CLI generates an original test
+project; that generated output has not been built or run. This strengthens the
+PC alternative without establishing that it simplifies PC07. Retain the SNES
+prototype as the current implementation baseline and compare one actual Epoch
+change before making a route decision.
+
+The new [continuous field-to-battle checkpoint](pc07_field_battle_handoff_2026_10_13.md)
+reuses the existing accepted image unchanged. Collector v2 now passes one
+complete run through destination event0126, its three native graphics-helper
+invocations, the real D8 request and native candidate exports, ending before
+C018A7's battle-initialization call. Independent offline review and root's
+reproduction agree on all 250,006 rows, fifteen SRAM/preservation snapshots,
+4,641 preparation pairs and six helper calls. The machine record is
+`references/pc07_field_battle_handoff_2026_10_13.json`.
+
+Preserve the first pilot at `private/test_runs/pc07_field_battle_route_v1_run1`:
+its collector incorrectly expected pending=$21 at C01890 after native C0177B
+had consumed bit$20. V2 verifies both actual writes and reads in the $21→$01
+lifecycle, without relaxing other gates. The accepted run is
+`private/test_runs/pc07_field_battle_route_v2_run1`, bundle
+`26114966b15ab41b807de0d8ab467db1e8e1a2ad6651855f439e74cd8b5dc9fd`.
+Preserve the old v3 field run and both new route runs. Reuse this route; its
+completion does not establish battle initialization, first Attack or saves.
+
+The separate original battle-adapter packet under
+`private/research/pc07_battle_adapters_20261013` now assembles eight new helpers
+into 215 bytes, with sixteen exact hook spans and five compatibility operands.
+Its original source-only and assembled receipts remain frozen. A separate
+private first-Attack contract now places the unchanged 215-byte component at
+`$410100`, retaining the old 157-byte component at `$410000`. The emitted
+diagnostic is `private/test_runs/pc07_first_attack_diagnostic_v1/diagnostic.sfc`,
+SHA256 `6d420e3daa6761a6ca2b0dd6bfc9119aa15967124f92c5d731a431f76726eefa`.
+Both shared intent and complete-diff audits pass for its 34 fixed sections
+and 481 changed bytes relative to the pinned inert scaffold. Fresh assembly
+matches both reviewed components. This is private static construction
+evidence, not a production allocation or native Attack result. The source
+builder and emission receipt are preserved under
+`private/research/pc07_first_attack_builder_20261013` and beside the image.
+Its conditional 28,544-case whole-span model and Claude source review remain
+separate static evidence. The source review resolves slot-based weapon-mask
+production and canonical Tech-partner exclusion. The new selected native run
+now qualifies thirty actual hook invocations, including their DBR/width/hidden-B
+premises and complete instruction/bus sequences; broader entry coverage and
+global interrupt safety remain unproved.
+
+The [first native Attack checkpoint](pc07_first_attack_checkpoint_2026_10_13.md)
+is now independently accepted and reproduced by root. The machine record is
+`references/pc07_first_attack_checkpoint_2026_10_13.json`; read-only reproduction
+is `python -B tools/audit_pc07_first_attack_checkpoint_2026_10_13.py`.
+One complete run at `private/test_runs/pc07_first_attack_v2_run1`, bundle
+`397ef413aac4e58f2dcb09fd855e862c4726de7c2b98c018b781ff036691df70`,
+passes all 343,387 rows, thirty battle-hook windows across fourteen identities,
+240 native work-copy bytes and 22 preservation/SRAM snapshots. PC07 in slot 2
+executes an actual Attack, naturally takes the critical family, reduces target
+HP 8000→7038, returns through C1BA80/C18603 cleanup and becomes ready again.
+This uses 4,642 explicit WRAM preparation pairs and no debugger CPU edits.
+It retains donor presentation assets. All seven original live records, Epoch
+name bytes and captured SRAM are preserved; native work HP changes normally.
+
+Preserve the incomplete 900-second v1 pilot unchanged. Its 24 closed startup
+windows pass independently, but no Attack entry occurred. Recorder v2 removes
+unused per-instruction CPU snapshots; all 270,687 shared trace rows match after
+removing only the header source-bundle identifier. The full v2 trace is
+`e2d58e302e937e70577a5d855954c9bbe08eb12bfafd50e53874a78d1a5aed00`.
+Do not rerun the accepted action or prior mapping matrices without a relevant
+changed source or missing condition.
+
+The next source-only gate is native battle work-to-live commit and return.
+The bounded memo is
+`private/research/pc07_battle_return_gate_20261013/next_gate_v1.md`; root
+reproduced its receipt `b55a858022c6ec4459f21b2b1f6d36df502488bbcaafd16465ad969a95326366`
+from `reproduce_gate_v1.py`. It checks 253 selected canonical instruction rows
+and all three direct commit callers without claiming full exit closure.
+C1B442's roster-based destination already reaches 2830..287F for ID07; its
+actual writes need a separate observation. The current D8=$93 fixture forbids
+escape. A proposed authored escape-enabled derivative would change only that
+operand to $13, or use an already escapable ordinary fixture. Neither has run;
+do not claim vanilla Lavos escape. Selected commit needs a deliberately changed
+preservation contract allowing actual writes to active records 00/01/07 while
+preserving reserve identities and Epoch. Victory/progression and full teardown
+remain separate gates. Save/cold-load, unique presentation, vehicle interaction
+and a playable release remain open. No Tech or production binding is approved.
+The goal stays active and incomplete; these local results do not imply new
+GitHub/GitLab/portfolio publication.
+
 ## October 7 paused checkpoint
 
 **Paused at Andrei's explicit request after preparing the publication checkpoint.

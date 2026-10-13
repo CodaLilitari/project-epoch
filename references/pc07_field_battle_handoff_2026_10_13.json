@@ -1,0 +1,197 @@
+{
+  "schema": "project-epoch-pc07-field-battle-handoff-2026-10-13-v1",
+  "date": "2026-10-13",
+  "status": "independently-reviewed-local-checkpoint-goal-active",
+  "evidence_level": "one emulator-assisted continuous route; exact independent offline reproduction",
+  "human_report": {
+    "path": "docs/pc07_field_battle_handoff_2026_10_13.md",
+    "bytes": 7279,
+    "sha256": "74251b2dd6f72b5e76d5b2b3056a9a2a68efd42ac699b6e7f9fc4d91207ee5b9"
+  },
+  "auditor": {
+    "path": "tools/audit_pc07_field_battle_handoff_2026_10_13.py",
+    "bytes": 5696,
+    "sha256": "e7698de94d35cf3d97528e5297c278ea14ec03e8528a0e9f96d05b9c76a7c5ea"
+  },
+  "run_receipt": {
+    "path": "private/test_runs/pc07_field_battle_route_v2_run1/receipt.json",
+    "bytes": 58728,
+    "sha256": "b963773dc8c56dafcf8cc1725e63d0bd2100100f163d4ee46406bf72261f411b"
+  },
+  "independent_receipt": {
+    "path": "private/research/pc07_field_battle_route_v2_review_20261013/receipt.json",
+    "bytes": 38993,
+    "sha256": "7482b311ecf4f66c92ed772bf8dfb5bf084ea6cfaa6a5b085f75b7f324b78380"
+  },
+  "independent_reproducer": {
+    "path": "private/research/pc07_field_battle_route_v2_review_20261013/reproduce_review.py",
+    "bytes": 10063,
+    "sha256": "0fbd49fc49418097b261ce5f2117ea3606def4a46e9c1f511509013463bf2cb4"
+  },
+  "source_bundle_sha256": "26114966b15ab41b807de0d8ab467db1e8e1a2ad6651855f439e74cd8b5dc9fd",
+  "source_count": 54,
+  "trace": {
+    "path": "private/test_runs/pc07_field_battle_route_v2_run1/events.jsonl",
+    "bytes": 83096371,
+    "sha256": "fae78d2a6d505d9bffd0bfbe0bcff3383930b0101675e13b61ad928cbfb7a436"
+  },
+  "records": 250006,
+  "snapshot_count": 15,
+  "all_snapshot_sram_equal_input": true,
+  "all_snapshot_original_seven_records_equal_baseline": true,
+  "all_snapshot_epoch_name_bytes_equal_baseline": true,
+  "candidate_hp": 968,
+  "donor_hp": 969,
+  "preparation_byte_write_readback_pairs": 4641,
+  "destination_preparation_pairs": 1916,
+  "destination_actual_changed_bytes": 1718,
+  "native_helper_groups": [
+    {
+      "windows": [
+        {
+          "which": "original00",
+          "instructions": 12,
+          "stack_writes": 5,
+          "stack_reads": 5,
+          "entry_sp": 1783,
+          "minimum_observed_sp": 1778,
+          "master_clocks": 320,
+          "ordered_stack_reconciliation": true,
+          "live_caller_bytes_preserved": 16
+        },
+        {
+          "which": "original01",
+          "instructions": 12,
+          "stack_writes": 5,
+          "stack_reads": 5,
+          "entry_sp": 1783,
+          "minimum_observed_sp": 1778,
+          "master_clocks": 360,
+          "ordered_stack_reconciliation": true,
+          "live_caller_bytes_preserved": 16
+        },
+        {
+          "which": "candidate07",
+          "instructions": 25,
+          "stack_writes": 5,
+          "stack_reads": 5,
+          "entry_sp": 1783,
+          "minimum_observed_sp": 1778,
+          "master_clocks": 664,
+          "ordered_stack_reconciliation": true,
+          "live_caller_bytes_preserved": 16
+        }
+      ],
+      "actual_rom_helper": true,
+      "debugger_cpu_edits": 0,
+      "expanded_mapping_observed": true,
+      "interrupts_observed_in_helper": 0,
+      "interrupt_safety_proved": false,
+      "global_stack_ownership_proved": false
+    },
+    {
+      "windows": [
+        {
+          "which": "original00",
+          "instructions": 12,
+          "stack_writes": 5,
+          "stack_reads": 5,
+          "entry_sp": 1783,
+          "minimum_observed_sp": 1778,
+          "master_clocks": 320,
+          "ordered_stack_reconciliation": true,
+          "live_caller_bytes_preserved": 16
+        },
+        {
+          "which": "original01",
+          "instructions": 12,
+          "stack_writes": 5,
+          "stack_reads": 5,
+          "entry_sp": 1783,
+          "minimum_observed_sp": 1778,
+          "master_clocks": 320,
+          "ordered_stack_reconciliation": true,
+          "live_caller_bytes_preserved": 16
+        },
+        {
+          "which": "candidate07",
+          "instructions": 25,
+          "stack_writes": 5,
+          "stack_reads": 5,
+          "entry_sp": 1783,
+          "minimum_observed_sp": 1778,
+          "master_clocks": 624,
+          "ordered_stack_reconciliation": true,
+          "live_caller_bytes_preserved": 16
+        }
+      ],
+      "actual_rom_helper": true,
+      "debugger_cpu_edits": 0,
+      "expanded_mapping_observed": true,
+      "interrupts_observed_in_helper": 0,
+      "interrupt_safety_proved": false,
+      "global_stack_ownership_proved": false
+    }
+  ],
+  "pending_lifecycle": {
+    "publish_write": 33,
+    "consumed_write": 1,
+    "processor_reads": [
+      33,
+      1
+    ],
+    "endpoint_pending": 1,
+    "endpoint_explore": 0,
+    "source_consumer": "C0177B TRB $17"
+  },
+  "native_candidate_export_hex_29BA_29BE": "0B09080F03",
+  "terminal": {
+    "site": "C018A7 before JSL C10000",
+    "poll": 2811,
+    "physical_stop_before_instruction_proved": false,
+    "post_cut_execution_excluded": true,
+    "shutdown_sram_authoritative": false
+  },
+  "root_visual_inspection": {
+    "path": "private/test_runs/pc07_field_battle_route_v2_run1/pre_battle_jsl.png",
+    "scope": "final field scene only; identity comes from trace, not appearance"
+  },
+  "documentary_limits": [
+    "post_load.png and compatibility_staged.png are empty; all WRAM/SRAM snapshots exist"
+  ],
+  "battle_initialization_proved": false,
+  "ordinary_attack_proved": false,
+  "save_cold_load_proved": false,
+  "epoch_vehicle_behavior_proved": false,
+  "global_wram_or_interrupt_closure": false,
+  "playable_release": false,
+  "new_rom_or_patch_emitted": false,
+  "uninstalled_battle_adapter_source_review": {
+    "facts": {
+      "path": "private/research/pc07_battle_adapters_20261013/claude_disposition_facts_v1.json",
+      "bytes": 3078,
+      "sha256": "9711c66002c28dfca81c90f7ae5d74ba61dda5d35f4b1795b782e3f15adb0be3"
+    },
+    "reproducer": {
+      "path": "private/research/pc07_battle_adapters_20261013/reproduce_claude_disposition_v1.py",
+      "bytes": 7803,
+      "sha256": "1fdc06d88dfe4bdf2eb064642ccfe79df66d2e74d3842d3a0adebbc6e5dc7955"
+    },
+    "receipt": {
+      "path": "private/research/pc07_battle_adapters_20261013/claude_disposition_receipt_v1.json",
+      "bytes": 1063,
+      "sha256": "4c55f0dad36e42acb556517804fac8324233458cf4dbb76522e5996f8f319ecf"
+    },
+    "evidence_level": "source-only; no hook installation or native battle execution",
+    "slot2_weapon_mask_production": "20 hex",
+    "selected_attack_plus4_consumer_proved": false,
+    "actual_hook_entry_dbr_witness": false,
+    "canonical_partner_derivations_checked": 116,
+    "computed_target_closure": false,
+    "reproduction": "python -B private/research/pc07_battle_adapters_20261013/reproduce_claude_disposition_v1.py"
+  },
+  "publication": false,
+  "preserved_rejected_pilot": "private/test_runs/pc07_field_battle_route_v1_run1",
+  "next_gate": "qualify and place separately guarded battle adapters, then observe first ordinary Attack; preserve vehicle and save obligations",
+  "reproduction": "python -B tools/audit_pc07_field_battle_handoff_2026_10_13.py"
+}

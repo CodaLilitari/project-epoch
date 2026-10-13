@@ -1,0 +1,370 @@
+{
+  "schema": "project-epoch-pc07-first-attack-checkpoint-2026-10-13-v1",
+  "date": "2026-10-13",
+  "status": "independently-reviewed-local-checkpoint-goal-active",
+  "evidence_level": "one emulator-assisted native Attack diagnostic; exact independent offline reproduction",
+  "human_report": {
+    "path": "docs/pc07_first_attack_checkpoint_2026_10_13.md",
+    "bytes": 9626,
+    "sha256": "e69dfc16b5bd068ff7cd7f41107a237240ba19200fa8bf602dbeda04e2711d77"
+  },
+  "auditor": {
+    "path": "tools/audit_pc07_first_attack_checkpoint_2026_10_13.py",
+    "bytes": 7355,
+    "sha256": "c014b074200ef7d63b0b647cafa5fbb4b186f91e53cac454164b1434618b7979"
+  },
+  "run_receipt": {
+    "path": "private/test_runs/pc07_first_attack_v2_run1/receipt.json",
+    "bytes": 81077,
+    "sha256": "ec65bff3752e99b6c0cb408bf0b9baba4f23efa2eb75618c8113148b2c5dcf4d"
+  },
+  "independent_receipt": {
+    "path": "private/research/pc07_first_attack_independent_review_20261013/review_v2.json",
+    "bytes": 60677,
+    "sha256": "36cdac6bcac3d33baa906935c8a5348a9306841f203f8e1cafb08a2004e3bbb6"
+  },
+  "independent_reproducer": {
+    "path": "private/research/pc07_first_attack_independent_review_20261013/review_v2.py",
+    "bytes": 20707,
+    "sha256": "31463f43f479625208f82565da6cd6061b7c804fbb442c87b7d8345e1344c969"
+  },
+  "source_bundle_sha256": "397ef413aac4e58f2dcb09fd855e862c4726de7c2b98c018b781ff036691df70",
+  "source_rows_rehashed": 98,
+  "receipt_artifacts_rehashed": 83,
+  "trace": {
+    "path": "private/test_runs/pc07_first_attack_v2_run1/events.jsonl",
+    "bytes": 116838047,
+    "sha256": "e2d58e302e937e70577a5d855954c9bbe08eb12bfafd50e53874a78d1a5aed00"
+  },
+  "records": 343387,
+  "successful_complete_runs": 1,
+  "repeat_pair": false,
+  "preparation_byte_write_readback_pairs": 4642,
+  "debugger_cpu_edits": 0,
+  "native_work_copy_bytes": 240,
+  "battle_hook_windows": 30,
+  "distinct_battle_hooks": 14,
+  "hook_counts": {
+    "attack_action": 1,
+    "attack_approach": 1,
+    "attack_critical_selector": 1,
+    "attack_first_participant": 1,
+    "battle_graphics_indices": 3,
+    "battle_name": 3,
+    "effect_actor_slot": 1,
+    "empty_dual_tech": 3,
+    "empty_single_tech": 3,
+    "empty_triple_tech": 3,
+    "initial_turn_slot": 3,
+    "mp_actor_slot": 1,
+    "setup_map_publication": 3,
+    "weapon_owner": 3
+  },
+  "candidate_action": {
+    "actor_slot": 2,
+    "logical_id": 7,
+    "action_id": 117,
+    "participant_ids": [
+      7,
+      255,
+      255
+    ],
+    "participant_store_rows": [
+      278485,
+      278486,
+      278487
+    ]
+  },
+  "selector_family_observed": "critical",
+  "normal_or_path_selector_observed": false,
+  "damage": {
+    "target_slot": 3,
+    "physical_word": "05FB0",
+    "before": 8000,
+    "after": 7038,
+    "delta": 962,
+    "nonlethal": true,
+    "native_word_store_snapshot_readback_pairs": [
+      {
+        "site": "C1ECA0",
+        "pre_store_n": 279718,
+        "byte_store_rows": [
+          279720,
+          279721
+        ],
+        "snapshot_readback_n": 279722,
+        "before": 8000,
+        "value": 7038
+      },
+      {
+        "site": "C1ECB2",
+        "pre_store_n": 279724,
+        "byte_store_rows": [
+          279726,
+          279727
+        ],
+        "snapshot_readback_n": 279728,
+        "before": 7038,
+        "value": 7038
+      },
+      {
+        "site": "C1ECC4",
+        "pre_store_n": 279730,
+        "byte_store_rows": [
+          279732,
+          279733
+        ],
+        "snapshot_readback_n": 279734,
+        "before": 7038,
+        "value": 7038
+      },
+      {
+        "site": "C1ED17",
+        "pre_store_n": 279736,
+        "byte_store_rows": [
+          279738,
+          279739
+        ],
+        "snapshot_readback_n": 279740,
+        "before": 7038,
+        "value": 7038
+      }
+    ],
+    "readback_kind": "observer snapshot after actual CPU store; not asserted to be a subsequent CPU data read"
+  },
+  "timeline": {
+    "entry": {
+      "n": 278261,
+      "poll": 3545,
+      "kind": "battle-site",
+      "site": "C1BFAA",
+      "pc": "C1BFAA",
+      "sp": 1768,
+      "master_clock": 2142708502
+    },
+    "action75_adapter_return": {
+      "n": 278298,
+      "poll": 3545,
+      "kind": "battle-hook-end",
+      "site": "C1C003",
+      "pc": "C1C003",
+      "sp": 1768,
+      "master_clock": 2142710272
+    },
+    "participants_readback": {
+      "n": 278488,
+      "poll": 3546,
+      "kind": "battle-site",
+      "site": "C1D573",
+      "pc": "C1D573",
+      "sp": 1764,
+      "master_clock": 2142878732
+    },
+    "critical_selector_return": {
+      "n": 278667,
+      "poll": 3549,
+      "kind": "battle-hook-end",
+      "site": "C1438F",
+      "pc": "C1438F",
+      "sp": 1750,
+      "master_clock": 2144036020
+    },
+    "pre_results_snapshot": {
+      "n": 279661,
+      "poll": 3731,
+      "kind": "snapshot",
+      "pc": "C1AC5A",
+      "sp": 1766,
+      "master_clock": 2209149762
+    },
+    "actual_Attack_caller": {
+      "n": 280010,
+      "poll": 3732,
+      "kind": "battle-site",
+      "site": "C1BA80",
+      "pc": "C1BA80",
+      "sp": 1770,
+      "master_clock": 2209338434
+    },
+    "cleanup_pre_RTS": {
+      "n": 280021,
+      "poll": 3732,
+      "kind": "attack-cleanup-pre-rts",
+      "pc": "C1BD6E",
+      "sp": 1770,
+      "master_clock": 2209340008
+    },
+    "actual_cleanup_caller": {
+      "n": 280023,
+      "poll": 3732,
+      "kind": "attack-cleanup-return",
+      "pc": "C18603",
+      "sp": 1772,
+      "master_clock": 2209340256
+    },
+    "ready_snapshot": {
+      "n": 343385,
+      "poll": 4263,
+      "kind": "snapshot",
+      "pc": "C10940",
+      "sp": 1759,
+      "master_clock": 2398947492
+    },
+    "cut": {
+      "n": 343386,
+      "poll": 4263,
+      "kind": "first-attack-evidence-cut",
+      "pc": "C10940",
+      "sp": 1759,
+      "master_clock": 2398947492
+    },
+    "success": {
+      "n": 343387,
+      "poll": 4263,
+      "kind": "success",
+      "pc": "C10940",
+      "sp": 1759,
+      "master_clock": 2398947492
+    }
+  },
+  "readiness_publications": [
+    {
+      "n": 280027,
+      "poll": 3732,
+      "site": "C18604",
+      "physical": "0B18A",
+      "value": 0
+    },
+    {
+      "n": 280029,
+      "poll": 3732,
+      "site": "C18607",
+      "physical": "093FC",
+      "value": 0
+    },
+    {
+      "n": 342980,
+      "poll": 4259,
+      "site": "C11B2B",
+      "physical": "093FC",
+      "value": 129
+    },
+    {
+      "n": 342981,
+      "poll": 4259,
+      "site": "C11B34",
+      "physical": "095D6",
+      "value": 2
+    },
+    {
+      "n": 343184,
+      "poll": 4262,
+      "site": "C11B80",
+      "physical": "0A6DB",
+      "value": 2
+    }
+  ],
+  "snapshot_count": 22,
+  "all_snapshot_sram_equal_input": true,
+  "all_snapshot_original_seven_live_records_equal_baseline": true,
+  "all_snapshot_epoch_name_bytes_equal_baseline": true,
+  "candidate_live_record_preserved_during_action_and_readiness": true,
+  "candidate_live_hp": 968,
+  "donor_live_hp": 969,
+  "candidate_action_mp": 93,
+  "shared_work_interval_distinction": "Shared work at Attack entry precedes its new publications; shared work at final readiness belongs to later activity. Neither is substituted for the candidate action interval.",
+  "entry_shared_work_before_action_publication": {
+    "action_id": 67,
+    "participants": "0400FF"
+  },
+  "later_shared_work_at_readiness_cut": {
+    "actor": 3,
+    "action_id": 115,
+    "participants": "010205"
+  },
+  "declared_battle_ranges_reconciled": true,
+  "full_wram_reconciled": false,
+  "global_interrupt_safety": false,
+  "guard_scope": "rear guard 2CF0..2CFF; field-only extension 2D00..2D0F not preserved during bootstrap",
+  "selected_battle_initialization_observed": true,
+  "ordinary_attack_observed": true,
+  "battle_to_field_commit_proved": false,
+  "victory_or_progression_proved": false,
+  "save_cold_load_proved": false,
+  "epoch_vehicle_behavior_proved": false,
+  "playable_release": false,
+  "production_approved": false,
+  "private_image_construction": {
+    "receipt": {
+      "path": "private/test_runs/pc07_first_attack_diagnostic_v1/build_receipt.json",
+      "bytes": 33669,
+      "sha256": "68c7847116774dd832247e79884d0effefab8da74d07d57b1c2e74c4dc4dad65"
+    },
+    "image_sha256": "6d420e3daa6761a6ca2b0dd6bfc9119aa15967124f92c5d731a431f76726eefa",
+    "image_bytes": 8388608,
+    "static_evidence_level": "verified-static-private-diagnostic",
+    "fixed_sections": 34,
+    "changed_bytes_relative_to_inert_scaffold": 481,
+    "original_component": {
+      "address_hex": "410000",
+      "bytes": 157
+    },
+    "new_component": {
+      "address_hex": "410100",
+      "bytes": 215
+    },
+    "intent_and_complete_diff_passed": true
+  },
+  "preserved_incomplete_pilot": {
+    "run": "private/test_runs/pc07_first_attack_v1_run1",
+    "receipt": {
+      "path": "private/research/pc07_first_attack_independent_review_20261013/review_v1.json",
+      "bytes": 9843,
+      "sha256": "6b1f12952b57ab9b182d9cab95edce918e9247fcc3379fd1d1066122fedef4df"
+    },
+    "closed_hook_windows_qualified": 24,
+    "ordinary_attack_accepted": false,
+    "full_run_accepted": false
+  },
+  "observed_prefix_equivalence": {
+    "pilot_review_sha256": "6b1f12952b57ab9b182d9cab95edce918e9247fcc3379fd1d1066122fedef4df",
+    "pilot_trace": {
+      "bytes": 91121635,
+      "path": "private/test_runs/pc07_first_attack_v1_run1/events.jsonl",
+      "sha256": "81cd3f5655d502fc6c48dc8af392843f7e313100cf40083306e42c8ddd64a9b3"
+    },
+    "compared_rows": 270687,
+    "mismatches": 0,
+    "normalization": "Remove header.source_bundle from the first row of each trace only; compare every other parsed JSON value unchanged.",
+    "last_common_row": {
+      "n": 270687,
+      "kind": "battle-controller-input",
+      "poll": 3222,
+      "phase": "queued"
+    },
+    "scope": "Observation preservation over the entire recorded v1 prefix. This does not prove unobserved remainder equivalence, alter pilot status, or measure game speed."
+  },
+  "root_visual_inspection": {
+    "snapshots": [
+      {
+        "path": "private/test_runs/pc07_first_attack_v2_run1/pre_results.png",
+        "bytes": 24507,
+        "sha256": "639b78f037ba165d625cef30c1885371ca869e1fe1a761dbeea37f35254a0e10"
+      },
+      {
+        "path": "private/test_runs/pc07_first_attack_v2_run1/attack_ready.png",
+        "bytes": 24075,
+        "sha256": "aced3b99d853d72c2922d04c6965dee46cdfd477651bd1ece8dfcdb6e98701ec"
+      }
+    ],
+    "scope": "borrowed Crono appearance only; trace and memory establish identity and timing"
+  },
+  "documentary_limits": [
+    "post_load.png and compatibility_staged.png are empty; all 22 WRAM/SRAM snapshot pairs exist"
+  ],
+  "deferred_stop_execution_excluded": true,
+  "shutdown_sram_authoritative": false,
+  "publication": false,
+  "next_gate": "qualify native roster-based battle work-to-live commit and field return, then independent versioned save/cold-load; preserve Epoch vehicle/name",
+  "reproduction": "python -B tools/audit_pc07_first_attack_checkpoint_2026_10_13.py"
+}

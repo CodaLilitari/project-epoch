@@ -1,0 +1,767 @@
+{
+  "schema": "project-epoch-pc07-first-attack-checkpoint-2026-10-13-v2",
+  "status": "full-frozen-review-reproduced-with-one-archived-source-resolution",
+  "auditor": {
+    "path": "tools/audit_pc07_first_attack_checkpoint_2026_10_13_v2.py",
+    "bytes": 8482,
+    "sha256": "a99549fa508c0c12d576f06d8b32f69ab9c41a168270a5749121e7fea29c7139"
+  },
+  "human_report": {
+    "path": "docs/pc07_first_attack_checkpoint_2026_10_13_v2.md",
+    "bytes": 1711,
+    "sha256": "74101b1dcfda555172bfc64760520ab9986d3c06069b85aeebd251b5bce978d4"
+  },
+  "preserved_public_checkpoint": {
+    "path": "references/pc07_first_attack_checkpoint_2026_10_13.json",
+    "bytes": 10972,
+    "sha256": "ff1c4e88b60e4de35c63dcbfc126ad6c3f8dac27be9d93ac0ee253b6973989df"
+  },
+  "preserved_public_report": {
+    "path": "docs/pc07_first_attack_checkpoint_2026_10_13.md",
+    "bytes": 9626,
+    "sha256": "e69dfc16b5bd068ff7cd7f41107a237240ba19200fa8bf602dbeda04e2711d77"
+  },
+  "preserved_v1_auditor": {
+    "path": "tools/audit_pc07_first_attack_checkpoint_2026_10_13.py",
+    "bytes": 7355,
+    "sha256": "c014b074200ef7d63b0b647cafa5fbb4b186f91e53cac454164b1434618b7979"
+  },
+  "resolver": {
+    "path": "private/research/pc07_schala_presentation_20261013/accepted_attack_source_resolution_v1.py",
+    "bytes": 4533,
+    "sha256": "ef3be0bc8679445b0c1e8ecfc52e911f0665990700d0215ef26ce89783dffe2a"
+  },
+  "frozen_review": {
+    "path": "private/research/pc07_first_attack_independent_review_20261013/review_v2.py",
+    "bytes": 20707,
+    "sha256": "31463f43f479625208f82565da6cd6061b7c804fbb442c87b7d8345e1344c969"
+  },
+  "frozen_review_receipt": {
+    "path": "private/research/pc07_first_attack_independent_review_20261013/review_v2.json",
+    "bytes": 60677,
+    "sha256": "36cdac6bcac3d33baa906935c8a5348a9306841f203f8e1cafb08a2004e3bbb6"
+  },
+  "source_resolution": {
+    "schema": "project-epoch-accepted-attack-source-resolution-v1",
+    "status": "source-relocation-verified",
+    "run_receipt_sha256": "ec65bff3752e99b6c0cb408bf0b9baba4f23efa2eb75618c8113148b2c5dcf4d",
+    "accepted_source_bundle_sha256": "397ef413aac4e58f2dcb09fd855e862c4726de7c2b98c018b781ff036691df70",
+    "source_rows_checked": 98,
+    "new_resolution_count": 1,
+    "resolutions": [
+      {
+        "row_index": 0,
+        "recorded_path": "asm/pc07_donor_read_adapters_v2.asm",
+        "resolved_path": "asm/pc07_donor_read_adapters_v2.asm",
+        "bytes": 2541,
+        "sha256": "df0584a820d3b6b4994298cc1f0d6b3ffc4089797b42c5d6c6217d02a4e5a914"
+      },
+      {
+        "row_index": 1,
+        "recorded_path": "private/research/pc07_basic_attack_prototype_20261007/basic_attack_candidate_v1.json",
+        "resolved_path": "private/research/pc07_basic_attack_prototype_20261007/basic_attack_candidate_v1.json",
+        "bytes": 16334,
+        "sha256": "e3e0bd45bf7c746a03ed0f06166376eb8c2dade32a0d7faff6c8b31a4796d99d"
+      },
+      {
+        "row_index": 2,
+        "recorded_path": "private/research/pc07_battle_setup_20261007/setup_note.json",
+        "resolved_path": "private/research/pc07_battle_setup_20261007/setup_note.json",
+        "bytes": 11178,
+        "sha256": "a2a8d505720c943a56ab28f4b4a86e304c018e85e2be7c0bff695bcaf5ec7c57"
+      },
+      {
+        "row_index": 3,
+        "recorded_path": "private/research/pc07_field_battle_route_20261013/route_plan_v1.json",
+        "resolved_path": "private/research/pc07_field_battle_route_20261013/route_plan_v1.json",
+        "bytes": 18543,
+        "sha256": "414548b5d87c019d85f583a4a1172b6c316fecb4455689be9175c0e5471ff6bd"
+      },
+      {
+        "row_index": 4,
+        "recorded_path": "private/research/pc07_field_route_v1/field_route_design.json",
+        "resolved_path": "private/research/pc07_field_route_v1/field_route_design.json",
+        "bytes": 21088,
+        "sha256": "243b78eeca4b645c749af299ffa679e21d158464f746685f60d53c50afefd37b"
+      },
+      {
+        "row_index": 5,
+        "recorded_path": "private/research/pc07_native_field_v3_review_20261007/receipt.json",
+        "resolved_path": "private/research/pc07_native_field_v3_review_20261007/receipt.json",
+        "bytes": 10853,
+        "sha256": "fdfb4f48b23ec7aa694ba7f0d68831e994f39259f33ba80266db07c65cfb8032"
+      },
+      {
+        "row_index": 6,
+        "recorded_path": "private/test_runs/pc07_donor_native_source_v2/source_review.json",
+        "resolved_path": "private/test_runs/pc07_donor_native_source_v2/source_review.json",
+        "bytes": 4571,
+        "sha256": "5b1ea5cff78b79f2f1a12a008e6731873eb20adb9535012bf482f540e484c7ca"
+      },
+      {
+        "row_index": 7,
+        "recorded_path": "private/test_runs/pc07_field_probe_v3_run1/receipt.json",
+        "resolved_path": "private/test_runs/pc07_field_probe_v3_run1/receipt.json",
+        "bytes": 48406,
+        "sha256": "042e6805cad04baaef5c395ca9357cd66f53c06e3bfe19e470d841d9afee2449"
+      },
+      {
+        "row_index": 8,
+        "recorded_path": "references/ct_disassembly/bank_C0.asm",
+        "resolved_path": "references/ct_disassembly/bank_C0.asm",
+        "bytes": 2800445,
+        "sha256": "b5b209cd03ae430f095482a429798ee3600d97af3774841c069d8f9a071140b8"
+      },
+      {
+        "row_index": 9,
+        "recorded_path": "references/ct_disassembly/bank_C1.asm",
+        "resolved_path": "references/ct_disassembly/bank_C1.asm",
+        "bytes": 2768817,
+        "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+      },
+      {
+        "row_index": 10,
+        "recorded_path": "references/ct_disassembly/bank_C2.asm",
+        "resolved_path": "references/ct_disassembly/bank_C2.asm",
+        "bytes": 2336447,
+        "sha256": "d96c0d9707d9150dbdb3ad7d995f7ae135e87ebb6329691cab2eb86447611032"
+      },
+      {
+        "row_index": 11,
+        "recorded_path": "references/ct_disassembly/bank_E4.asm",
+        "resolved_path": "references/ct_disassembly/bank_E4.asm",
+        "bytes": 70608,
+        "sha256": "160bdd0ef4791f81a468ca0088f65a79fa6fbd638584fece50d6735950b29fda"
+      },
+      {
+        "row_index": 12,
+        "recorded_path": "references/ct_disassembly/bank_FF.asm",
+        "resolved_path": "references/ct_disassembly/bank_FF.asm",
+        "bytes": 88836,
+        "sha256": "18f30c2a4f547722f30934bde43eb6a638d9467aa064e21340aa2065ab71829e"
+      },
+      {
+        "row_index": 13,
+        "recorded_path": "references/mesen_lavos_battle_checkpoint_accepted_artifacts_v1.json",
+        "resolved_path": "references/mesen_lavos_battle_checkpoint_accepted_artifacts_v1.json",
+        "bytes": 4983,
+        "sha256": "67cc7c9f7460a3de30a23c90aca53a079b8334c5e80c1975651fcdc60ba08564"
+      },
+      {
+        "row_index": 14,
+        "recorded_path": "references/mesen_wram_ownership_battle_action_scenarios_v4.json",
+        "resolved_path": "references/mesen_wram_ownership_battle_action_scenarios_v4.json",
+        "bytes": 12552,
+        "sha256": "ad6d686bdc01f93ce9abed3c21beb4a2bac5d5142883f94fc29c6e3f06c6f727"
+      },
+      {
+        "row_index": 15,
+        "recorded_path": "references/pc07_lavos_event_transform_v1.json",
+        "resolved_path": "references/pc07_lavos_event_transform_v1.json",
+        "bytes": 11486,
+        "sha256": "c353a5fd7c9dbdcea65e1aade28483ae1b51975eab03e489ad6b12241d6b9817"
+      },
+      {
+        "row_index": 16,
+        "recorded_path": "references/pc07_selected_event_transform_v1.json",
+        "resolved_path": "references/pc07_selected_event_transform_v1.json",
+        "bytes": 5854,
+        "sha256": "0bb253c1f296e5719b204052588f25254a045a3cc716d32127347b6e304cdd66"
+      },
+      {
+        "row_index": 17,
+        "recorded_path": "references/schala_compat_menu_pair_v1.json",
+        "resolved_path": "references/schala_compat_menu_pair_v1.json",
+        "bytes": 48482,
+        "sha256": "b3e57bb4c906a6fa56aac6f5be2617bb003cc7bb1d6433f56b3d4cdfdba6a182"
+      },
+      {
+        "row_index": 18,
+        "recorded_path": "tools/audit_location_event_items.py",
+        "resolved_path": "tools/audit_location_event_items.py",
+        "bytes": 39560,
+        "sha256": "cb39dd4485e6330c4f9d5b8817fe8e6a161cb2e965020cb1cd10a3fd30f7812a"
+      },
+      {
+        "row_index": 19,
+        "recorded_path": "tools/build_original_snes_package_cartridge_v1.py",
+        "resolved_path": "tools/build_original_snes_package_cartridge_v1.py",
+        "bytes": 11809,
+        "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a"
+      },
+      {
+        "row_index": 20,
+        "recorded_path": "tools/build_pc07_native_field_v1.py",
+        "resolved_path": "tools/build_pc07_native_field_v1.py",
+        "bytes": 7539,
+        "sha256": "3bdc4a53057fa032b8f8af534caeac74a21b5a93b68ffc1df3a2c9e24411f71f"
+      },
+      {
+        "row_index": 21,
+        "recorded_path": "tools/build_schala_compat_menu_v1.py",
+        "resolved_path": "tools/build_schala_compat_menu_v1.py",
+        "bytes": 5519,
+        "sha256": "2b52518dc365e0bbfef0259dfbea990e69b8d5407fffa8b9b1df859ebf5fa47d"
+      },
+      {
+        "row_index": 22,
+        "recorded_path": "tools/mesen_lavos_battle_checkpoint.lua",
+        "resolved_path": "tools/mesen_lavos_battle_checkpoint.lua",
+        "bytes": 14672,
+        "sha256": "3bcc3146d9b5ef7fe7287f9031b7ad6f2d0c0423bfcf7c5f910efac4431cce11"
+      },
+      {
+        "row_index": 23,
+        "recorded_path": "tools/mesen_pc07_field_entry_v1.lua",
+        "resolved_path": "tools/mesen_pc07_field_entry_v1.lua",
+        "bytes": 9557,
+        "sha256": "6c36380b93cb19ef7b031299a8f1d04d0def7338d27a594037e828ff60d00b47"
+      },
+      {
+        "row_index": 24,
+        "recorded_path": "tools/mesen_pc07_field_probe_v3.lua",
+        "resolved_path": "tools/mesen_pc07_field_probe_v3.lua",
+        "bytes": 31636,
+        "sha256": "f1b29205209c216db135863b57734771ec0dd525716e5b11299b091adcc4eee8"
+      },
+      {
+        "row_index": 25,
+        "recorded_path": "tools/original_snes_diagnostic_write_contract_v1.py",
+        "resolved_path": "tools/original_snes_diagnostic_write_contract_v1.py",
+        "bytes": 12383,
+        "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318"
+      },
+      {
+        "row_index": 26,
+        "recorded_path": "tools/original_snes_package_fixtures_v1.py",
+        "resolved_path": "tools/original_snes_package_fixtures_v1.py",
+        "bytes": 4761,
+        "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60"
+      },
+      {
+        "row_index": 27,
+        "recorded_path": "tools/pc07_private_expanded_write_contract_v1.py",
+        "resolved_path": "tools/pc07_private_expanded_write_contract_v1.py",
+        "bytes": 15819,
+        "sha256": "b8bb7cec02a5041658922a842cc29a086e45edeef82d12059f436d794e39f376"
+      },
+      {
+        "row_index": 28,
+        "recorded_path": "tools/run_mesen_pc07_field_entry_v1.py",
+        "resolved_path": "tools/run_mesen_pc07_field_entry_v1.py",
+        "bytes": 11581,
+        "sha256": "7c6eae5771acfcbc5749c93eb29d6b540c757bcde46a741b0b1bc486b810b6b5"
+      },
+      {
+        "row_index": 29,
+        "recorded_path": "tools/run_mesen_pc07_field_probe_v3.py",
+        "resolved_path": "tools/run_mesen_pc07_field_probe_v3.py",
+        "bytes": 26236,
+        "sha256": "d06c2dcf0790e79117d17fd31552e0a4c5b449154b2c36173681641a96fa9204"
+      },
+      {
+        "row_index": 30,
+        "recorded_path": "tools/run_mesen_save_layout_native_v1.py",
+        "resolved_path": "tools/run_mesen_save_layout_native_v1.py",
+        "bytes": 8316,
+        "sha256": "847bf77d28757ddad07b75b30d9071534b4792f7ad09a6cb3762153c8c29cd75"
+      },
+      {
+        "row_index": 31,
+        "recorded_path": "tools/schala_compat_menu_v1.py",
+        "resolved_path": "tools/schala_compat_menu_v1.py",
+        "bytes": 7734,
+        "sha256": "4b679c79791a8d2ec879f2f9e1e5ad5b46bb4655f59c7d00d217cc3613c35f59"
+      },
+      {
+        "row_index": 32,
+        "recorded_path": "tools/schala_rom_scaffold.py",
+        "resolved_path": "tools/schala_rom_scaffold.py",
+        "bytes": 13386,
+        "sha256": "a517ad5c9d5a1f6b19a3050dfcc4903e2e177abe685ecaf78a60ca6884a9ed4a"
+      },
+      {
+        "row_index": 33,
+        "recorded_path": "tools/transform_pc07_lavos_event_v1.py",
+        "resolved_path": "tools/transform_pc07_lavos_event_v1.py",
+        "bytes": 21592,
+        "sha256": "19e28389fee2a471c6e1f7304cdbfbf06e08cf52dcb9a0994fa4400d4722e8d6"
+      },
+      {
+        "row_index": 34,
+        "recorded_path": "tools/transform_pc07_selected_event_v1.py",
+        "resolved_path": "tools/transform_pc07_selected_event_v1.py",
+        "bytes": 16474,
+        "sha256": "1213ae3f274ba044608185d9b9e806cf9f6db2cfdb0ab89f70a09de0e2ff1d3a"
+      },
+      {
+        "row_index": 35,
+        "recorded_path": "tools/validate_rom_write_intents.py",
+        "resolved_path": "private/research/pc07_first_attack_builder_20261013/validate_rom_write_intents.before.py",
+        "bytes": 39623,
+        "sha256": "d109fa0ca691652a82c1d8f3ffab7ebbec7c57342e5cc1c6e472dea60bc8aac2"
+      },
+      {
+        "row_index": 36,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/source_pins_v1.json",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/source_pins_v1.json",
+        "bytes": 6819,
+        "sha256": "a027cbecbafefce6b20d18dfdcaae6ee7dd500e65cfaa2a1f903263c59275d22"
+      },
+      {
+        "row_index": 37,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/derive_sources_v1.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/derive_sources_v1.py",
+        "bytes": 9065,
+        "sha256": "6190047c67103906d92a5a0b918697547bd910a2ca5c417307016d461cde5b8e"
+      },
+      {
+        "row_index": 38,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/route_callbacks_v1.lua",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/route_callbacks_v1.lua",
+        "bytes": 6907,
+        "sha256": "03f5315f80a3c6eaea2ec8688ccc9b662b1c19b3c6a5c580dbf1b9015254d3da"
+      },
+      {
+        "row_index": 39,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/collector_v1.lua",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/collector_v1.lua",
+        "bytes": 42616,
+        "sha256": "2a554734327cb6eb4458b11ddb009f30e2d7a83b30aab527d90be5e6c36eaabd"
+      },
+      {
+        "row_index": 40,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/helper_validator_v1.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/helper_validator_v1.py",
+        "bytes": 8612,
+        "sha256": "e7a00e4a776f390da6da8d44dc9433c21ad0d50a781d3829316c399012a3354c"
+      },
+      {
+        "row_index": 41,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/validate_route_v1.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/validate_route_v1.py",
+        "bytes": 10873,
+        "sha256": "b34ce908cabe332e5dd819bf983bed64fc63b477b94fdebff3d41b7adb84c393"
+      },
+      {
+        "row_index": 42,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/run_route_v1.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/run_route_v1.py",
+        "bytes": 9735,
+        "sha256": "580d0b11823fde27cfae6acabece222612d5ffacc665250aefd266cb181325b6"
+      },
+      {
+        "row_index": 43,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/prepare_source_pins_v1.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/prepare_source_pins_v1.py",
+        "bytes": 1629,
+        "sha256": "e1ee0198dd655fdbf1bd8d7cf471d1138f5e88b3dcdd976508d48b090bd230d7"
+      },
+      {
+        "row_index": 44,
+        "recorded_path": "private/research/pc07_field_battle_collector_20261013/preflight_v1.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_20261013/preflight_v1.py",
+        "bytes": 3462,
+        "sha256": "f25c20943944ed5a4c540d7fd3da2f8408076b4f8fe69894a6ed6a0779aa3f0c"
+      },
+      {
+        "row_index": 45,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/source_pins_v2.json",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/source_pins_v2.json",
+        "bytes": 8790,
+        "sha256": "c9a73d22b0956dc2ee16146b312b33f672976c996fd7e0c24660b0c50414a054"
+      },
+      {
+        "row_index": 46,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/derive_sources_v2.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/derive_sources_v2.py",
+        "bytes": 7029,
+        "sha256": "0220794e22161bbe76d98c8d20707e555b61557890ae82f907e5c7c6cfdd21c9"
+      },
+      {
+        "row_index": 47,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/route_callbacks_v2.lua",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/route_callbacks_v2.lua",
+        "bytes": 8031,
+        "sha256": "2166362ef90d1fd92f2a45b5604026236ad8fe9105133c9c4b3bf3282ee41d54"
+      },
+      {
+        "row_index": 48,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/collector_v2.lua",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/collector_v2.lua",
+        "bytes": 43740,
+        "sha256": "45ae91107bb0b47b24394019ea3c85863ff76f543a152284c5a3d3f405024d41"
+      },
+      {
+        "row_index": 49,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/helper_validator_v2.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/helper_validator_v2.py",
+        "bytes": 8612,
+        "sha256": "e7a00e4a776f390da6da8d44dc9433c21ad0d50a781d3829316c399012a3354c"
+      },
+      {
+        "row_index": 50,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/validate_route_v2.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/validate_route_v2.py",
+        "bytes": 12927,
+        "sha256": "bf79e261cb5f259e5d41f190cde36b2bd6fa9910b879af720aeee94b4d0579da"
+      },
+      {
+        "row_index": 51,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/run_route_v2.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/run_route_v2.py",
+        "bytes": 9738,
+        "sha256": "0fa8167e7707ddf0f558d47913d1c0579dcaeee1daf6ee83683ac3b8d7424807"
+      },
+      {
+        "row_index": 52,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/test_pending_lifecycle_v2.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/test_pending_lifecycle_v2.py",
+        "bytes": 2871,
+        "sha256": "44a816a1963f31a19a099288cc33c31d01d94c308590ce0c9283ce26214cf4d8"
+      },
+      {
+        "row_index": 53,
+        "recorded_path": "private/research/pc07_field_battle_collector_v2_20261013/preflight_v2.py",
+        "resolved_path": "private/research/pc07_field_battle_collector_v2_20261013/preflight_v2.py",
+        "bytes": 4392,
+        "sha256": "2f70ac392e3328574b8eec83d1c6a8e7639795816256602831baae89280ad983"
+      },
+      {
+        "row_index": 54,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/assembled_hook_manifest_v1.json",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/assembled_hook_manifest_v1.json",
+        "bytes": 38556,
+        "sha256": "ea41d24c92de9757093c8c4874672a7efa06a696adf733b9094976987883addb"
+      },
+      {
+        "row_index": 55,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.py",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.py",
+        "bytes": 16274,
+        "sha256": "d82b88aa6a47ee7d9eadd90c460adc505667c2b757ec4629bb88a03f22f277c0"
+      },
+      {
+        "row_index": 56,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.json",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.json",
+        "bytes": 4446,
+        "sha256": "23aa9fac0322af0ea71b681d7aa8b99b76790eeca1e8325852f9e3627cfaa8e5"
+      },
+      {
+        "row_index": 57,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/reproduce_assembly.py",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/reproduce_assembly.py",
+        "bytes": 5456,
+        "sha256": "3e558adc1f6c391316b8f926505a40162d252c6c1dcd6a5e4267fc0873b3bf36"
+      },
+      {
+        "row_index": 58,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/reproduce.py",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/reproduce.py",
+        "bytes": 6526,
+        "sha256": "65c718e6d3fac63d4c75cd8b704ffcefc8d375b31c42fad6b4ea5e1b755003f3"
+      },
+      {
+        "row_index": 59,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/claude_disposition_v1.txt",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/claude_disposition_v1.txt",
+        "bytes": 6987,
+        "sha256": "b61185bad2b57a08e8cb2ec242fdf310f4797178d8bc5e34a34dd1e4e2405742"
+      },
+      {
+        "row_index": 60,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/assembly_v1/candidate.bin",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/assembly_v1/candidate.bin",
+        "bytes": 215,
+        "sha256": "39410b2ccdc09a9ad3667f363d7358bf91f552ee20d145d33c8cfc3c76a9849b"
+      },
+      {
+        "row_index": 61,
+        "recorded_path": "private/test_runs/pc07_first_attack_diagnostic_v1/build_receipt.json",
+        "resolved_path": "private/test_runs/pc07_first_attack_diagnostic_v1/build_receipt.json",
+        "bytes": 33669,
+        "sha256": "68c7847116774dd832247e79884d0effefab8da74d07d57b1c2e74c4dc4dad65"
+      },
+      {
+        "row_index": 62,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/source_pins_v1.json",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/source_pins_v1.json",
+        "bytes": 12918,
+        "sha256": "f9e69172fc820da70718e195cb93ffc5ab553efea60d87b067e84524b64f5f43"
+      },
+      {
+        "row_index": 63,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/derive_collector_v1.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/derive_collector_v1.py",
+        "bytes": 4325,
+        "sha256": "c406bbb5dc104b3fb584cbf8f326d9ecbb57b2fe2680a6b60cd9788018c2916c"
+      },
+      {
+        "row_index": 64,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/derive_runner_v1.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/derive_runner_v1.py",
+        "bytes": 6885,
+        "sha256": "7748bd73e1c05ff609f0852be6936d03b7ac6781f6c4ff65a25bc8adeb3adc07"
+      },
+      {
+        "row_index": 65,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/attack_callbacks_v1.lua",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/attack_callbacks_v1.lua",
+        "bytes": 15055,
+        "sha256": "46a9e2e902db43cce9d0d603ebd1beb7f9684d83458659712b2af5c418f9e3cc"
+      },
+      {
+        "row_index": 66,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/collector_v1.lua",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/collector_v1.lua",
+        "bytes": 60881,
+        "sha256": "7f1783d267f66e6e9a264020d909e06188193831902d31bbc13c925adc8e666a"
+      },
+      {
+        "row_index": 67,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/validate_attack_v1.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/validate_attack_v1.py",
+        "bytes": 16899,
+        "sha256": "82ac7fada744ac7f5ede1c714e92d46e191ddc49878e49c524da65e888492a4b"
+      },
+      {
+        "row_index": 68,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/run_attack_v1.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/run_attack_v1.py",
+        "bytes": 12059,
+        "sha256": "9c10e083521deca4f118b7575e8004b0a5511a3e5436db77ef10a1a60eb691a5"
+      },
+      {
+        "row_index": 69,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/test_attack_v1.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/test_attack_v1.py",
+        "bytes": 5372,
+        "sha256": "0d3cf13f3fee5c425e16463cff279bcf7f86057e7f2e100cd9c16b1944e553d0"
+      },
+      {
+        "row_index": 70,
+        "recorded_path": "private/research/pc07_first_attack_collector_20261013/README.md",
+        "resolved_path": "private/research/pc07_first_attack_collector_20261013/README.md",
+        "bytes": 4795,
+        "sha256": "6c30ea338f5073f01098750d012a23fc99abc0473551ebb4fd897c0bcb34d939"
+      },
+      {
+        "row_index": 71,
+        "recorded_path": "asm/pc07_donor_read_adapters_v2.asm",
+        "resolved_path": "asm/pc07_donor_read_adapters_v2.asm",
+        "bytes": 2541,
+        "sha256": "df0584a820d3b6b4994298cc1f0d6b3ffc4089797b42c5d6c6217d02a4e5a914"
+      },
+      {
+        "row_index": 72,
+        "recorded_path": "private/test_runs/pc07_donor_native_source_v2/source_review.json",
+        "resolved_path": "private/test_runs/pc07_donor_native_source_v2/source_review.json",
+        "bytes": 4571,
+        "sha256": "5b1ea5cff78b79f2f1a12a008e6731873eb20adb9535012bf482f540e484c7ca"
+      },
+      {
+        "row_index": 73,
+        "recorded_path": "references/ct_disassembly/bank_C0.asm",
+        "resolved_path": "references/ct_disassembly/bank_C0.asm",
+        "bytes": 2800445,
+        "sha256": "b5b209cd03ae430f095482a429798ee3600d97af3774841c069d8f9a071140b8"
+      },
+      {
+        "row_index": 74,
+        "recorded_path": "tools/schala_compat_menu_v1.py",
+        "resolved_path": "tools/schala_compat_menu_v1.py",
+        "bytes": 7734,
+        "sha256": "4b679c79791a8d2ec879f2f9e1e5ad5b46bb4655f59c7d00d217cc3613c35f59"
+      },
+      {
+        "row_index": 75,
+        "recorded_path": "tools/schala_rom_scaffold.py",
+        "resolved_path": "tools/schala_rom_scaffold.py",
+        "bytes": 13386,
+        "sha256": "a517ad5c9d5a1f6b19a3050dfcc4903e2e177abe685ecaf78a60ca6884a9ed4a"
+      },
+      {
+        "row_index": 76,
+        "recorded_path": "tools/pc07_private_expanded_write_contract_v1.py",
+        "resolved_path": "tools/pc07_private_expanded_write_contract_v1.py",
+        "bytes": 15819,
+        "sha256": "b8bb7cec02a5041658922a842cc29a086e45edeef82d12059f436d794e39f376"
+      },
+      {
+        "row_index": 77,
+        "recorded_path": "asm/pc07_first_attack_adapters_v1.asm",
+        "resolved_path": "asm/pc07_first_attack_adapters_v1.asm",
+        "bytes": 5190,
+        "sha256": "290d3335b0c4143895a5804ed1b20273108f6fc231859ff08733e1af9a33fbd1"
+      },
+      {
+        "row_index": 78,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/assembled_hook_manifest_v1.json",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/assembled_hook_manifest_v1.json",
+        "bytes": 38556,
+        "sha256": "ea41d24c92de9757093c8c4874672a7efa06a696adf733b9094976987883addb"
+      },
+      {
+        "row_index": 79,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.json",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.json",
+        "bytes": 4446,
+        "sha256": "23aa9fac0322af0ea71b681d7aa8b99b76790eeca1e8325852f9e3627cfaa8e5"
+      },
+      {
+        "row_index": 80,
+        "recorded_path": "private/research/pc07_battle_adapters_20261013/claude_disposition_v1.txt",
+        "resolved_path": "private/research/pc07_battle_adapters_20261013/claude_disposition_v1.txt",
+        "bytes": 6987,
+        "sha256": "b61185bad2b57a08e8cb2ec242fdf310f4797178d8bc5e34a34dd1e4e2405742"
+      },
+      {
+        "row_index": 81,
+        "recorded_path": "references/ct_disassembly/bank_C1.asm",
+        "resolved_path": "references/ct_disassembly/bank_C1.asm",
+        "bytes": 2768817,
+        "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+      },
+      {
+        "row_index": 82,
+        "recorded_path": "references/ct_disassembly/bank_CC.asm",
+        "resolved_path": "references/ct_disassembly/bank_CC.asm",
+        "bytes": 290190,
+        "sha256": "d60669a2de45ce888298b5d1e4a88739173bb707a8293ddadbeffb2eeab2eb7d"
+      },
+      {
+        "row_index": 83,
+        "recorded_path": "references/ct_disassembly/bank_FD.asm",
+        "resolved_path": "references/ct_disassembly/bank_FD.asm",
+        "bytes": 691286,
+        "sha256": "0f8a0d59e97de7d60945fdfef1b614217e3d673cca1e14f543234d789a87779e"
+      },
+      {
+        "row_index": 84,
+        "recorded_path": "tools/pc07_private_first_attack_write_contract_v1.py",
+        "resolved_path": "tools/pc07_private_first_attack_write_contract_v1.py",
+        "bytes": 13561,
+        "sha256": "32364652a0c744ceecaa38c246d0ea6aec19407198764d2d29e2491d63676e1d"
+      },
+      {
+        "row_index": 85,
+        "recorded_path": "tools/validate_rom_write_intents.py",
+        "resolved_path": "private/research/pc07_schala_presentation_20261013/prior_guard.py",
+        "bytes": 40396,
+        "sha256": "bf63f952a504e77683036222afa213d0a6e4dd91cd85d791c1f203594b608199"
+      },
+      {
+        "row_index": 86,
+        "recorded_path": "tools/build_original_snes_package_cartridge_v1.py",
+        "resolved_path": "tools/build_original_snes_package_cartridge_v1.py",
+        "bytes": 11809,
+        "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a"
+      },
+      {
+        "row_index": 87,
+        "recorded_path": "tools/original_snes_diagnostic_write_contract_v1.py",
+        "resolved_path": "tools/original_snes_diagnostic_write_contract_v1.py",
+        "bytes": 12383,
+        "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318"
+      },
+      {
+        "row_index": 88,
+        "recorded_path": "tests/test_pc07_private_first_attack_write_contract_v1.py",
+        "resolved_path": "tests/test_pc07_private_first_attack_write_contract_v1.py",
+        "bytes": 15822,
+        "sha256": "c31fde9caeed54435d5dc9ba1a6bf26ca9bf4866cee1dd8b99f29591b637f19c"
+      },
+      {
+        "row_index": 89,
+        "recorded_path": "private/research/pc07_first_attack_builder_20261013/build_first_attack_v1.py",
+        "resolved_path": "private/research/pc07_first_attack_builder_20261013/build_first_attack_v1.py",
+        "bytes": 8009,
+        "sha256": "d4a1ff2adfaf6338b375b3c4af196615507a6034901a22da126e8668ea0d74b0"
+      },
+      {
+        "row_index": 90,
+        "recorded_path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.asm",
+        "resolved_path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.asm",
+        "bytes": 107,
+        "sha256": "d246f5ee875ef09c9ba8ee7c27b602a659fde605b19bc7804dc2e8ebe878c656"
+      },
+      {
+        "row_index": 91,
+        "recorded_path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.sym",
+        "resolved_path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.sym",
+        "bytes": 3614,
+        "sha256": "7921997054c1b761bc0d16fd36504b873a1bbfb831bdec075b6683b89197357f"
+      },
+      {
+        "row_index": 92,
+        "recorded_path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/receipt.json",
+        "resolved_path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/receipt.json",
+        "bytes": 1661,
+        "sha256": "7bc66b4e0a7ee45c34743c29d08df949f7d31f17209a47f31938be35358b5145"
+      },
+      {
+        "row_index": 93,
+        "recorded_path": "private/research/pc07_first_attack_collector_v2_20261013/derive_v2.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_v2_20261013/derive_v2.py",
+        "bytes": 3247,
+        "sha256": "27c0c934e19b0b42e752d94c3fea6cecb2d410265ec5dd645b2f673bba92a922"
+      },
+      {
+        "row_index": 94,
+        "recorded_path": "private/research/pc07_first_attack_collector_v2_20261013/collector_v2.lua",
+        "resolved_path": "private/research/pc07_first_attack_collector_v2_20261013/collector_v2.lua",
+        "bytes": 60887,
+        "sha256": "31743b8b0e90232aa6d17e28e6cbe77f09253671d375648e6c007e8d8a60f99c"
+      },
+      {
+        "row_index": 95,
+        "recorded_path": "private/research/pc07_first_attack_collector_v2_20261013/run_attack_v2.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_v2_20261013/run_attack_v2.py",
+        "bytes": 12038,
+        "sha256": "7c402d10d5d14ae0445ffd494495a0c4c9f3d5b24d5f52ced4f0ff96e39dc1a4"
+      },
+      {
+        "row_index": 96,
+        "recorded_path": "private/research/pc07_first_attack_collector_v2_20261013/test_lazy_snapshot_v2.py",
+        "resolved_path": "private/research/pc07_first_attack_collector_v2_20261013/test_lazy_snapshot_v2.py",
+        "bytes": 3502,
+        "sha256": "5db455719dbab46604786de5b604fb16e2bd525af69eea83989c2645a5d26f70"
+      },
+      {
+        "row_index": 97,
+        "recorded_path": "private/research/pc07_first_attack_collector_v2_20261013/README.md",
+        "resolved_path": "private/research/pc07_first_attack_collector_v2_20261013/README.md",
+        "bytes": 2038,
+        "sha256": "feb6b1423c04e8080034d224254d693b72bbd4e7959a571044adebc771a5b68d"
+      }
+    ],
+    "frozen_rows_and_hashes_modified": false,
+    "full_trace_revalidated_this_pass": false,
+    "emulator_launched": false,
+    "scope": "Source bytes only; use resolve_source(row) in a separately versioned revalidator. Existing frozen live-path replay remains unchanged."
+  },
+  "historical_builder_rows_checked": 22,
+  "foreign_source_hash_refused": true,
+  "full_frozen_validator_passed": true,
+  "full_review_receipt_byte_identical": true,
+  "source_bundle_sha256": "397ef413aac4e58f2dcb09fd855e862c4726de7c2b98c018b781ff036691df70",
+  "run": {
+    "path": "private/test_runs/pc07_first_attack_v2_run1",
+    "receipt_sha256": "ec65bff3752e99b6c0cb408bf0b9baba4f23efa2eb75618c8113148b2c5dcf4d",
+    "trace_sha256": "e2d58e302e937e70577a5d855954c9bbe08eb12bfafd50e53874a78d1a5aed00",
+    "rows": 343387,
+    "exit": 63,
+    "successful_runs_reviewed": 1,
+    "repeat_pair": false
+  },
+  "ordinary_attack_selector_family": "critical",
+  "damage": 962,
+  "hook_windows": 30,
+  "observed_pilot_prefix_rows": 270687,
+  "emulator_launched": false,
+  "image_emitted": false,
+  "frozen_files_modified": false,
+  "scope": "One already recorded Attack; preserve all limitations in the frozen review and v1 checkpoint. Historical v1 live-path command refuses after the separate guard extension.",
+  "reproduction": "python -B tools/audit_pc07_first_attack_checkpoint_2026_10_13_v2.py"
+}
