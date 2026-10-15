@@ -9,15 +9,45 @@ and the [current developer guide](docs/schala_eighth_character_developer_guide.m
 Historical checkpoints preserve the bytes and evidence available when made;
 the latest log entry identifies the current resume boundary.
 
-## Schala appearance and battle milestones — 2026-10-13
+## Native party selection and save/load milestone — 2026-10-15
+
+**Schala is selectable as logical PC07 in the native party-exchange menu on the
+tested route, and a changed formation survives a normal save and fresh-process
+load.** The route keeps Crono and Marle in the first two active positions and
+swaps Schala into or out of the third. It includes removal/reselection, both
+reserve pages, field movement and an ordinary Attack. Gaspar's presenter remains
+unchanged in the inspected menu snapshots.
+
+The corrected run completes 23 menu/field actions and an Attack for 996 damage.
+The separate save/load recording reconciles all 2,270 SRAM writes/readbacks and
+loads the first emulator's exact battery in a fresh second process. These are
+controller-driven runs, without savestate input or debugger game-state writes.
+The original seven, stored names including Epoch, and compatibility snapshots
+match across the checked save/load returns.
+
+Read the [milestone report](docs/schala_party_selection_milestone_2026_10_15.md)
+and [machine-readable checkpoint](references/schala_party_selection_milestone_2026_10_15.json).
+The [original-source snapshot index](references/pc07_party_exchange_public_source_snapshot_2026_10_15.json)
+links the published menu core/wrappers and writer/loader assembly with their
+exact private-source provenance. These are research components, not a complete
+standalone build or a released patch. ROMs, batteries, extracted game assets
+and raw recordings remain private.
+
+Project Epoch is still unfinished. Arbitrary active positions, native
+recruitment, full Tech/equipment/progression support, world-map sprites, other
+save slots, New Game+ and erase remain separate milestones. Existing community
+mapping is credited; this result does not claim first discovery or no slowdown.
+
+## Historical appearance and battle milestones — 2026-10-13
 
 **Schala's retail sprites and full six-letter battle name now run as logical
 PC07 in a continuous field-to-battle diagnostic.** Her NPC graphics are adapted
 to the PC readers; missing animation selectors use copied retail poses. The
 seven original character records, all stored names including Epoch, and captured
-SRAM remain preserved. This is an instrumented SNES prototype. Native
-recruitment, complete battle-to-field restoration, and normal save/cold-load
-still remain to be demonstrated before a playable release.
+SRAM remain preserved. At that checkpoint, native recruitment, complete
+battle-to-field restoration, and normal save/cold-load still remained to be
+demonstrated. Later evidence is recorded separately above and in the current
+handoff; this historical report remains an instrumented SNES prototype.
 
 The October 13 evidence has separate, explicitly scoped milestones:
 

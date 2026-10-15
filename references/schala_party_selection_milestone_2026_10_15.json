@@ -1,0 +1,169 @@
+{
+  "actual_save_load_child_PIDs": [
+    217260,
+    94348
+  ],
+  "admitted_scope": {
+    "Schala_active_position": 2,
+    "fixed_active_leaders": [
+      "00",
+      "01"
+    ],
+    "fixed_diagnostic_metadata": true,
+    "native_recruitment": false,
+    "physical_save_slot": 0,
+    "position_indexing": "zero-based",
+    "saved_roster_hex": "000102078004030605"
+  },
+  "battle": {
+    "Attack_damage": 996,
+    "MP_unchanged": 93,
+    "actual_PC07_movement": true,
+    "logical_battle_records": [
+      0,
+      1,
+      7
+    ],
+    "matched_watched_pairs": 67714,
+    "native_action_cleanup_and_readiness": true
+  },
+  "build_receipt_identity_from_launch_receipt": {
+    "bytes": 46255,
+    "sha256": "4ce6b3fe99e82b29e07b1542c0048664597254c895d65678c86194fe18883bb4"
+  },
+  "controller_only_recordings": true,
+  "date": "2026-10-15",
+  "debugger_game_state_writes": false,
+  "evidence_level": "verified-runtime",
+  "immutable_image_identity_from_launch_receipt": {
+    "bytes": 8388608,
+    "sha256": "7098f38c0b28b7806a1f69d092f7f3fd765544935e8667f5f6dfb495d386f95f"
+  },
+  "menu_field": {
+    "Gaspar_preserved_in_selected_snapshots": true,
+    "both_reserve_pages": true,
+    "controller_actions": 23,
+    "matched_watched_pairs": 13510,
+    "native_menu_exits": 2,
+    "removal_reselection": true,
+    "source": "private/research/pc07_party_exchange_battle_followup_v1_20261015/accepted_checkpoint_v1.json"
+  },
+  "new_public_push_or_deployment_in_this_checkpoint": false,
+  "produced_battery_identity_from_launch_receipt": {
+    "bytes": 8192,
+    "sha256": "27968c673ee76f868a0b656a6dca4f85b7c13162c9530198be4538cf024d20a3"
+  },
+  "production_release": false,
+  "project_epoch_complete": false,
+  "remaining": [
+    "arbitrary active positions and broader scenes",
+    "native recruitment",
+    "truthful mutable grants and progression",
+    "full Tech and equipment behavior",
+    "world-map sprites",
+    "other physical slots, New Game Plus and erase",
+    "production admission and release readiness"
+  ],
+  "reproduction": {
+    "inspection": "Use validate_followup_v4.py --save-run NEW_SAVE_RECORDING --load-run NEW_LOAD_RECORDING once for a deliberately new recording.",
+    "normal_resume": "Reuse accepted results. Recheck only source drift, a changed boundary, or a newly failing case.",
+    "recording": "Use run_roundtrip_v2.py with the recorded image/build receipt and a new run name; existing recordings are preserved.",
+    "summary": "python -B private/research/pc07_party_exchange_checkpoint_20261015/write_checkpoint_v1.py --output NEW_SUMMARY.json --receipt NEW_RECEIPT.json"
+  },
+  "reused_without_historical_replay": true,
+  "save_load": {
+    "SRAM_readbacks": 2270,
+    "SRAM_writes": 2270,
+    "battery_sha256": "27968c673ee76f868a0b656a6dca4f85b7c13162c9530198be4538cf024d20a3",
+    "battle_tested": false,
+    "emulator_written_battery_reused": true,
+    "formation_hex": "000102078004030605",
+    "fresh_load_inspection": {
+      "ROM_rehashed": false,
+      "actual_field_tick_PCs": 2,
+      "actual_intervening_C000BA_waits": 1,
+      "actual_loader_publish_restore_return_order": true,
+      "current_collectors_bound": true,
+      "field_object8_draw_values": [
+        1,
+        1
+      ],
+      "field_scratch_zero_observations": [
+        false,
+        false
+      ],
+      "fresh_trace_rows": 12,
+      "render_suppression": {
+        "additional_role_gates": [
+          "C0B0F3/B0F6",
+          "C0CADB/CADE",
+          "C0CB0C/CB0F"
+        ],
+        "complete_OAM_or_frame_absence_proved": false,
+        "evidence_level": "conditional-canonical-source-inference",
+        "normal_visibility_gate": "C0A88F/A892 -> C0A910 -> CLC/RTS C0A940/A941; C0A830 skips normal animation/OAM",
+        "render_decision_PCs_traced": false,
+        "runtime_premise": "object8 id07/role80 at both recorded C000A7 ticks",
+        "source": "references/ct_disassembly/bank_C0.asm"
+      },
+      "reserve_Schala_field_role80_id07_observed": true,
+      "scratch_lifetime": "Zero restoration at C2E694; later field values are descriptive, not a retained-zero contract.",
+      "scratch_zero_at_native_load_return": true,
+      "separate_child_PIDs": [
+        217260,
+        94348
+      ]
+    },
+    "full_slot_binding": true,
+    "general_recruitment_proved": false,
+    "historical_validation_replayed": false,
+    "native_checksum": 9744,
+    "schema": "epoch-party-exchange-save-roundtrip-validation-v4",
+    "sidecar_crc16": 34127,
+    "status": "accepted-bounded-changed-formation-save-cold-load"
+  },
+  "savestate_input": false,
+  "schema": "project-epoch-selected-party-selection-milestone-v1",
+  "short_term_goal_complete": true,
+  "source_reports": {
+    "human_report": {
+      "bytes": 5900,
+      "path": "docs/schala_party_selection_milestone_2026_10_15.md",
+      "sha256": "3c04f87d3ff219c533c1f186f6bf0721b1e6f95895b86360131d954cec88d858"
+    },
+    "launch_pair": {
+      "bytes": 1054,
+      "path": "private/test_runs/pc07_party_exchange_save_roundtrip_v2_run1_load/launch_pair.json",
+      "sha256": "46c3fd7c696b1a4725835e85a843c00de48bfb78646ed2bd125638a3bad4832c"
+    },
+    "menu_battle": {
+      "bytes": 14333,
+      "path": "private/research/pc07_party_exchange_battle_followup_v1_20261015/accepted_checkpoint_v1.json",
+      "sha256": "5aa364ba0b6c30ff283e505636731ebda71da8254a4b500b0783a80df80f5352"
+    },
+    "predicate_revision": {
+      "bytes": 4834,
+      "path": "private/research/pc07_party_exchange_save_followup_v1_20261015/predicate_revision_v4.json",
+      "sha256": "12e0fd2f72cad1a9bb2347aa21064de6e8930f7f3e1b09a03bb0ac2b26ab5d3d"
+    },
+    "save_load": {
+      "bytes": 1825,
+      "path": "private/test_runs/pc07_party_exchange_save_roundtrip_v2_run1_load/save_roundtrip_validation_v4.json",
+      "sha256": "443a3064c9657006784b45dd8b04bd9ccf08cff9bc2c2508cf00cdc843c812d5"
+    },
+    "visibility": {
+      "bytes": 5346,
+      "path": "private/research/pc07_party_exchange_save_followup_v1_20261015/RESERVED_OBJECT_VISIBILITY_V1.json",
+      "sha256": "56dfcd7ca70514d2a21f289ae3eb08097249d4450e0c4d606e6d7948e3aceffc"
+    }
+  },
+  "source_runtime_distinction": [
+    "Native traces prove the named boundaries and watched ranges only.",
+    "Reserve rendering suppression is conditional canonical-source reasoning applied to recorded role80/id07.",
+    "The load trace does not capture renderer decision PCs, full OAM, or the later scratch writer.",
+    "Root visually inspected accepted menu/page/battle captures; overlapping loaded-field sprites limit that image."
+  ],
+  "status": "complete-selected-private-native-route",
+  "this_summary_ran_validators_or_emulators": false,
+  "this_summary_read_or_hashed_ROMs": false
+}

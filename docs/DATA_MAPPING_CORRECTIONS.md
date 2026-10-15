@@ -39,6 +39,9 @@ runtime trace.
 | MAP-008 | 2026-09-08 | External instruction-width decode contradicted | IRQ-path 16-bit immediate operands versus apparent WRAM writes |
 | MAP-009 | 2026-09-08 | External strict-threshold annotation contradicted | Black Hole nonboss comparison equality boundary |
 | MAP-010 | 2026-09-08 | Project Lua observability claim contradicted | Internal PPU NMI scanline versus serialized Lua fields |
+| MAP-011 | 2026-09-08 | External pointer-advance annotation contradicted | Default battle handler with D=0 |
+| MAP-012 | 2026-10-13 | Project input interpretation corrected; pinned local label misleading | Remapped held confirm versus fresh-press input |
+| MAP-013 | 2026-10-13 | Project observer address calculation corrected | CPU SRAM-window index versus physical SRAM offset |
 
 ## MAP-001 — exact bank end is not an out-of-range CPU register
 
@@ -440,3 +443,110 @@ opcodes are excluded by the existing 123-opcode v0 authoring policy; that
 intersection does not prove that every other allowed command lacks indirect
 or aliased completion effects. The policy remains unchanged, and no new
 completion stream, action binding, hook or allocation is approved.
+
+## MAP-012 — event opcode31 reads remapped held confirm
+
+**Recorded:** 2026-10-13. Affects normal-field input semantics, not a playable
+character, graphics or save-record namespace.
+
+**Old claim and exact source:** our save-point diagnosis initially described
+opcode31 as a fresh-press test. The pinned local disassembly names its entry
+`EventCmd_IfPressed80` at `bank_C0.asm:13828`; the actual load at line13830,
+`$C066BD`, reads absolute `$00F8`. The 2,800,445-byte file has SHA256
+`b5b209cd03ae430f095482a429798ee3600d97af3774841c069d8f9a071140b8`.
+We preserve that source unchanged. This entry corrects our interpretation;
+it makes no claim that the distinction was previously unknown to the community.
+
+**Corrected result:** in the selected normal-field producer, `$F2/$F3` hold
+raw current buttons and `$F0/$F1` hold fresh presses, calculated as
+`(new XOR old) AND new`. The remapper's first call uses X0 and maps the latter
+to `$F6/$F7`. Its second call uses X2 and maps held buttons to `$F8/$F9`.
+Subsequent X4 fallthrough maps repeat input separately. The final native
+`$C285A5` rotate publishes the configured confirm match in bit7.
+Opcode31 tests this held bit at `$C066BD/$C066C0` without consuming it.
+Ordinary interaction at `$C01AAC` instead reads the remapped fresh press in
+`$F6`. Opcode34 reads raw held `$F2`, which differs from31 under remapping.
+The pinned 2,336,447-byte `bank_C2.asm` has SHA256
+`d96c0d9707d9150dbdb3ad7d995f7ae135e87ebb6329691cab2eb86447611032`.
+
+**Evidence:** the private source reproducer verifies each selected encoded
+instruction against the canonical cartridge and pins its finite source spans.
+Its independently reproduced 17,650-byte receipt has SHA256
+`4584c523102f45c0b6e0f4e4d5c7a49e592882f62264dbd36422255350b5da79`.
+The separate bounded trace diagnosis is
+`private/research/pc07_savepoint_input_phase_v1_20261013/correlation_v1.json`,
+42,294 bytes, SHA256
+`b776acc7977a78772888d78af8b1517006b1fc38caeffe05959a1dc8b02d6b63`.
+Root read the source and independently reproduced both receipts byte-for-byte.
+The trace digest is
+`2a2b771e8429779d35b4f56fa8085019e2e44df00c3508047af0bdcaca35b5be`.
+Actual A holds on polls4889/4890 produce `$F8=$80`, with native writes and
+next-instruction readbacks. Poll4891 clears F8 at row511373 before object14's
+first selected opcode31 read at row511523. All589 selected reads observe00
+and have an actual failure skip and next-opcode fetch. Permission publication
+preceded the confirm position by eight commands under a five-command slice.
+
+**Evidence level and consequence:** selected source semantics are
+`verified-static`; this timing diagnosis uses actual observations from one
+quarantined pilot. It is not a whole-engine input-writer census or complete
+native-route acceptance. A one-poll extension to the diagnostic's point hold
+is supported as a test candidate, not guaranteed success. The failed run still
+has no save overlay, output checkpoint, normal save or cold-load result.
+Reproduce with `python -B
+private/research/pc07_savepoint_input_phase_v1_20261013/correlate_v1.py`.
+No canonical annotation, ROM byte or frozen trace is rewritten.
+
+## MAP-013 — saved-party preview X includes the SRAM window base
+
+**Recorded:** 2026-10-13. This corrects our private save-entry observer and
+matching host predicate, not a community character map.
+
+**Old source:** `pc07_native_save_entry_observer_v3_20261013/collector_v3.lua`
+line1861 expects physical SRAM offset `$0580 + X` at `$C2D1C1`, while also
+requiring that offset to fit the 8 KiB SRAM image. Its SHA256 is
+`d0d1e190438749c0efc0fdf3ec0efbe383583d2efadf845e381b4fefedb553ca`.
+The same calculation is in `suffix_v3.py:384`, SHA256
+`008df9c50f618473b688318cd8c2cfafbc3f0e4dbad798e7a4d9cec1bcbd06ec`.
+Both remain frozen as historical sources.
+
+**Corrected result:** the native slot-base table at `$FFFBE1` selects
+`$6000/$6A00/$7400`. `$FFFBD3` stores its chosen word in DP`7B`; the preview
+copies it through DP`22` into X. Its three-iteration loop admits each base
+plus party ordinal0,1,2. These are CPU-window indices. Keep the CPU read
+address `$300580 + X`, but require physical offset `$0580 + X - $6000`.
+The first selected expectation is CPU`$306580` to physical`$0580`.
+Restrict X to those nine values; generic modulo acceptance is unnecessary.
+
+The existing identity checks remain separate. A high-bit-set serialized byte
+takes the native BMI skip path, which does not make it a valid PC. Values00..06
+are supported;07 still indexes slot-relative0430 and name05DA, so it remains
+refused, as do unsupported nonnegative08..7F. The address correction supplies
+no independent PC07 save storage or post-save preview adapter.
+
+**Evidence and limits:** the failed v3 attempt records X=$6000 at its last
+site, row531452, then the observer refusal at row531453/poll4901. The assertion
+precedes logging, so there is no `save-preview-read` witness for its actual
+address, conversion result or byte. Source-derived expectations must not be
+reported as that missing bus observation. All three pinned initial-SRAM
+preview triples are00/01/02. There are45 snapshots through the observed save
+overlay, no shell snapshot and no output MSS; the run remains quarantined.
+
+The canonical instruction spans and base table were checked against ROM.
+Pinned Mesen mapping source explains the two 4 KiB SRAM handlers and page
+offsets. Its ExHiROM bank30 window depends on non-strict board mappings;
+this is not a universal hardware-board compatibility result. The private
+diagnosis is `pc07_save_preview_domain_diagnosis_20261013/diagnosis_v1.json`,
+20,602 bytes, SHA256
+`f0dafa60663c867d48a147181a38f379b7d6a76da8745c3fa74b8a1e3d5b099b`.
+Root read the source, mapper and note and reproduced the receipt exactly.
+It binds the original trace SHA256
+`6c17a2ecca3e10e76d40be52266d8ea1e14a507dd1807e6f99148b01bb323bf9`.
+Reproduce with `python -B
+private/research/pc07_save_preview_domain_diagnosis_20261013/reproduce_v1.py`.
+
+**Evidence level and consequence:** `verified-static` for the bounded address
+calculation, paired with a preserved actual refusal. A separately numbered
+collector and suffix must retain the same ABI, phase, owner, SRAM type/size,
+initial-byte equality and identity guards. Only a new native observation can
+establish that the corrected preview check passes. No full route, normal
+save or cold-load result is accepted by this diagnosis.

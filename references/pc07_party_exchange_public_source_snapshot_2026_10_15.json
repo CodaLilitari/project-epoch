@@ -1,0 +1,72 @@
+{
+  "schema": "project-epoch-public-original-source-snapshot-v1",
+  "date": "2026-10-15",
+  "evidence_level": "reviewed-original-source-snapshot",
+  "files": [
+    {
+      "source": "private/research/pc07_party_exchange_v1_20261015/core_v1.asm",
+      "destination": "asm/pc07_party_exchange_core_v1.asm",
+      "bytes": 4294,
+      "sha256": "df5f3c60ee5b7d613fc8de8fcd10a1a78798c0e20fc1c1a79c5daba9e16a50b1",
+      "byte_identical_copy": true,
+      "source_unchanged": true
+    },
+    {
+      "source": "private/research/pc07_party_exchange_v2_20261015/wrappers_v2.asm",
+      "destination": "asm/pc07_party_exchange_wrappers_v2.asm",
+      "bytes": 9985,
+      "sha256": "f868d066e659425f41c0fa2c7a2fb3643f3d1935c299d465b060392a3b660c14",
+      "byte_identical_copy": true,
+      "source_unchanged": true
+    },
+    {
+      "source": "private/research/pc07_party_exchange_persistence_v2_20261015/writer_v2.asm",
+      "destination": "asm/pc07_party_exchange_writer_v2.asm",
+      "bytes": 7843,
+      "sha256": "681dd68d1e729d91edd4bdb8e263e98474f4b85d85e658da2d7e08ab3a655d0e",
+      "byte_identical_copy": true,
+      "source_unchanged": true
+    },
+    {
+      "source": "private/research/pc07_party_exchange_persistence_v2_20261015/loader_v2.asm",
+      "destination": "asm/pc07_party_exchange_loader_v2.asm",
+      "bytes": 8045,
+      "sha256": "cf7ee3b016cd2b3ea591038fc6fe769e468df3e5ae9f55abea7d60cc7135bdbb",
+      "byte_identical_copy": true,
+      "source_unchanged": true
+    }
+  ],
+  "review": {
+    "exact_allowlisted_sources_read_in_full": true,
+    "content": "Original project assembly, technical addresses/ABI descriptions, authored namespace bit masks, and authored diagnostic sidecar header/metadata.",
+    "embedded_extracted_game_tables": false,
+    "embedded_retail_event_packets": false,
+    "embedded_raw_game_records_or_graphics": false,
+    "account_or_credential_material": false
+  },
+  "scope": {
+    "purpose": "Publish the original source used for the bounded party-exchange menu and slot0 persistence work alongside the separately maintained milestone report.",
+    "snapshot_is_standalone_build": false,
+    "source_comments_preserved_verbatim": true,
+    "source_comments_describe_their_authored_preintegration_stage": true,
+    "runtime_claims": "Refer to the separate current milestone report and accepted native evidence; copying these sources supplies no new runtime proof.",
+    "metadata_policy": "Fixed authored diagnostic full-grant fixture; not implemented recruitment, mutable grants, or Techs.",
+    "external_dependencies": "Wrappers call existing native routines and original presentation/SHA/preflight dependencies by address or label. Those dependencies and private game inputs are not included here.",
+    "excluded": "Field helper containing the canonical 45-byte event packet, all other private assets, ROMs, SRAM, savestates, extracted game data and native traces."
+  },
+  "operation": {
+    "raw_sources_changed": false,
+    "assembly_executed": false,
+    "native_execution": false,
+    "ROM_read_or_emitted": false,
+    "historical_validation_replayed": false,
+    "git_stage_commit_or_push": false
+  },
+  "reproduction": [
+    "Require all four destinations and this manifest to be absent.",
+    "Read only the four exact source paths listed above as bytes.",
+    "Write each destination with exclusive binary creation, without newline or text conversion.",
+    "Compare each destination and the unchanged source with its captured bytes; compute one SHA-256 for each captured source.",
+    "Record byte counts, source/destination identities and the bounded evidence scope; do not assemble or execute."
+  ]
+}

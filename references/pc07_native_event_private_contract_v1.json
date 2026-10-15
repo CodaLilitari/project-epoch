@@ -1,0 +1,280 @@
+{
+  "assembly_components": [
+    {
+      "bytes": 157,
+      "cpu_address": 4259840,
+      "id": "field-helper",
+      "sha256": "315f409ece80e84c656930c47bc5a0d6e0f97d83aecc95b7c474abc2056750e7",
+      "source": "asm/pc07_donor_read_adapters_v2.asm"
+    },
+    {
+      "bytes": 215,
+      "cpu_address": 4260096,
+      "id": "battle-helper",
+      "sha256": "39410b2ccdc09a9ad3667f363d7358bf91f552ee20d145d33c8cfc3c76a9849b",
+      "source": "asm/pc07_first_attack_adapters_v1.asm"
+    }
+  ],
+  "context": [
+    "Source is the exact inert ExHiROM scaffold; complete first-Attack reconstruction is required before event additions.",
+    "Beyond the accepted first-Attack image, only the two expanded event allocations, the two canonical pointer rows (six bytes total), and checksum/complement pairs change.",
+    "Both fixed original-authored transformations return copyrighted packet bytes in private memory only; no payload is included in this reference.",
+    "Event0126 initial load and native reload must use this same 1917-byte identity, not either 1914-byte assisted fixture.",
+    "Record/roster and compatibility preparation remains a separate diagnostic fixture; no complete playable PC07, save/coldload, native event execution or production ownership is proved."
+  ],
+  "events": [
+    {
+      "decoded_bytes": 2553,
+      "decoded_sha256": "d81b7bfc4db23d95adc8a576ba2472e1cd005ab8e43cf997fda3e5e3da29a51d",
+      "encoded_bytes": 2879,
+      "encoded_sha256": "67e8f6c1ec34c029243cbfb8907ba5f1c94335a827c7424826261de2c9068672",
+      "end_exclusive": 4459327,
+      "event_id": 293,
+      "file_start": 4456448,
+      "id": "event-0125",
+      "production_allocation": false,
+      "source_cpu": 4456448
+    },
+    {
+      "decoded_bytes": 1917,
+      "decoded_sha256": "b4720d09d7576f3446d6ead1ae86077d421d57b93a5e4d1b05368f229d4241a3",
+      "encoded_bytes": 2163,
+      "encoded_sha256": "b6b7ca85988976355bda924f10c8d42e224273d36d9048d037000c696236cf26",
+      "end_exclusive": 4462707,
+      "event_id": 294,
+      "file_start": 4460544,
+      "id": "event-0126",
+      "production_allocation": false,
+      "source_cpu": 4460544
+    }
+  ],
+  "evidence_level": "verified-static-private-diagnostic",
+  "native_execution": false,
+  "new_sections": [
+    {
+      "bytes": 6,
+      "file_start": 3997023,
+      "id": "event-pointer-rows-0125-0126",
+      "kind": "canonical-event-pointer-rows",
+      "preimage_hex": "c8dcfa02e2fa",
+      "preimage_sha256": "eebcb7965fb7054a6abcb34150919b2c9e079cb812cca66bdf4af906487198e7",
+      "replacement_hex": "000044001044",
+      "sha256": "96b5bc5104d68e7877e1d8e8d2c3dd4b2ec4ecb575fc824f6e23b17af834ba7a"
+    },
+    {
+      "bytes": 2879,
+      "file_start": 4456448,
+      "id": "event-0125",
+      "kind": "fixed-expanded-event",
+      "preimage_sha256": "8820c1e1cb4c53eb2b4e509211ad5ff8dffb76c2b7f702c189c93c60022c0fee",
+      "sha256": "67e8f6c1ec34c029243cbfb8907ba5f1c94335a827c7424826261de2c9068672"
+    },
+    {
+      "bytes": 2163,
+      "file_start": 4460544,
+      "id": "event-0126",
+      "kind": "fixed-expanded-event",
+      "preimage_sha256": "6db0c1ea3abbd50ee53c6e386214917d9c5933e8ace4e02e0d24a9e5c3f9151b",
+      "sha256": "b6b7ca85988976355bda924f10c8d42e224273d36d9048d037000c696236cf26"
+    }
+  ],
+  "prior_components": [
+    {
+      "bytes": 157,
+      "id": "original-helper-component",
+      "path": "private/test_runs/pc07_donor_native_source_v2/adapters.bin",
+      "sha256": "315f409ece80e84c656930c47bc5a0d6e0f97d83aecc95b7c474abc2056750e7"
+    },
+    {
+      "bytes": 215,
+      "id": "original-battle-component",
+      "path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.bin",
+      "sha256": "39410b2ccdc09a9ad3667f363d7358bf91f552ee20d145d33c8cfc3c76a9849b"
+    }
+  ],
+  "prior_image_sha256": "6d420e3daa6761a6ca2b0dd6bfc9119aa15967124f92c5d731a431f76726eefa",
+  "production_approval": false,
+  "schema": "project-epoch-private-pc07-native-event-recipe-v1",
+  "source_bytes": 8388608,
+  "source_sha256": "26bd7d0ff22927b167685ca741d0c84ae3dc683cd6c788c5ecd95723c2c2ab93",
+  "sources": [
+    {
+      "bytes": 2541,
+      "path": "asm/pc07_donor_read_adapters_v2.asm",
+      "sha256": "df0584a820d3b6b4994298cc1f0d6b3ffc4089797b42c5d6c6217d02a4e5a914"
+    },
+    {
+      "bytes": 5190,
+      "path": "asm/pc07_first_attack_adapters_v1.asm",
+      "sha256": "290d3335b0c4143895a5804ed1b20273108f6fc231859ff08733e1af9a33fbd1"
+    },
+    {
+      "bytes": 23844,
+      "path": "private/research/ctrando_20609d5/src/ctrando/compression/ctcompression.py",
+      "sha256": "129c681c6124df40f1f4ef3f6c30635c8e14427ddc8f29e77567707bcdff9ea6"
+    },
+    {
+      "bytes": 38556,
+      "path": "private/research/pc07_battle_adapters_20261013/assembled_hook_manifest_v1.json",
+      "sha256": "ea41d24c92de9757093c8c4874672a7efa06a696adf733b9094976987883addb"
+    },
+    {
+      "bytes": 6987,
+      "path": "private/research/pc07_battle_adapters_20261013/claude_disposition_v1.txt",
+      "sha256": "b61185bad2b57a08e8cb2ec242fdf310f4797178d8bc5e34a34dd1e4e2405742"
+    },
+    {
+      "bytes": 4446,
+      "path": "private/research/pc07_battle_adapters_20261013/span_semantics_audit_v1.json",
+      "sha256": "23aa9fac0322af0ea71b681d7aa8b99b76790eeca1e8325852f9e3627cfaa8e5"
+    },
+    {
+      "bytes": 215,
+      "path": "private/research/pc07_first_attack_builder_20261013/placement_assembly_v1/candidate.bin",
+      "sha256": "39410b2ccdc09a9ad3667f363d7358bf91f552ee20d145d33c8cfc3c76a9849b"
+    },
+    {
+      "bytes": 24214,
+      "path": "private/research/pc07_native_control_design_20261013/evidence_v1.json",
+      "sha256": "033dd28a22ce9a15c6fb592770dd1be17111164a8095f8178c5f1940b24d89dd"
+    },
+    {
+      "bytes": 14836,
+      "path": "private/research/pc07_native_control_transform_20261013/transform_v1.py",
+      "sha256": "b84c3b6931633c4f7596bc277a3d31d9d06b896d057405d0a3896db35b6f366e"
+    },
+    {
+      "bytes": 4258,
+      "path": "private/research/pc07_native_event_source_20261013/literal_event_codec_v1.py",
+      "sha256": "31af58589f1b1a9c5f827b252e12d1f5de0f5b400be0b128d28d347f6bca2ea7"
+    },
+    {
+      "bytes": 12990,
+      "path": "private/research/pc07_post_return_control_20261013/transform_v1.py",
+      "sha256": "9319cb4921330f50bd2acd30104ebdf91ea98b83867d4dd97e644a51f89c0ea2"
+    },
+    {
+      "bytes": 157,
+      "path": "private/test_runs/pc07_donor_native_source_v2/adapters.bin",
+      "sha256": "315f409ece80e84c656930c47bc5a0d6e0f97d83aecc95b7c474abc2056750e7"
+    },
+    {
+      "bytes": 4571,
+      "path": "private/test_runs/pc07_donor_native_source_v2/source_review.json",
+      "sha256": "5b1ea5cff78b79f2f1a12a008e6731873eb20adb9535012bf482f540e484c7ca"
+    },
+    {
+      "bytes": 2800445,
+      "path": "references/ct_disassembly/bank_C0.asm",
+      "sha256": "b5b209cd03ae430f095482a429798ee3600d97af3774841c069d8f9a071140b8"
+    },
+    {
+      "bytes": 2768817,
+      "path": "references/ct_disassembly/bank_C1.asm",
+      "sha256": "298ad8f0ef01097b1018e1cdd154a4e63d52b6debaa1d94dd85ecf2b8aaa15aa"
+    },
+    {
+      "bytes": 200122,
+      "path": "references/ct_disassembly/bank_C3.asm",
+      "sha256": "11aa3492823ef8096961e1c129e4a5ee83418f6d1e19584455ff894d919ba134"
+    },
+    {
+      "bytes": 290190,
+      "path": "references/ct_disassembly/bank_CC.asm",
+      "sha256": "d60669a2de45ce888298b5d1e4a88739173bb707a8293ddadbeffb2eeab2eb7d"
+    },
+    {
+      "bytes": 691286,
+      "path": "references/ct_disassembly/bank_FD.asm",
+      "sha256": "0f8a0d59e97de7d60945fdfef1b614217e3d673cca1e14f543234d789a87779e"
+    },
+    {
+      "bytes": 25215,
+      "path": "references/pc07_selected_event_remap_v1.json",
+      "sha256": "aa9c83da8af9a6d249924bcdcdf4e39c346b397d4b5c3372768f3473fb832599"
+    },
+    {
+      "bytes": 5854,
+      "path": "references/pc07_selected_event_transform_v1.json",
+      "sha256": "0bb253c1f296e5719b204052588f25254a045a3cc716d32127347b6e304cdd66"
+    },
+    {
+      "bytes": 8598,
+      "path": "tests/test_pc07_selected_event_remap_v1.py",
+      "sha256": "2c601a6c9c1b1d217f6302f4aa27dc8407d04dec6ea394d9d73174c0da683f0c"
+    },
+    {
+      "bytes": 6209,
+      "path": "tests/test_pc07_selected_event_transform_v1.py",
+      "sha256": "61f01346d90e9b6e4a0def23a0c46fadd1b85f73f97e362cf38061371d5ca3f5"
+    },
+    {
+      "bytes": 39560,
+      "path": "tools/audit_location_event_items.py",
+      "sha256": "cb39dd4485e6330c4f9d5b8817fe8e6a161cb2e965020cb1cd10a3fd30f7812a"
+    },
+    {
+      "bytes": 29760,
+      "path": "tools/audit_pc07_selected_event_remap_v1.py",
+      "sha256": "97fb4b6eb1c0fb1e403303c6b692e933f2c01285ced19d037dc5d82c3d3dd15d"
+    },
+    {
+      "bytes": 39897,
+      "path": "tools/audit_schala_expanded_package_command_policy_v0.py",
+      "sha256": "5f9417cb5c44d6dd71577bcd48de0a3c90c9d7f2b790c57a26d1e8c4bd5b5c3f"
+    },
+    {
+      "bytes": 11809,
+      "path": "tools/build_original_snes_package_cartridge_v1.py",
+      "sha256": "45d85af48c8126be6c79caee681e22764740bdcc28cfc70b2220d758c313903a"
+    },
+    {
+      "bytes": 12383,
+      "path": "tools/original_snes_diagnostic_write_contract_v1.py",
+      "sha256": "f6dcf065fbc71b3ff9b8f7a43367873b90284484b501af06f1e6eb99f92e0318"
+    },
+    {
+      "bytes": 4761,
+      "path": "tools/original_snes_package_fixtures_v1.py",
+      "sha256": "b7911e1bea10bf9294e3ca4a896e203bd1d12aec03a33da137aa7caabcb10a60"
+    },
+    {
+      "bytes": 15819,
+      "path": "tools/pc07_private_expanded_write_contract_v1.py",
+      "sha256": "b8bb7cec02a5041658922a842cc29a086e45edeef82d12059f436d794e39f376"
+    },
+    {
+      "bytes": 13561,
+      "path": "tools/pc07_private_first_attack_write_contract_v1.py",
+      "sha256": "32364652a0c744ceecaa38c246d0ea6aec19407198764d2d29e2491d63676e1d"
+    },
+    {
+      "bytes": 7734,
+      "path": "tools/schala_compat_menu_v1.py",
+      "sha256": "4b679c79791a8d2ec879f2f9e1e5ad5b46bb4655f59c7d00d217cc3613c35f59"
+    },
+    {
+      "bytes": 13386,
+      "path": "tools/schala_rom_scaffold.py",
+      "sha256": "a517ad5c9d5a1f6b19a3050dfcc4903e2e177abe685ecaf78a60ca6884a9ed4a"
+    },
+    {
+      "bytes": 4248,
+      "path": "tools/transform_pc07_escape_event_v1.py",
+      "sha256": "6e1cc83374c340907c7f189eab85158ffc59637be78fb182077ae49ccdc4eb77"
+    },
+    {
+      "bytes": 21592,
+      "path": "tools/transform_pc07_lavos_event_v1.py",
+      "sha256": "19e28389fee2a471c6e1f7304cdbfbf06e08cf52dcb9a0994fa4400d4722e8d6"
+    },
+    {
+      "bytes": 16474,
+      "path": "tools/transform_pc07_selected_event_v1.py",
+      "sha256": "1213ae3f274ba044608185d9b9e806cf9f6db2cfdb0ab89f70a09de0e2ff1d3a"
+    }
+  ],
+  "target_bytes": 8388608,
+  "target_checksum": 9721,
+  "target_sha256": "badb29e699b38934c39f995ccfb484d8d0847f213524fdb958e9bc50fe5bbc90"
+}

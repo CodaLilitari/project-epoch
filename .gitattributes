@@ -18,3 +18,7 @@ tools/mesen_pc07_field_probe_v3.lua -text whitespace=blank-at-eol,blank-at-eof,s
 # Frozen October 13 evidence metadata was recorded with CRLF bytes.
 references/pc07_field_battle_handoff_2026_10_13.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 references/recomp_tool_practical_assessment_2026_10_13.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Frozen October 15 guard dependencies retain their reviewed source bytes.
+tools/validate_rom_write_intents.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/pc07_native_sidecar_loader_write_contract_v1.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -2115,3 +2115,453 @@ a pause. The stopping point is this reviewed native field observation. Work
 remains incomplete. After explicit resume, reuse the accepted event0126 transform
 and ordinary-Attack setup note for the bounded field-to-battle experiment. Do
 not rerun completed surveys or matrices without a concrete missing condition.
+
+## 2026-10-13 — Native post-battle save-entry acquisition and fresh MSS replay
+
+The bounded diagnostic now reaches the native save overlay after ordinary PC07
+Attack, escape, live-record commits and field movement. Its separately guarded
+event126 exit returns to the installed event125 save point. The v4 acquisition
+has 545,168 trace rows,47 WRAM/SRAM snapshot pairs and a real pre-C2CF51 MSS.
+Independent review and root's exact reproduction accept that acquisition.
+Nine serialized preview reads and two neutral live07 mask reads are observed.
+The menu's91 original-PC stat publications reconcile with source/store/readback
+triples: records00/01 change only3D/3F/40, HP stays unchanged,02..06 are unchanged.
+The PC07 record,48 stored name bytes including Epoch and47 SRAM captures remain
+preserved. This diagnostic still uses the earlier donor appearance; the separate
+Schala presentation has not been combined into it.
+
+The acquired136,508-byte MSS hashes to
+`50921dea6ea04811def9f62fe272e981501d7d293778a067ac551a764c1db586`.
+Its independent89,525-byte review is
+`private/research/pc07_native_save_entry_v4_run1_review_20261013/review_v4.json`,
+SHA256 `5e66af744a5021099aa7341dfeb8b3ee8880a5d43efab9dd9301e2c7f8c1853d`.
+Preserve the three earlier refused attempts and their corrections: shared event
+flag classification, held-input timing and CPU SRAM-window/physical-offset
+conversion. The independent review also needed a separately recorded strict-JSON
+comparison correction for three tuple/list pairs; no game predicate changed.
+
+A fresh hidden Mesen process then restores this MSS with exact CPU/full memory
+equality and executes the unchanged C2CF51 JSL. All three actual stack writes
+are observed, including two same-value writes; one WRAM byte changes. After54
+master clocks, the actual pre-PHP FFF9FB callback has SP0A78 and live return
+frame54CFC2. SRAM is unchanged. This eight-row replay stops its evidence before
+the save body. Instruction mappings are debugger readbacks, not fetched bus data.
+
+The replay's original host receipt is preserved as quarantined: it omitted six
+normal generated emulator files from its strict inventory. A separate offline
+audit accepts the unchanged native result and exactly those six qualified
+outputs while rechecking the29-file inventory and immutable inputs. Five BSX
+resources match pinned upstream bytes; the CDL format and image CRC agree.
+Neither generated coverage nor the shutdown battery is pre-cut save evidence.
+Root inspected and reproduced the12,025-byte additive audit, SHA256
+`61baea172358efcd860e7c4f196234c29b6e024fc86d392b4188e74b196d273f`, at
+`private/research/pc07_pre_save_replay_v1_run1_review_20261013/audit_v1.json`.
+No new native run was needed for that inventory correction.
+
+The compact machine checkpoint is
+`private/research/pc07_progress_checkpoint_20261013g/checkpoint_v1.json`,
+SHA256 `b489fb98118eab63128ab0159c694f53b04d67c40fbf6c274a4818f9565f7758`.
+Its adjacent builder reproduces metadata only. Continue from the accepted MSS,
+not a repeated full battle/field acquisition. The next observation must stop
+before C2CF55 unless the continuation is separately qualified; the proposed
+post-return96-menu-NMI baseline would reach the unadapted PC07 preview atC2CF58.
+Normal PC07 save/cold-load remains open under the selected longer private
+profile01 transition. Production catalogs remain unpromoted.
+
+Andrei's world-map art preference is recorded: match the retail cast and favor
+deliberate/code-assisted pixel work, consulting Lily and Claude Desktop Code at
+that art stage. No world-map art or such consultation occurred here. The active
+goal remains incomplete; this local research checkpoint is not a new publication.
+
+The separate source-only native-save-body design is now sealed at
+`private/research/pc07_native_save_body_design_20261013/design_v1.json`,
+10,480 bytes, SHA256
+`7f215ca9cf2ca862ddd879a2a566bbbf98e20f44bf51ead22d97502f206e7dd5`.
+Root reproduced its 15 source pins, three private inputs, four unchanged ROM
+spans and eight descriptors. The fresh caller's 194-byte AE00..AEC1 candidate
+is all zeroes; this is a snapshot fact, not scratch ownership. A future observer
+may inspect the original serializer through actual pre-C2CF55, with a disposable
+SRAM result and no 96-menu-NMI continuation. That original serializer would put
+PC07 into vanilla's compatibility position. It is not the adapted ten-region
+save and cannot establish PC07 persistence. Deferred emulator stopping cannot
+prove that later unsupported preview code physically never ran. No new native
+experiment or observer implementation was added by this source-only packet.
+
+### 2026-10-13 — unchanged native save body through real return
+
+The source-only next packet is now followed by one actual read-only native run,
+`private/test_runs/pc07_native_save_body_v1_run1/`. The collector and independent
+host validator preserve the accepted MSS/image, record all physical WRAM/SRAM
+data events, retain same-value stores and require a next-callback readback for
+every write. Local source review corrected protocol mismatches and required CPU
+context/native mode on every post-header event. Sixteen focused component tests
+passed; the final changed CPU-presence test was checked separately. No historical
+suite or full field/battle route was rerun.
+
+Collector64 and host0 yielded 20,202 rows, 7,475 actual exec callbacks, 2,242
+writes/readbacks (2,073 same-value), and all eight descriptors/2,100 payload bytes.
+Full `$A00` checksum reads produce `$FBED` for physical slot0; checksum, magic and
+active-slot publications precede actual PLP/RTL and pre-`$C2CF55`. The conditional
+counter did not increment on this route. SP/P/D/DBR return correctly; A/X/Y may
+change. No interrupt occurred in the observed 251,432 master clocks. Original
+seven live records, PC07, compatibility, names including Epoch, roster and joined
+state are unchanged with zero observed writes.
+
+Root reran the complete validator and file/input inventory offline. Trace SHA256
+is `1d317fc00b0602f2639e089e2accb0934929c5d875029f878526f6374d7c0612`;
+the 14,104-byte additive audit is
+`private/research/pc07_native_save_body_v1_run1_review_20261013/audit_v1.json`,
+SHA256 `276d33e0c6afd787cf644305cfbfc020a508b09eb2df7200b70e8ee55c865d4e`.
+It additionally records all seven snapshots and every access for the extra
+ten table bytes and SHA candidate/guards. `$98B8..$98C1` is nonzero and unchanged,
+with no observed access; `$AE00..$AEC1` and its guards stay zero and unaccessed.
+These observations end at pre-C2CF55 and do not prove later menu/SHA ownership.
+
+The existing 108-byte component supplies a separately frozen save-only source
+candidate under `private/research/pc07_installed_save_table_v1_20261013/`.
+It selects a named 50-byte expanded table at `$442000`, changes two exact save
+instruction spans and both checksum pairs: 63 changed bytes, target SHA256
+`e795c34f8680b45a99f86b657e23066957e4816a481a38099b20be10bfef8908`.
+Eleven focused tests passed. Only the unchanged parent's shared audits ran;
+the candidate's local checks do not replace the required new shared APIs.
+There is no image-writing implementation in this frozen source-stage version.
+
+The baseline's SRAM deliberately still contains the original incompatible layout.
+No compatible PC07 save, SHA/sidecar commit, preview adaptation or cold-load is
+claimed. Raw artifacts remain private. The supplementary Claude Code request
+was pending at launch and subsequently timed out after 900 seconds: delivery or
+completion uncertain, no answer or partial answer, no verified response model.
+The final result/disposition in `private/reviews/20261013_native_save_body/`
+claims no Claude approval. No retry or paid fallback was used.
+
+The independent actual-trace review at
+`private/research/pc07_native_save_body_independent_run1_review_20261013/review_v1.json`
+is 25,236 bytes, SHA256
+`8765fb60a8d957dbb3b3bca8c72fd92b4770ebc5c96fbdc7721c480177e9ef2d`.
+Root read and executed its reproducer with byte-identical output. Its separate
+memory ledger and checksum agree; all six deliberate trace corruptions refuse.
+It records 80 actual PC07 copy/readback triples and 64 changed bytes in the old
+serialized compatibility span. This remains one native run with offline audits.
+The process-wide warning log is byte-identical to the earlier replay and lacks
+event clocks; it cannot attribute all uninitialized-read warnings to this trace
+or to post-cut code. No warning-free claim is made.
+
+The compact current index is
+`private/research/pc07_progress_checkpoint_20261013h/checkpoint_v1.json`.
+The active goal is incomplete, and world-map art remains the later retail-style,
+code-assisted task with Lily/Claude Desktop consultation at that stage.
+
+### 2026-10-13 — guarded installed ten-region save through real return
+
+The separate v2 builder now reproduces the original baseline and executes both
+new narrowly scoped shared intent/complete-diff APIs before private emission.
+The old 42,559-byte guard is archived unchanged; the new 43,102-byte guard adds
+only two lazy forwarding APIs and retains empty production catalogs. Twelve
+focused construction/refusal tests and sixteen existing shared-guard tests
+passed. The image at `private/test_runs/pc07_installed_save_table_v2/` has
+SHA256 `e795c34f8680b45a99f86b657e23066957e4816a481a38099b20be10bfef8908`:
+63 changed bytes in the exact two save spans, fifty-byte table and checksum
+pairs. No preview, wrapper, sidecar or SHA installation is included.
+
+Source preparation corrected an overly broad draft assumption that every
+instruction mapping was ROM: the original serializer uses the observed WRAM
+MVN/RTL trampoline at `$7E9690/$7E9693`. The final baseline qualification checks
+actual mapped instruction-readback spans without calling them fetch callbacks.
+The first direct launch then refused before output creation or subprocess launch
+because the shared guard's dependency was absent from Python's import path.
+The additive `run_observer_v3.py` pins the unchanged reviewed launcher and supplies
+the exact tools/observer roots. Inert qualification passed before the actual run.
+The frozen collector and validator were not rewritten to bypass that refusal.
+
+One actual hidden Mesen run, `private/test_runs/pc07_installed_save_table_v2_run1/`,
+returned collector64/host0. It records 20,346 rows, 7,525 instruction callbacks,
+2,270 writes/readbacks and 2,150 same-value writes. Fifty actual expanded-ROM
+reads stage all ten descriptors; 2,100 payload bytes are serialized and all
+`$A00` checksum bytes are read. The physical-slot0 checksum is `$0B0E`; five
+metadata writes precede the actual PLP/RTL and pre-`$C2CF55` return. SP/P/D/DBR
+match the caller; native returned A/X/Y are `$E402/$0000/$FFFE`. No interrupt
+was observed in 253,072 master clocks. Protected live records, all names including
+Epoch, roster and joined state remain unchanged with no writes.
+
+All eighty relocated compatibility bytes now reach slot `$0430..$047F`.
+PC07 has no observed read anywhere in this interval. Relative to the previous
+original-save run, the SRAM differs in exactly 64 compatibility bytes and two
+selected checksum bytes. The 1,640-clock delta is specific to this checkpoint;
+it is not a general game-speed or slowdown measurement. The trace is 6,113,339
+bytes, SHA256 `4ad13d1a885c7f14e944aea412175d1dfe29640e95712df1d6a77c7497618291`.
+The receipt is 28,272 bytes, SHA256
+`94cf6b70079b5545f61a4128b33a634af9c65c7088d1e71168dd931c22cb7631`.
+
+Root reproduced the complete validator/input inventory and separately compared
+the old and new SRAM. Its audit is 6,224 bytes, SHA256
+`1889c12ad9f15600f1957202b1563bf209edf71115f40fbe03b0fa4b92858bd2`.
+The independent audit separately replays every physical byte, recomputes the
+descending-word carry checksum, verifies actual frames/returns and rejects eight
+damaging in-memory trace variants. Root read and executed that reproducer with
+byte-identical output: `private/research/pc07_installed_save_table_independent_20261014/review_v1.json`,
+28,210 bytes, SHA256
+`71f973bc9f2dd611faff8603634146cab6d34d210262ea7d9687c73d1c944144`.
+The audit corrected its draft immediate-adjacency assumption: 444 additional
+WRAM reads interleave while MVN is the latest instruction. All are accounted
+globally; preceding PC is context, not CPU/DMA/HDMA ownership.
+
+The occupied `$98B8..$98C1` tail changes from `00abcebcbcba00363f00` to
+`90020011007c2c7e1e00`, with ten native writes and ten descriptor reads. It stays
+changed at the cut. The separate original 85-byte preservation wrapper has a
+source model covering 4,201 finite cases and six corruption refusals. Its
+serializer interior is explicitly stubbed; the 26-byte full-source stack peak
+remains conditional. A separate in-memory placement plan names `$44:2100..$2154`,
+the whole outer JSL and two checksum pairs: 95 changed bytes, prospective SHA256
+`9c8993158843e3f4f2e7d8bc28ba7a2b4b6c6c60834c7414755a110865dff364`.
+Root reproduced all sixteen plan identities and the prospective complete delta.
+This candidate was not emitted or executed. Its new guard path and observed
+stack/staging restoration remain the next bounded installation gate.
+
+Both process logs contain 2,421 unique warning addresses. The new one removes
+exactly `$7E2830..$287F` and adds `$7E2CA0..$2CEF`; 2,363 current addresses match
+interval reads and 58 do not. Individual warning timing remains unavailable.
+The evidence excludes shutdown battery/CDL and later deferred execution.
+No PC07 sidecar save, preview adaptation, SHA commit or cold-load is claimed.
+The active goal is incomplete; this is local progress, not a new publication.
+
+### 2026-10-13 — completed wrapper review and next source-only checkpoint
+
+The separate subscription-backed Claude Code wrapper review completed with a
+qualified no-blocker assessment. It inspected only the three submitted source
+snapshots, not a ROM or native trace, and ran no tests. Root independently
+verified its actionable checker findings. The additive `check_v2.py` keeps the
+original 85-byte assembly and all v1 artifacts unchanged; 4,201 positive cases
+pass, all 224 mutation/status cases are recorded, and four synthetic faults
+demonstrate the former entry-register/return-status blind spots and their new
+rejection. Deleting pre-call PHA/PLP passes sixteen Z=0 statuses including the
+captured `$A1`, but refuses sixteen Z=1 statuses. D/DBR are explicitly native
+passthrough. The 1,536 counter cases chiefly exercise the native epilogue.
+The root-reproduced v2 receipt is 40,548 bytes, SHA256
+`032443411a59e8b9b06ac684c5267b1f797e0756721d067ed779ede84ff527db`.
+The completed review/disposition is preserved at
+`private/reviews/20261014_save_staging_wrapper/`; the earlier save-body timeout
+was neither retried nor promoted to approval. No paid fallback was used.
+
+The future preserved-table observer is source-only and its launcher deliberately
+cannot qualify. Seven focused checks and Lua parsing pass; its independent
+source review closed native-output and predecessor-final-memory checks before
+freezing. The explicit historical table adapter also passes seven focused
+checks and root's byte-identical reproduction, without reading or executing
+the live guard. It reconstructs historical evidence; it does not replace the
+required current intent/complete-diff audit for the proposed wrapper. No wrapper
+image, patch, new guard API or new native run was produced in this preparation.
+
+The compact checkpoint at
+`private/research/pc07_progress_checkpoint_20261014a/checkpoint_v1.json`
+verifies 24 pinned inputs and preserves the selected long profile-01 save
+direction and the later retail-style, preferably code-assisted world-map art
+consultation with Lily, Claude Desktop Code and the other collaborators. The
+18,770-byte index hashes to
+`5bff635f4ba9687e5db9eb144588e38e95678531d05d717cefea48debf8267fe`.
+Its builder's initial metadata check compared the checksum object rather than
+its numeric `value` and refused before output creation; the field selection
+was corrected, with no acceptance predicate or underlying evidence changed.
+The next bounded gate remains guarded wrapper construction and native staging
+restoration. Full persistence and genuine cold-load are still incomplete.
+
+### 2026-10-13 — guarded wrapper executed; occupied save staging restored
+
+The unchanged 85-byte wrapper was admitted through a new fixed private contract
+and two additive shared-guard forwarders. The old 43,102-byte guard is archived
+unchanged. Its historical baseline adapter reproduces the accepted table run;
+both actual current intent and complete-diff APIs then run before any image
+output. These APIs share the exact contract and are
+not two independent semantic reviews. Sixteen existing shared-guard tests and
+the ten focused construction checks passed. Production catalogs remain empty.
+The emitted 8 MiB image has exactly 95 changed bytes in four spans and SHA256
+`9c8993158843e3f4f2e7d8bc28ba7a2b4b6c6c60834c7414755a110865dff364`.
+Historical source pins are preserved; checkpoint a's old live-guard pin now
+refuses drift rather than silently accepting the new source.
+
+Frozen observer v1 remains unlaunchable. The new v2 qualification pins the real
+emission receipt, strict boolean admission, exact intent destination, current
+guard and all checkpoint/runtime sources. Six focused drift/refusal checks
+passed. Root inspected the admission and separate review, then ran its inert
+qualification before the one hidden native run. The 24,171-byte launch manifest
+SHA256 is `133322b3461eaa2bb7f4535a1a88048934be74217e5341b458e520011a3b7683`.
+
+`private/test_runs/pc07_preserved_save_table_v1_run1/` returned collector64/host0.
+The trace contains 20,482 rows, 7,564 instruction callbacks and 2,299 observed
+writes with matching next-callback readbacks, including 2,153 same-value writes.
+All 39 wrapper instructions execute. Ten occupied bytes are read before the
+native save, overwritten/read as descriptors there, and restored before RTL:
+40 observed tail operations. The exact original/final tail is
+`00abcebcbcba00363f00`. Full native A/X/Y `$E402/$0000/$FFFE`, P `$A1`, D0,
+DBR `$7E` and caller SP `$0A7B` are retained. The measured minimum SP is `$0A61`,
+a 26-byte peak in this selected no-interrupt interval only.
+
+The complete 8 KiB SRAM output SHA256 is
+`2c3fcf89fe42593db2e3bc881e4bb5218952431f90fdbd421b94e65b79363a82`, identical
+to the accepted ten-region predecessor. Its 2,100-byte payload still serializes
+relocated compatibility and excludes PC07. The full `$A00` carry checksum is
+`$0B0E`; all five metadata publications precede return. Compared with that
+predecessor, WRAM differs at 22 dead-stack bytes and nine restored-tail bytes;
+all differences lie within the declared stack/tail ranges. Protected original
+records, PC07, all names including Epoch, roster and joined bytes remain equal
+across all twelve snapshots with no observed writes.
+
+The trace is 6,164,493 bytes, SHA256
+`f7024bbcf48a7e4db593d7e768e5a0bf0687e4bb06b18f098a1e5288c35811cf`.
+The actual receipt is 41,439 bytes, SHA256
+`23536cf4bad74f657571d510cc6d9062ca504a5f8e6f7a16619948e143553c33`.
+Root's 8,258-byte audit (`b002a2cdec61f158f5054769848a0d8b61bae635333efd84cf14a93e56aa458c`)
+reconciles 8,255 physical-memory reads and all writes/snapshots. The separate
+80,917-byte independent audit (`2c28aa4d984b116d1783c90a89ecb73ab47de6a3ac0b534536ed87d35a8f28dc`)
+also derives every observed stack operation and executed-instruction SP
+transition, exact long/near frames and checksum order. Root read its source and
+byte-reproduced it. Ten damaging actual-trace variants refuse. This remains
+one native run with two offline audits, not an emulator repeat pair.
+
+The 254,458-master-clock span exceeds its predecessor by 1,386 clocks; this is
+a checkpoint comparison, not a game-speed claim. No interrupt occurred.
+Stdout adds exactly ten warning addresses `$7E98B8..$7E98C1`, with none removed.
+Those warnings have no clocks; prefix read values are separately reconciled,
+without attributing individual warning timing or bus ownership. Evidence ends
+before `$C2CF55` executes, and the stop callback is deferred. Shutdown battery
+and later execution are excluded. Scratch zero-access in this short interval
+does not establish ownership during a longer SHA computation.
+
+A supplementary subscription Claude Code builder review completed from three
+source snapshots, finding no demonstrated fail-open case and seven qualified
+test/reporting recommendations. Root verified the actual four design spans,
+whole four-byte hook and zero overlap between 79 inherited and five new source
+paths. Additive checks exercise both nonempty production catalogs, each missing
+API through emit, guard-extension drift, false baseline, existing image and
+the distinct existing-parent branch. All eight refuse before instrumented
+filesystem writes. A read-only full default build also passes expanded write
+traps. Its 19,845-byte byte-reproduced report hashes to
+`d63c30fbad223f792a3664102e78863495d25be3bebf70b5b057424bf002030a`.
+The initial additive-test pilot expected the later parent refusal for an
+already-existing image and failed at the earlier correct path refusal; the
+two branches were then tested separately. No image or report was emitted by
+that failed pilot. Frozen builder, contract and accepted run sources did not
+change. See `private/reviews/20261014_preserved_save_builder/disposition_v1.json`.
+
+The next saved-roster preview installation proposal is source-only: reuse the
+unchanged 17-byte helper at `$442200`, replace the whole `$C2D1C1` load, and map
+exact07 to87 for the existing skip path without changing SRAM. Its corrected
+CPU/physical SRAM domain preserves MAP-013. New observation planning caught
+the scheduler's `$09FF` stack switch after Sleep, outside the older main-stack
+watch envelope; the later observer must cover the actual task/NMI transitions.
+No preview image, sidecar commit, SHA integration, cold-load or new public
+publication occurred here. The active goal remains incomplete.
+
+The preview installation proposal subsequently passed a separate source review.
+Root read and byte-reproduced its 5,423-byte report, SHA256
+`12532d253b0fdffb2abe046916fa0595f8c2404a3068144a2b93e4cf83c27d89`.
+An independent in-memory reconstruction matches the 29-byte/four-span delta,
+checksum `$ABB0` and prospective target
+`448763f91d8aee201546d2d365c0753029996358084dd8a789916f58bb349f40`.
+Its separate minimal decoder covers 147,456 byte/status/address combinations
+plus 512 hidden-B/path cases. These host cases preserve the single SRAM read,
+effective-load N/Z, exact long-return frame and four-byte stack contribution;
+the stack remains synthetic. No guard, ROM emission or runtime admission was
+added by this review.
+
+The separate continuation plan was finalized and root byte-reproduced its
+47,972-byte metadata, SHA256
+`3f2f415ee3c38b80dd1841bd77d4c61c33d4b6a38cba769395a709697602e1fe`.
+It reuses the existing pre-save MSS and accepted save-prefix evidence, then
+targets the real caller at pre-`$C2CF7E` after both Sleep calls and the preview.
+No actual post-save MSS exists yet; full CPU/WRAM/SRAM snapshots are not a
+substitute for complete emulator state. The first resume's final PLX of zero
+sets P=`$23`; A is volatile across scheduler work. That source-conditioned
+contract prevents an incorrect demand for unchanged pre-sleep A/P. The plan
+also records the explicit `$09FF` scheduler stack and all-low-WRAM observation
+domain. It implements no collector or launcher and grants no runtime admission;
+the later 96-menu-NMI baseline and synchronous SHA interval remain distinct.
+
+Checkpoint b now indexes 48 pinned artifacts and preserves checkpoint a, its
+archived guard relationship, and the world-map art instruction unchanged.
+Root read the metadata builder and reproduced the 99,437-byte index exactly:
+`private/research/pc07_progress_checkpoint_20261014b/checkpoint_v1.json`,
+SHA256 `24cbc5ed2cd3a1ebd7a8bf553f41bf1db2e1b9ad372e5a942e930594f17c5b22`.
+It performs no builder/auditor execution, ROM emission or native run. An
+additional narrow observer-frame cross-check was pending at freeze and belongs
+in a separate additive record. The first next gate explicitly reuses the accepted
+source proposal and finalized design rather than repeating completed work.
+
+The final narrow observer review found one abbreviated continuation description:
+the label callee's `$C2D28C RTS` returns to `$C2D264 PLP`; `$C2D265 RTS` then
+returns the preview to `$C2CF5B`. Root independently verified the canonical bytes
+`20 66 D2 28 60` at `$C2D261..$C2D265` and `60` at `$C2D28C`, consistent with
+`references/ct_disassembly/bank_C2.asm` lines 21823-21825 and 21845. The future
+collector must include `$C2D264/$C2D265` as explicit restoration boundaries.
+The frozen plan and checkpoint remain unchanged; this correction is additive.
+It is a source-plan correction, not a new native result or a failure of the
+already accepted save-wrapper interval.
+
+The completed additive review is 5,619 bytes, SHA256
+`f82bb0ecc61a56f9e00e2729594d5e6f16e35331c183434336dd59de0c3eaccd`, at
+`private/research/pc07_save_preview_observer_review_20261014/REVIEW_AND_ERRATA_v1.md`.
+Root read it and verified all four listed canonical spans, including the resume
+epilogue and explicit scheduler stack. Its adjacent `root_disposition_v1.json`
+records the mandatory extra collector cuts and exact reproduction command.
+The review marked pending in checkpoint b is now complete through this additive
+record; neither the frozen plan nor checkpoint was rewritten.
+
+## 2026-10-15 — selected native Schala party-exchange milestone
+
+The user-directed short-term menu goal is complete for the selected private
+route. Schala is selectable as logical07 in the third active position, with
+00/01 retained as leaders. The native exchange route removes/reselects her,
+visits both reserve pages, exits to the field and reaches an ordinary Attack.
+The accepted run records23 actions,13,510 matched menu/field write-readback
+pairs and67,714 matched battle-suffix pairs. Separate00/01/07 battle copies,
+actual movement, HP8000->7004, MP93 preservation, caller/cleanup returns and
+renewed readiness are recorded. This does not implement arbitrary positions,
+native recruitment, full progression or a general release.
+
+The initial page-transition failure was real: forced frame uploads outside the
+normal animator left queued reads exposed to reuse of its staging pool. V2
+leaves dirty fields for the native animator after its own reset, restores the
+old owner's six additional palette bytes, and fills Schala's existing sixth
+name cell locally. The seven-record mapping and eleven hook spans are retained.
+Root inspected the corrected initial/page1/page0 and battle captures. The saved
+comparison confirms stable Schala frame bytes, restored returned-page CGRAM,
+no former Magus/Robo frame collision and unchanged Gaspar state in selected
+snapshots. The corrected image SHA256 is
+7098f38c0b28b7806a1f69d092f7f3fd765544935e8667f5f6dfb495d386f95f.
+Both current write audits preceded emission:21 spans,3334 changed bytes and
+exact inverse restoration. Earlier image/source/recording evidence is preserved.
+
+The changed-formation save followup now passes in two actual separate fresh
+processes, PIDs217260 and94348, each exit64 without timeout. Save formation is
+000102078004030605: Lucca active third, Schala in reserve. All2270 SRAM stores
+have matching readbacks and reconstruct the complete8192-byte output. Native
+checksum9744, sidecar CRC34127 and the exact-slot SHA256 binding pass. The first
+emulator's actual battery, SHA256
+27968c673ee76f868a0b656a6dca4f85b7c13162c9530198be4538cf024d20a3,
+was staged into the second before ordinary boot. Native load return and two
+field ticks preserve the chosen roster and PC07 record. Original-seven/name/
+compatibility snapshots match across the save/load returns; unrelated SRAM
+regions remain unchanged. No MSS or debugger game-state writes were used.
+
+The first save observer stopped before saving because a suffix-only callback
+was forwarded into the prefix's site table; prepared_v5 corrects that dispatch.
+The v3 inspector then exposed two incorrect inspection requirements, not game
+failures. Scratch is restored atC2E694, but no persistent zero contract applies
+after field initialization; the trace does not identify its later writer.
+Reserve object8 role80/id07/draw01 is compatible with the native negative-role
+visibility gate, which precedes draw admission. V4 records runtime state and
+conditional canonical rendering reasoning separately. Root reviewed the exact
+diff and source, then ran v4 once on the new recordings: accepted. An independent
+one-pass save inspection corroborates the ledger and battery lineage. No ROM
+rebuild, emulator replay or historical validation chain was needed for these
+inspection corrections.
+
+Human and machine checkpoints are
+docs/schala_party_selection_milestone_2026_10_15.md and
+references/schala_party_selection_milestone_2026_10_15.json. The latter is6713
+bytes, SHA25620f1c344cb569f193b1f29bc0bbbb6764d66ae8d1e795567a2d9db9a53628dba;
+its small generator and receipt are under
+private/research/pc07_party_exchange_checkpoint_20261015/. It summarizes current
+accepted reports without running validators, emulators or ROM hashes. Project
+Epoch remains unfinished. New recruitment/position/progression/art/save-lifecycle
+work must be a separate bounded scope; production catalogs remain unchanged.
+No new public push or deployment is claimed by this checkpoint.

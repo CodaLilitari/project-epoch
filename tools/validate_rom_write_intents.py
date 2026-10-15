@@ -1155,6 +1155,66 @@ def audit_pc07_schala_presentation_v2_images(manifest, source, target):
     return presentation.audit_images(manifest, source, target)
 
 
+def validate_pc07_native_event_manifest(manifest):
+    """Fixed private event-source recipe; no production catalog expansion."""
+    import pc07_native_event_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_native_event_images(manifest, source, target):
+    """Audit the exact inert-source image and all native event-source writes."""
+    import pc07_native_event_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_native_save_transition_manifest(manifest):
+    """Validate only the separately sealed private native save-transition recipe."""
+    import pc07_native_save_transition_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_native_save_transition_images(manifest, source, target):
+    """Require its exact inert source, fixed payloads and complete image diff."""
+    import pc07_native_save_transition_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_installed_save_table_manifest(manifest):
+    """Fixed private ten-region save table; no production catalog expansion."""
+    import pc07_installed_save_table_write_contract_v2 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_installed_save_table_images(manifest, source, target):
+    """Audit the exact save-only delta before bounded private image emission."""
+    import pc07_installed_save_table_write_contract_v2 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_preserved_save_table_manifest(manifest):
+    """Fixed private occupied-tail preservation wrapper; production stays empty."""
+    import pc07_preserved_save_table_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_preserved_save_table_images(manifest, source, target):
+    """Audit the exact wrapper, whole save-call hook and mirrored header pairs."""
+    import pc07_preserved_save_table_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_shadow_digest_manifest(manifest):
+    """Fixed private post-save digest experiment; production remains unapproved."""
+    import pc07_shadow_digest_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_shadow_digest_images(manifest, source, target):
+    """Audit its exact whole hook, original components and complete image diff."""
+    import pc07_shadow_digest_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifest", type=pathlib.Path)
@@ -1177,3 +1237,63 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+def validate_pc07_native_sidecar_writer_manifest(manifest):
+    """Fixed private native writer delta; no production catalog expansion."""
+    import pc07_native_sidecar_writer_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_native_sidecar_writer_images(manifest, source, target):
+    """Audit its exact writer, whole JSL hook and complete mirrored image diff."""
+    import pc07_native_sidecar_writer_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_native_sidecar_loader_manifest(manifest):
+    """Fixed private cold-load delta; no production catalog expansion."""
+    import pc07_native_sidecar_loader_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_native_sidecar_loader_images(manifest, source, target):
+    """Audit its eight exact spans and complete mirrored image diff."""
+    import pc07_native_sidecar_loader_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_schala_persistent_presentation_manifest(manifest):
+    """Fixed private Schala presentation on the accepted persistent parent."""
+    import pc07_schala_persistent_presentation_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_schala_persistent_presentation_images(manifest, source, target):
+    """Audit its 28 exact spans, inherited preservation and complete image diff."""
+    import pc07_schala_persistent_presentation_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_party_exchange_manifest(manifest):
+    """Exact private exchange composition; an unsealed recipe always refuses."""
+    import pc07_party_exchange_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_party_exchange_images(manifest, source, target):
+    """Audit new menu/field/persistence spans and the complete inherited image."""
+    import pc07_party_exchange_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_party_exchange_v2_manifest(manifest):
+    """Separately sealed private page-upload correction; v1 stays frozen."""
+    import pc07_party_exchange_write_contract_v2 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_party_exchange_v2_images(manifest, source, target):
+    """Require the corrected composition's exact complete image diff."""
+    import pc07_party_exchange_write_contract_v2 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
