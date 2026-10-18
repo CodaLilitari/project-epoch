@@ -1297,3 +1297,19 @@ def audit_pc07_party_exchange_v2_images(manifest, source, target):
     """Require the corrected composition's exact complete image diff."""
     import pc07_party_exchange_write_contract_v2 as diagnostic
     return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_worldmap_manifest(manifest):
+    """Exact private world-map composition; staged sealed contract required.
+
+    The private builder supplies its reviewed contract module and one active
+    source snapshot. This does not add a production hook or allocation.
+    """
+    import pc07_worldmap_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_worldmap_images(manifest, source, target):
+    """Require the ten declared spans, complete diff and parent restoration."""
+    import pc07_worldmap_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)

@@ -1,0 +1,47 @@
+{
+  "schema": "project-epoch-public-original-source-snapshot-v1",
+  "date": "2026-10-17",
+  "evidence_level": "reviewed-original-source-snapshot",
+  "files": [
+    {
+      "source": "private/research/pc07_worldmap_art_20261017/integration_candidate/provider_v1.asm",
+      "destination": "asm/pc07_worldmap_provider_v1.asm",
+      "bytes": 2365,
+      "sha256": "796f95385a7dcf8c1b77c63d6ba9dfe9e3dcb5cbb5a47bc3e720fb185a86461b",
+      "byte_identical_copy": true,
+      "source_unchanged": true
+    }
+  ],
+  "review": {
+    "exact_allowlisted_source_read_in_full": true,
+    "content": "Original diagnostic provider assembly, technical addresses and ABI comments; no art or game asset payloads.",
+    "embedded_extracted_game_tables": false,
+    "embedded_retail_records_or_graphics": false,
+    "account_or_credential_material": false
+  },
+  "scope": {
+    "purpose": "Publish the original source for the bounded third-position PC07 world-map provider alongside the separate accepted native milestone.",
+    "assembled_provider_bytes_from_existing_receipt": 136,
+    "snapshot_is_standalone_build": false,
+    "source_comments_preserved_verbatim": true,
+    "source_comments_describe_authored_preintegration_stage": true,
+    "runtime_claims": "Refer to docs/schala_worldmap_milestone_2026_10_17.md and its machine-readable checkpoint; this snapshot adds no runtime evidence.",
+    "external_dependencies": "Canonical native suffixes, private builder and sealed world-map write contract, selected art payloads, pinned parent image and native-observation inputs are not included.",
+    "shared_guard_forwarders": "tools/validate_rom_write_intents.py imports the explicitly staged private pc07_worldmap_write_contract_v1 module only when these diagnostic APIs are called; no production catalog entry is added.",
+    "excluded": "All ROMs, SRAM, savestates, extracted game data, screenshots, art payloads, raw traces and private reviewer material."
+  },
+  "operation": {
+    "raw_source_changed": false,
+    "assembly_executed": false,
+    "native_execution": false,
+    "ROM_read_or_emitted": false,
+    "historical_validation_replayed": false
+  },
+  "reproduction": [
+    "Require the destination assembly and this manifest to be absent.",
+    "Read only the exact source path above as bytes.",
+    "Write the destination with exclusive binary creation and no newline conversion.",
+    "Compare destination and unchanged source with captured bytes; compute one SHA-256 for the captured source.",
+    "Record this bounded snapshot scope; do not assemble or execute."
+  ]
+}

@@ -42,6 +42,41 @@ runtime trace.
 | MAP-011 | 2026-09-08 | External pointer-advance annotation contradicted | Default battle handler with D=0 |
 | MAP-012 | 2026-10-13 | Project input interpretation corrected; pinned local label misleading | Remapped held confirm versus fresh-press input |
 | MAP-013 | 2026-10-13 | Project observer address calculation corrected | CPU SRAM-window index versus physical SRAM offset |
+| MAP-014 | 2026-10-17 | Project world-map graphics annotation corrected | Auxiliary sprite tiles versus palette bytes and palette stride versus copy length |
+
+## MAP-014 — world-map auxiliary tiles are graphics, and palette copies are eight colors
+
+**Old claim:** the world-map rows in
+`docs/pc7_graphics_menu_hook_audit.md` describe `$7F:AC00` as a palette region
+and group the `$C2:2BCF` copy with palette resolution. Those historical rows
+remain unchanged as the record of the earlier interpretation.
+
+**Corrected result:** `$C2:2BCF` copies two `$40`-byte graphics spans: the
+upper half of a ninth 16-by-16 sprite frame from `$7F:AC00 + id*$40`, then its lower
+half from a source `$200` bytes later. The ordinary main page at
+`$7F:9000 + id*$400` supplies the other eight frame slots. ID07's computed
+main page therefore overlaps occupied auxiliary graphics; it is not an empty
+eighth page or a vehicle identity.
+
+**Supporting consumer:** `$C2:2CD3-$C2:2CDC` configures the transfer of
+`$1000` graphics bytes from `$7F:B000` to VRAM word address `$1000`, including
+the staged auxiliary tiles. The actual palette path is `$C2:28ED`, with a
+`$20`-byte source stride at `$7F:8E00`. Its `$000F` block-move counter at
+`$C2:28FA` and MVN at `$C2:28FD` copy **16 bytes / eight colors**, not the
+whole 32-byte hardware palette row. All seven extracted playable-character
+world-map sets use transparent index 0 and opaque indices 1..7.
+
+**Evidence and practical consequence:** the October 17 private packet
+`private/research/pc07_worldmap_art_20261017/engine_audit/` records nine bounded
+canonical spans, all byte-equal in clean US Rev0 and the accepted 7098 private
+diagnostic image. Its `inspection.json` SHA-256 is
+`c0e819a6ff55a67f413209fbb7144a24a2fdfd016cc5c9a7a28bf709da352ea8`.
+The art exporter independently reconstructs all seven originals' main page,
+auxiliary halves and copied palette bytes: 28 exact comparisons. Future art
+must supply nine 16-by-16 frame slots with at most seven opaque colors, and a PC07
+provider must resolve main graphics, auxiliary graphics and palette separately.
+These are source and asset-format findings; they do not establish native PC07
+world-map execution, new WRAM ownership or a free graphics-index namespace.
 
 ## MAP-001 — exact bank end is not an out-of-range CPU register
 

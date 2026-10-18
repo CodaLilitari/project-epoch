@@ -9,6 +9,45 @@ and the [current developer guide](docs/schala_eighth_character_developer_guide.m
 Historical checkpoints preserve the bytes and evidence available when made;
 the latest log entry identifies the current resume boundary.
 
+## Schala on the world map and flying Epoch — 2026-10-17
+
+**Schala now appears on the world map with her selected Coda V5 sprite set as
+logical PC07 in the third active position.** The accepted controller-driven
+Mesen recording covers all four walking directions, both idle frames, native
+graphics/palette uploads and actual drawing. Crono and Marle's destination
+graphics and palettes remain unchanged. The original seven character sets
+also supplied the scale, layout and palette references for the new art.
+
+The flying Epoch passes a separate scene-transition check with Schala in the
+party: board, fly to a new position, land, disembark, enter the Ioka hut, return
+to the world map and reboard at the same parked position. The full party roster,
+PC07 record and Epoch name remain equal through the checked transition. This
+tests the ship's parked position across entering/leaving a house; it does not
+claim a new SRAM-save or cold-load test.
+
+Read the [world-map and vehicle report](docs/schala_worldmap_milestone_2026_10_17.md)
+and [machine-readable checkpoint](references/schala_worldmap_milestone_2026_10_17.json).
+The [original provider assembly](asm/pc07_worldmap_provider_v1.asm) and
+[source snapshot index](references/pc07_worldmap_public_source_snapshot_2026_10_17.json)
+publish the 136-byte provider's authored source without game assets. The guarded
+build, selected art and native observations require the private inputs named in
+the report; this public checkout is not a self-contained ROM build or release.
+
+The next art stage is [Schala's main field/battle/run/KO poses](docs/schala_main_sprite_art_brief_2026_10_17.md).
+Independent first drafts were collected, but **none is selected or installed**.
+They need closer fidelity to her retail robe, covered feet, hair and proportions.
+She is planned as a pure caster, with a casting gesture and separate magic bolt;
+the new attack effect is not implemented. Her original NPC graphics, animation
+and shared palette must remain unchanged. [The art checkpoint](references/schala_main_sprite_art_checkpoint_2026_10_17.json)
+records the individual delivery status and remaining work.
+
+Project Epoch remains unfinished. Native recruitment, arbitrary active
+positions, full Tech/equipment/progression support, broader vehicle routes,
+other save slots, New Game+ and erase remain separate milestones. The world-map
+and vehicle checks use explicitly authored recruited-party fixtures, not a
+finished recruitment quest. ROMs, saves, extracted pixels, private drafts and
+raw runtime recordings remain outside this repository.
+
 ## Native party selection and save/load milestone — 2026-10-15
 
 **Schala is selectable as logical PC07 in the native party-exchange menu on the
@@ -33,10 +72,11 @@ exact private-source provenance. These are research components, not a complete
 standalone build or a released patch. ROMs, batteries, extracted game assets
 and raw recordings remain private.
 
-Project Epoch is still unfinished. Arbitrary active positions, native
-recruitment, full Tech/equipment/progression support, world-map sprites, other
-save slots, New Game+ and erase remain separate milestones. Existing community
-mapping is credited; this result does not claim first discovery or no slowdown.
+At this October 15 checkpoint, world-map sprites were still unfinished; the
+separate October 17 result is recorded above. Arbitrary active positions,
+native recruitment, full Tech/equipment/progression support, other save slots,
+New Game+ and erase remain separate milestones. Existing community mapping is
+credited; these results do not claim first discovery or no slowdown.
 
 ## Historical appearance and battle milestones — 2026-10-13
 

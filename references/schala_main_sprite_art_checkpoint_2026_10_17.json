@@ -1,0 +1,158 @@
+{
+  "schema": "project-epoch-main-sprite-art-checkpoint-v1",
+  "status": "independent-first-drafts-not-selected-or-integrated",
+  "evidence_level": "source-extraction-and-provisional-artifact-inspection",
+  "scope": "regular field/battle/run/hurt/KO PC07 bodies, not world-map replacement",
+  "user_constraints": {
+    "weapons": false,
+    "ordinary_attack": "cast gesture plus separate future magic bolt",
+    "NPC_Schala_original_graphics_assembly_animation_unchanged": true,
+    "NPC_table_and_shared_pointer_targets_protected_in_future_build": true,
+    "independent_manual_or_coded_pixel_art": true,
+    "image_generation_authorized_for_this_batch": false,
+    "retail_design_fidelity": "same installed retail robe/covered feet/hair/collar/trim/proportions/shading; no costume/anatomy redesign",
+    "bare_feet_or_exposed_legs": false,
+    "invented_shoes_or_shortened_robe": false
+  },
+  "reference": {
+    "current_image_sha256_from_accepted_receipt": "ec7e5c089116c37510aea2bacc7a82c4131432eef414bdb8f6ef89723d6c6724",
+    "actual_PC07_frames": 23,
+    "current_PC07_tiles": 79,
+    "copied_fallback_selector_cells": 988,
+    "fallback_cells_are_unique_missing_poses": false,
+    "normal_run_selector_hex": "06",
+    "currently_referenced_frames_decimal": [
+      19,
+      20
+    ],
+    "normal_run_mapping_is_source_evidence_not_runtime_animation_acceptance": true,
+    "packet_sha256_from_manifest": "4ae5679fbc306ebeb96eb054dfe12d6df7a56b0130782910fd74f30587b574be",
+    "packet_files": 19,
+    "packet_bytes": 1070554,
+    "private_packet": "private/research/pc07_main_sprite_art_20261017/main_sprite_reference_packet_v1.zip"
+  },
+  "art_contract": {
+    "frames": 12,
+    "canvas_each": [
+      48,
+      48
+    ],
+    "native_origin": [
+      16,
+      40
+    ],
+    "native_sheet": [
+      576,
+      48
+    ],
+    "transparent_index": 0,
+    "allowed_opaque_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "roles": [
+      "run_down_A",
+      "run_down_B",
+      "run_up_A",
+      "run_up_B",
+      "run_left_A",
+      "run_left_B",
+      "run_right_A",
+      "run_right_B",
+      "cast_windup_right",
+      "cast_release_right",
+      "hurt_recoil_right",
+      "KO_head_left"
+    ],
+    "eventual_piece_limit": "four16x16pieces; art canvas does not allocate engine storage"
+  },
+  "collaborators": {
+    "Coda": {
+      "status": "v1-rejected-for-bare-feet-v2-narrow-hem-repair-still-not-selected",
+      "method": "new hand-drawn body grids and KO with retained installed head details",
+      "receipt": "private/research/pc07_main_sprite_art_20261017/coda/attempt_v2/receipt_v2.json",
+      "known_limits": "32 lower-hem flesh pixels corrected; body shading/proportions and motion still require retail-fidelity rework"
+    },
+    "Lily": {
+      "status": "actual-v2-bundle-returned-inspected",
+      "observed_mode": "Personal GPT-6 Pro",
+      "receipt": "private/reviews/20261017_main_sprites/lily/delivery_inspection_v2.json",
+      "known_limits": "origin corrected; one noted rightA body-pixel removal; KO small and provisional"
+    },
+    "Wren": {
+      "status": "actual-bundle-returned-inspected",
+      "observed_mode": "Primary Bot provider-managed",
+      "receipt": "private/research/pc07_main_sprite_art_20261017/collaboration/wren/completion_v1.json",
+      "known_limits": "up run subtle; KO head small/flat"
+    },
+    "Red": {
+      "status": "actual-v1-v2-v2.1-bundles-returned-inspected-provisional",
+      "observed_mode": "Claude Cowork Opus5.5 Max",
+      "receipt": "private/research/pc07_main_sprite_art_20261017/collaboration/red/source_comparison_v2_1.json",
+      "known_limits": "v2.1 restored inherited idle robe with new arms; static folds, wave-like hurt and simplified KO; no final artistic acceptance"
+    },
+    "Gemini": {
+      "status": "corrected-source-reconstructed-locally-not-selected-design-drift",
+      "observed_mode": "Argon High",
+      "receipt": "private/research/pc07_main_sprite_art_20261017/collaboration/gemini/completion_v2.json",
+      "known_limits": "initial palette mismatch corrected explicitly; narrow/tall stylization and face depart from installed design; provider binary execution not claimed"
+    },
+    "Meta AI": {
+      "status": "actual-corrected-PNG-returned-inspected-unfinished",
+      "observed_mode": "Thinking",
+      "receipt": "private/research/pc07_main_sprite_art_20261017/collaboration/meta_ai/completion_v1.json",
+      "known_limits": "editable providerJSON inaccessible; indices derived locally; sway/back-facing run and block-likeKO not accepted"
+    },
+    "Nua": {
+      "status": "actual-returned-JSON-reconstructed-locally-rejected-for-design-drift",
+      "observed_mode": "Muse provider-managed",
+      "receipt": "private/research/pc07_main_sprite_art_20261017/collaboration/nua/completion_v1.json",
+      "known_limits": "thin limbs/torso, branching hair and exposed legs depart from retail design; all bboxes exceed32 along an axis, packing unresolved"
+    }
+  },
+  "no_claims": [
+    "complete character set",
+    "artistic selection",
+    "native animation roles bound",
+    "engine piece packing/allocation",
+    "magic-bolt behavior",
+    "ordinary Attack mechanics changed",
+    "ROM integration",
+    "production release"
+  ],
+  "ROM_writes_in_main_art_stage": false,
+  "original_NPC_writes": false,
+  "historical_validation_chain_replayed": false,
+  "publication": {
+    "performed": false,
+    "copyrighted_pixels_in_this_metadata": false,
+    "private_conversation_URLs_in_this_metadata": false
+  },
+  "human_brief": "docs/schala_main_sprite_art_brief_2026_10_17.md",
+  "next_step": "Use retail-locked reference overlays and hand-refine a small number of poses first; reject anatomy/costume drift before expanding the set. Later guarded PC07-only integration must preserve NPC dependencies.",
+  "NPC_preservation": {
+    "private_map": "private/research/pc07_main_sprite_art_20261017/NPC_PRESERVATION_MAP_V1.json",
+    "known_original_spans": 13,
+    "evidence": "existing source/receipt recovery only; no new ROM read/hash or runtime",
+    "current_PC07_palette_shared_with_original_NPC": true,
+    "shared_palette_headerless_file_span_end_exclusive": [
+      "240C00",
+      "240C18"
+    ],
+    "future_guard_enforcement_already_implemented": false
+  },
+  "all_six_external_attempts_returned_in_some_form": true,
+  "all_external_contributions_closed_for_window": true,
+  "accepted_main_sprite_candidates": 0,
+  "updated_at_utc": "2026-10-18T00:31:00Z"
+}

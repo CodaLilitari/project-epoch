@@ -2565,3 +2565,120 @@ accepted reports without running validators, emulators or ROM hashes. Project
 Epoch remains unfinished. New recruitment/position/progression/art/save-lifecycle
 work must be a separate bounded scope; production catalogs remain unchanged.
 No new public push or deployment is claimed by this checkpoint.
+
+## 2026-10-17 — Schala V5 world-map rendering and independent runnable review
+
+The user-selected Coda V5 sheet now renders through the native world-map
+engine as logical07 in the third active position. The private image is
+`private/test_runs/pc07_worldmap_coda_v5_v1/diagnostic.sfc`, SHA256
+`ec7e5c089116c37510aea2bacc7a82c4131432eef414bdb8f6ef89723d6c6724`.
+The136-byte provider uses three exact hooks and five named immutable payload
+allocations. Both current write audits passed before emission: ten spans,
+1320 changed bytes and exact inverse restoration to the accepted7098 parent.
+The current operation reuses accepted evidence without replaying old builders,
+menu/battle/save tests or historical hash chains. Production catalogs stay unchanged.
+
+MAP-014 corrects our previous world-map annotations: auxiliary data is the
+ninth graphic frame; the native palette routine copies eight colors despite
+its32-byte source stride. The nine16x16 frames use tiles n/n+1/n+16/n+17.
+Seven retail sets reconstructed in28 exact payload comparisons. All extracted
+pixels, ROMs, saves and private collaborator files remain ignored local data.
+Six external collaborators independently returned candidate work, with actual
+files versus locally reconstructed responses distinguished in the report.
+Andrei explicitly chose CodaV5; optionalV6 and the earlier Red pilot are retained.
+
+Final observer-v4 passes at
+`private/test_runs/pc07_worldmap_observer_v4_coda_v5_run1/validation_v4.json`:
+1168 provider bytes, nine native copies, three actual caller returns,949
+third-member draw nodes and4745 shadow-OAM stores/readbacks. Native VRAM/CGRAM
+uploads agree, original00/01 destinations remain preserved, and all four walking
+animations plus both idle frames occur. Separate read-only frame snapshots show
+actual movement in all four directions; these are not a whole-map traversal
+or CPU-write attribution claim. Battery and staged inputs are unchanged.
+The accepted7,980,289-byte trace SHA256 is
+`a6c0ac4bbe377b08297d69e9a2e17e8398dc3c305b5dd9ee4fe0600607c73747`.
+
+The first observer checked VRAM before pending DMA completed; its correction
+uses source-pinned later CPU cuts. Two route attempts then lacked required
+movement directions because of terrain/follower distance. A cheap Snes9x route
+pilot found the bridge path before one final detailed recording. Preserve each
+attempt and cause; no ROM/provider change or historic proof replay was involved.
+Root inspected actual native stills and a70-capture contact sheet. Two lossless
+3x APNGs preserve all captures and nominal60Hz frame spacing; no real-time visual
+playback review or measured wall-clock timing is claimed.
+
+Lily's actual Personal GPT-6 Pro conversation received the current ROM, source,
+art and a runnable Linux Snes9x core/harness. Her returned report/process outputs
+and six native PNGs record one3752-frame run, exit0 and unchanged SRAM. Returned
+images match their metadata; the ready image matches the local smoke capture.
+This is reviewer execution evidence, distinct from local process observation and
+from the Mesen trace. Root read the review and inspected her montage. Her V5
+preference and bright-trim/headband critique are retained; no art revision was
+made. Her limited simple route is not promoted to all-direction/fidget proof.
+
+The human report and machine companion are
+`docs/schala_worldmap_milestone_2026_10_17.md` and
+`references/schala_worldmap_milestone_2026_10_17.json`. Reproduction commands and
+private receipts are indexed there. Project Epoch remains unfinished. The next
+user-requested functional check is parked flying-Epoch position across house
+entry/exit with Schala, explicitly not SRAM-save/cold-load testing. No new Git
+push or site deployment is performed by this checkpoint.
+
+### Flying Epoch scene roundtrip and next main-sprite direction
+
+The user clarified position persistence means land/disembark, enter a house and
+return to the world map, not SRAM-save/cold-load testing. This selected native
+functional route now passes in pc07_epoch_scene_roundtrip_v2_run1: Epoch moves
+from544,512 to544,480; the party enters Ioka hut0115, returns to world01F3 and
+reboards at unchanged544,480. Allthree board; roster,PC07record,Epochname and
+SRAM remain exact.4164frames and nine read-only full-WRAM captures support the
+current validator. Root inspected the interior, returned-world and reboarded
+PNGs. This is functional/frame-snapshot evidence, not CPU-write attribution or
+general vehicle support. The authored fixture preserves genuine late-game
+vehicle/location/event state; native recruitment is not claimed. The earlier
+partial run's entry failure was incomplete foot-position advice; the native
+cover predicate requires both sampled top properties. No ROM edit was needed.
+
+Andrei then requested independent hand-authored mainPC field/battle/run/KO
+sprites using the actual current playableSchala sheet beside allseven retail
+PCs. Copied filler cells must be distinguished from distinct missing poses.
+Schala is to be a purecaster: no weapon sprites; ordinaryAttack art is a cast
+and separate magicbolt, with Lucca's ranged behavior as a reference. The brief
+is docs/schala_main_sprite_art_brief_2026_10_17.md. Preparation has begun; this
+future art/effect work does not change the accepted current image.
+
+### Main-body draft collection and retail-fidelity correction
+
+The actual current PC07 reference packet contains 23 assembly frames/79 tiles;
+988 fallback selector cells are not distinct missing poses. Normal-run selector
+$06 still references the outstretched-hand frames19/20 in every facing. A
+twelve-pose first study was requested independently from six collaborators,
+with Coda producing another manual body/KO study. Actual bundles were recovered
+from Lily, Wren and Red; Meta supplied an actual PNG, Nua supplied editable JSON,
+and Gemini supplied source reconstructed locally after an explicit palette fix.
+The individual receipts retain delivery, reconstruction and unresolved limits.
+
+Andrei correctly identified design drift and bare feet in the new work. Coda
+accepted the correction: new poses must preserve retail Schala's robe, covered
+feet, hair, trim, proportions and shading. Coda v1's bare-foot study is rejected;
+a separate 32-pixel lower-hem correction is not general artistic acceptance.
+Nua/Gemini design-drift studies are rejected for integration. Other contributions
+remain provisional/unfinished, including Red's closer v2.1 restoration of the
+inherited robe, Lily's corrected-origin draft, Wren's study and Meta's unfinished
+sway/KO. No candidate is selected or installed, and all original returns are
+preserved. All six external contributions are closed for this work window.
+
+The user also explicitly prohibited overwriting original NPC Schala assets.
+The source-only preservation map recovers 13 known original spans and separates
+them from current PC07 expanded copies. Its palette still shares original file
+$240C00..$240C18: keep it unchanged, and clone/bind separately if a future PC07
+color change is desired. This map does not install a new guard or close every
+NPC consumer/alias. No ROM/save/NPC writes occurred in this art phase.
+
+The final main-art brief/checkpoint are
+`docs/schala_main_sprite_art_brief_2026_10_17.md` and
+`references/schala_main_sprite_art_checkpoint_2026_10_17.json`. Next: a small
+retail-locked casting/running comparison before expanding the set or proposing
+separate PC07 packing/binding. The bounded continuation closes with the native
+world-map and selected flying-Epoch roundtrip proofs preserved. No new Git push
+or portfolio deployment occurred. Historical validation chains were not replayed.

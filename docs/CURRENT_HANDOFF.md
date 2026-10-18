@@ -1,5 +1,74 @@
 # Project Epoch current handoff
 
+## October 17: selected Schala world-map art milestone
+
+Coda V5 is explicitly selected by Andrei and now passes the selected native
+world-map observation as logical07 in the third active position, with 00/01
+retained. The guarded private image is
+`private/test_runs/pc07_worldmap_coda_v5_v1/diagnostic.sfc`, SHA256
+`ec7e5c089116c37510aea2bacc7a82c4131432eef414bdb8f6ef89723d6c6724`.
+The accepted new recording is
+`private/test_runs/pc07_worldmap_observer_v4_coda_v5_run1/validation_v4.json`.
+All1,168 graphics/palette bytes, nine native copies, three actual caller returns,
+949 third-member draw nodes and4,745 shadow-OAM writes/readbacks pass. All four
+walking directions, actual selected displacement and both prolonged-idle
+frames are observed. Original00/01 destination graphics/palettes, staged
+inputs and battery remain unchanged. Root inspected native screenshots and
+the70-frame documentary contact sheet. Lossless3x APNGs are available under
+the private art packet's `visual_review/coda_v5_observer_v4_motion_v1/`.
+
+The new provider is136 bytes with three exact hooks and five immutable data/code
+allocations. Current intent and complete-diff guards passed before emission:
+ten spans,1,320 changed bytes and exact inverse restoration to the accepted7098
+parent. No historical builder/validator chain was replayed. Reuse these current
+receipts; do not repeat the October15 menu/battle/save proofs without a newly
+failing boundary or source drift. Production catalogs remain unchanged.
+
+MAP-014 corrects our old auxiliary-graphics/palette annotations. The native
+world-map set has nine16x16 images and eight copied palette colors. The strict
+exporter reconstructed all seven retail sets in28 exact comparisons. Six
+external collaborators supplied independent candidates; V5 retains the user's
+preferred proportions, while V6 remains optional and uninstalled. Private
+reference pixels, ROMs, saves, art bundles and conversations stay outside Git.
+
+See `docs/schala_worldmap_milestone_2026_10_17.md` and
+`references/schala_worldmap_milestone_2026_10_17.json` for current evidence and
+reproduction. The recruited-start world-map fixture is explicitly synthetic;
+it does not prove native recruitment. The separately requested flying-Epoch
+functional check now passes: board all three, fly from544,512 to544,480, land,
+enter Ioka hut0115, return to world01F3 and reboard at the unchanged544,480.
+The4,164-frame Snes9x recording is under
+`private/test_runs/pc07_epoch_scene_roundtrip_v2_run1/`; current validator and
+nine read-only full-WRAM snapshots agree. Root inspected interior, returned
+world and reboarded captures. Roster,PC07,Epoch name and SRAM remain unchanged.
+This is scene-transition position persistence, not SRAM-save/cold-load proof.
+The source fixture preserves genuine late-game vehicle/location/event data and
+adds Schala deliberately. General vehicles, era changes, arbitrary active
+positions and a complete playable release remain unproved.
+
+The next user-directed art stage is the main field/battle/run/KO sprite set,
+using the actual current playablePC07 sheet and original seven PC references.
+Each collaborator and Coda should hand-author original missing poses, with no
+weapon sprites: Schala is a pure caster, using an ordinary-Attack casting
+gesture and a separately proposed magic bolt. See
+`docs/schala_main_sprite_art_brief_2026_10_17.md`. The reference packet and all six
+external attempts are collected in their available forms; Coda's own study is
+also preserved. None is approved for integration. Andrei rejected retail-design
+drift and bare feet: keep the existing robe, covered feet, hair, trim, proportions
+and shading. Start the next pass with a small faithful pose comparison rather
+than expanding a flawed sheet. This does not change the accepted ROM. Original NPC
+Schala graphics, assembly and animation must never be overwritten. See
+`references/schala_main_sprite_art_checkpoint_2026_10_17.json` for per-author
+delivery and correction status. Project Epoch is unfinished.
+
+The original NPC dependency map recovers 13 known protected spans. PC07 has
+separate graphics/assembly/animation copies but still shares original palette
+file `$240C00..$240C18`; preserve it. Any future PC07-only palette edit requires
+a separate guarded copy/binding. The map is source recovery, not a newly
+installed preservation guard or complete consumer-ownership proof. This bounded
+two-hour continuation is closed with the tested world-map and flying-Epoch
+milestones intact, main-body art unfinished, and no publication performed.
+
 ## October 15: selected native party-selection landmark complete
 
 Andrei selected a short-term party-selection milestone after the bounded
