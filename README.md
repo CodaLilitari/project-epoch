@@ -34,6 +34,28 @@ unfinished. The Tech tab still has a PC07/Epoch-name alias, and the small
 save-card portrait remains unsupported. Public source builders retain named
 private-input requirements; this checkout is not a self-contained game build.
 
+## Credits and acknowledgments
+
+Special thanks to **Justin (justin3009)** for his earlier Project Schala and
+eighth-character work, and for explaining the practical failure cases that
+helped shape our regression checklist. **Mauron, Vehek, JLukas and FaustWolf**,
+the Chrono Compendium / Kajar Laboratories / Data Crystal communities, and the
+authors of the referenced editors, disassemblies and emulators supplied years
+of mapping, preservation and tools that this project learns from.
+
+**AI collaboration is credited explicitly:** Coda / Codex leads implementation
+and integration; Lily / ChatGPT contributed the selected horizontal casting
+poses; Red / Claude Cowork contributed selected recoil and KO art. Wren / Grok
+Bot, Gemini, Nua / Muse and Meta AI contributed independent art studies.
+Claude Code and additional Codex/ChatGPT and Grok reviewers contributed bounded
+critiques. The portrait uses OpenAI-generated, concept-derived art. Direction,
+in-game review and final visual selection are Andrei Pemberton's.
+
+See [full credits, contribution roles and sources](CREDITS.md) and the
+[machine-readable credits](references/project_epoch_credits.json). Installed
+work, reference material, unselected studies and review are distinguished;
+acknowledgment does not imply endorsement or complete validation.
+
 ## Historical world-map and flying Epoch milestone — 2026-10-17
 
 The art status and next steps in this historical section are superseded by

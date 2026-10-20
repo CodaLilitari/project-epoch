@@ -1,0 +1,72 @@
+# Project Epoch credits and acknowledgments
+
+Updated October 20, 2026.
+
+Project Epoch builds on years of community experimentation, mapping, preservation and tool development. Thank you to the people who shared what worked, what failed and what still needed investigation.
+
+## Community research and advice
+
+- **Justin (justin3009)** — Earlier Project Schala and eighth-character experiments, and practical explanations of follower ordering, Gaspar and palette pressure, portraits, stats, RAM and SRAM pitfalls. His experience helped shape Project Epoch's regression checklist. [Project Schala discussion](https://www.chronocompendium.com/Forums/index.php?topic=6288.0) · [Eighth-character discussion](https://www.chronocompendium.com/Forums/index.php?topic=4100.0). Acknowledgment of earlier work and advice; no claim that Justin supplied or authored the installed Epoch portrait or world-map art. Evidence: [docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md](docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md).
+
+- **Mauron, Vehek and JLukas** — Character-record, graphics, animation, menu, Tech and naming maps, historical eighth-character experiments, and PC-before-NPC ordering guidance. Their published work supplied concrete addresses, hypotheses and failure cases that this project checked. [Historical mapping audit and original post citations](https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md). Existing discoveries are credited even where later checks correct an annotation. Historical component patches are not imported into the current build. Evidence: [docs/pc07_native_field_checkpoint_2026_10_07.md](docs/pc07_native_field_checkpoint_2026_10_07.md), [docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md](docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md).
+
+- **FaustWolf** — Published Magus graphics, palette, assembly and animation boundary notes used in the historical Schala comparison, with Vehek's later assembly-size correction retained. [Original boundary notes](https://www.chronocompendium.com/Forums/index.php?topic=6288.msg118488#msg118488). Evidence: [docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md](docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md).
+
+- **OnemusCT, Pseudoarc and Temporal Redux / Jets of Time contributors** — Event parsing, PC/name lookups, object-copy insertion and object-call adjustment implementation references; Pseudoarc's ctrando also informed the later Tech-package research. [Temporal Redux](https://github.com/OnemusCT/temporal-redux) · [Jets of Time](https://github.com/Pseudoarc/jetsoftime) · [ctrando](https://github.com/Pseudoarc/ctrando). Evidence: [docs/pc07_native_field_checkpoint_2026_10_07.md](docs/pc07_native_field_checkpoint_2026_10_07.md), [docs/community_modding_reconnaissance_2026-07-27.md](docs/community_modding_reconnaissance_2026-07-27.md), [docs/online_research_2026_10_03.md](docs/online_research_2026_10_03.md).
+
+- **dscotton and DocDamage** — Public Chrono Trigger disassembly and annotation references used to locate and cross-check native code paths. Project Epoch records corrections rather than assuming every label or interpretation is authoritative. [dscotton/ct_disassembly](https://github.com/dscotton/ct_disassembly) · [DocDamage/chronotrigger_disassembly](https://github.com/DocDamage/chronotrigger_disassembly). Evidence: [docs/online_research_2026_10_03.md](docs/online_research_2026_10_03.md), [docs/DATA_MAPPING_CORRECTIONS.md](docs/DATA_MAPPING_CORRECTIONS.md).
+
+- **Chrono Compendium, Kajar Laboratories and Data Crystal contributors** — Preservation of forum discussions, historical experiments, graphics and portrait tutorials, event-language documentation, and RAM/Tech mapping. These archives made earlier work discoverable and checkable. [Chrono Trigger tutorials](https://www.chronocompendium.com/Term/Tutorials_(Chrono_Trigger).html) · [Data Crystal Chrono Trigger RAM map](https://datacrystal.tcrf.net/wiki/Chrono_Trigger_%28SNES%29/RAM_map) · [Temporal Flux Event Encyclopedia](https://www.chronocompendium.com/Term/Temporal_Flux_Event_Encyclopedia.html). Evidence: [docs/community_modding_reconnaissance_2026-07-27.md](docs/community_modding_reconnaissance_2026-07-27.md), [docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md](docs/historical_eighth_character_forum_mapping_audit_2026-08-23.md).
+
+- **Oswego del Fuego and the historical Schala art contributors** — Historical Schala art studies reviewed as reference. The preserved composite associated with justin3009 credits portions to Oswego del Fuego; it is not attributed wholly to Justin. [Historical Project Schala discussion](https://www.chronocompendium.com/Forums/index.php?topic=6288.0). The historical composite was not imported into the installed world-map, main-pose or portrait assets. Attribution inspected on the preserved composite's footer during the October 20 art reinspection; the source image remains local.
+
+## Tools and comparative research
+
+- **Sour and the Mesen contributors** — Mesen's emulator, debugger, scripting and source enabled native traces, controller-driven checks, screenshots and state inspection. Its BPS implementation also supplied the independent patch-format check. [Mesen](https://github.com/SourMesen/Mesen2). Evidence: [docs/epoch_development_release_2026_10_20.md](docs/epoch_development_release_2026_10_20.md).
+
+- **Asar authors and contributors** — 65C816 assembly tooling used for independent assembly and byte-equality checks of authored helpers. [Asar](https://github.com/RPGHacker/asar). Evidence: [docs/schala_menu_stats_portrait_2026_10_20.md](docs/schala_menu_stats_portrait_2026_10_20.md).
+
+- **byuu / Near and BPS specification preservers** — The public-domain BPS format specification used by the original deterministic patch codec; the Flips repository preserves the referenced specification. [BPS specification](https://github.com/Sir-Walrus/Flips/blob/master/bps_spec.md). Specification credit; Flips is not claimed as the executed verification tool. Evidence: [tools/epoch_bps_v1.py](tools/epoch_bps_v1.py).
+
+- **bsnes, Snes9x, Libretro and RetroArch contributors** — Emulation cores, replay infrastructure and source references used in the earlier diagnostic and timing work. [bsnes Libretro](https://github.com/libretro/bsnes-libretro) · [RetroArch](https://github.com/libretro/RetroArch). Evidence: [docs/current_emulator_update_2026-08-22.md](docs/current_emulator_update_2026-08-22.md), [docs/emulator_test_results_2026-07-25.md](docs/emulator_test_results_2026-07-25.md), [docs/schala_eighth_character_developer_guide.md](docs/schala_eighth_character_developer_guide.md).
+
+- **Ghidra contributors and joshleaves / ghidra-snes** — Disassembly tooling and SNES language/loader support tested during the recompilation comparison. [Ghidra](https://github.com/NationalSecurityAgency/ghidra) · [ghidra-snes](https://github.com/joshleaves/ghidra-snes). Research tooling, not a replacement for native validation or the basis of a released PC port. Evidence: [docs/recomp_tool_practical_assessment_2026_10_13.md](docs/recomp_tool_practical_assessment_2026_10_13.md).
+
+- **ThisIsAkill / ct-recomp and RetroPortingToolKit / snesrecomp contributors** — Comparative recompilation research: ct-recomp was built and tested; snesrecomp was inspected and used to generate synthetic output, without compiling or executing that generated C++. These experiments informed the decision to keep native SNES work primary. [ct-recomp](https://github.com/ThisIsAkill/ct-recomp) · [snesrecomp](https://github.com/RetroPortingToolKit/snesrecomp). Research comparison credit; no claim of copied project code or a Project Epoch PC release. Evidence: [docs/recomp_tool_practical_assessment_2026_10_13.md](docs/recomp_tool_practical_assessment_2026_10_13.md).
+
+## Project direction and AI collaborators
+
+- **Andrei Pemberton** — Project direction, preservation and design requirements, in-game review, visual selection and supplied screenshots. Evidence: [docs/project_epoch_development_update_2026_10_20.md](docs/project_epoch_development_update_2026_10_20.md).
+
+- **Coda / OpenAI Codex** — Implementation, source research, runtime tracing, evidence reconciliation, selected V5 world-map sprites, targeted art integration, front/rear casting refinements and publication. Evidence: [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [docs/schala_caster_pose_refinement_2026_10_20.md](docs/schala_caster_pose_refinement_2026_10_20.md).
+
+- **OpenAI image-generation tool** — Concept-derived Schala portrait candidates, refined through reference-guided iterations and converted into a separate SNES palette/tile asset by Coda. The installed portrait is generated, concept-derived art; it is not a literal Toriyama drawing or a wholly hand-drawn portrait. Evidence: [docs/schala_menu_stats_portrait_2026_10_20.md](docs/schala_menu_stats_portrait_2026_10_20.md).
+
+- **Lily (Lilitari) / ChatGPT** — Selected horizontal casting preparation/release poses; independent world-map and main-character art studies; visual/source review and development-update review. Review of supplied material is not independent emulator execution. Evidence: [docs/schala_battle_pose_pass_2026_10_20.md](docs/schala_battle_pose_pass_2026_10_20.md), [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [docs/schala_prismatic_study_2026_10_20.md](docs/schala_prismatic_study_2026_10_20.md), [docs/CURRENT_HANDOFF.md](docs/CURRENT_HANDOFF.md).
+
+- **Red / Claude Cowork** — Selected recoil and KO art; the earlier world-map engineering pilot and independent main-character sprite studies. Evidence: [docs/schala_battle_pose_pass_2026_10_20.md](docs/schala_battle_pose_pass_2026_10_20.md), [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [docs/schala_main_sprite_art_brief_2026_10_17.md](docs/schala_main_sprite_art_brief_2026_10_17.md).
+
+- **Wren / Grok Bot** — Independent world-map and main-character sprite studies used in the art comparison. Study credit; these complete sprite sets were not selected for installation. Evidence: [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [references/schala_main_sprite_art_checkpoint_2026_10_17.json](references/schala_main_sprite_art_checkpoint_2026_10_17.json).
+
+- **Gemini** — Independent world-map and main-character pixel-art proposals, including returned code/JSON reconstructed locally for comparison. Study credit; local reconstruction does not imply provider-side execution or installed art. Evidence: [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [references/schala_main_sprite_art_checkpoint_2026_10_17.json](references/schala_main_sprite_art_checkpoint_2026_10_17.json).
+
+- **Nua / Muse** — Independent world-map and main-character pixel-grid studies, reconstructed from returned JSON and compared with the retail references. Study credit; these sets were not selected for installation. Evidence: [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [references/schala_main_sprite_art_checkpoint_2026_10_17.json](references/schala_main_sprite_art_checkpoint_2026_10_17.json).
+
+- **Meta AI** — Independent world-map and main-character sprite studies and returned image/source material used in the comparison. Study credit; these sets were not selected for installation. Evidence: [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [references/schala_main_sprite_art_checkpoint_2026_10_17.json](references/schala_main_sprite_art_checkpoint_2026_10_17.json).
+
+- **Claude Code** — Separate source and visual critique, including the unresolved projectile-alignment evidence and prismatic color-study tradeoffs. The recorded image/source critique did not inspect the ROM bytes or run the emulator. Evidence: [docs/schala_caster_pose_refinement_2026_10_20.md](docs/schala_caster_pose_refinement_2026_10_20.md), [docs/schala_prismatic_study_2026_10_20.md](docs/schala_prismatic_study_2026_10_20.md).
+
+- **Additional Codex/ChatGPT reviewers and the separate Grok review route** — Bounded code, interrupt/timing and evidence critiques documented in the individual review receipts. This Grok route is distinct from Wren's personal Grok Bot conversation. Only returned reviews count as contributions; failed or unavailable routes are not credited as completed review. Evidence: [docs/external_review_2026_10_03.md](docs/external_review_2026_10_03.md), [docs/external_review_irq_transition_2026_10_03.md](docs/external_review_irq_transition_2026_10_03.md).
+
+## Original game and visual reference
+
+- **Square's Chrono Trigger team and Akira Toriyama** — The original game, retail sprites and character designs supply the visual and mechanical reference for this fan research. Schala's concept design informed the portrait and sprite refinements. [Schala concept reference](https://www.creativeuncut.com/gallery-01/ct-schala.html). Chrono Trigger and its original artwork belong to their respective rights holders. Evidence: [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [docs/schala_menu_stats_portrait_2026_10_20.md](docs/schala_menu_stats_portrait_2026_10_20.md).
+
+## Attribution boundaries
+
+Credit does not imply endorsement, authorship of Project Epoch, permission to reuse assets, or that every historical annotation is correct. Original licenses and detailed source provenance remain controlling. Study and review credits are separate from installed art and runtime testing.
+
+Collaborator names identify the project conversations or tool surfaces used; they are not invented Git accounts or co-author identities. Private correspondence, contact addresses and private conversation links are not published here.
+
+[Machine-readable credits](references/project_epoch_credits.json) · [Current development update](docs/project_epoch_development_update_2026_10_20.md)
+
