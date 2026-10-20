@@ -1,0 +1,272 @@
+{
+  "schema": "project-epoch-main-sprite-art-checkpoint-v2",
+  "date": "2026-10-18",
+  "recorded_at_utc": "2026-10-18T06:02:51.295045+00:00",
+  "status": "art-progress-preserved-no-native-integration",
+  "evidence_level": "authored-art-and-focused-static-inspection",
+  "scope": "playable PC07 main field/battle/run/recoil/KO bodies",
+  "constraints": {
+    "design_authority": "installed retail-derived PC07 and original seven-PC references",
+    "covered_feet": true,
+    "full_retail_robe": true,
+    "manual_or_coded_pixel_art": true,
+    "image_generation_used": false,
+    "weapons": false,
+    "bolt": "separate future effect",
+    "original_NPC_graphics_assembly_animation_palette_writes": false,
+    "ROM_reads": false,
+    "ROM_writes": false,
+    "save_writes": false,
+    "worldmap_V5_changed": false,
+    "new_native_runs": false,
+    "historical_full_chain_replayed": false,
+    "publication": false,
+    "paid_overage_enabled": false
+  },
+  "art_contract": {
+    "canvas": [
+      48,
+      48
+    ],
+    "origin": [
+      16,
+      40
+    ],
+    "palette_entries": 13,
+    "transparent_index": 0,
+    "max_movable_16x16_cover_pieces": 4,
+    "geometry_proves_native_encoding": false,
+    "art_role_labels_prove_native_bindings": false
+  },
+  "candidates": [
+    {
+      "label": "Coda v2 conservative six-pose study",
+      "validation_status": "pass-static-only",
+      "frames": 6,
+      "png": "private/research/pc07_main_sprite_art_20261018/coda/retail_pose_study_v2/coda_retail_pose_study_v2_native.png",
+      "png_sha256": "d7941dc7280c6070c50b44b2cc7ec382ad95407e422de3dca14b6c5874ef6267",
+      "json": "private/research/pc07_main_sprite_art_20261018/coda/retail_pose_study_v2/coda_retail_pose_study_v2.json",
+      "json_sha256": "e734e3da23ca024f0f65683983b5f60cd5e0c71e84c1849013274c9aa58bb64e",
+      "inspection": "private/research/pc07_main_sprite_art_20261018/engineering/CODA_RETAIL_POSE_STUDY_V2_INSPECTION.json",
+      "visual_inspection": "actual native and enlarged PNG inspected",
+      "disposition": "provisional-base",
+      "findings": [
+        "Retail head silhouette retained; covered hems.",
+        "Running and recoil restrained; KO body mass too compact."
+      ],
+      "installed": false,
+      "user_selected": false
+    },
+    {
+      "label": "Coda v3 energetic right-run alternative",
+      "validation_status": "pass-static-only",
+      "frames": 6,
+      "png": "private/research/pc07_main_sprite_art_20261018/coda/retail_pose_study_v3/coda_retail_pose_study_v3_native.png",
+      "png_sha256": "0bdb679c22f9308e5c26fbd49acba6d0ba66d985e15c444f07e635f1010113bd",
+      "json": "private/research/pc07_main_sprite_art_20261018/coda/retail_pose_study_v3/coda_retail_pose_study_v3.json",
+      "json_sha256": "f968a97c36d544ee9ba7aa6345c51cfeeb8c5d3f9f90e0aaf151ba2e5f5c2d0d",
+      "inspection": "private/research/pc07_main_sprite_art_20261018/engineering/CODA_RETAIL_POSE_STUDY_V3_INSPECTION.json",
+      "visual_inspection": "actual native and enlarged PNG inspected",
+      "disposition": "alternative-not-mandatory-upgrade",
+      "findings": [
+        "Stronger arm counter-motion.",
+        "Diagonal cloth bands too regular.",
+        "Four non-run poses unchanged from v2."
+      ],
+      "installed": false,
+      "user_selected": false
+    },
+    {
+      "label": "Coda directional study v1",
+      "validation_status": "pass-static-only",
+      "frames": 12,
+      "png": "private/research/pc07_main_sprite_art_20261018/coda/directional_study_v1/coda_directional_study_v1_native.png",
+      "png_sha256": "142135b7714856fac072685b38fa08d615a5004f65b476e1ad45460d59981685",
+      "json": "private/research/pc07_main_sprite_art_20261018/coda/directional_study_v1/coda_directional_study_v1.json",
+      "json_sha256": "02be32e351945e10a13a2d03e41dae24f8181d6e3a36912319ad0055c57b898c",
+      "inspection": "private/research/pc07_main_sprite_art_20261018/engineering/CODA_DIRECTIONAL_STUDY_V1_INSPECTION.json",
+      "visual_inspection": "actual native and enlarged PNG inspected",
+      "disposition": "provisional-twelve-frame-art-study",
+      "findings": [
+        "Eight running frames across four facings plus four battle roles.",
+        "Up/down preserve installed facing-specific head/hair/collar prefixes.",
+        "Left explicitly mirrors right using x_new=31-x.",
+        "Front/back running remains restrained; no native timing claim."
+      ],
+      "installed": false,
+      "user_selected": false
+    },
+    {
+      "label": "Lily corrected v2",
+      "validation_status": "pass-static-only",
+      "frames": 6,
+      "png": "private/research/pc07_main_sprite_art_20261018/collaboration/lily/returned_v2/extracted/schala_pc07_sixpose_study_v2_indexed.png",
+      "png_sha256": "947958f4a8e3c8d46d778c5ba09760684309895938e527b87e9d01ed0530d841",
+      "json": "private/research/pc07_main_sprite_art_20261018/collaboration/lily/returned_v2/normalized_by_coda_v2.json",
+      "json_sha256": "c988a4d8b2245b01d79351eb2b6aa6390f6c3eb12d3ebb9a9c9eadc517ec951d",
+      "inspection": "private/research/pc07_main_sprite_art_20261018/collaboration/lily/returned_v2/static_validation_v2.json",
+      "visual_inspection": "actual native and enlarged PNG inspected",
+      "disposition": "provisional-not-selected",
+      "findings": [
+        "Two tan hem pixels removed and run-B gap closed.",
+        "Casting/recoil unchanged from v1.",
+        "Mostly inherited bodies; KO head undersized and simplified."
+      ],
+      "installed": false,
+      "user_selected": false
+    },
+    {
+      "label": "Red new six-pose study",
+      "validation_status": "pass-static-only",
+      "frames": 6,
+      "png": "private/research/pc07_main_sprite_art_20261018/collaboration/red/returned_v1/extracted/schala_six_pose_red_20261018/out/schala_six_pose_red_native_288x48.png",
+      "png_sha256": "1a15c1151a831825d2d93a92c3452cc866c81a08a7a52e276027c4f58dfc6e20",
+      "json": "private/research/pc07_main_sprite_art_20261018/collaboration/red/returned_v1/extracted/schala_six_pose_red_20261018/out/schala_six_pose_red_frames.json",
+      "json_sha256": "1fb5a1b558112487561b08439308ec89a6c9acab86438a3d4be8c13cd47ae004",
+      "inspection": "private/research/pc07_main_sprite_art_20261018/collaboration/red/returned_v1/static_validation_v1.json",
+      "visual_inspection": "actual native and enlarged PNG inspected",
+      "disposition": "competing-proposal-not-selected",
+      "findings": [
+        "Clearer recoil and horizontal KO mass; covered feet.",
+        "Heavy triangular running hair, straight cast arm and rigid KO folds.",
+        "Retail head crops preserved; KO head rotated 90 degrees CCW.",
+        "Literal body data independently composed without source execution."
+      ],
+      "installed": false,
+      "user_selected": false
+    },
+    {
+      "label": "Red body / Coda head KO alternative",
+      "validation_status": "pass-static-only",
+      "frames": 6,
+      "png": "private/research/pc07_main_sprite_art_20261018/coda/ko_refinement_v1/coda_red_ko_refinement_v1_native.png",
+      "png_sha256": "525ba9623f755cc17696383f9787c6f4b3b12e7d07321637b54879fe5e5ea538",
+      "json": "private/research/pc07_main_sprite_art_20261018/coda/ko_refinement_v1/coda_red_ko_refinement_v1.json",
+      "json_sha256": "eb8b96fd7e841d18b266287c2a318416f1eb720a6ff046f672a8ffc8013142a4",
+      "inspection": "private/research/pc07_main_sprite_art_20261018/engineering/CODA_RED_KO_REFINEMENT_V1_INSPECTION.json",
+      "visual_inspection": "actual native and enlarged PNG inspected",
+      "disposition": "rejected-for-selection",
+      "findings": [
+        "Triangular new hair and awkward neck join worsen the original.",
+        "Red original retained; body x16..47 unchanged.",
+        "Coda v2 first five frames unchanged."
+      ],
+      "installed": false,
+      "user_selected": false
+    },
+    {
+      "label": "Wren new six-pose study",
+      "validation_status": "pass-static-only",
+      "frames": 6,
+      "png": "private/research/pc07_main_sprite_art_20261018/collaboration/wren/returned_v1/epoch-main-art-20261018/schala_six_pose_study_288x48.png",
+      "png_sha256": "4321f6f9053584bed33e5259f12c17b24df314aa80fcb9996d14f9a8bfefc0d8",
+      "json": "private/research/pc07_main_sprite_art_20261018/collaboration/wren/normalized_for_checker_v1.json",
+      "json_sha256": "a3dba820efa1593ce599d877baac44283fa2187482dc2432919de6ffe26d602e",
+      "inspection": "private/research/pc07_main_sprite_art_20261018/collaboration/wren/static_validation_v1.json",
+      "visual_inspection": "actual native and enlarged PNG inspected",
+      "disposition": "competing-proposal-not-selected",
+      "findings": [
+        "Recognizable retail head and covered-robe step silhouette.",
+        "Heavy hair, rigid thick casting arm, weak recoil and muddled KO face.",
+        "PNG/grid equality checked; contributor source not executed."
+      ],
+      "installed": false,
+      "user_selected": false
+    }
+  ],
+  "collaborators": {
+    "Lily": {
+      "observed_route": "Personal GPT-6 Pro",
+      "delivery": "actual v1/v2 ZIPs retrieved and inspected",
+      "closeout": "delivered; final acknowledgment not reliably retrieved",
+      "private_receipts": "collaboration/lily/"
+    },
+    "Red": {
+      "observed_route": "Claude Cowork Opus 5.5 Max",
+      "delivery": "actual ZIP retrieved and inspected",
+      "closeout": "delivered and acknowledgment captured",
+      "private_receipts": "collaboration/red/"
+    },
+    "Gemini": {
+      "status": "returned-source-reconstructed-rejected-for-retail-design-drift",
+      "original_PNG_received": false,
+      "findings": [
+        "Claimed unchanged retail frame03 differs at342 indexed pixels from actual aligned reference",
+        "Hair/face simplified; robe trim becomes broad white panels; taller/slimmer body",
+        "KO silhouette small and curled"
+      ],
+      "closeout": "specific feedback and thanks visibly delivered; provider acknowledgment still generating on last observation",
+      "private_receipts": "collaboration/gemini/",
+      "selected": false
+    },
+    "Nua": {
+      "status": "returned-exact-JSON-reconstructed-rejected-for-retail-design-drift",
+      "original_PNG_received": false,
+      "findings": [
+        "New hair strips cross face and fracture retail head silhouette",
+        "Detached flesh-colored arm pixels and antenna-like hair",
+        "KO composed of dense scrambled bands; coherent fallen anatomy/robe not achieved"
+      ],
+      "closeout": "specific feedback and thanks delivered; acknowledgment received",
+      "private_receipts": "collaboration/nua/",
+      "selected": false
+    },
+    "Meta AI": {
+      "status": "actual-PNG-and-dependent-source-returned-rejected-for-retail-design-drift",
+      "original_PNG_received": true,
+      "findings": [
+        "Flat rectangular robe with lost clustered shading and circular hair additions",
+        "Wrong back-view00 used as right-run head",
+        "Overlong straight release arm; slab-like rectangular KO"
+      ],
+      "closeout": "specific feedback and thanks delivered; acknowledgment received",
+      "private_receipts": "collaboration/meta_ai/",
+      "selected": false
+    },
+    "Wren": {
+      "status": "actual-bundle-retrieved-statically-checked-visually-inspected-provisional",
+      "private_receipts": "collaboration/wren/",
+      "original_PNG_received": true,
+      "closeout": "delivered and acknowledgment captured",
+      "root_visual_inspection": "actual returned board and same-scale combined board",
+      "findings": [
+        "Covered robe and step silhouette useful",
+        "Heavy hair, rigid casting arm, weak recoil and muddled KO face"
+      ],
+      "selected": false
+    }
+  },
+  "comparison": "private/research/pc07_main_sprite_art_20261018/comparison_four_authors_v2.png",
+  "earlier_comparison_with_alternate_run": "private/research/pc07_main_sprite_art_20261018/comparison_reviewed_candidates_v1.png",
+  "directional_board": "private/research/pc07_main_sprite_art_20261018/coda/directional_study_v1/directional_reference_comparison_4x.png",
+  "KO_comparison": "private/research/pc07_main_sprite_art_20261018/coda/ko_refinement_v1/ko_reference_before_after_4x.png",
+  "future_native_work": {
+    "compiler": "new version required; existing fixed count is 23",
+    "installed_frames_0_22": "preserve current consumers",
+    "normal_run_selector_hex": "06",
+    "current_normal_run_frames": [
+      19,
+      20
+    ],
+    "timing": "one shared stream for all facings; preview milliseconds are separate",
+    "alternate_run_selector_hex": "17",
+    "casting_recoil_KO_bindings": "separate unproved obligations",
+    "NPC_spans": "13 recovered spans and shared palette must be equal before emission",
+    "shared_palette_file_span_hex": [
+      "240C00",
+      "240C18"
+    ],
+    "write_guard": "current intent plus complete-diff audit still required",
+    "next_runtime_scope": "changed consumers only; first walk-run-stop/restoration",
+    "production_catalogs_promoted": false
+  },
+  "remaining": [
+    "refine art motion and choose a coherent set",
+    "complete other regular and battle poses",
+    "deterministic native tile/assembly reconstruction",
+    "deliberate consumer bindings and targeted emulator check"
+  ],
+  "full_character_complete": false,
+  "run_preview_folder": "private/research/pc07_main_sprite_art_20261018/engineering/run_comparison_preview_v1",
+  "run_preview_scope": "chosen 120ms two-frame art loops; no native timing evidence"
+}

@@ -9,7 +9,35 @@ and the [current developer guide](docs/schala_eighth_character_developer_guide.m
 Historical checkpoints preserve the bytes and evidence available when made;
 the latest log entry identifies the current resume boundary.
 
-## Schala on the world map and flying Epoch — 2026-10-17
+## Development preview — 2026-10-20
+
+**In development — not yet truly playable.** This is an experimental inspection
+build, not a completed mod or a supported full-game playthrough. Schala's own
+full-menu portrait and corrected first-menu stats now render in game. Targeted
+run, casting, recoil and KO work is installed; the supported basic Attack casts
+from a fixed position at near and far range. The seven original PCs, Schala's
+NPC assets and the Epoch vehicle remain separate.
+
+Read the [October 20 development update](docs/project_epoch_development_update_2026_10_20.md)
+and [machine-readable checkpoint](references/project_epoch_development_update_2026_10_20.json),
+or see the [portfolio screenshots and development downloads](https://richard-pemberton-research.darkahn.chatgpt.site/projects/project-epoch/).
+The [GitLab development release](https://gitlab.com/codalilitari/project-epoch/-/releases/dev-2026-10-20)
+provides the same package and [installation report](docs/epoch_development_release_2026_10_20.md).
+The downloadable BPS requires the exact clean, unheadered US Rev 0 source ROM;
+no ROM is distributed. The separately authorized Mesen states are demonstration
+checkpoints, not a completed native save system, and remain outside source Git.
+
+Current field/battle evidence is bounded primarily to Schala in the third
+active position. Other scenes/positions, recruitment, full progression,
+caster balance, equipment, new Techs and broader save lifecycle coverage remain
+unfinished. The Tech tab still has a PC07/Epoch-name alias, and the small
+save-card portrait remains unsupported. Public source builders retain named
+private-input requirements; this checkout is not a self-contained game build.
+
+## Historical world-map and flying Epoch milestone — 2026-10-17
+
+The art status and next steps in this historical section are superseded by
+the October 20 update above; the original evidence and limits remain recorded.
 
 **Schala now appears on the world map with her selected Coda V5 sprite set as
 logical PC07 in the third active position.** The accepted controller-driven

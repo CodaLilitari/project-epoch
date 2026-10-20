@@ -1,0 +1,615 @@
+{
+  "schema": "project-epoch-schala-caster-attack-checkpoint-v1",
+  "date": "2026-10-20",
+  "status": "bounded-native-caster-and-Epoch-regression-passed",
+  "project_complete": false,
+  "production_approval": false,
+  "publication_performed_this_pass": false,
+  "logical_pc_id": 7,
+  "supported_active_position_zero_based": 2,
+  "scope": "Private diagnostic for PC07 in the third active party position; not a universal character implementation.",
+  "rom": {
+    "path": "private/test_runs/pc07_caster_attack_v1/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "9f678764d05f2f16e49c5a7cafe03ee6f192330322988918ff8bca2d1b2740f0"
+  },
+  "identity_provenance": "Current guarded build receipt reused; no new ROM read or historical-chain hash for this checkpoint.",
+  "parent_reference": {
+    "path": "private/test_runs/pc07_battle_pose_v1/diagnostic.sfc",
+    "accepted_receipt": "private/test_runs/pc07_battle_pose_v1/receipt.json",
+    "prior_checkpoint": "references/schala_battle_pose_pass_2026_10_20.json"
+  },
+  "construction": {
+    "evidence_level": "guarded-private-static-stationary-caster-candidate",
+    "intent_status": "metadata-valid",
+    "diff": {
+      "canonical_effect_weapon_sound_tables_unchanged": true,
+      "changed_bytes": 953,
+      "complete_diff_coverage": true,
+      "declared_sections": 20,
+      "inherited_KO_helpers_unchanged": true,
+      "inverse_restores_parent": true,
+      "native_execution": false,
+      "npc_protected_spans_unchanged": 13,
+      "original_frame_prefix_preserved": 30,
+      "original_tile_prefix_preserved": 112,
+      "production_approval": false,
+      "schema": "project-epoch-private-pc07-caster-attack-intents-v1",
+      "shared_palette_unchanged": true,
+      "status": "images-valid",
+      "worldmap_unchanged": true
+    },
+    "receipt": "private/test_runs/pc07_caster_attack_v1/receipt.json",
+    "new_helper_allocation_hex": [
+      "490100",
+      "490380"
+    ],
+    "occupied_records_checked": 143,
+    "final_graphics_tiles": 122,
+    "final_assembly_frames": 32,
+    "new_frame_numbers_decimal": {
+      "forward_preparation": 30,
+      "forward_release": 31
+    },
+    "production_catalogs_empty": true,
+    "single_current_source_snapshot": true,
+    "historical_chain_replayed": false
+  },
+  "source_changes": {
+    "helpers": [
+      {
+        "name": "Pc07CasterApproachV1",
+        "cpu_start_hex": "490100",
+        "bytes": 85
+      },
+      {
+        "name": "Pc07CasterNormalV1",
+        "cpu_start_hex": "490180",
+        "bytes": 111
+      },
+      {
+        "name": "Pc07CasterPathV1",
+        "cpu_start_hex": "490200",
+        "bytes": 111
+      },
+      {
+        "name": "Pc07CasterCriticalV1",
+        "cpu_start_hex": "490280",
+        "bytes": 111
+      },
+      {
+        "name": "Pc07CasterSwingSoundV1",
+        "cpu_start_hex": "490300",
+        "bytes": 103
+      }
+    ],
+    "qualification": [
+      "native E0/M8/X16",
+      "Attack type01",
+      "actor slot02",
+      "roster PC07",
+      "graphics provider420000",
+      "assembly provider421000"
+    ],
+    "selector_additional_qualification": "Full X0007; failed predicates tail-call unchanged installed donor readers.",
+    "launch_additional_qualification": "Script owner00, actor map02, package04 or10; original indexed sound read on fallback.",
+    "no_approach_publication_hex": {
+      "7E9930": "00"
+    },
+    "normal_and_path_package_hex": "04",
+    "critical_package_hex": "10",
+    "visual_field_values_hex": [
+      "07",
+      "0B",
+      "1A",
+      "09",
+      "04"
+    ],
+    "launch_sound_hex": "4D",
+    "impact_sound_hook_installed": false,
+    "unused_7D_proposal": "Omitted: selected rooted streams and nested target subscript contain no7D invocation.",
+    "equipped_weapon_changed": false,
+    "basic_action_hex": "75",
+    "damage_formula_changed": false,
+    "pending_result_or_queue_code_changed": false,
+    "damage_outcome_equivalence_natively_verified": true,
+    "max_helper_stack_bytes_including_JSL": 4,
+    "interrupt_or_physical_stack_ownership_proved": false,
+    "damage_equivalence_scope": "One ordinary-input Schala critical Attack matches parent996; injected animation cases do not establish natural normal/critical mechanics."
+  },
+  "pose_bindings": {
+    "back_facing0_unchanged": true,
+    "bindings": [
+      {
+        "after": [
+          31
+        ],
+        "before": [
+          1
+        ],
+        "delays": [
+          5
+        ],
+        "facing": 1,
+        "selector": 9
+      },
+      {
+        "after": [
+          30,
+          31
+        ],
+        "before": [
+          1,
+          1
+        ],
+        "delays": [
+          2,
+          3
+        ],
+        "facing": 1,
+        "selector": 49
+      },
+      {
+        "after": [
+          31
+        ],
+        "before": [
+          1
+        ],
+        "delays": [
+          5
+        ],
+        "facing": 1,
+        "selector": 50
+      },
+      {
+        "after": [
+          28
+        ],
+        "before": [
+          2
+        ],
+        "delays": [
+          5
+        ],
+        "facing": 2,
+        "selector": 9
+      },
+      {
+        "after": [
+          24
+        ],
+        "before": [
+          3
+        ],
+        "delays": [
+          5
+        ],
+        "facing": 3,
+        "selector": 9
+      }
+    ],
+    "changed_directional_entries": 5,
+    "changed_selectors": [
+      9,
+      49,
+      50
+    ],
+    "entrypoints_checked": 1024,
+    "evidence_level": "static-stream-reachability-not-native-consumer-proof",
+    "facing_selection_unchanged": true,
+    "front_is_facing1": true,
+    "recoil_KO_and_movement_streams_unchanged": true,
+    "timing_unchanged": true
+  },
+  "preservation": {
+    "NPC_spans_unchanged": 13,
+    "shared_palette_unchanged": true,
+    "worldmap_bytes_unchanged": true,
+    "existing_frame_prefix_count": 30,
+    "existing_tile_prefix_count": 112,
+    "previous_KO_helpers_unchanged": true,
+    "movement_recoil_KO_streams_unchanged": true,
+    "canonical_effect_weapon_sound_tables_unchanged": true,
+    "new_Epoch_functional_regression_status": "passed-requested-house-world-roundtrip"
+  },
+  "focused_checks": {
+    "unit_tests_passed": 8,
+    "unit_test_evidence": "Executed by root during this build pass; three codec and five write-contract tests.",
+    "independent_helper_CPU_cases": 20189,
+    "all_helper_instructions_and_branch_outcomes_executed": true,
+    "all_initial_9930_bytes_checked": 256,
+    "inclusive_near_squared_distance_hex": "0640",
+    "Asar_matches_independent_five_helper_encoding": true,
+    "helper_execution_receipt": "private/research/pc07_caster_attack_20261020/engineering/execution_v1.json",
+    "independent_source_review_receipt": "private/research/pc07_caster_attack_20261020/engineering/final_emitter_review_receipt_v1.json",
+    "native_execution_proved_by_synthetic_checks": false
+  },
+  "effect_review": {
+    "status": "native-rendered-casting-and-small-projectile-observed",
+    "configuration": "Explicitly selected projectile/ring/flash family; no held weapon seen in inspected static artwork.",
+    "native_colors_timing_audio_verified": false,
+    "evidence": "private/research/pc07_caster_attack_20261020/effect_inspection_v1/manifest_v1.json",
+    "native_colors_and_timing_observed": true,
+    "sound_id_publication_observed": "4D",
+    "listening_based_audio_acceptance": false,
+    "remaining_polish": "Travelling light fleck is small/low contrast; target ring/flash is clear."
+  },
+  "battle_runtime": {
+    "status": "passed",
+    "evidence_level": "bounded-native-runtime-with-declared-diagnostic-injections",
+    "ordinary_input_cases": 2,
+    "injected_animation_context_cases": 10,
+    "aggregate": {
+      "path": "private/test_runs/pc07_caster_attack_observation_v1/aggregate_v1.json",
+      "bytes": 69503,
+      "sha256": "72d8e7ff19c562b7904af9b7120d38784a403169e3a08811237de5de1efb5fe3"
+    },
+    "cases": [
+      {
+        "case": "natural",
+        "injection": false,
+        "actor": 2,
+        "packages_decimal": [
+          16
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 2,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 151,
+        "readiness_frame": 6518,
+        "process_success": true
+      },
+      {
+        "case": "control_crono",
+        "injection": false,
+        "actor": 0,
+        "packages_decimal": [
+          1
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 0,
+        "distance_flag_decimal": 255,
+        "approach": 1,
+        "pathfind_calls": 1,
+        "actor_stationary": false,
+        "action_frames": 179,
+        "readiness_frame": 6571,
+        "process_success": true
+      },
+      {
+        "case": "near_normal_left",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          4
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 2,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 137,
+        "readiness_frame": 6492,
+        "process_success": true
+      },
+      {
+        "case": "far_normal_right",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          4
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 3,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 156,
+        "readiness_frame": 6616,
+        "process_success": true
+      },
+      {
+        "case": "equal_normal_left",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          4
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 2,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 137,
+        "readiness_frame": 6541,
+        "process_success": true
+      },
+      {
+        "case": "near_critical_right",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          16
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 3,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 141,
+        "readiness_frame": 6524,
+        "process_success": true
+      },
+      {
+        "case": "far_critical_left",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          16
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 2,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 145,
+        "readiness_frame": 6500,
+        "process_success": true
+      },
+      {
+        "case": "near_normal_front",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          4
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 1,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 140,
+        "readiness_frame": 6531,
+        "process_success": true
+      },
+      {
+        "case": "far_normal_alt_front",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          4
+        ],
+        "branches_decimal": [
+          0,
+          64
+        ],
+        "facing": 1,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 124,
+        "readiness_frame": 6480,
+        "process_success": true
+      },
+      {
+        "case": "far_critical_alt_left",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          16
+        ],
+        "branches_decimal": [
+          0,
+          64
+        ],
+        "facing": 2,
+        "distance_flag_decimal": 255,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 145,
+        "readiness_frame": 6500,
+        "process_success": true
+      },
+      {
+        "case": "distance_near_normal_up",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          4
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 0,
+        "distance_flag_decimal": 0,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 135,
+        "readiness_frame": 6490,
+        "process_success": true
+      },
+      {
+        "case": "distance_equal_critical_front",
+        "injection": true,
+        "actor": 2,
+        "packages_decimal": [
+          16
+        ],
+        "branches_decimal": [
+          0
+        ],
+        "facing": 1,
+        "distance_flag_decimal": 0,
+        "approach": 0,
+        "pathfind_calls": 0,
+        "actor_stationary": true,
+        "action_frames": 145,
+        "readiness_frame": 6540,
+        "process_success": true
+      }
+    ],
+    "all_Schala_cases_stationary": true,
+    "qualified_native_helpers_observed": [
+      "approach",
+      "normal",
+      "critical",
+      "sound"
+    ],
+    "defensive_path_helper_native_entry_proved": false,
+    "control_comparison": {
+      "packages": true,
+      "end_frame_actor_positions_and_relative_frames": true,
+      "sound_ID_sequence": true,
+      "action_frame_duration": true,
+      "full_bus_trace_equality": false
+    },
+    "distance_fixture_correction": "The initial v1 near/equal names describe displayed target coordinates only. They retain native far9872=FF. Two v2 cases synchronize A03C/A053, and native distance is actually0 for24px and40px.",
+    "baseline_process_status": "parent_natural_v2 and parent_control_crono_v1 raw processes timed out after complete action/cleanup/readiness windows. Their derived cut summaries are retained observations, not successful processes. parent_near_normal_left_v1 process succeeded.",
+    "limitations": [
+      "One native input Schala critical Attack and one ordinary Crono control; ten isolated injected animation-context cases.",
+      "Forced critical/alternate flags occur after native damage calculation; injected cases do not prove natural RNG or critical-damage mechanics.",
+      "Back/up casting uses unchanged frame0, not new back-facing casting art.",
+      "Defensive path package helper is not naturally entered because qualified approach is disabled.",
+      "Sound IDs are measured; no listening-based audio claim.",
+      "Only selected PC sites and writes are observed, not whole-memory or whole-bus proof.",
+      "Scene-position preservation is not a normal SRAM save/reload test."
+    ]
+  },
+  "Epoch_regression": {
+    "status": "passed",
+    "same_candidate_tested_in_this_checkpoint": true,
+    "evidence_level": "bounded-native-controller-scene-roundtrip",
+    "frames": 4164,
+    "sequence": [
+      "board",
+      "fly",
+      "land",
+      "disembark",
+      "enter Ioka hut0115",
+      "return to world01F3",
+      "verify parked position",
+      "reboard"
+    ],
+    "position_before": [
+      544,
+      512
+    ],
+    "position_after": [
+      544,
+      480
+    ],
+    "position_retained_through_house": true,
+    "record_roster_Epoch_name_unchanged": true,
+    "SRAM_unchanged": true,
+    "normal_SRAM_save_or_cold_reload_test": false,
+    "receipt": {
+      "path": "private/test_runs/pc07_caster_attack_observation_v1/epoch_candidate_v1/result.json",
+      "bytes": 2282197,
+      "sha256": "812546c7af355243bf888d5e4d755ee2d06a66d58d162a0080a72ac86f74de08"
+    },
+    "functional_validation": {
+      "path": "private/test_runs/pc07_caster_attack_observation_v1/epoch_candidate_v1/functional_validation_v1.json",
+      "bytes": 2710,
+      "sha256": "6fc29c51beaf46c0d8c183b74e629fadaac5c3246d0f791b517a449cc32fb698"
+    },
+    "root_milestone_screenshots_visually_reviewed": true
+  },
+  "reproduction_commands": [
+    "python -B tools/build_pc07_caster_attack_v1.py --output private/test_runs/pc07_caster_attack_<fresh-name>",
+    "python -B tests/test_pc07_caster_attack_write_contract_v1.py"
+  ],
+  "new_source_paths": [
+    "asm/pc07_caster_attack_v1.asm",
+    "asm/pc07_schala_tile_bank_v4.asm",
+    "tools/build_pc07_caster_attack_v1.py",
+    "tools/pc07_caster_attack_write_contract_v1.py",
+    "tools/pc07_caster_attack_helper_encoding_v1.py",
+    "tools/native_pc07_caster_pose_codec_v1.py",
+    "tools/build_pc07_caster_attack_allocation_census_v1.py",
+    "tests/test_pc07_caster_attack_write_contract_v1.py"
+  ],
+  "public_content_scope": "Metadata and original source only. ROMs, saves, extracted graphics and private art inputs are not distributed.",
+  "rendered_acceptance": {
+    "status": "accepted-for-current-private-candidate",
+    "screen_pixel_receipt": {
+      "path": "private/test_runs/pc07_caster_attack_observation_v1/visible_art_pixel_matches_v1.json",
+      "bytes": 25678,
+      "sha256": "550d75017dfcc5ab30eaecc6a90445d9b20dd723f06d4d1d2b524b5187e66336"
+    },
+    "independent_visual_review": {
+      "path": "private/research/pc07_caster_attack_20261020/engineering/visual_review_v1.json",
+      "bytes": 42648,
+      "sha256": "79b951bd6a1c6812ed4f81a04c826a9ea4569336c3c50d67a2e3369cd75950b2"
+    },
+    "visible_frames_decimal": [
+      27,
+      28,
+      30,
+      31
+    ],
+    "back_facing_frame0_unchanged": true,
+    "earlier_near_front_occlusion": "Observed outside cast poses in initial injected near-front case; unresolved cause; absent in corrected equal-critical-front sequence.",
+    "native_board": "private/test_runs/pc07_caster_attack_observation_v1/caster_native_frames_v2_3x.png",
+    "motion_excerpt": {
+      "path": "private/test_runs/pc07_caster_attack_observation_v1/motion_excerpt_manifest_v1.json",
+      "bytes": 21408,
+      "sha256": "d3d2d186145e0835fb6511be055050ae1162085f6f537bd00e671b78686e3bfa"
+    },
+    "root_board_visually_reviewed": true
+  },
+  "external_review": {
+    "Lily": {
+      "status": "completed-and-independently-considered",
+      "account": "Personal",
+      "observed_model": "GPT-5.6 Sol / Pro5of5",
+      "fallback_reason": "GPT-6 actual picker locked with usage limit reached",
+      "conversation_id": "69f1efdd-b298-83ea-a50e-0e60834641be",
+      "actual_media_and_ROM_source_packet_supplied": true,
+      "scope": "static art and relevant source; no native execution claim",
+      "verdict": "Retain v3; compact palm cluster and subtle preparation timing are minor concerns",
+      "receipt": {
+        "path": "private/research/pc07_caster_attack_20261020/lily_review_v1/dispatch_v1.json",
+        "bytes": 2267,
+        "sha256": "002c3a65913e225ac1bc107d19024e43ca7e419c64c4178c65bf9d1b2bfdb3b8"
+      },
+      "response": {
+        "path": "private/research/pc07_caster_attack_20261020/lily_review_v1/response_v1.md",
+        "bytes": 2420,
+        "sha256": "0df96aa6229a12d605c08e295a6cd3f1cd205a7fe445875ff9c192c44d17f1a5"
+      }
+    },
+    "Claude_Code": {
+      "status": "not-submitted-included-session-allowance-exhausted",
+      "paid_usage_used": false
+    }
+  }
+}

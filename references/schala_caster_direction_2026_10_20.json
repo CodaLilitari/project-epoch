@@ -1,0 +1,130 @@
+{
+  "schema": "project-epoch-schala-current-caster-direction-v1",
+  "date": "2026-10-20",
+  "evidence_level": "direct-user-design-instructions-not-runtime-evidence",
+  "source": "Current Project Epoch conversation with Andrei",
+  "logical_pc": 7,
+  "visual_design": {
+    "retail_faithful": true,
+    "covered_feet": true,
+    "preserve_working_pc_sprites": true,
+    "preserve_original_npc_assets": true,
+    "front_cast_required": true,
+    "front_cast_orientation": "down-facing/toward screen in the four-facing provider",
+    "distinct_downward_tech_gesture": "determine from actual selected tech choreography"
+  },
+  "basic_attack": {
+    "desired_presentation": "casting a magical bolt",
+    "physical_whack_allowed": false,
+    "close_range_weapon_branch_allowed": false,
+    "critical_weapon_branch_allowed": false,
+    "weapon_sprites_planned": false,
+    "target_facing_logic_preserved": true,
+    "all_range_caster_route_installed": true,
+    "magic_bolt_installed": true,
+    "damage_formula_decision": "preserve current basic Attack formula in this presentation pass",
+    "implementation_checkpoint": "references/schala_caster_attack_2026_10_20.json",
+    "implementation_scope": "tested private candidate; PC07 third active position",
+    "stationary_at_all_ranges": true,
+    "close_up_basic_cast_selected": false,
+    "close_up_spell_choreography": "future Tech-specific decision"
+  },
+  "single_techs": {
+    "starting_template": "Magus single Techs",
+    "theme": "dreams and the Dream Devourer",
+    "void_shadow_presentation": "superseded by dream direction",
+    "preserve_original_magus": true,
+    "new_element_type_decision": null,
+    "final_names_costs_balance": null,
+    "new_techs_installed": false,
+    "proposed_effect_color_direction": "prismatic rather than Shadow",
+    "color_study_order": [
+      "finish and test aimed casting poses",
+      "consult collaborators with actual media",
+      "compare prismatic effect treatments"
+    ],
+    "prismatic_effects_installed": false
+  },
+  "portrait": {
+    "requested": true,
+    "reference": "Schala concept illustration and actual retail seven portraits",
+    "native_dimensions": [
+      48,
+      48
+    ],
+    "palette_entries": 16,
+    "selected_art": "private/research/pc07_portrait_20261020/native_conversion_v6b/manifest_v6b.json",
+    "facial_direction": "Latest user request supersedes softer V2 selection: closer original-concept likeness required; retain V2 as integration baseline and V3 rejection as too Janus-like",
+    "source": "built-in image generation followed by deterministic native encoding; concept-derived",
+    "preserve_original_portrait_assets": true,
+    "schala_uses_own_graphics_and_palette": true,
+    "vehicle_name_is_player_editable": true,
+    "vehicle_name_storage_must_remain_separate": true,
+    "vehicle_naming_consumer_preserved": true,
+    "native_installation": "combined stats/portrait derivative passes first selection, Crono/Marle controls, return and reopen; final likeness approval not asserted",
+    "integration_checkpoint": "references/schala_menu_stats_portrait_2026_10_20.json",
+    "new_art_study": "private/research/pc07_portrait_20261020/native_conversion_v6b/manifest_v6b.json",
+    "new_art_installed": true,
+    "candidate_likeness": "V6 palette B: relaxed concept-derived face and tighter crop; source-derived palette fills preserve gold details; final user approval not asserted",
+    "prior_integration_art": "private/research/pc07_portrait_20261020/selected_art_v1/manifest_v1.json"
+  },
+  "stats_correction": {
+    "requested": true,
+    "initial_menu_derived_stats_bug_confirmed": true,
+    "first_display": {
+      "hp": "608/29",
+      "attack": 48
+    },
+    "later_display": {
+      "hp": "608/969",
+      "attack": 236
+    },
+    "initial_recompute_omits_pc07": true,
+    "fix_installed": true,
+    "final_caster_stats_and_equipment": "separate unresolved design; do not overwrite vanilla content or treat donor values as final balance",
+    "user_scope_decision": "Fix calculation/display first; balance separately",
+    "base_stats_equipment_change_authorized_this_pass": false,
+    "fixed_first_display": {
+      "hp": "608/969",
+      "mp": "93/93",
+      "attack": 236,
+      "defense": 211
+    },
+    "native_initial_recompute_verified": true,
+    "equipment_decision": "Andrei explicitly says equipment can wait",
+    "hp_color_issue": {
+      "confirmed": true,
+      "symptom": "HP608/969 incorrectly red with zero status bytes",
+      "cause": "ordinary status route falls back to seven-entry threshold cache and aliases0D46/0D47 forPC07",
+      "correction_installed": true,
+      "native_evidence": "private/research/pc07_portrait_20261020/runtime/candidate_hp_color_audit_v1.json",
+      "verified_result": "Own maximum HP 969 produces threshold 96; HP 608/969 is ordinary white on first selection and reopen, with Crono/Marle controls",
+      "critical_hp_native_tested": false,
+      "critical_hp_boundaries_static_tested": true,
+      "candidate": "private/test_runs/pc07_menu_stats_portrait_v2/diagnostic.sfc",
+      "candidate_sha256": "d4b6915dc85ef2bc782583de4478f9ed61e07f68fb2dde58b9cced4350ba3117",
+      "final_screenshot": "private/research/pc07_portrait_20261020/runtime/schala_fixed_portrait_stats_white_hp_native_4x.png"
+    }
+  },
+  "historical_proposal": {
+    "path": "docs/schala_character_design_v0.md",
+    "disposition": "preserve historical source; incompatible visual and content proposals superseded"
+  },
+  "production_approval": false,
+  "native_execution_proved_by_this_note": false,
+  "legacy_content_preservation": {
+    "source": "Andrei direct instruction, 2026-10-20",
+    "preserve_all_existing_content": true,
+    "includes": [
+      "unused/cut/debug content",
+      "cheat-accessible vanilla weapons and equipment",
+      "existing Techs",
+      "original IDs and resolution behavior",
+      "graphics/palettes/scripts/resources"
+    ],
+    "unused_is_free": false,
+    "repurpose_unused_legacy_rows": false,
+    "new_content_placement": "separately named expanded allocations with explicit mappings",
+    "compatibility_validation": "check affected legacy and cheat-accessible consumers when changed; no unrelated historical replay"
+  }
+}

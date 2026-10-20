@@ -1,0 +1,187 @@
+{
+  "schema": "project-epoch-development-update-v1",
+  "date": "2026-10-20",
+  "display_status": "IN DEVELOPMENT — NOT YET TRULY PLAYABLE",
+  "evidence_level": "scoped-native-observations-with-separately-retained-prior-evidence",
+  "finished_mod": false,
+  "full_playthrough_supported": false,
+  "zero_slowdown_claim": false,
+  "human_report": "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/project_epoch_development_update_2026_10_20.md",
+  "tested_target": {
+    "bytes": 8388608,
+    "sha256": "d4b6915dc85ef2bc782583de4478f9ed61e07f68fb2dde58b9cced4350ba3117",
+    "rom_distributed": false,
+    "supported_logical_pc_id": 7,
+    "principal_active_position_zero_based": 2,
+    "principal_fixed_leaders": [
+      0,
+      1
+    ]
+  },
+  "current_menu_result": {
+    "portrait": "V6 palette B, dedicated 48x48 full-status portrait",
+    "portrait_candidate_accepted_for_preview": true,
+    "original_seven_portrait_assets_preserved": true,
+    "portrait_upload": "once per forced-blank menu initialization",
+    "portrait_dma_on_each_redraw": false,
+    "hp": {
+      "current": 608,
+      "maximum": 969,
+      "color": "ordinary-white"
+    },
+    "mp": {
+      "current": 93,
+      "maximum": 93
+    },
+    "attack": 236,
+    "defense": 211,
+    "base_stats_and_equipment_changed": false,
+    "profile": "donor-derived diagnostic profile; pure-caster balance unfinished",
+    "observed_routes": [
+      "first selection",
+      "Crono and Marle controls",
+      "return to Schala",
+      "close and reopen"
+    ],
+    "latest_critical_hp_boundary_evidence": "static-only",
+    "screenshot": {
+      "url": "/projects/project-epoch/schala-portrait-stats-2026-10-20.png",
+      "kind": "native-first-selection-capture",
+      "transformation": "4x nearest-neighbor enlargement only",
+      "width": 1024,
+      "height": 896,
+      "sha256": "bd01fae992cd997345b669f6f14ed97423bd1a684d13ed7e9fa1dc5fbf04b4e5",
+      "bytes": 40870
+    }
+  },
+  "body_and_attack": {
+    "normal_run": "existing directional movement art reused",
+    "installed_targeted_poses": [
+      "horizontal cast",
+      "front cast",
+      "rear cast",
+      "directional recoil",
+      "KO"
+    ],
+    "original_npc_art_preserved": true,
+    "stationary_near_and_far_attack": true,
+    "normal_and_critical_ranged_animation_routes": true,
+    "magical_damage_formula_added": false,
+    "equipment_damage_and_result_mechanics_inherited": true,
+    "stationary_attack_native_cases": {
+      "ordinary_schala_critical": 1,
+      "ordinary_crono_control": 1,
+      "injected_animation_context": 10
+    },
+    "later_front_rear_native_cases": {
+      "injected_after_damage_calculation": 4
+    },
+    "front_effect_alignment": "unresolved; selected target under battle HUD"
+  },
+  "retained_prior_evidence": {
+    "party_menu": "eight logical identities paged across seven physical display records; Gaspar retained",
+    "world_map": "four walking directions and both prolonged-idle frames",
+    "flying_epoch": "board, fly, land, disembark, hut, return and reboard; landing position retained",
+    "native_persistence": "slot-0 changed formation normal save and fresh-process battery load",
+    "live_record_bytes": 80,
+    "sram_bytes": 8192,
+    "sidecar_records": 3,
+    "sidecar_bytes_each": 160,
+    "sidecar_integrity": [
+      "CRC16",
+      "full-slot SHA-256 binding"
+    ],
+    "latest_menu_delta_repeats_whole_prior_matrix": false,
+    "global_memory_ownership_proved": false
+  },
+  "open_work": [
+    "Tech-tab Wings name alias",
+    "small save-card portrait unsupported and skipped",
+    "donor-derived balance, growth and equipment",
+    "full Techs and dual/triple-Tech behavior",
+    "story and native recruitment",
+    "other active positions, broader scenes and full playthrough",
+    "other save slots, New Game+, erase and corrupt native-runtime cases",
+    "character and vehicle rename paths",
+    "effect alignment, rendering overlaps and polish",
+    "broad performance comparison"
+  ],
+  "prismatic_techs": {
+    "offline_studies_only": true,
+    "new_tech_installed": false,
+    "magus_assets_preserved": true
+  },
+  "legacy_content_policy": "preserve all original IDs and content, including unused, debug and cheat-accessible resources",
+  "release": {
+    "status": "diagnostic-development-preview",
+    "download_url": "/projects/project-epoch/downloads/project-epoch-dev-2026-10-20.zip",
+    "manifest_url": "/projects/project-epoch/downloads/release-manifest.json",
+    "instructions_url": "/projects/project-epoch/downloads/README.txt",
+    "zip_bytes": 492200,
+    "zip_sha256": "9eff5a5b1078b5117c0710e50be502512c0367d27ea7a30584068088e3fd0598",
+    "patch_url": "/projects/project-epoch/downloads/project-epoch-development-2026-10-20-v1.bps",
+    "patch_bytes": 58987,
+    "patch_sha256": "4cb81f836bb06ef74575c00bccc9cb91a8936f2ca5169644e52aee7a0c4c5349",
+    "source_bytes": 4194304,
+    "source_sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9",
+    "roundtrip_verified": true,
+    "roundtrip_evidence": "exporter complete in-memory clean-to-final apply, plus independent unchanged Mesen BPS implementation; both match the exact target",
+    "includes_rom": false,
+    "includes_standalone_battery": false,
+    "includes_emulator": false,
+    "selected_mesen_states": 2,
+    "labeled_screenshots": 6,
+    "state_compatibility": "tested Mesen build and exact target only; see preview_state_validation",
+    "source_git_includes_states": false,
+    "independent_apply": {
+      "passed": true,
+      "implementation": "SourMesen/Mesen2 unchanged BpsPatcher and CRC32",
+      "revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+      "target_bytes": 8388608,
+      "target_exact_byte_equality": true,
+      "source_target_patch_crc_passed": true,
+      "ROM_output_written": false,
+      "new_gameplay_run": false,
+      "package_members_verified": 13,
+      "receipt_sha256": "e8cfa17ae4551ffac3979ec1f217c6e4e0a6fc28b06172c97fc9f56baaf43d57"
+    }
+  },
+  "source_reports": [
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_menu_stats_portrait_2026_10_20.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_status_portrait_2026_10_20.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_run_pose_correction_2026_10_20.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_battle_pose_pass_2026_10_20.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_caster_attack_2026_10_20.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_caster_pose_refinement_2026_10_20.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_party_selection_milestone_2026_10_15.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_worldmap_milestone_2026_10_17.md",
+    "https://gitlab.com/codalilitari/project-epoch/-/blob/main/docs/schala_prismatic_study_2026_10_20.md"
+  ],
+  "supporting_screenshots": [
+    {
+      "url": "/projects/project-epoch/schala-natural-cast-prior-2026-10-20.png",
+      "kind": "native-screenshot",
+      "date": "2026-10-20",
+      "build_sha256": "9f678764d05f2f16e49c5a7cafe03ee6f192330322988918ff8bca2d1b2740f0",
+      "sha256": "93fc2c7adab87f7fdb811686aa3a47cc9a97cc751d9e9f3ae60d34a610036cbf",
+      "bytes": 24699,
+      "width": 256,
+      "height": 224,
+      "runtime_injection": false,
+      "ordinary_controller_inputs": true,
+      "evidence_boundary": "earlier stationary-caster build; not a fresh final-build battle run"
+    }
+  ],
+  "preview_state_validation": {
+    "target_sha256": "d4b6915dc85ef2bc782583de4478f9ed61e07f68fb2dde58b9cced4350ba3117",
+    "emulator": "Mesen 2.1.1+137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+    "savestate_format": 4,
+    "fresh_processes": 2,
+    "cpu_master_clock_full_wram_full_sram_exact": true,
+    "controller_status_to_field": true,
+    "controller_field_to_status": true,
+    "runtime_injection": false,
+    "battle_continuation_tested_in_capture_task": false,
+    "native_save_load_proof_substituted": false
+  }
+}

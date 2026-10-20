@@ -1,0 +1,98 @@
+{
+  "schema": "project-epoch-schala-run-pose-checkpoint-v1",
+  "date": "2026-10-20",
+  "user_direction": {
+    "preserve_suitable_existing_PC07_frames": true,
+    "prefer_remapping_before_new_art": true,
+    "wholesale_body_sprite_replacement": false,
+    "casting_art_preference": "Lily corrected v2 preparation and release",
+    "casting_study_installed": false,
+    "retain_full_robe_and_covered_feet": true,
+    "NPC_assets_must_remain_unchanged": true,
+    "pure_caster_no_weapon_sprites": true,
+    "user_running_example_was_not_a_reported_playtest": true
+  },
+  "source": {
+    "path": "private/test_runs/pc07_worldmap_coda_v5_v1/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "ec7e5c089116c37510aea2bacc7a82c4131432eef414bdb8f6ef89723d6c6724"
+  },
+  "candidate": {
+    "path": "private/test_runs/pc07_run_pose_v1/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "00e3440c2927834554c7e3f872a5b995b76e53e1e6775ddd76abe9bac0b8f18f",
+    "receipt": "private/test_runs/pc07_run_pose_v1/receipt.json",
+    "emitted": true,
+    "production_approval": false
+  },
+  "delta": {
+    "selector": 6,
+    "frame_ID_namespace": "existing_PC07_assembly",
+    "old_pair_all_facings": [19, 20],
+    "new_pairs": {"up": [4, 6], "down": [8, 10], "left": [12, 13], "right": [14, 15]},
+    "unchanged_timing": [10, 10],
+    "primary_references_changed": 8,
+    "header_checksum_bytes_changed": 8,
+    "total_changed_bytes": 16,
+    "declared_spans": 6,
+    "new_pixels": 0,
+    "new_assembly_frames": 0,
+    "new_allocations": 0
+  },
+  "verified_static": {
+    "current_shared_intent_guard": "metadata-valid",
+    "current_shared_complete_diff_guard": "images-valid",
+    "inverse_restores_exact_parent": true,
+    "selector_facing_entries_checked": 1024,
+    "other_selectors_reached_tokens_unchanged": true,
+    "body_graphics_and_assembly_unchanged": true,
+    "NPC_protected_spans_equal": 13,
+    "shared_palette_unchanged": true,
+    "worldmap_V5_unchanged": true,
+    "focused_tests_passed": 5,
+    "historical_builders_or_validators_executed": false
+  },
+  "native_observation": {
+    "status": "passed-bounded-native-functional-comparison",
+    "scope": "same-input baseline versus candidate; supported third-party PC07 field walk/run/stop",
+    "results": [
+      "private/test_runs/pc07_run_pose_observation_v1/baseline/result.json",
+      "private/test_runs/pc07_run_pose_observation_v1/candidate/result.json"
+    ],
+    "location_hex": "01DA",
+    "active_logical_IDs": [0, 1, 7],
+    "object_byte_offsets_hex": ["02", "04", "10"],
+    "total_frames_each": 3286,
+    "readonly_snapshots_each": 587,
+    "same_controller_steps": 16,
+    "additional_observer_stop_command": true,
+    "all_four_run_pairs_observed": true,
+    "walk_and_idle_return_observed": true,
+    "paired_positions_identities_context_equal": true,
+    "both_SRAM_unchanged": true,
+    "source_and_staged_batteries_unchanged": true,
+    "runtime_memory_writes": false,
+    "savestates_used": false,
+    "root_inspected_same_frame_rendering": true,
+    "comparison_receipt": "private/test_runs/pc07_run_pose_observation_v1/comparison_v1.json",
+    "delivery_manifest": "private/test_runs/pc07_run_pose_observation_v1/delivery_manifest_v1.json",
+    "before_after_board": "private/test_runs/pc07_run_pose_observation_v1/before_after_run_down_3x.png",
+    "runtime_reproduction": "private/research/pc07_run_pose_20261020/runtime/README.md",
+    "changed_cache_frame_observations": 274,
+    "other_recorded_fields_equal": true,
+    "primary_visual_capture": "run_down.png at frame3086 in each result directory",
+    "evidence_limit": "end-frame native functional snapshots and screenshots, not instruction or bus attribution"
+  },
+  "remaining": [
+    "Alternate leader run selector23 remains unchanged and outside this correction.",
+    "Explicit scripted selector6 requests inherit this remap; PC07 script attribution is unresolved.",
+    "KO/status selector8 shares a token with selector7 and needs a separate deliberate correction.",
+    "Observe donor Attack sprite-animation requests before assigning Lily casting frames.",
+    "Recoil and new authored poses still require individual consumer binding and native evidence."
+  ],
+  "publication": false,
+  "reproduction": [
+    "python -B -m unittest discover -s tests -p test_pc07_run_pose_write_contract_v1.py -v",
+    "python -B tools/build_pc07_run_pose_v1.py --output private/test_runs/pc07_run_pose_<fresh-name>"
+  ]
+}

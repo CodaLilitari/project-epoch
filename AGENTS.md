@@ -7,6 +7,14 @@
 - Generated IPS/BPS patches are allowed only when a source builder reproduces them deterministically.
 - Every generated artifact must include hashes, reproduction steps, and an evidence level.
 - Preserve recovered artifacts unchanged under `recovered/`.
+- Preserve all existing game content and its original IDs, including unused,
+  cut, debug-only and cheat-accessible equipment, weapons, Techs and resources.
+  Absence from ordinary gameplay is not permission to reuse a record, selector,
+  asset or byte range. Schala additions require separately named expanded
+  storage and explicit mappings that retain the original content and behavior.
+  This is Andrei's explicit October 20 preservation requirement; future item
+  and Tech work must include the affected legacy/cheat-accessible paths in its
+  compatibility checks, without replaying unrelated historical proof chains.
 - Every same-size ROM mutation or patch builder must run the fail-closed intent
   and complete-diff audit in `tools/validate_rom_write_intents.py` before
   writing an image or emitting a patch. Safe modes must pass. A preserved

@@ -1,0 +1,129 @@
+{
+  "bundle": {
+    "bytes": 492200,
+    "file": "project-epoch-dev-2026-10-20.zip",
+    "sha256": "9eff5a5b1078b5117c0710e50be502512c0367d27ea7a30584068088e3fd0598"
+  },
+  "date": "2026-10-20",
+  "external_publication_performed_by_exporter": false,
+  "immediate_build_receipt": {
+    "bytes": 42999,
+    "sha256": "6cd8051e1bc9c7be691fb5a3f770132dfe82fd562cd7abc51fad282f1fa473fd"
+  },
+  "independent_apply": {
+    "demo_states_screenshots_unchanged": true,
+    "existing_compiler": "WSL g++",
+    "implementation": "SourMesen/Mesen2 unchanged BpsPatcher and CRC32 source",
+    "new_emulator_run": false,
+    "package_members_verified": 13,
+    "pass": true,
+    "receipt": {
+      "bytes": 7468,
+      "path": "private/research/epoch_update_20261020/runtime/independent_bps_export_review_v1.json",
+      "sha256": "e8cfa17ae4551ffac3979ec1f217c6e4e0a6fc28b06172c97fc9f56baaf43d57"
+    },
+    "result": {
+      "ROM_output_written": false,
+      "external_apply_succeeded": true,
+      "external_patch_CRC_passed": true,
+      "target_bytes": 8388608,
+      "target_exact_byte_equality": true
+    },
+    "revision": "137ae7ce3bf3f539d007e2c4ef3cb3b6c97672a1",
+    "upstream_blobs_acquired": 4
+  },
+  "package_members": [
+    "README.txt",
+    "demo/DEVELOPMENT-NOT-PLAYABLE.md",
+    "demo/manifest.json",
+    "demo/screenshots/01_final_portrait_status_4x.png",
+    "demo/screenshots/01_final_portrait_status_native.png",
+    "demo/screenshots/02_prior17b156_field_running_native.png",
+    "demo/screenshots/03_prior9f6787_natural_cast_native.png",
+    "demo/screenshots/04_prior17b156_world_map_schala_epoch_native.png",
+    "demo/screenshots/05_INJECTED_prior17b156_front_cast_study_native.png",
+    "demo/states/epoch_dev_d4b691_field_ready.mss",
+    "demo/states/epoch_dev_d4b691_schala_status.mss",
+    "project-epoch-development-2026-10-20-v1.bps",
+    "release-manifest.json"
+  ],
+  "patch": {
+    "bytes": 58987,
+    "copier_header_bytes": 0,
+    "file": "project-epoch-development-2026-10-20-v1.bps",
+    "format": "BPS1",
+    "sha256": "4cb81f836bb06ef74575c00bccc9cb91a8936f2ca5169644e52aee7a0c4c5349",
+    "source": {
+      "bytes": 4194304,
+      "sha256": "06d1c2b06b716052c5596aaa0c2e5632a027fee1a9a28439e509f813c30829a9"
+    },
+    "source_title": "Chrono Trigger (USA), revision 0",
+    "target": {
+      "bytes": 8388608,
+      "sha256": "d4b6915dc85ef2bc782583de4478f9ed61e07f68fb2dde58b9cced4350ba3117"
+    }
+  },
+  "production_catalogs_remain_empty": true,
+  "reproduction_runtime": {
+    "python": "3.13.15",
+    "zlib": "1.3.1"
+  },
+  "runtime": {
+    "complete_playthrough": false,
+    "new_emulator_runs_by_exporter": false,
+    "selected_demo_archive": {
+      "bytes": 462332,
+      "sha256": "0e49b1bca0295ed6ff3068879a62d26f24cc92ff0c15d08325400d321046867a"
+    },
+    "states_restore_scope": "two independent fresh processes; status-to-field and field-to-status controller routes",
+    "target_native_evidence": "references/schala_menu_stats_portrait_2026_10_20.json"
+  },
+  "schema": "project-epoch-development-release-engineering-v1",
+  "source_files": [
+    {
+      "path": "tools/epoch_bps_v1.py",
+      "sha256": "a59148a93ae1641d1f4bf9bee5d779192f05021220d579adec6223cdcf080431"
+    },
+    {
+      "path": "tools/epoch_development_bps_export_contract_v1.py",
+      "sha256": "b684af06283ac39a8f103ce27dc82c45ee094fbc8070ffcb117ce5e700def305"
+    },
+    {
+      "path": "tools/export_epoch_development_bps_v1.py",
+      "sha256": "afb678a7c18b2f969aee6431923965ddf823b3d18c03a8c73e39f72264482f39"
+    },
+    {
+      "path": "tools/validate_rom_write_intents.py",
+      "sha256": "bda27b368fa513284e95bca1816bfade4e1550f6a2fd7b073f6580db95eb2b5a"
+    }
+  ],
+  "source_git_policy": {
+    "ROM_allowed": false,
+    "extracted_game_assets_allowed": false,
+    "patch_has_deterministic_builder": true,
+    "states_allowed": false
+  },
+  "source_guard": {
+    "ROM_file_written": false,
+    "complete_diff_coverage": true,
+    "historical_builders_or_validators_executed": false,
+    "new_ROM_mutations": false,
+    "production_approval": false,
+    "source_crc_target_crc_patch_crc": "passed",
+    "source_inverse_exact": true,
+    "status": "patch-valid",
+    "target": {
+      "bytes": 8388608,
+      "sha256": "d4b6915dc85ef2bc782583de4478f9ed61e07f68fb2dde58b9cced4350ba3117"
+    },
+    "whole_patch_applies_to_exact_target": true
+  },
+  "status": "local-package-ready-independent-apply-passed",
+  "tests": {
+    "cases": 10,
+    "historical_test_chain_run": false,
+    "passed": true,
+    "wrong_source_target_receipt_refused": true
+  },
+  "warning": "DEVELOPMENT SNAPSHOT - NOT TRULY PLAYABLE"
+}

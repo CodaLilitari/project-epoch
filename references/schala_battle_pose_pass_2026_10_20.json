@@ -1,0 +1,254 @@
+{
+  "schema": "project-epoch-schala-battle-pose-checkpoint-v1",
+  "date": "2026-10-20",
+  "status": "private-candidate-with-bounded-native-casting-KO-and-Epoch-evidence",
+  "project_complete": false,
+  "production_approval": false,
+  "publication_performed_this_pass": false,
+  "logical_pc_id": 7,
+  "supported_active_position_zero_based": 2,
+  "rom": {
+    "path": "private/test_runs/pc07_battle_pose_v1/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "7549c49c3fec255ea559e8b1e0420a7b6285d921948f9550308291270db470e5"
+  },
+  "parent": {
+    "bytes": 8388608,
+    "path": "private/test_runs/pc07_run_pose_v1/diagnostic.sfc",
+    "sha256": "00e3440c2927834554c7e3f872a5b995b76e53e1e6775ddd76abe9bac0b8f18f"
+  },
+  "rom_identity_provenance": "Reused current guarded build and native-launch receipts; no new ROM or historical-chain hash in this checkpoint.",
+  "construction": {
+    "evidence_level": "guarded-complete-diff-and-native-encoding",
+    "intent": {
+      "manifest_sha256": "5b229239cb458cfae4446b8f1c3df4bcf42c13057bc5b799f31a1c8c87beef29",
+      "production_approval": false,
+      "schema": "project-epoch-private-pc07-battle-pose-intents-v1",
+      "status": "metadata-valid"
+    },
+    "diff": {
+      "canonical_direct_KO_table_unchanged": true,
+      "changed_bytes": 1525,
+      "complete_diff_coverage": true,
+      "declared_sections": 23,
+      "inverse_restores_parent": true,
+      "native_execution": false,
+      "npc_protected_spans_unchanged": 13,
+      "original_frame_prefix_preserved": 23,
+      "original_tile_prefix_preserved": 79,
+      "production_approval": false,
+      "schema": "project-epoch-private-pc07-battle-pose-intents-v1",
+      "shared_palette_unchanged": true,
+      "status": "images-valid",
+      "worldmap_unchanged": true
+    },
+    "final_graphics_tiles": 112,
+    "final_assembly_frames": 30,
+    "new_frame_numbers_decimal": {
+      "Lily_cast_preparation_right": 23,
+      "Lily_cast_release_right": 24,
+      "Red_recoil_right": 25,
+      "Red_prone_KO": 26,
+      "mirrored_cast_preparation_left": 27,
+      "mirrored_cast_release_left": 28,
+      "mirrored_recoil_left": 29
+    }
+  },
+  "focused_checks": {
+    "codec_and_mirror_unittests": {
+      "passed": 10,
+      "evidence": "Executed by root during this pass"
+    },
+    "write_contract_unittests": {
+      "passed": 5,
+      "evidence": "Executed by root during this pass"
+    },
+    "independent_KO_helper_CPU_model": {
+      "cases": {
+        "direct": 9978,
+        "status": 14330
+      },
+      "exact_context_and_write_checks": true,
+      "scope": "native E0/M8/X16, helper opcode subset, no interrupts/DMA/cycle timing",
+      "native_execution": false
+    }
+  },
+  "battle_runtime": {
+    "evidence_level": "exact-PC request and helper entry/continuation observations, actual watched cache writes, separately timed screenshot/WRAM/OAM snapshots",
+    "status": "bounded-native-observation-passed",
+    "observed_attack": "critical package 0x01 only",
+    "selector_sequence_hex": [
+      "26",
+      "31",
+      "32",
+      "0E",
+      "03"
+    ],
+    "visible_cast_frame_numbers_decimal": [
+      27,
+      28
+    ],
+    "timing_comparison": [
+      {
+        "selector": 49,
+        "baseline_frames": 7,
+        "candidate_frames": 7,
+        "difference": 0
+      },
+      {
+        "selector": 50,
+        "baseline_frames": 21,
+        "candidate_frames": 21,
+        "difference": 0
+      }
+    ],
+    "final_HP": 0,
+    "final_selector_hex": "F0",
+    "final_frame_decimal": 26,
+    "qualified_direct_helper_pairs": 1,
+    "qualified_status_helper_pairs": 1,
+    "right_cast_natively_observed": false,
+    "new_horizontal_recoil_natively_observed": false,
+    "incoming_recoil_limit": "Observed facing 0 retains original frame 18; horizontal frames 25/29 are encoded and bound but not exercised naturally here.",
+    "visual_correction": "request_31_plus1/+3 show old idle pixels. Later request_32_plus1/+3 visibly show preparation 27 and release 28. Use corrected v2 board.",
+    "complete_bus_or_WRAM_observation": false,
+    "global_interrupt_or_stack_ownership_proved": false
+  },
+  "Epoch_regression": {
+    "evidence_level": "native-functional-frame-snapshot-observation",
+    "status": "passed",
+    "sequence": [
+      "board",
+      "fly",
+      "land",
+      "disembark",
+      "enter Ioka hut",
+      "return to world map",
+      "reboard"
+    ],
+    "frames": 4164,
+    "initial_parked": [
+      544,
+      512
+    ],
+    "new_parked": [
+      544,
+      480
+    ],
+    "world_map_hex": "01F3",
+    "interior_map_hex": "0115",
+    "party_pc07_and_epoch_name_preserved": true,
+    "sram_unchanged": true,
+    "SRAM_save_tested": false,
+    "fresh_load_tested": false,
+    "all_vehicle_routes_proved": false
+  },
+  "root_visual_review": {
+    "performed": true,
+    "files": [
+      "private/test_runs/pc07_battle_pose_observation_v1/battle_before_after_v2_3x.png",
+      "private/test_runs/pc07_battle_pose_observation_v1/epoch_roundtrip_v1/inside_location.png",
+      "private/test_runs/pc07_battle_pose_observation_v1/epoch_roundtrip_v1/returned_world.png",
+      "private/test_runs/pc07_battle_pose_observation_v1/epoch_roundtrip_v1/reboarded.png",
+      "private/research/pc07_battle_pose_20261020/front_cast_study_v1/front_cast_comparison_1x_4x.png",
+      "private/research/pc07_battle_pose_20261020/front_cast_study_v2/front_cast_v1_v2_comparison_1x_4x.png"
+    ],
+    "provenance": "Root inspected these images in this work session; separate from the unchanged automated validator's screenshots_visually_reviewed=false field.",
+    "front_study_disposition": "Uninstalled. V1 release resembles a ward; v2 remains too low-handed for a clear forward bolt. Refine before selecting."
+  },
+  "next_work": {
+    "preserve_tested_candidate": true,
+    "front_cast_installed": false,
+    "caster_only_all_range_attack_installed": false,
+    "magic_bolt_installed": false,
+    "dream_techs_installed": false,
+    "current_attack_limit": "Inherited Crono approach, effects and mechanics remain.",
+    "near_range_finding": "Lucca/Marle approach policy zero alone still allows the near physical branch. A qualified PC07 route plus deliberate visual/audio adapters is required.",
+    "design": "Weapon-free at every range and on critical hits; Magus single-Tech template with dream/Dream Devourer presentation; preserve original Magus and NPC assets.",
+    "damage_formula_or_new_element_decided": false
+  },
+  "metadata_pins": [
+    {
+      "path": "private/test_runs/pc07_battle_pose_v1/receipt.json",
+      "bytes": 37601,
+      "sha256": "4cc9afaaacffd89c2177fe6bd632c885f74ae88381943b2d774e0a00c86e1f69"
+    },
+    {
+      "path": "private/test_runs/pc07_battle_pose_v1/write_intents.json",
+      "bytes": 13526,
+      "sha256": "5b229239cb458cfae4446b8f1c3df4bcf42c13057bc5b799f31a1c8c87beef29"
+    },
+    {
+      "path": "private/test_runs/pc07_battle_pose_observation_v1/delivery_manifest_v1.json",
+      "bytes": 27345,
+      "sha256": "c716d1599364b2744c594f38084902d03ff38492c51f10c640ab35df46771c29"
+    },
+    {
+      "path": "private/test_runs/pc07_battle_pose_observation_v1/candidate_observation_v1.json",
+      "bytes": 53670,
+      "sha256": "fe7cf18a40dd7aecf5add4bdde5d9249fec461bbe18106263efa2c328a2954c6"
+    },
+    {
+      "path": "private/test_runs/pc07_battle_pose_observation_v1/casting_capture_pixel_match_v1.json",
+      "bytes": 7249,
+      "sha256": "7cb9dd78403e20fd67bd2830f4d4648d4259a957a49cf46a322caf90eec80ea2"
+    },
+    {
+      "path": "private/test_runs/pc07_battle_pose_observation_v1/epoch_roundtrip_validation_v1.json",
+      "bytes": 2708,
+      "sha256": "e47a0f314e0e017cab546ad47d1bb9541aca1d7e323062fea83f1c9483c1f0df"
+    },
+    {
+      "path": "private/research/pc07_battle_pose_20261020/helper_review/execution_v1.json",
+      "bytes": 4211,
+      "sha256": "059772a4a4b4f49a77ee60dee3d79b62528ac0a7ee244ada8f02b30b69520031"
+    },
+    {
+      "path": "private/research/pc07_battle_pose_20261020/engineering/allocation_census_v1.json",
+      "bytes": 19929,
+      "sha256": "bbb17c2644b585329290965ffd4f8dc63b353bf47c116eb8e80574840a0487f9"
+    },
+    {
+      "path": "private/research/pc07_battle_pose_20261020/engineering/caster_attack_route_receipt_v1.json",
+      "bytes": 1830,
+      "sha256": "9c81e9b166c6b9467aa94e53a7c18aecb41898e177e56cbbe477b76981131785"
+    },
+    {
+      "path": "private/research/pc07_battle_pose_20261020/front_cast_study_v1/manifest_v1.json",
+      "bytes": 3216,
+      "sha256": "ad9d587196c87014987de65a13e29c6dab8777a148a3a0051a7de5da50894070"
+    },
+    {
+      "path": "private/research/pc07_battle_pose_20261020/front_cast_study_v2/manifest_v2.json",
+      "bytes": 2928,
+      "sha256": "04767920e7e5b8f706021953700176d75754c80b4e737773df15b6723f82b626"
+    },
+    {
+      "path": "private/research/pc07_battle_pose_20261020/runtime/README.md",
+      "bytes": 12767,
+      "sha256": "4d2023aca338a4faca0ede28e13d77f21333756ca47485a53dca545b029606f4"
+    },
+    {
+      "path": "docs/schala_battle_pose_pass_2026_10_20.md",
+      "bytes": 8097,
+      "sha256": "e2a5aa7a3c9530f66873a1e5d57c6b5c5dcce95527e8aa064caf6c0911a865d7"
+    },
+    {
+      "path": "references/schala_caster_direction_2026_10_20.json",
+      "bytes": 1624,
+      "sha256": "bd023fcebc35d1472dcf24bc79ba04c5fe2a64b6eefeffcda650bf5042834344"
+    }
+  ],
+  "reproduction": {
+    "build": "python -B tools/build_pc07_battle_pose_v1.py --output private/test_runs/pc07_battle_pose_<fresh-name>",
+    "focused_tests": "python -B -m unittest tests.test_native_pc07_pose_codec_v1 tests.test_native_pc07_pose_mirror_v1 tests.test_pc07_battle_pose_write_contract_v1",
+    "native_observation": "private/research/pc07_battle_pose_20261020/runtime/README.md",
+    "checkpoint": "python -B private/research/pc07_battle_pose_20261020/finalize_checkpoint_v1.py",
+    "checkpoint_script": {
+      "path": "private/research/pc07_battle_pose_20261020/finalize_checkpoint_v1.py",
+      "bytes": 8033,
+      "sha256": "7485a501a1009a0ff6a480d4c42928d162e0ea2dfff3e8b038ca322d53aa7e83"
+    },
+    "historical_builders_or_validators_executed": false
+  }
+}

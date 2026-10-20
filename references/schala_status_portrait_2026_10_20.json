@@ -1,0 +1,295 @@
+{
+  "schema": "epoch-status-portrait-checkpoint-v2",
+  "date": "2026-10-20",
+  "candidate": "private/test_runs/pc07_status_portrait_v2/diagnostic.sfc",
+  "sha256": "773e32de495acad1ac6d12fbe15101f45bc0240e65af47e4de19a318d54de128",
+  "parent_sha256": "17b156701321ec11b5ed115dff0964665160bc99a857641d42078a7d73e3cb3e",
+  "emitted": true,
+  "evidence": "verified-runtime-selected-full-status-route-private-candidate",
+  "production_approval": false,
+  "receipt": {
+    "path": "private/test_runs/pc07_status_portrait_v2/receipt.json",
+    "bytes": 44194,
+    "sha256": "884e7735b8244e5633acc55544e0b942e80a608cc90400ec8ff60ed1bb07dc7f"
+  },
+  "art": {
+    "selected": "V2 reserved_purple_green13",
+    "provenance": "generated concept-derived source; deterministic nearest-neighbor and semantic palette conversion; no dither",
+    "root_selected_for_preview_integration": true,
+    "final_user_art_approval_claimed": false,
+    "dimensions": [
+      48,
+      48
+    ],
+    "tile_count": 36,
+    "tile_format": "SNES 4bpp; 6x6 row-major 8x8 tiles",
+    "graphics_bytes": 1152,
+    "palette_entries": 16,
+    "palette_bytes": 32,
+    "palette_format": "BGR555",
+    "transparent_index": 0,
+    "transparent_index_unused": true,
+    "opaque_background_preserved": true,
+    "independent_native_roundtrip_exact": true,
+    "tiles_sha256": "6fc2c5a877c815278a4226570c9959cdc34c3d30238eb8ea8abca56f626bf0a0",
+    "palette_sha256": "e14f1bedeec81585ea189a8b453ccf1a8f9d143d969b2c731bc5c46749b597eb",
+    "indexed_json_sha256": "3bb3c9f171efb6183616c0f758ca1a26314ed1c359e53d710be2beae8284f6ef",
+    "selection_manifest": "private/research/pc07_portrait_20261020/selected_art_v1/manifest_v1.json",
+    "selection_manifest_sha256": "c83a77f0c1ab3f446590d1640f2bf8ddd01c07094cb14fdaf7845a09c531cced",
+    "current_likeness_status": "Provisional: latest user requests closer fidelity to original concept art; previous preview choice is superseded."
+  },
+  "hooks": [
+    {
+      "cpu": "C29751",
+      "bytes": 4,
+      "target_cpu": "4A0300",
+      "helper_bytes": 84
+    },
+    {
+      "cpu": "C2EC3E",
+      "bytes": 4,
+      "target_cpu": "4A0000",
+      "helper_bytes": 366
+    },
+    {
+      "cpu": "C2EC8B",
+      "bytes": 6,
+      "target_cpu": "4A0200",
+      "helper_bytes": 134
+    }
+  ],
+  "allocations_hex_end_exclusive": {
+    "helpers": [
+      "4A0000",
+      "4A0400"
+    ],
+    "portrait_tiles": [
+      "4A1000",
+      "4A1480"
+    ],
+    "portrait_palette": [
+      "4A1480",
+      "4A14A0"
+    ],
+    "fixed_schala_name": [
+      "4A14A0",
+      "4A14A6"
+    ]
+  },
+  "inherited_occupied_spans_checked": 180,
+  "fill_alone_allocation_authority": false,
+  "displayed_name": {
+    "text": "Schala",
+    "glyph_bytes_hex": "B2BCC1BAC5BA",
+    "detail_start": "7E2FAC",
+    "visible_row_starts": [
+      "7E2EC6",
+      "7E3046",
+      "7E31C6"
+    ],
+    "row_identity_source": "7E0D5F[7E0413 + row], scroll 0 through 5",
+    "glyph_cells": 6,
+    "only_low_glyph_bytes_written": true,
+    "attributes_and_adjacent_LV_preserved": true,
+    "work_name_buffer_unchanged": true,
+    "vehicle_name_7E2C4D_7E2C52_unchanged": true,
+    "editable_or_saved_schala_name_added": false,
+    "schala_renaming_ui_resolved": false,
+    "non07_detail_sixth_cell_lowbyte_restored": 0
+  },
+  "static_validation": {
+    "focused_tests": 6,
+    "scoped_helper_cpu_cases": 863,
+    "every_helper_instruction_and_conditional_branch_outcome": true,
+    "independent_assembler_equality": true,
+    "intent_guard": true,
+    "complete_diff_guard": true,
+    "inverse_restores_parent": true,
+    "changed_bytes": 1766,
+    "declared_spans": 11,
+    "canonical_instruction_bytes_changed": 14,
+    "explicit_local_stack_peak_including_JSL": 11,
+    "interrupt_or_physical_stack_ownership_proved": false,
+    "historical_validation_chain_replayed": false,
+    "helper_case_counts": {
+      "tile": 680,
+      "palette": 97,
+      "preload": 86
+    },
+    "static_review": {
+      "path": "private/research/pc07_portrait_20261020/engineering/static_review_v2/static_review.json",
+      "sha256": "03ad4d928db448f7c6f2c6972199a0235e74e8c7499d7ec69bd5e18827078b57"
+    }
+  },
+  "preservation": {
+    "original_seven_portraits_palettes_and_tables": true,
+    "canonical_game_data_including_unused": true,
+    "npc_protected_spans": 13,
+    "previous_expanded_helpers_and_assets": true,
+    "worldmap": true,
+    "epoch_naming_route": true,
+    "save_preview_behavior": true
+  },
+  "native": {
+    "status": "verified-runtime-selected-controller-route",
+    "candidate_validated": true,
+    "parent_prerequisites_independently_inspected": true,
+    "parent_all_eight_full_portraits_observed": true,
+    "parent_all_three_list_name_positions_observed": true,
+    "parent_both_highlight_states_observed": true,
+    "parent_PC07_Crono_PC07_roundtrip_observed": true,
+    "parent_preload_before_first_portrait_frames": 15,
+    "candidate_new_upload_bytes_per_qualifying_redraw": 0,
+    "persistent_cache_assumed": false,
+    "candidate_timing_or_flicker_claim": "No recurrence of the v1 mode corruption in 2140 observed status end-frames; bounded native route only.",
+    "required": [
+      "Actual Epoch naming screen is a distinct unobserved route",
+      "No full-game VRAM or queue ownership proof",
+      "Tech tab still aliases PC07 to vehicle name Wings",
+      "Stats and equipment consumers require separate investigation; portrait acceptance does not validate displayed stats"
+    ],
+    "candidate_new_upload_bytes_per_full_menu_init": 1152,
+    "audited_portrait_snapshots": 17,
+    "native_hook_context_comparisons": 114,
+    "all_eight_observed": true,
+    "PC07_Crono_PC07_observed": true,
+    "original_seven_vram_faces_unchanged": true,
+    "all_portrait_pixels_pass": true,
+    "pixel_comparison_tolerance": "Nonzero native indices; one-level integer color tolerance.",
+    "status_end_frames_observed": 2140,
+    "all_observed_status_frames_bg_mode": 1,
+    "all_observed_status_frames_brightness": 15,
+    "all_observed_status_frames_nonblank": true,
+    "initial_upload_count_across_close_reopen": 2,
+    "each_initial_upload_master_clocks": 9558,
+    "initial_upload_scanline_pairs": [
+      [
+        176,
+        183
+      ],
+      [
+        183,
+        190
+      ]
+    ],
+    "new_graphics_source_frames": [
+      2762,
+      5022
+    ],
+    "initial_preload_records_original_three_exact": true,
+    "Schala_transition_hdma_display_scanlines": [
+      254,
+      256
+    ],
+    "Crono_return_hdma_display_scanlines": [
+      258,
+      260
+    ],
+    "queue_highwater_bytes": 112,
+    "Wings_vehicle_name_preserved": true,
+    "battery_unchanged": true,
+    "controller_only": true,
+    "runtime_game_state_injection": false,
+    "save_state_input": false,
+    "close_and_reopen_observed": true,
+    "other_menu_lifetime_audit": {
+      "status": "verified-runtime-three-tab-lifecycle",
+      "path": "private/research/pc07_portrait_20261020/runtime/candidate_wings_lifecycle_audit_v1.json",
+      "bytes": 70021,
+      "sha256": "80f285ee7ab2c377c4d3f27eb2b8cf23adea175a84ccdc39e55eb91481b27ac8",
+      "captures": 13,
+      "tabs": [
+        "items",
+        "Techs",
+        "settings"
+      ],
+      "status_returns_with_PC07_portrait": 3,
+      "stable_status_end_frames": 711,
+      "initial_preload_count": 1,
+      "portrait_regions_and_Wings_preserved": true,
+      "source_and_staged_ROM_battery_unchanged": true
+    },
+    "audit": {
+      "path": "private/research/pc07_portrait_20261020/runtime/candidate_wings_status_audit_v2.json",
+      "bytes": 218926,
+      "sha256": "9f90d42da34b93a8232bbd0d20972f09b12837b658c9b3145e8f6d18bfe1a14e"
+    }
+  },
+  "small_save_preview_portrait_added": false,
+  "private_local_only": true,
+  "git_push": false,
+  "portfolio_publication": false,
+  "production_or_full_game_completion_claim": false,
+  "reproduction": "python -B tools/build_pc07_status_portrait_v2.py --output private/test_runs/pc07_status_portrait_<fresh-name>",
+  "focused_test_command": "python -B -m unittest discover -s tests -p test_pc07_status_portrait_v2.py -v",
+  "rejected_v1": {
+    "candidate": "private/test_runs/pc07_status_portrait_v1/diagnostic.sfc",
+    "sha256": "c3a2ff596b3d77040b0fde4e52dd4816faa76a69f8b8df491b4f12a247a2cc28",
+    "preserved_unchanged": true,
+    "native_accepted": false,
+    "static_helper_cases": 1017,
+    "failure": "Repeated 1152-byte portrait DMA overran the selected status menu frame and HDMA startup; sixth detail glyph remained after leaving PC07.",
+    "measured_extra_transfer_master_clocks": 9558,
+    "measurement_boundaries": [
+      "C28698 before STX420B",
+      "C2869C after DMA stall and TDC"
+    ],
+    "selected_pc07_hdma_enable_scanline": 0,
+    "selected_pc07_display_restore_scanline": 1,
+    "selected_control_hdma_enable_scanline": 254,
+    "selected_control_display_restore_scanline": 256,
+    "timing_pilot": "private/research/pc07_portrait_20261020/runtime/runs/rejected_v1_completion_timing_pilot_v1",
+    "cpu_return_checks_passed": 98,
+    "failure_was_visible_despite_correct_vram_palette_tilemap": true
+  },
+  "dedicated_menu_vram": {
+    "word_span": [
+      "1B00",
+      "1D40"
+    ],
+    "byte_span": [
+      "3600",
+      "3A80"
+    ],
+    "tile_ids": [
+      "1B0",
+      "1D4"
+    ],
+    "tilemap_words": [
+      "0DB0",
+      "0DD4"
+    ],
+    "palette_number": 3,
+    "preload_bytes": 1152,
+    "per_redraw_portrait_dma_bytes": 0,
+    "persistent_cache": false,
+    "original_first_slot_replaced": false,
+    "original_three_preload_descriptors_unchanged": true,
+    "temporary_DP01": [
+      "0E",
+      "0D",
+      "0E"
+    ],
+    "census": {
+      "path": "private/research/pc07_portrait_20261020/engineering/menu_vram_census_v2.json",
+      "sha256": "621a9977209c157ccdb86dfe87a5ac37c333d469c764ecce7f7ab7412fb42526",
+      "rom_queue_call_sites": 154,
+      "retained_native_dma_records": 91,
+      "retained_menu_captures": 19,
+      "whole_game_vram_ownership": false,
+      "dynamic_producers_conditional_on_native_bounded_data": true
+    },
+    "rejected_earlier_span": [
+      "1980",
+      "1BC0"
+    ],
+    "rejection_reason": "Canonical name-entry keyboard DMA writes 1800..1B00."
+  },
+  "open_followups": {
+    "concept_art_likeness_revision_requested": true,
+    "Tech_tab_PC07_name_alias": "Wings appears in the Tech left list; status-name fix does not cover that consumer.",
+    "stats_and_equipment": "First status screenshot shows HP608/29 while raw record is HP608/base max969. Enlarged review resolves MP93/93 and attack48. Maximum-HP consumer tracing and separate caster design remain open.",
+    "Schala_rename_UI": false,
+    "native_vehicle_rename_exercised": false
+  }
+}

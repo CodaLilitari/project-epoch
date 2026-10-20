@@ -1,0 +1,284 @@
+{
+  "schema": "project-epoch-menu-stats-portrait-checkpoint-2026-10-20-v1",
+  "evidence_level": "verified-runtime-focused-private-menu-stats-portrait-and-HP-color-v2",
+  "user_scope_decision": "Fix calculation/display first; balance separately",
+  "source": {
+    "path": "private/test_runs/pc07_menu_stats_portrait_v1/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "c020bca3e766191a8db00bd0d4f75f9d2f16b3cd884c58184af8792f84f55244"
+  },
+  "candidate": {
+    "path": "private/test_runs/pc07_menu_stats_portrait_v2/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "d4b6915dc85ef2bc782583de4478f9ed61e07f68fb2dde58b9cced4350ba3117"
+  },
+  "build_receipt": {
+    "path": "private/test_runs/pc07_menu_stats_portrait_v2/receipt.json",
+    "bytes": 42999,
+    "sha256": "6cd8051e1bc9c7be691fb5a3f770132dfe82fd562cd7abc51fad282f1fa473fd"
+  },
+  "source_qualification": {
+    "path": "private/research/pc07_menu_stats_20261020/engineering/source_qualification_v1.json",
+    "bytes": 6424,
+    "sha256": "12a54468542808be8130d558792f7658e6d0f498fad1146f208eec6411972c71"
+  },
+  "previous_native_symptom": {
+    "path": "private/research/pc07_portrait_20261020/runtime/visible_stats_reuse_v1.json",
+    "sha256": "c5716678cfd9d20fe14c51abc31cdd0e827f1b0e862b21f16b3d54b7685bd55f",
+    "initial": {
+      "HP": 608,
+      "displayed_max_HP": 29,
+      "Attack": 48
+    },
+    "later": {
+      "HP": 608,
+      "max_HP": 969,
+      "Attack": 236
+    },
+    "new_run_for_symptom": false
+  },
+  "fix": {
+    "hook_cpu": "C299C1",
+    "hook_bytes": 5,
+    "helper_cpu": "4A0400",
+    "helper_bytes": 30,
+    "reservation": [
+      "4A0400",
+      "4A0440"
+    ],
+    "admission": "loopcounter7 and live identity07",
+    "safe_empty_identity0": "skip",
+    "counter8": "exit",
+    "native_body": "unchanged",
+    "live_commit_spans": [
+      [
+        "7E2833",
+        "7E2835"
+      ],
+      [
+        "7E2866",
+        "7E2871"
+      ]
+    ],
+    "new_WRAM_scratch": false,
+    "local_stack_bytes_including_JSL": 6,
+    "base_balance_equipment_growth_save_data_changed": false,
+    "epoch_source_name_changed": false
+  },
+  "art": {
+    "version": "V6B",
+    "indexed_input": {
+      "path": "private/research/pc07_portrait_20261020/native_conversion_v6b/schala_v6b_indexed.json",
+      "bytes": 5468,
+      "sha256": "9d3bccbfb44271393975f3228b0329064e0125f9b3ac547a71713bae1036ea8e"
+    },
+    "dimensions": [
+      48,
+      48
+    ],
+    "tiles": 36,
+    "graphics_bytes": 1152,
+    "palette_bytes": 32,
+    "graphics_sha256": "3c30e7d91423131c5d7789907dc725dab621250b6131f07f9f282373e841d825",
+    "palette_sha256": "b8ecadddcf15f8ed3612584a009c37c992ef7ddb59eac1560b870e169b4fc155",
+    "roundtrip": "exact",
+    "source_color_palette_revision": true,
+    "spatial_pixel_painting": false,
+    "likeness_final_user_acceptance": false,
+    "review": "private/research/pc07_portrait_20261020/native_conversion_v6b/ART_REVIEW.md"
+  },
+  "static_validation": {
+    "scoped_helper_cases": 647,
+    "all_new_instructions_and_conditional_edges": true,
+    "independent_Asar_equality": true,
+    "sealed_guard_valid_candidate": true,
+    "guard_negative_cases": 10,
+    "complete_diff_coverage": true,
+    "declared_spans": 6,
+    "changed_bytes": 1191,
+    "canonical_instruction_bytes": 5,
+    "prior_expanded_code_unchanged": true,
+    "canonical_unused_data_unchanged": true,
+    "protected_NPC_spans": 13,
+    "original_seven_portraits_unchanged": true,
+    "portrait_preload_geometry_and_timing_unchanged": true,
+    "historical_chain_replayed": false
+  },
+  "open": [
+    "Caster balance and growth",
+    "Equipment policy and magic-damage formula",
+    "Tech-tab vehicle-name alias",
+    "Schala rename UI",
+    "Final concept-art likeness acceptance",
+    "Full-game regression coverage"
+  ],
+  "private_local_only": true,
+  "production_approval": false,
+  "published": false,
+  "reproduction": [
+    "python -B -m unittest discover -s tests -p test_pc07_menu_hp_color_v1.py -v",
+    "python -B tools/build_pc07_menu_hp_color_v1.py --output private/test_runs/pc07_menu_stats_portrait_<fresh-name>"
+  ],
+  "native_numeric_art_v1": {
+    "status": "passed",
+    "audit": {
+      "path": "private/research/pc07_portrait_20261020/runtime/candidate_stats_portrait_audit_v1.json",
+      "bytes": 104702,
+      "sha256": "1e0b597a4fb811207f68e173c0c32a1b1d7a522d5276a71ac73002bdb076f92d"
+    },
+    "startup_generations": 2,
+    "iterations_each": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "gate_contracts": 16,
+    "PC07_own_record_reads_each": 80,
+    "PC07_committed_byte_writes_each": 13,
+    "first_changed_PC07_offsets": [
+      61,
+      63,
+      64
+    ],
+    "second_changed_PC07_offsets": [],
+    "original_seven_records_exact_across_each_PC07_pass": true,
+    "base_stats_equipment_and_MP_unchanged": true,
+    "first_and_reopened_visible": {
+      "HP": 608,
+      "max_HP": 969,
+      "MP": 93,
+      "max_MP": 93,
+      "Attack": 236,
+      "Defense": 211
+    },
+    "canonical_PC07_iteration_master_clocks_each": 14068,
+    "screen_captures": 10,
+    "status_frames": 1150,
+    "all_status_frames": {
+      "BG_mode": 1,
+      "brightness": 15,
+      "forced_blank": false
+    },
+    "portrait_graphics_DMA": {
+      "count": 2,
+      "bytes_each": 1152,
+      "master_clocks_each": 9558,
+      "phase": "one per forced-blank menu initialization",
+      "per_redraw_count": 0
+    },
+    "VRAM_palette_comparison": "byte-exact",
+    "rendered_RGB_tolerance": 1,
+    "Wings_vehicle_bytes_unchanged": true,
+    "source_and_staged_ROM_battery_unchanged": true,
+    "runtime_state_injections": false,
+    "native_SafeEmpty_run": false,
+    "new_flying_Epoch_or_NPC_execution": false,
+    "new_save_or_coldload_test": false,
+    "source_capture": "private/research/pc07_portrait_20261020/runtime/runs/candidate_stats_portrait_v1/schala_first.png",
+    "limits": [
+      "Selected initial-refresh, control, return, and reopen route only; no full-game ownership or balance proof.",
+      "The seven original records are compared immediately across only the new PC07 pass, not against an invented immutable baseline.",
+      "Native palette conversion allows one RGB level; VRAM/palette bytes compare exactly.",
+      "No NPC execution or flying Epoch rerun; NPC ROM span equality and actual Wings name preservation are separate evidence.",
+      "Tech-tab Wings label remains an independent known issue."
+    ]
+  },
+  "numeric_art_candidate_v1": {
+    "path": "private/test_runs/pc07_menu_stats_portrait_v1/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "c020bca3e766191a8db00bd0d4f75f9d2f16b3cd884c58184af8792f84f55244"
+  },
+  "numeric_art_build_receipt_v1": {
+    "path": "private/test_runs/pc07_menu_stats_portrait_v1/receipt.json",
+    "bytes": 42645,
+    "sha256": "7ba2adfec600df29ddf50932df31480777c6f75412d07bb4879794d536c55f2b"
+  },
+  "numeric_art_parent": {
+    "path": "private/test_runs/pc07_status_portrait_v2/diagnostic.sfc",
+    "bytes": 8388608,
+    "sha256": "773e32de495acad1ac6d12fbe15101f45bc0240e65af47e4de19a318d54de128"
+  },
+  "hp_color_delta": {
+    "hook": "C2A200",
+    "helper": "4A0440",
+    "helper_bytes": 103,
+    "reservation": [
+      "4A0440",
+      "4A0540"
+    ],
+    "source_layout_flag": "7E0D36",
+    "observed_layout": 255,
+    "corrected_earlier_address_misstatement": true,
+    "threshold_source": "9ACF derived maxHP",
+    "HP_source": "9A93",
+    "threshold_rule": "floor(maxHP/10)",
+    "critical_rule": "currentHP<=threshold",
+    "original_fallback": "470205 unchanged",
+    "static_cases": 273,
+    "all_new_instructions_and_edges": true,
+    "independent_Asar_equality": true,
+    "guard_refusals": 8,
+    "declared_spans": 4,
+    "changed_bytes": 113,
+    "previous_code_art_numeric_balance_and_equipment_unchanged": true,
+    "source_followup": "private/research/pc07_menu_stats_20261020/engineering/HP_color_source_followup_v1.json",
+    "native_critical_HP_test": false,
+    "native_status": "passed ordinary-HP/control/reopen",
+    "critical_HP_evidence": "static instruction-model boundaries only"
+  },
+  "native": {
+    "status": "passed",
+    "audit": {
+      "path": "private/research/pc07_portrait_20261020/runtime/candidate_hp_color_audit_v1.json",
+      "bytes": 17556,
+      "sha256": "7b89e2cde02711f02b70f6db87e99bddd1ad2b135767c3388dab7d20b25baea4"
+    },
+    "distinct_threshold_contexts": 3,
+    "qualified_PC07_distinct_samples": 1,
+    "occurrences_each": 2,
+    "CPU_audit_sampling": "first captured sample per distinct operand/context; repeats counted",
+    "captured_occupied_fallback_word": 56320,
+    "actual_PC07_derived_source_read": 969,
+    "PC07_threshold_return": 96,
+    "PC07_HP": 608,
+    "PC07_color_word_0D5D": 0,
+    "screen_captures": 6,
+    "PC07_current_and_maxHP_attributes": [
+      0,
+      0,
+      0
+    ],
+    "selected_HP_color": "ordinary-white",
+    "status_frames": 760,
+    "all_status_frames": {
+      "BG_mode": 1,
+      "brightness": 15,
+      "forced_blank": false
+    },
+    "portrait_palette_original7_and_own_VRAM_exact": true,
+    "Wings_unchanged": true,
+    "source_and_staged_inputs_unchanged": true,
+    "native_critical_HP_fixture": false,
+    "runtime_state_injections": false,
+    "prior_numeric_matrix_repeated": false,
+    "new_flying_Epoch_NPC_battle_save_or_tab_matrix": false,
+    "final_capture": "private/research/pc07_portrait_20261020/runtime/schala_fixed_portrait_stats_white_hp_native_4x.png",
+    "final_capture_visually_inspected": true,
+    "limits": [
+      "Ordinary-HP608/969 fixture only; low-HP critical-color runtime not exercised.",
+      "CPU return/source/decision checks use the first captured sample of each distinct observed operand/context group.",
+      "No repeated80-source-read/13-commit-write recomputation matrix, all-eight route, tab matrix, new battle, or injected state.",
+      "Existing stat, art and NPC preservation evidence remains separate; this run verifies unchanged numbers/portrait and the new normal color branch.",
+      "Tech-tab Wings alias remains open; native Epoch naming/flying were not rerun."
+    ]
+  },
+  "numeric_art_reproduction_v1": [
+    "python -B -m unittest discover -s tests -p test_pc07_menu_stats_portrait_v1.py -v",
+    "python -B tools/build_pc07_menu_stats_portrait_v1.py --output private/test_runs/pc07_menu_stats_portrait_<fresh-name>"
+  ]
+}

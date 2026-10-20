@@ -1,0 +1,62 @@
+{
+  "schema": "project-epoch-prismatic-study-v1",
+  "date": "2026-10-20",
+  "evidence_level": "offline-decoded-art-and-completed-visual-source-review",
+  "preferred_study": "A-pearl-cyan-lilac",
+  "native_prismatic_effect_installed": false,
+  "original_magus_modified": false,
+  "production_approval": false,
+  "source": {
+    "selected_rom_bytes_read": 3897,
+    "layer_dimensions": [256, 160],
+    "visible_colors": 3,
+    "opaque_pixels": 19976,
+    "brightest_index_pixels": 16804,
+    "palette_record_stride_bytes": 8,
+    "actual_selected_palette_copy_bytes": 6
+  },
+  "comparison": {
+    "path": "private/research/pc07_prismatic_techs_20261020/color_study_v1/prismatic_three_color_comparison_v1.png",
+    "sha256": "10f57f75d0a1626521487fe2af8791292b3d377861796efba5c2d73e31c330a3"
+  },
+  "lily": {
+    "state": "completed-response-saved-and-reopened",
+    "observed_selection": "Personal GPT-6 Pro",
+    "conversation_title": "Chrono Trigger 8th Character",
+    "conversation_id": "69f1efdd-b298-83ea-a50e-0e60834641be",
+    "response": "private/research/pc07_prismatic_techs_20261020/collaboration/lily_response_v1.txt",
+    "actual_rom_delivered": true,
+    "reported_rom_byte_inspection": false,
+    "reported_emulation": false,
+    "recommendation": "retain casts; A first, C second; unchanged native Dark Mist onset/peak/fade observation"
+  },
+  "claude_code": {
+    "state": "completed-native-image-source-response-received",
+    "job_id": "80b909d14f1d4765bd9bf07ed26d7f26",
+    "scope": "actual images and selected source; no binary ROM or native claim",
+    "observed_response_model": "claude-opus-5-5",
+    "effort": "max",
+    "response": "private/research/pc07_prismatic_techs_20261020/collaboration/claude_response_v1.txt",
+    "preferred_study": "C-provisionally",
+    "coda_disposition": "retain A as leading study, compare C under observed native blending; keep front gesture while impact alignment remains open"
+  },
+  "wren": {
+    "state": "requested-desktop-route-unavailable-in-current-tools",
+    "substitute_conversation_used": false
+  },
+  "native_baseline": {
+    "state": "one-unchanged-Magus-Dark-Mist-action-observed-complete",
+    "packet": "private/research/pc07_prismatic_techs_20261020/native_dark_mist_v1",
+    "completion_frames_after_resolver": 431,
+    "board_sha256": "474118466b559d436de6d52446b25a25b8cc2bc08381d39562828eaf27997acf",
+    "injections_after_checkpoint": false,
+    "recolor_tested": false,
+    "observation": "animated secondary palette and phase-specific BG3 half-additive subscreen compositing; raster/window state varies within frames"
+  },
+  "limits": [
+    "initial layer only",
+    "native window/blend/raster behavior not represented",
+    "later palette reloads not represented",
+    "three-color ramps do not establish moving iridescence"
+  ]
+}

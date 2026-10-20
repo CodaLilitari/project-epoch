@@ -1313,3 +1313,112 @@ def audit_pc07_worldmap_images(manifest, source, target):
     """Require the ten declared spans, complete diff and parent restoration."""
     import pc07_worldmap_write_contract_v1 as diagnostic
     return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_run_pose_manifest(manifest):
+    """Fixed private eight-reference movement remap; production stays closed."""
+    import pc07_run_pose_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_run_pose_images(manifest, source, target):
+    """Complete current-image delta, selector isolation and original NPC preservation."""
+    import pc07_run_pose_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_battle_pose_manifest(manifest):
+    """Fixed private appended battle art and two qualified KO producers."""
+    import pc07_battle_pose_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_battle_pose_images(manifest, source, target):
+    """Complete delta, source prefixes, selector isolation and NPC preservation."""
+    import pc07_battle_pose_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_caster_attack_manifest(manifest):
+    """Fixed private stationary Attack consumers and appended front casting art."""
+    import pc07_caster_attack_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_caster_attack_images(manifest, source, target):
+    """Complete delta, exact hooks, retained KO/NPC assets and selector isolation."""
+    import pc07_caster_attack_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_caster_pose_refinement_manifest(manifest):
+    """Fixed private up/front refinement with a separately owned sparse tile island."""
+    import pc07_caster_pose_refinement_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_caster_pose_refinement_images(manifest, source, target):
+    """Complete delta, retained32frame prefix and exact sparse field-reader fence."""
+    import pc07_caster_pose_refinement_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_status_portrait_manifest(manifest):
+    """Fixed private full-status portrait routing; production catalogs stay closed."""
+    import pc07_status_portrait_write_contract_v1 as diagnostic
+    return diagnostic.validate_manifest(manifest)
+
+
+def audit_pc07_status_portrait_images(manifest, source, target):
+    """Complete delta, exact two instruction hooks and all original portraits preserved."""
+    import pc07_status_portrait_write_contract_v1 as diagnostic
+    return diagnostic.audit_images(manifest, source, target)
+
+
+def validate_pc07_status_portrait_v2_manifest(manifest):
+    """Separate private dedicated-preload portrait contract; no production grant."""
+    from pc07_status_portrait_write_contract_v2 import validate_manifest
+    return validate_manifest(manifest)
+
+
+def audit_pc07_status_portrait_v2_images(manifest, source, target):
+    """Complete-diff audit for the separately versioned portrait candidate."""
+    from pc07_status_portrait_write_contract_v2 import audit_images
+    return audit_images(manifest, source, target)
+
+
+def validate_pc07_menu_stats_portrait_v1_manifest(manifest):
+    """Private initialized-PC07 menu stat gate plus reviewed portrait payload."""
+    from pc07_menu_stats_portrait_write_contract_v1 import validate_manifest
+    return validate_manifest(manifest)
+
+
+def audit_pc07_menu_stats_portrait_v1_images(manifest, source, target):
+    """Fixed five-byte hook and named expanded delta with complete coverage."""
+    from pc07_menu_stats_portrait_write_contract_v1 import audit_images
+    return audit_images(manifest, source, target)
+
+
+def validate_pc07_menu_hp_color_v1_manifest(manifest):
+    """Private normal-menu PC07 color correction; existing exchange path retained."""
+    from pc07_menu_hp_color_write_contract_v1 import validate_manifest
+    return validate_manifest(manifest)
+
+
+def audit_pc07_menu_hp_color_v1_images(manifest, source, target):
+    """Complete fixed color delta; all previous numeric/art work remains exact."""
+    from pc07_menu_hp_color_write_contract_v1 import audit_images
+    return audit_images(manifest, source, target)
+
+
+
+def validate_epoch_development_bps_export_v1_manifest(manifest):
+    """Export one pinned diagnostic snapshot; no new image or production grant."""
+    from epoch_development_bps_export_contract_v1 import validate_manifest
+    return validate_manifest(manifest)
+
+
+def audit_epoch_development_bps_export_v1_patch(manifest, source, target, patch):
+    """Complete image-delta accounting and exact BPS apply before patch emission."""
+    from epoch_development_bps_export_contract_v1 import audit_patch
+    return audit_patch(manifest, source, target, patch)

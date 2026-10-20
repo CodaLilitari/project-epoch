@@ -1,5 +1,352 @@
 # Project Epoch current handoff
 
+## October 20 development download and correspondence checkpoint
+
+Andrei accepted the corrected in-game portrait/status view and requested a
+public development update, selected screenshots, a patch and matching states.
+The final package is **IN DEVELOPMENT — NOT YET TRULY PLAYABLE**. It contains
+one deterministic BPS, two independently restored Mesen states, six labeled
+screenshots, installation instructions and machine-readable manifests. No ROM
+is distributed; states remain download assets outside source Git. Older and
+injected study screenshots retain their actual build and evidence labels.
+
+The BPS applies directly to the exact clean unheadered US Rev 0 image and
+reproduces the accepted `d4b6915d...` eight-MiB candidate below. Ten focused
+format/export tests and an independent application using pinned Mesen patcher
+source passed; all three CRCs and all target bytes match. The original research
+chain was not replayed. See `epoch_development_release_2026_10_20.md`,
+`project_epoch_development_update_2026_10_20.md` and their JSON counterparts.
+
+The public download is available through the GitLab generic package
+`project-epoch-development/2026.10.20`; the portfolio update contains the
+portrait/status screenshot and the same downloadable package. Exact publication
+receipts and the reviewed Justin email draft remain private under
+`private/research/epoch_update_20261020/`. Lily reviewed the supplied source,
+notes and portrait in the saved Epoch conversation; she did not run the game.
+The email remains a draft for Andrei, not a sent message.
+
+Resume engineering at the explicit unfinished consumers below, rather than
+replaying the completed publication or historical proof chain. The Tech-tab
+name, small save-card portrait, wider party/save lifecycle support, caster
+balance, equipment, Techs and story progression remain open.
+
+## October 20 current: numeric stats, portrait and HP-color correction pass
+
+Final screenshot inspection of retained v1 exposed another display issue:
+HP 608/969 was red despite all ten saved status bytes being zero. The older
+threshold adapter admitted party-exchange mode only, so the ordinary status
+route fell back to the seven-entry cache and read occupied `$0D46/$0D47`.
+The separately guarded v2 adapter now uses PC07's own derived maximum:
+floor(969/10)=96. Actual CPU reads/comparison and the ordinary white HP color
+pass first selection and reopen, with Crono/Marle controls. Six captures and
+760 observed status frames pass. Critical-HP boundaries are statically tested;
+no critical-HP native fixture or repeat of the older battle/vehicle matrix
+was added. Preserve v1 and its red-HP capture as historical evidence.
+
+The latest tested private candidate is
+`private/test_runs/pc07_menu_stats_portrait_v2/diagnostic.sfc`, SHA256
+`d4b6915dc85ef2bc782583de4478f9ed61e07f68fb2dde58b9cced4350ba3117`.
+It preserves the prior numeric/art correction unchanged. That initialization
+gate lets the existing stat routine process PC07
+only when her initialized live identity is present. The first menu opening
+now recomputes the stale derived maximum HP/Attack from 1029/48 to 969/236
+before any Schala selection. Actual record reads and thirteen native commit
+writes are observed. The seven original records remain unchanged across that
+additional pass. Both openings, sixteen gate returns and ten selected
+Crono/Marle/Schala captures pass; source/staged ROM and battery are unchanged.
+
+V6 palette-B portrait art replaces only Schala's separately owned tiles and
+palette. It follows the original concept's calmer expression, pale face and
+blue hair more closely; an independent visual review supports this improvement,
+with remaining likeness differences documented. This is a new concept-derived
+candidate subsequently accepted by Andrei in the screenshot follow-up. All seven original face
+regions remain exact; original NPC assets and actual vehicle name Wings remain
+preserved. No portrait code or upload scheduling changed in this derivative.
+
+Andrei explicitly chose calculation/display fixes first and balance separately,
+then confirmed equipment can wait. Base stats, equipment, growth and save inputs
+remain unchanged. The requested real emulator screenshot is
+`private/research/pc07_portrait_20261020/runtime/schala_fixed_portrait_stats_white_hp_native_4x.png`;
+it is a plain nearest-neighbor enlargement of the first-selection capture.
+The compact final receipt is `private/research/pc07_portrait_20261020/runtime/hp_color_delivery_receipt_v1.json`.
+See `schala_menu_stats_portrait_2026_10_20.md` and its machine-readable counterpart.
+
+The Tech tab still calls PC07 Wings; this separate name consumer remains open.
+Schala renaming and native Epoch-renaming tests also remain separate work.
+
+## October 20 preceding portrait-integration checkpoint
+
+The separately guarded full-status portrait v2 candidate is
+`private/test_runs/pc07_status_portrait_v2/diagnostic.sfc`, SHA256
+`773e32de495acad1ac6d12fbe15101f45bc0240e65af47e4de19a318d54de128`.
+Its controller-only route passes all eight faces, Schala-to-Crono restoration,
+close/reopen and the separate Item/Tech/Settings-to-status returns. Graphics
+upload once per menu initialization during forced blank. All seven original
+portrait regions, Schala's separate region, the six-letter status name and
+the vehicle's custom Wings name remain intact. This is bounded integration
+evidence, not approval of every menu consumer or the final artwork.
+
+Andrei subsequently requested closer original-concept likeness and corrected stats.
+The first status display shows HP 608/29 and Attack 48, while later redraws
+show 608/969 and Attack 236. These tiles match the parent: portrait v2 did
+not introduce the defect. The source sidecar has valid base max HP 969;
+the initial menu recalculation stopped after PC06. The narrow PC07
+refresh fix is now in the separately tested derivative above.
+The current test loadout/base stats remain donor-derived; caster progression
+and equipment are separate unfinished work. Portrait V4/V5 studies remain
+preserved alternatives; the derivative above uses the closer V6 palette B.
+
+The Tech tab separately still calls PC07 Wings. The status name patch does
+not fix that consumer, and no native Epoch-renaming test is claimed.
+See `schala_status_portrait_2026_10_20.md` and its machine-readable checkpoint.
+
+The refined front/rear casting and affected field/vehicle regressions below
+are complete within their stated bounds. Lily and Claude Code both completed
+image/source reviews; they differ on the preferred prismatic palette. The
+unchanged native Dark Mist baseline is now captured through completion,
+including its later palette brightening and raster limits. No prismatic
+Tech is installed. Preserve the completed evidence instead of replaying it.
+
+## October 20 historical first portrait integration: v1 rejected and superseded
+
+The selected portrait is the earlier softer V2 likeness, converted to 48x48
+and its own sixteen-color palette. Andrei rejected the later angular V3.
+The first guarded status-portrait candidate
+`private/test_runs/pc07_status_portrait_v1/diagnostic.sfc` has SHA256
+`c3a2ff596b3d77040b0fde4e52dd4816faa76a69f8b8df491b4f12a247a2cc28`.
+**Do not promote this image:** its controller-only native route exposes
+display corruption on Crono/Schala and a stale sixth name glyph after leaving
+Schala. The other six portraits, graphics/palette contents and hook return
+contexts pass their scoped checks. The vehicle's custom name Wings remains
+unchanged. The failed run and audit are retained under
+`private/research/pc07_portrait_20261020/runtime/`.
+
+The later v2 above fixes the recurrent transfer and stale sixth detail-name
+cell. Preserve the rejected v1 and its timing pilot. The 17b156 casting
+candidate below remains the unchanged parent of the accepted integration.
+
+Lily completed the casting/prism review in Personal GPT-6 Pro, retaining the
+compact casts and preferring pearl/cyan/lilac study A. The prismatic treatments
+remain offline; the unchanged native Dark Mist baseline is now complete.
+Her separate portrait critique supports retaining the softer face. That answer
+was saved locally, but a subsequent conversation reload failed; acknowledgment
+is pending. Claude Code's separate image/source review is complete. See
+`schala_prismatic_study_2026_10_20.md` and private review receipts.
+
+## October 20: refined front/rear casting tested; portrait added to active scope
+
+The separate tested casting candidate is
+`private/test_runs/pc07_caster_pose_refinement_v1/diagnostic.sfc`, SHA256
+`17b156701321ec11b5ed115dff0964665160bc99a857641d42078a7d73e3cb3e`.
+Four native battle contexts pass behavior and high-tile reads; the new rear
+poses match every opaque pixel. Front's three outline mismatches are inherited;
+all seventy changed release pixels match. Front impact is below the test HUD,
+so exact palm-to-bolt alignment is still open. All prior frames remain intact.
+The affected field route has 587 equal rows/35 identical captures; the flying
+Epoch house/world roundtrip separately preserves its new landing position.
+See `schala_caster_pose_refinement_2026_10_20.md` and its machine counterpart.
+
+Lily is reviewing the actual media, ROM and source in Personal GPT-6 Pro.
+Prismatic palettes remain offline studies. Andrei now explicitly requests
+Schala's portrait from her concept art, matching the original seven portraits'
+style and tight 48x48 crop. Keep original portraits, palettes and all existing
+content intact; use separate graphics storage and qualified consumer routing.
+The portrait is not yet installed in the casting candidate above. Preserve
+the July portrait studies as historical, not selected retail-faithful art.
+
+## October 20 current direction: poses, prismatic studies, complete legacy preservation
+
+The next active pass finishes and tests front/up casting gestures, then asks
+collaborators to compare prismatic dream-Tech color treatments. The accepted
+stationary-caster image below remains the baseline until a separate guarded
+derivative passes its focused tests. No prismatic Tech is installed yet.
+
+Andrei's latest explicit constraint preserves all existing content, including
+unused/cut/debug and cheat-accessible weapons, equipment and Techs. Unused is
+not free. New Schala content belongs in separately named expanded storage with
+explicit mappings; retain legacy IDs, records, assets and behavior. See the
+absolute invariant in `AGENTS.md` and `schala_caster_direction_2026_10_20.md`.
+
+## October 20: stationary casting Attack and forward pose pass native checks
+
+The current tested private candidate is
+`private/test_runs/pc07_caster_attack_v1/diagnostic.sfc`, SHA256
+`9f678764d05f2f16e49c5a7cafe03ee6f192330322988918ff8bca2d1b2740f0`.
+Schala casts from her existing position for normal and critical Attacks.
+The approach flag is cleared after the original facing calculation; qualified
+PC07 selects ranged packages `$04`/`$10` and sound `$4D`. No run-up or physical whack is
+selected. This remains the existing third-active-position implementation.
+Damage, equipment, action/result/queue processing and MP cost are unchanged.
+
+Front preparation 30/release 31 append to the existing art. All 30 prior frames,
+112 tiles, thirteen NPC spans, palette, world-map V5 and earlier KO helpers
+remain unchanged. Both current guards pass: 953 changed bytes/20 declared spans.
+Eight focused tests and 20,189 independent synthetic helper cases pass, without
+replaying historical proofs. Source and Asar bytes agree.
+
+Twelve candidate native processes finish normally: an unforced Schala critical
+Attack, an ordinary Crono control, and ten declared animation-context injections.
+All eleven Schala cases remain stationary, complete damage/cleanup and return
+to readiness. The natural action retains the parent's 996 damage. Crono's
+movement, 179-frame action and sounds match the parent observation. Actual
+near 24px and inclusive 40px cases produce distance `$00`; natural/far produces `$FF`.
+The initial near/equal fixtures changed target display coordinates without
+the distance cache; retain them as facing/render studies, not boundary proof.
+
+Actual rendered frames show Lily's horizontal cast and the new forward pair.
+The small projectile and bright target impact are present; the travel fleck
+is low contrast. Back/up retains frame 0 rather than a newly authored gesture.
+Earlier injected near-front captures show lower-body occlusion outside casting;
+the cause remains unresolved and the corrected front critical capture is full.
+Keep pixel/capture lag and diagnostic context distinct from natural play.
+
+The same candidate passes board/fly/land/disembark/hut/world/reboard in 4,164
+frames. Epoch retains its new (544,480) position through the house transition,
+from starting (544,512). Record, roster, Epoch name and SRAM remain unchanged.
+This is the requested scene roundtrip, not a cold-load or normal save test.
+
+Lily's completed Personal 5.6 Pro review recommends retaining front v3, with
+minor palm-cluster/timing cautions. GPT-6 was visibly usage-locked. Actual art,
+ROM and source were supplied; her static review makes no native claim. Claude
+Code was not dispatched at its exhausted included allowance. No paid usage,
+Git push or portfolio publication occurred. All emulator runs are closed.
+
+Human checkpoint: `docs/schala_caster_attack_2026_10_20.md`.
+Machine checkpoint: `references/schala_caster_attack_2026_10_20.json`.
+Native packet: `private/test_runs/pc07_caster_attack_observation_v1/`.
+Research/source review: `private/research/pc07_caster_attack_20261020/`.
+This milestone is complete. Broader party-position support, distinct back-cast
+art, Magus-derived dream Techs and full-game qualification remain future work;
+Project Epoch is not complete. Preserve the prior battle candidate unchanged.
+
+## October 20: battle casting and KO observed; flying Epoch regression passed
+
+The current private battle-pose candidate is
+`private/test_runs/pc07_battle_pose_v1/diagnostic.sfc`, SHA256
+`7549c49c3fec255ea559e8b1e0420a7b6285d921948f9550308291270db470e5`.
+It appends Lily's two horizontal casting poses and three explicit mirrors
+(casting/recoil), plus Red's recoil and prone KO. Original body frames 0–22,
+79 graphics tiles, all thirteen protected NPC spans, the palette and world-map
+V5 remain unchanged. Both current shared guards pass: 1,525 changed bytes in
+23 declared spans. Ten codec/mirror and five guard tests pass; the independent
+two-helper opcode model passes 24,308 cases. No historical proof chain ran.
+
+Actual critical Attack requests 26 → 31 → 32 → 0E → 03. Keep movement26,
+run06 and recovery unchanged. New left-facing preparation27/release28 execute
+and appear in the rendered output; observed phase intervals remain 7/21 frames.
+The baseline's direct KO lookup returned invalid frameE0, briefly hiding Schala,
+then status08 displayed an upright cast. Two narrowly qualified helpers now
+return prone26 and redirect matched PC07 status08 to isolatedF0. Original07/08
+streams and the canonical D1 table remain intact. Native entry/continuation
+checks and final HP0/F0/cache26 pass. Horizontal recoil25/29 is installed but
+not naturally exercised by this encounter, whose hit05 uses existing facing0
+frame18. Do not claim full recoil, normal/path Attack or all-facing coverage.
+
+The first comparison board used captures that still displayed the old frame;
+screen output lagged cache updates. Use `battle_before_after_v2_3x.png` in the
+new observation folder. Later existing captures independently match every
+opaque pixel of preparation27 and release28; no extra emulator run was needed.
+
+The same image passes the requested Epoch scene test: board, fly, land and
+disembark, enter Ioka hut0115, return to world01F3, and reboard. Epoch retains
+the new position (544,480), distinct from its starting (544,512). The roster,
+live PC07 record, Epoch name and SRAM remain unchanged. This is an actual
+house/world scene roundtrip, not a cold-load or battery-save substitute.
+
+Andrei's latest direction is a weapon-free caster at every range, including
+critical hits, with a front-facing cast and Magus-derived dream-themed Techs
+connected to the Dream Devourer. The old "Astral Regent" design is historical;
+its incompatible costume, palette and Shadow kit are superseded. See
+`docs/schala_caster_direction_2026_10_20.md` and its machine-readable counterpart.
+
+The current ROM still inherits Crono Attack movement, effects and mechanics.
+The bounded Lucca/Marle investigation proves policy00 alone still permits
+close whacks. A dedicated PC07 no-approach/9930 route, ranged packages04/10,
+and deliberate visual/audio adapters remain to implement. Front-cast studies
+v1/v2 are private, reviewed and uninstalled; the forward release still needs
+clearer hand placement. Preserve this tested image while developing that next
+candidate. Magus's own data and all original NPC assets must remain intact.
+
+Human evidence: `docs/schala_battle_pose_pass_2026_10_20.md`.
+Machine checkpoint: `references/schala_battle_pose_pass_2026_10_20.json`.
+Current native packet: `private/test_runs/pc07_battle_pose_observation_v1/`.
+Current engineering/art: `private/research/pc07_battle_pose_20261020/`.
+
+## October 20: minimal normal-run correction, native comparison passed
+
+Andrei clarified that suitable PC07 sprites must be preserved: fix assignments
+and fill genuine gaps, rather than replace the whole body sheet. Lily's
+corrected v2 casting preparation/release is now the preferred casting basis;
+that selection supersedes the October18 art-direction note, but those study
+frames are not installed. Keep the robe/covered feet, pure-caster direction
+and original NPC assets intact.
+
+The new private `private/test_runs/pc07_run_pose_v1/diagnostic.sfc` has SHA256
+`00e3440c2927834554c7e3f872a5b995b76e53e1e6775ddd76abe9bac0b8f18f`.
+It changes eight normal-run `$06` frame references to existing directional
+movement pairs, plus eight header checksum bytes. All23 body frames, shared
+timing, world-map V5 and thirteen original NPC spans remain byte-identical.
+Current intent/complete-diff guards and five focused tests pass. The accepted
+V5 parent remains unchanged; no historical builder/proof chain was replayed.
+
+Two headless Snes9x runs used the same16-step controller plan and recorded
+587 end-frame snapshots each through frame3286. In map01DA with00/01/07 in
+the supported party positions, baseline `$06` uses `$13/$14` in all directions;
+the candidate uses up04/06, down08/0A, left0C/0D, right0E/0F. Walk and final
+idle return are observed; positions/context match across all paired snapshots,
+and both batteries remain unchanged. Root inspected the same-frame rendered
+comparison. This is bounded native functional/rendering evidence, not a bus
+proof or a complete game-path qualification. See
+`private/test_runs/pc07_run_pose_observation_v1/` and
+`docs/schala_run_pose_correction_2026_10_20.md`.
+
+Next: observe the actual Attack animation requests before binding Lily's cast
+poses. KO/status `$08` currently shares its casting token with the end of
+`$07`; correct those roles deliberately rather than blindly overwrite one
+entry. Alternate leader run `$17` remains outside this third-position pass.
+Explicit scripted `$06` requests inherit the corrected motion; their PC07
+attribution remains unresolved. No publication occurred in this pass.
+
+## October 18: main-body art continuation, no new ROM build
+
+Andrei resumed the regular/battle/run/KO art with Lily and the other
+contributors, keeping retail Schala's full robe and covered feet. Coda now has
+a twelve-frame directional study: eight running frames across four facings,
+casting preparation/release, recoil and KO. Actual PNG/index-grid equality,
+palette/transparency and four-piece geometric coverage pass; native encoding,
+consumer bindings and in-game motion remain unfinished. Front/back retain the
+installed head/hair/collar pixels; left is a disclosed mirror of right. A more
+energetic right-running alternative is preserved separately.
+
+Lily's Personal GPT-6 Pro v2 bundle corrects two tan hem pixels and the run-B
+robe gap but retains a weak KO. Red's new Opus 5.5 Max six-pose bundle improves
+recoil and horizontal KO mass, with heavy swept hair and stiff folds still
+provisional. A Red-body/Coda-head KO experiment is preserved but rejected for
+selection: the triangular hair and neck join look worse. Gemini/Nua/Meta
+returns were inspected and rejected for retail-design drift. Wren's actual
+six-pose bundle was retrieved and visually inspected: useful covered-robe
+motion, but heavy hair, a rigid casting arm, weak recoil and a muddled KO face
+leave the set provisional. The checkpoint records each actual return and limit.
+
+No ROM, save, NPC graphics/assembly/animation or shared palette was changed.
+The accepted world-map V5 and flying-Epoch evidence remain prior receipts;
+the historical proof chain was not rerun. No new art is user-selected or
+installed, and no publication occurred in this pass. Keep the actual pixels,
+reference packets and conversations private. Source-safe progress is in
+`docs/schala_main_sprite_art_progress_2026_10_18.md` and
+`references/schala_main_sprite_art_checkpoint_2026_10_18.json`; the inspected
+boards and reproducible art sources are under
+`private/research/pc07_main_sprite_art_20261018/`.
+
+Continue from visual refinement and a coherent chosen set, then a new
+PC07-only compiler version. Preserve installed frames 0-22. Normal run `$06`
+uses 19/20 and a timing stream shared across facings; alternate run `$17` and
+battle-role bindings are separate obligations. Pixel-equal native encoding,
+the current write-intent/complete-diff audit and all thirteen recovered NPC
+span equalities precede any emitted image. The shared original palette remains
+protected. Test changed consumers only; do not replay world-map/Epoch/save
+proofs for a new robe or arm pixel.
+
 ## October 17: selected Schala world-map art milestone
 
 Coda V5 is explicitly selected by Andrei and now passes the selected native
