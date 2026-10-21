@@ -58,6 +58,8 @@ Project Epoch builds on years of community experimentation, mapping, preservatio
 
 - **Additional Codex/ChatGPT reviewers and the separate Grok review route** — Bounded code, interrupt/timing and evidence critiques documented in the individual review receipts. This Grok route is distinct from Wren's personal Grok Bot conversation. Only returned reviews count as contributions; failed or unavailable routes are not credited as completed review. Evidence: [docs/external_review_2026_10_03.md](docs/external_review_2026_10_03.md), [docs/external_review_irq_transition_2026_10_03.md](docs/external_review_irq_transition_2026_10_03.md).
 
+- **Project Epoch branding — Coda, Lily and OpenAI image generation** — Coda composed, generated, refined and integrated the logo, hero and banner; Lily supplied art direction and reviewed the actual images, recommending the smaller portrait cameo and clearer title hierarchy. Andrei supplied direction and the approved portrait likeness. These are generated project illustrations, not native game captures. Evidence: [branding notes](docs/project_epoch_branding_2026_10_20.md).
+
 ## Original game and visual reference
 
 - **Square's Chrono Trigger team and Akira Toriyama** — The original game, retail sprites and character designs supply the visual and mechanical reference for this fan research. Schala's concept design informed the portrait and sprite refinements. [Schala concept reference](https://www.creativeuncut.com/gallery-01/ct-schala.html). Chrono Trigger and its original artwork belong to their respective rights holders. Evidence: [docs/schala_worldmap_milestone_2026_10_17.md](docs/schala_worldmap_milestone_2026_10_17.md), [docs/schala_menu_stats_portrait_2026_10_20.md](docs/schala_menu_stats_portrait_2026_10_20.md).

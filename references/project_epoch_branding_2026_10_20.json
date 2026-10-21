@@ -1,0 +1,97 @@
+{
+  "schema": "project-epoch-branding-v1",
+  "date": "2026-10-20",
+  "status": "branding-artwork-not-gameplay-evidence",
+  "assets": [
+    {
+      "file": "project-epoch-hero.png",
+      "repository_path": "assets/branding/project-epoch-hero.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2840980,
+      "sha256": "d19bda84444d722ae2d3da68c0a9261475529b283e0a3be84af98eb5ebdb8c2e",
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "evidence_level": "generated-artwork-visually-inspected"
+    },
+    {
+      "file": "project-epoch-banner.png",
+      "repository_path": "assets/branding/project-epoch-banner.png",
+      "width": 2172,
+      "height": 724,
+      "bytes": 2642375,
+      "sha256": "420ed30eceac6a0dace9c9952dca9d690486a7366771462a8300bf73e50d0549",
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "evidence_level": "generated-artwork-visually-inspected"
+    },
+    {
+      "file": "project-epoch-logo.png",
+      "repository_path": "assets/branding/project-epoch-logo.png",
+      "width": 1983,
+      "height": 793,
+      "bytes": 1311708,
+      "sha256": "7b693535e6bb46fa181bc46e7275dbbecd9976410c9c5bfa9576c6ea3d40e89b",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "evidence_level": "generated-artwork-visually-inspected"
+    }
+  ],
+  "portrait_source": "Approved generated V6 high-resolution source, corresponding to installed V6B portrait. Branding rendition is not a byte-exact native portrait copy.",
+  "contributors": [
+    {
+      "name": "Andrei Pemberton",
+      "role": "Direction and approved portrait likeness"
+    },
+    {
+      "name": "Coda / OpenAI Codex",
+      "role": "Composition, prompts, iteration, assessment, packaging and integration"
+    },
+    {
+      "name": "Lily (Lilitari) / ChatGPT",
+      "role": "Art direction and visual review of actual supplied images; suggested reducing cameo dominance",
+      "observed_route": "Personal 5.6 Pro; 6 Pro visibly locked with usage limit reached"
+    },
+    {
+      "name": "OpenAI image-generation tool",
+      "role": "Generated artwork"
+    },
+    {
+      "name": "Square Chrono Trigger team and Akira Toriyama",
+      "role": "Original game and character-design inspiration"
+    }
+  ],
+  "references": [
+    {
+      "role": "Official ancient-era and Zeal world reference",
+      "url": "https://www.jp.square-enix.com/chronotrigger/jp/world.html"
+    },
+    {
+      "role": "Title typography reference",
+      "url": "https://commons.wikimedia.org/wiki/File:Chrono_Trigger_Logo.png"
+    },
+    {
+      "role": "Original Schala design reference underlying portrait",
+      "url": "https://www.creativeuncut.com/gallery-01/ct-schala.html"
+    }
+  ],
+  "generation": {
+    "mode": "builtin image_gen",
+    "deterministic": false,
+    "prompts": {
+      "hero_prompt_v1.txt": "Create one finished landscape hero artwork for PROJECT EPOCH, a Chrono Trigger fan research/mod project. 16:9 horizontal canvas, premium SNES-era illustrated title-screen mood with coherent deliberate pixel-art shapes.\nReference 1 is the approved Schala portrait: incorporate that actual recognizable portrait as a large framed cameo in the RIGHT third, preserving her soft adult face, exact blue swept hair, green eyes, gold hoop earrings, purple high collar and close crop. Keep the characteristic pixelated rendering; do not redraw her as a different anime woman, harden her face, add a body, or turn her into Janus. Remove the white square background only as needed to integrate the cameo in an antique-gold circular clock frame with dark blue interior. The portrait remains the clearest focal object.\nReference 2 is the Chrono Trigger title logo, for flowing angular fantasy lettering and typographic energy only: invent a distinct highly legible custom wordmark spelling exactly \"PROJECT\" small above \"EPOCH\" large, on the LEFT half. Antique pale gold/ivory letters with restrained warm copper shadow, elongated elegant strokes, subtle clock-ring geometry using the O, no extra words, no official-logo copy or watermarks.\nReference 3 shows the official era atmosphere including a floating island; use only as environmental reference. Background: a dreamlike Kingdom of Zeal, one main floating island with compact gold-roofed palace terraces and two distant smaller floating islands amid deep indigo and muted violet clouds. Hand-crafted 1990s JRPG pixel landscape, restrained luminous cyan/lilac atmosphere, quiet stars, delicate gold arch/ring details. Clear silhouettes, no photorealism, no 3D bevel/metallic chrome, no generic steampunk gears or huge radial glows.\nComposition: title fully within left 55% and central vertical band, portrait within right third with generous edge clearance. Background subordinate; vivid enough to feel Zeal, dark enough to keep title readable. Balance the warm title against Schala blue hair. Clean 7% outer safe margins for web display, full composition no mockup or border around entire image. Branding art only, no UI, stats, release badge, text disclaimer or fake screenshot. Make it beautiful and restrained.\n",
+      "hero_prompt_v2.txt": "undefined\n",
+      "banner_prompt_v1.txt": "undefined\n",
+      "logo_prompt_v1.txt": "Extract and refine the PROJECT EPOCH wordmark from this provided hero into one professional transparent-background logo asset. Preserve its exact visual identity: small widely spaced PROJECT above large elegant angular EPOCH, antique ivory-gold lettering, restrained copper shadow, clock-hand ring inside the O, same sweeping underline and sharp but elegant terminals. Exact words only \"PROJECT EPOCH\". No Schala portrait in this standalone wordmark, no islands, stars, clouds, background rectangle, frame, checkerboard or opaque backdrop. The companion hero/banner carry the portrait. Make the logo optically balanced and clearly readable at 300px wide. Keep gold texture restrained rather than noisy, confident clean contours. Transparent alpha everywhere outside lettering and its integrated O clock; at least 8% clear margin on every edge. A wide 2.5:1 composition. No additional slogan or decorative emblems.\n"
+    }
+  },
+  "reproduction": [
+    "Copy the delivered PNGs from assets/branding without modification.",
+    "Compare each file SHA-256 to this manifest for byte-identical reproduction.",
+    "For new variants, use the stored prompts and corresponding approved portrait/hero references; generation is nondeterministic and will produce different bytes."
+  ],
+  "scope": "No ROM, NPC sprites, playable sprites, portrait encoding, saves, Epoch state or native validation changed."
+}

@@ -1,5 +1,9 @@
 # Project Epoch
 
+![Project Epoch — Schala and the Kingdom of Zeal](assets/branding/project-epoch-banner.png)
+
+Project artwork by Coda with Lily’s art direction and visual review, using OpenAI image generation. [Logo, hero, banner and provenance](docs/project_epoch_branding_2026_10_20.md).
+
 This workspace resumes the Chrono Trigger playable eighth-character investigation recovered from the ChatGPT conversation **Chrono Trigger 8th Character**.
 
 Start with the [short current handoff](docs/CURRENT_HANDOFF.md), the
